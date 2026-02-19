@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>📰 每日新聞速報 — {{ date }}</title>
+<title>📰 {{ title }} — {{ date }}</title>
 <style>
   :root {
     --bg: #0d1117;
@@ -138,7 +138,7 @@
   }
   .card-body { padding: 20px; }
 
-  /* ─── Top 10 ─── */
+  /* ─── 今日全重點 ─── */
   .top10 { border-color: var(--orange); border-width: 2px; }
   .top10 .card-header {
     background: linear-gradient(135deg, #f0883e 0%, #d29922 100%);
@@ -194,6 +194,12 @@
 
   /* ─── 文章 ─── */
   .articles { margin-top: 12px; }
+  .evidence-hint {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-size: 0.78em;
+    color: var(--text-muted);
+  }
   .article { padding: 8px 0; border-bottom: 1px solid var(--border); }
   .article:last-child { border-bottom: none; }
   .article a { color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9em; }
@@ -233,7 +239,7 @@
 <body>
 
 <div class="header">
-  <h1>📰 每日新聞速報</h1>
+      <h1>📰 {{ title }}</h1>
   <div class="subtitle">{{ date }} {{ weekday }} ・ 產生時間 {{ generated_at }}</div>
 </div>
 
@@ -394,9 +400,9 @@
 {% endif %}
 
 {% if top10 %}
-<!-- ━━ 🏆 Top 10 必讀 ━━ -->
+<!-- ━━ 🧭 今日全重點 ━━ -->
 <div class="card top10">
-  <div class="card-header">🏆 今日 Top 10 必讀</div>
+  <div class="card-header">🧭 今日全重點</div>
   <div class="top10-body">{{ top10 | safe }}</div>
 </div>
 {% endif %}
@@ -414,8 +420,9 @@
       <div class="summary-content">{{ data.summary | safe }}</div>
     </div>
     {% endif %}
+    <div class="evidence-hint">↑ 上方是 AI 導讀；↓ 下方僅原始來源連結（用來查證）</div>
     <details>
-      <summary>📎 所有原始來源 ({{ data.articles | length }})</summary>
+      <summary>📎 原始來源連結 ({{ data.articles | length }})</summary>
       <div class="articles">
         {% for article in data.articles %}
         <div class="article">
@@ -433,8 +440,10 @@
 {% endfor %}
 
 <div class="footer">
-  🤖 Andy's Daily News Bot<br>
-  AI 摘要由 Codex Spark 產生，僅供參考
+  🤖 Andy's Daily News Bot
+  {% if ai_usage and ai_usage.total_cost_usd is not none %}
+  ・AI 成本：${{ "{:.6f}".format(ai_usage.total_cost_usd) }} USD
+  {% endif %}
 </div>
 
 </body>

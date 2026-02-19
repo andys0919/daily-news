@@ -1,5 +1,7 @@
 """市場數據模組 — 抓取大盤指數和市場情緒"""
 
+import json
+import os
 import time
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -10,7 +12,9 @@ import yfinance as yf
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 CONFIG_PATH = Path(__file__).parent / "config.yaml"
+MARKET_CACHE_PATH = Path(__file__).parent / "data" / "market_overview_cache.json"
 TW_TZ = timezone(timedelta(hours=8))
+MARKET_CACHE_TTL_SEC = max(0, int(os.getenv("MARKET_CACHE_TTL_SEC", "900")))
 
 # 龍頭股名稱對照（避免額外 API 呼叫）
 LEADER_NAMES = {
@@ -201,13 +205,142 @@ def fetch_indices() -> list[IndexData]:
     return indices
 
 
+def _overview_to_dict(overview: MarketOverview) -> dict:
+    return {
+        "timestamp": overview.timestamp.isoformat(),
+        "fear_greed": overview.fear_greed,
+        "indices": [
+            {
+                "name": idx.name,
+                "symbol": idx.symbol,
+                "price": idx.price,
+                "change": idx.change,
+                "change_pct": idx.change_pct,
+                "prev_close": idx.prev_close,
+                "group": idx.group,
+                "week_pct": idx.week_pct,
+                "ytd_pct": idx.ytd_pct,
+                "leaders": [
+                    {
+                        "symbol": leader.symbol,
+                        "name": leader.name,
+                        "price": leader.price,
+                        "change_pct": leader.change_pct,
+                        "week_pct": leader.week_pct,
+                        "ytd_pct": leader.ytd_pct,
+                    }
+                    for leader in idx.leaders
+                ],
+            }
+            for idx in overview.indices
+        ],
+    }
+
+
+def _overview_from_dict(payload: dict) -> MarketOverview | None:
+    try:
+        ts_raw = str(payload.get("timestamp", ""))
+        timestamp = datetime.fromisoformat(ts_raw)
+        indices_payload = payload.get("indices", [])
+        if not isinstance(indices_payload, list):
+            return None
+
+        indices: list[IndexData] = []
+        for raw_idx in indices_payload:
+            if not isinstance(raw_idx, dict):
+                continue
+            leaders_payload = raw_idx.get("leaders", [])
+            leader_list: list[LeaderStock] = []
+            if isinstance(leaders_payload, list):
+                for raw_leader in leaders_payload:
+                    if not isinstance(raw_leader, dict):
+                        continue
+                    leader_list.append(
+                        LeaderStock(
+                            symbol=str(raw_leader.get("symbol", "")),
+                            name=str(raw_leader.get("name", "")),
+                            price=float(raw_leader.get("price", 0.0) or 0.0),
+                            change_pct=float(raw_leader.get("change_pct", 0.0) or 0.0),
+                            week_pct=float(raw_leader.get("week_pct", 0.0) or 0.0),
+                            ytd_pct=float(raw_leader.get("ytd_pct", 0.0) or 0.0),
+                        )
+                    )
+
+            indices.append(
+                IndexData(
+                    name=str(raw_idx.get("name", "")),
+                    symbol=str(raw_idx.get("symbol", "")),
+                    price=float(raw_idx.get("price", 0.0) or 0.0),
+                    change=float(raw_idx.get("change", 0.0) or 0.0),
+                    change_pct=float(raw_idx.get("change_pct", 0.0) or 0.0),
+                    prev_close=float(raw_idx.get("prev_close", 0.0) or 0.0),
+                    group=str(raw_idx.get("group", "")),
+                    week_pct=float(raw_idx.get("week_pct", 0.0) or 0.0),
+                    ytd_pct=float(raw_idx.get("ytd_pct", 0.0) or 0.0),
+                    leaders=leader_list,
+                )
+            )
+
+        return MarketOverview(
+            indices=indices,
+            timestamp=timestamp,
+            fear_greed=str(payload.get("fear_greed", "N/A")),
+        )
+    except Exception:
+        return None
+
+
+def _load_market_cache() -> MarketOverview | None:
+    if MARKET_CACHE_TTL_SEC <= 0 or not MARKET_CACHE_PATH.exists():
+        return None
+
+    try:
+        payload = json.loads(MARKET_CACHE_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+    overview = _overview_from_dict(payload)
+    if not overview:
+        return None
+
+    age_sec = (datetime.now(TW_TZ) - overview.timestamp).total_seconds()
+    if age_sec < 0:
+        return None
+    if age_sec > MARKET_CACHE_TTL_SEC:
+        return None
+
+    print(f"♻️ 使用市場快取（{int(age_sec)} 秒前）")
+    return overview
+
+
+def _save_market_cache(overview: MarketOverview) -> None:
+    if MARKET_CACHE_TTL_SEC <= 0:
+        return
+
+    try:
+        MARKET_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        MARKET_CACHE_PATH.write_text(
+            json.dumps(_overview_to_dict(overview), ensure_ascii=False),
+            encoding="utf-8",
+        )
+    except Exception:
+        # 快取失敗不應中斷主流程
+        return
+
+
 def get_market_overview() -> MarketOverview:
     """取得市場概覽"""
+    cached = _load_market_cache()
+    if cached:
+        return cached
+
     indices = fetch_indices()
-    return MarketOverview(
+    overview = MarketOverview(
         indices=indices,
         timestamp=datetime.now(TW_TZ),
     )
+    _save_market_cache(overview)
+    return overview
 
 
 if __name__ == "__main__":

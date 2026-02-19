@@ -8,11 +8,6 @@ telegram:
   bot_token: "${TELEGRAM_BOT_TOKEN}"  # 從環境變數讀取
   chat_id: "${TELEGRAM_CHAT_ID}"
 
-claude:
-  api_key: "${ANTHROPIC_API_KEY}"
-  model: "claude-sonnet-4-20250514"
-  max_tokens: 4096
-
 market:
   alpha_vantage_key: "${ALPHA_VANTAGE_KEY}"
   indices:
@@ -135,41 +130,489 @@ market:
       name: "USD/CNY"
       group: "forex"
 
+# ── 共用投資人設（注入所有分類 prompt 的基底） ──
+investor_persona:
+  role: "科技產業鏈投資研究員"
+  style: "混合型：基本面＋宏觀趨勢＋事件驅動"
+  time_horizon: "核心持倉中長期（月-年）、衛星部位波段（週-月）"
+  focus_sectors:
+    - "台股科技（台積電、鴻海、聯發科、日月光）"
+    - "美股科技龍頭（NVDA、MSFT、GOOGL、META、AMZN）"
+    - "半導體供應鏈（設計→製造→設備→封測→記憶體）"
+    - "AI 基建（GPU/HBM/CoWoS、資料中心、雲端 Capex）"
+    - "加密貨幣（BTC、ETH、穩定幣生態）"
+    - "宏觀（Fed 政策、利率、匯率、商品）"
+  global_anti_patterns:
+    - "不做明確漲跌預測"
+    - "不寫空洞形容詞（需求強勁、前景看好、動能提升、持續成長）"
+    - "不重複已在其他分類提及的同一事件"
+    - "不列沒有數字或事實支撐的觀點"
+    - "不要結尾問話、補充說明或提議（如「若需要我可以...」）"
+
+# ── 8 個分類代理人（每個分類有專屬的分析框架） ──
+category_agents:
+  finance:
+    persona: "高盛首席宏觀策略師，20 年跨資產經驗"
+    framework: |
+      分析框架（按順序思考）：
+      1. 宏觀環境：Fed 政策路徑、利率、通膨數據 → 對風險資產估值的影響
+      2. 財報與預期：EPS beat/miss 幅度、guidance 調整方向、與共識預期的差距
+      3. 資金流向：板塊輪動訊號、ETF 資金流入/出、機構持倉變化
+      4. 風險定價：VIX/信用利差/匯率波動 → 風險偏好變化
+      5. 加密與另類資產：BTC/ETH 與傳統資產的相關性、穩定幣生態、監管動態
+    key_metrics:
+      - "EPS beat/miss 幅度與 guidance 調整方向"
+      - "P/E vs 5 年均值偏離度"
+      - "Capex 增減率與自由現金流變化"
+      - "殖利率曲線形態與信用利差"
+      - "板塊資金流入/出趨勢"
+    output_sections:
+      - "宏觀環境判讀（2-3 句：Fed/利率/通膨最新變化 → 估值影響）"
+      - "財報與估值訊號（5-8 點：公司名+數字+vs 預期比較）"
+      - "資金流向與板塊輪動（2-3 點：哪些板塊在吸/放資金）"
+      - "風險定價變化（2-3 點：VIX/利差/匯率的變動意義）"
+      - "因果鏈（3-4 條：觸發 → 影響 → 二階效應 → 持倉意義）"
+      - "48h 觀察（3-4 點：若 X → 代表 Y → 應關注 Z）"
+    anti_patterns:
+      - "不做點位預測（不寫「目標價 xxx」）"
+      - "不列沒有 vs 預期比較的財報數字"
+
+  geopolitics:
+    persona: "CSIS 資深地緣政治研究員，專攻科技政策與供應鏈安全"
+    framework: |
+      分析框架（按順序思考）：
+      1. 政策變動辨識：出口管制/關稅/補貼/制裁的具體條文或草案變化
+      2. 供應鏈衝擊路徑：哪些節點受影響 → 替代方案的成本與時程
+      3. 區域重組動態：友岸外包/近岸外包的實際進度（新廠/轉單/投資）
+      4. 二階影響：成本結構改變 → 定價能力 → 哪些公司受益/受壓
+    key_metrics:
+      - "出口管制清單的具體實體/技術項目變動"
+      - "關稅稅率與生效時程"
+      - "補貼金額、受惠企業、附帶條件"
+      - "新廠投資金額與預計投產時程"
+      - "供應鏈轉移的訂單規模與時程"
+    output_sections:
+      - "政策變動摘要（3-5 點：什麼政策改了、具體條文/數字）"
+      - "供應鏈衝擊路徑（3-4 點：哪個節點 → 什麼影響 → 替代方案）"
+      - "區域重組進度（2-3 點：哪些新廠/轉單有實際進展）"
+      - "因果鏈（3-4 條：政策 → 直接影響 → 供應鏈連鎖 → 投資含義）"
+      - "48h 觀察（3-4 點）"
+    anti_patterns:
+      - "不做政治立場判斷"
+      - "不列沒有具體條文或數字的政策傳聞"
+
+  semiconductor:
+    persona: "買方半導體首席分析師，前台積電資深製程工程師，精通從設計到封測全鏈"
+    framework: |
+      分析框架（按順序思考）：
+      1. 產能與良率：各製程節點利用率、良率趨勢、產能擴張/縮減計畫
+      2. 先進封裝：CoWoS/InFO/HBM 封裝的產能、交期、供需缺口
+      3. 記憶體循環：HBM/DDR5/NAND 的 ASP 趨勢、庫存水位、合約 vs 現貨價差
+      4. 設備訂單週期：ASML/Applied/TEL/Besi 的訂單 backlog、交期、新機台出貨
+      5. 供需缺口定價：上游瓶頸 → ASP 定價能力 → 毛利結構變化
+    key_metrics:
+      - "產能利用率（%）與 wafer start 數量"
+      - "CoWoS/HBM 月產能（片數）vs 需求"
+      - "記憶體 ASP 季度變化（%）"
+      - "設備商訂單 backlog 金額與交期（月）"
+      - "良率數字（%）與量產時程"
+    output_sections:
+      - "產能與良率動態（3-4 點：哪個節點、什麼數字、趨勢方向）"
+      - "先進封裝供需（2-3 點：CoWoS/HBM 的產能 vs 需求缺口）"
+      - "記憶體定價與庫存（2-3 點：ASP 趨勢、庫存水位）"
+      - "設備訂單週期（2-3 點：誰的 backlog 在增/減）"
+      - "因果鏈（3-4 條：產能瓶頸 → 定價 → 毛利 → 投資意義）"
+      - "48h 觀察（3-4 點）"
+    anti_patterns:
+      - "不用「需求強勁」替代具體產能數字"
+      - "不列沒有節點/公司名的泛半導體評論"
+
+  tech_industry:
+    persona: "買方科技股首席研究員，專注大廠策略與競爭格局"
+    framework: |
+      分析框架（按順序思考）：
+      1. 競爭護城河評估：技術壁壘、網路效應、轉換成本、規模經濟的變化
+      2. Capex 訊號解讀：資本支出增減 → 背後的策略意圖 → 對供應鏈的拉動
+      3. 產品路線圖：新產品/服務的發布時程、定價策略、目標市場
+      4. 管理層可信度：guidance 歷史準確度、策略一致性、資本配置紀律
+      5. 估值框架：營收成長率 vs 估值倍數的合理性
+    key_metrics:
+      - "營收 guidance 調整方向與幅度"
+      - "Capex 金額與 YoY 變化"
+      - "市場份額變動（具體產品線）"
+      - "新產品發布時程與定價"
+      - "M&A 金額與策略邏輯"
+    output_sections:
+      - "大廠策略動態（5-8 點：哪家公司+什麼動作+為什麼重要）"
+      - "Capex 與供應鏈拉動（2-3 點：誰在加碼/縮減+金額+影響）"
+      - "競爭格局變化（2-3 點：護城河在加強還是被侵蝕）"
+      - "因果鏈（3-4 條：策略動作 → 供應鏈影響 → 競爭格局 → 投資意義）"
+      - "48h 觀察（3-4 點）"
+    anti_patterns:
+      - "不做目標價預測"
+      - "不列沒有策略意義的產品花絮"
+
+  ai_research:
+    persona: "AI 研究總監兼投資顧問，前 DeepMind 研究員，專攻 LLM 與基礎模型"
+    framework: |
+      分析框架（按順序思考）：
+      1. 能力突破辨識：哪個 benchmark 被刷新 → 突破幅度 → 技術原理
+      2. 商業化可行性：從論文到產品的距離 → 需要什麼基礎設施 → 成本量級
+      3. 部署成本曲線：推理成本趨勢（$/M token）、算力需求、延遲
+      4. 顛覆程度評估：對現有玩家（OpenAI/Anthropic/Google）的競爭影響
+      5. 開源 vs 閉源動態：模型開放程度 → 生態影響 → 商業模式衝擊
+    key_metrics:
+      - "Benchmark 分數與跳升幅度（MMLU/HumanEval/SWE-bench 等）"
+      - "推理成本（$/M token）與延遲（ms）"
+      - "模型參數量 vs 有效算力（MoE 活化比）"
+      - "Context window 長度與實際可用性"
+      - "訓練成本估算與所需 GPU 時數"
+    output_sections:
+      - "模型與能力突破（5-8 點：什麼模型+什麼能力+突破幅度+技術原理）"
+      - "商業化路徑（2-3 點：從研究到產品的距離與條件）"
+      - "成本與部署（2-3 點：推理成本趨勢、規模化挑戰）"
+      - "競爭格局影響（2-3 點：對主要玩家的影響）"
+      - "因果鏈（3-4 條：技術突破 → 成本變化 → 應用可能 → 產業影響）"
+      - "48h 觀察（3-4 點）"
+    anti_patterns:
+      - "不列沒有 benchmark 數字的「重大突破」"
+      - "不把每篇 arXiv 論文都當突破，要評估實際影響"
+
+  ai_practice:
+    persona: "AI/LLM 技術雷達 — 全棧 AI 工程師，每天追蹤 GitHub trending、HN 頭版、Reddit，專門幫你篩選什麼工具值得立刻試用"
+    framework: |
+      分析框架（按優先序）：
+      1. 新工具/框架上線：今天有什麼新東西出來？版本號、核心功能、跟現有方案的差異
+      2. GitHub 熱門專案：哪些 repo 在爆發？star 增速、實際用途、成熟度
+      3. LLM 模型實測：新模型的實際表現（不是官方 benchmark，是社群實測）、最適合什麼任務
+      4. Prompt/Skill/Plugin：什麼新的 prompt 技巧、MCP server、plugin 值得用？
+      5. 開發工作流變革：vibe coding、agentic workflow、AI-native 開發 — 什麼正在改變開發者日常
+      6. 成本與效能實測：哪個模型做什麼任務最划算？本地 vs 雲端的實際取捨
+    key_metrics:
+      - "GitHub star 增速（24h/7d）與 fork/issue 活躍度"
+      - "版本號與 changelog 重點"
+      - "社群實測結果（latency/quality/cost 三角）"
+      - "與同類工具的直接對比結果"
+      - "部署門檻（需要什麼硬體/環境/花多少錢）"
+    output_sections:
+      - "今日必知新工具（3-5 個：名稱+版本+一句話說明它是什麼+為什麼你該關注）"
+      - "GitHub 熱門追蹤（3-5 個：repo 名+star 數+它解決什麼問題+成熟度判斷）"
+      - "LLM 模型動態（2-3 點：新模型/更新+實測表現+最適用場景）"
+      - "實用 Prompt/Skill/Plugin（2-3 個：名稱+用途+怎麼用）"
+      - "開發趨勢風向（2-3 點：什麼工作流正在改變+證據）"
+      - "本週值得試用清單（3-5 個：工具名+一句話理由+上手難度）"
+    anti_patterns:
+      - "不列沒有實際用途描述的 repo 名稱"
+      - "不用「強大」「創新」「革命性」等空泛形容詞"
+      - "不把 star farming 或 awesome-list 當真正的工具"
+      - "不忽略小型但真正有用的工具"
+      - "沒有版本號或 changelog 的「更新」不算新聞"
+
+  deep_analysis:
+    persona: "首席投資策略師，專注結構性轉折與逆向思維"
+    framework: |
+      分析框架（按順序思考）：
+      1. 結構性轉折辨識：什麼趨勢不是短期波動而是長期格局改變？證據是什麼？
+      2. 週期定位：我們在什麼週期的什麼位置？（科技/信用/房地產/商品）
+      3. 逆向訊號：市場共識是什麼？什麼證據可能推翻共識？
+      4. 長期配置含義：若這個結構性變化持續 3-5 年，投資配置該如何調整？
+    key_metrics:
+      - "長期趨勢的拐點證據（數據、政策、人口）"
+      - "市場共識 vs 反證的強度比較"
+      - "歷史類比的相似度與差異"
+    output_sections:
+      - "結構性洞察（3-5 點：什麼在根本性地改變+證據+時間框架）"
+      - "週期定位（2-3 點：各主要週期的當前位置判斷）"
+      - "逆向思考（2-3 點：市場共識是什麼+最可能推翻的反證）"
+      - "長期配置含義（2-3 點：若趨勢持續 → 什麼要加碼/減碼）"
+      - "48h 觀察（2-3 點）"
+    anti_patterns:
+      - "不重述短期新聞事件（那是其他分類的工作）"
+      - "不列沒有歷史或結構性證據的「趨勢」"
+
+  x_trends:
+    persona: "AI/LLM 社群情報分析師，追蹤所有重要 KOL 的觀點與爭論"
+    framework: |
+      分析框架（按順序思考）：
+      1. 今日熱門話題辨識：什麼議題在 KOL 之間引發最多討論？
+      2. KOL 觀點映射：誰說了什麼？不同人的立場有什麼差異？
+      3. 共識與分歧判讀：哪些觀點正在形成共識？哪些有明顯分歧？
+      4. 弱訊號挖掘：少數人提到但可能很重要的觀點
+      5. 可驗證性評估：這些觀點可以在 24-48h 內被什麼事件驗證？
+    key_metrics:
+      - "KOL 帳號名稱與具體觀點（不可只寫「有人說」）"
+      - "話題的討論熱度（轉發/回覆/引用數量級）"
+      - "觀點的證據強度（有數據支撐 vs 純推測）"
+    output_sections:
+      - "今日熱門議題（5-8 個：話題+哪些 KOL 在討論+具體觀點）"
+      - "KOL 觀點地圖（2-3 個議題：A 認為... B 反駁... C 補充...）"
+      - "新興共識（2-3 點）與重大分歧（2-3 點）"
+      - "值得追蹤的弱訊號（2-3 點）"
+      - "產業影響判斷（2-3 點）"
+      - "48h 追蹤（3-4 點）"
+    anti_patterns:
+      - "不可只寫來源名不寫觀點內容"
+      - "不把轉發當原創觀點"
+      - "不混淆事實（某人說了什麼）和推論（這可能意味什麼）"
+
 feeds:
   # ── 💰 財經與總經 ──
   finance:
     category: "💰 財經與總經"
     sources:
+      # ── 美股主流 ──
       - name: "CNBC Top News"
         url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["finance", "macro", "markets"]
+        max_articles: 12
+        quality: "high"
+        summary_prompt: "news"
       - name: "CNBC Finance"
         url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["finance", "markets"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "news"
       - name: "CNBC Economy"
         url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["finance", "macro"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "news"
+      - name: "CNBC Earnings"
+        url: "https://www.cnbc.com/id/19794221/device/rss/rss.html"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["finance", "earnings"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "news"
+      - name: "CNBC Business"
+        url: "https://www.cnbc.com/id/15839135/device/rss/rss.html"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["finance", "business"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "news"
+      - name: "WSJ Markets"
+        url: "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["finance", "markets", "macro"]
+        max_articles: 12
+        quality: "high"
+        summary_prompt: "news"
+      - name: "WSJ World"
+        url: "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["macro", "geopolitics", "markets"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "news"
+      - name: "WSJ Tech"
+        url: "https://feeds.a.dj.com/rss/RSSWSJD.xml"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["finance", "technology"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Bloomberg Markets (Google News)"
+        url: "https://news.google.com/rss/search?q=when:24h+allinurl:bloomberg.com&ceid=US:en&hl=en-US&gl=US"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["finance", "markets", "macro"]
+        max_articles: 15
+        quality: "high"
+        summary_prompt: "news"
+      - name: "FT (Google News)"
+        url: "https://news.google.com/rss/search?q=when:24h+allinurl:ft.com&ceid=US:en&hl=en-US&gl=US"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["finance", "macro", "markets"]
+        max_articles: 12
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Barron's (Google News)"
+        url: "https://news.google.com/rss/search?q=when:24h+allinurl:barrons.com&ceid=US:en&hl=en-US&gl=US"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["finance", "markets", "investing"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Yahoo Finance"
+        url: "https://finance.yahoo.com/news/rssindex"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["finance", "markets"]
+        max_articles: 10
+        quality: "medium"
+        summary_prompt: "news"
+      - name: "ECB Press"
+        url: "https://www.ecb.europa.eu/rss/press.html"
+        active: true
+        priority: 8
+        region: "europe"
+        topics: ["macro", "central-bank", "policy"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      # ── 聚合類（限制數量避免噪音）──
       - name: "Investing.com"
         url: "https://www.investing.com/rss/news.rss"
+        active: true
+        priority: 6
+        max_articles: 15
+        quality: "medium"
       - name: "Seeking Alpha"
         url: "https://seekingalpha.com/market_currents.xml"
+        active: true
+        priority: 7
+        max_articles: 15
+        quality: "medium"
       - name: "Bloomberg Markets"
         url: "https://feeds.bloomberg.com/markets/news.rss"
+        active: true
+        priority: 8
+        max_articles: 15
+        quality: "high"
+      # ── 台灣財經 ──
       - name: "中央社 財經"
         url: "https://feeds.feedburner.com/rsscna/finance"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 15
+        quality: "high"
       - name: "自由時報 財經"
         url: "https://news.ltn.com.tw/rss/business.xml"
+        active: true
+        priority: 7
+        region: "tw"
+        max_articles: 12
+        quality: "medium"
       - name: "經濟日報 產經"
         url: "https://money.udn.com/rssfeed/news/1001/5588?ch=money"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 12
+        quality: "high"
       - name: "經濟日報 股市"
         url: "https://money.udn.com/rssfeed/news/1001/5607?ch=money"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 12
+        quality: "high"
       - name: "經濟日報 國際"
         url: "https://money.udn.com/rssfeed/news/1001/5599?ch=money"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 12
+        quality: "high"
+      - name: "鉅亨網 台股"
+        url: "https://www.cnyes.com/rss/cat/tw_stock.xml"
+        active: true
+        priority: 9
+        region: "tw"
+        topics: ["finance", "tw_stock"]
+        max_articles: 15
+        quality: "high"
+        summary_prompt: "news"
+      - name: "鉅亨網 國際股"
+        url: "https://www.cnyes.com/rss/cat/us_stock.xml"
+        active: true
+        priority: 9
+        region: "tw"
+        topics: ["finance", "us_stock"]
+        max_articles: 15
+        quality: "high"
+        summary_prompt: "news"
+      - name: "鉅亨網 外匯"
+        url: "https://www.cnyes.com/rss/cat/forex.xml"
+        active: true
+        priority: 7
+        region: "tw"
+        topics: ["finance", "forex"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "news"
+      - name: "工商時報 財經"
+        url: "https://news.google.com/rss/search?q=when:24h+site:ctee.com.tw&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["finance", "tw_industry"]
+        max_articles: 15
+        quality: "high"
+        summary_prompt: "news"
+      # ── 創投與 IPO ──
       - name: "Crunchbase News"
         url: "https://news.crunchbase.com/feed/"
+        active: true
+        priority: 6
+        max_articles: 6
+        quality: "medium"
       - name: "TechCrunch Venture"
         url: "https://techcrunch.com/category/venture/feed/"
+        active: true
+        priority: 6
+        max_articles: 6
+        quality: "medium"
+      # ── 加密貨幣 ──
       - name: "CoinDesk"
         url: "https://www.coindesk.com/arc/outboundfeeds/rss/"
+        active: true
+        priority: 8
+        max_articles: 10
+        quality: "high"
       - name: "Cointelegraph"
         url: "https://cointelegraph.com/rss"
+        active: true
+        priority: 7
+        max_articles: 10
+        quality: "medium"
+      - name: "The Block"
+        url: "https://www.theblock.co/rss.xml"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["crypto", "defi", "markets"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Decrypt"
+        url: "https://decrypt.co/feed"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["crypto", "web3"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "news"
 
   # ── 🌏 地緣政治與科技政策 ──
   geopolitics:
@@ -178,22 +621,121 @@ feeds:
     sources:
       - name: "CNN Politics"
         url: "http://rss.cnn.com/rss/cnn_allpolitics.rss"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["policy", "geopolitics"]
+        max_articles: 10
+        summary_prompt: "geopolitics"
+        quality: "high"
       - name: "NPR Politics"
         url: "https://feeds.npr.org/1014/rss.xml"
+        active: true
+        priority: 7
+        max_articles: 8
+        quality: "medium"
+      - name: "AP News"
+        url: "https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&ceid=US:en&hl=en-US&gl=US"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["policy", "politics"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "geopolitics"
+      - name: "BBC World"
+        url: "https://feeds.bbci.co.uk/news/world/rss.xml"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["geopolitics", "world"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "geopolitics"
       - name: "Fed 聯準會"
         url: "https://www.federalreserve.gov/feeds/press_all.xml"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["policy", "monetary"]
+        max_articles: 10
+        summary_prompt: "news"
+        quality: "high"
+      - name: "Reuters (Google News)"
+        url: "https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com&ceid=US:en&hl=en-US&gl=US"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["policy", "markets", "finance"]
+        max_articles: 15
+        quality: "high"
+        summary_prompt: "geopolitics"
       - name: "中央社 政治"
         url: "https://feeds.feedburner.com/rsscna/politics"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 15
+        quality: "high"
       - name: "中央社 國際"
         url: "https://feeds.feedburner.com/rsscna/intworld"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 15
+        quality: "high"
       - name: "中美科技戰"
         url: "https://news.google.com/rss/search?q=%22US-China%22+tech+OR+semiconductor+OR+tariff&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        max_articles: 10
+        quality: "high"
       - name: "半導體政策"
         url: "https://news.google.com/rss/search?q=CHIPS+Act+OR+%22export+control%22+semiconductor&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
+      - name: "關稅與貿易政策"
+        url: "https://news.google.com/rss/search?q=tariff+OR+trade+war+OR+sanctions+semiconductor+OR+technology&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["trade", "policy", "tariff"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "geopolitics"
       - name: "Brookings 科技政策"
         url: "https://www.brookings.edu/topic/technology-innovation/feed/"
+        active: true
+        priority: 7
+        max_articles: 6
+        quality: "high"
       - name: "南華早報 科技"
         url: "https://www.scmp.com/rss/4/feed"
+        active: true
+        priority: 8
+        region: "asia"
+        max_articles: 12
+        quality: "high"
+      - name: "日經亞洲"
+        url: "https://asia.nikkei.com/rss"
+        active: true
+        priority: 8
+        region: "asia"
+        topics: ["geopolitics", "asia", "technology"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "geopolitics"
+      - name: "Al Jazeera English"
+        url: "https://www.aljazeera.com/xml/rss/all.xml"
+        active: true
+        priority: 6
+        region: "global"
+        topics: ["geopolitics", "world"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "geopolitics"
 
   # ── 🔬 半導體與硬體 ──
   semiconductor:
@@ -202,30 +744,127 @@ feeds:
     sources:
       - name: "科技新報"
         url: "https://technews.tw/tn-rss/"
+        active: true
+        priority: 10
+        region: "tw"
+        topics: ["semiconductor", "hardware"]
+        max_articles: 15
+        quality: "high"
       - name: "SemiAnalysis"
         url: "https://www.semianalysis.com/feed"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["semiconductor", "industry"]
+        max_articles: 10
+        summary_prompt: "semiconductor"
+        quality: "high"
       - name: "Semiconductor Engineering"
         url: "https://semiengineering.com/feed/"
+        active: true
+        priority: 9
+        max_articles: 10
+        quality: "high"
       - name: "EE Times"
         url: "https://www.eetimes.com/feed/"
+        active: true
+        priority: 8
+        max_articles: 10
+        quality: "high"
       - name: "ServeTheHome"
         url: "https://www.servethehome.com/feed/"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
       - name: "TrendForce 半導體"
         url: "https://www.trendforce.com/feed/Semiconductors.html"
+        active: true
+        priority: 9
+        max_articles: 10
+        quality: "high"
       - name: "Tom's Hardware"
         url: "https://www.tomshardware.com/feeds/all"
+        active: true
+        priority: 7
+        max_articles: 10
+        quality: "medium"
       - name: "Data Center Dynamics"
         url: "https://www.datacenterdynamics.com/en/rss/"
+        active: true
+        priority: 8
+        max_articles: 12
+        quality: "high"
+      - name: "The Register"
+        url: "https://www.theregister.com/headlines.atom"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["hardware", "semiconductor", "enterprise"]
+        max_articles: 10
+        quality: "medium"
+        summary_prompt: "semiconductor"
       - name: "HBM/先進封裝"
         url: "https://news.google.com/rss/search?q=HBM+OR+CoWoS+OR+%22advanced+packaging%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        max_articles: 10
+        quality: "high"
+      - name: "半導體設備與產能"
+        url: "https://news.google.com/rss/search?q=ASML+OR+%22Applied+Materials%22+OR+%22Lam+Research%22+OR+%22Tokyo+Electron%22+OR+wafer+capacity&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["semiconductor", "equipment", "capacity"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "semiconductor"
+      - name: "記憶體產業"
+        url: "https://news.google.com/rss/search?q=Samsung+OR+%22SK+Hynix%22+OR+Micron+memory+OR+DRAM+OR+NAND+OR+HBM&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["semiconductor", "memory", "DRAM"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "semiconductor"
       - name: "DIGITIMES 半導體"
         url: "https://www.digitimes.com.tw/tech/rss/xml/xmlrss_10_40.xml"
+        active: true
+        priority: 9
+        region: "tw"
+        max_articles: 12
+        quality: "high"
       - name: "DIGITIMES 伺服器"
         url: "https://www.digitimes.com.tw/tech/rss/xml/xmlrss_30_26.xml"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 10
+        quality: "high"
       - name: "DIGITIMES IC製造"
         url: "https://www.digitimes.com.tw/tech/rss/xml/xmlrss_30_17.xml"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 10
+        quality: "high"
       - name: "DIGITIMES AI應用"
         url: "https://www.digitimes.com.tw/tech/rss/xml/xmlrss_10_60.xml"
+        active: true
+        priority: 8
+        region: "tw"
+        max_articles: 10
+        quality: "high"
+      - name: "WikiChip"
+        url: "https://fuse.wikichip.org/feed/"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["semiconductor", "chip-design"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "semiconductor"
 
   # ── 🏢 科技廠動態 ──
   tech_companies:
@@ -234,50 +873,258 @@ feeds:
     sources:
       - name: "NVIDIA Newsroom"
         url: "https://nvidianews.nvidia.com/releases.xml"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["technology", "chips"]
+        max_articles: 10
+        summary_prompt: "tech_industry"
+        quality: "high"
       - name: "Apple Newsroom"
         url: "https://www.apple.com/newsroom/rss-feed.rss"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
       - name: "Microsoft Blog"
         url: "https://blogs.microsoft.com/feed"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
       - name: "Meta Newsroom"
         url: "https://about.fb.com/feed"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
       - name: "Google Blog"
         url: "https://blog.google/rss"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
       - name: "Intel Newsroom"
         url: "https://newsroom.intel.com/feed"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
       - name: "AWS Blog"
         url: "https://aws.amazon.com/blogs/aws/feed/"
+        active: true
+        priority: 7
+        max_articles: 8
+        quality: "high"
       - name: "TSMC News"
         url: "https://news.google.com/rss/search?q=TSMC+OR+台積電&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 10
+        max_articles: 15
+        quality: "high"
       - name: "AMD News"
-        url: "https://news.google.com/rss/search?q=AMD+Ryzen+OR+EPYC&hl=en-US&gl=US&ceid=US:en"
+        url: "https://news.google.com/rss/search?q=AMD+Ryzen+OR+EPYC+OR+Instinct&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        max_articles: 10
+        quality: "high"
       - name: "ASML News"
-        url: "https://news.google.com/rss/search?q=ASML+lithography&hl=en-US&gl=US&ceid=US:en"
+        url: "https://news.google.com/rss/search?q=ASML+lithography+OR+EUV&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
       - name: "Broadcom News"
-        url: "https://news.google.com/rss/search?q=Broadcom+semiconductor&hl=en-US&gl=US&ceid=US:en"
+        url: "https://news.google.com/rss/search?q=Broadcom+semiconductor+OR+networking&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
+      - name: "鴻海/Foxconn"
+        url: "https://news.google.com/rss/search?q=鴻海+OR+Foxconn+OR+%22Hon+Hai%22&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["technology", "manufacturing"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "tech_industry"
+      - name: "聯發科/MediaTek"
+        url: "https://news.google.com/rss/search?q=聯發科+OR+MediaTek&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["semiconductor", "chip-design"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "tech_industry"
+      - name: "Qualcomm/Arm"
+        url: "https://news.google.com/rss/search?q=Qualcomm+OR+%22Arm+Holdings%22+chip&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["semiconductor", "mobile"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "tech_industry"
+      - name: "Tesla/SpaceX"
+        url: "https://news.google.com/rss/search?q=Tesla+OR+SpaceX+Elon+Musk&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["technology", "ev", "space"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "tech_industry"
 
   # ── 🧠 AI 研究與突破 ──
   ai_research:
     category: "🧠 AI 研究與突破"
     summary_prompt: "ai_research"
     sources:
+      # ── 學術論文（嚴格限量，避免洪水）──
       - name: "arXiv AI"
         url: "https://rss.arxiv.org/rss/cs.AI"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["ai", "research"]
+        max_articles: 10
+        summary_prompt: "ai_research"
+        quality: "high"
       - name: "arXiv 計算語言學"
         url: "https://rss.arxiv.org/rss/cs.CL"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["ai", "nlp", "research"]
+        max_articles: 10
+        quality: "high"
       - name: "arXiv 機器學習"
         url: "https://rss.arxiv.org/rss/cs.LG"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "ml", "research"]
+        max_articles: 15
+        quality: "high"
+      # ── 大廠官方 ──
       - name: "OpenAI Blog"
         url: "https://openai.com/news/rss.xml"
+        active: true
+        priority: 10
+        max_articles: 10
+        quality: "high"
       - name: "Google AI Blog"
         url: "https://blog.google/technology/ai/rss/"
-      - name: "TechCrunch AI"
-        url: "https://techcrunch.com/category/artificial-intelligence/feed/"
-      - name: "VentureBeat AI"
-        url: "https://venturebeat.com/category/ai/feed/"
+        active: true
+        priority: 9
+        max_articles: 8
+        quality: "high"
+      - name: "Anthropic News"
+        url: "https://news.google.com/rss/search?q=when:7d+Anthropic+Claude+OR+safety&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["ai", "safety", "research"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
+      - name: "DeepMind Blog"
+        url: "https://deepmind.google/blog/rss.xml"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["ai", "research", "science"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
       - name: "Hugging Face Blog"
         url: "https://huggingface.co/blog/feed.xml"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "open-source", "inference"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
+      # ── 科技媒體 AI 報導 ──
+      - name: "The Verge AI"
+        url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "research", "industry"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "ai_research"
+      - name: "MIT Technology Review"
+        url: "https://www.technologyreview.com/feed/"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "technology", "analysis"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
+      - name: "TechCrunch AI"
+        url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+        active: true
+        priority: 8
+        max_articles: 10
+        quality: "high"
+      - name: "VentureBeat AI"
+        url: "https://venturebeat.com/category/ai/feed/"
+        active: true
+        priority: 7
+        max_articles: 8
+        quality: "medium"
+      - name: "Wired AI"
+        url: "https://www.wired.com/feed/tag/ai/latest/rss"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["ai", "technology"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
+      # ── 趨勢搜尋 ──
       - name: "LLM 研究突破"
         url: "https://news.google.com/rss/search?q=%22LLM%22+OR+%22large+language+model%22+research+breakthrough&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["llm", "research", "breakthrough"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
+      - name: "AI 產業化與投資信號"
+        url: "https://news.google.com/rss/search?q=%22AI+inference+cost%22+OR+%22GPU+供應%22+OR+%22AI+Capex%22+OR+%22data+center+AI%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "investment", "infrastructure"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "ai_research"
+      - name: "LLM 應用與商用化"
+        url: "https://news.google.com/rss/search?q=%22agentic+AI%22+OR+%22enterprise+AI%22+OR+%22LLM+production%22+OR+%22RAG%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["ai", "applications", "business"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "ai_research"
+      - name: "AI 安全與治理"
+        url: "https://news.google.com/rss/search?q=%22AI+safety%22+OR+%22AI+regulation%22+OR+%22AI+governance%22+OR+%22AI+alignment%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["ai", "safety", "regulation"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
 
   # ── 🛠️ AI 工具與實戰 ──
   ai_practice:
@@ -286,17 +1133,363 @@ feeds:
     sources:
       - name: "GitHub Trending (All)"
         url: "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["ai", "engineering", "source-code"]
+        max_articles: 10
+        summary_prompt: "ai_practice"
+        quality: "high"
       - name: "GitHub Trending (Python)"
         url: "https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
+      # ── Dev.to（限量，避免噪音洪水）──
       - name: "Dev.to AI"
         url: "https://dev.to/feed/tag/ai"
+        active: true
+        priority: 5
+        max_articles: 8
+        quality: "low"
       - name: "Dev.to LLM"
         url: "https://dev.to/feed/tag/llm"
+        active: true
+        priority: 5
+        max_articles: 8
+        quality: "low"
+      # ── 高質量社群 ──
       - name: "Lobsters AI"
         url: "https://lobste.rs/t/ai.rss"
+        active: true
+        priority: 8
+        max_articles: 10
+        quality: "high"
       - name: "Hacker News AI"
         url: "https://hnrss.org/newest?q=AI+OR+LLM+OR+Claude+OR+Codex+OR+MCP+OR+agent&points=50"
+        active: true
+        priority: 9
+        max_articles: 12
+        quality: "high"
+      - name: "Reddit r/MachineLearning"
+        url: "https://www.reddit.com/r/MachineLearning/.rss"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "research", "discussion"]
+        max_articles: 10
+        quality: "medium"
+        summary_prompt: "ai_practice"
+      - name: "Reddit r/LocalLLaMA"
+        url: "https://www.reddit.com/r/LocalLLaMA/.rss"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["llm", "opensource", "discussion"]
+        max_articles: 10
+        quality: "medium"
+        summary_prompt: "ai_practice"
+      - name: "Reddit r/ChatGPT"
+        url: "https://www.reddit.com/r/ChatGPT/.rss"
+        active: true
+        priority: 6
+        region: "global"
+        topics: ["chatgpt", "apps", "discussion"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "ai_practice"
       - name: "Ars Technica AI"
         url: "https://arstechnica.com/ai/feed/"
-      - name: "Nikkei Asia"
-        url: "https://asia.nikkei.com/rss"
+        active: true
+        priority: 8
+        max_articles: 8
+        quality: "high"
+      - name: "Simon Willison"
+        url: "https://simonwillison.net/atom/everything/"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["ai", "llm", "engineering", "tools"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_practice"
+      - name: "LangChain Blog"
+        url: "https://blog.langchain.dev/rss/"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["ai", "rag", "agents", "tools"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "ai_practice"
+      - name: "AI 實戰落地（工具/流程）"
+        url: "https://news.google.com/rss/search?q=%22AI%20agent%22+OR+%22RAG%22+OR+%22MCP%22+OR+%22function+calling%22+OR+%22tool+use%22+software&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["ai", "engineering", "implementation"]
+        max_articles: 10
+        quality: "medium"
+        summary_prompt: "ai_practice"
+      - name: "AI 實戰導入（中文）"
+        url: "https://news.google.com/rss/search?q=%22AI%E5%AF%A6%E6%88%B0%22+OR+%22%E5%AF%A6%E8%B3%87%E4%BA%A4%E6%98%93%E5%AF%A6%E6%B8%B8%22+OR+%22AI%E5%AF%A6%E8%88%87%E6%95%B8%E6%93%9A%E9%8F%88%22&hl=zh-TW&gl=TW&ceid=TW:zh-TW"
+        active: true
+        priority: 6
+        region: "tw"
+        topics: ["ai", "practical", "case-study"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "ai_practice"
+
+  # ── 🧭 深度觀點與分析 ──
+  deep_analysis:
+    category: "🧭 深度觀點與分析"
+    summary_prompt: "news"
+    sources:
+      # ── 頂級科技/策略分析 ──
+      - name: "Stratechery"
+        url: "https://stratechery.com/feed/"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["technology", "strategy", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "The Pragmatic Engineer"
+        url: "https://newsletter.pragmaticengineer.com/feed"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["engineering", "industry", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Platformer"
+        url: "https://www.platformer.news/feed"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["technology", "platform", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Benedict Evans"
+        url: "https://www.ben-evans.com/benedictevans?format=rss"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["technology", "markets", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Interconnects AI"
+        url: "https://www.interconnects.ai/feed"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["ai", "research", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "The Information"
+        url: "https://www.theinformation.com/feed"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["technology", "business", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      # ── 財經/宏觀深度 ──
+      - name: "Noahpinion"
+        url: "https://www.noahpinion.blog/feed"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["economy", "policy", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Matt Levine / Money Stuff"
+        url: "https://news.google.com/rss/search?q=%22Matt+Levine%22+OR+%22Money+Stuff%22+bloomberg&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["finance", "markets", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Marginal Revolution"
+        url: "https://marginalrevolution.com/feed"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["economy", "policy", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Odd Lots / Bloomberg 深度"
+        url: "https://news.google.com/rss/search?q=when:24h+%22Odd+Lots%22+OR+%22Bloomberg+Opinion%22+markets+economy&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["finance", "macro", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      # ── 地緣/安全深度 ──
+      - name: "War on the Rocks"
+        url: "https://warontherocks.com/feed/"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["geopolitics", "security", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Foreign Affairs"
+        url: "https://www.foreignaffairs.com/rss.xml"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["geopolitics", "policy", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Atlantic Council"
+        url: "https://www.atlanticcouncil.org/feed/"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["geopolitics", "policy", "analysis"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "news"
+      - name: "CSIS 分析"
+        url: "https://news.google.com/rss/search?q=when:7d+site:csis.org&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["geopolitics", "policy", "security"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      # ── 台灣深度 ──
+      - name: "天下雜誌"
+        url: "https://news.google.com/rss/search?q=when:24h+site:cw.com.tw&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["business", "analysis", "tw"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "news"
+      - name: "商業周刊"
+        url: "https://news.google.com/rss/search?q=when:24h+site:businessweekly.com.tw&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 7
+        region: "tw"
+        topics: ["business", "analysis", "tw"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "news"
+      # ── 科學/進步 ──
+      - name: "Works in Progress"
+        url: "https://www.worksinprogress.news/feed"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["economy", "science", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+
+  # ── 🔥 X 社群熱議 ──
+  x_trends:
+    category: "🔥 X 社群熱議"
+    summary_prompt: "x_trends"
+    sources:
+      # 註：以 Google News RSS 檢索 x.com 貼文，避免 X 官方 API 付費與防爬限制。
+      - name: "X AI/科技熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28OpenAI+OR+Anthropic+OR+NVIDIA+OR+xAI+OR+%22AI+agent%22+OR+MCP%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["x", "ai", "technology"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X AI 工程實作熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28MCP+OR+RAG+OR+%22function+calling%22+OR+inference+OR+GPU%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["x", "ai", "engineering"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X 宏觀市場熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28FOMC+OR+rates+OR+CPI+OR+tariff+OR+bond+OR+oil%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["x", "macro", "markets"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X 加密市場熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Bitcoin+OR+BTC+OR+Ethereum+OR+ETH+OR+stablecoin%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["x", "crypto", "markets"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "x_trends"
+      - name: "X 半導體供應鏈熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28TSMC+OR+HBM+OR+CoWoS+OR+ASML+OR+wafer%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["x", "semiconductor", "supply-chain"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "x_trends"
+      - name: "X 中文科技熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28%E5%8F%B0%E7%A9%8D%E9%9B%BB+OR+AI+OR+%E7%AE%97%E5%8A%9B+OR+%E5%8D%8A%E5%B0%8E%E9%AB%94%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["x", "ai", "tw"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "x_trends"
+      - name: "X LLM 模型與評測熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28LLM+OR+GPT+OR+Claude+OR+Gemini+OR+Llama+OR+DeepSeek+OR+Qwen+OR+Mistral+OR+%22o3%22+OR+%22o4-mini%22%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["x", "llm", "models"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X AI 開發者工具熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Cursor+OR+Copilot+OR+%22vibe+coding%22+OR+%22AI+coding%22+OR+%22code+generation%22+OR+%22agentic%22+OR+Windsurf+OR+%22Claude+Code%22%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["x", "ai", "devtools"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X AI KOL 熱議"
+        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28karpathy+OR+%22Yann+LeCun%22+OR+%22Jim+Fan%22+OR+%22Sam+Altman%22+OR+%22Dario+Amodei%22+OR+%22Demis+Hassabis%22+OR+swyx+OR+%22Simon+Willison%22%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["x", "ai", "kol"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "x_trends"

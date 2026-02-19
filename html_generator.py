@@ -1,7 +1,9 @@
 """HTML 報告產生器"""
 
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import Literal
 
 import markdown
 from jinja2 import Environment, FileSystemLoader
@@ -21,6 +23,28 @@ def md_to_html(text: str) -> str:
     )
 
 
+_CITATION_RE = re.compile(r"\[(\d{1,4})\](?!\()")
+
+
+def _link_numeric_citations(text: str, citation_links: dict[int, str] | None) -> str:
+    """把摘要中的 [n] 轉成可點擊原文連結"""
+    if not text or not citation_links:
+        return text or ""
+
+    def _replace(match: re.Match[str]) -> str:
+        raw_num = match.group(1)
+        try:
+            idx = int(raw_num)
+        except ValueError:
+            return match.group(0)
+        link = citation_links.get(idx)
+        if not link:
+            return match.group(0)
+        return f'<a href="{link}" target="_blank">[{idx}]</a>'
+
+    return _CITATION_RE.sub(_replace, text)
+
+
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 REPORT_DIR = Path(__file__).parent / "data" / "reports"
 TW_TZ = timezone(timedelta(hours=8))
@@ -33,6 +57,9 @@ def generate_report(
     summaries: dict[str, str],
     market: MarketOverview | None = None,
     top10: str = "",
+    ai_usage: dict | None = None,
+    citation_links: dict[str, dict[int, str]] | None = None,
+    report_type: Literal["daily", "weekly"] = "weekly",
 ) -> Path:
     """產生 HTML 報告，回傳檔案路徑"""
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
@@ -41,6 +68,7 @@ def generate_report(
     date_str = now.strftime("%Y-%m-%d")
     weekday = WEEKDAY_MAP.get(now.weekday(), "")
     time_str = now.strftime("%H:%M")
+    title = "每日新聞速報" if report_type == "daily" else "每週新聞速報"
 
     # 組合 sections 資料
     sections = {}
@@ -52,24 +80,36 @@ def generate_report(
         "🏢 科技廠動態",
         "🧠 AI 研究與突破",
         "🛠️ AI 工具與實戰",
+        "🧭 深度觀點與分析",
+        "🔥 X 社群熱議",
     ]
 
     for cat in category_order:
         if cat in articles:
+            summary_md = summaries.get(cat, "")
+            linked_summary_md = _link_numeric_citations(
+                summary_md,
+                (citation_links or {}).get(cat, {}),
+            )
             sections[cat] = {
                 "articles": articles[cat],
-                "summary": md_to_html(summaries.get(cat, "")),
+                "summary": md_to_html(linked_summary_md),
             }
 
     # 加入未列在 order 中的其他分類
     for cat in articles:
         if cat not in sections:
+            summary_md = summaries.get(cat, "")
+            linked_summary_md = _link_numeric_citations(
+                summary_md,
+                (citation_links or {}).get(cat, {}),
+            )
             sections[cat] = {
                 "articles": articles[cat],
-                "summary": md_to_html(summaries.get(cat, "")),
+                "summary": md_to_html(linked_summary_md),
             }
 
-    # Top 10 也轉 HTML
+    # 今日全重點也轉 HTML
     top10 = md_to_html(top10)
 
     # 渲染模板
@@ -77,18 +117,22 @@ def generate_report(
     template = env.get_template("report.html")
 
     html = template.render(
+        title=title,
         date=date_str,
         weekday=f"週{weekday}",
         generated_at=time_str,
         market=market,
         top10=top10,
         sections=sections,
+        ai_usage=ai_usage or {},
     )
 
-    # 儲存
-    # 加上時間標記避免早報晚報覆蓋
-    period = "morning" if now.hour < 14 else "evening"
-    filename = f"{date_str}-{period}.html"
+    if report_type == "daily":
+        period = "morning" if now.hour < 12 else "evening"
+        filename = f"{date_str}-{period}.html"
+    else:
+        iso_year, iso_week, _ = now.isocalendar()
+        filename = f"{iso_year}-W{iso_week:02d}-weekly.html"
     filepath = REPORT_DIR / filename
     filepath.write_text(html, encoding="utf-8")
 
@@ -114,6 +158,8 @@ if __name__ == "__main__":
                 summary="AI 晶片需求持續強勁",
                 link="https://example.com/1",
                 source="CNBC",
+                source_key="test:CNBC",
+                summary_prompt="news",
                 category="🇺🇸 美國財經",
                 published=datetime.now(TW_TZ),
             )

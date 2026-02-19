@@ -1,20 +1,420 @@
-"""LLM 摘要模組 — 用 Codex CLI stdin 或 Claude API 產生智慧新聞摘要"""
-
 import json
 import os
+import re
 import subprocess
 import tempfile
+import math
+import html as html_lib
 from pathlib import Path
+from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime
+from threading import Lock
+import urllib.error
+import urllib.parse
+import urllib.request
 
 import yaml
 
 from crawler import Article
 
 CONFIG_PATH = Path(__file__).parent / "config.yaml"
+AZURE_CONFIG_PATH = Path(__file__).parent / "Azure.txt"
+
+
+def _env_bool(name: str, default: bool) -> bool:
+    raw = os.getenv(name)
+    if raw is None:
+        return default
+    return raw.strip().lower() in {"1", "true", "yes", "on"}
+
 
 # Codex CLI 設定
 CODEX_PATH = "/opt/homebrew/bin/codex"
-CODEX_MODEL = "gpt-5.2"
+CODEX_MODEL = os.getenv("CODEX_MODEL", "gpt-5.3-codex-spark")
+CODEX_REASONING_EFFORT = os.getenv("CODEX_REASONING_EFFORT", "medium")
+CODEX_FALLBACK_MODELS: list[str] = []
+SUMMARY_PROVIDER = os.getenv("SUMMARY_PROVIDER", "azure").strip().lower()
+SUMMARY_BATCH_WORKERS = int(os.getenv("SUMMARY_BATCH_WORKERS", "2"))
+SUMMARY_MAX_ARTICLES = max(0, int(os.getenv("SUMMARY_MAX_ARTICLES", "0")))
+SUMMARY_MIN_BODY_CHARS = max(1, int(os.getenv("SUMMARY_MIN_BODY_CHARS", "1")))
+SUMMARY_BODY_MAX_CHARS = max(80, int(os.getenv("SUMMARY_BODY_MAX_CHARS", "1200")))
+SUMMARY_CHUNK_ARTICLES = max(0, int(os.getenv("SUMMARY_CHUNK_ARTICLES", "100")))
+SUMMARY_MAX_PER_SOURCE = max(0, int(os.getenv("SUMMARY_MAX_PER_SOURCE", "8")))
+SUMMARY_MAX_INPUT_CHARS = max(0, int(os.getenv("SUMMARY_MAX_INPUT_CHARS", "18000")))
+SUMMARY_FULL_READ_MODE = _env_bool("SUMMARY_FULL_READ_MODE", True)
+SUMMARY_TOP10_CATEGORY_MAX_CHARS = max(
+    0, int(os.getenv("SUMMARY_TOP10_CATEGORY_MAX_CHARS", "1800"))
+)
+SUMMARY_INCLUDE_LINKS_IN_PROMPT = _env_bool("SUMMARY_INCLUDE_LINKS_IN_PROMPT", False)
+SUMMARY_TITLE_FALLBACK = _env_bool("SUMMARY_TITLE_FALLBACK", True)
+SUMMARY_TITLE_DEDUP = _env_bool("SUMMARY_TITLE_DEDUP", True)
+SUMMARY_FILTER_LOW_SIGNAL = _env_bool("SUMMARY_FILTER_LOW_SIGNAL", True)
+SUMMARY_SIGNAL_RANKING = _env_bool("SUMMARY_SIGNAL_RANKING", True)
+SUMMARY_PRIMARY_SOURCE_FILTER = _env_bool("SUMMARY_PRIMARY_SOURCE_FILTER", True)
+SUMMARY_PRIMARY_SOURCE_MIN_ARTICLES = max(
+    2, int(os.getenv("SUMMARY_PRIMARY_SOURCE_MIN_ARTICLES", "5"))
+)
+SUMMARY_RECENCY_HALF_LIFE_HOURS = max(
+    1, int(os.getenv("SUMMARY_RECENCY_HALF_LIFE_HOURS", "24"))
+)
+SUMMARY_MIN_CITATIONS = max(2, int(os.getenv("SUMMARY_MIN_CITATIONS", "4")))
+AZURE_OPENAI_URL = os.getenv("AZURE_OPENAI_URL", "").strip()
+AZURE_OPENAI_API_KEY = (
+    os.getenv("AZURE_OPENAI_API_KEY", "").strip()
+    or os.getenv("AZURE_OPENAI_KEY", "").strip()
+)
+AZURE_OPENAI_MODEL = os.getenv("AZURE_OPENAI_MODEL", "gpt-5-nano").strip()
+AZURE_OPENAI_TIMEOUT_SEC = max(30, int(os.getenv("AZURE_OPENAI_TIMEOUT_SEC", "300")))
+AZURE_OPENAI_MAX_RETRIES = max(1, int(os.getenv("AZURE_OPENAI_MAX_RETRIES", "5")))
+AZURE_OPENAI_RETRY_BASE_SEC = max(
+    1, int(os.getenv("AZURE_OPENAI_RETRY_BASE_SEC", "15"))
+)
+AZURE_OPENAI_REASONING_EFFORT = os.getenv(
+    "AZURE_OPENAI_REASONING_EFFORT", "low"
+).strip()
+AZURE_OPENAI_VERBOSITY = os.getenv("AZURE_OPENAI_VERBOSITY", "low").strip()
+AZURE_RETAIL_PRICES_API = "https://prices.azure.com/api/retail/prices"
+
+_USAGE_LOCK = Lock()
+_USAGE_STATE = {
+    "provider": "",
+    "model": "",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "requests": 0,
+}
+_PRICING_CACHE: dict[str, object] = {}
+_SOURCE_META_CACHE: dict[str, dict[str, object]] | None = None
+_GITHUB_REPO_CACHE: dict[str, dict[str, object] | None] = {}
+_PERSONA_CACHE: dict | None = None
+_CATEGORY_AGENTS_CACHE: dict | None = None
+
+
+def _load_persona() -> dict:
+    """從 config.yaml 載入投資人設"""
+    global _PERSONA_CACHE
+    if _PERSONA_CACHE is not None:
+        return _PERSONA_CACHE
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f)
+    _PERSONA_CACHE = cfg.get("investor_persona", {})
+    return _PERSONA_CACHE
+
+
+def _persona_block() -> str:
+    """產生 prompt 用的人設區塊"""
+    p = _load_persona()
+    if not p:
+        return ""
+    signals = "\n".join(f"  - {s}" for s in p.get("key_signals", []))
+    anti = "\n".join(f"  - {a}" for a in p.get("anti_patterns", []))
+    sectors = "\n".join(f"  - {s}" for s in p.get("focus_sectors", []))
+    return f"""### 研究人設
+- 角色：{p.get('role', '投資研究員')}
+- 風格：{p.get('style', '混合型')}
+- 時間框架：{p.get('time_horizon', '中長期')}
+- 關注板塊：
+{sectors}
+- 高價值訊號：
+{signals}
+- 禁止事項：
+{anti}"""
+
+
+def _load_category_agents() -> dict:
+    """從 config.yaml 載入 category_agents"""
+    global _CATEGORY_AGENTS_CACHE
+    if _CATEGORY_AGENTS_CACHE is not None:
+        return _CATEGORY_AGENTS_CACHE
+    cfg = load_config()
+    _CATEGORY_AGENTS_CACHE = cfg.get("category_agents", {})
+    return _CATEGORY_AGENTS_CACHE
+
+
+# feed key → agent key 映射（處理 key 名稱不一致的情況）
+_FEED_TO_AGENT_KEY = {"tech_companies": "tech_industry"}
+
+
+def _resolve_agent_key(category: str, prompt_type: str) -> str:
+    """從 category 名稱和 prompt_type 解析 category_agents key"""
+    agents = _load_category_agents()
+    # prompt_type 直接匹配 agent key（除 "news" 外，因多個分類共用 "news"）
+    if prompt_type != "news" and prompt_type in agents:
+        return prompt_type
+    # 從 config feeds 找 feed key → agent key
+    cfg = load_config()
+    for feed_key, feed_config in cfg.get("feeds", {}).items():
+        if feed_config.get("category") == category:
+            agent_key = _FEED_TO_AGENT_KEY.get(feed_key, feed_key)
+            if agent_key in agents:
+                return agent_key
+            break
+    return "finance"
+
+
+_TITLE_CLEAN_RE = re.compile(r"[^0-9a-zA-Z\u4e00-\u9fff]+")
+_SOURCE_TRAIL_RE = re.compile(
+    r"\s*[-|–—]\s*(bloomberg(?:\.com)?|reuters(?:\.com)?|investing(?:\.com)?|"
+    r"seeking alpha|cnbc(?:\.com)?|wsj(?:\.com)?|financial times)\s*$",
+    flags=re.IGNORECASE,
+)
+_LOW_SIGNAL_TITLE_PATTERNS = [
+    re.compile(r"\b(initiates?|upgrades?|downgrades?|reiterates?)\b.*\b(stock|shares?)\b", re.IGNORECASE),
+    re.compile(r"\b(stock rating|price target)\b", re.IGNORECASE),
+    re.compile(r"\bearnings call transcript\b", re.IGNORECASE),
+    re.compile(r"\bearnings ahead\b", re.IGNORECASE),
+]
+_HIGH_SIGNAL_KEYWORDS = [
+    "guidance",
+    "capex",
+    "tariff",
+    "export control",
+    "ban",
+    "sanction",
+    "yield",
+    "capacity",
+    "order",
+    "backlog",
+    "pricing",
+    "margin",
+    "datacenter",
+    "hbm",
+    "cowos",
+    "n2",
+    "n3",
+    "chip",
+    "fab",
+    "gpu",
+    "inference",
+    "ai",
+    "補貼",
+    "關稅",
+    "出口管制",
+    "資本支出",
+    "產能",
+    "良率",
+    "投資",
+    "訂單",
+]
+_QUALITY_SCORE = {
+    "high": 2.0,
+    "medium": 1.0,
+    "low": 0.0,
+}
+_SECOND_HAND_HOSTS = {
+    "news.google.com",
+    "hnrss.org",
+    "rsshub.app",
+}
+_SECOND_HAND_SOURCE_KEYWORDS = (
+    "google news",
+    "彙整",
+    "聚合",
+    "轉載",
+)
+_PRIMARY_SOURCE_HOSTS = {
+    "cnbc.com",
+    "bloomberg.com",
+    "reuters.com",
+    "federalreserve.gov",
+    "cna.com.tw",
+    "money.udn.com",
+    "nvidianews.nvidia.com",
+    "apple.com",
+    "blogs.microsoft.com",
+    "about.fb.com",
+    "blog.google",
+    "newsroom.intel.com",
+    "aws.amazon.com",
+    "openai.com",
+    "huggingface.co",
+    "arxiv.org",
+    "rss.arxiv.org",
+    "semianalysis.com",
+    "semiengineering.com",
+    "trendforce.com",
+    "digitimes.com.tw",
+    "technews.tw",
+    "servethehome.com",
+    "eetimes.com",
+    "tomshardware.com",
+    "datacenterdynamics.com",
+    "technologyreview.com",
+}
+_LOW_SIGNAL_CONTENT_HOSTS = {
+    "dev.to",
+    "medium.com",
+    "substack.com",
+}
+_INVESTMENT_CATEGORIES = {
+    "💰 財經與總經",
+    "🌏 地緣政治與科技政策",
+    "🔬 半導體與硬體",
+    "🏢 科技廠動態",
+    "🧠 AI 研究與突破",
+}
+_NUMERIC_CITATION_RE = re.compile(r"\[(\d{1,4})\](?!\()")
+_NON_NUMERIC_BRACKET_RE = re.compile(r"\[([^\]]+)\](?!\()")
+_GITHUB_REPO_RE = re.compile(r"github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)")
+_X_URL_RE = re.compile(r"https?://\S+|www\.\S+", flags=re.IGNORECASE)
+_X_HASHTAG_RE = re.compile(r"(?<!\w)#([A-Za-z][A-Za-z0-9_]{1,40})")
+_X_CASHTAG_RE = re.compile(r"(?<!\w)\$([A-Za-z]{1,8})")
+_X_ENG_TOKEN_RE = re.compile(r"\b([A-Za-z][A-Za-z0-9+._-]{2,})\b")
+_X_CJK_TOKEN_RE = re.compile(r"([\u4e00-\u9fff]{2,8})")
+_X_TOPIC_STOPWORDS = {
+    "a",
+    "an",
+    "and",
+    "about",
+    "are",
+    "as",
+    "after",
+    "again",
+    "agentic",
+    "also",
+    "analysis",
+    "at",
+    "around",
+    "be",
+    "before",
+    "by",
+    "breaking",
+    "build",
+    "check",
+    "comment",
+    "daily",
+    "data",
+    "did",
+    "deep",
+    "details",
+    "discuss",
+    "does",
+    "early",
+    "for",
+    "from",
+    "gets",
+    "good",
+    "guide",
+    "has",
+    "have",
+    "highlights",
+    "how",
+    "if",
+    "in",
+    "inside",
+    "into",
+    "is",
+    "it",
+    "latest",
+    "live",
+    "many",
+    "may",
+    "new",
+    "next",
+    "not",
+    "now",
+    "more",
+    "most",
+    "news",
+    "notes",
+    "of",
+    "on",
+    "or",
+    "post",
+    "preview",
+    "report",
+    "repost",
+    "says",
+    "see",
+    "share",
+    "shares",
+    "shows",
+    "some",
+    "source",
+    "story",
+    "than",
+    "that",
+    "the",
+    "their",
+    "there",
+    "these",
+    "they",
+    "thread",
+    "this",
+    "today",
+    "too",
+    "use",
+    "update",
+    "video",
+    "viral",
+    "watch",
+    "what",
+    "when",
+    "where",
+    "which",
+    "who",
+    "will",
+    "why",
+    "with",
+    "x",
+    "xcom",
+    "x.com",
+    "com",
+    "www",
+    "http",
+    "https",
+    "status",
+    "amp",
+    "nbsp",
+    "quot",
+    "tco",
+    "img",
+    "you",
+    "your",
+}
+_X_TOPIC_STOPWORDS_ZH = {
+    "今天",
+    "大家",
+    "討論",
+    "話題",
+    "熱議",
+    "更新",
+    "分享",
+    "重點",
+    "消息",
+    "全文",
+    "影片",
+    "整理",
+    "觀點",
+    "新聞",
+}
+_X_PRIORITY_KEYWORDS = {
+    "openai",
+    "anthropic",
+    "nvidia",
+    "xai",
+    "grok",
+    "mcp",
+    "agent",
+    "agents",
+    "rag",
+    "gpu",
+    "inference",
+    "bitcoin",
+    "btc",
+    "ethereum",
+    "eth",
+    "fed",
+    "fomc",
+    "tsmc",
+    "apple",
+    "microsoft",
+    "meta",
+    "google",
+    "claude",
+    "codex",
+}
 
 
 def load_config():
@@ -22,334 +422,2213 @@ def load_config():
         return yaml.safe_load(f)
 
 
-def _build_articles_text(articles: list[Article], limit: int = 20) -> str:
+def _safe_int(value: object, default: int = 0) -> int:
+    try:
+        return int(value)  # type: ignore[arg-type]
+    except (TypeError, ValueError):
+        return default
+
+
+def _source_meta_map() -> dict[str, dict[str, object]]:
+    global _SOURCE_META_CACHE
+    if _SOURCE_META_CACHE is not None:
+        return _SOURCE_META_CACHE
+
+    meta: dict[str, dict[str, object]] = {}
+    try:
+        config = load_config()
+    except Exception:
+        _SOURCE_META_CACHE = meta
+        return meta
+
+    feeds = config.get("feeds", {})
+    if not isinstance(feeds, dict):
+        _SOURCE_META_CACHE = meta
+        return meta
+
+    for feed_key, feed_cfg in feeds.items():
+        if not isinstance(feed_cfg, dict):
+            continue
+        sources = feed_cfg.get("sources", [])
+        if not isinstance(sources, list):
+            continue
+        for src in sources:
+            if not isinstance(src, dict):
+                continue
+            name = _normalize_inline_text(str(src.get("name", "")))
+            if not name:
+                continue
+            source_key = f"{feed_key}:{name}"
+            priority = _safe_int(src.get("priority"), 5)
+            quality = _normalize_inline_text(str(src.get("quality", "medium"))).lower()
+            source_url = _normalize_inline_text(str(src.get("url", "")))
+            parsed = urllib.parse.urlsplit(source_url)
+            source_host = parsed.netloc.lower()
+            meta[source_key] = {
+                "priority": max(0, min(priority, 10)),
+                "quality": quality if quality in _QUALITY_SCORE else "medium",
+                "url": source_url,
+                "host": source_host,
+            }
+
+    _SOURCE_META_CACHE = meta
+    return meta
+
+
+def _title_keyword_bonus(title: str) -> float:
+    title_lc = title.lower()
+    bonus = 0.0
+    for keyword in _HIGH_SIGNAL_KEYWORDS:
+        if keyword in title_lc:
+            bonus += 0.35
+    if re.search(r"\d", title_lc):
+        bonus += 0.5
+    return min(3.0, bonus)
+
+
+def _article_signal_score(article: Article) -> float:
+    if not SUMMARY_SIGNAL_RANKING:
+        return 0.0
+
+    meta = _source_meta_map().get(article.source_key, {})
+    priority = _safe_int(meta.get("priority"), 5)
+    quality_name = str(meta.get("quality", "medium")).lower()
+    quality_score = float(_QUALITY_SCORE.get(quality_name, 1.0))
+
+    now = datetime.now(article.published.tzinfo)
+    age_hours = max(0.0, (now - article.published).total_seconds() / 3600.0)
+    half_life = float(SUMMARY_RECENCY_HALF_LIFE_HOURS)
+    # Exponential decay keeps very recent news in front without dropping older key events.
+    recency_score = 3.0 * math.exp(-math.log(2) * age_hours / half_life)
+
+    title = _normalize_inline_text(article.title)
+    keyword_score = _title_keyword_bonus(title)
+    source_score = priority * 0.6 + quality_score
+
+    return source_score + recency_score + keyword_score
+
+
+def _rank_articles_by_signal(articles: list[Article]) -> list[Article]:
+    if not articles:
+        return []
+
+    if not SUMMARY_SIGNAL_RANKING:
+        return sorted(articles, key=lambda a: a.published, reverse=True)
+
+    scored = []
+    for idx, article in enumerate(articles):
+        score = _article_signal_score(article)
+        scored.append((score, article.published.timestamp(), -idx, article))
+
+    scored.sort(reverse=True, key=lambda x: (x[0], x[1], x[2]))
+    return [row[3] for row in scored]
+
+
+def _article_host(article: Article) -> str:
+    try:
+        return urllib.parse.urlsplit(article.link or "").netloc.lower()
+    except Exception:
+        return ""
+
+
+def _host_matches(host: str, domains: set[str]) -> bool:
+    if not host:
+        return False
+    for domain in domains:
+        if host == domain or host.endswith("." + domain):
+            return True
+    return False
+
+
+def _is_second_hand_article(article: Article) -> bool:
+    host = _article_host(article)
+    source_lc = _normalize_inline_text(article.source).lower()
+    if _host_matches(host, _SECOND_HAND_HOSTS):
+        return True
+    if "news.google." in host:
+        return True
+    return any(keyword in source_lc for keyword in _SECOND_HAND_SOURCE_KEYWORDS)
+
+
+def _is_primary_source_article(article: Article) -> bool:
+    if _is_second_hand_article(article):
+        return False
+
+    host = _article_host(article)
+    if not host:
+        return False
+
+    if _host_matches(host, _PRIMARY_SOURCE_HOSTS):
+        return True
+
+    if _host_matches(host, _LOW_SIGNAL_CONTENT_HOSTS):
+        return False
+
+    meta = _source_meta_map().get(article.source_key, {})
+    quality = str(meta.get("quality", "medium")).lower()
+    return quality == "high"
+
+
+def _filter_primary_source_articles(
+    category: str,
+    prompt_type: str,
+    articles: list[Article],
+) -> tuple[list[Article], int, str]:
+    if not SUMMARY_PRIMARY_SOURCE_FILTER:
+        return articles, 0, "disabled"
+    if prompt_type == "ai_practice":
+        return articles, 0, "skip-ai-practice"
+    if category not in _INVESTMENT_CATEGORIES:
+        return articles, 0, "skip-category"
+
+    primary_only = [a for a in articles if _is_primary_source_article(a)]
+    if len(primary_only) >= SUMMARY_PRIMARY_SOURCE_MIN_ARTICLES:
+        return primary_only, max(0, len(articles) - len(primary_only)), "strict"
+
+    relaxed = [a for a in articles if not _is_second_hand_article(a)]
+    if relaxed:
+        return relaxed, max(0, len(articles) - len(relaxed)), "relaxed"
+
+    return primary_only or articles, 0, "fallback"
+
+
+def _load_azure_settings_from_file(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+
+    lines = [
+        line.strip()
+        for line in path.read_text(encoding="utf-8", errors="ignore").splitlines()
+        if line.strip()
+    ]
+    urls = [
+        line
+        for line in lines
+        if line.startswith("http://") or line.startswith("https://")
+    ]
+    models = [line for line in lines if line.lower().startswith("gpt-")]
+
+    key_candidates = [
+        line
+        for line in lines
+        if " " not in line
+        and not line.startswith("http://")
+        and not line.startswith("https://")
+        and not line.lower().startswith("gpt-")
+        and len(line) >= 32
+    ]
+    key = max(key_candidates, key=len, default="")
+
+    url = ""
+    for candidate in urls:
+        lc = candidate.lower()
+        if "/openai/v1/chat/completions" in lc:
+            url = candidate
+            break
+    if not url:
+        for candidate in urls:
+            lc = candidate.lower()
+            if "/openai/deployments/" in lc and "/chat/completions" in lc:
+                url = candidate
+                break
+    if not url:
+        for candidate in urls:
+            lc = candidate.lower()
+            if "/openai/responses" in lc:
+                url = candidate
+                break
+    if not url and urls:
+        first = urls[0].rstrip("/")
+        if "openai.azure.com" in first and "/openai/" not in first:
+            url = first + "/openai/v1/chat/completions"
+        else:
+            url = urls[0]
+
+    preferred_models = ["gpt-5-nano", "gpt-5-mini"]
+    model = ""
+    model_set = {m.lower() for m in models}
+    for preferred in preferred_models:
+        if preferred in model_set:
+            model = preferred
+            break
+    return {"url": url, "key": key, "model": model}
+
+
+def _resolve_azure_settings() -> None:
+    global AZURE_OPENAI_URL, AZURE_OPENAI_API_KEY, AZURE_OPENAI_MODEL
+    if AZURE_OPENAI_URL and AZURE_OPENAI_API_KEY:
+        return
+    parsed = _load_azure_settings_from_file(AZURE_CONFIG_PATH)
+    if not AZURE_OPENAI_URL:
+        AZURE_OPENAI_URL = parsed.get("url", "")
+    if not AZURE_OPENAI_API_KEY:
+        AZURE_OPENAI_API_KEY = parsed.get("key", "")
+
+
+def _azure_enabled() -> bool:
+    _resolve_azure_settings()
+    return bool(AZURE_OPENAI_URL and AZURE_OPENAI_API_KEY)
+
+
+def _summary_provider() -> str:
+    if SUMMARY_PROVIDER and SUMMARY_PROVIDER != "azure":
+        raise RuntimeError(
+            "已鎖定使用 Azure 摘要；請只調整 AZURE_OPENAI_MODEL。"
+        )
+    if not _azure_enabled():
+        raise RuntimeError(
+            "SUMMARY_PROVIDER=azure 但缺少 Azure 設定（AZURE_OPENAI_URL / AZURE_OPENAI_API_KEY）。"
+        )
+    return "azure"
+
+
+def reset_usage_stats() -> None:
+    provider = _summary_provider()
+    model = AZURE_OPENAI_MODEL if provider == "azure" else CODEX_MODEL
+    with _USAGE_LOCK:
+        _USAGE_STATE["provider"] = provider
+        _USAGE_STATE["model"] = model
+        _USAGE_STATE["input_tokens"] = 0
+        _USAGE_STATE["output_tokens"] = 0
+        _USAGE_STATE["requests"] = 0
+
+
+def _record_usage(input_tokens: int, output_tokens: int) -> None:
+    with _USAGE_LOCK:
+        _USAGE_STATE["input_tokens"] = int(_USAGE_STATE["input_tokens"]) + max(
+            0, input_tokens
+        )
+        _USAGE_STATE["output_tokens"] = int(_USAGE_STATE["output_tokens"]) + max(
+            0, output_tokens
+        )
+        _USAGE_STATE["requests"] = int(_USAGE_STATE["requests"]) + 1
+
+
+def _extract_usage_tokens(data: dict) -> tuple[int, int]:
+    usage = data.get("usage", {})
+    if not isinstance(usage, dict):
+        return 0, 0
+
+    input_tokens = usage.get("input_tokens")
+    if input_tokens is None:
+        input_tokens = usage.get("prompt_tokens")
+    output_tokens = usage.get("output_tokens")
+    if output_tokens is None:
+        output_tokens = usage.get("completion_tokens")
+
+    try:
+        in_tok = int(input_tokens or 0)
+    except (TypeError, ValueError):
+        in_tok = 0
+    try:
+        out_tok = int(output_tokens or 0)
+    except (TypeError, ValueError):
+        out_tok = 0
+    return max(0, in_tok), max(0, out_tok)
+
+
+def _normalize_reasoning_effort(value: str | None) -> str | None:
+    allowed = {"minimal", "low", "medium", "high"}
+    normalized = (value or "").strip().lower()
+    return normalized if normalized in allowed else None
+
+
+def _normalize_verbosity(value: str | None) -> str | None:
+    allowed = {"low", "medium", "high"}
+    normalized = (value or "").strip().lower()
+    return normalized if normalized in allowed else None
+
+
+def _fetch_azure_model_pricing(model_name: str) -> dict[str, object] | None:
+    cache_key = model_name.strip().lower()
+    cached = _PRICING_CACHE.get(cache_key)
+    if isinstance(cached, dict):
+        return cached
+
+    model_map = {
+        "gpt-5-nano": {
+            "meter_contains": "GPT 5 Nano",
+            "input_meter": "GPT 5 Nano Inpt Glbl 1M Tokens",
+            "output_meter": "GPT 5 Nano outpt Glbl 1M Tokens",
+        },
+        "gpt-5-mini": {
+            "meter_contains": "GPT 5 Mini",
+            "input_meter": "GPT 5 Mini Inpt Glbl 1M Tokens",
+            "output_meter": "GPT 5 Mini outpt Glbl 1M Tokens",
+        },
+    }
+    model_info = model_map.get(cache_key)
+    if not model_info:
+        return None
+
+    meter_contains = str(model_info.get("meter_contains", "")).strip()
+    if not meter_contains:
+        return None
+    flt = (
+        "contains(productName,'OpenAI GPT5') "
+        f"and contains(meterName,'{meter_contains}')"
+    )
+    url = f"{AZURE_RETAIL_PRICES_API}?$filter={urllib.parse.quote(flt)}"
+
+    rows = []
+    while url:
+        with urllib.request.urlopen(url, timeout=30) as resp:
+            data = json.load(resp)
+        rows.extend(data.get("Items", []))
+        url = data.get("NextPageLink")
+
+    input_meter = model_info["input_meter"]
+    output_meter = model_info["output_meter"]
+
+    input_rows = [r for r in rows if str(r.get("meterName", "")).strip() == input_meter]
+    output_rows = [
+        r for r in rows if str(r.get("meterName", "")).strip() == output_meter
+    ]
+    if not input_rows or not output_rows:
+        return None
+
+    def _latest_row(items: list[dict]) -> dict:
+        return max(items, key=lambda r: str(r.get("effectiveStartDate", "")))
+
+    input_row = _latest_row(input_rows)
+    output_row = _latest_row(output_rows)
+    input_price = float(input_row.get("unitPrice", 0))
+    output_price = float(output_row.get("unitPrice", 0))
+    currency = str(input_row.get("currencyCode", output_row.get("currencyCode", "USD")))
+    effective_start = max(
+        str(input_row.get("effectiveStartDate", "")),
+        str(output_row.get("effectiveStartDate", "")),
+    )
+
+    pricing = {
+        "input_per_1m_usd": input_price,
+        "output_per_1m_usd": output_price,
+        "currency": currency,
+        "effective_start": effective_start,
+        "source": "https://prices.azure.com/api/retail/prices",
+        "input_meter": input_meter,
+        "output_meter": output_meter,
+    }
+    _PRICING_CACHE[cache_key] = pricing
+    return pricing
+
+
+def get_usage_summary() -> dict[str, object]:
+    with _USAGE_LOCK:
+        usage = {
+            "provider": _USAGE_STATE.get("provider", ""),
+            "model": _USAGE_STATE.get("model", ""),
+            "input_tokens": int(_USAGE_STATE.get("input_tokens", 0)),
+            "output_tokens": int(_USAGE_STATE.get("output_tokens", 0)),
+            "requests": int(_USAGE_STATE.get("requests", 0)),
+        }
+
+    total_cost = None
+    input_cost = None
+    output_cost = None
+    pricing = None
+
+    if usage["provider"] == "azure" and usage["model"]:
+        try:
+            pricing = _fetch_azure_model_pricing(str(usage["model"]))
+        except Exception as e:
+            pricing = {"error": str(e)}
+        if pricing and "input_per_1m_usd" in pricing and "output_per_1m_usd" in pricing:
+            input_cost = (
+                usage["input_tokens"] / 1_000_000 * float(pricing["input_per_1m_usd"])
+            )
+            output_cost = (
+                usage["output_tokens"] / 1_000_000 * float(pricing["output_per_1m_usd"])
+            )
+            total_cost = input_cost + output_cost
+
+    usage["input_cost_usd"] = input_cost
+    usage["output_cost_usd"] = output_cost
+    usage["total_cost_usd"] = total_cost
+    usage["pricing"] = pricing
+    return usage
+
+
+def _build_articles_text(
+    articles: list[Article], limit: int | None = None, start_index: int = 1
+) -> str:
     """將文章列表轉成文字"""
     text = ""
-    for i, a in enumerate(articles[:limit], 1):
+    selected = articles if limit is None else articles[:limit]
+    for i, a in enumerate(selected, start_index):
+        title_text = _normalize_inline_text(a.title)
+        body_text = _article_body_text(a)
         text += f"""
 ---
-[{i}] {a.title}
-來源：{a.source} | 時間：{a.published.strftime('%Y-%m-%d %H:%M')}
-摘要：{a.summary}
-連結：{a.link}
+[{i}]
+來源：{a.source} | 時間：{a.published.strftime("%Y-%m-%d %H:%M")}
+標題：{title_text}
+內文：{body_text}
 """
+        if SUMMARY_INCLUDE_LINKS_IN_PROMPT:
+            text += f"連結：{a.link}\n"
     return text
 
 
-def build_prompt(category: str, articles: list[Article], prompt_type: str = "news") -> str:
-    """建立摘要 prompt（根據分類選不同 prompt）"""
-    articles_text = _build_articles_text(articles)
+def _normalize_inline_text(text: str | None) -> str:
+    decoded = html_lib.unescape(text or "")
+    cleaned = decoded.replace("\xa0", " ")
+    return " ".join(cleaned.split()).strip()
 
-    builders = {
-        "news": _build_news_prompt,
-        "geopolitics": _build_geopolitics_prompt,
-        "semiconductor": _build_semiconductor_prompt,
-        "ai_research": _build_ai_research_prompt,
-        "ai_practice": _build_ai_practice_prompt,
-        "tech_industry": _build_tech_industry_prompt,
+
+def _title_fingerprint(title: str) -> str:
+    normalized = _normalize_inline_text(title).lower()
+    if not normalized:
+        return ""
+    normalized = _SOURCE_TRAIL_RE.sub("", normalized)
+    normalized = _TITLE_CLEAN_RE.sub(" ", normalized)
+    return _normalize_inline_text(normalized)
+
+
+def _article_body_text(article: Article) -> str:
+    body = _normalize_inline_text(article.summary)
+    if not body and SUMMARY_TITLE_FALLBACK:
+        body = _normalize_inline_text(article.title)
+    if len(body) <= SUMMARY_BODY_MAX_CHARS:
+        return body
+    return body[:SUMMARY_BODY_MAX_CHARS].rstrip() + "…"
+
+
+def _has_article_body(article: Article) -> bool:
+    return len(_article_body_text(article)) >= SUMMARY_MIN_BODY_CHARS
+
+
+def _dedupe_by_title(articles: list[Article]) -> tuple[list[Article], int]:
+    if not SUMMARY_TITLE_DEDUP:
+        return articles, 0
+
+    seen_titles: set[str] = set()
+    deduped: list[Article] = []
+    dropped = 0
+    for article in articles:
+        fp = _title_fingerprint(article.title)
+        if not fp:
+            deduped.append(article)
+            continue
+        if fp in seen_titles:
+            dropped += 1
+            continue
+        seen_titles.add(fp)
+        deduped.append(article)
+    return deduped, dropped
+
+
+def _is_low_signal_title(article: Article) -> bool:
+    if not SUMMARY_FILTER_LOW_SIGNAL:
+        return False
+
+    title = _normalize_inline_text(article.title)
+    if not title:
+        return False
+
+    for pattern in _LOW_SIGNAL_TITLE_PATTERNS:
+        if pattern.search(title):
+            return True
+    return False
+
+
+def _filter_low_signal_articles(articles: list[Article]) -> tuple[list[Article], int]:
+    if not SUMMARY_FILTER_LOW_SIGNAL:
+        return articles, 0
+
+    selected: list[Article] = []
+    dropped = 0
+    for article in articles:
+        if _is_low_signal_title(article):
+            dropped += 1
+            continue
+        selected.append(article)
+    return selected, dropped
+
+
+def _cap_articles_per_source(articles: list[Article]) -> tuple[list[Article], int]:
+    if SUMMARY_MAX_PER_SOURCE <= 0:
+        return articles, 0
+
+    per_source_count: dict[str, int] = {}
+    selected: list[Article] = []
+    dropped = 0
+    for article in articles:
+        source_key = _normalize_inline_text(article.source) or "unknown"
+        count = per_source_count.get(source_key, 0)
+        if count >= SUMMARY_MAX_PER_SOURCE:
+            dropped += 1
+            continue
+        per_source_count[source_key] = count + 1
+        selected.append(article)
+    return selected, dropped
+
+
+def _estimate_article_prompt_chars(article: Article) -> int:
+    # Keep this estimate simple and stable. We only need coarse budgeting.
+    overhead = 64
+    title_len = len(_normalize_inline_text(article.title))
+    body_len = len(_article_body_text(article))
+    link_len = len(article.link) + 8 if SUMMARY_INCLUDE_LINKS_IN_PROMPT else 0
+    return overhead + title_len + body_len + link_len
+
+
+def _apply_input_char_budget(articles: list[Article]) -> tuple[list[Article], int]:
+    if SUMMARY_MAX_INPUT_CHARS <= 0:
+        return articles, 0
+
+    selected: list[Article] = []
+    used_chars = 0
+    for article in articles:
+        article_chars = _estimate_article_prompt_chars(article)
+        if not selected:
+            selected.append(article)
+            used_chars += article_chars
+            continue
+        if used_chars + article_chars > SUMMARY_MAX_INPUT_CHARS:
+            break
+        selected.append(article)
+        used_chars += article_chars
+
+    dropped = max(0, len(articles) - len(selected))
+    return selected, dropped
+
+
+def _min_citations_for_article_count(article_count: int) -> int:
+    dynamic_min_citations = 3
+    if article_count >= 30:
+        dynamic_min_citations = 6
+    elif article_count >= 15:
+        dynamic_min_citations = 5
+    elif article_count >= 8:
+        dynamic_min_citations = 4
+    return max(2, max(SUMMARY_MIN_CITATIONS, dynamic_min_citations))
+
+
+def _extract_numeric_citations(text: str) -> list[int]:
+    citations: list[int] = []
+    for match in _NUMERIC_CITATION_RE.finditer(text or ""):
+        try:
+            citations.append(int(match.group(1)))
+        except ValueError:
+            continue
+    return citations
+
+
+def _extract_non_numeric_bracket_tokens(text: str) -> list[str]:
+    tokens: list[str] = []
+    for match in _NON_NUMERIC_BRACKET_RE.finditer(text or ""):
+        token = _normalize_inline_text(match.group(1))
+        if not token:
+            continue
+        if token.isdigit():
+            continue
+        tokens.append(token)
+    return tokens
+
+
+def _sanitize_non_numeric_brackets(text: str) -> str:
+    if not text:
+        return ""
+
+    def _replace(match: re.Match[str]) -> str:
+        token = _normalize_inline_text(match.group(1))
+        if token.isdigit():
+            return match.group(0)
+        return token
+
+    return _NON_NUMERIC_BRACKET_RE.sub(_replace, text)
+
+
+# ── LLM 輸出後處理：去除常見垃圾 ──
+_TRAILING_CITATION_DUMP_RE = re.compile(
+    r"\n+(?:n\n)?(?:\d{1,4}\n){3,}[\d\s]*$"
+)
+# 匹配 "n 2、3、13、49" 或 "n 2, 3, 13" 格式的裸引用列表
+_TRAILING_CITATION_INLINE_RE = re.compile(
+    r"\n+n\s+[\d、,\s]+\s*$"
+)
+_LLM_CONVERSATIONAL_CLOSERS = [
+    re.compile(r"^若需要.*$", re.MULTILINE),
+    re.compile(r"^如需.*$", re.MULTILINE),
+    re.compile(r"^注[：:]以上.*$", re.MULTILINE),
+    re.compile(r"^以上.*皆基於.*$", re.MULTILINE),
+    re.compile(r"^如果.*需要.*整理.*$", re.MULTILINE),
+    re.compile(r"^需要.*可以.*$", re.MULTILINE),
+    re.compile(r"^---+\s*$", re.MULTILINE),
+]
+_DUPLICATE_HEADING_RE = re.compile(
+    r"(### .+?今日主軸.*?)(?=### .+?今日主軸)", re.DOTALL
+)
+
+
+def _clean_llm_output(text: str) -> str:
+    """清理 LLM 常見的垃圾輸出"""
+    if not text:
+        return ""
+    result = text
+
+    # 1. 移除尾部裸 citation 數字列表（n\n10\n136\n... 或 n 2、3、13、49）
+    result = _TRAILING_CITATION_DUMP_RE.sub("", result)
+    result = _TRAILING_CITATION_INLINE_RE.sub("", result)
+
+    # 2. 移除 LLM 對話式結尾
+    for pat in _LLM_CONVERSATIONAL_CLOSERS:
+        result = pat.sub("", result)
+
+    # 3. 偵測重複的 ### 段落標題（chunk merge 失敗），合併為唯一結構
+    # 找出所有 ### 標題，如果同一標題出現多次，只保留最長的那段內容
+    all_h3 = list(re.finditer(r"^### .+$", result, re.MULTILINE))
+    if len(all_h3) >= 2:
+        # 拆成 (heading_text, section_content) 對
+        sections: list[tuple[str, str]] = []
+        for i, m in enumerate(all_h3):
+            heading = m.group(0).strip()
+            start = m.end()
+            end = all_h3[i + 1].start() if i + 1 < len(all_h3) else len(result)
+            content = result[start:end].strip()
+            sections.append((heading, content))
+
+        # 對相同標題，只保留最長的段落；不同標題按順序保留
+        seen_headings: dict[str, int] = {}
+        merged: list[tuple[str, str]] = []
+        for heading, content in sections:
+            # 用正規化 key 比較（移除 emoji 和多餘空白）
+            norm_key = re.sub(r"[^\w\s]", "", heading).strip()
+            if norm_key in seen_headings:
+                idx = seen_headings[norm_key]
+                if len(content) > len(merged[idx][1]):
+                    merged[idx] = (heading, content)
+            else:
+                seen_headings[norm_key] = len(merged)
+                merged.append((heading, content))
+
+        result = "\n\n".join(f"{h}\n{c}" for h, c in merged if c)
+
+    # 4. 清理多餘空行
+    result = re.sub(r"\n{3,}", "\n\n", result).strip()
+
+    return result
+
+
+def _validate_summary_citations(
+    text: str, max_index: int, min_citations: int
+) -> tuple[bool, str]:
+    if max_index <= 0:
+        return False, "無可引用新聞編號"
+
+    non_numeric_tokens = _extract_non_numeric_bracket_tokens(text)
+    if non_numeric_tokens:
+        preview = ", ".join(non_numeric_tokens[:3])
+        return False, f"含非數字引用標記：{preview}"
+
+    citations = _extract_numeric_citations(text)
+    if len(citations) < min_citations:
+        return False, f"引用數不足（{len(citations)} < {min_citations}）"
+
+    out_of_range = sorted({c for c in citations if c < 1 or c > max_index})
+    if out_of_range:
+        preview = ",".join(str(v) for v in out_of_range[:5])
+        return False, f"引用編號超出範圍（1..{max_index}）：{preview}"
+
+    return True, ""
+
+
+def _build_citation_repair_prompt(base_prompt: str, invalid_output: str, error: str) -> str:
+    clipped_output = invalid_output.strip()
+    if len(clipped_output) > 1500:
+        clipped_output = clipped_output[:1500].rstrip() + "…"
+
+    return (
+        base_prompt
+        + "\n\n### 上一版輸出引用格式不合規，請重寫\n"
+        + f"- 錯誤原因：{error}\n"
+        + "- 只允許 `[n]` 數字引用，且 n 必須在輸入新聞編號範圍內。\n"
+        + "- 禁止任何非數字方括號（例如 `[來源]`、`[分類]`、`[n]` 占位符）。\n"
+        + "- 請輸出完整修正版，不要解釋。\n\n"
+        + "以下是上一版無效輸出（僅供你避免重複錯誤）：\n"
+        + clipped_output
+    )
+
+
+def _summarize_with_citation_guard(prompt: str, category: str, max_index: int) -> str | None:
+    min_citations = _min_citations_for_article_count(max_index)
+
+    first_result = _summarize_with_provider(prompt, category)
+    if not first_result:
+        return None
+
+    valid, error = _validate_summary_citations(first_result, max_index, min_citations)
+    if valid:
+        return first_result
+
+    sanitized_first = _sanitize_non_numeric_brackets(first_result)
+    if sanitized_first != first_result:
+        sanitized_valid, sanitized_error = _validate_summary_citations(
+            sanitized_first, max_index, min_citations
+        )
+        if sanitized_valid:
+            print(f"  ⚠️ {category} 已自動清理非數字引用標記", flush=True)
+            return sanitized_first
+        error = sanitized_error
+
+    print(f"  ⚠️ {category} 引用格式不合規，重試一次：{error}", flush=True)
+    repair_prompt = _build_citation_repair_prompt(prompt, first_result, error)
+    retry_result = _summarize_with_provider(repair_prompt, f"{category} 引用修正")
+    if not retry_result:
+        return None
+
+    retry_valid, retry_error = _validate_summary_citations(
+        retry_result, max_index, min_citations
+    )
+    if retry_valid:
+        return retry_result
+
+    sanitized_retry = _sanitize_non_numeric_brackets(retry_result)
+    if sanitized_retry != retry_result:
+        sanitized_retry_valid, sanitized_retry_error = _validate_summary_citations(
+            sanitized_retry, max_index, min_citations
+        )
+        if sanitized_retry_valid:
+            print(f"  ⚠️ {category} 引用修正版已自動清理非數字標記", flush=True)
+            return sanitized_retry
+        retry_error = sanitized_retry_error
+
+    print(f"  ⚠️ {category} 引用格式仍不合規：{retry_error}", flush=True)
+    return None
+
+
+def _extract_repo_slug(text: str) -> str:
+    raw = text or ""
+    if "github.com" not in raw.lower():
+        return ""
+
+    match = _GITHUB_REPO_RE.search(raw)
+    if match:
+        repo = _normalize_inline_text(match.group(1)).strip("/").lower()
+        if repo.count("/") == 1 and re.search(r"[a-zA-Z]", repo):
+            return repo
+    return ""
+
+
+def _article_repo_slug(article: Article) -> str:
+    slug = _extract_repo_slug(article.link or "")
+    if slug:
+        return slug
+
+    source_lc = _normalize_inline_text(article.source).lower()
+    if "github" in source_lc:
+        for candidate in re.findall(
+            r"\b([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)\b", article.title or ""
+        ):
+            repo = _normalize_inline_text(candidate).strip("/").lower()
+            if repo.count("/") == 1 and re.search(r"[a-zA-Z]", repo):
+                return repo
+    return ""
+
+
+def _format_citation_refs(refs: set[int], max_refs: int = 3) -> str:
+    if not refs:
+        return ""
+    ordered = sorted(refs)[:max_refs]
+    return "".join(f"[{idx}]" for idx in ordered)
+
+
+def _summarize_repo_signal(title: str, repo_slug: str) -> str:
+    signal = _normalize_inline_text(title)
+    if not signal:
+        return "社群討論與實作分享同步上升"
+    signal = signal.replace(repo_slug, "").strip(" -:|")
+    signal = _normalize_inline_text(signal)
+    if not signal:
+        return "社群討論與實作分享同步上升"
+    if len(signal) > 70:
+        return signal[:70].rstrip() + "…"
+    return signal
+
+
+def _shorten_line(text: str, max_len: int = 72) -> str:
+    normalized = _normalize_inline_text(text)
+    if len(normalized) <= max_len:
+        return normalized
+    return normalized[:max_len].rstrip() + "…"
+
+
+def _clean_x_discussion_text(text: str | None) -> str:
+    normalized = _normalize_inline_text(text)
+    if not normalized:
+        return ""
+    normalized = _X_URL_RE.sub("", normalized)
+    normalized = re.sub(r"\s*(?:-|–|—)\s*x\.com\s*$", "", normalized, flags=re.IGNORECASE)
+    normalized = re.sub(r"\bx\.com\b", "", normalized, flags=re.IGNORECASE)
+    normalized = re.sub(r"\s+", " ", normalized).strip(" -|;:,")
+    return _normalize_inline_text(normalized)
+
+
+def _is_low_signal_x_discussion(text: str) -> bool:
+    normalized = _normalize_inline_text(text)
+    if len(normalized) < 20:
+        return True
+    lowered = normalized.lower()
+    if any(
+        token in lowered
+        for token in (
+            "meme",
+            "birthday cake",
+            "just in",
+            "bullish",
+            "breaking:",
+        )
+    ):
+        return True
+    return False
+
+
+def _infer_x_discussion_theme(article: Article, text: str) -> str:
+    merged = f"{article.source} {text}".lower()
+    if any(
+        kw in merged
+        for kw in ("openai", "anthropic", "claude", "xai", "model", "模型", "api")
+    ):
+        return "AI 平台與模型"
+    if any(
+        kw in merged
+        for kw in ("mcp", "agent", "workflow", "tool use", "工具鏈", "導入")
+    ):
+        return "Agent 與工具鏈落地"
+    if any(
+        kw in merged
+        for kw in ("gpu", "hbm", "cowos", "datacenter", "inference", "算力", "成本")
+    ):
+        return "算力成本與基礎設施"
+    if any(kw in merged for kw in ("bitcoin", "btc", "crypto", "ethereum", "eth")):
+        return "加密市場與政策"
+    if any(
+        kw in merged
+        for kw in ("oil", "tariff", "bond", "rates", "fomc", "macro", "關稅", "利率")
+    ):
+        return "宏觀與政策風險"
+    if any(kw in merged for kw in ("semiconductor", "nvidia", "tsmc", "samsung")):
+        return "半導體供應鏈"
+    return "社群討論重點"
+
+
+def _topic_key(topic: str) -> str:
+    return _normalize_inline_text(topic).lower().lstrip("#$")
+
+
+def _extract_x_topics(text: str) -> tuple[list[str], list[str]]:
+    normalized = _normalize_inline_text(text)
+    if not normalized:
+        return [], []
+
+    tags_map: dict[str, str] = {}
+    for raw in _X_HASHTAG_RE.findall(normalized):
+        tag = f"#{raw.strip()}"
+        key = tag.lower()
+        if key not in tags_map:
+            tags_map[key] = tag
+    for raw in _X_CASHTAG_RE.findall(normalized):
+        tag = f"${raw.strip().upper()}"
+        key = tag.lower()
+        if key not in tags_map:
+            tags_map[key] = tag
+
+    keywords_map: dict[str, str] = {}
+    domain_suffixes = (".com", ".ai", ".io", ".net", ".org", ".co", ".tw", ".us")
+    for token in _X_ENG_TOKEN_RE.findall(normalized):
+        token_norm = token.strip().lower()
+        if not token_norm or token_norm in _X_TOPIC_STOPWORDS:
+            continue
+        if token_norm.startswith(("http", "www")):
+            continue
+        if token_norm.endswith(domain_suffixes):
+            continue
+        if len(token_norm) < 3:
+            continue
+        if token_norm not in keywords_map:
+            if token.isupper() and len(token) <= 8:
+                keywords_map[token_norm] = token
+            else:
+                keywords_map[token_norm] = token_norm
+
+    for token in _X_CJK_TOKEN_RE.findall(normalized):
+        token_norm = token.strip()
+        if (
+            not token_norm
+            or token_norm in _X_TOPIC_STOPWORDS_ZH
+            or len(token_norm) < 2
+        ):
+            continue
+        key = token_norm.lower()
+        if key not in keywords_map:
+            keywords_map[key] = token_norm
+
+    return list(tags_map.values()), list(keywords_map.values())
+
+
+def _build_x_trends_summary(category: str, articles: list[Article]) -> str:
+    lines = [f"### {category} AI 導讀"]
+    if not articles:
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 主線判讀")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 今日熱門話題（24h）")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 可驗證訊號")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 背後動機")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 共識與分歧")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 影響與機會（若有）")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 代表性貼文（供快速點讀）")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 48h 行動清單")
+        lines.append("- 目前資訊不足以判斷。")
+        return "\n".join(lines)
+
+    tag_refs: dict[str, set[int]] = {}
+    tag_sources: dict[str, set[str]] = {}
+    tag_mentions: dict[str, int] = {}
+    keyword_refs: dict[str, set[int]] = {}
+    keyword_sources: dict[str, set[str]] = {}
+    keyword_mentions: dict[str, int] = {}
+    keyword_display: dict[str, str] = {}
+    signal_buckets: dict[str, set[int]] = {
+        "產品發布 / 模型更新": set(),
+        "算力與成本 / 基礎設施": set(),
+        "企業導入 / 商業化": set(),
+        "治理與政策 / 風險": set(),
+    }
+    speculative_refs: set[int] = set()
+
+    for idx, article in enumerate(articles, 1):
+        source = _normalize_inline_text(article.source) or "unknown"
+        text = _normalize_inline_text(f"{article.title} {article.summary}")
+        text_lc = text.lower()
+        tags, keywords = _extract_x_topics(text)
+
+        for tag in tags[:6]:
+            tag_refs.setdefault(tag, set()).add(idx)
+            tag_sources.setdefault(tag, set()).add(source)
+            tag_mentions[tag] = tag_mentions.get(tag, 0) + 1
+
+        for keyword in keywords[:8]:
+            key = _topic_key(keyword)
+            if not key:
+                continue
+            keyword_refs.setdefault(key, set()).add(idx)
+            keyword_sources.setdefault(key, set()).add(source)
+            keyword_mentions[key] = keyword_mentions.get(key, 0) + 1
+            keyword_display.setdefault(key, keyword)
+
+        if any(
+            kw in text_lc
+            for kw in (
+                "launch",
+                "release",
+                "announc",
+                "preview",
+                "ship",
+                "api",
+                "model",
+                "open-source",
+                "open source",
+                "benchmark",
+                "推出",
+                "發布",
+                "上線",
+                "模型",
+                "開源",
+                "版本",
+            )
+        ):
+            signal_buckets["產品發布 / 模型更新"].add(idx)
+
+        if any(
+            kw in text_lc
+            for kw in (
+                "gpu",
+                "hbm",
+                "cowos",
+                "datacenter",
+                "data center",
+                "inference",
+                "latency",
+                "throughput",
+                "server",
+                "cluster",
+                "token",
+                "capex",
+                "成本",
+                "算力",
+                "推理",
+                "伺服器",
+                "資料中心",
+            )
+        ):
+            signal_buckets["算力與成本 / 基礎設施"].add(idx)
+
+        if any(
+            kw in text_lc
+            for kw in (
+                "enterprise",
+                "customer",
+                "partner",
+                "integration",
+                "deploy",
+                "production",
+                "adoption",
+                "revenue",
+                "合同",
+                "合作",
+                "企業",
+                "客戶",
+                "導入",
+                "商用",
+                "上線",
+            )
+        ):
+            signal_buckets["企業導入 / 商業化"].add(idx)
+
+        if any(
+            kw in text_lc
+            for kw in (
+                "policy",
+                "regulation",
+                "export control",
+                "compliance",
+                "security",
+                "copyright",
+                "監管",
+                "政策",
+                "法規",
+                "風險",
+                "資安",
+                "版權",
+            )
+        ):
+            signal_buckets["治理與政策 / 風險"].add(idx)
+
+        if any(
+            kw in text_lc
+            for kw in (
+                "rumor",
+                "speculation",
+                "unconfirmed",
+                "leak",
+                "傳聞",
+                "未證實",
+                "爆料",
+                "可能",
+            )
+        ):
+            speculative_refs.add(idx)
+
+    scored_topics: list[tuple[str, set[int], set[str], int, float]] = []
+    for tag, refs in tag_refs.items():
+        sources = tag_sources.get(tag, set())
+        mentions = tag_mentions.get(tag, 0)
+        score = len(refs) * 4.0 + len(sources) * 2.0 + min(mentions, 6) * 0.4
+        scored_topics.append((tag, refs, sources, mentions, score))
+
+    tag_keys = {_topic_key(tag) for tag in tag_refs}
+    for key, refs in keyword_refs.items():
+        if key in tag_keys:
+            continue
+        if len(refs) < 2 and key not in _X_PRIORITY_KEYWORDS:
+            continue
+        display = keyword_display.get(key, key)
+        sources = keyword_sources.get(key, set())
+        mentions = keyword_mentions.get(key, 0)
+        score = len(refs) * 3.0 + len(sources) * 1.6 + min(mentions, 6) * 0.3
+        if key in _X_PRIORITY_KEYWORDS:
+            score += 1.8
+        scored_topics.append((display, refs, sources, mentions, score))
+
+    scored_topics.sort(
+        key=lambda item: (
+            item[4],
+            len(item[1]),
+            len(item[2]),
+            item[3],
+            item[0].lower(),
+        ),
+        reverse=True,
+    )
+
+    top_topics: list[tuple[str, set[int], set[str], int]] = []
+    seen_keys: set[str] = set()
+    for topic, refs, sources, mentions, _score in scored_topics:
+        key = _topic_key(topic)
+        if not key or key in seen_keys:
+            continue
+        seen_keys.add(key)
+        top_topics.append((topic, refs, sources, mentions))
+        if len(top_topics) >= 6:
+            break
+
+    lines.append("")
+    lines.append("### 主線判讀")
+    if top_topics:
+        lead_refs: set[int] = set()
+        lead_source_set: set[str] = set()
+        lead_keys: set[str] = set()
+        for topic, refs, sources, _mentions in top_topics[:3]:
+            lead_refs.update(refs)
+            lead_source_set.update(sources)
+            lead_keys.add(_topic_key(topic))
+
+        lead_topics = "、".join(topic for topic, _r, _s, _m in top_topics[:3])
+        lead_narratives: list[str] = []
+        if lead_keys & {
+            "gpu",
+            "hbm",
+            "cowos",
+            "datacenter",
+            "inference",
+            "算力",
+            "成本",
+            "推理",
+        }:
+            lead_narratives.append("算力成本與部署效率")
+        if lead_keys & {
+            "openai",
+            "anthropic",
+            "xai",
+            "claude",
+            "grok",
+            "model",
+            "模型",
+        }:
+            lead_narratives.append("模型與平台發布節奏")
+        if lead_keys & {
+            "mcp",
+            "agent",
+            "agents",
+            "rag",
+            "workflow",
+            "integration",
+            "部署",
+            "導入",
+        }:
+            lead_narratives.append("Agent 工作流與企業導入落地")
+
+        if not lead_narratives:
+            lead_narratives.append("平台動態驅動的短期情緒與主題輪動")
+
+        narrative = "、".join(lead_narratives[:2])
+        lines.append(
+            f"- 今日熱門話題集中在 **{lead_topics}**，核心樣本 {len(lead_refs)} 則、覆蓋 {len(lead_source_set)} 個來源；主軸偏向 **{narrative}**。{_format_citation_refs(lead_refs, max_refs=5)}"
+        )
+        lines.append(
+            f"- 導讀重點：先看「可驗證訊號」是否持續增加，再判斷是否從社群熱度轉為可落地趨勢。{_format_citation_refs(lead_refs, max_refs=4)}"
+        )
+    else:
+        lines.append("- 今日貼文訊號分散，尚未形成明確共識主線。")
+
+    lines.append("")
+    lines.append("### 今日熱門話題（24h）")
+    if top_topics:
+        for topic, refs, sources, mentions in top_topics:
+            conviction = "高共識" if len(sources) >= 3 else "早期訊號"
+            lines.append(
+                f"- **{topic}**：{len(refs)} 則貼文、{mentions} 次提及、跨 {len(sources)} 來源（{conviction}）。{_format_citation_refs(refs, max_refs=4)}"
+            )
+    else:
+        lines.append("- 目前資訊不足以判斷。")
+
+    lines.append("")
+    lines.append("### 可驗證訊號")
+    ranked_buckets = sorted(
+        (
+            (name, refs)
+            for name, refs in signal_buckets.items()
+            if refs
+        ),
+        key=lambda item: (len(item[1]), item[0]),
+        reverse=True,
+    )
+    if ranked_buckets:
+        for bucket_name, refs in ranked_buckets[:4]:
+            lines.append(
+                f"- **{bucket_name}**：{len(refs)} 則貼文含可驗證關鍵詞，建議優先追蹤官方公告、版本與部署案例。{_format_citation_refs(refs, max_refs=4)}"
+            )
+    else:
+        lines.append("- 尚未看到足夠可驗證訊號，暫以觀察為主。")
+
+    lines.append("")
+    lines.append("### 背後動機")
+    if top_topics:
+        motive_refs: set[int] = set()
+        for _topic, refs, _sources, _mentions in top_topics[:3]:
+            motive_refs.update(refs)
+        motive_topics = "、".join(topic for topic, _r, _s, _m in top_topics[:3])
+        lines.append(
+            f"- 討論快速升溫的主因是 **{motive_topics}** 同時出現，社群焦點從單一新聞轉向可驗證的部署與採用訊號。{_format_citation_refs(motive_refs, max_refs=5)}"
+        )
+        if ranked_buckets:
+            top_bucket_name, top_bucket_refs = ranked_buckets[0]
+            lines.append(
+                f"- 目前最強驅動因子是 **{top_bucket_name}**，代表關注點已進入「能否落地、誰先受益、成本是否可控」的階段。{_format_citation_refs(top_bucket_refs, max_refs=4)}"
+            )
+        else:
+            lines.append("- 目前可驗證樣本仍少，背後動機暫以早期討論擴散看待。")
+    else:
+        lines.append("- 目前資訊不足以判斷。")
+
+    lines.append("")
+    lines.append("### 共識與分歧")
+    consensus_topics: list[tuple[str, set[int], set[str], int]] = []
+    divergence_topics: list[tuple[str, set[int], set[str], int]] = []
+    for topic, refs, sources, mentions in top_topics:
+        if len(refs) >= 3 and len(sources) >= 3:
+            consensus_topics.append((topic, refs, sources, mentions))
+        elif len(refs) >= 2 and len(sources) <= 2:
+            divergence_topics.append((topic, refs, sources, mentions))
+
+    if consensus_topics:
+        refs: set[int] = set()
+        topic_names: list[str] = []
+        for topic, topic_refs, _sources, _mentions in consensus_topics[:3]:
+            refs.update(topic_refs)
+            topic_names.append(topic)
+        lines.append(
+            f"- **共識區**：{ '、'.join(topic_names) } 已跨多來源重複出現，短期延續機率較高。{_format_citation_refs(refs, max_refs=5)}"
+        )
+    else:
+        lines.append("- **共識區**：目前尚未形成跨來源的穩定共識。")
+
+    if divergence_topics:
+        refs = set()
+        topic_names = []
+        for topic, topic_refs, _sources, _mentions in divergence_topics[:3]:
+            refs.update(topic_refs)
+            topic_names.append(topic)
+        lines.append(
+            f"- **分歧區**：{ '、'.join(topic_names) } 目前多集中於少數來源，先當早期訊號，不急著放大解讀。{_format_citation_refs(refs, max_refs=5)}"
+        )
+    else:
+        lines.append("- **分歧區**：目前未見明顯單一來源壟斷議題。")
+
+    if speculative_refs:
+        lines.append(
+            f"- **噪訊提醒**：{len(speculative_refs)}/{len(articles)} 則貼文帶有傳聞或未證實措辭，建議降權處理。{_format_citation_refs(speculative_refs, max_refs=4)}"
+        )
+
+    lines.append("")
+    lines.append("### 影響與機會（若有）")
+    if ranked_buckets:
+        opportunity_lines: list[tuple[str, set[int]]] = []
+        risk_lines: list[tuple[str, set[int]]] = []
+        for bucket_name, refs in ranked_buckets:
+            if bucket_name == "產品發布 / 模型更新":
+                opportunity_lines.append(
+                    (
+                        "- **機會鏈**：模型與平台更新加速，較可能先影響 API 平台、模型服務與生態整合工具。",
+                        refs,
+                    )
+                )
+            elif bucket_name == "算力與成本 / 基礎設施":
+                opportunity_lines.append(
+                    (
+                        "- **機會鏈**：算力與成本討論升溫，優先關注 GPU 供應鏈、資料中心電力/散熱與雲推理服務。",
+                        refs,
+                    )
+                )
+            elif bucket_name == "企業導入 / 商業化":
+                opportunity_lines.append(
+                    (
+                        "- **影響點**：企業導入訊號增加，可能帶動企業軟體、SI 與治理/觀測工具需求。",
+                        refs,
+                    )
+                )
+            elif bucket_name == "治理與政策 / 風險":
+                risk_lines.append(
+                    (
+                        "- **風險鏈**：治理與政策議題升溫，合規與審查成本上升可能延後實際採用時程。",
+                        refs,
+                    )
+                )
+
+        emitted = False
+        for text, refs in opportunity_lines[:3]:
+            if len(refs) >= 3:
+                lines.append(f"{text}{_format_citation_refs(refs, max_refs=4)}")
+                emitted = True
+        for text, refs in risk_lines[:2]:
+            if len(refs) >= 2:
+                lines.append(f"{text}{_format_citation_refs(refs, max_refs=4)}")
+                emitted = True
+        if not emitted:
+            lead_refs: set[int] = set()
+            for _topic, refs, _sources, _mentions in top_topics[:3]:
+                lead_refs.update(refs)
+            lines.append(
+                f"- **影響判讀**：目前以早期討論為主，先觀察是否出現跨來源、可量化的採用與部署證據，再決定是否提升權重。{_format_citation_refs(lead_refs, max_refs=4)}"
+            )
+    else:
+        lines.append("- 目前資訊不足以判斷。")
+
+    lines.append("")
+    lines.append("### 代表性貼文（供快速點讀）")
+    ranked_posts: list[tuple[float, int, Article]] = []
+    topic_keys = {_topic_key(topic) for topic, _r, _s, _m in top_topics}
+    for idx, article in enumerate(articles, 1):
+        score = _article_signal_score(article)
+        article_text = f"{article.title} {article.summary}".lower()
+        overlap = 0
+        for topic_key in topic_keys:
+            if topic_key and topic_key in article_text:
+                overlap += 1
+        score += overlap * 2.4
+        ranked_posts.append((score, idx, article))
+    ranked_posts.sort(key=lambda row: (row[0], row[2].published.timestamp(), -row[1]), reverse=True)
+
+    for _score, idx, article in ranked_posts[:3]:
+        lines.append(
+            f"- {_shorten_line(article.title)}（{_normalize_inline_text(article.source)}）[{idx}]"
+        )
+
+    lines.append("")
+    lines.append("### 48h 行動清單")
+    if top_topics:
+        for topic, refs, sources, _mentions in top_topics[:3]:
+            lines.append(
+                f"- 追蹤 **{topic}** 是否在 48h 內新增官方/產品/部署佐證；若討論快速降為單一來源，視為短期噪訊。{_format_citation_refs(refs, max_refs=4)}"
+            )
+        if speculative_refs:
+            lines.append(
+                f"- 傳聞型議題需至少 2 個獨立來源或官方帳號確認，再提升決策權重。{_format_citation_refs(speculative_refs, max_refs=4)}"
+            )
+    else:
+        lines.append("- 追蹤是否出現跨來源重複議題，且有可驗證的企業採用訊號。")
+
+    lines.append("")
+    lines.append("### 社群在討論什麼（內文）")
+    topic_keys = {_topic_key(topic) for topic, _r, _s, _m in top_topics}
+    ranked_posts: list[tuple[float, int, Article]] = []
+    for idx, article in enumerate(articles, 1):
+        score = _article_signal_score(article)
+        article_text = f"{article.title} {article.summary}".lower()
+        overlap = 0
+        for topic_key in topic_keys:
+            if topic_key and topic_key in article_text:
+                overlap += 1
+        score += overlap * 2.4
+        ranked_posts.append((score, idx, article))
+    ranked_posts.sort(
+        key=lambda row: (row[0], row[2].published.timestamp(), -row[1]), reverse=True
+    )
+
+    seen_discussion_fp: set[str] = set()
+    discussion_lines: list[str] = []
+    for _score, idx, article in ranked_posts:
+        text = _clean_x_discussion_text(article.summary) or _clean_x_discussion_text(
+            article.title
+        )
+        if not text or _is_low_signal_x_discussion(text):
+            continue
+        fp = _title_fingerprint(text)
+        if fp and fp in seen_discussion_fp:
+            continue
+        if fp:
+            seen_discussion_fp.add(fp)
+        theme = _infer_x_discussion_theme(article, text)
+        discussion_lines.append(
+            f"- **{theme}**：{_shorten_line(text, max_len=100)}[{idx}]"
+        )
+        if len(discussion_lines) >= 5:
+            break
+
+    if discussion_lines:
+        lines.extend(discussion_lines)
+    else:
+        lines.append("- 目前資訊不足以判斷。")
+
+    return "\n".join(lines)
+
+
+def _build_ai_practice_hotlist_summary(category: str, articles: list[Article]) -> str:
+    lines = [f"### {category} 今日可落地訊號", "", "### 熱門開源專案"]
+    if not articles:
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 企業採用與產業影響")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 噪訊過濾")
+        lines.append("- 目前資訊不足以判斷。")
+        lines.append("")
+        lines.append("### 48h 追蹤")
+        lines.append("- 目前資訊不足以判斷。")
+        return "\n".join(lines)
+
+    repo_scores: dict[str, float] = {}
+    repo_mentions: dict[str, int] = {}
+    repo_titles: dict[str, list[str]] = {}
+    repo_citations: dict[str, set[int]] = {}
+    repo_sources: dict[str, set[str]] = {}
+    low_signal_refs: set[int] = set()
+    adoption_refs: set[int] = set()
+    topic_refs: dict[str, set[int]] = {
+        "Agent / MCP 工具鏈": set(),
+        "RAG / 知識檢索": set(),
+        "推理成本與部署": set(),
+        "評測與治理": set(),
     }
 
-    builder = builders.get(prompt_type, _build_news_prompt)
-    return builder(category, articles_text)
+    for idx, article in enumerate(articles, 1):
+        title_lc = f"{article.title} {article.summary}".lower()
+        if _is_second_hand_article(article) or _host_matches(
+            _article_host(article), _LOW_SIGNAL_CONTENT_HOSTS
+        ):
+            low_signal_refs.add(idx)
+
+        if any(
+            kw in title_lc
+            for kw in (
+                "deploy",
+                "integration",
+                "enterprise",
+                "production",
+                "adoption",
+                "pilot",
+                "poc",
+                "落地",
+                "導入",
+                "採用",
+                "上線",
+            )
+        ):
+            adoption_refs.add(idx)
+
+        if any(kw in title_lc for kw in ("agent", "mcp", "copilot", "tool use", "workflow")):
+            topic_refs["Agent / MCP 工具鏈"].add(idx)
+        if any(kw in title_lc for kw in ("rag", "retrieval", "vector", "embedding", "knowledge")):
+            topic_refs["RAG / 知識檢索"].add(idx)
+        if any(kw in title_lc for kw in ("inference", "latency", "token", "deploy", "production", "on-device", "成本")):
+            topic_refs["推理成本與部署"].add(idx)
+        if any(kw in title_lc for kw in ("eval", "benchmark", "safety", "security", "governance", "guardrail")):
+            topic_refs["評測與治理"].add(idx)
+
+        slug = _article_repo_slug(article)
+        if not slug:
+            continue
+
+        repo_scores[slug] = repo_scores.get(slug, 0.0) + max(
+            1.0, _article_signal_score(article)
+        )
+        repo_mentions[slug] = repo_mentions.get(slug, 0) + 1
+        repo_citations.setdefault(slug, set()).add(idx)
+        repo_sources.setdefault(slug, set()).add(_normalize_inline_text(article.source))
+
+        title_bucket = repo_titles.setdefault(slug, [])
+        normalized_title = _normalize_inline_text(article.title)
+        if normalized_title and len(title_bucket) < 2:
+            title_bucket.append(normalized_title)
+
+    ranked_repos = sorted(
+        repo_scores.keys(),
+        key=lambda slug: (
+            repo_scores.get(slug, 0.0),
+            repo_mentions.get(slug, 0),
+            len(repo_citations.get(slug, set())),
+        ),
+        reverse=True,
+    )
+    top_repos = ranked_repos[:6]
+    hot_topics = sorted(
+        (
+            (topic, refs)
+            for topic, refs in topic_refs.items()
+            if refs
+        ),
+        key=lambda item: len(item[1]),
+        reverse=True,
+    )
+
+    if top_repos:
+        for slug in top_repos:
+            title = (repo_titles.get(slug) or [""])[0]
+            mentions = repo_mentions.get(slug, 0)
+            source_count = len(repo_sources.get(slug, set()))
+            signal = _summarize_repo_signal(title, slug)
+            refs = _format_citation_refs(repo_citations.get(slug, set()))
+            lines.append(
+                f"- **{slug}**：{signal}；24h 內出現 {mentions} 次、跨 {source_count} 個來源。{refs}"
+            )
+    else:
+        if hot_topics:
+            for topic, refs in hot_topics[:4]:
+                lines.append(
+                    f"- **{topic}**：近期討論度上升，優先追蹤可重現案例與部署成本。{_format_citation_refs(refs, max_refs=4)}"
+                )
+        else:
+            lines.append("- 今天未偵測到明確 GitHub repo 熱點，先保留觀察。")
+
+    lines.append("")
+    lines.append("### 企業採用與產業影響")
+
+    impact_lines: list[str] = []
+    for slug in top_repos[:3]:
+        slug_lc = slug.lower()
+        refs = _format_citation_refs(repo_citations.get(slug, set()))
+        if any(key in slug_lc for key in ("mcp", "agent", "workflow", "orchestr")):
+            impact_lines.append(
+                f"- Agent/MCP 工具鏈熱度上升，企業採用關鍵在權限治理與可觀測性；受益在 API 平台與 DevTool 生態。{refs}"
+            )
+        elif any(key in slug_lc for key in ("rag", "retriev", "vector", "embedding")):
+            impact_lines.append(
+                f"- 檢索與資料連接工具升溫，企業落地重點轉向資料治理與成本控制；受益在資料平台與向量基建。{refs}"
+            )
+        elif any(key in slug_lc for key in ("eval", "benchmark", "guard", "safety", "secure")):
+            impact_lines.append(
+                f"- 評測與安全治理工具被重視，採購優先序會偏向可稽核與可量測成效的方案。{refs}"
+            )
+        else:
+            impact_lines.append(
+                f"- 開發流程工具化持續擴散，企業會優先評估可縮短 PoC 到正式上線時間的解法。{refs}"
+            )
+
+    if impact_lines:
+        lines.extend(impact_lines)
+    elif hot_topics:
+        for topic, refs in hot_topics[:3]:
+            lines.append(
+                f"- {topic} 相關討論升溫，企業採用需確認是否有正式部署與可量化成效。{_format_citation_refs(refs, max_refs=4)}"
+            )
+    elif adoption_refs:
+        lines.append(
+            f"- 今日可見初步導入訊號，但案例仍有限，先觀察是否出現連續企業採用公告。{_format_citation_refs(adoption_refs)}"
+        )
+    else:
+        lines.append("- 目前資訊不足以判斷。")
+
+    lines.append("")
+    lines.append("### 噪訊過濾")
+    if low_signal_refs:
+        lines.append(
+            f"- 樣本中有 {len(low_signal_refs)}/{len(articles)} 篇來自聚合或個人平台；若缺少程式碼、benchmark、部署細節，先視為觀察訊號。{_format_citation_refs(low_signal_refs, max_refs=4)}"
+        )
+    else:
+        lines.append("- 今日主要來源以原始資訊為主，噪訊相對可控。")
+
+    repeated = [slug for slug in top_repos if repo_mentions.get(slug, 0) >= 2]
+    if repeated:
+        repeated_refs: set[int] = set()
+        for slug in repeated[:3]:
+            repeated_refs.update(repo_citations.get(slug, set()))
+        lines.append(
+            f"- 重複被提及的專案：{', '.join(repeated[:3])}，優先追蹤是否從討論轉向正式版本/企業案例。{_format_citation_refs(repeated_refs, max_refs=4)}"
+        )
+    else:
+        lines.append("- 單點爆紅但無連續證據的條目，暫不視為結構性趨勢。")
+
+    lines.append("")
+    lines.append("### 48h 追蹤")
+    if top_repos:
+        for slug in top_repos[:3]:
+            refs = _format_citation_refs(repo_citations.get(slug, set()))
+            lines.append(
+                f"- 追蹤 **{slug}** 的 star、issue、release 是否連兩天增長；若同步出現企業導入案例，代表熱度轉為採用。{refs}"
+            )
+    elif hot_topics:
+        for topic, refs in hot_topics[:3]:
+            lines.append(
+                f"- 追蹤 **{topic}** 是否連續兩天被多來源提及，且出現可重現部署案例。{_format_citation_refs(refs, max_refs=4)}"
+            )
+    else:
+        lines.append("- 追蹤 GitHub Trending 是否出現連續兩天重複 repo。")
+        lines.append("- 追蹤是否有企業官方部落格公布導入案例。")
+        lines.append("- 追蹤是否出現可重現 benchmark 與部署指標。")
+
+    return "\n".join(lines)
 
 
-def _build_news_prompt(category: str, articles_text: str) -> str:
-    """一般新聞摘要 prompt"""
-    return f"""你是一位專業的財經新聞編輯，讀者是科技業投資人。以下是今天 **{category}** 的新聞。
+def _prepare_summary_articles(
+    articles: list[Article],
+    category: str,
+    prompt_type: str,
+) -> tuple[list[Article], list[Article], dict[str, int | bool]]:
+    stats: dict[str, int | bool] = {
+        "input_total": len(articles),
+        "dropped_no_body": 0,
+        "dropped_title_dup": 0,
+        "dropped_low_signal": 0,
+        "dropped_secondary_source": 0,
+        "dropped_source_cap": 0,
+        "dropped_input_budget": 0,
+        "dropped_max_articles": 0,
+        "selected_total": 0,
+        "truncated": False,
+        "ranking_enabled": SUMMARY_SIGNAL_RANKING,
+        "primary_mode": False,
+    }
 
-讀完後整理成一篇精煉的中文短文，**聚焦有投資 insight 的新聞**。
+    body_articles = [a for a in articles if _has_article_body(a)]
+    stats["dropped_no_body"] = len(articles) - len(body_articles)
 
-### 格式要求
+    deduped_articles, dropped_dup = _dedupe_by_title(body_articles)
+    stats["dropped_title_dup"] = dropped_dup
 
-用 `### 主題名稱` 分成 3-5 個主題段落。每段 2-4 句，段末列引用來源。
+    if SUMMARY_FULL_READ_MODE:
+        ranked_articles = _rank_articles_by_signal(deduped_articles)
+        filtered_articles = ranked_articles
+        stats["dropped_low_signal"] = 0
+        stats["dropped_secondary_source"] = 0
+        stats["primary_mode"] = False
+        stats["dropped_source_cap"] = 0
+        stats["dropped_input_budget"] = 0
+        budgeted_articles = filtered_articles
+    else:
+        filtered_articles, dropped_low_signal = _filter_low_signal_articles(
+            deduped_articles
+        )
+        stats["dropped_low_signal"] = dropped_low_signal
 
-### 讀者關心什麼（依此篩選重點）
-- 企業擴產、資本支出、併購動態（誰投多少錢做什麼）
-- 政策變動對產業鏈的實際影響（關稅、補貼、監管）
-- 供應鏈重組訊號（轉單、新廠、良率、產能）
-- 科技大廠的技術路線變動（改用什麼架構、棄用什麼）
-- 央行決策背後的具體數據與邏輯
+        ranked_articles = _rank_articles_by_signal(filtered_articles)
 
-### 不要寫的
-- 空洞結論：「看多」「看空」「需求強勁」「持續成長」
-- 沒有具體數字的泛泛敘述
-- 股價漲跌的日內波動分析
+        primary_filtered_articles, dropped_secondary, primary_mode = (
+            _filter_primary_source_articles(category, prompt_type, ranked_articles)
+        )
+        stats["dropped_secondary_source"] = dropped_secondary
+        stats["primary_mode"] = primary_mode in {"strict", "relaxed"}
 
-⚠️ 規則：
-- 用**繁體中文**
-- 每段 2-4 句，要具體（金額、人名、數據）
-- 來源用 `▸ [短標題](url) (MM/DD HH:MM)` 格式，短標題不超過 20 字，括號內是新聞發布時間
-- 寫「為什麼會這樣」— 因果脈絡，不要預測未來
-- 直接輸出，不要開場白
+        source_capped_articles, dropped_source = _cap_articles_per_source(
+            primary_filtered_articles
+        )
+        stats["dropped_source_cap"] = dropped_source
 
-以下是今天的新聞：
+        budgeted_articles, dropped_budget = _apply_input_char_budget(
+            source_capped_articles
+        )
+        stats["dropped_input_budget"] = dropped_budget
+
+    selected_articles = budgeted_articles
+    if (
+        not SUMMARY_FULL_READ_MODE
+        and SUMMARY_MAX_ARTICLES > 0
+        and len(selected_articles) > SUMMARY_MAX_ARTICLES
+    ):
+        stats["dropped_max_articles"] = len(selected_articles) - SUMMARY_MAX_ARTICLES
+        selected_articles = selected_articles[:SUMMARY_MAX_ARTICLES]
+
+    dropped_total = (
+        int(stats["dropped_no_body"])
+        + int(stats["dropped_title_dup"])
+        + int(stats["dropped_low_signal"])
+        + int(stats["dropped_secondary_source"])
+        + int(stats["dropped_source_cap"])
+        + int(stats["dropped_input_budget"])
+        + int(stats["dropped_max_articles"])
+    )
+    stats["selected_total"] = len(selected_articles)
+    stats["truncated"] = dropped_total > 0 and len(selected_articles) > 0
+    return body_articles, selected_articles, stats
+
+
+def build_citation_link_map(category: str, articles: list[Article]) -> dict[int, str]:
+    """建立摘要引用編號 [n] 對應原文連結"""
+    prompt_type = _get_prompt_type(category, articles)
+    _, selected_articles, _ = _prepare_summary_articles(articles, category, prompt_type)
+    return {idx: article.link for idx, article in enumerate(selected_articles, 1)}
+
+
+def build_all_citation_links(
+    all_articles: dict[str, list[Article]],
+) -> dict[str, dict[int, str]]:
+    return {
+        category: build_citation_link_map(category, articles)
+        for category, articles in all_articles.items()
+    }
+
+
+def _citation_rules(min_citations: int) -> str:
+    citation_count = max(2, min_citations)
+    return """
+### 事實規範（強制）
+- 只能使用「以下是今天的新聞內文」中可見的事實，禁止使用外部知識補齊。
+- 關鍵事實句（數字、時間、政策、公司動作）後必須標註來源編號 `[n]`。
+- 禁止輸出占位符（例如 `[n]`、`[來源]`）；必須使用真實數字編號（例如 `[3]`）。
+- 全文至少放 {citation_count} 個 `[n]`，且 `[n]` 必須對應輸入新聞編號。
+- 不可杜撰、不過度延伸；若資訊不足，直接寫「目前資訊不足以判斷」。
+- 不要做明確漲跌預測或確定性結論，僅做基於事實的推論。
+""".format(citation_count=citation_count)
+
+
+def _extract_json_error_message(raw_output: str) -> str | None:
+    for line in (raw_output or "").splitlines():
+        line = line.strip()
+        if not line or not line.startswith("{"):
+            continue
+
+        try:
+            event = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+
+        if event.get("type") == "error":
+            message = event.get("message")
+            if isinstance(message, str) and message.strip():
+                return message.strip()
+
+        if event.get("type") == "turn.failed":
+            err = event.get("error", {})
+            if isinstance(err, dict):
+                message = err.get("message")
+                if isinstance(message, str) and message.strip():
+                    return message.strip()
+    return None
+
+
+def _extract_text_from_azure_response(data: dict) -> str:
+    # Responses API
+    output_text = data.get("output_text")
+    if isinstance(output_text, str) and output_text.strip():
+        return output_text.strip()
+
+    # Chat Completions API
+    choices = data.get("choices")
+    if isinstance(choices, list) and choices:
+        first = choices[0]
+        if isinstance(first, dict):
+            message = first.get("message", {})
+            if isinstance(message, dict):
+                content = message.get("content")
+                if isinstance(content, str):
+                    return content.strip()
+                if isinstance(content, list):
+                    text_parts = []
+                    for item in content:
+                        if isinstance(item, dict):
+                            text = item.get("text")
+                            if isinstance(text, str) and text.strip():
+                                text_parts.append(text.strip())
+                    if text_parts:
+                        return "\n\n".join(text_parts)
+
+    # Fallback for newer schema variants
+    output = data.get("output")
+    if isinstance(output, list):
+        text_parts = []
+        for item in output:
+            if not isinstance(item, dict):
+                continue
+            content = item.get("content")
+            if not isinstance(content, list):
+                continue
+            for chunk in content:
+                if isinstance(chunk, dict):
+                    text = chunk.get("text")
+                    if isinstance(text, str) and text.strip():
+                        text_parts.append(text.strip())
+        if text_parts:
+            return "\n\n".join(text_parts)
+
+    return ""
+
+
+def _summarize_with_azure(prompt: str, category: str) -> str | None:
+    import time
+
+    if not _azure_enabled():
+        return None
+
+    start_time = time.time()
+    print(f"    ⏱️ Calling Azure OpenAI API ({AZURE_OPENAI_MODEL})...", flush=True)
+
+    url = AZURE_OPENAI_URL
+    if not url:
+        return None
+    url_lc = url.lower()
+    endpoint = "responses" if "/responses" in url_lc else "chat.completions"
+    reasoning_effort = _normalize_reasoning_effort(AZURE_OPENAI_REASONING_EFFORT)
+    verbosity = _normalize_verbosity(AZURE_OPENAI_VERBOSITY)
+    print(
+        "    ⚙️ Azure params: "
+        f"endpoint={endpoint} "
+        f"reasoning={reasoning_effort or 'default'} "
+        f"verbosity={verbosity or 'default'}",
+        flush=True,
+    )
+
+    if endpoint == "responses":
+        payload = {
+            "model": AZURE_OPENAI_MODEL,
+            "input": prompt,
+        }
+        if reasoning_effort:
+            payload["reasoning"] = {"effort": reasoning_effort}
+        if verbosity:
+            payload["text"] = {"verbosity": verbosity}
+    else:
+        payload = {
+            "model": AZURE_OPENAI_MODEL,
+            "messages": [{"role": "user", "content": prompt}],
+        }
+        if reasoning_effort:
+            payload["reasoning_effort"] = reasoning_effort
+        if verbosity:
+            payload["verbosity"] = verbosity
+
+    req = urllib.request.Request(
+        url=url,
+        data=json.dumps(payload).encode("utf-8"),
+        method="POST",
+    )
+    req.add_header("Content-Type", "application/json")
+    req.add_header("api-key", AZURE_OPENAI_API_KEY)
+    req.add_header("Authorization", f"Bearer {AZURE_OPENAI_API_KEY}")
+
+    max_attempts = AZURE_OPENAI_MAX_RETRIES
+    for attempt in range(1, max_attempts + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=AZURE_OPENAI_TIMEOUT_SEC) as resp:
+                raw = resp.read().decode("utf-8", errors="ignore")
+            data = json.loads(raw)
+            in_tok, out_tok = _extract_usage_tokens(data)
+            _record_usage(in_tok, out_tok)
+            text = _extract_text_from_azure_response(data)
+            elapsed = time.time() - start_time
+            print(
+                f"    ⏱️ API returned in {elapsed:.1f}s ({AZURE_OPENAI_MODEL}) in={in_tok} out={out_tok}",
+                flush=True,
+            )
+            return text or None
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="ignore")
+            if e.code == 429 and attempt < max_attempts:
+                retry_after = 0.0
+                if hasattr(e, "headers") and e.headers:
+                    try:
+                        retry_after = float(e.headers.get("Retry-After", "0") or 0)
+                    except (TypeError, ValueError):
+                        retry_after = 0.0
+                wait_sec = max(
+                    retry_after, AZURE_OPENAI_RETRY_BASE_SEC * (2 ** (attempt - 1))
+                )
+                print(
+                    f"  ⚠️ Azure HTTP 429 ({category})，{wait_sec:.0f}s 後重試 "
+                    f"{attempt}/{max_attempts}: {body[:160]}",
+                    flush=True,
+                )
+                time.sleep(wait_sec)
+                continue
+
+            print(f"  ⚠️ Azure HTTP {e.code} ({category}): {body[:240]}", flush=True)
+            return None
+        except Exception as e:
+            print(f"  ⚠️ Azure 錯誤 ({category}): {e}", flush=True)
+            return None
+
+    return None
+
+
+def _category_focus(prompt_type: str) -> str:
+    p = _load_persona()
+    cf = p.get("category_focus", {})
+    fallback = {
+        "news": "資本支出增減、利率/通膨數據、企業獲利與 guidance。",
+        "finance": "資本支出增減、利率/通膨數據、企業獲利與 guidance。",
+        "geopolitics": "出口管制、關稅變動、補貼政策、供應鏈重組。",
+        "semiconductor": "製程/產能/良率、先進封裝、記憶體、設備訂單。",
+        "tech_industry": "大廠策略轉向、產品路線圖、供應鏈連鎖影響。",
+        "ai_research": "模型能力突破、推理成本、部署條件、商業化可行性。",
+        "ai_practice": "可落地工具、企業採用訊號、成本效益指標。",
+        "x_trends": "社群情緒主線、可驗證訊號、分歧點。",
+        "deep_analysis": "結構性產業變化、長期趨勢轉折。",
+    }
+    focus_text = cf.get(prompt_type, fallback.get(prompt_type, fallback["news"]))
+    return f"- 本分類關注：{focus_text}"
+
+
+def _build_category_synthesis_prompt(
+    category: str, prompt_type: str, articles_text: str
+) -> str:
+    agent_key = _resolve_agent_key(category, prompt_type)
+    agents = _load_category_agents()
+    agent = agents.get(agent_key, {})
+    base = _load_persona()
+
+    persona_text = agent.get("persona", "資深產業研究分析師")
+    framework = agent.get("framework", "").strip()
+    key_metrics = agent.get("key_metrics", [])
+    output_sections = agent.get("output_sections", [])
+    agent_anti = agent.get("anti_patterns", [])
+    global_anti = base.get("global_anti_patterns", [])
+
+    # 分析框架
+    framework_blk = f"\n### 分析框架\n{framework}" if framework else ""
+
+    # 關鍵指標
+    metrics_blk = ""
+    if key_metrics:
+        metrics_lines = "\n".join(f"- {m}" for m in key_metrics)
+        metrics_blk = f"\n### 關鍵指標\n{metrics_lines}"
+
+    # 關注板塊（ai_practice 為技術雷達，不顯示投資板塊）
+    sectors_blk = ""
+    if agent_key != "ai_practice":
+        sectors = base.get("focus_sectors", [])
+        if sectors:
+            sectors_lines = "\n".join(f"- {s}" for s in sectors)
+            sectors_blk = f"\n### 關注板塊\n{sectors_lines}"
+
+    # 輸出格式（從 config 的 output_sections 動態生成）
+    output_blk = f"### {category} 今日主軸\n2-3 句，概述今天最關鍵的變化。\n"
+    for section in output_sections:
+        output_blk += f"\n### {section}\n"
+
+    # 禁止事項（agent 專屬 + 全域）
+    all_anti = agent_anti + global_anti
+    anti_lines = "\n".join(f"- {a}" for a in all_anti)
+    anti_blk = f"\n### 禁止事項\n{anti_lines}" if all_anti else ""
+
+    return f"""你是{persona_text}。以下是 [{category}] 的新聞全文。
+{sectors_blk}
+{framework_blk}
+{metrics_blk}
+
+### 任務
+讀完所有內文後，根據上述分析框架產出專業級分析報告。
+
+### 輸出格式
+{output_blk}
+{anti_blk}
+
+### 規則
+- 繁體中文，重要事實附 [n]
+- 每點要有具體數字或事實支撐
+- 直接輸出，不要開場白，不要結尾問話或補充說明
+
+以下是今天的新聞內文：
 {articles_text}
 """
 
 
-def _build_ai_practice_prompt(category: str, articles_text: str) -> str:
-    """AI 實戰應用專屬 prompt — 著重工具用法、GitHub 熱門、社群討論"""
-    return f"""你是一位 AI/LLM 實戰專家。以下是今天從 GitHub Trending、Dev.to、Lobsters、Hacker News 等來源收集的內容。
+def build_prompt(
+    category: str,
+    articles: list[Article],
+    prompt_type: str = "news",
+    start_index: int = 1,
+) -> str:
+    """建立分類摘要 prompt（全量內文綜整）"""
+    selected_articles = articles
+    if (
+        not SUMMARY_FULL_READ_MODE
+        and SUMMARY_MAX_ARTICLES > 0
+        and len(articles) > SUMMARY_MAX_ARTICLES
+    ):
+        selected_articles = articles[:SUMMARY_MAX_ARTICLES]
+    articles_text = _build_articles_text(selected_articles, start_index=start_index)
+    min_citations = _min_citations_for_article_count(len(selected_articles))
+    return (
+        _build_category_synthesis_prompt(category, prompt_type, articles_text)
+        + "\n\n"
+        + _citation_rules(min_citations)
+    )
 
-讀完後整理成一篇**實戰導向的技術短文**。
 
-### 格式要求
+def _chunk_articles(articles: list[Article], chunk_size: int) -> list[list[Article]]:
+    if chunk_size <= 0:
+        return [articles]
+    return [articles[i : i + chunk_size] for i in range(0, len(articles), chunk_size)]
 
-用以下三個 `### 標題` 分段，每段 2-4 句話講重點，段末列出引用來源：
 
-### 🔥 熱門專案
-挑 3-5 個最值得關注的 AI/LLM 專案，每個一句話說明用途與亮點。特別關注 Claude、Codex、Agent、MCP、RAG 相關的。
+def _build_category_merge_prompt(
+    category: str, prompt_type: str, chunk_summaries: list[str], total_articles: int
+) -> str:
+    agent_key = _resolve_agent_key(category, prompt_type)
+    agents = _load_category_agents()
+    agent = agents.get(agent_key, {})
+    base = _load_persona()
 
-### 🛠️ 實戰技巧
-社群文章裡有什麼可以直接拿來用的？講清楚怎麼用、解決什麼問題。
+    persona_text = agent.get("persona", "資深產業研究分析師")
+    output_sections = agent.get("output_sections", [])
+    agent_anti = agent.get("anti_patterns", [])
+    global_anti = base.get("global_anti_patterns", [])
 
-### 🌊 社群動態
-開發者在熱議什麼？什麼新趨勢正在形成？
+    merged_input = ""
+    for i, summary in enumerate(chunk_summaries, 1):
+        merged_input += f"\n### 分段 {i}\n{summary.strip()}\n"
 
-每段末尾另起一行列引用，格式：`▸ [專案名或短標題](連結)`
+    # 輸出格式
+    output_blk = f"### {category} 今日主軸\n2-3 句概述。\n"
+    for section in output_sections:
+        output_blk += f"\n### {section}\n"
 
-⚠️ 規則：
-- 用**繁體中文**
-- 每段簡短，不要超過 4 句正文
-- 來源用 `▸ [短標題](url) (MM/DD HH:MM)` 格式，括號內是新聞發布時間
-- 過濾垃圾內容，只留有價值的
-- 直接輸出，不要開場白
+    # 禁止事項
+    all_anti = agent_anti + global_anti
+    anti_lines = "\n".join(f"- {a}" for a in all_anti)
+    anti_blk = f"\n### 禁止事項\n{anti_lines}" if all_anti else ""
 
-以下是今天的內容：
-{articles_text}
+    return f"""你是{persona_text}。以下是 [{category}] 的分段摘要（總計 {total_articles} 篇）。
+請整合成一份完整分析報告：合併重複訊號、保留深度分析、強化因果判斷。
+
+### 輸出格式
+{output_blk}
+{anti_blk}
+
+### 規則
+- 繁體中文，可沿用已存在的 [n]，不可杜撰新編號
+- 每點要有具體數字或事實支撐
+- 直接輸出，不要開場白，不要結尾問話或補充說明
+- 重要：只輸出一份摘要，不要重複段落
+
+以下是分段摘要：
+{merged_input}
 """
 
 
-def _build_tech_industry_prompt(category: str, articles_text: str) -> str:
-    """科技產業動態 prompt — 聚焦大廠決策、擴產、架構轉向"""
-    return f"""你是一位科技產業分析師。以下是今天 **{category}** 的新聞。
-
-讀完後整理成一篇精煉短文，**聚焦對投資決策有價值的產業動態**。
-
-### 格式要求
-
-用 `### 主題名稱` 分段，每段 2-4 句話，段末列引用來源。
-
-### 讀者關心什麼（依此篩選重點）
-- 大廠技術決策：誰改用什麼架構？新產品用什麼技術棧？
-- 擴產與資本支出：誰在蓋廠、投多少錢、產能規劃
-- 供應鏈變動：誰換供應商、誰拿到新訂單、良率變化
-- AI 基礎設施：資料中心、GPU 算力、雲端服務的實際部署動態
-- 重大產品發布或技術突破的具體規格與數據
-
-### 不要寫的
-- 泛泛的「AI 需求持續成長」之類的廢話
-- 沒有具體數字或事件的評論
-- 股價漲跌分析
-
-⚠️ 規則：
-- 用**繁體中文**
-- 每段 2-4 句，要具體（金額、規格、產能數字）
-- 來源用 `▸ [短標題](url) (MM/DD HH:MM)` 格式，括號內是新聞發布時間
-- 寫「為什麼會這樣」— 背後因果，不要預測
-- 直接輸出，不要開場白
-
-以下是今天的新聞：
-{articles_text}
-"""
-
-
-def _build_geopolitics_prompt(category: str, articles_text: str) -> str:
-    """地緣政治與科技政策 prompt — 聚焦出口管制、關稅、補貼、供應鏈重組"""
-    return f"""你是一位地緣政治與科技產業分析師。以下是今天 **{category}** 的新聞。
-
-讀完後整理成一篇精煉短文，**聚焦對科技產業鏈和投資決策有實質影響的政策與地緣動態**。
-
-### 格式要求
-
-用 `### 主題名稱` 分段，每段 2-4 句話，段末列引用來源。
-
-### 讀者關心什麼（依此篩選重點）
-- 出口管制：具體限制了什麼品項（製程節點、設備型號）、限制哪些國家/實體
-- 關稅變動：稅率多少、涵蓋哪些產品類別、何時生效
-- 產業補貼：CHIPS Act 或各國補貼的具體金額、受惠廠商、條件
-- 供應鏈重組：「誰被限制 → 誰受益 → 供應鏈怎麼重組」的因果鏈
-- 科技外交：技術聯盟（例：美日荷設備管制）、技術封鎖的擴散效應
-
-### 不要寫的
-- 純政治角力（沒有科技產業影響的）
-- 外交辭令和空洞聲明
-- 沒有具體政策內容的「可能」「考慮」
-
-⚠️ 規則：
-- 用**繁體中文**
-- 每段 2-4 句，要具體（品項、稅率、金額、時間表）
-- 來源用 `▸ [短標題](url) (MM/DD HH:MM)` 格式，短標題不超過 20 字
-- 寫清楚因果鏈：政策 → 直接影響 → 供應鏈連鎖反應
-- 直接輸出，不要開場白
-
-以下是今天的新聞：
-{articles_text}
-"""
-
-
-def _build_semiconductor_prompt(category: str, articles_text: str) -> str:
-    """半導體與硬體 prompt — 聚焦製程、產能、資料中心、設備"""
-    return f"""你是一位半導體產業研究員。以下是今天 **{category}** 的新聞。
-
-讀完後整理成一篇精煉短文，**聚焦半導體供應鏈的具體變化和投資級洞察**。
-
-### 格式要求
-
-用 `### 主題名稱` 分段，每段 2-4 句話，段末列引用來源。
-
-### 讀者關心什麼（依此篩選重點）
-- 先進製程：N3/N2/A14 等節點的良率、產能爬坡進度、客戶導入時程
-- HBM/CoWoS：產能（K/月）、良率變化、供需缺口、新供應商進入
-- 資料中心：新建規模（MW、投資金額）、GPU/ASIC 部署量、電力需求
-- 設備訂單：ASML/Applied Materials/LAM 的訂單變化、交期、客戶結構
-- 封測/基板：ABF 載板、先進封裝技術演進、產能規劃
-- 記憶體：DRAM/NAND 價格走勢、庫存水位、DDR5/HBM 轉換比例
-
-### 不要寫的
-- 沒有具體數字的泛泛描述（「需求強勁」「持續成長」）
-- 消費電子的日常產品評測
-- 股價漲跌分析
-
-⚠️ 規則：
-- 用**繁體中文**
-- 每段 2-4 句，**必須有具體數字**（產能 K/月、良率%、投資金額$、時間表）
-- 來源用 `▸ [短標題](url) (MM/DD HH:MM)` 格式，短標題不超過 20 字
-- 寫供應鏈上下游的連動邏輯
-- 直接輸出，不要開場白
-
-以下是今天的新聞：
-{articles_text}
-"""
-
-
-def _build_ai_research_prompt(category: str, articles_text: str) -> str:
-    """AI 研究與突破 prompt — 聚焦論文突破、模型架構、LLM 經濟學"""
-    return f"""你是一位 AI 研究分析師，同時具備投資分析能力。以下是今天 **{category}** 的內容，包含 arXiv 論文、AI 大廠部落格、和科技媒體報導。
-
-讀完後整理成一篇**兼具技術深度和商業洞察的短文**。
-
-### 格式要求
-
-用以下 `### 標題` 分段，每段 2-4 句話，段末列引用來源：
-
-### 🔬 重大研究突破
-挑 2-3 個最重要的技術突破（新模型架構、訓練方法、benchmark 刷新），每個說明：
-1. 技術上做了什麼（一句話）
-2. 為什麼重要 — 對商業應用的意義（推理成本降低 → 哪些應用變可行？效率提升 → 誰受益？）
-
-### 💰 AI 基礎設施與投資
-大廠的 AI 資本支出、資料中心建設、算力採購、模型部署成本變化。
-寫具體數字：投資金額、GPU 數量、推理成本 $/token 變化。
-
-### 🌊 模型與平台動態
-新模型發布、API 更新、開源 vs 閉源的競爭態勢、LLM 成本經濟學變化。
-
-⚠️ 規則：
-- 用**繁體中文**
-- 每段簡短，不要超過 4 句正文
-- arXiv 論文：用論文標題和作者機構標註，不要只寫 arXiv ID
-- 來源用 `▸ [短標題](url) (MM/DD HH:MM)` 格式
-- **每個技術突破都要寫商業意義** — 「所以呢？對誰有影響？」
-- 過濾低影響力的增量研究，只留真正重要的突破
-- 直接輸出，不要開場白
-
-以下是今天的內容：
-{articles_text}
-"""
-
-
-def build_top10_prompt(all_articles: dict[str, list[Article]], summaries: dict[str, str]) -> str:
-    """建立 Top 10 必讀精選 prompt — 整理內文重點"""
-    # 收集所有分類的摘要和文章內容
+def build_top10_prompt(
+    all_articles: dict[str, list[Article]],
+    summaries: dict[str, str],
+    category_max_chars: int | None = None,
+) -> str:
+    """建立今日全重點 prompt（跨分類整合，不挑新聞）"""
+    limit_chars = (
+        SUMMARY_TOP10_CATEGORY_MAX_CHARS
+        if category_max_chars is None
+        else max(0, category_max_chars)
+    )
+    # 去掉各分類摘要中的 [n] 引用，因為跨分類後編號會衝突
+    _citation_ref_re = re.compile(r"\s*\[\d+\]")
     context = ""
     for category, summary in summaries.items():
         articles = all_articles.get(category, [])
-        context += f"\n\n### {category}（{len(articles)} 篇）\n"
-        context += f"AI 摘要：\n{summary}\n"
-        context += "文章列表：\n"
-        for a in articles[:10]:
-            context += f"- {a.title} | {a.source} | {a.link}\n"
-            if a.summary:
-                context += f"  內容：{a.summary[:300]}\n"
+        body_articles = [a for a in articles if _has_article_body(a)]
+        summary_text = (summary or "").strip()
+        summary_text = _citation_ref_re.sub("", summary_text)
+        if limit_chars > 0 and len(summary_text) > limit_chars:
+            summary_text = summary_text[:limit_chars].rstrip() + "…"
+        context += f"\n\n### {category}（原始 {len(articles)} 篇；有內文 {len(body_articles)} 篇）\n"
+        context += f"{summary_text}\n"
 
-    return f"""你是一位 sell-side 研究員，負責撰寫每日晨會投資摘要給基金經理人看。以下是今天所有分類的新聞摘要和文章。
+    return f"""你是首席投資策略師兼產業研究總監。以下是今天各分類的深度分析摘要。
 
-從所有分類中挑出**今天對投資決策最有用的 10 則新聞**，用 buy/sell side research 的風格寫投資摘要。
+你的任務是產出一份專業級的跨分類策略報告 — 不是重述各分類內容，而是找出不同領域之間的共振點、矛盾點和結構性位移，幫助讀者建立全局判斷框架。
 
-### 挑選標準（按投資價值排序）
-- 直接影響產業鏈供需或定價的事件（擴產、砍單、新廠、關稅）
-- 大廠技術路線或架構轉向（誰改用什麼、棄用什麼）
-- 政策/監管變動對特定產業鏈的實質影響
-- AI 基礎設施部署的具體動態（算力、資料中心、雲端）
-- 跨市場連動訊號（例：美國政策 → 台灣供應鏈影響）
+### 任務要求
+- 只可使用輸入中的事實，不可新增未出現的事件。
+- 重點是跨分類共振與矛盾，不是逐分類重述。
+- 每個判斷都要有至少 2 個分類的證據交叉驗證。
+- 若證據不足，明確標註信心度而非硬湊結論。
 
-### 什麼不要選
-- ❌ 沒有具體 investment takeaway 的一般新聞
-- ❌ 純股價評論、目標價調整
-- ❌ 社會新聞、人事異動（除非影響公司策略方向）
+### 輸出格式（固定）
+### 今日主線
+4-5 句。不只是列出「今天發生了什麼」，而是講清楚：
+1. 今天最重要的 1-2 個結構性變化是什麼
+2. 它們之間有什麼關聯
+3. 為什麼今天這個時間點很重要（觸發條件是什麼）
 
-### 輸出格式
+### 跨分類因果鏈（3-4 條）
+每條展開 3-4 句：
+1. **觸發事件**（在哪個分類觀察到）→ **第一層影響**（直接受影響的產業/公司）→ **第二層影響**（間接連鎖效應）→ **投資組合意義**（具體到哪類持倉）
+2. ...
+3. ...
+每條標註 [信心度：高/中/低]，基於跨幾個分類有交叉證據。
 
-每篇用 `### 排名. 標題` 作為標題：
+### 產業結構位移（本期最重要的洞察）
+- 3-4 點，指出不是短期事件而是中長期產業格局正在改變的證據：
+  - 哪個供應鏈節點的競爭優勢正在位移？
+  - 哪個技術路線正在取得主導地位？
+  - 哪個政策方向正在重塑遊戲規則？
 
-### 1. 簡短事件標題
+### 投資框架（不是預測，是條件判斷）
+- **受益鏈**：3-4 點，格式「若 A 條件持續成立 → B 類資產/公司受益 → 具體邏輯」
+- **受壓鏈**：3-4 點，同上格式
+- **轉折訊號**：2-3 點，「若看到 X → 代表上述判斷需要翻轉」
 
-**事實**：1-2 句講發生什麼事（誰、做了什麼、數字）。
-**Investment Takeaway**：1-2 句講這件事對哪些產業鏈/標的有什麼具體影響。要寫到產業鏈層級（例：「利好先進封裝設備商」「壓縮 NAND 現貨價」「加速邊緣 AI 晶片需求」），不要只寫「利好半導體」這種空話。
-**二階效應**：1 句話寫間接連鎖反應（例：「GPU 需求暴增 → HBM 供不應求 → SK Hynix 加速擴產 → 設備商接單潮」）。
+### 風險矩陣
+- **高機率低衝擊**：1-2 點
+- **低機率高衝擊**：1-2 點（黑天鵝型風險）
+- **正在被市場忽略的風險**：1-2 點
 
-▸ [短標題](原文連結) ・ 來源名 (MM/DD HH:MM)
+### 48h 觀察清單
+- 4-6 點，每點格式：「觀察 X（數據/公告/事件）→ 若結果是 A → 主線偏向 Y → 行動建議 Z」
 
----
+### 規則
+- 用繁體中文。
+- 不要使用 [n] 引用標記（輸入中已去除引用編號）。
+- 每個判斷要有具體數字或事實支撐，禁止空泛詞。
+- 不要插入分類標籤或逐分類逐段重述。
+- 不做明確漲跌預測，但要明確列出條件判斷。
+- 若同一事件已在多個分類摘要中出現，只在最相關的因果鏈中提一次，其餘跳過。
+- 直接輸出內容，不要開場白，不要結尾問話或補充說明。
 
-### 範例（這是你要達到的品質）
-
-### 1. Amazon 宣布 2,000 億美元 AI 資本支出計畫
-
-**事實**：Amazon 確認未來三年將投入 $200B 於 AI 基礎設施，其中 60% 用於自建資料中心，40% 用於 Trainium 客製晶片擴產。
-**Investment Takeaway**：直接拉動 HBM 與先進封裝需求（日月光、SK Hynix），但同時代表對 NVIDIA GPU 依賴度下降，Trainium 自研晶片放量將壓縮 NVIDIA 在推理端的市佔。電力基礎設施（變壓器、銅纜）短期供不應求。
-
-▸ [Amazon 2000 億 AI 資本支出](https://...) ・ CNBC (02/15 09:30)
-
----
-
-### 最後：🔗 今日主線
-
-在 10 篇之後，加一段 **🔗 今日主線**（50 字以內），把今天跨分類的重大新聞串成一條投資邏輯線。
-例：「AI 資本支出擴張 → 半導體設備訂單 → 先進封裝產能吃緊 → 台系封測廠受惠」
-
-⚠️ 規則：
-- 用**繁體中文**
-- 嚴格 10 篇，涵蓋至少 3 個不同分類
-- **Investment Takeaway 要具體到產業鏈層級**，不要空泛
-- **二階效應要寫間接連鎖反應**，不要重複 Investment Takeaway
-- 每篇之間用 `---` 分隔
-- 最後一定要有 🔗 今日主線
-- 直接輸出，不要開場白
-
-以下是今天所有分類的內容：
+以下是今天各分類摘要：
 {context}
 """
 
 
-def generate_top10(all_articles: dict[str, list[Article]], summaries: dict[str, str]) -> str:
-    """用 Codex 產生 Top 10 必讀精選"""
+def _fallback_top10_from_summaries(summaries: dict[str, str]) -> str:
+    lines = ["### 今日主線"]
+    lines.append("跨分類整合摘要逾時，先提供各分類高訊號導讀。")
+    lines.append("")
+    lines.append("### 三條跨分類因果鏈")
+    lines.append("1. 目前資訊不足以完整建立跨分類因果鏈，需待下一輪整合。")
+    lines.append("2. 先以各分類共同提及的事件與政策變數作為主軸。")
+    lines.append("3. 若關鍵事件被多來源重複證實，再升級為主線判斷。")
+    lines.append("")
+    lines.append("### 投資 Inside（框架，不是預測）")
+    lines.append("- **受益鏈**：先觀察「需求確定性提升 + 供給受限」的組合。")
+    lines.append("- **受壓鏈**：先觀察「政策不確定 + 成本上升」的組合。")
+    lines.append("")
+    lines.append("### 風險與反證")
+    lines.append("- 若後續新聞無法形成跨來源共識，需降低主線信心。")
+    lines.append("- 若同一事件出現互相矛盾版本，暫不做方向判斷。")
+    lines.append("")
+    lines.append("### 48h 觀察清單")
+    for category, summary in summaries.items():
+        short = _normalize_inline_text(summary).replace("\n", " ")
+        if len(short) > 120:
+            short = short[:120].rstrip() + "…"
+        lines.append(f"- {category}：{short or '目前資訊不足以判斷'}")
+    return "\n".join(lines)
+
+
+def generate_top10(
+    all_articles: dict[str, list[Article]], summaries: dict[str, str]
+) -> str:
+    """產生今日全重點（跨分類整合）"""
     prompt = build_top10_prompt(all_articles, summaries)
 
-    print(f"  → Codex {CODEX_MODEL} stdin...", end=" ")
-    result = _summarize_with_codex(prompt, "Top 10")
+    provider = _summary_provider()
+    provider_model = AZURE_OPENAI_MODEL if provider == "azure" else CODEX_MODEL
+    print(f"  → Provider: {provider} ({provider_model})", end=" ")
+    result = _summarize_with_provider(prompt, "今日全重點")
     if result:
         print("✅")
-        return result
+        return _clean_llm_output(_sanitize_non_numeric_brackets(result))
 
-    print("失敗")
-    return ""
+    compact_chars = max(800, SUMMARY_TOP10_CATEGORY_MAX_CHARS // 2)
+    retry_prompt = build_top10_prompt(
+        all_articles, summaries, category_max_chars=compact_chars
+    )
+    retry_result = _summarize_with_provider(retry_prompt, "今日全重點（重試）")
+    if retry_result:
+        print("⚠️ 首次失敗，重試成功")
+        return _clean_llm_output(_sanitize_non_numeric_brackets(retry_result))
+
+    print("⚠️ 失敗，改用 fallback")
+    return _clean_llm_output(_sanitize_non_numeric_brackets(_fallback_top10_from_summaries(summaries)))
 
 
 def _summarize_with_codex(prompt: str, category: str) -> str | None:
     """用原生 Codex CLI stdin 模式做摘要"""
     import time
+
     codex_path = CODEX_PATH
 
     if not os.path.exists(codex_path):
@@ -360,48 +2639,73 @@ def _summarize_with_codex(prompt: str, category: str) -> str | None:
         # codex exec -m model --json - (stdin)
         start_time = time.time()
         print(f"    ⏱️ Calling {CODEX_MODEL} API...", flush=True)
-        result = subprocess.run(
-            [
-                codex_path, "exec",
-                "-m", CODEX_MODEL,
-                "--json",
-                "--ephemeral",
-                "--skip-git-repo-check",
-                "-",  # 從 stdin 讀取 prompt
-            ],
-            input=prompt,
-            capture_output=True,
-            text=True,
-            timeout=300,
-            cwd=tempfile.gettempdir(),
-        )
+        models = [CODEX_MODEL] + [m for m in CODEX_FALLBACK_MODELS if m != CODEX_MODEL]
+        stderr_output = ""
+
+        for model in models:
+            result = subprocess.run(
+                [
+                    codex_path,
+                    "exec",
+                    "-m",
+                    model,
+                    "-c",
+                    f'model_reasoning_effort="{CODEX_REASONING_EFFORT}"',
+                    "--json",
+                    "--ephemeral",
+                    "--skip-git-repo-check",
+                    "-",
+                ],
+                input=prompt,
+                capture_output=True,
+                text=True,
+                timeout=300,
+                cwd=tempfile.gettempdir(),
+            )
+
+            if result.returncode == 0 and result.stdout.strip():
+                # 解析 JSON lines，提取 agent_message text
+                text_parts = []
+                for line in result.stdout.strip().split("\n"):
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        event = json.loads(line)
+                        if event.get("type") == "item.completed":
+                            item = event.get("item", {})
+                            if item.get("type") == "agent_message" and "text" in item:
+                                text_parts.append(item["text"])
+                    except json.JSONDecodeError:
+                        continue
+
+                if text_parts:
+                    elapsed = time.time() - start_time
+                    print(f"    ⏱️ API returned in {elapsed:.1f}s ({model})", flush=True)
+                    return "\n\n".join(text_parts)
+
+            if result.stderr:
+                stderr_output += result.stderr + "\n"
+
+            json_error = _extract_json_error_message(result.stdout or "")
+            if json_error:
+                stderr_output += json_error + "\n"
+
+            error_text = (result.stderr or "") + "\n" + (result.stdout or "")
+            if "not supported" in error_text.lower() and model != models[-1]:
+                print(f"    ⚠️ {model} 不可用，改用 fallback model", flush=True)
+                continue
+
+            break
         elapsed = time.time() - start_time
         print(f"    ⏱️ API returned in {elapsed:.1f}s", flush=True)
 
-        if result.returncode == 0 and result.stdout.strip():
-            # 解析 JSON lines，提取 agent_message text
-            text_parts = []
-            for line in result.stdout.strip().split("\n"):
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    event = json.loads(line)
-                    if event.get("type") == "item.completed":
-                        item = event.get("item", {})
-                        if item.get("type") == "agent_message" and "text" in item:
-                            text_parts.append(item["text"])
-                except json.JSONDecodeError:
-                    continue
-
-            if text_parts:
-                return "\n\n".join(text_parts)
-
         # fallback: 看 stderr 有沒有有用的資訊
-        if result.stderr:
+        if stderr_output:
             # 過濾掉 ERROR log 行，只印有意義的
             meaningful = [
-                l for l in result.stderr.split("\n")
+                l
+                for l in stderr_output.split("\n")
                 if l.strip() and "ERROR codex_core::rollout" not in l
             ]
             if meaningful:
@@ -409,16 +2713,33 @@ def _summarize_with_codex(prompt: str, category: str) -> str | None:
         return None
 
     except subprocess.TimeoutExpired:
-        print(f"    ⏱️ ⚠️ {CODEX_MODEL} API timeout after 180s ({category})")
+        print(f"    ⏱️ ⚠️ {CODEX_MODEL} API timeout after 300s ({category})")
         return None
     except Exception as e:
         print(f"  ⚠️ Codex 錯誤 ({category}): {e}")
         return None
 
 
+def _summarize_with_provider(prompt: str, category: str) -> str | None:
+    provider = _summary_provider()
+    if provider == "azure":
+        return _summarize_with_azure(prompt, category)
+    return _summarize_with_codex(prompt, category)
 
-def _get_prompt_type(category: str) -> str:
+
+def _get_prompt_type(category: str, articles: list[Article] | None = None) -> str:
     """根據 config 中的 summary_prompt 決定 prompt 類型"""
+    if articles:
+        source_prompts = Counter()
+        for article in articles:
+            if article.summary_prompt:
+                source_prompts[article.summary_prompt] += 1
+
+        if source_prompts:
+            prompt_candidates = [p for p, c in source_prompts.items() if c > 0]
+            if len(prompt_candidates) == 1:
+                return prompt_candidates[0]
+
     config = load_config()
     for feed_key, feed_config in config.get("feeds", {}).items():
         if feed_config.get("category") == category:
@@ -427,24 +2748,112 @@ def _get_prompt_type(category: str) -> str:
 
 
 def summarize_category(category: str, articles: list[Article]) -> str:
-    """摘要單一分類的新聞（優先用 Codex CLI，備用 Claude API）"""
     if not articles:
         print(f"  ⏭️ {category}: 無新聞，跳過")
         return f"今天 {category} 無新聞。"
 
-    print(f"  📝 摘要 {category} ({len(articles)} 篇文章)...")
-    prompt_type = _get_prompt_type(category)
-    prompt = build_prompt(category, articles, prompt_type)
+    prompt_type = _get_prompt_type(category, articles)
+    body_articles, selected_articles, prepare_stats = _prepare_summary_articles(
+        articles, category, prompt_type
+    )
+    dropped_no_body = int(prepare_stats.get("dropped_no_body", 0))
+    dropped_title_dup = int(prepare_stats.get("dropped_title_dup", 0))
+    dropped_low_signal = int(prepare_stats.get("dropped_low_signal", 0))
+    dropped_secondary_source = int(prepare_stats.get("dropped_secondary_source", 0))
+    dropped_source_cap = int(prepare_stats.get("dropped_source_cap", 0))
+    dropped_input_budget = int(prepare_stats.get("dropped_input_budget", 0))
+    dropped_max_articles = int(prepare_stats.get("dropped_max_articles", 0))
+    truncated = bool(prepare_stats.get("truncated", False))
+    ranking_enabled = bool(prepare_stats.get("ranking_enabled", False))
+    primary_mode = bool(prepare_stats.get("primary_mode", False))
 
-    # Codex CLI
-    result = _summarize_with_codex(prompt, category)
+    if SUMMARY_FULL_READ_MODE:
+        print(f"  📚 {category} 完整閱讀模式：不做摘要前裁切（僅保留有內文與去重）")
+
+    if dropped_no_body > 0:
+        print(f"  ✂️ {category} 跳過 {dropped_no_body} 篇無內文新聞")
+    if dropped_title_dup > 0:
+        print(f"  🧹 {category} 去重 {dropped_title_dup} 篇標題重複新聞")
+    if dropped_low_signal > 0:
+        print(f"  🧼 {category} 過濾 {dropped_low_signal} 篇低訊號快訊標題")
+    if dropped_secondary_source > 0:
+        source_filter_note = "主來源優先" if primary_mode else "來源過濾"
+        print(f"  🧭 {category} {source_filter_note}略過 {dropped_secondary_source} 篇")
+    if ranking_enabled:
+        print(f"  🎯 {category} 依來源權重與時效排序後再抽樣")
+    if dropped_source_cap > 0 and SUMMARY_MAX_PER_SOURCE > 0:
+        print(
+            f"  ⚖️ {category} 每來源上限 {SUMMARY_MAX_PER_SOURCE}，略過 {dropped_source_cap} 篇"
+        )
+    if dropped_input_budget > 0 and SUMMARY_MAX_INPUT_CHARS > 0:
+        print(
+            f"  📦 {category} 輸入字元預算 {SUMMARY_MAX_INPUT_CHARS}，略過 {dropped_input_budget} 篇"
+        )
+
+    if not body_articles:
+        raise RuntimeError(f"{category} 沒有可用內文，無法摘要")
+
+    used_count = len(selected_articles)
+    if dropped_max_articles > 0 and SUMMARY_MAX_ARTICLES > 0:
+        print(
+            f"  ✂️ {category} 文章過多，摘要改取前 {SUMMARY_MAX_ARTICLES}/{len(body_articles)} 篇"
+        )
+    elif truncated:
+        print(
+            f"  ✂️ {category} 摘要輸入改取 {used_count}/{len(body_articles)} 篇（聚焦高訊號與多來源）"
+        )
+
+    print(
+        f"  📝 摘要 {category}（使用 {used_count}/{len(body_articles)} 篇有內文；原始 {len(articles)} 篇）..."
+    )
+
+    if SUMMARY_CHUNK_ARTICLES > 0 and len(selected_articles) > SUMMARY_CHUNK_ARTICLES:
+        chunks = _chunk_articles(selected_articles, SUMMARY_CHUNK_ARTICLES)
+        print(
+            f"  📚 {category} 採分段摘要：{len(chunks)} 段（每段最多 {SUMMARY_CHUNK_ARTICLES} 篇）"
+        )
+        chunk_summaries: list[str] = []
+        chunk_offset = 0
+        for idx, chunk in enumerate(chunks, 1):
+            print(f"    🧩 分段 {idx}/{len(chunks)}（{len(chunk)} 篇）")
+            chunk_prompt = build_prompt(
+                category,
+                chunk,
+                prompt_type,
+                start_index=chunk_offset + 1,
+            )
+            chunk_result = _summarize_with_provider(
+                chunk_prompt, f"{category} 分段 {idx}/{len(chunks)}"
+            )
+            if not chunk_result:
+                raise RuntimeError(
+                    f"{category} 分段 {idx}/{len(chunks)} 摘要失敗（無 fallback）"
+                )
+            chunk_summaries.append(chunk_result)
+            chunk_offset += len(chunk)
+
+        merge_prompt = _build_category_merge_prompt(
+            category, prompt_type, chunk_summaries, len(selected_articles)
+        )
+        merge_result = _summarize_with_provider(
+            merge_prompt, f"{category} 合併"
+        )
+        if merge_result:
+            print(f"    ✅ {category} 摘要完成")
+            return _clean_llm_output(merge_result)
+        # 合併失敗時，直接串接各段摘要作為 fallback
+        print(f"  ⚠️ {category} 合併摘要失敗，改用各段串接")
+        fallback = "\n\n".join(chunk_summaries)
+        return _clean_llm_output(fallback)
+
+    prompt = build_prompt(category, selected_articles, prompt_type)
+
+    result = _summarize_with_citation_guard(prompt, category, len(selected_articles))
     if result:
         print(f"    ✅ {category} 摘要完成")
-        return result
+        return _clean_llm_output(result)
 
-    # 失敗：純列表
-    print(f"    ⚠️ {category} API 失敗，使用簡單列表")
-    return _simple_summary(category, articles)
+    raise RuntimeError(f"{category} API 摘要失敗或引用不合規（無 fallback）")
 
 
 def _simple_summary(category: str, articles: list[Article]) -> str:
@@ -461,9 +2870,31 @@ def _simple_summary(category: str, articles: list[Article]) -> str:
 def summarize_all(all_articles: dict[str, list[Article]]) -> dict[str, str]:
     """摘要所有分類"""
     summaries = {}
-    for category, articles in all_articles.items():
-        print(f"🧠 摘要 {category} ({len(articles)} 篇)...")
-        summaries[category] = summarize_category(category, articles)
+    items = list(all_articles.items())
+    if not items:
+        return summaries
+
+    worker_count = (
+        len(items)
+        if SUMMARY_BATCH_WORKERS <= 0
+        else min(SUMMARY_BATCH_WORKERS, len(items))
+    )
+    if worker_count <= 1:
+        for category, articles in items:
+            print(f"🧠 摘要 {category} ({len(articles)} 篇)...")
+            summaries[category] = summarize_category(category, articles)
+        return summaries
+
+    print(f"⚡ 分類摘要並行模式：workers={worker_count}")
+    with ThreadPoolExecutor(max_workers=worker_count) as executor:
+        futures = {}
+        for category, articles in items:
+            print(f"🧠 摘要 {category} ({len(articles)} 篇)...")
+            futures[category] = executor.submit(summarize_category, category, articles)
+
+        # 保持原本分類順序寫回，避免報告順序跳動
+        for category, articles in items:
+            summaries[category] = futures[category].result()
     return summaries
 
 
@@ -477,6 +2908,8 @@ if __name__ == "__main__":
             summary="NVIDIA 第四季營收達 350 億美元，超出市場預期。CEO 黃仁勳表示 AI 推理需求正在快速增長。",
             link="https://example.com/1",
             source="CNBC",
+            source_key="tech:CNBC",
+            summary_prompt="news",
             category="🇺🇸 美國財經",
             published=datetime.now(TW_TZ),
         ),
@@ -485,6 +2918,8 @@ if __name__ == "__main__":
             summary="聯準會主席鮑威爾表示通膨仍具黏性，市場降息預期推遲至下半年。",
             link="https://example.com/2",
             source="CNN",
+            source_key="finance:CNN",
+            summary_prompt="news",
             category="🇺🇸 美國財經",
             published=datetime.now(TW_TZ),
         ),
