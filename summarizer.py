@@ -1041,6 +1041,8 @@ def _sanitize_non_numeric_brackets(text: str) -> str:
 
 
 # ── LLM 輸出後處理：去除常見垃圾 ──
+# 正規化 [n(141)] / [n（141）] → [141]
+_BRACKET_N_PAREN_RE = re.compile(r"\[n[（(](\d{1,4})[)）]\]")
 _TRAILING_CITATION_DUMP_RE = re.compile(
     r"\n+(?:n\n)?(?:\d{1,4}\n){3,}[\d\s]*$"
 )
@@ -1061,6 +1063,14 @@ _LLM_CONVERSATIONAL_CLOSERS = [
     re.compile(r"^需要.*可以.*$", re.MULTILINE),
     re.compile(r"^---+\s*$", re.MULTILINE),
 ]
+# 移除 LLM 在尾部附加的 "[n] 來源索引對應" 區塊
+_TRAILING_SOURCE_INDEX_RE = re.compile(
+    r"\n+\[n\]\s*來源索引.*$", re.DOTALL
+)
+# 移除 "(以上內容整合自..." 結尾段
+_TRAILING_INTEGRATION_NOTE_RE = re.compile(
+    r"\n+[（(]以上內容整合自.*$", re.DOTALL
+)
 _DUPLICATE_HEADING_RE = re.compile(
     r"(### .+?今日主軸.*?)(?=### .+?今日主軸)", re.DOTALL
 )
@@ -1072,6 +1082,9 @@ def _clean_llm_output(text: str) -> str:
         return ""
     result = text
 
+    # 0. 正規化異體引用格式：[n(141)] → [141]
+    result = _BRACKET_N_PAREN_RE.sub(r"[\1]", result)
+
     # 1. 移除尾部裸 citation 數字列表（n\n10\n136\n... 或 [n]102\n[n]104 或 n 2、3、13、49）
     result = _TRAILING_CITATION_DUMP_RE.sub("", result)
     result = _TRAILING_BRACKET_CITATION_RE.sub("", result)
@@ -1080,6 +1093,8 @@ def _clean_llm_output(text: str) -> str:
     # 2. 移除 LLM 對話式結尾
     for pat in _LLM_CONVERSATIONAL_CLOSERS:
         result = pat.sub("", result)
+    result = _TRAILING_SOURCE_INDEX_RE.sub("", result)
+    result = _TRAILING_INTEGRATION_NOTE_RE.sub("", result)
 
     # 3. 偵測重複的 ### 段落標題（chunk merge 失敗），合併為唯一結構
     # 找出所有 ### 標題，如果同一標題出現多次，只保留最長的那段內容
@@ -2486,7 +2501,7 @@ def _build_category_merge_prompt(
 {anti_blk}
 
 ### 規則
-- 繁體中文，可沿用已存在的 [n]，不可杜撰新編號
+- 繁體中文，引用格式一律用 [數字]（如 [5]、[28]），不可用 [n(5)] 或其他格式，不可杜撰新編號
 - 每點要有具體數字或事實支撐
 - 直接輸出，不要開場白，不要結尾問話或補充說明
 - 重要：只輸出一份摘要，不要重複段落
