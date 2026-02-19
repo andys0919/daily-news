@@ -2826,11 +2826,13 @@ def summarize_category(category: str, articles: list[Article]) -> str:
                 chunk_prompt, f"{category} 分段 {idx}/{len(chunks)}"
             )
             if not chunk_result:
-                raise RuntimeError(
-                    f"{category} 分段 {idx}/{len(chunks)} 摘要失敗（無 fallback）"
-                )
-            chunk_summaries.append(chunk_result)
+                print(f"  ⚠️ {category} 分段 {idx}/{len(chunks)} 摘要失敗，跳過此段")
+            else:
+                chunk_summaries.append(chunk_result)
             chunk_offset += len(chunk)
+
+        if not chunk_summaries:
+            raise RuntimeError(f"{category} 所有分段摘要均失敗（無可用結果）")
 
         merge_prompt = _build_category_merge_prompt(
             category, prompt_type, chunk_summaries, len(selected_articles)
