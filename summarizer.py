@@ -1044,9 +1044,13 @@ def _sanitize_non_numeric_brackets(text: str) -> str:
 _TRAILING_CITATION_DUMP_RE = re.compile(
     r"\n+(?:n\n)?(?:\d{1,4}\n){3,}[\d\s]*$"
 )
-# 匹配 "n 2、3、13、49" 或 "n 2, 3, 13" 格式的裸引用列表
+# 匹配 "[n]102\n[n]104\n..." 格式的裸引用列表
+_TRAILING_BRACKET_CITATION_RE = re.compile(
+    r"\s*(?:\[n\]\d{1,4}\s*){3,}$"
+)
+# 匹配 "n 2、3、13" 或 "[n] 101, 102, 106" 格式的裸引用列表
 _TRAILING_CITATION_INLINE_RE = re.compile(
-    r"\n+n\s+[\d、,\s]+\s*$"
+    r"\n+\[?n\]?\s+[\d、,\s]+\s*$"
 )
 _LLM_CONVERSATIONAL_CLOSERS = [
     re.compile(r"^若需要.*$", re.MULTILINE),
@@ -1068,8 +1072,9 @@ def _clean_llm_output(text: str) -> str:
         return ""
     result = text
 
-    # 1. 移除尾部裸 citation 數字列表（n\n10\n136\n... 或 n 2、3、13、49）
+    # 1. 移除尾部裸 citation 數字列表（n\n10\n136\n... 或 [n]102\n[n]104 或 n 2、3、13、49）
     result = _TRAILING_CITATION_DUMP_RE.sub("", result)
+    result = _TRAILING_BRACKET_CITATION_RE.sub("", result)
     result = _TRAILING_CITATION_INLINE_RE.sub("", result)
 
     # 2. 移除 LLM 對話式結尾
@@ -2523,7 +2528,7 @@ def build_top10_prompt(
 - 只可使用輸入中的事實，不可新增未出現的事件。
 - 重點是跨分類共振與矛盾，不是逐分類重述。
 - 每個判斷都要有至少 2 個分類的證據交叉驗證。
-- 若證據不足，明確標註信心度而非硬湊結論。
+- 若證據不足，直接省略該判斷而非硬湊結論。
 
 ### 輸出格式（固定）
 ### 今日主線
@@ -2537,7 +2542,7 @@ def build_top10_prompt(
 1. **觸發事件**（在哪個分類觀察到）→ **第一層影響**（直接受影響的產業/公司）→ **第二層影響**（間接連鎖效應）→ **投資組合意義**（具體到哪類持倉）
 2. ...
 3. ...
-每條標註 [信心度：高/中/低]，基於跨幾個分類有交叉證據。
+每條需有至少 2 個分類的交叉證據支撐。
 
 ### 產業結構位移（本期最重要的洞察）
 - 3-4 點，指出不是短期事件而是中長期產業格局正在改變的證據：
@@ -2855,7 +2860,8 @@ def summarize_category(category: str, articles: list[Article]) -> str:
         print(f"    ✅ {category} 摘要完成")
         return _clean_llm_output(result)
 
-    raise RuntimeError(f"{category} API 摘要失敗或引用不合規（無 fallback）")
+    print(f"  ⚠️ {category} API 摘要失敗，改用簡單列表 fallback")
+    return _simple_summary(category, selected_articles)
 
 
 def _simple_summary(category: str, articles: list[Article]) -> str:

@@ -1146,16 +1146,16 @@ feeds:
         priority: 8
         max_articles: 8
         quality: "high"
-      # ── Dev.to（限量，避免噪音洪水）──
+      # ── Dev.to（已關閉：噪音太大，大量無關文章）──
       - name: "Dev.to AI"
         url: "https://dev.to/feed/tag/ai"
-        active: true
+        active: false
         priority: 5
         max_articles: 8
         quality: "low"
       - name: "Dev.to LLM"
         url: "https://dev.to/feed/tag/llm"
-        active: true
+        active: false
         priority: 5
         max_articles: 8
         quality: "low"
