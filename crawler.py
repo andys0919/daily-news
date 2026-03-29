@@ -76,6 +76,19 @@ SOURCE_HEALTH_COOLDOWN_MINUTES = max(
 CATEGORY_DEFAULT_QUOTA = max(
     0, _safe_int(os.getenv("CATEGORY_DEFAULT_QUOTA", "0"), default=0)
 )
+ARTICLE_FETCH_TIMEOUT = aiohttp.ClientTimeout(
+    total=max(10, int(os.getenv("ARTICLE_FETCH_TIMEOUT_SECONDS", "20")))
+)
+ENRICH_ARTICLE_BODIES = os.getenv("ENRICH_ARTICLE_BODIES", "1").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
+ENRICH_MIN_PRIORITY = max(0, _safe_int(os.getenv("ENRICH_MIN_PRIORITY", "8"), default=8))
+ENRICH_PER_SOURCE_MAX = max(
+    0, _safe_int(os.getenv("ENRICH_PER_SOURCE_MAX", "4"), default=4)
+)
 
 
 class SourceHealthRegistry:
@@ -191,6 +204,7 @@ def normalize_source_config(
         "max_articles": _safe_int(source.get("max_articles"), default=0),
         "summary_prompt": source.get("summary_prompt"),
         "quality": source.get("quality", "medium"),
+        "feed_key": feed_key,
         "source_key": f"{feed_key}:{source['name']}",
         "feed_category": feed_config["category"],
         "default_prompt": feed_config.get("summary_prompt", "news"),
@@ -208,9 +222,42 @@ class Article:
     category: str
     summary_prompt: str | None
     published: datetime
+    body_text: str = ""
+    source_priority: int = 5
+    source_quality: str = "medium"
+    feed_key: str = ""
+    region: str = "global"
+    topics: list[str] = field(default_factory=list)
+    published_raw: str = ""
+    published_confidence: str = "feed"
+    body_source: str = ""
+    extraction_status: str = "not_attempted"
+    publisher: str = ""
+    author: str = ""
+    companies: list[str] = field(default_factory=list)
+    tickers: list[str] = field(default_factory=list)
+    event_type: str = ""
+    event_key: str = ""
     url_hash: str = field(default="")
 
     def __post_init__(self):
+        self.summary = self.summary or ""
+        self.body_text = self.body_text or ""
+        self.source_key = self.source_key or ""
+        self.source_quality = (self.source_quality or "medium").lower()
+        self.feed_key = self.feed_key or ""
+        self.region = self.region or "global"
+        self.topics = [str(topic) for topic in (self.topics or []) if str(topic).strip()]
+        self.published_raw = self.published_raw or ""
+        self.published_confidence = self.published_confidence or "feed"
+        self.body_source = self.body_source or ""
+        self.extraction_status = self.extraction_status or "not_attempted"
+        self.publisher = self.publisher or ""
+        self.author = self.author or ""
+        self.companies = [str(company) for company in (self.companies or []) if str(company).strip()]
+        self.tickers = [str(ticker) for ticker in (self.tickers or []) if str(ticker).strip()]
+        self.event_type = self.event_type or ""
+        self.event_key = self.event_key or ""
         if not self.url_hash:
             canonical_link = normalize_url(self.link)
             if canonical_link != self.link:
@@ -219,6 +266,59 @@ class Article:
             fallback = f"{self.source}|{self.title}|{self.published.isoformat()}"
             dedupe_value = canonical_link or fallback
             self.url_hash = hashlib.md5(dedupe_value.encode("utf-8")).hexdigest()
+
+
+ARTICLE_EXTRA_COLUMNS = {
+    "source_key": "TEXT NOT NULL DEFAULT ''",
+    "summary_prompt": "TEXT",
+    "source_priority": "INTEGER NOT NULL DEFAULT 5",
+    "source_quality": "TEXT NOT NULL DEFAULT 'medium'",
+    "feed_key": "TEXT NOT NULL DEFAULT ''",
+    "region": "TEXT NOT NULL DEFAULT 'global'",
+    "topics_json": "TEXT NOT NULL DEFAULT '[]'",
+    "published_raw": "TEXT NOT NULL DEFAULT ''",
+    "published_confidence": "TEXT NOT NULL DEFAULT 'feed'",
+    "body_text": "TEXT NOT NULL DEFAULT ''",
+    "body_source": "TEXT NOT NULL DEFAULT ''",
+    "extraction_status": "TEXT NOT NULL DEFAULT 'not_attempted'",
+    "publisher": "TEXT NOT NULL DEFAULT ''",
+    "author": "TEXT NOT NULL DEFAULT ''",
+    "companies_json": "TEXT NOT NULL DEFAULT '[]'",
+    "tickers_json": "TEXT NOT NULL DEFAULT '[]'",
+    "event_type": "TEXT NOT NULL DEFAULT ''",
+    "event_key": "TEXT NOT NULL DEFAULT ''",
+}
+
+
+def _json_dumps(value: Any, default: str) -> str:
+    try:
+        return json.dumps(value if value is not None else json.loads(default), ensure_ascii=False)
+    except Exception:
+        return default
+
+
+def _json_loads_list(value: Any) -> list[str]:
+    if not value:
+        return []
+    if isinstance(value, list):
+        return [str(item) for item in value if str(item).strip()]
+    try:
+        raw = json.loads(str(value))
+    except Exception:
+        return []
+    if not isinstance(raw, list):
+        return []
+    return [str(item) for item in raw if str(item).strip()]
+
+
+def _ensure_article_columns(conn: sqlite3.Connection) -> None:
+    existing_columns = {
+        row[1] for row in conn.execute("PRAGMA table_info(articles)").fetchall()
+    }
+    for column_name, column_sql in ARTICLE_EXTRA_COLUMNS.items():
+        if column_name in existing_columns:
+            continue
+        conn.execute(f"ALTER TABLE articles ADD COLUMN {column_name} {column_sql}")
 
 
 def init_db():
@@ -234,9 +334,28 @@ def init_db():
             source TEXT NOT NULL,
             category TEXT NOT NULL,
             published TEXT NOT NULL,
-            crawled_at TEXT NOT NULL
+            crawled_at TEXT NOT NULL,
+            source_key TEXT NOT NULL DEFAULT '',
+            summary_prompt TEXT,
+            source_priority INTEGER NOT NULL DEFAULT 5,
+            source_quality TEXT NOT NULL DEFAULT 'medium',
+            feed_key TEXT NOT NULL DEFAULT '',
+            region TEXT NOT NULL DEFAULT 'global',
+            topics_json TEXT NOT NULL DEFAULT '[]',
+            published_raw TEXT NOT NULL DEFAULT '',
+            published_confidence TEXT NOT NULL DEFAULT 'feed',
+            body_text TEXT NOT NULL DEFAULT '',
+            body_source TEXT NOT NULL DEFAULT '',
+            extraction_status TEXT NOT NULL DEFAULT 'not_attempted',
+            publisher TEXT NOT NULL DEFAULT '',
+            author TEXT NOT NULL DEFAULT '',
+            companies_json TEXT NOT NULL DEFAULT '[]',
+            tickers_json TEXT NOT NULL DEFAULT '[]',
+            event_type TEXT NOT NULL DEFAULT '',
+            event_key TEXT NOT NULL DEFAULT ''
         )
     """)
+    _ensure_article_columns(conn)
     conn.execute("""
         CREATE INDEX IF NOT EXISTS idx_published ON articles(published)
     """)
@@ -257,8 +376,12 @@ def save_article(conn: sqlite3.Connection, article: Article):
     """儲存文章到 SQLite"""
     conn.execute(
         """INSERT OR IGNORE INTO articles
-           (url_hash, title, summary, link, source, category, published, crawled_at)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+           (url_hash, title, summary, link, source, category, published, crawled_at,
+            source_key, summary_prompt, source_priority, source_quality, feed_key,
+            region, topics_json, published_raw, published_confidence, body_text,
+            body_source, extraction_status, publisher, author, companies_json,
+            tickers_json, event_type, event_key)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
         (
             article.url_hash,
             article.title,
@@ -268,6 +391,24 @@ def save_article(conn: sqlite3.Connection, article: Article):
             article.category,
             article.published.isoformat(),
             datetime.now(TW_TZ).isoformat(),
+            article.source_key,
+            article.summary_prompt,
+            int(article.source_priority),
+            article.source_quality,
+            article.feed_key,
+            article.region,
+            _json_dumps(article.topics, "[]"),
+            article.published_raw,
+            article.published_confidence,
+            article.body_text,
+            article.body_source,
+            article.extraction_status,
+            article.publisher,
+            article.author,
+            _json_dumps(article.companies, "[]"),
+            _json_dumps(article.tickers, "[]"),
+            article.event_type,
+            article.event_key,
         ),
     )
 
@@ -412,6 +553,22 @@ async def fetch_feed(session: aiohttp.ClientSession, url: str) -> str | None:
     return None
 
 
+async def fetch_article_page(
+    session: aiohttp.ClientSession, url: str
+) -> str | None:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) DailyNewsBot/1.0",
+        "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8",
+    }
+    try:
+        async with session.get(url, headers=headers, timeout=ARTICLE_FETCH_TIMEOUT) as resp:
+            if resp.status != 200:
+                return None
+            return await resp.text()
+    except Exception:
+        return None
+
+
 async def crawl_source(
     session: aiohttp.ClientSession,
     source_config: dict[str, Any],
@@ -456,6 +613,12 @@ async def crawl_source(
         or source_config.get("default_prompt")
         or "news"
     )
+    source_priority = _safe_int(source_config.get("priority"), default=5)
+    source_quality = str(source_config.get("quality", "medium")).lower()
+    source_region = str(
+        source_config.get("region") or source_config.get("default_region") or "global"
+    )
+    source_topics = source_config.get("topics", [])
 
     for entry in feed.entries:
         title = _get_text_field(entry.get("title", ""))
@@ -491,6 +654,17 @@ async def crawl_source(
                 category=source_config["feed_category"],
                 summary_prompt=source_prompt,
                 published=published,
+                source_priority=source_priority,
+                source_quality=source_quality,
+                feed_key=str(source_config.get("feed_key", "")),
+                region=source_region,
+                topics=[str(topic) for topic in source_topics if str(topic).strip()],
+                published_raw=_get_text_field(
+                    entry.get("published", "")
+                    or entry.get("updated", "")
+                    or entry.get("pubDate", "")
+                    or entry.get("date", "")
+                ),
             )
         )
 
@@ -506,6 +680,42 @@ async def crawl_source(
         dropped = len(articles) - source_limit
         articles = articles[:source_limit]
         print(f"  ✂️ {source_name} 每來源上限 {source_limit}，略過 {dropped} 篇")
+
+    if ENRICH_ARTICLE_BODIES and ENRICH_PER_SOURCE_MAX > 0:
+        try:
+            from news_enrichment import (
+                apply_article_event_metadata,
+                extract_article_page_metadata,
+                should_enrich_article,
+            )
+        except Exception:
+            apply_article_event_metadata = None
+            extract_article_page_metadata = None
+            should_enrich_article = None
+
+        for idx, article in enumerate(articles):
+            if should_enrich_article and idx < ENRICH_PER_SOURCE_MAX and should_enrich_article(
+                article, min_priority=ENRICH_MIN_PRIORITY
+            ):
+                page_html = await fetch_article_page(session, article.link)
+                if page_html and extract_article_page_metadata:
+                    metadata = extract_article_page_metadata(page_html, article.link)
+                    article.link = normalize_url(metadata.get("canonical_url") or article.link)
+                    article.body_text = metadata.get("body_text", "") or article.body_text
+                    article.body_source = metadata.get("body_source", "") or article.body_source
+                    article.extraction_status = metadata.get("extraction_status", "failed")
+                    article.publisher = metadata.get("publisher", "") or article.publisher
+                    article.author = metadata.get("author", "") or article.author
+                    article.published_raw = (
+                        metadata.get("published_raw", "") or article.published_raw
+                    )
+                    if article.body_text:
+                        article.published_confidence = "article"
+                else:
+                    article.extraction_status = "failed"
+
+            if apply_article_event_metadata:
+                apply_article_event_metadata(article)
 
     if source_health and source_key:
         source_health.mark_success(source_key)
@@ -611,11 +821,18 @@ def _category_quota_map() -> dict[str, int]:
 
 
 def get_recent_articles(hours_back: int = 168) -> dict[str, list[Article]]:
+    init_db()
     conn = sqlite3.connect(str(DB_PATH))
     cutoff = datetime.now(TW_TZ) - timedelta(hours=hours_back)
+    _ensure_article_columns(conn)
 
     cursor = conn.execute(
-        """SELECT title, summary, link, source, category, published
+        """SELECT title, summary, link, source, category, published,
+                  source_key, summary_prompt, source_priority, source_quality,
+                  feed_key, region, topics_json, published_raw,
+                  published_confidence, body_text, body_source,
+                  extraction_status, publisher, author, companies_json,
+                  tickers_json, event_type, event_key
            FROM articles WHERE published >= ?
            ORDER BY category, published DESC""",
         (cutoff.isoformat(),),
@@ -628,10 +845,26 @@ def get_recent_articles(hours_back: int = 168) -> dict[str, list[Article]]:
             summary=row[1],
             link=row[2],
             source=row[3],
-            source_key="legacy",
+            source_key=row[6],
             category=row[4],
-            summary_prompt=None,
+            summary_prompt=row[7],
             published=datetime.fromisoformat(row[5]),
+            source_priority=_safe_int(row[8], default=5),
+            source_quality=str(row[9] or "medium"),
+            feed_key=str(row[10] or ""),
+            region=str(row[11] or "global"),
+            topics=_json_loads_list(row[12]),
+            published_raw=str(row[13] or ""),
+            published_confidence=str(row[14] or "feed"),
+            body_text=str(row[15] or ""),
+            body_source=str(row[16] or ""),
+            extraction_status=str(row[17] or "not_attempted"),
+            publisher=str(row[18] or ""),
+            author=str(row[19] or ""),
+            companies=_json_loads_list(row[20]),
+            tickers=_json_loads_list(row[21]),
+            event_type=str(row[22] or ""),
+            event_key=str(row[23] or ""),
         )
         if article.category not in articles:
             articles[article.category] = []

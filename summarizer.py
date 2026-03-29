@@ -20,6 +20,7 @@ from crawler import Article
 
 CONFIG_PATH = Path(__file__).parent / "config.yaml"
 AZURE_CONFIG_PATH = Path(__file__).parent / "Azure.txt"
+DB_PATH = Path(__file__).parent / "data" / "news.db"
 
 
 def _env_bool(name: str, default: bool) -> bool:
@@ -46,6 +47,13 @@ SUMMARY_FULL_READ_MODE = _env_bool("SUMMARY_FULL_READ_MODE", True)
 SUMMARY_TOP10_CATEGORY_MAX_CHARS = max(
     0, int(os.getenv("SUMMARY_TOP10_CATEGORY_MAX_CHARS", "1800"))
 )
+DAILY_MEMO_MAX_ARTICLES = max(1, int(os.getenv("DAILY_MEMO_MAX_ARTICLES", "24")))
+DAILY_MEMO_MAX_PER_CATEGORY = max(
+    1, int(os.getenv("DAILY_MEMO_MAX_PER_CATEGORY", "6"))
+)
+DAILY_MEMO_MAX_INPUT_CHARS = max(
+    0, int(os.getenv("DAILY_MEMO_MAX_INPUT_CHARS", "24000"))
+)
 SUMMARY_INCLUDE_LINKS_IN_PROMPT = _env_bool("SUMMARY_INCLUDE_LINKS_IN_PROMPT", False)
 SUMMARY_TITLE_FALLBACK = _env_bool("SUMMARY_TITLE_FALLBACK", True)
 SUMMARY_TITLE_DEDUP = _env_bool("SUMMARY_TITLE_DEDUP", True)
@@ -64,7 +72,7 @@ AZURE_OPENAI_API_KEY = (
     os.getenv("AZURE_OPENAI_API_KEY", "").strip()
     or os.getenv("AZURE_OPENAI_KEY", "").strip()
 )
-AZURE_OPENAI_MODEL = os.getenv("AZURE_OPENAI_MODEL", "gpt-5-nano").strip()
+AZURE_OPENAI_MODEL = os.getenv("AZURE_OPENAI_MODEL", "gpt-5-mini").strip()
 AZURE_OPENAI_TIMEOUT_SEC = max(30, int(os.getenv("AZURE_OPENAI_TIMEOUT_SEC", "300")))
 AZURE_OPENAI_MAX_RETRIES = max(1, int(os.getenv("AZURE_OPENAI_MAX_RETRIES", "5")))
 AZURE_OPENAI_RETRY_BASE_SEC = max(
@@ -111,9 +119,9 @@ def _persona_block() -> str:
     anti = "\n".join(f"  - {a}" for a in p.get("anti_patterns", []))
     sectors = "\n".join(f"  - {s}" for s in p.get("focus_sectors", []))
     return f"""### 研究人設
-- 角色：{p.get('role', '投資研究員')}
-- 風格：{p.get('style', '混合型')}
-- 時間框架：{p.get('time_horizon', '中長期')}
+- 角色：{p.get("role", "投資研究員")}
+- 風格：{p.get("style", "混合型")}
+- 時間框架：{p.get("time_horizon", "中長期")}
 - 關注板塊：
 {sectors}
 - 高價值訊號：
@@ -160,7 +168,10 @@ _SOURCE_TRAIL_RE = re.compile(
     flags=re.IGNORECASE,
 )
 _LOW_SIGNAL_TITLE_PATTERNS = [
-    re.compile(r"\b(initiates?|upgrades?|downgrades?|reiterates?)\b.*\b(stock|shares?)\b", re.IGNORECASE),
+    re.compile(
+        r"\b(initiates?|upgrades?|downgrades?|reiterates?)\b.*\b(stock|shares?)\b",
+        re.IGNORECASE,
+    ),
     re.compile(r"\b(stock rating|price target)\b", re.IGNORECASE),
     re.compile(r"\bearnings call transcript\b", re.IGNORECASE),
     re.compile(r"\bearnings ahead\b", re.IGNORECASE),
@@ -644,7 +655,7 @@ def _load_azure_settings_from_file(path: Path) -> dict[str, str]:
         else:
             url = urls[0]
 
-    preferred_models = ["gpt-5-nano", "gpt-5-mini"]
+    preferred_models = ["gpt-5-mini", "gpt-5-nano"]
     model = ""
     model_set = {m.lower() for m in models}
     for preferred in preferred_models:
@@ -672,9 +683,7 @@ def _azure_enabled() -> bool:
 
 def _summary_provider() -> str:
     if SUMMARY_PROVIDER and SUMMARY_PROVIDER != "azure":
-        raise RuntimeError(
-            "已鎖定使用 Azure 摘要；請只調整 AZURE_OPENAI_MODEL。"
-        )
+        raise RuntimeError("已鎖定使用 Azure 摘要；請只調整 AZURE_OPENAI_MODEL。")
     if not _azure_enabled():
         raise RuntimeError(
             "SUMMARY_PROVIDER=azure 但缺少 Azure 設定（AZURE_OPENAI_URL / AZURE_OPENAI_API_KEY）。"
@@ -865,6 +874,15 @@ def _build_articles_text(
 標題：{title_text}
 內文：{body_text}
 """
+        if a.companies:
+            text += f"公司：{'、'.join(a.companies)}\n"
+        if a.tickers:
+            text += f"代號：{'、'.join(a.tickers)}\n"
+        if a.event_type:
+            text += f"事件：{a.event_type}\n"
+        financial_context = _article_financial_context(a)
+        if financial_context:
+            text += f"財務重點：{financial_context}\n"
         if SUMMARY_INCLUDE_LINKS_IN_PROMPT:
             text += f"連結：{a.link}\n"
     return text
@@ -874,6 +892,29 @@ def _normalize_inline_text(text: str | None) -> str:
     decoded = html_lib.unescape(text or "")
     cleaned = decoded.replace("\xa0", " ")
     return " ".join(cleaned.split()).strip()
+
+
+def _article_market(article: Article) -> str:
+    for ticker in getattr(article, "tickers", []) or []:
+        ticker_text = str(ticker).upper()
+        if ticker_text.isdigit() or ticker_text.endswith(".TW") or ticker_text.endswith(".TWO"):
+            return "tw"
+    return "us"
+
+
+def _article_financial_context(article: Article) -> str:
+    tickers = getattr(article, "tickers", []) or []
+    if not tickers:
+        return ""
+    try:
+        from financial_reports import format_financial_report_context, get_latest_financial_report
+    except Exception:
+        return ""
+    ticker = str(tickers[0]).replace(".TW", "").replace(".TWO", "").upper()
+    report = get_latest_financial_report(DB_PATH, market=_article_market(article), ticker=ticker)
+    if not report:
+        return ""
+    return format_financial_report_context(report)
 
 
 def _title_fingerprint(title: str) -> str:
@@ -886,7 +927,7 @@ def _title_fingerprint(title: str) -> str:
 
 
 def _article_body_text(article: Article) -> str:
-    body = _normalize_inline_text(article.summary)
+    body = _normalize_inline_text(getattr(article, "body_text", "") or article.summary)
     if not body and SUMMARY_TITLE_FALLBACK:
         body = _normalize_inline_text(article.title)
     if len(body) <= SUMMARY_BODY_MAX_CHARS:
@@ -1043,17 +1084,11 @@ def _sanitize_non_numeric_brackets(text: str) -> str:
 # ── LLM 輸出後處理：去除常見垃圾 ──
 # 正規化 [n(141)] / [n（141）] → [141]
 _BRACKET_N_PAREN_RE = re.compile(r"\[n[（(](\d{1,4})[)）]\]")
-_TRAILING_CITATION_DUMP_RE = re.compile(
-    r"\n+(?:n\n)?(?:\d{1,4}\n){3,}[\d\s]*$"
-)
+_TRAILING_CITATION_DUMP_RE = re.compile(r"\n+(?:n\n)?(?:\d{1,4}\n){3,}[\d\s]*$")
 # 匹配 "[n]102\n[n]104\n..." 格式的裸引用列表
-_TRAILING_BRACKET_CITATION_RE = re.compile(
-    r"\s*(?:\[n\]\d{1,4}\s*){3,}$"
-)
+_TRAILING_BRACKET_CITATION_RE = re.compile(r"\s*(?:\[n\]\d{1,4}\s*){3,}$")
 # 匹配 "n 2、3、13" 或 "[n] 101, 102, 106" 格式的裸引用列表
-_TRAILING_CITATION_INLINE_RE = re.compile(
-    r"\n+\[?n\]?\s+[\d、,\s]+\s*$"
-)
+_TRAILING_CITATION_INLINE_RE = re.compile(r"\n+\[?n\]?\s+[\d、,\s]+\s*$")
 _LLM_CONVERSATIONAL_CLOSERS = [
     re.compile(r"^若需要.*$", re.MULTILINE),
     re.compile(r"^如需.*$", re.MULTILINE),
@@ -1064,13 +1099,9 @@ _LLM_CONVERSATIONAL_CLOSERS = [
     re.compile(r"^---+\s*$", re.MULTILINE),
 ]
 # 移除 LLM 在尾部附加的 "[n] 來源索引對應" 區塊
-_TRAILING_SOURCE_INDEX_RE = re.compile(
-    r"\n+\[n\]\s*來源索引.*$", re.DOTALL
-)
+_TRAILING_SOURCE_INDEX_RE = re.compile(r"\n+\[n\]\s*來源索引.*$", re.DOTALL)
 # 移除 "(以上內容整合自..." 結尾段
-_TRAILING_INTEGRATION_NOTE_RE = re.compile(
-    r"\n+[（(]以上內容整合自.*$", re.DOTALL
-)
+_TRAILING_INTEGRATION_NOTE_RE = re.compile(r"\n+[（(]以上內容整合自.*$", re.DOTALL)
 _DUPLICATE_HEADING_RE = re.compile(
     r"(### .+?今日主軸.*?)(?=### .+?今日主軸)", re.DOTALL
 )
@@ -1123,7 +1154,13 @@ def _clean_llm_output(text: str) -> str:
                 seen_headings[norm_key] = len(merged)
                 merged.append((heading, content))
 
-        result = "\n\n".join(f"{h}\n{c}" for h, c in merged if c)
+        rebuilt_sections: list[str] = []
+        for idx, (heading, content) in enumerate(merged):
+            if content:
+                rebuilt_sections.append(f"{heading}\n{content}")
+            elif idx == 0:
+                rebuilt_sections.append(heading)
+        result = "\n\n".join(rebuilt_sections)
 
     # 4. 清理多餘空行
     result = re.sub(r"\n{3,}", "\n\n", result).strip()
@@ -1154,7 +1191,9 @@ def _validate_summary_citations(
     return True, ""
 
 
-def _build_citation_repair_prompt(base_prompt: str, invalid_output: str, error: str) -> str:
+def _build_citation_repair_prompt(
+    base_prompt: str, invalid_output: str, error: str
+) -> str:
     clipped_output = invalid_output.strip()
     if len(clipped_output) > 1500:
         clipped_output = clipped_output[:1500].rstrip() + "…"
@@ -1171,7 +1210,9 @@ def _build_citation_repair_prompt(base_prompt: str, invalid_output: str, error: 
     )
 
 
-def _summarize_with_citation_guard(prompt: str, category: str, max_index: int) -> str | None:
+def _summarize_with_citation_guard(
+    prompt: str, category: str, max_index: int
+) -> str | None:
     min_citations = _min_citations_for_article_count(max_index)
 
     first_result = _summarize_with_provider(prompt, category)
@@ -1215,7 +1256,7 @@ def _summarize_with_citation_guard(prompt: str, category: str, max_index: int) -
         retry_error = sanitized_retry_error
 
     print(f"  ⚠️ {category} 引用格式仍不合規：{retry_error}", flush=True)
-    return None
+    raise RuntimeError(f"{category} 引用格式不合規：{retry_error}")
 
 
 def _extract_repo_slug(text: str) -> str:
@@ -1279,7 +1320,9 @@ def _clean_x_discussion_text(text: str | None) -> str:
     if not normalized:
         return ""
     normalized = _X_URL_RE.sub("", normalized)
-    normalized = re.sub(r"\s*(?:-|–|—)\s*x\.com\s*$", "", normalized, flags=re.IGNORECASE)
+    normalized = re.sub(
+        r"\s*(?:-|–|—)\s*x\.com\s*$", "", normalized, flags=re.IGNORECASE
+    )
     normalized = re.sub(r"\bx\.com\b", "", normalized, flags=re.IGNORECASE)
     normalized = re.sub(r"\s+", " ", normalized).strip(" -|;:,")
     return _normalize_inline_text(normalized)
@@ -1374,11 +1417,7 @@ def _extract_x_topics(text: str) -> tuple[list[str], list[str]]:
 
     for token in _X_CJK_TOKEN_RE.findall(normalized):
         token_norm = token.strip()
-        if (
-            not token_norm
-            or token_norm in _X_TOPIC_STOPWORDS_ZH
-            or len(token_norm) < 2
-        ):
+        if not token_norm or token_norm in _X_TOPIC_STOPWORDS_ZH or len(token_norm) < 2:
             continue
         key = token_norm.lower()
         if key not in keywords_map:
@@ -1671,11 +1710,7 @@ def _build_x_trends_summary(category: str, articles: list[Article]) -> str:
     lines.append("")
     lines.append("### 可驗證訊號")
     ranked_buckets = sorted(
-        (
-            (name, refs)
-            for name, refs in signal_buckets.items()
-            if refs
-        ),
+        ((name, refs) for name, refs in signal_buckets.items() if refs),
         key=lambda item: (len(item[1]), item[0]),
         reverse=True,
     )
@@ -1724,7 +1759,7 @@ def _build_x_trends_summary(category: str, articles: list[Article]) -> str:
             refs.update(topic_refs)
             topic_names.append(topic)
         lines.append(
-            f"- **共識區**：{ '、'.join(topic_names) } 已跨多來源重複出現，短期延續機率較高。{_format_citation_refs(refs, max_refs=5)}"
+            f"- **共識區**：{'、'.join(topic_names)} 已跨多來源重複出現，短期延續機率較高。{_format_citation_refs(refs, max_refs=5)}"
         )
     else:
         lines.append("- **共識區**：目前尚未形成跨來源的穩定共識。")
@@ -1736,7 +1771,7 @@ def _build_x_trends_summary(category: str, articles: list[Article]) -> str:
             refs.update(topic_refs)
             topic_names.append(topic)
         lines.append(
-            f"- **分歧區**：{ '、'.join(topic_names) } 目前多集中於少數來源，先當早期訊號，不急著放大解讀。{_format_citation_refs(refs, max_refs=5)}"
+            f"- **分歧區**：{'、'.join(topic_names)} 目前多集中於少數來源，先當早期訊號，不急著放大解讀。{_format_citation_refs(refs, max_refs=5)}"
         )
     else:
         lines.append("- **分歧區**：目前未見明顯單一來源壟斷議題。")
@@ -1813,7 +1848,9 @@ def _build_x_trends_summary(category: str, articles: list[Article]) -> str:
                 overlap += 1
         score += overlap * 2.4
         ranked_posts.append((score, idx, article))
-    ranked_posts.sort(key=lambda row: (row[0], row[2].published.timestamp(), -row[1]), reverse=True)
+    ranked_posts.sort(
+        key=lambda row: (row[0], row[2].published.timestamp(), -row[1]), reverse=True
+    )
 
     for _score, idx, article in ranked_posts[:3]:
         lines.append(
@@ -1933,13 +1970,39 @@ def _build_ai_practice_hotlist_summary(category: str, articles: list[Article]) -
         ):
             adoption_refs.add(idx)
 
-        if any(kw in title_lc for kw in ("agent", "mcp", "copilot", "tool use", "workflow")):
+        if any(
+            kw in title_lc for kw in ("agent", "mcp", "copilot", "tool use", "workflow")
+        ):
             topic_refs["Agent / MCP 工具鏈"].add(idx)
-        if any(kw in title_lc for kw in ("rag", "retrieval", "vector", "embedding", "knowledge")):
+        if any(
+            kw in title_lc
+            for kw in ("rag", "retrieval", "vector", "embedding", "knowledge")
+        ):
             topic_refs["RAG / 知識檢索"].add(idx)
-        if any(kw in title_lc for kw in ("inference", "latency", "token", "deploy", "production", "on-device", "成本")):
+        if any(
+            kw in title_lc
+            for kw in (
+                "inference",
+                "latency",
+                "token",
+                "deploy",
+                "production",
+                "on-device",
+                "成本",
+            )
+        ):
             topic_refs["推理成本與部署"].add(idx)
-        if any(kw in title_lc for kw in ("eval", "benchmark", "safety", "security", "governance", "guardrail")):
+        if any(
+            kw in title_lc
+            for kw in (
+                "eval",
+                "benchmark",
+                "safety",
+                "security",
+                "governance",
+                "guardrail",
+            )
+        ):
             topic_refs["評測與治理"].add(idx)
 
         slug = _article_repo_slug(article)
@@ -1969,11 +2032,7 @@ def _build_ai_practice_hotlist_summary(category: str, articles: list[Article]) -
     )
     top_repos = ranked_repos[:6]
     hot_topics = sorted(
-        (
-            (topic, refs)
-            for topic, refs in topic_refs.items()
-            if refs
-        ),
+        ((topic, refs) for topic, refs in topic_refs.items() if refs),
         key=lambda item: len(item[1]),
         reverse=True,
     )
@@ -2012,7 +2071,9 @@ def _build_ai_practice_hotlist_summary(category: str, articles: list[Article]) -
             impact_lines.append(
                 f"- 檢索與資料連接工具升溫，企業落地重點轉向資料治理與成本控制；受益在資料平台與向量基建。{refs}"
             )
-        elif any(key in slug_lc for key in ("eval", "benchmark", "guard", "safety", "secure")):
+        elif any(
+            key in slug_lc for key in ("eval", "benchmark", "guard", "safety", "secure")
+        ):
             impact_lines.append(
                 f"- 評測與安全治理工具被重視，採購優先序會偏向可稽核與可量測成效的方案。{refs}"
             )
@@ -2074,6 +2135,128 @@ def _build_ai_practice_hotlist_summary(category: str, articles: list[Article]) -
         lines.append("- 追蹤是否出現可重現 benchmark 與部署指標。")
 
     return "\n".join(lines)
+
+
+_AI_GITHUB_KEYWORDS = (
+    "ai",
+    "agent",
+    "agents",
+    "mcp",
+    "llm",
+    "gpt",
+    "claude",
+    "openai",
+    "anthropic",
+    "copilot",
+    "prompt",
+    "rag",
+    "retrieval",
+    "embedding",
+    "vector",
+    "inference",
+    "model",
+    "models",
+    "ml",
+    "mlx",
+    "audio",
+    "tts",
+    "stt",
+    "sts",
+    "speech",
+    "voice",
+    "sora",
+    "diffusion",
+)
+
+
+def _is_ai_github_article(article: Article) -> bool:
+    source_lc = _normalize_inline_text(article.source).lower()
+    host = _article_host(article)
+    if "github" not in source_lc and host != "github.com" and not host.endswith(".github.com"):
+        return False
+
+    article_text = _normalize_inline_text(
+        f"{article.title} {article.summary} {_article_repo_slug(article)}"
+    ).lower()
+    return any(keyword in article_text for keyword in _AI_GITHUB_KEYWORDS)
+
+
+def _prepare_ai_github_digest_articles(articles: list[Article]) -> list[Article]:
+    github_articles = [
+        article for article in articles if _is_ai_github_article(article) and _has_article_body(article)
+    ]
+    if not github_articles:
+        return []
+
+    ranked_articles = _rank_articles_by_signal(github_articles)
+    deduped_articles, _ = _dedupe_by_title(ranked_articles)
+    return deduped_articles[:7]
+
+
+def build_ai_github_digest_prompt(category: str, articles: list[Article]) -> str:
+    selected_articles = _prepare_ai_github_digest_articles(articles)
+    articles_text = _build_articles_text(selected_articles or articles)
+    min_citations = _min_citations_for_article_count(len(selected_articles or articles))
+    prompt = f"""你正在整理 [{category}] 裡的 GitHub 熱門 AI 工具清單。
+
+### 任務
+只保留最值得看的 GitHub 項目，輸出給使用者快速瀏覽。
+
+### 輸出格式（固定）
+### GitHub 熱門 AI 工具
+- **保留 GitHub 原始標題**：一句正體中文簡單解釋這個 repo / 工具在做什麼，必要時再補半句「為什麼最近值得看」。[n]
+
+### 規則
+- 只挑 5-7 個最值得看的 GitHub 項目。
+- 每點只寫 1 句，最長 40 字。
+- 保留 GitHub 原始標題，不要改寫成新聞標題。
+- 一句正體中文簡單解釋即可，不要寫成新聞分析。
+- 不要輸出「今日主軸」「市場影響」「48h 追蹤」「風險」等段落。
+- 不要直接貼英文 summary；要改寫成自然的正體中文。
+- 若資訊不足，只能根據標題與摘要做保守說明，不可腦補功能。
+- 直接輸出內容，不要開場白，不要結尾補充說明。
+
+以下是 GitHub 相關材料：
+{articles_text}
+"""
+    return prompt + "\n\n" + _citation_rules(min_citations)
+
+
+def _fallback_ai_github_digest(category: str, articles: list[Article]) -> str:
+    selected_articles = _prepare_ai_github_digest_articles(articles) or articles[:5]
+    lines = ["### GitHub 熱門 AI 工具"]
+    if not selected_articles:
+        lines.append("- 目前沒有可用的 GitHub AI 項目。")
+        return "\n".join(lines)
+
+    for idx, article in enumerate(selected_articles, 1):
+        title = _normalize_inline_text(article.title) or _article_repo_slug(article) or "GitHub 項目"
+        repo_slug = _article_repo_slug(article)
+        if repo_slug:
+            explanation = f"{repo_slug} 最近在 GitHub 熱度上升，可先看它在解什麼問題。"
+        else:
+            explanation = "這是近期 GitHub 熱度上升的 AI 工具，可先點進原始頁面看用途。"
+        lines.append(f"- **{title}**：{explanation}[{idx}]")
+    return "\n".join(lines)
+
+
+def summarize_ai_github_digest(
+    category: str, articles: list[Article]
+) -> tuple[str, dict[int, str]]:
+    selected_articles = _prepare_ai_github_digest_articles(articles)
+    if not selected_articles:
+        return _fallback_ai_github_digest(category, articles), {}
+
+    prompt = build_ai_github_digest_prompt(category, selected_articles)
+    result = _summarize_with_citation_guard(prompt, f"{category} GitHub digest", len(selected_articles))
+    if result:
+        return _clean_llm_output(result), {
+            idx: article.link for idx, article in enumerate(selected_articles, 1)
+        }
+
+    return _fallback_ai_github_digest(category, selected_articles), {
+        idx: article.link for idx, article in enumerate(selected_articles, 1)
+    }
 
 
 def _prepare_summary_articles(
@@ -2376,6 +2559,38 @@ def _category_focus(prompt_type: str) -> str:
 def _build_category_synthesis_prompt(
     category: str, prompt_type: str, articles_text: str
 ) -> str:
+    if prompt_type == "x_trends":
+        return f"""你是AI/LLM 社群情報分析師，追蹤重要 KOL、官方帳號與技術社群討論。
+
+### 任務
+讀完所有內文後，先回答「社群在討論什麼」，再整理主線、可驗證訊號與代表性貼文。
+
+### 輸出格式
+### {category} AI 導讀
+
+### 社群在討論什麼（內文）
+
+### 主線與背後動機
+
+### 可驗證訊號
+
+### 影響與機會（若有）
+
+### 代表性貼文
+
+### 48h 行動清單
+
+### 規則
+- 繁體中文，重要事實附 [n]
+- 不可只列來源或連結；必須先講內容。
+- 先講討論內容，再講誰在討論。
+- 每點要有具體事實支撐，不可空泛形容。
+- 直接輸出，不要開場白，不要結尾問話或補充說明
+
+以下是今天的新聞內文：
+{articles_text}
+"""
+
     agent_key = _resolve_agent_key(category, prompt_type)
     agents = _load_category_agents()
     agent = agents.get(agent_key, {})
@@ -2511,12 +2726,12 @@ def _build_category_merge_prompt(
 """
 
 
-def build_top10_prompt(
+def build_daily_memo_prompt(
     all_articles: dict[str, list[Article]],
     summaries: dict[str, str],
     category_max_chars: int | None = None,
 ) -> str:
-    """建立今日全重點 prompt（跨分類整合，不挑新聞）"""
+    """建立每日整體 memo prompt（跨分類整合，不挑新聞）"""
     limit_chars = (
         SUMMARY_TOP10_CATEGORY_MAX_CHARS
         if category_max_chars is None
@@ -2537,54 +2752,56 @@ def build_top10_prompt(
 
     return f"""你是首席投資策略師兼產業研究總監。以下是今天各分類的深度分析摘要。
 
-你的任務是產出一份專業級的跨分類策略報告 — 不是重述各分類內容，而是找出不同領域之間的共振點、矛盾點和結構性位移，幫助讀者建立全局判斷框架。
+你的任務是產出一份單篇「每日整體 memo」。這不是分類彙編，也不是新聞條列，而是一篇有結論、有佐證、有推論脈絡的市場判讀。
 
 ### 任務要求
 - 只可使用輸入中的事實，不可新增未出現的事件。
-- 重點是跨分類共振與矛盾，不是逐分類重述。
-- 每個判斷都要有至少 2 個分類的證據交叉驗證。
-- 若證據不足，直接省略該判斷而非硬湊結論。
+- 不可逐分類重述；分類只可作為你內部理解脈絡的材料。
+- 每個主要判斷都要有至少 2 個訊號或 2 個來源支撐。
+- 每個段落都優先遵守「結論 → 佐證 → 脈絡 → 投資意義」。
+- 若證據不足，直接縮短段落，不可硬湊結論。
 
 ### 輸出格式（固定）
 ### 今日主線
-4-5 句。不只是列出「今天發生了什麼」，而是講清楚：
-1. 今天最重要的 1-2 個結構性變化是什麼
-2. 它們之間有什麼關聯
-3. 為什麼今天這個時間點很重要（觸發條件是什麼）
+4-6 句。
+- 先給今天最重要的 1-2 個結論。
+- 接著補 2-3 個直接佐證。
+- 再交代這些佐證如何串成市場主線。
 
-### 跨分類因果鏈（3-4 條）
-每條展開 3-4 句：
-1. **觸發事件**（在哪個分類觀察到）→ **第一層影響**（直接受影響的產業/公司）→ **第二層影響**（間接連鎖效應）→ **投資組合意義**（具體到哪類持倉）
-2. ...
-3. ...
-每條需有至少 2 個分類的交叉證據支撐。
+### 市場怎麼定價
+4-6 句。
+- 說清楚股市、利率/美元、商品、加密、半導體或台股在交易什麼。
+- 必須交代跨資產之間的呼應或背離。
 
-### 產業結構位移（本期最重要的洞察）
-- 3-4 點，指出不是短期事件而是中長期產業格局正在改變的證據：
-  - 哪個供應鏈節點的競爭優勢正在位移？
-  - 哪個技術路線正在取得主導地位？
-  - 哪個政策方向正在重塑遊戲規則？
+### 關鍵因果鏈
+列 3 條。
+每條 3-4 句，格式為：
+1. 先寫一句結論
+2. 再寫觸發事件與直接佐證
+3. 再寫第一層影響與第二層影響
+4. 最後寫投資意義
 
-### 投資框架（不是預測，是條件判斷）
-- **受益鏈**：3-4 點，格式「若 A 條件持續成立 → B 類資產/公司受益 → 具體邏輯」
-- **受壓鏈**：3-4 點，同上格式
-- **轉折訊號**：2-3 點，「若看到 X → 代表上述判斷需要翻轉」
+### 重要公司 / 資產
+3-5 點。
+- 只保留今天最值得盯的公司、指數、ETF、商品或貨幣。
+- 每點都要說明：為什麼它重要、它證明了什麼。
 
-### 風險矩陣
-- **高機率低衝擊**：1-2 點
-- **低機率高衝擊**：1-2 點（黑天鵝型風險）
-- **正在被市場忽略的風險**：1-2 點
+### 反方與風險
+3-4 點。
+- 每點都要明寫：若主線錯了，最可能錯在哪。
+- 要提出具體反證，而不是抽象風險提醒。
 
-### 48h 觀察清單
-- 4-6 點，每點格式：「觀察 X（數據/公告/事件）→ 若結果是 A → 主線偏向 Y → 行動建議 Z」
+### 48 小時觀察點
+4-6 點。
+- 每點格式：「觀察 X → 若結果是 A → 主線偏向 Y」。
 
 ### 規則
 - 用繁體中文。
 - 不要使用 [n] 引用標記（輸入中已去除引用編號）。
-- 每個判斷要有具體數字或事實支撐，禁止空泛詞。
+- 每個判斷要有具體數字、價格、公司、政策或事件支撐。
 - 不要插入分類標籤或逐分類逐段重述。
 - 不做明確漲跌預測，但要明確列出條件判斷。
-- 若同一事件已在多個分類摘要中出現，只在最相關的因果鏈中提一次，其餘跳過。
+- 若同一事件已在多個分類摘要中出現，只在最相關的位置提一次。
 - 直接輸出內容，不要開場白，不要結尾問話或補充說明。
 
 以下是今天各分類摘要：
@@ -2592,24 +2809,246 @@ def build_top10_prompt(
 """
 
 
-def _fallback_top10_from_summaries(summaries: dict[str, str]) -> str:
+def _prepare_daily_memo_articles(
+    all_articles: dict[str, list[Article]],
+) -> tuple[list[tuple[str, Article]], dict[str, int]]:
+    prepared: list[tuple[str, Article]] = []
+    candidate_rows: list[tuple[float, float, str, Article]] = []
+    stats = {
+        "input_categories": len(all_articles),
+        "input_articles": sum(len(items) for items in all_articles.values()),
+        "candidate_articles": 0,
+        "selected_articles": 0,
+    }
+
+    for category, articles in all_articles.items():
+        if not articles:
+            continue
+        prompt_type = _get_prompt_type(category, articles)
+        _, selected_articles, _ = _prepare_summary_articles(articles, category, prompt_type)
+        if DAILY_MEMO_MAX_PER_CATEGORY > 0:
+            selected_articles = selected_articles[:DAILY_MEMO_MAX_PER_CATEGORY]
+        for article in selected_articles:
+            candidate_rows.append(
+                (
+                    _article_signal_score(article),
+                    article.published.timestamp(),
+                    category,
+                    article,
+                )
+            )
+
+    stats["candidate_articles"] = len(candidate_rows)
+    candidate_rows.sort(key=lambda row: (row[0], row[1]), reverse=True)
+
+    seen_keys: set[str] = set()
+    used_chars = 0
+    for _score, _published_ts, category, article in candidate_rows:
+        dedupe_key = article.url_hash or article.link or _title_fingerprint(article.title)
+        if dedupe_key and dedupe_key in seen_keys:
+            continue
+
+        article_chars = _estimate_article_prompt_chars(article) + len(category) + 48
+        if (
+            DAILY_MEMO_MAX_INPUT_CHARS > 0
+            and prepared
+            and used_chars + article_chars > DAILY_MEMO_MAX_INPUT_CHARS
+        ):
+            break
+
+        prepared.append((category, article))
+        used_chars += article_chars
+        if dedupe_key:
+            seen_keys.add(dedupe_key)
+        if DAILY_MEMO_MAX_ARTICLES > 0 and len(prepared) >= DAILY_MEMO_MAX_ARTICLES:
+            break
+
+    stats["selected_articles"] = len(prepared)
+    return prepared, stats
+
+
+def _cluster_daily_memo_events(
+    prepared_articles: list[tuple[str, Article]],
+) -> list[dict[str, object]]:
+    clusters: list[dict[str, object]] = []
+    cluster_by_key: dict[str, dict[str, object]] = {}
+
+    for idx, (category, article) in enumerate(prepared_articles, 1):
+        cluster_key = _normalize_inline_text(getattr(article, "event_key", ""))
+        if not cluster_key:
+            cluster_key = _title_fingerprint(article.title)
+        if not cluster_key:
+            cluster_key = article.url_hash or article.link or f"daily-memo-{idx}"
+
+        cluster = cluster_by_key.get(cluster_key)
+        if cluster is None:
+            cluster = {
+                "key": cluster_key,
+                "headline": _normalize_inline_text(article.title) or "未命名事件",
+                "articles": [],
+                "categories": [],
+                "sources": [],
+                "latest_published": article.published,
+                "signal_score": _article_signal_score(article),
+            }
+            cluster_by_key[cluster_key] = cluster
+            clusters.append(cluster)
+
+        cluster_articles = cluster["articles"]
+        assert isinstance(cluster_articles, list)
+        cluster_articles.append((category, article))
+
+        cluster_categories = cluster["categories"]
+        assert isinstance(cluster_categories, list)
+        if category not in cluster_categories:
+            cluster_categories.append(category)
+
+        cluster_sources = cluster["sources"]
+        assert isinstance(cluster_sources, list)
+        source_name = _normalize_inline_text(article.source) or "未知來源"
+        if source_name not in cluster_sources:
+            cluster_sources.append(source_name)
+
+        latest_published = cluster["latest_published"]
+        assert isinstance(latest_published, datetime)
+        if article.published > latest_published:
+            cluster["latest_published"] = article.published
+
+        signal_score = cluster["signal_score"]
+        assert isinstance(signal_score, (int, float))
+        cluster["signal_score"] = max(signal_score, _article_signal_score(article))
+
+    return clusters
+
+
+def _build_daily_memo_articles_text(prepared_articles: list[tuple[str, Article]]) -> str:
+    lines: list[str] = []
+    for idx, cluster in enumerate(_cluster_daily_memo_events(prepared_articles), 1):
+        headline = str(cluster["headline"])
+        categories = "、".join(cluster["categories"])
+        sources = "、".join(cluster["sources"])
+        latest_published = cluster["latest_published"]
+        assert isinstance(latest_published, datetime)
+        cluster_articles = cluster["articles"]
+        assert isinstance(cluster_articles, list)
+
+        lines.extend(
+            [
+                f"### 事件 {idx}",
+                f"標題主軸：{headline}",
+                f"來源數：{len(cluster_articles)}",
+                f"涉及標籤：{categories or '未標記'}",
+                f"來源列表：{sources or '未知來源'}",
+                f"最新時間：{latest_published.strftime('%Y-%m-%d %H:%M')}",
+            ]
+        )
+
+        for article_idx, (category, article) in enumerate(cluster_articles, 1):
+            body_text = _article_body_text(article)
+            lines.append(
+                "材料 "
+                f"{article_idx} | 來源：{article.source} | 標籤：{category} "
+                f"| 時間：{article.published.strftime('%Y-%m-%d %H:%M')}"
+            )
+            if article.companies:
+                lines.append(f"公司：{'、'.join(article.companies)}")
+            if article.tickers:
+                lines.append(f"代號：{'、'.join(article.tickers)}")
+            if article.event_type:
+                lines.append(f"事件：{article.event_type}")
+            financial_context = _article_financial_context(article)
+            if financial_context:
+                lines.append(f"財務重點：{financial_context}")
+            lines.append(f"摘要：{body_text}")
+            if SUMMARY_INCLUDE_LINKS_IN_PROMPT:
+                lines.append(f"連結：{article.link}")
+        lines.append("")
+
+    return "\n".join(lines).strip()
+
+
+def build_daily_memo_prompt_from_articles(
+    prepared_articles: list[tuple[str, Article]]
+) -> str:
+    context = _build_daily_memo_articles_text(prepared_articles)
+    return f"""你是首席投資策略師兼產業研究總監。以下是今天高訊號、已去重並按事件群組整理的市場材料。
+
+你的任務是產出一份單篇「每日整體 memo」。
+
+### 任務要求
+- 只可使用輸入中的事實，不可新增未出現的事件。
+- 不可逐分類重述；`涉及標籤` 只用來幫助你理解脈絡，不能當成輸出章節。
+- 每個主要判斷都要有至少 2 個事件、價格、政策或公司訊號支撐。
+- 每個段落都優先遵守「結論 → 佐證 → 脈絡 → 投資意義」。
+- 若證據不足，直接縮短段落，不可硬湊結論。
+- 若同一事件下有多條材料，先整合材料再下判斷，不可把同一標題主軸重複當成多個獨立事件。
+
+### 輸出格式（固定）
+### 今日主線
+4-6 句，先講今天最重要的 1-2 個結論，再補直接佐證與市場主線。
+
+### 市場怎麼定價
+4-6 句，說清楚股市、商品、加密、半導體、匯率或台股之間的呼應或背離。
+
+### 關鍵因果鏈
+列 3 條。每條都要包含：
+1. 一句結論
+2. 直接佐證
+3. 第一層與第二層影響
+4. 投資意義
+
+### 重要公司 / 資產
+3-5 點，每點都要說明為什麼它重要、它證明了什麼。
+
+### 反方與風險
+3-4 點，每點都要寫清楚：若主線錯了，最可能錯在哪。
+
+### 48 小時觀察點
+4-6 點，每點格式：「觀察 X → 若結果是 A → 主線偏向 Y」。
+
+### 規則
+- 用繁體中文。
+- 不要使用 [n] 引用標記。
+- 每個判斷都要帶具體價格、公司、政策、時間或事件。
+- 不要插入分類標題，不要逐條新聞重述。
+- 不做明確漲跌預測，但要明確列出條件判斷。
+- 同一個 `標題主軸` 只能視為一個事件，佐證要寫成跨來源整合，不可重複計數。
+- 直接輸出內容，不要開場白，不要結尾問話或補充說明。
+
+以下是今天的高訊號事件材料：
+{context}
+"""
+
+
+def build_top10_prompt(
+    all_articles: dict[str, list[Article]],
+    summaries: dict[str, str],
+    category_max_chars: int | None = None,
+) -> str:
+    """相容舊名稱，實際改走新的 daily memo prompt。"""
+    return build_daily_memo_prompt(all_articles, summaries, category_max_chars)
+
+
+def _fallback_daily_memo_from_summaries(summaries: dict[str, str]) -> str:
     lines = ["### 今日主線"]
-    lines.append("跨分類整合摘要逾時，先提供各分類高訊號導讀。")
+    lines.append("整體 memo 生成逾時，先根據已完成的分類摘要整理今日主線。")
     lines.append("")
-    lines.append("### 三條跨分類因果鏈")
-    lines.append("1. 目前資訊不足以完整建立跨分類因果鏈，需待下一輪整合。")
-    lines.append("2. 先以各分類共同提及的事件與政策變數作為主軸。")
-    lines.append("3. 若關鍵事件被多來源重複證實，再升級為主線判斷。")
+    lines.append("### 市場怎麼定價")
+    lines.append("目前先以跨分類共同出現的價格訊號、政策變數與公司事件作為市場主線。")
     lines.append("")
-    lines.append("### 投資 Inside（框架，不是預測）")
-    lines.append("- **受益鏈**：先觀察「需求確定性提升 + 供給受限」的組合。")
-    lines.append("- **受壓鏈**：先觀察「政策不確定 + 成本上升」的組合。")
+    lines.append("### 關鍵因果鏈")
+    lines.append("1. 若同一事件被多個分類反覆提及，優先視為主線候選。")
+    lines.append("2. 若政策、價格、公司三種訊號同時共振，優先提高判讀權重。")
+    lines.append("3. 若後續來源彼此矛盾，暫不升級為強結論。")
     lines.append("")
-    lines.append("### 風險與反證")
+    lines.append("### 重要公司 / 資產")
+    lines.append("- 先追蹤被多來源重複提及，且能代表板塊風向的公司與資產。")
+    lines.append("")
+    lines.append("### 反方與風險")
     lines.append("- 若後續新聞無法形成跨來源共識，需降低主線信心。")
     lines.append("- 若同一事件出現互相矛盾版本，暫不做方向判斷。")
     lines.append("")
-    lines.append("### 48h 觀察清單")
+    lines.append("### 48 小時觀察點")
     for category, summary in summaries.items():
         short = _normalize_inline_text(summary).replace("\n", " ")
         if len(short) > 120:
@@ -2618,31 +3057,105 @@ def _fallback_top10_from_summaries(summaries: dict[str, str]) -> str:
     return "\n".join(lines)
 
 
-def generate_top10(
+def _fallback_daily_memo_from_articles(
+    prepared_articles: list[tuple[str, Article]]
+) -> str:
+    event_clusters = _cluster_daily_memo_events(prepared_articles)
+    lines = ["### 今日主線"]
+    lines.append("整體 memo 生成逾時，先根據高訊號原始新聞整理今天的主線。")
+    lines.append("")
+    lines.append("### 市場怎麼定價")
+    lines.append("先觀察原始新聞中重複出現的政策、價格與公司事件，再決定主線強度。")
+    lines.append("")
+    lines.append("### 關鍵因果鏈")
+    for idx, cluster in enumerate(event_clusters[:3], 1):
+        lines.append(f"{idx}. {cluster['headline']}")
+    lines.append("")
+    lines.append("### 重要公司 / 資產")
+    for cluster in event_clusters[:5]:
+        lines.append(f"- {cluster['headline']}")
+    lines.append("")
+    lines.append("### 反方與風險")
+    lines.append("- 若高訊號新聞彼此無法形成同一條主線，需降低結論強度。")
+    lines.append("")
+    lines.append("### 48 小時觀察點")
+    for cluster in event_clusters[:4]:
+        lines.append(f"- 觀察：{cluster['headline']}")
+    return "\n".join(lines)
+
+
+def generate_daily_memo(
     all_articles: dict[str, list[Article]], summaries: dict[str, str]
 ) -> str:
-    """產生今日全重點（跨分類整合）"""
-    prompt = build_top10_prompt(all_articles, summaries)
+    """產生每日整體 memo（跨分類整合）"""
+    prompt = build_daily_memo_prompt(all_articles, summaries)
 
     provider = _summary_provider()
     provider_model = AZURE_OPENAI_MODEL if provider == "azure" else CODEX_MODEL
     print(f"  → Provider: {provider} ({provider_model})", end=" ")
-    result = _summarize_with_provider(prompt, "今日全重點")
+    result = _summarize_with_provider(prompt, "每日整體 memo")
     if result:
         print("✅")
         return _clean_llm_output(_sanitize_non_numeric_brackets(result))
 
     compact_chars = max(800, SUMMARY_TOP10_CATEGORY_MAX_CHARS // 2)
-    retry_prompt = build_top10_prompt(
+    retry_prompt = build_daily_memo_prompt(
         all_articles, summaries, category_max_chars=compact_chars
     )
-    retry_result = _summarize_with_provider(retry_prompt, "今日全重點（重試）")
+    retry_result = _summarize_with_provider(retry_prompt, "每日整體 memo（重試）")
     if retry_result:
         print("⚠️ 首次失敗，重試成功")
         return _clean_llm_output(_sanitize_non_numeric_brackets(retry_result))
 
     print("⚠️ 失敗，改用 fallback")
-    return _clean_llm_output(_sanitize_non_numeric_brackets(_fallback_top10_from_summaries(summaries)))
+    return _clean_llm_output(
+        _sanitize_non_numeric_brackets(_fallback_daily_memo_from_summaries(summaries))
+    )
+
+
+def generate_top10(
+    all_articles: dict[str, list[Article]], summaries: dict[str, str]
+) -> str:
+    """相容舊名稱，實際改走新的 daily memo 生成。"""
+    return generate_daily_memo(all_articles, summaries)
+
+
+def generate_daily_memo_from_articles(all_articles: dict[str, list[Article]]) -> str:
+    """直接從原始文章生成每日整體 memo（不先做分類摘要）。"""
+    prepared_articles, stats = _prepare_daily_memo_articles(all_articles)
+    if not prepared_articles:
+        return _fallback_daily_memo_from_summaries({})
+
+    event_clusters = _cluster_daily_memo_events(prepared_articles)
+    stats["selected_events"] = len(event_clusters)
+    print(
+        "  🧭 每日 memo 原文路徑："
+        f"候選 {stats['candidate_articles']} 篇 → 使用 {stats['selected_articles']} 篇"
+        f" → 事件 {stats['selected_events']} 組"
+    )
+    prompt = build_daily_memo_prompt_from_articles(prepared_articles)
+
+    provider = _summary_provider()
+    provider_model = AZURE_OPENAI_MODEL if provider == "azure" else CODEX_MODEL
+    print(f"  → Provider: {provider} ({provider_model})", end=" ")
+    result = _summarize_with_provider(prompt, "每日整體 memo")
+    if result:
+        print("✅")
+        return _clean_llm_output(_sanitize_non_numeric_brackets(result))
+
+    retry_articles = prepared_articles[: max(8, len(prepared_articles) // 2)]
+    retry_prompt = build_daily_memo_prompt_from_articles(retry_articles)
+    retry_result = _summarize_with_provider(retry_prompt, "每日整體 memo（重試）")
+    if retry_result:
+        print("⚠️ 首次失敗，重試成功")
+        return _clean_llm_output(_sanitize_non_numeric_brackets(retry_result))
+
+    print("⚠️ 失敗，改用 fallback")
+    return _clean_llm_output(
+        _sanitize_non_numeric_brackets(
+            _fallback_daily_memo_from_articles(prepared_articles)
+        )
+    )
 
 
 def _summarize_with_codex(prompt: str, category: str) -> str | None:
@@ -2857,9 +3370,7 @@ def summarize_category(category: str, articles: list[Article]) -> str:
         merge_prompt = _build_category_merge_prompt(
             category, prompt_type, chunk_summaries, len(selected_articles)
         )
-        merge_result = _summarize_with_provider(
-            merge_prompt, f"{category} 合併"
-        )
+        merge_result = _summarize_with_provider(merge_prompt, f"{category} 合併")
         if merge_result:
             print(f"    ✅ {category} 摘要完成")
             return _clean_llm_output(merge_result)

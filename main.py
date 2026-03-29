@@ -9,6 +9,16 @@ from typing import Literal
 TW_TZ = timezone(timedelta(hours=8))
 
 
+def _find_ai_radar_category(articles: dict[str, list[object]]) -> str | None:
+    for category, category_articles in articles.items():
+        for article in category_articles:
+            if getattr(article, "summary_prompt", None) == "ai_practice":
+                return category
+            if "AI 工具與實戰" in (getattr(article, "category", "") or ""):
+                return category
+    return None
+
+
 async def run(
     hours_back: int = 168,
     skip_summary: bool = False,
@@ -58,6 +68,8 @@ async def run(
     print("📈 Step 2: 抓取市場數據（與 AI 摘要並行）")
     print(f"{'─' * 40}", flush=True)
     from market_data import get_market_overview
+    from earnings_data import refresh_us_financial_reports_for_articles
+    from tw_financials import refresh_tw_financial_reports_for_articles
 
     async def _fetch_market_in_background():
         started = time.time()
@@ -67,9 +79,45 @@ async def run(
         except Exception as e:
             return None, e, time.time() - started
 
+    async def _refresh_financials_in_background():
+        started = time.time()
+        us_count = tw_count = 0
+        errors: list[str] = []
+        try:
+            us_reports = await asyncio.to_thread(
+                refresh_us_financial_reports_for_articles, articles
+            )
+            us_count = len(us_reports)
+        except Exception as e:
+            errors.append(f"US: {e}")
+        try:
+            tw_reports = await asyncio.to_thread(
+                refresh_tw_financial_reports_for_articles, articles
+            )
+            tw_count = len(tw_reports)
+        except Exception as e:
+            errors.append(f"TW: {e}")
+        return {"us": us_count, "tw": tw_count}, errors, time.time() - started
+
     market_task = asyncio.create_task(_fetch_market_in_background())
+    financial_task = asyncio.create_task(_refresh_financials_in_background())
     market = None
-    print("🚀 市場數據背景抓取中", flush=True)
+    print("🚀 市場數據與財務資料背景抓取中", flush=True)
+
+    financial_counts, financial_errors, financial_elapsed = await financial_task
+    stage_times["Step 2.5 財務資料"] = financial_elapsed
+    print(f"⏱️ Step 2.5 財務資料 耗時：{financial_elapsed:.1f} 秒", flush=True)
+    if financial_errors:
+        print(
+            f"⚠️ 財務資料刷新部分失敗: {' | '.join(financial_errors)}",
+            flush=True,
+        )
+    else:
+        print(
+            "✅ 財務資料刷新完成: "
+            f"US {financial_counts['us']} 筆 / TW {financial_counts['tw']} 筆",
+            flush=True,
+        )
 
     # Step 3: AI 摘要
     step3_start = time.time()
@@ -83,26 +131,62 @@ async def run(
         summaries = {}
         top10_text = ""
     else:
-        from summarizer import (
-            summarize_all,
-            generate_top10,
-            reset_usage_stats,
-            get_usage_summary,
-            build_all_citation_links,
-        )
+        if report_type == "daily":
+            from summarizer import (
+                generate_daily_memo_from_articles,
+                get_usage_summary,
+                reset_usage_stats,
+                summarize_ai_github_digest,
+            )
 
-        reset_usage_stats()
-        print(f"開始摘要 {len(articles)} 個分類...", flush=True)
-        summaries = summarize_all(articles)
-        citation_links = build_all_citation_links(articles)
-        print(f"✅ 完成所有分類摘要", flush=True)
+            reset_usage_stats()
+            summaries = {}
+            citation_links = {}
+            print(f"開始準備每日整體 Memo 輸入（{len(articles)} 個分類）...", flush=True)
 
-        # Step 3.5: 今日全重點綜整
-        print(f"\n{'─' * 40}")
-        print("🧭 Step 3.5: 今日全重點綜整")
-        print(f"{'─' * 40}", flush=True)
-        top10_text = generate_top10(articles, summaries)
-        print(f"✅ 今日全重點生成完成", flush=True)
+            print(f"\n{'─' * 40}")
+            print("🧭 Step 3.5: 每日整體 Memo")
+            print(f"{'─' * 40}", flush=True)
+            top10_text = generate_daily_memo_from_articles(articles)
+            print(f"✅ 每日整體 Memo 生成完成", flush=True)
+
+            ai_radar_category = _find_ai_radar_category(articles)
+            if ai_radar_category:
+                print(f"\n{'─' * 40}")
+                print("🛠️ Step 3.6: AI 技術雷達")
+                print(f"{'─' * 40}", flush=True)
+                try:
+                    (
+                        summaries[ai_radar_category],
+                        citation_links[ai_radar_category],
+                    ) = summarize_ai_github_digest(
+                        ai_radar_category,
+                        articles[ai_radar_category],
+                    )
+                    print(f"✅ AI 技術雷達摘要完成", flush=True)
+                except Exception as e:
+                    print(f"⚠️ AI 技術雷達摘要失敗：{e}", flush=True)
+        else:
+            from summarizer import (
+                summarize_all,
+                generate_daily_memo,
+                reset_usage_stats,
+                get_usage_summary,
+                build_all_citation_links,
+            )
+
+            reset_usage_stats()
+            print(f"開始摘要 {len(articles)} 個分類...", flush=True)
+            summaries = summarize_all(articles)
+            citation_links = build_all_citation_links(articles)
+            print(f"✅ 完成所有分類摘要", flush=True)
+
+            # Step 3.5: 每日整體 memo
+            print(f"\n{'─' * 40}")
+            print("🧭 Step 3.5: 每日整體 Memo")
+            print(f"{'─' * 40}", flush=True)
+            top10_text = generate_daily_memo(articles, summaries)
+            print(f"✅ 每日整體 Memo 生成完成", flush=True)
 
         usage_summary = get_usage_summary()
         if usage_summary.get("total_cost_usd") is not None:
@@ -137,6 +221,7 @@ async def run(
         articles,
         summaries,
         market,
+        memo=top10_text,
         top10=top10_text,
         ai_usage=usage_summary,
         citation_links=citation_links,
@@ -152,7 +237,13 @@ async def run(
     print(f"{'─' * 40}", flush=True)
     from telegram_sender import send_report, build_text_summary
 
-    text_summary = build_text_summary(summaries, market, top10=top10_text, report_type=report_type)
+    text_summary = build_text_summary(
+        summaries,
+        market,
+        memo=top10_text,
+        top10=top10_text,
+        report_type=report_type,
+    )
     sent_ok = await send_report(report_path, text_summary, report_type=report_type)
     if sent_ok:
         print(f"✅ 已推送到 Telegram", flush=True)
