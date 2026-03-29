@@ -54,6 +54,7 @@ class SourceCoverageTests(unittest.TestCase):
         self.assertIn("BIS Press Releases", names)
         self.assertIn("Liberty Street Economics", names)
         self.assertIn("BIS Statistics", names)
+        self.assertIn("Fed Speeches", names)
 
     def test_semiconductor_and_policy_have_specialized_official_sources(self):
         feeds = _load_config().get("feeds", {})
@@ -66,6 +67,23 @@ class SourceCoverageTests(unittest.TestCase):
 
         self.assertIn("Semiconductor Digest", semiconductor_names)
         self.assertIn("NIST Cybersecurity Insights", geopolitics_names)
+
+    def test_known_unstable_sources_are_disabled(self):
+        feeds = _load_config().get("feeds", {})
+
+        geopolitics_sources = {
+            s.get("name", ""): s for s in feeds.get("geopolitics", {}).get("sources", [])
+        }
+        semiconductor_sources = {
+            s.get("name", ""): s for s in feeds.get("semiconductor", {}).get("sources", [])
+        }
+        deep_analysis_sources = {
+            s.get("name", ""): s for s in feeds.get("deep_analysis", {}).get("sources", [])
+        }
+
+        self.assertFalse(geopolitics_sources["日經亞洲"].get("active", True))
+        self.assertFalse(semiconductor_sources["WikiChip"].get("active", True))
+        self.assertFalse(deep_analysis_sources["The Information"].get("active", True))
 
 
 if __name__ == "__main__":

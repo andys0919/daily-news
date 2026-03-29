@@ -539,6 +539,15 @@ feeds:
         max_articles: 6
         quality: "high"
         summary_prompt: "news"
+      - name: "Fed Speeches"
+        url: "https://www.federalreserve.gov/feeds/speeches.xml"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["macro", "rates", "monetary-policy"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
       # ── 聚合類（限制數量避免噪音）──
       - name: "Investing.com"
         url: "https://www.investing.com/rss/news.rss"
@@ -781,7 +790,7 @@ feeds:
         quality: "high"
       - name: "日經亞洲"
         url: "https://asia.nikkei.com/rss"
-        active: true
+        active: false
         priority: 8
         region: "asia"
         topics: ["geopolitics", "asia", "technology"]
@@ -928,7 +937,7 @@ feeds:
         quality: "high"
       - name: "WikiChip"
         url: "https://fuse.wikichip.org/feed/"
-        active: true
+        active: false
         priority: 8
         region: "global"
         topics: ["semiconductor", "chip-design"]
@@ -1374,7 +1383,7 @@ feeds:
         summary_prompt: "news"
       - name: "The Information"
         url: "https://www.theinformation.com/feed"
-        active: true
+        active: false
         priority: 8
         region: "global"
         topics: ["technology", "business", "analysis"]
