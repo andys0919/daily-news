@@ -8,6 +8,7 @@ from pathlib import Path
 import yaml
 
 CONFIG_PATH = Path(__file__).parent / "config.yaml"
+DB_PATH = Path(__file__).parent / "data" / "news.db"
 
 
 def load_config():
@@ -116,12 +117,12 @@ def _dedup_key(text: str) -> set[str]:
     return {m.upper() for m in _DEDUP_KEY_RE.findall(text)}
 
 
-def _extract_top10_main_thread(top10: str) -> str:
-    """從 top10 文字提取今日主線段落"""
-    if not top10:
+def _extract_memo_main_thread(memo: str) -> str:
+    """從 memo 文字提取今日主線段落"""
+    if not memo:
         return ""
     # 找 "### 今日主線" 段落
-    lines = top10.split("\n")
+    lines = memo.split("\n")
     capture = False
     result = []
     for line in lines:
@@ -145,6 +146,35 @@ def _extract_top10_main_thread(top10: str) -> str:
     return "\n".join(result[:4])  # 最多 4 句
 
 
+def _extract_memo_observations(memo: str) -> list[str]:
+    """從 memo 文字提取 48 小時觀察點"""
+    if not memo:
+        return []
+
+    obs_lines = []
+    capture = False
+    for line in memo.split("\n"):
+        if ("48" in line or "四十八" in line) and ("觀察" in line or "清單" in line):
+            capture = True
+            continue
+        if capture:
+            if line.startswith("###"):
+                break
+            stripped = line.strip()
+            if not stripped:
+                continue
+            if stripped[0] in "-•" or (
+                len(stripped) > 2 and stripped[0].isdigit() and stripped[1] in ".）)"
+            ):
+                clean = re.sub(r"^\d+[.）)]\s*", "", stripped.lstrip("-• ")).strip()
+                clean = re.sub(r"\s*\[\d+\]", "", clean).strip()
+                if len(clean) > 100:
+                    clean = clean[:97].rstrip("，、；") + "…"
+                if clean:
+                    obs_lines.append(f"• {clean}")
+    return obs_lines
+
+
 def _format_market_compact(market) -> list[str]:
     """市場數據壓縮為單行格式"""
     if not market or not market.indices:
@@ -152,8 +182,14 @@ def _format_market_compact(market) -> list[str]:
 
     # 定義要顯示的 key indices（按 group 排序）
     key_symbols = {
-        "S&P 500", "NASDAQ", "台股加權", "Bitcoin",
-        "VIX 恐慌", "USD/TWD",
+        "S&P 500",
+        "NASDAQ",
+        "台股加權",
+        "Bitcoin",
+        "VIX 恐慌",
+        "USD/TWD",
+        "Gold",
+        "Silver",
     }
     lines = ["━━━ 市場速覽 ━━━"]
     row = []
@@ -167,6 +203,10 @@ def _format_market_compact(market) -> list[str]:
             row.append(f"USD/TWD {idx.price:.2f}")
         elif idx.name == "Bitcoin":
             row.append(f"{arrow} BTC {idx.change_pct:+.1f}%")
+        elif idx.name == "Gold":
+            row.append(f"{arrow} Gold {idx.change_pct:+.1f}%")
+        elif idx.name == "Silver":
+            row.append(f"{arrow} Silver {idx.change_pct:+.1f}%")
         else:
             row.append(f"{arrow} {idx.name} {idx.change_pct:+.2f}%")
 
@@ -179,8 +219,10 @@ def _format_market_compact(market) -> list[str]:
 def build_text_summary(
     summaries: dict[str, str],
     market=None,
+    memo: str = "",
     top10: str = "",
     report_type: str = "weekly",
+    articles: dict | None = None,
 ) -> str:
     """產生投行晨報風格的 Telegram 文字摘要"""
     from datetime import datetime, timedelta, timezone
@@ -198,81 +240,72 @@ def build_text_summary(
         lines.extend(market_lines)
         lines.append("")
 
-    # 今日主線（從 top10 提取）
-    main_thread = _extract_top10_main_thread(top10)
+    memo_text = memo or top10
+
+    # 今日主線（從 memo 提取）
+    main_thread = _extract_memo_main_thread(memo_text)
     if main_thread:
         lines.append("━━━ 今日主線 ━━━")
         lines.append(main_thread)
         lines.append("")
 
-    # 分類速覽（bullet extraction + cross-category dedup）
-    seen_keys: set[str] = set()
-    # 收集主線中已出現的 key
-    if main_thread:
-        seen_keys.update(_dedup_key(main_thread))
+    if articles:
+        try:
+            from financial_reports import build_financial_highlight_entries
 
-    category_sections = []
-    for category, summary in summaries.items():
-        if not summary:
-            continue
-        bullets = _extract_bullets(summary, max_bullets=5)
-        if not bullets:
-            continue
-
-        deduped_bullets = []
-        for b in bullets:
-            b_keys = _dedup_key(b)
-            # 如果這個 bullet 的主要 key 都已在其他地方出現過，跳過
-            if b_keys and b_keys.issubset(seen_keys):
-                continue
-            seen_keys.update(b_keys)
-            # 清理 markdown 引用標記 [n] 和殘留的「來源：」空引用
-            clean = re.sub(r"\s*\[\d+\]", "", b).strip()
-            clean = re.sub(r"[；。，]?\s*來源：\s*$", "", clean).strip()
-            clean = re.sub(r"[；。，]?\s*引用：\s*$", "", clean).strip()
-            # 截斷超長 bullet（Telegram 可讀性）
-            if len(clean) > 120:
-                clean = clean[:117].rstrip("，、；") + "…"
-            if len(clean) < 10:
-                continue
-            deduped_bullets.append(f"• {clean}")
-
-        if deduped_bullets:
-            category_sections.append((category, deduped_bullets[:5]))
-
-    if category_sections:
-        lines.append("━━━ 分類速覽 ━━━")
-        for cat, bullets in category_sections:
-            lines.append(f"*{cat}*")
-            lines.extend(bullets)
+            highlights = build_financial_highlight_entries(articles, db_path=DB_PATH, max_entries=3)
+        except Exception:
+            highlights = []
+        if highlights:
+            lines.append("━━━ 財報重點 ━━━")
+            for item in highlights:
+                lines.append(f"• {item['company_name']} ({item['ticker']})：{item['summary']}")
             lines.append("")
 
-    # 48h 觀察（從 top10 提取）
-    if top10:
-        obs_lines = []
-        capture = False
-        for line in top10.split("\n"):
-            if "48h" in line and ("觀察" in line or "追蹤" in line or "清單" in line):
-                capture = True
+    if not memo_text:
+        # 分類速覽（fallback：只有在尚未切到單篇 memo 時使用）
+        seen_keys: set[str] = set()
+        if main_thread:
+            seen_keys.update(_dedup_key(main_thread))
+
+        category_sections = []
+        for category, summary in summaries.items():
+            if not summary:
                 continue
-            if capture:
-                if line.startswith("###"):
-                    break
-                stripped = line.strip()
-                if not stripped:
+            bullets = _extract_bullets(summary, max_bullets=5)
+            if not bullets:
+                continue
+
+            deduped_bullets = []
+            for b in bullets:
+                b_keys = _dedup_key(b)
+                if b_keys and b_keys.issubset(seen_keys):
                     continue
-                # 支持 - / • / 1. / 2. 等格式
-                if stripped[0] in "-•" or (len(stripped) > 2 and stripped[0].isdigit() and stripped[1] in ".）)"):
-                    clean = re.sub(r"^\d+[.）)]\s*", "", stripped.lstrip("-• ")).strip()
-                    clean = re.sub(r"\s*\[\d+\]", "", clean).strip()
-                    if len(clean) > 100:
-                        clean = clean[:97].rstrip("，、；") + "…"
-                    if clean:
-                        obs_lines.append(f"• {clean}")
-        if obs_lines:
-            lines.append("━━━ 48h 觀察 ━━━")
-            lines.extend(obs_lines[:4])
-            lines.append("")
+                seen_keys.update(b_keys)
+                clean = re.sub(r"\s*\[\d+\]", "", b).strip()
+                clean = re.sub(r"[；。，]?\s*來源：\s*$", "", clean).strip()
+                clean = re.sub(r"[；。，]?\s*引用：\s*$", "", clean).strip()
+                if len(clean) > 120:
+                    clean = clean[:117].rstrip("，、；") + "…"
+                if len(clean) < 10:
+                    continue
+                deduped_bullets.append(f"• {clean}")
+
+            if deduped_bullets:
+                category_sections.append((category, deduped_bullets[:5]))
+
+        if category_sections:
+            lines.append("━━━ 分類速覽 ━━━")
+            for cat, bullets in category_sections:
+                lines.append(f"*{cat}*")
+                lines.extend(bullets)
+                lines.append("")
+
+    obs_lines = _extract_memo_observations(memo_text)
+    if obs_lines:
+        lines.append("━━━ 48h 觀察 ━━━")
+        lines.extend(obs_lines[:4])
+        lines.append("")
 
     lines.append("📎 完整報告見附件")
 

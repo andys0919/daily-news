@@ -97,6 +97,14 @@ market:
       name: "Ethereum"
       group: "crypto"
 
+    # ── 🥇 貴金屬 ──
+    - symbol: "GC=F"
+      name: "Gold"
+      group: "metals"
+    - symbol: "SI=F"
+      name: "Silver"
+      group: "metals"
+
     # ── 🇪🇺 歐洲 ──
     - symbol: "^GDAXI"
       name: "德國DAX"
@@ -282,12 +290,11 @@ category_agents:
     persona: "AI/LLM 技術雷達 — 全棧 AI 工程師，每天追蹤 GitHub trending、HN 頭版、Reddit，專門幫你篩選什麼工具值得立刻試用"
     framework: |
       分析框架（按優先序）：
-      1. 新工具/框架上線：今天有什麼新東西出來？版本號、核心功能、跟現有方案的差異
-      2. GitHub 熱門專案：哪些 repo 在爆發？star 增速、實際用途、成熟度
-      3. LLM 模型實測：新模型的實際表現（不是官方 benchmark，是社群實測）、最適合什麼任務
-      4. Prompt/Skill/Plugin：什麼新的 prompt 技巧、MCP server、plugin 值得用？
-      5. 開發工作流變革：vibe coding、agentic workflow、AI-native 開發 — 什麼正在改變開發者日常
-      6. 成本與效能實測：哪個模型做什麼任務最划算？本地 vs 雲端的實際取捨
+      1. 先找今天真正最熱的 1-3 條技術主線：哪個工具、模型、工作流正在升溫，為什麼現在重要
+      2. 再挑最值得立刻關注的新工具 / 新模型：版本、核心用途、和現有方案的差異
+      3. GitHub / 社群熱點只當證據來源，不是輸出主體；要把同類 repo 與討論整理成少數重點
+      4. 開發工作流變革：vibe coding、agentic workflow、AI-native 開發，哪些已開始改變日常工程實作
+      5. 成本與效能實測：哪個模型做什麼任務最划算，本地 vs 雲端的實際取捨
     key_metrics:
       - "GitHub star 增速（24h/7d）與 fork/issue 活躍度"
       - "版本號與 changelog 重點"
@@ -295,14 +302,14 @@ category_agents:
       - "與同類工具的直接對比結果"
       - "部署門檻（需要什麼硬體/環境/花多少錢）"
     output_sections:
-      - "今日必知新工具（3-5 個：名稱+版本+一句話說明它是什麼+為什麼你該關注）"
-      - "GitHub 熱門追蹤（3-5 個：repo 名+star 數+它解決什麼問題+成熟度判斷）"
-      - "LLM 模型動態（2-3 點：新模型/更新+實測表現+最適用場景）"
-      - "實用 Prompt/Skill/Plugin（2-3 個：名稱+用途+怎麼用）"
-      - "開發趨勢風向（2-3 點：什麼工作流正在改變+證據）"
-      - "本週值得試用清單（3-5 個：工具名+一句話理由+上手難度）"
+      - "今日最熱 AI 技術（2-3 點：只保留今天最熱的技術 / 工具 / 工作流變化，先講為什麼重要，再補證據）"
+      - "最值得立刻關注的新工具 / 新模型（2-3 點：名稱+版本或更新+實際用途+現在該關注的原因）"
+      - "開發者真正有感的變化（2-3 點：工作流、成本、部署門檻、採用訊號）"
+      - "48h 追蹤（2-3 點：只保留最值得繼續觀察的訊號）"
     anti_patterns:
+      - "不直接列一長串 repo、連結或來源清單"
       - "不列沒有實際用途描述的 repo 名稱"
+      - "同類型工具或 repo 要合併整理成主線，不逐條流水帳點名"
       - "不用「強大」「創新」「革命性」等空泛形容詞"
       - "不把 star farming 或 awesome-list 當真正的工具"
       - "不忽略小型但真正有用的工具"
@@ -475,6 +482,60 @@ feeds:
         priority: 8
         region: "europe"
         topics: ["macro", "central-bank", "policy"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "BLS Latest Releases"
+        url: "https://www.bls.gov/feed/bls_latest.rss"
+        active: true
+        priority: 8
+        region: "us"
+        topics: ["macro", "inflation", "labor"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "news"
+      - name: "FRED Blog"
+        url: "https://fredblog.stlouisfed.org/feed/"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["macro", "rates", "data"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "BIS Central Bank Speeches"
+        url: "https://www.bis.org/doclist/cbspeeches.rss"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["macro", "rates", "central-bank"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "BIS Press Releases"
+        url: "https://www.bis.org/doclist/all_pressrels.rss"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["macro", "policy", "banking"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "Liberty Street Economics"
+        url: "https://libertystreeteconomics.newyorkfed.org/feed/"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["macro", "rates", "banking", "research"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
+      - name: "BIS Statistics"
+        url: "https://www.bis.org/doclist/all_statistics.rss"
+        active: true
+        priority: 6
+        region: "global"
+        topics: ["macro", "statistics", "rates", "banking"]
         max_articles: 6
         quality: "high"
         summary_prompt: "news"
@@ -736,6 +797,15 @@ feeds:
         max_articles: 8
         quality: "medium"
         summary_prompt: "geopolitics"
+      - name: "NIST Cybersecurity Insights"
+        url: "https://www.nist.gov/blogs/cybersecurity-insights/rss.xml"
+        active: true
+        priority: 6
+        region: "us"
+        topics: ["security", "policy", "technology"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "geopolitics"
 
   # ── 🔬 半導體與硬體 ──
   semiconductor:
@@ -863,6 +933,15 @@ feeds:
         region: "global"
         topics: ["semiconductor", "chip-design"]
         max_articles: 6
+        quality: "high"
+        summary_prompt: "semiconductor"
+      - name: "Semiconductor Digest"
+        url: "https://www.semiconductor-digest.com/feed/"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["semiconductor", "manufacturing", "equipment"]
+        max_articles: 8
         quality: "high"
         summary_prompt: "semiconductor"
 

@@ -45,8 +45,61 @@ def _link_numeric_citations(text: str, citation_links: dict[int, str] | None) ->
     return _CITATION_RE.sub(_replace, text)
 
 
+def _filter_articles_by_summary_prompt(
+    articles: dict[str, list[Article]], summary_prompt: str
+) -> list[Article]:
+    filtered = [
+        article
+        for group in articles.values()
+        for article in group
+        if article.summary_prompt == summary_prompt
+        or (
+            summary_prompt == "ai_practice"
+            and "AI 工具與實戰" in (article.category or "")
+        )
+    ]
+    return sorted(filtered, key=lambda article: article.published, reverse=True)
+
+
+def _filter_github_articles(articles: dict[str, list[Article]]) -> list[Article]:
+    filtered = [
+        article
+        for group in articles.values()
+        for article in group
+        if (
+            "github" in (article.source or "").lower()
+            or "github.com" in (article.link or "").lower()
+        )
+    ]
+    return sorted(filtered, key=lambda article: article.published, reverse=True)
+
+
+def _find_summary_category(
+    articles: dict[str, list[Article]],
+    summaries: dict[str, str],
+    summary_prompt: str,
+) -> str | None:
+    for category, category_articles in articles.items():
+        if any(
+            article.summary_prompt == summary_prompt
+            or (
+                summary_prompt == "ai_practice"
+                and "AI 工具與實戰" in (article.category or "")
+            )
+            for article in category_articles
+        ):
+            return category
+
+    if summary_prompt == "ai_practice":
+        for category in summaries:
+            if "AI 工具與實戰" in category:
+                return category
+    return None
+
+
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 REPORT_DIR = Path(__file__).parent / "data" / "reports"
+DB_PATH = Path(__file__).parent / "data" / "news.db"
 TW_TZ = timezone(timedelta(hours=8))
 
 WEEKDAY_MAP = {0: "一", 1: "二", 2: "三", 3: "四", 4: "五", 5: "六", 6: "日"}
@@ -56,6 +109,7 @@ def generate_report(
     articles: dict[str, list[Article]],
     summaries: dict[str, str],
     market: MarketOverview | None = None,
+    memo: str = "",
     top10: str = "",
     ai_usage: dict | None = None,
     citation_links: dict[str, dict[int, str]] | None = None,
@@ -70,47 +124,26 @@ def generate_report(
     time_str = now.strftime("%H:%M")
     title = "每日新聞速報" if report_type == "daily" else "每週新聞速報"
 
-    # 組合 sections 資料
-    sections = {}
-    # 固定排序順序
-    category_order = [
-        "💰 財經與總經",
-        "🌏 地緣政治與科技政策",
-        "🔬 半導體與硬體",
-        "🏢 科技廠動態",
-        "🧠 AI 研究與突破",
-        "🛠️ AI 工具與實戰",
-        "🧭 深度觀點與分析",
-        "🔥 X 社群熱議",
-    ]
+    memo_source = memo or top10
+    memo_html = md_to_html(memo_source)
+    ai_watch_articles = _filter_github_articles(articles)
+    ai_watch_category = _find_summary_category(articles, summaries, "ai_practice")
+    ai_watch_summary = ""
+    if ai_watch_category:
+        summary_md = summaries.get(ai_watch_category, "")
+        linked_summary_md = _link_numeric_citations(
+            summary_md,
+            (citation_links or {}).get(ai_watch_category, {}),
+        )
+        ai_watch_summary = md_to_html(linked_summary_md)
+    try:
+        from financial_reports import build_financial_highlight_entries
 
-    for cat in category_order:
-        if cat in articles:
-            summary_md = summaries.get(cat, "")
-            linked_summary_md = _link_numeric_citations(
-                summary_md,
-                (citation_links or {}).get(cat, {}),
-            )
-            sections[cat] = {
-                "articles": articles[cat],
-                "summary": md_to_html(linked_summary_md),
-            }
-
-    # 加入未列在 order 中的其他分類
-    for cat in articles:
-        if cat not in sections:
-            summary_md = summaries.get(cat, "")
-            linked_summary_md = _link_numeric_citations(
-                summary_md,
-                (citation_links or {}).get(cat, {}),
-            )
-            sections[cat] = {
-                "articles": articles[cat],
-                "summary": md_to_html(linked_summary_md),
-            }
-
-    # 今日全重點也轉 HTML
-    top10 = md_to_html(top10)
+        financial_highlights = build_financial_highlight_entries(
+            articles, db_path=DB_PATH
+        )
+    except Exception:
+        financial_highlights = []
 
     # 渲染模板
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
@@ -122,8 +155,10 @@ def generate_report(
         weekday=f"週{weekday}",
         generated_at=time_str,
         market=market,
-        top10=top10,
-        sections=sections,
+        memo=memo_html,
+        financial_highlights=financial_highlights,
+        ai_watch_articles=ai_watch_articles,
+        ai_watch_summary=ai_watch_summary,
         ai_usage=ai_usage or {},
     )
 

@@ -43,6 +43,30 @@ class SourceCoverageTests(unittest.TestCase):
         self.assertIn("WSJ World", names)
         self.assertIn("ECB Press", names)
 
+    def test_finance_includes_official_macro_release_feeds(self):
+        feeds = _load_config().get("feeds", {})
+        finance = feeds.get("finance", {})
+        names = {s.get("name", "") for s in finance.get("sources", [])}
+
+        self.assertIn("BLS Latest Releases", names)
+        self.assertIn("FRED Blog", names)
+        self.assertIn("BIS Central Bank Speeches", names)
+        self.assertIn("BIS Press Releases", names)
+        self.assertIn("Liberty Street Economics", names)
+        self.assertIn("BIS Statistics", names)
+
+    def test_semiconductor_and_policy_have_specialized_official_sources(self):
+        feeds = _load_config().get("feeds", {})
+        semiconductor_names = {
+            s.get("name", "") for s in feeds.get("semiconductor", {}).get("sources", [])
+        }
+        geopolitics_names = {
+            s.get("name", "") for s in feeds.get("geopolitics", {}).get("sources", [])
+        }
+
+        self.assertIn("Semiconductor Digest", semiconductor_names)
+        self.assertIn("NIST Cybersecurity Insights", geopolitics_names)
+
 
 if __name__ == "__main__":
     unittest.main()

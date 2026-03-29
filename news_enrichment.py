@@ -6,6 +6,8 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
+from issuer_registry import ISSUER_ALIASES
+
 
 _EVENT_KEY_RE = re.compile(r"[^0-9a-zA-Z_.-]+")
 _QUARTER_RE = re.compile(r"\b(?:q([1-4])|([1-4])q|first[- ]quarter|second[- ]quarter|third[- ]quarter|fourth[- ]quarter)\b", re.IGNORECASE)
@@ -15,22 +17,6 @@ _TICKER_EXCHANGE_RE = re.compile(
 )
 _DOLLAR_TICKER_RE = re.compile(r"(?<!\w)\$([A-Z]{1,6})(?!\w)")
 _TW_TICKER_RE = re.compile(r"\b(\d{4})(?:\.(?:TW|TWO))?\b")
-
-_COMPANY_ALIASES = {
-    "APPLE": ("Apple", "AAPL"),
-    "MICROSOFT": ("Microsoft", "MSFT"),
-    "ALPHABET": ("Alphabet", "GOOGL"),
-    "GOOGLE": ("Google", "GOOGL"),
-    "META": ("Meta", "META"),
-    "AMAZON": ("Amazon", "AMZN"),
-    "NVIDIA": ("NVIDIA", "NVDA"),
-    "TESLA": ("Tesla", "TSLA"),
-    "TSMC": ("TSMC", "TSM"),
-    "TAIWAN SEMICONDUCTOR": ("TSMC", "TSM"),
-    "台積電": ("台積電", "2330"),
-    "鴻海": ("鴻海", "2317"),
-    "聯發科": ("聯發科", "2454"),
-}
 
 _EARNINGS_KEYWORDS = (
     "earnings",
@@ -159,10 +145,17 @@ def extract_article_page_metadata(html: str, source_url: str) -> dict[str, str]:
 
 
 def _extract_companies(text: str) -> list[str]:
-    companies: list[str] = []
+    matches: list[tuple[int, str]] = []
     upper_text = text.upper()
-    for alias, (company_name, _ticker) in _COMPANY_ALIASES.items():
-        if alias in upper_text and company_name not in companies:
+    for alias in ISSUER_ALIASES:
+        position = upper_text.find(alias.alias.upper())
+        if position < 0:
+            continue
+        matches.append((position, alias.company_name))
+    matches.sort(key=lambda item: item[0])
+    companies: list[str] = []
+    for _position, company_name in matches:
+        if company_name not in companies:
             companies.append(company_name)
     return companies
 
@@ -178,8 +171,15 @@ def _extract_tickers(text: str) -> list[str]:
         if match not in tickers:
             tickers.append(match)
     upper_text = text.upper()
-    for alias, (_company_name, ticker) in _COMPANY_ALIASES.items():
-        if alias in upper_text and ticker not in tickers:
+    registry_matches: list[tuple[int, str]] = []
+    for alias in ISSUER_ALIASES:
+        position = upper_text.find(alias.alias.upper())
+        if position < 0:
+            continue
+        registry_matches.append((position, alias.ticker))
+    registry_matches.sort(key=lambda item: item[0])
+    for _position, ticker in registry_matches:
+        if ticker not in tickers:
             tickers.append(ticker)
     return tickers
 

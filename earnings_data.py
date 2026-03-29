@@ -1,10 +1,13 @@
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.request
 from pathlib import Path
 from typing import Any, Callable
+
+from bs4 import BeautifulSoup
 
 from financial_reports import (
     DB_PATH,
@@ -38,6 +41,31 @@ _USD_FACTS = {
     ],
 }
 _EPS_FACTS = ["DilutedEarningsPerShare", "EarningsPerShareDiluted"]
+_FILING_GUIDANCE_KEYWORDS = (
+    "guidance",
+    "outlook",
+    "expects",
+    "expect",
+    "forecast",
+    "sees",
+    "projects",
+)
+_FILING_HIGHLIGHT_KEYWORDS = (
+    "capital expenditure",
+    "capital expenditures",
+    "capex",
+    "data center",
+    "ai demand",
+    "share repurchase",
+    "dividend",
+)
+_TABLE_LIKE_PREFIXES = (
+    "three months ended",
+    "nine months ended",
+    "as of ",
+    "total shareholders",
+    "net sales",
+)
 
 
 def _fetch_json(url: str) -> Any:
@@ -46,6 +74,64 @@ def _fetch_json(url: str) -> Any:
     req.add_header("Accept", "application/json")
     with urllib.request.urlopen(req, timeout=20) as resp:
         return json.loads(resp.read().decode("utf-8", errors="ignore"))
+
+
+def _fetch_text(url: str) -> str:
+    req = urllib.request.Request(url)
+    req.add_header("User-Agent", SEC_USER_AGENT)
+    req.add_header("Accept", "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8")
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return resp.read().decode("utf-8", errors="ignore")
+
+
+def _clean_visible_text(text: str) -> str:
+    return " ".join((text or "").replace("\xa0", " ").split()).strip()
+
+
+def extract_sec_filing_highlights(html: str) -> dict[str, str]:
+    soup = BeautifulSoup(html or "", "html.parser")
+    paragraphs = [
+        _clean_visible_text(tag.get_text(" ", strip=True))
+        for tag in soup.find_all(["p", "div", "li"])
+    ]
+    paragraphs = [p for p in paragraphs if len(p) >= 40]
+    sentences: list[str] = []
+    for paragraph in paragraphs:
+        chunks = re.split(r"(?<=[.!?])\s+", paragraph)
+        if len(chunks) == 1:
+            chunks = [paragraph]
+        for chunk in chunks:
+            sentence = _clean_visible_text(chunk)
+            if len(sentence) < 40:
+                continue
+            sentence_lc = sentence.lower()
+            alpha_count = sum(1 for ch in sentence if ch.isalpha())
+            digit_count = sum(1 for ch in sentence if ch.isdigit())
+            if alpha_count and digit_count > alpha_count * 0.8:
+                continue
+            if sentence_lc.startswith(_TABLE_LIKE_PREFIXES):
+                continue
+            sentences.append(sentence)
+
+    guidance_summary = ""
+    filing_excerpt = ""
+    highlight_candidates: list[str] = []
+    for sentence in sentences:
+        sentence_lc = sentence.lower()
+        if not guidance_summary and any(
+            keyword in sentence_lc for keyword in _FILING_GUIDANCE_KEYWORDS
+        ):
+            guidance_summary = sentence[:240]
+        if any(keyword in sentence_lc for keyword in _FILING_HIGHLIGHT_KEYWORDS):
+            highlight_candidates.append(sentence[:240])
+    if highlight_candidates:
+        filing_excerpt = highlight_candidates[0]
+    if not filing_excerpt and guidance_summary:
+        filing_excerpt = guidance_summary
+    return {
+        "guidance_summary": guidance_summary,
+        "filing_excerpt": filing_excerpt,
+    }
 
 
 def _normalize_cik(raw: str | int) -> str:
@@ -120,6 +206,39 @@ def _recent_primary_filing(submissions_payload: dict[str, Any]) -> dict[str, str
             f"{documents[idx] if idx < len(documents) else ''}"
         ),
     }
+
+
+def _recent_text_filing(submissions_payload: dict[str, Any]) -> dict[str, str]:
+    recent = submissions_payload.get("filings", {}).get("recent", {})
+    forms = list(recent.get("form", []))
+    filing_dates = list(recent.get("filingDate", []))
+    accessions = list(recent.get("accessionNumber", []))
+    documents = list(recent.get("primaryDocument", []))
+    cik = int(submissions_payload.get("cik", "0") or 0)
+
+    candidates: list[tuple[str, str, str, str]] = []
+    for idx, form in enumerate(forms):
+        if form not in {"8-K", "6-K", "10-Q", "10-K", "20-F", "40-F"}:
+            continue
+        accession = str(accessions[idx] if idx < len(accessions) else "")
+        document = str(documents[idx] if idx < len(documents) else "")
+        if not accession or not document:
+            continue
+        accession_nodash = accession.replace("-", "")
+        source_url = (
+            f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession_nodash}/{document}"
+        )
+        candidates.append((form, str(filing_dates[idx] if idx < len(filing_dates) else ""), accession, source_url))
+
+    preferred_forms = ("8-K", "6-K", "10-Q", "10-K", "20-F", "40-F")
+    for preferred_form in preferred_forms:
+        filtered = [item for item in candidates if item[0] == preferred_form]
+        if not filtered:
+            continue
+        filtered.sort(key=lambda item: item[1], reverse=True)
+        form, filed_at, _accession, source_url = filtered[0]
+        return {"form_type": form, "filed_at": filed_at, "source_url": source_url}
+    return {"form_type": "", "filed_at": "", "source_url": ""}
 
 
 def _fact_candidates(
@@ -248,6 +367,7 @@ def refresh_us_financial_reports(
     *,
     db_path: str | Path = DB_PATH,
     fetch_json: Callable[[str], Any] = _fetch_json,
+    fetch_text: Callable[[str], str] = _fetch_text,
     sleep_sec: float = 0.2,
 ) -> list[FinancialReport]:
     init_financial_report_store(db_path)
@@ -271,6 +391,17 @@ def refresh_us_financial_reports(
         )
         if not report:
             continue
+        text_filing = _recent_text_filing(submissions_payload)
+        text_source_url = text_filing.get("source_url") or report.source_url
+        if text_source_url:
+            try:
+                filing_html = fetch_text(text_source_url)
+            except Exception:
+                filing_html = ""
+            if filing_html:
+                filing_highlights = extract_sec_filing_highlights(filing_html)
+                report.guidance_summary = filing_highlights.get("guidance_summary", "")
+                report.filing_excerpt = filing_highlights.get("filing_excerpt", "")
         save_financial_report(db_path, report)
         reports.append(report)
         if sleep_sec > 0:

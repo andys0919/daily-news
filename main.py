@@ -69,6 +69,8 @@ async def run(
     print(f"{'─' * 40}", flush=True)
     from market_data import get_market_overview
     from earnings_data import refresh_us_financial_reports_for_articles
+    from mops_financials import refresh_mops_financial_reports_for_articles
+    from tpex_financials import refresh_tpex_financial_reports_for_articles
     from tw_financials import refresh_tw_financial_reports_for_articles
 
     async def _fetch_market_in_background():
@@ -81,7 +83,7 @@ async def run(
 
     async def _refresh_financials_in_background():
         started = time.time()
-        us_count = tw_count = 0
+        us_count = tw_count = tpex_count = mops_count = 0
         errors: list[str] = []
         try:
             us_reports = await asyncio.to_thread(
@@ -97,7 +99,21 @@ async def run(
             tw_count = len(tw_reports)
         except Exception as e:
             errors.append(f"TW: {e}")
-        return {"us": us_count, "tw": tw_count}, errors, time.time() - started
+        try:
+            tpex_reports = await asyncio.to_thread(
+                refresh_tpex_financial_reports_for_articles, articles
+            )
+            tpex_count = len(tpex_reports)
+        except Exception as e:
+            errors.append(f"TPEX: {e}")
+        try:
+            mops_reports = await asyncio.to_thread(
+                refresh_mops_financial_reports_for_articles, articles
+            )
+            mops_count = len(mops_reports)
+        except Exception as e:
+            errors.append(f"MOPS: {e}")
+        return {"us": us_count, "tw": tw_count, "tpex": tpex_count, "mops": mops_count}, errors, time.time() - started
 
     market_task = asyncio.create_task(_fetch_market_in_background())
     financial_task = asyncio.create_task(_refresh_financials_in_background())
@@ -115,7 +131,7 @@ async def run(
     else:
         print(
             "✅ 財務資料刷新完成: "
-            f"US {financial_counts['us']} 筆 / TW {financial_counts['tw']} 筆",
+            f"US {financial_counts['us']} 筆 / TW {financial_counts['tw']} 筆 / TPEX {financial_counts['tpex']} 筆 / MOPS {financial_counts['mops']} 筆",
             flush=True,
         )
 
@@ -243,6 +259,7 @@ async def run(
         memo=top10_text,
         top10=top10_text,
         report_type=report_type,
+        articles=articles,
     )
     sent_ok = await send_report(report_path, text_summary, report_type=report_type)
     if sent_ok:

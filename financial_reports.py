@@ -34,6 +34,8 @@ class FinancialReport:
     operating_cash_flow: float | None = None
     capex: float | None = None
     free_cash_flow: float | None = None
+    guidance_summary: str = ""
+    filing_excerpt: str = ""
     payload_json: str = ""
 
     @property
@@ -53,8 +55,35 @@ class FinancialReport:
         return hashlib.md5(raw.encode("utf-8")).hexdigest()
 
 
+@dataclass
+class FinancialSnapshotBundle:
+    market: str
+    ticker: str
+    company_name: str
+    quarterly: FinancialReport | None = None
+    monthly_revenue: FinancialReport | None = None
+
+
 def _connect(db_path: str | Path = DB_PATH) -> sqlite3.Connection:
     return sqlite3.connect(str(db_path))
+
+
+_FINANCIAL_REPORT_EXTRA_COLUMNS = {
+    "guidance_summary": "TEXT NOT NULL DEFAULT ''",
+    "filing_excerpt": "TEXT NOT NULL DEFAULT ''",
+}
+
+
+def _ensure_financial_report_columns(conn: sqlite3.Connection) -> None:
+    existing_columns = {
+        row[1] for row in conn.execute("PRAGMA table_info(financial_reports)").fetchall()
+    }
+    for column_name, column_sql in _FINANCIAL_REPORT_EXTRA_COLUMNS.items():
+        if column_name in existing_columns:
+            continue
+        conn.execute(
+            f"ALTER TABLE financial_reports ADD COLUMN {column_name} {column_sql}"
+        )
 
 
 def init_financial_report_store(db_path: str | Path = DB_PATH) -> None:
@@ -87,10 +116,13 @@ def init_financial_report_store(db_path: str | Path = DB_PATH) -> None:
             operating_cash_flow REAL,
             capex REAL,
             free_cash_flow REAL,
+            guidance_summary TEXT NOT NULL DEFAULT '',
+            filing_excerpt TEXT NOT NULL DEFAULT '',
             payload_json TEXT NOT NULL DEFAULT ''
         )
         """
     )
+    _ensure_financial_report_columns(conn)
     conn.execute(
         """
         CREATE INDEX IF NOT EXISTS idx_financial_reports_lookup
@@ -155,8 +187,8 @@ def save_financial_report(db_path: str | Path, report: FinancialReport) -> None:
             filed_at, source_url, report_kind, revenue, monthly_revenue,
             net_income, operating_income, gross_profit, gross_margin,
             operating_margin, eps_diluted, operating_cash_flow, capex,
-            free_cash_flow, payload_json
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            free_cash_flow, guidance_summary, filing_excerpt, payload_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             report.report_id,
@@ -184,6 +216,8 @@ def save_financial_report(db_path: str | Path, report: FinancialReport) -> None:
             report.operating_cash_flow,
             report.capex,
             report.free_cash_flow,
+            report.guidance_summary,
+            report.filing_excerpt,
             report.payload_json,
         ),
     )
@@ -217,7 +251,9 @@ def _row_to_financial_report(row: sqlite3.Row | tuple) -> FinancialReport:
         operating_cash_flow=row[22],
         capex=row[23],
         free_cash_flow=row[24],
-        payload_json=row[25] or "",
+        guidance_summary=row[25] or "",
+        filing_excerpt=row[26] or "",
+        payload_json=row[27] or "",
     )
 
 
@@ -233,7 +269,7 @@ def get_latest_financial_report(
                period_end, filed_at, source_url, report_kind, revenue,
                monthly_revenue, net_income, operating_income, gross_profit,
                gross_margin, operating_margin, eps_diluted, operating_cash_flow,
-               capex, free_cash_flow, payload_json
+               capex, free_cash_flow, guidance_summary, filing_excerpt, payload_json
           FROM financial_reports
          WHERE market = ? AND ticker = ?
          ORDER BY filed_at DESC, period_end DESC
@@ -245,6 +281,73 @@ def get_latest_financial_report(
     if not row:
         return None
     return _row_to_financial_report(row)
+
+
+def _get_latest_financial_report_by_kind(
+    db_path: str | Path, *, market: str, ticker: str, report_kind: str
+) -> FinancialReport | None:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    rows = conn.execute(
+        """
+        SELECT report_id, market, ticker, company_name, cik, source_type,
+               source_confidence, form_type, fiscal_year, fiscal_period,
+               period_end, filed_at, source_url, report_kind, revenue,
+               monthly_revenue, net_income, operating_income, gross_profit,
+               gross_margin, operating_margin, eps_diluted, operating_cash_flow,
+               capex, free_cash_flow, guidance_summary, filing_excerpt, payload_json
+          FROM financial_reports
+         WHERE market = ? AND ticker = ? AND report_kind = ?
+         ORDER BY filed_at DESC, period_end DESC
+        """,
+        (market, ticker.upper(), report_kind),
+    ).fetchall()
+    conn.close()
+    if not rows:
+        return None
+    reports = [_row_to_financial_report(row) for row in rows]
+    if market == "tw" and report_kind == "quarterly":
+        source_priority = {
+            "mops-api": 3,
+            "tpex-finance-report": 2,
+            "twse-openapi-listed-ci": 1,
+            "twse-openapi-listed-basi": 1,
+            "twse-openapi-listed-bd": 1,
+            "twse-openapi-listed-fh": 1,
+            "twse-openapi-listed-ins": 1,
+            "twse-openapi-listed-mim": 1,
+        }
+        reports.sort(
+            key=lambda report: (
+                str(report.filed_at),
+                str(report.period_end),
+                source_priority.get(report.source_type, 0),
+            ),
+            reverse=True,
+        )
+    return reports[0]
+
+
+def get_financial_snapshot_bundle(
+    db_path: str | Path = DB_PATH, *, market: str, ticker: str
+) -> FinancialSnapshotBundle | None:
+    quarterly = _get_latest_financial_report_by_kind(
+        db_path, market=market, ticker=ticker, report_kind="quarterly"
+    )
+    monthly = _get_latest_financial_report_by_kind(
+        db_path, market=market, ticker=ticker, report_kind="monthly_revenue"
+    )
+    if not quarterly and not monthly:
+        return None
+    primary = quarterly or monthly
+    assert primary is not None
+    return FinancialSnapshotBundle(
+        market=market,
+        ticker=primary.ticker,
+        company_name=primary.company_name,
+        quarterly=quarterly,
+        monthly_revenue=monthly,
+    )
 
 
 def _format_money(value: float | None, market: str) -> str:
@@ -270,3 +373,70 @@ def format_financial_report_context(report: FinancialReport) -> str:
     if report.free_cash_flow is not None:
         parts.append(f"FCF {_format_money(report.free_cash_flow, report.market)}")
     return " | ".join(parts)
+
+
+def format_financial_snapshot_bundle_context(bundle: FinancialSnapshotBundle) -> str:
+    parts: list[str] = []
+    if bundle.quarterly:
+        quarterly = bundle.quarterly
+        quarter_bits = ["官方財報" if bundle.market == "us" else "台股財務資料"]
+        if quarterly.form_type:
+            quarter_bits.append(quarterly.form_type)
+        if quarterly.fiscal_year and quarterly.fiscal_period:
+            quarter_bits.append(f"FY{quarterly.fiscal_year} {quarterly.fiscal_period}")
+        if quarterly.revenue is not None:
+            quarter_bits.append(f"營收 {_format_money(quarterly.revenue, bundle.market)}")
+        if quarterly.eps_diluted is not None:
+            quarter_bits.append(f"EPS {quarterly.eps_diluted:.2f}")
+        if quarterly.free_cash_flow is not None:
+            quarter_bits.append(f"FCF {_format_money(quarterly.free_cash_flow, bundle.market)}")
+        parts.append(" | ".join(quarter_bits))
+    if bundle.monthly_revenue and bundle.monthly_revenue.monthly_revenue is not None:
+        monthly = bundle.monthly_revenue
+        parts.append(
+            f"{monthly.fiscal_period} 月營收 {_format_money(monthly.monthly_revenue, bundle.market)}"
+        )
+    if bundle.quarterly:
+        if bundle.quarterly.guidance_summary:
+            parts.append(bundle.quarterly.guidance_summary)
+        if bundle.quarterly.filing_excerpt:
+            parts.append(bundle.quarterly.filing_excerpt)
+    return " ; ".join(parts)
+
+
+def build_financial_highlight_entries(
+    articles_by_category: dict[str, list[object]],
+    *,
+    db_path: str | Path = DB_PATH,
+    max_entries: int = 4,
+) -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for articles in articles_by_category.values():
+        for article in articles:
+            tickers = getattr(article, "tickers", []) or []
+            if not tickers:
+                continue
+            raw_ticker = str(tickers[0]).replace(".TW", "").replace(".TWO", "").upper()
+            market = "tw" if raw_ticker.isdigit() else "us"
+            key = (market, raw_ticker)
+            if key in seen:
+                continue
+            seen.add(key)
+            bundle = get_financial_snapshot_bundle(db_path, market=market, ticker=raw_ticker)
+            if not bundle:
+                continue
+            summary = format_financial_snapshot_bundle_context(bundle)
+            if not summary:
+                continue
+            entries.append(
+                {
+                    "market": market,
+                    "ticker": bundle.ticker,
+                    "company_name": bundle.company_name or raw_ticker,
+                    "summary": summary,
+                }
+            )
+            if len(entries) >= max_entries:
+                return entries
+    return entries

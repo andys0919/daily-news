@@ -907,14 +907,19 @@ def _article_financial_context(article: Article) -> str:
     if not tickers:
         return ""
     try:
-        from financial_reports import format_financial_report_context, get_latest_financial_report
+        from financial_reports import (
+            format_financial_snapshot_bundle_context,
+            get_financial_snapshot_bundle,
+        )
     except Exception:
         return ""
     ticker = str(tickers[0]).replace(".TW", "").replace(".TWO", "").upper()
-    report = get_latest_financial_report(DB_PATH, market=_article_market(article), ticker=ticker)
-    if not report:
+    bundle = get_financial_snapshot_bundle(
+        DB_PATH, market=_article_market(article), ticker=ticker
+    )
+    if not bundle:
         return ""
-    return format_financial_report_context(report)
+    return format_financial_snapshot_bundle_context(bundle)
 
 
 def _title_fingerprint(title: str) -> str:
