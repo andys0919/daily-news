@@ -246,28 +246,6 @@ async def run(
     print(f"✅ 報告已生成: {report_path}", flush=True)
     _record_stage("Step 4 產生報告", step4_start)
 
-    # Step 5: Telegram 推送
-    step5_start = time.time()
-    print(f"\n{'─' * 40}")
-    print("📤 Step 5: Telegram 推送")
-    print(f"{'─' * 40}", flush=True)
-    from telegram_sender import send_report, build_text_summary
-
-    text_summary = build_text_summary(
-        summaries,
-        market,
-        memo=top10_text,
-        top10=top10_text,
-        report_type=report_type,
-        articles=articles,
-    )
-    sent_ok = await send_report(report_path, text_summary, report_type=report_type)
-    if sent_ok:
-        print(f"✅ 已推送到 Telegram", flush=True)
-    else:
-        print(f"ℹ️ Telegram 推送已跳過或失敗", flush=True)
-    _record_stage("Step 5 Telegram 推送", step5_start)
-
     # 完成
     elapsed = time.time() - start
     total_articles = sum(len(a) for a in articles.values())
@@ -281,9 +259,9 @@ async def run(
         for stage_name in [
             "Step 1 爬取 RSS",
             "Step 2 市場數據",
+            "Step 2.5 財務資料",
             "Step 3 AI 摘要",
             "Step 4 產生報告",
-            "Step 5 Telegram 推送",
         ]:
             if stage_name in stage_times:
                 print(f"  - {stage_name}: {stage_times[stage_name]:.1f} 秒")

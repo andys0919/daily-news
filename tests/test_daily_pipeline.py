@@ -11,6 +11,80 @@ import main as daily_main
 
 
 class DailyPipelineRoutingTests(unittest.TestCase):
+    def test_daily_report_does_not_require_telegram_sender(self):
+        article = Article(
+            title="Daily launchd pipeline should finish without Telegram",
+            summary="summary",
+            link="https://example.com/no-telegram",
+            source="Example",
+            source_key="finance:Example",
+            category="💰 財經與總經",
+            summary_prompt="news",
+            published=daily_main.datetime.now(daily_main.TW_TZ),
+        )
+        articles = {"💰 財經與總經": [article]}
+
+        fake_crawler = ModuleType("crawler")
+
+        async def fake_crawl_all(hours_back: int = 24):
+            return articles
+
+        def fake_get_recent_articles(hours_back: int = 24):
+            return articles
+
+        fake_crawler.crawl_all = fake_crawl_all
+        fake_crawler.get_recent_articles = fake_get_recent_articles
+
+        fake_market = ModuleType("market_data")
+        fake_market.get_market_overview = lambda: SimpleNamespace(indices=[])
+
+        fake_earnings = ModuleType("earnings_data")
+        fake_earnings.refresh_us_financial_reports_for_articles = (
+            lambda *_args, **_kwargs: []
+        )
+
+        fake_tw = ModuleType("tw_financials")
+        fake_tw.refresh_tw_financial_reports_for_articles = (
+            lambda *_args, **_kwargs: []
+        )
+
+        fake_tpex = ModuleType("tpex_financials")
+        fake_tpex.refresh_tpex_financial_reports_for_articles = (
+            lambda *_args, **_kwargs: []
+        )
+
+        fake_mops = ModuleType("mops_financials")
+        fake_mops.refresh_mops_financial_reports_for_articles = (
+            lambda *_args, **_kwargs: []
+        )
+
+        tmpfile = Path(tempfile.NamedTemporaryFile(suffix=".html", delete=False).name)
+        tmpfile.write_text("<html></html>", encoding="utf-8")
+
+        fake_html = ModuleType("html_generator")
+        fake_html.generate_report = lambda *_args, **_kwargs: tmpfile
+
+        fake_missing_sender = ModuleType("telegram_sender")
+
+        with patch.dict(
+            sys.modules,
+            {
+                "crawler": fake_crawler,
+                "market_data": fake_market,
+                "earnings_data": fake_earnings,
+                "tw_financials": fake_tw,
+                "tpex_financials": fake_tpex,
+                "mops_financials": fake_mops,
+                "html_generator": fake_html,
+                "telegram_sender": fake_missing_sender,
+            },
+        ):
+            report_path = asyncio.run(
+                daily_main.run(hours_back=1, skip_summary=True, report_type="daily")
+            )
+
+        self.assertEqual(report_path, tmpfile)
+
     def test_daily_report_refreshes_us_and_tw_financial_context(self):
         calls = {"us_refresh": 0, "tw_refresh": 0}
         us_article = Article(
@@ -83,14 +157,6 @@ class DailyPipelineRoutingTests(unittest.TestCase):
         fake_html = ModuleType("html_generator")
         fake_html.generate_report = lambda *_args, **_kwargs: tmpfile
 
-        fake_sender = ModuleType("telegram_sender")
-        fake_sender.build_text_summary = lambda *_args, **_kwargs: "summary"
-
-        async def fake_send_report(*_args, **_kwargs):
-            return False
-
-        fake_sender.send_report = fake_send_report
-
         with patch.dict(
             sys.modules,
             {
@@ -100,7 +166,6 @@ class DailyPipelineRoutingTests(unittest.TestCase):
                 "earnings_data": fake_earnings,
                 "tw_financials": fake_tw,
                 "html_generator": fake_html,
-                "telegram_sender": fake_sender,
             },
         ):
             asyncio.run(
@@ -214,28 +279,6 @@ class DailyPipelineRoutingTests(unittest.TestCase):
 
         fake_html.generate_report = fake_generate_report
 
-        fake_sender = ModuleType("telegram_sender")
-
-        def fake_build_text_summary(summaries, market=None, memo="", **_kwargs):
-            self.assertEqual(
-                summaries,
-                {
-                    "🛠️ AI 工具與實戰": (
-                        "### GitHub 熱門 AI 工具\n"
-                        "- **MCP workflow repo gains traction**：MCP workflow 升溫。[1]"
-                    )
-                },
-            )
-            self.assertEqual(market.indices, [])
-            self.assertIn("今日主線", memo)
-            return "summary"
-
-        async def fake_send_report(*_args, **_kwargs):
-            return False
-
-        fake_sender.build_text_summary = fake_build_text_summary
-        fake_sender.send_report = fake_send_report
-
         with patch.dict(
             sys.modules,
             {
@@ -243,7 +286,6 @@ class DailyPipelineRoutingTests(unittest.TestCase):
                 "summarizer": fake_summarizer,
                 "market_data": fake_market,
                 "html_generator": fake_html,
-                "telegram_sender": fake_sender,
             },
         ):
             asyncio.run(
@@ -310,14 +352,6 @@ class DailyPipelineRoutingTests(unittest.TestCase):
         fake_html = ModuleType("html_generator")
         fake_html.generate_report = lambda *_args, **_kwargs: tmpfile
 
-        fake_sender = ModuleType("telegram_sender")
-        fake_sender.build_text_summary = lambda *_args, **_kwargs: "summary"
-
-        async def fake_send_report(*_args, **_kwargs):
-            return False
-
-        fake_sender.send_report = fake_send_report
-
         with patch.dict(
             sys.modules,
             {
@@ -325,7 +359,6 @@ class DailyPipelineRoutingTests(unittest.TestCase):
                 "summarizer": fake_summarizer,
                 "market_data": fake_market,
                 "html_generator": fake_html,
-                "telegram_sender": fake_sender,
             },
         ):
             asyncio.run(

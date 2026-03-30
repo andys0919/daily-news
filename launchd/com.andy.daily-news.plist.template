@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.andy.daily-news</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/andy/Code/projects/telegram-bot/daily-news/launchd/run-daily-news.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/andy/Code/projects/telegram-bot/daily-news</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/andy/Code/projects/telegram-bot/daily-news/data/logs/daily-news-launchd.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/andy/Code/projects/telegram-bot/daily-news/data/logs/daily-news-launchd.err.log</string>
+</dict>
+</plist>

@@ -1,11 +1,13 @@
 import hashlib
 import json
+import re
 import sqlite3
 from dataclasses import dataclass
 from pathlib import Path
 
 
 DB_PATH = Path(__file__).parent / "data" / "news.db"
+_TW_QUARTER_RE = re.compile(r"(?P<year>\d{3,4})\s*Q(?P<quarter>[1-4])", re.IGNORECASE)
 
 
 @dataclass
@@ -317,11 +319,37 @@ def _get_latest_financial_report_by_kind(
             "twse-openapi-listed-ins": 1,
             "twse-openapi-listed-mim": 1,
         }
+
+        def _normalize_tw_year(value: int | str | None) -> int:
+            if value in (None, ""):
+                return 0
+            try:
+                year = int(str(value).strip())
+            except ValueError:
+                return 0
+            return year + 1911 if year < 1911 else year
+
+        def _extract_tw_quarter_key(report: FinancialReport) -> tuple[int, int]:
+            if report.fiscal_year is not None and report.fiscal_period.upper().startswith("Q"):
+                try:
+                    return _normalize_tw_year(report.fiscal_year), int(report.fiscal_period[1:])
+                except ValueError:
+                    pass
+            for raw_value in (report.period_end, report.filed_at):
+                match = _TW_QUARTER_RE.search(str(raw_value or ""))
+                if match:
+                    return (
+                        _normalize_tw_year(match.group("year")),
+                        int(match.group("quarter")),
+                    )
+            return _normalize_tw_year(report.fiscal_year), 0
+
         reports.sort(
             key=lambda report: (
+                *_extract_tw_quarter_key(report),
+                source_priority.get(report.source_type, 0),
                 str(report.filed_at),
                 str(report.period_end),
-                source_priority.get(report.source_type, 0),
             ),
             reverse=True,
         )

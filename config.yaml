@@ -1,13 +1,5 @@
 # 每日新聞聚合器設定
 
-schedule:
-  morning: "07:00"  # 早報
-  evening: "21:00"  # 晚報
-
-telegram:
-  bot_token: "${TELEGRAM_BOT_TOKEN}"  # 從環境變數讀取
-  chat_id: "${TELEGRAM_CHAT_ID}"
-
 market:
   alpha_vantage_key: "${ALPHA_VANTAGE_KEY}"
   indices:

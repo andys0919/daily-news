@@ -7,7 +7,6 @@ from unittest.mock import patch
 from crawler import Article
 from financial_reports import FinancialReport, init_financial_report_store, save_financial_report
 import html_generator
-import telegram_sender
 import tw_financials
 
 
@@ -118,6 +117,59 @@ class FinancialSnapshotExpansionTests(unittest.TestCase):
         self.assertIn("11502 月營收", context)
         self.assertIn("EPS 46.32", context)
 
+    def test_financial_snapshot_bundle_prefers_latest_tw_quarter_across_calendar_formats(self):
+        from financial_reports import get_financial_snapshot_bundle
+
+        with tempfile.TemporaryDirectory() as td:
+            db_path = Path(td) / "news.db"
+            init_financial_report_store(db_path)
+            save_financial_report(
+                db_path,
+                FinancialReport(
+                    market="tw",
+                    ticker="2330",
+                    company_name="台積電",
+                    source_type="tpex-finance-report",
+                    source_confidence="official-tpex",
+                    form_type="TPEX-Q",
+                    fiscal_year=2025,
+                    fiscal_period="Q3",
+                    period_end="2025Q3",
+                    filed_at="2025Q3",
+                    report_kind="quarterly",
+                    revenue=2762963851.0,
+                    eps_diluted=46.75,
+                ),
+            )
+            save_financial_report(
+                db_path,
+                FinancialReport(
+                    market="tw",
+                    ticker="2330",
+                    company_name="台積電",
+                    source_type="mops-api",
+                    source_confidence="official-mops",
+                    form_type="MOPS-Q",
+                    fiscal_year=114,
+                    fiscal_period="Q4",
+                    period_end="114Q4",
+                    filed_at="114Q4",
+                    report_kind="quarterly",
+                    revenue=3809054272.0,
+                    eps_diluted=66.26,
+                ),
+            )
+
+            bundle = get_financial_snapshot_bundle(db_path, market="tw", ticker="2330")
+
+        self.assertIsNotNone(bundle)
+        assert bundle is not None
+        self.assertIsNotNone(bundle.quarterly)
+        assert bundle.quarterly is not None
+        self.assertEqual(bundle.quarterly.source_type, "mops-api")
+        self.assertEqual(bundle.quarterly.fiscal_period, "Q4")
+        self.assertEqual(bundle.quarterly.eps_diluted, 66.26)
+
     def test_generate_report_renders_financial_highlights_card(self):
         article = Article(
             title="台積電法說後市場聚焦 AI 需求",
@@ -190,59 +242,6 @@ class FinancialSnapshotExpansionTests(unittest.TestCase):
         self.assertIn("台積電", html)
         self.assertIn("FY114 Q4", html)
         self.assertIn("11502 月營收", html)
-
-    def test_build_text_summary_renders_financial_highlights(self):
-        article = Article(
-            title="NVIDIA 財報後重新定價 AI capex",
-            summary="summary",
-            link="https://example.com/nvda",
-            source="Reuters",
-            source_key="finance:Reuters",
-            category="💰 財經與總經",
-            summary_prompt="news",
-            published=datetime.now(TW_TZ),
-            tickers=["NVDA"],
-            companies=["NVIDIA"],
-            event_type="earnings",
-        )
-
-        with tempfile.TemporaryDirectory() as td:
-            db_path = Path(td) / "news.db"
-            init_financial_report_store(db_path)
-            save_financial_report(
-                db_path,
-                FinancialReport(
-                    market="us",
-                    ticker="NVDA",
-                    company_name="NVIDIA",
-                    cik="0001045810",
-                    source_type="sec-companyfacts",
-                    source_confidence="official",
-                    form_type="10-Q",
-                    fiscal_year=2026,
-                    fiscal_period="Q1",
-                    period_end="2026-01-31",
-                    filed_at="2026-02-25",
-                    report_kind="quarterly",
-                    revenue=26000000000.0,
-                    eps_diluted=5.98,
-                    free_cash_flow=16800000000.0,
-                ),
-            )
-            with patch.object(telegram_sender, "DB_PATH", db_path):
-                text = telegram_sender.build_text_summary(
-                    summaries={},
-                    market=None,
-                    memo="### 今日主線\nmemo",
-                    report_type="daily",
-                    articles={"💰 財經與總經": [article]},
-                )
-
-        self.assertIn("財報重點", text)
-        self.assertIn("NVIDIA", text)
-        self.assertIn("10-Q", text)
-        self.assertIn("EPS 5.98", text)
-
 
 if __name__ == "__main__":
     unittest.main()

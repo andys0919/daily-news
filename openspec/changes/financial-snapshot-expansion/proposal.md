@@ -20,6 +20,6 @@ Financial facts now exist in the pipeline, but Taiwan coverage is still narrow, 
 
 ## Impact
 
-- Affected code: `tw_financials.py`, `financial_reports.py`, `summarizer.py`, `html_generator.py`, `telegram_sender.py`, report template, and tests.
+- Affected code: `tw_financials.py`, `financial_reports.py`, `summarizer.py`, `html_generator.py`, report template, and tests.
 - External systems: additional TWSE OpenAPI endpoints for listed-company sector financial statements.
-- User-visible output: new financial highlight sections in daily reports and Telegram summaries.
+- User-visible output: new financial highlight sections in daily reports.

@@ -1,6 +1,6 @@
 # daily-news
 
-`daily-news` 是一個以繁體中文輸出為主的每日 / 每週新聞摘要與市場 memo 產生器，目標是把台美股相關新聞、官方財報、宏觀資料與高訊號技術來源整理成一份可直接閱讀的報告。
+`daily-news` 是一個以繁體中文輸出為主的每日 / 每週新聞摘要與市場 memo 產生器，目標是把台美股相關新聞、官方財報、宏觀資料與高訊號技術來源整理成一份可直接閱讀的本地 HTML 報告。
 
 ## 目前能力
 
@@ -15,7 +15,6 @@
   - period-aware financial snapshot bundle：季度財報 + 月營收
 - 輸出
   - HTML 報告
-  - Telegram 文字摘要 + 附件報告
   - 單篇 daily memo 與 AI / GitHub digest
 
 ## 專案結構
@@ -30,8 +29,9 @@
 - `mops_financials.py`: MOPS listed-company 財報
 - `summarizer.py`: prompt building、摘要、daily memo
 - `html_generator.py`: HTML 報告
-- `telegram_sender.py`: Telegram 推送
+- `stock_memo.py`: 單一台股 / 美股個股 memo
 - `config.yaml`: 來源與市場設定
+- `launchd/`: macOS LaunchAgent 腳本與 template
 - `openspec/changes/`: 各次變更的 OpenSpec artifacts
 
 ## 快速開始
@@ -60,14 +60,55 @@ uv run --with-requirements requirements.txt --python python3 python main.py --ho
 uv run --with-requirements requirements.txt --python python3 python main.py --hours 24 --report-type daily --no-summary
 ```
 
+### 5. 產生單股 memo
+
+```bash
+uv run --with-requirements requirements.txt --python python3 python stock_memo.py --ticker 2330 --market tw
+uv run --with-requirements requirements.txt --python python3 python stock_memo.py --ticker NVDA --market us
+```
+
+預設會先刷新該股票的官方財務資料，再輸出 markdown memo 到 `data/memos/`。
+若只想用現有 SQLite 快照，不重新抓官方資料，可加 `--no-refresh-official-data`。
+
 ## 環境變數
 
-- `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
 - `AZURE_OPENAI_URL`
 - `AZURE_OPENAI_API_KEY`
 - `AZURE_OPENAI_MODEL`
 - `SEC_API_USER_AGENT`
+
+## 自動執行（macOS launchd）
+
+專案內建一份 LaunchAgent template，預設每天 `09:00` 執行 daily 報告。
+
+1. 建立 log 目錄
+
+```bash
+mkdir -p /Users/andy/Code/projects/telegram-bot/daily-news/data/logs
+```
+
+2. 複製 template 到 LaunchAgents
+
+```bash
+cp /Users/andy/Code/projects/telegram-bot/daily-news/launchd/com.andy.daily-news.plist.template \
+  /Users/andy/Library/LaunchAgents/com.andy.daily-news.plist
+```
+
+3. 載入或重載排程
+
+```bash
+launchctl bootout "gui/$(id -u)" /Users/andy/Library/LaunchAgents/com.andy.daily-news.plist 2>/dev/null || true
+launchctl bootstrap "gui/$(id -u)" /Users/andy/Library/LaunchAgents/com.andy.daily-news.plist
+launchctl kickstart -k "gui/$(id -u)/com.andy.daily-news"
+```
+
+4. 查看狀態與 log
+
+```bash
+launchctl list | rg daily-news
+tail -f /Users/andy/Code/projects/telegram-bot/daily-news/data/logs/daily-news-launchd.log
+tail -f /Users/andy/Code/projects/telegram-bot/daily-news/data/logs/daily-news-launchd.err.log
+```
 
 ## 測試
 

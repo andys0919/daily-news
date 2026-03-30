@@ -26,7 +26,7 @@ articles → _build_category_synthesis_prompt(category, prompt_type, text)
 **Non-Goals:**
 - 不改變 LLM provider（仍用 Azure OpenAI）
 - 不改變分段/合併邏輯（chunk size、citation 系統不變）
-- 不改變 HTML 報告生成或 Telegram 推送格式
+- 不改變 HTML 報告生成格式
 
 ## Decisions
 

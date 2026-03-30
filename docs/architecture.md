@@ -11,7 +11,7 @@
    - `mops_financials.py` -> MOPS
 4. `financial_reports.py` 將不同來源統一成 snapshot / bundle
 5. `summarizer.py` 用 article + financial context 生成分類摘要與 daily memo
-6. `html_generator.py` / `telegram_sender.py` 輸出報告
+6. `html_generator.py` 輸出 HTML 報告
 
 ## Data Model
 
