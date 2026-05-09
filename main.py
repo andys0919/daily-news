@@ -72,6 +72,24 @@ async def run(
     from mops_financials import refresh_mops_financial_reports_for_articles
     from tpex_financials import refresh_tpex_financial_reports_for_articles
     from tw_financials import refresh_tw_financial_reports_for_articles
+    from ir_materials import refresh_ir_materials_for_articles
+    from insider_holdings import refresh_insider_transactions
+    from short_interest import refresh_short_interest
+    from macro_data import refresh_macro_releases
+
+    def _collect_tickers(articles_dict, market: str) -> list[str]:
+        tickers: set[str] = set()
+        for items in articles_dict.values():
+            for item in items:
+                for ticker in getattr(item, "tickers", []) or []:
+                    if not ticker:
+                        continue
+                    ticker = ticker.upper()
+                    if market == "tw" and ticker.isdigit():
+                        tickers.add(ticker)
+                    elif market == "us" and ticker.isalpha():
+                        tickers.add(ticker)
+        return sorted(tickers)
 
     async def _fetch_market_in_background():
         started = time.time()
@@ -84,6 +102,7 @@ async def run(
     async def _refresh_financials_in_background():
         started = time.time()
         us_count = tw_count = tpex_count = mops_count = 0
+        ir_count = insider_count = short_count = macro_count = 0
         errors: list[str] = []
         try:
             us_reports = await asyncio.to_thread(
@@ -113,7 +132,47 @@ async def run(
             mops_count = len(mops_reports)
         except Exception as e:
             errors.append(f"MOPS: {e}")
-        return {"us": us_count, "tw": tw_count, "tpex": tpex_count, "mops": mops_count}, errors, time.time() - started
+        try:
+            ir_results = await asyncio.to_thread(
+                refresh_ir_materials_for_articles, articles
+            )
+            ir_count = len(ir_results)
+        except Exception as e:
+            errors.append(f"IR: {e}")
+        try:
+            us_tickers = _collect_tickers(articles, "us")
+            insider_results = await asyncio.to_thread(
+                refresh_insider_transactions, us_tickers
+            )
+            insider_count = len(insider_results)
+        except Exception as e:
+            errors.append(f"Insider: {e}")
+        try:
+            us_tickers = _collect_tickers(articles, "us")
+            tw_tickers = _collect_tickers(articles, "tw")
+            us_short = await asyncio.to_thread(
+                refresh_short_interest, "us", us_tickers
+            )
+            tw_short = await asyncio.to_thread(
+                refresh_short_interest, "tw", tw_tickers
+            )
+            short_count = len(us_short) + len(tw_short)
+        except Exception as e:
+            errors.append(f"Short: {e}")
+        try:
+            macro_payload = await asyncio.to_thread(refresh_macro_releases)
+            macro_count = len(macro_payload.get("signals", []) or [])
+        except Exception as e:
+            errors.append(f"Macro: {e}")
+        return (
+            {
+                "us": us_count, "tw": tw_count, "tpex": tpex_count, "mops": mops_count,
+                "ir": ir_count, "insider": insider_count,
+                "short": short_count, "macro": macro_count,
+            },
+            errors,
+            time.time() - started,
+        )
 
     market_task = asyncio.create_task(_fetch_market_in_background())
     financial_task = asyncio.create_task(_refresh_financials_in_background())
@@ -131,7 +190,9 @@ async def run(
     else:
         print(
             "✅ 財務資料刷新完成: "
-            f"US {financial_counts['us']} 筆 / TW {financial_counts['tw']} 筆 / TPEX {financial_counts['tpex']} 筆 / MOPS {financial_counts['mops']} 筆",
+            f"US {financial_counts['us']} / TW {financial_counts['tw']} / TPEX {financial_counts['tpex']} / MOPS {financial_counts['mops']} / "
+            f"IR {financial_counts['ir']} / Insider {financial_counts['insider']} / "
+            f"Short {financial_counts['short']} / Macro {financial_counts['macro']}",
             flush=True,
         )
 
