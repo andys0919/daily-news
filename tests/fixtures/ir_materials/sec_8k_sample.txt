@@ -1,0 +1,17 @@
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+
+FORM 8-K
+CURRENT REPORT
+
+Date of Report: May 9, 2026
+NVIDIA CORPORATION
+
+Item 7.01 Regulation FD Disclosure
+On May 9, 2026, NVIDIA announced that data center revenue
+hit a record. Full text of the press release is attached
+as Exhibit 99.1.
+
+Item 9.01 Financial Statements and Exhibits
+Exhibit 99.1: Press Release dated May 9, 2026
