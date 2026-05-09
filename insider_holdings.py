@@ -5,7 +5,7 @@ from __future__ import annotations
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
-from typing import Callable
+from typing import Any, Callable
 
 FetchFn = Callable[[str], str | None]
 
@@ -217,11 +217,39 @@ def fetch_tw_director_changes(
     return []
 
 
-def refresh_insider_transactions(tickers: list[str]) -> list[InsiderTrade]:
+def refresh_insider_transactions(
+    tickers: list[str],
+    *,
+    _db_path: Any | None = None,
+    _persist: bool = True,
+) -> list[InsiderTrade]:
     out: list[InsiderTrade] = []
     for ticker in tickers:
         try:
             out.extend(fetch_us_form4_recent(ticker))
         except Exception:
             continue
+    if _persist and out:
+        try:
+            from financial_reports import save_insider_transaction, DB_PATH
+            target = _db_path or DB_PATH
+            for trade in out:
+                save_insider_transaction(
+                    target,
+                    {
+                        "market": trade.market,
+                        "ticker": trade.ticker,
+                        "insider_name": trade.insider_name,
+                        "insider_role": trade.insider_role,
+                        "transaction_date": trade.transaction_date,
+                        "transaction_type": trade.transaction_type,
+                        "shares": trade.shares,
+                        "price": trade.price,
+                        "value_usd": trade.value_usd,
+                        "filing_url": trade.filing_url,
+                        "fetched_at": trade.fetched_at,
+                    },
+                )
+        except Exception:
+            pass
     return out

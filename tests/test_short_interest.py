@@ -43,5 +43,42 @@ class ShortInterestTests(unittest.TestCase):
         self.assertEqual(row.period_end, date(2026, 5, 8))
 
 
+import sqlite3 as _sqlite3
+import tempfile as _tempfile
+from pathlib import Path as _Path
+
+
+class ShortInterestPersistTests(unittest.TestCase):
+    def test_refresh_persists_finra_row(self):
+        f = _tempfile.NamedTemporaryFile(suffix=".db", delete=False)
+        f.close()
+        db = _Path(f.name)
+        try:
+            def fake_fetch(url):
+                return _load("finra_sample.txt")
+
+            original = short_interest.fetch_us_finra_short_interest
+
+            def patched_fetch(ticker, _fetch_fn=None):
+                return original(ticker, _fetch_fn=fake_fetch)
+
+            short_interest.fetch_us_finra_short_interest = patched_fetch  # type: ignore
+            try:
+                short_interest.refresh_short_interest("us", ["TSLA"], _db_path=db)
+            finally:
+                short_interest.fetch_us_finra_short_interest = original  # type: ignore
+
+            conn = _sqlite3.connect(db)
+            try:
+                count = conn.execute(
+                    "SELECT COUNT(*) FROM short_interest_snapshots WHERE ticker='TSLA'"
+                ).fetchone()[0]
+            finally:
+                conn.close()
+            self.assertGreaterEqual(count, 1)
+        finally:
+            db.unlink(missing_ok=True)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -46,5 +46,42 @@ class InsiderHoldingsTests(unittest.TestCase):
         self.assertEqual(nvda.value_usd, 5000000)
 
 
+import sqlite3 as _sqlite3
+import tempfile as _tempfile
+from pathlib import Path as _Path
+
+
+class InsiderPersistTests(unittest.TestCase):
+    def test_refresh_persists_form4_trade(self):
+        f = _tempfile.NamedTemporaryFile(suffix=".db", delete=False)
+        f.close()
+        db = _Path(f.name)
+        try:
+            def fake_fetch(url):
+                return _load("form4_sample.xml")
+
+            original = insider_holdings.fetch_us_form4_recent
+
+            def patched_fetch(ticker, _fetch_fn=None):
+                return original(ticker, _fetch_fn=fake_fetch)
+
+            insider_holdings.fetch_us_form4_recent = patched_fetch  # type: ignore
+            try:
+                insider_holdings.refresh_insider_transactions(["AAPL"], _db_path=db)
+            finally:
+                insider_holdings.fetch_us_form4_recent = original  # type: ignore
+
+            conn = _sqlite3.connect(db)
+            try:
+                count = conn.execute(
+                    "SELECT COUNT(*) FROM insider_transactions WHERE ticker='AAPL'"
+                ).fetchone()[0]
+            finally:
+                conn.close()
+            self.assertGreaterEqual(count, 1)
+        finally:
+            db.unlink(missing_ok=True)
+
+
 if __name__ == "__main__":
     unittest.main()

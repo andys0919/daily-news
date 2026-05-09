@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
-from typing import Callable
+from typing import Any, Callable
 
 FetchFn = Callable[[str], str | None]
 
@@ -158,7 +158,13 @@ def fetch_etf_flows_summary(
     return []
 
 
-def refresh_short_interest(market: str, tickers: list[str]) -> list[ShortInterestRow]:
+def refresh_short_interest(
+    market: str,
+    tickers: list[str],
+    *,
+    _db_path: Any | None = None,
+    _persist: bool = True,
+) -> list[ShortInterestRow]:
     out: list[ShortInterestRow] = []
     if market == "us":
         for ticker in tickers:
@@ -172,4 +178,24 @@ def refresh_short_interest(market: str, tickers: list[str]) -> list[ShortInteres
                 out.extend(fetch_tw_credit_balance(ticker))
             except Exception:
                 continue
+    if _persist and out:
+        try:
+            from financial_reports import save_short_interest_snapshot, DB_PATH
+            target = _db_path or DB_PATH
+            for row in out:
+                save_short_interest_snapshot(
+                    target,
+                    {
+                        "market": row.market,
+                        "ticker": row.ticker,
+                        "period_end": row.period_end,
+                        "short_interest": row.short_interest,
+                        "days_to_cover": row.days_to_cover,
+                        "short_interest_ratio": row.short_interest_ratio,
+                        "source": row.source,
+                        "fetched_at": row.fetched_at,
+                    },
+                )
+        except Exception:
+            pass
     return out
