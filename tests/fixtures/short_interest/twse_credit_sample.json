@@ -1,0 +1,13 @@
+[
+  {
+    "Date": "2026-05-08",
+    "Code": "2330",
+    "Name": "台積電",
+    "MarginPurchase": 1200,
+    "MarginSale": 800,
+    "MarginBalance": 50000,
+    "ShortPurchase": 100,
+    "ShortSale": 250,
+    "ShortBalance": 1500
+  }
+]
