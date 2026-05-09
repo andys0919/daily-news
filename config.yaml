@@ -376,6 +376,27 @@ category_agents:
       - "不混淆事實與作者推論"
       - "不引用 paywalled 內文"
 
+  ir_materials:
+    persona: "公司現場記者 + 買方分析師混合：解讀法說 / IR 簡報 / earnings call 的官方語言"
+    framework: |
+      1. 公司方語氣（樂觀/保守/維持）
+      2. 業績與財測落點（beat/miss/inline）
+      3. 管理層強調的 demand drivers / capacity / capex
+      4. Q&A 中的多空交鋒重點
+    key_metrics:
+      - "本季營收與年增"
+      - "毛利率/營業利益率"
+      - "下季 / 全年 guidance"
+      - "capex 計畫"
+    output_sections:
+      - "公司給出的數字（含 beat/miss）"
+      - "管理層原話節錄（限 1-3 句）"
+      - "買方解讀重點"
+    anti_patterns:
+      - "不轉述 boilerplate 公關段落"
+      - "不混淆 GAAP / non-GAAP"
+      - "不省略缺漏指引（沒給就要說沒給）"
+
 feeds:
   # ── 💰 財經與總經 ──
   finance:
@@ -1735,3 +1756,116 @@ feeds:
         max_articles: 6
         quality: "medium"
         summary_prompt: "broker_research"
+
+  # ── 🏛️ 法說與 IR 材料 ──
+  ir_materials:
+    category: "🏛️ 法說與 IR 材料"
+    sources:
+      - name: "SEC 8-K Filings (Atom)"
+        url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K&owner=include&count=40&output=atom"
+        active: true
+        priority: 10
+        region: "us"
+        topics: ["filing", "earnings"]
+        max_articles: 12
+        quality: "high"
+        summary_prompt: "ir_materials"
+      - name: "SEC 10-Q Filings (Atom)"
+        url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=10-Q&owner=include&count=40&output=atom"
+        active: true
+        priority: 10
+        region: "us"
+        topics: ["filing", "earnings"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "ir_materials"
+      - name: "SEC 10-K Filings (Atom)"
+        url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=10-K&owner=include&count=40&output=atom"
+        active: true
+        priority: 10
+        region: "us"
+        topics: ["filing", "earnings"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "ir_materials"
+      - name: "SEC 6-K Filings (Atom)"
+        url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=6-K&owner=include&count=40&output=atom"
+        active: true
+        priority: 9
+        region: "us"
+        topics: ["filing", "earnings", "foreign-issuer"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "ir_materials"
+      - name: "Motley Fool Earnings Transcripts"
+        url: "https://www.fool.com/earnings-call-transcripts/feed/"
+        active: true
+        priority: 9
+        region: "us"
+        topics: ["transcript", "earnings"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "ir_materials"
+      - name: "Seeking Alpha Earnings Transcripts (Google News)"
+        url: "https://news.google.com/rss/search?q=site%3Aseekingalpha.com+%22earnings+call+transcript%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["transcript", "earnings"]
+        max_articles: 10
+        quality: "medium"
+        summary_prompt: "ir_materials"
+      - name: "NVIDIA Investor Press"
+        url: "https://nvidianews.nvidia.com/news/categories/financial-news/rss"
+        active: true
+        priority: 9
+        region: "us"
+        topics: ["ir", "earnings", "nvidia"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "ir_materials"
+      - name: "Apple Investor Press"
+        url: "https://www.apple.com/newsroom/rss-feed.rss"
+        active: true
+        priority: 8
+        region: "us"
+        topics: ["ir", "earnings", "apple"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "ir_materials"
+      - name: "Microsoft Earnings Press (Google News)"
+        url: "https://news.google.com/rss/search?q=site%3Amicrosoft.com+earnings+release&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "us"
+        topics: ["ir", "earnings", "microsoft"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "ir_materials"
+      - name: "TSMC Investor (Google News)"
+        url: "https://news.google.com/rss/search?q=TSMC+investor+OR+%E5%8F%B0%E7%A9%8D%E9%9B%BB+%E6%B3%95%E8%AA%AA&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 9
+        region: "tw"
+        topics: ["ir", "earnings", "tsmc"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "ir_materials"
+      - name: "台股法說會 (Google News)"
+        url: "https://news.google.com/rss/search?q=%E6%B3%95%E8%AA%AA%E6%9C%83+%E5%85%AC%E5%8F%B8&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["ir", "earnings", "law-call"]
+        max_articles: 10
+        quality: "medium"
+        summary_prompt: "ir_materials"
+      - name: "鉅亨網 法人說明會 (Google News)"
+        url: "https://news.google.com/rss/search?q=site%3Acnyes.com+%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 7
+        region: "tw"
+        topics: ["ir", "earnings"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "ir_materials"

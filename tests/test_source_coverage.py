@@ -113,6 +113,28 @@ class SourceCoverageTests(unittest.TestCase):
             self.assertIn("priority", source)
             self.assertEqual(source.get("summary_prompt"), "broker_research")
 
+    def test_ir_materials_category_present(self):
+        config = _load_config()
+        feeds = config.get("feeds", {})
+        agents = config.get("category_agents", {})
+
+        self.assertIn("ir_materials", agents)
+        self.assertIn("ir_materials", feeds)
+
+        ir = feeds["ir_materials"]
+        self.assertEqual(ir.get("category"), "🏛️ 法說與 IR 材料")
+
+        names = {s.get("name", "") for s in ir.get("sources", [])}
+        self.assertIn("SEC 8-K Filings (Atom)", names)
+        self.assertIn("SEC 10-Q Filings (Atom)", names)
+        self.assertIn("SEC 10-K Filings (Atom)", names)
+        self.assertIn("Motley Fool Earnings Transcripts", names)
+        self.assertIn("NVIDIA Investor Press", names)
+        self.assertIn("台股法說會 (Google News)", names)
+
+        for source in ir["sources"]:
+            self.assertEqual(source.get("summary_prompt"), "ir_materials")
+
 
 if __name__ == "__main__":
     unittest.main()
