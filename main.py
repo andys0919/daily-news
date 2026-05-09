@@ -187,14 +187,13 @@ async def run(
             f"⚠️ 財務資料刷新部分失敗: {' | '.join(financial_errors)}",
             flush=True,
         )
-    else:
-        print(
-            "✅ 財務資料刷新完成: "
-            f"US {financial_counts['us']} / TW {financial_counts['tw']} / TPEX {financial_counts['tpex']} / MOPS {financial_counts['mops']} / "
-            f"IR {financial_counts['ir']} / Insider {financial_counts['insider']} / "
-            f"Short {financial_counts['short']} / Macro {financial_counts['macro']}",
-            flush=True,
-        )
+    print(
+        "✅ 財務資料刷新完成: "
+        f"US {financial_counts['us']} / TW {financial_counts['tw']} / TPEX {financial_counts['tpex']} / MOPS {financial_counts['mops']} / "
+        f"IR {financial_counts['ir']} / Insider {financial_counts['insider']} / "
+        f"Short {financial_counts['short']} / Macro {financial_counts['macro']}",
+        flush=True,
+    )
 
     # Step 3: AI 摘要
     step3_start = time.time()

@@ -1,0 +1,150 @@
+📡 Step 1: 爬取 RSS 來源
+📂 💰 財經與總經
+  📡 CNBC Top News...   📡 WSJ Markets...   📡 CNBC Finance...   📡 CNBC Economy...   📡 WSJ Tech...   📡 Bloomberg Markets (Google News)...   📡 FT (Google News)...   📡 鉅亨網 台股... ✅ 0 篇
+  📡 鉅亨網 國際股... ✅ 0 篇
+  📡 CNBC Earnings... ✅ 0 篇
+  📡 CNBC Business... ✅ 0 篇
+  📡 ECB Press... ✅ 0 篇
+  📡 Bloomberg Markets... ✅ 0 篇
+  📡 中央社 財經...   📡 經濟日報 產經...   📡 經濟日報 股市...   📡 經濟日報 國際... ✅ 0 篇
+  📡 工商時報 財經... ✅ 0 篇
+  📡 The Block... ✅ 0 篇
+  📡 Yahoo Finance... ✅ 0 篇
+  📡 BIS Central Bank Speeches... ✅ 0 篇
+  📡 Liberty Street Economics... ✅ 10 篇
+✅ 1 篇
+  📡 Fed Speeches... ✅ 3 篇
+  📡 Seeking Alpha... ✅ 1 篇
+✅ 7 篇
+  📡 鉅亨網 外匯... ✅ 1 篇
+✅ 3 篇
+  📡 BIS Statistics... ✅ 0 篇
+✅ 12 篇
+✅ 10 篇
+✅ 10 篇
+✅ 8 篇
+✅ 15 篇
+✅ 0 篇
+✅ 2 篇
+✅ 0 篇
+✅ 1 篇
+✅ 12 篇
+✅ 3 篇
+✅ 0 篇
+✅ 2 篇
+✅ 8 篇
+✅ 12 篇
+✅ 15 篇
+✅ 15 篇
+✅ 10 篇
+✅ 6 篇
+📂 🌏 地緣政治與科技政策
+✅ 0 篇
+  📡 半導體政策... ✅ 0 篇
+  📡 Brookings 科技政策... ✅ 7 篇
+✅ 8 篇
+✅ 15 篇
+✅ 12 篇
+✅ 0 篇
+✅ 15 篇
+✅ 10 篇
+✅ 0 篇
+✅ 0 篇
+✅ 1 篇
+  ⚠️ parse 警告: Brookings 科技政策
+✅ 0 篇
+✅ 10 篇
+✅ 8 篇
+📂 🔬 半導體與硬體
+  📡 Data Center Dynamics... ✅ 15 篇
+✅ 0 篇
+  📡 記憶體產業...   📡 DIGITIMES 伺服器... ✅ 0 篇
+  📡 DIGITIMES AI應用... ✅ 0 篇
+  📡 Tom's Hardware... ✅ 0 篇
+✅ 0 篇
+✅ 0 篇
+✅ 1 篇
+✅ 12 篇
+✅ 10 篇
+✅ 10 篇
+✅ 10 篇
+✅ 10 篇
+✅ 1 篇
+✅ 5 篇
+✅ 1 篇
+✅ 2 篇
+📂 🏢 科技廠動態
+  📡 NVIDIA Newsroom...   📡 TSMC News...   📡 Apple Newsroom...   📡 Microsoft Blog...   📡 Meta Newsroom...   📡 Google Blog...   📡 Intel Newsroom...   📡 AMD News... ✅ 0 篇
+  📡 ASML News... ✅ 0 篇
+  📡 Tesla/SpaceX... ✅ 1 篇
+✅ 0 篇
+✅ 1 篇
+✅ 8 篇
+✅ 0 篇
+✅ 8 篇
+✅ 4 篇
+✅ 10 篇
+✅ 15 篇
+✅ 10 篇
+✅ 8 篇
+✅ 1 篇
+✅ 7 篇
+📂 🧠 AI 研究與突破
+  📡 OpenAI Blog...   📡 Anthropic News...   📡 arXiv AI...   📡 arXiv 計算語言學...   📡 Google AI Blog...   📡 DeepMind Blog...   📡 arXiv 機器學習...   📡 Hugging Face Blog...   📡 The Verge AI... ✅ 0 篇
+  📡 LLM 研究突破...   📡 LLM 應用與商用化... ✅ 3 篇
+✅ 0 篇
+✅ 2 篇
+✅ 1 篇
+✅ 10 篇
+✅ 15 篇
+✅ 10 篇
+✅ 0 篇
+✅ 1 篇
+✅ 8 篇
+✅ 8 篇
+✅ 4 篇
+✅ 5 篇
+✅ 8 篇
+✅ 10 篇
+✅ 6 篇
+📂 🛠️ AI 工具與實戰
+  📡 Reddit r/ChatGPT...   ⚠️ parse 警告: LangChain Blog
+✅ 0 篇
+  📡 AI 實戰導入（中文）... ✅ 2 篇
+✅ 0 篇
+✅ 1 篇
+✅ 1 篇
+✅ 6 篇
+✅ 10 篇
+✅ 3 篇
+✅ 10 篇
+✅ 8 篇
+✅ 10 篇
+✅ 3 篇
+📂 🧭 深度觀點與分析
+  📡 Noahpinion...   📡 War on the Rocks...   📡 Foreign Affairs... ✅ 0 篇
+  📡 天下雜誌... ✅ 1 篇
+  📡 Marginal Revolution...   📡 Odd Lots / Bloomberg 深度... ✅ 0 篇
+  📡 Atlantic Council... ✅ 2 篇
+✅ 0 篇
+  📡 CSIS 分析...   📡 商業周刊... ✅ 1 篇
+  📡 Works in Progress... ✅ 0 篇
+✅ 2 篇
+✅ 6 篇
+✅ 8 篇
+✅ 6 篇
+✅ 4 篇
+✅ 0 篇
+✅ 5 篇
+✅ 10 篇
+✅ 2 篇
+📂 🔥 X 社群熱議
+✅ 10 篇
+✅ 8 篇
+✅ 8 篇
+✅ 10 篇
+✅ 8 篇
+✅ 10 篇
+✅ 10 篇
+✅ 8 篇
+✅ 8 篇
