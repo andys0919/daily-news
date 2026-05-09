@@ -135,6 +135,28 @@ class SourceCoverageTests(unittest.TestCase):
         for source in ir["sources"]:
             self.assertEqual(source.get("summary_prompt"), "ir_materials")
 
+    def test_insider_holdings_category_present(self):
+        config = _load_config()
+        feeds = config.get("feeds", {})
+        agents = config.get("category_agents", {})
+
+        self.assertIn("insider_holdings", agents)
+        self.assertIn("insider_holdings", feeds)
+
+        ih = feeds["insider_holdings"]
+        self.assertEqual(ih.get("category"), "👁️ 內部人與機構持股")
+
+        names = {s.get("name", "") for s in ih.get("sources", [])}
+        self.assertIn("SEC Form 4 (Atom)", names)
+        self.assertIn("SEC 13F-HR (Atom)", names)
+        self.assertIn("Insider Monkey", names)
+        self.assertIn("WhaleWisdom Blog", names)
+        self.assertIn("Berkshire 13F (Google News)", names)
+        self.assertIn("Bridgewater 13F (Google News)", names)
+
+        for source in ih["sources"]:
+            self.assertEqual(source.get("summary_prompt"), "insider_holdings")
+
 
 if __name__ == "__main__":
     unittest.main()

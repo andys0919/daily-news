@@ -397,6 +397,25 @@ category_agents:
       - "不混淆 GAAP / non-GAAP"
       - "不省略缺漏指引（沒給就要說沒給）"
 
+  insider_holdings:
+    persona: "資金流偵探：從 Form 4、13F、董監持股變動看出內部人 / 機構真實意圖"
+    framework: |
+      1. 內部人交易方向（買 vs 賣，是否高層）
+      2. 機構持股 QoQ 變化（建倉、加倉、減倉、清倉）
+      3. 知名 manager 的代表性動作
+      4. 與股價走勢的相對位置
+    key_metrics:
+      - "Insider buy/sell ratio"
+      - "13F shares change %"
+      - "持股報告日期 lag"
+    output_sections:
+      - "本期關鍵內部人交易"
+      - "知名機構動向 (Berkshire / Bridgewater / Tiger / Lone Pine)"
+      - "投資人解讀"
+    anti_patterns:
+      - "不忽略 lag（13F 是 45 天前快照）"
+      - "不把 10b5-1 自動賣壓誤判為看空訊號"
+
 feeds:
   # ── 💰 財經與總經 ──
   finance:
@@ -1869,3 +1888,116 @@ feeds:
         max_articles: 8
         quality: "medium"
         summary_prompt: "ir_materials"
+
+  # ── 👁️ 內部人與機構持股 ──
+  insider_holdings:
+    category: "👁️ 內部人與機構持股"
+    sources:
+      - name: "SEC Form 4 (Atom)"
+        url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4&owner=include&count=40&output=atom"
+        active: true
+        priority: 10
+        region: "us"
+        topics: ["insider", "filing"]
+        max_articles: 15
+        quality: "high"
+        summary_prompt: "insider_holdings"
+      - name: "SEC 13F-HR (Atom)"
+        url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=13F-HR&owner=include&count=40&output=atom"
+        active: true
+        priority: 10
+        region: "us"
+        topics: ["13f", "filing"]
+        max_articles: 15
+        quality: "high"
+        summary_prompt: "insider_holdings"
+      - name: "Insider Monkey"
+        url: "https://www.insidermonkey.com/blog/feed/"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["13f", "insider"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "WhaleWisdom Blog"
+        url: "https://whalewisdom.com/blog/rss"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["13f"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "Zacks Insider Trading"
+        url: "https://www.zacks.com/rss/rss_news.php?rsstype=insider_trading"
+        active: true
+        priority: 6
+        region: "us"
+        topics: ["insider"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "Berkshire 13F (Google News)"
+        url: "https://news.google.com/rss/search?q=Berkshire+Hathaway+13F+OR+%22Buffett+stake%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "us"
+        topics: ["13f", "berkshire"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "Bridgewater 13F (Google News)"
+        url: "https://news.google.com/rss/search?q=Bridgewater+13F+OR+Dalio+holdings&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["13f", "bridgewater"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "Tiger Global 13F (Google News)"
+        url: "https://news.google.com/rss/search?q=%22Tiger+Global%22+13F+OR+holdings&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["13f", "tiger-global"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "Lone Pine 13F (Google News)"
+        url: "https://news.google.com/rss/search?q=%22Lone+Pine%22+13F+OR+holdings&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["13f", "lone-pine"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "Pershing Square 13F (Google News)"
+        url: "https://news.google.com/rss/search?q=%22Pershing+Square%22+13F+OR+%22Bill+Ackman%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["13f", "ackman"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "台股董監持股 (Google News)"
+        url: "https://news.google.com/rss/search?q=%E8%91%A3%E7%9B%A3%E6%8C%81%E8%82%A1+OR+%E5%A7%94%E8%A8%97%E6%9B%B8&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 7
+        region: "tw"
+        topics: ["insider", "tw"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "insider_holdings"
+      - name: "台股股權轉讓 (Google News)"
+        url: "https://news.google.com/rss/search?q=%E8%82%A1%E6%AC%8A%E8%BD%89%E8%AE%93+%E7%94%B3%E5%A0%B1&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 6
+        region: "tw"
+        topics: ["insider", "tw"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "insider_holdings"
