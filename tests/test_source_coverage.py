@@ -85,6 +85,34 @@ class SourceCoverageTests(unittest.TestCase):
         self.assertFalse(semiconductor_sources["WikiChip"].get("active", True))
         self.assertFalse(deep_analysis_sources["The Information"].get("active", True))
 
+    def test_broker_research_category_present(self):
+        config = _load_config()
+        feeds = config.get("feeds", {})
+        agents = config.get("category_agents", {})
+
+        self.assertIn("broker_research", agents)
+        self.assertIn("broker_research", feeds)
+
+        broker = feeds["broker_research"]
+        self.assertEqual(broker.get("category"), "📊 券商與分析師研究")
+
+        names = {s.get("name", "") for s in broker.get("sources", [])}
+        self.assertIn("Damodaran Blog", names)
+        self.assertIn("Doomberg", names)
+        self.assertIn("Net Interest", names)
+        self.assertIn("Mostly Borrowed Ideas", names)
+        self.assertIn("Topdown Charts", names)
+        self.assertIn("Lyn Alden", names)
+        self.assertIn("Epsilon Theory", names)
+        self.assertIn("Howard Marks Memos", names)
+        self.assertIn("Verdad Capital", names)
+        self.assertIn("Goldman Insights (Google News)", names)
+
+        for source in broker["sources"]:
+            self.assertIn("url", source)
+            self.assertIn("priority", source)
+            self.assertEqual(source.get("summary_prompt"), "broker_research")
+
 
 if __name__ == "__main__":
     unittest.main()

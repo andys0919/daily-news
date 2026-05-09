@@ -354,6 +354,28 @@ category_agents:
       - "不把轉發當原創觀點"
       - "不混淆事實（某人說了什麼）和推論（這可能意味什麼）"
 
+  broker_research:
+    persona: "買方資深策略分析師，融合 sell-side 框架與 free analyst commentary，過濾雜訊"
+    framework: |
+      1. 來源屬性：sell-side / 獨立分析師 / 短報告
+      2. 觀點極性：多 / 空 / 中性，並指出論證強度
+      3. 與 consensus 的距離：超預期、低於預期、與市場一致
+      4. 投資人 actionable angle：估值、催化劑、風險點
+    key_metrics:
+      - "估值倍數（PE/EV/Sales）"
+      - "成長率假設"
+      - "毛利率/營業利益率"
+      - "TAM 與市占假設"
+    output_sections:
+      - "核心論點（1-2 點）"
+      - "與市場 consensus 的差異"
+      - "做多/做空可操作角度"
+      - "風險與反例"
+    anti_patterns:
+      - "不轉述新聞 headline 當分析"
+      - "不混淆事實與作者推論"
+      - "不引用 paywalled 內文"
+
 feeds:
   # ── 💰 財經與總經 ──
   finance:
@@ -1573,3 +1595,143 @@ feeds:
         max_articles: 10
         quality: "high"
         summary_prompt: "x_trends"
+
+  # ── 📊 券商與分析師研究 ──
+  broker_research:
+    category: "📊 券商與分析師研究"
+    sources:
+      - name: "Damodaran Blog"
+        url: "https://aswathdamodaran.blogspot.com/feeds/posts/default"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["valuation", "research"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Doomberg"
+        url: "https://doomberg.substack.com/feed"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["macro", "energy", "research"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Net Interest"
+        url: "https://www.netinterest.co/feed"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["financials", "research"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Mostly Borrowed Ideas"
+        url: "https://mbi-deepdives.substack.com/feed"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["equity", "research"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Topdown Charts"
+        url: "https://www.topdowncharts.com/blog?format=rss"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["macro", "charts"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Lyn Alden"
+        url: "https://www.lynalden.com/feed/"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["macro", "equity"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Epsilon Theory"
+        url: "https://www.epsilontheory.com/feed/"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["macro", "behavioral"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Howard Marks Memos"
+        url: "https://www.oaktreecapital.com/insights/howard-marks-memos.rss"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["macro", "credit"]
+        max_articles: 4
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Verdad Capital"
+        url: "https://verdadcap.com/archive?format=rss"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["value", "research"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Hindenburg Research"
+        url: "https://hindenburgresearch.com/feed/"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["short", "forensic"]
+        max_articles: 4
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Muddy Waters"
+        url: "https://www.muddywatersresearch.com/feed/"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["short", "forensic"]
+        max_articles: 4
+        quality: "high"
+        summary_prompt: "broker_research"
+      - name: "Seeking Alpha Top Ideas"
+        url: "https://seekingalpha.com/feed.xml"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["equity", "research"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "broker_research"
+      - name: "Goldman Insights (Google News)"
+        url: "https://news.google.com/rss/search?q=site%3Agoldmansachs.com+insights&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["macro", "research"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "broker_research"
+      - name: "JPM Outlook (Google News)"
+        url: "https://news.google.com/rss/search?q=site%3Aam.jpmorgan.com+outlook+OR+research&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["macro", "research"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "broker_research"
+      - name: "Morgan Stanley Ideas (Google News)"
+        url: "https://news.google.com/rss/search?q=site%3Amorganstanley.com+ideas&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["macro", "research"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "broker_research"
