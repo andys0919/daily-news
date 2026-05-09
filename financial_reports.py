@@ -3,6 +3,7 @@ import json
 import re
 import sqlite3
 from dataclasses import dataclass
+from datetime import date, datetime
 from pathlib import Path
 
 
@@ -141,6 +142,91 @@ def init_financial_report_store(db_path: str | Path = DB_PATH) -> None:
         )
         """
     )
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS issuer_materials (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            market TEXT NOT NULL,
+            ticker TEXT NOT NULL,
+            material_type TEXT NOT NULL,
+            title TEXT NOT NULL DEFAULT '',
+            body_text TEXT NOT NULL DEFAULT '',
+            body_excerpt TEXT NOT NULL DEFAULT '',
+            source_url TEXT NOT NULL DEFAULT '',
+            fiscal_year INTEGER,
+            fiscal_period TEXT,
+            fetched_at TEXT NOT NULL,
+            payload_json TEXT NOT NULL DEFAULT ''
+        )
+        """
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_issuer_materials_lookup "
+        "ON issuer_materials(market, ticker, fetched_at DESC)"
+    )
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS insider_transactions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            market TEXT NOT NULL,
+            ticker TEXT NOT NULL,
+            insider_name TEXT NOT NULL DEFAULT '',
+            insider_role TEXT NOT NULL DEFAULT '',
+            transaction_date TEXT NOT NULL,
+            transaction_type TEXT NOT NULL DEFAULT '',
+            shares INTEGER NOT NULL DEFAULT 0,
+            price REAL NOT NULL DEFAULT 0,
+            value_usd REAL NOT NULL DEFAULT 0,
+            filing_url TEXT NOT NULL DEFAULT '',
+            fetched_at TEXT NOT NULL
+        )
+        """
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_insider_transactions_lookup "
+        "ON insider_transactions(market, ticker, transaction_date DESC)"
+    )
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS holdings_snapshots (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            reporter_cik TEXT NOT NULL,
+            reporter_name TEXT NOT NULL DEFAULT '',
+            period_end TEXT NOT NULL,
+            issuer_name TEXT NOT NULL,
+            cusip TEXT NOT NULL DEFAULT '',
+            ticker TEXT NOT NULL DEFAULT '',
+            shares INTEGER NOT NULL DEFAULT 0,
+            value_usd REAL NOT NULL DEFAULT 0,
+            change_pct REAL,
+            filing_url TEXT NOT NULL DEFAULT '',
+            fetched_at TEXT NOT NULL
+        )
+        """
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_holdings_snapshots_lookup "
+        "ON holdings_snapshots(reporter_cik, period_end DESC)"
+    )
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS short_interest_snapshots (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            market TEXT NOT NULL,
+            ticker TEXT NOT NULL,
+            period_end TEXT NOT NULL,
+            short_interest REAL NOT NULL DEFAULT 0,
+            days_to_cover REAL NOT NULL DEFAULT 0,
+            short_interest_ratio REAL NOT NULL DEFAULT 0,
+            source TEXT NOT NULL DEFAULT '',
+            fetched_at TEXT NOT NULL
+        )
+        """
+    )
+    conn.execute(
+        "CREATE INDEX IF NOT EXISTS idx_short_interest_lookup "
+        "ON short_interest_snapshots(market, ticker, period_end DESC)"
+    )
     conn.commit()
     conn.close()
 
@@ -176,6 +262,225 @@ def get_cached_sec_issuer(db_path: str | Path, ticker: str) -> dict[str, str] | 
     if not row:
         return None
     return {"ticker": row[0], "cik": row[1], "company_name": row[2]}
+
+
+def _serialise_dt(value) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, datetime):
+        return value.isoformat()
+    if isinstance(value, date):
+        return value.isoformat()
+    return str(value)
+
+
+def save_issuer_material(db_path: str | Path, payload: dict) -> None:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO issuer_materials
+            (market, ticker, material_type, title, body_text, body_excerpt,
+             source_url, fiscal_year, fiscal_period, fetched_at, payload_json)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                payload.get("market", ""),
+                payload.get("ticker", ""),
+                payload.get("material_type", ""),
+                payload.get("title", ""),
+                payload.get("body_text", ""),
+                payload.get("body_excerpt", "") or (payload.get("body_text", "") or "")[:600],
+                payload.get("source_url", ""),
+                payload.get("fiscal_year"),
+                payload.get("fiscal_period"),
+                _serialise_dt(payload.get("fetched_at")),
+                payload.get("payload_json", ""),
+            ),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def get_recent_issuer_materials(
+    db_path: str | Path,
+    *,
+    market: str | None = None,
+    ticker: str | None = None,
+    limit: int = 20,
+) -> list[dict]:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        query = "SELECT * FROM issuer_materials WHERE 1=1"
+        params: list = []
+        if market is not None:
+            query += " AND market = ?"
+            params.append(market)
+        if ticker is not None:
+            query += " AND ticker = ?"
+            params.append(ticker)
+        query += " ORDER BY fetched_at DESC LIMIT ?"
+        params.append(limit)
+        return [dict(row) for row in conn.execute(query, params).fetchall()]
+    finally:
+        conn.close()
+
+
+def save_insider_transaction(db_path: str | Path, payload: dict) -> None:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO insider_transactions
+            (market, ticker, insider_name, insider_role, transaction_date,
+             transaction_type, shares, price, value_usd, filing_url, fetched_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                payload.get("market", ""),
+                payload.get("ticker", ""),
+                payload.get("insider_name", ""),
+                payload.get("insider_role", ""),
+                _serialise_dt(payload.get("transaction_date")),
+                payload.get("transaction_type", ""),
+                int(payload.get("shares", 0) or 0),
+                float(payload.get("price", 0) or 0),
+                float(payload.get("value_usd", 0) or 0),
+                payload.get("filing_url", ""),
+                _serialise_dt(payload.get("fetched_at")),
+            ),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def get_recent_insider_transactions(
+    db_path: str | Path,
+    *,
+    ticker: str | None = None,
+    limit: int = 30,
+) -> list[dict]:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        query = "SELECT * FROM insider_transactions WHERE 1=1"
+        params: list = []
+        if ticker is not None:
+            query += " AND ticker = ?"
+            params.append(ticker)
+        query += " ORDER BY transaction_date DESC LIMIT ?"
+        params.append(limit)
+        return [dict(row) for row in conn.execute(query, params).fetchall()]
+    finally:
+        conn.close()
+
+
+def save_holdings_snapshot(db_path: str | Path, payload: dict) -> None:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO holdings_snapshots
+            (reporter_cik, reporter_name, period_end, issuer_name, cusip, ticker,
+             shares, value_usd, change_pct, filing_url, fetched_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                payload.get("reporter_cik", ""),
+                payload.get("reporter_name", ""),
+                payload.get("period_end", ""),
+                payload.get("issuer_name", ""),
+                payload.get("cusip", ""),
+                payload.get("ticker", ""),
+                int(payload.get("shares", 0) or 0),
+                float(payload.get("value_usd", 0) or 0),
+                payload.get("change_pct"),
+                payload.get("filing_url", ""),
+                _serialise_dt(payload.get("fetched_at")),
+            ),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def get_recent_holdings_snapshots(
+    db_path: str | Path,
+    *,
+    reporter_cik: str | None = None,
+    limit: int = 100,
+) -> list[dict]:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        query = "SELECT * FROM holdings_snapshots WHERE 1=1"
+        params: list = []
+        if reporter_cik is not None:
+            query += " AND reporter_cik = ?"
+            params.append(reporter_cik)
+        query += " ORDER BY period_end DESC LIMIT ?"
+        params.append(limit)
+        return [dict(row) for row in conn.execute(query, params).fetchall()]
+    finally:
+        conn.close()
+
+
+def save_short_interest_snapshot(db_path: str | Path, payload: dict) -> None:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO short_interest_snapshots
+            (market, ticker, period_end, short_interest, days_to_cover,
+             short_interest_ratio, source, fetched_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                payload.get("market", ""),
+                payload.get("ticker", ""),
+                _serialise_dt(payload.get("period_end")),
+                float(payload.get("short_interest", 0) or 0),
+                float(payload.get("days_to_cover", 0) or 0),
+                float(payload.get("short_interest_ratio", 0) or 0),
+                payload.get("source", ""),
+                _serialise_dt(payload.get("fetched_at")),
+            ),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def get_recent_short_interest_snapshots(
+    db_path: str | Path,
+    *,
+    ticker: str | None = None,
+    limit: int = 30,
+) -> list[dict]:
+    init_financial_report_store(db_path)
+    conn = _connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        query = "SELECT * FROM short_interest_snapshots WHERE 1=1"
+        params: list = []
+        if ticker is not None:
+            query += " AND ticker = ?"
+            params.append(ticker)
+        query += " ORDER BY period_end DESC LIMIT ?"
+        params.append(limit)
+        return [dict(row) for row in conn.execute(query, params).fetchall()]
+    finally:
+        conn.close()
 
 
 def save_financial_report(db_path: str | Path, report: FinancialReport) -> None:
