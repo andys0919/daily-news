@@ -416,6 +416,26 @@ category_agents:
       - "不忽略 lag（13F 是 45 天前快照）"
       - "不把 10b5-1 自動賣壓誤判為看空訊號"
 
+  short_interest_flows:
+    persona: "ETF / 融券資金流分析師：從券源、融券餘額、ETF 申購買回看市場真實位置"
+    framework: |
+      1. 融券餘額變化（建空、補空）
+      2. 券資比與當沖比
+      3. ETF 流入流出方向（板塊、地區）
+      4. 與股價的反向 / 同向關係
+    key_metrics:
+      - "短期融券變動百分比"
+      - "Days to cover"
+      - "ETF AUM 週變動"
+      - "板塊資金流向"
+    output_sections:
+      - "本期關鍵融券動向"
+      - "ETF 資金流重點"
+      - "市場 positioning 解讀"
+    anti_patterns:
+      - "不把單日資料當趨勢"
+      - "不忽略 ETF rebalance 帶來的雜訊"
+
 feeds:
   # ── 💰 財經與總經 ──
   finance:
@@ -2001,3 +2021,89 @@ feeds:
         max_articles: 6
         quality: "medium"
         summary_prompt: "insider_holdings"
+
+  # ── 📉 融券與資金流 ──
+  short_interest_flows:
+    category: "📉 融券與資金流"
+    sources:
+      - name: "etf.com News"
+        url: "https://www.etf.com/rss/news"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["etf", "flows"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "short_interest_flows"
+      - name: "ETF Trends"
+        url: "https://www.etftrends.com/feed/"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["etf", "flows"]
+        max_articles: 10
+        quality: "high"
+        summary_prompt: "short_interest_flows"
+      - name: "ETFGI Press"
+        url: "https://etfgi.com/news/press-releases.rss"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["etf"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "short_interest_flows"
+      - name: "US Short Interest (Google News)"
+        url: "https://news.google.com/rss/search?q=%22short+interest%22+OR+%22short+squeeze%22+stocks&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["short", "us"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "short_interest_flows"
+      - name: "FINRA Reg SHO (Google News)"
+        url: "https://news.google.com/rss/search?q=site%3Afinra.org+short&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 6
+        region: "us"
+        topics: ["short", "regulator"]
+        max_articles: 4
+        quality: "medium"
+        summary_prompt: "short_interest_flows"
+      - name: "ETF Flows Weekly (Google News)"
+        url: "https://news.google.com/rss/search?q=ETF+%22weekly+flows%22+OR+%22fund+flows%22&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 6
+        region: "global"
+        topics: ["etf", "flows"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "short_interest_flows"
+      - name: "台股融資融券 (Google News)"
+        url: "https://news.google.com/rss/search?q=%E8%9E%8D%E8%B3%87%E8%9E%8D%E5%88%B8+OR+%E5%88%B8%E8%B3%87%E6%AF%94&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["short", "tw"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "short_interest_flows"
+      - name: "台股三大法人 (Google News)"
+        url: "https://news.google.com/rss/search?q=%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA+%E8%B2%B7%E8%B6%85+%E8%B3%A3%E8%B6%85&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 8
+        region: "tw"
+        topics: ["flows", "tw"]
+        max_articles: 8
+        quality: "medium"
+        summary_prompt: "short_interest_flows"
+      - name: "台股 ETF 申購買回 (Google News)"
+        url: "https://news.google.com/rss/search?q=ETF+%E7%94%B3%E8%B3%BC+%E8%B2%B7%E5%9B%9E&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        active: true
+        priority: 7
+        region: "tw"
+        topics: ["etf", "tw"]
+        max_articles: 6
+        quality: "medium"
+        summary_prompt: "short_interest_flows"

@@ -157,6 +157,27 @@ class SourceCoverageTests(unittest.TestCase):
         for source in ih["sources"]:
             self.assertEqual(source.get("summary_prompt"), "insider_holdings")
 
+    def test_short_interest_flows_category_present(self):
+        config = _load_config()
+        feeds = config.get("feeds", {})
+        agents = config.get("category_agents", {})
+
+        self.assertIn("short_interest_flows", agents)
+        self.assertIn("short_interest_flows", feeds)
+
+        si = feeds["short_interest_flows"]
+        self.assertEqual(si.get("category"), "📉 融券與資金流")
+
+        names = {s.get("name", "") for s in si.get("sources", [])}
+        self.assertIn("etf.com News", names)
+        self.assertIn("ETF Trends", names)
+        self.assertIn("ETFGI Press", names)
+        self.assertIn("台股融資融券 (Google News)", names)
+        self.assertIn("US Short Interest (Google News)", names)
+
+        for source in si["sources"]:
+            self.assertEqual(source.get("summary_prompt"), "short_interest_flows")
+
 
 if __name__ == "__main__":
     unittest.main()
