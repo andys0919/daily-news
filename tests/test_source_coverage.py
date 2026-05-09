@@ -178,6 +178,32 @@ class SourceCoverageTests(unittest.TestCase):
         for source in si["sources"]:
             self.assertEqual(source.get("summary_prompt"), "short_interest_flows")
 
+    def test_macro_data_category_present(self):
+        config = _load_config()
+        feeds = config.get("feeds", {})
+        agents = config.get("category_agents", {})
+
+        self.assertIn("macro_data", agents)
+        self.assertIn("macro_data", feeds)
+
+        macro = feeds["macro_data"]
+        self.assertEqual(macro.get("category"), "🌐 宏觀與產業數據")
+
+        names = {s.get("name", "") for s in macro.get("sources", [])}
+        self.assertIn("Fed Working Papers", names)
+        self.assertIn("NBER New Working Papers", names)
+        self.assertIn("BIS Working Papers", names)
+        self.assertIn("IMF Publications", names)
+        self.assertIn("OECD Newsroom", names)
+        self.assertIn("World Bank Publications", names)
+        self.assertIn("SIA Press", names)
+        self.assertIn("SEMI Press", names)
+        self.assertIn("行政院主計處 (Google News)", names)
+        self.assertIn("中央銀行公告 (Google News)", names)
+
+        for source in macro["sources"]:
+            self.assertEqual(source.get("summary_prompt"), "macro_data")
+
 
 if __name__ == "__main__":
     unittest.main()
