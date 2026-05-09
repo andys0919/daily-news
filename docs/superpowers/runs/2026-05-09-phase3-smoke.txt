@@ -1,0 +1,120 @@
+📡 Step 1: 爬取 RSS 來源
+📂 💰 財經與總經
+  📡 CNBC Top News...   📡 WSJ Markets...   📡 CNBC Finance...   📡 CNBC Economy...   📡 WSJ Tech...   📡 Bloomberg Markets (Google News)...   📡 FT (Google News)...   📡 鉅亨網 台股... ✅ 0 篇
+  📡 鉅亨網 國際股... ✅ 0 篇
+  📡 CNBC Earnings... ✅ 0 篇
+  📡 CNBC Business... ✅ 0 篇
+  📡 Barron's (Google News)...   📡 ECB Press...   📡 BLS Latest Releases... ✅ 0 篇
+  📡 Bloomberg Markets... ✅ 0 篇
+  📡 中央社 財經...   📡 經濟日報 產經...   📡 經濟日報 股市... ✅ 0 篇
+  📡 經濟日報 國際... ✅ 3 篇
+✅ 0 篇
+  📡 CoinDesk... ✅ 0 篇
+  📡 The Block... ✅ 0 篇
+  📡 BIS Central Bank Speeches... ✅ 8 篇
+✅ 3 篇
+✅ 0 篇
+✅ 10 篇
+✅ 12 篇
+  📡 鉅亨網 外匯... ✅ 0 篇
+  📡 Cointelegraph... ✅ 2 篇
+  📡 Decrypt... ✅ 15 篇
+✅ 10 篇
+  📡 Investing.com... ✅ 12 篇
+  📡 Crunchbase News... ✅ 0 篇
+  📡 TechCrunch Venture... ✅ 12 篇
+✅ 3 篇
+✅ 7 篇
+✅ 0 篇
+✅ 6 篇
+✅ 0 篇
+✅ 0 篇
+✅ 1 篇
+✅ 0 篇
+✅ 1 篇
+✅ 0 篇
+✅ 8 篇
+✅ 15 篇
+✅ 15 篇
+✅ 10 篇
+✅ 10 篇
+📂 🌏 地緣政治與科技政策
+  📡 半導體政策... ✅ 0 篇
+  📡 關稅與貿易政策... ✅ 0 篇
+  📡 NIST Cybersecurity Insights... ✅ 15 篇
+✅ 8 篇
+✅ 1 篇
+✅ 15 篇
+✅ 8 篇
+✅ 10 篇
+✅ 12 篇
+✅ 0 篇
+✅ 0 篇
+✅ 0 篇
+✅ 10 篇
+  ⚠️ parse 警告: Brookings 科技政策
+✅ 0 篇
+✅ 5 篇
+📂 🔬 半導體與硬體
+  📡 Data Center Dynamics... ✅ 2 篇
+✅ 0 篇
+  📡 半導體設備與產能...   📡 記憶體產業... ✅ 0 篇
+  📡 DIGITIMES 伺服器...   📡 DIGITIMES IC製造... ✅ 0 篇
+  📡 DIGITIMES AI應用... ✅ 0 篇
+  📡 Tom's Hardware... ✅ 0 篇
+  📡 The Register... ✅ 0 篇
+✅ 10 篇
+✅ 2 篇
+✅ 7 篇
+✅ 0 篇
+✅ 9 篇
+✅ 1 篇
+✅ 10 篇
+✅ 5 篇
+✅ 12 篇
+✅ 1 篇
+📂 🏢 科技廠動態
+  📡 NVIDIA Newsroom...   📡 TSMC News...   📡 Apple Newsroom...   📡 Microsoft Blog...   📡 Meta Newsroom...   📡 Google Blog...   📡 Intel Newsroom...   📡 AMD News... ✅ 0 篇
+  📡 ASML News... ✅ 0 篇
+  📡 Broadcom News... ✅ 0 篇
+✅ 1 篇
+✅ 1 篇
+✅ 0 篇
+✅ 8 篇
+✅ 8 篇
+✅ 4 篇
+✅ 15 篇
+✅ 10 篇
+✅ 10 篇
+✅ 4 篇
+✅ 1 篇
+✅ 8 篇
+📂 🧠 AI 研究與突破
+  📡 OpenAI Blog...   📡 Anthropic News...   📡 arXiv AI...   📡 arXiv 計算語言學...   📡 Google AI Blog...   📡 DeepMind Blog...   📡 arXiv 機器學習...   📡 Hugging Face Blog...   📡 The Verge AI... ✅ 0 篇
+✅ 0 篇
+  📡 MIT Technology Review...   📡 TechCrunch AI... ✅ 0 篇
+  📡 AI 產業化與投資信號... ✅ 0 篇
+  📡 LLM 研究突破... ✅ 3 篇
+✅ 0 篇
+✅ 2 篇
+✅ 1 篇
+✅ 2 篇
+✅ 3 篇
+✅ 10 篇
+✅ 8 篇
+✅ 8 篇
+✅ 0 篇
+✅ 8 篇
+✅ 10 篇
+✅ 4 篇
+📂 🛠️ AI 工具與實戰
+  📡 Reddit r/ChatGPT... ✅ 0 篇
+  📡 AI 實戰導入（中文）... ✅ 2 篇
+  ⚠️ parse 警告: LangChain Blog
+✅ 0 篇
+✅ 0 篇
+✅ 1 篇
+✅ 8 篇
+✅ 4 篇
+✅ 10 篇
+✅ 6 篇
