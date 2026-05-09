@@ -222,6 +222,54 @@ feeds:
         self.assertIn("事件：capex", text)
         self.assertNotIn("short rss summary", text)
 
+    def test_broker_research_article_extracts_ticker(self):
+        from news_enrichment import build_article_event_metadata
+
+        class FakeArticle:
+            title = "Net Interest: deep dive on JPM and the regional bank squeeze"
+            body_text = "Trading $JPM at 1.5x book makes sense if NII normalizes."
+            summary = ""
+            published = datetime(2026, 5, 1, 12, 0)
+
+        meta = build_article_event_metadata(FakeArticle())
+        self.assertIn("JPM", meta["tickers"])
+
+    def test_ir_materials_article_classified_as_filing(self):
+        from news_enrichment import build_article_event_metadata
+
+        class FakeArticle:
+            title = "Apple Inc. files Form 8-K disclosing material change"
+            body_text = "Form 8-K with disclosure under Item 1.01."
+            summary = ""
+            published = datetime(2026, 5, 1, 12, 0)
+
+        meta = build_article_event_metadata(FakeArticle())
+        self.assertEqual(meta["event_type"], "filing")
+
+    def test_insider_holdings_article_extracts_ticker(self):
+        from news_enrichment import build_article_event_metadata
+
+        class FakeArticle:
+            title = "Berkshire Hathaway 13F shows new stake in (NASDAQ: AAPL)"
+            body_text = "13F-HR disclosure dated April 2026."
+            summary = ""
+            published = datetime(2026, 5, 1, 12, 0)
+
+        meta = build_article_event_metadata(FakeArticle())
+        self.assertIn("AAPL", meta["tickers"])
+
+    def test_macro_data_article_classified_as_policy_when_relevant(self):
+        from news_enrichment import build_article_event_metadata
+
+        class FakeArticle:
+            title = "Fed FEDS note on tariff transmission to inflation"
+            body_text = "Discussion of recent tariff regime and macro impact."
+            summary = ""
+            published = datetime(2026, 5, 1, 12, 0)
+
+        meta = build_article_event_metadata(FakeArticle())
+        self.assertEqual(meta["event_type"], "policy")
+
 
 if __name__ == "__main__":
     unittest.main()
