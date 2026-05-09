@@ -18,6 +18,42 @@
 - ❌ Do not change SQLite schema (that is Phase 3).
 - ✅ Only `config.yaml`, `tests/*`, `openspec/changes/investment-source-rss-expansion/*`.
 
+**Known baseline test failures (DO NOT try to fix these in Phase 1):**
+
+The branch starts with two pre-existing failures on `origin/main` that
+belong to other phases / areas. They are NOT introduced by Phase 1 and you
+must NOT touch them:
+
+```
+ERROR  tests/test_news_enrichment.py
+       NewsEnrichmentTests.test_init_db_adds_enrichment_columns_and_hydrates_new_fields
+       (KeyError: '💰 財經與總經')
+
+FAIL   tests/test_summarizer.py
+       SummarizerTests.test_ai_practice_uses_deterministic_hotlist_without_llm
+       (AssertionError: LLM should not be called for ai_practice)
+```
+
+Phase 1 success criterion: **no new failures or errors beyond the two
+above**. Whenever this plan says "Expected: 0 failures, 0 errors" or "0
+failures", interpret as "≤1 failure and ≤1 error, and the failing names
+are exactly the two baseline names above". If a different test fails,
+that is regression and must be fixed before commit.
+
+A helper one-liner you can run in any task to confirm only the baseline
+failures are present:
+
+```bash
+uv run --with-requirements requirements.txt --python python3 \
+  python -m unittest discover -s tests 2>&1 \
+  | grep -E "^(FAIL|ERROR):" \
+  | sort > /tmp/phase1-failures.txt
+diff <(printf 'ERROR: test_init_db_adds_enrichment_columns_and_hydrates_new_fields (tests.test_news_enrichment.NewsEnrichmentTests.test_init_db_adds_enrichment_columns_and_hydrates_new_fields)\nFAIL: test_ai_practice_uses_deterministic_hotlist_without_llm (tests.test_summarizer.SummarizerTests.test_ai_practice_uses_deterministic_hotlist_without_llm)\n' | sort) /tmp/phase1-failures.txt
+```
+
+`diff` exit code `0` = OK (only baseline failing). Any other diff = a new
+regression. Fix the regression in your *own* changes before continuing.
+
 ---
 
 ## File Structure
@@ -375,7 +411,7 @@ Expected: PASS.
 uv run --with-requirements requirements.txt --python python3 python -m unittest discover -s tests -v
 ```
 
-Expected: 0 failures, 0 errors.
+Expected: only the two baseline failures above; no new regressions (see "Known baseline test failures" section).
 
 - [ ] **Step 7: Create `tests/test_broker_research_feeds.py`** (parser smoke)
 
@@ -644,7 +680,7 @@ uv run --with-requirements requirements.txt --python python3 python -m unittest 
 uv run --with-requirements requirements.txt --python python3 python -m unittest discover -s tests -v
 ```
 
-Expected: 0 failures.
+Expected: only the two baseline failures; no new regressions.
 
 - [ ] **Step 7: Commit**
 
@@ -1444,7 +1480,7 @@ Expected: validate passes, or skip with the explicit message above. If validate 
 uv run --with-requirements requirements.txt --python python3 python -m unittest discover -s tests -v
 ```
 
-Expected: 0 failures, 0 errors.
+Expected: only the two baseline failures above; no new regressions (see "Known baseline test failures" section).
 
 - [ ] **Step 4: Final commit**
 
