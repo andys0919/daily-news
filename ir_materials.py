@@ -117,6 +117,9 @@ def fetch_us_8k_text(
 
 def refresh_ir_materials_for_articles(
     articles: dict[str, Iterable[Any]],
+    *,
+    _db_path: Any | None = None,
+    _persist: bool = True,
 ) -> list[IRMaterial]:
     tickers: set[str] = set()
     for items in articles.values():
@@ -130,4 +133,25 @@ def refresh_ir_materials_for_articles(
             results.extend(fetch_us_transcripts(ticker))
         except Exception:
             continue
+    if _persist and results:
+        try:
+            from financial_reports import save_issuer_material, DB_PATH
+            target = _db_path or DB_PATH
+            for item in results:
+                save_issuer_material(
+                    target,
+                    {
+                        "market": item.market,
+                        "ticker": item.ticker,
+                        "material_type": item.material_type,
+                        "title": item.title,
+                        "body_text": item.body_text,
+                        "source_url": item.source_url,
+                        "fiscal_year": item.fiscal_year,
+                        "fiscal_period": item.fiscal_period,
+                        "fetched_at": item.fetched_at,
+                    },
+                )
+        except Exception:
+            pass
     return results
