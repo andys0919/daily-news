@@ -65,6 +65,10 @@ class FinancialSnapshotBundle:
     company_name: str
     quarterly: FinancialReport | None = None
     monthly_revenue: FinancialReport | None = None
+    latest_transcript: dict | None = None
+    recent_insider_summary: dict | None = None
+    latest_13f: dict | None = None
+    short_interest: dict | None = None
 
 
 def _connect(db_path: str | Path = DB_PATH) -> sqlite3.Connection:
@@ -670,16 +674,58 @@ def get_financial_snapshot_bundle(
     monthly = _get_latest_financial_report_by_kind(
         db_path, market=market, ticker=ticker, report_kind="monthly_revenue"
     )
-    if not quarterly and not monthly:
+
+    transcripts = get_recent_issuer_materials(
+        db_path, market=market, ticker=ticker, limit=1
+    )
+    insider_rows = get_recent_insider_transactions(
+        db_path, ticker=ticker, limit=10
+    )
+    short_rows = get_recent_short_interest_snapshots(
+        db_path, ticker=ticker, limit=1
+    )
+
+    if (
+        not quarterly
+        and not monthly
+        and not transcripts
+        and not insider_rows
+        and not short_rows
+    ):
         return None
     primary = quarterly or monthly
-    assert primary is not None
+    company_name = primary.company_name if primary is not None else ticker
+    primary_ticker = primary.ticker if primary is not None else ticker
+
+    insider_summary: dict | None = None
+    if insider_rows:
+        buys = sum(
+            1
+            for row in insider_rows
+            if (row.get("transaction_type") or "").upper() in {"P", "A"}
+        )
+        sells = sum(
+            1
+            for row in insider_rows
+            if (row.get("transaction_type") or "").upper() == "S"
+        )
+        insider_summary = {
+            "count": len(insider_rows),
+            "buys": buys,
+            "sells": sells,
+            "latest": insider_rows[0],
+        }
+
     return FinancialSnapshotBundle(
         market=market,
-        ticker=primary.ticker,
-        company_name=primary.company_name,
+        ticker=primary_ticker,
+        company_name=company_name,
         quarterly=quarterly,
         monthly_revenue=monthly,
+        latest_transcript=(transcripts[0] if transcripts else None),
+        recent_insider_summary=insider_summary,
+        latest_13f=None,
+        short_interest=(short_rows[0] if short_rows else None),
     )
 
 
