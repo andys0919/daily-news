@@ -18,6 +18,7 @@ def make_article(
     category: str,
     summary_prompt: str,
     summary: str = "has details",
+    topics: list[str] | None = None,
 ) -> Article:
     return Article(
         title=title,
@@ -28,6 +29,7 @@ def make_article(
         category=category,
         summary_prompt=summary_prompt,
         published=datetime.now(TW_TZ),
+        topics=topics or [],
     )
 
 
@@ -45,7 +47,7 @@ class SummarizerTests(unittest.TestCase):
         links = summarizer.build_all_citation_links({category: [article]})
         self.assertEqual(links[category], {1: article.link})
 
-    def test_ai_practice_uses_deterministic_hotlist_without_llm(self):
+    def test_ai_github_digest_prompt_requests_title_plus_brief_zh_tw_explanation(self):
         category = "🛠️ AI 工具與實戰"
         articles = [
             make_article(
@@ -65,14 +67,39 @@ class SummarizerTests(unittest.TestCase):
                 summary_prompt="ai_practice",
             ),
         ]
-        with patch(
-            "summarizer._summarize_with_provider",
-            side_effect=AssertionError("LLM should not be called for ai_practice"),
-        ):
-            summary = summarizer.summarize_category(category, articles)
+        prompt = summarizer.build_ai_github_digest_prompt(category, articles)
 
-        self.assertIn("熱門開源專案", summary)
-        self.assertIn("openai/codex", summary)
+        self.assertIn("保留 GitHub 原始標題", prompt)
+        self.assertIn("一句正體中文簡單解釋", prompt)
+        self.assertIn("不要寫成新聞分析", prompt)
+
+    def test_prepare_ai_github_digest_articles_skips_non_ai_repo(self):
+        category = "🛠️ AI 工具與實戰"
+        articles = [
+            make_article(
+                title="Raphire/Win11Debloat",
+                link="https://github.com/Raphire/Win11Debloat",
+                source="GitHub Trending (All)",
+                source_key="ai_practice:GitHub Trending (All)",
+                category=category,
+                summary_prompt="ai_practice",
+                summary="Windows debloat script for removing bloatware.",
+            ),
+            make_article(
+                title="Blaizzy/mlx-audio",
+                link="https://github.com/Blaizzy/mlx-audio",
+                source="GitHub Trending (All)",
+                source_key="ai_practice:GitHub Trending (All)",
+                category=category,
+                summary_prompt="ai_practice",
+                summary="Apple Silicon TTS/STT/STS inference toolkit.",
+            ),
+        ]
+
+        selected = summarizer._prepare_ai_github_digest_articles(articles)
+
+        self.assertEqual(len(selected), 1)
+        self.assertIn("mlx-audio", selected[0].title)
 
     def test_invalid_non_numeric_citations_are_rejected(self):
         category = "💰 財經與總經"
@@ -187,6 +214,33 @@ class SummarizerTests(unittest.TestCase):
         self.assertIn("代表性貼文", prompt)
         self.assertIn("不可只列來源或連結；必須先講內容。", prompt)
 
+    def test_x_trends_prompt_includes_group_labels_for_articles(self):
+        category = "🔥 X 社群熱議"
+        articles = [
+            make_article(
+                title="OpenAI developer tool thread",
+                link="https://x.com/OpenAIDevs/status/1",
+                source="X @OpenAIDevs",
+                source_key="x_trends:X @OpenAIDevs",
+                category=category,
+                summary_prompt="x_trends",
+            ),
+            make_article(
+                title="Cohere enterprise deployment note",
+                link="https://x.com/Cohere/status/2",
+                source="X @Cohere",
+                source_key="x_trends:X @Cohere",
+                category=category,
+                summary_prompt="x_trends",
+            ),
+        ]
+
+        prompt = summarizer.build_prompt(category, articles, "x_trends")
+
+        self.assertIn("群組：開發工具 / Agent 工作流", prompt)
+        self.assertIn("群組：模型平台 / 企業產品", prompt)
+        self.assertIn("比較不同觀點群組", prompt)
+
     def test_x_trends_summary_includes_numeric_citations(self):
         category = "🔥 X 社群熱議"
         articles = [
@@ -229,6 +283,44 @@ class SummarizerTests(unittest.TestCase):
         ):
             summary = summarizer.summarize_category(category, articles)
         self.assertRegex(summary, r"\[\d+\]")
+
+    def test_prepare_summary_articles_caps_x_group_representation(self):
+        category = "🔥 X 社群熱議"
+        articles = [
+            make_article(
+                title=f"OpenAI thread {idx}",
+                link=f"https://x.com/openai/status/{idx}",
+                source="X @OpenAI",
+                source_key="x_trends:X @OpenAI",
+                category=category,
+                summary_prompt="x_trends",
+                topics=["x_group_labs"],
+            )
+            for idx in range(5)
+        ]
+        articles.append(
+            make_article(
+                title="Cohere enterprise deployment",
+                link="https://x.com/Cohere/status/99",
+                source="X @Cohere",
+                source_key="x_trends:X @Cohere",
+                category=category,
+                summary_prompt="x_trends",
+                topics=["x_group_platforms"],
+            )
+        )
+
+        with patch.object(summarizer, "SUMMARY_X_GROUP_MAX_ARTICLES", 2):
+            _body, selected, stats = summarizer._prepare_summary_articles(
+                articles, category, "x_trends"
+            )
+
+        selected_titles = {article.title for article in selected}
+        self.assertIn("Cohere enterprise deployment", selected_titles)
+        self.assertLessEqual(
+            sum(1 for article in selected if "OpenAI thread" in article.title), 2
+        )
+        self.assertGreater(int(stats["dropped_x_group_cap"]), 0)
 
     def test_clean_x_discussion_text_removes_transport_noise(self):
         raw = "x.com/openai/status/10 &nbsp; MCP agent launch https://x.com/abc"

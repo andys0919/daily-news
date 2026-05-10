@@ -56,6 +56,8 @@ class DailyMemoReportTests(unittest.TestCase):
         self.assertIn("今日主線", html)
         self.assertIn("Gold", html)
         self.assertIn("Silver", html)
+        self.assertIn("News Source Atlas", html)
+        self.assertIn("news-source-atlas.html", html)
         self.assertNotIn("💰 財經與總經", html)
         self.assertNotIn("舊分類摘要", html)
         self.assertNotIn("📎 原始來源附錄", html)
@@ -159,6 +161,66 @@ class DailyMemoReportTests(unittest.TestCase):
 
         self.assertIn("Gold", names)
         self.assertIn("Silver", names)
+
+    def test_generate_report_renders_x_trends_group_cards(self):
+        x_articles = [
+            Article(
+                title="OpenAI ships new model capability",
+                summary="Official lab update.",
+                link="https://x.com/OpenAI/status/1",
+                source="X @OpenAI",
+                source_key="x_trends:X @OpenAI",
+                category="🔥 X 社群熱議",
+                summary_prompt="x_trends",
+                published=datetime.now(TW_TZ),
+                topics=["x_group_labs"],
+            ),
+            Article(
+                title="OpenAIDevs adds new Codex integration",
+                summary="Developer tool workflow update.",
+                link="https://x.com/OpenAIDevs/status/2",
+                source="X @OpenAIDevs",
+                source_key="x_trends:X @OpenAIDevs",
+                category="🔥 X 社群熱議",
+                summary_prompt="x_trends",
+                published=datetime.now(TW_TZ),
+                topics=["x_group_devtools"],
+            ),
+            Article(
+                title="vLLM posts new inference benchmark",
+                summary="Infra and deployment note.",
+                link="https://x.com/vllm_project/status/3",
+                source="X @vllm_project",
+                source_key="x_trends:X @vllm_project",
+                category="🔥 X 社群熱議",
+                summary_prompt="x_trends",
+                published=datetime.now(TW_TZ),
+                topics=["x_group_infra"],
+            ),
+        ]
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            original_report_dir = html_generator.REPORT_DIR
+            html_generator.REPORT_DIR = Path(tmpdir)
+            try:
+                report_path = html_generator.generate_report(
+                    {"🔥 X 社群熱議": x_articles},
+                    summaries={},
+                    market=None,
+                    memo="## 今日主線\nX watchlist 分組測試。",
+                    report_type="daily",
+                )
+                html = report_path.read_text(encoding="utf-8")
+            finally:
+                html_generator.REPORT_DIR = original_report_dir
+
+        self.assertIn("🔥 X 高訊號分組", html)
+        self.assertIn("模型實驗室 / 官方", html)
+        self.assertIn("開發工具 / Agent 工作流", html)
+        self.assertIn("推理基礎設施 / 部署", html)
+        self.assertIn("OpenAI ships new model capability", html)
+        self.assertIn("近期", html)
+        self.assertIn("高訊號貼文", html)
 
 
 if __name__ == "__main__":

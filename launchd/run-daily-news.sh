@@ -15,13 +15,17 @@ if [ -f .env ]; then
   set +a
 fi
 
+"$SCRIPT_DIR/ensure-rsshub.sh"
+
 UV_BIN="${UV_BIN:-uv}"
 PYTHON_BIN="${DAILY_NEWS_PYTHON:-python3}"
 HOURS="${DAILY_NEWS_HOURS:-24}"
 
-exec "$UV_BIN" run \
+"$UV_BIN" run \
   --with-requirements requirements.txt \
   --python "$PYTHON_BIN" \
   python main.py \
   --hours "$HOURS" \
   --report-type daily
+
+"$SCRIPT_DIR/generate-source-atlas.sh"

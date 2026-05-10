@@ -643,6 +643,15 @@ feeds:
         max_articles: 6
         quality: "high"
         summary_prompt: "news"
+      - name: "St. Louis Fed On the Economy"
+        url: "https://www.stlouisfed.org/on-the-economy/feed"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["macro", "rates", "research", "labor"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
       # ── 聚合類（限制數量避免噪音）──
       - name: "Investing.com"
         url: "https://www.investing.com/rss/news.rss"
@@ -910,6 +919,15 @@ feeds:
         max_articles: 6
         quality: "high"
         summary_prompt: "geopolitics"
+      - name: "CSET"
+        url: "https://cset.georgetown.edu/feed/"
+        active: true
+        priority: 7
+        region: "us"
+        topics: ["geopolitics", "technology", "policy", "ai"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "geopolitics"
 
   # ── 🔬 半導體與硬體 ──
   semiconductor:
@@ -1048,6 +1066,15 @@ feeds:
         max_articles: 8
         quality: "high"
         summary_prompt: "semiconductor"
+      - name: "3D InCites"
+        url: "https://www.3dincites.com/feed/"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["semiconductor", "advanced-packaging", "supply-chain"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "semiconductor"
 
   # ── 🏢 科技廠動態 ──
   tech_companies:
@@ -1099,6 +1126,15 @@ feeds:
         priority: 7
         max_articles: 8
         quality: "high"
+      - name: "Cloudflare Blog"
+        url: "https://blog.cloudflare.com/rss/"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["technology", "cloud", "security", "infrastructure"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "tech_industry"
       - name: "TSMC News"
         url: "https://news.google.com/rss/search?q=TSMC+OR+台積電&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
         active: true
@@ -1228,6 +1264,15 @@ feeds:
         priority: 8
         region: "global"
         topics: ["ai", "open-source", "inference"]
+        max_articles: 8
+        quality: "high"
+        summary_prompt: "ai_research"
+      - name: "Google Research"
+        url: "https://research.google/blog/rss/"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "research", "science"]
         max_articles: 8
         quality: "high"
         summary_prompt: "ai_research"
@@ -1403,6 +1448,33 @@ feeds:
         priority: 7
         region: "global"
         topics: ["ai", "rag", "agents", "tools"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "ai_practice"
+      - name: "Ollama Releases"
+        url: "https://github.com/ollama/ollama/releases.atom"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "opensource", "llm", "releases"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "ai_practice"
+      - name: "vLLM Releases"
+        url: "https://github.com/vllm-project/vllm/releases.atom"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["ai", "inference", "opensource", "releases"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "ai_practice"
+      - name: "openai-python Releases"
+        url: "https://github.com/openai/openai-python/releases.atom"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["ai", "sdk", "releases", "developer-tools"]
         max_articles: 6
         quality: "high"
         summary_prompt: "ai_practice"
@@ -1588,92 +1660,251 @@ feeds:
         max_articles: 6
         quality: "high"
         summary_prompt: "news"
+      - name: "Asterisk"
+        url: "https://asteriskmag.com/feed"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["technology", "science", "policy", "analysis"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "news"
 
   # ── 🔥 X 社群熱議 ──
   x_trends:
     category: "🔥 X 社群熱議"
     summary_prompt: "x_trends"
     sources:
-      # 註：以 Google News RSS 檢索 x.com 貼文，避免 X 官方 API 付費與防爬限制。
-      - name: "X AI/科技熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28OpenAI+OR+Anthropic+OR+NVIDIA+OR+xAI+OR+%22AI+agent%22+OR+MCP%29&hl=en-US&gl=US&ceid=US:en"
+      # 註：優先使用自架 RSSHub 的 X user feed；若未設定 RSSHUB_URL 或 RSSHub 尚未接好 X 認證，
+      # 會自動 fallback 到既有的 Google News x.com 檢索，避免 pipeline 中斷。
+      - name: "X @OpenAI"
+        preferred_url: "${RSSHUB_URL}/twitter/user/OpenAI"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28OpenAI+OR+%22Sam+Altman%22+OR+GPT+OR+o3+OR+o4-mini%29&hl=en-US&gl=US&ceid=US:en"
         active: true
         priority: 10
         region: "global"
-        topics: ["x", "ai", "technology"]
-        max_articles: 10
+        topics: ["x", "ai", "models", "x_group_labs"]
+        max_articles: 6
         quality: "high"
         summary_prompt: "x_trends"
-      - name: "X AI 工程實作熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28MCP+OR+RAG+OR+%22function+calling%22+OR+inference+OR+GPU%29&hl=en-US&gl=US&ceid=US:en"
+      - name: "X @AnthropicAI"
+        preferred_url: "${RSSHUB_URL}/twitter/user/AnthropicAI"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Anthropic+OR+Claude+OR+%22Dario+Amodei%22%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["x", "ai", "models", "x_group_labs"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @GoogleDeepMind"
+        preferred_url: "${RSSHUB_URL}/twitter/user/GoogleDeepMind"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28DeepMind+OR+Gemini+OR+%22Demis+Hassabis%22%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["x", "ai", "research", "x_group_labs"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @karpathy"
+        preferred_url: "${RSSHUB_URL}/twitter/user/karpathy"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28karpathy+OR+%22AI+engineering%22+OR+%22LLM%20workflow%22%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 10
+        region: "global"
+        topics: ["x", "ai", "engineering", "x_group_devtools"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @ylecun"
+        preferred_url: "${RSSHUB_URL}/twitter/user/ylecun"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28ylecun+OR+%22Yann+LeCun%22+OR+%22open-source+AI%22%29&hl=en-US&gl=US&ceid=US:en"
         active: true
         priority: 9
         region: "global"
-        topics: ["x", "ai", "engineering"]
-        max_articles: 8
+        topics: ["x", "ai", "research", "x_group_labs"]
+        max_articles: 6
         quality: "high"
         summary_prompt: "x_trends"
-      - name: "X 宏觀市場熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28FOMC+OR+rates+OR+CPI+OR+tariff+OR+bond+OR+oil%29&hl=en-US&gl=US&ceid=US:en"
+      - name: "X @DrJimFan"
+        preferred_url: "${RSSHUB_URL}/twitter/user/DrJimFan"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28%22Jim+Fan%22+OR+DrJimFan+OR+embodied+AI+OR+agentic%29&hl=en-US&gl=US&ceid=US:en"
         active: true
         priority: 9
         region: "global"
-        topics: ["x", "macro", "markets"]
-        max_articles: 8
+        topics: ["x", "ai", "agents", "x_group_devtools"]
+        max_articles: 6
         quality: "high"
         summary_prompt: "x_trends"
-      - name: "X 加密市場熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Bitcoin+OR+BTC+OR+Ethereum+OR+ETH+OR+stablecoin%29&hl=en-US&gl=US&ceid=US:en"
+      - name: "X @swyx"
+        preferred_url: "${RSSHUB_URL}/twitter/user/swyx"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28swyx+OR+MCP+OR+RAG+OR+%22agentic+AI%22%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["x", "ai", "devtools", "x_group_devtools"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @simonw"
+        preferred_url: "${RSSHUB_URL}/twitter/user/simonw"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28%22Simon+Willison%22+OR+simonw+OR+LLM+OR+evals%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["x", "ai", "tools", "x_group_devtools"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @NVIDIA"
+        preferred_url: "${RSSHUB_URL}/twitter/user/nvidia"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28NVIDIA+OR+Blackwell+OR+GPU+OR+NVDA%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["x", "ai", "infrastructure", "x_group_semis", "x_group_infra"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @fchollet"
+        preferred_url: "${RSSHUB_URL}/twitter/user/fchollet"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28fchollet+OR+Keras+OR+reasoning+OR+evaluation%29&hl=en-US&gl=US&ceid=US:en"
         active: true
         priority: 8
         region: "global"
-        topics: ["x", "crypto", "markets"]
-        max_articles: 8
-        quality: "medium"
+        topics: ["x", "ai", "evaluation", "x_group_labs"]
+        max_articles: 6
+        quality: "high"
         summary_prompt: "x_trends"
-      - name: "X 半導體供應鏈熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28TSMC+OR+HBM+OR+CoWoS+OR+ASML+OR+wafer%29&hl=en-US&gl=US&ceid=US:en"
+      - name: "X @OpenAIDevs"
+        preferred_url: "${RSSHUB_URL}/twitter/user/OpenAIDevs"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28OpenAI+Developers+OR+OpenAIDevs+OR+API+OR+Codex%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["x", "ai", "developers", "platform", "x_group_devtools"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @RomainHuet"
+        preferred_url: "${RSSHUB_URL}/twitter/user/RomainHuet"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Romain+Huet+OR+Codex+OR+OpenAI+Developers%29&hl=en-US&gl=US&ceid=US:en"
         active: true
         priority: 8
         region: "global"
-        topics: ["x", "semiconductor", "supply-chain"]
-        max_articles: 8
-        quality: "medium"
+        topics: ["x", "ai", "developer-tools", "x_group_devtools"]
+        max_articles: 6
+        quality: "high"
         summary_prompt: "x_trends"
-      - name: "X 中文科技熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28%E5%8F%B0%E7%A9%8D%E9%9B%BB+OR+AI+OR+%E7%AE%97%E5%8A%9B+OR+%E5%8D%8A%E5%B0%8E%E9%AB%94%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+      - name: "X @demishassabis"
+        preferred_url: "${RSSHUB_URL}/twitter/user/demishassabis"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28demishassabis+OR+DeepMind+OR+Gemini%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 9
+        region: "global"
+        topics: ["x", "ai", "research", "models", "x_group_labs"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @sundarpichai"
+        preferred_url: "${RSSHUB_URL}/twitter/user/sundarpichai"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28sundarpichai+OR+Google+AI+OR+Gemini%29&hl=en-US&gl=US&ceid=US:en"
         active: true
         priority: 8
-        region: "tw"
-        topics: ["x", "ai", "tw"]
-        max_articles: 8
-        quality: "medium"
-        summary_prompt: "x_trends"
-      - name: "X LLM 模型與評測熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28LLM+OR+GPT+OR+Claude+OR+Gemini+OR+Llama+OR+DeepSeek+OR+Qwen+OR+Mistral+OR+%22o3%22+OR+%22o4-mini%22%29&hl=en-US&gl=US&ceid=US:en"
-        active: true
-        priority: 10
         region: "global"
-        topics: ["x", "llm", "models"]
-        max_articles: 10
+        topics: ["x", "ai", "big-tech", "platform", "x_group_platforms"]
+        max_articles: 6
         quality: "high"
         summary_prompt: "x_trends"
-      - name: "X AI 開發者工具熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Cursor+OR+Copilot+OR+%22vibe+coding%22+OR+%22AI+coding%22+OR+%22code+generation%22+OR+%22agentic%22+OR+Windsurf+OR+%22Claude+Code%22%29&hl=en-US&gl=US&ceid=US:en"
+      - name: "X @satyanadella"
+        preferred_url: "${RSSHUB_URL}/twitter/user/satyanadella"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28satyanadella+OR+Microsoft+AI+OR+Copilot%29&hl=en-US&gl=US&ceid=US:en"
         active: true
-        priority: 10
+        priority: 8
         region: "global"
-        topics: ["x", "ai", "devtools"]
-        max_articles: 10
+        topics: ["x", "ai", "big-tech", "platform", "x_group_platforms"]
+        max_articles: 6
         quality: "high"
         summary_prompt: "x_trends"
-      - name: "X AI KOL 熱議"
-        url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28karpathy+OR+%22Yann+LeCun%22+OR+%22Jim+Fan%22+OR+%22Sam+Altman%22+OR+%22Dario+Amodei%22+OR+%22Demis+Hassabis%22+OR+swyx+OR+%22Simon+Willison%22%29&hl=en-US&gl=US&ceid=US:en"
+      - name: "X @vllm_project"
+        preferred_url: "${RSSHUB_URL}/twitter/user/vllm_project"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28vLLM+OR+vllm_project+OR+inference%29&hl=en-US&gl=US&ceid=US:en"
         active: true
-        priority: 10
+        priority: 8
         region: "global"
-        topics: ["x", "ai", "kol"]
-        max_articles: 10
+        topics: ["x", "ai", "inference", "opensource", "x_group_infra"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @ollama"
+        preferred_url: "${RSSHUB_URL}/twitter/user/ollama"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28ollama+OR+local+LLM+OR+inference%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["x", "ai", "local-llm", "opensource", "x_group_infra"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @perplexity_ai"
+        preferred_url: "${RSSHUB_URL}/twitter/user/perplexity_ai"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28perplexity_ai+OR+Perplexity+AI+search%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["x", "ai", "search", "products", "x_group_platforms"]
+        max_articles: 6
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @xai"
+        preferred_url: "${RSSHUB_URL}/twitter/user/xai"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28xAI+OR+Grok+OR+Colossus%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["x", "ai", "models", "infrastructure", "x_group_labs", "x_group_infra"]
+        max_articles: 5
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @Cohere"
+        preferred_url: "${RSSHUB_URL}/twitter/user/Cohere"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Cohere+OR+Rerank+OR+Command+R%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["x", "ai", "enterprise", "models", "x_group_platforms"]
+        max_articles: 5
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @togethercompute"
+        preferred_url: "${RSSHUB_URL}/twitter/user/togethercompute"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28Together+AI+OR+togethercompute+OR+inference%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["x", "ai", "inference", "cloud", "x_group_infra"]
+        max_articles: 5
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @lmstudio"
+        preferred_url: "${RSSHUB_URL}/twitter/user/lmstudio"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28LM+Studio+OR+lmstudio+OR+local+LLM%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 8
+        region: "global"
+        topics: ["x", "ai", "local-llm", "developer-tools", "x_group_devtools"]
+        max_articles: 5
+        quality: "high"
+        summary_prompt: "x_trends"
+      - name: "X @AMD"
+        preferred_url: "${RSSHUB_URL}/twitter/user/AMD"
+        fallback_url: "https://news.google.com/rss/search?q=when:24h+site:x.com+%28AMD+OR+Instinct+OR+MI350+OR+EPYC%29&hl=en-US&gl=US&ceid=US:en"
+        active: true
+        priority: 7
+        region: "global"
+        topics: ["x", "ai", "semiconductor", "infrastructure", "x_group_semis"]
+        max_articles: 5
         quality: "high"
         summary_prompt: "x_trends"
 

@@ -1,5 +1,6 @@
 """HTML 報告產生器"""
 
+import html as html_lib
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -101,8 +102,102 @@ TEMPLATE_DIR = Path(__file__).parent / "templates"
 REPORT_DIR = Path(__file__).parent / "data" / "reports"
 DB_PATH = Path(__file__).parent / "data" / "news.db"
 TW_TZ = timezone(timedelta(hours=8))
+_X_GROUP_LABELS = {
+    "x_group_labs": "模型實驗室 / 官方",
+    "x_group_devtools": "開發工具 / Agent 工作流",
+    "x_group_infra": "推理基礎設施 / 部署",
+    "x_group_platforms": "模型平台 / 企業產品",
+    "x_group_semis": "晶片 / 算力供應鏈",
+}
+_X_GROUP_ORDER = [
+    "x_group_labs",
+    "x_group_devtools",
+    "x_group_infra",
+    "x_group_platforms",
+    "x_group_semis",
+]
+_X_GROUP_PREFIX = {
+    "x_group_labs": "近期實驗室與官方更新聚焦在",
+    "x_group_devtools": "近期工具鏈與 agent 工作流焦點在",
+    "x_group_infra": "近期推理部署與基礎設施焦點在",
+    "x_group_platforms": "近期模型平台與產品化重點在",
+    "x_group_semis": "近期晶片與算力供應鏈重點在",
+}
 
 WEEKDAY_MAP = {0: "一", 1: "二", 2: "三", 3: "四", 4: "五", 5: "六", 6: "日"}
+
+
+def _article_x_group_key(article: Article) -> str:
+    for topic in getattr(article, "topics", []) or []:
+        key = str(topic).strip()
+        if key in _X_GROUP_LABELS:
+            return key
+    return ""
+
+
+def _clean_x_group_summary_text(text: str) -> str:
+    cleaned = html_lib.unescape(text or "")
+    cleaned = re.sub(r"<[^>]+>", " ", cleaned)
+    cleaned = re.sub(r"https?://\\S+", "", cleaned)
+    cleaned = " ".join(cleaned.split()).strip(" -|;:,")
+    return cleaned
+
+
+def _shorten_x_group_summary_text(text: str, max_len: int = 44) -> str:
+    normalized = _clean_x_group_summary_text(text)
+    if len(normalized) <= max_len:
+        return normalized
+    return normalized[:max_len].rstrip() + "…"
+
+
+def _build_x_group_summary(group_key: str, articles: list[Article]) -> str:
+    prefix = _X_GROUP_PREFIX.get(group_key, "近期高訊號貼文重點在")
+    snippets: list[str] = []
+    seen: set[str] = set()
+    for article in articles[:3]:
+        for candidate in (article.summary, article.title):
+            snippet = _shorten_x_group_summary_text(candidate)
+            if not snippet or snippet in seen:
+                continue
+            snippets.append(snippet)
+            seen.add(snippet)
+            break
+        if len(snippets) >= 2:
+            break
+
+    if snippets:
+        return f"近期 {len(articles)} 則高訊號貼文，{prefix}{'；'.join(snippets)}。"
+    return f"近期 {len(articles)} 則高訊號貼文。"
+
+
+def _build_x_trends_group_cards(
+    articles: dict[str, list[Article]],
+) -> list[dict[str, object]]:
+    x_articles = _filter_articles_by_summary_prompt(articles, "x_trends")
+    grouped: dict[str, list[Article]] = {key: [] for key in _X_GROUP_ORDER}
+    for article in x_articles:
+        key = _article_x_group_key(article)
+        if not key:
+            continue
+        grouped.setdefault(key, []).append(article)
+
+    cards: list[dict[str, object]] = []
+    for key in _X_GROUP_ORDER:
+        group_articles = grouped.get(key, [])
+        if not group_articles:
+            continue
+        cards.append(
+            {
+                "key": key,
+                "title": _X_GROUP_LABELS[key],
+                "count": len(group_articles),
+                "summary": _build_x_group_summary(key, group_articles),
+                "articles": group_articles[:4],
+            }
+        )
+        if len(cards) >= 4:
+            break
+    return cards
 
 
 def generate_report(
@@ -123,9 +218,11 @@ def generate_report(
     weekday = WEEKDAY_MAP.get(now.weekday(), "")
     time_str = now.strftime("%H:%M")
     title = "每日新聞速報" if report_type == "daily" else "每週新聞速報"
+    source_atlas_href = "news-source-atlas.html"
 
     memo_source = memo or top10
     memo_html = md_to_html(memo_source)
+    x_group_cards = _build_x_trends_group_cards(articles)
     ai_watch_articles = _filter_github_articles(articles)
     ai_watch_category = _find_summary_category(articles, summaries, "ai_practice")
     ai_watch_summary = ""
@@ -154,8 +251,10 @@ def generate_report(
         date=date_str,
         weekday=f"週{weekday}",
         generated_at=time_str,
+        source_atlas_href=source_atlas_href,
         market=market,
         memo=memo_html,
+        x_group_cards=x_group_cards,
         financial_highlights=financial_highlights,
         ai_watch_articles=ai_watch_articles,
         ai_watch_summary=ai_watch_summary,

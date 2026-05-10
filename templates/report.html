@@ -204,6 +204,69 @@
     color: var(--text-muted);
   }
 
+  .atlas-link-card {
+    border-color: rgba(120, 183, 255, 0.35);
+  }
+  .atlas-link-card .card-header {
+    background: linear-gradient(135deg, rgba(120, 183, 255, 0.18), rgba(79, 213, 199, 0.12));
+  }
+  .atlas-link-copy {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+    line-height: 1.8;
+  }
+  .atlas-link-copy a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .atlas-link-copy a:hover { text-decoration: underline; }
+
+  /* ─── X 分組卡 ─── */
+  .x-group-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+  .x-group-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .x-group-card .group-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .x-group-card .group-title {
+    font-size: 0.92em;
+    font-weight: 700;
+  }
+  .x-group-card .group-count {
+    font-size: 0.7em;
+    color: var(--text-muted);
+    background: var(--tag-bg);
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .x-group-card .group-summary {
+    font-size: 0.82em;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 8px;
+  }
+  .x-group-card .article {
+    padding: 6px 0;
+  }
+
   /* ─── 文章 ─── */
   .articles { margin-top: 12px; }
   .evidence-hint {
@@ -434,6 +497,47 @@
 <div class="card memo-card">
   <div class="card-header">🧭 每日整體 Memo</div>
   <div class="memo-body">{{ memo | safe }}</div>
+</div>
+{% endif %}
+
+<div class="card atlas-link-card">
+  <div class="card-header">🗺️ News Source Atlas</div>
+  <div class="card-body">
+    <div class="atlas-link-copy">
+      統整全站來源池、X watchlist 分組與可過濾明細的獨立黑色系 dashboard。
+      <br>
+      <a href="{{ source_atlas_href }}" target="_blank">打開來源總覽 →</a>
+    </div>
+  </div>
+</div>
+
+{% if x_group_cards %}
+<div class="card">
+  <div class="card-header">🔥 X 高訊號分組</div>
+  <div class="card-body">
+    <div class="x-group-grid">
+      {% for group in x_group_cards %}
+      <div class="x-group-card">
+        <div class="group-head">
+          <div class="group-title">{{ group.title }}</div>
+          <div class="group-count">{{ group.count }} 則</div>
+        </div>
+        <div class="group-summary">{{ group.summary }}</div>
+        <div class="articles">
+          {% for article in group.articles %}
+          <div class="article">
+            <a href="{{ article.link }}" target="_blank">{{ article.title }}</a>
+            <div class="meta">
+              <span class="src">{{ article.source }}</span>
+              {{ article.published.strftime('%H:%M') }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 {% endif %}
 

@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import random
+import re
 import sqlite3
 import urllib.parse
 from dataclasses import dataclass, field
@@ -27,6 +28,7 @@ REQUEST_TIMEOUT_SECONDS = 30
 CONCURRENT_REQUESTS = 8
 RETRY_STATUSES = {429, 500, 502, 503, 504}
 REQUEST_TIMEOUT = aiohttp.ClientTimeout(total=REQUEST_TIMEOUT_SECONDS)
+ENV_PLACEHOLDER_PATTERN = re.compile(r"\$\{([A-Z0-9_]+)\}")
 
 
 TRACKING_QUERY_PARAMS = {
@@ -47,7 +49,48 @@ TRACKING_QUERY_PARAMS = {
 def load_config() -> dict[str, Any]:
     """載入 daily-news 設定檔（含 RSS 與市場設定）"""
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        raw = yaml.safe_load(f)
+    return _resolve_config_env_placeholders(raw)
+
+
+def _resolve_string_env_placeholders(value: str) -> str:
+    def _replace(match: re.Match[str]) -> str:
+        env_key = match.group(1)
+        return os.getenv(env_key, match.group(0))
+
+    return ENV_PLACEHOLDER_PATTERN.sub(_replace, value)
+
+
+def _resolve_config_env_placeholders(value: Any) -> Any:
+    if isinstance(value, str):
+        return _resolve_string_env_placeholders(value)
+    if isinstance(value, list):
+        return [_resolve_config_env_placeholders(item) for item in value]
+    if isinstance(value, dict):
+        return {
+            key: _resolve_config_env_placeholders(item) for key, item in value.items()
+        }
+    return value
+
+
+def _is_resolved_config_string(value: Any) -> bool:
+    if not isinstance(value, str):
+        return False
+    return bool(value.strip()) and ENV_PLACEHOLDER_PATTERN.search(value) is None
+
+
+def _select_source_url(source: Mapping[str, Any]) -> str:
+    for key in ("preferred_url", "url", "fallback_url"):
+        candidate = source.get(key)
+        if _is_resolved_config_string(candidate):
+            return str(candidate).strip()
+
+    for key in ("preferred_url", "url", "fallback_url"):
+        candidate = source.get(key)
+        if isinstance(candidate, str) and candidate.strip():
+            return candidate.strip()
+
+    raise KeyError("url")
 
 
 def _safe_int(value: Any, default: int = 0) -> int:
@@ -194,9 +237,13 @@ def normalize_source_config(
     feed_key: str, feed_config: Mapping[str, Any], source: Mapping[str, Any]
 ) -> dict[str, Any]:
     """將來源欄位補齊預設值，支援可控來源 metadata"""
+    preferred_url = source.get("preferred_url")
+    fallback_url = source.get("fallback_url")
     return {
         "name": source["name"],
-        "url": source["url"],
+        "url": _select_source_url(source),
+        "preferred_url": str(preferred_url).strip() if isinstance(preferred_url, str) else "",
+        "fallback_url": str(fallback_url).strip() if isinstance(fallback_url, str) else "",
         "active": bool(source.get("active", True)),
         "priority": _safe_int(source.get("priority", 5)),
         "region": str(source.get("region", "global")),
@@ -595,6 +642,15 @@ async def crawl_source(
     async with gate:
         print(f"  📡 {source_name}...", end=" ")
         content = await fetch_feed(session, source_config["url"])
+
+    if not content and source_config.get("fallback_url"):
+        fallback_url = str(source_config["fallback_url"]).strip()
+        if fallback_url and fallback_url != source_config["url"]:
+            print("  ↪️ RSSHub/主來源失敗，改抓 fallback...", end=" ")
+            async with gate:
+                content = await fetch_feed(session, fallback_url)
+            if content:
+                source_config["url"] = fallback_url
 
     if not content:
         print("失敗")

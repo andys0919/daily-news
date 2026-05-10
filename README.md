@@ -76,10 +76,13 @@ uv run --with-requirements requirements.txt --python python3 python stock_memo.p
 - `AZURE_OPENAI_API_KEY`
 - `AZURE_OPENAI_MODEL`
 - `SEC_API_USER_AGENT`
+- `RSSHUB_URL`（選填；若設定為自架 RSSHub base URL，`x_trends` 會優先走 RSSHub 的 X user feeds，未設定時自動 fallback 到 Google News 的 `site:x.com` RSS 搜尋）
+- `TWITTER_AUTH_TOKEN`（選填；自架 RSSHub 需要時可提供 X web `auth_token` cookie，但目前本機 RSSHub 的 `twitter/user` routes 已可正常返回主要 KOL feed）
 
 ## 自動執行（macOS launchd）
 
 專案內建一份 LaunchAgent template，預設每天 `09:00` 執行 daily 報告。
+`launchd/run-daily-news.sh` 現在會在正式跑 `main.py` 前先執行 `launchd/ensure-rsshub.sh`，若 `.env` 中的 `RSSHUB_URL` 指向本機 `127.0.0.1:1200`，會自動用 [`.infra/rsshub/docker-compose.yml`](/Users/andy/Code/projects/telegram-bot/daily-news/.infra/rsshub/docker-compose.yml) 確保 RSSHub/Redis 已啟動。
 
 1. 建立 log 目錄
 
@@ -124,6 +127,7 @@ uv run --with-requirements requirements.txt --python python3 python -m unittest 
 - TPEX
 - Fed / BLS / FRED / BIS / ECB 等官方 feed
 - 各公司 / 技術站官方 blog / newsroom
+- X 社群高訊號帳號：優先透過自架 RSSHub 轉 RSS，未設定時 fallback 到 Google News `site:x.com`
 
 ## OpenSpec
 

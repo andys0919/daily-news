@@ -42,6 +42,9 @@ SUMMARY_MIN_BODY_CHARS = max(1, int(os.getenv("SUMMARY_MIN_BODY_CHARS", "1")))
 SUMMARY_BODY_MAX_CHARS = max(80, int(os.getenv("SUMMARY_BODY_MAX_CHARS", "1200")))
 SUMMARY_CHUNK_ARTICLES = max(0, int(os.getenv("SUMMARY_CHUNK_ARTICLES", "100")))
 SUMMARY_MAX_PER_SOURCE = max(0, int(os.getenv("SUMMARY_MAX_PER_SOURCE", "8")))
+SUMMARY_X_GROUP_MAX_ARTICLES = max(
+    0, int(os.getenv("SUMMARY_X_GROUP_MAX_ARTICLES", "4"))
+)
 SUMMARY_MAX_INPUT_CHARS = max(0, int(os.getenv("SUMMARY_MAX_INPUT_CHARS", "18000")))
 SUMMARY_FULL_READ_MODE = _env_bool("SUMMARY_FULL_READ_MODE", True)
 SUMMARY_TOP10_CATEGORY_MAX_CHARS = max(
@@ -94,6 +97,13 @@ _USAGE_STATE = {
 }
 _PRICING_CACHE: dict[str, object] = {}
 _SOURCE_META_CACHE: dict[str, dict[str, object]] | None = None
+_X_GROUP_LABELS = {
+    "x_group_labs": "模型實驗室 / 官方",
+    "x_group_devtools": "開發工具 / Agent 工作流",
+    "x_group_infra": "推理基礎設施 / 部署",
+    "x_group_platforms": "模型平台 / 企業產品",
+    "x_group_semis": "晶片 / 算力供應鏈",
+}
 _GITHUB_REPO_CACHE: dict[str, dict[str, object] | None] = {}
 _PERSONA_CACHE: dict | None = None
 _CATEGORY_AGENTS_CACHE: dict | None = None
@@ -480,6 +490,7 @@ def _source_meta_map() -> dict[str, dict[str, object]]:
                 "quality": quality if quality in _QUALITY_SCORE else "medium",
                 "url": source_url,
                 "host": source_host,
+                "topics": [str(topic) for topic in src.get("topics", []) if str(topic).strip()],
             }
 
     _SOURCE_META_CACHE = meta
@@ -858,8 +869,41 @@ def get_usage_summary() -> dict[str, object]:
     return usage
 
 
+def _article_x_group_labels(article: Article) -> list[str]:
+    topics = list(getattr(article, "topics", []) or [])
+    if not topics:
+        meta = _source_meta_map().get(article.source_key, {})
+        topics = list(meta.get("topics", []) or [])
+
+    labels: list[str] = []
+    seen: set[str] = set()
+    for topic in topics:
+        label = _X_GROUP_LABELS.get(str(topic).strip())
+        if not label or label in seen:
+            continue
+        labels.append(label)
+        seen.add(label)
+    return labels
+
+
+def _article_x_primary_group_key(article: Article) -> str:
+    topics = list(getattr(article, "topics", []) or [])
+    if not topics:
+        meta = _source_meta_map().get(article.source_key, {})
+        topics = list(meta.get("topics", []) or [])
+
+    for topic in topics:
+        key = str(topic).strip()
+        if key in _X_GROUP_LABELS:
+            return key
+    return ""
+
+
 def _build_articles_text(
-    articles: list[Article], limit: int | None = None, start_index: int = 1
+    articles: list[Article],
+    limit: int | None = None,
+    start_index: int = 1,
+    prompt_type: str = "news",
 ) -> str:
     """將文章列表轉成文字"""
     text = ""
@@ -874,6 +918,10 @@ def _build_articles_text(
 標題：{title_text}
 內文：{body_text}
 """
+        if prompt_type == "x_trends":
+            x_group_labels = _article_x_group_labels(a)
+            if x_group_labels:
+                text += f"群組：{'、'.join(x_group_labels)}\n"
         if a.companies:
             text += f"公司：{'、'.join(a.companies)}\n"
         if a.tickers:
@@ -886,6 +934,26 @@ def _build_articles_text(
         if SUMMARY_INCLUDE_LINKS_IN_PROMPT:
             text += f"連結：{a.link}\n"
     return text
+
+
+def _cap_x_articles_per_group(
+    articles: list[Article], prompt_type: str
+) -> tuple[list[Article], int]:
+    if prompt_type != "x_trends" or SUMMARY_X_GROUP_MAX_ARTICLES <= 0:
+        return articles, 0
+
+    per_group_count: dict[str, int] = {}
+    selected: list[Article] = []
+    dropped = 0
+    for article in articles:
+        group_key = _article_x_primary_group_key(article) or "_ungrouped"
+        count = per_group_count.get(group_key, 0)
+        if count >= SUMMARY_X_GROUP_MAX_ARTICLES:
+            dropped += 1
+            continue
+        per_group_count[group_key] = count + 1
+        selected.append(article)
+    return selected, dropped
 
 
 def _normalize_inline_text(text: str | None) -> str:
@@ -2276,6 +2344,7 @@ def _prepare_summary_articles(
         "dropped_low_signal": 0,
         "dropped_secondary_source": 0,
         "dropped_source_cap": 0,
+        "dropped_x_group_cap": 0,
         "dropped_input_budget": 0,
         "dropped_max_articles": 0,
         "selected_total": 0,
@@ -2292,11 +2361,15 @@ def _prepare_summary_articles(
 
     if SUMMARY_FULL_READ_MODE:
         ranked_articles = _rank_articles_by_signal(deduped_articles)
-        filtered_articles = ranked_articles
+        x_group_capped_articles, dropped_x_group = _cap_x_articles_per_group(
+            ranked_articles, prompt_type
+        )
+        filtered_articles = x_group_capped_articles
         stats["dropped_low_signal"] = 0
         stats["dropped_secondary_source"] = 0
         stats["primary_mode"] = False
         stats["dropped_source_cap"] = 0
+        stats["dropped_x_group_cap"] = dropped_x_group
         stats["dropped_input_budget"] = 0
         budgeted_articles = filtered_articles
     else:
@@ -2318,8 +2391,13 @@ def _prepare_summary_articles(
         )
         stats["dropped_source_cap"] = dropped_source
 
+        x_group_capped_articles, dropped_x_group = _cap_x_articles_per_group(
+            source_capped_articles, prompt_type
+        )
+        stats["dropped_x_group_cap"] = dropped_x_group
+
         budgeted_articles, dropped_budget = _apply_input_char_budget(
-            source_capped_articles
+            x_group_capped_articles
         )
         stats["dropped_input_budget"] = dropped_budget
 
@@ -2338,6 +2416,7 @@ def _prepare_summary_articles(
         + int(stats["dropped_low_signal"])
         + int(stats["dropped_secondary_source"])
         + int(stats["dropped_source_cap"])
+        + int(stats["dropped_x_group_cap"])
         + int(stats["dropped_input_budget"])
         + int(stats["dropped_max_articles"])
     )
@@ -2589,6 +2668,7 @@ def _build_category_synthesis_prompt(
 - 繁體中文，重要事實附 [n]
 - 不可只列來源或連結；必須先講內容。
 - 先講討論內容，再講誰在討論。
+- 要比較不同觀點群組，不要把所有帳號混成單一聲音。
 - 每點要有具體事實支撐，不可空泛形容。
 - 直接輸出，不要開場白，不要結尾問話或補充說明
 
@@ -2671,7 +2751,9 @@ def build_prompt(
         and len(articles) > SUMMARY_MAX_ARTICLES
     ):
         selected_articles = articles[:SUMMARY_MAX_ARTICLES]
-    articles_text = _build_articles_text(selected_articles, start_index=start_index)
+    articles_text = _build_articles_text(
+        selected_articles, start_index=start_index, prompt_type=prompt_type
+    )
     min_citations = _min_citations_for_article_count(len(selected_articles))
     return (
         _build_category_synthesis_prompt(category, prompt_type, articles_text)

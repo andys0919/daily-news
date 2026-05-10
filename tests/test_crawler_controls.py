@@ -1,4 +1,5 @@
 import asyncio
+import os
 import sqlite3
 import tempfile
 import unittest
@@ -38,6 +39,63 @@ def _rss_with_entries(count: int) -> str:
 
 
 class CrawlerControlsTests(unittest.TestCase):
+    def test_load_config_resolves_env_placeholders_recursively(self):
+        with tempfile.TemporaryDirectory() as td:
+            cfg_path = Path(td) / "config.yaml"
+            cfg_path.write_text(
+                """
+feeds:
+  x_trends:
+    category: "🔥 X 社群熱議"
+    sources:
+      - name: "X @OpenAI"
+        preferred_url: "${RSSHUB_URL}/twitter/user/OpenAI"
+        fallback_url: "https://example.com/fallback.xml"
+                """.strip(),
+                encoding="utf-8",
+            )
+
+            with patch.object(crawler, "CONFIG_PATH", cfg_path), patch.dict(
+                os.environ, {"RSSHUB_URL": "https://rsshub.example.com"}, clear=False
+            ):
+                config = crawler.load_config()
+
+            source = config["feeds"]["x_trends"]["sources"][0]
+            self.assertEqual(
+                source["preferred_url"],
+                "https://rsshub.example.com/twitter/user/OpenAI",
+            )
+
+    def test_normalize_source_config_uses_fallback_when_preferred_url_unresolved(self):
+        source_cfg = crawler.normalize_source_config(
+            "x_trends",
+            {"category": "🔥 X 社群熱議", "summary_prompt": "x_trends"},
+            {
+                "name": "X @OpenAI",
+                "preferred_url": "${RSSHUB_URL}/twitter/user/OpenAI",
+                "fallback_url": "https://example.com/fallback.xml",
+                "summary_prompt": "x_trends",
+            },
+        )
+
+        self.assertEqual(source_cfg["url"], "https://example.com/fallback.xml")
+
+    def test_normalize_source_config_prefers_resolved_preferred_url(self):
+        source_cfg = crawler.normalize_source_config(
+            "x_trends",
+            {"category": "🔥 X 社群熱議", "summary_prompt": "x_trends"},
+            {
+                "name": "X @OpenAI",
+                "preferred_url": "https://rsshub.example.com/twitter/user/OpenAI",
+                "fallback_url": "https://example.com/fallback.xml",
+                "summary_prompt": "x_trends",
+            },
+        )
+
+        self.assertEqual(
+            source_cfg["url"], "https://rsshub.example.com/twitter/user/OpenAI"
+        )
+
     def test_source_health_registry_disables_after_failures_then_recovers(self):
         with tempfile.TemporaryDirectory() as td:
             health_path = Path(td) / "source_health.json"
@@ -95,6 +153,45 @@ class CrawlerControlsTests(unittest.TestCase):
 
         articles = asyncio.run(_run())
         self.assertEqual(len(articles), 2)
+
+    def test_crawl_source_falls_back_when_primary_feed_fails(self):
+        source_cfg = {
+            "name": "X @OpenAI",
+            "url": "https://rsshub.example.com/twitter/user/OpenAI",
+            "fallback_url": "https://example.com/fallback.xml",
+            "active": True,
+            "max_articles": 2,
+            "summary_prompt": "x_trends",
+            "default_prompt": "x_trends",
+            "source_key": "x_trends:X @OpenAI",
+            "feed_category": "🔥 X 社群熱議",
+        }
+        seen_urls: list[str] = []
+
+        async def _fake_fetch(_session, url):
+            seen_urls.append(url)
+            if "rsshub.example.com" in url:
+                return None
+            return _rss_with_entries(2)
+
+        async def _run():
+            with patch("crawler.fetch_feed", new=AsyncMock(side_effect=_fake_fetch)):
+                return await crawler.crawl_source(
+                    session=object(),
+                    source_config=source_cfg,
+                    hours_back=24,
+                    semaphore=asyncio.Semaphore(1),
+                )
+
+        articles = asyncio.run(_run())
+        self.assertEqual(len(articles), 2)
+        self.assertEqual(
+            seen_urls,
+            [
+                "https://rsshub.example.com/twitter/user/OpenAI",
+                "https://example.com/fallback.xml",
+            ],
+        )
 
     def test_get_recent_articles_applies_category_quota(self):
         with tempfile.TemporaryDirectory() as td:

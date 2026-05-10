@@ -204,6 +204,69 @@ class SourceCoverageTests(unittest.TestCase):
         for source in macro["sources"]:
             self.assertEqual(source.get("summary_prompt"), "macro_data")
 
+    def test_x_trends_prefers_rsshub_account_feeds_with_fallbacks(self):
+        feeds = _load_config().get("feeds", {})
+        x_trends = feeds.get("x_trends", {})
+        sources = x_trends.get("sources", [])
+
+        self.assertGreaterEqual(len(sources), 20)
+
+        preferred_urls = [s.get("preferred_url", "") for s in sources]
+        fallback_urls = [s.get("fallback_url", "") for s in sources]
+
+        self.assertTrue(
+            any(url.startswith("${RSSHUB_URL}/twitter/user/") for url in preferred_urls)
+        )
+        self.assertTrue(
+            any("news.google.com/rss/search?q=when:24h+site:x.com" in url for url in fallback_urls)
+        )
+
+        names = {s.get("name", "") for s in sources}
+        self.assertIn("X @OpenAIDevs", names)
+        self.assertIn("X @demishassabis", names)
+        self.assertIn("X @sundarpichai", names)
+        self.assertIn("X @satyanadella", names)
+        self.assertIn("X @vllm_project", names)
+        self.assertIn("X @ollama", names)
+        self.assertIn("X @xai", names)
+        self.assertIn("X @Cohere", names)
+        self.assertIn("X @togethercompute", names)
+        self.assertIn("X @lmstudio", names)
+        self.assertIn("X @AMD", names)
+
+    def test_expanded_high_signal_sources_are_present(self):
+        feeds = _load_config().get("feeds", {})
+
+        finance_names = {s.get("name", "") for s in feeds.get("finance", {}).get("sources", [])}
+        geopolitics_names = {
+            s.get("name", "") for s in feeds.get("geopolitics", {}).get("sources", [])
+        }
+        semiconductor_names = {
+            s.get("name", "") for s in feeds.get("semiconductor", {}).get("sources", [])
+        }
+        tech_company_names = {
+            s.get("name", "") for s in feeds.get("tech_companies", {}).get("sources", [])
+        }
+        ai_research_names = {
+            s.get("name", "") for s in feeds.get("ai_research", {}).get("sources", [])
+        }
+        ai_practice_names = {
+            s.get("name", "") for s in feeds.get("ai_practice", {}).get("sources", [])
+        }
+        deep_analysis_names = {
+            s.get("name", "") for s in feeds.get("deep_analysis", {}).get("sources", [])
+        }
+
+        self.assertIn("St. Louis Fed On the Economy", finance_names)
+        self.assertIn("CSET", geopolitics_names)
+        self.assertIn("3D InCites", semiconductor_names)
+        self.assertIn("Cloudflare Blog", tech_company_names)
+        self.assertIn("Google Research", ai_research_names)
+        self.assertIn("Ollama Releases", ai_practice_names)
+        self.assertIn("vLLM Releases", ai_practice_names)
+        self.assertIn("openai-python Releases", ai_practice_names)
+        self.assertIn("Asterisk", deep_analysis_names)
+
 
 if __name__ == "__main__":
     unittest.main()

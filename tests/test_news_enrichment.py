@@ -59,6 +59,7 @@ feeds:
                 }
                 self.assertTrue(expected_columns.issubset(columns))
 
+                published_at = datetime.now(TW_TZ) - timedelta(hours=1)
                 article = crawler.Article(
                     title="NVIDIA guides Q2 data center revenue higher",
                     summary="RSS summary fallback",
@@ -68,13 +69,13 @@ feeds:
                     source_key="finance:Reuters",
                     category="💰 財經與總經",
                     summary_prompt="news",
-                    published=datetime(2026, 3, 28, 9, 0, tzinfo=TW_TZ),
+                    published=published_at,
                     source_priority=9,
                     source_quality="high",
                     feed_key="finance",
                     region="global",
                     topics=["finance", "earnings"],
-                    published_raw="2026-03-28T01:00:00Z",
+                    published_raw=published_at.astimezone(timezone.utc).isoformat(),
                     published_confidence="article",
                     body_source="article",
                     extraction_status="success",
