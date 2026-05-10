@@ -477,6 +477,72 @@ def render_stock_memo(packet: StockMemoPacket) -> str:
             f"- {monthly.fiscal_period} 月營收 {monthly.monthly_revenue:,.0f}"
         )
 
+    bundle = packet.bundle
+
+    lines.extend(["", "## 最新法說會重點"])
+    if bundle.latest_transcript:
+        title = (bundle.latest_transcript.get("title") or "").strip()
+        body = (bundle.latest_transcript.get("body_text") or "").strip()
+        excerpt = body[:600].replace("\n", " ")
+        if title:
+            lines.append(f"- {title}")
+        if excerpt:
+            lines.append(f"- 摘錄：{excerpt}")
+    else:
+        lines.append("- （暫無法說 / transcript 紀錄）")
+
+    lines.extend(["", "## 近 90 天內部人交易"])
+    if bundle.recent_insider_summary:
+        s = bundle.recent_insider_summary
+        lines.append(
+            f"- 共 {s.get('count', 0)} 筆 (買 {s.get('buys', 0)} / 賣 {s.get('sells', 0)})"
+        )
+        latest = s.get("latest") or {}
+        if latest:
+            lines.append(
+                f"- 最近一筆：{latest.get('insider_name', '')} "
+                f"{latest.get('transaction_type', '')} "
+                f"{latest.get('shares', 0):,} 股 @ {latest.get('price', 0):.2f}"
+            )
+    else:
+        lines.append("- （暫無內部人交易紀錄）")
+
+    lines.extend(["", "## 13F 機構動向"])
+    if bundle.latest_13f:
+        h = bundle.latest_13f
+        lines.append(
+            f"- {h.get('reporter_name', '')} 持有 {h.get('issuer_name', '')} "
+            f"{h.get('shares', 0):,} 股 (期間 {h.get('period_end', '')})"
+        )
+    else:
+        lines.append("- （暫無 13F 持股紀錄）")
+
+    lines.extend(["", "## 融券與 ETF 資金流"])
+    if bundle.short_interest:
+        si = bundle.short_interest
+        ratio = si.get("short_interest_ratio") or 0
+        lines.append(
+            f"- 融券餘額 {si.get('short_interest', 0):,.0f} "
+            f"(券資比 {ratio:.1%}, 來源 {si.get('source', '')})"
+        )
+    else:
+        lines.append("- （暫無融券 / ETF 資金流紀錄）")
+
+    lines.extend(["", "## 宏觀脈絡"])
+    try:
+        from macro_data import aggregate_hyperscaler_capex
+        capex = aggregate_hyperscaler_capex()
+        if capex.tickers_included:
+            tickers_str = "/".join(capex.tickers_included)
+            lines.append(
+                f"- 本季 {tickers_str} capex 合計 ${capex.total_usd / 1_000_000_000:,.1f}B "
+                f"(period {capex.period_end})"
+            )
+        else:
+            lines.append("- （無 hyperscaler capex 對照資料）")
+    except Exception:
+        lines.append("- （無 hyperscaler capex 對照資料）")
+
     lines.extend(["", "## 官方資料來源"])
     for idx, material in enumerate(packet.official_materials, 1):
         note_suffix = f"；{material.note}" if material.note else ""

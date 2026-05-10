@@ -226,5 +226,95 @@ class StockMemoTests(unittest.TestCase):
         self.assertIn("SEC CompanyFacts API", content)
 
 
+class StockMemoNewSectionsTests(unittest.TestCase):
+    def _packet(self, **bundle_overrides):
+        from financial_reports import FinancialReport, FinancialSnapshotBundle
+        from stock_memo import StockMemoPacket
+
+        bundle = FinancialSnapshotBundle(
+            market="us",
+            ticker="NVDA",
+            company_name="NVIDIA",
+            quarterly=FinancialReport(
+                market="us",
+                ticker="NVDA",
+                company_name="NVIDIA",
+                source_type="sec",
+                form_type="10-Q",
+                fiscal_year=2026,
+                fiscal_period="Q1",
+                period_end="2026-03-31",
+                filed_at="2026-04-25",
+                source_url="https://example.com",
+                report_kind="quarterly",
+                revenue=30_000_000_000.0,
+            ),
+            **bundle_overrides,
+        )
+        return StockMemoPacket(
+            ticker="NVDA",
+            market="us",
+            company_name="NVIDIA",
+            generated_at=datetime(2026, 5, 9, 10, 0),
+            bundle=bundle,
+            official_materials=[],
+            related_articles=[],
+            warnings=[],
+        )
+
+    def test_section_macro_always_present(self):
+        from stock_memo import render_stock_memo
+        text = render_stock_memo(self._packet())
+        self.assertIn("## 宏觀脈絡", text)
+
+    def test_section_transcript_includes_body(self):
+        from stock_memo import render_stock_memo
+        packet = self._packet(latest_transcript={
+            "title": "NVDA Q1 transcript",
+            "body_text": "Blackwell ramp drives growth.",
+            "material_type": "transcript",
+        })
+        text = render_stock_memo(packet)
+        self.assertIn("## 最新法說會重點", text)
+        self.assertIn("Blackwell", text)
+
+    def test_section_insider_buy_sell_counts(self):
+        from stock_memo import render_stock_memo
+        packet = self._packet(recent_insider_summary={
+            "count": 3,
+            "buys": 1,
+            "sells": 2,
+            "latest": {
+                "insider_name": "Cook",
+                "transaction_type": "S",
+                "shares": 10000,
+                "price": 180.5,
+            },
+        })
+        text = render_stock_memo(packet)
+        self.assertIn("## 近 90 天內部人交易", text)
+        self.assertIn("3", text)
+        self.assertIn("買 1", text)
+        self.assertIn("賣 2", text)
+
+    def test_section_short_interest_includes_ratio(self):
+        from stock_memo import render_stock_memo
+        packet = self._packet(short_interest={
+            "short_interest": 200000.0,
+            "days_to_cover": 1.5,
+            "short_interest_ratio": 0.05,
+            "source": "FINRA",
+        })
+        text = render_stock_memo(packet)
+        self.assertIn("## 融券與 ETF 資金流", text)
+        self.assertIn("200,000", text)
+
+    def test_section_13f_renders_placeholder_when_none(self):
+        from stock_memo import render_stock_memo
+        text = render_stock_memo(self._packet())
+        self.assertIn("## 13F 機構動向", text)
+        self.assertIn("暫無", text)
+
+
 if __name__ == "__main__":
     unittest.main()
