@@ -1,0 +1,82 @@
+=== NVDA memo ===
+# NVIDIA CORP (NVDA) 個股 Memo
+
+- 市場：美股
+- 生成時間：2026-05-10 22:16:52 (GMT+8)
+- 主要資料基準：官方財報 | 10-Q | FY2026 Q3 | 營收 1478.1 億美元 | EPS 3.14 | FCF 657.4 億美元
+
+## 官方財務快照
+- 10-Q | FY2026 Q3 | 營收 147,811,000,000 | EPS 3.14 | FCF 65,740,000,000
+
+## 最新法說會重點
+- （暫無法說 / transcript 紀錄）
+
+## 近 90 天內部人交易
+- （暫無內部人交易紀錄）
+
+## 13F 機構動向
+- （暫無 13F 持股紀錄）
+
+## 融券與 ETF 資金流
+- （暫無融券 / ETF 資金流紀錄）
+
+## 宏觀脈絡
+- 本季 META capex 合計 $19.0B (period 2026-03-31)
+
+## 官方資料來源
+1. [SEC CompanyFacts API](https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json) `companyfacts_api` / `sec`
+2. [SEC Submissions API](https://data.sec.gov/submissions/CIK0001045810.json) `submissions_api` / `sec`
+3. [Latest SEC 10-Q](https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm) `filing` / `sec-companyfacts`
+
+## 近期相關新聞
+1. 2026-05-09 | CNBC Top News | news | [How to take control of the AI data center boom and built it into your own home in the future](https://www.cnbc.com/2026/05/09/ai-data-center-construction-public-opposition.html)
+2. 2026-05-09 | X 半導體供應鏈熱議 | news | [UPDATED FIB LEVELS FOR POPULAR STOCKS AI Utility • $IREN $50 • $NBIS $133 • $CIFR $17 • $CRWV $103 AI Power • $EOSE $7 • $BE $194 • $NVTS $13 • $VRT $258 AI Hardware • $NVDA $179 • $TSM $327 • $ASML $1,247 • $MU $494 AI Applicatio - x.com](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBMbHZMazZDeHM1dThicWEwd1N3V1pHV2s1Xy14b20tclNqaThqWVRhMmFfT2xvREJDSFJ4ZnA1c0x3SzF3LU55aG9Tb0N2X2VQenlfSS1XMmp5TkhMXzk4ZW9jZ0s4Zw)
+3. 2026-05-09 | GitHub Trending (Python) | earnings | [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm)
+4. 2026-05-09 | GitHub Trending (Python) | news | [cheahjs/free-llm-api-resources](https://github.com/cheahjs/free-llm-api-resources)
+5. 2026-05-09 | X AI/科技熱議 | news | [Nvidia has teamed up with smart energy startup Span and homebuilder PulteGroup to install mini AI data centers — called XFRA units — directly on new homes. Using liquid-cooled RTX PRO 6000 Blackwell GPUs and unused grid capacity, the system deploy - x.com](https://news.google.com/rss/articles/CBMiZkFVX3lxTE02U3JPeWw5enFnMGVsZm9TUlAtOWItb2YwRGZDb0pKWC1Gc0JzQm1QODB2UXNqUEE2WGdxRzM3LXBHX1UzRjNoY21FSUxaTGN1VW0yUGY1Zm9JUjJaTjZ6UFN2UVliZw)
+6. 2026-05-09 | CNBC Top News | news | [Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking](https://www.cnbc.com/2026/05/08/intel-stock-apple-chip-deal.html)
+7. 2026-05-09 | ETF Trends | earnings | [Small-Cap Awakening Sparks This Momentum ETF](https://etfdb.com/innovative-etfs-content-hub/small-cap-awakening-sparks-momentum-etf-xsmo)
+8. 2026-05-08 | 南華早報 科技 | news | [China and US in AI revolution race as tech rivals battle for global supremacy](https://www.scmp.com/news/china/diplomacy/article/3352950/china-and-us-ai-revolution-race-tech-rivals-battle-global-supremacy)
+
+## 判讀底稿
+- 美股法說素材優先看 SEC filing，再補 issuer IR 網站的 webcast / transcript / slides。
+
+=== 2330 memo ===
+# 台積電 (2330) 個股 Memo
+
+- 市場：台股
+- 生成時間：2026-05-10 22:16:53 (GMT+8)
+- 主要資料基準：台股財務資料 | MOPS-Q | FY114 Q4 | 營收 38.1 億元 | EPS 66.26
+
+## 官方財務快照
+- MOPS-Q | FY114 Q4 | 營收 3,809,054,272 | EPS 66.26
+
+## 最新法說會重點
+- （暫無法說 / transcript 紀錄）
+
+## 近 90 天內部人交易
+- （暫無內部人交易紀錄）
+
+## 13F 機構動向
+- （暫無 13F 持股紀錄）
+
+## 融券與 ETF 資金流
+- （暫無融券 / ETF 資金流紀錄）
+
+## 宏觀脈絡
+- 本季 META capex 合計 $19.0B (period 2026-03-31)
+
+## 官方資料來源
+1. [台積電 最新季度財務資料](https://mops.twse.com.tw/mops/api/t164sb04) `quarterly_financial` / `mops-api`
+2. [MOPS 法人說明會查詢](https://mops.twse.com.tw/mops/web/t100sb07_1) `investor_conference_lookup` / `mops`；可用公司代號 2330 查法說簡報與會議資訊
+3. [TWSE 法人說明會影音](https://webpro.twse.com.tw/WebPortal/search/investor/) `investor_video_lookup` / `twse-webpro`；可搜尋 2330 的法說會 / 公司自辦法說會影音
+4. [TPEx 法人說明會影音](https://www.tpex.org.tw/zh-tw/about/company/media/seminar.html) `investor_video_lookup` / `tpex`；若為上櫃/興櫃，可搜尋 2330 的法說 / 業績發表會影音
+5. [MOPS XBRL / iXBRL 財報查詢](https://mops.twse.com.tw/mops/web/t164sb03) `xbrl_lookup` / `mops`；可查 2330 的完整財報與附註
+
+## 近期相關新聞
+1. 2026-05-09 | TSMC News | news | [台積電、Garmin都來了 永康徵才活動吸引青年搶進科技業 - 樂上新聞網](https://news.google.com/rss/articles/CBMiTEFVX3lxTE16b3RTQi1RdTl2Y3ZqQzhzZVR5VnVtS19YdEtYQ1lKbENBc3Fwd1lwNS15OHdiXzRaaEszdEhxZ0ozcjB6enBGU25Ncjc)
+2. 2026-05-09 | TSMC News | earnings | [2330 台積電 - 美股半導體狂飆，晶圓與記憶體廠營收報喜-股市爆料同學會 - CMoney](https://news.google.com/rss/articles/CBMiWEFVX3lxTE43cFJuMVl2OGxkQnJWdjVMY3dWeW8yb0ZtdEZpbmRmOGVHTFE2eWFzR1NxTTY1STJPWHM5VjJkZHA3ZFlLVWxZb0lkcDN5U0pTSHRzaHhKYms?oc=5)
+3. 2026-05-08 | 鴻海/Foxconn | news | [三大法人買賣超 – 外資買超(2317)鴻海、(3450)聯鈞，投信買超(6669)緯穎、(2330)台積電，法人合計賣超200.03億元 - sinotrade.com.tw](https://news.google.com/rss/articles/CBMiwgRBVV95cUxNYk5RQ2JocGJDV1ZXcVR6Ym5sS3I0TmFNcWl4M2NSREMxR0VEYklZQnFsc3ktUTRTYXQwQTE4cVprVjBtdVM2Z0Q0RzlCT2V4N2drUkc5d3NHSlNsYnhWYXlzQkdQN255OXh4dEtBeVhJbFFtMTM2NEpOSVRHMjRIWXh3OHdINXZiSzZRNWdoMUhLTXItMzlvRTZlSEN2Z2FQMExTU3RWb2thcXpPVk00VG5JcnhiTjFZNUpaVWttQ0UxQU9vQm5VaDZ4SEJ4d0dqQkNtOWFxdm92T2VDcXZrZGFlb3JBa29CY3ZRb2s1U0tJdWVRWUR2N1U5cC1Jal9LV2ZfakFVZTdYenA5ZGJaUnB0WjJtYkMtWnV1MmZMeWU3eUhhRjZiOFc2SndkNHlMUVVQd2J4LVU4Zk9mU1R2MHdBWU9UMUM0ZE5wNUx1Q1BjZVRUZUR5ZVo1dEpvX3ZHMTItNWVYRE9QY0c2TFZtYkFvZE01dGsxMzRERVZMQ0hvZHNVbFN0WmNsN1VlTWFUYzJOQ1ZQRE9uWDZxWEtLcEJoV0Fmd0JMQ2xmamZQX0ZtbF9jV2VQcnFobmc3YmV4M0ZFamJzcW1UZm9LajZPZ0NKelZFbFV3cDFHUENnT3RCZnlsU2M4RDJ2dGVqa3Z6NVRnVzlYMXk2c0xCMVpvX0w4LTI5RmR2Rk1DTkNqc2JDT09OaHNpNl96R0NiWVZqbzhyY2ktdzRpOFlzSmYzdkt1amtGeE1JcFd4U0E0a2xwQQ?oc=5)
+
+## 判讀底稿
+- 台股法說素材優先看 MOPS 法說查詢、TWSE WebPro 影音與 MOPS iXBRL 財報。
