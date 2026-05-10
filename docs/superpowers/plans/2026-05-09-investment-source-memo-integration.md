@@ -52,7 +52,7 @@ Phase 4 success = no NEW failures beyond these two; new tests green.
 - Create: `openspec/changes/investment-source-memo-integration/tasks.md`
 - Create: `openspec/changes/investment-source-memo-integration/specs/investment-source-memo/spec.md`
 
-- [ ] **Step 1: proposal.md**
+- [x] **Step 1: proposal.md**
 
 ```markdown
 ## Why
@@ -78,7 +78,7 @@ Phase 3 added structured bundle fields (`latest_transcript`, `recent_insider_sum
 - No new RSS feeds, no new ingest modules, no schema changes.
 ```
 
-- [ ] **Step 2: design.md**
+- [x] **Step 2: design.md**
 
 ```markdown
 # Design — investment-source-memo-integration (Phase 4 of 4)
@@ -126,20 +126,20 @@ Existing `summarizer._article_financial_context` (or similar) already calls `for
 - Changing macro_data fetcher behaviour.
 ```
 
-- [ ] **Step 3: tasks.md**
+- [x] **Step 3: tasks.md**
 
 ```markdown
 # Tasks — investment-source-memo-integration
 
-- [ ] Task 1 OpenSpec skeleton committed
-- [ ] Task 2 format_financial_snapshot_bundle_context appends 4 new structured-field lines
-- [ ] Task 3 stock_memo.render_stock_memo adds 5 new sections + tests
-- [ ] Task 4 Smoke run: stock_memo CLI for one US ticker + one TW ticker
-- [ ] Task 5 `openspec validate investment-source-memo-integration`
-- [ ] Task 6 Final commit + PHASE_DONE
+- [x] Task 1 OpenSpec skeleton committed
+- [x] Task 2 format_financial_snapshot_bundle_context appends 4 new structured-field lines
+- [x] Task 3 stock_memo.render_stock_memo adds 5 new sections + tests
+- [x] Task 4 Smoke run: stock_memo CLI for one US ticker + one TW ticker
+- [x] Task 5 `openspec validate investment-source-memo-integration`
+- [x] Task 6 Final commit + PHASE_DONE
 ```
 
-- [ ] **Step 4: spec delta**
+- [x] **Step 4: spec delta**
 
 `openspec/changes/investment-source-memo-integration/specs/investment-source-memo/spec.md`:
 
@@ -177,7 +177,7 @@ The system SHALL extend `format_financial_snapshot_bundle_context` so daily / we
 - **THEN** the returned context string SHALL contain at least `融券`
 ```
 
-- [ ] **Step 5: commit**
+- [x] **Step 5: commit**
 
 ```bash
 git add openspec/changes/investment-source-memo-integration/
@@ -192,7 +192,7 @@ git commit -m "openspec: scaffold investment-source-memo-integration change"
 - Modify: `financial_reports.py`
 - Create: `tests/test_financial_reports_bundle_context.py`
 
-- [ ] **Step 1: failing test**
+- [x] **Step 1: failing test**
 
 Create `tests/test_financial_reports_bundle_context.py`:
 
@@ -269,13 +269,13 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-- [ ] **Step 2: run test, expect failure**
+- [x] **Step 2: run test, expect failure**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest tests.test_financial_reports_bundle_context -v
 ```
 
-- [ ] **Step 3: extend `format_financial_snapshot_bundle_context`**
+- [x] **Step 3: extend `format_financial_snapshot_bundle_context`**
 
 Replace the existing function in `financial_reports.py`:
 
@@ -336,7 +336,7 @@ def format_financial_snapshot_bundle_context(bundle: FinancialSnapshotBundle) ->
     return " ; ".join(parts)
 ```
 
-- [ ] **Step 4: run test, expect pass + full sweep**
+- [x] **Step 4: run test, expect pass + full sweep**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest tests.test_financial_reports_bundle_context -v
@@ -345,7 +345,7 @@ uv run --with-requirements requirements.txt --python python3 python -m unittest 
 
 Expected: 3 PASS for new tests; only baseline failures elsewhere.
 
-- [ ] **Step 5: commit**
+- [x] **Step 5: commit**
 
 ```bash
 git add financial_reports.py tests/test_financial_reports_bundle_context.py
@@ -360,13 +360,13 @@ git commit -m "feat(memo): bundle context surfaces 4 new structured fields"
 - Modify: `stock_memo.py`
 - Modify: `tests/test_stock_memo.py`
 
-- [ ] **Step 1: read current `render_stock_memo` once**
+- [x] **Step 1: read current `render_stock_memo` once**
 
 ```bash
 sed -n '440,512p' stock_memo.py
 ```
 
-- [ ] **Step 2: write failing tests**
+- [x] **Step 2: write failing tests**
 
 Append to `tests/test_stock_memo.py`:
 
@@ -444,7 +444,7 @@ class StockMemoNewSectionsTests(unittest.TestCase):
         self.assertIn("暫無", text)
 ```
 
-- [ ] **Step 3: insert sections in `render_stock_memo`**
+- [x] **Step 3: insert sections in `render_stock_memo`**
 
 In `stock_memo.py`, after the existing「官方財務快照」block (right before `lines.extend(["", "## 官方資料來源"])`), insert:
 
@@ -515,13 +515,13 @@ In `stock_memo.py`, after the existing「官方財務快照」block (right befor
         lines.append("- （無 hyperscaler capex 對照資料）")
 ```
 
-- [ ] **Step 4: run tests, expect pass**
+- [x] **Step 4: run tests, expect pass**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest tests.test_stock_memo -v
 ```
 
-- [ ] **Step 5: full sweep**
+- [x] **Step 5: full sweep**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest discover -s tests 2>&1 | grep -E "^(FAIL|ERROR|Ran |FAILED|OK)"
@@ -529,7 +529,7 @@ uv run --with-requirements requirements.txt --python python3 python -m unittest 
 
 Expected: only baseline failures.
 
-- [ ] **Step 6: commit**
+- [x] **Step 6: commit**
 
 ```bash
 git add stock_memo.py tests/test_stock_memo.py
@@ -548,19 +548,19 @@ once per render."
 
 **Files:** none modified.
 
-- [ ] **Step 1: NVDA memo**
+- [x] **Step 1: NVDA memo**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python stock_memo.py --ticker NVDA --market us --no-refresh-official-data 2>&1 | tee /tmp/phase4-memo-nvda.log | tail -30
 ```
 
-- [ ] **Step 2: 2330 memo**
+- [x] **Step 2: 2330 memo**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python stock_memo.py --ticker 2330 --market tw --no-refresh-official-data 2>&1 | tee /tmp/phase4-memo-2330.log | tail -30
 ```
 
-- [ ] **Step 3: confirm both memos contain all 5 new section headers**
+- [x] **Step 3: confirm both memos contain all 5 new section headers**
 
 ```bash
 for f in /tmp/phase4-memo-nvda.log /tmp/phase4-memo-2330.log; do
@@ -573,7 +573,7 @@ done
 
 Or read the actual output file under `data/memos/<ticker>.md` (the CLI writes there).
 
-- [ ] **Step 4: commit smoke artifact**
+- [x] **Step 4: commit smoke artifact**
 
 ```bash
 mkdir -p docs/superpowers/runs
@@ -592,11 +592,11 @@ git commit -m "test(smoke): capture phase 4 memo integration smoke run"
 
 ### Task 5: `openspec validate`
 
-- [ ] **Step 1: mark all tasks completed**
+- [x] **Step 1: mark all tasks completed**
 
-Replace `- [ ]` with `- [x]` in `openspec/changes/investment-source-memo-integration/tasks.md`.
+Replace `- [x]` with `- [x]` in `openspec/changes/investment-source-memo-integration/tasks.md`.
 
-- [ ] **Step 2: validate**
+- [x] **Step 2: validate**
 
 ```bash
 command -v openspec >/dev/null && openspec validate investment-source-memo-integration 2>&1 | tail -3 || echo "openspec CLI not installed locally — skip"
@@ -608,7 +608,7 @@ Expected: validate passes.
 
 ### Task 6: Final commit + PHASE_DONE
 
-- [ ] **Step 1: full sweep**
+- [x] **Step 1: full sweep**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest discover -s tests 2>&1 | grep -E "^(FAIL|ERROR|Ran |FAILED|OK)"
@@ -616,7 +616,7 @@ uv run --with-requirements requirements.txt --python python3 python -m unittest 
 
 Expected: only baseline failures.
 
-- [ ] **Step 2: final commit**
+- [x] **Step 2: final commit**
 
 ```bash
 git add openspec/changes/investment-source-memo-integration/tasks.md
@@ -631,7 +631,7 @@ fields into summarizer prompts. openspec validate passes.
 All four phases of investment-source-expansion complete."
 ```
 
-- [ ] **Step 3: emit promise**
+- [x] **Step 3: emit promise**
 
 When all checkboxes above are checked, reply with **only**:
 
