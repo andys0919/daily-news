@@ -780,6 +780,35 @@ def format_financial_snapshot_bundle_context(bundle: FinancialSnapshotBundle) ->
             parts.append(bundle.quarterly.guidance_summary)
         if bundle.quarterly.filing_excerpt:
             parts.append(bundle.quarterly.filing_excerpt)
+
+    if bundle.latest_transcript:
+        title = (bundle.latest_transcript.get("title") or "").strip()
+        body = (bundle.latest_transcript.get("body_text") or "").strip()
+        excerpt = body[:160].replace("\n", " ").strip()
+        line = f"法說重點：{title} — {excerpt}".strip(" —")
+        if line and line != "法說重點：":
+            parts.append(line)
+
+    if bundle.recent_insider_summary:
+        s = bundle.recent_insider_summary
+        parts.append(
+            f"近期內部人交易 {s.get('count', 0)} 筆 "
+            f"(買 {s.get('buys', 0)} / 賣 {s.get('sells', 0)})"
+        )
+
+    if bundle.short_interest:
+        si = bundle.short_interest
+        ratio = si.get("short_interest_ratio") or 0
+        parts.append(
+            f"融券餘額 {si.get('short_interest', 0):,.0f} (券資比 {ratio:.1%})"
+        )
+
+    if bundle.latest_13f:
+        h = bundle.latest_13f
+        parts.append(
+            f"機構持股 {h.get('issuer_name', '')} {h.get('shares', 0):,} 股"
+        )
+
     return " ; ".join(parts)
 
 
