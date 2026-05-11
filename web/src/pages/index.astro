@@ -2,22 +2,42 @@
 import Base from "../layouts/Base.astro";
 import overview from "../data/overview.json";
 
-interface Mention { ticker: string; mentions: number; last_seen: string }
-interface MomentumRow { ticker: string; mentions_7d: number; mentions_prior_7d: number; delta: number; pct_change: number }
-interface Theme { theme: string; count: number; examples: any[] }
-interface NewsItem { title: string; link: string; source: string; category: string; published: string; tickers: string[]; event_type?: string; summary?: string }
+interface Guidance {
+  title: string;
+  link: string;
+  source: string;
+  category: string;
+  published: string;
+  direction: string;
+  excerpt: string;
+  tickers: string[];
+  companies: string[];
+  event_type: string | null;
+}
+interface FilingExcerpt {
+  ticker: string;
+  company_name: string;
+  fiscal_year: number;
+  fiscal_period: string;
+  form_type: string;
+  filed_at: string;
+  excerpt: string;
+}
+interface Fundamental {
+  ticker: string;
+  market: string;
+  company_name: string | null;
+  latest: any;
+  history: any[];
+}
 
 const stats: any = overview.stats ?? {};
-const topTickers7 = (overview.top_tickers_7d ?? []) as Mention[];
-const themes = (overview.themes ?? []) as Theme[];
-const momentum = (overview.momentum ?? []) as MomentumRow[];
-const categories = (overview.categories ?? []) as { category: string; count: number; pct: number }[];
-const velocity = overview.velocity ?? { days: [], totals: [], by_category: {} };
-const clusters = overview.event_clusters ?? {};
+const fundamentals = (overview.fundamentals ?? []) as Fundamental[];
+const guidanceUp = (overview.guidance_up ?? []) as Guidance[];
+const guidanceDown = (overview.guidance_down ?? []) as Guidance[];
+const guidanceRecent = (overview.guidance_recent ?? []) as Guidance[];
+const filings = (overview.filing_excerpts ?? []) as FilingExcerpt[];
 const watchlist = (overview.watchlist ?? []) as string[];
-const earnings = ((clusters as any).earnings ?? []) as NewsItem[];
-const capex = ((clusters as any).capex ?? []) as NewsItem[];
-const policy = ((clusters as any).policy ?? []) as NewsItem[];
 const generatedAt = overview.generated_at ?? "";
 const generatedDay = generatedAt.slice(0, 10);
 const generatedTime = generatedAt.slice(11, 16);
@@ -25,6 +45,18 @@ const generatedTime = generatedAt.slice(11, 16);
 function fmtInt(n: number | undefined): string {
   if (typeof n !== "number") return "—";
   return n.toLocaleString("en-US");
+}
+function fmtMoney(n: number | null | undefined, scale = 1e9, digits = 1, suffix = "B"): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  return `${(Number(n) / scale).toFixed(digits)}${suffix}`;
+}
+function fmtPct(n: number | null | undefined): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  return `${n >= 0 ? "+" : ""}${Number(n).toFixed(1)}%`;
+}
+function fmtMargin(n: number | null | undefined): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  return `${(Number(n) * 100).toFixed(1)}%`;
 }
 function ago(iso: string | undefined): string {
   if (!iso) return "";
@@ -37,134 +69,204 @@ function ago(iso: string | undefined): string {
   if (h < 24) return `${h}h`;
   return `${Math.floor(h / 24)}d`;
 }
-
-const days = (velocity.days ?? []) as string[];
-const totals = (velocity.totals ?? []) as number[];
-const maxTotal = Math.max(1, ...totals);
-const w = 320, h = 60, pad = 6;
-const stepX = days.length > 1 ? (w - 2 * pad) / (days.length - 1) : 0;
-const pts = totals.map((v, i) => `${pad + i * stepX},${h - pad - (v / maxTotal) * (h - 2 * pad)}`);
-const areaPath = pts.length > 0 ? `M${pts[0]} L${pts.join(" L")} L${pad + (totals.length - 1) * stepX},${h - pad} L${pad},${h - pad} Z` : "";
-const linePath = pts.length > 0 ? `M${pts.join(" L")}` : "";
-
-const catRows = categories.slice(0, 8);
-const maxCat = catRows.length > 0 ? Math.max(...catRows.map((c) => c.count)) : 1;
-const velocityAvg = totals.length ? Math.round(totals.reduce((a, b) => a + b, 0) / totals.length) : 0;
+function deltaCls(n: number | null | undefined): string {
+  if (n == null) return "flat";
+  if (n > 0) return "up";
+  if (n < 0) return "down";
+  return "flat";
+}
 ---
-<Base title="Investment Dashboard — 投資決策總覽">
+<Base title="Investment Dashboard — 指引動向" active="home">
   <section class="hero">
     <div>
-      <span class="live"><span class="live-dot"></span>live · {fmtInt(stats.articles_24h)} 篇/24h</span>
-      <h1 class="mt-2">
-        盤前 <span class="accent">訊號掃描</span>
-      </h1>
+      <span class="live"><span class="live-dot"></span>{fmtInt(stats.guidance_30d)} 條 guidance · 30d</span>
+      <h1 class="mt-2">誰說了什麼 <span class="accent">指引</span></h1>
       <p class="hero-sub">
-        過去 30 天彙整 <strong class="mono">{fmtInt(stats.articles_30d)}</strong> 篇新聞 · 追蹤 <strong class="mono">{fmtInt(stats.tickers_tracked)}</strong> 檔個股 · <strong class="mono">{fmtInt(stats.reports_total)}</strong> 份官方財報。每天 09:00 由 daily-news pipeline 自動刷新。
+        近 30 天從 {fmtInt(stats.articles_30d)} 篇新聞抓出 <strong class="mono">{fmtInt(stats.guidance_30d)}</strong> 條含財測 / 目標價變動的文章——
+        <span class="delta-up mono">{fmtInt(stats.guidance_up_30d)} 上修</span>
+        ·
+        <span class="delta-down mono">{fmtInt(stats.guidance_down_30d)} 下修</span>。
+        watchlist 同步顯示最新一季基本面與季 YoY 動能。
       </p>
     </div>
     <div class="hero-meta">
-      <div><span class="ts mono">{generatedDay}</span></div>
+      <div class="ts mono">{generatedDay}</div>
       <div class="mono">{generatedTime}Z · UTC</div>
-      <div class="mt-1">watchlist <span class="mono">{watchlist.length}</span></div>
     </div>
   </section>
 
-  <section class="stats-strip mb-6">
-    <div class="stat"><div class="stat-label">24h news</div><div class="stat-value">{fmtInt(stats.articles_24h)}</div><div class="stat-sub">最新一日</div></div>
-    <div class="stat"><div class="stat-label">7d news</div><div class="stat-value">{fmtInt(stats.articles_7d)}</div><div class="stat-sub">本週累計</div></div>
-    <div class="stat"><div class="stat-label">30d news</div><div class="stat-value">{fmtInt(stats.articles_30d)}</div><div class="stat-sub">月內動態</div></div>
-    <div class="stat"><div class="stat-label">Reports</div><div class="stat-value">{fmtInt(stats.reports_total)}</div><div class="stat-sub">官方財報</div></div>
-    <div class="stat"><div class="stat-label">Tickers</div><div class="stat-value">{fmtInt(stats.tickers_tracked)}</div><div class="stat-sub">已建檔個股</div></div>
-    <div class="stat"><div class="stat-label">All-time</div><div class="stat-value">{fmtInt(stats.articles_total)}</div><div class="stat-sub">累計</div></div>
-  </section>
-
-  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-    <article class="glass bento lg:col-span-2">
+  <!-- 上修 / 下修 兩欄 ─────────────────────────────────────────── -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+    <article class="glass bento">
       <header class="bento-head">
-        <h2 class="bento-title">本週動能榜 · Mention Momentum</h2>
-        <a href="/screens" class="bento-link">全部 screen →</a>
+        <h2 class="bento-title"><span class="delta-up">▲</span> 上修 · 目標價 / 財測 / EPS beat</h2>
+        <span class="bento-link mono">{guidanceUp.length}</span>
       </header>
-      <div class="lb">
-        {momentum.slice(0, 12).map((m, i) => (
-          <a class="lb-row" href={`/stocks/${m.ticker}`}>
-            <div style="display:flex; align-items:baseline; gap:10px;">
-              <span class="rank mono">#{(i + 1).toString().padStart(2, "0")}</span>
-              <span class="name mono"><strong>{m.ticker}</strong></span>
+      <div class="signals">
+        {guidanceUp.slice(0, 12).map((g) => (
+          <a class="signal" href={g.link} target="_blank" rel="noopener">
+            <span class="signal-tag" style="color: var(--ok); border-color: rgba(61, 220, 151, 0.35); background: rgba(61, 220, 151, 0.08);">UP</span>
+            <div class="signal-body">
+              <div class="line-clamp-2">{g.title}</div>
+              <div class="meta">
+                {g.source}
+                {g.tickers.length > 0 && <> · <span class="mono">{g.tickers.slice(0, 3).join(", ")}</span></>}
+              </div>
             </div>
-            <span class="v">{m.mentions_7d} 篇</span>
-            <span class={`delta ${m.delta > 0 ? "up" : m.delta < 0 ? "down" : "flat"}`}>{m.delta >= 0 ? "+" : ""}{m.delta}</span>
+            <span class="signal-meta">{ago(g.published)}</span>
           </a>
         ))}
-        {momentum.length === 0 && <p class="muted text-sm">（暫無資料）</p>}
+        {guidanceUp.length === 0 && <p class="muted text-sm">（暫無上修事件）</p>}
       </div>
     </article>
 
     <article class="glass bento">
       <header class="bento-head">
-        <h2 class="bento-title">7 天熱門 ticker</h2>
-        <span class="bento-link mono">top {topTickers7.length}</span>
+        <h2 class="bento-title"><span class="delta-down">▼</span> 下修 · 目標價 / 財測 / EPS miss</h2>
+        <span class="bento-link mono">{guidanceDown.length}</span>
       </header>
-      <div class="lb">
-        {topTickers7.slice(0, 12).map((t, i) => (
-          <a class="lb-row" href={`/stocks/${t.ticker}`}>
-            <div style="display:flex; align-items:baseline; gap:10px;">
-              <span class="rank mono">#{(i + 1).toString().padStart(2, "0")}</span>
-              <span class="name mono"><strong>{t.ticker}</strong></span>
+      <div class="signals">
+        {guidanceDown.slice(0, 12).map((g) => (
+          <a class="signal" href={g.link} target="_blank" rel="noopener">
+            <span class="signal-tag" style="color: var(--bad); border-color: rgba(255, 107, 129, 0.35); background: rgba(255, 107, 129, 0.08);">DOWN</span>
+            <div class="signal-body">
+              <div class="line-clamp-2">{g.title}</div>
+              <div class="meta">
+                {g.source}
+                {g.tickers.length > 0 && <> · <span class="mono">{g.tickers.slice(0, 3).join(", ")}</span></>}
+              </div>
             </div>
-            <span class="v">{t.mentions}</span>
-            <span class="delta flat mono">{t.last_seen}</span>
+            <span class="signal-meta">{ago(g.published)}</span>
           </a>
         ))}
+        {guidanceDown.length === 0 && <p class="muted text-sm">（暫無下修事件）</p>}
       </div>
     </article>
   </section>
 
-  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-    <article class="glass bento lg:col-span-2">
-      <header class="bento-head">
-        <h2 class="bento-title">News velocity · 14 天</h2>
-        <span class="bento-link mono">avg {velocityAvg}/day</span>
-      </header>
-      <svg class="spark" viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none">
-        <path class="area" d={areaPath} />
-        <path class="line" d={linePath} />
-        {pts.map((p) => {
-          const [x, y] = p.split(",").map(Number);
-          return <circle class="dot" cx={x} cy={y} r="2" />;
-        })}
-      </svg>
-      <div style="display:flex; justify-content:space-between; margin-top:6px;">
-        <span class="muted-2 mono" style="font-size:10px;">{days[0] ?? ""}</span>
-        <span class="muted-2 mono" style="font-size:10px;">{days[days.length - 1] ?? ""}</span>
-      </div>
-      <div class="mt-4">
-        {catRows.map((c) => (
-          <div class="cat-row">
-            <div class="lbl" style="min-width:0;">
-              <div class="lbl-text">{c.category}</div>
-              <div class="bar"><div class="bar-fill" style={`width:${Math.max(2, (c.count / maxCat) * 100)}%`}></div></div>
+  <!-- Watchlist 基本面表 ────────────────────────────────────── -->
+  <article class="glass bento mb-4">
+    <header class="bento-head">
+      <h2 class="bento-title">Watchlist · 最新一季基本面</h2>
+      <span class="bento-link mono">{fundamentals.filter((f) => f.latest).length} / {fundamentals.length}</span>
+    </header>
+    <div style="overflow-x:auto;">
+      <table class="fintable" style="min-width: 760px;">
+        <thead>
+          <tr>
+            <th class="label">Ticker</th>
+            <th class="label" style="text-align:left;">公司</th>
+            <th class="label" style="text-align:left;">期</th>
+            <th>營收</th>
+            <th>Rev YoY</th>
+            <th>EPS</th>
+            <th>EPS YoY</th>
+            <th>毛利率</th>
+            <th>營益率</th>
+            <th>FCF margin</th>
+          </tr>
+        </thead>
+        <tbody>
+          {fundamentals.map((f) => {
+            const l = f.latest;
+            if (!l) {
+              return (
+                <tr>
+                  <td class="label"><a href={`/stocks/${f.ticker}`} class="mono"><strong>{f.ticker}</strong></a></td>
+                  <td class="label" style="text-align:left;" colspan="9"><span class="muted-2">尚無基本面資料</span></td>
+                </tr>
+              );
+            }
+            return (
+              <tr>
+                <td class="label"><a href={`/stocks/${f.ticker}`} class="mono"><strong>{f.ticker}</strong></a></td>
+                <td class="label" style="text-align:left;">{f.company_name ?? "—"}</td>
+                <td class="label" style="text-align:left;">{l.fiscal_year}·{l.fiscal_period}</td>
+                <td>{fmtMoney(l.revenue)}</td>
+                <td class={deltaCls(l.rev_yoy)}>{fmtPct(l.rev_yoy)}</td>
+                <td>{l.eps == null ? "—" : Number(l.eps).toFixed(2)}</td>
+                <td class={deltaCls(l.eps_yoy)}>{fmtPct(l.eps_yoy)}</td>
+                <td>{fmtMargin(l.gross_margin)}</td>
+                <td>{fmtMargin(l.op_margin)}</td>
+                <td>{fmtMargin(l.fcf_margin)}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    <p class="muted-2" style="font-size: 11px; margin-top: 8px; line-height: 1.5;">
+      Rev YoY = 同比去年同季營收成長率（不夠期數時顯示 —）。資料來源：TWSE / MOPS / TPEx / SEC company facts。重複 row 已依 (ticker, year, period) dedupe 取 MAX。
+    </p>
+  </article>
+
+  <!-- 法說 / filing 直擊 ───────────────────────────────────── -->
+  <article class="glass bento mb-4">
+    <header class="bento-head">
+      <h2 class="bento-title">法說 / Filing 直擊 · 原文摘錄</h2>
+      <span class="bento-link mono">{filings.length}</span>
+    </header>
+    <div class="space-y-3">
+      {filings.length === 0 ? (
+        <p class="muted text-sm">（暫無 filing excerpt — 需執行 stock_memo.py 觸發 SEC ingest）</p>
+      ) : (
+        filings.map((f) => (
+          <div style="border-top: 1px solid var(--border-base); padding-top: 12px;">
+            <div style="display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; margin-bottom:4px;">
+              <a href={`/stocks/${f.ticker}`} class="mono" style="font-weight:500; color: var(--accent-strong);">{f.ticker}</a>
+              <span style="font-size: 12px; color: var(--fg-300);">{f.company_name ?? ""}</span>
+              <span class="muted-2 mono" style="font-size: 11px;">{f.form_type} · {f.fiscal_year}{f.fiscal_period} · filed {(f.filed_at ?? "").slice(0, 10)}</span>
             </div>
-            <span class="v">{c.count} · {c.pct}%</span>
+            <p style="font-size: 12.5px; line-height: 1.6; color: var(--fg-200); margin: 0;">
+              {f.excerpt}{f.excerpt && f.excerpt.length >= 600 ? "…" : ""}
+            </p>
           </div>
+        ))
+      )}
+    </div>
+  </article>
+
+  <!-- Watchlist 快速導覽 ──────────────────────────────────── -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <article class="glass bento lg:col-span-2">
+      <header class="bento-head">
+        <h2 class="bento-title">Guidance feed · 全部 {guidanceRecent.length} 條</h2>
+        <a href="/guidance" class="bento-link">完整 →</a>
+      </header>
+      <div class="timeline">
+        {guidanceRecent.slice(0, 12).map((g) => (
+          <a class="tl-item" href={g.link} target="_blank" rel="noopener">
+            <div class="tl-stamp">
+              <div>{(g.published ?? "").slice(0, 10)}</div>
+              <div class="muted-2">{(g.published ?? "").slice(11, 16)}</div>
+            </div>
+            <div class="tl-body">
+              <div class="h">
+                <span class={`chip-mini evt-${g.direction === "up" ? "capex" : g.direction === "down" ? "earnings" : ""}`} style={
+                  g.direction === "up" ? "color: var(--ok); border-color: rgba(61, 220, 151, 0.35); background: rgba(61, 220, 151, 0.08);" :
+                  g.direction === "down" ? "color: var(--bad); border-color: rgba(255, 107, 129, 0.35); background: rgba(255, 107, 129, 0.08);" :
+                  ""
+                }>{g.direction.toUpperCase()}</span>
+                <strong>{g.title}</strong>
+              </div>
+              <p class="summary line-clamp-2">{g.excerpt}</p>
+              <div class="tags">
+                <span class="chip-mini">{g.source}</span>
+                {g.tickers.slice(0, 4).map((t) => (
+                  <span class="chip-mini ticker mono">{t}</span>
+                ))}
+              </div>
+            </div>
+          </a>
         ))}
       </div>
     </article>
 
     <article class="glass bento">
       <header class="bento-head">
-        <h2 class="bento-title">主題熱度 · 30 天</h2>
-        <a href="/themes" class="bento-link">展開 →</a>
+        <h2 class="bento-title">Watchlist 快速跳轉</h2>
+        <span class="bento-link mono">{watchlist.length} 檔</span>
       </header>
-      <div class="theme-cloud">
-        {themes.slice(0, 10).map((t, i) => (
-          <a href={`/themes#${encodeURIComponent(t.theme)}`} class={`theme-chip ${i < 3 ? "hot" : ""}`}>
-            <span>{t.theme}</span>
-            <span class="n">{t.count}</span>
-          </a>
-        ))}
-        {themes.length === 0 && <p class="muted text-sm">（暫無主題）</p>}
-      </div>
-      <h2 class="bento-title" style="margin-top:18px; margin-bottom:10px;">Watchlist</h2>
       <div class="watchgrid">
         {watchlist.map((t) => (
           <a href={`/stocks/${t.toUpperCase()}`} class="watchcell">
@@ -173,87 +275,9 @@ const velocityAvg = totals.length ? Math.round(totals.reduce((a, b) => a + b, 0)
           </a>
         ))}
       </div>
+      <p class="muted-2" style="font-size: 11px; margin-top: 14px;">
+        資料缺口：consensus estimates / insider transactions / 13F / short interest 皆尚未 ingest。Mention count、news velocity、theme cloud 屬 vanity metrics，移到 <a href="/explore" style="text-decoration: underline;">/explore</a> 探索頁。
+      </p>
     </article>
-  </section>
-
-  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-    <article class="glass bento">
-      <header class="bento-head">
-        <h2 class="bento-title">📊 法說 / 財報相關</h2>
-        <span class="bento-link mono">{earnings.length}</span>
-      </header>
-      <div class="signals">
-        {earnings.slice(0, 6).map((e) => (
-          <a class="signal" href={e.link} target="_blank" rel="noopener">
-            <span class="signal-tag transcript">earn</span>
-            <div class="signal-body">
-              <div class="line-clamp-2">{e.title}</div>
-              <div class="meta">{e.source} · {e.tickers && e.tickers.length > 0 ? e.tickers.slice(0, 3).join(", ") : ""}</div>
-            </div>
-            <span class="signal-meta">{ago(e.published)}</span>
-          </a>
-        ))}
-        {earnings.length === 0 && <p class="muted text-sm">（無資料）</p>}
-      </div>
-    </article>
-
-    <article class="glass bento">
-      <header class="bento-head">
-        <h2 class="bento-title">🏗 資本支出 / 擴產</h2>
-        <span class="bento-link mono">{capex.length}</span>
-      </header>
-      <div class="signals">
-        {capex.slice(0, 6).map((e) => (
-          <a class="signal" href={e.link} target="_blank" rel="noopener">
-            <span class="signal-tag holdings">capex</span>
-            <div class="signal-body">
-              <div class="line-clamp-2">{e.title}</div>
-              <div class="meta">{e.source} · {e.tickers && e.tickers.length > 0 ? e.tickers.slice(0, 3).join(", ") : ""}</div>
-            </div>
-            <span class="signal-meta">{ago(e.published)}</span>
-          </a>
-        ))}
-        {capex.length === 0 && <p class="muted text-sm">（無資料）</p>}
-      </div>
-    </article>
-
-    <article class="glass bento">
-      <header class="bento-head">
-        <h2 class="bento-title">🏛 政策 / 監管</h2>
-        <span class="bento-link mono">{policy.length}</span>
-      </header>
-      <div class="signals">
-        {policy.slice(0, 6).map((e) => (
-          <a class="signal" href={e.link} target="_blank" rel="noopener">
-            <span class="signal-tag insider">policy</span>
-            <div class="signal-body">
-              <div class="line-clamp-2">{e.title}</div>
-              <div class="meta">{e.source} · {e.tickers && e.tickers.length > 0 ? e.tickers.slice(0, 3).join(", ") : ""}</div>
-            </div>
-            <span class="signal-meta">{ago(e.published)}</span>
-          </a>
-        ))}
-        {policy.length === 0 && <p class="muted text-sm">（無資料）</p>}
-      </div>
-    </article>
-  </section>
-
-  <section class="grid grid-cols-2 lg:grid-cols-4 gap-3">
-    <a href="/news" class="glass bento" style="padding:14px;">
-      <div class="bento-title">📰 新聞時間軸</div>
-      <div style="margin-top:8px; color: var(--fg-200); font-size: 13px;">300 篇最新文章 · 多分類篩選</div>
-    </a>
-    <a href="/screens" class="glass bento" style="padding:14px;">
-      <div class="bento-title">🎯 投資 screen</div>
-      <div style="margin-top:8px; color: var(--fg-200); font-size: 13px;">動能 / 主題 / 事件聚類</div>
-    </a>
-    <a href="/coverage" class="glass bento" style="padding:14px;">
-      <div class="bento-title">🗺 覆蓋地圖</div>
-      <div style="margin-top:8px; color: var(--fg-200); font-size: 13px;">{fmtInt(stats.tickers_tracked)} 檔個股資料</div>
-    </a>
-    <a href="/calendar" class="glass bento" style="padding:14px;">
-      <div class="bento-title">📅 事件日曆</div>
-      <div style="margin-top:8px; color: var(--fg-200); font-size: 13px;">earnings · capex · policy</div>
-    </a>
   </section>
 </Base>

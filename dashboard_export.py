@@ -28,6 +28,48 @@ TW_TICKER_RE = re.compile(r"^\d{4,6}$")
 # from ticker aggregations so they don't dominate the leaderboards.
 YEAR_NOISE = {str(y) for y in range(1990, 2035)}
 
+# High-precision guidance phrases: must appear as 2+ word chunks tied to
+# financials so political/macro headlines don't leak into the leaderboard.
+GUIDANCE_UP_PHRASES = [
+    "raises guidance", "raised guidance", "raise guidance", "raising guidance",
+    "lifts guidance", "lifted guidance", "boosts guidance", "boosted guidance",
+    "raises forecast", "raised forecast", "raises outlook", "lifts outlook",
+    "lifts target", "raises target", "raised target", "raising target",
+    "upgrade to buy", "upgrade to overweight", "outperform rating",
+    "upgrades stock", "upgraded stock", "raises rating",
+    "beats estimates", "beat estimates", "beats expectations", "beat expectations",
+    "exceeds estimates", "exceeded estimates", "above estimates",
+    "beats eps", "beat eps", "tops estimates", "topped estimates",
+    "stronger than expected", "better than expected",
+    "上修財測", "上修目標價", "上修評等", "上修預估", "上修獲利", "上看",
+    "目標價上調", "獲利上修", "財測上修", "上修全年", "獲利優於預期",
+    "毛利率上修", "outperform 評等",
+]
+GUIDANCE_DOWN_PHRASES = [
+    "cuts guidance", "cut guidance", "cutting guidance", "lowers guidance",
+    "lowered guidance", "slashes guidance", "trimmed guidance",
+    "cuts forecast", "lowers forecast", "lowered forecast",
+    "cuts outlook", "lowers outlook", "trimmed outlook",
+    "cuts target", "lowers target", "lowered target", "slashes target",
+    "downgrade to sell", "downgrade to underweight", "underperform rating",
+    "downgrades stock", "downgraded stock", "lowers rating",
+    "misses estimates", "missed estimates", "miss estimates",
+    "misses expectations", "missed expectations",
+    "misses eps", "missed eps", "missed by $", "missed by 0",
+    "below estimates", "fell short of",
+    "weaker than expected", "worse than expected", "disappointing",
+    "guidance cut", "profit warning", "warns on", "warned of",
+    "plummets", "plummeted", "tumbles", "tumbled",
+    "下修財測", "下修目標價", "下修評等", "下修預估", "下修獲利",
+    "目標價下調", "獲利下修", "財測下修", "下修全年", "獲利不如預期",
+    "毛利率下修", "砍單", "砍價", "下砍", "獲利衰退",
+]
+GUIDANCE_NEUTRAL_PHRASES = [
+    "reaffirms guidance", "reaffirmed guidance", "maintains guidance",
+    "maintained guidance", "in line with estimates", "in-line",
+    "as expected", "meets estimates", "met estimates",
+    "維持財測", "維持目標價", "符合預期", "符合預估",
+]
 THEME_KEYWORDS = {
     "AI 算力": ["GPU", "AI chip", "AI 算力", "HBM", "AI server", "AI 伺服器", "GB200", "Blackwell", "H100", "H200"],
     "先進製程": ["3nm", "2nm", "先進製程", "advanced node", "Foundry", "晶圓代工", "EUV"],
@@ -425,6 +467,267 @@ def _coverage_map(db_path: Path) -> list[dict]:
     return sorted(coverage.values(), key=lambda x: (x["reports"], x["articles"]), reverse=True)
 
 
+def _phrase_match(phrase: str, lower_text: str) -> bool:
+    """Word-boundary aware match — avoids 'tumbles' ⊂ 'stumbles' false hits.
+
+    For multi-word phrases or those with non-ASCII / digits we use plain
+    substring; for single English words we require word boundaries.
+    """
+    p = phrase.lower()
+    if " " in p or any(ord(c) > 127 for c in p) or any(ch.isdigit() for ch in p):
+        return p in lower_text
+    return bool(re.search(rf"\b{re.escape(p)}\b", lower_text))
+
+
+def _classify_guidance(text: str) -> str | None:
+    """High-precision classifier: requires multi-word guidance phrases.
+
+    Returns 'up' | 'down' | 'mixed' | 'neutral' | None.
+    """
+    if not text:
+        return None
+    lower = text.lower()
+    up = sum(1 for p in GUIDANCE_UP_PHRASES if _phrase_match(p, lower))
+    down = sum(1 for p in GUIDANCE_DOWN_PHRASES if _phrase_match(p, lower))
+    neu = sum(1 for p in GUIDANCE_NEUTRAL_PHRASES if _phrase_match(p, lower))
+    if up and not down:
+        return "up"
+    if down and not up:
+        return "down"
+    if up and down:
+        return "mixed"
+    if neu:
+        return "neutral"
+    return None
+
+
+def _guidance_feed(
+    db_path: Path,
+    since_iso: str,
+    limit: int = 200,
+) -> list[dict]:
+    """Pull articles whose title/summary mentions guidance keywords."""
+    conn = _connect(db_path)
+    try:
+        rows = conn.execute(
+            """
+            SELECT title, link, source, category, published, summary,
+                   body_text, tickers_json, companies_json, event_type
+            FROM articles
+            WHERE published >= ?
+            ORDER BY published DESC
+            LIMIT 5000
+            """,
+            (since_iso,),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+    finally:
+        conn.close()
+
+    out: list[dict] = []
+    seen_titles: set[str] = set()
+    for row in rows:
+        title = (row["title"] or "").strip()
+        summary = row["summary"] or ""
+        body = row["body_text"] or ""
+        if not title:
+            continue
+        norm_title = title.lower().split(" - ")[0].strip()
+        if norm_title in seen_titles:
+            continue
+        seen_titles.add(norm_title)
+        direction = _classify_guidance(title)
+        if not direction:
+            continue
+        # Drop obvious tech-product reviews and gaming/lifestyle content that
+        # accidentally trigger guidance phrases ("Star Wars Day", "gaming PC").
+        lower = title.lower()
+        if any(noise in lower for noise in (
+            "star wars", "gaming pc", "may the 4th", "may the fourth",
+            "best deals", "best gaming", "best laptop", "best headphone",
+        )):
+            continue
+        excerpt = summary.strip() or body[:240].strip()
+        out.append({
+            "title": title,
+            "link": row["link"],
+            "source": row["source"],
+            "category": row["category"],
+            "published": row["published"],
+            "direction": direction,
+            "excerpt": excerpt,
+            "tickers": _parse_tickers(row["tickers_json"]),
+            "companies": _parse_companies(row["companies_json"]),
+            "event_type": row["event_type"],
+        })
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _us_filing_excerpts(db_path: Path, limit: int = 30) -> list[dict]:
+    """Surface raw forward-looking-statement text from US SEC filings."""
+    conn = _connect(db_path)
+    try:
+        rows = conn.execute(
+            """
+            SELECT ticker, company_name, fiscal_year, fiscal_period, form_type,
+                   filed_at, period_end, filing_excerpt, guidance_summary
+            FROM financial_reports
+            WHERE market='us' AND filing_excerpt IS NOT NULL
+              AND LENGTH(filing_excerpt) > 80
+            ORDER BY filed_at DESC
+            LIMIT ?
+            """,
+            (limit,),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+    finally:
+        conn.close()
+    out: list[dict] = []
+    seen: set[str] = set()
+    for r in rows:
+        ticker = (r["ticker"] or "").upper()
+        if ticker in seen:
+            continue
+        seen.add(ticker)
+        out.append({
+            "ticker": ticker,
+            "company_name": r["company_name"],
+            "fiscal_year": r["fiscal_year"],
+            "fiscal_period": r["fiscal_period"],
+            "form_type": r["form_type"],
+            "filed_at": r["filed_at"],
+            "period_end": r["period_end"],
+            "excerpt": (r["filing_excerpt"] or "").strip()[:600],
+            "guidance_summary": (r["guidance_summary"] or "").strip()[:300],
+        })
+    return out
+
+
+def _fundamentals_summary(db_path: Path, tickers: list[str]) -> list[dict]:
+    """Compute YoY/QoQ revenue, EPS, margin trends per watchlist ticker.
+
+    Dedupes the noisy TWSE rows (same period repeated with different filed_at)
+    by taking MAX(metric) within each (ticker, fiscal_year, fiscal_period).
+    """
+    conn = _connect(db_path)
+    out: list[dict] = []
+    try:
+        for ticker in tickers:
+            market = _infer_market(ticker)
+            try:
+                rows = conn.execute(
+                    """
+                    SELECT fiscal_year, fiscal_period,
+                           MAX(revenue) AS revenue,
+                           MAX(gross_profit) AS gross_profit,
+                           MAX(operating_income) AS operating_income,
+                           MAX(net_income) AS net_income,
+                           MAX(eps_diluted) AS eps_diluted,
+                           MAX(free_cash_flow) AS fcf,
+                           MAX(operating_cash_flow) AS ocf,
+                           MAX(capex) AS capex,
+                           MAX(company_name) AS company_name
+                    FROM financial_reports
+                    WHERE UPPER(ticker)=UPPER(?) AND market=?
+                      AND fiscal_period IN ('Q1','Q2','Q3','Q4','FY')
+                    GROUP BY fiscal_year, fiscal_period
+                    ORDER BY fiscal_year DESC,
+                             CASE fiscal_period
+                                WHEN 'Q4' THEN 4 WHEN 'Q3' THEN 3
+                                WHEN 'Q2' THEN 2 WHEN 'Q1' THEN 1
+                                WHEN 'FY' THEN 5 ELSE 0 END DESC
+                    LIMIT 12
+                    """,
+                    (ticker, market),
+                ).fetchall()
+            except sqlite3.OperationalError:
+                rows = []
+            periods = [dict(r) for r in rows]
+            if not periods:
+                out.append({"ticker": ticker.upper(), "market": market, "periods": []})
+                continue
+            latest = periods[0]
+            company_name = latest.get("company_name")
+
+            def find_prev_yoy(idx: int) -> dict | None:
+                """Find same fiscal_period one year earlier."""
+                target_period = periods[idx]["fiscal_period"]
+                target_year = periods[idx]["fiscal_year"]
+                for p in periods[idx + 1:]:
+                    if p["fiscal_period"] == target_period and int(p["fiscal_year"]) == int(target_year) - 1:
+                        return p
+                return None
+
+            def safe_div(a, b):
+                try:
+                    if a is None or b is None or float(b) == 0:
+                        return None
+                    return float(a) / float(b)
+                except Exception:
+                    return None
+
+            def yoy(curr_val, prev_val):
+                if curr_val is None or prev_val is None:
+                    return None
+                try:
+                    if float(prev_val) == 0:
+                        return None
+                    return (float(curr_val) - float(prev_val)) / abs(float(prev_val)) * 100
+                except Exception:
+                    return None
+
+            prev_yoy = find_prev_yoy(0)
+            prev_q = periods[1] if len(periods) > 1 else None
+            metrics = {
+                "fiscal_year": latest["fiscal_year"],
+                "fiscal_period": latest["fiscal_period"],
+                "revenue": latest["revenue"],
+                "gross_profit": latest["gross_profit"],
+                "operating_income": latest["operating_income"],
+                "net_income": latest["net_income"],
+                "eps": latest["eps_diluted"],
+                "fcf": latest["fcf"],
+                "ocf": latest["ocf"],
+                "capex": latest["capex"],
+                "gross_margin": safe_div(latest["gross_profit"], latest["revenue"]),
+                "op_margin": safe_div(latest["operating_income"], latest["revenue"]),
+                "net_margin": safe_div(latest["net_income"], latest["revenue"]),
+                "fcf_margin": safe_div(latest["fcf"], latest["revenue"]),
+                "capex_intensity": safe_div(latest["capex"], latest["revenue"]),
+                "rev_yoy": yoy(latest["revenue"], prev_yoy["revenue"] if prev_yoy else None),
+                "eps_yoy": yoy(latest["eps_diluted"], prev_yoy["eps_diluted"] if prev_yoy else None),
+                "op_income_yoy": yoy(latest["operating_income"], prev_yoy["operating_income"] if prev_yoy else None),
+                "rev_qoq": yoy(latest["revenue"], prev_q["revenue"] if prev_q else None),
+            }
+            # Acceleration: compare current YoY vs prior YoY
+            if prev_q:
+                prev_q_yoy_pair = find_prev_yoy(1)
+                metrics["prior_rev_yoy"] = yoy(
+                    prev_q["revenue"],
+                    prev_q_yoy_pair["revenue"] if prev_q_yoy_pair else None,
+                )
+            else:
+                metrics["prior_rev_yoy"] = None
+            if metrics["rev_yoy"] is not None and metrics["prior_rev_yoy"] is not None:
+                metrics["rev_yoy_accel"] = metrics["rev_yoy"] - metrics["prior_rev_yoy"]
+            else:
+                metrics["rev_yoy_accel"] = None
+            out.append({
+                "ticker": ticker.upper(),
+                "market": market,
+                "company_name": company_name,
+                "latest": metrics,
+                "history": periods[:8],
+            })
+    finally:
+        conn.close()
+    return out
+
+
 def _events_calendar(articles: list[dict]) -> list[dict]:
     """Build event entries from earnings / capex / policy / filing tagged articles."""
     events = []
@@ -499,6 +802,17 @@ def export_all(
     finally:
         conn.close()
 
+    guidance_feed = _guidance_feed(db_path, since_30, limit=200)
+    filing_excerpts = _us_filing_excerpts(db_path, limit=30)
+    fundamentals = _fundamentals_summary(db_path, tickers)
+
+    guidance_up = [g for g in guidance_feed if g["direction"] == "up"]
+    guidance_down = [g for g in guidance_feed if g["direction"] == "down"]
+    guidance_by_ticker: dict[str, list[dict]] = defaultdict(list)
+    for g in guidance_feed:
+        for t in g.get("tickers") or []:
+            guidance_by_ticker[t].append(g)
+
     artefacts: dict[str, Path] = {}
 
     overview = {
@@ -514,7 +828,19 @@ def export_all(
             "short_total": total_short,
             "ir_total": total_ir,
             "tickers_tracked": len(coverage),
+            "guidance_30d": len(guidance_feed),
+            "guidance_up_30d": len(guidance_up),
+            "guidance_down_30d": len(guidance_down),
         },
+        "watchlist": tickers,
+        "fundamentals": fundamentals,
+        "guidance_up": guidance_up[:25],
+        "guidance_down": guidance_down[:25],
+        "guidance_recent": guidance_feed[:40],
+        "filing_excerpts": filing_excerpts[:10],
+        "event_clusters": clusters,
+        "top_transcripts": top_transcripts,
+        # Secondary/exploration metrics (kept for /explore noise view)
         "market_indices": _market_overview_cache(repo_root),
         "top_tickers_7d": top_tickers_7d,
         "top_tickers_30d": top_tickers_30d,
@@ -523,11 +849,6 @@ def export_all(
         "sources": sources,
         "themes": themes,
         "momentum": momentum,
-        "event_clusters": clusters,
-        "top_transcripts": top_transcripts,
-        "top_insider_trades": [],
-        "top_holdings_changes": [],
-        "watchlist": tickers,
     }
     overview_path = output_dir / "overview.json"
     _write(overview_path, overview)
@@ -556,6 +877,24 @@ def export_all(
         "top_tickers_30d": top_tickers_30d,
     })
     artefacts["screens"] = screens_path
+
+    guidance_path = output_dir / "guidance.json"
+    _write(guidance_path, {
+        "generated_at": _utcnow_iso(),
+        "all": guidance_feed,
+        "up": guidance_up,
+        "down": guidance_down,
+        "by_ticker": {t: items[:10] for t, items in guidance_by_ticker.items() if len(items) >= 1},
+        "filing_excerpts": filing_excerpts,
+    })
+    artefacts["guidance"] = guidance_path
+
+    fundamentals_path = output_dir / "fundamentals.json"
+    _write(fundamentals_path, {
+        "generated_at": _utcnow_iso(),
+        "tickers": fundamentals,
+    })
+    artefacts["fundamentals"] = fundamentals_path
 
     coverage_path = output_dir / "coverage.json"
     _write(coverage_path, {"generated_at": _utcnow_iso(), "coverage": coverage[:300]})

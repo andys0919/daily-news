@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T02:39:53Z",
+  "generated_at": "2026-05-11T03:16:26Z",
   "momentum": [
     {
       "ticker": "2605",
@@ -10,24 +10,24 @@
     },
     {
       "ticker": "NVDA",
-      "mentions_7d": 125,
-      "mentions_prior_7d": 95,
-      "delta": 30,
-      "pct_change": 31.6
+      "mentions_7d": 122,
+      "mentions_prior_7d": 98,
+      "delta": 24,
+      "pct_change": 24.5
     },
     {
       "ticker": "2330",
-      "mentions_7d": 160,
+      "mentions_7d": 158,
       "mentions_prior_7d": 142,
-      "delta": 18,
-      "pct_change": 12.7
+      "delta": 16,
+      "pct_change": 11.3
     },
     {
       "ticker": "2454",
-      "mentions_7d": 78,
-      "mentions_prior_7d": 64,
-      "delta": 14,
-      "pct_change": 21.9
+      "mentions_7d": 74,
+      "mentions_prior_7d": 66,
+      "delta": 8,
+      "pct_change": 12.1
     },
     {
       "ticker": "AAPL",
@@ -38,13 +38,6 @@
     },
     {
       "ticker": "6488",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 0,
-      "delta": 5,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "8080",
       "mentions_7d": 5,
       "mentions_prior_7d": 0,
       "delta": 5,
@@ -80,6 +73,13 @@
     },
     {
       "ticker": "1980",
+      "mentions_7d": 4,
+      "mentions_prior_7d": 1,
+      "delta": 3,
+      "pct_change": 300.0
+    },
+    {
+      "ticker": "8080",
       "mentions_7d": 4,
       "mentions_prior_7d": 1,
       "delta": 3,
@@ -1107,7 +1107,7 @@
   "top_tickers_7d": [
     {
       "ticker": "2330",
-      "mentions": 160,
+      "mentions": 158,
       "last_seen": "2026-05-11"
     },
     {
@@ -1117,7 +1117,7 @@
     },
     {
       "ticker": "NVDA",
-      "mentions": 125,
+      "mentions": 122,
       "last_seen": "2026-05-11"
     },
     {
@@ -1127,17 +1127,17 @@
     },
     {
       "ticker": "2454",
-      "mentions": 78,
+      "mentions": 74,
       "last_seen": "2026-05-11"
     },
     {
       "ticker": "2317",
-      "mentions": 72,
+      "mentions": 71,
       "last_seen": "2026-05-11"
     },
     {
       "ticker": "META",
-      "mentions": 70,
+      "mentions": 68,
       "last_seen": "2026-05-11"
     },
     {
@@ -1201,11 +1201,6 @@
       "last_seen": "2026-05-11"
     },
     {
-      "ticker": "8080",
-      "mentions": 5,
-      "last_seen": "2026-05-10"
-    },
-    {
       "ticker": "5060",
       "mentions": 5,
       "last_seen": "2026-05-10"
@@ -1227,6 +1222,11 @@
     },
     {
       "ticker": "5080",
+      "mentions": 4,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "8080",
       "mentions": 4,
       "last_seen": "2026-05-10"
     },

@@ -1,0 +1,168 @@
+---
+import Base from "../layouts/Base.astro";
+import guidance from "../data/guidance.json";
+
+interface Item {
+  title: string;
+  link: string;
+  source: string;
+  category: string;
+  published: string;
+  direction: string;
+  excerpt: string;
+  tickers: string[];
+  companies: string[];
+  event_type: string | null;
+}
+interface FilingExcerpt {
+  ticker: string;
+  company_name: string;
+  fiscal_year: number;
+  fiscal_period: string;
+  form_type: string;
+  filed_at: string;
+  excerpt: string;
+}
+
+const all = (guidance.all ?? []) as Item[];
+const up = (guidance.up ?? []) as Item[];
+const down = (guidance.down ?? []) as Item[];
+const byTicker = (guidance.by_ticker ?? {}) as Record<string, Item[]>;
+const filings = (guidance.filing_excerpts ?? []) as FilingExcerpt[];
+const generated = guidance.generated_at ?? "";
+
+const tickers = Object.keys(byTicker).sort((a, b) => byTicker[b].length - byTicker[a].length).slice(0, 24);
+
+function dirStyle(d: string): string {
+  if (d === "up") return "color: var(--ok); border-color: rgba(61, 220, 151, 0.35); background: rgba(61, 220, 151, 0.08);";
+  if (d === "down") return "color: var(--bad); border-color: rgba(255, 107, 129, 0.35); background: rgba(255, 107, 129, 0.08);";
+  if (d === "mixed") return "color: var(--warn); border-color: rgba(255, 174, 92, 0.35); background: rgba(255, 174, 92, 0.08);";
+  return "";
+}
+function ago(iso: string | undefined): string {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso.slice(0, 10);
+  const h = Math.floor((Date.now() - d.getTime()) / 3.6e6);
+  if (h < 24) return `${h}h`;
+  return `${Math.floor(h / 24)}d`;
+}
+---
+<Base title="Guidance Feed — 財測 / 目標價變動" active="guidance">
+  <section class="hero">
+    <div>
+      <span class="live"><span class="live-dot"></span>{all.length} 條 · 30d</span>
+      <h1 class="mt-2">指引 <span class="accent">Feed</span></h1>
+      <p class="hero-sub">
+        從 55K 篇新聞中濾出包含 "raises guidance / 上修 / lifts target / 下修 / cuts forecast / misses EPS / beats estimates" 等高精度 phrase 的文章。Title-only 比對，跨外電 + 國內媒體。
+        <span class="delta-up mono">{up.length} 上修</span>
+        ·
+        <span class="delta-down mono">{down.length} 下修</span>
+        ·
+        Per-ticker 聚合 {Object.keys(byTicker).length} 檔。
+      </p>
+    </div>
+    <div class="hero-meta">
+      <div class="ts mono">{generated.slice(0, 10)}</div>
+      <div class="mono">{generated.slice(11, 16)}Z</div>
+    </div>
+  </section>
+
+  <div class="filters" id="filter-bar">
+    <button class="fbtn" data-dir="" data-active="true">全部 · {all.length}</button>
+    <button class="fbtn" data-dir="up">▲ 上修 · {up.length}</button>
+    <button class="fbtn" data-dir="down">▼ 下修 · {down.length}</button>
+    <button class="fbtn" data-dir="mixed">⇄ 混合 · {all.filter((a) => a.direction === "mixed").length}</button>
+    <button class="fbtn" data-dir="neutral">─ 維持 · {all.filter((a) => a.direction === "neutral").length}</button>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <section class="lg:col-span-2">
+      <div class="timeline" id="feed">
+        {all.map((g) => (
+          <article class="tl-item" data-dir={g.direction}>
+            <div class="tl-stamp">
+              <div>{(g.published ?? "").slice(0, 10)}</div>
+              <div class="muted-2">{(g.published ?? "").slice(11, 16)}</div>
+            </div>
+            <div class="tl-body">
+              <div class="h">
+                <span class="chip-mini" style={dirStyle(g.direction)}>{g.direction.toUpperCase()}</span>
+                <a href={g.link} target="_blank" rel="noopener"><strong>{g.title}</strong></a>
+              </div>
+              {g.excerpt && <p class="summary line-clamp-2">{g.excerpt}</p>}
+              <div class="tags">
+                <span class="chip-mini">{g.source}</span>
+                {g.event_type && <span class={`chip-mini evt-${g.event_type}`}>{g.event_type}</span>}
+                {g.tickers.slice(0, 5).map((t) => (
+                  <a href={`/stocks/${t}`} class="chip-mini ticker mono">{t}</a>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <aside>
+      <article class="glass bento mb-4">
+        <header class="bento-head">
+          <h2 class="bento-title">Per-ticker 聚合</h2>
+          <span class="bento-link mono">{tickers.length}</span>
+        </header>
+        <div class="lb">
+          {tickers.map((t, i) => (
+            <a class="lb-row" href={`/stocks/${t}`}>
+              <span class="rank mono">#{(i + 1).toString().padStart(2, "0")}</span>
+              <span class="name mono"><strong>{t}</strong></span>
+              <span class="v">{byTicker[t].length} 條</span>
+            </a>
+          ))}
+        </div>
+      </article>
+
+      <article class="glass bento">
+        <header class="bento-head">
+          <h2 class="bento-title">SEC Filing 摘錄</h2>
+          <span class="bento-link mono">{filings.length}</span>
+        </header>
+        <div class="space-y-3">
+          {filings.length === 0 ? (
+            <p class="muted text-sm">（暫無 — 需 SEC ingest）</p>
+          ) : (
+            filings.map((f) => (
+              <div style="border-top: 1px solid var(--border-base); padding-top: 10px;">
+                <div style="display:flex; align-items:baseline; gap:6px; flex-wrap:wrap; margin-bottom:4px;">
+                  <a href={`/stocks/${f.ticker}`} class="mono" style="color: var(--accent-strong); font-weight: 500;">{f.ticker}</a>
+                  <span class="muted-2 mono" style="font-size: 10px;">{f.form_type} · {f.fiscal_year}{f.fiscal_period}</span>
+                </div>
+                <p style="font-size: 11.5px; line-height: 1.55; color: var(--fg-300); margin: 0;" class="line-clamp-4">
+                  {f.excerpt}
+                </p>
+              </div>
+            ))
+          )}
+        </div>
+      </article>
+    </aside>
+  </div>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bar = document.getElementById("filter-bar");
+      const items = Array.from(document.querySelectorAll("#feed .tl-item"));
+      if (!bar) return;
+      bar.addEventListener("click", (ev) => {
+        const t = ev.target;
+        if (!(t instanceof HTMLElement) || !t.matches(".fbtn")) return;
+        const want = t.getAttribute("data-dir") || "";
+        bar.querySelectorAll(".fbtn").forEach((b) => b.removeAttribute("data-active"));
+        t.setAttribute("data-active", "true");
+        items.forEach((el) => {
+          const dir = el.getAttribute("data-dir") || "";
+          el.style.display = !want || dir === want ? "" : "none";
+        });
+      });
+    });
+  </script>
+</Base>

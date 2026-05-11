@@ -7,13 +7,12 @@ interface Props {
 }
 const { title = "投資決策 Dashboard", active = "home" } = Astro.props;
 const nav = [
-  { id: "home", href: "/", label: "總覽" },
-  { id: "screens", href: "/screens", label: "Screen" },
-  { id: "themes", href: "/themes", label: "主題" },
+  { id: "home", href: "/", label: "Guidance" },
+  { id: "guidance", href: "/guidance", label: "Feed" },
   { id: "news", href: "/news", label: "新聞" },
-  { id: "calendar", href: "/calendar", label: "月曆" },
-  { id: "coverage", href: "/coverage", label: "覆蓋" },
+  { id: "calendar", href: "/calendar", label: "事件" },
   { id: "decisions", href: "/decisions", label: "日誌" },
+  { id: "explore", href: "/explore", label: "探索" },
 ];
 ---
 <!doctype html>
