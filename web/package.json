@@ -1,0 +1,19 @@
+{
+  "name": "daily-news-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@tailwindcss/vite": "^4.1.16",
+    "astro": "^5.10.2",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.7.2"
+  }
+}

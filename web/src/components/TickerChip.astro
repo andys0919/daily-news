@@ -1,0 +1,11 @@
+---
+interface Props { ticker: string; market?: "tw" | "us" | null }
+const { ticker, market = null } = Astro.props;
+const marketStr = (market ?? (ticker.match(/^\d+$/) ? "tw" : "us"));
+const cls = marketStr === "tw"
+  ? "bg-bg-800 text-accent-400 border-accent-500/40"
+  : "bg-bg-800 text-amber-300 border-amber-500/40";
+---
+<span class={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs mono ${cls}`}>
+  <a href={`/stocks/${ticker.toUpperCase()}`}>{ticker.toUpperCase()}</a>
+</span>
