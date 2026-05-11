@@ -1,0 +1,48 @@
+{
+  "ticker": "AAPL",
+  "market": "us",
+  "generated_at": "2026-05-10T00:00:00Z",
+  "bundle": {
+    "market": "us",
+    "ticker": "AAPL",
+    "company_name": "Apple Inc.",
+    "quarterly": {
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "revenue": 95000000000.0,
+      "eps_diluted": 1.65,
+      "free_cash_flow": 28000000000.0,
+      "guidance_summary": "iPhone refresh cycle into FY27 Q1",
+      "filing_excerpt": ""
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": {
+      "count": 1,
+      "buys": 0,
+      "sells": 1,
+      "latest": {
+        "insider_name": "Cook Timothy D",
+        "transaction_type": "S",
+        "shares": 10000,
+        "price": 180.5
+      }
+    },
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [
+    {
+      "insider_name": "Cook Timothy D",
+      "transaction_type": "S",
+      "shares": 10000,
+      "price": 180.5,
+      "transaction_date": "2026-04-15"
+    }
+  ],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": []
+}

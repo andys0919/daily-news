@@ -1,0 +1,41 @@
+{
+  "ticker": "NVDA",
+  "market": "us",
+  "generated_at": "2026-05-10T00:00:00Z",
+  "bundle": {
+    "market": "us",
+    "ticker": "NVDA",
+    "company_name": "NVIDIA",
+    "quarterly": {
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 30000000000.0,
+      "eps_diluted": 3.14,
+      "free_cash_flow": 13500000000.0,
+      "guidance_summary": "FY26 Q2 guide $32B revenue; data center mid-50% growth",
+      "filing_excerpt": ""
+    },
+    "monthly_revenue": null,
+    "latest_transcript": {
+      "title": "NVDA Q1 transcript",
+      "body_text": "Blackwell ramp drives data center revenue. Inference workloads accelerating. Sovereign AI emerging as new demand axis.",
+      "material_type": "transcript"
+    },
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "NVIDIA sets new AI compute record",
+      "link": "https://example.com/n1",
+      "source": "CNBC",
+      "published": "2026-05-09T00:00:00Z"
+    }
+  ]
+}

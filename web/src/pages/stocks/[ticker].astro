@@ -1,0 +1,97 @@
+---
+import Base from "../../layouts/Base.astro";
+import BentoCard from "../../components/BentoCard.astro";
+import TickerChip from "../../components/TickerChip.astro";
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob("../../data/stocks/*.json", { eager: true });
+  return Object.entries(modules).map(([file, mod]) => {
+    const m = mod as { default: any };
+    const ticker = file.split("/").pop()!.replace(".json", "");
+    return { params: { ticker }, props: { data: m.default } };
+  });
+}
+
+const { data } = Astro.props;
+const bundle = data.bundle ?? null;
+const quarterly = bundle?.quarterly ?? null;
+const monthly = bundle?.monthly_revenue ?? null;
+---
+<Base title={`${data.ticker} 個股深度`}>
+  <header class="mb-6 flex items-baseline gap-3 flex-wrap">
+    <h1 class="text-3xl font-semibold mono">{data.ticker}</h1>
+    <span class="text-sm opacity-70">{bundle?.company_name ?? ""}</span>
+    <span class="text-xs opacity-60 mono ml-auto">data @ {data.generated_at}</span>
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <BentoCard title="官方財報" span="2">
+      {quarterly ? (
+        <ul class="space-y-1 text-sm">
+          <li>FY{quarterly.fiscal_year} {quarterly.fiscal_period} | {quarterly.form_type}</li>
+          {quarterly.revenue && <li>營收 <span class="mono">${(quarterly.revenue / 1e9).toFixed(1)}B</span></li>}
+          {quarterly.eps_diluted != null && <li>EPS <span class="mono">{quarterly.eps_diluted.toFixed(2)}</span></li>}
+          {quarterly.free_cash_flow && <li>FCF <span class="mono">${(quarterly.free_cash_flow / 1e9).toFixed(1)}B</span></li>}
+          {quarterly.guidance_summary && <li class="opacity-80">Guidance：{quarterly.guidance_summary}</li>}
+        </ul>
+      ) : <p class="opacity-60 text-sm">（暫無官方財報資料）</p>}
+      {monthly && monthly.monthly_revenue && (
+        <p class="text-xs opacity-70 mt-2 mono">
+          {monthly.fiscal_period} 月營收 ${(monthly.monthly_revenue / 1e9).toFixed(1)}B
+        </p>
+      )}
+    </BentoCard>
+
+    <BentoCard title="最新法說會">
+      {bundle?.latest_transcript ? (
+        <div class="text-sm space-y-1">
+          <p class="font-medium">{bundle.latest_transcript.title}</p>
+          <p class="opacity-80 line-clamp-4">{bundle.latest_transcript.body_text}</p>
+        </div>
+      ) : <p class="opacity-60 text-sm">（暫無）</p>}
+    </BentoCard>
+
+    <BentoCard title="近期內部人交易" span="1">
+      {(data.insider ?? []).length === 0
+        ? (<p class="opacity-60 text-sm">（暫無）</p>)
+        : (
+          <ul class="space-y-1 text-sm">
+            {(data.insider ?? []).slice(0, 5).map((i: any) => (
+              <li class="mono">
+                <span class={i.transaction_type === "S" ? "delta-down" : "delta-up"}>{i.transaction_type}</span>
+                {" "}{i.shares.toLocaleString()} @ ${i.price.toFixed(2)}
+              </li>
+            ))}
+          </ul>
+        )}
+    </BentoCard>
+
+    <BentoCard title="融券 / ETF 流向" span="1">
+      {bundle?.short_interest
+        ? (<p class="text-sm mono">融券餘額 {bundle.short_interest.short_interest.toLocaleString()} | 券資比 {(bundle.short_interest.short_interest_ratio * 100).toFixed(1)}%</p>)
+        : (<p class="opacity-60 text-sm">（暫無）</p>)}
+    </BentoCard>
+
+    <BentoCard title="13F 機構動向" span="1">
+      {bundle?.latest_13f
+        ? (<p class="text-sm">{bundle.latest_13f.reporter_name} 持有 {bundle.latest_13f.shares.toLocaleString()} 股</p>)
+        : (<p class="opacity-60 text-sm">（暫無）</p>)}
+    </BentoCard>
+
+    <BentoCard title="相關新聞" span="3" href="/news">
+      {(data.recent_news ?? []).length === 0
+        ? (<p class="opacity-60 text-sm">（暫無相關新聞）</p>)
+        : (
+          <ul class="space-y-1 text-sm">
+            {(data.recent_news ?? []).slice(0, 10).map((n: any) => (
+              <li class="flex gap-3 items-baseline">
+                <span class="opacity-60 mono text-xs shrink-0">{(n.published ?? "").slice(0, 10)}</span>
+                <a href={n.link} class="opacity-90 hover:opacity-100 truncate">{n.title}</a>
+                <span class="ml-auto text-xs opacity-50">{n.source}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+    </BentoCard>
+  </div>
+</Base>

@@ -1,0 +1,33 @@
+{
+  "ticker": "2330",
+  "market": "tw",
+  "generated_at": "2026-05-10T00:00:00Z",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2330",
+    "company_name": "台積電",
+    "quarterly": {
+      "form_type": "MOPS-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 750000000000.0,
+      "eps_diluted": 13.5,
+      "free_cash_flow": 280000000000.0,
+      "guidance_summary": "2026 Q2 USD 營收 28-29B；HPC 比重續升",
+      "filing_excerpt": ""
+    },
+    "monthly_revenue": {
+      "fiscal_period": "2026-04",
+      "monthly_revenue": 295000000000.0
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": []
+}
