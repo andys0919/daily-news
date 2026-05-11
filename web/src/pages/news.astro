@@ -1,41 +1,88 @@
 ---
 import Base from "../layouts/Base.astro";
-import TickerChip from "../components/TickerChip.astro";
 import news from "../data/news.json";
 
-const articles = (news.articles ?? []) as Array<any>;
+interface Article {
+  title: string;
+  link: string;
+  source: string;
+  category: string;
+  published: string;
+  summary?: string;
+  tickers?: string[];
+  companies?: string[];
+  event_type?: string;
+}
+
+const articles = (news.articles ?? []) as Article[];
 const categories = Array.from(new Set(articles.map((a) => a.category))).filter(Boolean) as string[];
+
+function dayStamp(iso: string | undefined): string {
+  if (!iso) return "";
+  return iso.slice(0, 10);
+}
+function timeStamp(iso: string | undefined): string {
+  if (!iso) return "";
+  return iso.slice(11, 16);
+}
 ---
-<Base title="新聞 — 投資決策 Dashboard">
-  <header class="mb-6 flex items-baseline justify-between">
-    <h1 class="text-3xl font-semibold tracking-tight">新聞</h1>
-    <span class="text-xs opacity-60 mono">{articles.length} 篇</span>
-  </header>
-
-  <details class="glass rounded-xl px-4 py-3 mb-4 text-sm">
-    <summary class="cursor-pointer opacity-80">分類過濾</summary>
-    <div class="flex flex-wrap gap-2 mt-3">
-      {categories.map((c) => (
-        <a href={`#${encodeURIComponent(c)}`} class="px-2 py-1 rounded-md border border-white/10 text-xs opacity-80 hover:opacity-100">
-          {c}
-        </a>
-      ))}
+<Base title="新聞時間軸 — 投資 dashboard" active="news">
+  <section class="hero">
+    <div>
+      <span class="live"><span class="live-dot"></span>{articles.length} 篇</span>
+      <h1 class="mt-2">新聞 <span class="accent">時間軸</span></h1>
+      <p class="hero-sub">最新 {articles.length} 篇，由 daily-news 自動分類 / 萃取 ticker / event_type。</p>
     </div>
-  </details>
+  </section>
 
-  <ul class="space-y-2">
-    {articles.map((a) => (
-      <li class="glass rounded-xl p-4">
-        <div class="flex flex-wrap items-baseline gap-2">
-          <a href={a.link} class="font-medium hover:underline">{a.title}</a>
-          {(a.tickers ?? []).map((t: string) => <TickerChip ticker={t} />)}
-          <span class="ml-auto text-xs opacity-60 mono">
-            {(a.published ?? "").slice(0, 16).replace("T", " ")} | {a.source}
-          </span>
-        </div>
-        {a.summary && <p class="opacity-70 text-sm mt-2 line-clamp-2">{a.summary}</p>}
-        <div class="text-xs opacity-50 mt-2">{a.category}{a.event_type ? ` · ${a.event_type}` : ""}</div>
-      </li>
+  <div class="filters" id="filter-bar">
+    <button class="fbtn" data-cat="" data-active="true">全部 · {articles.length}</button>
+    {categories.map((c) => (
+      <button class="fbtn" data-cat={c}>{c}</button>
     ))}
-  </ul>
+  </div>
+
+  <div class="timeline" id="timeline">
+    {articles.map((a) => (
+      <article class="tl-item" data-cat={a.category} data-evt={a.event_type ?? ""}>
+        <div class="tl-stamp">
+          <div>{dayStamp(a.published)}</div>
+          <div class="muted-2">{timeStamp(a.published)}</div>
+        </div>
+        <div class="tl-body">
+          <div class="h">
+            <a href={a.link} target="_blank" rel="noopener"><strong>{a.title}</strong></a>
+            <span class="muted-2 mono" style="font-size:11px;">· {a.source}</span>
+          </div>
+          {a.summary && <p class="summary line-clamp-2">{a.summary}</p>}
+          <div class="tags">
+            {a.category && <span class="chip-mini">{a.category}</span>}
+            {a.event_type && <span class={`chip-mini evt-${a.event_type}`}>{a.event_type}</span>}
+            {(a.tickers ?? []).slice(0, 5).map((t) => (
+              <a href={`/stocks/${t}`} class="chip-mini ticker mono">{t}</a>
+            ))}
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bar = document.getElementById("filter-bar");
+      const items = Array.from(document.querySelectorAll("#timeline .tl-item"));
+      if (!bar) return;
+      bar.addEventListener("click", (ev) => {
+        const target = ev.target;
+        if (!(target instanceof HTMLElement) || !target.matches(".fbtn")) return;
+        const want = target.getAttribute("data-cat") || "";
+        bar.querySelectorAll(".fbtn").forEach((b) => b.removeAttribute("data-active"));
+        target.setAttribute("data-active", "true");
+        items.forEach((el) => {
+          const cat = el.getAttribute("data-cat") || "";
+          el.style.display = !want || cat === want ? "" : "none";
+        });
+      });
+    });
+  </script>
 </Base>

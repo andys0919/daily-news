@@ -1,0 +1,1805 @@
+{
+  "generated_at": "2026-05-11T02:39:53Z",
+  "coverage": [
+    {
+      "ticker": "2024",
+      "market": "tw",
+      "articles": 0,
+      "reports": 35
+    },
+    {
+      "ticker": "2025",
+      "market": "tw",
+      "articles": 0,
+      "reports": 28
+    },
+    {
+      "ticker": "2023",
+      "market": "tw",
+      "articles": 0,
+      "reports": 24
+    },
+    {
+      "ticker": "2330",
+      "market": "tw",
+      "articles": 918,
+      "reports": 21
+    },
+    {
+      "ticker": "2020",
+      "market": "tw",
+      "articles": 0,
+      "reports": 17
+    },
+    {
+      "ticker": "2015",
+      "market": "tw",
+      "articles": 0,
+      "reports": 14
+    },
+    {
+      "ticker": "2022",
+      "market": "tw",
+      "articles": 0,
+      "reports": 13
+    },
+    {
+      "ticker": "2014",
+      "market": "tw",
+      "articles": 0,
+      "reports": 12
+    },
+    {
+      "ticker": "2028",
+      "market": "tw",
+      "articles": 0,
+      "reports": 12
+    },
+    {
+      "ticker": "2017",
+      "market": "tw",
+      "articles": 0,
+      "reports": 11
+    },
+    {
+      "ticker": "2317",
+      "market": "tw",
+      "articles": 360,
+      "reports": 10
+    },
+    {
+      "ticker": "2454",
+      "market": "tw",
+      "articles": 322,
+      "reports": 10
+    },
+    {
+      "ticker": "2027",
+      "market": "tw",
+      "articles": 0,
+      "reports": 10
+    },
+    {
+      "ticker": "2030",
+      "market": "tw",
+      "articles": 0,
+      "reports": 9
+    },
+    {
+      "ticker": "2010",
+      "market": "tw",
+      "articles": 0,
+      "reports": 8
+    },
+    {
+      "ticker": "2012",
+      "market": "tw",
+      "articles": 0,
+      "reports": 8
+    },
+    {
+      "ticker": "2006",
+      "market": "tw",
+      "articles": 0,
+      "reports": 6
+    },
+    {
+      "ticker": "2009",
+      "market": "tw",
+      "articles": 0,
+      "reports": 6
+    },
+    {
+      "ticker": "2013",
+      "market": "tw",
+      "articles": 0,
+      "reports": 6
+    },
+    {
+      "ticker": "2029",
+      "market": "tw",
+      "articles": 0,
+      "reports": 6
+    },
+    {
+      "ticker": "2002",
+      "market": "tw",
+      "articles": 0,
+      "reports": 5
+    },
+    {
+      "ticker": "2007",
+      "market": "tw",
+      "articles": 0,
+      "reports": 5
+    },
+    {
+      "ticker": "GOOGL",
+      "market": "us",
+      "articles": 962,
+      "reports": 3
+    },
+    {
+      "ticker": "AAPL",
+      "market": "us",
+      "articles": 356,
+      "reports": 3
+    },
+    {
+      "ticker": "2308",
+      "market": "tw",
+      "articles": 2,
+      "reports": 3
+    },
+    {
+      "ticker": "6789",
+      "market": "tw",
+      "articles": 2,
+      "reports": 3
+    },
+    {
+      "ticker": "4949",
+      "market": "tw",
+      "articles": 1,
+      "reports": 3
+    },
+    {
+      "ticker": "2033",
+      "market": "tw",
+      "articles": 0,
+      "reports": 3
+    },
+    {
+      "ticker": "META",
+      "market": "us",
+      "articles": 575,
+      "reports": 2
+    },
+    {
+      "ticker": "MSFT",
+      "market": "us",
+      "articles": 381,
+      "reports": 2
+    },
+    {
+      "ticker": "AMZN",
+      "market": "us",
+      "articles": 342,
+      "reports": 2
+    },
+    {
+      "ticker": "TSLA",
+      "market": "us",
+      "articles": 256,
+      "reports": 2
+    },
+    {
+      "ticker": "2031",
+      "market": "tw",
+      "articles": 0,
+      "reports": 2
+    },
+    {
+      "ticker": "NVDA",
+      "market": "us",
+      "articles": 619,
+      "reports": 1
+    },
+    {
+      "ticker": "JPM",
+      "market": "us",
+      "articles": 58,
+      "reports": 1
+    },
+    {
+      "ticker": "AMD",
+      "market": "us",
+      "articles": 6,
+      "reports": 1
+    },
+    {
+      "ticker": "BTC",
+      "market": "us",
+      "articles": 6,
+      "reports": 1
+    },
+    {
+      "ticker": "AVGO",
+      "market": "us",
+      "articles": 5,
+      "reports": 1
+    },
+    {
+      "ticker": "INTC",
+      "market": "us",
+      "articles": 2,
+      "reports": 1
+    },
+    {
+      "ticker": "APO",
+      "market": "us",
+      "articles": 1,
+      "reports": 1
+    },
+    {
+      "ticker": "ACHC",
+      "market": "us",
+      "articles": 0,
+      "reports": 1
+    },
+    {
+      "ticker": "CGON",
+      "market": "us",
+      "articles": 0,
+      "reports": 1
+    },
+    {
+      "ticker": "GLW",
+      "market": "us",
+      "articles": 0,
+      "reports": 1
+    },
+    {
+      "ticker": "IREN",
+      "market": "us",
+      "articles": 0,
+      "reports": 1
+    },
+    {
+      "ticker": "TWST",
+      "market": "us",
+      "articles": 0,
+      "reports": 1
+    },
+    {
+      "ticker": "2604",
+      "market": "tw",
+      "articles": 457,
+      "reports": 0
+    },
+    {
+      "ticker": "TSM",
+      "market": "us",
+      "articles": 131,
+      "reports": 0
+    },
+    {
+      "ticker": "2605",
+      "market": "tw",
+      "articles": 104,
+      "reports": 0
+    },
+    {
+      "ticker": "BLSH",
+      "market": "us",
+      "articles": 92,
+      "reports": 0
+    },
+    {
+      "ticker": "2603",
+      "market": "tw",
+      "articles": 70,
+      "reports": 0
+    },
+    {
+      "ticker": "5070",
+      "market": "tw",
+      "articles": 39,
+      "reports": 0
+    },
+    {
+      "ticker": "BRK-B",
+      "market": "us",
+      "articles": 35,
+      "reports": 0
+    },
+    {
+      "ticker": "5090",
+      "market": "tw",
+      "articles": 33,
+      "reports": 0
+    },
+    {
+      "ticker": "6000",
+      "market": "tw",
+      "articles": 31,
+      "reports": 0
+    },
+    {
+      "ticker": "2035",
+      "market": "tw",
+      "articles": 27,
+      "reports": 0
+    },
+    {
+      "ticker": "1000",
+      "market": "tw",
+      "articles": 25,
+      "reports": 0
+    },
+    {
+      "ticker": "1979",
+      "market": "tw",
+      "articles": 24,
+      "reports": 0
+    },
+    {
+      "ticker": "5060",
+      "market": "tw",
+      "articles": 19,
+      "reports": 0
+    },
+    {
+      "ticker": "1973",
+      "market": "tw",
+      "articles": 14,
+      "reports": 0
+    },
+    {
+      "ticker": "1980",
+      "market": "tw",
+      "articles": 14,
+      "reports": 0
+    },
+    {
+      "ticker": "5080",
+      "market": "tw",
+      "articles": 14,
+      "reports": 0
+    },
+    {
+      "ticker": "3090",
+      "market": "tw",
+      "articles": 13,
+      "reports": 0
+    },
+    {
+      "ticker": "1989",
+      "market": "tw",
+      "articles": 12,
+      "reports": 0
+    },
+    {
+      "ticker": "1982",
+      "market": "tw",
+      "articles": 12,
+      "reports": 0
+    },
+    {
+      "ticker": "MU",
+      "market": "us",
+      "articles": 11,
+      "reports": 0
+    },
+    {
+      "ticker": "1974",
+      "market": "tw",
+      "articles": 11,
+      "reports": 0
+    },
+    {
+      "ticker": "2881",
+      "market": "tw",
+      "articles": 11,
+      "reports": 0
+    },
+    {
+      "ticker": "4096",
+      "market": "tw",
+      "articles": 11,
+      "reports": 0
+    },
+    {
+      "ticker": "9070",
+      "market": "tw",
+      "articles": 10,
+      "reports": 0
+    },
+    {
+      "ticker": "1956",
+      "market": "tw",
+      "articles": 10,
+      "reports": 0
+    },
+    {
+      "ticker": "2048",
+      "market": "tw",
+      "articles": 10,
+      "reports": 0
+    },
+    {
+      "ticker": "1969",
+      "market": "tw",
+      "articles": 10,
+      "reports": 0
+    },
+    {
+      "ticker": "2955",
+      "market": "tw",
+      "articles": 10,
+      "reports": 0
+    },
+    {
+      "ticker": "8000",
+      "market": "tw",
+      "articles": 9,
+      "reports": 0
+    },
+    {
+      "ticker": "1024",
+      "market": "tw",
+      "articles": 9,
+      "reports": 0
+    },
+    {
+      "ticker": "1988",
+      "market": "tw",
+      "articles": 9,
+      "reports": 0
+    },
+    {
+      "ticker": "3060",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "6400",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "1972",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "2040",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "1981",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "1976",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "1500",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "5000",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "8080",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "1971",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "3000",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0
+    },
+    {
+      "ticker": "1987",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "4090",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "9600",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "2050",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "1985",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "1975",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "1983",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "1930",
+      "market": "tw",
+      "articles": 7,
+      "reports": 0
+    },
+    {
+      "ticker": "2600",
+      "market": "tw",
+      "articles": 6,
+      "reports": 0
+    },
+    {
+      "ticker": "1950",
+      "market": "tw",
+      "articles": 6,
+      "reports": 0
+    },
+    {
+      "ticker": "0050",
+      "market": "tw",
+      "articles": 6,
+      "reports": 0
+    },
+    {
+      "ticker": "1984",
+      "market": "tw",
+      "articles": 6,
+      "reports": 0
+    },
+    {
+      "ticker": "HBM",
+      "market": "us",
+      "articles": 6,
+      "reports": 0
+    },
+    {
+      "ticker": "1945",
+      "market": "tw",
+      "articles": 6,
+      "reports": 0
+    },
+    {
+      "ticker": "1986",
+      "market": "tw",
+      "articles": 6,
+      "reports": 0
+    },
+    {
+      "ticker": "9000",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1947",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1951",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1933",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1800",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1940",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1960",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1970",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "8647",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "6488",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0
+    },
+    {
+      "ticker": "1957",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1952",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1942",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1941",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1961",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "9005",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1964",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "0500",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "8004",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "9100",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1968",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1967",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1931",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "0056",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "2303",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1958",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1954",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1962",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "4060",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1963",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "4000",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1934",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1978",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
+      "ticker": "1944",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "2142",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "HOME",
+      "market": "us",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1899",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "4070",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "3200",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "9755",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "3081",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "2409",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1949",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "4050",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1948",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1939",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1900",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "ASML",
+      "market": "us",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1200",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "S",
+      "market": "us",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1965",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "2036",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1943",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1789",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1953",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1895",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "1935",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "2700",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "2408",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "SMCI",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2038",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1917",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1778",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "ETH",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1902",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "9004",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "MRVL",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2404",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1977",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "AEHR",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "8800",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2323",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "4500",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "O",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2150",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "6700",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2383",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1400",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1457",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "3600",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1234",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1100",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "5289",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2345",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2500",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "3481",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "3491",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "0528",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2360",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2451",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1101",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1314",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2512",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "4443",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "4444",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1922",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1920",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "6500",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "5500",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1924",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "9996",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "8192",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1938",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2560",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1080",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "4005",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1925",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "3494",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1600",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1099",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2229",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1966",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "5050",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "9222",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1929",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "9999",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1700",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "9060",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1599",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2077",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "8358",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2045",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2230",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2242",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2280",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1911",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "3070",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "TRUMP",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "6669",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1504",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "7900",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1936",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2504",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2049",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "1126",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "5515",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "7000",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "2428",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "PLTR",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "CRWV",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "UBER",
+      "market": "us",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "6600",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "5002",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "0225",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1260",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1871",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2701",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2260",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "5600",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1650",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "4415",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "3042",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "NAKA",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "DELL",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "HPQ",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "EQIX",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "DLR",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "HYNSE",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "SMSD",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "ZMIC",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1910",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1096",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2278",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2406",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2405",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2312",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "5173",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "6805",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "3017",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "6223",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "4680",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2502",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1837",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1905",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1776",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1775",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "8044",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "3231",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "3665",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1872",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1881",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1901",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1109",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2307",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2306",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "9300",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1422",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "C",
+      "market": "us",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "9500",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "3610",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "8005",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2463",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1148",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1632",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "9061",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "8194",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "2693",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    },
+    {
+      "ticker": "1001",
+      "market": "tw",
+      "articles": 1,
+      "reports": 0
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "ticker": "TSM",
+  "market": "us",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Qualcomm Weighs AI Upside As Apple Locks In TSMC 2nm Supply - simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNUw0dmMwZlIwckZFYWR1X3Y5NHRLeDg4aUpGcU5jdWwxZUNEMTc4aXlzWHo3b1JTam9mNXFVUEthUENSY0FIZ3JNcnF3TjJiQmJ0U0RsWWNzd2xtRzRsUF9nMk5CdXBDZ0JnMmNBUHpKR3RUb2VCbUYyUVZpTUE4RkpCbU9Tc2Z4QVpqaFRzdU9rTUg3clVzdHptVVU1UVV5aFFsNVIwR2NoZnZsMkQtZ2NMY1JFZE9ucGxkeUx1dEwzbkFVUEtoUHlzOWHSAdIBQVVfeXFMUHJWWmtRbVA4UWJUTlBxV0ZOMnRqSU9oTHBvRk5GSk96ME0yOTBfUVI1M3NOT0VKNnRqdFU2eXBmbFZjUE9aWnpYbHRLUDhUWHI5bTBIdGtDLTJULXgtbTNnR0xzMmRSbGkybE1IVkZ0ZlR2TXpoMWpWR2VaZ2Ryb0tTLU1hVTZWU2s4d1NrRnpSaW50T1NmcFNRZy1xNV9sSE9iSTg1MHAwRFhtYTVzRklYb01PdzhWNzFWa21DeVJHd2NZLXRIbWhPcjUxTTNDblVn?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T15:06:54+08:00",
+      "summary": "Qualcomm Weighs AI Upside As Apple Locks In TSMC 2nm Supply&nbsp;&nbsp;simplywall.st",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL",
+        "TSM"
+      ],
+      "companies": [
+        "Apple",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking",
+      "link": "https://www.cnbc.com/2026/05/08/intel-stock-apple-chip-deal.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T06:18:30+08:00",
+      "summary": "Samsung, Intel and Taiwan Semiconductor are the only three companies in the world capable of manufacturing the most advanced chips needed for AI.",
+      "event_type": "news",
+      "publisher": "CNBC",
+      "author": "Katie Tarasov",
+      "tickers": [
+        "AAPL",
+        "TSM",
+        "NVDA"
+      ],
+      "companies": [
+        "Apple",
+        "TSMC",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "Intel’s comeback story is even wilder than it seems",
+      "link": "https://techcrunch.com/2026/05/08/intels-comeback-story-is-even-wilder-than-it-seems",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T04:02:52+08:00",
+      "summary": "Intel's stock has risen a stunning 490% over the past year, a bet by Wall Street that may be running well ahead of the company's actual turnaround.",
+      "event_type": "news",
+      "publisher": "TechCrunch",
+      "author": "Connie Loizos",
+      "tickers": [
+        "AAPL",
+        "TSLA",
+        "TSM"
+      ],
+      "companies": [
+        "Apple",
+        "Tesla",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Broadcom exec says Taiwan Semiconductor is reaching capacity limits - report - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxPZkJ3WTNtelNuMHYzTi1LX3FVdUswOFFwOU54aDRNTFJuVU9HUWY0TmVXVHdvTjFzcHRKSlRpMlJYYklqMjN1aEJIX2d0Zk5ORmpyVjl3clhnOVFUZW5KLWw3X0RZWHV1M0s5OVp4MmZ5S1E3UXMydk5SRzlDUU9EX002RDUxRlNIV0hudlV5U3JZbUpXR2ZpSUJkNTB5U0tOeW5GTGlWQXRMcWlsay1SZm43MUpKajQtY0puY08xRVM3UUluQ1g3Mzc2eE5hWVRmaHVRbHZGQUJ6T2UzakxMVTFJd1p3ZlpDTVpJR2NUSHd5ODRySEI4NFFSbzRzeTZCZFBlT2M4elVKOVJ3RndTWWxaU25hbFJXSlNrSTh2QjlBUFVPUmRYMFBWOWpReWpwRHVVdlcxTEttMkIyRXRNUThxeGdqbk9vYmsxc1BpNTNvdUxZcExHRnZsWQ?oc=5",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T18:17:24+08:00",
+      "summary": "Broadcom exec says Taiwan Semiconductor is reaching capacity limits - report&nbsp;&nbsp;MSN",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Zacks Investment Ideas feature highlights: Broadcom, Taiwan Semiconductor and NVIDIA - The Globe and Mail",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPMEs4MHVHQUNEWlo4YWVZd3pwdGZWcnV1OVFYYjd4a253X0JmUjlYclphSmU1TnJRZi1vOVdYYTVtWXktY3VTU2Vtb3dOMnYxbUloc05HOG9vZjdpRG8wWV9Fc1NuRVJvMWlkdlM5Xy1UM0toZlY4bkstdkJ4c3pkVlhmZXdhSW05cDNvWmhRdFp5bXF3UUZRczBoNWs2Y1VPMHRUb29ueVEzT1ZEY25falNoQy14dzV6RWY1Z25YVXFHbS0wRHBocGhBUmhWLTJDVVJtSWVmRFAtZEM1WFEyQzAtYVA2dElseUsxcV91UkcyR2VIQWc4YkM2WQ?oc=5",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T16:22:28+08:00",
+      "summary": "Zacks Investment Ideas feature highlights: Broadcom, Taiwan Semiconductor and NVIDIA&nbsp;&nbsp;The Globe and Mail",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "TSM",
+        "NVDA"
+      ],
+      "companies": [
+        "TSMC",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "TSMC reportedly pushes CoPoS exclusivity to lock in next-gen packaging lead - digitimes",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOb2VQcV9GcDh3Vzg0aG1xQXVaMlFrczlSYUZ0Q0pnYTdXNUdaSndEemNGVnlDY1NhNThUdVhjcnRaclpsM2twN0lZZmYzLU0tcnAyN0g1SXJkcDlGZm1wUURVOEFDbW9ZVW9CWWZwRU53U2JJRzh5LUxsVDRZbUxnOE9LTnBJRHhrZ3I0UFZibVVILTVQ?oc=5",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T15:49:55+08:00",
+      "summary": "TSMC reportedly pushes CoPoS exclusivity to lock in next-gen packaging lead&nbsp;&nbsp;digitimes",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Chip Industry Week In Review",
+      "link": "https://semiengineering.com/chip-industry-week-in-review-137",
+      "source": "Semiconductor Engineering",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T15:01:11+08:00",
+      "summary": "New Taiwan adv. packaging site; M&#038;A activity; GF's CPO solution; Apple looks beyond TSMC; EU chip companies map; strong earnings; MIT's new lidar chip; gallium production; AI inferencing at sea; quantum HW funding; PCIe 7 tool; home data centers; AI security warnings; temperature impact on EVs. The post Chip Industry Week In Review appeared first on Semiconductor Engineering.",
+      "event_type": "earnings",
+      "publisher": "Semiconductor Engineering",
+      "author": "The SE Staff",
+      "tickers": [
+        "AAPL",
+        "TSM",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "TSMC",
+        "Meta"
+      ]
+    },
+    {
+      "title": "Capacity Cuts and Surging Demand for AI Power ICs Set Stage for Mature-Node Foundry Price Increases, Says TrendForce",
+      "link": "https://www.trendforce.com/presscenter/news/20260507-13036.html",
+      "source": "TrendForce 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T14:32:43+08:00",
+      "summary": "The average 8-inch capacity utilization rate among the world’s top 10 foundries is projected to approach 90% in 2026, and remain above 80% through 1H27. Foundries are reallocating 8-inch and 12-inch mature-node capacity toward power-related processes to improve ASP and profitability, benefiting Chinese foundries through order spillover. TSMC’s planned reduction in 12-inch mature-node capacity may further drive order redistribution, creating opportunities for Tier 2 foundries to raise prices.",
+      "event_type": "news",
+      "publisher": "TrendForce",
+      "author": "TrendForce",
+      "tickers": [
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ]
+    }
+  ],
+  "history": [],
+  "co_mentions": [
+    {
+      "ticker": "AAPL",
+      "count": 4
+    },
+    {
+      "ticker": "NVDA",
+      "count": 2
+    },
+    {
+      "ticker": "TSLA",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T02:39:53Z"
+}

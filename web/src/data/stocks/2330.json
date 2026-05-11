@@ -1,24 +1,67 @@
 {
   "ticker": "2330",
   "market": "tw",
-  "generated_at": "2026-05-10T00:00:00Z",
   "bundle": {
     "market": "tw",
     "ticker": "2330",
     "company_name": "台積電",
     "quarterly": {
+      "market": "tw",
+      "ticker": "2330",
+      "company_name": "台積電",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
       "form_type": "MOPS-Q",
-      "fiscal_year": 2026,
-      "fiscal_period": "Q1",
-      "revenue": 750000000000.0,
-      "eps_diluted": 13.5,
-      "free_cash_flow": 280000000000.0,
-      "guidance_summary": "2026 Q2 USD 營收 28-29B；HPC 比重續升",
-      "filing_excerpt": ""
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1715396780.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": 2274975625.0,
+      "capex": 1272410529.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業收入合計\", \"3,809,054,272\", \"100.00\", \"2,894,307,699\", \"100.00\"], [\"營業成本合計\", \"1,527,760,293\", \"40.11\", \"1,269,954,135\", \"43.88\"], [\"營業毛利（毛損）\", \"2,281,293,979\", \"59.89\", \"1,624,353,564\", \"56.12\"], [\"營業毛利（毛損）淨額\", \"2,281,293,979\", \"59.89\", \"1,624,353,564\", \"56.12\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"16,918,076\", \"0.44\", \"13,143,524\", \"0.45\"], [\"　　管理費用\", \"82,304,290\", \"2.16\", \"83,744,968\", \"2.89\"], [\"　　研究發展費用\", \"246,427,264\", \"6.47\", \"204,181,823\", \"7.05\"], [\"　營業費用合計\", \"345,649,630\", \"9.07\", \"301,070,315\", \"10.40\"], [\"其他收益及費損淨額\", \"\", \"\", \"\", \"\"], [\"　其他收益及費損淨額\", \"447,328\", \"0.01\", \"-1,230,199\", \"-0.04\"], [\"營業利益（損失）\", \"1,936,091,677\", \"50.83\", \"1,322,053,050\", \"45.68\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"105,739,081\", \"2.78\", \"87,213,399\", \"3.01\"], [\"　　其他收入\", \"591,729\", \"0.02\", \"566,879\", \"0.02\"], [\"　　其他利益及損失淨額\", \"6,114,146\", \"0.16\", \"1,621,260\", \"0.06\"], [\"　　財務成本淨額\", \"12,370,387\", \"0.32\", \"10,495,320\", \"0.36\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"5,496,594\", \"0.14\", \"4,879,367\", \"0.17\"], [\"　營業外收入及支出合計\", \"105,571,163\", \"2.77\", \"83,785,585\", \"2.89\"], [\"稅前淨利（淨損）\", \"2,041,662,840\", \"53.60\", \"1,405,838,635\", \"48.57\"], [\"所得稅費用（利益）合計\", \"326,266,060\", \"8.57\", \"233,406,876\", \"8.06\"], [\"繼續營業單位本期淨利（淨損）\", \"1,715,396,780\", \"45.03\", \"1,172,431,759\", \"40.51\"], [\"本期淨利（淨損）\", \"1,715,396,780\", \"45.03\", \"1,172,431,759\", \"40.51\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"-693,271\", \"-0.02\", \"144,365\", \"0.00\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"745,272\", \"0.02\", \"5,091,916\", \"0.18\"], [\"　　　避險工具之損益－不重分類至損益\", \"-31,030\", \"0.00\", \"5,041\", \"0.00\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-不重分類至損益之項目\", \"-113,192\", \"0.00\", \"-69,435\", \"0.00\"], [\"　　　與不重分類之項目相關之所得稅\", \"-138,654\", \"0.00\", \"38,869\", \"0.00\"], [\"　不重分類至損益之項目：\", \"46,433\", \"0.00\", \"5,133,018\", \"0.18\"], [\"　　　國外營運機構財務報表換算之兌換差額\", \"-60,951,662\", \"-1.60\", \"64,299,685\", \"2.22\"], [\"　　　透過其他綜合損益按公允價值衡量之債務工具投資未實現評價損益\", \"4,688,956\", \"0.12\", \"1,949,865\", \"0.07\"], [\"　　　避險工具之損益\", \"-81,229\", \"0.00\", \"-80,198\", \"0.00\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-可能重分類至損益之項目\", \"-29,017\", \"0.00\", \"283,276\", \"0.01\"], [\"　後續可能重分類至損益之項目：\", \"-56,372,952\", \"-1.48\", \"66,452,628\", \"2.30\"], [\"　其他綜合損益（淨額）\", \"-56,326,519\", \"-1.48\", \"71,585,646\", \"2.47\"], [\"本期綜合損益總額\", \"1,659,070,261\", \"43.56\", \"1,244,017,405\", \"42.98\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利∕損）\", \"1,717,882,627\", \"45.10\", \"1,173,267,703\", \"40.54\"], [\"　非控制權益（淨利∕損）\", \"-2,485,847\", \"-0.07\", \"-835,944\", \"-0.03\"], [\"　母公司業主（綜合損益）\", \"1,661,253,891\", \"43.61\", \"1,245,836,616\", \"43.04\"], [\"　非控制權益（綜合損益）\", \"-2,183,630\", \"-0.06\", \"-1,819,211\", \"-0.06\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　基本每股盈餘\", \"66.26\", \"\", \"45.25\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　稀釋每股盈餘\", \"66.25\", \"\", \"45.25\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2330&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2330&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"台積電\"}, \"datetime\": \"115/05/10 09:00:51\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"2,767,856,402\", \"34.89\", \"2,127,627,043\", \"31.79\"], [\"　　　透過損益按公允價值衡量之金融資產－流動\", \"100,200\", \"0.00\", \"207,700\", \"0.00\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－流動\", \"175,692,690\", \"2.21\", \"192,202,657\", \"2.87\"], [\"　　　按攤銷後成本衡量之金融資產－流動\", \"124,945,519\", \"1.58\", \"101,971,322\", \"1.52\"], [\"　　　避險之金融資產－流動\", \"0\", \"0.00\", \"10,959\", \"0.00\"], [\"　　　應收帳款淨額\", \"279,051,553\", \"3.52\", \"270,683,235\", \"4.04\"], [\"　　　應收帳款－關係人淨額\", \"2,739,500\", \"0.03\", \"1,404,473\", \"0.02\"], [\"　　　其他應收款－關係人淨額\", \"268,115\", \"0.00\", \"251\", \"0.00\"], [\"　　　存貨\", \"288,109,485\", \"3.63\", \"287,868,810\", \"4.30\"], [\"　　　其他流動資產\", \"178,367,353\", \"2.25\", \"106,375,670\", \"1.59\"], [\"　　流動資產合計\", \"3,817,130,817\", \"48.12\", \"3,088,352,120\", \"46.15\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　透過損益按公允價值衡量之金融資產－非流動\", \"15,032,128\", \"0.19\", \"15,199,842\", \"0.23\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－非流動\", \"8,797,170\", \"0.11\", \"7,822,884\", \"0.12\"], [\"　　　按攤銷後成本衡量之金融資產－非流動\", \"110,507,804\", \"1.39\", \"88,596,542\", \"1.32\"], [\"　　　採用權益法之投資\", \"38,033,271\", \"0.48\", \"37,421,105\", \"0.56\"], [\"　　　不動產、廠房及設備\", \"3,691,840,916\", \"46.54\", \"3,234,980,070\", \"48.34\"], [\"　　　使用權資產\", \"43,918,910\", \"0.55\", \"40,128,391\", \"0.60\"], [\"　　　無形資產\", \"24,952,615\", \"0.31\", \"26,282,520\", \"0.39\"], [\"　　　遞延所得稅資產\", \"62,940,253\", \"0.79\", \"65,943,300\", \"0.99\"], [\"　　　其他非流動資產\", \"119,869,994\", \"1.51\", \"87,211,226\", \"1.30\"], [\"　　非流動資產合計\", \"4,115,893,061\", \"51.88\", \"3,603,585,880\", \"53.85\"], [\"　資產總額\", \"7,933,023,878\", \"100.00\", \"6,691,938,000\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　透過損益按公允價值衡量之金融負債－流動\", \"3,083,883\", \"0.04\", \"466,539\", \"0.01\"], [\"　　　避險之金融負債－流動\", \"817\", \"0.00\", \"0\", \"0.00\"], [\"　　　應付帳款\", \"82,551,595\", \"1.04\", \"72,800,558\", \"1.09\"], [\"　　　應付帳款－關係人\", \"1,778,730\", \"0.02\", \"1,426,001\", \"0.02\"], [\"　　　其他應付款\", \"630,216,526\", \"7.94\", \"531,376,653\", \"7.94\"], [\"　　　本期所得稅負債\", \"202,337,872\", \"2.55\", \"147,438,423\", \"2.20\"], [\"　　　其他流動負債\", \"538,049,866\", \"6.78\", \"511,016,790\", \"7.64\"], [\"　　流動負債合計\", \"1,458,019,289\", \"18.38\", \"1,264,524,964\", \"18.90\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　應付公司債\", \"856,227,503\", \"10.79\", \"926,604,506\", \"13.85\"], [\"　　　長期借款\", \"39,834,496\", \"0.50\", \"31,824,386\", \"0.48\"], [\"　　　遞延所得稅負債\", \"3,888,795\", \"0.05\", \"3,988,482\", \"0.06\"], [\"　　　租賃負債－非流動\", \"31,594,992\", \"0.40\", \"28,755,342\", \"0.43\"], [\"　　　其他非流動負債\", \"82,663,520\", \"1.04\", \"112,664,455\", \"1.68\"], [\"　　非流動負債合計\", \"1,014,209,306\", \"12.78\", \"1,103,837,171\", \"16.50\"], [\"　負債總額\", \"2,472,228,595\", \"31.16\", \"2,368,362,135\", \"35.39\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"259,325,245\", \"3.27\", \"259,327,332\", \"3.88\"], [\"　　　股本合計\", \"259,325,245\", \"3.27\", \"259,327,332\", \"3.88\"], [\"　　資本公積\", \"\", \"\", \"\", \"\"], [\"　　　　資本公積－發行溢價\", \"35,234,807\", \"0.44\", \"33,700,961\", \"0.50\"], [\"　　　　資本公積－實際取得或處分子公司股權價格與帳面價值差額\", \"8,411,566\", \"0.11\", \"8,411,566\", \"0.13\"], [\"　　　　資本公積-認列對子公司所有權權益變動數\", \"4,093,999\", \"0.05\", \"4,108,958\", \"0.06\"], [\"　　　　資本公積－受贈資產\", \"116,964\", \"0.00\", \"90,251\", \"0.00\"], [\"　　　　資本公積－採用權益法認列關聯企業及合資股權淨值之變動數\", \"1,365,250\", \"0.02\", \"1,172,396\", \"0.02\"], [\"　　　　資本公積－合併溢額\", \"22,800,434\", \"0.29\", \"22,800,434\", \"0.34\"], [\"　　　　資本公積－限制員工權利股票\", \"1,422,581\", \"0.02\", \"2,976,199\", \"0.04\"], [\"　　　資本公積合計\", \"73,445,601\", \"0.93\", \"73,260,765\", \"1.09\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"311,146,899\", \"3.92\", \"311,146,899\", \"4.65\"], [\"　　　　特別盈餘公積\", \"87,284,496\", \"1.10\", \"0\", \"0.00\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"4,705,070,165\", \"59.31\", \"3,606,105,124\", \"53.89\"], [\"　　　保留盈餘合計\", \"5,103,501,560\", \"64.33\", \"3,917,252,023\", \"58.54\"], [\"　　其他權益\", \"\", \"\", \"\", \"\"], [\"　　　其他權益合計\", \"-16,676,412\", \"-0.21\", \"38,705,047\", \"0.58\"], [\"　　　庫藏股票\", \"0\", \"0.00\", \"0\", \"0.00\"], [\"　　歸屬於母公司業主之權益合計\", \"5,419,595,994\", \"68.32\", \"4,288,545,167\", \"64.09\"], [\"　　非控制權益\", \"41,199,289\", \"0.52\", \"35,030,698\", \"0.52\"], [\"　權益總額\", \"5,460,795,283\", \"68.84\", \"4,323,575,865\", \"64.61\"], [\"　負債及權益總計\", \"7,933,023,878\", \"100.00\", \"6,691,938,000\", \"100.00\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"0\", \"\", \"0\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2330&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2330&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年12月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年12月31日\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"台積電\"}, \"datetime\": \"115/05/10 09:00:51\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"2,041,662,840\", \"1,405,838,635\"], [\"　本期稅前淨利（淨損）\", \"2,041,662,840\", \"1,405,838,635\"], [\"　　　折舊費用\", \"679,683,958\", \"653,610,486\"], [\"　　　攤銷費用\", \"8,412,412\", \"9,186,149\"], [\"　　　預期信用減損損失（利益）數∕呆帳費用提列（轉列收入）數\", \"-3,946\", \"49,907\"], [\"　　　透過損益按公允價值衡量金融資產及負債之淨損失（利益）\", \"-353,087\", \"137,694\"], [\"　　　利息費用\", \"12,370,387\", \"10,495,320\"], [\"　　　利息收入\", \"-105,739,081\", \"-87,213,399\"], [\"　　　股利收入\", \"-591,729\", \"-566,879\"], [\"　　　股份基礎給付酬勞成本\", \"1,246,070\", \"1,242,719\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-5,496,594\", \"-4,879,367\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"1,581,001\", \"2,597,927\"], [\"　　　處分無形資產損失（利益）\", \"4,548\", \"34\"], [\"　　　處分投資損失（利益）\", \"200,194\", \"683,117\"], [\"　　　處分採用權益法之投資損失（利益）\", \"0\", \"-7,126\"], [\"　　　非金融資產減損損失\", \"782,005\", \"1,150,485\"], [\"　　　未實現外幣兌換損失（利益）\", \"4,308,948\", \"4,576,295\"], [\"　　　其他項目\", \"1,217,201\", \"-435,644\"], [\"　　　收益費損項目合計\", \"597,622,287\", \"590,627,718\"], [\"　　　　強制透過損益按公允價值衡量之金融資產（增加）減少\", \"8,436,241\", \"842,623\"], [\"　　　　應收帳款（增加）減少\", \"-8,368,318\", \"-69,369,394\"], [\"　　　　應收帳款－關係人（增加）減少\", \"-1,335,027\", \"-780,022\"], [\"　　　　其他應收款－關係人（增加）減少\", \"-267,864\", \"71,620\"], [\"　　　　存貨（增加）減少\", \"-240,675\", \"-36,871,722\"], [\"　　　　其他流動資產（增加）減少\", \"-74,620,318\", \"-15,537,261\"], [\"　　　　其他金融資產（增加）減少\", \"64,524,848\", \"-2,377,515\"], [\"　　　　其他營業資產（增加）減少\", \"-38,798,107\", \"-3,862,018\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"-50,669,220\", \"-127,883,689\"], [\"　　　　應付帳款增加（減少）\", \"9,751,037\", \"17,073,801\"], [\"　　　　應付帳款－關係人增加（減少）\", \"352,732\", \"-140,299\"], [\"　　　　其他流動負債增加（減少）\", \"-86,794,169\", \"88,910,334\"], [\"　　　　淨確定福利負債增加(減少)\", \"-2,261,642\", \"-1,532,202\"], [\"　　　　其他營業負債增加（減少）\", \"32,869,212\", \"36,922,889\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"-46,082,830\", \"141,234,523\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"-96,752,050\", \"13,350,834\"], [\"　　調整項目合計\", \"500,870,237\", \"603,978,552\"], [\"　營運產生之現金流入（流出）\", \"2,542,533,077\", \"2,009,817,187\"], [\"　退還（支付）之所得稅\", \"-267,557,452\", \"-183,640,119\"], [\"營業活動之淨現金流入（流出）\", \"2,274,975,625\", \"1,826,177,068\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　取得透過其他綜合損益按公允價值衡量之金融資產\", \"-66,823,227\", \"-87,787,521\"], [\"　處分透過其他綜合損益按公允價值衡量之金融資產\", \"80,052,393\", \"67,684,556\"], [\"　透過其他綜合損益按公允價值衡量之金融資產減資退回股款\", \"101,486\", \"325,952\"], [\"　取得按攤銷後成本衡量之金融資產\", \"-188,288,632\", \"-151,656,371\"], [\"　按攤銷後成本衡量之金融資產到期還本\", \"138,203,740\", \"118,350,898\"], [\"　取得透過損益按公允價值衡量之金融資產\", \"-260,086\", \"-1,178,766\"], [\"　取得避險之金融資產\", \"-631,620\", \"0\"], [\"　除列避險之金融負債\", \"566,873\", \"118,320\"], [\"　取得採用權益法之投資\", \"0\", \"-3,738,753\"], [\"　取得不動產、廠房及設備\", \"-1,272,410,529\", \"-956,006,536\"], [\"　處分不動產、廠房及設備\", \"797,045\", \"894,573\"], [\"　存出保證金增加\", \"-420,179\", \"-1,304,815\"], [\"　存出保證金減少\", \"1,456,099\", \"3,268,276\"], [\"　取得無形資產\", \"-10,146,942\", \"-8,875,660\"], [\"　處分無形資產\", \"0\", \"57,182\"], [\"　其他預付款項增加\", \"-39,840\", \"-99,427\"], [\"　收取之利息\", \"98,954,730\", \"76,434,070\"], [\"　收取之股利\", \"3,939,590\", \"3,507,004\"], [\"　其他投資活動\", \"70,555,692\", \"75,164,249\"], [\"　投資活動之淨現金流入（流出）\", \"-1,144,393,407\", \"-864,842,769\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　發行公司債\", \"86,809,692\", \"34,264,319\"], [\"　償還公司債\", \"-54,310,000\", \"-7,000,000\"], [\"　舉借長期借款\", \"10,658,400\", \"30,897,000\"], [\"　償還長期借款\", \"-2,710,000\", \"-2,295,556\"], [\"　存入保證金增加\", \"3,000\", \"4,990\"], [\"　存入保證金減少\", \"-48,549\", \"-93,332\"], [\"　租賃本金償還\", \"-3,496,528\", \"-2,873,640\"], [\"　發放現金股利\", \"-466,779,199\", \"-363,055,226\"], [\"　庫藏股票買回成本\", \"0\", \"-3,089,177\"], [\"　處分子公司股權（未喪失控制力）\", \"0\", \"1,021\"], [\"　支付之利息\", \"-19,128,799\", \"-18,751,233\"], [\"　非控制權益變動\", \"8,295,405\", \"12,177,547\"], [\"　其他籌資活動\", \"361,886\", \"-26,487,623\"], [\"　籌資活動之淨現金流入（流出）\", \"-440,344,692\", \"-346,300,910\"], [\"匯率變動對現金及約當現金之影響\", \"-50,008,167\", \"47,165,901\"], [\"本期現金及約當現金增加（減少）數\", \"640,229,359\", \"662,199,290\"], [\"期初現金及約當現金餘額\", \"2,127,627,043\", \"1,465,427,753\"], [\"期末現金及約當現金餘額\", \"2,767,856,402\", \"2,127,627,043\"], [\"　資產負債表帳列之現金及約當現金\", \"2,767,856,402\", \"2,127,627,043\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2330&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2330&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"台積電\"}, \"datetime\": \"115/05/10 09:00:51\"}}"
     },
     "monthly_revenue": {
-      "fiscal_period": "2026-04",
-      "monthly_revenue": 295000000000.0
+      "market": "tw",
+      "ticker": "2330",
+      "company_name": "台積電",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 415191699.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2330\", \"公司名稱\": \"台積電\", \"產業別\": \"半導體業\", \"營業收入-當月營收\": \"415191699\", \"營業收入-上月營收\": \"317656613\", \"營業收入-去年當月營收\": \"285956830\", \"營業收入-上月比較增減(%)\": \"30.704566506222868\", \"營業收入-去年同月增減(%)\": \"45.193838874210485\", \"累計營業收入-當月累計營收\": \"1134103440\", \"累計營業收入-去年累計營收\": \"839253664\", \"累計營業收入-前期比較增減(%)\": \"35.1323787607557\", \"備註\": \"-\"}"
     },
     "latest_transcript": null,
     "recent_insider_summary": null,
@@ -29,5 +72,1100 @@
   "insider": [],
   "short_interest": [],
   "holdings": [],
-  "recent_news": []
+  "recent_news": [
+    {
+      "title": "美股續強台指期夜盤漲　投顧：台股有望衝42000點",
+      "link": "https://www.cna.com.tw/news/afe/202605110019.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T08:29:11+08:00",
+      "summary": "（中央社記者何秀玲台北11日電）美國4月非農就業數據優於市場預期，激勵美股4大指數全面收紅，帶動台指期夜盤上漲361點。投顧分析，美國經濟數據顯示景氣仍具韌性，加上AI與半導體族群續強，有助台股延續多頭氣勢，指數有機會挑戰42000點關卡。",
+      "event_type": "earnings",
+      "publisher": "中央社 CNA",
+      "author": "何秀玲",
+      "tickers": [
+        "0050",
+        "NVDA",
+        "2330"
+      ],
+      "companies": [
+        "NVIDIA",
+        "台積電"
+      ]
+    },
+    {
+      "title": "2330 台積電 - 關鍵場景越來越靠近❤️梅雨季不管天氣還是股市，都陰陽怪氣😏-股市爆料同學會 - CMoney",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5BcDlVd0JxWTRVTkVSYTZORzFyT3ZwLXpjaG5oU0RuS2tpTmwxcE12VzY4TS0tQUVHS3EtR2RIZnh4azlpVnFWcmNyNDNQa1p3c3NHUnpnSlA",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T08:15:06+08:00",
+      "summary": "2330 台積電 - 關鍵場景越來越靠近❤️梅雨季不管天氣還是股市，都陰陽怪氣😏-股市爆料同學會&nbsp;&nbsp;CMoney",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "早安世界》傳英特爾取得蘋果訂單專家：台積電技術與良率仍是首選| 生活 - 中央社 CNA",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92R205THdxMnZDSGQyMmt6b0dJeks1b2xsbDV1ZGQwZFZrbXhlWkpaMVJUVm9Cd3g2NW1wSHdoUTRUS1NYbXVpR1pWdkVmNEtuRkRCMG12TFdGY1JDVTlF",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T07:52:00+08:00",
+      "summary": "早安世界》傳英特爾取得蘋果訂單專家：台積電技術與良率仍是首選| 生活&nbsp;&nbsp;中央社 CNA",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "蘋果轉單Intel！台積電利空，還是AI股新買點？ - news.cnyes.com",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1LLWpzclY0QWlkZlJoYkpXRjVva2VmNUtEemZOM09IT2FkT0Nfc1FDcUcxSnhLZWNvREJfd0tjUUZCcUc0S01ocDkzeHZtX1U?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T07:40:24+08:00",
+      "summary": "蘋果轉單Intel！台積電利空，還是AI股新買點？&nbsp;&nbsp;news.cnyes.com",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "2 千億買盤湧向神山、中小股慘了？四問解讀「台積電條款」資金洗牌 - finance.technews.tw",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOam1PelhxOURJNUM0VEt5akNZS2lBWVRia1JzMEgyeG5VaU1EeXRLWk1LcHVSRVVLbGxvNnZlUlVaaUM5UVp0ZENxZkRlMWs4dlRuakZEeWVFcXVscVVPbmRBcjMtcDJ1TUI2SzE2VUs5eFUtTE8xdnBjNjN2TDBIUEMtZG0wN2Nubm1FS2ZRZkpzMHo5S2tsZ3VGVWw1UldyYUs0d3o1cHJDMU1IM05vWUdHWXNvTXB0V3c?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T07:33:15+08:00",
+      "summary": "2 千億買盤湧向神山、中小股慘了？四問解讀「台積電條款」資金洗牌&nbsp;&nbsp;finance.technews.tw",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "AI推半導體兆元時代提前4年　台積電領軍全球大擴產 - ETtoday財經雲",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xMDF2TGpBRm8wNmtLakZ4Y09OanhWcG1mNWdFTjVEemNpTHd4Yi05cUdlWGNCRGYzZFU0Rmc2Ymd3bkVXb2xBelUwOUJBNHRwQXfSAW5BVV95cUxNOXVBUWJlMkU5TWdCYjdKT1llclhhX1lUbG9GOGFiTEFLUG5NTnJVX3ZwWDdydHdiNzFWNGFlamJHY0gwRGFNYnlvYjdYVl9PV2tXWFdMWDFUSmRWQ0RjUWJ0eXdyRVo4N2VPT014QQ?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T07:24:00+08:00",
+      "summary": "AI推半導體兆元時代提前4年 台積電領軍全球大擴產&nbsp;&nbsp;ETtoday財經雲",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "Sony攜手台積電研發/製造次世代影像感測器- 新聞 - MoneyDJ理財網",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNmRTTjJOVW1LbFpNalJDMFdmbVMwTkVMeGp0b3pGSlZjN3pMM0lWdzE0NldFRVhtR2dLNVRybGcxZGFmdGtzOXlRb1hCZXpFYkgxTFVSaURZZ3BpZHBXV1FIQmNSYWtHcmNUWklsanZqNkNYcDN5TGtncFNPdXFUS3R4WlR6bHBkSXUxSzdPQkk3QQ?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T07:10:00+08:00",
+      "summary": "Sony攜手台積電研發/製造次世代影像感測器- 新聞&nbsp;&nbsp;MoneyDJ理財網",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "手機寒風衝擊高通、聯發科下修在台積電產能，AMD 意外成最大受惠者 - finance.technews.tw",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQkZLNXlEdE5qTVNTSm8xcUJJUFRSZzRBckp6SUFJVVZBOTZNWmFfdWpPRWdLNkxIRGtfMlhCQmZsb0JCdElDcU5RT2RQM01UZDl2OEJNZVZHazdhSGFwaWg0VW02YTVMU28zQUZLLXprZjhlWkozMm5CSlNmU01ON2hza0V6R3BVSENHeXpSY3ptcy01QU1BY290Q3FzSURieWxkS1VLaDcyYTQtV1hNeVpaa1M?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T07:03:45+08:00",
+      "summary": "手機寒風衝擊高通、聯發科下修在台積電產能，AMD 意外成最大受惠者&nbsp;&nbsp;finance.technews.tw",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454",
+        "2330"
+      ],
+      "companies": [
+        "聯發科",
+        "台積電"
+      ]
+    },
+    {
+      "title": "股價用喊的？SanDisk、美光股價飆漲為台股本周走勢埋下火種",
+      "link": "https://finance.technews.tw/2026/05/11/sandisk-and-micron-shares-surged-last-week",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T06:30:07+08:00",
+      "summary": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公佈的就業報告數據優於市場預期，上週五（5月8日）美國股市 [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "NVDA",
+        "GOOGL",
+        "META",
+        "2330"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Alphabet",
+        "Meta",
+        "台積電",
+        "Google"
+      ]
+    },
+    {
+      "title": "台積電要緊張了？英特爾靠「1關鍵」搶下蘋果訂單　專家：情勢出現轉變 - 三立新聞網SETN.com",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqUk8xaUd4VWlGdkFsX2ZOZk9vSWF0T1ZlRloxaUhVY1d2Q3lGZndva19BSXZ3U1dWN2dwTktZZjVuZGxWamtreU5qanFHZnF5UVRPUWR4WUjSAV9BVV95cUxOQlpNWkQxSjJRQXJqX21tdVdBOVJzeFBPUnIwc3g3dzNKN3hEdWRMa0owUmhqa3lCSGpzako1YVpHdXhIR3JlQWk2d1U1RUpxZTZ6WUJ0d1lqc1B3Y0x2OA?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T05:20:00+08:00",
+      "summary": "台積電要緊張了？英特爾靠「1關鍵」搶下蘋果訂單 專家：情勢出現轉變&nbsp;&nbsp;三立新聞網SETN.com",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "〈台股盤前要聞〉台股衝浪再拚4萬2、台積電與Sony合資設廠、4月出口創單月次高 - news.cnyes.com",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTVlI0VGE2YU1Mei16R2RYNnRNZnh3MDBFTGRQdlBnOUNOVHlNX21tNDlwTThwb2hUTlA3RGV1QVp2N3dwdXBPSFZSNlo3RDA?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T05:10:01+08:00",
+      "summary": "〈台股盤前要聞〉台股衝浪再拚4萬2、台積電與Sony合資設廠、4月出口創單月次高&nbsp;&nbsp;news.cnyes.com",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "【即時新聞】AI熱潮帶動！台積電(TSM)首季營收狂飆逾4成，穩居晶圓代工霸主地位 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNczFBRmRJNDVhVENrdEdkZC1PRTdwWHdDMXFWTUV4TVBEQ3F5OElrN2Q4TUF1MDQzX24yZDRwekxPLWVaa19IakUyOUhaVVdVa1dQdG9NN3ZPaWE5VDEwdVVKQ3pJUEthREZCbzFFcC1wVFBuNGw4N1FIOVBzWjl2UUlMY3RPNTctV1EtY04tX3c?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T03:52:00+08:00",
+      "summary": "【即時新聞】AI熱潮帶動！台積電(TSM)首季營收狂飆逾4成，穩居晶圓代工霸主地位&nbsp;&nbsp;CMoney投資網誌",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積電4、5奈米產能超微趁機接手- 日報 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1FMlR6LWtTRElfd1lKOGdGMjllMEN4cXluN3M3Z1FzbWNnNXVTQnh6STZaQVlNZzI3clR6RUZ6Mk1ROXpyWUVYbUNja3VyUmVCb2RfdkdhVGdSdExGYjZz?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T03:00:00+08:00",
+      "summary": "台積電4、5奈米產能超微趁機接手- 日報&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積AI霸權意外鬆動？　超微擁抱三星3/2奈米製程原因有三",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754759_S278VQ134VW60HLFW75X7",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T03:00:00+08:00",
+      "summary": "AI半導體供應鏈版圖出乎預期出現鬆動，台積電稱霸多時的晶圓代工戰情有所變化。市場盛傳，美系晶片廠陸續與三星電子（Samsung Electronics）、英特爾（Intel）展開合作，其中，超微（AMD）更已將2奈米訂單交...",
+      "event_type": "news",
+      "publisher": "DIGITIMES Inc.",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "分析｜晶圓代工成熟製程股價跑贏台積電 一文看各業者擁有題材有哪些 - 知新聞",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5CRFFTNFVYVm9XRTRaek9sTnJxSE04RzQtdlRVZkxFckcyU0pqV3AtUW0yZU44QzVTMEhpemI0d0hGLXkta3diRG9iUnBKTDIzbTFjTk1taTRxbHU0VXhPUHM3aThDZHVmaE1NUkRVOA?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T02:49:55+08:00",
+      "summary": "分析｜晶圓代工成熟製程股價跑贏台積電 一文看各業者擁有題材有哪些&nbsp;&nbsp;知新聞",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "【Amy & Dr. Chip】台積電直衝1奈米　三星為何踩煞車？",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000753652_EUY7LI644VOZ7H3LCZVDB",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T02:36:35+08:00",
+      "summary": "人工智慧（AI）需求全面爆發，晶圓代工戰局正式升級！台積電持續推進先進製程，朝1.x奈米邁進，試圖以技術領先搶佔高階人工智慧（AI）與高效運算（HPC）市場。三星電子（Samsung Electronics）則是選擇放慢...",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "【Amy & Dr. Chip】台積電直衝1奈米 三星為何踩煞車？ - DIGITIMES",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMEktSmpxa2Y4RnZjQjlVWHh4czBJRlNoNktzODM1X0k2aFdPSERtUkFpTGJkbEJ3U3p5bG10WEEtTHkzUFZwN3RWbG9hWmxxR2ExeUthckhwYlJrbEZFUERQdXVqS2hzdzhvYms4dy1nanZ0aUMyUlNic1RXbVNXMDF0Rkh2QklPMGlPeXFHUDIwYmp1eEo5LQ?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T02:36:00+08:00",
+      "summary": "【Amy & Dr. Chip】台積電直衝1奈米 三星為何踩煞車？&nbsp;&nbsp;DIGITIMES",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "ASML CEO回應張曉強　High-NA EUV可省下30%成本",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754728_IMQ8V7J41KTMA19LZG43O",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T02:28:51+08:00",
+      "summary": "台積電副共同營運長張曉強近日在台積電北美技術論壇表示，ASML高數值孔徑極紫外光（High-NA EUV）微影設備非常昂貴。對此，ASML執行長Christophe Fouquet於5月5日出席米爾肯研究院全球會議（Milken...",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "聯發科高通傳釋台積電產能 AMD默默受惠 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNQ1dzWVRvNFBWSUo3X2ZNYmo1TmcwYVdicUlaTTRHZGw0N0NsWDVLTUtiaXJIek5qcE5nRk01OUROejdRQkNKVlRGcE5aZ0Zod3dBRmUyT0NxSklBWjFuczVqaWhrblRpX2VBRzlvd1h5Wi1UV21mZkFwc1JKME5KLTBqNy1OZnMyeGtvODhaY0hBYXEwZVV2c21rMXN3S3loUkF0RmYxOVNaMFF4aTdTY0RaMFBLQTFpOGRwNmtQZmItaXZENl9GYlNZdzRVS2I3NWF0WHFWSzhhMjl2b2xSeXpXdTE5aTJVR19PUUxzZzR5Yk9acjFza3M3YW5iZHk3dHJScF9ZV2tBM0VEbWtrVUFlcWNQTzE4",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T23:20:26+08:00",
+      "summary": "聯發科高通傳釋台積電產能 AMD默默受惠&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454",
+        "2330"
+      ],
+      "companies": [
+        "聯發科",
+        "台積電"
+      ]
+    },
+    {
+      "title": "手機需求大減！聯發科高通傳砍台積電產能 AMD蘇姿丰揭「這異狀」 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMihwNBVV95cUxOeTNsNlNMWm96OFh6SnhFQkdvalBxdU1Sb1lLak4xaWt2cGI2YjZwQUJZLU1hRFJpQWh3ZzhacWJLZWhhUlZfbzhNUEs0SHZFLVFNaWg0VGdNTlRkbkxuaU9TZlZCVkM5MmVxMC1oVk1USE14T1VTWjAzZkF3VjFuS2ktSEpCWHNpT0VCVDBYbk9fdkJwT3EzOUs2NUM3UmNta3htQ1RkNnBzN2tIS05IM25Semd2M3ZhSkN0bHBFQ2xkaE9JeUZNYXJiOGU4cllqeUFDZ3A1cEdLV3JrQ0NXbVhGSW1tdXNxQW55RXowcmF1ZFNQUGQzZ2ZsWHdtN3ZGM1RrQzhNWkF1X21jRnlvaEZicG1Pa1dlclhYT3JqU0JWOXozaExORDJ6Sml5ck01RTNrdXc2d0xSb1pNS0k1WlhkM0dpQTRiVzh5a3lMQURsN3JBRlhlR1NadkVnMl9RaGJWZndzZHY0TmJaMGRORERpYzNod1lZVFpWNGFJalFPTXdDRTRN?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T19:20:34+08:00",
+      "summary": "手機需求大減！聯發科高通傳砍台積電產能 AMD蘇姿丰揭「這異狀」&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454",
+        "2330"
+      ],
+      "companies": [
+        "聯發科",
+        "台積電"
+      ]
+    },
+    {
+      "title": "台股4萬1怕回檔？台積電買點在哪 分析師提2.5兆警訊：先砍鴻海一半持股 | 李瑋萱 | 新聞 - 風傳媒",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vcUwxVExKRDd3N3VKOUJIRjNoMllVUl9vem94T0hETGtJZHNWeG10YWpoOVBfTEN3ZWtFTVJiQ2E0ckFna3F6R0RsYTg3Zw?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T19:04:00+08:00",
+      "summary": "台股4萬1怕回檔？台積電買點在哪 分析師提2.5兆警訊：先砍鴻海一半持股 | 李瑋萱 | 新聞&nbsp;&nbsp;風傳媒",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330",
+        "2317"
+      ],
+      "companies": [
+        "台積電",
+        "鴻海"
+      ]
+    },
+    {
+      "title": "英特爾傳奪蘋果訂單　專家：台積電技術與良率仍是蘋果代工首選",
+      "link": "https://www.cna.com.tw/news/afe/202605100085.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T14:51:21+08:00",
+      "summary": "（中央社記者吳家豪台北10日電）外媒報導，蘋果與英特爾已達成初步協議，將由英特爾為蘋果裝置生產部分晶片。半導體產業專家指出，台積電憑藉領先的先進封裝技術、穩定的製程良率與交付紀錄、龐大的研發護城河，蘋果短期內仍難以將旗艦晶片訂單轉向英特爾，台積電仍是蘋果代工首選。",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "有能耐分食台積電訂單？Intel今年股價漲幅破200% 阮慕驊：白宮撐腰改變情勢 - Yahoo股市",
+      "link": "https://news.google.com/rss/articles/CBMiugNBVV95cUxNMGsxWTNwUUhxUG9pTUhORXBqTjFtQWR1bkRGTjRnYVd2cXhvMmhfMWNvNzM3dS1pYmlQTDAycl9tM3djY2JKYVFaRUp1Z1RXMERlMzNzY3VwMXExVmNCd0JJQlBqalMwZ3plaDh1UHdkX1ZHX21za1dNUGxyLXVnQ09Gbjd0bGpRdGVjRDJXWU9IelQxbjFrYUNLUjMySVZ2Vm5ia2JEY3ViSVFNRGFqZmJ2WWN5NHVmYTh0UmtyZHV4VVdZYlBqWDBPR3BmZi1wbjIwTUxUOTg3VlBKZ1JTMU5wbXdfV1J6ZE9iSDdudGtFdTEyellUQWkzSWF0V0VTU0NLOWRSZ19yOHNabTR0UlN2ZmpFUW9VdUNKNElueFNLSktDcGFCeFozTlkwVGFMWWRiRC1PUUJkSFpJWFRrRDh1dG00ekF0MlZ6bUsweTZQXy1yY05Wa3c4cDFhN2YyOVlyaFpwZFotaUN3NkZqNXVncUkyMDJRVGwyekt4c2R5V1Z3YnlDZ055QXFCNWIybTRFa2wyT2RnNi1LTFJKd2ZsZmtDSldjWjZuYlVGSGFaQmZBejVfZzRn",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T08:45:06+08:00",
+      "summary": "有能耐分食台積電訂單？Intel今年股價漲幅破200% 阮慕驊：白宮撐腰改變情勢&nbsp;&nbsp;Yahoo股市",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "外資狂賣台積電1兆台股為何還能噴？「大散戶時代」來了- 證券 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zMDJCNkl5V1BndUhaelZmM0pHNWxIdDVfMnVMOFV3bXVXQ2FScEd0WDJfNzVtdDZ1TTNNb1JiNTNvbTcyMEM3blF2Y1BDbmZRS3dsNmRNSEV0UjBGbUhv",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T07:48:00+08:00",
+      "summary": "外資狂賣台積電1兆台股為何還能噴？「大散戶時代」來了- 證券&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積電主動找上門！台肥躋身綠色供應鏈 「廢硫酸回收廠」如何換來科技業入場券？ - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBBaElBLW1rMDZFS2N3enN2eEFabnYzWlRrQXV4WHIzS0hISmpReDIyV0gxaFFsUjVKelpoaHV6MzBCUEctcV85eE5uN1VQb0JsU1REdFZSWjBlVC1GLUNJ",
+      "source": "工商時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T07:23:00+08:00",
+      "summary": "台積電主動找上門！台肥躋身綠色供應鏈 「廢硫酸回收廠」如何換來科技業入場券？&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "2330 台積電 - （5/10）週日早安，母親節快樂。-股市爆料同學會 - CMoney",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBFN0JWT3VsY2ZHRHJiNlZsVnJsZmtvZGI5bVFwUG9xSHVGR0pIOE9uMGJsbVR1YXVIX2lPN1VMcnR1NHQzR2NaeDJUVXdpdUtRQmRMd3laa0E",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T07:21:47+08:00",
+      "summary": "2330 台積電 - （5/10）週日早安，母親節快樂。-股市爆料同學會&nbsp;&nbsp;CMoney",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "【先進封裝肉搏戰2-2】光罩尺寸不夠大？一窺台積電CoWoS、SoW-X發展藍圖| 財經焦點 - 太報 TaiSounds",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9neE81b0JOY1c1RjJ4djdKMTFRd29PbDZydHduLWFrNW41Tmk5OHo2RnBGNHNSWUlGR1JyNmtmUUlQQWlLRVNaUlVKVGVfdFI5cjdWWWlOM2l4WTB1?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T07:10:00+08:00",
+      "summary": "【先進封裝肉搏戰2-2】光罩尺寸不夠大？一窺台積電CoWoS、SoW-X發展藍圖| 財經焦點&nbsp;&nbsp;太報 TaiSounds",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積電工程師也驚呼「真的猛」！高職畢業正職技術員年薪150萬的秘密- 產業 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1mei1nbHZ4QzhBVlZqUHM5bW1nN254LW51OEFFT3IwSlQ4cWhoZzhkdDlhZlV4VDZMdEYyYk55akVrcTJzTkNHVWxMQ2V4UnljZVNaSG5oZTFTYlYwOFJF?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T07:09:00+08:00",
+      "summary": "台積電工程師也驚呼「真的猛」！高職畢業正職技術員年薪150萬的秘密- 產業&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "【先進封裝肉搏戰2-1】英特爾EMIB-T來勢洶洶 台積電CoWoS嚴陣以待 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxQMjlneGRteDMwNm1RYlN5Wjl1dERkMnI5eEVReUtzRDdjU2RSLTd5ZjhRRGVueTFuQm5tNmJOekpwdExCYVZjRXFXWTN5cmFCT21rOEQtSWhZbExETzVMX2hDZ290azcxLWo4bDZSZzl4d1h4ZUYxVnpEUGliUHYwOU43bXpUbExFVGIzdlFpNG1TalRQTGhIUG5MV19MS0JTeFh4M3BxSnQyajdvY2dIbUpqdXRsNUNkQ2l0Ty1tWk9YbnhVdzJ0MFZ5QnNBejhLRUxabXlodnhVTVREZU1kNlhIV0N3T1hGeEpvYmlZOHIxZUJQa1BuUTZKRWhkaEVzVnlxeWttcDJlRlktZzBZQkp2SVpCWmtNUXdxUWQ0M2l3TWRpM1l0VU96aHdfTHpmUjBIa3hlc3cwbkFybkVPVWNPZEF6OEZta2UwZWJLMWthLVVja1lIb0xadkp2V2ZKSk1jbg?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T07:00:00+08:00",
+      "summary": "【先進封裝肉搏戰2-1】英特爾EMIB-T來勢洶洶 台積電CoWoS嚴陣以待&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積電亞利桑那2奈米廠封頂了  現場照片全曝光",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5431623",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T06:50:30+08:00",
+      "summary": "初次上稿05-09 22:21 更新時間05-10 06：50 〔財經頻道／綜合報導〕護國神山台積電在領英（Linkedin）PO文指出，5日是亞利桑那廠的重要里程碑，當天舉行位於鳳凰城的第...…",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "【即時新聞】台積電規劃2026年資本支出上調至520-560億美元，強化AI供應鏈樞紐地位 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZXM0QTdDNjNHeV80OU90S1hoNTluckRCR1NhU000eXBVNjc1X1Jhb3Y0c25HaXBMZ3R1Mk10b0F1SVFoQ2VlakVNdUw5dm1JZHVZNkptdW40QmoxSHFqYVBFc3FnWUtYZ1dGU0NWMUtEOGphVkl5NU9INzJPSG5sQi10RWt4dVI4R1BFR3dCd0o?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T05:59:09+08:00",
+      "summary": "【即時新聞】台積電規劃2026年資本支出上調至520-560億美元，強化AI供應鏈樞紐地位&nbsp;&nbsp;CMoney投資網誌",
+      "event_type": "capex",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積電備胎 蘋果部分晶片交英特爾生產 - 自由財經",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qQnBFV3M1TlVSVXJDM1psZEhodkpwSmhYYjM3UXRoX3ZyTlZlMG5TTVhGUFh2SEpvaGozYTRFMGVQV1pHaWE1ZjZxdFN5SFFVOURoUFVn0gFbQVVfeXFMTWx1WUxPN2NRZUE1LVRlWjVRaldVV1JxVkFhcDdhM1AtNjd5VlNFSlFVbUhqVWxOc3FFb083RXlVTGlCaU1LTWZKeXpmS3VVZ0RqRjNJQWxZaV9vOA?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T05:30:00+08:00",
+      "summary": "台積電備胎 蘋果部分晶片交英特爾生產&nbsp;&nbsp;自由財經",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "擁抱矽島》台積電領軍 台灣雙向資本輸出入登峰 - 自由財經",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rZXFPVVBZTXVGaHNHeEFfeDhrQndzaW04RTNuOHFmSDhIYWNIeWZzXzNnMmxIQm5xeFNCamJiOVJxbmlUWEVlc3VYd2VXYzltTzJnOHZn0gFbQVVfeXFMTTlQRG9pRGFiTmYtaGJYQ0s4NU5ZRjBGYTJLRXc0MDc3Tm90WWxuVUFJaHpDaUpOR0trZnpWZlp4QzdlaDBHNExWU0dWN3NoZFgxdmM4ZFJlTEkwSQ?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T05:30:00+08:00",
+      "summary": "擁抱矽島》台積電領軍 台灣雙向資本輸出入登峰&nbsp;&nbsp;自由財經",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "2330 台積電 - 英國出手！部署驅逐艦至中東準備參與「多國護航行動」-股市爆料同學會 - CMoney",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB0WE41RDNYY3hsVHFNUEpObGNKSklRVUdDazl3LXVTTW1DVlc4dXhsLVd3UzBDWU1uekxla0pqYUFiMUhBbXRqODNQZTNya21JWUNXUFVaWF8?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T04:45:00+08:00",
+      "summary": "2330 台積電 - 英國出手！部署驅逐艦至中東準備參與「多國護航行動」-股市爆料同學會&nbsp;&nbsp;CMoney",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "川普出手 台積電壟斷蘋果晶片告終 - 中時新聞網",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBxT0YtZzJrUzhOT3pud2xBMUo0N21jUkJxdzB5SkFqSVZFQ3ZJV2pYUGtDZmhMVFNycnpRTy1YT1lyMUQwMjJ6SUxJOGFydEgxdWwzQ0VBVWk3MV9RYlpyblVYS1E1YzZESnlB?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T04:10:00+08:00",
+      "summary": "川普出手 台積電壟斷蘋果晶片告終&nbsp;&nbsp;中時新聞網",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積電4月營收爆強卻藏貓膩？蔡明翰示警這波過熱「這時間」恐回檔 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMinANBVV95cUxOallPMFNqUU83Vm9YOGM2dTlnLXJ3NTV5aEhHYXhIbzJBRnpMdnNrQ3NjSVFDM2VQQU5uVm5nVDg0OTdwY3NOTGZ6YXRwNEtlWVBqbnZrb3RXcGM2ODZWVFhSUlVIVGlDLWw1eWtVM05xZm9hV1pMN3lJSzB4aDBkTi1hN3FTWUtPZkpLaW1EaXRUS0lSYkgyTjQ1TmlEcVlfalUzODNWWUZlZGJ3SGlPaUk1T3ZpMkVsaG1ZeFZpNGE5OERWdC1JVndrcG1KU1o1cVFBcUFORGNYVWdoZE96X2FkMTF5QXZiUUpqV21VQUU4V3UyRnJBOUdLZTFuQUdXcHhwa0xPazU2aHFJQzFMdS1SUEJzMFM2WHVWckFLRUs5UWxGRTVwMGFMNU9NY2VCTVd4alUwOTRKRlVuVlJqVVF5TGVOVXJScUROSzZublFyZ1R2UG1LQlVyTm1meVV0eFc2V2djZktGTUpXSEh5eVhrV2VkZnRSRFpwOEJ4MFVheUtETU0zbWRiOE5KeHBWMjJZZ0tCMkFpUkR0?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T03:24:00+08:00",
+      "summary": "台積電4月營收爆強卻藏貓膩？蔡明翰示警這波過熱「這時間」恐回檔&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "台積電營收藏貓膩？　這4檔ETF最紅出列 - 鏡週刊Mirror Media",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5FWnc4eS1DaDdoSmI1aUhzU0ZWQ1pmUG8zODUtaDkwZC14RnJvTF9jb0YwdlNQWE1hX0hZa1d0eGg4YXRhLXJxTVduUzNHYm1KSktJNWpOeGVnU1d00gFiQVVfeXFMTkVSVll4UEdWR281eFlIRTRDMXZKUi1mU3d6a0Q3SFdySk85SVkzQkFOZmNCTF9ocDdWMjJfWmlzUHVRLWRBc0lJN2tGdUZVUUotZmZZNk1mcWpYcWpyNG9LYXc?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T03:19:00+08:00",
+      "summary": "台積電營收藏貓膩？ 這4檔ETF最紅出列&nbsp;&nbsp;鏡週刊Mirror Media",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元 - sinotrade.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMi2gRBVV95cUxOV1A0UEhkbExQWUwzRGtvQWlRODlxSDdINkgySUZ0a3pYemNsZTc1SVhxd1JoTnRkbmN2aDhFVG5HSHRzcUppN0lkeU5jX3NHem8tZm5CTVhneVJ1eEI5Y1hKLV9VQlZkc25PVkRXT0ZlTFVONGVQZEFVNHF4NzdsdDQ3ZmdGdmNEOFg0ZGJ6UFFaU3BPMDI1ZUM0LWtTY1VLSHdpdEE0dGl4M3N6bDVQanhlTjZQaUxSM1RxRGRCY3cxYnNnckF4dGhOT25TYm9heUtPS3VDVEg4eDNIZ2dESjAtcnBuTjQ2QW5vQ19pTmVrVl9sd2JNT0dibkFNZUpkMm13c01ZdzBTeENkN21QelVodTdnSm5QM3BMY0ttTURZQWJEUC1ldXJWSFJOZi15S2gyY3NnNjU3dmpTQzlkVzJleW1Oc2hNZXBGdG94emRxclhUaGRvZzJoZTVYWmp5SEFUY0ppYUFJOFN6Ul9FS2ZIR0tNV2dWQTdZRjQwVDhXQzhCV3c1Zml0ZGlYN3dyaE1qX2N1Z3hwTlV1Z3NoQURoa1RWQ3U4cXRWMXlGQjhFbThfMUdkdTNRb3VVM0RJNnZZb3BqYjhzb2dyeFpRVU9taUNQMVA5M2JjTkh4QWtQSG13OGt4YnROem13NlZPTHptak9NVE4xSWc3TlZ4QUF2VEZaY1YzamhqQVNZSmVuZDNFUzRDR1FiN1RENzBpeTBoQlE1UDZqSVlTWDQwaDRGakFmYzVpYjUyN3gzcVUtcnpPWXdiWFVqeGxOX25hTi1rVnBDRjRoZw?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T14:51:32+08:00",
+      "summary": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元&nbsp;&nbsp;sinotrade.com.tw",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330",
+        "2317",
+        "2408"
+      ],
+      "companies": [
+        "台積電",
+        "鴻海"
+      ]
+    },
+    {
+      "title": "去台積電化！英特爾拿下蘋果晶片訂單 股價飆漲近14％ - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxNcjZvRXcxczdqaHFyaG9JbmNaSVFYN29xTlFGMlkya3VacVdJZDZ2eFVaWWlqRmVtMFdPSmVIMGtkMW1yelhVQng0WGw1cHRXemdWcWphWE5ISkR1YUs4cUFhMGtFZTRpWFZIZGFrcDE1bzV2T01ZOUNuSURXUFRWYURZRWlNYzdBZlJleDBIREVVY09naElLS3VRRHBJbjhCNE84YjVMZl96SDk0akpUSDZDU0lDbDJ1MFlSODM4QzVXamNnQWxTcnFEdXpUc1BnWmtnNnA2Q0lNRzNxQmVzYXNKLW5MLU9vTmJDajR6ZWpxRmVEbWdoTkZMSk9GTWMzNDE4Z1dPdTFLTUE0bUtoVFlCZEo4SVZieWdhVDlfbWVjS29nZjV5QWxxREI2ME5sckNzdkdzRUNSdmI3a3RxS3RDSUdrbGVzRDd1SWxHcXh3el85",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T08:50:13+08:00",
+      "summary": "去台積電化！英特爾拿下蘋果晶片訂單 股價飆漲近14％&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    },
+    {
+      "title": "美就業報告報喜 美股費半飆漲逾5.5％、台積電ADR跌0.60% - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQeWh5VFVqdFZSamJaS2JiMWViTUE1bGg1Z2FTUGUxYVF5S0Q3UXdsbjZrN2EyaTMyRmpWNjJra3YwY29ySVlZTGxHTFNKczh3WjdBQ2JOcGxwVkl2T01VS1dSMWxRNWhJTVZsdWV0ZUl4NklhalFDdEI1MVQwR3V4c3RsNW9GY3AwOFc3UXdWX0ZfNGVMcDh3UUJ3TVJ6eGw5WmszVGZ1Y2QxQ2M5QmVOVTRITkdZdGFfdWlDb3dTT3o4RmRKOXFWVFo1TkdUT2xZQ2ZpSDVZejNRZXNFcXhiR2xjOXFfVkROQzNxNjBfZTlzQ2tPcUVwR2RtZFBYLWExOEVvY2EwRmZyQW1rbWwwZ3VMT1l1el9mWWdZVmhHdDRXOTF4MTFJVVlnSWR0NTZRM0JEcXVMdDM4djQ",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T08:31:42+08:00",
+      "summary": "美就業報告報喜 美股費半飆漲逾5.5％、台積電ADR跌0.60%&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2330"
+      ],
+      "companies": [
+        "台積電"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1715396780.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": 2274975625.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）"
+    },
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025Q3",
+      "filed_at": "2025Q3",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 2762963851.0,
+      "monthly_revenue": null,
+      "net_income": 1209981447.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 46.75,
+      "operating_cash_flow": 1549466838.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q3）"
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150428",
+      "filed_at": "1150428",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150427",
+      "filed_at": "1150427",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150425",
+      "filed_at": "1150425",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150419",
+      "filed_at": "1150419",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150418",
+      "filed_at": "1150418",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150417",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150416",
+      "filed_at": "1150416",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150414",
+      "filed_at": "1150414",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150412",
+      "filed_at": "1150412",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150408",
+      "filed_at": "1150408",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150406",
+      "filed_at": "1150406",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150330",
+      "filed_at": "1150330",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 3809054272.0,
+      "monthly_revenue": null,
+      "net_income": 1717882627.0,
+      "operating_income": 1936091677.0,
+      "gross_profit": 2281293979.0,
+      "eps_diluted": 66.26,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 415191699.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150416",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 415191699.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150415",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 415191699.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150413",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 415191699.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150411",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 415191699.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11502",
+      "period_end": "11502",
+      "filed_at": "1150317",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 317656613.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "co_mentions": [
+    {
+      "ticker": "2454",
+      "count": 3
+    },
+    {
+      "ticker": "NVDA",
+      "count": 2
+    },
+    {
+      "ticker": "2317",
+      "count": 2
+    },
+    {
+      "ticker": "0050",
+      "count": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    },
+    {
+      "ticker": "2408",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T02:39:53Z"
 }

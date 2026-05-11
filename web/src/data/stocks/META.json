@@ -1,0 +1,630 @@
+{
+  "ticker": "META",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "META",
+    "company_name": "Meta Platforms, Inc.",
+    "quarterly": {
+      "market": "us",
+      "ticker": "META",
+      "company_name": "Meta Platforms, Inc.",
+      "cik": "0001326801",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 56311000000.0,
+      "monthly_revenue": null,
+      "net_income": 26773000000.0,
+      "operating_income": 22872000000.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": 0.40617286143027115,
+      "eps_diluted": 10.44,
+      "operating_cash_flow": 32226000000.0,
+      "capex": 18997000000.0,
+      "free_cash_flow": 13229000000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-04-30\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2026-01-01\", \"end\": \"2026-03-31\", \"val\": 56311000000, \"accn\": \"0001628280-26-028526\", \"fy\": 2026, \"fp\": \"Q1\", \"form\": \"10-Q\", \"filed\": \"2026-04-30\", \"frame\": \"CY2026Q1\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "股價用喊的？SanDisk、美光股價飆漲為台股本周走勢埋下火種",
+      "link": "https://finance.technews.tw/2026/05/11/sandisk-and-micron-shares-surged-last-week",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T06:30:07+08:00",
+      "summary": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公佈的就業報告數據優於市場預期，上週五（5月8日）美國股市 [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "NVDA",
+        "GOOGL",
+        "META",
+        "2330"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Alphabet",
+        "Meta",
+        "台積電",
+        "Google"
+      ]
+    },
+    {
+      "title": "Israeli weapon fires tiny metal cubes into people in Lebanon, like Gaza",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/10/israeli-weapon-fires-tiny-metal-cubes-into-people-in-lebanon-like-gaza?traffic_source=rss",
+      "source": "Al Jazeera English",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-11T05:10:46+08:00",
+      "summary": "Tiny tungsten cubes from Israeli bombs are causing devastating internal injuries to people in Lebanon.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
+      "link": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+      "source": "Lobsters AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-10T23:49:49+08:00",
+      "summary": "Comments",
+      "event_type": "earnings",
+      "publisher": "Cocoa with Love",
+      "author": "Matt Gallagher",
+      "tickers": [
+        "1000",
+        "AAPL",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "Meta"
+      ]
+    },
+    {
+      "title": "Parax v0.7: Parametric Modeling in JAX [P]",
+      "link": "https://www.reddit.com/r/MachineLearning/comments/1t929x3/parax_v07_parametric_modeling_in_jax_p",
+      "source": "Reddit r/MachineLearning",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-10T17:31:35+08:00",
+      "summary": "Hi everyone! Parax is a library for &quot;Parametric modeling&quot; in JAX, attempting to bridge the approach between pure JAX PyTrees, and more object-orientated modeling approaches (e.g. using Equinox). v0.7 has been released, featuring a more polished API as well as some detailed examples in the documentation. Some of Parax's features: Derived/constrained parameters with metadata Computed PyTrees and callable parameterizations Abstract interfaces for fixed, bounded, and probabilistic PyTrees ",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "The new Wild West of AI kids’ toys",
+      "link": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T19:00:51+08:00",
+      "summary": "These connected companions could disrupt everything from make-believe to bedtime stories. No wonder some lawmakers want them banned.",
+      "event_type": "news",
+      "publisher": "Ars Technica",
+      "author": "WIRED",
+      "tickers": [
+        "AMZN",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Meta",
+        "Google"
+      ]
+    },
+    {
+      "title": "Hackable Robot Lawn Mower Unlocks a New Nightmare",
+      "link": "https://www.wired.com/story/security-news-this-week-hackable-robot-lawnmower-unlocks-a-new-nightmare",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T18:30:00+08:00",
+      "summary": "Plus: Meta officially kills encrypted Instagram DMs, the Trump administration targets “violent left wing extremists,” leaked documents reveal Russia's school for elite hackers, and more.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Anti-work anthems, Boy George and controversial lyrics: A guide to all 35 Eurovision songs",
+      "link": "https://www.bbc.com/news/articles/ce8pmrv2p1mo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-09T07:01:55+08:00",
+      "summary": "From dancefloor bangers to heartfelt ballads, here are the highlights and low points of Eurovision.",
+      "event_type": "news",
+      "publisher": "BBC News",
+      "author": "Mark Savage",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Alphabet"
+      ]
+    },
+    {
+      "title": "The wheels are coming off the Cybertruck. That's not just a metaphor. - Mashable",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBOd2RpN28yWjFneVA0dXFxVUwzQjlkWElSSnEySUM0QjNKUEVnNlVXNjRsakVQT0tncnVFOTRDVEhScFptMXN6dUl3c1ZENEFVS0RQRFNMdjNpQk94d1h3?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T05:29:50+08:00",
+      "summary": "The wheels are coming off the Cybertruck. That's not just a metaphor.&nbsp;&nbsp;Mashable",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Elizabeth Warren Wants Meta to Spill All on Stablecoin Plans Ahead of Clarity Act Votes",
+      "link": "https://decrypt.co/367314/elizabeth-warren-meta-stablecoin-plans-clarity-act-votes",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T03:38:44+08:00",
+      "summary": "The Senate Democrat said Meta’s reported plans to partner with a third-party stablecoin issuer could undermine “competition, privacy… and financial stability.”",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Which AI Glasses Are Right For You?",
+      "link": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T03:00:21+08:00",
+      "summary": "From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle. The post Which AI Glasses Are Right For You? appeared first on Meta Newsroom.",
+      "event_type": "news",
+      "publisher": "Meta Newsroom",
+      "author": "joedamiani",
+      "tickers": [
+        "META",
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Apple",
+        "Google"
+      ]
+    },
+    {
+      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
+      "link": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T02:33:21+08:00",
+      "summary": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
+      "event_type": "earnings",
+      "publisher": "TechCrunch",
+      "author": "Julie Bort",
+      "tickers": [
+        "META",
+        "MSFT",
+        "AMZN"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Amazon"
+      ]
+    },
+    {
+      "title": "US Senator questions Mark Zuckerberg on Meta’s stablecoin plans",
+      "link": "https://cointelegraph.com/news/us-senator-mark-zuckerberg-meta-stablecoin",
+      "source": "Cointelegraph",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T02:16:01+08:00",
+      "summary": "Elizabeth Warren asked the Meta CEO to provide details on a stablecoin integration to the platform, a week after a small rollout to creators in Colombia and the Philippines.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Meta U-turns on encryption push for Instagram as DMs go plaintext",
+      "link": "https://www.theregister.com/security/2026/05/08/meta-u-turns-on-encryption-push-for-instagram-as-dms-go-plaintext/5235705",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T20:42:00+08:00",
+      "summary": "After years of insisting end-to-end encryption was the future of online comms, Zuckcorp has handed itself full visibility into user chats once again",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Chip Industry Week In Review",
+      "link": "https://semiengineering.com/chip-industry-week-in-review-137",
+      "source": "Semiconductor Engineering",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T15:01:11+08:00",
+      "summary": "New Taiwan adv. packaging site; M&#038;A activity; GF's CPO solution; Apple looks beyond TSMC; EU chip companies map; strong earnings; MIT's new lidar chip; gallium production; AI inferencing at sea; quantum HW funding; PCIe 7 tool; home data centers; AI security warnings; temperature impact on EVs. The post Chip Industry Week In Review appeared first on Semiconductor Engineering.",
+      "event_type": "earnings",
+      "publisher": "Semiconductor Engineering",
+      "author": "The SE Staff",
+      "tickers": [
+        "AAPL",
+        "TSM",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "TSMC",
+        "Meta"
+      ]
+    },
+    {
+      "title": "公司用你的滑鼠與鍵盤紀錄訓練 AI 沒有問題嗎？",
+      "link": "https://infosecu.technews.tw/2026/05/08/meta-to-track-workers-clicks-and-keystrokes-to-train-ai",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T08:00:02+08:00",
+      "summary": "Meta 近期揭露以軟體記錄員工的滑鼠移動、鍵盤輸入甚至螢幕畫面，用來訓練人工智慧。表面是提升效率，但也讓人擔 [&#8230;]",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Trump gives EU ultimatum deadline to approve trade deal with US",
+      "link": "https://www.bbc.com/news/articles/cp3pyk4nw3lo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-08T07:11:35+08:00",
+      "summary": "Trump's deadline to the European Union came as a trade court ruled his global tariff policy violated US law.",
+      "event_type": "policy",
+      "publisher": "BBC News",
+      "author": "Rachel Clun",
+      "tickers": [
+        "1974",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Corning CEO to Cramer: Deals with 2 unnamed hyperscalers 'larger' than $6B Meta pact",
+      "link": "https://www.cnbc.com/2026/05/07/corning-ceo-to-cramer-deals-with-2-unnamed-hyperscalers-larger-than-6b-meta-pact.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T07:01:50+08:00",
+      "summary": "The investment story for Corning looks even sweeter in the wake of Jim Cramer's sit-down with CEO Wendell Weeks.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Meta’s Position on Canada’s Bill C-22",
+      "link": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T06:46:00+08:00",
+      "summary": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians. &#160; Delivered by Rachel Curran, Director of Public Policy, Canada, Meta &#160; Thank you, M. Chair. Good afternoon and thank you for the opportunity to appear before the Committee today. My name is Rachel Curran and ",
+      "event_type": "earnings",
+      "publisher": "Meta Newsroom",
+      "author": "juliaperreira",
+      "tickers": [
+        "META",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Apple"
+      ]
+    },
+    {
+      "title": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale - simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWlE2X3lZRm5fZndLTEprOWJlNzFOREZoVHNsdWF1UDB2WEVsZzFqc1BRVTI4QUdjRjFBaXhXWmJ5amFCUHlrVV9ZMnRGWlpWb0wzYVFhR1V6d21CUzdVbDhEWk9UZzFGODJZYWpub183TFduaUN6c0U5Tzlsa0ZGOFMyVGVuTkNMV1pOUDBTME5mcVBDNVBMcUpZRDdtOEtyTm8yUFh5RjdfQTd2NWxWdnVqR25Pay1ZMFctSFhLRkhNNmhJdUcwWNIBzgFBVV95cUxPQlgxSDd4MHU3b2dsTkl4T1lLakRvWEszQlB6SFBGZ0F3QnllV0hUNWlDbEZBSnJlZzhvZjVWTFc2MklBQzZ0WnkyeDVqR1NhSDNweTFsdXZzNWk5QTFkU3dwSmRDRWZCNjI5T1pjS1VqN1BzSVdFUUo4NUQxUlNqZWQzS0c0NEVjTUhjbFFCQkZrRnlQWk1HY095dzljRGZRU0hySzkxQkpYU0F2ZUJrX0J2SWtEVVBhdXFSa2prMzBxSkNnaTFYbWlfbmNrZw",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T04:01:31+08:00",
+      "summary": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale&nbsp;&nbsp;simplywall.st",
+      "event_type": "capex",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Apple&#8217;s AirPods with cameras for AI are apparently close to production",
+      "link": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T03:39:22+08:00",
+      "summary": "Apple's rumored AirPods with cameras are nearing a stage where the company will test early mass production, Bloomberg's Mark Gurman reports. Currently, Apple testers are \"actively using\" prototypes that are in the design validation test stage, which is one step before the production validation test stage. The AirPods' cameras \"aren't designed\" to snap photos or [&#8230;]",
+      "event_type": "news",
+      "publisher": "The Verge",
+      "author": "Jay Peters",
+      "tickers": [
+        "AAPL",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "Meta"
+      ]
+    },
+    {
+      "title": "As the Trump-Xi summit draws closer, trade uncertainty still looms large",
+      "link": "https://www.atlanticcouncil.org/blogs/econographics/as-the-trump-xi-summit-draws-closer-trade-uncertainty-still-looms-large",
+      "source": "Atlantic Council",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T03:32:19+08:00",
+      "summary": "What China and the United States manage to agree on in Beijing on key export controls or purchase agreements will significantly shape the Trump administration’s approach to rebuilding its tariff wall. The post As the Trump-Xi summit draws closer, trade uncertainty still looms large appeared first on Atlantic Council.",
+      "event_type": "policy",
+      "publisher": "Atlantic Council",
+      "author": "jyin",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "Your AI Chatbot May Be Leaking Your Chats to Meta, TikTok and Google",
+      "link": "https://decrypt.co/367164/your-ai-chatbot-leaking-chats-meta-tiktok-google",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T03:06:46+08:00",
+      "summary": "A new study finds ChatGPT, Claude, Grok, and Perplexity all share user data with third-party ad trackers—sometimes even when you say no to cookies.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Google"
+      ]
+    },
+    {
+      "title": "ChatGPT&#8217;s &#8216;Trusted Contact&#8217; will alert loved ones of safety concerns",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/925874/chatgpt-trusted-contact-emergency-self-harm-notification",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T02:00:00+08:00",
+      "summary": "OpenAI is launching an optional safety feature for ChatGPT that allows adult users to assign an emergency contact for mental health and safety concerns. Friends, family members, or caregivers designated as a \"Trusted Contact\" will be notified if OpenAI detects that a person may have discussed topics like self-harm or suicide with the chatbot. \"Trusted [&#8230;]",
+      "event_type": "news",
+      "publisher": "The Verge",
+      "author": "Jess Weatherbed",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    },
+    {
+      "title": "The Pulse: Did capacity shortages turn Anthropic hostile to devs?",
+      "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-did-capacity-shortages",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T00:45:31+08:00",
+      "summary": "Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small &#8220;AI-forward&#8221; teams, and more",
+      "event_type": "news",
+      "publisher": "The Pragmatic Engineer",
+      "author": "Gergely Orosz",
+      "tickers": [
+        "AMZN",
+        "META",
+        "AAPL",
+        "MSFT"
+      ],
+      "companies": [
+        "Amazon",
+        "Meta",
+        "Apple",
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "Data centers in the land of coal and cowboys",
+      "link": "https://www.datacenterdynamics.com/en/analysis/data-centers-in-the-land-of-coal-and-cowboys",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T00:30:28+08:00",
+      "summary": "Wyoming governor Mark Gordon is welcoming the hyperscalers to the Cowboy State",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT",
+        "META"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta"
+      ]
+    },
+    {
+      "title": "Google’s taking a big swing at AI health with the Fitbit Air",
+      "link": "https://www.theverge.com/gadgets/925458/google-health-fitbit-air-ai-coaching-wearables-fitness-trackers",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T22:00:00+08:00",
+      "summary": "It's a Whoop dupe. That was my first thought when I saw the new $99 Google Fitbit Air. You can hardly blame me. The band is screenless with a metallic fabric clasp. My eyes flickered between the Fitbit Air and my wrist, where I'm wearing a Whoop MG. Was I not seeing double? But as [&#8230;]",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ]
+    },
+    {
+      "title": "A Self-Attentive Meta-Optimizer with Group-Adaptive Learning Rates and Weight Decay",
+      "link": "https://arxiv.org/abs/2605.04055",
+      "source": "arXiv 機器學習",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T12:00:00+08:00",
+      "summary": "arXiv:2605.04055v1 Announce Type: new Abstract: Adaptive optimizers like AdamW apply uniform hyperparameters across all parameter groups, ignoring heterogeneous optimization dynamics across layers and modules. We address this limitation by proposing MetaAdamW - a new optimizer that integrates a self-attention mechanism to dynamically modulate per-group learning rates and weight decay. The modulation factors are produced by a lightweight Transformer encoder that operates on statistical features (",
+      "event_type": "news",
+      "publisher": "arXiv.org",
+      "author": "",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-30",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 56311000000.0,
+      "monthly_revenue": null,
+      "net_income": 26773000000.0,
+      "operating_income": 22872000000.0,
+      "gross_profit": null,
+      "eps_diluted": 10.44,
+      "operating_cash_flow": 32226000000.0,
+      "capex": 18997000000.0,
+      "free_cash_flow": 13229000000.0,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025-09-30",
+      "filed_at": "2025-10-30",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 141073000000.0,
+      "monthly_revenue": null,
+      "net_income": 37690000000.0,
+      "operating_income": 58531000000.0,
+      "gross_profit": null,
+      "eps_diluted": 14.62,
+      "operating_cash_flow": 79586000000.0,
+      "capex": 48308000000.0,
+      "free_cash_flow": 31278000000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "co_mentions": [
+    {
+      "ticker": "GOOGL",
+      "count": 6
+    },
+    {
+      "ticker": "AAPL",
+      "count": 6
+    },
+    {
+      "ticker": "AMZN",
+      "count": 3
+    },
+    {
+      "ticker": "MSFT",
+      "count": 3
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "2330",
+      "count": 1
+    },
+    {
+      "ticker": "1000",
+      "count": 1
+    },
+    {
+      "ticker": "TSM",
+      "count": 1
+    },
+    {
+      "ticker": "1974",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T02:39:53Z"
+}

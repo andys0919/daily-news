@@ -1,48 +1,713 @@
 {
   "ticker": "AAPL",
   "market": "us",
-  "generated_at": "2026-05-10T00:00:00Z",
   "bundle": {
     "market": "us",
     "ticker": "AAPL",
     "company_name": "Apple Inc.",
     "quarterly": {
+      "market": "us",
+      "ticker": "AAPL",
+      "company_name": "Apple Inc.",
+      "cik": "0000320193",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
       "form_type": "10-Q",
       "fiscal_year": 2026,
       "fiscal_period": "Q2",
-      "revenue": 95000000000.0,
-      "eps_diluted": 1.65,
-      "free_cash_flow": 28000000000.0,
-      "guidance_summary": "iPhone refresh cycle into FY27 Q1",
-      "filing_excerpt": ""
+      "period_end": "2026-03-28",
+      "filed_at": "2026-05-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm",
+      "report_kind": "quarterly",
+      "revenue": 254940000000.0,
+      "monthly_revenue": null,
+      "net_income": 71675000000.0,
+      "operating_income": 86737000000.0,
+      "gross_profit": 124012000000.0,
+      "gross_margin": 0.48643602416254805,
+      "operating_margin": 0.3402251510159253,
+      "eps_diluted": 4.85,
+      "operating_cash_flow": 82627000000.0,
+      "capex": 4344000000.0,
+      "free_cash_flow": 78283000000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-05-01\", \"period_end\": \"2026-03-28\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm\"}, \"anchor_fact\": {\"start\": \"2025-09-28\", \"end\": \"2026-03-28\", \"val\": 254940000000, \"accn\": \"0000320193-26-000013\", \"fy\": 2026, \"fp\": \"Q2\", \"form\": \"10-Q\", \"filed\": \"2026-05-01\"}}"
     },
     "monthly_revenue": null,
     "latest_transcript": null,
-    "recent_insider_summary": {
-      "count": 1,
-      "buys": 0,
-      "sells": 1,
-      "latest": {
-        "insider_name": "Cook Timothy D",
-        "transaction_type": "S",
-        "shares": 10000,
-        "price": 180.5
-      }
-    },
+    "recent_insider_summary": null,
     "latest_13f": null,
     "short_interest": null
   },
   "transcripts": [],
-  "insider": [
-    {
-      "insider_name": "Cook Timothy D",
-      "transaction_type": "S",
-      "shares": 10000,
-      "price": 180.5,
-      "transaction_date": "2026-04-15"
-    }
-  ],
+  "insider": [],
   "short_interest": [],
   "holdings": [],
-  "recent_news": []
+  "recent_news": [
+    {
+      "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
+      "link": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+      "source": "Lobsters AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-10T23:49:49+08:00",
+      "summary": "Comments",
+      "event_type": "earnings",
+      "publisher": "Cocoa with Love",
+      "author": "Matt Gallagher",
+      "tickers": [
+        "1000",
+        "AAPL",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "Meta"
+      ]
+    },
+    {
+      "title": "ds4 webui",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1t8ho70/ds4_webui",
+      "source": "Reddit r/LocalLLaMA",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-10T03:48:46+08:00",
+      "summary": "Hey guys I made a minimal web ui for ds4.c server (https://github.com/antirez/ds4), it's open source so you can try it too (if you can!) Here's what it looks like, running on M3 Ultra 256GB Memory, using the smaller model (q2). Not sped up. 1X speed. Pretty fast. Caveat (big caveat): You need at least 128GB memory Apple Silicon mac. github: https://github.com/cocktailpeanut/ds4.pinokio more details on x: https://x.com/cocktailpeanut/status/2053193902694256758?s=20 I tried a bunch of prompts and ",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "Apple Removes 256GB M3 Ultra Mac Studio Model From Online Store",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1t8f33t/apple_removes_256gb_m3_ultra_mac_studio_model",
+      "source": "Reddit r/LocalLLaMA",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-10T03:15:17+08:00",
+      "summary": "Getting really worried about the m5 Ultra. From removing 512gb -&gt; 256gb -&gt; 96gb. &#32; submitted by &#32; /u/rotatingphasor [link] &#32; [comments]",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "Bank of America says stocks like Apple have plenty of upside following earnings",
+      "link": "https://www.cnbc.com/2026/05/09/bank-of-america-stocks-with-upside-after-earnings.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T20:38:13+08:00",
+      "summary": "The firm named five stocks that have more room to run following earnings.",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "macOS 27 threatens to bury Time Capsule, FOSS brings a shovel",
+      "link": "https://www.theregister.com/software/2026/05/09/macos-27-threatens-to-bury-time-capsule-foss-brings-a-shovel/5234824",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-09T20:25:00+08:00",
+      "summary": "Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "慧榮：AI儲存需求續旺　NAND Flash缺到2028年",
+      "link": "https://www.cna.com.tw/news/afe/202605090180.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T18:11:57+08:00",
+      "summary": "（中央社記者張建中台北9日電）記憶體控制晶片廠慧榮總經理苟嘉章今天表示，今年人工智慧（AI）推論投資超越訓練投資，將帶動儲存需求持續增長，預期儲存型快閃記憶體（NAND Flash）可能一路缺貨到2028年，今年下半年價格應可一路往上揚升。",
+      "event_type": "capex",
+      "publisher": "中央社 CNA",
+      "author": "江明晏",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "Qualcomm Weighs AI Upside As Apple Locks In TSMC 2nm Supply - simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNUw0dmMwZlIwckZFYWR1X3Y5NHRLeDg4aUpGcU5jdWwxZUNEMTc4aXlzWHo3b1JTam9mNXFVUEthUENSY0FIZ3JNcnF3TjJiQmJ0U0RsWWNzd2xtRzRsUF9nMk5CdXBDZ0JnMmNBUHpKR3RUb2VCbUYyUVZpTUE4RkpCbU9Tc2Z4QVpqaFRzdU9rTUg3clVzdHptVVU1UVV5aFFsNVIwR2NoZnZsMkQtZ2NMY1JFZE9ucGxkeUx1dEwzbkFVUEtoUHlzOWHSAdIBQVVfeXFMUHJWWmtRbVA4UWJUTlBxV0ZOMnRqSU9oTHBvRk5GSk96ME0yOTBfUVI1M3NOT0VKNnRqdFU2eXBmbFZjUE9aWnpYbHRLUDhUWHI5bTBIdGtDLTJULXgtbTNnR0xzMmRSbGkybE1IVkZ0ZlR2TXpoMWpWR2VaZ2Ryb0tTLU1hVTZWU2s4d1NrRnpSaW50T1NmcFNRZy1xNV9sSE9iSTg1MHAwRFhtYTVzRklYb01PdzhWNzFWa21DeVJHd2NZLXRIbWhPcjUxTTNDblVn?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T15:06:54+08:00",
+      "summary": "Qualcomm Weighs AI Upside As Apple Locks In TSMC 2nm Supply&nbsp;&nbsp;simplywall.st",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL",
+        "TSM"
+      ],
+      "companies": [
+        "Apple",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "台積電受影響？傳英特爾搶下蘋果晶片訂單 股價大漲近14％",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5430892",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T07:43:46+08:00",
+      "summary": "「華爾街日報」引述知情人士報導指出，蘋果（Apple）與英特爾（Intel）已初步達成協議，將由英特爾為蘋果裝置生產部分晶片。 「華爾街日報」報導指出，蘋果與英特爾先前...…",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330",
+        "AAPL"
+      ],
+      "companies": [
+        "台積電",
+        "Apple"
+      ]
+    },
+    {
+      "title": "Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking",
+      "link": "https://www.cnbc.com/2026/05/08/intel-stock-apple-chip-deal.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T06:18:30+08:00",
+      "summary": "Samsung, Intel and Taiwan Semiconductor are the only three companies in the world capable of manufacturing the most advanced chips needed for AI.",
+      "event_type": "news",
+      "publisher": "CNBC",
+      "author": "Katie Tarasov",
+      "tickers": [
+        "AAPL",
+        "TSM",
+        "NVDA"
+      ],
+      "companies": [
+        "Apple",
+        "TSMC",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "Intel Stock Hits All-Time High After Preliminary Chip Deal With Apple",
+      "link": "https://decrypt.co/367320/intel-all-time-high-chip-deal-apple",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T04:17:26+08:00",
+      "summary": "A preliminary Apple-Intel manufacturing agreement—backed by a White House push—sent Intel stock above $130 on Friday.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "Intel’s comeback story is even wilder than it seems",
+      "link": "https://techcrunch.com/2026/05/08/intels-comeback-story-is-even-wilder-than-it-seems",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T04:02:52+08:00",
+      "summary": "Intel's stock has risen a stunning 490% over the past year, a bet by Wall Street that may be running well ahead of the company's actual turnaround.",
+      "event_type": "news",
+      "publisher": "TechCrunch",
+      "author": "Connie Loizos",
+      "tickers": [
+        "AAPL",
+        "TSLA",
+        "TSM"
+      ],
+      "companies": [
+        "Apple",
+        "Tesla",
+        "TSMC"
+      ]
+    },
+    {
+      "title": "Which AI Glasses Are Right For You?",
+      "link": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T03:00:21+08:00",
+      "summary": "From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle. The post Which AI Glasses Are Right For You? appeared first on Meta Newsroom.",
+      "event_type": "news",
+      "publisher": "Meta Newsroom",
+      "author": "joedamiani",
+      "tickers": [
+        "META",
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Apple",
+        "Google"
+      ]
+    },
+    {
+      "title": "華爾街日報：英特爾奪蘋果晶片訂單　雙方達初步協議",
+      "link": "https://www.cna.com.tw/news/ait/202605090003.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T02:18:19+08:00",
+      "summary": "（中央社紐約8日綜合外電報導）「華爾街日報」今天引述知情人士報導，蘋果（Apple）與英特爾（Intel）已達成一項初步協議，將由英特爾為蘋果裝置生產部分晶片。",
+      "event_type": "news",
+      "publisher": "中央社 CNA",
+      "author": "徐睿承",
+      "tickers": [
+        "AAPL",
+        "TSLA"
+      ],
+      "companies": [
+        "Apple",
+        "Tesla"
+      ]
+    },
+    {
+      "title": "Apple reportedly strikes deal for Intel to make some of its chips — two tech giants reached a preliminary agreement for Intel to make processors for Cupertino",
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/apple-reportedly-strikes-deal-for-intel-to-make-some-of-its-chips-two-tech-giants-reached-a-preliminary-agreement-for-intel-to-make-processors-for-cupertino",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-09T02:09:03+08:00",
+      "summary": "Intel and Apple have reportedly reached a deal in which the former will manufacture chips for the latter.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "Chrome's 4GB AI model isn't new, but you're not wrong for being confused",
+      "link": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T01:17:17+08:00",
+      "summary": "You can stop Chrome from taking up 4GB of storage for local AI, but that shouldn't be your problem.",
+      "event_type": "news",
+      "publisher": "Ars Technica",
+      "author": "Ryan Whitwam",
+      "tickers": [
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "Google",
+        "Apple"
+      ]
+    },
+    {
+      "title": "You can do CUDA inference on an Apple Silicon Mac with PCI Passthrough",
+      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1t7cqg9/you_can_do_cuda_inference_on_an_apple_silicon_mac",
+      "source": "Reddit r/LocalLLaMA",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T00:20:42+08:00",
+      "summary": "I have been working on a project to adapt QEMU, running on macOS, to support passing through a GPU into a Linux VM. I wrote this post walking through some of the interesting challenges there, along with benchmarks. The post focuses a lot on gaming, but there are AI benchmarks there as well. &#32; submitted by &#32; /u/scottjgo [link] &#32; [comments]",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "The “people’s airline” and the enterprise AI gold rush",
+      "link": "https://techcrunch.com/podcast/the-peoples-airline-and-the-enterprise-ai-gold-rush",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T23:46:17+08:00",
+      "summary": "Everyone wants a piece of the&#160;enterprise&#160;AI pie, and this week, we saw a string of companies making their moves. From&#160;Anthropic and OpenAI announcing new joint ventures&#160;targeting enterprise AI deployment to&#160;SAP dropping $1B&#160;on German AI startup Prior Labs,&#160;it&#8217;s&#160;becoming clear that if&#160;you&#8217;re&#160;a startup building enterprise tools,&#160;you&#8217;re&#160;likely an&#160;acquisition target.&#160; On this episode of TechCrunch&#8217;s&#160;Eq",
+      "event_type": "news",
+      "publisher": "TechCrunch",
+      "author": "",
+      "tickers": [
+        "AAPL",
+        "TSLA"
+      ],
+      "companies": [
+        "Apple",
+        "Tesla"
+      ]
+    },
+    {
+      "title": "Everybody wants to rule the AI world",
+      "link": "https://www.theverge.com/podcast/926707/openai-ceo-murati-musk-trial-vergecast",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T21:31:37+08:00",
+      "summary": "Sometimes, companies pick CEOs based on carefully laid succession plans designed to maximize investor confidence and future performance. Other times, apparently, companies pick CEOs based on a bunch of video calls while the current CEO is texting the former CEO about who the new CEO even is. Such was the story of The Blip, the [&#8230;]",
+      "event_type": "news",
+      "publisher": "The Verge",
+      "author": "David Pierce",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "Chip Industry Week In Review",
+      "link": "https://semiengineering.com/chip-industry-week-in-review-137",
+      "source": "Semiconductor Engineering",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T15:01:11+08:00",
+      "summary": "New Taiwan adv. packaging site; M&#038;A activity; GF's CPO solution; Apple looks beyond TSMC; EU chip companies map; strong earnings; MIT's new lidar chip; gallium production; AI inferencing at sea; quantum HW funding; PCIe 7 tool; home data centers; AI security warnings; temperature impact on EVs. The post Chip Industry Week In Review appeared first on Semiconductor Engineering.",
+      "event_type": "earnings",
+      "publisher": "Semiconductor Engineering",
+      "author": "The SE Staff",
+      "tickers": [
+        "AAPL",
+        "TSM",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "TSMC",
+        "Meta"
+      ]
+    },
+    {
+      "title": "Meta’s Position on Canada’s Bill C-22",
+      "link": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T06:46:00+08:00",
+      "summary": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians. &#160; Delivered by Rachel Curran, Director of Public Policy, Canada, Meta &#160; Thank you, M. Chair. Good afternoon and thank you for the opportunity to appear before the Committee today. My name is Rachel Curran and ",
+      "event_type": "earnings",
+      "publisher": "Meta Newsroom",
+      "author": "juliaperreira",
+      "tickers": [
+        "META",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Apple"
+      ]
+    },
+    {
+      "title": "White House inviting Nvidia, Apple, Boeing CEOs on Trump’s China trip, report says",
+      "link": "https://www.scmp.com/news/world/united-states-canada/article/3352821/white-house-inviting-ceos-nvidia-apple-trumps-china-trip-report-says",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-08T05:47:23+08:00",
+      "summary": "The Trump ⁠administration is inviting CEOs from ⁠Nvidia, Apple, Exxon, Boeing and other big companies to accompany the president on his trip to China next week, Semafor reported on Thursday. Executives from Qualcomm, Blackstone, Citigroup ‌and Visa are also on the invitation list, according to the report. A person familiar with the matter confirmed that Citigroup CEO Jane Fraser was invited. Qualcomm confirmed the invitation but declined to comment further. Reuters was not able to confirm ⁠the..",
+      "event_type": "news",
+      "publisher": "South China Morning Post",
+      "author": "Reuters",
+      "tickers": [
+        "NVDA",
+        "AAPL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Apple"
+      ]
+    },
+    {
+      "title": "Apple&#8217;s AirPods with cameras for AI are apparently close to production",
+      "link": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T03:39:22+08:00",
+      "summary": "Apple's rumored AirPods with cameras are nearing a stage where the company will test early mass production, Bloomberg's Mark Gurman reports. Currently, Apple testers are \"actively using\" prototypes that are in the design validation test stage, which is one step before the production validation test stage. The AirPods' cameras \"aren't designed\" to snap photos or [&#8230;]",
+      "event_type": "news",
+      "publisher": "The Verge",
+      "author": "Jay Peters",
+      "tickers": [
+        "AAPL",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "Meta"
+      ]
+    },
+    {
+      "title": "川普下週訪問中國　傳邀輝達等大企業執行長同行",
+      "link": "https://www.cna.com.tw/news/aopl/202605080005.aspx",
+      "source": "中央社 國際",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-08T02:32:26+08:00",
+      "summary": "（中央社華盛頓7日綜合外電報導）美國媒體Semafor今天報導，美國政府邀請輝達（Nvidia）、蘋果（Apple）、埃克森美孚（Exxon）、波音（Boeing）及其他大型企業的執行長，於下週陪同總統川普訪中。",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "NVDA",
+        "AAPL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Apple"
+      ]
+    },
+    {
+      "title": "蘋果研發支出突破10%大關　全面衝刺AI與硬體革新",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754518_U0N4ODZB25XW637U0HJSM",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T02:27:33+08:00",
+      "summary": "蘋果（Apple）在2026財年第2季（2QFY26）財報中揭露，其研究與開發（R&amp;D）支出，30年來首次在營收比重中突破10%；該數字顯現了即將進入管理層交接之際的蘋果，對於轉型的積極與急迫性。據CNBC報導，蘋果在2QFY26的研發支出佔營收比重達到10.3%，相較於1QFY26的7.6%以及2025年同期的9%...",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "Nvidia, Apple and Boeing CEOs to join Trump for US–China summit - Firstpost",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTJBcG9aMlpGOVU4ZGxNVGpzbDhiVkNTV19KaVhxblRGbUVZY0hEejlqVTNURlNIQ3RzWGZPQnMxUFNTREgtalRZQVFfSzczSXFUMXdBVUlEZ2JNdFRGU3RRMVNzeEVDLWVPZDlSaElzQUhtR0MyaXpPM0FROGkxLVFCRGZaeHZXOXltaThrYUN5anRNQXlrMXgxMFNHVEJHMzh2aVl6UWdsRzg",
+      "source": "中美科技戰",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-08T02:27:32+08:00",
+      "summary": "Nvidia, Apple and Boeing CEOs to join Trump for US–China summit&nbsp;&nbsp;Firstpost",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "NVDA",
+        "AAPL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Apple"
+      ]
+    },
+    {
+      "title": "How filmmakers are redefining the art form with MAMI Select: Filmed on iPhone",
+      "link": "https://www.apple.com/newsroom/2026/05/how-filmmakers-are-redefining-the-art-form-with-mami-select-filmed-on-iphone",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T01:00:28+08:00",
+      "summary": "Emerging filmmakers in the MAMI Select: Filmed on iPhone program use iPhone 17 Pro Max to redefine cinematic language and storytelling.",
+      "event_type": "news",
+      "publisher": "Apple Newsroom",
+      "author": "",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ]
+    },
+    {
+      "title": "The Pulse: Did capacity shortages turn Anthropic hostile to devs?",
+      "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-did-capacity-shortages",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T00:45:31+08:00",
+      "summary": "Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small &#8220;AI-forward&#8221; teams, and more",
+      "event_type": "news",
+      "publisher": "The Pragmatic Engineer",
+      "author": "Gergely Orosz",
+      "tickers": [
+        "AMZN",
+        "META",
+        "AAPL",
+        "MSFT"
+      ],
+      "companies": [
+        "Amazon",
+        "Meta",
+        "Apple",
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "AI meets accessibility in this year’s Swift Student Challenge",
+      "link": "https://www.apple.com/newsroom/2026/05/ai-meets-accessibility-in-this-years-swift-student-challenge",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T21:59:24+08:00",
+      "summary": "Meet four Swift Student Challenge winners who are creating innovative apps that leverage AI and focus on accessibility.",
+      "event_type": "news",
+      "publisher": "Apple Newsroom",
+      "author": "",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ]
+    },
+    {
+      "title": "Elon Musk tried to hire OpenAI founders to start AI unit inside Tesla",
+      "link": "https://www.ft.com/content/c93ba0c9-caec-4707-8f27-a1abb8de115e",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T21:14:01+08:00",
+      "summary": "Musk was “prepared to do the for-profit, provided he would get control.”",
+      "event_type": "news",
+      "publisher": "Ars Technica",
+      "author": "Financial Times",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Google"
+      ]
+    },
+    {
+      "title": "CloakHQ/CloakBrowser",
+      "link": "https://github.com/CloakHQ/CloakBrowser",
+      "source": "GitHub Trending (Python)",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T09:00:53.560139+08:00",
+      "summary": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed. Stealth Chromium that passes every bot detection test. Not a patched config. Not a JS injection. A real Chromium binary with fingerprints modified at the C++ source level. Antibot systems score it as a normal browser — because it is a normal browser. Cloudflare Turnstile — 3 live tests passing (headed mode, macOS) Drop-in Playwright/Puppeteer replacemen",
+      "event_type": "earnings",
+      "publisher": "GitHub",
+      "author": "",
+      "tickers": [
+        "8080",
+        "9222",
+        "AAPL",
+        "NVDA"
+      ],
+      "companies": [
+        "Apple",
+        "NVIDIA"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "period_end": "2026-03-28",
+      "filed_at": "2026-05-01",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 254940000000.0,
+      "monthly_revenue": null,
+      "net_income": 71675000000.0,
+      "operating_income": 86737000000.0,
+      "gross_profit": 124012000000.0,
+      "eps_diluted": 4.85,
+      "operating_cash_flow": 82627000000.0,
+      "capex": 4344000000.0,
+      "free_cash_flow": 78283000000.0,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2025-12-27",
+      "filed_at": "2026-01-30",
+      "source_type": "sec-companyfacts",
+      "form_type": "8-K",
+      "revenue": 143756000000.0,
+      "monthly_revenue": null,
+      "net_income": 39510000000.0,
+      "operating_income": 52503000000.0,
+      "gross_profit": 70537000000.0,
+      "eps_diluted": 6.45,
+      "operating_cash_flow": 50856000000.0,
+      "capex": 2373000000.0,
+      "free_cash_flow": 48483000000.0,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2025-12-27",
+      "filed_at": "2026-01-30",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 143756000000.0,
+      "monthly_revenue": null,
+      "net_income": 42097000000.0,
+      "operating_income": 50852000000.0,
+      "gross_profit": 69231000000.0,
+      "eps_diluted": 2.84,
+      "operating_cash_flow": 53925000000.0,
+      "capex": 2373000000.0,
+      "free_cash_flow": 51552000000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "co_mentions": [
+    {
+      "ticker": "META",
+      "count": 6
+    },
+    {
+      "ticker": "NVDA",
+      "count": 5
+    },
+    {
+      "ticker": "TSM",
+      "count": 4
+    },
+    {
+      "ticker": "TSLA",
+      "count": 4
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 4
+    },
+    {
+      "ticker": "1000",
+      "count": 1
+    },
+    {
+      "ticker": "2330",
+      "count": 1
+    },
+    {
+      "ticker": "AMZN",
+      "count": 1
+    },
+    {
+      "ticker": "MSFT",
+      "count": 1
+    },
+    {
+      "ticker": "8080",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T02:39:53Z"
 }

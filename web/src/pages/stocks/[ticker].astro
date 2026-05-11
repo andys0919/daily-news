@@ -1,7 +1,5 @@
 ---
 import Base from "../../layouts/Base.astro";
-import BentoCard from "../../components/BentoCard.astro";
-import TickerChip from "../../components/TickerChip.astro";
 
 export async function getStaticPaths() {
   const modules = import.meta.glob("../../data/stocks/*.json", { eager: true });
@@ -16,82 +14,225 @@ const { data } = Astro.props;
 const bundle = data.bundle ?? null;
 const quarterly = bundle?.quarterly ?? null;
 const monthly = bundle?.monthly_revenue ?? null;
+const history: any[] = (data.history ?? []).slice().reverse();
+const recentNews: any[] = data.recent_news ?? [];
+const coMentions: any[] = data.co_mentions ?? [];
+const transcripts: any[] = data.transcripts ?? [];
+
+function fmtMoney(n: number | null | undefined, scale = 1e9, digits = 2, suffix = "B"): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  return `${(Number(n) / scale).toFixed(digits)}${suffix}`;
+}
+function fmtNum(n: number | null | undefined, digits = 2): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  return Number(n).toFixed(digits);
+}
+function fmtPct(n: number | null | undefined): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  return `${Number(n).toFixed(1)}%`;
+}
+// Sparkline for revenue history
+const revPoints = history.map((r) => Number(r.revenue ?? 0));
+const epsPoints = history.map((r) => Number(r.eps_diluted ?? 0));
+const periods = history.map((r) => `${r.fiscal_year ?? ""}${r.fiscal_period ? "·" + r.fiscal_period : ""}`);
+
+function svgPath(points: number[]) {
+  if (points.length === 0) return { line: "", area: "", pts: [] as { x: number; y: number; v: number }[] };
+  const w = 320, h = 60, pad = 6;
+  const max = Math.max(...points, 0);
+  const min = Math.min(...points, 0);
+  const range = Math.max(1, max - min);
+  const stepX = points.length > 1 ? (w - 2 * pad) / (points.length - 1) : 0;
+  const pts = points.map((v, i) => ({
+    x: pad + i * stepX,
+    y: h - pad - ((v - min) / range) * (h - 2 * pad),
+    v,
+  }));
+  const line = pts.map((p, i) => (i === 0 ? `M${p.x},${p.y}` : `L${p.x},${p.y}`)).join(" ");
+  const area = `${line} L${pts[pts.length - 1].x},${h - pad} L${pts[0].x},${h - pad} Z`;
+  return { line, area, pts };
+}
+const revSpark = svgPath(revPoints);
+const epsSpark = svgPath(epsPoints);
 ---
-<Base title={`${data.ticker} 個股深度`}>
-  <header class="mb-6 flex items-baseline gap-3 flex-wrap">
-    <h1 class="text-3xl font-semibold mono">{data.ticker}</h1>
-    <span class="text-sm opacity-70">{bundle?.company_name ?? ""}</span>
-    <span class="text-xs opacity-60 mono ml-auto">data @ {data.generated_at}</span>
-  </header>
+<Base title={`${data.ticker} · 個股深度`}>
+  <section class="hero">
+    <div>
+      <span class="live"><span class="live-dot"></span>{data.market.toUpperCase()} · {recentNews.length} 篇新聞</span>
+      <h1 class="mt-2 mono">
+        <span class="accent">{data.ticker}</span>
+        {bundle?.company_name && <span style="font-size:18px; color: var(--fg-300); font-family: 'IBM Plex Sans', sans-serif; margin-left:12px; font-weight:400;">{bundle.company_name}</span>}
+      </h1>
+      <p class="hero-sub">{history.length} 期官方財報 · {transcripts.length} 份 IR / 法說 · 共同提及 {coMentions.length} 檔關聯個股</p>
+    </div>
+    <div class="hero-meta">
+      <div class="ts mono">{(data.generated_at ?? "").slice(0, 10)}</div>
+      <div class="mono">market <span class="ts">{data.market}</span></div>
+    </div>
+  </section>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <BentoCard title="官方財報" span="2">
-      {quarterly ? (
-        <ul class="space-y-1 text-sm">
-          <li>FY{quarterly.fiscal_year} {quarterly.fiscal_period} | {quarterly.form_type}</li>
-          {quarterly.revenue && <li>營收 <span class="mono">${(quarterly.revenue / 1e9).toFixed(1)}B</span></li>}
-          {quarterly.eps_diluted != null && <li>EPS <span class="mono">{quarterly.eps_diluted.toFixed(2)}</span></li>}
-          {quarterly.free_cash_flow && <li>FCF <span class="mono">${(quarterly.free_cash_flow / 1e9).toFixed(1)}B</span></li>}
-          {quarterly.guidance_summary && <li class="opacity-80">Guidance：{quarterly.guidance_summary}</li>}
-        </ul>
-      ) : <p class="opacity-60 text-sm">（暫無官方財報資料）</p>}
-      {monthly && monthly.monthly_revenue && (
-        <p class="text-xs opacity-70 mt-2 mono">
-          {monthly.fiscal_period} 月營收 ${(monthly.monthly_revenue / 1e9).toFixed(1)}B
-        </p>
-      )}
-    </BentoCard>
-
-    <BentoCard title="最新法說會">
-      {bundle?.latest_transcript ? (
-        <div class="text-sm space-y-1">
-          <p class="font-medium">{bundle.latest_transcript.title}</p>
-          <p class="opacity-80 line-clamp-4">{bundle.latest_transcript.body_text}</p>
+  <!-- KPI row ─────────────────────────────────────────────────── -->
+  <section class="stats-strip mb-6">
+    {quarterly && (
+      <>
+        <div class="stat">
+          <div class="stat-label">營收 (Q)</div>
+          <div class="stat-value">{fmtMoney(quarterly.revenue)}</div>
+          <div class="stat-sub">{quarterly.fiscal_year}·{quarterly.fiscal_period}</div>
         </div>
-      ) : <p class="opacity-60 text-sm">（暫無）</p>}
-    </BentoCard>
+        <div class="stat">
+          <div class="stat-label">EPS (diluted)</div>
+          <div class="stat-value">{fmtNum(quarterly.eps_diluted)}</div>
+          <div class="stat-sub">{quarterly.form_type ?? "—"}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">營業利益</div>
+          <div class="stat-value">{fmtMoney(quarterly.operating_income)}</div>
+          <div class="stat-sub">營益率 {quarterly.revenue ? fmtPct((quarterly.operating_income / quarterly.revenue) * 100) : "—"}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">FCF</div>
+          <div class="stat-value">{fmtMoney(quarterly.free_cash_flow)}</div>
+          <div class="stat-sub">cf-from-op {fmtMoney(quarterly.operating_cash_flow)}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">毛利</div>
+          <div class="stat-value">{fmtMoney(quarterly.gross_profit)}</div>
+          <div class="stat-sub">毛利率 {quarterly.revenue ? fmtPct((quarterly.gross_profit / quarterly.revenue) * 100) : "—"}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">月營收</div>
+          <div class="stat-value">{monthly ? fmtMoney(monthly.monthly_revenue) : "—"}</div>
+          <div class="stat-sub">{monthly ? `${monthly.fiscal_year}·${monthly.fiscal_period}` : "—"}</div>
+        </div>
+      </>
+    )}
+    {!quarterly && (
+      <div class="stat" style="grid-column: 1 / -1;">
+        <div class="stat-label">官方財報</div>
+        <div class="stat-value muted">尚未建檔</div>
+        <div class="stat-sub">執行 stock_memo.py 觸發 ingest</div>
+      </div>
+    )}
+  </section>
 
-    <BentoCard title="近期內部人交易" span="1">
-      {(data.insider ?? []).length === 0
-        ? (<p class="opacity-60 text-sm">（暫無）</p>)
-        : (
-          <ul class="space-y-1 text-sm">
-            {(data.insider ?? []).slice(0, 5).map((i: any) => (
-              <li class="mono">
-                <span class={i.transaction_type === "S" ? "delta-down" : "delta-up"}>{i.transaction_type}</span>
-                {" "}{i.shares.toLocaleString()} @ ${i.price.toFixed(2)}
-              </li>
-            ))}
-          </ul>
-        )}
-    </BentoCard>
+  <!-- 趨勢 chart row ─────────────────────────────────────────── -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">營收趨勢 · 近 {revPoints.length} 期</h2>
+        <span class="bento-link mono">{periods[0]} → {periods[periods.length - 1]}</span>
+      </header>
+      {revPoints.some((v) => v > 0) ? (
+        <svg class="spark" viewBox="0 0 320 60" preserveAspectRatio="none">
+          <path class="area" d={revSpark.area} />
+          <path class="line" d={revSpark.line} />
+          {revSpark.pts.map((p) => <circle class="dot" cx={p.x} cy={p.y} r="2" />)}
+        </svg>
+      ) : <p class="muted text-sm">（暫無歷史資料）</p>}
+    </article>
 
-    <BentoCard title="融券 / ETF 流向" span="1">
-      {bundle?.short_interest
-        ? (<p class="text-sm mono">融券餘額 {bundle.short_interest.short_interest.toLocaleString()} | 券資比 {(bundle.short_interest.short_interest_ratio * 100).toFixed(1)}%</p>)
-        : (<p class="opacity-60 text-sm">（暫無）</p>)}
-    </BentoCard>
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">EPS 趨勢 · 近 {epsPoints.length} 期</h2>
+        <span class="bento-link mono">latest {fmtNum(epsPoints[epsPoints.length - 1])}</span>
+      </header>
+      {epsPoints.some((v) => v !== 0) ? (
+        <svg class="spark" viewBox="0 0 320 60" preserveAspectRatio="none">
+          <path class="area" d={epsSpark.area} />
+          <path class="line" d={epsSpark.line} />
+          {epsSpark.pts.map((p) => <circle class="dot" cx={p.x} cy={p.y} r="2" />)}
+        </svg>
+      ) : <p class="muted text-sm">（暫無 EPS 資料）</p>}
+    </article>
+  </section>
 
-    <BentoCard title="13F 機構動向" span="1">
-      {bundle?.latest_13f
-        ? (<p class="text-sm">{bundle.latest_13f.reporter_name} 持有 {bundle.latest_13f.shares.toLocaleString()} 股</p>)
-        : (<p class="opacity-60 text-sm">（暫無）</p>)}
-    </BentoCard>
+  <!-- 歷史明細 + 相關 ────────────────────────────────────────── -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+    <article class="glass bento lg:col-span-2">
+      <header class="bento-head">
+        <h2 class="bento-title">財報歷史 · {history.length} 期</h2>
+        <span class="bento-link mono">sources {Array.from(new Set(history.map((h) => h.source_type))).join(", ")}</span>
+      </header>
+      {history.length === 0 ? (
+        <p class="muted text-sm">（暫無資料）</p>
+      ) : (
+        <div style="overflow-x:auto;">
+          <table class="fintable" style="min-width:560px;">
+            <thead>
+              <tr>
+                <th class="label">期間</th>
+                <th>營收</th>
+                <th>毛利</th>
+                <th>營業利益</th>
+                <th>淨利</th>
+                <th>EPS</th>
+                <th>FCF</th>
+              </tr>
+            </thead>
+            <tbody>
+              {history.slice().reverse().map((r) => (
+                <tr>
+                  <td class="label">{r.fiscal_year}·{r.fiscal_period ?? "—"}</td>
+                  <td>{fmtMoney(r.revenue)}</td>
+                  <td>{fmtMoney(r.gross_profit)}</td>
+                  <td>{fmtMoney(r.operating_income)}</td>
+                  <td>{fmtMoney(r.net_income)}</td>
+                  <td>{fmtNum(r.eps_diluted)}</td>
+                  <td>{fmtMoney(r.free_cash_flow)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </article>
 
-    <BentoCard title="相關新聞" span="3" href="/news">
-      {(data.recent_news ?? []).length === 0
-        ? (<p class="opacity-60 text-sm">（暫無相關新聞）</p>)
-        : (
-          <ul class="space-y-1 text-sm">
-            {(data.recent_news ?? []).slice(0, 10).map((n: any) => (
-              <li class="flex gap-3 items-baseline">
-                <span class="opacity-60 mono text-xs shrink-0">{(n.published ?? "").slice(0, 10)}</span>
-                <a href={n.link} class="opacity-90 hover:opacity-100 truncate">{n.title}</a>
-                <span class="ml-auto text-xs opacity-50">{n.source}</span>
-              </li>
-            ))}
-          </ul>
-        )}
-    </BentoCard>
-  </div>
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">共同提及</h2>
+        <span class="bento-link mono">{coMentions.length}</span>
+      </header>
+      <div class="lb">
+        {coMentions.map((c) => (
+          <a class="lb-row" href={`/stocks/${c.ticker}`}>
+            <span class="name mono"><strong>{c.ticker}</strong></span>
+            <span class="v">{c.count} 次</span>
+            <span class="muted-2 mono" style="font-size:10px;">共現</span>
+          </a>
+        ))}
+        {coMentions.length === 0 && <p class="muted text-sm">（無共現資料）</p>}
+      </div>
+    </article>
+  </section>
+
+  <!-- 相關新聞 ─────────────────────────────────────────────── -->
+  <section class="glass bento">
+    <header class="bento-head">
+      <h2 class="bento-title">相關新聞 · 最新 {recentNews.length} 篇</h2>
+      <a href="/news" class="bento-link">全部 →</a>
+    </header>
+    <div class="timeline">
+      {recentNews.slice(0, 30).map((n: any) => (
+        <article class="tl-item">
+          <div class="tl-stamp">
+            <div>{(n.published ?? "").slice(0, 10)}</div>
+            <div class="muted-2">{(n.published ?? "").slice(11, 16)}</div>
+          </div>
+          <div class="tl-body">
+            <div class="h">
+              <a href={n.link} target="_blank" rel="noopener"><strong>{n.title}</strong></a>
+              <span class="muted-2 mono" style="font-size:11px;">· {n.source}</span>
+            </div>
+            {n.summary && <p class="summary line-clamp-2">{n.summary}</p>}
+            <div class="tags">
+              {n.category && <span class="chip-mini">{n.category}</span>}
+              {n.event_type && <span class={`chip-mini evt-${n.event_type}`}>{n.event_type}</span>}
+            </div>
+          </div>
+        </article>
+      ))}
+      {recentNews.length === 0 && <p class="muted text-sm">（暫無相關新聞）</p>}
+    </div>
+  </section>
 </Base>

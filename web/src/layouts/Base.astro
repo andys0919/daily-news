@@ -3,8 +3,18 @@ import "../styles/global.css";
 
 interface Props {
   title?: string;
+  active?: string;
 }
-const { title = "投資決策 Dashboard" } = Astro.props;
+const { title = "投資決策 Dashboard", active = "home" } = Astro.props;
+const nav = [
+  { id: "home", href: "/", label: "總覽" },
+  { id: "screens", href: "/screens", label: "Screen" },
+  { id: "themes", href: "/themes", label: "主題" },
+  { id: "news", href: "/news", label: "新聞" },
+  { id: "calendar", href: "/calendar", label: "月曆" },
+  { id: "coverage", href: "/coverage", label: "覆蓋" },
+  { id: "decisions", href: "/decisions", label: "日誌" },
+];
 ---
 <!doctype html>
 <html lang="zh-Hant">
@@ -29,10 +39,9 @@ const { title = "投資決策 Dashboard" } = Astro.props;
           <span class="brand-meta">Investment Desk</span>
         </a>
         <div class="navlinks">
-          <a href="/" class="navlink" data-active>總覽</a>
-          <a href="/news" class="navlink">新聞</a>
-          <a href="/calendar" class="navlink">月曆</a>
-          <a href="/decisions" class="navlink">日誌</a>
+          {nav.map((n) => (
+            <a href={n.href} class="navlink" data-active={active === n.id ? "" : undefined}>{n.label}</a>
+          ))}
         </div>
         <div class="topnav-meta">
           <kbd class="kbd">/</kbd>

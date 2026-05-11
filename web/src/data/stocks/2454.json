@@ -1,0 +1,891 @@
+{
+  "ticker": "2454",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2454",
+    "company_name": "聯發科",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2454",
+      "company_name": "聯發科",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 595965682.0,
+      "monthly_revenue": null,
+      "net_income": 106117575.0,
+      "operating_income": 103469695.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 66.16,
+      "operating_cash_flow": 162792872.0,
+      "capex": 15059115.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業收入合計\", \"595,965,682\", \"100.00\", \"530,585,886\", \"100.00\"], [\"營業成本合計\", \"312,885,741\", \"52.50\", \"267,200,185\", \"50.36\"], [\"營業毛利（毛損）\", \"283,079,941\", \"47.50\", \"263,385,701\", \"49.64\"], [\"營業毛利（毛損）淨額\", \"283,079,941\", \"47.50\", \"263,385,701\", \"49.64\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"20,447,681\", \"3.43\", \"17,089,713\", \"3.22\"], [\"　　管理費用\", \"10,856,762\", \"1.82\", \"11,946,997\", \"2.25\"], [\"　　研究發展費用\", \"148,306,389\", \"24.89\", \"131,993,135\", \"24.88\"], [\"　　預期信用減損損失（利益）\", \"-586\", \"0.00\", \"-56,111\", \"-0.01\"], [\"　營業費用合計\", \"179,610,246\", \"30.14\", \"160,973,734\", \"30.34\"], [\"營業利益（損失）\", \"103,469,695\", \"17.36\", \"102,411,967\", \"19.30\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"10,819,306\", \"1.82\", \"11,149,734\", \"2.10\"], [\"　　其他收入\", \"5,944,689\", \"1.00\", \"3,934,113\", \"0.74\"], [\"　　其他利益及損失淨額\", \"4,521,114\", \"0.76\", \"1,959,681\", \"0.37\"], [\"　　財務成本淨額\", \"652,032\", \"0.11\", \"453,291\", \"0.09\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"785,029\", \"0.13\", \"516,576\", \"0.10\"], [\"　營業外收入及支出合計\", \"21,418,106\", \"3.59\", \"17,106,813\", \"3.22\"], [\"稅前淨利（淨損）\", \"124,887,801\", \"20.96\", \"119,518,780\", \"22.53\"], [\"所得稅費用（利益）合計\", \"18,770,226\", \"3.15\", \"12,378,157\", \"2.33\"], [\"繼續營業單位本期淨利（淨損）\", \"106,117,575\", \"17.81\", \"107,140,623\", \"20.19\"], [\"本期淨利（淨損）\", \"106,117,575\", \"17.81\", \"107,140,623\", \"20.19\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"1,286\", \"0.00\", \"84,794\", \"0.02\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"-8,244,552\", \"-1.38\", \"-2,088,221\", \"-0.39\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-不重分類至損益之項目\", \"55,558\", \"0.01\", \"-718\", \"0.00\"], [\"　　　與不重分類之項目相關之所得稅\", \"100,732\", \"0.02\", \"-150,917\", \"-0.03\"], [\"　不重分類至損益之項目：\", \"-8,288,440\", \"-1.39\", \"-1,853,228\", \"-0.35\"], [\"　　　國外營運機構財務報表換算之兌換差額\", \"-9,825,978\", \"-1.65\", \"17,212,011\", \"3.24\"], [\"　　　透過其他綜合損益按公允價值衡量之債務工具投資未實現評價損益\", \"8,658\", \"0.00\", \"14,028\", \"0.00\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-可能重分類至損益之項目\", \"336,268\", \"0.06\", \"-177,166\", \"-0.03\"], [\"　後續可能重分類至損益之項目：\", \"-9,481,052\", \"-1.59\", \"17,048,873\", \"3.21\"], [\"　其他綜合損益（淨額）\", \"-17,769,492\", \"-2.98\", \"15,195,645\", \"2.86\"], [\"本期綜合損益總額\", \"88,348,083\", \"14.82\", \"122,336,268\", \"23.06\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利∕損）\", \"105,319,255\", \"17.67\", \"106,386,578\", \"20.05\"], [\"　非控制權益（淨利∕損）\", \"798,320\", \"0.13\", \"754,045\", \"0.14\"], [\"　母公司業主（綜合損益）\", \"87,554,841\", \"14.69\", \"121,555,605\", \"22.91\"], [\"　非控制權益（綜合損益）\", \"793,242\", \"0.13\", \"780,663\", \"0.15\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"66.16\", \"\", \"66.92\", \"\"], [\"　基本每股盈餘\", \"66.16\", \"\", \"66.92\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"66.03\", \"\", \"66.78\", \"\"], [\"　稀釋每股盈餘\", \"66.03\", \"\", \"66.78\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2454&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"聯發科\"}, \"datetime\": \"115/05/10 09:00:52\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"235,290,082\", \"31.63\", \"203,695,892\", \"29.19\"], [\"　　　透過損益按公允價值衡量之金融資產－流動\", \"1,837,821\", \"0.25\", \"5,271,003\", \"0.76\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－流動\", \"6,378,814\", \"0.86\", \"6,266,087\", \"0.90\"], [\"　　　按攤銷後成本衡量之金融資產－流動\", \"4,202,385\", \"0.57\", \"4,390,824\", \"0.63\"], [\"　　　應收帳款淨額\", \"62,056,117\", \"8.34\", \"43,944,786\", \"6.30\"], [\"　　　應收帳款－關係人淨額\", \"62,703\", \"0.01\", \"40,666\", \"0.01\"], [\"　　　應收融資租賃款淨額\", \"2,130\", \"0.00\", \"727,892\", \"0.10\"], [\"　　　其他應收款淨額\", \"6,476,022\", \"0.87\", \"7,056,968\", \"1.01\"], [\"　　　本期所得稅資產\", \"1,782,046\", \"0.24\", \"1,574,062\", \"0.23\"], [\"　　　存貨\", \"67,234,559\", \"9.04\", \"58,414,245\", \"8.37\"], [\"　　　預付款項\", \"10,823,016\", \"1.46\", \"15,865,797\", \"2.27\"], [\"　　　其他流動資產\", \"1,310,496\", \"0.18\", \"3,777,240\", \"0.54\"], [\"　　流動資產合計\", \"397,456,191\", \"53.44\", \"351,025,462\", \"50.30\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　透過損益按公允價值衡量之金融資產－非流動\", \"3,577,731\", \"0.48\", \"4,528,285\", \"0.65\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－非流動\", \"64,383,526\", \"8.66\", \"74,233,421\", \"10.64\"], [\"　　　按攤銷後成本衡量之金融資產－非流動\", \"81,012,036\", \"10.89\", \"72,942,395\", \"10.45\"], [\"　　　採用權益法之投資\", \"19,938,312\", \"2.68\", \"18,266,368\", \"2.62\"], [\"　　　不動產、廠房及設備\", \"60,427,356\", \"8.12\", \"56,917,043\", \"8.16\"], [\"　　　使用權資產\", \"8,652,450\", \"1.16\", \"8,918,559\", \"1.28\"], [\"　　　投資性不動產淨額\", \"2,589,782\", \"0.35\", \"2,554,285\", \"0.37\"], [\"　　　無形資產\", \"80,261,705\", \"10.79\", \"82,257,042\", \"11.79\"], [\"　　　遞延所得稅資產\", \"19,556,960\", \"2.63\", \"14,390,228\", \"2.06\"], [\"　　　其他非流動資產\", \"5,928,756\", \"0.80\", \"11,834,442\", \"1.70\"], [\"　　非流動資產合計\", \"346,328,614\", \"46.56\", \"346,842,068\", \"49.70\"], [\"　資產總額\", \"743,784,805\", \"100.00\", \"697,867,530\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"940,000\", \"0.13\", \"940,000\", \"0.13\"], [\"　　　透過損益按公允價值衡量之金融負債－流動\", \"3,313\", \"0.00\", \"4,229\", \"0.00\"], [\"　　　合約負債－流動\", \"7,298,470\", \"0.98\", \"4,318,428\", \"0.62\"], [\"　　　應付帳款\", \"46,169,969\", \"6.21\", \"38,735,333\", \"5.55\"], [\"　　　應付帳款－關係人\", \"2,539,929\", \"0.34\", \"2,041,173\", \"0.29\"], [\"　　　其他應付款\", \"107,468,066\", \"14.45\", \"110,342,579\", \"15.81\"], [\"　　　其他應付款項－關係人\", \"347,123\", \"0.05\", \"61,710\", \"0.01\"], [\"　　　本期所得稅負債\", \"29,630,928\", \"3.98\", \"13,059,756\", \"1.87\"], [\"　　　租賃負債－流動\", \"1,024,052\", \"0.14\", \"995,267\", \"0.14\"], [\"　　　其他流動負債\", \"107,927,958\", \"14.51\", \"96,403,851\", \"13.81\"], [\"　　流動負債合計\", \"303,349,808\", \"40.78\", \"266,902,326\", \"38.25\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　長期借款\", \"60,000\", \"0.01\", \"0\", \"0.00\"], [\"　　　遞延所得稅負債\", \"11,205,646\", \"1.51\", \"10,556,716\", \"1.51\"], [\"　　　租賃負債－非流動\", \"8,165,194\", \"1.10\", \"8,375,041\", \"1.20\"], [\"　　　其他非流動負債\", \"11,809,136\", \"1.59\", \"6,978,100\", \"1.00\"], [\"　　非流動負債合計\", \"31,239,976\", \"4.20\", \"25,909,857\", \"3.71\"], [\"　負債總額\", \"334,589,784\", \"44.98\", \"292,812,183\", \"41.96\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"16,039,122\", \"2.16\", \"16,016,880\", \"2.30\"], [\"　　　股本合計\", \"16,039,122\", \"2.16\", \"16,016,880\", \"2.30\"], [\"　　資本公積\", \"\", \"\", \"\", \"\"], [\"　　　資本公積合計\", \"34,599,724\", \"4.65\", \"31,636,053\", \"4.53\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"100,019,777\", \"13.45\", \"89,308,524\", \"12.80\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"219,519,259\", \"29.51\", \"210,598,743\", \"30.18\"], [\"　　　保留盈餘合計\", \"319,539,036\", \"42.96\", \"299,907,267\", \"42.97\"], [\"　　其他權益\", \"\", \"\", \"\", \"\"], [\"　　　其他權益合計\", \"30,479,076\", \"4.10\", \"49,122,847\", \"7.04\"], [\"　　　庫藏股票\", \"-55,970\", \"-0.01\", \"-55,970\", \"-0.01\"], [\"　　歸屬於母公司業主之權益合計\", \"400,600,988\", \"53.86\", \"396,627,077\", \"56.83\"], [\"　　非控制權益\", \"8,594,033\", \"1.16\", \"8,428,270\", \"1.21\"], [\"　權益總額\", \"409,195,021\", \"55.02\", \"405,055,347\", \"58.04\"], [\"　負債及權益總計\", \"743,784,805\", \"100.00\", \"697,867,530\", \"100.00\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"7,794,085\", \"\", \"7,794,085\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2454&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年12月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年12月31日\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"聯發科\"}, \"datetime\": \"115/05/10 09:00:52\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"124,887,801\", \"119,518,780\"], [\"　本期稅前淨利（淨損）\", \"124,887,801\", \"119,518,780\"], [\"　　　折舊費用\", \"13,335,843\", \"12,560,224\"], [\"　　　攤銷費用\", \"9,638,513\", \"8,375,769\"], [\"　　　預期信用減損損失（利益）數∕呆帳費用提列（轉列收入）數\", \"-586\", \"-56,111\"], [\"　　　透過損益按公允價值衡量金融資產及負債之淨損失（利益）\", \"12,848\", \"-786,901\"], [\"　　　利息費用\", \"652,032\", \"453,291\"], [\"　　　除列按攤銷後成本衡量金融資產淨損失（利益）\", \"0\", \"31,165\"], [\"　　　利息收入\", \"-10,819,306\", \"-11,149,734\"], [\"　　　股利收入\", \"-5,208,705\", \"-3,421,872\"], [\"　　　股份基礎給付酬勞成本\", \"2,173,895\", \"1,216,286\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-785,029\", \"-516,576\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"-20,190\", \"3,813\"], [\"　　　不動產、廠房及設備轉列費用數\", \"566\", \"0\"], [\"　　　處分投資損失（利益）\", \"11,662\", \"0\"], [\"　　　處分採用權益法之投資損失（利益）\", \"89\", \"-1,007,936\"], [\"　　　非金融資產減損損失\", \"0\", \"74,233\"], [\"　　　其他項目\", \"8,047\", \"64\"], [\"　　　收益費損項目合計\", \"8,999,679\", \"5,775,715\"], [\"　　　　強制透過損益按公允價值衡量之金融資產（增加）減少\", \"4,520,065\", \"2,147,889\"], [\"　　　　應收票據（增加）減少\", \"0\", \"3,142\"], [\"　　　　應收帳款（增加）減少\", \"-18,843,845\", \"12,314,417\"], [\"　　　　應收帳款－關係人（增加）減少\", \"-22,037\", \"12,796\"], [\"　　　　其他應收款（增加）減少\", \"-220,410\", \"1,275,372\"], [\"　　　　存貨（增加）減少\", \"-8,575,594\", \"-15,291,975\"], [\"　　　　預付款項（增加）減少\", \"10,209,459\", \"-324,265\"], [\"　　　　其他流動資產（增加）減少\", \"1,909,688\", \"-815,312\"], [\"　　　　其他營業資產（增加）減少\", \"2,504,242\", \"8,335,323\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"-8,518,432\", \"7,657,387\"], [\"　　　　合約負債增加（減少）\", \"2,980,042\", \"929,217\"], [\"　　　　應付帳款增加（減少）\", \"7,434,636\", \"1,839,351\"], [\"　　　　應付帳款－關係人增加（減少）\", \"498,756\", \"121,521\"], [\"　　　　其他應付款增加（減少）\", \"1,267,739\", \"11,394,238\"], [\"　　　　其他應付款－關係人增加（減少）\", \"24,733\", \"28,119\"], [\"　　　　其他流動負債增加（減少）\", \"17,268,544\", \"11,747,867\"], [\"　　　　淨確定福利負債增加(減少)\", \"-82,292\", \"-16,153\"], [\"　　　　其他營業負債增加（減少）\", \"-931,732\", \"-1,953,421\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"28,460,426\", \"24,090,739\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"19,941,994\", \"31,748,126\"], [\"　　調整項目合計\", \"28,941,673\", \"37,523,841\"], [\"　營運產生之現金流入（流出）\", \"153,829,474\", \"157,042,621\"], [\"　收取之利息\", \"11,114,337\", \"9,391,270\"], [\"　收取之股利\", \"5,584,608\", \"3,534,226\"], [\"　支付之利息\", \"-709,800\", \"-567,162\"], [\"　退還（支付）之所得稅\", \"-7,025,747\", \"-13,346,348\"], [\"營業活動之淨現金流入（流出）\", \"162,792,872\", \"156,054,607\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　取得透過其他綜合損益按公允價值衡量之金融資產\", \"-3,344,350\", \"-3,802,236\"], [\"　處分透過其他綜合損益按公允價值衡量之金融資產\", \"2,801,014\", \"3,868,758\"], [\"　透過其他綜合損益按公允價值衡量之金融資產減資退回股款\", \"474,032\", \"216,705\"], [\"　取得按攤銷後成本衡量之金融資產\", \"-21,227,227\", \"-25,728,091\"], [\"　按攤銷後成本衡量之金融資產到期還本\", \"11,534,576\", \"10,748,222\"], [\"　取得採用權益法之投資\", \"-909,303\", \"0\"], [\"　處分採用權益法之投資\", \"0\", \"25,997\"], [\"　對子公司之收購（扣除所取得之現金）\", \"-232,431\", \"219,037\"], [\"　採用權益法之被投資公司減資退回股款\", \"22,685\", \"0\"], [\"　取得不動產、廠房及設備\", \"-15,059,115\", \"-13,786,506\"], [\"　處分不動產、廠房及設備\", \"49,921\", \"15,770\"], [\"　存出保證金增加\", \"-2,229,649\", \"0\"], [\"　存出保證金減少\", \"0\", \"293,039\"], [\"　取得無形資產\", \"-10,360,474\", \"-8,726,280\"], [\"　取得投資性不動產\", \"-1,920\", \"0\"], [\"　長期應收租賃款減少\", \"728,273\", \"727,892\"], [\"　投資活動之淨現金流入（流出）\", \"-37,753,968\", \"-35,927,693\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款減少\", \"0\", \"-1,260,000\"], [\"　償還長期借款\", \"60,000\", \"0\"], [\"　存入保證金增加\", \"81,175\", \"0\"], [\"　存入保證金減少\", \"0\", \"-16,003\"], [\"　租賃本金償還\", \"-1,162,690\", \"-901,987\"], [\"　發放現金股利\", \"-86,069,629\", \"-87,550,792\"], [\"　取得子公司股權\", \"0\", \"-221,528\"], [\"　非控制權益變動\", \"-628,372\", \"-204,440\"], [\"　其他籌資活動\", \"44,765\", \"35,374\"], [\"　籌資活動之淨現金流入（流出）\", \"-87,674,751\", \"-90,119,376\"], [\"匯率變動對現金及約當現金之影響\", \"-5,769,963\", \"8,292,344\"], [\"本期現金及約當現金增加（減少）數\", \"31,594,190\", \"38,299,882\"], [\"期初現金及約當現金餘額\", \"203,695,892\", \"165,396,010\"], [\"期末現金及約當現金餘額\", \"235,290,082\", \"203,695,892\"], [\"　資產負債表帳列之現金及約當現金\", \"235,290,082\", \"203,695,892\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2454&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"聯發科\"}, \"datetime\": \"115/05/10 09:00:52\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2454",
+      "company_name": "聯發科",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 63219184.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2454\", \"公司名稱\": \"聯發科\", \"產業別\": \"半導體業\", \"營業收入-當月營收\": \"63219184\", \"營業收入-上月營收\": \"38954271\", \"營業收入-去年當月營收\": \"55996226\", \"營業收入-上月比較增減(%)\": \"62.2907639575645\", \"營業收入-去年同月增減(%)\": \"12.899008586757258\", \"累計營業收入-當月累計營收\": \"149150510\", \"累計營業收入-去年累計營收\": \"153312237\", \"累計營業收入-前期比較增減(%)\": \"-2.714543262453342\", \"備註\": \"海外子公司之營收係以當月平均匯率換算之\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "注意股：11日聯發科、穎崴、緯穎、健策、環球晶等51檔 - 上市櫃 - 旺得富理財網",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kV29pNl9NSm05b3pwN2Mxa1lONVc3VHphZ1VwR2VpVVZQYUNKUzRCeE9IREhZeDJZUlZibFZBWWJ1MnRPRTRMV0hBZkhQNGx1bTRNTHYxbDZ6Q3pFcFpwTV9RaE5MM2t0bmc",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T08:16:28+08:00",
+      "summary": "注意股：11日聯發科、穎崴、緯穎、健策、環球晶等51檔 - 上市櫃&nbsp;&nbsp;旺得富理財網",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454",
+        "6488"
+      ],
+      "companies": [
+        "聯發科",
+        "環球晶"
+      ]
+    },
+    {
+      "title": "《半導體》注意股：聯發科 近5日漲39.08% - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWEUxNFlTV3RDNW1iRXc2NVRKcVZicGUzNFVzUE8tUXdPUHlzQmpvczlCbWwyS2h2ZjdveEpsTDlGaV9oU2N6UjJ2dGlXRnNWVi1Cb2RieHR0TU9sNzZsaGJ5VGxLUFZDS09icDg5TXhYWjJDNUo5VDE2WFZweElsVzRGQ2Q2X25LU1d2NE9qZw",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T08:02:00+08:00",
+      "summary": "《半導體》注意股：聯發科 近5日漲39.08%&nbsp;&nbsp;ww2.money-link.com.tw",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "手機寒風衝擊高通、聯發科下修在台積電產能，AMD 意外成最大受惠者 - finance.technews.tw",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQkZLNXlEdE5qTVNTSm8xcUJJUFRSZzRBckp6SUFJVVZBOTZNWmFfdWpPRWdLNkxIRGtfMlhCQmZsb0JCdElDcU5RT2RQM01UZDl2OEJNZVZHazdhSGFwaWg0VW02YTVMU28zQUZLLXprZjhlWkozMm5CSlNmU01ON2hza0V6R3BVSENHeXpSY3ptcy01QU1BY290Q3FzSURieWxkS1VLaDcyYTQtV1hNeVpaa1M?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T07:03:45+08:00",
+      "summary": "手機寒風衝擊高通、聯發科下修在台積電產能，AMD 意外成最大受惠者&nbsp;&nbsp;finance.technews.tw",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454",
+        "2330"
+      ],
+      "companies": [
+        "聯發科",
+        "台積電"
+      ]
+    },
+    {
+      "title": "聯發科高通傳釋台積電產能 AMD默默受惠 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNQ1dzWVRvNFBWSUo3X2ZNYmo1TmcwYVdicUlaTTRHZGw0N0NsWDVLTUtiaXJIek5qcE5nRk01OUROejdRQkNKVlRGcE5aZ0Zod3dBRmUyT0NxSklBWjFuczVqaWhrblRpX2VBRzlvd1h5Wi1UV21mZkFwc1JKME5KLTBqNy1OZnMyeGtvODhaY0hBYXEwZVV2c21rMXN3S3loUkF0RmYxOVNaMFF4aTdTY0RaMFBLQTFpOGRwNmtQZmItaXZENl9GYlNZdzRVS2I3NWF0WHFWSzhhMjl2b2xSeXpXdTE5aTJVR19PUUxzZzR5Yk9acjFza3M3YW5iZHk3dHJScF9ZV2tBM0VEbWtrVUFlcWNQTzE4",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T23:20:26+08:00",
+      "summary": "聯發科高通傳釋台積電產能 AMD默默受惠&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454",
+        "2330"
+      ],
+      "companies": [
+        "聯發科",
+        "台積電"
+      ]
+    },
+    {
+      "title": "聯發科技銅鑼研發資料中心啟用 AI世代關鍵算力與永續創新 - Zeek玩家誌",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZ3ZRSlUtQzh6MFZJRnBoN1gxODdWOGpJOGROOWJZUW5xZ0pxR25IdGo3X1VVMjRub2pDck1wYlYwdmtWSUFram14VHgzei1SU1E?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T20:37:21+08:00",
+      "summary": "聯發科技銅鑼研發資料中心啟用 AI世代關鍵算力與永續創新&nbsp;&nbsp;Zeek玩家誌",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "手機需求大減！聯發科高通傳砍台積電產能 AMD蘇姿丰揭「這異狀」 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMihwNBVV95cUxOeTNsNlNMWm96OFh6SnhFQkdvalBxdU1Sb1lLak4xaWt2cGI2YjZwQUJZLU1hRFJpQWh3ZzhacWJLZWhhUlZfbzhNUEs0SHZFLVFNaWg0VGdNTlRkbkxuaU9TZlZCVkM5MmVxMC1oVk1USE14T1VTWjAzZkF3VjFuS2ktSEpCWHNpT0VCVDBYbk9fdkJwT3EzOUs2NUM3UmNta3htQ1RkNnBzN2tIS05IM25Semd2M3ZhSkN0bHBFQ2xkaE9JeUZNYXJiOGU4cllqeUFDZ3A1cEdLV3JrQ0NXbVhGSW1tdXNxQW55RXowcmF1ZFNQUGQzZ2ZsWHdtN3ZGM1RrQzhNWkF1X21jRnlvaEZicG1Pa1dlclhYT3JqU0JWOXozaExORDJ6Sml5ck01RTNrdXc2d0xSb1pNS0k1WlhkM0dpQTRiVzh5a3lMQURsN3JBRlhlR1NadkVnMl9RaGJWZndzZHY0TmJaMGRORERpYzNod1lZVFpWNGFJalFPTXdDRTRN?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T19:20:34+08:00",
+      "summary": "手機需求大減！聯發科高通傳砍台積電產能 AMD蘇姿丰揭「這異狀」&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454",
+        "2330"
+      ],
+      "companies": [
+        "聯發科",
+        "台積電"
+      ]
+    },
+    {
+      "title": "高股息展開落後補漲！ 9檔同時高持有「聯電＋聯發科」近一周勝大盤 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNanpSd3hPZzFxTUFYNC0wa2szbmlzWE1hQWsycEZlcEF3RVdnM2tWejZ6cW1iZWIyaElKRW9YekQxVUI2Znp5enh5TnRZN25pejRXbDVWMkotUVowOUIwcE9ndFc0TmVhcUVJdzFxUDB6enZ2V0NMUUFkNGtxTWlxMlRjc2hpdll3SzVicWh0NEdhQm5jZFZROF9uMG5DUUlkMHY2amgtdjk2dkgzZXkzVm5ESG1ld3JZQW9zakFDRmlaZ3dDaGhJTjVrUTlhZVIxRzVyYWpvX1pKS0NyVjFPSFRhM0h4eG8wQ3R1QjhBWWV0eVpjM2dUT1ota19IX2F5cXhqdWxxZGs2NW1zUU5Fc1NLQng1MHpoNEdvT213QTE2N2tsVGJ6NVFTbjZ1UnhYakpnSHNxUzBPWF9SbFhkd21rTk9YNDNPS3FfZzIwVEozbVJCQXc?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T18:37:01+08:00",
+      "summary": "高股息展開落後補漲！ 9檔同時高持有「聯電＋聯發科」近一周勝大盤&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "郭哲榮：你得了股市懼高症？ 下一檔聯發科是誰 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDaGdTc2hVMjRKU3B3d05yRHd3SFh4ZjZ4Q1EtZGpuZS1FbFdfWS1yUWhmdlptOUxud0lEU05JRHJBUldKTXEzRnh0Q1JSUTE4aC1NZ2hJWjJKQdIBX0FVX3lxTE1CUEExZWlpWUdPZnBsbWxiaUp0QjA3dHNwdDRaSDIydmE0cXFHb2gteEpBSVRzY3oyWG8tSlRveFhIWlBuY0FKTEZDcmE2ZDFkZHd2VS1oNzU2V0pRUXRN",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T07:26:56+08:00",
+      "summary": "郭哲榮：你得了股市懼高症？ 下一檔聯發科是誰&nbsp;&nbsp;經濟日報",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "AI ASIC好熱，聯發科小金雞EPS從11.77元到上看20元，本益比26倍挾成長實力，中長線看好嗎？ - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJSlBLR1h0Vm0zYlo4WUE3cFpZUkVpdUtBQ0U1VnhWU2w5NmFfS3p5N1FqWFl0TFV5TkpzNVJxZEVzczZlME1TbGQxbFQ3end0TmZpeFpaZE1vQdIBX0FVX3lxTE53eng5SjJ3WUI1TkVtc2VhWlJuanVCeFRlQk1NOGxlWnJjOXZEVEduVXl2emd5M1RqUGF6VHd3eTIzZ19xeUZ1RG10azJUcVZKWWZHcEZfU1RMR18xRlRR",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T17:00:00+08:00",
+      "summary": "AI ASIC好熱，聯發科小金雞EPS從11.77元到上看20元，本益比26倍挾成長實力，中長線看好嗎？&nbsp;&nbsp;經濟日報",
+      "event_type": "earnings",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "台股闖關4萬2、玉山金法說、聯發科關禁閉 本周大事回顧 - Yahoo股市",
+      "link": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxPRE95VkliSVJlUHhST3NRdVdLdTdpTks0cVpMS3dJcng2UDhmejFpWVNMRjJha1BqbHFzZnh2cnlEYS1VSmJaZjVXLWNrYi1yTERGd041cFUxeVhiOU9hYnhBOXZpOHdGLW1lU3Z3UFJjZlFaektvb0VtakZIS2R1RHpxLTZNYjExNGxiT2lVQnVOM0lfYmh1M1lPelBBcVpzd2VUaXV1LTh2UW9EVnBxeHJnbXRDWUo2Y1RQaDlCTXk2dUkxU1Q3cVZuRWVXOHdZd2hpZ2xLNXhTUEZCVkFHX05hYnBkUF93X0FNN2JrYk5LSklDR0hYSnZ4OUhjM29mMnFvVU1aMnBBTktocWVLV0tQSE1tWWVxN1d5eFh2cm9ob21tNkxpdG9PYy0xekRIN2FWdlRPSktFbFU2Rmt5YXQ3SzRKMFJvNmNuWm1DVkdCbWtCd1Fkc3EyVE1LUnJIUWVDb2dNUkVLZw",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T11:42:16+08:00",
+      "summary": "台股闖關4萬2、玉山金法說、聯發科關禁閉 本周大事回顧&nbsp;&nbsp;Yahoo股市",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科含量高ETF有哪些？配息型0056竟第一！持股比較 - 遠見雜誌",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5QRldCc0FJeG90M09sT1Mwbk51V2VtczN5ZEJ3bnZNWmlEcDc0bDRQdWZBUGFXV1JGMUMwZ09ZTldHeURIeVZBS3IzUzctZw",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T11:10:56+08:00",
+      "summary": "聯發科含量高ETF有哪些？配息型0056竟第一！持股比較&nbsp;&nbsp;遠見雜誌",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "〈熱門股〉聯發科愈關愈大尾 飆天價奪市值第二大 攜手達發周漲逾36% - news.cnyes.com",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE54NlVxQU5iV09sNXNYSHUzZ0xhOTRKNVN6U2V3WVNRS2s0S3hhSlNaVmVDZTFsUE84V0xTUDdKMi0xbUhnbkxKVVpSSzN4UEE?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T10:07:22+08:00",
+      "summary": "〈熱門股〉聯發科愈關愈大尾 飆天價奪市值第二大 攜手達發周漲逾36%&nbsp;&nbsp;news.cnyes.com",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科狂飆又入列！證交所公布30檔注意股一次看 - 自由財經",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PZktUMzBQUkhySXBTbThla0x0TC00YWhkdENySm9EbXpmMHNQSzNiR3ZfSnQ1alhwclNmMVo0cUhQeW5TVHZfdS1UeDVtUkF4OGwxNkRQWnlpUUtVWXpR0gFkQVVfeXFMTjdmMzhoMlR2S3c2anp6a2syeDVZWFNGOXdnaGZRcGhuNWFuTjVrRWM0SVpWY3NzNl9XbHl4M0c0bG1fMFpiUnRBM2Z5Mm1TNFpORFJKUVJORjRvWUs0U0VUbHVqRg",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T08:42:32+08:00",
+      "summary": "聯發科狂飆又入列！證交所公布30檔注意股一次看&nbsp;&nbsp;自由財經",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科狂飆又入列！證交所公布30檔注意股一次看",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5430930",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T08:42:32+08:00",
+      "summary": "〔財經頻道／綜合報導〕證交所昨（8）日公布注意股，共計30檔入列，其中近期股價走勢驚人的聯發科（2454）才被證交所強制關進「禁閉室」，但交易熱度卻不減，8日再觸及證交所公布「注意股」標準，若繼...…",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "被處置照樣衝！聯發科飆天價「晉升台股2哥」、週線狂漲39% 4月營收出爐 - Yahoo股市",
+      "link": "https://news.google.com/rss/articles/CBMingNBVV95cUxOczZTR3FnM3loQVdEbFk4Y0lGNVlVdmVWUkV1V29tRkdfLXRSQlhQUmhoMEN4djJ6c3dRUlZURWNTOUtVOUVES2hoZy1UYWlkZFFGTWc4ZEZRXzVxWnNLTlJNelY0TGdrWTloeUVNZTNaOEhWcmM1d0xyZnJVeTF2XzNRd0FobWY4NjMtZ1RQOUx3N1lXVkNOUkhmd3VMTDZPX0pGOWVuX0VqSlJkSk9wQ0U4VDY2aVZ1ZHpqemFZNVVMSkxhZUJneTBabGw0X1RVQURrTnF5Q291OU1kb3EtejQ1RjV6bzJEbUdIQmJXNmpKWnZZSDU4YzI5cU1PTXR3djR4eDB3OE5aY3ViWVIwbndKeE5oY0lBam8wdXVmaTBPUkFYUE5UWHhVbldIdEd2cmNVaUoxam16aWVXMVh6MzdfQjItM0ZwSWlLSDJwNGNZeDlZZkpsRGgyOWxjWVMzeFdEajJNNUNpaXNmU1Y1bkxfOWhybEpNbTZrbWs5bUxjVHlIenZ1c2g1cTNTUUJhVWNsMTR5QWdlZ0FGbmc",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T07:40:00+08:00",
+      "summary": "被處置照樣衝！聯發科飆天價「晉升台股2哥」、週線狂漲39% 4月營收出爐&nbsp;&nbsp;Yahoo股市",
+      "event_type": "earnings",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "台股震盪跌329點，台積電熄火聯發科創高-財經焦點情報站 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNV3NnWDI2ZDlDODQ1S250aTBiZEdUU2dBbTFxdzJDWjRFd3dselBIdFp5b3hXSmVaOTVqeC1WWjFER0ZGVEpzaDVOZEpIcWJVNVZaNUI0XzJKRTFuVkRYMVpYUjRuWGlkYklkemlKVl9sSnBYNHprN09Ld2dIU2Znd2ZB?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T07:30:26+08:00",
+      "summary": "台股震盪跌329點，台積電熄火聯發科創高-財經焦點情報站&nbsp;&nbsp;CMoney投資網誌",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330",
+        "2454"
+      ],
+      "companies": [
+        "台積電",
+        "聯發科"
+      ]
+    },
+    {
+      "title": "2330 台積電 - 台股震盪跌329點，台積電熄火聯發科創高-股市爆料同學會 - CMoney",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MR1AwV2YwM3M5Tlp3bW9xRTE1NVpoaWFWbXRtZ3FIUTFvaHpZVFRjR2tEZnNGeHFTX0V0V3FLVWxhVzZ2cWhtbW1SczhUbnRVRldkclhFSnI?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T07:12:32+08:00",
+      "summary": "2330 台積電 - 台股震盪跌329點，台積電熄火聯發科創高-股市爆料同學會&nbsp;&nbsp;CMoney",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330",
+        "2454"
+      ],
+      "companies": [
+        "台積電",
+        "聯發科"
+      ]
+    },
+    {
+      "title": "這波4萬點反擊波在漲什麼？不只台積電、聯發科在瘋「高檔換手才是多頭火種延續」資金正從半導體溢出到這些族群- 上市櫃 - 旺得富理財網",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9HSUphLTB5SDNXTkVTV21mMVAwM3RERHJHRTlpWHVKN0I4VWV3VjJVYzB5c0lHYU5nM1ktMzhsYllWTVYyaWFCU05fRVBhbTZTS2RhTnpBbVBOLXJ6dWNFbXk0MlNOaHZzTWc?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T06:06:09+08:00",
+      "summary": "這波4萬點反擊波在漲什麼？不只台積電、聯發科在瘋「高檔換手才是多頭火種延續」資金正從半導體溢出到這些族群- 上市櫃&nbsp;&nbsp;旺得富理財網",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2330",
+        "2454"
+      ],
+      "companies": [
+        "台積電",
+        "聯發科"
+      ]
+    },
+    {
+      "title": "台股大震盪，聯發科逆勢創天價-財經焦點情報站 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNREJ0TVlXWDJuaUxXZGNoTUNXRVIwSHZWdDk0MmNLcEZ5Tzh2UndQNkVWcHFZUFdMMDlhcmZUMmd0N01CX00wcXBFZ19BMHBsZjJETWtUUlVLRXhnZUtBNEJhNUZiaXpTSUZRNl9fNi1RU0h6LUFtWnBKRkp3bmlSaXNn?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T05:30:28+08:00",
+      "summary": "台股大震盪，聯發科逆勢創天價-財經焦點情報站&nbsp;&nbsp;CMoney投資網誌",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科股價3400元打臉市場的「舊標準」　華通、穩懋股權變化看出真實動向 - ETtoday財經雲",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCNjZqNEZXVFE2UUlNc3hRcS00UDBqYmp3YmxrSF9FcHIzYnktV0FGTkRlYnh6UkhPNERiX1BuMHZhMkxMZ1k3ZnBhWU4tdTRMQ1HSAW5BVV95cUxOYXUxNzBPcUk2SmlNNFVuVXpQdzlLWTBaa2Q3RGxZZFBkLUZaeUE4cVBTTjJUVmtRcTJPdFhhdWhsd2llbDRqZGNJR1dPZVBHYjFUZFNCSFVDVDVDazdqN2xIWHF5TWpwY3A0TmY3Zw?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T05:27:00+08:00",
+      "summary": "聯發科股價3400元打臉市場的「舊標準」 華通、穩懋股權變化看出真實動向&nbsp;&nbsp;ETtoday財經雲",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "台股高檔震盪900點，聯發科逆勢創天價-財經焦點情報站 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWkR6bE5SWUVtM1JFZ3FTUmNNYXNjUzdQSmVaWDNpc3B2cHZ0ZHpBQkNZbUZ0M0dRQ0J1VjRxdlBSdWk2YW82bGgzV21Zb2xfV1VZLWsxQzFfZllnM19nUE1mUkU2WXloU1F5cFdPeFEtN0NDRmdpdVVzMEJyeDlzMDZ3?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T04:30:22+08:00",
+      "summary": "台股高檔震盪900點，聯發科逆勢創天價-財經焦點情報站&nbsp;&nbsp;CMoney投資網誌",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科4月營收降溫 要靠AI回春 - 中時新聞網",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8yWFdFWEJoa2FRczIwaURtVC1PZTVLMktHUHp6TkZOeEU4UmUzcmpLY2xLdEplQ2JibUJ0eDc1MG1JT09GcTNjREpzSHd4UjNPN0F0WXp3c3Q5aEFDT1hUMWVlaURULVBVczlF?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T04:10:00+08:00",
+      "summary": "聯發科4月營收降溫 要靠AI回春&nbsp;&nbsp;中時新聞網",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科4月營收降溫 要靠AI回春 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBuX091RVZwRHhhWW1rbDR3eURTQkdsVllsTGFhMWp1RHZNdVB0Q29FUlRKWVZwYXYwNzFwZk9INjhSaHpEbEY5UW1FMnBfVTU1c09RLXhXTGUzUTg0dC1v?oc=5",
+      "source": "工商時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T03:00:00+08:00",
+      "summary": "聯發科4月營收降溫 要靠AI回春&nbsp;&nbsp;工商時報",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科AI軍火庫1／直擊GPU算力中心　「金光閃閃」輝達SuperPOD每月狂吞1380億Token - 鏡週刊Mirror Media",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aVllDeE03T1FuM3FKNzBUaks1YjBOeWZYREFVSnpja1FuVGlLUkJ2aFVuSk1CMjRWcFZZOGhtTHZLeHU4MjQyYXVOeWU0UEc5Z2wycEJieG1QWFHSAWBBVV95cUxNVlhqM3FpYUFlMVRQVzQtcjBsTWM1WDBZYnFkVHZudm9JOXdHaXpJS1FJR1NjTTBlVW1DaVRpLXItZUh6aFRJMTFpc3pjWmFtbC1jSFFvaDZyc2ZhNWtZUmU",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T08:45:00+08:00",
+      "summary": "聯發科AI軍火庫1／直擊GPU算力中心 「金光閃閃」輝達SuperPOD每月狂吞1380億Token&nbsp;&nbsp;鏡週刊Mirror Media",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科AI軍火庫2／資料中心首導入浸沒式液冷技術　散熱效率飆2.6倍 - 鏡週刊Mirror Media",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83bnhodzVySjhSeF9fQlBpVUpDcVNiYUlJbHdFNjVGcmQyNmtuZXh0RWd3dmVHSlZPSWNTRExrakFhOEF4WU9wSFpPb0VBMm9DM09ZNTN0d0hPWDTSAWBBVV95cUxNc2hKdlVrRnBBWUc5UmRRMjVVOG5MS2FkUXVlQjdIUURMQllvX2RJUFdaa3NLQ3pST2h3bmRnUlpfQXZobWpydlBKWDlOZXpkb0Vaa0Ruc3Z2ck9UZUdmWC0",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T08:45:00+08:00",
+      "summary": "聯發科AI軍火庫2／資料中心首導入浸沒式液冷技術 散熱效率飆2.6倍&nbsp;&nbsp;鏡週刊Mirror Media",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科AI軍火庫／聯發科45MW資料中心曝光　算力半年翻倍還出動機器人巡機房 - 鏡週刊Mirror Media",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80MlJkME9MdC1YbXFfSktkcUdZZU1FbHRiM1dLSldZakVOT2JFaXRDTjBRb3JNMFBxV1R4NTZ3QnZ3VFRoZWVrNFRwVTBROXoySVh1STJmNzZGdW_SAWBBVV95cUxOU3dfLXNXM1FGc0FNQlNpX1BWRDRfeEFBYS1LR1pNV19SNU1hV0pXV094NFRRbEJGMjJnZGV4ZnJqOGJVOUxiUTlMakpWRTdMUXpVRlowZWdjWFo4SDRwbG0",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T08:45:00+08:00",
+      "summary": "聯發科AI軍火庫／聯發科45MW資料中心曝光 算力半年翻倍還出動機器人巡機房&nbsp;&nbsp;鏡週刊Mirror Media",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科啟用銅鑼研發資料中心 全台首座以NVIDIA DGX B200平台趨動運算平台 | 信傳媒 - LINE TODAY",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE15cm82UmZKTnFmdkZqbGJsOFBoMnBZRFdGX3E3c1ZReWpkMUwwcng5bTJ4VWdHcmR0aXhzR2tvalhyN3lVb002TnVfVXZvN21rSTh4SlZB",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T08:22:09+08:00",
+      "summary": "聯發科啟用銅鑼研發資料中心 全台首座以NVIDIA DGX B200平台趨動運算平台 | 信傳媒&nbsp;&nbsp;LINE TODAY",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454",
+        "NVDA"
+      ],
+      "companies": [
+        "聯發科",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "錢鏡你家2／聯發科飆到關禁閉！　杜金龍曝「3字頭」買點 - 鏡週刊Mirror Media",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBEZTZ5VHluMmZBQ2p5QjF3Z3I2TjRLRExjS2pBM3ZnZHVMc0RmSmVybjFBcWlGWHdLek9iZk96VnJ2RGFRa2Y2ZVV5RHhjeFhXNmxLOHktd2UzVXBLRHfSAWNBVV95cUxNcHFYblB1dTUydm5Beml0VHlSb3FMbW1kcWVETm9hakpudTc2cTNiVjN2d0ZWZ1QwaHJzOURjTjhvaWpfV1dYTGRtUXNqWDN5VkpXWGZzZmMwUFo1UWQ3QUQ2R2c?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T08:00:00+08:00",
+      "summary": "錢鏡你家2／聯發科飆到關禁閉！ 杜金龍曝「3字頭」買點&nbsp;&nbsp;鏡週刊Mirror Media",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "5／8盤前｜聯發科AI超算中心亮相3台廠扮要角股王信驊機器人推一把- 證券 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIZ0NHVklYa1BTQ2phSk1TWkNfbFVpcHoyUmlOUWc4VU12RGNpSWtyZW12S2NJckRQSGw3T0NLbVJpTWtHdW5sTDVGU1BzeDV3REpjWml6S1N2elYyMzhj",
+      "source": "工商時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T07:27:00+08:00",
+      "summary": "5／8盤前｜聯發科AI超算中心亮相3台廠扮要角股王信驊機器人推一把- 證券&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "飆股掀波！聯發科列處置股 金管會將檢討制度 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxNM19mb2VpSGlRaGd0Z0VNNmktN2ppZVJGQWlicWZpNTUteDlhLUF2U0M4Sk9mUmktaXJoeVZfbFVpeWNnN2gwWmhLMGZ4a3N3UGxkZGMyX1NFeGdmTlhvQzJIbTEyYmphUVRqS3pGSGtUMDF4WGFoV21RUF9VVXcwdTl1aVpkb3RhbXR6a05mRHhEOHhOeXZraTNaeGx5d2tJWm1ZSUFvMmdROU9ubmpJaWFTMFVWVVJzY2ROMjQ4bDJ1enRfVGRLd1c4T212NVBJQng4R1A1bG9QY3ZDbm90aXR2VDVGRlNRWFAxWUtyRk9Ba2pSOEZfOU1qeEJCU3R4V3RRdVRGWVduZ3dPdlNzbUtvYnh5aV9aSUtMejJqSm5JY0NYYm9zNnpYblBsMkNtMjFmWnFQVDZkZw?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T06:37:19+08:00",
+      "summary": "飆股掀波！聯發科列處置股 金管會將檢討制度&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科「關禁閉」 彭金隆︰研議豁免條款 - 自由財經",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ETEU3SGswYTZvS1ZZX3NyTmQyVndFWXlmZEVuaEJKb0lEZ0ZHSU82VlQzb0RJdmlNaVVpUml3UXVucTR3ZjdndkxDLTlVVDRHbEZTT1hB0gFbQVVfeXFMTW82MkZLVjB1aDJwcW1zeVl6SFFtbjBvZTZxZ2RHYmw1TmQ5NmctSW9OWmJPTl80VTBtd0QwQ01kWnM4UTJ0M09nVFUxcVlDTTYydndfcm5ZMFd6SQ?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T05:30:00+08:00",
+      "summary": "聯發科「關禁閉」 彭金隆︰研議豁免條款&nbsp;&nbsp;自由財經",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "聯發科衝AI占比- 日報 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBsVUJYbWVwZXVteXpXLTBCbVNCU0F0N2xPV0pQMzZBNVhIdWVGQ1ZtNnFYcUlWVnRkQnJzaElnN3h2YnNVaFZxWnJKbVdaVjJlUGdJaFduRDFVZG1pV1h3?oc=5",
+      "source": "工商時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T03:00:00+08:00",
+      "summary": "聯發科衝AI占比- 日報&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "日月光子公司處分聯發科持股處分利益約3.26億元- 證券 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51ZXJ1X1c3VXppTGZtWXRUWUwtMTBWd3JUNEdhR3ZmYnNFWE8yUHdfWTM0elZ0VXowZ1NTbTNtRFZDSkF1UVh0UU1CdUVIdWdnYXhFN3MxYTZuRGhKWjBZ",
+      "source": "工商時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T08:36:00+08:00",
+      "summary": "日月光子公司處分聯發科持股處分利益約3.26億元- 證券&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "力阻中資入股聯發科！專家憶戰況：否則沒機會做進美系大客戶",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5428273",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T08:23:05+08:00",
+      "summary": "2015年一群關心台灣半導體產業的專家學者發起「反紫光運動」，希望扭轉政府開放中資入股台灣IC設計業政策，幸好前總統蔡英文用力踩煞車，守住山海關。「反紫光奇遊團」成員、科技...…",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "2454"
+      ],
+      "companies": [
+        "聯發科"
+      ]
+    },
+    {
+      "title": "台指期夜盤再噴800點！台股今戰4萬2 聯發科、鴻海、聯電、華邦電誰能追？分析師示警：「這檔」只剩魚尾 - 旺得富理財網",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wQTBfbE5HeWl1REVaWjFPbmIxR3I5R1JwZXJrNjhFVVV5eXAtTUxDMlRieXZlZTk0amdDNDdwMWliUzhpT0NwRkJ0OGFnVG82TmlrU09VMDRFVHZCQ21UeFBmWmRITS1JMFE",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T08:15:21+08:00",
+      "summary": "台指期夜盤再噴800點！台股今戰4萬2 聯發科、鴻海、聯電、華邦電誰能追？分析師示警：「這檔」只剩魚尾&nbsp;&nbsp;旺得富理財網",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "2454",
+        "2317"
+      ],
+      "companies": [
+        "聯發科",
+        "鴻海"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 595965682.0,
+      "monthly_revenue": null,
+      "net_income": 106117575.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 66.16,
+      "operating_cash_flow": 162792872.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）"
+    },
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025Q3",
+      "filed_at": "2025Q3",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 445777672.0,
+      "monthly_revenue": null,
+      "net_income": 83044040.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 51.76,
+      "operating_cash_flow": 98272589.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q3）"
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150428",
+      "filed_at": "1150428",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 595965682.0,
+      "monthly_revenue": null,
+      "net_income": 105319255.0,
+      "operating_income": 103469695.0,
+      "gross_profit": 283079941.0,
+      "eps_diluted": 66.16,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150417",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 595965682.0,
+      "monthly_revenue": null,
+      "net_income": 105319255.0,
+      "operating_income": 103469695.0,
+      "gross_profit": 283079941.0,
+      "eps_diluted": 66.16,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150406",
+      "filed_at": "1150406",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 595965682.0,
+      "monthly_revenue": null,
+      "net_income": 105319255.0,
+      "operating_income": 103469695.0,
+      "gross_profit": 283079941.0,
+      "eps_diluted": 66.16,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150330",
+      "filed_at": "1150330",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 595965682.0,
+      "monthly_revenue": null,
+      "net_income": 105319255.0,
+      "operating_income": 103469695.0,
+      "gross_profit": 283079941.0,
+      "eps_diluted": 66.16,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 63219184.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150416",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 63219184.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11502",
+      "period_end": "11502",
+      "filed_at": "1150317",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 38954271.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 595965682.0,
+      "monthly_revenue": null,
+      "net_income": 106117575.0,
+      "operating_income": 103469695.0,
+      "gross_profit": null,
+      "eps_diluted": 66.16,
+      "operating_cash_flow": 162792872.0,
+      "capex": 15059115.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "co_mentions": [
+    {
+      "ticker": "2330",
+      "count": 6
+    },
+    {
+      "ticker": "6488",
+      "count": 1
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "2317",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T02:39:53Z"
+}

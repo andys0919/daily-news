@@ -1,37 +1,99 @@
 ---
 import Base from "../layouts/Base.astro";
-import TickerChip from "../components/TickerChip.astro";
 import events from "../data/events.json";
 
-const list = (events.events ?? []) as Array<any>;
-const byDate = list.reduce((acc: Record<string, any[]>, e) => {
+interface Event {
+  kind: string;
+  title: string;
+  date: string;
+  source: string;
+  link: string | null;
+  tickers: string[];
+  category: string;
+}
+
+const list = (events.events ?? []) as unknown as Event[];
+const byDate = list.reduce((acc: Record<string, Event[]>, e) => {
+  if (!e.date) return acc;
   (acc[e.date] = acc[e.date] || []).push(e);
   return acc;
 }, {});
-const dates = Object.keys(byDate).sort();
+const dates = Object.keys(byDate).sort().reverse();
+const kindCounts: Record<string, number> = {};
+list.forEach((e) => { kindCounts[e.kind] = (kindCounts[e.kind] || 0) + 1; });
+const kindLabels: Record<string, string> = { earnings: "Earnings", capex: "Capex", policy: "Policy", filing: "Filing" };
 ---
-<Base title="月曆 — 投資決策 Dashboard">
-  <header class="mb-6">
-    <h1 class="text-3xl font-semibold tracking-tight">事件月曆</h1>
-  </header>
+<Base title="事件月曆 — Investment Dashboard" active="calendar">
+  <section class="hero">
+    <div>
+      <span class="live"><span class="live-dot"></span>{list.length} events · 30 天</span>
+      <h1 class="mt-2">事件 <span class="accent">月曆</span></h1>
+      <p class="hero-sub">earnings · capex · policy · filing 標記過的文章，依日期反向排列。</p>
+    </div>
+    <div class="hero-meta">
+      {Object.entries(kindCounts).map(([k, n]) => (
+        <div><span class={`evt-badge ${k}`}>{kindLabels[k] || k}</span> <span class="mono ts">{n}</span></div>
+      ))}
+    </div>
+  </section>
+
+  <div class="filters" id="filter-bar">
+    <button class="fbtn" data-kind="" data-active="true">全部 · {list.length}</button>
+    {Object.entries(kindCounts).map(([k, n]) => (
+      <button class="fbtn" data-kind={k}>{kindLabels[k] || k} · {n}</button>
+    ))}
+  </div>
+
   {dates.length === 0 ? (
-    <p class="opacity-60">尚無事件資料（Python 端 events export 待補）</p>
+    <p class="muted">尚無事件資料。</p>
   ) : (
-    <ul class="space-y-3">
+    <div id="cal" class="space-y-3">
       {dates.map((d) => (
-        <li class="glass rounded-xl p-4">
-          <div class="mono text-sm opacity-70 mb-2">{d}</div>
+        <article class="glass bento" data-date={d}>
+          <header class="bento-head" style="margin-bottom:8px;">
+            <h2 class="bento-title mono">{d}</h2>
+            <span class="bento-link mono">{byDate[d].length} 筆</span>
+          </header>
           <ul class="space-y-1">
-            {byDate[d].map((e: any) => (
-              <li class="flex gap-2 items-baseline text-sm">
-                {e.ticker && <TickerChip ticker={e.ticker} />}
-                <span class="opacity-90">{e.title}</span>
-                <span class="ml-auto text-xs opacity-60">{e.type}</span>
+            {byDate[d].map((e) => (
+              <li class="cal-row" data-kind={e.kind} style="display:grid; grid-template-columns: 80px 1fr auto; gap:12px; padding:6px 4px; border-bottom: 1px solid var(--border-base); align-items:baseline;">
+                <span class={`evt-badge ${e.kind}`}>{kindLabels[e.kind] || e.kind}</span>
+                <a href={e.link} target="_blank" rel="noopener" style="font-size:13px; color: var(--fg-100);">
+                  <span class="line-clamp-1">{e.title}</span>
+                  <span class="muted-2 mono" style="display:block; font-size:11px; margin-top:2px;">{e.source}</span>
+                </a>
+                <div style="display:flex; gap:4px;">
+                  {(e.tickers ?? []).slice(0, 3).map((t) => (
+                    <a href={`/stocks/${t}`} class="chip-mini ticker mono">{t}</a>
+                  ))}
+                </div>
               </li>
             ))}
           </ul>
-        </li>
+        </article>
       ))}
-    </ul>
+    </div>
   )}
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bar = document.getElementById("filter-bar");
+      if (!bar) return;
+      bar.addEventListener("click", (ev) => {
+        const t = ev.target;
+        if (!(t instanceof HTMLElement) || !t.matches(".fbtn")) return;
+        const want = t.getAttribute("data-kind") || "";
+        bar.querySelectorAll(".fbtn").forEach((b) => b.removeAttribute("data-active"));
+        t.setAttribute("data-active", "true");
+        document.querySelectorAll("#cal .cal-row").forEach((row) => {
+          const k = row.getAttribute("data-kind") || "";
+          row.style.display = !want || k === want ? "" : "none";
+        });
+        document.querySelectorAll("#cal article").forEach((card) => {
+          const visible = Array.from(card.querySelectorAll(".cal-row")).some((r) => r.style.display !== "none");
+          card.style.display = visible ? "" : "none";
+        });
+      });
+    });
+  </script>
 </Base>

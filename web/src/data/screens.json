@@ -1,708 +1,145 @@
 {
   "generated_at": "2026-05-11T02:39:53Z",
-  "stats": {
-    "articles_total": 55879,
-    "articles_24h": 552,
-    "articles_7d": 4059,
-    "articles_30d": 15000,
-    "reports_total": 316,
-    "insider_total": 0,
-    "holdings_total": 0,
-    "short_total": 0,
-    "ir_total": 0,
-    "tickers_tracked": 526
-  },
-  "market_indices": {},
-  "top_tickers_7d": [
+  "momentum": [
     {
-      "ticker": "2330",
-      "mentions": 160,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "GOOGL",
-      "mentions": 136,
-      "last_seen": "2026-05-11"
+      "ticker": "2605",
+      "mentions_7d": 104,
+      "mentions_prior_7d": 0,
+      "delta": 104,
+      "pct_change": 100.0
     },
     {
       "ticker": "NVDA",
-      "mentions": 125,
-      "last_seen": "2026-05-11"
+      "mentions_7d": 125,
+      "mentions_prior_7d": 95,
+      "delta": 30,
+      "pct_change": 31.6
     },
     {
-      "ticker": "2605",
-      "mentions": 104,
-      "last_seen": "2026-05-09"
+      "ticker": "2330",
+      "mentions_7d": 160,
+      "mentions_prior_7d": 142,
+      "delta": 18,
+      "pct_change": 12.7
     },
     {
       "ticker": "2454",
-      "mentions": 78,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2317",
-      "mentions": 72,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "META",
-      "mentions": 70,
-      "last_seen": "2026-05-11"
+      "mentions_7d": 78,
+      "mentions_prior_7d": 64,
+      "delta": 14,
+      "pct_change": 21.9
     },
     {
       "ticker": "AAPL",
-      "mentions": 60,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "MSFT",
-      "mentions": 58,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "AMZN",
-      "mentions": 44,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "TSLA",
-      "mentions": 30,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "TSM",
-      "mentions": 20,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "BLSH",
-      "mentions": 17,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "5070",
-      "mentions": 8,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2035",
-      "mentions": 8,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "JPM",
-      "mentions": 8,
-      "last_seen": "2026-05-08"
-    },
-    {
-      "ticker": "BRK-B",
-      "mentions": 7,
-      "last_seen": "2026-05-11"
+      "mentions_7d": 60,
+      "mentions_prior_7d": 52,
+      "delta": 8,
+      "pct_change": 15.4
     },
     {
       "ticker": "6488",
-      "mentions": 5,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2881",
-      "mentions": 5,
-      "last_seen": "2026-05-11"
+      "mentions_7d": 5,
+      "mentions_prior_7d": 0,
+      "delta": 5,
+      "pct_change": 100.0
     },
     {
       "ticker": "8080",
-      "mentions": 5,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "5060",
-      "mentions": 5,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "1974",
-      "mentions": 5,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "1980",
-      "mentions": 4,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1000",
-      "mentions": 4,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "5080",
-      "mentions": 4,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "AMD",
-      "mentions": 4,
-      "last_seen": "2026-05-06"
-    },
-    {
-      "ticker": "0050",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "4060",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "6000",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2408",
-      "mentions": 3,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "1024",
-      "mentions": 3,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "3090",
-      "mentions": 3,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "2040",
-      "mentions": 3,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "9100",
-      "mentions": 3,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "4090",
-      "mentions": 3,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "1978",
-      "mentions": 3,
-      "last_seen": "2026-05-08"
-    },
-    {
-      "ticker": "1933",
-      "mentions": 3,
-      "last_seen": "2026-05-08"
-    },
-    {
-      "ticker": "8000",
-      "mentions": 3,
-      "last_seen": "2026-05-08"
-    },
-    {
-      "ticker": "2604",
-      "mentions": 3,
-      "last_seen": "2026-05-06"
-    },
-    {
-      "ticker": "2700",
-      "mentions": 2,
-      "last_seen": "2026-05-11"
-    }
-  ],
-  "top_tickers_30d": [
-    {
-      "ticker": "GOOGL",
-      "mentions": 586,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2330",
-      "mentions": 580,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "NVDA",
-      "mentions": 382,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "META",
-      "mentions": 351,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2604",
-      "mentions": 290,
-      "last_seen": "2026-05-06"
-    },
-    {
-      "ticker": "AAPL",
-      "mentions": 232,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "MSFT",
-      "mentions": 231,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2454",
-      "mentions": 227,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2317",
-      "mentions": 217,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "AMZN",
-      "mentions": 208,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "TSLA",
-      "mentions": 159,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "2605",
-      "mentions": 104,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "TSM",
-      "mentions": 94,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "BLSH",
-      "mentions": 54,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "BRK-B",
-      "mentions": 30,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "5070",
-      "mentions": 27,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "JPM",
-      "mentions": 26,
-      "last_seen": "2026-05-08"
-    },
-    {
-      "ticker": "6000",
-      "mentions": 18,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "5090",
-      "mentions": 18,
-      "last_seen": "2026-05-06"
+      "mentions_7d": 5,
+      "mentions_prior_7d": 0,
+      "delta": 5,
+      "pct_change": 100.0
     },
     {
       "ticker": "2035",
-      "mentions": 16,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "1000",
-      "mentions": 15,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "5060",
-      "mentions": 14,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "1979",
-      "mentions": 10,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "3090",
-      "mentions": 10,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "2881",
-      "mentions": 9,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1980",
-      "mentions": 9,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "5080",
-      "mentions": 9,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "1973",
-      "mentions": 7,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1989",
-      "mentions": 7,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "8080",
-      "mentions": 7,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "4096",
-      "mentions": 7,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "1930",
-      "mentions": 7,
-      "last_seen": "2026-05-07"
-    },
-    {
-      "ticker": "3000",
-      "mentions": 7,
-      "last_seen": "2026-05-04"
-    },
-    {
-      "ticker": "1975",
-      "mentions": 6,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1500",
-      "mentions": 6,
-      "last_seen": "2026-05-10"
+      "mentions_7d": 8,
+      "mentions_prior_7d": 4,
+      "delta": 4,
+      "pct_change": 100.0
     },
     {
       "ticker": "1974",
-      "mentions": 6,
-      "last_seen": "2026-05-09"
+      "mentions_7d": 5,
+      "mentions_prior_7d": 1,
+      "delta": 4,
+      "pct_change": 400.0
     },
     {
-      "ticker": "1983",
-      "mentions": 6,
-      "last_seen": "2026-05-06"
+      "ticker": "AMD",
+      "mentions_7d": 4,
+      "mentions_prior_7d": 0,
+      "delta": 4,
+      "pct_change": 100.0
     },
     {
-      "ticker": "1988",
-      "mentions": 6,
-      "last_seen": "2026-05-06"
+      "ticker": "2881",
+      "mentions_7d": 5,
+      "mentions_prior_7d": 2,
+      "delta": 3,
+      "pct_change": 150.0
     },
     {
-      "ticker": "1982",
-      "mentions": 6,
-      "last_seen": "2026-05-01"
+      "ticker": "1980",
+      "mentions_7d": 4,
+      "mentions_prior_7d": 1,
+      "delta": 3,
+      "pct_change": 300.0
     },
     {
-      "ticker": "1969",
-      "mentions": 6,
-      "last_seen": "2026-05-01"
-    }
-  ],
-  "velocity": {
-    "days": [
-      "2026-04-28",
-      "2026-04-29",
-      "2026-04-30",
-      "2026-05-01",
-      "2026-05-02",
-      "2026-05-03",
-      "2026-05-04",
-      "2026-05-05",
-      "2026-05-06",
-      "2026-05-07",
-      "2026-05-08",
-      "2026-05-09",
-      "2026-05-10",
-      "2026-05-11"
-    ],
-    "totals": [
-      676,
-      615,
-      708,
-      659,
-      497,
-      396,
-      615,
-      580,
-      599,
-      584,
-      609,
-      522,
-      335,
-      270
-    ],
-    "by_category": {
-      "2026-04-28": {
-        "💰 財經與總經": 202,
-        "🔬 半導體與硬體": 115,
-        "🌏 地緣政治與科技政策": 111,
-        "🏢 科技廠動態": 86,
-        "🧠 AI 研究與突破": 67,
-        "🛠️ AI 工具與實戰": 44,
-        "🧭 深度觀點與分析": 44,
-        "🔥 X 社群熱議": 7
-      },
-      "2026-04-29": {
-        "💰 財經與總經": 186,
-        "🌏 地緣政治與科技政策": 92,
-        "🔬 半導體與硬體": 89,
-        "🧠 AI 研究與突破": 89,
-        "🏢 科技廠動態": 67,
-        "🛠️ AI 工具與實戰": 52,
-        "🧭 深度觀點與分析": 34,
-        "🔥 X 社群熱議": 6
-      },
-      "2026-04-30": {
-        "💰 財經與總經": 226,
-        "🔬 半導體與硬體": 113,
-        "🌏 地緣政治與科技政策": 103,
-        "🧠 AI 研究與突破": 96,
-        "🏢 科技廠動態": 80,
-        "🧭 深度觀點與分析": 44,
-        "🛠️ AI 工具與實戰": 38,
-        "🔥 X 社群熱議": 8
-      },
-      "2026-05-01": {
-        "💰 財經與總經": 194,
-        "🌏 地緣政治與科技政策": 107,
-        "🧠 AI 研究與突破": 105,
-        "🏢 科技廠動態": 74,
-        "🔬 半導體與硬體": 73,
-        "🛠️ AI 工具與實戰": 54,
-        "🧭 深度觀點與分析": 46,
-        "🔥 X 社群熱議": 6
-      },
-      "2026-05-02": {
-        "💰 財經與總經": 199,
-        "🌏 地緣政治與科技政策": 78,
-        "🔬 半導體與硬體": 62,
-        "🏢 科技廠動態": 59,
-        "🧠 AI 研究與突破": 42,
-        "🛠️ AI 工具與實戰": 36,
-        "🧭 深度觀點與分析": 18,
-        "🔥 X 社群熱議": 3
-      },
-      "2026-05-03": {
-        "💰 財經與總經": 137,
-        "🌏 地緣政治與科技政策": 88,
-        "🔬 半導體與硬體": 49,
-        "🛠️ AI 工具與實戰": 40,
-        "🏢 科技廠動態": 40,
-        "🧭 深度觀點與分析": 19,
-        "🧠 AI 研究與突破": 16,
-        "🔥 X 社群熱議": 7
-      },
-      "2026-05-04": {
-        "💰 財經與總經": 171,
-        "🔥 X 社群熱議": 106,
-        "🌏 地緣政治與科技政策": 88,
-        "🏢 科技廠動態": 63,
-        "🧠 AI 研究與突破": 59,
-        "🔬 半導體與硬體": 59,
-        "🛠️ AI 工具與實戰": 39,
-        "🧭 深度觀點與分析": 30
-      },
-      "2026-05-05": {
-        "💰 財經與總經": 175,
-        "🔬 半導體與硬體": 85,
-        "🌏 地緣政治與科技政策": 80,
-        "🧠 AI 研究與突破": 71,
-        "🏢 科技廠動態": 63,
-        "🛠️ AI 工具與實戰": 59,
-        "🧭 深度觀點與分析": 43,
-        "🔥 X 社群熱議": 4
-      },
-      "2026-05-06": {
-        "💰 財經與總經": 172,
-        "🔬 半導體與硬體": 108,
-        "🏢 科技廠動態": 80,
-        "🧠 AI 研究與突破": 78,
-        "🌏 地緣政治與科技政策": 73,
-        "🛠️ AI 工具與實戰": 51,
-        "🧭 深度觀點與分析": 31,
-        "🔥 X 社群熱議": 6
-      },
-      "2026-05-07": {
-        "💰 財經與總經": 160,
-        "🔬 半導體與硬體": 106,
-        "🧠 AI 研究與突破": 94,
-        "🌏 地緣政治與科技政策": 71,
-        "🏢 科技廠動態": 62,
-        "🛠️ AI 工具與實戰": 44,
-        "🧭 深度觀點與分析": 41,
-        "🔥 X 社群熱議": 6
-      },
-      "2026-05-08": {
-        "💰 財經與總經": 164,
-        "🔬 半導體與硬體": 100,
-        "🏢 科技廠動態": 85,
-        "🧠 AI 研究與突破": 81,
-        "🌏 地緣政治與科技政策": 76,
-        "🛠️ AI 工具與實戰": 50,
-        "🧭 深度觀點與分析": 44,
-        "🔥 X 社群熱議": 9
-      },
-      "2026-05-09": {
-        "💰 財經與總經": 166,
-        "🏢 科技廠動態": 82,
-        "🌏 地緣政治與科技政策": 75,
-        "🧠 AI 研究與突破": 61,
-        "🔬 半導體與硬體": 57,
-        "🛠️ AI 工具與實戰": 47,
-        "🧭 深度觀點與分析": 28,
-        "🔥 X 社群熱議": 6
-      },
-      "2026-05-10": {
-        "💰 財經與總經": 113,
-        "🌏 地緣政治與科技政策": 65,
-        "🏢 科技廠動態": 52,
-        "🔬 半導體與硬體": 33,
-        "🛠️ AI 工具與實戰": 31,
-        "🧠 AI 研究與突破": 17,
-        "🧭 深度觀點與分析": 15,
-        "📊 券商與分析師研究": 3
-      },
-      "2026-05-11": {
-        "💰 財經與總經": 88,
-        "🔬 半導體與硬體": 35,
-        "🌏 地緣政治與科技政策": 32,
-        "🛠️ AI 工具與實戰": 28,
-        "🏢 科技廠動態": 28,
-        "🧭 深度觀點與分析": 19,
-        "🧠 AI 研究與突破": 14,
-        "📉 融券與資金流": 9
-      }
-    }
-  },
-  "categories": [
-    {
-      "category": "💰 財經與總經",
-      "count": 4673,
-      "pct": 31.2
+      "ticker": "0050",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
     },
     {
-      "category": "🌏 地緣政治與科技政策",
-      "count": 2356,
-      "pct": 15.7
+      "ticker": "4060",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
     },
     {
-      "category": "🔬 半導體與硬體",
-      "count": 2094,
-      "pct": 14.0
+      "ticker": "2408",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
     },
     {
-      "category": "🏢 科技廠動態",
-      "count": 1827,
-      "pct": 12.2
+      "ticker": "9100",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
     },
     {
-      "category": "🧠 AI 研究與突破",
-      "count": 1722,
-      "pct": 11.5
+      "ticker": "4090",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
     },
     {
-      "category": "🛠️ AI 工具與實戰",
-      "count": 1140,
-      "pct": 7.6
+      "ticker": "1978",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
     },
     {
-      "category": "🧭 深度觀點與分析",
-      "count": 878,
-      "pct": 5.9
+      "ticker": "1933",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
     },
     {
-      "category": "🔥 X 社群熱議",
-      "count": 278,
-      "pct": 1.9
-    },
-    {
-      "category": "📉 融券與資金流",
-      "count": 11,
-      "pct": 0.1
-    },
-    {
-      "category": "📊 券商與分析師研究",
-      "count": 11,
-      "pct": 0.1
-    },
-    {
-      "category": "👁️ 內部人與機構持股",
-      "count": 9,
-      "pct": 0.1
-    },
-    {
-      "category": "🏛️ 法說與 IR 材料",
-      "count": 1,
-      "pct": 0.0
-    }
-  ],
-  "sources": [
-    {
-      "source": "TSMC News",
-      "count": 407
-    },
-    {
-      "source": "Bloomberg Markets",
-      "count": 403
-    },
-    {
-      "source": "工商時報 財經",
-      "count": 401
-    },
-    {
-      "source": "中央社 政治",
-      "count": 388
-    },
-    {
-      "source": "中央社 財經",
-      "count": 378
-    },
-    {
-      "source": "中央社 國際",
-      "count": 364
-    },
-    {
-      "source": "經濟日報 產經",
-      "count": 336
-    },
-    {
-      "source": "自由時報 財經",
-      "count": 329
-    },
-    {
-      "source": "CNBC Top News",
-      "count": 318
-    },
-    {
-      "source": "南華早報 科技",
-      "count": 310
-    },
-    {
-      "source": "Bloomberg Markets (Google News)",
-      "count": 288
-    },
-    {
-      "source": "Investing.com",
-      "count": 286
+      "ticker": "1024",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 1,
+      "delta": 2,
+      "pct_change": 200.0
     }
   ],
   "themes": [
@@ -1137,148 +574,6 @@
           ]
         }
       ]
-    }
-  ],
-  "momentum": [
-    {
-      "ticker": "2605",
-      "mentions_7d": 104,
-      "mentions_prior_7d": 0,
-      "delta": 104,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "NVDA",
-      "mentions_7d": 125,
-      "mentions_prior_7d": 95,
-      "delta": 30,
-      "pct_change": 31.6
-    },
-    {
-      "ticker": "2330",
-      "mentions_7d": 160,
-      "mentions_prior_7d": 142,
-      "delta": 18,
-      "pct_change": 12.7
-    },
-    {
-      "ticker": "2454",
-      "mentions_7d": 78,
-      "mentions_prior_7d": 64,
-      "delta": 14,
-      "pct_change": 21.9
-    },
-    {
-      "ticker": "AAPL",
-      "mentions_7d": 60,
-      "mentions_prior_7d": 52,
-      "delta": 8,
-      "pct_change": 15.4
-    },
-    {
-      "ticker": "6488",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 0,
-      "delta": 5,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "8080",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 0,
-      "delta": 5,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "2035",
-      "mentions_7d": 8,
-      "mentions_prior_7d": 4,
-      "delta": 4,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "1974",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 1,
-      "delta": 4,
-      "pct_change": 400.0
-    },
-    {
-      "ticker": "AMD",
-      "mentions_7d": 4,
-      "mentions_prior_7d": 0,
-      "delta": 4,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "2881",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 2,
-      "delta": 3,
-      "pct_change": 150.0
-    },
-    {
-      "ticker": "1980",
-      "mentions_7d": 4,
-      "mentions_prior_7d": 1,
-      "delta": 3,
-      "pct_change": 300.0
-    },
-    {
-      "ticker": "0050",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "4060",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "2408",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "9100",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "4090",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "1978",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "1933",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "1024",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 1,
-      "delta": 2,
-      "pct_change": 200.0
     }
   ],
   "event_clusters": {
@@ -1809,19 +1104,408 @@
       }
     ]
   },
-  "top_transcripts": [],
-  "top_insider_trades": [],
-  "top_holdings_changes": [],
-  "watchlist": [
-    "NVDA",
-    "TSM",
-    "2330",
-    "AAPL",
-    "MSFT",
-    "GOOGL",
-    "META",
-    "AMD",
-    "AVGO",
-    "2454"
+  "top_tickers_7d": [
+    {
+      "ticker": "2330",
+      "mentions": 160,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "GOOGL",
+      "mentions": 136,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "NVDA",
+      "mentions": 125,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2605",
+      "mentions": 104,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "2454",
+      "mentions": 78,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2317",
+      "mentions": 72,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "META",
+      "mentions": 70,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "AAPL",
+      "mentions": 60,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "MSFT",
+      "mentions": 58,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "AMZN",
+      "mentions": 44,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "TSLA",
+      "mentions": 30,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "TSM",
+      "mentions": 20,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "BLSH",
+      "mentions": 17,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "5070",
+      "mentions": 8,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2035",
+      "mentions": 8,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "JPM",
+      "mentions": 8,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "BRK-B",
+      "mentions": 7,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "6488",
+      "mentions": 5,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2881",
+      "mentions": 5,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "8080",
+      "mentions": 5,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "5060",
+      "mentions": 5,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "1974",
+      "mentions": 5,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "1980",
+      "mentions": 4,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1000",
+      "mentions": 4,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "5080",
+      "mentions": 4,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "AMD",
+      "mentions": 4,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "0050",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "4060",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "6000",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2408",
+      "mentions": 3,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "1024",
+      "mentions": 3,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "3090",
+      "mentions": 3,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "2040",
+      "mentions": 3,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "9100",
+      "mentions": 3,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "4090",
+      "mentions": 3,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "1978",
+      "mentions": 3,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "1933",
+      "mentions": 3,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "8000",
+      "mentions": 3,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "2604",
+      "mentions": 3,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "2700",
+      "mentions": 2,
+      "last_seen": "2026-05-11"
+    }
+  ],
+  "top_tickers_30d": [
+    {
+      "ticker": "GOOGL",
+      "mentions": 586,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2330",
+      "mentions": 580,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "NVDA",
+      "mentions": 382,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "META",
+      "mentions": 351,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2604",
+      "mentions": 290,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "AAPL",
+      "mentions": 232,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "MSFT",
+      "mentions": 231,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2454",
+      "mentions": 227,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2317",
+      "mentions": 217,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "AMZN",
+      "mentions": 208,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "TSLA",
+      "mentions": 159,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2605",
+      "mentions": 104,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "TSM",
+      "mentions": 94,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "BLSH",
+      "mentions": 54,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "BRK-B",
+      "mentions": 30,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "5070",
+      "mentions": 27,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "JPM",
+      "mentions": 26,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "6000",
+      "mentions": 18,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "5090",
+      "mentions": 18,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "2035",
+      "mentions": 16,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "1000",
+      "mentions": 15,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "5060",
+      "mentions": 14,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "1979",
+      "mentions": 10,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "3090",
+      "mentions": 10,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "2881",
+      "mentions": 9,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1980",
+      "mentions": 9,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "5080",
+      "mentions": 9,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "1973",
+      "mentions": 7,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1989",
+      "mentions": 7,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "8080",
+      "mentions": 7,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "4096",
+      "mentions": 7,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "1930",
+      "mentions": 7,
+      "last_seen": "2026-05-07"
+    },
+    {
+      "ticker": "3000",
+      "mentions": 7,
+      "last_seen": "2026-05-04"
+    },
+    {
+      "ticker": "1975",
+      "mentions": 6,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1500",
+      "mentions": 6,
+      "last_seen": "2026-05-10"
+    },
+    {
+      "ticker": "1974",
+      "mentions": 6,
+      "last_seen": "2026-05-09"
+    },
+    {
+      "ticker": "1983",
+      "mentions": 6,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "1988",
+      "mentions": 6,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "1982",
+      "mentions": 6,
+      "last_seen": "2026-05-01"
+    },
+    {
+      "ticker": "1969",
+      "mentions": 6,
+      "last_seen": "2026-05-01"
+    }
   ]
 }

@@ -1,0 +1,467 @@
+{
+  "ticker": "MSFT",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "MSFT",
+    "company_name": "MICROSOFT CORP",
+    "quarterly": {
+      "market": "us",
+      "ticker": "MSFT",
+      "company_name": "MICROSOFT CORP",
+      "cik": "0000789019",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 241832000000.0,
+      "monthly_revenue": null,
+      "net_income": 97983000000.0,
+      "operating_income": 114634000000.0,
+      "gross_profit": 164983000000.0,
+      "gross_margin": 0.6822215422276622,
+      "operating_margin": 0.4740232888947699,
+      "eps_diluted": 13.14,
+      "operating_cash_flow": 127494000000.0,
+      "capex": 80146000000.0,
+      "free_cash_flow": 47348000000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-04-29\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2025-07-01\", \"end\": \"2026-03-31\", \"val\": 241832000000, \"accn\": \"0001193125-26-191507\", \"fy\": 2026, \"fp\": \"Q3\", \"form\": \"10-Q\", \"filed\": \"2026-04-29\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "OpenAI攜五大科技廠開發MRC協議　化解AI訓練效率瓶頸",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754591_VO54Y2L1LFA2CP0EGHMPG",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T02:40:03+08:00",
+      "summary": "OpenAI攜手超微（AMD）、博通（Broadcom）、英特爾（Intel）、微軟（Microsoft）及NVIDIA，歷時2年共同開發超級電腦網路「多路徑可靠連線」（Multipath Reliable Connection；MRC）協議，透過開放運...",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "lobehub/lobehub",
+      "link": "https://github.com/lobehub/lobehub",
+      "source": "GitHub Trending (All)",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-10T09:00:18.242120+08:00",
+      "summary": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction. LobeHub LobeHub is the ultimate space for work and life: to find, build, and collaborate with agent teammates that grow with you. We’re building the world’s largest human–agent co-evolving network. English · 简体中文 · Off",
+      "event_type": "earnings",
+      "publisher": "GitHub",
+      "author": "",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "Microsoft’s AI Safety Role Grows As Infrastructure Hiring And Security Risks Mount - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTFYyVkJPVDJWR3RDZjhDWGxMSFJlQ09DdnNXVGdacUpQY1htZ09sTUg0Ql9MUVhnZmhYajdLRTc0bzBNOEtlRENwLWJNYmZoZHZLRnFFZERjM2xlQjdxNGN4V3V6YkVXNDVrRHhacmxPMGxURFdNY2R6V0lVTGcyWl9TM2VKZEhJdTNfaHhfUzc1S3Q4UnM3bklPLVBfQ0lp?oc=5",
+      "source": "AI 安全與治理",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-10T00:18:43+08:00",
+      "summary": "Microsoft’s AI Safety Role Grows As Infrastructure Hiring And Security Risks Mount&nbsp;&nbsp;Yahoo Finance",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that Musk tried to poach Sam Altman",
+      "link": "https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T07:59:19+08:00",
+      "summary": "In the second week of the landmark trial between Elon Musk and OpenAI, Musk’s motivations for bringing the suit were under scrutiny. Last week, Musk took the stand, alleging that OpenAI CEO Sam Altman and president Greg Brockman had deceived him into donating $38 million to the company. He claimed that they’d promised to maintain&#8230;",
+      "event_type": "news",
+      "publisher": "MIT Technology Review",
+      "author": "Michelle Kim",
+      "tickers": [
+        "MSFT",
+        "TSLA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Tesla"
+      ]
+    },
+    {
+      "title": "America’s Most Infamous Nuclear Site Returns to Fuel the AI Boom",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-08/america-s-most-infamous-nuclear-site-returns-to-fuel-ai-video",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T04:03:47+08:00",
+      "summary": "The infamous Three Mile Island nuclear plant is poised for a comeback, driven by AI’s massive energy needs. Thanks to a long-term agreement signed by Microsoft Corp. and Constellation Energy Corp. in September 2024, the energy from the plant will power chatbots and other artificial intelligence applications. All this under a new and baggage-free name: the Crane Clean Energy Center. The agreement commits Microsoft to buying all the electricity produced by the site’s remaining functional 835-megaw",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "AI agents fueled a frenzy of startup building at the Consensus Miami EasyA hackathon",
+      "link": "https://www.coindesk.com/tech/2026/05/08/ai-agents-fueled-a-frenzy-of-startup-building-at-the-consensus-miami-easya-hackathon",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T03:12:29+08:00",
+      "summary": "",
+      "event_type": "news",
+      "publisher": "CoinDesk",
+      "author": "Margaux Nijkerk",
+      "tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Google"
+      ]
+    },
+    {
+      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
+      "link": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T02:33:21+08:00",
+      "summary": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
+      "event_type": "earnings",
+      "publisher": "TechCrunch",
+      "author": "Julie Bort",
+      "tickers": [
+        "META",
+        "MSFT",
+        "AMZN"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Amazon"
+      ]
+    },
+    {
+      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
+      "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T23:25:02+08:00",
+      "summary": "When OpenAI was busy experimenting with AI-powered gaming bots, Microsoft CEO Satya Nadella and OpenAI CEO Sam Altman were in the early days of forming an AI partnership. Court documents from the ongoing Musk v. Altman trial have provided a rare look at the communications between Microsoft's top executives about investing in OpenAI and fears [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "The Verge",
+      "author": "Tom Warren",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google"
+      ]
+    },
+    {
+      "title": "Microsoft CTO confesses that 30-year-old code from the mid-90s still forms the bedrock of Windows 11 — ancient Win32 API still the backbone, but CTO says it's 'more relevant than ever in 2026'",
+      "link": "https://www.tomshardware.com/software/windows/microsoft-cto-confesses-that-30-year-old-code-from-the-mid-90s-still-forms-the-bedrock-of-windows-11-ancient-win32-api-still-the-backbone-but-cto-says-its-more-relevant-than-ever-in-2026",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T20:54:14+08:00",
+      "summary": "A top Microsoft exec has admitted that Windows 11 still relies on a bunch of old code from the 1990s.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "Musk v. Altman Evidence Shows What Microsoft Executives Thought of OpenAI",
+      "link": "https://www.wired.com/story/microsoft-executives-discuss-openai-sam-altman-2018",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T09:42:14+08:00",
+      "summary": "Leaders at the tech giant were skeptical of OpenAI—but wary of pushing it into the arms of Amazon, according to emails dating back to 2018.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT",
+        "AMZN"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon"
+      ]
+    },
+    {
+      "title": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+      "link": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T07:38:14+08:00",
+      "summary": "CoreWeave has been raising debt to finance its data center buildout, and S&amp;P has boosted the company's credit rating.",
+      "event_type": "earnings",
+      "publisher": "CNBC",
+      "author": "Jordan Novet",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "Microsoft AI Governance And Teams Integrations Meet Undervalued Stock Story - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOLUY2WWhaMl90bWktTDNFSWZFcE85MS1lNVFod0d5cXRZdjF2YkkxN2NNdFY1ZjI1T00xOElTSXRrQnFHVl9pSHVFclJEeHJvaWRJbWRQTEpOTjQxcDViZjl2Uk9HNlc5elp0cWl3M1VEUnJDS1hqbTlVc0NwRUxINDl4aXlPRDN6c0cyOGljNEF5Z1lEWDZvUDFJclk4Q3YwSnZ1OTZocXVLMjQ?oc=5",
+      "source": "AI 安全與治理",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T06:18:25+08:00",
+      "summary": "Microsoft AI Governance And Teams Integrations Meet Undervalued Stock Story&nbsp;&nbsp;Yahoo Finance",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "Mira Murati’s deposition pulled back the curtain on Sam Altman’s ouster",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T03:55:22+08:00",
+      "summary": "The week leading up to Thanksgiving 2023 was the AI industry's biggest soap opera moment. OpenAI CEO Sam Altman was abruptly ousted from his role at the ChatGPT maker. The explanation? That Altman was \"not consistently candid in his communications with the board.\" Now, via witness testimony and trial exhibits in Musk v. Altman, the [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "The Verge",
+      "author": "Hayden Field",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "The Pulse: Did capacity shortages turn Anthropic hostile to devs?",
+      "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-did-capacity-shortages",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T00:45:31+08:00",
+      "summary": "Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small &#8220;AI-forward&#8221; teams, and more",
+      "event_type": "news",
+      "publisher": "The Pragmatic Engineer",
+      "author": "Gergely Orosz",
+      "tickers": [
+        "AMZN",
+        "META",
+        "AAPL",
+        "MSFT"
+      ],
+      "companies": [
+        "Amazon",
+        "Meta",
+        "Apple",
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "Data centers in the land of coal and cowboys",
+      "link": "https://www.datacenterdynamics.com/en/analysis/data-centers-in-the-land-of-coal-and-cowboys",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T00:30:28+08:00",
+      "summary": "Wyoming governor Mark Gordon is welcoming the hyperscalers to the Cowboy State",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT",
+        "META"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta"
+      ]
+    },
+    {
+      "title": "Microsoft and G42 data center in Kenya stalled due to lack of power capacity",
+      "link": "https://www.datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T22:50:33+08:00",
+      "summary": "Data center was first announced in May 2024",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "France is fan favorite for the FIFA World Cup — but AI is backing another nation for glory, says BofA",
+      "link": "https://www.cnbc.com/2026/05/07/france-is-world-cup-favorite-but-ai-is-backing-another-winner.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T22:27:39+08:00",
+      "summary": "The 2026 FIFA World Cup is expected to add over $40 billion to the global GDP with its most lucrative edition ever.",
+      "event_type": "news",
+      "publisher": "CNBC",
+      "author": "Sawdah Bhaimiya",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "Why OpenAI, AMD, NVIDIA, Intel, Broadcom, and Microsoft all agreed on one networking protocol - digit.in",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOWVFOXJpcS16aG5RdC12U0F0R3kzTVM4QXBSRnBmSDMwNE9PdDJlV1pZZ1JlOWo0TkFJQlNqd3lkTndHTGxQYXdkclBOek9sZHdXUHpzaDlWc283ZjlfMXhRbWJfU2JHdGVZeVVHejBLTVozYWxQYWZmZE8wdVllakhDOGR6Q25IVFpJQ1B1ci13OHZJWHRnMWVfdWd3Z0JSSkZvY1h6M1JhbjlnNXZ0RW9QSlRFRGdTd3B0b2gtVktDVW1pM3A0RjdGRdIB0gFBVV95cUxPRlNqZlFNWDg3ck5kaHlEN0tFallhck5FRkNubUh5dGtxckJLeEpOaHEzZjRpOEZJXzM5Z2F3LVQ1Q2pFQzhFSjdmQVhhR1I3ZFNIdUc4Xy1xNVJ0VG9YZDMyU21jcU96RXAyWmlWZFBSQ1U5OFJGbGxGWWk1LUgwZC0xeWFkelNZNl9sM3RGTkVyazZkOF9QMVZVNjd1MjFKajc2MXY2X1FIYmJzd29WODY1VDVoMTBtSnlnRVRTWXM2U2licXVrdUlrN19SdHVuWUE",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T15:54:00+08:00",
+      "summary": "Why OpenAI, AMD, NVIDIA, Intel, Broadcom, and Microsoft all agreed on one networking protocol&nbsp;&nbsp;digit.in",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "NVDA",
+        "MSFT"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft"
+      ]
+    },
+    {
+      "title": "bunkerity/bunkerweb",
+      "link": "https://github.com/bunkerity/bunkerweb",
+      "source": "GitHub Trending (Python)",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T09:00:53.560696+08:00",
+      "summary": "🛡️ Open-source and cloud-native Web Application Firewall (WAF) 🌐 Website | 🤝 Panel | 📓 Documentation | 👨‍💻 Demo | 📱 Demo UI | 🧩 Templates | 🛡️ Examples 💬 Chat | 📝 Forum | 📝 Community | 🗺️ Threatmap | 📊 Status | 🔎 Feedback 🛡️ Make security by default great again! BunkerWeb BunkerWeb is a next-generation, open-source Web Application Firewall (WAF). Being a full-featured web server (based on NGINX under the hood), it will protect your web services to make them \"secure by default.\" BunkerWeb integra",
+      "event_type": "news",
+      "publisher": "GitHub",
+      "author": "",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-29",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 241832000000.0,
+      "monthly_revenue": null,
+      "net_income": 97983000000.0,
+      "operating_income": 114634000000.0,
+      "gross_profit": 164983000000.0,
+      "eps_diluted": 13.14,
+      "operating_cash_flow": 127494000000.0,
+      "capex": 80146000000.0,
+      "free_cash_flow": 47348000000.0,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "period_end": "2025-12-31",
+      "filed_at": "2026-01-28",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 158946000000.0,
+      "monthly_revenue": null,
+      "net_income": 66205000000.0,
+      "operating_income": 76236000000.0,
+      "gross_profit": 108925000000.0,
+      "eps_diluted": 8.87,
+      "operating_cash_flow": 80815000000.0,
+      "capex": 49270000000.0,
+      "free_cash_flow": 31545000000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "co_mentions": [
+    {
+      "ticker": "AMZN",
+      "count": 5
+    },
+    {
+      "ticker": "NVDA",
+      "count": 3
+    },
+    {
+      "ticker": "META",
+      "count": 3
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 2
+    },
+    {
+      "ticker": "TSLA",
+      "count": 1
+    },
+    {
+      "ticker": "AAPL",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T02:39:53Z"
+}

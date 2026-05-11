@@ -1,0 +1,870 @@
+{
+  "ticker": "GOOGL",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "GOOGL",
+    "company_name": "Alphabet Inc.",
+    "quarterly": {
+      "market": "us",
+      "ticker": "GOOGL",
+      "company_name": "Alphabet Inc.",
+      "cik": "0001652044",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 109896000000.0,
+      "monthly_revenue": null,
+      "net_income": 62578000000.0,
+      "operating_income": 39696000000.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": 0.36121423891679405,
+      "eps_diluted": 5.11,
+      "operating_cash_flow": 45790000000.0,
+      "capex": 35674000000.0,
+      "free_cash_flow": 10116000000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-04-30\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/goog-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2026-01-01\", \"end\": \"2026-03-31\", \"val\": 109896000000, \"accn\": \"0001652044-26-000048\", \"fy\": 2026, \"fp\": \"Q1\", \"form\": \"10-Q\", \"filed\": \"2026-04-30\", \"frame\": \"CY2026Q1\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Twist Bioscience Corporation (TWST) Announces Q2 2026 Financial Results",
+      "link": "https://www.insidermonkey.com/blog/twist-bioscience-corporation-twst-announces-q2-2026-financial-results-1758209",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-11T07:14:23+08:00",
+      "summary": "Twist Bioscience Corporation (NASDAQ:TWST) is one of the best performing healthcare stocks so far in 2026. Twist Bioscience Corporation (NASDAQ:TWST) announced its fiscal Q2 2026 financial results and business highlights on May 4, reporting solid performance in the first half of 2026. It ended fiscal Q2 with its 13th consecutive quarter of growth, with total [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "Insider Monkey",
+      "author": "Noor Ul Ain Rehman",
+      "tickers": [
+        "TWST",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ]
+    },
+    {
+      "title": "RBC Capital Lifts PT on Acadia Healthcare Company (ACHC) Following Q1 Earnings Beat",
+      "link": "https://www.insidermonkey.com/blog/rbc-capital-lifts-pt-on-acadia-healthcare-company-achc-following-q1-earnings-beat-1758210",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-11T07:14:16+08:00",
+      "summary": "Acadia Healthcare Company, Inc. (NASDAQ:ACHC) is one of the best performing healthcare stocks so far in 2026. Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price target on the stock to $31 from $28 and reiterating an Outperform rating on the shares. The [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "Insider Monkey",
+      "author": "Noor Ul Ain Rehman",
+      "tickers": [
+        "ACHC",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ]
+    },
+    {
+      "title": "股價用喊的？SanDisk、美光股價飆漲為台股本周走勢埋下火種",
+      "link": "https://finance.technews.tw/2026/05/11/sandisk-and-micron-shares-surged-last-week",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T06:30:07+08:00",
+      "summary": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公佈的就業報告數據優於市場預期，上週五（5月8日）美國股市 [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "NVDA",
+        "GOOGL",
+        "META",
+        "2330"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Alphabet",
+        "Meta",
+        "台積電",
+        "Google"
+      ]
+    },
+    {
+      "title": "Agentic commerce will run on crypto rails, PayPal and Google reps tell Consensus Miami",
+      "link": "https://www.coindesk.com/business/2026/05/10/agentic-commerce-will-run-on-crypto-rails-paypal-and-google-reps-tell-consensus-miami",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T22:00:00+08:00",
+      "summary": "",
+      "event_type": "earnings",
+      "publisher": "CoinDesk",
+      "author": "Jeffrey Albus",
+      "tickers": [
+        "BLSH",
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "NASA 下一代火星直升機轉子技術突破，旋翼葉片突破音速未解體",
+      "link": "https://technews.tw/2026/05/10/nasa-aerovironment-skyfall-mars-helicopter",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-10T16:24:21+08:00",
+      "summary": "為了讓直升機在大氣稀薄的火星飛得更高、載得更重，NASA 噴射推進實驗室剛完成一項新技術挑戰：將火星直升機旋翼 [&#8230;]",
+      "event_type": "news",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "金星 6,000 公里巨型雲牆之謎解開，由最大規模水躍現象引起",
+      "link": "https://technews.tw/2026/05/10/hydraulic-jumpatmospheric-wave-venus-cloud",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-10T15:31:52+08:00",
+      "summary": "金星每天都是陰天，可能還會落下硫酸陣雨，過去探測器曾發現金星赤道有巨型大氣波反覆掃過，但原因不明。現在日本科學 [&#8230;]",
+      "event_type": "news",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Netflix 雖不靠遊戲賺錢，但做遊戲要幹麼腦袋還很清楚",
+      "link": "https://finance.technews.tw/2026/05/10/netflix-isnt-making-money-from-games-but-it-knows-exactly-why-its-making-them",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-10T14:00:55+08:00",
+      "summary": "Netflix 2026 年第一季財報帳面相當漂亮：營收為 122.5 億美元，年成長 16.2%；營業利益 [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Google"
+      ]
+    },
+    {
+      "title": "So you’ve heard these AI terms and nodded along; let’s fix that",
+      "link": "https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-10T05:45:00+08:00",
+      "summary": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+      "event_type": "earnings",
+      "publisher": "TechCrunch",
+      "author": "Natasha Lomas, Romain Dillet, Kyle Wiggers, Lucas Ropek",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Google tweaks Chrome AI privacy wording, insists processing stays on-device",
+      "link": "https://www.theregister.com/ai-and-ml/2026/05/09/google-tweaks-chrome-ai-privacy-wording-insists-processing-stays-on-device/5237580",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-10T01:57:11+08:00",
+      "summary": "Deletion of a longstanding privacy assurance sparks concerns",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Broadcom shares jump after securing long-term AI chip and networking agreements with Google - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiuwNBVV95cUxOT3dOZ2g2bTE0SFQ2OFBLclljUjlLNUx4V05JMTFOZXRDYnZzcDZkTGo2MDlwSnNsYksxQU1abGNEaTVmaFZVV0ltWkUzYkRDNFhldk9idmxlejNHQmZ4aEh3LXl1aE02dTZwd0plekxlRlgwc3M4NkxUem96VmJ4WEhVMnFTT3RneGdMTmdLSEJQWFU1d0o5b2RoQnpMZHIzcDIzNVRucFJPLWY0TXp4MVdhV1lvenBGV1hydEx4RjJkZjlnTDZEYzBjbFlabWJROVpQd2k1VW04ZVBXXzl3YVJCOWZ1cHk2d2J0U21KcDZ4Xy1aSERjajZlaUxCWXRuZDdyUF84Zkh5Nmt6bnREYm1zRzFhWTFXa0VtT2w4WlVFWmFXSXlZQlItOWxXWXBQS2c5azVtYVEzbTZubnJYR2xBMThNTnNkZE85N19MVjFGUEdzZmxhNDhtakJoUEl2V2FFeUtNdjV5MEV5VGhkT1RNdGk3Vm5zeG1jYzVRbkRqNWJnd2dlVWtMMkFUTHI2d0JoUUpRTG0xaDg5LW9TR2NBc3F6MlpzSkp3LU9VU0dHdUNoc3NRUkVUaw",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T21:13:35+08:00",
+      "summary": "Broadcom shares jump after securing long-term AI chip and networking agreements with Google&nbsp;&nbsp;MSN",
+      "event_type": "news",
+      "publisher": "Google News",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "The new Wild West of AI kids’ toys",
+      "link": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T19:00:51+08:00",
+      "summary": "These connected companions could disrupt everything from make-believe to bedtime stories. No wonder some lawmakers want them banned.",
+      "event_type": "news",
+      "publisher": "Ars Technica",
+      "author": "WIRED",
+      "tickers": [
+        "AMZN",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Meta",
+        "Google"
+      ]
+    },
+    {
+      "title": "All my clients wanted a carousel, now it's an AI chatbot",
+      "link": "https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T15:23:40+08:00",
+      "summary": "Article URL: https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md Comments URL: https://news.ycombinator.com/item?id=48072720 Points: 175 # Comments: 70",
+      "event_type": "news",
+      "publisher": "Adële's blog",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "aaif-goose/goose",
+      "link": "https://github.com/aaif-goose/goose",
+      "source": "GitHub Trending (All)",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T09:00:57.787979+08:00",
+      "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM 🦆 goose has moved! This project has moved from block/goose to the Agentic AI Foundation (AAIF) at the Linux Foundation. Some links and references are still being updated — please bear with us during the transition. goose your native open source AI agent — desktop app, CLI, and API — for code, workflows, and everything in between goose is a general-purpose AI agent that runs on yo",
+      "event_type": "news",
+      "publisher": "GitHub",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "decolua/9router",
+      "link": "https://github.com/decolua/9router",
+      "source": "GitHub Trending (All)",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T09:00:57.787472+08:00",
+      "summary": "🆓 Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. 9Router - FREE AI Router &amp; Token Saver Never stop coding. Save 20-40% tokens with RTK + auto-fallback to FREE &amp; cheap AI models. Connect All AI Code Tools (Claude Code, Cursor, Antigravity, Copilot, Codex, Gemini, OpenCode, Cline, OpenClaw...) to 40+ AI Providers &amp; 100+ Models. 🚀 Quick Start • 💡 Feat",
+      "event_type": "news",
+      "publisher": "GitHub",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Anti-work anthems, Boy George and controversial lyrics: A guide to all 35 Eurovision songs",
+      "link": "https://www.bbc.com/news/articles/ce8pmrv2p1mo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-09T07:01:55+08:00",
+      "summary": "From dancefloor bangers to heartfelt ballads, here are the highlights and low points of Eurovision.",
+      "event_type": "news",
+      "publisher": "BBC News",
+      "author": "Mark Savage",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Alphabet"
+      ]
+    },
+    {
+      "title": "Course correction: Google to link more sources in AI Overviews",
+      "link": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T03:43:47+08:00",
+      "summary": "Google's AI search will start citing its sources in several new ways.",
+      "event_type": "earnings",
+      "publisher": "Ars Technica",
+      "author": "Ryan Whitwam",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "AI agents fueled a frenzy of startup building at the Consensus Miami EasyA hackathon",
+      "link": "https://www.coindesk.com/tech/2026/05/08/ai-agents-fueled-a-frenzy-of-startup-building-at-the-consensus-miami-easya-hackathon",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T03:12:29+08:00",
+      "summary": "",
+      "event_type": "news",
+      "publisher": "CoinDesk",
+      "author": "Margaux Nijkerk",
+      "tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Google"
+      ]
+    },
+    {
+      "title": "Which AI Glasses Are Right For You?",
+      "link": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T03:00:21+08:00",
+      "summary": "From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle. The post Which AI Glasses Are Right For You? appeared first on Meta Newsroom.",
+      "event_type": "news",
+      "publisher": "Meta Newsroom",
+      "author": "joedamiani",
+      "tickers": [
+        "META",
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Apple",
+        "Google"
+      ]
+    },
+    {
+      "title": "RT Pushmeet Kohli: The future of Math is mathematicians and AI agents working together. Very pleased to introduce @GoogleDeepMind's AI co-mathematicia...",
+      "link": "https://x.com/GoogleDeepMind/status/2052836125866127617",
+      "source": "X @GoogleDeepMind",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-09T02:07:14+08:00",
+      "summary": "RT Pushmeet KohliThe future of Math is mathematicians and AI agents working together.Very pleased to introduce @GoogleDeepMind's AI co-mathematician: a multi-agent system designed to actively collaborate with human experts on open-ended research mathematics.Mathematicians testing the agent across areas as diverse as group theory, Hamiltonian systems, and algebraic combinatorics have reported impressive results.In autonomous mode evaluation on the rigorous FrontierMath Tier 4 problems, AI co-math",
+      "event_type": "earnings",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Chrome's 4GB AI model isn't new, but you're not wrong for being confused",
+      "link": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T01:17:17+08:00",
+      "summary": "You can stop Chrome from taking up 4GB of storage for local AI, but that shouldn't be your problem.",
+      "event_type": "news",
+      "publisher": "Ars Technica",
+      "author": "Ryan Whitwam",
+      "tickers": [
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "Google",
+        "Apple"
+      ]
+    },
+    {
+      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
+      "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T23:25:02+08:00",
+      "summary": "When OpenAI was busy experimenting with AI-powered gaming bots, Microsoft CEO Satya Nadella and OpenAI CEO Sam Altman were in the early days of forming an AI partnership. Court documents from the ongoing Musk v. Altman trial have provided a rare look at the communications between Microsoft's top executives about investing in OpenAI and fears [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "The Verge",
+      "author": "Tom Warren",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google"
+      ]
+    },
+    {
+      "title": "See what happens when creative legends use AI to make ads for small businesses.",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T23:00:00+08:00",
+      "summary": "black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe",
+      "event_type": "news",
+      "publisher": "Google",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Google is testing an AI agent called Remy - Phandroid",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPT3FEc3pPWVR0TTh1d3RoUVczUDh4ZGI2eXl6SmRMWnFwOU0tUkNBYk1MNGN4RlEwbWRuUU81c2ZWRkVNVkxUYlJwaVd5eUp0VHpVNzIxQkRVNXZRLTYwaEdEREJINDBLa2xrWXNRX0k0UlNlMlZadzNpR3pYSXNRR9IBhgFBVV95cUxORlpQQmdFOUxxYmZuRER0aUdrVVFiUVJSaTNrenFIRmQtWUZvZTRmTzRVZE16dnI4Q1gzRElkTUppaTdWeEVOWGdUdnZJRHpzaVZzc1RCSVNycDM3QmdyUG9SZ2ZXUWVVX1B0bmE4RDFCT1JZcWZvOVdidjRKaUMtcFRkMl9ndw?oc=5",
+      "source": "AI 實戰落地（工具/流程）",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-08T09:21:06+08:00",
+      "summary": "Google is testing an AI agent called Remy&nbsp;&nbsp;Phandroid",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "能源危機推升成本，馬來西亞「零工經濟」族拚生計",
+      "link": "https://technews.tw/2026/05/08/malaysia-gig-economy",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T08:40:13+08:00",
+      "summary": "清晨 7 時許，吉隆坡單軌列車咖啡山站（Bukit Nanas）外騎樓，飄出椰漿飯融合參峇醬香氣。60 多歲馬 [&#8230;]",
+      "event_type": "news",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "挪威央行升息 1 碼抗通膨，中東戰爭以來歐洲國家首見",
+      "link": "https://finance.technews.tw/2026/05/08/norways-central-bank-raises-interest-rates-to-curb-inflation",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T08:30:49+08:00",
+      "summary": "挪威中央銀行 7 日決議調高基準利率 1 碼至 4.25%，成為自中東戰爭爆發以來首個採取升息行動的歐洲國家。",
+      "event_type": "news",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "勞保級距要動了？洪申翰允兩個月內提出評估資料",
+      "link": "https://finance.technews.tw/2026/05/08/labor-insurance-contribution-brackets-changing",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T08:20:44+08:00",
+      "summary": "最低工資年年上調，但勞保最高級距卻近十年未動。勞工團體日前五一大遊行時提出勞保最高級距應升至新台幣 4 萬 8 [&#8230;]",
+      "event_type": "news",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "「聯電第二」來了！力積電躋身英特爾 EMIB 先進封裝夥伴",
+      "link": "https://technews.tw/2026/05/08/psmc-into-intel-emib",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T08:10:42+08:00",
+      "summary": "力積電營運傳捷報，繼中介層產品成為台積電 CoWoS 先進封裝夥伴之後，再打入英特爾當紅 EMIB 先進封裝供 [&#8230;]",
+      "event_type": "earnings",
+      "publisher": "TechNews 科技新報",
+      "author": "",
+      "tickers": [
+        "2330",
+        "GOOGL"
+      ],
+      "companies": [
+        "台積電",
+        "Google"
+      ]
+    },
+    {
+      "title": "Chrome Deleted Its Own Privacy Promise for Sneaky On-Device AI",
+      "link": "https://decrypt.co/367193/chrome-removes-privacy-claim-gemini-nano-google",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T04:52:05+08:00",
+      "summary": "Chrome is quietly installing a 4GB AI on your devices. And now, its latest version has removed the disclosure that promised to keep your data off Google’s servers.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "It’s getting better at humor",
+      "link": "https://www.reddit.com/r/ChatGPT/comments/1t6mmdg/its_getting_better_at_humor",
+      "source": "Reddit r/ChatGPT",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-08T04:33:21+08:00",
+      "summary": "Just messing with my girlfriend, this was the first response to “Create a fake google search image where the question being asked is “Does Tori know anything at all?” And the queried responses being humorous “no’s” &#32; submitted by &#32; /u/Living_Bench4646 [link] &#32; [comments]",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "How to Disable Google's Gemini in Chrome",
+      "link": "https://www.wired.com/story/you-can-disable-gemini-in-chrome-if-its-freaking-you-out",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T04:31:57+08:00",
+      "summary": "Chrome users were caught off guard by a 4-GB Google AI model baked into Chrome, sparking privacy concerns. The good news: You can easily uninstall it. The bad? You might not want to.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Your AI Chatbot May Be Leaking Your Chats to Meta, TikTok and Google",
+      "link": "https://decrypt.co/367164/your-ai-chatbot-leaking-chats-meta-tiktok-google",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T03:06:46+08:00",
+      "summary": "A new study finds ChatGPT, Claude, Grok, and Perplexity all share user data with third-party ad trackers—sometimes even when you say no to cookies.",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Google"
+      ]
+    },
+    {
+      "title": "This Teacher Appreciation Week, we’re celebrating educators who made a difference in our lives.",
+      "link": "https://blog.google/products-and-platforms/products/education/teacher-appreciation-week-videos",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T00:00:00+08:00",
+      "summary": "To celebrate Teacher Appreciation Week, Googlers thanked the educators who inspired them to try new things.",
+      "event_type": "news",
+      "publisher": "Google",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "5 helpful tools from Google to keep your accounts safe",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/world-password-day-2026",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T00:00:00+08:00",
+      "summary": "A laptop sits against a blue background surrounded by safety and security-related icons. On the laptop screen is the letter G inside a blue shield.",
+      "event_type": "news",
+      "publisher": "Google",
+      "author": "Sriram Karra",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Notes from inside China's AI labs",
+      "link": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs",
+      "source": "Interconnects AI",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-07T23:42:43+08:00",
+      "summary": "Lessons from my trip to talk to most of the leading AI labs in China.",
+      "event_type": "earnings",
+      "publisher": "Interconnects AI",
+      "author": "Nathan Lambert",
+      "tickers": [
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "NVIDIA"
+      ]
+    },
+    {
+      "title": "Algorithms are part of nearly every aspect of life, from the physics of the natural world to planning shipping routes. Our Gemini-powered coding agent...",
+      "link": "https://x.com/GoogleDeepMind/status/2052403306257940967",
+      "source": "X @GoogleDeepMind",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-07T23:00:54+08:00",
+      "summary": "Algorithms are part of nearly every aspect of life, from the physics of the natural world to planning shipping routes.Our Gemini-powered coding agent AlphaEvolve has been accelerating progress over the last year - from quantum and biotechnology to logistics and @Google’s AI infrastructure. ↓ https://goo.gle/4uzfe0C",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "New AI-powered bidding and budgeting innovations in Search and Shopping",
+      "link": "https://blog.google/products/ads-commerce/bidding-budgeting-google-marketing-live-2026",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T23:00:00+08:00",
+      "summary": "The Road To Google Marketing Live",
+      "event_type": "news",
+      "publisher": "Google",
+      "author": "Josh Braverman",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Find out how AlphaEvolve has gone from research to solving real-life problems.",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-updates",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T23:00:00+08:00",
+      "summary": "AlphaEvolve has become a powerful engine for scientific and societal progress.",
+      "event_type": "earnings",
+      "publisher": "Google",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Google unveils screenless Fitbit Air and Google Health app to replace Fitbit",
+      "link": "https://arstechnica.com/gadgets/2026/05/google-unveils-screenless-fitbit-air-and-google-health-app-to-replace-fitbit",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T22:00:50+08:00",
+      "summary": "The $100 Fitbit Air is available for preorder today.",
+      "event_type": "news",
+      "publisher": "Ars Technica",
+      "author": "Ryan Whitwam",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "title": "Google’s taking a big swing at AI health with the Fitbit Air",
+      "link": "https://www.theverge.com/gadgets/925458/google-health-fitbit-air-ai-coaching-wearables-fitness-trackers",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T22:00:00+08:00",
+      "summary": "It's a Whoop dupe. That was my first thought when I saw the new $99 Google Fitbit Air. You can hardly blame me. The band is screenless with a metallic fabric clasp. My eyes flickered between the Fitbit Air and my wrist, where I'm wearing a Whoop MG. Was I not seeing double? But as [&#8230;]",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ]
+    },
+    {
+      "title": "A new era for your wellness: Introducing the Google Health app",
+      "link": "https://blog.google/products-and-platforms/products/google-health/google-health-app",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T22:00:00+08:00",
+      "summary": "Google Health logo",
+      "event_type": "news",
+      "publisher": "",
+      "author": "",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-30",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 109896000000.0,
+      "monthly_revenue": null,
+      "net_income": 62578000000.0,
+      "operating_income": 39696000000.0,
+      "gross_profit": null,
+      "eps_diluted": 5.11,
+      "operating_cash_flow": 45790000000.0,
+      "capex": 35674000000.0,
+      "free_cash_flow": 10116000000.0,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025-09-30",
+      "filed_at": "2025-10-30",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 289007000000.0,
+      "monthly_revenue": null,
+      "net_income": 97715000000.0,
+      "operating_income": 93105000000.0,
+      "gross_profit": null,
+      "eps_diluted": 7.99,
+      "operating_cash_flow": 112311000000.0,
+      "capex": 63596000000.0,
+      "free_cash_flow": 48715000000.0,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2015,
+      "fiscal_period": "FY",
+      "period_end": "2015-12-31",
+      "filed_at": "2016-05-03",
+      "source_type": "sec-companyfacts",
+      "form_type": "8-K",
+      "revenue": 74989000000.0,
+      "monthly_revenue": null,
+      "net_income": 16348000000.0,
+      "operating_income": 19360000000.0,
+      "gross_profit": null,
+      "eps_diluted": 20.57,
+      "operating_cash_flow": 26572000000.0,
+      "capex": 9915000000.0,
+      "free_cash_flow": 16657000000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "co_mentions": [
+    {
+      "ticker": "META",
+      "count": 6
+    },
+    {
+      "ticker": "AMZN",
+      "count": 3
+    },
+    {
+      "ticker": "BRK-B",
+      "count": 2
+    },
+    {
+      "ticker": "NVDA",
+      "count": 2
+    },
+    {
+      "ticker": "2330",
+      "count": 2
+    },
+    {
+      "ticker": "MSFT",
+      "count": 2
+    },
+    {
+      "ticker": "AAPL",
+      "count": 2
+    },
+    {
+      "ticker": "TWST",
+      "count": 1
+    },
+    {
+      "ticker": "ACHC",
+      "count": 1
+    },
+    {
+      "ticker": "BLSH",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T02:39:53Z"
+}
