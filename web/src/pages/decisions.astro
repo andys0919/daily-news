@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import TickerChip from "../components/TickerChip.astro";
+import data from "../data/decisions.json";
+
+const decisions = (data.decisions ?? []) as Array<any>;
+---
+<Base title="決策日誌 — 投資決策 Dashboard">
+  <header class="mb-6">
+    <h1 class="text-3xl font-semibold tracking-tight">決策日誌</h1>
+  </header>
+  {decisions.length === 0 ? (
+    <p class="opacity-60">尚無決策紀錄</p>
+  ) : (
+    <ul class="space-y-3">
+      {decisions.map((d) => (
+        <li class="glass rounded-xl p-4">
+          <div class="flex items-baseline gap-3 flex-wrap">
+            <span class="mono opacity-70 text-sm">{d.date}</span>
+            <TickerChip ticker={d.ticker} />
+            <span class="text-sm">
+              {d.action}
+              {d.size_pct ? ` (${d.size_pct}%)` : ""}
+            </span>
+          </div>
+          <p class="text-sm opacity-90 mt-2">論點：{d.thesis}</p>
+          {d.follow_up && <p class="text-xs opacity-70 mt-1">追蹤：{d.follow_up}</p>}
+        </li>
+      ))}
+    </ul>
+  )}
+</Base>

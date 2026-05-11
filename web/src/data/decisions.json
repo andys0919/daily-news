@@ -1,0 +1,20 @@
+{
+  "decisions": [
+    {
+      "date": "2026-04-20",
+      "ticker": "NVDA",
+      "action": "加碼",
+      "size_pct": 2,
+      "thesis": "Blackwell ramp + sovereign AI demand",
+      "follow_up": "Q1 earnings check guidance"
+    },
+    {
+      "date": "2026-04-10",
+      "ticker": "2330",
+      "action": "持有",
+      "size_pct": 8,
+      "thesis": "HPC 結構成長、CoWoS 產能仍緊",
+      "follow_up": "5/22 法說會檢視 capex guidance"
+    }
+  ]
+}
