@@ -17,6 +17,42 @@
   - HTML 報告
   - 單篇 daily memo 與 AI / GitHub digest
 
+## 投資 Dashboard (web/)
+
+`web/` 是一個獨立的 Astro + Tailwind 靜態網站，把 daily-news pipeline 產生的資料以單頁形式呈現，方便每日做投資決策時參考。
+
+- 部署：Cloudflare Tunnel（`com.dailynews.cloudflared` launchd service）+ 本機 `python3 -m http.server` 服務 `web/dist/`
+- 自架 domain：`https://invest.aihost.dev/`（自家 subdomain，不覆蓋其他 service）
+- 資料來源：[`dashboard_export.py`](dashboard_export.py) 讀 SQLite 寫 JSON 到 `web/src/data/`
+- 部署細節：[`docs/dashboard-deployment.md`](docs/dashboard-deployment.md)
+
+### 主要 sections（單頁）
+
+| Section | 內容 |
+|---|---|
+| ① 今日重點 | 3 句白話 takeaway，從本日訊號自動產生 |
+| ② 個股 Scorecard | 一行一檔：健康度・季營收・EPS・YoY・月營收・分析師看法・最近事件 |
+| ③ 訊號流 | tabbed feed — 指引 / 法人 / 公司內部 |
+| ④ 公司原文 | SEC 10-Q forward-looking statements 摘錄 |
+| ⑤ 資料缺口 | 誠實列出已有 vs 待補資料 |
+
+### 本機開發
+
+```bash
+cd web
+npm install
+npm run dev          # http://localhost:4321
+npm run build        # 生成 web/dist/
+```
+
+### 每日資料刷新
+
+```bash
+bash launchd/export-dashboard-data.sh
+```
+
+會用 `data/news.db` 產出最新 JSON 寫到 `web/src/data/`，之後 cloudflared tunnel 把 `web/dist/` 推到 `invest.aihost.dev`（如果有 `npm run build` 過）。
+
 ## 專案結構
 
 - `main.py`: 主流程 orchestration
@@ -30,8 +66,10 @@
 - `summarizer.py`: prompt building、摘要、daily memo
 - `html_generator.py`: HTML 報告
 - `stock_memo.py`: 單一台股 / 美股個股 memo
+- `dashboard_export.py`: 投資 dashboard JSON 匯出（讀 SQLite → 寫 `web/src/data/`）
 - `config.yaml`: 來源與市場設定
 - `launchd/`: macOS LaunchAgent 腳本與 template
+- `web/`: 投資 dashboard 前端（Astro + Tailwind）
 - `openspec/changes/`: 各次變更的 OpenSpec artifacts
 
 ## 快速開始

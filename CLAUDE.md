@@ -5,14 +5,29 @@ Agents working in this repo should treat it as a data-collection and memo-genera
 
 ## What This Repo Supports
 
-The repo currently supports four major query types:
+The repo currently supports five major query types:
 
 1. Broad market / sector news search from RSS and article enrichment
 2. Official financial snapshot lookup for TW and US issuers
 3. Issuer-first stock memo generation for single names such as `2330` or `NVDA`
 4. Daily / weekly HTML report generation
+5. **Investment dashboard (web/)** — single-page Astro site at `https://invest.aihost.dev/` (cloudflared tunnel) showing: today takeaway · per-stock Scorecard · guidance feed · analyst views · revenue pulse · company internal data · SEC filing excerpts
 
 When a user asks "can we get X?" or "what data do we have for this stock?", check the official data paths before assuming the answer depends on generic news.
+
+## Investment Dashboard
+
+The `web/` directory contains a static Astro site that consumes JSON exported by [`dashboard_export.py`](dashboard_export.py).
+
+- Source: `web/src/pages/index.astro` is the single master page; `web/src/pages/stocks/[ticker].astro` generates per-ticker pages for all tickers with ≥3 articles or ≥1 financial report (currently 161 pages).
+- Data: `web/src/data/{overview,guidance,fundamentals,tickers,coverage,events,news,decisions,watchlist}.json` + `web/src/data/stocks/{TICKER}.json`.
+- Refresh:
+  ```bash
+  bash launchd/export-dashboard-data.sh    # re-export JSON
+  cd web && npm run build                  # rebuild dist/
+  ```
+- Deployment: served by `com.dailynews.dashboard-server` (Python `http.server` on `127.0.0.1:8055`) proxied via `com.dailynews.cloudflared` tunnel to `invest.aihost.dev`. Config in `~/.cloudflared/dailynews-aihost.yml`.
+- Tests: [`tests/test_dashboard_export.py`](tests/test_dashboard_export.py).
 
 ## Key Commands
 
