@@ -860,3 +860,225 @@ a:hover { color: var(--fg-100); }
 .section-h .sub {
   font-size: 12px; color: var(--fg-400);
 }
+
+/* ───────────────────────────────────────────────────────────────
+   Section anchor index (sticky bar showing current section)
+   ─────────────────────────────────────────────────────────────── */
+.sec-index {
+  position: sticky; top: 60px; z-index: 30;
+  display: flex; gap: var(--s-1); flex-wrap: wrap;
+  padding: var(--s-2) 0;
+  margin-bottom: var(--s-6);
+  border-bottom: 1px solid var(--border-base);
+  background: rgba(10, 12, 16, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.sec-index a {
+  font-size: var(--t-small); padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--fg-300);
+  transition: all var(--duration-fast) var(--ease);
+}
+.sec-index a:hover { color: var(--fg-100); background: rgba(255, 255, 255, 0.03); }
+
+/* ───────────────────────────────────────────────────────────────
+   Scorecard — the main centerpiece (consolidated watchlist view)
+   ─────────────────────────────────────────────────────────────── */
+.scorecard-wrap {
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-lg);
+  background: var(--bg-900);
+  overflow: hidden;
+  margin-bottom: var(--s-10);
+}
+.scorecard {
+  width: 100%; border-collapse: collapse;
+  font-size: var(--t-small);
+}
+.scorecard thead th {
+  font-size: var(--t-caption); letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--fg-400); font-weight: 500;
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--border-base);
+  text-align: right; background: var(--bg-880);
+  white-space: nowrap;
+}
+.scorecard thead th:first-child,
+.scorecard thead th.left { text-align: left; }
+.scorecard tbody td {
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--border-base);
+  text-align: right;
+  font-family: "JetBrains Mono", monospace;
+  font-feature-settings: "tnum";
+  color: var(--fg-200);
+  vertical-align: middle;
+}
+.scorecard tbody td.left {
+  text-align: left;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.scorecard tbody tr:last-child td { border-bottom: none; }
+.scorecard tbody tr { transition: background-color var(--duration-fast) var(--ease); }
+.scorecard tbody tr:hover { background: rgba(255, 255, 255, 0.025); cursor: pointer; }
+.scorecard .ticker-cell {
+  display: flex; align-items: center; gap: var(--s-3);
+}
+.scorecard .ticker-cell .icon {
+  font-size: 22px; line-height: 1;
+  width: 28px; text-align: center;
+}
+.scorecard .ticker-cell .t {
+  font-family: "JetBrains Mono", monospace; font-weight: 600;
+  font-size: var(--t-h3); color: var(--fg-100);
+  letter-spacing: -0.01em;
+}
+.scorecard .ticker-cell .name {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: var(--t-label); color: var(--fg-400);
+  font-weight: 400;
+}
+.scorecard .tier {
+  font-size: var(--t-caption); letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 999px; font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.scorecard .tier.strong { color: var(--ok); background: rgba(61, 220, 151, 0.08); }
+.scorecard .tier.steady { color: var(--accent-strong); background: var(--accent-bg); }
+.scorecard .tier.watch { color: var(--warn); background: rgba(255, 174, 92, 0.10); }
+.scorecard .tier.warn { color: var(--bad); background: rgba(255, 107, 129, 0.10); }
+.scorecard .tier.unknown { color: var(--fg-400); background: rgba(255, 255, 255, 0.04); }
+.scorecard .delta-up { color: var(--ok); }
+.scorecard .delta-down { color: var(--bad); }
+.scorecard .delta-flat { color: var(--fg-400); }
+.scorecard .latest-event {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-align: left;
+  color: var(--fg-300); font-size: var(--t-label);
+  max-width: 240px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.scorecard .latest-event.up { color: var(--ok); }
+.scorecard .latest-event.down { color: var(--bad); }
+
+/* ─── Unified pulse list (used for guidance + analyst + internal feeds) */
+.pulse {
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-md);
+  background: var(--bg-900);
+  overflow: hidden;
+}
+.pulse-head {
+  display: flex; align-items: center; gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--border-base);
+  background: var(--bg-880);
+}
+.pulse-head .ttl {
+  font-size: var(--t-small); font-weight: 500; color: var(--fg-100);
+  letter-spacing: -0.005em;
+}
+.pulse-head .count {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--t-label); color: var(--fg-400);
+  margin-left: auto;
+}
+.pulse-row {
+  display: grid; grid-template-columns: 24px 1fr auto;
+  gap: var(--s-3); padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--border-base);
+  font-size: var(--t-small); align-items: baseline;
+  transition: background-color var(--duration-fast) var(--ease);
+}
+.pulse-row:last-child { border-bottom: none; }
+.pulse-row:hover { background: rgba(255, 255, 255, 0.025); }
+.pulse-row .arrow {
+  font-size: 13px; line-height: 1.5;
+  font-family: "JetBrains Mono", monospace;
+  text-align: center;
+}
+.pulse-row .arrow.up { color: var(--ok); }
+.pulse-row .arrow.down { color: var(--bad); }
+.pulse-row .arrow.flat { color: var(--fg-500); }
+.pulse-row .body {
+  color: var(--fg-100); line-height: 1.55; min-width: 0;
+}
+.pulse-row .body .ticker {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace; font-weight: 500;
+  font-size: var(--t-label);
+  color: var(--accent-strong); background: var(--accent-bg);
+  padding: 1px 7px; border-radius: 4px;
+  margin-right: var(--s-2); vertical-align: 1px;
+}
+.pulse-row .body .meta {
+  display: block;
+  font-size: var(--t-label); color: var(--fg-400);
+  margin-top: 2px;
+}
+.pulse-row .time {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--t-label); color: var(--fg-400);
+  white-space: nowrap;
+}
+
+/* ─── Filing excerpt card (taller, more readable) */
+.filing-card {
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-md);
+  background: var(--bg-900);
+  padding: var(--s-5);
+}
+.filing-card-head {
+  display: flex; align-items: center; gap: var(--s-3);
+  margin-bottom: var(--s-3);
+  padding-bottom: var(--s-3);
+  border-bottom: 1px solid var(--border-base);
+}
+.filing-card-head .t {
+  font-family: "JetBrains Mono", monospace; font-weight: 600;
+  color: var(--accent-strong); font-size: var(--t-h3);
+}
+.filing-card-head .meta {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--t-label); color: var(--fg-400);
+}
+.filing-card .name {
+  font-size: var(--t-label); color: var(--fg-300);
+  margin-left: auto;
+}
+.filing-card .excerpt {
+  font-size: var(--t-small); line-height: 1.7;
+  color: var(--fg-200);
+  margin: 0;
+}
+
+/* ─── Tabs (for combined feed switching) */
+.tabs {
+  display: flex; gap: 2px;
+  border-bottom: 1px solid var(--border-base);
+  margin-bottom: var(--s-4);
+}
+.tab {
+  padding: var(--s-2) var(--s-4);
+  font-size: var(--t-small);
+  color: var(--fg-400);
+  cursor: pointer; border: none; background: transparent;
+  font-family: inherit;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all var(--duration-fast) var(--ease);
+}
+.tab:hover { color: var(--fg-200); }
+.tab[data-active="true"] {
+  color: var(--fg-100);
+  border-bottom-color: var(--accent);
+}
+.tab .count {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--t-label);
+  color: var(--fg-400);
+  margin-left: 6px;
+}
+.tab[data-active="true"] .count { color: var(--accent-strong); }

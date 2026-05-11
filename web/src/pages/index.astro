@@ -26,6 +26,7 @@ const takeaways = (overview.takeaways ?? []) as Take[];
 const fundamentals = (overview.fundamentals ?? []) as Fundamental[];
 const guidanceUp = (overview.guidance_up ?? []) as Guidance[];
 const guidanceDown = (overview.guidance_down ?? []) as Guidance[];
+const guidanceRecent = (overview.guidance_recent ?? []) as Guidance[];
 const analyst = (overview.analyst_views ?? []) as Analyst[];
 const revenue = (overview.revenue_pulse ?? []) as RevenueRow[];
 const internal = (overview.internal_feed ?? []) as InternalItem[];
@@ -37,16 +38,16 @@ function fmtMoney(n: number | null | undefined, scale = 1e9, digits = 2, suffix 
   const v = Number(n) / scale;
   return `${v.toFixed(digits)}${suffix}`;
 }
-function fmtNum(n: number | null | undefined, digits = 2): string {
-  if (n == null || isNaN(Number(n))) return "—";
-  return Number(n).toFixed(digits);
-}
 function fmtPct(n: number | null | undefined): string {
   if (n == null || isNaN(Number(n))) return "—";
   return `${n >= 0 ? "+" : ""}${Number(n).toFixed(1)}%`;
 }
+function fmtNum(n: number | null | undefined, digits = 2): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  return Number(n).toFixed(digits);
+}
 function ago(iso: string | undefined): string {
-  if (!iso) return "";
+  if (!iso) return "—";
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso.slice(0, 10);
   const h = Math.floor((Date.now() - d.getTime()) / 3.6e6);
@@ -56,18 +57,43 @@ function ago(iso: string | undefined): string {
 }
 function plainTitle(t: string): string { return (t || "").split(" - ")[0].trim(); }
 function deltaCls(n: number | null | undefined): string {
-  if (n == null) return "flat";
-  if (n > 0) return "up";
-  if (n < 0) return "down";
-  return "flat";
+  if (n == null) return "delta-flat";
+  if (n > 0) return "delta-up";
+  if (n < 0) return "delta-down";
+  return "delta-flat";
 }
 
 const tierOrder: Record<string, number> = { strong: 0, steady: 1, watch: 2, warn: 3, unknown: 4 };
+
+// Build per-ticker maps from each data source for cross-referencing in the scorecard
+const revByTicker: Record<string, RevenueRow> = {};
+for (const r of revenue) revByTicker[r.ticker] = r;
+
+const analystCount: Record<string, { up: number; down: number; total: number }> = {};
+for (const a of analyst) {
+  for (const t of a.tickers || []) {
+    if (!analystCount[t]) analystCount[t] = { up: 0, down: 0, total: 0 };
+    analystCount[t].total++;
+    if (a.direction === "up") analystCount[t].up++;
+    if (a.direction === "down") analystCount[t].down++;
+  }
+}
+
+const latestEventByTicker: Record<string, { title: string; direction: string; published: string; link: string }> = {};
+for (const g of guidanceRecent) {
+  for (const t of g.tickers || []) {
+    const cur = latestEventByTicker[t];
+    if (!cur || (g.published || "") > cur.published) {
+      latestEventByTicker[t] = { title: g.title, direction: g.direction, published: g.published, link: g.link };
+    }
+  }
+}
+
 const sortedFundamentals = [...fundamentals].sort((a, b) =>
   (tierOrder[a.health?.tier ?? "unknown"] ?? 5) - (tierOrder[b.health?.tier ?? "unknown"] ?? 5)
 );
 
-// Group analyst views by ticker for the panel
+// Group analyst views by ticker for the sub-panel
 const analystByTicker: Record<string, Analyst[]> = {};
 for (const a of analyst) {
   for (const t of a.tickers || []) {
@@ -75,16 +101,15 @@ for (const a of analyst) {
     analystByTicker[t].push(a);
   }
 }
-const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTicker[b].length - analystByTicker[a].length).slice(0, 10);
-const analystNoTicker = analyst.filter((a) => !a.tickers || a.tickers.length === 0).slice(0, 20);
+const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTicker[b].length - analystByTicker[a].length).slice(0, 8);
 ---
 <Base title="投資 dashboard — 一頁總覽" active="home">
   <!-- HERO ─────────────────────────────────────────────────── -->
   <header class="page-h">
-    <div class="eyebrow">{generated.slice(0, 10)} · daily refresh</div>
+    <div class="eyebrow">{generated.slice(0, 10)} · daily refresh · {ago(generated)} ago</div>
     <h1>投資 <span class="accent">一頁</span> 看完</h1>
     <p>
-      把今天該關注的「指引變動、法人看法、營收動能、公司內部資料、watchlist 健康度」全部濃縮在這一頁。資料來自 30 天內 {(stats.articles_30d ?? 0).toLocaleString()} 篇新聞 + {stats.reports_total ?? 0} 份官方財報。每段都附「如何讀」說明。
+      把今天該關注的「指引變動、法人看法、營收動能、公司內部資料、watchlist 健康度」全部濃縮在這一頁。資料來自 30 天內 {(stats.articles_30d ?? 0).toLocaleString()} 篇新聞 + {stats.reports_total ?? 0} 份官方財報。最重要的<strong>個股 Scorecard</strong>把 5 種資料合成一張表，橫掃就看完。
     </p>
     <div class="meta">
       <div>24h news <strong>{stats.articles_24h ?? 0}</strong></div>
@@ -96,321 +121,333 @@ const analystNoTicker = analyst.filter((a) => !a.tickers || a.tickers.length ===
     </div>
   </header>
 
-  <!-- SECTION 1: 今日重點 ─────────────────────────────────── -->
-  <div id="takeaway" class="section-h2" style="margin-top: var(--s-4);">
-    <h2>① 今日重點</h2>
-    <span class="h-sub">一句話告訴你今天市場的方向</span>
-  </div>
-  <section class="take-cards" style="margin-bottom: var(--s-10);">
-    {takeaways.map((t) => (
-      <div class={`take ${t.kind}`}>
-        <div class="take-tag">{t.kind === "positive" ? "▲ 偏正面" : t.kind === "negative" ? "▼ 偏負面" : "─ 中性"}</div>
-        <div class="take-headline">{t.headline}</div>
-        <div class="take-detail">{t.detail}</div>
+  <!-- STICKY SECTION INDEX -->
+  <nav class="sec-index">
+    <a href="#takeaway">① 今日重點</a>
+    <a href="#scorecard">② 個股 Scorecard</a>
+    <a href="#pulse">③ 訊號流</a>
+    <a href="#filings">④ 公司原文</a>
+    <a href="#gaps">⑤ 資料缺口</a>
+  </nav>
+
+  <!-- ① TODAY ──────────────────────────────────────────────── -->
+  <section id="takeaway">
+    <div class="section-h2">
+      <h2>① 今日重點</h2>
+      <span class="h-sub">一句話告訴你今天市場的方向</span>
+    </div>
+    <div class="take-cards" style="margin-bottom: var(--s-10);">
+      {takeaways.map((t) => (
+        <div class={`take ${t.kind}`}>
+          <div class="take-tag">{t.kind === "positive" ? "▲ 偏正面" : t.kind === "negative" ? "▼ 偏負面" : "─ 中性"}</div>
+          <div class="take-headline">{t.headline}</div>
+          <div class="take-detail">{t.detail}</div>
+        </div>
+      ))}
+      {takeaways.length === 0 && (
+        <div class="take neutral" style="grid-column: 1 / -1;">
+          <div class="take-tag">─ pipeline 待跑</div>
+          <div class="take-headline">尚未產生今日 takeaway</div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- ② SCORECARD — main centerpiece ─────────────────────── -->
+  <section id="scorecard">
+    <div class="section-h2">
+      <h2>② 個股 Scorecard</h2>
+      <span class="h-sub">健康度・營收・法人看法・最新事件，一行看完</span>
+      <a href="#pulse" class="h-link">完整訊號流 ↓</a>
+    </div>
+    <aside class="howto">
+      <div class="howto-icon">i</div>
+      <div>
+        <p class="howto-title">怎麼讀這張表</p>
+        <p class="howto-body">
+          一行=一檔個股。<strong>圖示+ 標籤</strong>=健康度（🟢 強 / 🔵 穩 / 🟡 觀望 / 🔴 警示）。<strong>季營收 / EPS</strong>=最新財報。<strong>YoY</strong>=同比去年同季成長率，缺資料顯示「—」。<strong>分析師 ↑↓</strong>=近 30 天該檔被分析師上修 / 下修目標價或財測的次數。<strong>最新事件</strong>=最近一條指引或法說新聞標題。點任一行進個股深度頁。
+        </p>
       </div>
-    ))}
-    {takeaways.length === 0 && (
-      <div class="take neutral" style="grid-column: 1 / -1;">
-        <div class="take-tag">─ pipeline 待跑</div>
-        <div class="take-headline">尚未產生今日 takeaway</div>
+    </aside>
+    <div class="scorecard-wrap">
+      <table class="scorecard">
+        <thead>
+          <tr>
+            <th class="left" style="width: 28%;">個股</th>
+            <th>健康度</th>
+            <th>季營收</th>
+            <th>EPS</th>
+            <th>Rev YoY</th>
+            <th>月營收</th>
+            <th>分析師看法</th>
+            <th class="left">最近事件</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sortedFundamentals.map((f) => {
+            const h = f.health ?? { tier: "unknown", label: "—", summary: "", icon: "⚫" };
+            const r = revByTicker[f.ticker];
+            const a = analystCount[f.ticker];
+            const evt = latestEventByTicker[f.ticker];
+            const g = f.guidance ?? { up: 0, down: 0, net: 0 };
+            return (
+              <tr onclick={`window.location='/stocks/${f.ticker}/'`}>
+                <td class="left">
+                  <div class="ticker-cell">
+                    <span class="icon">{h.icon}</span>
+                    <div>
+                      <div class="t">{f.ticker}</div>
+                      <div class="name">{f.company_name?.slice(0, 22) ?? ""}</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span class={`tier ${h.tier}`}>{h.label}</span></td>
+                <td>{r?.q_revenue ? fmtMoney(r.q_revenue, 1e9, 1) : "—"}</td>
+                <td>{r?.q_eps != null ? fmtNum(r.q_eps, 2) : "—"}</td>
+                <td class={deltaCls(r?.q_rev_yoy)}>{fmtPct(r?.q_rev_yoy)}</td>
+                <td>{r?.m_revenue ? fmtMoney(r.m_revenue, 1e9, 2) : "—"}</td>
+                <td>
+                  {(a?.up ?? 0) > 0 && <span class="delta-up">↑{a!.up}</span>}
+                  {(a?.up ?? 0) > 0 && (a?.down ?? 0) > 0 && " · "}
+                  {(a?.down ?? 0) > 0 && <span class="delta-down">↓{a!.down}</span>}
+                  {!a && (g.up + g.down > 0) && (
+                    <>
+                      {g.up > 0 && <span class="delta-up">↑{g.up}</span>}
+                      {g.up > 0 && g.down > 0 && " · "}
+                      {g.down > 0 && <span class="delta-down">↓{g.down}</span>}
+                    </>
+                  )}
+                  {!a && g.up + g.down === 0 && <span class="delta-flat">—</span>}
+                </td>
+                <td class={`latest-event ${evt?.direction === "up" ? "up" : evt?.direction === "down" ? "down" : ""}`}>
+                  {evt ? (
+                    <>
+                      {evt.direction === "up" && "▲ "}
+                      {evt.direction === "down" && "▼ "}
+                      {plainTitle(evt.title)}
+                    </>
+                  ) : <span class="muted-2">—</span>}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ③ UNIFIED PULSE (tabs: 指引 / 法人 / 內部) ──────────── -->
+  <section id="pulse">
+    <div class="section-h2">
+      <h2>③ 訊號流</h2>
+      <span class="h-sub">指引 / 法人 / 公司內部，切換 tab 看不同來源</span>
+    </div>
+    <aside class="howto">
+      <div class="howto-icon">i</div>
+      <div>
+        <p class="howto-title">怎麼讀</p>
+        <p class="howto-body">
+          <strong>指引</strong>=公司或分析師對財測 / 目標價的明確調整（最直接的訊號）。<strong>法人</strong>=分析師研究報告 / 外資投信動向（lagging，反映共識）。<strong>公司內部</strong>=法說、IR、SEC filing、capex 公告（公司原文）。<strong>▲</strong> 偏正面、<strong>▼</strong> 偏負面、<strong>·</strong> 中性或無方向。
+        </p>
+      </div>
+    </aside>
+
+    <div class="tabs" id="feed-tabs">
+      <button class="tab" data-tab="guidance" data-active="true">指引<span class="count">{guidanceUp.length + guidanceDown.length}</span></button>
+      <button class="tab" data-tab="analyst">法人<span class="count">{analyst.length}</span></button>
+      <button class="tab" data-tab="internal">公司內部<span class="count">{internal.length}</span></button>
+    </div>
+
+    <!-- Tab: Guidance -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 feed-panel" data-panel="guidance" style="margin-bottom: var(--s-10);">
+      <div class="pulse">
+        <div class="pulse-head">
+          <span class="ttl"><span class="delta-up">▲</span> 上修 / Beat</span>
+          <span class="count">{guidanceUp.length}</span>
+        </div>
+        {guidanceUp.slice(0, 12).map((g) => (
+          <a class="pulse-row" href={g.link} target="_blank" rel="noopener">
+            <span class="arrow up">▲</span>
+            <div class="body">
+              {g.tickers.length > 0 && <span class="ticker">{g.tickers[0]}</span>}
+              {plainTitle(g.title)}
+              <span class="meta">{g.source}</span>
+            </div>
+            <span class="time">{ago(g.published)}</span>
+          </a>
+        ))}
+        {guidanceUp.length === 0 && <div class="pulse-row" style="grid-template-columns: 1fr; color: var(--fg-400);">（本週暫無上修事件）</div>}
+      </div>
+
+      <div class="pulse">
+        <div class="pulse-head">
+          <span class="ttl"><span class="delta-down">▼</span> 下修 / Miss</span>
+          <span class="count">{guidanceDown.length}</span>
+        </div>
+        {guidanceDown.slice(0, 12).map((g) => (
+          <a class="pulse-row" href={g.link} target="_blank" rel="noopener">
+            <span class="arrow down">▼</span>
+            <div class="body">
+              {g.tickers.length > 0 && <span class="ticker">{g.tickers[0]}</span>}
+              {plainTitle(g.title)}
+              <span class="meta">{g.source}</span>
+            </div>
+            <span class="time">{ago(g.published)}</span>
+          </a>
+        ))}
+        {guidanceDown.length === 0 && <div class="pulse-row" style="grid-template-columns: 1fr; color: var(--fg-400);">（本週暫無下修事件）</div>}
+      </div>
+    </div>
+
+    <!-- Tab: Analyst -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 feed-panel" data-panel="analyst" style="margin-bottom: var(--s-10); display: none;">
+      <div class="pulse lg:col-span-2">
+        <div class="pulse-head">
+          <span class="ttl">分析師 / 法人 / 評等變動</span>
+          <span class="count">{analyst.length}</span>
+        </div>
+        {analyst.slice(0, 16).map((a) => (
+          <a class="pulse-row" href={a.link} target="_blank" rel="noopener">
+            <span class={`arrow ${a.direction === "up" ? "up" : a.direction === "down" ? "down" : "flat"}`}>
+              {a.direction === "up" ? "▲" : a.direction === "down" ? "▼" : "·"}
+            </span>
+            <div class="body">
+              {a.tickers.length > 0 && <span class="ticker">{a.tickers[0]}</span>}
+              {plainTitle(a.title)}
+              <span class="meta">{a.source}</span>
+            </div>
+            <span class="time">{ago(a.published)}</span>
+          </a>
+        ))}
+        {analyst.length === 0 && <div class="pulse-row" style="grid-template-columns: 1fr; color: var(--fg-400);">（暫無）</div>}
+      </div>
+
+      <div class="pulse">
+        <div class="pulse-head">
+          <span class="ttl">出現次數最多</span>
+          <span class="count">{analystTickers.length}</span>
+        </div>
+        {analystTickers.map((t, i) => (
+          <a class="pulse-row" href={`/stocks/${t}/`} style="grid-template-columns: 24px 1fr auto;">
+            <span class="arrow flat" style="font-family: 'JetBrains Mono', monospace; font-size: 10px;">#{(i + 1).toString().padStart(2, "0")}</span>
+            <div class="body">
+              <span class="ticker">{t}</span>
+            </div>
+            <span class="time">{analystByTicker[t].length} 條</span>
+          </a>
+        ))}
+        {analystTickers.length === 0 && <div class="pulse-row" style="grid-template-columns: 1fr; color: var(--fg-400);">（無聚合資料）</div>}
+      </div>
+    </div>
+
+    <!-- Tab: Internal -->
+    <div class="grid grid-cols-1 gap-4 feed-panel" data-panel="internal" style="margin-bottom: var(--s-10); display: none;">
+      <div class="pulse">
+        <div class="pulse-head">
+          <span class="ttl">法說 / IR / Capex 公告 / SEC Filing</span>
+          <span class="count">{internal.length}</span>
+        </div>
+        {internal.slice(0, 18).map((n) => (
+          <a class="pulse-row" href={n.link} target="_blank" rel="noopener">
+            <span class="arrow flat">·</span>
+            <div class="body">
+              {n.tickers.length > 0 && <span class="ticker">{n.tickers[0]}</span>}
+              {plainTitle(n.title)}
+              <span class="meta">{n.source}{n.event_type && n.event_type !== "news" ? ` · ${n.event_type}` : ""}</span>
+            </div>
+            <span class="time">{ago(n.published)}</span>
+          </a>
+        ))}
+        {internal.length === 0 && <div class="pulse-row" style="grid-template-columns: 1fr; color: var(--fg-400);">（暫無）</div>}
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ FILING EXCERPTS — full-width, larger reading area ─── -->
+  <section id="filings">
+    <div class="section-h2">
+      <h2>④ 公司原文 · SEC 10-Q Forward-Looking</h2>
+      <span class="h-sub">公司自己寫的 forward-looking statements，最權威</span>
+    </div>
+    <aside class="howto">
+      <div class="howto-icon">i</div>
+      <div>
+        <p class="howto-title">怎麼讀</p>
+        <p class="howto-body">
+          每段是公司在 SEC 10-Q 中關於未來經營展望、市場條件、產品計畫的<strong>原文摘錄</strong>。比新聞二手解讀更權威。<strong>注意</strong>：SEC filing 中的 forward-looking statements 通常帶有公司保留聲明，仍要批判性閱讀；數字 / 指引請以正式財報為準。台股暫無對應 ingest（資料缺口）。
+        </p>
+      </div>
+    </aside>
+    {filings.length === 0 ? (
+      <div class="filing-card">
+        <p class="muted" style="font-size: var(--t-small);">（暫無 SEC filing 摘錄 — 需執行 stock_memo.py 觸發 SEC ingest）</p>
+      </div>
+    ) : (
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4" style="margin-bottom: var(--s-10);">
+        {filings.slice(0, 6).map((f) => (
+          <article class="filing-card">
+            <div class="filing-card-head">
+              <a href={`/stocks/${f.ticker}/`} class="t">{f.ticker}</a>
+              <span class="meta">{f.form_type} · {f.fiscal_year}{f.fiscal_period}</span>
+              {f.company_name && <span class="name">{f.company_name}</span>}
+            </div>
+            <p class="excerpt line-clamp-4">{f.excerpt}</p>
+          </article>
+        ))}
       </div>
     )}
   </section>
 
-  <!-- SECTION 2: Guidance ─────────────────────────────────── -->
-  <div id="guidance" class="section-h2">
-    <h2>② 指引動向 · 上修 / 下修</h2>
-    <span class="h-sub">分析師目標價、財測、EPS beat/miss 事件</span>
-  </div>
-  <aside class="howto">
-    <div class="howto-icon">i</div>
-    <div>
-      <p class="howto-title">怎麼讀</p>
-      <p class="howto-body">
-        標題出現「<strong>raises guidance / lifts target / 上修目標價 / beats estimates</strong>」=上修；「<strong>cuts guidance / misses EPS / 下修財測 / slashes</strong>」=下修。<strong>只看標題</strong>不看內文，避免被新聞噪音帶風向。
-      </p>
+  <!-- ⑤ DATA GAPS ──────────────────────────────────────────── -->
+  <section id="gaps">
+    <div class="section-h2">
+      <h2>⑤ 資料缺口</h2>
+      <span class="h-sub">誠實標示哪些資料還沒進來</span>
     </div>
-  </aside>
-  <section class="grid grid-cols-1 lg:grid-cols-2 gap-4" style="margin-bottom: var(--s-10);">
-    <article class="glass bento">
-      <header class="bento-head">
-        <h2 class="bento-title"><span class="delta-up">▲</span> 上修 / Beat ({guidanceUp.length})</h2>
-      </header>
-      <div class="flash-list">
-        {guidanceUp.slice(0, 10).map((g) => (
-          <a class="flash" href={g.link} target="_blank" rel="noopener">
-            <span class="flash-arrow up">▲</span>
-            <div class="flash-text">
-              {g.tickers.length > 0 && <span class="ticker">{g.tickers[0]}</span>}
-              {plainTitle(g.title)}
-            </div>
-            <span class="flash-time">{ago(g.published)}</span>
-          </a>
-        ))}
-        {guidanceUp.length === 0 && <p class="muted" style="padding: var(--s-4); font-size: var(--t-small);">（本週暫無上修事件）</p>}
+    <article class="filing-card">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4" style="font-size: var(--t-small); color: var(--fg-300); line-height: 1.7;">
+        <div>
+          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">已有資料</p>
+          <ul style="list-style: disc; padding-left: var(--s-5);">
+            <li>{(stats.articles_total ?? 0).toLocaleString()} 篇新聞（含 ticker / event_type 標記）</li>
+            <li>{stats.reports_total ?? 0} 份官方財報（TWSE / MOPS / TPEx / SEC）</li>
+            <li>{filings.length} 份 SEC 10-Q forward-looking statements 摘錄</li>
+            <li>{analyst.length} 條法人 / 分析師看法</li>
+            <li>{internal.length} 條公司內部 / 官方資料</li>
+            <li>{revenue.length} 檔最新季營收 + 月營收快照</li>
+          </ul>
+        </div>
+        <div>
+          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">缺的資料</p>
+          <ul style="list-style: disc; padding-left: var(--s-5);">
+            <li><strong>內部人交易</strong>（SEC Form 4）：表空，需執行 ingest</li>
+            <li><strong>機構 13F 持倉</strong>：表空</li>
+            <li><strong>短信餘額 / short interest</strong>：表空</li>
+            <li><strong>共識估值（consensus estimates）</strong>：需付費資料源 (Finnhub / Refinitiv)</li>
+            <li><strong>即時股價</strong>：Yahoo unofficial endpoint IP throttled</li>
+          </ul>
+        </div>
       </div>
-    </article>
-
-    <article class="glass bento">
-      <header class="bento-head">
-        <h2 class="bento-title"><span class="delta-down">▼</span> 下修 / Miss ({guidanceDown.length})</h2>
-      </header>
-      <div class="flash-list">
-        {guidanceDown.slice(0, 10).map((g) => (
-          <a class="flash" href={g.link} target="_blank" rel="noopener">
-            <span class="flash-arrow down">▼</span>
-            <div class="flash-text">
-              {g.tickers.length > 0 && <span class="ticker">{g.tickers[0]}</span>}
-              {plainTitle(g.title)}
-            </div>
-            <span class="flash-time">{ago(g.published)}</span>
-          </a>
-        ))}
-        {guidanceDown.length === 0 && <p class="muted" style="padding: var(--s-4); font-size: var(--t-small);">（本週暫無下修事件）</p>}
-      </div>
+      <p class="muted-2" style="font-size: var(--t-label); margin-top: var(--s-4); padding-top: var(--s-3); border-top: 1px solid var(--border-base);">
+        本工具僅彙整公開資訊，<strong>非投資建議</strong>。資料每日 09:00 由 daily-news pipeline 自動刷新。
+      </p>
     </article>
   </section>
 
-  <!-- SECTION 3: 法人看法 ─────────────────────────────────── -->
-  <div id="analyst" class="section-h2">
-    <h2>③ 法人 / 分析師看法</h2>
-    <span class="h-sub">外資、投信、券商研究報告與評等變動</span>
-  </div>
-  <aside class="howto">
-    <div class="howto-icon">i</div>
-    <div>
-      <p class="howto-title">怎麼讀</p>
-      <p class="howto-body">
-        條件：標題出現券商名（Goldman / Morgan Stanley / RBC / 高盛 / 凱基 …）或「<strong>目標價 / 評等 / 法人 / 外資 / 投信 / upgrade / downgrade</strong>」。<strong>注意</strong>：分析師看法是 lagging signal，影響短期股價但不一定有 alpha；用來理解市場共識而不是抄作業。
-      </p>
-    </div>
-  </aside>
-  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4" style="margin-bottom: var(--s-10);">
-    <article class="glass bento lg:col-span-2">
-      <header class="bento-head">
-        <h2 class="bento-title">最近 30 天 · 全部 {analyst.length} 條</h2>
-      </header>
-      <div class="flash-list">
-        {analyst.slice(0, 14).map((a) => (
-          <a class="flash" href={a.link} target="_blank" rel="noopener">
-            <span class={`flash-arrow ${a.direction === "up" ? "up" : a.direction === "down" ? "down" : "mixed"}`}>
-              {a.direction === "up" ? "▲" : a.direction === "down" ? "▼" : "·"}
-            </span>
-            <div class="flash-text">
-              {a.tickers.length > 0 && <span class="ticker">{a.tickers[0]}</span>}
-              {plainTitle(a.title)}
-            </div>
-            <span class="flash-time">{ago(a.published)}</span>
-          </a>
-        ))}
-        {analyst.length === 0 && <p class="muted" style="padding: var(--s-4);">（暫無）</p>}
-      </div>
-    </article>
-
-    <article class="glass bento">
-      <header class="bento-head">
-        <h2 class="bento-title">出現次數最多</h2>
-        <span class="bento-link mono">{analystTickers.length}</span>
-      </header>
-      <div class="lb">
-        {analystTickers.map((t, i) => (
-          <a class="lb-row" href={`/stocks/${t}/`}>
-            <span class="rank mono">#{(i + 1).toString().padStart(2, "0")}</span>
-            <span class="name mono"><strong>{t}</strong></span>
-            <span class="v">{analystByTicker[t].length} 條</span>
-          </a>
-        ))}
-        {analystTickers.length === 0 && <p class="muted" style="font-size: var(--t-small); padding: var(--s-3);">（無 ticker 聚合資料）</p>}
-      </div>
-    </article>
-  </section>
-
-  <!-- SECTION 4: 營收動能 ─────────────────────────────────── -->
-  <div id="revenue" class="section-h2">
-    <h2>④ 營收動能</h2>
-    <span class="h-sub">最新一季 + 月營收，活躍 {revenue.length} 檔</span>
-  </div>
-  <aside class="howto">
-    <div class="howto-icon">i</div>
-    <div>
-      <p class="howto-title">怎麼讀</p>
-      <p class="howto-body">
-        <strong>Q rev</strong>=最新季營收（億美元 / 億新台幣，看市場）。<strong>EPS</strong>=每股盈餘。<strong>月營收</strong>=最新月份（台股獨有）。 <strong>YoY</strong>欄位若顯示「—」表示資料庫只有最新一季、缺去年同期可比資料。完整歷史請點 ticker 進個股頁看。
-      </p>
-    </div>
-  </aside>
-  <article class="glass bento" style="margin-bottom: var(--s-10);">
-    <div style="overflow-x: auto;">
-      <table class="fintable" style="min-width: 700px;">
-        <thead>
-          <tr>
-            <th class="label">Ticker</th>
-            <th class="label" style="text-align: left;">公司</th>
-            <th class="label" style="text-align: left;">最新季</th>
-            <th>Q rev</th>
-            <th>EPS</th>
-            <th>YoY</th>
-            <th class="label" style="text-align: left;">月</th>
-            <th>月營收</th>
-          </tr>
-        </thead>
-        <tbody>
-          {revenue.map((r) => (
-            <tr>
-              <td class="label"><a href={`/stocks/${r.ticker}/`} class="mono"><strong>{r.ticker}</strong></a></td>
-              <td class="label" style="text-align: left;">{r.company_name?.slice(0, 18) ?? "—"}</td>
-              <td class="label" style="text-align: left;">{r.q_year ? `${r.q_year}·${r.q_period ?? ""}` : "—"}</td>
-              <td>{fmtMoney(r.q_revenue, r.market === "tw" ? 1e9 : 1e9, 1)}</td>
-              <td>{r.q_eps == null ? "—" : fmtNum(r.q_eps, 2)}</td>
-              <td class={deltaCls(r.q_rev_yoy)}>{fmtPct(r.q_rev_yoy)}</td>
-              <td class="label" style="text-align: left;">{r.m_year ? `${r.m_year}·${r.m_period ?? ""}` : "—"}</td>
-              <td>{r.m_revenue ? fmtMoney(r.m_revenue, 1e9, 2) : "—"}</td>
-            </tr>
-          ))}
-          {revenue.length === 0 && (
-            <tr><td class="label" colspan="8"><span class="muted">（暫無營收資料）</span></td></tr>
-          )}
-        </tbody>
-      </table>
-    </div>
-  </article>
-
-  <!-- SECTION 5: 公司內部資料 ─────────────────────────────── -->
-  <div id="internal" class="section-h2">
-    <h2>⑤ 公司內部 / 官方資料</h2>
-    <span class="h-sub">法說、IR、重大訊息、SEC filing、capex 公告</span>
-  </div>
-  <aside class="howto">
-    <div class="howto-icon">i</div>
-    <div>
-      <p class="howto-title">怎麼讀</p>
-      <p class="howto-body">
-        這裡是<strong>公司自己發出來的</strong>資料：法說會逐字稿、IR 簡報、重大訊息、SEC 10-Q forward-looking statements、capex / 擴產公告。比新聞二手解讀更權威。<strong>SEC Filing 摘錄</strong>是美股 10-Q / 10-K 中公司原文（AVGO / INTC / AMD 等已建檔）。<strong>缺口</strong>：insider transactions / 13F / short interest 表目前空，需執行 Phase 2-4 ingest 才有資料。
-      </p>
-    </div>
-  </aside>
-  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4" style="margin-bottom: var(--s-10);">
-    <article class="glass bento lg:col-span-2">
-      <header class="bento-head">
-        <h2 class="bento-title">法說 / IR / Capex 公告 ({internal.length})</h2>
-      </header>
-      <div class="flash-list">
-        {internal.slice(0, 14).map((n) => (
-          <a class="flash" href={n.link} target="_blank" rel="noopener">
-            <span class="flash-arrow mixed">·</span>
-            <div class="flash-text">
-              {n.tickers.length > 0 && <span class="ticker">{n.tickers[0]}</span>}
-              {plainTitle(n.title)}
-            </div>
-            <span class="flash-time">{ago(n.published)}</span>
-          </a>
-        ))}
-        {internal.length === 0 && <p class="muted" style="padding: var(--s-4);">（暫無）</p>}
-      </div>
-    </article>
-
-    <article class="glass bento">
-      <header class="bento-head">
-        <h2 class="bento-title">SEC Filing 摘錄</h2>
-        <span class="bento-link mono">{filings.length}</span>
-      </header>
-      <div>
-        {filings.length === 0 ? (
-          <p class="muted" style="font-size: var(--t-small); padding: var(--s-3);">（需執行 stock_memo.py 觸發 SEC ingest）</p>
-        ) : (
-          filings.slice(0, 5).map((f) => (
-            <div style="border-top: 1px solid var(--border-base); padding-top: var(--s-3); margin-top: var(--s-3);">
-              <div style="display: flex; align-items: baseline; gap: var(--s-2); flex-wrap: wrap; margin-bottom: var(--s-1);">
-                <a href={`/stocks/${f.ticker}/`} class="mono" style="color: var(--accent-strong); font-weight: 500; font-size: var(--t-small);">{f.ticker}</a>
-                <span class="muted-2 mono" style="font-size: var(--t-caption);">{f.form_type} · {f.fiscal_year}{f.fiscal_period}</span>
-              </div>
-              <p class="line-clamp-4" style="font-size: var(--t-label); line-height: 1.6; color: var(--fg-300); margin: 0;">
-                {f.excerpt}
-              </p>
-            </div>
-          ))
-        )}
-      </div>
-    </article>
-  </section>
-
-  <!-- SECTION 6: Watchlist 健康度 ─────────────────────────── -->
-  <div id="watchlist" class="section-h2">
-    <h2>⑥ Watchlist 健康度</h2>
-    <span class="h-sub">🟢 強 · 🔵 穩 · 🟡 觀望 · 🔴 警示 · ⚫ 資料不足</span>
-  </div>
-  <aside class="howto">
-    <div class="howto-icon">i</div>
-    <div>
-      <p class="howto-title">怎麼讀</p>
-      <p class="howto-body">
-        看 <strong>圖示 + 一句話</strong>就好。🟢/🔵 = 基本面健康（營收成長 + 高營益率）；🟡/🔴 = 要先看新聞、釐清原因再判斷；⚫ = 資料尚未建檔。右下角的 <strong>↑數字</strong> 是近 30 天該檔被分析師上修目標價 / 財測的次數。
-      </p>
-    </div>
-  </aside>
-  <section class="verdict-grid" style="margin-bottom: var(--s-10);">
-    {sortedFundamentals.map((f) => {
-      const h = f.health ?? { tier: "unknown", label: "—", summary: "", icon: "⚫" };
-      const g = f.guidance ?? { up: 0, down: 0, net: 0 };
-      return (
-        <a href={`/stocks/${f.ticker}/`} class="verdict">
-          <div class="verdict-icon">{h.icon ?? "⚫"}</div>
-          <div class="verdict-body">
-            <div class="verdict-head">
-              <span class="t">{f.ticker}</span>
-              <span class={`label ${h.tier}`}>{h.label}</span>
-              {f.company_name && <span class="muted-2" style="font-size: var(--t-label);">{f.company_name}</span>}
-            </div>
-            <div class="verdict-summary">{h.summary || "—"}</div>
-          </div>
-          <div class="verdict-meta">
-            {g.up + g.down > 0 ? (
-              <>
-                <div>
-                  {g.up > 0 && <span class="pos">↑{g.up}</span>}
-                  {g.up > 0 && g.down > 0 && " · "}
-                  {g.down > 0 && <span class="neg">↓{g.down}</span>}
-                </div>
-                <div class="muted-2" style="font-size: var(--t-caption);">近 30 天</div>
-              </>
-            ) : (
-              <div class="muted-2" style="font-size: var(--t-caption);">無事件</div>
-            )}
-          </div>
-        </a>
-      );
-    })}
-  </section>
-
-  <!-- FOOTER NOTES (data gaps) ───────────────────────────── -->
-  <article class="glass bento" style="background: var(--bg-880); border-color: var(--border-base);">
-    <header class="bento-head">
-      <h2 class="bento-title">資料缺口 · 待補</h2>
-    </header>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4" style="font-size: var(--t-small); color: var(--fg-300); line-height: 1.7;">
-      <div>
-        <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-1);">已有資料</p>
-        <ul style="list-style: disc; padding-left: var(--s-5);">
-          <li>{(stats.articles_total ?? 0).toLocaleString()} 篇新聞（含 ticker / event_type 標記）</li>
-          <li>{stats.reports_total ?? 0} 份官方財報（TWSE / MOPS / TPEx / SEC）</li>
-          <li>{filings.length} 份 SEC 10-Q forward-looking statements 摘錄</li>
-          <li>{analyst.length} 條法人 / 分析師看法</li>
-          <li>{internal.length} 條公司內部 / 官方資料</li>
-        </ul>
-      </div>
-      <div>
-        <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-1);">缺的資料</p>
-        <ul style="list-style: disc; padding-left: var(--s-5);">
-          <li><strong>內部人交易</strong>（SEC Form 4）：表空，需執行 ingest</li>
-          <li><strong>機構 13F 持倉</strong>：表空</li>
-          <li><strong>短信餘額 / short interest</strong>：表空</li>
-          <li><strong>共識估值（consensus estimates）</strong>：需付費資料源 (Finnhub / Refinitiv)</li>
-          <li><strong>即時股價</strong>：Yahoo unofficial endpoint IP throttled</li>
-        </ul>
-      </div>
-    </div>
-    <p class="muted-2" style="font-size: var(--t-label); margin-top: var(--s-4);">
-      本工具僅彙整公開資訊，<strong>非投資建議</strong>。資料每日 09:00 由 daily-news pipeline 自動刷新。
-    </p>
-  </article>
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabs = document.querySelectorAll("#feed-tabs .tab");
+      const panels = document.querySelectorAll(".feed-panel");
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = tab.getAttribute("data-tab");
+          tabs.forEach((t) => t.removeAttribute("data-active"));
+          tab.setAttribute("data-active", "true");
+          panels.forEach((p) => {
+            p.style.display = p.getAttribute("data-panel") === target ? "" : "none";
+          });
+        });
+      });
+    });
+  </script>
 </Base>
