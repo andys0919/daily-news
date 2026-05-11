@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 /* ───────────────────────────────────────────────────────────────
-   Investment Dashboard — dark, dense, fintech-grade
-   color tokens (semantic)
+   Investment Dashboard — dark fintech, retail-friendly
+   Single accent; status colors only carry meaning.
    ─────────────────────────────────────────────────────────────── */
 :root {
   color-scheme: dark;
@@ -12,21 +12,36 @@
   --bg-800: #161b24;
   --bg-700: #1b2230;
 
-  --border-base: rgba(255, 255, 255, 0.06);
-  --border-strong: rgba(255, 255, 255, 0.12);
+  --border-base: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.14);
 
-  --fg-100: #f1f5fb;
-  --fg-200: #d8dee9;
+  --fg-100: #f3f6fb;
+  --fg-200: #dde2ec;
   --fg-300: #aab1bd;
   --fg-400: #79808d;
   --fg-500: #555c69;
 
   --accent: #7aa2ff;
-  --accent-strong: #a5c0ff;
+  --accent-strong: #b6cbff;
   --accent-bg: rgba(122, 162, 255, 0.10);
   --ok: #3ddc97;
   --bad: #ff6b81;
   --warn: #ffae5c;
+
+  /* Spacing scale (4/8) */
+  --s-1: 4px;  --s-2: 8px;   --s-3: 12px;  --s-4: 16px;
+  --s-5: 20px; --s-6: 24px;  --s-8: 32px;  --s-10: 40px;
+  --s-12: 48px; --s-16: 64px;
+
+  /* Type scale */
+  --t-display: 30px;
+  --t-h1: 24px;
+  --t-h2: 18px;
+  --t-h3: 15px;
+  --t-body: 14px;
+  --t-small: 13px;
+  --t-label: 11px;
+  --t-caption: 10px;
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -35,7 +50,7 @@
 
   --shadow-soft: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 1px 1px rgba(0, 0, 0, 0.35);
   --shadow-elevated: 0 1px 0 rgba(255, 255, 255, 0.04) inset,
-    0 4px 16px rgba(0, 0, 0, 0.35);
+    0 4px 18px rgba(0, 0, 0, 0.45);
 
   --duration-fast: 120ms;
   --duration-base: 200ms;
@@ -46,14 +61,15 @@
 
 html, body {
   background:
-    radial-gradient(1100px 600px at 88% -10%, rgba(122, 162, 255, 0.07), transparent 60%),
-    radial-gradient(900px 500px at -5% 20%, rgba(61, 220, 151, 0.04), transparent 60%),
+    radial-gradient(1200px 700px at 86% -20%, rgba(122, 162, 255, 0.06), transparent 65%),
     var(--bg-950);
   color: var(--fg-100);
   font-family: "IBM Plex Sans", "Inter", "SF Pro Text", system-ui, -apple-system, "Noto Sans TC", sans-serif;
   font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.005em;
+  font-size: var(--t-body);
+  line-height: 1.55;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -176,17 +192,92 @@ a:hover { color: var(--fg-100); }
    Page shell
    ─────────────────────────────────────────────────────────────── */
 .page {
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 28px 24px 48px;
+  padding: var(--s-8) var(--s-6) var(--s-12);
 }
 .page-footer {
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 24px 32px;
-  display: flex; gap: 10px; align-items: center; justify-content: center;
-  font-size: 11px;
+  padding: var(--s-4) var(--s-6) var(--s-8);
+  display: flex; gap: var(--s-3); align-items: center; justify-content: center;
+  font-size: var(--t-label);
 }
+
+/* ─── Page-level instructive header (consistent across all pages) */
+.page-h {
+  margin: var(--s-2) 0 var(--s-8);
+  padding-bottom: var(--s-6);
+  border-bottom: 1px solid var(--border-base);
+}
+.page-h .eyebrow {
+  font-size: var(--t-label); letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--fg-400); margin-bottom: var(--s-2);
+}
+.page-h h1 {
+  font-size: var(--t-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--fg-100);
+  margin: 0;
+}
+.page-h h1 .accent { color: var(--accent-strong); }
+.page-h p {
+  font-size: var(--t-small);
+  color: var(--fg-300);
+  max-width: 62ch;
+  margin: var(--s-3) 0 0;
+  line-height: 1.65;
+}
+.page-h .meta {
+  display: flex; gap: var(--s-6); margin-top: var(--s-3);
+  font-size: var(--t-label); color: var(--fg-400);
+}
+.page-h .meta strong { color: var(--fg-100); font-weight: 500; font-family: "JetBrains Mono", monospace; }
+
+/* ─── How-to-read card (instructive helper at top of each page) */
+.howto {
+  border: 1px solid var(--border-base);
+  background: linear-gradient(180deg, rgba(122, 162, 255, 0.04), transparent 60%), var(--bg-880);
+  border-radius: var(--radius-md);
+  padding: var(--s-4) var(--s-5);
+  margin-bottom: var(--s-6);
+  display: grid; grid-template-columns: auto 1fr; gap: var(--s-4);
+  align-items: start;
+}
+.howto-icon {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: var(--accent-bg);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent-strong); font-weight: 600; font-size: 14px;
+}
+.howto-title {
+  font-size: var(--t-small); font-weight: 500; color: var(--fg-100);
+  margin: 0 0 var(--s-1);
+}
+.howto-body {
+  font-size: var(--t-small); color: var(--fg-300); line-height: 1.65;
+  margin: 0;
+}
+.howto-body strong { color: var(--fg-100); font-weight: 500; }
+
+/* ─── Section header (between content blocks) */
+.section-h2 {
+  display: flex; align-items: baseline; gap: var(--s-3);
+  margin: var(--s-10) 0 var(--s-4);
+}
+.section-h2 h2 {
+  font-size: var(--t-h2); font-weight: 500; color: var(--fg-100);
+  margin: 0; letter-spacing: -0.01em;
+}
+.section-h2 .h-sub {
+  font-size: var(--t-label); color: var(--fg-400);
+}
+.section-h2 .h-link {
+  margin-left: auto; font-size: var(--t-small); color: var(--fg-300);
+}
+.section-h2 .h-link:hover { color: var(--accent-strong); }
 
 /* ───────────────────────────────────────────────────────────────
    Hero header

@@ -8,12 +8,12 @@ interface Props {
 }
 const { title = "投資決策 Dashboard", active = "home" } = Astro.props;
 const nav = [
-  { id: "home", href: "/", label: "Guidance" },
-  { id: "guidance", href: "/guidance", label: "Feed" },
+  { id: "home", href: "/", label: "今日" },
+  { id: "guidance", href: "/guidance", label: "指引" },
+  { id: "search", href: "/search", label: "個股" },
   { id: "news", href: "/news", label: "新聞" },
   { id: "calendar", href: "/calendar", label: "事件" },
   { id: "decisions", href: "/decisions", label: "日誌" },
-  { id: "explore", href: "/explore", label: "探索" },
 ];
 
 // Embed lightweight ticker index as JSON for client-side search.

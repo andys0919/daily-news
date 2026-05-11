@@ -2,15 +2,7 @@
 import Base from "../layouts/Base.astro";
 import events from "../data/events.json";
 
-interface Event {
-  kind: string;
-  title: string;
-  date: string;
-  source: string;
-  link: string | null;
-  tickers: string[];
-  category: string;
-}
+interface Event { kind: string; title: string; date: string; source: string; link: string | null; tickers: string[]; category: string; }
 
 const list = (events.events ?? []) as unknown as Event[];
 const byDate = list.reduce((acc: Record<string, Event[]>, e) => {
@@ -23,19 +15,29 @@ const kindCounts: Record<string, number> = {};
 list.forEach((e) => { kindCounts[e.kind] = (kindCounts[e.kind] || 0) + 1; });
 const kindLabels: Record<string, string> = { earnings: "Earnings", capex: "Capex", policy: "Policy", filing: "Filing" };
 ---
-<Base title="事件月曆 — Investment Dashboard" active="calendar">
-  <section class="hero">
-    <div>
-      <span class="live"><span class="live-dot"></span>{list.length} events · 30 天</span>
-      <h1 class="mt-2">事件 <span class="accent">月曆</span></h1>
-      <p class="hero-sub">earnings · capex · policy · filing 標記過的文章，依日期反向排列。</p>
-    </div>
-    <div class="hero-meta">
+<Base title="事件 — 投資 dashboard" active="calendar">
+  <header class="page-h">
+    <div class="eyebrow">30 days · {list.length} 事件</div>
+    <h1>事件 <span class="accent">月曆</span></h1>
+    <p>
+      Daily-news pipeline 在文章上標的事件性新聞，按日期反向排列。<strong>Earnings</strong>=財報相關，<strong>Capex</strong>=資本支出/擴產，<strong>Policy</strong>=政策/監管，<strong>Filing</strong>=正式文件。
+    </p>
+    <div class="meta">
       {Object.entries(kindCounts).map(([k, n]) => (
-        <div><span class={`evt-badge ${k}`}>{kindLabels[k] || k}</span> <span class="mono ts">{n}</span></div>
+        <div><span class={`evt-badge ${k}`}>{kindLabels[k] || k}</span> <strong>{n}</strong></div>
       ))}
     </div>
-  </section>
+  </header>
+
+  <aside class="howto">
+    <div class="howto-icon">i</div>
+    <div>
+      <p class="howto-title">怎麼用這頁</p>
+      <p class="howto-body">
+        <strong>篩選按鈕</strong>只看特定類型事件（如只看 capex）。<strong>日期</strong>分組，最近的在上。每條事件顯示來源 + 影響的 ticker chip，點 chip 跳個股頁。<strong>注意</strong>：這裡的事件分類是從 RSS 標題 keyword 推得，不是公司官方排程；要看官方法說行程需另查 IR 網站。
+      </p>
+    </div>
+  </aside>
 
   <div class="filters" id="filter-bar">
     <button class="fbtn" data-kind="" data-active="true">全部 · {list.length}</button>
@@ -45,26 +47,33 @@ const kindLabels: Record<string, string> = { earnings: "Earnings", capex: "Capex
   </div>
 
   {dates.length === 0 ? (
-    <p class="muted">尚無事件資料。</p>
+    <p class="muted" style="padding: var(--s-6);">尚無事件資料。</p>
   ) : (
-    <div id="cal" class="space-y-3">
+    <div id="cal" style="display: flex; flex-direction: column; gap: var(--s-4);">
       {dates.map((d) => (
         <article class="glass bento" data-date={d}>
-          <header class="bento-head" style="margin-bottom:8px;">
+          <header class="bento-head" style="margin-bottom: var(--s-3);">
             <h2 class="bento-title mono">{d}</h2>
             <span class="bento-link mono">{byDate[d].length} 筆</span>
           </header>
-          <ul class="space-y-1">
+          <ul style="display: flex; flex-direction: column; gap: var(--s-1);">
             {byDate[d].map((e) => (
-              <li class="cal-row" data-kind={e.kind} style="display:grid; grid-template-columns: 80px 1fr auto; gap:12px; padding:6px 4px; border-bottom: 1px solid var(--border-base); align-items:baseline;">
+              <li class="cal-row" data-kind={e.kind} style="display: grid; grid-template-columns: 80px 1fr auto; gap: var(--s-3); padding: var(--s-2) 0; border-bottom: 1px solid var(--border-base); align-items: baseline;">
                 <span class={`evt-badge ${e.kind}`}>{kindLabels[e.kind] || e.kind}</span>
-                <a href={e.link} target="_blank" rel="noopener" style="font-size:13px; color: var(--fg-100);">
-                  <span class="line-clamp-1">{e.title}</span>
-                  <span class="muted-2 mono" style="display:block; font-size:11px; margin-top:2px;">{e.source}</span>
-                </a>
-                <div style="display:flex; gap:4px;">
+                {e.link ? (
+                  <a href={e.link} target="_blank" rel="noopener" style="font-size: var(--t-body); color: var(--fg-100);">
+                    <span class="line-clamp-1">{e.title}</span>
+                    <span class="muted-2 mono" style="display: block; font-size: var(--t-label); margin-top: var(--s-1);">{e.source}</span>
+                  </a>
+                ) : (
+                  <div style="font-size: var(--t-body); color: var(--fg-100);">
+                    <span class="line-clamp-1">{e.title}</span>
+                    <span class="muted-2 mono" style="display: block; font-size: var(--t-label); margin-top: var(--s-1);">{e.source}</span>
+                  </div>
+                )}
+                <div style="display: flex; gap: var(--s-1);">
                   {(e.tickers ?? []).slice(0, 3).map((t) => (
-                    <a href={`/stocks/${t}`} class="chip-mini ticker mono">{t}</a>
+                    <a href={`/stocks/${t}/`} class="chip-mini ticker mono">{t}</a>
                   ))}
                 </div>
               </li>

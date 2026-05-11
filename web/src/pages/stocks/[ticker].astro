@@ -58,27 +58,31 @@ function svgPath(points: number[]) {
 const revSpark = svgPath(revPoints);
 const epsSpark = svgPath(epsPoints);
 ---
-<Base title={`${data.ticker} · 個股深度`}>
-  <section class="hero">
+<Base title={`${data.ticker} · 個股`}>
+  <header class="page-h">
+    <div class="eyebrow">{data.market.toUpperCase()} · 重點新聞 {recentNews.length} · 其他 {generalNews.length} · 財報 {history.length} 期</div>
+    <h1>
+      <span class="mono accent">{data.ticker}</span>
+      {bundle?.company_name && <span style="font-size: var(--t-h2); color: var(--fg-300); margin-left: var(--s-3); font-weight: 400;">{bundle.company_name}</span>}
+    </h1>
+    {health && (
+      <div style="margin-top: var(--s-3); display: flex; align-items: center; gap: var(--s-3); flex-wrap: wrap;">
+        <span style="font-size: 28px;">{health.icon}</span>
+        <span class={`label ${health.tier}`} style="font-size: var(--t-label); letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px;">{health.label}</span>
+        <span style="font-size: var(--t-small); color: var(--fg-200);">{health.summary}</span>
+      </div>
+    )}
+  </header>
+
+  <aside class="howto">
+    <div class="howto-icon">i</div>
     <div>
-      <span class="live"><span class="live-dot"></span>{data.market.toUpperCase()} · 重點新聞 {recentNews.length} 篇 · 其他 {generalNews.length} 篇</span>
-      <h1 class="mt-2 mono">
-        <span class="accent">{data.ticker}</span>
-        {bundle?.company_name && <span style="font-size:18px; color: var(--fg-300); font-family: 'IBM Plex Sans', sans-serif; margin-left:12px; font-weight:400;">{bundle.company_name}</span>}
-      </h1>
-      {health && (
-        <div style="margin-top: 10px; display: flex; align-items: center; gap: 10px;">
-          <span style="font-size: 24px;">{health.icon}</span>
-          <span class={`label ${health.tier}`} style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px;">{health.label}</span>
-          <span style="font-size: 13px; color: var(--fg-300);">{health.summary}</span>
-        </div>
-      )}
+      <p class="howto-title">怎麼讀這檔個股</p>
+      <p class="howto-body">
+        從上往下：<strong>健康度</strong>看圖示 + 一句白話。<strong>KPI 條</strong>是最新一季數字（營收 / EPS / 毛利 / 營益率 / FCF）。<strong>趨勢圖</strong>看走勢加速還是減速。<strong>⭐ 重點新聞</strong>是 earnings / capex / 目標價變動類事件，<strong>📰 其他新聞</strong>是 finance source 的一般動態。
+      </p>
     </div>
-    <div class="hero-meta">
-      <div class="ts mono">{(data.generated_at ?? "").slice(0, 10)}</div>
-      <div class="mono">market <span class="ts">{data.market}</span></div>
-    </div>
-  </section>
+  </aside>
 
   <!-- KPI row ─────────────────────────────────────────────────── -->
   <section class="stats-strip mb-6">
