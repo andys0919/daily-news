@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-11T03:33:20Z",
+  "generated_at": "2026-05-11T03:56:22Z",
   "stats": {
     "articles_total": 55879,
-    "articles_24h": 525,
-    "articles_7d": 4018,
+    "articles_24h": 517,
+    "articles_7d": 4008,
     "articles_30d": 15000,
     "reports_total": 316,
     "insider_total": 0,
@@ -1172,6 +1172,1072 @@
       "event_type": "earnings"
     }
   ],
+  "analyst_views": [
+    {
+      "title": "Kiwoom lifts Samsung Electronics target as chip rally drives profit surge in Korea - CHOSUNBIZ - Chosunbiz",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOTAxQ2FVbk1RUHpOeGxQb1dnNUlZb3R2RE9qYXB3cDBaaUJ4V0NUUno0WHBNWkdMQ09HME1KWjBucTByWnlIUllmaVVuczRSZGZKalNUU0hicU5FNzJ1RHJRUTE5ODg3eEd6SjNyQmtoX1MxYnAyUmZMaEFjU01xZNIBlAFBVV95cUxPMWJlWUstRURtT0tHU2c1Sloxb0NMNWpxTGtIeGhwS1cwRi1ZRFFQUDJIQ21FM1pucWt5NjVuZm1KZGlJSVNxdHlJdk9rZEQzeHctYmF6MENsWFd4QWN3d2xCOEdTMkRzeWxYcGM3RDBOelFnNVk2MER5UFJ2dk5COURHb0pOTlQ5QW02SGh6X3FYcUox",
+      "source": "記憶體產業",
+      "published": "2026-05-11T07:51:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Kiwoom lifts Samsung Electronics target as chip rally drives profit surge in Korea - CHOSUNBIZ&nbsp;&nbsp;Chosunbiz"
+    },
+    {
+      "title": "《一週外資買超53-1》群 創(518547)、鴻 海(262912) - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLWQ3dmx3UnZXZGhtZW12aExlemZqRzF2VW5XQ1EwMWlhcF92TzlYR3BwOEE1eU1HeVZEN0FoNW9NUzhlbk5yOWhWZVRROTVnbjlIampBZk9xU0o3MzNzbFBwTl9OVFB6UF9tc0VxQ05ZNm9YNGs5eDhRQTBrS3FJV21oejYyR0dT",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-11T07:45:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "《一週外資買超53-1》群 創(518547)、鴻 海(262912)&nbsp;&nbsp;ww2.money-link.com.tw"
+    },
+    {
+      "title": "Macquarie Group Limited 2026 Q4 - Results - Earnings Call Presentation",
+      "link": "https://seekingalpha.com/article/4902304-macquarie-group-limited-2026-q4-results-earnings-call-presentation?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:39:39+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": ""
+    },
+    {
+      "title": "Molina Healthcare, Inc. (MOH) Analyst/Investor Day - Slideshow",
+      "link": "https://seekingalpha.com/article/4902302-molina-healthcare-inc-moh-analyst-investor-day-slideshow?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:37:14+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": ""
+    },
+    {
+      "title": "Morningstar, Inc. (MORN) Shareholder/Analyst Call - Slideshow",
+      "link": "https://seekingalpha.com/article/4902301-morningstar-inc-morn-shareholder-analyst-call-slideshow?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:34:26+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": ""
+    },
+    {
+      "title": "《台北股市》投信08日賣超股：台新新光金、玉山金、富邦金 - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTlN3NHFEV0N2bnV4QktnZFNOdjhoN0VrOWpuemdtY21iNngtbzlPWHo4eW9UT0x3TGNQcGdNTVZ2MGhwcGl2QmJpRUpoZG9hUGhOSnRZMTY5cmJneVlhX3g0UnlZV3RJcTJiOUVrR2cyaWdDQkRGVXVSZFJwVEhGTGVibVdZVHZC?oc=5",
+      "source": "台股三大法人 (Google News)",
+      "published": "2026-05-11T07:34:00+08:00",
+      "tickers": [
+        "2881"
+      ],
+      "direction": null,
+      "summary": "《台北股市》投信08日賣超股：台新新光金、玉山金、富邦金&nbsp;&nbsp;ww2.money-link.com.tw"
+    },
+    {
+      "title": "《台北股市》外資08日買超股：群創、富邦金、台新新光金 - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSEhsUjdpY2JxNkZ2RElwd3phWENfT1YtNUJUOHBIYl8wcGtydDFZMFZ0MTZjNUw0S09HWXVIeVAybnlydFJrRllqbkd3RzBDb3ZDaTQ5YkpxT3pGU2VITXNTZHVOeWxvRlVjWlRXQUxwVU5SV2NDWDJjY29VNks3aXZidXdEMG1G?oc=5",
+      "source": "台股三大法人 (Google News)",
+      "published": "2026-05-11T07:34:00+08:00",
+      "tickers": [
+        "2881"
+      ],
+      "direction": null,
+      "summary": "《台北股市》外資08日買超股：群創、富邦金、台新新光金&nbsp;&nbsp;ww2.money-link.com.tw"
+    },
+    {
+      "title": "《台北股市》外資08日賣超股：力積電、華新、台化 - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMnBXc2xQdi1nQWM5cU16YUhjaDJNTDhKUklaY2NzRjJGd1JtYjl3ZzBKQ1I1eTFnZ1lkS3BUWGpTb1ozN055Tkdrc01qS0xJZENBMFRQY0dOb2t4Z1VEN3BXUG1LYnBKYkR0VUtiOFNHeTlNa0tYdXVkSWhoYzhXMGRMNWRna2tf?oc=5",
+      "source": "台股三大法人 (Google News)",
+      "published": "2026-05-11T07:34:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "《台北股市》外資08日賣超股：力積電、華新、台化&nbsp;&nbsp;ww2.money-link.com.tw"
+    },
+    {
+      "title": "《台北股市》三大法人08日賣超股：力積電、華新、台新新光金 - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZWZIR1VoMVp2RnZvMHcxbVZCczZ0a19ueWdwY2RjMUV1LU9yUGk3LVROcjB6MEJGeVFKejBoNGt5N3VDaTlaV1dHcHBDOFZuSGdfbUhHMWtPckVDd29oV1R5UGRsVGlZZUgtcUpRQkVJS01VamZkeHFuQWl0ckxwdk9INHRzVEgx",
+      "source": "台股三大法人 (Google News)",
+      "published": "2026-05-11T07:34:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "《台北股市》三大法人08日賣超股：力積電、華新、台新新光金&nbsp;&nbsp;ww2.money-link.com.tw"
+    },
+    {
+      "title": "RBC Capital Lifts PT on CG Oncology (CGON), Calls PIVOT-006 a Complex Catalyst",
+      "link": "https://www.insidermonkey.com/blog/rbc-capital-lifts-pt-on-cg-oncology-cgon-calls-pivot-006-a-complex-catalyst-1758208",
+      "source": "Insider Monkey",
+      "published": "2026-05-11T07:14:32+08:00",
+      "tickers": [
+        "CGON"
+      ],
+      "direction": null,
+      "summary": "CG Oncology, Inc. (NASDAQ:CGON) is one of the best performing healthcare stocks so far in 2026. RBC Capital lifted the price target on CG Oncology, Inc. (NASDAQ:CGON) to $79 from $73 on April 27, reaffirming an Outperform rating on the shar"
+    },
+    {
+      "title": "RBC Capital Lifts PT on Acadia Healthcare Company (ACHC) Following Q1 Earnings Beat",
+      "link": "https://www.insidermonkey.com/blog/rbc-capital-lifts-pt-on-acadia-healthcare-company-achc-following-q1-earnings-beat-1758210",
+      "source": "Insider Monkey",
+      "published": "2026-05-11T07:14:16+08:00",
+      "tickers": [
+        "ACHC",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "direction": null,
+      "summary": "Acadia Healthcare Company, Inc. (NASDAQ:ACHC) is one of the best performing healthcare stocks so far in 2026. Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price "
+    },
+    {
+      "title": "Leerink Partners Lifts PT on Oruka Therapeutics, Inc. (ORKA)",
+      "link": "https://www.insidermonkey.com/blog/leerink-partners-lifts-pt-on-oruka-therapeutics-inc-orka-1758213",
+      "source": "Insider Monkey",
+      "published": "2026-05-11T07:13:44+08:00",
+      "tickers": [
+        "ORKA"
+      ],
+      "direction": null,
+      "summary": "Oruka Therapeutics, Inc. (NASDAQ:ORKA) is one of the best performing healthcare stocks so far in 2026. Leerink Partners lifted the price target on Oruka Therapeutics, Inc. (NASDAQ:ORKA) to $120 from $109 on April 30, reaffirming an Outperfo"
+    },
+    {
+      "title": "Stifel Remains Bullish on Tango Therapeutics (TNGX)",
+      "link": "https://www.insidermonkey.com/blog/stifel-remains-bullish-on-tango-therapeutics-tngx-1758215",
+      "source": "Insider Monkey",
+      "published": "2026-05-11T07:13:19+08:00",
+      "tickers": [
+        "TNGX"
+      ],
+      "direction": null,
+      "summary": "Tango Therapeutics, Inc. (NASDAQ:TNGX) is one of the best performing healthcare stocks so far in 2026. Stifel lifted the price target on Tango Therapeutics, Inc. (NASDAQ:TNGX) to $40 from $24 on April 27, maintaining a Buy rating on the sha"
+    },
+    {
+      "title": "Morgan Stanley’s bitcoin ETF absorbs $194 million in first month with no net daily outflows",
+      "link": "https://www.theblock.co/post/400650/morgan-stanleys-bitcoin-etf-absorbs-194-million-in-first-month-with-no-net-daily-outflows",
+      "source": "The Block",
+      "published": "2026-05-11T06:07:53+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Most of MSBT's capital came from self-directed clients since the bank's 16,000-person financial advisor network is not yet cleared to recommend the fund."
+    },
+    {
+      "title": "Goldman Sachs resets Broadcom stock forecast - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNHk2X2E1SFFzTEdWZXhVSjVOUUszN0hsMXpqbHJsMk1CdVJYNzlCb0dKby1qSDVFbjI5YXhhNUpBeHJZWC1CMmZzcWw4OE1haGtEOFM3UzJibHhlRUtnSGpzQnFkLVJ1VmNlQXFIMmVTX2xBUHpsYWhSZGVNc05vWHhmdnlPdw",
+      "source": "Broadcom News",
+      "published": "2026-05-11T02:40:38+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Goldman Sachs resets Broadcom stock forecast&nbsp;&nbsp;AOL.com"
+    },
+    {
+      "title": "10檔法人猛買雙強股聚光 鴻海、南亞科等扮多頭先鋒 | 市場焦點 | 證券 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpWnFRVUVpOW0zbFIzU05wWTNoalBya1B4TTk4ZXVxbFVENzhxd2NYMjJRaEhhUWxCMHY0RlNUeG1QMXpOcUZWdWs5NUdYTlpCd1NaVUQ5LWJudw",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-11T00:44:08+08:00",
+      "tickers": [
+        "2317"
+      ],
+      "direction": null,
+      "summary": "10檔法人猛買雙強股聚光 鴻海、南亞科等扮多頭先鋒 | 市場焦點 | 證券&nbsp;&nbsp;經濟日報"
+    },
+    {
+      "title": "商周X國泰投信【見大勢 佈大局！債創新機遇】投資論壇 - 商周",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92MzVGNGJoMDIzeEx4WHAwT3lrTVExRW14bGotaEI1YUlhMEphS3FKZG1DZWpwWldMc2lhM2xIV3J4aWdVNV9TOWxXOTBib3V0TEY5TmtlaXAtQlRHREJYQ3R0TVhKUQ?oc=5",
+      "source": "商業周刊",
+      "published": "2026-05-10T22:31:58+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "商周X國泰投信【見大勢 佈大局！債創新機遇】投資論壇&nbsp;&nbsp;商周"
+    },
+    {
+      "title": "FOPLP+低軌衛星+連賣三廠補血！三大法人瘋搶群創57萬張 撒667億砸向鴻海「連買4週」 - Yahoo股市",
+      "link": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNZnBxUmhhY3NwbHBDZExKaHlKdmtrTldZUVJPcmx0OWJNR2E1UmJDbUJvanhRZDdvdUxDTWpsaGdPcG1jQU0tV0F6Q0RjVjVzMFBhQjRGYVh1X04wOHlpZ21CWkoxSVBOZ25wTWxoVEdVZG84MGtNbDdmRkJsYm5pSTdPc2t4M1B3NzFTc0EzT25hdHVVVTN6Q1pTemxOcnYtZU1jckNWaHpvVjcwRVNhck5fMHZUMndTQS1iNW00YVZrRlJBaEd6QmE2X21PSzVTOGpmU1R0QU43T1Q5UWZvWloxcnpCd0F4UFoxc3lGandoTGV2blpUa0dxZndPYkRrc2ZQdUsxWVplY3hDSTlYOEUxRDhhYUZ2WWdvX05fcmQ4Y2xadXQtV1JrdjNTbWZVaF9yU1B3ekhTb0VacDRudktUc0Nxa2RjTUNEbXFxc2phT2dwMGJhaTZtNEt4NVJyQWNTOGlCeXF1d1dtU25yQ2c1cUs4MXdXekxxV1Q3cVROZ2lKQzhQb0RQTVplaHFvSGwzVTRiWVh6WlpfMXFsNFpfc1ZoZw?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-10T21:50:00+08:00",
+      "tickers": [
+        "2317"
+      ],
+      "direction": null,
+      "summary": "FOPLP+低軌衛星+連賣三廠補血！三大法人瘋搶群創57萬張 撒667億砸向鴻海「連買4週」&nbsp;&nbsp;Yahoo股市"
+    },
+    {
+      "title": "台股4萬1怕回檔？台積電買點在哪 分析師提2.5兆警訊：先砍鴻海一半持股 | 李瑋萱 | 新聞 - 風傳媒",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vcUwxVExKRDd3N3VKOUJIRjNoMllVUl9vem94T0hETGtJZHNWeG10YWpoOVBfTEN3ZWtFTVJiQ2E0ckFna3F6R0RsYTg3Zw?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-10T19:04:00+08:00",
+      "tickers": [
+        "2330",
+        "2317"
+      ],
+      "direction": null,
+      "summary": "台股4萬1怕回檔？台積電買點在哪 分析師提2.5兆警訊：先砍鴻海一半持股 | 李瑋萱 | 新聞&nbsp;&nbsp;風傳媒"
+    },
+    {
+      "title": "台股快4萬2還能買什麼？群創、鴻海、聯電…先看外資買超股有誰，「5月賣股」不準了？老手喊今年不適用 - 今周刊",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYzJyZGFTZUdHYWRGOEtMTjRrM2ZSanJuNHNISDBQdDZNRHNWYThxOE1VQzFGQjBjMnNneHphQnk0V1FiUUlWOFJCbG1laUlyNGhPdUpESjhTbERpZXpwakp4a1g2cTJyVmJVdFNJTU5HekNHMExmZGhvM2RnWVJsMg?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-10T18:01:00+08:00",
+      "tickers": [
+        "2317"
+      ],
+      "direction": null,
+      "summary": "台股快4萬2還能買什麼？群創、鴻海、聯電…先看外資買超股有誰，「5月賣股」不準了？老手喊今年不適用&nbsp;&nbsp;今周刊"
+    },
+    {
+      "title": "外資狂賣台積電1兆台股為何還能噴？「大散戶時代」來了- 證券 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zMDJCNkl5V1BndUhaelZmM0pHNWxIdDVfMnVMOFV3bXVXQ2FScEd0WDJfNzVtdDZ1TTNNb1JiNTNvbTcyMEM3blF2Y1BDbmZRS3dsNmRNSEV0UjBGbUhv",
+      "source": "TSMC News",
+      "published": "2026-05-10T07:48:00+08:00",
+      "tickers": [
+        "2330"
+      ],
+      "direction": null,
+      "summary": "外資狂賣台積電1兆台股為何還能噴？「大散戶時代」來了- 證券&nbsp;&nbsp;工商時報"
+    },
+    {
+      "title": "Wedbush sends blunt message on Elon Musk’s Tesla and Intel deal - thestreet.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd2dGMW9nT0lxSmlqLXpNNW1vVnVKcHdzNm1rdnhFOWVBalU0YXkyVk4zNUpoMzFNVlBsMW5OUW1FZWJmQ3cxbXNfZWJqR2R5QWhmbXZGRUpZUXpjcmNpaHBKMjZvQjBzcFh1UXBfeHFwbkp2anJRMHRMTENsMzRoek1IaS1jdTVtemJTY2hzd3diMGdjdkhqc3licWYxWWww?oc=5",
+      "source": "Tesla/SpaceX",
+      "published": "2026-05-10T06:37:00+08:00",
+      "tickers": [
+        "TSLA"
+      ],
+      "direction": null,
+      "summary": "Wedbush sends blunt message on Elon Musk’s Tesla and Intel deal&nbsp;&nbsp;thestreet.com"
+    },
+    {
+      "title": "擁抱矽島 外資投資台灣第4波高峰",
+      "link": "https://ec.ltn.com.tw/article/paper/1754183",
+      "source": "自由時報 財經",
+      "published": "2026-05-10T05:30:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "今年全年有望破紀錄 〔記者高嘉和／台北報導〕根據經濟部投審司最新統計，今年首季外資來台投資衝破六十億美元、年增一七〇％，全年有機會打破歷史紀錄。經濟部分析，台灣共歷經四波外資投資高峰，從二〇〇六到二〇〇七年第一波的「金融私募併購」，近年來進入第四波的「AI（人工智慧）晶片擴產」，型態已從早…"
+    },
+    {
+      "title": "Daiwa Just Upgraded Qualcomm Stock. Can a Data Center Pivot Justify the 80% Rally? - TIKR.com",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZlA1YTdnaXFNUG0zdzY2TU54Y2Z3VGhpUnoyWlRObDRMTzY0RURlRmxHMjZGMUlZcEdFNUJWR1dySnRISnVsS3hESkRuT1pDRWgydHBRTWhuaXNUZktHaEpXNEFCTjh4TGw2bnpvbWVmU0doczczZ1dhMVJUREdDWEdNNkgtbmJwYUM4dW9VS3E1c3BZTFVNclM3SmN4RmlySDYzTUV5RUI?oc=5",
+      "source": "Qualcomm/Arm",
+      "published": "2026-05-10T03:25:55+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Daiwa Just Upgraded Qualcomm Stock. Can a Data Center Pivot Justify the 80% Rally?&nbsp;&nbsp;TIKR.com"
+    },
+    {
+      "title": "分析師示警：提防美股賣壓",
+      "link": "https://money.udn.com/money/story/123398/9492821",
+      "source": "經濟日報 產經",
+      "published": "2026-05-10T03:15:42+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "大買盤面贏家股、殺出賠錢貨，這種所謂的「動能交易」熱度一直很高，如今隨著伊朗戰爭停火、美國就業數據超強、人工智慧（AI）概念股又暴漲，給追高熱門股的買盤火上加油。"
+    },
+    {
+      "title": "元大金股價反攻有望- 日報 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA2X09FNFV1MUJhODFpYnlqUWRTSTdQTTZmdFB5NFVtZW1FYldkT01kY3FTM2FGU2o1aXpvcjQ3dDlRdk5lN0dIbHRQdGxyRGhGZFpibFpKM2c4aUxMLVdJ?oc=5",
+      "source": "工商時報 財經",
+      "published": "2026-05-10T03:00:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "元大金股價反攻有望- 日報&nbsp;&nbsp;工商時報"
+    },
+    {
+      "title": "志強三大法人齊買- 日報 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yamh4TkRrV2R0dC1vODBjQVd3M2QwR1d1d3AxYkNKYXBHd0tuMmZsZ3BuSUY0enVXQ2Nmb21abndzOEFaLVBlc05xNjhMRm1DaUFKYUhwTW1qVTgxWTJN?oc=5",
+      "source": "工商時報 財經",
+      "published": "2026-05-10T03:00:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "志強三大法人齊買- 日報&nbsp;&nbsp;工商時報"
+    },
+    {
+      "title": "中華投信連日買超- 日報 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5XcklJWjdyLTVYa3ZYUVZ6OXZ3TkFPdWNaRVgxRHFfWFUzUmVUc19laGxIZGxqSGY0VmZGaVpyUk9fNmpob0FOTldXWkdZZzRHWUtlUzk4eFEwZVdUbjFR?oc=5",
+      "source": "工商時報 財經",
+      "published": "2026-05-10T03:00:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "中華投信連日買超- 日報&nbsp;&nbsp;工商時報"
+    },
+    {
+      "title": "Goldman Sachs Bets Big On Agentic AI Boom By 2040, But Warns Bad Data Could Leave A Bad Taste - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMXNkVktfRHlaYzZlWTFrRWkzWUtlNVdxS09vVzk4aERWY0FEYlJCQXBWM3R3cUhvaFU4emVJdFJnX2U4RHE2X2QtcFZyUllwMm1OQUc0M0Z2ZkwxZ2Z3QXY0YmNJVlZGdXJpQXJNazBfX1pPNDM0VDZCa0xfM2ltVnUzQ1NiRVI0OTBjNUJpMWF0dkM1OXE3QmpfWG1TZFhzdWRPOE9SWGNwLWluYVFfY3Z1NW3SAboBQVVfeXFMTUJ0UzJOVDNQeFVNb21qS3RiSWVrNE5BaU5YbElUWXp5OXA0YVl0WUp5YmVHUjJCdWIzSUwtZmdkQ3o4cndYNEZyMzdaSXJtTVUzSGo4ajFWRkxROEVtdlRPSlZVMnlzWUkzZXJPMWtpeWpWeWtPRWx1bUhzbDlkSGVDMkpDemhJRDM3d0Vrd2ZXQmpFdUJFbThLMkExZTV6N0JJc2FjWW5xNjEyalFVOF9PejJpcEFfY1ZR?oc=5",
+      "source": "LLM 應用與商用化",
+      "published": "2026-05-09T21:59:00+08:00",
+      "tickers": [
+        "2040"
+      ],
+      "direction": null,
+      "summary": "Goldman Sachs Bets Big On Agentic AI Boom By 2040, But Warns Bad Data Could Leave A Bad Taste&nbsp;&nbsp;Wccftech"
+    },
+    {
+      "title": "Bank of America says stocks like Apple have plenty of upside following earnings",
+      "link": "https://www.cnbc.com/2026/05/09/bank-of-america-stocks-with-upside-after-earnings.html",
+      "source": "CNBC Top News",
+      "published": "2026-05-09T20:38:13+08:00",
+      "tickers": [
+        "AAPL"
+      ],
+      "direction": null,
+      "summary": "The firm named five stocks that have more room to run following earnings."
+    },
+    {
+      "title": "2317 鴻海 - 中信金控日周月線多頭排列挑戰$60我認為很有機會📈-股市爆料同學會 - CMoney",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LYWtRYW1oUi0wTUM2RktnZWsxclpWdU56YTQwZE5yWUZUbnpkMHlFV0txTG85Z1hWZHJ2SUx0bVV0ZnczUWxKMjJPMlVSNTdMbmVUR1dSRTI?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-09T16:02:50+08:00",
+      "tickers": [
+        "2317"
+      ],
+      "direction": null,
+      "summary": "2317 鴻海 - 中信金控日周月線多頭排列挑戰$60我認為很有機會📈-股市爆料同學會&nbsp;&nbsp;CMoney"
+    },
+    {
+      "title": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元 - sinotrade.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMi2gRBVV95cUxOV1A0UEhkbExQWUwzRGtvQWlRODlxSDdINkgySUZ0a3pYemNsZTc1SVhxd1JoTnRkbmN2aDhFVG5HSHRzcUppN0lkeU5jX3NHem8tZm5CTVhneVJ1eEI5Y1hKLV9VQlZkc25PVkRXT0ZlTFVONGVQZEFVNHF4NzdsdDQ3ZmdGdmNEOFg0ZGJ6UFFaU3BPMDI1ZUM0LWtTY1VLSHdpdEE0dGl4M3N6bDVQanhlTjZQaUxSM1RxRGRCY3cxYnNnckF4dGhOT25TYm9heUtPS3VDVEg4eDNIZ2dESjAtcnBuTjQ2QW5vQ19pTmVrVl9sd2JNT0dibkFNZUpkMm13c01ZdzBTeENkN21QelVodTdnSm5QM3BMY0ttTURZQWJEUC1ldXJWSFJOZi15S2gyY3NnNjU3dmpTQzlkVzJleW1Oc2hNZXBGdG94emRxclhUaGRvZzJoZTVYWmp5SEFUY0ppYUFJOFN6Ul9FS2ZIR0tNV2dWQTdZRjQwVDhXQzhCV3c1Zml0ZGlYN3dyaE1qX2N1Z3hwTlV1Z3NoQURoa1RWQ3U4cXRWMXlGQjhFbThfMUdkdTNRb3VVM0RJNnZZb3BqYjhzb2dyeFpRVU9taUNQMVA5M2JjTkh4QWtQSG13OGt4YnROem13NlZPTHptak9NVE4xSWc3TlZ4QUF2VEZaY1YzamhqQVNZSmVuZDNFUzRDR1FiN1RENzBpeTBoQlE1UDZqSVlTWDQwaDRGakFmYzVpYjUyN3gzcVUtcnpPWXdiWFVqeGxOX25hTi1rVnBDRjRoZw?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-09T14:51:32+08:00",
+      "tickers": [
+        "2330",
+        "2317",
+        "2408"
+      ],
+      "direction": null,
+      "summary": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元&nbsp;&nbsp;sinotrade.com.tw"
+    },
+    {
+      "title": "川習會  摩根大通：可能達成進一步談判框架協議",
+      "link": "https://www.cna.com.tw/news/acn/202605090066.aspx",
+      "source": "中央社 財經",
+      "published": "2026-05-09T11:47:45+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "（中央社台北9日電）美國總統川普預計14至15日訪問中國，屆時將與中國國家主席習近平會談。摩根大通預測，川習會可能達成進一步談判的框架協議，中國可能同意大量購買美國大豆及其他農產品，以及波音飛機、原油和天然氣，以維持現有關稅狀態。"
+    },
+    {
+      "title": "Bitcoin profit-taking may 'accelerate' as price hits 3-month high: Analyst",
+      "link": "https://cointelegraph.com/news/bitcoin-profit-accelerate-price-3-month-high",
+      "source": "Cointelegraph",
+      "published": "2026-05-09T01:57:27+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Despite the short-term price recovery, Bitcoin remains in a bear market, according to CryptoQuant analyst Julio Moreno."
+    },
+    {
+      "title": "Worm rubs out competitor's malware, then takes control",
+      "link": "https://www.theregister.com/security/2026/05/08/worm-rubs-out-competitors-malware-then-takes-control/5237389",
+      "source": "The Register",
+      "published": "2026-05-09T01:26:00+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "All your compromised credentials are belong to us now instead of the other gang"
+    },
+    {
+      "title": "Daiwa Just Upgraded Qualcomm to Outperform: $225 Price Target Bets on Data Center AI Pivot - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNM05mdzBrV1o1bkY3cDhfMlV6dnBCLUdXUm9FcHJpb1RadC04UnJqV2dnUHY2djBEWnZLRThUVTRZOWRFS2lSUU0yM3JWcnlXdEdvZldmQ1RvNXZCYXVIWTlBbERMZ2MweTVMc0tacXE1TTVXdUU5dkdRUUF3WGlMaWFnQ3lFMjNpamsw?oc=5",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-09T00:16:59+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Daiwa Just Upgraded Qualcomm to Outperform: $225 Price Target Bets on Data Center AI Pivot&nbsp;&nbsp;AOL.com"
+    },
+    {
+      "title": "Bernstein sets $100 IREN target after $3.4 billion NVIDIA AI deal",
+      "link": "https://www.theblock.co/post/400571/bernstein-100-iren-target-3-4-billion-nvidia-ai-deal",
+      "source": "The Block",
+      "published": "2026-05-08T22:07:34+08:00",
+      "tickers": [
+        "NVDA"
+      ],
+      "direction": null,
+      "summary": "Bernstein analysts set $100 IREN target after NVIDIA deal, citing $3.4B cloud contract and 76% implied upside."
+    },
+    {
+      "title": "外資賣超120億元終止連4買　提款主動式ETF",
+      "link": "https://www.cna.com.tw/news/afe/202605080372.aspx",
+      "source": "中央社 財經",
+      "published": "2026-05-08T21:26:48+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "（中央社記者吳家豪台北8日電）台股今天跌329.84點，收在41603.94點，外資及陸資轉為賣超新台幣120.84億元，終止連續4個交易日買超，調節多檔主動式ETF（指數股票型基金）、市值型ETF與記憶體族群，其中主動統一台股增長（00981A）遭賣超10.66萬張最多。"
+    },
+    {
+      "title": "Broadcom Inc. Stock (US11135F1012): Analyst Upgrade and Strong Earnings Drive Investor Interest - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPM0Vick83Z3NNcTFuWndjMUNwNldsUVFIcWdJVGtTMXlpaGx0RmJrMDJGb0tZSnVuUnViQXlQV2Fzdk0wa3dVZVlXS2RzazdIMGRldGFRWHNFVHhOZVJaaGFNY2lFQXNyR3FCMzVtcHhLY1pPbEtRODV6VXhyTURxRmFCTnZhRTNrVGY0bTMwTkU3NVJHaUNscDFQNUlZU2g2Z3RJcVdNYkEzWHVGQl9zTjNtZ3Y3VGRyMlBzRHdvSmVwZmhn",
+      "source": "Broadcom News",
+      "published": "2026-05-08T19:32:22+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Broadcom Inc. Stock (US11135F1012): Analyst Upgrade and Strong Earnings Drive Investor Interest&nbsp;&nbsp;AD HOC NEWS"
+    },
+    {
+      "title": "ASML Holding N.V. stock (NL0010273215): New 12?month high amid analyst upgrades and strong earnings - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWF5T1NmQkdjbTFZckQ0alhUUVFwZ0JYQzI5RW04VVdwSDV0RVIzdFBUY0d1M2NZbW5Gd0JVNklkVlBCNG5UM0E5a21FVmRKVUpLRXNYWmJ6RFV5eHhwMkdZaHV1UWxjWXZoTU1MdWpDRl9ZWnd0TlVFWm9fcEZYVmoyQlFXQ0hxZGxUNzJTSlNEZ0liVVJhOTFFQlRtU1BjRllqdXRTbDV1ekJiV0JCb2RabzhndFRtUmhXeUxZWXI3RFE",
+      "source": "ASML News",
+      "published": "2026-05-08T19:24:20+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "ASML Holding N.V. stock (NL0010273215): New 12?month high amid analyst upgrades and strong earnings&nbsp;&nbsp;AD HOC NEWS"
+    },
+    {
+      "title": "三大法人買賣超 – 外資買超(2317)鴻海、(3450)聯鈞，投信買超(6669)緯穎、(2330)台積電，法人合計賣超200.03億元 - sinotrade.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiwgRBVV95cUxNYk5RQ2JocGJDV1ZXcVR6Ym5sS3I0TmFNcWl4M2NSREMxR0VEYklZQnFsc3ktUTRTYXQwQTE4cVprVjBtdVM2Z0Q0RzlCT2V4N2drUkc5d3NHSlNsYnhWYXlzQkdQN255OXh4dEtBeVhJbFFtMTM2NEpOSVRHMjRIWXh3OHdINXZiSzZRNWdoMUhLTXItMzlvRTZlSEN2Z2FQMExTU3RWb2thcXpPVk00VG5JcnhiTjFZNUpaVWttQ0UxQU9vQm5VaDZ4SEJ4d0dqQkNtOWFxdm92T2VDcXZrZGFlb3JBa29CY3ZRb2s1U0tJdWVRWUR2N1U5cC1Jal9LV2ZfakFVZTdYenA5ZGJaUnB0WjJtYkMtWnV1MmZMeWU3eUhhRjZiOFc2SndkNHlMUVVQd2J4LVU4Zk9mU1R2MHdBWU9UMUM0ZE5wNUx1Q1BjZVRUZUR5ZVo1dEpvX3ZHMTItNWVYRE9QY0c2TFZtYkFvZE01dGsxMzRERVZMQ0hvZHNVbFN0WmNsN1VlTWFUYzJOQ1ZQRE9uWDZxWEtLcEJoV0Fmd0JMQ2xmamZQX0ZtbF9jV2VQcnFobmc3YmV4M0ZFamJzcW1UZm9LajZPZ0NKelZFbFV3cDFHUENnT3RCZnlsU2M4RDJ2dGVqa3Z6NVRnVzlYMXk2c0xCMVpvX0w4LTI5RmR2Rk1DTkNqc2JDT09OaHNpNl96R0NiWVZqbzhyY2ktdzRpOFlzSmYzdkt1amtGeE1JcFd4U0E0a2xwQQ?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-08T17:07:22+08:00",
+      "tickers": [
+        "2317",
+        "3450",
+        "6669",
+        "2330"
+      ],
+      "direction": null,
+      "summary": "三大法人買賣超 – 外資買超(2317)鴻海、(3450)聯鈞，投信買超(6669)緯穎、(2330)台積電，法人合計賣超200.03億元&nbsp;&nbsp;sinotrade.com.tw"
+    },
+    {
+      "title": "鴻海挾利多領軍老 AI 上衝還可以買？分析師點名這幾檔都有戲… - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XUzNwSVVKclIwRVZYWV81MmhJUHVIOGVFT3VXMWN2YkRQV2xwSlBUblp3U1NhUjAxMndwaWk3YU4wRVNZa21NMFVETDJ3RHpPaVl5Rm1BQ2lTd9IBX0FVX3lxTE9yNG0zNC1hMjU5dDg1UUl4dUZIZXBhbkg3Z1R0TTRMYWt3T2dMd2ZTYzh2QUJidGRZWDltOE5LMDB4OUNUV2tPaktYckNmbG4tVHBQNUJPeHBQcmVOMEZr?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-08T17:00:00+08:00",
+      "tickers": [
+        "2317"
+      ],
+      "direction": null,
+      "summary": "鴻海挾利多領軍老 AI 上衝還可以買？分析師點名這幾檔都有戲…&nbsp;&nbsp;經濟日報"
+    },
+    {
+      "title": "Broadcom Stock Strong Buy in 2026 as AI Revenue Explodes 106% and Analysts See Further Upside - International Business Times Australia",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSmpTcUFHRHpDbmg5YUZpcE5iTnp0MHUwMFp1QWFKZ2JTdi1WYmxpdnJQSXZZMExQSHBabUNsYW1HWUI3Q1VNM0dYMVk2dDVmakNBRUZ4SWxkUzFnbk41R2dUY090YVVRU1hDcGRnYmlRRUtvUFV5TnAxWFpXRl9NU3BnM0FPQmEteEtsdWd5bElCZDNUY3IyWEZlbXZZbGswWUl1Y1pCOTNWU2FGQkNDclBONmJXUmJw?oc=5",
+      "source": "Broadcom News",
+      "published": "2026-05-08T16:10:44+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Broadcom Stock Strong Buy in 2026 as AI Revenue Explodes 106% and Analysts See Further Upside&nbsp;&nbsp;International Business Times Australia"
+    },
+    {
+      "title": "BofA Lifts Price Objective, Estimates for ASML Amid Expected Earnings Growth on Low-NA EUV Boost - marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPRXl6TVVkSDFKbjFlRTVqcFJvcWpvem02RFc1UlFOZFJOci10dDd3RDlPbk5YMzFsMEZvNmUtaTducXI3TEc0RFRFdmhuTk9lZWd1TkdFamcxRUk4S3NqQzc4WkFMSHl2UWdha1YzdzlQUVB6dmRpaXd3S3ZZNF83LTJkbVIxZlZCQUZfMWxDY0FaRjhybDlfek1kQUItNVhvZEthb2Rial9jTkdtX3lfUWlrVGRhLUlKZWxPN0puSVhJMkgxSUtpTkRLWlNIcUtLUmkyQWV3cnU3OVFCT0JJVmZn",
+      "source": "ASML News",
+      "published": "2026-05-08T13:20:21+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "BofA Lifts Price Objective, Estimates for ASML Amid Expected Earnings Growth on Low-NA EUV Boost&nbsp;&nbsp;marketscreener.com"
+    },
+    {
+      "title": "盤前重點》台股恐測月線！台積電ADR跌、費半重挫311點，外資狂買464億還能上車？ - Storm.mg",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tLW1DdGZTWG1tYUJwS0VSY1UwVHFDYmU1RGwxeUFiWjJ3SUI3ZDBaWmhUXzFXcGdyc1lCR0dkX1RTczZTMmNoaXJ2WjBISEtQ",
+      "source": "TSMC News",
+      "published": "2026-05-08T08:46:42+08:00",
+      "tickers": [
+        "2330"
+      ],
+      "direction": null,
+      "summary": "盤前重點》台股恐測月線！台積電ADR跌、費半重挫311點，外資狂買464億還能上車？&nbsp;&nbsp;Storm.mg"
+    },
+    {
+      "title": "Corpay signals $5.29B 2026 revenue midpoint and $26.70 cash EPS midpoint following Q1 outperformance",
+      "link": "https://seekingalpha.com/news/4589388-corpay-signals-5_29b-2026-revenue-midpoint-and-26_70-cash-eps-midpoint-following-q1",
+      "source": "Seeking Alpha",
+      "published": "2026-05-08T08:42:57+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": ""
+    },
+    {
+      "title": "Acorn reiterates 20% average annual revenue growth target as it expects $350k-$500k 2026 hardware from telecom customer",
+      "link": "https://seekingalpha.com/news/4589385-acorn-reiterates-20-percent-average-annual-revenue-growth-target-as-it-expects-350k-500k-2026?feed_item_type=news",
+      "source": "Seeking Alpha",
+      "published": "2026-05-08T08:32:10+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": ""
+    },
+    {
+      "title": "台灣GDP除了台積電還有什麼？ 法人：靠ETF把半導體紅利分配全台1成以上人口 - 信傳媒",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE96MXE5VDlMc1JtekxqY1lWRlJUU05WSWQxR0NtNlpzM2gxdlM4elpRTWJFY0YyXzJMSmJ4ZkFHd1FKWnF1RDVKZUpaZFZIQkNaSlgxRnNIb0tEQQ",
+      "source": "TSMC News",
+      "published": "2026-05-08T07:56:00+08:00",
+      "tickers": [
+        "2330"
+      ],
+      "direction": null,
+      "summary": "台灣GDP除了台積電還有什麼？ 法人：靠ETF把半導體紅利分配全台1成以上人口&nbsp;&nbsp;信傳媒"
+    },
+    {
+      "title": "Macquarie Profit Jumps, Commodities Chief Paid $25.5 Million",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-07/macquarie-profit-tops-estimates-on-commodities-markets-activity",
+      "source": "Bloomberg Markets",
+      "published": "2026-05-08T06:32:28+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Macquarie Group Ltd.’s commodities and global markets division chief Simon Wright got a 56% pay bump after profit within the bank’s key business drove earnings growth."
+    },
+    {
+      "title": "CSP巨頭豪砸22.8兆拚基建！鴻海不再是唯一？「外資逆轉投資優先順序」這2檔老AI牌才是加碼首選- 上市櫃 - 旺得富理財網",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HUVhqdjZkalYwNzZyYlBQNEZ2bEJDSVdHakZwd3JIWDd0QUNfWlBsTTd6MDlqT0Mtb1ZGWW9JR203Umxaa2pNSnRWb2gxSU52YVBCaGctRjRRYVRkbXZxTVVZMFcwNHVobEE?oc=5",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-08T06:05:24+08:00",
+      "tickers": [
+        "2317"
+      ],
+      "direction": null,
+      "summary": "CSP巨頭豪砸22.8兆拚基建！鴻海不再是唯一？「外資逆轉投資優先順序」這2檔老AI牌才是加碼首選- 上市櫃&nbsp;&nbsp;旺得富理財網"
+    },
+    {
+      "title": "PyTorch reproduction of TensorFlow paper underperforms by 4 pp on DermaMNIST , what cross-framework issues should I check? [R]",
+      "link": "https://www.reddit.com/r/MachineLearning/comments/1t6mxcp/pytorch_reproduction_of_tensorflow_paper",
+      "source": "Reddit r/MachineLearning",
+      "published": "2026-05-08T04:44:29+08:00",
+      "tickers": [
+        "1007"
+      ],
+      "direction": null,
+      "summary": "I'm reproducing a published paper's hybrid Gabor + CNN architecture in PyTorch. The original implementation is in TensorFlow. My reproduction consistently lands ~4 pp below the paper's reported test accuracy on DermaMNIST (73-74% vs paper's"
+    },
+    {
+      "title": "JPMorgan says bitcoin is gaining over gold as debasement trade after Iran conflict",
+      "link": "https://www.theblock.co/post/400486/jpmorgan-bitcoin-over-gold-debasement-trade-iran-conflict",
+      "source": "The Block",
+      "published": "2026-05-08T04:01:51+08:00",
+      "tickers": [
+        "JPM"
+      ],
+      "direction": null,
+      "summary": "Investors are increasingly choosing bitcoin over gold as a debasement trade since the Iran conflict began, JPMorgan analysts said."
+    },
+    {
+      "title": "Benchmark calls Bitdeer ‘comparatively inexpensive’ as it reiterates $27 price target for BTDR shares",
+      "link": "https://www.theblock.co/post/400476/benchmark-calls-bitdeer-comparatively-inexpensive-as-it-reiterates-27-price-target-for-btdr-shares",
+      "source": "The Block",
+      "published": "2026-05-08T02:35:38+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Bitdeer’s AI cloud ARR hit $43 million as of end-March, a 105% jump month-over-month, as its self-mining hashrate continues to grow."
+    },
+    {
+      "title": "Bitcoin bulls ‘approaching the ceiling’ near $85K resistance with $1.69B ETF inflow streak and macro tailwinds aligned: analysts",
+      "link": "https://www.theblock.co/post/400462/bitcoin-bulls-approaching-the-ceiling-near-85k-resistance-with-1-69b-etf-inflow-streak-and-macro-tailwinds-aligned-analysts",
+      "source": "The Block",
+      "published": "2026-05-08T01:21:30+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "Bitcoin trades near $81,000 after clearing key on-chain thresholds, with Glassnode flagging $85,200 as the next ceiling."
+    },
+    {
+      "title": "JPMorgan says Strategy’s bitcoin buying could reach $30 billion this year at current pace",
+      "link": "https://www.theblock.co/post/400443/jpmorgan-strategy-bitcoin-buying-30-billion-mstr",
+      "source": "The Block",
+      "published": "2026-05-07T23:39:42+08:00",
+      "tickers": [
+        "JPM"
+      ],
+      "direction": null,
+      "summary": "Michael Saylor's Strategy has added 145,834 bitcoin worth around $11 billion so far this year, JPMorgan analysts noted."
+    },
+    {
+      "title": "France is fan favorite for the FIFA World Cup — but AI is backing another nation for glory, says BofA",
+      "link": "https://www.cnbc.com/2026/05/07/france-is-world-cup-favorite-but-ai-is-backing-another-winner.html",
+      "source": "CNBC Earnings",
+      "published": "2026-05-07T22:27:39+08:00",
+      "tickers": [
+        "MSFT"
+      ],
+      "direction": null,
+      "summary": "The 2026 FIFA World Cup is expected to add over $40 billion to the global GDP with its most lucrative edition ever."
+    },
+    {
+      "title": "The $7.6 Trillion Bet: Goldman Sachs Projects Bold AI Capex For 2026 — Four Key Drivers - NDTV Profit",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRm5sSVF2SDJkZWZQWWc0djJpdEpUV0tSZkVWdUhIR3hMUWt5SW9mQWJZakluOVFfVHpxUVp4Uk94TV9SSkFWT0hlWG5uZHhESmNWWFBsTWstcjBrM01WNl9IVXotR201QmliWWFWb3h1Z3VWajMxZm1ZN1otaV92OXJTWWlaNmlFTUNhMXRFYktMbXZnREhoRktFVkdBNkkwaU1tZ1NhM181LWx5SjhVU1E3eVZWY0FUU0hxOXZGRUxLNml2YW8yYy1R0gHSAUFVX3lxTE43Y2xzZDZYaU5JUUFNV0JZeGxsUjFEeXJnZThKaU1hMVV2V3ZwVmxkak40amlpWHctQThvVGlscU1iWkVrTUZObVF5UlRQRGYxYThrdm1rRUhoSDJ6NnFkZGlMSVhXY3cyYWc3aVFPeml2QnNfc0dOWDdaUUJ2OF84OWVfdk9xdFJqd0htZUVQWE56M010S2VnbHZOU1dIdFRLaUtCVjdWbVdBU3lZa3hBbWZQaG9PUURrMTc2djUtbHhFRWZZd05kbThXZVdjTGwwdw?oc=5",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-07T17:12:28+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "The $7.6 Trillion Bet: Goldman Sachs Projects Bold AI Capex For 2026 — Four Key Drivers&nbsp;&nbsp;NDTV Profit"
+    },
+    {
+      "title": "美科技股台積電ADR飆高法人：台股攻42000點可期| 證券 - 中央社 CNA",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9QeGFsVldQWTZ3SWhFUFgzY1JTQXBUQ0xubUgxUFRaQlpNcUxEMHdIMlQxd3liY1dJNmF1TU16RW95Z2hzOGRZeTJNOEgtV3pRU1huQll3Qy0tcXhtRWc?oc=5",
+      "source": "TSMC News",
+      "published": "2026-05-07T08:25:00+08:00",
+      "tickers": [
+        "2330"
+      ],
+      "direction": null,
+      "summary": "美科技股台積電ADR飆高法人：台股攻42000點可期| 證券&nbsp;&nbsp;中央社 CNA"
+    },
+    {
+      "title": "台股周轉率飆高引「泡沫」疑慮？分析師蔡明翰：台積電本益比尚在均值 - TechNews 科技新報",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBDdjBKbW5wWXIzUnVSX3ZtVlpDZ2paeFpNaThqX3VJMnZ2OGFMYm1EdURKUGJhZDI1MkE4Umo2cWw2Wkd4by1MNDlySWpodGpjd2dMaG5YZ2pMOVpLbDMzTmI2WQ?oc=5",
+      "source": "TSMC News",
+      "published": "2026-05-07T08:22:03+08:00",
+      "tickers": [
+        "2330"
+      ],
+      "direction": null,
+      "summary": "台股周轉率飆高引「泡沫」疑慮？分析師蔡明翰：台積電本益比尚在均值&nbsp;&nbsp;TechNews 科技新報"
+    },
+    {
+      "title": "台指期夜盤再噴800點！台股今戰4萬2 聯發科、鴻海、聯電、華邦電誰能追？分析師示警：「這檔」只剩魚尾 - 旺得富理財網",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wQTBfbE5HeWl1REVaWjFPbmIxR3I5R1JwZXJrNjhFVVV5eXAtTUxDMlRieXZlZTk0amdDNDdwMWliUzhpT0NwRkJ0OGFnVG82TmlrU09VMDRFVHZCQ21UeFBmWmRITS1JMFE",
+      "source": "鴻海/Foxconn",
+      "published": "2026-05-07T08:15:21+08:00",
+      "tickers": [
+        "2454",
+        "2317"
+      ],
+      "direction": null,
+      "summary": "台指期夜盤再噴800點！台股今戰4萬2 聯發科、鴻海、聯電、華邦電誰能追？分析師示警：「這檔」只剩魚尾&nbsp;&nbsp;旺得富理財網"
+    }
+  ],
+  "revenue_pulse": [
+    {
+      "ticker": "2330",
+      "market": "tw",
+      "company_name": "台灣積體電路製造股份有限公司",
+      "q_year": 2025,
+      "q_period": "Q4",
+      "q_revenue": 3809054272.0,
+      "q_eps": 66.26,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": "11503",
+      "m_revenue": 415191699.0,
+      "q_count": 3,
+      "m_count": 2
+    },
+    {
+      "ticker": "GOOGL",
+      "market": "us",
+      "company_name": "Alphabet Inc.",
+      "q_year": 2026,
+      "q_period": "Q1",
+      "q_revenue": 109896000000.0,
+      "q_eps": 5.11,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 3,
+      "m_count": 0
+    },
+    {
+      "ticker": "NVDA",
+      "market": "us",
+      "company_name": "NVIDIA CORP",
+      "q_year": 2026,
+      "q_period": "Q3",
+      "q_revenue": 147811000000.0,
+      "q_eps": 3.14,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 1,
+      "m_count": 0
+    },
+    {
+      "ticker": "META",
+      "market": "us",
+      "company_name": "Meta Platforms, Inc.",
+      "q_year": 2026,
+      "q_period": "Q1",
+      "q_revenue": 56311000000.0,
+      "q_eps": 10.44,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 2,
+      "m_count": 0
+    },
+    {
+      "ticker": "MSFT",
+      "market": "us",
+      "company_name": "MICROSOFT CORP",
+      "q_year": 2026,
+      "q_period": "Q3",
+      "q_revenue": 241832000000.0,
+      "q_eps": 13.14,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 2,
+      "m_count": 0
+    },
+    {
+      "ticker": "2454",
+      "market": "tw",
+      "company_name": "聯發科技股份有限公司",
+      "q_year": 2025,
+      "q_period": "Q4",
+      "q_revenue": 595965682.0,
+      "q_eps": 66.16,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": "11503",
+      "m_revenue": 63219184.0,
+      "q_count": 3,
+      "m_count": 2
+    },
+    {
+      "ticker": "AAPL",
+      "market": "us",
+      "company_name": "Apple Inc.",
+      "q_year": 2026,
+      "q_period": "Q2",
+      "q_revenue": 254940000000.0,
+      "q_eps": 4.85,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 2,
+      "m_count": 0
+    },
+    {
+      "ticker": "2317",
+      "market": "tw",
+      "company_name": "鴻海精密工業股份有限公司",
+      "q_year": 2025,
+      "q_period": "Q4",
+      "q_revenue": 8103104763.0,
+      "q_eps": 13.61,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": "11503",
+      "m_revenue": 803737716.0,
+      "q_count": 3,
+      "m_count": 2
+    },
+    {
+      "ticker": "AMZN",
+      "market": "us",
+      "company_name": "AMAZON COM INC",
+      "q_year": 2026,
+      "q_period": "Q1",
+      "q_revenue": 181519000000.0,
+      "q_eps": 2.78,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 2,
+      "m_count": 0
+    },
+    {
+      "ticker": "TSLA",
+      "market": "us",
+      "company_name": "Tesla, Inc.",
+      "q_year": 2026,
+      "q_period": "Q1",
+      "q_revenue": 22387000000.0,
+      "q_eps": 0.13,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 2,
+      "m_count": 0
+    },
+    {
+      "ticker": "JPM",
+      "market": "us",
+      "company_name": "JPMORGAN CHASE & CO",
+      "q_year": 2014,
+      "q_period": "Q3",
+      "q_revenue": 71693000000.0,
+      "q_eps": 5.94,
+      "q_rev_yoy": null,
+      "m_year": null,
+      "m_period": null,
+      "m_revenue": null,
+      "q_count": 1,
+      "m_count": 0
+    }
+  ],
+  "internal_feed": [
+    {
+      "title": "Earnings call transcript: Evolus Inc Q1 2026 misses EPS forecast, stock rises",
+      "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-evolus-inc-q1-2026-misses-eps-forecast-stock-rises-93CH-4674885",
+      "source": "Investing.com",
+      "published": "2026-05-11T08:18:45+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Macquarie Group Limited 2026 Q4 - Results - Earnings Call Presentation",
+      "link": "https://seekingalpha.com/article/4902304-macquarie-group-limited-2026-q4-results-earnings-call-presentation?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:39:39+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Molina Healthcare, Inc. (MOH) Analyst/Investor Day - Slideshow",
+      "link": "https://seekingalpha.com/article/4902302-molina-healthcare-inc-moh-analyst-investor-day-slideshow?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:37:14+08:00",
+      "event_type": "news",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Telephone and Data Systems, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+      "link": "https://seekingalpha.com/article/4902300-telephone-and-data-systems-inc-2026-q1-results-earnings-call-presentation?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:30:03+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Alta Equipment Group Inc. 2026 Q1 - Results - Earnings Call Presentation",
+      "link": "https://seekingalpha.com/article/4902299-alta-equipment-group-inc-2026-q1-results-earnings-call-presentation?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:29:34+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Redwire Corporation 2026 Q1 - Results - Earnings Call Presentation",
+      "link": "https://seekingalpha.com/article/4902298-redwire-corporation-2026-q1-results-earnings-call-presentation?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-11T07:29:00+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "AI推半導體兆元時代提前4年　台積電領軍全球大擴產 - ETtoday財經雲",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xMDF2TGpBRm8wNmtLakZ4Y09OanhWcG1mNWdFTjVEemNpTHd4Yi05cUdlWGNCRGYzZFU0Rmc2Ymd3bkVXb2xBelUwOUJBNHRwQXfSAW5BVV95cUxNOXVBUWJlMkU5TWdCYjdKT1llclhhX1lUbG9GOGFiTEFLUG5NTnJVX3ZwWDdydHdiNzFWNGFlamJHY0gwRGFNYnlvYjdYVl9PV2tXWFdMWDFUSmRWQ0RjUWJ0eXdyRVo4N2VPT014QQ?oc=5",
+      "source": "TSMC News",
+      "published": "2026-05-11T07:24:00+08:00",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ],
+      "summary": "AI推半導體兆元時代提前4年 台積電領軍全球大擴產&nbsp;&nbsp;ETtoday財經雲"
+    },
+    {
+      "title": "【即時新聞】聯鈞4月營收年增45.5%，擴產帶動業績成長機會 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSmxST3RyOTExVGZsSzRXcE0zQ1NrM3ZQM3RuNUFSaXdnRUhMRDlpSW1MZ2t3cUpKLW5OYkZ0c0ZtUjBmNWhka29XMjFTR1NLcEl1RU1nRW5BLTBpdWdYRE9kX01MOEtrMzQtak1OdXdBTDY3Vlo0MFBWYmFaN2lsOEFpVEUwSHItVHllZDc5TWo?oc=5",
+      "source": "台股三大法人 (Google News)",
+      "published": "2026-05-11T06:09:35+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": "【即時新聞】聯鈞4月營收年增45.5%，擴產帶動業績成長機會&nbsp;&nbsp;CMoney投資網誌"
+    },
+    {
+      "title": "Chinese transcript of SCMP’s interview with KMT’s Cheng Li-wun",
+      "link": "https://www.scmp.com/plus/news/china/article/3352959/chinese-transcript-scmps-interview-kmts-cheng-li-wun",
+      "source": "南華早報 科技",
+      "published": "2026-05-11T05:00:06+08:00",
+      "event_type": "news",
+      "tickers": [],
+      "summary": "Cheng Li-wun is the chairwoman of Taiwan’s largest opposition party, the Kuomintang (KMT). In this wide-ranging interview, she discusses her vision for peace and cooperation between Taiwan and mainland China, her meeting in April with Commu"
+    },
+    {
+      "title": "先進封測「大擴產時代」來臨　業界上演廠房、設備搶購潮",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754533_ANS66DMG2NOPKK4BUACN8",
+      "source": "DIGITIMES 半導體",
+      "published": "2026-05-11T03:00:00+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "為卡位AI晶片先進封測市場缺口，半導體業界人士分析，台系封測代工（OSAT）業者相繼宣布加碼投資，瞄準擴充高階產能實為大勢所趨，料將推升2026年資本支出總金額，觸及新台幣4,000億元歷史新高。從投資分布來..."
+    },
+    {
+      "title": "Saylor signals another Bitcoin buy, after hinting at selling in Q1 earnings call",
+      "link": "https://cointelegraph.com/news/saylor-bitcoin-buy-sale-announcement",
+      "source": "Cointelegraph",
+      "published": "2026-05-11T02:40:00+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": "Strategy's average cost per Bitcoin is about $75,537, and its BTC investment is up about 7.6% at the time of this writing, according to data from the company."
+    },
+    {
+      "title": "Alarm.com Holdings, Inc. (ALRM) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZ3AzQ2ZpRmotZGFiRUlUbk96bnJaS29GUmN6dGlyS2NQMFR3Z0JqOFItRmF0SGlBcU5QZl9hYTNTajh4ajRYNVNOcnhoUmlXanI0RHBNR2RTam1RU1N2UDdhV1BPNm90c29lSHFVX01UR0pNbnp6aFdnaXhBRWlVM3liY3dXQlA3TjlENGRRWVdLZEVXckw3Y1JrV0doZnVZREFV",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "published": "2026-05-10T21:57:52+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": "Alarm.com Holdings, Inc. (ALRM) Q1 2026 Earnings Call Transcript&nbsp;&nbsp;Seeking Alpha"
+    },
+    {
+      "title": "What Coherent (COHR)'s NVIDIA Alliance and AI Wafer Expansion Means For Shareholders - simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbGl6elMxMjBCbTQzbUV3OGd3cHJlOTBUVnZKZkhDZTJQbC0xeHlwMGFSV3RtTHVhbnpFdUlLS2FHNl9WNTRfRHFqbmRnaVBIT2JXa3Y3VUFDVjFSTnhWaTJGRUNmYzR0V0lIcHptV3k1RGZoMW95ODNtNUpvQWlxOUljT1JrVzF0Z1dlSFJaRm1PeTB4dlFnQ2t3QzZhWDRmMlNHdjljekMzUm50NGlBcTNzWlkwV1pjc1ZlTTl6NGVUUDjSAcMBQVVfeXFMT2xpenpTMTIwQm00M21Fdzhnd3ByZTkwVFZ2SmZIQ2UyUGwtMXh5cDBhUld0bUx1YW56RXVJS0thRzZfVjU0X0Rxam5kZ2lQSE9iV2t2N1VBQ1YxUk54VmkyRkVDZmM0dFdJSHB6bVd5NURmaDFveTgzbTVKb0FpcTlJY09Sa1cxdGdXZUhSWkZtT3kweHZRZ0Nrd0M2YVg0ZjJTR3Y5Y3pDM1JudDRpQXEzc1pZMFdaY3NWZU05ejRlVFA4",
+      "source": "半導體設備與產能",
+      "published": "2026-05-10T13:03:15+08:00",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ],
+      "summary": "What Coherent (COHR)'s NVIDIA Alliance and AI Wafer Expansion Means For Shareholders&nbsp;&nbsp;simplywall.st"
+    },
+    {
+      "title": "Adam Khoo: AI Capex stocks may face 50 percent drawdown soon - Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaU9DS0dCc1IyMDBTU29FRkRNTE9seWZlM1RjcndsT1l6OTA2NGZ3UDM3VjdUeEwxU2dqSGxKaC1GNXM1NjVoMkFXMjY4U2NDcW1YaDFlRmNzbS1BMjFZVDBaVVZYSjU5U19YeUhSY2FTVGJwa3lOWGYwSVJTcDF3d3RBUDcyVU8zSFg3OUJB",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-10T13:00:09+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "Adam Khoo: AI Capex stocks may face 50 percent drawdown soon&nbsp;&nbsp;Traders Union"
+    },
+    {
+      "title": "中租法說12日登場聚焦大陸資產品質與東協動能- 要聞 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92SS1TaEItenZXdDJfbl9lNFZLYXB6cFZCRW1PQ1M1Vk1vSWlESExyZXEwa1NTZF9GZDlVMm5WaWhSTW9nTmxQQ1RVT29KTmVDN1pUNDlrSnVSZUFGVzJR",
+      "source": "工商時報 財經",
+      "published": "2026-05-10T07:54:00+08:00",
+      "event_type": "news",
+      "tickers": [],
+      "summary": "中租法說12日登場聚焦大陸資產品質與東協動能- 要聞&nbsp;&nbsp;工商時報"
+    },
+    {
+      "title": "【即時新聞】台積電規劃2026年資本支出上調至520-560億美元，強化AI供應鏈樞紐地位 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZXM0QTdDNjNHeV80OU90S1hoNTluckRCR1NhU000eXBVNjc1X1Jhb3Y0c25HaXBMZ3R1Mk10b0F1SVFoQ2VlakVNdUw5dm1JZHVZNkptdW40QmoxSHFqYVBFc3FnWUtYZ1dGU0NWMUtEOGphVkl5NU9INzJPSG5sQi10RWt4dVI4R1BFR3dCd0o?oc=5",
+      "source": "TSMC News",
+      "published": "2026-05-10T05:59:09+08:00",
+      "event_type": "capex",
+      "tickers": [
+        "2330"
+      ],
+      "summary": "【即時新聞】台積電規劃2026年資本支出上調至520-560億美元，強化AI供應鏈樞紐地位&nbsp;&nbsp;CMoney投資網誌"
+    },
+    {
+      "title": "I Traced The AI Capex, And Found 6 Profit Pools (One Is An Asymmetric Bet) (SP500) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdXJGa1I0UHh2Z3RfTUVxVm83RkNfWDFUNnNKaFpuVDNrMjlWWVJDSjlCZERQb0dpVkxCbjVEZDNMUURabHhlb2RKbE5CWEcwZVZOZTdKX0JVM2IwWjQyLWo2TEQ2ZVJQd3dpQnhPeVNFY2U2NXBrLWRMWnRxdVB4ejNRWUQzX2FIck5vSnU2cW9oSGg1THdSOUVPSUkxNU1iYU1BR0EyQ2NBbWlLd3pZ",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-09T20:30:00+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "I Traced The AI Capex, And Found 6 Profit Pools (One Is An Asymmetric Bet) (SP500)&nbsp;&nbsp;Seeking Alpha"
+    },
+    {
+      "title": "慧榮：AI儲存需求續旺　NAND Flash缺到2028年",
+      "link": "https://www.cna.com.tw/news/afe/202605090180.aspx",
+      "source": "中央社 財經",
+      "published": "2026-05-09T18:11:57+08:00",
+      "event_type": "capex",
+      "tickers": [
+        "AAPL"
+      ],
+      "summary": "（中央社記者張建中台北9日電）記憶體控制晶片廠慧榮總經理苟嘉章今天表示，今年人工智慧（AI）推論投資超越訓練投資，將帶動儲存需求持續增長，預期儲存型快閃記憶體（NAND Flash）可能一路缺貨到2028年，今年下半年價格應可一路往上揚升。"
+    },
+    {
+      "title": "North American CSPs raise 2026 AI CapEx targets amid surging demand - Communications Today",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTGJCWFBSaWhQWUp0cWJWTzVOUnF1aGFWRmZCVlRkbkpCMURmcWFxbHVuNHVNZjBaY1FRQ3pMWDdoalRNRnFDbjlNbHdLR0QxOUU5NzU1YUhNWm8zdzk3Z01DNkdfZk9NZVZMcjZWVE8yYjdrTzFVbFdPWWlINGdtV1REcEVkWjlJeFlINWFsUnYzekRVLXV2aGdBaDBuU2VNY3BlaUJtaWNmQQ",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-09T14:57:31+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "North American CSPs raise 2026 AI CapEx targets amid surging demand&nbsp;&nbsp;Communications Today"
+    },
+    {
+      "title": "台股闖關4萬2、玉山金法說、聯發科關禁閉 本周大事回顧 - Yahoo股市",
+      "link": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxPRE95VkliSVJlUHhST3NRdVdLdTdpTks0cVpMS3dJcng2UDhmejFpWVNMRjJha1BqbHFzZnh2cnlEYS1VSmJaZjVXLWNrYi1yTERGd041cFUxeVhiOU9hYnhBOXZpOHdGLW1lU3Z3UFJjZlFaektvb0VtakZIS2R1RHpxLTZNYjExNGxiT2lVQnVOM0lfYmh1M1lPelBBcVpzd2VUaXV1LTh2UW9EVnBxeHJnbXRDWUo2Y1RQaDlCTXk2dUkxU1Q3cVZuRWVXOHdZd2hpZ2xLNXhTUEZCVkFHX05hYnBkUF93X0FNN2JrYk5LSklDR0hYSnZ4OUhjM29mMnFvVU1aMnBBTktocWVLV0tQSE1tWWVxN1d5eFh2cm9ob21tNkxpdG9PYy0xekRIN2FWdlRPSktFbFU2Rmt5YXQ3SzRKMFJvNmNuWm1DVkdCbWtCd1Fkc3EyVE1LUnJIUWVDb2dNUkVLZw",
+      "source": "聯發科/MediaTek",
+      "published": "2026-05-09T11:42:16+08:00",
+      "event_type": "news",
+      "tickers": [
+        "2454"
+      ],
+      "summary": "台股闖關4萬2、玉山金法說、聯發科關禁閉 本周大事回顧&nbsp;&nbsp;Yahoo股市"
+    },
+    {
+      "title": "台灣連64個月「生不如死」專家：缺工恐迫使台積電加速赴美擴廠| 科技產業| 產經 - 聯合新聞網",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE52SDUxY0N4U1JQcml0YkxoVHZSUXQ0QWFIbWxBbmVtOTlrYV9oQ1VZdzM2dVk3UXRsS3VmWGd4NTgxUC14TVFoVVhYWHEtV0ZR",
+      "source": "TSMC News",
+      "published": "2026-05-09T07:57:14+08:00",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ],
+      "summary": "台灣連64個月「生不如死」專家：缺工恐迫使台積電加速赴美擴廠| 科技產業| 產經&nbsp;&nbsp;聯合新聞網"
+    },
+    {
+      "title": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNaWU5cERTYU1aZzFFOXQtWFZubmJKbEZqVGtGXzNWTVJIemRCVGppYVBIbHhIdVlkLV9xRktCSTBjTmFxaDZlRDJVS1RjWlEyT1dYbjd3LVpBWlcwZHVUOVV1eEszOVJJQUxMMllmQ1NvLUxUeXdJNHZIUnVsdzhlT21BYkJUTVRHN0Uxemx4cjRoMmdYMDl2YTRZOGo0VkE0bW1wdmtKMVZTTjgzMWU5LVFIamdnUFU5TjBJZW9BcW9sLXRVMHI5VEM5cW1mdHhCX2hEWTFMdHRCbGV0enFhUmR2Q3FPbEVBYWE5QWJPMXV3Wm54",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-09T01:34:53+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says&nbsp;&nbsp;MSN"
+    },
+    {
+      "title": "AI Capex Squeeze: MSFT, AMZN, GOOGL Cash Burn Mounts - NAI500",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTi0ybVBzeEpidjFxYVJKeHktM2NaUmd1RHVEdDNmR19mUjVkb3ctYk9jSENSLU43SkM1dFhPUkpobjZCdFU2TVBLR01vX3ZzcFNyTF80OV94SFBYc0ZadUIzeDZ2VHlfam8xVk9TZUlrR19ERzdqZ01ZS0hoTXdvSlh3blJZalJMY3c",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-09T00:52:45+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "AI Capex Squeeze: MSFT, AMZN, GOOGL Cash Burn Mounts&nbsp;&nbsp;NAI500"
+    },
+    {
+      "title": "Amazon Stock's Real 2026 Test: Can Logistics Pay for the AI Capex Boom? - techi.com",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9pbVNHUUhyUUZCbUFUYjVlNUdBRklsUVFwSzJUZXJ1dmZVek15WElROFZ3djluNmdYSEdoLXNKdHE0ZlVod0Q4eHhxNjRiQnNmWmo1Rk4tSnp3cmNaUkxUU1o1MWUxZkRSSWZ3?oc=5",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-09T00:39:30+08:00",
+      "event_type": "capex",
+      "tickers": [
+        "AMZN"
+      ],
+      "summary": "Amazon Stock's Real 2026 Test: Can Logistics Pay for the AI Capex Boom?&nbsp;&nbsp;techi.com"
+    },
+    {
+      "title": "Tesla's Real 2026 Problem: AI Capex Eats the EV Cash Machine - techi.com",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qMlFGckE1V19nNVFzQ1FkSjB5Y2FKLXhMa3pZMGpyNjQyY0t6UjBIVVpJOHVjQVp2ZVpLekV0bEJEVHVSRDk5RU9Gb1NUU01xUDlZcXJ3TkNVNmtudlFtVDlzWQ?oc=5",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-09T00:07:01+08:00",
+      "event_type": "capex",
+      "tickers": [
+        "TSLA"
+      ],
+      "summary": "Tesla's Real 2026 Problem: AI Capex Eats the EV Cash Machine&nbsp;&nbsp;techi.com"
+    },
+    {
+      "title": "Why $700 billion in AI capex cannot rescue tech stocks from the next leg - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRHU2UGhuOFVUZ3lYZU9Fb1lBaG1qNDhPbmNvcHVmTjJKMEQyUGxaYWhjT2FWZGJzbG5CMVRBVzRJMlJlbV9uckdIYkJGbktPaHRkS2trQVBLWERqcURLa3paam5Sejc5R2g3YnRZRkpWSDdhSVZ5QXVDUXloU1BPX3lqcW1LNFJ6dWstWnl0NXBjWWFSbkczTzlDaklDbjdVdVhWNEM2NjlTRDZWRmp0SDVROERpSi10UXd4dHN4LWwzb2tmRURGLUh5SGdSNXNzNzlDSDJ6LS1LLVRuSjlj?oc=5",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-08T19:42:02+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "Why $700 billion in AI capex cannot rescue tech stocks from the next leg&nbsp;&nbsp;MSN"
+    },
+    {
+      "title": "Earnings call transcript: Full House Resorts Q1 2026 misses earnings forecasts",
+      "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-full-house-resorts-q1-2026-misses-earnings-forecasts-93CH-4670684",
+      "source": "Investing.com",
+      "published": "2026-05-08T08:46:52+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Earnings call transcript: BILL Holdings Q3 2026 beats expectations",
+      "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-bill-holdings-q3-2026-beats-expectations-93CH-4670682",
+      "source": "Investing.com",
+      "published": "2026-05-08T08:44:48+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale - simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWlE2X3lZRm5fZndLTEprOWJlNzFOREZoVHNsdWF1UDB2WEVsZzFqc1BRVTI4QUdjRjFBaXhXWmJ5amFCUHlrVV9ZMnRGWlpWb0wzYVFhR1V6d21CUzdVbDhEWk9UZzFGODJZYWpub183TFduaUN6c0U5Tzlsa0ZGOFMyVGVuTkNMV1pOUDBTME5mcVBDNVBMcUpZRDdtOEtyTm8yUFh5RjdfQTd2NWxWdnVqR25Pay1ZMFctSFhLRkhNNmhJdUcwWNIBzgFBVV95cUxPQlgxSDd4MHU3b2dsTkl4T1lLakRvWEszQlB6SFBGZ0F3QnllV0hUNWlDbEZBSnJlZzhvZjVWTFc2MklBQzZ0WnkyeDVqR1NhSDNweTFsdXZzNWk5QTFkU3dwSmRDRWZCNjI5T1pjS1VqN1BzSVdFUUo4NUQxUlNqZWQzS0c0NEVjTUhjbFFCQkZrRnlQWk1HY095dzljRGZRU0hySzkxQkpYU0F2ZUJrX0J2SWtEVVBhdXFSa2prMzBxSkNnaTFYbWlfbmNrZw",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-08T04:01:31+08:00",
+      "event_type": "capex",
+      "tickers": [
+        "META"
+      ],
+      "summary": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale&nbsp;&nbsp;simplywall.st"
+    },
+    {
+      "title": "OpenAI's $18B Broadcom Snag Stokes AI Capex Bubble Fears - BeInCrypto",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9GZzkxdnB3NWNfbWQyZ3V4Y3pSbmJHSGQzaF8zQmZZOVlCZkJ2N3pPWGhkazNLc21Ua3VfTUo2cnRqU0Eya1NpMlJOQ1dfa01OR09Ra2Z5WGpoM05lZGdxbVlOMkhSaVZna0tnVldadUNLVFU",
+      "source": "AI 產業化與投資信號",
+      "published": "2026-05-08T03:04:00+08:00",
+      "event_type": "capex",
+      "tickers": [],
+      "summary": "OpenAI's $18B Broadcom Snag Stokes AI Capex Bubble Fears&nbsp;&nbsp;BeInCrypto"
+    }
+  ],
   "filing_excerpts": [
     {
       "ticker": "AVGO",
@@ -1762,7 +2828,7 @@
   "top_tickers_7d": [
     {
       "ticker": "2330",
-      "mentions": 158,
+      "mentions": 156,
       "last_seen": "2026-05-11"
     },
     {
@@ -1851,11 +2917,6 @@
       "last_seen": "2026-05-11"
     },
     {
-      "ticker": "2881",
-      "mentions": 5,
-      "last_seen": "2026-05-11"
-    },
-    {
       "ticker": "5060",
       "mentions": 5,
       "last_seen": "2026-05-10"
@@ -1892,6 +2953,11 @@
     },
     {
       "ticker": "0050",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2881",
       "mentions": 3,
       "last_seen": "2026-05-11"
     },
@@ -2902,10 +3968,10 @@
     },
     {
       "ticker": "2330",
-      "mentions_7d": 158,
-      "mentions_prior_7d": 142,
-      "delta": 16,
-      "pct_change": 11.3
+      "mentions_7d": 156,
+      "mentions_prior_7d": 144,
+      "delta": 12,
+      "pct_change": 8.3
     },
     {
       "ticker": "2454",
@@ -2948,13 +4014,6 @@
       "mentions_prior_7d": 0,
       "delta": 4,
       "pct_change": 100.0
-    },
-    {
-      "ticker": "2881",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 2,
-      "delta": 3,
-      "pct_change": 150.0
     },
     {
       "ticker": "1980",
@@ -3021,6 +4080,13 @@
     },
     {
       "ticker": "1024",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 1,
+      "delta": 2,
+      "pct_change": 200.0
+    },
+    {
+      "ticker": "2040",
       "mentions_7d": 3,
       "mentions_prior_7d": 1,
       "delta": 2,

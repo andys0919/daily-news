@@ -1028,6 +1028,269 @@ def _today_takeaways(
     return out[:3]
 
 
+ANALYST_KEYWORDS = (
+    # English broker/analyst phrases
+    "raises target", "raised target", "lowers target", "lowered target",
+    "lifts target", "lifted target", "cuts target", "cut target",
+    "raises price target", "lowers price target", "boosts price target",
+    "upgrades to", "upgrade to", "downgrades to", "downgrade to",
+    "initiates coverage", "initiates with", "reiterates",
+    "outperform", "underperform", "overweight", "underweight",
+    "buy rating", "sell rating", "hold rating", "neutral rating",
+    "analyst", "analysts",
+    # Major broker names
+    "goldman sachs", "morgan stanley", "jpmorgan", "jp morgan", "citi ",
+    "bofa", "bank of america", "wells fargo", "deutsche bank",
+    "ubs ", "barclays", "jefferies", "bernstein", "cowen", "needham",
+    "wedbush", "piper sandler", "truist", "mizuho", "macquarie",
+    "nomura", "daiwa", "ms&co", "kiwoom", "rbc capital", "leerink",
+    "evercore", "stifel", "raymond james", "oppenheimer", "bmo",
+    "td cowen", "guggenheim", "loop capital",
+    # Chinese broker / analyst terms
+    "法人", "外資", "投信", "自營商", "目標價", "分析師",
+    "高盛", "摩根士丹利", "摩根大通", "摩根", "瑞銀", "瑞信",
+    "美銀", "野村", "大和", "野村證券", "群益", "凱基",
+    "中信", "永豐", "元大", "華南", "兆豐", "中華信評",
+)
+
+
+def _analyst_views(db_path: Path, since_iso: str, limit: int = 80) -> list[dict]:
+    """Surface analyst / broker commentary from articles.
+
+    High-precision: requires title contain at least one analyst phrase or broker name.
+    """
+    conn = _connect(db_path)
+    try:
+        rows = conn.execute(
+            """
+            SELECT title, link, source, category, published, summary,
+                   tickers_json, companies_json, event_type
+            FROM articles
+            WHERE published >= ?
+            ORDER BY published DESC
+            LIMIT 4000
+            """,
+            (since_iso,),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+    finally:
+        conn.close()
+    out: list[dict] = []
+    seen: set[str] = set()
+    for row in rows:
+        title = (row["title"] or "").strip()
+        if not title:
+            continue
+        lower = title.lower()
+        # Skip product reviews / lifestyle hits
+        if any(n in lower for n in ("gaming pc", "best laptop", "may the 4th", "best deal", "amazon.com:")):
+            continue
+        if not any(kw.lower() in lower for kw in ANALYST_KEYWORDS):
+            continue
+        # Dedupe
+        norm = lower.split(" - ")[0].strip()
+        if norm in seen:
+            continue
+        seen.add(norm)
+        direction = _classify_guidance(title)
+        out.append({
+            "title": title,
+            "link": row["link"],
+            "source": row["source"],
+            "published": row["published"],
+            "tickers": _parse_tickers(row["tickers_json"]),
+            "direction": direction,
+            "summary": (row["summary"] or "")[:240],
+        })
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _revenue_pulse(db_path: Path, limit: int = 24) -> list[dict]:
+    """Latest revenue snapshot per ticker with simple trend.
+
+    Pulls deduped quarterly + monthly latest rows for top tickers by article count.
+    """
+    conn = _connect(db_path)
+    try:
+        # Get tickers ranked by recent article volume — these are the ones users care about
+        active = conn.execute(
+            """
+            SELECT tickers_json FROM articles
+            WHERE tickers_json IS NOT NULL AND tickers_json != '[]'
+              AND published >= date('now', '-30 days')
+            LIMIT 20000
+            """
+        ).fetchall()
+    except sqlite3.OperationalError:
+        active = []
+    counter: Counter[str] = Counter()
+    for row in active:
+        for t in _parse_tickers(row["tickers_json"]):
+            counter[t] += 1
+    top_tickers = [t for t, _ in counter.most_common(40)]
+
+    out: list[dict] = []
+    try:
+        for ticker in top_tickers:
+            market = _infer_market(ticker)
+            # Latest quarter (deduped)
+            try:
+                q = conn.execute(
+                    """
+                    SELECT fiscal_year, fiscal_period,
+                           MAX(revenue) AS revenue,
+                           MAX(eps_diluted) AS eps,
+                           MAX(operating_income) AS op_income,
+                           MAX(net_income) AS net_income,
+                           MAX(company_name) AS company_name
+                    FROM financial_reports
+                    WHERE UPPER(ticker)=UPPER(?) AND market=?
+                      AND fiscal_period IN ('Q1','Q2','Q3','Q4','FY')
+                    GROUP BY fiscal_year, fiscal_period
+                    ORDER BY fiscal_year DESC,
+                             CASE fiscal_period
+                                WHEN 'Q4' THEN 4 WHEN 'Q3' THEN 3
+                                WHEN 'Q2' THEN 2 WHEN 'Q1' THEN 1
+                                WHEN 'FY' THEN 5 ELSE 0 END DESC
+                    LIMIT 6
+                    """,
+                    (ticker, market),
+                ).fetchall()
+                qs = [dict(r) for r in q]
+            except sqlite3.OperationalError:
+                qs = []
+
+            # Latest monthly (TW only)
+            try:
+                m = conn.execute(
+                    """
+                    SELECT fiscal_year, fiscal_period, MAX(monthly_revenue) AS mr,
+                           MAX(company_name) AS company_name
+                    FROM financial_reports
+                    WHERE UPPER(ticker)=UPPER(?) AND market='tw' AND form_type='TWSE-MONTHLY'
+                    GROUP BY fiscal_year, fiscal_period
+                    ORDER BY fiscal_year DESC, fiscal_period DESC
+                    LIMIT 6
+                    """,
+                    (ticker,),
+                ).fetchall()
+                ms = [dict(r) for r in m]
+            except sqlite3.OperationalError:
+                ms = []
+
+            if not qs and not ms:
+                continue
+
+            latest_q = qs[0] if qs else None
+            prev_q_yoy = None
+            if latest_q and len(qs) > 1:
+                for p in qs[1:]:
+                    if p["fiscal_period"] == latest_q["fiscal_period"] and int(p["fiscal_year"]) == int(latest_q["fiscal_year"]) - 1:
+                        prev_q_yoy = p
+                        break
+            rev_yoy = None
+            if latest_q and prev_q_yoy and prev_q_yoy["revenue"] and latest_q["revenue"]:
+                rev_yoy = (latest_q["revenue"] - prev_q_yoy["revenue"]) / abs(prev_q_yoy["revenue"]) * 100
+
+            latest_m = ms[0] if ms else None
+            company_name = (latest_q or latest_m or {}).get("company_name")
+
+            out.append({
+                "ticker": ticker.upper(),
+                "market": market,
+                "company_name": company_name,
+                "q_year": latest_q["fiscal_year"] if latest_q else None,
+                "q_period": latest_q["fiscal_period"] if latest_q else None,
+                "q_revenue": latest_q["revenue"] if latest_q else None,
+                "q_eps": latest_q["eps"] if latest_q else None,
+                "q_rev_yoy": round(rev_yoy, 1) if rev_yoy is not None else None,
+                "m_year": latest_m["fiscal_year"] if latest_m else None,
+                "m_period": latest_m["fiscal_period"] if latest_m else None,
+                "m_revenue": latest_m["mr"] if latest_m else None,
+                "q_count": len(qs),
+                "m_count": len(ms),
+            })
+            if len(out) >= limit:
+                break
+    finally:
+        conn.close()
+    return out
+
+
+def _internal_data_feed(db_path: Path, since_iso: str, limit: int = 30) -> list[dict]:
+    """Surface internal/company-source content: filings + IR + capex.
+
+    Strict — no event_type=policy (geopolitics floods that bucket). Require either
+    event_type IN (capex, filing) OR title has IR/法說/transcript/capex phrase
+    AND has at least one mapped ticker.
+    """
+    conn = _connect(db_path)
+    try:
+        rows = conn.execute(
+            """
+            SELECT title, link, source, published, summary, tickers_json, event_type
+            FROM articles
+            WHERE published >= ?
+              AND (event_type IN ('capex', 'filing')
+                   OR title LIKE '%法說%' OR title LIKE '%法說會%'
+                   OR title LIKE '%重大訊息%' OR title LIKE '%重訊%'
+                   OR title LIKE '%股東會%' OR title LIKE '%股東常會%'
+                   OR title LIKE '%investor day%' OR title LIKE '%earnings call%'
+                   OR title LIKE '%conference call%' OR title LIKE '%transcript%'
+                   OR title LIKE '%資本支出%' OR title LIKE '%擴產%' OR title LIKE '%擴廠%'
+                   OR title LIKE '%capital expenditure%' OR title LIKE '%capex%'
+                   OR title LIKE '%shareholder%' OR title LIKE '%annual meeting%')
+            ORDER BY published DESC
+            LIMIT 400
+            """,
+            (since_iso,),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+    finally:
+        conn.close()
+    out: list[dict] = []
+    seen: set[str] = set()
+    POLITICS_KW = ("trump", "tehran", "iran", "putin", "xi-trump", "geopolitic",
+                   "tanker", "ceasefire", "middle east", "white house",
+                   "中東", "戰爭", "選舉")
+    for row in rows:
+        title = (row["title"] or "").strip()
+        if not title:
+            continue
+        lower = title.lower()
+        src = (row["source"] or "").lower()
+        if any(n in src for n in ("arxiv", "lobsters", "servethehome", "reddit r/", "hackernews")):
+            continue
+        if any(kw in lower for kw in POLITICS_KW):
+            continue
+        tickers = _parse_tickers(row["tickers_json"])
+        # Internal data should map to a ticker (real corporate news)
+        if not tickers:
+            # Allow event_type=filing/capex without tickers only if title is unambiguously corporate
+            if not any(kw in lower for kw in ("法說", "earnings call", "investor day", "transcript", "capex", "資本支出", "擴產", "重大訊息")):
+                continue
+        norm = lower.split(" - ")[0].strip()
+        if norm in seen:
+            continue
+        seen.add(norm)
+        out.append({
+            "title": title,
+            "link": row["link"],
+            "source": row["source"],
+            "published": row["published"],
+            "event_type": row["event_type"],
+            "tickers": tickers,
+            "summary": (row["summary"] or "")[:240],
+        })
+        if len(out) >= limit:
+            break
+    return out
+
+
 def _events_calendar(articles: list[dict]) -> list[dict]:
     """Build event entries from earnings / capex / policy / filing tagged articles."""
     events = []
@@ -1117,6 +1380,10 @@ def export_all(
     per_ticker_guidance = _per_ticker_guidance(guidance_feed)
     takeaways = _today_takeaways(guidance_up, guidance_down, fundamentals, health_by_ticker)
 
+    analyst_views = _analyst_views(db_path, since_30, limit=60)
+    revenue_pulse = _revenue_pulse(db_path, limit=24)
+    internal_feed = _internal_data_feed(db_path, since_30, limit=30)
+
     # Attach health + guidance count to each fundamentals entry for the UI
     for f in fundamentals:
         f["health"] = health_by_ticker.get(f["ticker"], {"tier": "unknown", "label": "—", "summary": "", "icon": "⚫"})
@@ -1148,6 +1415,9 @@ def export_all(
         "guidance_up": guidance_up[:25],
         "guidance_down": guidance_down[:25],
         "guidance_recent": guidance_feed[:40],
+        "analyst_views": analyst_views,
+        "revenue_pulse": revenue_pulse,
+        "internal_feed": internal_feed,
         "filing_excerpts": filing_excerpts[:10],
         "event_clusters": clusters,
         "top_transcripts": top_transcripts,
