@@ -1,0 +1,554 @@
+{
+  "ticker": "2012",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2012",
+    "company_name": "春雨",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2012",
+      "company_name": "春雨",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 8307669.0,
+      "monthly_revenue": null,
+      "net_income": 121580.0,
+      "operating_income": 299089.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 0.2,
+      "operating_cash_flow": 808536.0,
+      "capex": 348947.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業收入合計\", \"8,307,669\", \"100.00\", \"9,165,105\", \"100.00\"], [\"營業成本合計\", \"7,163,937\", \"86.23\", \"7,844,314\", \"85.59\"], [\"營業毛利（毛損）\", \"1,143,732\", \"13.77\", \"1,320,791\", \"14.41\"], [\"營業毛利（毛損）淨額\", \"1,143,732\", \"13.77\", \"1,320,791\", \"14.41\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"256,726\", \"3.09\", \"315,094\", \"3.44\"], [\"　　管理費用\", \"504,116\", \"6.07\", \"486,674\", \"5.31\"], [\"　　研究發展費用\", \"74,076\", \"0.89\", \"68,543\", \"0.75\"], [\"　　預期信用減損損失（利益）\", \"9,725\", \"0.12\", \"804\", \"0.01\"], [\"　營業費用合計\", \"844,643\", \"10.17\", \"871,115\", \"9.50\"], [\"營業利益（損失）\", \"299,089\", \"3.60\", \"449,676\", \"4.91\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"21,557\", \"0.26\", \"38,194\", \"0.42\"], [\"　　其他收入\", \"64,767\", \"0.78\", \"43,531\", \"0.47\"], [\"　　其他利益及損失淨額\", \"-44,118\", \"-0.53\", \"96,653\", \"1.05\"], [\"　　財務成本淨額\", \"91,366\", \"1.10\", \"99,532\", \"1.09\"], [\"　營業外收入及支出合計\", \"-49,160\", \"-0.59\", \"78,846\", \"0.86\"], [\"稅前淨利（淨損）\", \"249,929\", \"3.01\", \"528,522\", \"5.77\"], [\"所得稅費用（利益）合計\", \"128,349\", \"1.54\", \"127,491\", \"1.39\"], [\"繼續營業單位本期淨利（淨損）\", \"121,580\", \"1.46\", \"401,031\", \"4.38\"], [\"本期淨利（淨損）\", \"121,580\", \"1.46\", \"401,031\", \"4.38\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"-17,780\", \"-0.21\", \"10,346\", \"0.11\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"-55,143\", \"-0.66\", \"-161,248\", \"-1.76\"], [\"　　　與不重分類之項目相關之所得稅\", \"-3,681\", \"-0.04\", \"2,124\", \"0.02\"], [\"　不重分類至損益之項目：\", \"-69,242\", \"-0.83\", \"-153,026\", \"-1.67\"], [\"　　　國外營運機構財務報表換算之兌換差額\", \"-151,506\", \"-1.82\", \"141,163\", \"1.54\"], [\"　　　與可能重分類之項目相關之所得稅\", \"-25,300\", \"-0.30\", \"11,104\", \"0.12\"], [\"　後續可能重分類至損益之項目：\", \"-126,206\", \"-1.52\", \"130,059\", \"1.42\"], [\"　其他綜合損益（淨額）\", \"-195,448\", \"-2.35\", \"-22,967\", \"-0.25\"], [\"本期綜合損益總額\", \"-73,868\", \"-0.89\", \"378,064\", \"4.13\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利∕損）\", \"55,298\", \"0.67\", \"287,146\", \"3.13\"], [\"　非控制權益（淨利∕損）\", \"66,282\", \"0.80\", \"113,885\", \"1.24\"], [\"　母公司業主（綜合損益）\", \"-133,243\", \"-1.60\", \"245,928\", \"2.68\"], [\"　非控制權益（綜合損益）\", \"59,375\", \"0.71\", \"132,136\", \"1.44\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"0.20\", \"\", \"1.03\", \"\"], [\"　基本每股盈餘\", \"0.20\", \"\", \"1.03\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"0.18\", \"\", \"0.93\", \"\"], [\"　稀釋每股盈餘\", \"0.18\", \"\", \"0.93\", \"\"]], \"season\": \"4\", \"urlList\": [{\"name\": \"XBRL資訊平台\", \"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2012&SYEAR=2025&SSEASON=4&REPORT_ID=C\"}, {\"name\": \"電子書查詢\", \"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2012&year=114&mtype=A\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}, {\"main\": \"113年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"春雨\"}, \"datetime\": \"115/03/30 21:47:56\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"724,463\", \"6.27\", \"1,390,365\", \"11.47\"], [\"　　　透過損益按公允價值衡量之金融資產－流動\", \"187,757\", \"1.63\", \"210,550\", \"1.74\"], [\"　　　按攤銷後成本衡量之金融資產－流動\", \"431,129\", \"3.73\", \"356,006\", \"2.94\"], [\"　　　應收票據淨額\", \"381,936\", \"3.31\", \"418,851\", \"3.46\"], [\"　　　應收帳款淨額\", \"1,353,819\", \"11.72\", \"1,532,034\", \"12.64\"], [\"　　　其他應收款淨額\", \"19,524\", \"0.17\", \"22,368\", \"0.18\"], [\"　　　本期所得稅資產\", \"24,380\", \"0.21\", \"4,791\", \"0.04\"], [\"　　　存貨\", \"3,732,364\", \"32.32\", \"3,770,253\", \"31.10\"], [\"　　　預付款項\", \"69,132\", \"0.60\", \"400,145\", \"3.30\"], [\"　　　待出售非流動資產（或處分群組）淨額\", \"28,377\", \"0.25\", \"28,377\", \"0.23\"], [\"　　流動資產合計\", \"6,952,881\", \"60.21\", \"8,133,740\", \"67.10\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　透過損益按公允價值衡量之金融資產－非流動\", \"247,800\", \"2.15\", \"220,900\", \"1.82\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－非流動\", \"822,795\", \"7.13\", \"619,463\", \"5.11\"], [\"　　　不動產、廠房及設備\", \"2,841,872\", \"24.61\", \"2,719,517\", \"22.43\"], [\"　　　使用權資產\", \"364,506\", \"3.16\", \"189,942\", \"1.57\"], [\"　　　無形資產\", \"5,178\", \"0.04\", \"5,072\", \"0.04\"], [\"　　　遞延所得稅資產\", \"219,400\", \"1.90\", \"185,552\", \"1.53\"], [\"　　　其他非流動資產\", \"92,495\", \"0.80\", \"48,396\", \"0.40\"], [\"　　非流動資產合計\", \"4,594,046\", \"39.79\", \"3,988,842\", \"32.90\"], [\"　資產總額\", \"11,546,927\", \"100.00\", \"12,122,582\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"1,574,866\", \"13.64\", \"260,877\", \"2.15\"], [\"　　　應付短期票券\", \"49,979\", \"0.43\", \"0\", \"0.00\"], [\"　　　合約負債－流動\", \"448,611\", \"3.89\", \"493,416\", \"4.07\"], [\"　　　應付票據\", \"67\", \"0.00\", \"125\", \"0.00\"], [\"　　　應付帳款\", \"438,103\", \"3.79\", \"517,483\", \"4.27\"], [\"　　　其他應付款\", \"369,024\", \"3.20\", \"384,466\", \"3.17\"], [\"　　　本期所得稅負債\", \"21,937\", \"0.19\", \"16,220\", \"0.13\"], [\"　　　負債準備－流動\", \"4,210\", \"0.04\", \"7,002\", \"0.06\"], [\"　　　租賃負債－流動\", \"105,847\", \"0.92\", \"29,378\", \"0.24\"], [\"　　　其他流動負債\", \"18,832\", \"0.16\", \"1,615,568\", \"13.33\"], [\"　　流動負債合計\", \"3,031,476\", \"26.25\", \"3,324,535\", \"27.42\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　應付公司債\", \"2,997,751\", \"25.96\", \"2,996,944\", \"24.72\"], [\"　　　長期借款\", \"159,957\", \"1.39\", \"16,540\", \"0.14\"], [\"　　　遞延所得稅負債\", \"486,432\", \"4.21\", \"485,875\", \"4.01\"], [\"　　　租賃負債－非流動\", \"190,074\", \"1.65\", \"82,028\", \"0.68\"], [\"　　　其他非流動負債\", \"92,921\", \"0.80\", \"85,292\", \"0.70\"], [\"　　非流動負債合計\", \"3,927,135\", \"34.01\", \"3,666,679\", \"30.25\"], [\"　負債總額\", \"6,958,611\", \"60.26\", \"6,991,214\", \"57.67\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"3,021,627\", \"26.17\", \"3,021,627\", \"24.93\"], [\"　　　股本合計\", \"3,021,627\", \"26.17\", \"3,021,627\", \"24.93\"], [\"　　資本公積\", \"\", \"\", \"\", \"\"], [\"　　　　資本公積－庫藏股票交易\", \"297,415\", \"2.58\", \"273,985\", \"2.26\"], [\"　　　　資本公積－實際取得或處分子公司股權價格與帳面價值差額\", \"40,499\", \"0.35\", \"26,901\", \"0.22\"], [\"　　　　資本公積－認股權\", \"0\", \"0.00\", \"221,790\", \"1.83\"], [\"　　　　資本公積－其他\", \"221,790\", \"1.92\", \"0\", \"0.00\"], [\"　　　資本公積合計\", \"559,704\", \"4.85\", \"522,676\", \"4.31\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"399,149\", \"3.46\", \"369,727\", \"3.05\"], [\"　　　　特別盈餘公積\", \"442,934\", \"3.84\", \"430,610\", \"3.55\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"333,945\", \"2.89\", \"635,508\", \"5.24\"], [\"　　　保留盈餘合計\", \"1,176,028\", \"10.18\", \"1,435,845\", \"11.84\"], [\"　　其他權益\", \"\", \"\", \"\", \"\"], [\"　　　　國外營運機構財務報表換算之兌換差額\", \"-184,711\", \"-1.60\", \"-78,627\", \"-0.65\"], [\"　　　　透過其他綜合損益按公允價值衡量之金融資產未實現評價損益\", \"-433,812\", \"-3.76\", \"-364,307\", \"-3.01\"], [\"　　　其他權益合計\", \"-618,523\", \"-5.36\", \"-442,934\", \"-3.65\"], [\"　　　庫藏股票\", \"-267,195\", \"-2.31\", \"-267,195\", \"-2.20\"], [\"　　歸屬於母公司業主之權益合計\", \"3,871,641\", \"33.53\", \"4,270,019\", \"35.22\"], [\"　　非控制權益\", \"716,675\", \"6.21\", \"861,349\", \"7.11\"], [\"　權益總額\", \"4,588,316\", \"39.74\", \"5,131,368\", \"42.33\"], [\"　負債及權益總計\", \"11,546,927\", \"100.00\", \"12,122,582\", \"100.00\"], [\"　待註銷股本股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"23,430,173\", \"\", \"23,430,173\", \"\"]], \"season\": \"4\", \"urlList\": [{\"name\": \"XBRL資訊平台\", \"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2012&SYEAR=2025&SSEASON=4&REPORT_ID=C\"}, {\"name\": \"電子書查詢\", \"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2012&year=114&mtype=A\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年12月31日\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}, {\"main\": \"113年12月31日\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"春雨\"}, \"datetime\": \"115/03/30 21:47:59\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"249,929\", \"528,522\"], [\"　本期稅前淨利（淨損）\", \"249,929\", \"528,522\"], [\"　　　折舊費用\", \"310,762\", \"265,401\"], [\"　　　攤銷費用\", \"2,785\", \"3,428\"], [\"　　　預期信用減損損失（利益）數∕呆帳費用提列（轉列收入）數\", \"9,725\", \"804\"], [\"　　　透過損益按公允價值衡量金融資產及負債之淨損失（利益）\", \"45,802\", \"-86,723\"], [\"　　　利息費用\", \"91,366\", \"99,532\"], [\"　　　利息收入\", \"-21,557\", \"-38,194\"], [\"　　　股利收入\", \"-23,338\", \"-13,826\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"-27,208\", \"-11,426\"], [\"　　　其他項目\", \"64,718\", \"643\"], [\"　　　收益費損項目合計\", \"453,055\", \"219,639\"], [\"　　　　強制透過損益按公允價值衡量之金融資產（增加）減少\", \"-49,909\", \"-214,500\"], [\"　　　　應收票據（增加）減少\", \"36,774\", \"-93,802\"], [\"　　　　應收帳款（增加）減少\", \"168,995\", \"-36,747\"], [\"　　　　其他應收款（增加）減少\", \"2,687\", \"-3,131\"], [\"　　　　存貨（增加）減少\", \"-26,829\", \"-415,897\"], [\"　　　　預付款項（增加）減少\", \"332,115\", \"-319,217\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"463,833\", \"-1,083,294\"], [\"　　　　合約負債增加（減少）\", \"-44,805\", \"11,492\"], [\"　　　　應付票據增加（減少）\", \"-58\", \"-313\"], [\"　　　　應付帳款增加（減少）\", \"-79,380\", \"23,350\"], [\"　　　　其他應付款增加（減少）\", \"-32,262\", \"12,579\"], [\"　　　　負債準備增加（減少）\", \"-2,792\", \"601\"], [\"　　　　預收款項增加（減少）\", \"0\", \"12,249\"], [\"　　　　淨確定福利負債增加(減少)\", \"-10,151\", \"-24,285\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"-169,448\", \"35,673\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"294,385\", \"-1,047,621\"], [\"　　調整項目合計\", \"747,440\", \"-827,982\"], [\"　營運產生之現金流入（流出）\", \"997,369\", \"-299,460\"], [\"　收取之利息\", \"21,714\", \"39,226\"], [\"　收取之股利\", \"23,338\", \"13,826\"], [\"　支付之利息\", \"-87,354\", \"-84,633\"], [\"　退還（支付）之所得稅\", \"-146,531\", \"-158,236\"], [\"營業活動之淨現金流入（流出）\", \"808,536\", \"-489,277\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　取得透過其他綜合損益按公允價值衡量之金融資產\", \"-258,475\", \"-99,400\"], [\"　取得按攤銷後成本衡量之金融資產\", \"-75,123\", \"-49,012\"], [\"　取得不動產、廠房及設備\", \"-348,947\", \"-87,144\"], [\"　處分不動產、廠房及設備\", \"31,315\", \"26,275\"], [\"　存出保證金增加\", \"-11,360\", \"0\"], [\"　存出保證金減少\", \"0\", \"3,595\"], [\"　取得無形資產\", \"-748\", \"-561\"], [\"　其他非流動資產增加\", \"-145\", \"-278\"], [\"　預付設備款增加\", \"-49,870\", \"-19,272\"], [\"　投資活動之淨現金流入（流出）\", \"-713,353\", \"-225,797\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款增加\", \"2,202,746\", \"0\"], [\"　短期借款減少\", \"-888,757\", \"-217,309\"], [\"　應付短期票券增加\", \"49,979\", \"0\"], [\"　償還公司債\", \"-1,600,000\", \"0\"], [\"　舉借長期借款\", \"150,000\", \"0\"], [\"　償還長期借款\", \"-6,583\", \"-6,583\"], [\"　租賃本金償還\", \"-86,709\", \"-28,081\"], [\"　發放現金股利\", \"-278,733\", \"-253,645\"], [\"　非控制權益變動\", \"-190,451\", \"-72,137\"], [\"　籌資活動之淨現金流入（流出）\", \"-648,508\", \"-577,755\"], [\"匯率變動對現金及約當現金之影響\", \"-112,577\", \"130,258\"], [\"本期現金及約當現金增加（減少）數\", \"-665,902\", \"-1,162,571\"], [\"期初現金及約當現金餘額\", \"1,390,365\", \"2,552,936\"], [\"期末現金及約當現金餘額\", \"724,463\", \"1,390,365\"], [\"　資產負債表帳列之現金及約當現金\", \"724,463\", \"1,390,365\"]], \"season\": \"4\", \"urlList\": [{\"name\": \"XBRL資訊平台\", \"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2012&SYEAR=2025&SSEASON=4&REPORT_ID=C\"}, {\"name\": \"電子書查詢\", \"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2012&year=114&mtype=A\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}]}, {\"main\": \"113年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"春雨\"}, \"datetime\": \"115/03/30 21:48:01\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2012",
+      "company_name": "春雨",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 592460.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2012\", \"公司名稱\": \"春雨\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"592460\", \"營業收入-上月營收\": \"506384\", \"營業收入-去年當月營收\": \"673517\", \"營業收入-上月比較增減(%)\": \"16.998167398653987\", \"營業收入-去年同月增減(%)\": \"-12.034885533698482\", \"累計營業收入-當月累計營收\": \"1781377\", \"累計營業收入-去年累計營收\": \"2081230\", \"累計營業收入-前期比較增減(%)\": \"-14.4074898017038\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Why Eurovision's fallout over Israel may change the competition forever",
+      "link": "https://www.bbc.com/news/articles/cgkpgm6vk48o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-11T07:33:57+08:00",
+      "summary": "With Eurovision facing its biggest boycott in 70 years, questions are growing over the competition's future.",
+      "event_type": "earnings",
+      "tickers": [
+        "1973",
+        "1961",
+        "1975",
+        "1980"
+      ]
+    },
+    {
+      "title": "Barack Obama was a successful President",
+      "link": "https://www.noahpinion.blog/p/barack-obama-was-a-successful-president-7bb",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T14:22:14+08:00",
+      "summary": "A repost, because I'm annoyed.",
+      "event_type": "news",
+      "tickers": [
+        "1933",
+        "1965"
+      ]
+    },
+    {
+      "title": "Xi’s Forever Purge",
+      "link": "https://www.foreignaffairs.com/china/xis-forever-purge",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T12:00:00+08:00",
+      "summary": "The real goal behind China’s “self-revolution.”",
+      "event_type": "earnings",
+      "tickers": [
+        "1978",
+        "1945"
+      ]
+    },
+    {
+      "title": "UK's biggest drugmakers see surprise profit bump, even as pharma grapples with U.S. policies",
+      "link": "https://www.cnbc.com/2026/04/29/astrazeneca-gsk-q1-earnings-stock-sales-profit-trump-mfn-pharma.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-29T21:35:59+08:00",
+      "summary": "AstraZeneca and GSK, the U.K.'s second and ninth most valuable companies, both saw first-quarter profits beat expectations early Wednesday.",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ]
+    },
+    {
+      "title": "The Disposable Oligarchs",
+      "link": "https://www.foreignaffairs.com/united-states/disposable-oligarchs",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T12:00:00+08:00",
+      "summary": "Why wealthy elites come to regret their bargains with authoritarians.",
+      "event_type": "policy",
+      "tickers": [
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSLA",
+        "JPM"
+      ]
+    },
+    {
+      "title": "A Formal Defense Pact in the Indo-Pacific Is the Wrong Answer",
+      "link": "https://warontherocks.com/a-formal-defense-pact-in-the-indo-pacific-is-the-wrong-answer",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-23T15:30:25+08:00",
+      "summary": "The debate over how best to deter China in the western Pacific has reached a new level of ambition. Ely Ratner, a former senior defense official in the Biden administration, proposed a &#8220;Pacific Defense Pact&#8221; &#8212; a legally binding multilateral treaty among the United States, Japan, Australia, and the Philippines. This reflects serious concerns over China&#8217;s rise and its potential future use of force along the first island chain. The underlying diagnosis is sound: Existing U.S",
+      "event_type": "earnings",
+      "tickers": [
+        "1941",
+        "1942"
+      ]
+    },
+    {
+      "title": "Nigeria's suspected coup plotters deny treason charges",
+      "link": "https://www.bbc.com/news/articles/c0krlxg384eo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-23T01:33:30+08:00",
+      "summary": "Allegations of a coup plot first surfaced last year when an Independence Day parade was cancelled.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Mass trial for 486 alleged gang members begins in El Salvador",
+      "link": "https://www.bbc.com/news/videos/ce9mernj0gko",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-22T01:45:39+08:00",
+      "summary": "Footage released by the attorney general's office shows large groups of men in prison attending the trial via video link.",
+      "event_type": "policy",
+      "tickers": [
+        "AAPL"
+      ]
+    },
+    {
+      "title": "How North Korea Won",
+      "link": "https://www.foreignaffairs.com/north-korea/how-north-korea-won-jung-pak",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The Strange Triumph of Kim Jong Un.",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1973",
+        "1950",
+        "META"
+      ]
+    },
+    {
+      "title": "Updated thoughts on industrial policy",
+      "link": "https://www.noahpinion.blog/p/updated-thoughts-on-industrial-policy",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-20T13:07:55+08:00",
+      "summary": "Economic consensus is changing, but it has a long way to go.",
+      "event_type": "earnings",
+      "tickers": [
+        "1985",
+        "TSM"
+      ]
+    },
+    {
+      "title": "The insider trading suspicions looming over Trump's presidency",
+      "link": "https://www.bbc.com/news/articles/cge0grppe3po",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-20T07:02:06+08:00",
+      "summary": "The BBC has found a pattern of spikes in trades ahead of public announcements by the US president.",
+      "event_type": "policy",
+      "tickers": [
+        "1933"
+      ]
+    },
+    {
+      "title": "How Europe Actually Finances Semiconductor Investments",
+      "link": "https://www.eetimes.com/how-europe-actually-finances-semiconductor-investments",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-15T16:00:00+08:00",
+      "summary": "As Europe’s semiconductor ambitions shift from policy announcements to real industrial projects, a less visible question is coming into focus: How do those projects actually get financed? The post How Europe Actually Finances Semiconductor Investments appeared first on EE Times.",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "Tactical Success, Strategic Failure? Washington Walks the Path to Defeat in Iran",
+      "link": "https://warontherocks.com/tactical-success-strategic-failure-washington-walks-the-path-to-defeat-in-iran",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-14T15:30:36+08:00",
+      "summary": "Six weeks after the United States and Israel launched a war against Iran, what was the political object? Not the military means and objectives &#8212; those are the hammer, not the nail. The nail is: What condition in the world, what durable change in Iran&#8217;s relationship to the United States and its neighbors, were these strikes meant to produce? That question was never answered, because it was never seriously asked. The Trump administration confused the instrument for the purpose and then",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Venezuela’s Treacherous Recovery",
+      "link": "https://www.foreignaffairs.com/venezuela/venezuelas-treacherous-recovery",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-10T12:00:00+08:00",
+      "summary": "The peril and promise of an economic boom in Venezuela.",
+      "event_type": "earnings",
+      "tickers": [
+        "1976"
+      ]
+    },
+    {
+      "title": "Delta CEO says airline will 'meaningfully' cut growth plans, sees $300 million boost from its refinery",
+      "link": "https://www.cnbc.com/2026/04/08/delta-air-lines-q1-2026-earnings.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-04-09T02:02:39+08:00",
+      "summary": "Delta is scaling back its flight plans as fuel costs grow to reduce its expenses.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Mustafa Suleyman: AI development won’t hit a wall anytime soon—here’s why",
+      "link": "https://www.technologyreview.com/2026/04/08/1135398/mustafa-suleyman-ai-future",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-08T22:00:00+08:00",
+      "summary": "We evolved for a linear world. If you walk for an hour, you cover a certain distance. Walk for two hours and you cover double that distance. This intuition served us well on the savannah. But it catastrophically fails when confronting AI and the core exponential trends at its heart. From the time I began&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Epstein files: Commerce Secretary Howard Lutnick set for May 6 interview by House Oversight",
+      "link": "https://www.cnbc.com/2026/04/06/jeffrey-epstein-howard-lutnick-house-oversight-interview.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-07T05:22:58+08:00",
+      "summary": "Commerce Secretary Lutnick originally claimed to have cut off contact with Jeffrey Epstein in 2005. But he and his family had lunch with the predator in 2012.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Efficiency at Scale: NVIDIA, Energy Leaders Accelerating Power‑Flexible AI Factories to Fortify the Grid",
+      "link": "https://blogs.nvidia.com/blog/energy-efficiency-ai-factories-grid",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-03-31T23:00:51+08:00",
+      "summary": "CERAWeek — dubbed the Davos of energy — is where policymakers, producers, technologists and financiers gather to discuss how the world powers itself next. NVIDIA and Emerald AI unveiled at the conference last week a new way forward — treating AI factories not as static power loads but as flexible, intelligent grid assets. This collaboration […]",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Inside Tehran’s toll booth",
+      "link": "https://www.atlanticcouncil.org/dispatches/inside-tehrans-toll-booth",
+      "source": "Atlantic Council",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-31T02:37:23+08:00",
+      "summary": "Iran is using formal, semi‑formal, and informal channels, as well as entirely new systems, to avoid US sanctions and sell oil to China. The post Inside Tehran’s toll booth appeared first on Atlantic Council.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Three killed as unfinished building collapses on church service in Ghana",
+      "link": "https://www.bbc.com/news/articles/ckgex51zzd8o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-03-30T21:17:00+08:00",
+      "summary": "Locals say the structure, in a school complex, was in use despite lying unfinished for a number of years.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "The pre-2012 Olympics promo where JAMES BOND reports to the Queen. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBrc3VjeXJrWjBmcTZ1d0NXSUJEaDluUXFSSGk2LV9CWEZsSmlOYnQwZXZtWjhCZnBzVXZhQ0k1UHp6MkdZVU1QVzdva2xFa3JzTmh2SW5NVGRBNFZ1Y1BieEp3WUg?oc=5",
+      "source": "X 宏觀市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-29T05:01:00+08:00",
+      "summary": "The pre-2012 Olympics promo where JAMES BOND reports to the Queen.&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": []
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 8307669.0,
+      "monthly_revenue": null,
+      "net_income": 121580.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 0.2,
+      "operating_cash_flow": 808536.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025Q3",
+      "filed_at": "2025Q3",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 6381197.0,
+      "monthly_revenue": null,
+      "net_income": 124181.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 0.25,
+      "operating_cash_flow": 806967.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：保留式核閱報告（2025Q3）"
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150423",
+      "filed_at": "1150423",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 8307669.0,
+      "monthly_revenue": null,
+      "net_income": 55298.0,
+      "operating_income": 299089.0,
+      "gross_profit": 1143732.0,
+      "eps_diluted": 0.2,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150331",
+      "filed_at": "1150331",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 8307669.0,
+      "monthly_revenue": null,
+      "net_income": 55298.0,
+      "operating_income": 299089.0,
+      "gross_profit": 1143732.0,
+      "eps_diluted": 0.2,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150330",
+      "filed_at": "1150330",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 8307669.0,
+      "monthly_revenue": null,
+      "net_income": 55298.0,
+      "operating_income": 299089.0,
+      "gross_profit": 1143732.0,
+      "eps_diluted": 0.2,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 592460.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11502",
+      "period_end": "11502",
+      "filed_at": "1150317",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 506384.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 8307669.0,
+      "monthly_revenue": null,
+      "net_income": 121580.0,
+      "operating_income": 299089.0,
+      "gross_profit": null,
+      "eps_diluted": 0.2,
+      "operating_cash_flow": 808536.0,
+      "capex": 348947.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2012",
+    "market": "tw",
+    "company_name": "春雨工廠股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 8307669.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 121580.0,
+      "eps": 0.2,
+      "fcf": null,
+      "ocf": 808536.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.014634670688011282,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 30.189821752878025,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 8307669.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 121580.0,
+        "eps_diluted": 0.2,
+        "fcf": null,
+        "ocf": 808536.0,
+        "capex": null,
+        "company_name": "春雨工廠股份有限公司"
+      },
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q3",
+        "revenue": 6381197.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 124181.0,
+        "eps_diluted": 0.25,
+        "fcf": null,
+        "ocf": 806967.0,
+        "capex": null,
+        "company_name": "春雨工廠股份有限公司"
+      },
+      {
+        "fiscal_year": 114,
+        "fiscal_period": "Q4",
+        "revenue": 8307669.0,
+        "gross_profit": 1143732.0,
+        "operating_income": 299089.0,
+        "net_income": 121580.0,
+        "eps_diluted": 0.2,
+        "fcf": null,
+        "ocf": 808536.0,
+        "capex": 348947.0,
+        "company_name": "春雨"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

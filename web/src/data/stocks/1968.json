@@ -1,0 +1,57 @@
+{
+  "ticker": "1968",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Kuomintang gets the carrots, DPP the stick",
+      "link": "https://www.scmp.com/opinion/china-opinion/article/3351128/kuomintang-gets-carrots-dpp-stick",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-25T05:30:09+08:00",
+      "summary": "Another day, another big humiliation for William Lai Ching-te. The Taiwanese leader effectively had to cancel a visit to eSwatini, the island’s last partner in Africa, for the celebrations of the 40th anniversary of King Mswati III’s accession to the throne and his 58th birthday. Taiwan said the visit was “postponed” after the Seychelles, Mauritius and Madagascar cancelled their previously approved overflight permission without warning. Lai and his Democratic Progressive Party (DPP)...",
+      "event_type": "news",
+      "tickers": [
+        "1968"
+      ]
+    },
+    {
+      "title": "Ringo Starr: 'I made all my mistakes on stage'",
+      "link": "https://www.bbc.com/news/articles/cp8645d9lvyo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-24T07:05:11+08:00",
+      "summary": "Beatles star reveals all about his new country album, being a Sir and coming up with the phrase A Hard Day's Night.",
+      "event_type": "news",
+      "tickers": [
+        "1959",
+        "1968"
+      ]
+    },
+    {
+      "title": "The case for fixing everything",
+      "link": "https://www.technologyreview.com/2026/04/17/1135408/book-review-stewart-brand-fixing-everything-maintenance",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-17T18:00:00+08:00",
+      "summary": "The handsome new book Maintenance: Of Everything, Part One, by the tech industry legend Stewart Brand, promises to be the first in a series offering “a comprehensive overview of the civilizational importance of maintenance.” One of Brand’s several biographers described him as a mainstay of both counterculture and cyberculture, and with Maintenance, Brand wants us&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "1938",
+        "1966",
+        "1980",
+        "1968",
+        "1985"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

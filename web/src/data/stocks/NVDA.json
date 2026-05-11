@@ -52,9 +52,8 @@
       "category": "💰 財經與總經",
       "published": "2026-05-11T08:29:11+08:00",
       "summary": "（中央社記者何秀玲台北11日電）美國4月非農就業數據優於市場預期，激勵美股4大指數全面收紅，帶動台指期夜盤上漲361點。投顧分析，美國經濟數據顯示景氣仍具韌性，加上AI與半導體族群續強，有助台股延續多頭氣勢，指數有機會挑戰42000點關卡。",
+      "body_text": "（中央社記者 何秀玲 台北11日電）美國4月非農就業數據優於市場預期，激勵美股4大指數全面收紅，帶動台指期夜盤上漲361點。投顧分析，美國經濟數據顯示景氣仍具韌性，加上AI與半導體族群續強，有助台股延續多頭氣勢，指數有機會挑戰42000點關卡。\n個股方面，輝達（NVIDIA）上漲1.7%，台積電ADR下跌0.6%，英特爾漲 13.93%，創近期波段新高。\n此外，美國總統川普預計本週前往中國訪問，美國資深官員指出，川普將與中國國家主席習近平持續就台灣議題進行對話，不預期美國政策有任何改變。\n美股8日表現，儘管美伊再次發生衝突，導致結束中東戰爭期望受挫，但美國公布4月新增11萬5000人就業數據，為原先預期2倍多，激勵美股收紅，標準普爾500和那斯達克指數再創歷史新高。\n道瓊工業指數終場上漲12.19點，或0.02%，收在49609.16點；標準普爾500指數上漲61.82點，或0.84%，收",
       "event_type": "earnings",
-      "publisher": "中央社 CNA",
-      "author": "何秀玲",
       "tickers": [
         "0050",
         "NVDA",
@@ -63,7 +62,8 @@
       "companies": [
         "NVIDIA",
         "台積電"
-      ]
+      ],
+      "guidance_direction": null
     },
     {
       "title": "股價用喊的？SanDisk、美光股價飆漲為台股本周走勢埋下火種",
@@ -72,9 +72,8 @@
       "category": "🔬 半導體與硬體",
       "published": "2026-05-11T06:30:07+08:00",
       "summary": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公佈的就業報告數據優於市場預期，上週五（5月8日）美國股市 [&#8230;]",
+      "body_text": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公布的就業報告數據優於市場預期，上週五（5 月 8 日）美國股市迎來強勁的慶祝行情。美股四大指數全面收紅，這情況帶動美股兩大記憶體龍頭 SanDisk 與美光科技的爆炸性驚人表現。其中，SanDisk 更是單日狂飆 16.6%，收盤價來到 1,562.34 美元。而美光科技股價單日大漲 15.52%，收在 746.79 美元附近。而這情況，即將為 11 日（週一）開盤的台股帶來什麼樣的激勵作用，投資人都在密切關注。\n上週五美國股市迎來強勁的慶祝行情。美股四大指數全面收紅，其中標普500指數上漲0.84%（收7,398.93點），那斯達克指數上漲1.71%（收26,247.08點），雙雙再創歷史新高。然而，真正震撼市場並推動科技股大漲的核心動力，是飆升5.51%的費城半導體指數（收11,775.50點）。這對於即將在5月11日開盤的台灣股市",
       "event_type": "earnings",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "NVDA",
         "GOOGL",
@@ -87,8 +86,748 @@
         "Meta",
         "台積電",
         "Google"
-      ]
+      ],
+      "guidance_direction": null
     },
+    {
+      "title": "AI電源架構升級、高階功率電感需求升溫 新聿科4月營收1.16億元",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5429670",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T08:49:04+08:00",
+      "summary": "專精於功率型電感研發製造的新聿科（7912）公告4月營收1.16億元、年增18.34%，1至4月累計營收4.73億元、年增48.46%，公司表示，受惠AI伺服器電源架構升...…",
+      "body_text": "〔記者張慧雯／台北報導〕專精於功率型電感研發製造的新聿科（7912）公告4月營收1.16億元、年增18.34%，1至4月累計營收4.73億元、年增48.46%，公司表示，受惠AI伺服器電源架構升級、高階功率電感需求提升，以及主要AI伺服器供應鏈客戶拉貨動能延續，帶動前4月營收較去年同期大幅成長，整體營運維持穩健向上。\n新聿科指出，2026年以來AI伺服器需求持續升溫，雲端服務業者資本支出擴張，加上NVIDIA Blackwell平台需求強勁，推升AI伺服器供應鏈拉貨動能，帶動1至2月營收較去年同期大幅成長63%，累計1至4月營收年增率雖因去年4月受美國關稅政策影響，部分客戶提前拉貨墊高比較基期，使年增幅較1、2月略為收斂，但仍達48.46%，顯示AI伺服器與高效能運算平台需求延續，高階電感與AI電源相關產品需求仍維持高檔。\n新聿科核心產品包括一體成型模壓功率電感、組裝式高電流功率電感（Fl",
+      "event_type": "earnings",
+      "tickers": [
+        "7912",
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+      "link": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T07:38:14+08:00",
+      "summary": "CoreWeave has been raising debt to finance its data center buildout, and S&amp;P has boosted the company's credit rating.",
+      "body_text": "CoreWeave shares tumbled as much as 10% in extended trading on Thursday after the AI infrastructure provider issued light revenue guidance and increased its 2026 capital spending forecast.\nHere's how the company did in comparison with LSEG consensus:\nRevenue more than doubled in the quarter, from $981.8 million a year earlier, according to a statement . Net loss widened to $740 million from $315 m",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "每日椽真：台廠赴美投資超預期 | 中系半導體供應鏈「螞蟻搬家」 | 三星30年績效制度釀罷工危機",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754604_MEH5FNQ91SIFQX3TR3YJ9",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T05:34:23+08:00",
+      "summary": "隨著AI資料中心規格升級、高速傳輸要求提高，化合物半導體廠英特磊（IET-KY）表示，光通訊市場對磷化銦（InP）需求強勁，但基板供應仍為主要瓶頸，首要之務是解決基板供應問題。三星電子（Samsung...",
+      "body_text": "隨著AI資料中心規格升級、高速傳輸要求提高，化合物半導體廠英特磊（IET-KY）表示，光通訊市場對磷化銦（InP）需求強勁，但基板供應仍為主要瓶頸，首要之務是 解決基板供應問題 。\n三星電子（Samsung Electronics）績效獎金問題引發的勞資糾紛遲遲未見解決跡象。同時，各界開始出現聲音，指出其沿用已久的績效獎金制度本身存在「 結構性缺陷 」。\n美國總統川普（Donald Trump）2025年4月拋出「對等關稅」政策，意外加速卡關多年的台美經貿協議的簽署進程。台美談判後，確定有「台灣模式」與美合作。經濟部表示，不含台積電約有20家台廠要投資美國350億美元。在國發基金保證下，台灣金融機構第一期可提供500億美元的赴美融資，讓企業安心打拼。\n經過和美國多次談判和磋商，行政院長卓榮泰宣佈台灣要在「根留台灣、布局全球」國家總體戰略下，以「台灣模式」與美國合作，以兩類性質不同資本承諾投",
+      "event_type": "policy",
+      "tickers": [
+        "2330",
+        "NVDA"
+      ],
+      "companies": [
+        "台積電",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA and IREN Announce Strategic Partnership to Accelerate Deployment of up to 5 Gigawatts of AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-iren-announce-strategic-partnership-to-accelerate-deployment-of-up-to-5-gigawatts-of-ai-infrastructure",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T04:34:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.",
+      "body_text": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.\nThe partnership is intended to accelerate deployment of large-scale AI factories by combining NVIDIA’s DSX AI factory architecture with IREN’s expertise across power, land, data centers, GPU deployment and infrastructure operations.\nF",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "IREN",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Notes from inside China's AI labs",
+      "link": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs",
+      "source": "Interconnects AI",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-07T23:42:43+08:00",
+      "summary": "Lessons from my trip to talk to most of the leading AI labs in China.",
+      "body_text": "Staring out the window on a new, high-speed train from Hangzhou to Shanghai I’m gifted with views of dramatic ridgelines speckled with wind turbines that are silhouetted against the setting sun. The mountains cast a backdrop to a mix of spanning fields and clustered skyscrapers. I’m returning from China with great humility. It’s a very warming, human experience to go somewhere so foreign and be so",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Linked and Loaded: Gaijin Single Sign-On Now Available on GeForce NOW",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-gaijin-sso",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T21:00:27+08:00",
+      "summary": "Less typing, more tanking. Faster logins mean more time in the gaming action — and this week provides GeForce NOW members with a smoother path straight into the battlefield. Cloud gaming is all about instant access to titles across devices, and the latest GeForce NOW update removes another layer for members jumping into their Gaijin […]",
+      "body_text": "Share This Article\nX\nFacebook\nLinkedIn\nCopy link\nLess typing, more tanking.\nFaster logins mean more time in the gaming action — and this week provides GeForce NOW members with a smoother path straight into the battlefield.\nCloud gaming is all about instant access to titles across devices, and the latest GeForce NOW update removes another layer for members jumping into their Gaijin libraries from a",
+      "event_type": "earnings",
+      "tickers": [
+        "5080",
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Is xAI a neocloud now?",
+      "link": "https://techcrunch.com/2026/05/06/is-xai-a-neocloud-now",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T05:32:55+08:00",
+      "summary": "xAI's real business may be more about building data centers than training AI models.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nOn Wednesday, xAI and Anthropic announced a surprise partnership that has the Claude-maker buying out “all of the compute capacity at [xAI’s] Colossus 1 data center,” roughly 300MW that allowed Anthropic to immediately raise its usag",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "GOOGL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "How David Sacks crashed and burned in the White House",
+      "link": "https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T04:18:00+08:00",
+      "summary": "Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers about tech, politics, and Washington intrigue. (It's basically House of Cards, but for nerds.) Not a subscriber yet? You really should become one, and to save you a Google search, here is the direct link to do so! And do you think I should [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nThe Trump administration pulled a 180 on AI oversight, inducing Sacks’ worst nightmare: more gover",
+      "event_type": "policy",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "NVDA",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "NVIDIA",
+        "Amazon",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "FPGA Maker’s Strategic Pivot into Firmware World",
+      "link": "https://www.eetimes.com/fpga-makers-strategic-pivot-into-firmware-world",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T21:32:49+08:00",
+      "summary": "Lattice acquires AMI to combine its low-power FPGAs with open-source firmware platforms. The post FPGA Maker’s Strategic Pivot into Firmware World appeared first on EE Times.",
+      "body_text": "Low-power FPGA maker Lattice Semiconductor is consolidating its software prowess by acquiring open-source firmware developer AMI in a cash-and-stock deal valued at $1.65 billion. The Duluth, Georgia-based AMI develops platform firmware and infrastructure manageability solutions for cloud and AI environments.\nThe deal is expected to help the Hillsboro, Oregon-based Lattice consolidate its position ",
+      "event_type": "earnings",
+      "tickers": [
+        "1983",
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA Spectrum-X — the Open, AI-Native Ethernet Fabric — Sets the Standard for Gigascale AI, Now With MRC",
+      "link": "https://blogs.nvidia.com/blog/spectrum-x-ethernet-mrc",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T19:30:20+08:00",
+      "summary": "The race to build the world’s most powerful AI factories demands networking that keeps pace with the ambitions of AI itself. NVIDIA Spectrum-X Ethernet scale-out infrastructure stands at the forefront of that race as the most advanced AI networking technology available today, deployed by industry leaders who can’t afford to compromise on performance, resilience or […]",
+      "body_text": "Share This Article\nX\nFacebook\nLinkedIn\nCopy link\nThe race to build the world’s most powerful AI factories demands networking that keeps pace with the ambitions of AI itself.\nNVIDIA Spectrum-X Ethernet scale-out infrastructure stands at the forefront of that race as the most advanced AI networking technology available today, deployed by industry leaders who can’t afford to compromise on performance",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA and Corning Announce Long-Term Partnership to Strengthen US Manufacturing for AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-emerald-ai-join-leading-energy-companies-to-pioneer-flexible-ai-factories-as-grid-assets",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T19:30:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.",
+      "body_text": "NVIDIA's Endeavor building in Santa Clara, Calif.\nNVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.\nCorning will increase its U.S.-based optical connectivity manufacturing capacit",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "GLW",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "美超微財報／本季財測佳 股價盤後飆18%",
+      "link": "https://money.udn.com/money/story/123398/9484448",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T08:31:07+08:00",
+      "summary": "美超微（Super Micro）周二（5日）發布本季財測，營收與調整後獲利都高於華爾街預期，主要是人工智慧（AI）伺服器的強勁需求。利多消息激勵公司股價在盤後交易飆漲18%。",
+      "body_text": "本文共1069字\n美超微（Super Micro）周二（5日）發布本季財測，營收與調整後獲利都高於華爾街預期，主要是人工智慧（AI）伺服器的強勁需求。利多消息激勵公司股價在盤後交易飆漲18%。\n美國司法部今年3月起訴了三位與美超微有關的人士，指控他們協助將價值數十億美元的AI晶片走私至中國大陸。周二最新財測有助於安撫投資人情緒。\n根據LSEG彙整的數據，美超微預估本季（公司會計年度第4季）營收將介於110億至125億美元，高於分析師平均預期的110.7億美元。調整後每股盈餘將介於0.65至0.79美元之間，亦優於市場預期的0.55美元。\n隨著AI熱潮興起，美超微成為主要受益者之一，公司能快速打造並交付客製化高效能伺服器的能力，使美超微成為資料中心營運商及AI新創公司的首選供應商。\n執行長梁見後在財報會議中表示，範圍更廣的資料中心與雲端軟體產品組合，需求亦相當強勁。公司位於台灣、馬來西亞與荷",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AMD's stock soars 15% as data center growth pushes revenue and guidance past estimates",
+      "link": "https://www.cnbc.com/2026/05/05/amd-q1-2026-earnings-report.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T07:01:37+08:00",
+      "summary": "AMD's earnings report lands as investors rush into the stock on optimism that the AI boom is just getting started.",
+      "body_text": "Advanced Micro Devices reported first-quarter earnings Tuesday that topped expectations, while the company's revenue forecast also exceeded estimates as demand soars for chips to power artificial intelligence workloads.\nThe stock jumped about 15% in extended trading.\nHere's how the chipmaker did versus LSEG consensus estimates for the quarter ended in March:\nRevenue climbed 38% from $7.44 billion ",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "資料中心業務年營收大漲 57%，帶動 AMD 第一季財報亮眼盤後大漲逾 12%",
+      "link": "https://finance.technews.tw/2026/05/06/amds-first-quarter-earnings-exceeded-market-expectations",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T06:30:24+08:00",
+      "summary": "受惠於人工智慧 （AI） 工作執行對晶片的強勁需求，處理器大廠 AMD 公布的第一季財報超乎市場的預期，同時發 [&#8230;]",
+      "body_text": "受惠於人工智慧 （AI） 工作執行對晶片的強勁需求，處理器大廠 AMD 公布的第一季財報超乎市場的預期，同時發布了優於預期的第二季財測。財報發表後，AMD 股價在盤後交易中大漲超過 12%。\n根據財報資料，AMD 在截至 3 月的2026年第一季交出了亮眼的成績單。包括總營收達 102.5 億美元，高於預期的 98.9 億美元，較 2025 年同期的 74.4 億美元大幅成長 38%。淨利從 2025 年同期的 7.09 億美元攀升至 13.8 億美元。EPS 調整後來到 1.37 美元，高於市場預期的 1.29 美元。其中，資料中心業務表現最為強勁，營收較 2025 年同期大增 57%，從 36.7 億美元攀升至 58 億美元。\nAMD 執行長蘇姿丰 （Lisa Su） 在聲明中表示，資料中心部門現在是 AMD 營收與獲利成長的主要驅動力。她進一步指出，隨著公司擴大供應以滿足市場需求，預",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Meta",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Besi：三星混合鍵合估年中拍板　HBM三雄瞄準2027出貨NVIDIA",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754214_6TT3N9090IDTLH5TOIAW2",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T02:54:28+08:00",
+      "summary": "三星電子（Samsung Electronics）預計於2026年中導入混合鍵合（hybrid bonding）技術，隨著荷蘭後段製程設備商貝思半導體（Besi）在2026年第1季財報電話會議釋出相關資訊，使消息更為明朗。據韓媒Theelec...",
+      "body_text": "三星電子（Samsung Electronics）預計於2026年中導入混合鍵合（hybrid bonding）技術，隨著荷蘭後段製程設備商貝思半導體（Besi）在2026年第1季財報電話會議釋出相關資訊，使消息更為明朗。據韓媒Theelec... 會員登入 【範例：user@company.com】 忘記密碼 | 重寄啟用信 記住帳號密碼 登入 ★ 若您是第一次使用會員資料庫，請先點選 【帳號啟用】 會員服務申請/試用 試用申請 產業研究諮詢 會員服務介紹 常見問題 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱： member@digitimes.com (一個工作日內將回覆您的來信) 訂閱DIGITIMES 行動版 會員服務申請/試用 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "傳與蘋果談生產晶片　英特爾股價勁揚14%創新高",
+      "link": "https://www.cna.com.tw/news/afe/202605060003.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T01:36:20+08:00",
+      "summary": "（中央社聖克拉拉5日綜合外電報導）美國晶片製造大廠英特爾（Intel）股價今天勁揚14%，創下歷史新高，延續自4月以來的強勁漲勢。",
+      "body_text": "（中央社聖克拉拉5日綜合外電報導）美國晶片製造大廠英特爾（Intel）股價今天勁揚14%，創下歷史新高，延續自4月以來的強勁漲勢。\n這波上漲源自彭博（Bloomberg News）報導指出，蘋果公司（Apple Inc.）正在與英特爾和三星電子（Samsung Electronics）洽談，計劃在美國生產旗下裝置的主要處理器。這家iPhone製造商長期以來一直依賴台積電的晶片。\n對於相關報導，英特爾與三星電子均不願置評。蘋果則未回覆置評請求。\n美國財經媒體CNBC報導，英特爾才剛創下在那斯達克掛牌55年來表現最佳的單月行情，股價在4月狂飆114%，市值突破4700億美元。\n幾項重要的合作也協助推動這波漲勢。英特爾上月宣布將擴大與谷歌公司（Google）的合作夥伴關係，並計劃加入馬斯克（Elon Musk）的Terafab專案。此外，英特爾還宣布將斥資142億美元，買回位於愛爾蘭的Fab 3",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "2330",
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Apple",
+        "台積電",
+        "Google",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Huawei braces for $12 billion in AI chip revenue driven by homegrown AI model demand — Chinese fabs can barely keep up as Nvidia's market share craters within the region",
+      "link": "https://www.tomshardware.com/tech-industry/huawei-expects-12-billion-in-ai-chip-revenue-this-year-as-nvidias-china-market-share-hits-zero",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T21:29:27+08:00",
+      "summary": "The projection, based on orders already received from major Chinese technology firms including Alibaba, ByteDance, and Tencent, would represent growth of at least 60% year-over-year.",
+      "body_text": "Export controls, DeepSeek V4, and SMIC's production have reshaped China's AI hardware market in less than a year.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nHuawei expects revenue from its AI processors to reach roughly $12 billion in 2026 , up from $7.5 billion last year. The projection, based on orders already received from major Chine",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "TSM"
+      ],
+      "companies": [
+        "NVIDIA",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AI's big messaging pivot",
+      "link": "https://www.noahpinion.blog/p/ais-big-messaging-pivot",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-05T14:06:01+08:00",
+      "summary": "Some top AI leaders now say their technology will create jobs. Should we believe them?",
+      "body_text": "Something big happened in the world of AI the other day: Sam Altman, founder and CEO of OpenAI, and probably the person who’s most commonly regarded as the face of the industry, declared that the purpose of AI is not to take people’s jobs :\nAnd he recently called AI CEOs “tone-deaf” for declaring that AI is going to take people’s jobs:\nIn fact, this shift represents more evolution than revolution.",
+      "event_type": "earnings",
+      "tickers": [
+        "1940",
+        "MSFT",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The creator of Roomba is back with a furry robot companion",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T00:51:38+08:00",
+      "summary": "Colin Angle, the maker of the Roomba and the man who helped put 50 million household robots into people's homes, is back with a new robot. But this one is designed as a companion, not a cleaner. The first robot from Angle's new company, Familiar Machines &#38; Magic, is a dog-sized robotic pet that resembles [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All News\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nColin Angle revealed his latest creation this week: a dog-sized robot ‘Familiar’ designed for human ",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Amazon",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Pantheon eyes large-scale behind-the-meter data center campus in Croatia",
+      "link": "https://www.datacenterdynamics.com/en/news/pantheon-eyes-large-scale-behind-the-meter-data-center-campus-in-croatia",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T21:00:39+08:00",
+      "summary": "Project set to be “the largest investment” in the country’s history, company claims",
+      "body_text": "Project set to be “the largest investment” in the country’s history, company claims\nUS investment group Pantheon Atlas has announced plans for an up to €12 billion ($14.1bn) hyperscale AI data center and innovation campus in Topusko, Croatia.\nThe 310-acre campus is set to be located in open land 90km south of Zagreb and will have the potential for expansion to 450 acres.\nThe company claims an up t",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "黃仁勳示警放棄中國市場缺乏戰略意義　NVIDIA投資強化美國供應鏈",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754080_QL31RZM57KTK4H1ZKQ0IX",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T11:34:40+08:00",
+      "summary": "NVIDIA執行長黃仁勳近日於《Memos to the President》節目中指出，受美國政府出口管制及中國本土供應商崛起影響，NVIDIA在中國人工智慧（AI）加速器市場的市佔率，已由過往的絕對領先降至0%。黃仁勳警告...",
+      "body_text": "",
+      "event_type": "policy",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "美股創高帶動偏多氣氛　投顧：台股蓄勢叩關4萬點",
+      "link": "https://www.cna.com.tw/news/afe/202605040017.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T08:28:27+08:00",
+      "summary": "（中央社記者何秀玲台北4日電）科技業財報優於預期，帶動美股1日主要指數那斯達克和標普500指數再創新高。投顧表示，台指期1日夜盤漲逾700點，帶動市場氣氛偏多，關注台股今天開盤指數續向4萬點關卡靠攏；進入5月電子傳統淡季，盤勢能否穩步墊高，待觀察資金回流與個股基本面支撐。",
+      "body_text": "（中央社記者何秀玲台北4日電）科技業財報優於預期，帶動美股1日主要指數那斯達克和標普500指數再創新高。投顧表示，台指期1日夜盤漲逾700點，帶動市場氣氛偏多，關注台股今天開盤指數續向4萬點關卡靠攏；進入5月電子傳統淡季，盤勢能否穩步墊高，待觀察資金回流與個股基本面支撐。\n美股1日表現，在市場對伊朗戰爭議題反應平淡下，受科技大廠多數公布財報亮麗的激勵，美股標準普爾500指數和那斯達克指數再度改寫歷史新高紀錄。\n道瓊工業指數終場下跌152.87點，或0.31%，收在49499.27點；標準普爾500指數上漲21.11點，或0.29%，收在7230.12點；以科技股為主的那斯達克指數上漲222.14點，或0.89%，收在25114.45點；費城半導體指數上漲91.639點，或0.87%，收在10595.340點。\n個股方面，輝達（NVIDIA）下跌0.5%，台積電ADR上漲0.4%。\n台股30",
+      "event_type": "earnings",
+      "tickers": [
+        "0050",
+        "NVDA",
+        "2330"
+      ],
+      "companies": [
+        "NVIDIA",
+        "台積電"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Nvidia’s AI market share in China drops amid US export controls - Crypto Briefing",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSmZBXzY4NHRvS3JWazgzMWhBS2Q0b3M4VjZ4M0V5WVp6aHVDNWFCdDJrcjJRNU02U2dOOHNwLU1xTmhCakEtb21idGRzWmtsOHFzdGlndW1fX2Yta0hVV21WQkhhU3o4cG5lb3pQbEdqX1I4bEszZVBXMXBVU1hTSTVXMnVWTkhUdVY3X05lWkhrdUVw",
+      "source": "中美科技戰",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-04T07:43:56+08:00",
+      "summary": "Nvidia’s AI market share in China drops amid US export controls&nbsp;&nbsp;Crypto Briefing",
+      "body_text": "",
+      "event_type": "policy",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "輝達中國市占率降至零！黃仁勳：出口管制適得其反",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5424272",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T07:07:17+08:00",
+      "summary": "初次上稿05-03 22:42 更新時間05-04 07：07 科技新聞網站《Tom's Hardware》報導，輝達（Nvidia） 執行長黃仁勳表示，該公司在中國...…",
+      "body_text": "",
+      "event_type": "policy",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "INSIGHT: @nvidia CEO Jensen Huang says the company's market share of AI accelerators in China has dropped to 0%, calling U.S. export controls \"strategically counterproductive\". - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9PMjV2ZGFSUEY4T0poQTY5SGpOVENGMFpBRHBGVWFsOFdSNXk5RHBRbzVHRUJYNVpocGM4RDJLZF9wc3dBa3hfcW02bHZSRzBEYXRUSTkzZC1HUWhabGp0b1QzeU9qdFJK",
+      "source": "X @NVIDIA",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T06:59:54+08:00",
+      "summary": "INSIGHT: @nvidia CEO Jensen Huang says the company's market share of AI accelerators in China has dropped to 0%, calling U.S. export controls \"strategically counterproductive\".&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "policy",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Jensen says Nvidia now has 'zero percent' market share in China — says US export policy 'has already largely backfired'",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china-says-us-export-policy-has-already-largely-backfired",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-03T20:08:47+08:00",
+      "summary": "Jensen Huang says China has become a lost market for Nvidia due to U.S. sanctions, but warns that America could lose out in a broader AI competition.",
+      "body_text": "",
+      "event_type": "policy",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Open Design: Use Your Coding Agent as a Design Engine",
+      "link": "https://github.com/nexu-io/open-design",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-02T20:16:16+08:00",
+      "summary": "Article URL: https://github.com/nexu-io/open-design Comments URL: https://news.ycombinator.com/item?id=47985750 Points: 169 # Comments: 84",
+      "body_text": "The open-source alternative to Claude Design . Local-first, web-deployable, BYOK at every layer — 12 coding-agent CLIs auto-detected on your PATH (Claude Code, Codex, Devin for Terminal, Cursor Agent, Gemini CLI, OpenCode, Qwen, GitHub Copilot CLI, Hermes, Kimi, Pi, Kiro) become the design engine, driven by 31 composable Skills and 72 brand-grade Design Systems . No CLI? An OpenAI-compatible BYOK ",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Huawei predicts 60% revenue boost from sale of its AI chips in 2026",
+      "link": "https://www.datacenterdynamics.com/en/news/huawei-predicts-60-revenue-boost-from-sale-of-its-ai-chips-in-2026",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-02T00:39:41+08:00",
+      "summary": "Company is forecasting $12bn worth of sales",
+      "body_text": "Company is forecasting $12bn worth of sales\nHuawei is forecasting a 60 percent revenue increase from the sale of its AI chips, the FT has reported.\nAccording to the outlet, based on the number of orders already received this year, the Chinese chip giant expects chip revenue to hit $12 billion, up from $7.5bn in 2025.\nCiting sources familiar with the situation, the FT said demand for Huawei’s Ascen",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "TSM"
+      ],
+      "companies": [
+        "NVIDIA",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Skyrocketing component prices push Big Tech capex to record $725 billion — Microsoft alone attributes $25 billion of AI budget to increased memory and chip costs",
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/microsoft-attributed-25-billion-of-its-record-ai-budget-to-memory-chip-costs",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-01T23:49:09+08:00",
+      "summary": "Google, Amazon, Microsoft, and Meta plan to spend a combined $725 billion on capital expenditure in 2026, a 77% increase over last year's record $410 billion.",
+      "body_text": "Meta cited the same pressure, raising its spending forecast by $10 billion. Google Cloud grew 63%.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nGoogle , Amazon , Microsoft , and Meta plan to spend a combined $725 billion on capital expenditure in 2026, a 77% increase over last year's record $410 billion, according to first-quarter earnings",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "META",
+        "GOOGL",
+        "AMZN",
+        "NVDA",
+        "TSM"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta",
+        "Google",
+        "Amazon",
+        "Alphabet",
+        "NVIDIA",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Bank of America resets Microsoft stock forecast after earnings",
+      "link": "https://www.thestreet.com/investing/stocks/bank-of-america-reiterates-buy-rating-microsoft-stock-after-earnings",
+      "source": "Yahoo Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T09:03:00+08:00",
+      "summary": "",
+      "body_text": "Microsoft ( MSFT ) is a software giant, known for its Windows operating system and Office software suite. It is also a hyperscaler. The biggest driver for the stock is artificial intelligence.\nThe company's revenue comes from three different business segments. These include Productivity and Business Processes, Intelligent Cloud, and More Personal Computing. Microsoft’s cloud computing platform is ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Google",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Legal AI startup Legora hits $5.6B valuation and its battle with Harvey just got hotter",
+      "link": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-01T04:14:47+08:00",
+      "summary": "The two wildly fast-growing rivals have raised massive sums, pushed into each other's home turf, and now have dueling ad campaigns.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nThe first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nNvidia has laid a new brick in its AI empire . NVentures, its corporate VC fund, has backed Legora, reportedly its first legal AI investment.\nLeveraging AI to help lawyers streamline their work, the Swedish-born legal tech s",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Nemotron Labs: What OpenClaw Agents Mean for Every Organization",
+      "link": "https://blogs.nvidia.com/blog/what-openclaw-agents-mean-for-every-organization",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T04:00:39+08:00",
+      "summary": "By early 2026, the open source project OpenClaw had become a phenomenon. In January, its GitHub star count crossed 100,000 as developer interest surged.",
+      "body_text": "Share This Article\nX\nFacebook\nLinkedIn\nCopy link\nEditor’s note: This post is part of the Nemotron Labs blog series, which explores how the latest open models, datasets and training techniques help businesses build specialized AI systems and applications on NVIDIA platforms. Each post highlights practical ways to use an open stack to deliver real value in production — from transparent research copi",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "三星晶片獲利飆增47倍 Q1超過去年全年 看好下半年記憶體需求維持強勁",
+      "link": "https://money.udn.com/money/story/5599/9473275",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T08:46:13+08:00",
+      "summary": "三星電子周四公布第1季營業利益成長超過八倍，半導體事業獲利飆升 47 倍，創下歷史新高並超越分析師預期，在人工智慧（AI）對記憶體極度需求之下，帶進極其豐厚的利潤。",
+      "body_text": "本文共842字\n三星電子周四公布第1季營業利益成長超過八倍，半導體事業獲利飆升 47 倍，創下歷史新高並超越分析師預期，在人工智慧（AI）對記憶體極度需求之下，帶進極其豐厚的利潤。\n三星電子半導體事業第1季營業利益為53.7兆韓元（約 360 億美元），遠高於分析師預估的 35.3兆韓元。\n三星電子第1季營收和獲利均創下歷史新高。營收成長69%至133.9 韓元（899.6 億美元），分析師原估 132.69 兆韓元；營業利益57.2 兆韓元，優於分析師原估的 55.28 兆韓元，但吻合三星自估的 57.2 兆韓元，且已超越 2025年全年度獲利43.6 兆韓元。晶片事業占整體94%的獲利。\n在財報中，三星電子表示，記憶體事業「儘管供應受限，但透過滿足高附加價值的 AI 需求，加上業界記憶體價格全面調漲，使單季銷售額突破歷史紀錄」。\n三星電子預料，隨著超大規模雲端服務商持續導入 AI應用，",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Samsung profit surges over eight-fold to beat estimates as AI boom fuels memory chip crunch",
+      "link": "https://www.cnbc.com/2026/04/30/samsung-q1-earnings-ai-memory-chip-demand-profit-record.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T08:32:15+08:00",
+      "summary": "Samsung Electronics reported an over eight-fold increase in first-quarter operating profits, hitting a new record and beating analysts' estimates.",
+      "body_text": "Samsung Electronics reported an over eight-fold increase in first-quarter operating profits on Thursday, hitting a new record and beating analysts' estimates on the explosive growth of its chip business.\nHere are Samsung's first-quarter results compared with LSEG SmartEstimate, which is weighted toward forecasts from analysts who are more consistently accurate:\nThe South Korean technology giant's ",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": "up"
+    },
+    {
+      "title": "Big Tech's multi-billion dollar AI bets are still on track as Mag 7 giants report earnings",
+      "link": "https://www.coindesk.com/markets/2026/04/29/big-tech-s-multi-billion-dollar-ai-bets-are-still-on-track-as-mag-7-giants-report-earnings",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T05:07:33+08:00",
+      "summary": "",
+      "body_text": "Four of the Magnificent Seven (Mag 7) tech giants are still on track to meet their massive artificial intelligence (AI) spending targets this year, according to their earnings report.\nThe companies that have reported quarterly earnings post-market on Wednesday are Microsoft (MSFT), Alphabet (GOOG), Meta (META) and Amazon (AMZ), with a combined market cap of approximately $12 trillion.\nPreviously, ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Alphabet",
+        "Meta",
+        "Amazon",
+        "NVIDIA",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA Sets Conference Call for First-Quarter Financial Results",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-first-quarter-financial-results-6919947",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-30T05:00:00+08:00",
+      "summary": "NVIDIA will host a conference call on Wednesday, May 20, at 2 p.m. PT (5 p.m. ET) to discuss its financial results for the first quarter of fiscal year 2027, which ended April 26, 2026.",
+      "body_text": "NVIDIA will host a conference call on Wednesday, May 20, at 2 p.m. PT (5 p.m. ET) to discuss its financial results for the first quarter of fiscal year 2027, which ended April 26, 2026.\nThe call will be webcast live (in listen-only mode) on investor.nvidia.com . The company’s prepared remarks will be followed by a Q&A session, which will be limited to questions from financial analysts and institut",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "All the evidence unveiled so far in Musk v. Altman",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T02:03:05+08:00",
+      "summary": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and corporate documents are circulating from the earliest days of OpenAI - and from before the AI lab even had a name. Some high-level takeaways: [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\n﻿Emails going as far back as 2015 give a glimpse into the foundations of OpenAI and the early tens",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT",
+        "META",
+        "TSLA"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft",
+        "Meta",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Sanctioned Chinese AI Firm SenseTime Releases Image Model Built for Speed",
+      "link": "https://www.wired.com/story/chinese-ai-giant-sensetime-is-running-its-new-model-on-chinese-chips",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T01:23:52+08:00",
+      "summary": "With US restrictions limiting its access to advanced tech, SenseTime is doubling down on open source with a new model optimized to run on Chinese-made chips.",
+      "body_text": "SenseTime, a Chinese AI company best known for its facial recognition technology, released a new open source model on Tuesday that it claims can both generate and interpret images far faster than top models developed by US competitors. SenseNova U1 could help the company reclaim lost ground after it slipped from its place among the leading players in China’s AI development race.\nThe model’s secret",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
     {
       "title": "‘Your Career Starts at the Beginning of the AI Revolution,’ NVIDIA CEO Tells Graduates",
       "link": "https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address",
@@ -97,14 +836,9 @@
       "published": "2026-05-11T06:00:50+08:00",
       "summary": "Delivering the commencement address to Carnegie Mellon University’s Class of 2026, NVIDIA founder and CEO Jensen Huang said, ‘I cannot imagine a more exciting time to begin your life’s work.’ “You are entering the world at an extraordinary moment,” NVIDIA founder and CEO Jensen Huang told graduates as he delivered the keynote address at Carnegie […]",
       "event_type": "news",
-      "publisher": "NVIDIA Blog",
-      "author": "Matthew Leib",
       "tickers": [
         "1979",
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -115,15 +849,9 @@
       "published": "2026-05-11T02:40:03+08:00",
       "summary": "OpenAI攜手超微（AMD）、博通（Broadcom）、英特爾（Intel）、微軟（Microsoft）及NVIDIA，歷時2年共同開發超級電腦網路「多路徑可靠連線」（Multipath Reliable Connection；MRC）協議，透過開放運...",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT",
         "NVDA"
-      ],
-      "companies": [
-        "Microsoft",
-        "NVIDIA"
       ]
     },
     {
@@ -134,30 +862,8 @@
       "published": "2026-05-10T23:34:25+08:00",
       "summary": "On the latest episode of the Equity podcast, we discussed what xAI's deal with Anthropic might mean for parent company SpaceX.",
       "event_type": "news",
-      "publisher": "TechCrunch",
-      "author": "Anthony Ha",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "The Case For Compilers: A Look at SPEC CPU 2026 on LLVM 22",
-      "link": "https://www.servethehome.com/the-case-for-compilers-a-look-at-spec-cpu-2026-on-llvm-22",
-      "source": "ServeTheHome",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-10T23:00:26+08:00",
-      "summary": "Looking at the role of compilers in SPEC CPU 2026 performance, we have tested the benchmark suite on LLVM 22. The newest compiler provides a meaningful improvement to benchmark scores for multiple architectures The post The Case For Compilers: A Look at SPEC CPU 2026 on LLVM 22 appeared first on ServeTheHome.",
-      "event_type": "earnings",
-      "publisher": "ServeTheHome",
-      "author": "Ryan Smith",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -168,13 +874,8 @@
       "published": "2026-05-10T21:56:03+08:00",
       "summary": "RT Carnegie Mellon UniversityThis morning, Jensen Huang, Founder and CEO of @NVIDIA, met with Carnegie Mellon students ahead of Commencement. The visit created an opportunity for students to connect and share their work. Watch his 2026 remarks: https://www.cmu.edu/commencement/",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -185,14 +886,9 @@
       "published": "2026-05-10T19:47:32+08:00",
       "summary": "Ryzen 9800X3D and NVIDIA RTX 5080 PC deal knocks $300 off the MSRP on Newegg right now&nbsp;&nbsp;PC Guide",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "5080",
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -203,50 +899,8 @@
       "published": "2026-05-10T13:03:15+08:00",
       "summary": "What Coherent (COHR)'s NVIDIA Alliance and AI Wafer Expansion Means For Shareholders&nbsp;&nbsp;simplywall.st",
       "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "Aurora: A Leverage-Aware Optimizer for Rectangular Matrices",
-      "link": "https://tilderesearch.com/blog/aurora",
-      "source": "Lobsters AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T09:24:16+08:00",
-      "summary": "Comments",
-      "event_type": "earnings",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "3225",
-        "3175",
-        "1500",
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "NVIDIA AI Releases Star Elastic: One Checkpoint that Contains 30B, 23B, and 12B Reasoning Models with Zero-Shot Slicing",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1t8s83r/nvidia_ai_releases_star_elastic_one_checkpoint",
-      "source": "Reddit r/LocalLLaMA",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T08:48:04+08:00",
-      "summary": "I saw this on another sub and didn't see it posted here, it looks awesome, and can definitely be run local. I guess it was released 11 days ago, but it never hit the top of my feed (which I look at way too often), so posting it again. NVIDIA just released Star Elastic — and the inference strategy alone is worth understanding. Here's what's actually interesting from the technical side: One checkpoint. Three models. Star Elastic applies a post-training method to Nemotron Nano v3 that nests 23B and",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -257,31 +911,9 @@
       "published": "2026-05-10T02:16:00+08:00",
       "summary": "This Gigabyte gaming Copilot+ laptop deal packs AMD Ryzen 7, Nvidia 5060, 16GB RAM, 1TB SSD&nbsp;&nbsp;Neowin",
       "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
       "tickers": [
         "5060",
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "Anthropic Signs SpaceX Colossus 1 Data Center to Boost Capacity",
-      "link": "https://www.servethehome.com/anthropic-signs-spacex-colossus-1-data-center-to-boost-capacity",
-      "source": "ServeTheHome",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-10T02:00:33+08:00",
-      "summary": "Anthropic signed a deal this week for the SpaceX Colossus 1 data center compute capacity which hit home at STH since we took you on a tour The post Anthropic Signs SpaceX Colossus 1 Data Center to Boost Capacity appeared first on ServeTheHome.",
-      "event_type": "earnings",
-      "publisher": "ServeTheHome",
-      "author": "Patrick Kennedy",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -292,13 +924,8 @@
       "published": "2026-05-10T00:41:22+08:00",
       "summary": "Nvidia is pouring billions of dollars at a time into companies across the AI infrastructure stack, while also signing commercial deals with them.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -309,13 +936,8 @@
       "published": "2026-05-09T22:43:30+08:00",
       "summary": "Nvidia continues to be a big investor in the AI ecosystem.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -326,13 +948,8 @@
       "published": "2026-05-09T21:00:38+08:00",
       "summary": "We took Nvidia's RTX Mega Geometry technology through a series of tests in Alan Wake 2 and the RTX Bonsai Diorama Demo to see how this tech reduces VRAM consumption and eliminates visual artifacts, thus helping pave the way to photorealistic real-time graphics.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -343,13 +960,8 @@
       "published": "2026-05-09T18:40:00+08:00",
       "summary": "A network to smuggle restricted Nvidia AI hardware has been found: it shipped to Alibaba, among other destinations.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -360,13 +972,8 @@
       "published": "2026-05-09T15:00:00+08:00",
       "summary": "Making a choice comes down to the specific requirements of the liquid cooling architecture in each implementation",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -377,13 +984,8 @@
       "published": "2026-05-09T12:35:38+08:00",
       "summary": "Qualcomm Eyes Nvidia’s Crown in AI Data Centre Chip Battle&nbsp;&nbsp;outlookbusiness.com",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -394,13 +996,8 @@
       "published": "2026-05-09T11:31:00+08:00",
       "summary": "Elon Musk Called Claude 'Evil' — Now Anthropic Runs On His Nvidia Supercomputer&nbsp;&nbsp;Yahoo Finance",
       "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -411,13 +1008,8 @@
       "published": "2026-05-09T07:48:42+08:00",
       "summary": "Qualcomm builds data center CPUs and accelerators to challenge NVIDIA&nbsp;&nbsp;NewsBytes",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -428,13 +1020,8 @@
       "published": "2026-05-09T07:30:00+08:00",
       "summary": "Qualcomm bets on custom AI chips, targets Nvidia-led data centre market&nbsp;&nbsp;The Economic Times",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -445,13 +1032,8 @@
       "published": "2026-05-09T07:23:29+08:00",
       "summary": "At #Knowledge26, our CEO Jensen Huang and @ServiceNow Chairman and CEO Bill McDermott unveiled the next chapter of enterprise AI. Through Project Arc and Vibe Coding, we are integrating the NVIDIA AI Factory into the ServiceNow platform to turn complex intent into seamless action.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -462,17 +1044,10 @@
       "published": "2026-05-09T06:18:30+08:00",
       "summary": "Samsung, Intel and Taiwan Semiconductor are the only three companies in the world capable of manufacturing the most advanced chips needed for AI.",
       "event_type": "news",
-      "publisher": "CNBC",
-      "author": "Katie Tarasov",
       "tickers": [
         "AAPL",
         "TSM",
         "NVDA"
-      ],
-      "companies": [
-        "Apple",
-        "TSMC",
-        "NVIDIA"
       ]
     },
     {
@@ -483,13 +1058,8 @@
       "published": "2026-05-09T04:30:00+08:00",
       "summary": "NVIDIA today announced that it has named to its board of directors Suzanne Nora Johnson, effective July 13, 2026.",
       "event_type": "news",
-      "publisher": "NVIDIA Newsroom",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -500,30 +1070,8 @@
       "published": "2026-05-09T04:07:35+08:00",
       "summary": "Intel, AMD and Micron surged double digits this week as investors bet on CPU makers and memory companies powering the next stage of AI",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "Wall Street sees 'changing of the guard in AI' as Intel, AMD shares soar while Nvidia lags - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNFBsdk9WTUhFWTBZTElxNHRLQnBWYll6MWI0OFZ3cWZ3dFVSNkV6MFZIYW5zZGRPaFNwYmJfNmRiNl9hVFdDc2N5aC1FX0FWZV80d3ZKZDVlT3dpWkFseUJDalBySU1iWl90emo4N1pDVE1QYVRybVlyanNZbGdvdndmZ0NGLWh4UHRNSWxpeFdybzB5X0lZbzg5WWx3emJhMUZubTRB0gGrAUFVX3lxTE9mczV3bkZjVHJQNWN3RWtjQ3JrSHgwZjdad3hHRHVFSWFhWE80a005YlVTUVdkZVAzWDlVQUFTTFlKZVhTSXNtcnEtMHZWM1BUalNxUkZnXzdpSXFxR1hNdUg5MU16Ni1oMU9Ia3N2WTU2SkJzckVSMUZzUWV0WEpCX0NPTm9wWmVNYW8xUnZYMjVmeDVKbE9NQjRCNXkwNlBvaWZpLWZ6ZXNmTQ?oc=5",
-      "source": "記憶體產業",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T03:23:01+08:00",
-      "summary": "Wall Street sees 'changing of the guard in AI' as Intel, AMD shares soar while Nvidia lags&nbsp;&nbsp;CNBC",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -534,13 +1082,8 @@
       "published": "2026-05-09T02:42:56+08:00",
       "summary": "SanDisk Did In Months What Nvidia Took 9 Years To Pull Off — And The Chart Looks Almost Unreal&nbsp;&nbsp;Benzinga",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -551,13 +1094,8 @@
       "published": "2026-05-09T01:35:00+08:00",
       "summary": "Meet the Super Semiconductor Stock Obliterating Nvidia, AMD, and Broadcom Right Now&nbsp;&nbsp;The Motley Fool",
       "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -568,13 +1106,8 @@
       "published": "2026-05-09T01:02:38+08:00",
       "summary": "Nvidia gains rights to invest up to $2.1 billion in IREN as companies race to lock down massive AI compute capacity.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -585,13 +1118,8 @@
       "published": "2026-05-08T22:07:34+08:00",
       "summary": "Bernstein analysts set $100 IREN target after NVIDIA deal, citing $3.4B cloud contract and 76% implied upside.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -602,13 +1130,8 @@
       "published": "2026-05-08T22:01:56+08:00",
       "summary": "At a New York City ballroom late last month, a crowd of hi-tech luminaries gathered at an honours ceremony. The biggest draw for the assembled tech geniuses was Nvidia founder Jensen Huang, the superstar head of one of the world’s most valuable companies, set to receive the night’s top award. In some ways, engineers have been at the centre of every industrial revolution, Huang told the crowd, from steam to electricity to information technology. But this one, artificial intelligence (AI), will be",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
@@ -619,15 +1142,9 @@
       "published": "2026-05-08T16:22:28+08:00",
       "summary": "Zacks Investment Ideas feature highlights: Broadcom, Taiwan Semiconductor and NVIDIA&nbsp;&nbsp;The Globe and Mail",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "TSM",
         "NVDA"
-      ],
-      "companies": [
-        "TSMC",
-        "NVIDIA"
       ]
     },
     {
@@ -638,126 +1155,8 @@
       "published": "2026-05-08T08:49:23+08:00",
       "summary": "",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "AI電源架構升級、高階功率電感需求升溫 新聿科4月營收1.16億元",
-      "link": "https://ec.ltn.com.tw/article/breakingnews/5429670",
-      "source": "自由時報 財經",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T08:49:04+08:00",
-      "summary": "專精於功率型電感研發製造的新聿科（7912）公告4月營收1.16億元、年增18.34%，1至4月累計營收4.73億元、年增48.46%，公司表示，受惠AI伺服器電源架構升...…",
-      "event_type": "earnings",
-      "publisher": "自由時報電子報",
-      "author": "張慧雯",
-      "tickers": [
-        "7912",
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "聯發科啟用銅鑼研發資料中心 全台首座以NVIDIA DGX B200平台趨動運算平台 | 信傳媒 - LINE TODAY",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE15cm82UmZKTnFmdkZqbGJsOFBoMnBZRFdGX3E3c1ZReWpkMUwwcng5bTJ4VWdHcmR0aXhzR2tvalhyN3lVb002TnVfVXZvN21rSTh4SlZB",
-      "source": "聯發科/MediaTek",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T08:22:09+08:00",
-      "summary": "聯發科啟用銅鑼研發資料中心 全台首座以NVIDIA DGX B200平台趨動運算平台 | 信傳媒&nbsp;&nbsp;LINE TODAY",
-      "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
-      "tickers": [
-        "2454",
-        "NVDA"
-      ],
-      "companies": [
-        "聯發科",
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "軟銀據報正與Nvidia 及鴻海商議在日生產AI 伺服器財經新聞Financial News - AASTOCKS.com",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaDlwWGZnZmxMX3VUQzZXUmdhSHQtMUU4MEMySGtBRE5mbWc1WXhqM2Z0Y1pqZWU0NmN4RkJzcFRZek1WUnc1dWduZGFBNFZwaGJSSl9yRHdtdlJPYlVZNFFZTXZ4dVJVZjBnMWQxSWNRZFlnR19UNUUzcnMtWmFReVktbzNEeVJh",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T07:53:00+08:00",
-      "summary": "軟銀據報正與Nvidia 及鴻海商議在日生產AI 伺服器財經新聞Financial News&nbsp;&nbsp;AASTOCKS.com",
-      "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
-      "tickers": [
-        "NVDA",
-        "2317"
-      ],
-      "companies": [
-        "NVIDIA",
-        "鴻海"
-      ]
-    },
-    {
-      "title": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-      "link": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T07:38:14+08:00",
-      "summary": "CoreWeave has been raising debt to finance its data center buildout, and S&amp;P has boosted the company's credit rating.",
-      "event_type": "earnings",
-      "publisher": "CNBC",
-      "author": "Jordan Novet",
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "NVDA"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "IREN inks AI infrastructure deal with Nvidia",
-      "link": "https://www.cnbc.com/2026/05/07/iren-stock-ai-infrastructure-nvidia.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T07:27:56+08:00",
-      "summary": "Data center operator IREN announced a partnership with semiconductor giant Nvidia.",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "White House inviting Nvidia, Apple, Boeing CEOs on Trump’s China trip, report says",
-      "link": "https://www.scmp.com/news/world/united-states-canada/article/3352821/white-house-inviting-ceos-nvidia-apple-trumps-china-trip-report-says",
-      "source": "南華早報 科技",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-08T05:47:23+08:00",
-      "summary": "The Trump ⁠administration is inviting CEOs from ⁠Nvidia, Apple, Exxon, Boeing and other big companies to accompany the president on his trip to China next week, Semafor reported on Thursday. Executives from Qualcomm, Blackstone, Citigroup ‌and Visa are also on the invitation list, according to the report. A person familiar with the matter confirmed that Citigroup CEO Jane Fraser was invited. Qualcomm confirmed the invitation but declined to comment further. Reuters was not able to confirm ⁠the..",
-      "event_type": "news",
-      "publisher": "South China Morning Post",
-      "author": "Reuters",
-      "tickers": [
-        "NVDA",
-        "AAPL"
-      ],
-      "companies": [
-        "NVIDIA",
-        "Apple"
       ]
     }
   ],
@@ -781,47 +1180,97 @@
       "guidance_summary": ""
     }
   ],
+  "fundamentals": {
+    "ticker": "NVDA",
+    "market": "us",
+    "company_name": "NVIDIA CORP",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "revenue": 147811000000.0,
+      "gross_profit": 102370000000.0,
+      "operating_income": 86088000000.0,
+      "net_income": 77107000000.0,
+      "eps": 3.14,
+      "fcf": 65740000000.0,
+      "ocf": 66530000000.0,
+      "capex": 790000000.0,
+      "gross_margin": 0.692573624425787,
+      "op_margin": 0.5824194410429535,
+      "net_margin": 0.5216594164169108,
+      "fcf_margin": 0.44475715609799,
+      "capex_intensity": 0.005344663117088715,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q3",
+        "revenue": 147811000000.0,
+        "gross_profit": 102370000000.0,
+        "operating_income": 86088000000.0,
+        "net_income": 77107000000.0,
+        "eps_diluted": 3.14,
+        "fcf": 65740000000.0,
+        "ocf": 66530000000.0,
+        "capex": 790000000.0,
+        "company_name": "NVIDIA CORP"
+      }
+    ],
+    "health": {
+      "tier": "steady",
+      "label": "穩健",
+      "summary": "營益率 58% 業界頂尖・FCF margin 44% 現金力強",
+      "icon": "🔵",
+      "score": 3
+    }
+  },
   "co_mentions": [
     {
-      "ticker": "2330",
-      "count": 2
+      "ticker": "GOOGL",
+      "count": 9
+    },
+    {
+      "ticker": "META",
+      "count": 8
     },
     {
       "ticker": "MSFT",
+      "count": 8
+    },
+    {
+      "ticker": "2330",
+      "count": 5
+    },
+    {
+      "ticker": "AMZN",
+      "count": 5
+    },
+    {
+      "ticker": "TSM",
+      "count": 3
+    },
+    {
+      "ticker": "0050",
+      "count": 2
+    },
+    {
+      "ticker": "1933",
+      "count": 2
+    },
+    {
+      "ticker": "1934",
       "count": 2
     },
     {
       "ticker": "AAPL",
       "count": 2
-    },
-    {
-      "ticker": "TSM",
-      "count": 2
-    },
-    {
-      "ticker": "0050",
-      "count": 1
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 1
-    },
-    {
-      "ticker": "META",
-      "count": 1
-    },
-    {
-      "ticker": "1979",
-      "count": 1
-    },
-    {
-      "ticker": "5080",
-      "count": 1
-    },
-    {
-      "ticker": "3225",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:22:11Z"
+  "generated_at": "2026-05-11T03:33:21Z"
 }

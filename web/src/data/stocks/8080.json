@@ -1,0 +1,87 @@
+{
+  "ticker": "8080",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+      "link": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-06T01:13:51+08:00",
+      "summary": "Article URL: https://ai.georgeliu.com/p/running-google-gemma-4-locally-with Comments URL: https://news.ycombinator.com/item?id=47651540 Points: 177 # Comments: 50",
+      "body_text": "Cloud AI APIs are great until they are not. Rate limits, usage costs, privacy concerns, and network latency all add up. For quick tasks like code review, drafting, or testing prompts, a local model that runs entirely on your hardware has real advantages: zero API costs, no data leaving your machine, and consistent availability.\nGoogle’s Gemma 4 is interesting for local use because of its mixture-o",
+      "event_type": "earnings",
+      "tickers": [
+        "1441",
+        "1451",
+        "1450",
+        "1457",
+        "3600",
+        "1234",
+        "8080",
+        "GOOGL",
+        "META",
+        "AAPL",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "Apple",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1441",
+      "count": 1
+    },
+    {
+      "ticker": "1451",
+      "count": 1
+    },
+    {
+      "ticker": "1450",
+      "count": 1
+    },
+    {
+      "ticker": "1457",
+      "count": 1
+    },
+    {
+      "ticker": "3600",
+      "count": 1
+    },
+    {
+      "ticker": "1234",
+      "count": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    },
+    {
+      "ticker": "AAPL",
+      "count": 1
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

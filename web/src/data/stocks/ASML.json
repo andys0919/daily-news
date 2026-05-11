@@ -1,0 +1,52 @@
+{
+  "ticker": "ASML",
+  "market": "us",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "ASML (NASDAQ:ASML) Trading 3.2% Higher - What's Next? - MarketBeat",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeHVYa3RpUXBaYk1FZjNqOFAyMGtpQ3l4Z3pXdFFfYmNGV1luSktsZVpQXzdDMmQtMXZYOEJKRURoYUVUaXJxRld3dEdiR1F2TTQtQ0tuZVZkV0tuZ3dyMGNxXzBHVXk4X0JZcEN4cFhRczFPeE45RVdrQThrQmpYU3ZwV3hSeUctekptZkotczJUdFBrdGgta0NGX25qeHM",
+      "source": "ASML News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T07:55:26+08:00",
+      "summary": "ASML (NASDAQ:ASML) Trading 3.2% Higher - What's Next?&nbsp;&nbsp;MarketBeat",
+      "event_type": "news",
+      "tickers": [
+        "ASML"
+      ]
+    },
+    {
+      "title": "ASML: Critical EUV Bottleneck Holding Back The AI Boom (NASDAQ:ASML) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOGdkUERMWTYzNGZQeHF1cGRuLVNZUUp3emliRGpzNUN6QU9QOFItVzM4Ynk4bWl3Uy1RT3pvNzZNeXNJV29IOUNGeFI0WVc2VU5fbzg2OFMyUWJMY2F5dkdXbzlPcUduR2F4S18tajFHeGFZOVdTdWcwZGgwR0NrRWdhUnVjdUFPUFJrSWdsM3A3eGRt",
+      "source": "ASML News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-18T21:00:00+08:00",
+      "summary": "ASML: Critical EUV Bottleneck Holding Back The AI Boom (NASDAQ:ASML)&nbsp;&nbsp;Seeking Alpha",
+      "event_type": "news",
+      "tickers": [
+        "ASML"
+      ]
+    },
+    {
+      "title": "Why Is ASML Stock Falling Tuesday? - ASML Holding (NASDAQ:ASML) - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNb2gtY2FtNmlBNVZ0aTJacXAtS0N3WVhhalNrSWxzT1dMTWJ4Z1F1ampZVngyXzBiaFZlamNWQlgtZDN4TnkzMDh4ejFJUXRlb1hpR1VDOWJmYVhZWkE1M2dva3NDVGpEa3Vab2VqMlhXdzRXbU5uelVXRjk3R3JNLUlWMEljUXNqS0llbGc3VEdSTWhPZVNSOXFrUEZoY2VoTmhWT2FGeWlMWEh2",
+      "source": "中美科技戰",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-07T22:11:39+08:00",
+      "summary": "Why Is ASML Stock Falling Tuesday? - ASML Holding (NASDAQ:ASML)&nbsp;&nbsp;Benzinga",
+      "event_type": "news",
+      "tickers": [
+        "ASML"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

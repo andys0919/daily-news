@@ -52,9 +52,8 @@
       "category": "👁️ 內部人與機構持股",
       "published": "2026-05-11T07:14:23+08:00",
       "summary": "Twist Bioscience Corporation (NASDAQ:TWST) is one of the best performing healthcare stocks so far in 2026. Twist Bioscience Corporation (NASDAQ:TWST) announced its fiscal Q2 2026 financial results and business highlights on May 4, reporting solid performance in the first half of 2026. It ended fiscal Q2 with its 13th consecutive quarter of growth, with total [&#8230;]",
+      "body_text": "Twist Bioscience Corporation (NASDAQ: TWST ) is one of the best performing healthcare stocks so far in 2026 . Twist Bioscience Corporation (NASDAQ:TWST) announced its fiscal Q2 2026 financial results and business highlights on May 4, reporting solid performance in the first half of 2026. It ended fiscal Q2 with its 13th consecutive quarter of growth, with total revenue for the quarter reaching $11",
       "event_type": "earnings",
-      "publisher": "Insider Monkey",
-      "author": "Noor Ul Ain Rehman",
       "tickers": [
         "TWST",
         "GOOGL",
@@ -63,7 +62,8 @@
       "companies": [
         "Google",
         "Berkshire"
-      ]
+      ],
+      "guidance_direction": null
     },
     {
       "title": "RBC Capital Lifts PT on Acadia Healthcare Company (ACHC) Following Q1 Earnings Beat",
@@ -72,9 +72,8 @@
       "category": "👁️ 內部人與機構持股",
       "published": "2026-05-11T07:14:16+08:00",
       "summary": "Acadia Healthcare Company, Inc. (NASDAQ:ACHC) is one of the best performing healthcare stocks so far in 2026. Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price target on the stock to $31 from $28 and reiterating an Outperform rating on the shares. The [&#8230;]",
+      "body_text": "Acadia Healthcare Company, Inc. (NASDAQ: ACHC ) is one of the best performing healthcare stocks so far in 2026 . Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price target on the stock to $31 from $28 and reiterating an Outperform rating on the shares. The rating update came after the company delivered its fiscal Q1 earn",
       "event_type": "earnings",
-      "publisher": "Insider Monkey",
-      "author": "Noor Ul Ain Rehman",
       "tickers": [
         "ACHC",
         "GOOGL",
@@ -83,7 +82,8 @@
       "companies": [
         "Google",
         "Berkshire"
-      ]
+      ],
+      "guidance_direction": null
     },
     {
       "title": "股價用喊的？SanDisk、美光股價飆漲為台股本周走勢埋下火種",
@@ -92,9 +92,8 @@
       "category": "🔬 半導體與硬體",
       "published": "2026-05-11T06:30:07+08:00",
       "summary": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公佈的就業報告數據優於市場預期，上週五（5月8日）美國股市 [&#8230;]",
+      "body_text": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公布的就業報告數據優於市場預期，上週五（5 月 8 日）美國股市迎來強勁的慶祝行情。美股四大指數全面收紅，這情況帶動美股兩大記憶體龍頭 SanDisk 與美光科技的爆炸性驚人表現。其中，SanDisk 更是單日狂飆 16.6%，收盤價來到 1,562.34 美元。而美光科技股價單日大漲 15.52%，收在 746.79 美元附近。而這情況，即將為 11 日（週一）開盤的台股帶來什麼樣的激勵作用，投資人都在密切關注。\n上週五美國股市迎來強勁的慶祝行情。美股四大指數全面收紅，其中標普500指數上漲0.84%（收7,398.93點），那斯達克指數上漲1.71%（收26,247.08點），雙雙再創歷史新高。然而，真正震撼市場並推動科技股大漲的核心動力，是飆升5.51%的費城半導體指數（收11,775.50點）。這對於即將在5月11日開盤的台灣股市",
       "event_type": "earnings",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "NVDA",
         "GOOGL",
@@ -107,7 +106,8 @@
         "Meta",
         "台積電",
         "Google"
-      ]
+      ],
+      "guidance_direction": null
     },
     {
       "title": "Agentic commerce will run on crypto rails, PayPal and Google reps tell Consensus Miami",
@@ -116,17 +116,724 @@
       "category": "💰 財經與總經",
       "published": "2026-05-10T22:00:00+08:00",
       "summary": "",
+      "body_text": "MIAMI BEACH, Fla. — Senior figures from Google Cloud and PayPal told CoinDesk's Consensus Miami conference on Thursday that the next wave of internet commerce will run on crypto rails because AI agents structurally cannot use traditional financial accounts.\nRichard Widmann, global head of Web3 strategy at Google Cloud, said the existing internet user experience does not extend to autonomous agents",
       "event_type": "earnings",
-      "publisher": "CoinDesk",
-      "author": "Jeffrey Albus",
       "tickers": [
         "BLSH",
         "GOOGL"
       ],
       "companies": [
         "Google"
-      ]
+      ],
+      "guidance_direction": null
     },
+    {
+      "title": "Netflix 雖不靠遊戲賺錢，但做遊戲要幹麼腦袋還很清楚",
+      "link": "https://finance.technews.tw/2026/05/10/netflix-isnt-making-money-from-games-but-it-knows-exactly-why-its-making-them",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-10T14:00:55+08:00",
+      "summary": "Netflix 2026 年第一季財報帳面相當漂亮：營收為 122.5 億美元，年成長 16.2%；營業利益 [&#8230;]",
+      "body_text": "Netflix 2026 年 第一季財報 帳面相當漂亮：營收為 122.5 億美元，年成長 16.2%；營業利益 39.57 億美元，營業利益率 32.3%；淨利 52.83 億美元，稀釋後每股盈餘 1.23 美元，高於 2025 年同期的 0.66 美元。公司也維持全年營收 507 億至 517 億美元、營業利益率 31.5% 財測。\n但這份財報的重點，不只是 Netflix 還能不能漲價、廣告收入能不能放大，而是如何解釋「串流成熟後還能做什麼」，包括增加會員娛樂價值、用技術改善服務、提高變現能力；而遊戲、影音 Podcast、直播活動都放在「讓 Netflix 成為最後被取消的服務」這條主線下。\n路透報導 指出 ，雖然 Netflix 第一季營收與獲利優於預期，但第二季每股盈餘展望低於分析師預估，加上全年財測沒有上修，使投資人認為「沒有改變投資命題的新東西」。換句話說，Netflix ",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "So you’ve heard these AI terms and nodded along; let’s fix that",
+      "link": "https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-10T05:45:00+08:00",
+      "summary": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+      "body_text": "Artificial intelligence is changing the world, and simultaneously inventing a whole new language to describe how it’s doing it. Spend five minutes reading about AI and you’ll run into LLMs, RAG, RLHF, and a dozen other terms that can make even very smart people in the tech world feel insecure. This glossary is our attempt to fix that. We update it regularly as the field evolves, so consider it a l",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Course correction: Google to link more sources in AI Overviews",
+      "link": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-09T03:43:47+08:00",
+      "summary": "Google's AI search will start citing its sources in several new ways.",
+      "body_text": "Google’s AI search will start citing its sources in several new ways.\nThe top of a Google search page is prime real estate, but it has primarily been the domain of AI Overviews for the past two years. Websites that spent years optimizing for Google search haven’t exactly loved being pushed down the page by a chatbot and may blame AI Overviews for recent traffic drops. Google is not admitting fault",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
+      "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T23:25:02+08:00",
+      "summary": "When OpenAI was busy experimenting with AI-powered gaming bots, Microsoft CEO Satya Nadella and OpenAI CEO Sam Altman were in the early days of forming an AI partnership. Court documents from the ongoing Musk v. Altman trial have provided a rare look at the communications between Microsoft's top executives about investing in OpenAI and fears [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Gaming\nThe early days of Microsoft’s OpenAI partnership have been revealed in detail in court documents t",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "「聯電第二」來了！力積電躋身英特爾 EMIB 先進封裝夥伴",
+      "link": "https://technews.tw/2026/05/08/psmc-into-intel-emib",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T08:10:42+08:00",
+      "summary": "力積電營運傳捷報，繼中介層產品成為台積電 CoWoS 先進封裝夥伴之後，再打入英特爾當紅 EMIB 先進封裝供 [&#8230;]",
+      "body_text": "力積電 營運傳捷報，繼中介層產品成為 台積電 CoWoS 先進封裝夥伴之後，再打入英特爾當紅 EMIB 先進封裝供應鏈，加上與美光在高頻寬記憶體（HBM）相關業務合作順利推進，營運大轉骨。\n英特爾EMIB先進封裝來勢洶洶，傳已獲得多家一線IC設計廠導入，搶單台積電，市場按讚，英特爾股價奔騰創高之際，既有中介層夥伴 聯電 跟著火紅，如今力積電也加入英特爾EMIB先進封裝供應鏈，成為「聯電第二」，並同步攜手台積電、英特爾這兩大咖衝刺先進封裝市場。\n消息人士透露，力積電與英特爾合作推進的EMIB相關項目，正進入後段驗證階段，客戶端需求持續增加，尤其12吋IPD（整合型被動元件）平台已完成國際大廠認證，預計第二季起開始放量，相關產品將用於英特爾EMIB先進封裝架構。力積電規劃，2027下半年起，單月投片需求有機會逼近萬片。\n業界分析，過去AI（人工智慧）伺服器市場主要由台積電CoWoS先進封裝主導",
+      "event_type": "earnings",
+      "tickers": [
+        "2330",
+        "GOOGL"
+      ],
+      "companies": [
+        "台積電",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Notes from inside China's AI labs",
+      "link": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs",
+      "source": "Interconnects AI",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-07T23:42:43+08:00",
+      "summary": "Lessons from my trip to talk to most of the leading AI labs in China.",
+      "body_text": "Staring out the window on a new, high-speed train from Hangzhou to Shanghai I’m gifted with views of dramatic ridgelines speckled with wind turbines that are silhouetted against the setting sun. The mountains cast a backdrop to a mix of spanning fields and clustered skyscrapers. I’m returning from China with great humility. It’s a very warming, human experience to go somewhere so foreign and be so",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Find out how AlphaEvolve has gone from research to solving real-life problems.",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-updates",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T23:00:00+08:00",
+      "summary": "AlphaEvolve has become a powerful engine for scientific and societal progress.",
+      "body_text": "A year ago, we introduced AlphaEvolve , a Gemini-powered evolutionary algorithm agent that iteratively discovers optimized algorithms for complex problems. It’s advanced decades-old math problems, and now it’s helping tackle major global challenges, too.\nOver the past year, AlphaEvolve has become a powerful engine for scientific and societal progress. It helped improve DNA sequencing error correct",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Is xAI a neocloud now?",
+      "link": "https://techcrunch.com/2026/05/06/is-xai-a-neocloud-now",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T05:32:55+08:00",
+      "summary": "xAI's real business may be more about building data centers than training AI models.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nOn Wednesday, xAI and Anthropic announced a surprise partnership that has the Claude-maker buying out “all of the compute capacity at [xAI’s] Colossus 1 data center,” roughly 300MW that allowed Anthropic to immediately raise its usag",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "GOOGL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Spooked by Mythos, Trump suddenly realized AI safety testing might be good",
+      "link": "https://arstechnica.com/tech-policy/2026/05/everything-that-could-go-wrong-with-trumps-ai-safety-tests-according-to-experts",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T05:20:14+08:00",
+      "summary": "Trump forced to admit Biden was right on AI safety testing.",
+      "body_text": "Trump forced to admit Biden was right on AI safety testing.\nThis week, the Trump administration backpedaled and signed agreements with Google DeepMind, Microsoft, and xAI to run government safety checks on the firms’ frontier AI models before and after their release.\nPreviously, Donald Trump had stubbornly cast aside the Biden-era policy , dismissing the need for voluntary safety checks as overreg",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "How David Sacks crashed and burned in the White House",
+      "link": "https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T04:18:00+08:00",
+      "summary": "Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers about tech, politics, and Washington intrigue. (It's basically House of Cards, but for nerds.) Not a subscriber yet? You really should become one, and to save you a Google search, here is the direct link to do so! And do you think I should [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nThe Trump administration pulled a 180 on AI oversight, inducing Sacks’ worst nightmare: more gover",
+      "event_type": "policy",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "NVDA",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "NVIDIA",
+        "Amazon",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Google DeepMind partners with EVE Online for AI model testing",
+      "link": "https://arstechnica.com/gaming/2026/05/google-deepmind-partners-with-eve-online-for-ai-model-testing",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T00:56:49+08:00",
+      "summary": "Move comes as CCP Games spends $120M to go independent, rebrands as Fenris Creations.",
+      "body_text": "Move comes as CCP Games spends $120M to go independent, rebrands as Fenris Creations.\nGoogle’s AI-focused DeepMind division has taken a minority stake in the developer of popular sci-fi simulation EVE Online , saying it will use the game to study “intelligence in complex, dynamic, player-driven systems.”\nThe research partnership comes as the management behind EVE Onlin e developer CCP Games announ",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
+      "link": "https://tilde.run/",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-06T23:58:34+08:00",
+      "summary": "Article URL: https://tilde.run/ Comments URL: https://news.ycombinator.com/item?id=48037724 Points: 124 # Comments: 90",
+      "body_text": "Let AI agents loose on production. Without the risk.\nTilde turns every agent run into a transaction you can roll back. Code from GitHub, data from S3, and documents from Drive show up as a single versioned filesystem. Every outbound call is checked and logged. Autonomous code, finally safe to use against real data.\nFree to start · Join the private preview\nThree guarantees that make autonomous code",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "5 new ways to explore the web with generative AI in Search",
+      "link": "https://blog.google/products-and-platforms/products/search/explore-web-generative-ai-search",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T21:00:00+08:00",
+      "summary": "An illustration of a woman using a laptop to search the web, with search result snippets and a search bar icon floating around her desk.",
+      "body_text": "May 06, 2026\nWe’re rolling out new updates to AI Mode and AI Overviews to help you easily find relevant websites, deep insights and original content from across the web.\nGoogle is updating its AI search features to help you find original content and trusted sources more easily. You will now see relevant article suggestions, direct links within responses, and previews of websites and personal persp",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "North American AI Data Center Expansion Drives 2026 CapEx of Top Nine CSPs to US$830 Billion, Says TrendForce",
+      "link": "https://www.trendforce.com/presscenter/news/20260506-13033.html",
+      "source": "TrendForce 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T17:02:29+08:00",
+      "summary": "TrendForce’s latest findings on the AI industry highlight that several major North American CSPs have recently raised their 2026 capital expenditure (CapEx) guidance in response to strong AI demand. As a result, TrendForce has revised its forecast for the combined CapEx of the world’s top nine CSPs—Google, AWS, Meta, Microsoft, Oracle, ByteDance, Tencent, Alibaba, and Baidu—up to approximately US$830 billion in 2026, with the annual growth rate raised from 61% to 79%.",
+      "body_text": "TrendForce’s latest findings on the AI industry highlight that several major North American CSPs have recently raised their 2026 capital expenditure (CapEx) guidance in response to strong AI demand. As a result, TrendForce has revised its forecast for the combined CapEx of the world’s top nine CSPs—Google, AWS, Meta, Microsoft, Oracle, ByteDance, Tencent, Alibaba, and Baidu—up to approximately US$",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Trump administration's AI doomer moment",
+      "link": "https://www.platformer.news/trump-administration-doomers-ai",
+      "source": "Platformer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T08:00:22+08:00",
+      "summary": "A year ago, officials all but sneered at the idea of AI safety. A new frontier model has them reconsidering",
+      "body_text": "A year ago, officials all but sneered at the idea of AI safety. A new frontier model has them reconsidering\nThis is a column about AI. My fiancé works at Anthropic. See my full ethics disclosure here .\nIn February 2025, Vice President JD Vance took the stage at the Paris AI Action Summit to share the administration’s views on AI regulation. “The AI future is not going to be won by hand-wringing ab",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "資料中心業務年營收大漲 57%，帶動 AMD 第一季財報亮眼盤後大漲逾 12%",
+      "link": "https://finance.technews.tw/2026/05/06/amds-first-quarter-earnings-exceeded-market-expectations",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T06:30:24+08:00",
+      "summary": "受惠於人工智慧 （AI） 工作執行對晶片的強勁需求，處理器大廠 AMD 公布的第一季財報超乎市場的預期，同時發 [&#8230;]",
+      "body_text": "受惠於人工智慧 （AI） 工作執行對晶片的強勁需求，處理器大廠 AMD 公布的第一季財報超乎市場的預期，同時發布了優於預期的第二季財測。財報發表後，AMD 股價在盤後交易中大漲超過 12%。\n根據財報資料，AMD 在截至 3 月的2026年第一季交出了亮眼的成績單。包括總營收達 102.5 億美元，高於預期的 98.9 億美元，較 2025 年同期的 74.4 億美元大幅成長 38%。淨利從 2025 年同期的 7.09 億美元攀升至 13.8 億美元。EPS 調整後來到 1.37 美元，高於市場預期的 1.29 美元。其中，資料中心業務表現最為強勁，營收較 2025 年同期大增 57%，從 36.7 億美元攀升至 58 億美元。\nAMD 執行長蘇姿丰 （Lisa Su） 在聲明中表示，資料中心部門現在是 AMD 營收與獲利成長的主要驅動力。她進一步指出，隨著公司擴大供應以滿足市場需求，預",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Meta",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AMD expects 20% decline in gaming revenue from 'higher memory and component costs' in the second half of the year — CEO Lisa Su warns of further memory crunch",
+      "link": "https://www.tomshardware.com/tech-industry/amd-expects-20-percent-decline-in-gaming-revenue-from-higher-memory-and-component-costs-in-the-second-half-of-the-year-ceo-lisa-su-warns-of-further-memory-crunch",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T06:19:10+08:00",
+      "summary": "AMD is expecting the memory crunch to hit its gaming business in the second half of the year, with revenue expected to decline by \"more than 20%.\"",
+      "body_text": "The memory squeeze hits the balance sheet.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nAMD announced its financial results for the first quarter of 2026 on Tuesday, noting record revenue in the data center while warning of a further memory crunch on the consumer side. AMD says it's bracing for impact in the second half of the year, noting",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple plans to make iOS 27 a Choose Your Own Adventure of AI models",
+      "link": "https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T04:56:41+08:00",
+      "summary": "With Apple's latest operating system updates, users will reportedly have their pick of which third-party AI models they want to use for a host of tasks.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nWhen iOS 27 is released later this year, iPhone users will reportedly have a lot of choice when it comes to which AI models they want to use on-device.\nA new report from Bloomberg says that Apple plans to give users their pick of a n",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "ASML CEO Christophe Fouquet on his company’s monopoly: no one is coming for us",
+      "link": "https://techcrunch.com/2026/05/05/asml-ceo-christophe-fouquet-no-one-is-coming-for-us",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T04:06:40+08:00",
+      "summary": "Christophe Fouquet, who became ASML's CEO in 2024 after more than a decade at the company, sat down with this editor on the rooftop deck of his Beverly Hills hotel Tuesday morning ahead of his appearance at the Milken Institute Global Conference. Dressed in a blue suit and white shirt, he was relaxed — even when the conversation turned to the rivals.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nEvery time you use AI, you are, in some small way, depending on a 42-year-old, 44,000-person Dutch company that spends €4.5 billion each year to advance its technology.\nASML, headquartered in the Netherlands, makes the machines that ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSM"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta",
+        "Amazon",
+        "Google",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "四大CSP資本支出上修至超過7千億美元　記憶體結構性供需缺口延至2028年",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754242_MEF1Q9665H9PFJ12TO3FL",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T03:00:00+08:00",
+      "summary": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳...",
+      "body_text": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳沛銘表示，更多客戶主動要求，近期「被客戶逼著」簽訂3年合約，以確保供貨，預期記憶體結構性供給缺口，將延續至2028年以後。\n三星電子（Samsung Electronics）、SK海力士（SK Hynix）、美光（Micron）、SanDisk陸續與客戶綁定LTA合約，甚至有CSP客戶已將預付款提高至LTA長約總價值的10~30%，反映產業供應緊缺的長期趨勢，買家寧願付出高額溢價。\n儘管產能供不應求，但華邦電對LTA態度相對被動，簽訂LTA也是被客戶所逼，希望能承諾未來3年的供貨量，再逐季談價格。不過陳沛銘認為，隨著高雄新廠B模組持續推動，屆時在導入設備及產能規劃時，也將考慮跟客戶提前",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "GOOGL",
+        "AMZN"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Alphabet",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "傳與蘋果談生產晶片　英特爾股價勁揚14%創新高",
+      "link": "https://www.cna.com.tw/news/afe/202605060003.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T01:36:20+08:00",
+      "summary": "（中央社聖克拉拉5日綜合外電報導）美國晶片製造大廠英特爾（Intel）股價今天勁揚14%，創下歷史新高，延續自4月以來的強勁漲勢。",
+      "body_text": "（中央社聖克拉拉5日綜合外電報導）美國晶片製造大廠英特爾（Intel）股價今天勁揚14%，創下歷史新高，延續自4月以來的強勁漲勢。\n這波上漲源自彭博（Bloomberg News）報導指出，蘋果公司（Apple Inc.）正在與英特爾和三星電子（Samsung Electronics）洽談，計劃在美國生產旗下裝置的主要處理器。這家iPhone製造商長期以來一直依賴台積電的晶片。\n對於相關報導，英特爾與三星電子均不願置評。蘋果則未回覆置評請求。\n美國財經媒體CNBC報導，英特爾才剛創下在那斯達克掛牌55年來表現最佳的單月行情，股價在4月狂飆114%，市值突破4700億美元。\n幾項重要的合作也協助推動這波漲勢。英特爾上月宣布將擴大與谷歌公司（Google）的合作夥伴關係，並計劃加入馬斯克（Elon Musk）的Terafab專案。此外，英特爾還宣布將斥資142億美元，買回位於愛爾蘭的Fab 3",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "2330",
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Apple",
+        "台積電",
+        "Google",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Designing Data-Intensive Applications: The Cloud & Doing the Right Thing",
+      "link": "https://newsletter.pragmaticengineer.com/p/designing-data-intensive-applications-book-excerpt",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T00:46:00+08:00",
+      "summary": "How the cloud changes the way we build applications, and why engineers&#8217; ethical choices matter more than ever. Excerpt from the book, &#8216;Designing Data-Intensive Applications&#8217;, 2nd edition",
+      "body_text": "In 2016, Martin Kleppmann published ‘Designing Data-Intensive Applications’, which quickly became a go-to book for those of us building backend applications and distributed systems. In it, Martin combined his experience as a startup founder with observations from his time at LinkedIn, and invested years of rigorous, fulltime research in the title.\nNine years later, he felt the time was ripe for an",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "徐秀蘭：庫存去化進入尾聲，AI 與先進製程拉動下半年強勁復甦",
+      "link": "https://finance.technews.tw/2026/05/05/globalwafers-inventory-reduction-is-nearing-completion",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T21:45:27+08:00",
+      "summary": "全球矽晶圓大廠環球晶圓5日召開2026年第一季法人說明會。董事長徐秀蘭在問答環節中指出，儘管市場仍面臨總體經濟 [&#8230;]",
+      "body_text": "全球矽晶圓大廠 環球晶 圓 5 日召開 2026 年第一季法人說明會。董事長徐秀蘭在問答環節中指出，儘管市場仍面臨總體經濟不確定性，但隨著 AI 應用滲透至邊緣運算，以及先進製程對優質晶圓的需求激增，環球晶已做好迎接下半年景氣回溫的準備。\n在法人高度關注下游客戶的庫存水平方面，徐秀蘭表示，經過數季的調整，客戶端的庫存已普遍降至健康水位。特別是在12吋（300mm）先進製程晶圓部分，受惠於AI伺服器與高效能運算（HPC）的需求拉動，訂單能見度已延伸至年底。相較之下，8吋晶圓與車用/功率半導體相關產品的復甦力道較為溫和，但徐秀蘭樂觀預期，隨著消費性電子產品進入傳統旺季，加上AI手機與AI PC帶來的換機潮，第二季將是全年的營運谷底，第三季起將迎來顯著的季度增長（QoQ）。\n而投資人擔心的海外營運成本與毛利衝擊，環球晶透露其在美國德州謝爾曼市（Sherman）的新廠建設進度順利。該廠做為美國近2",
+      "event_type": "earnings",
+      "tickers": [
+        "6488",
+        "GOOGL"
+      ],
+      "companies": [
+        "環球晶",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "環球晶第一季 EPS 3.97 元，確定產業春燕到規劃下半年調漲價格",
+      "link": "https://finance.technews.tw/2026/05/05/globalwafers-first-quarter-eps-was-nt3-97",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T21:15:49+08:00",
+      "summary": "矽晶圓大廠環球晶圓5日召開線上法說會，公布2026年第一季財報並釋出最新營運展望。董事長徐秀蘭表示，第一季已確 [&#8230;]",
+      "body_text": "矽晶圓大廠 環球晶 圓 5 日召開線上法說會，公布 2026 年第一季財報並釋出最新營運展望。董事長徐秀蘭表示，第一季已確定為本波半導體週期的底部，在全球 AI 與非 AI 應用需求同步回溫的帶動下，整體產業復甦力道與全面性皆優於原先預期。\n根據財報顯示，環球晶2026年第一季合併營收達新台幣139.8億元，較上一季減少3.57%、較2025年同期減10.3%。在獲利表現方面，稅後淨利為19億元，EPS為3.97元，優於2025年同期的3.05元，但低於上一季的4.6元。\n另外，單季毛利率為20.8%，較上一季下滑4.9個百分點，主要受到2025年第四季義大利政府補助等一次性因素消退，以及新產能爬坡成本、能源、原物料和運輸費用上升等多重因素影響。此外，預收貨款維持在新台幣235億元（約7.4億美元），主要反映長期合約（LTA）的出貨認列與正常抵扣節奏。\n在產能稼動率方面，環球晶指出，除了仍",
+      "event_type": "earnings",
+      "tickers": [
+        "6488",
+        "GOOGL"
+      ],
+      "companies": [
+        "環球晶",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Big Tech AI Capex Frenzy: Meta, Alphabet Lead 2026 Spend - Gotrade",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaGZrRlRpN3R5Z0g3bHFZYjEtYWRLcmYxU0t0emF4Wmo3eThHaTRsMkp6LTN1NFNYclY5cmxEV0hzaUZib191M2twc2YwWlpKM253dVpsWHRoVjkyQ01sV2tmaG5yLVNjLVFnbE4zZ1FHRy1INVk0YmNzc0haaEZjYWtQSQ?oc=5",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T17:35:31+08:00",
+      "summary": "Big Tech AI Capex Frenzy: Meta, Alphabet Lead 2026 Spend&nbsp;&nbsp;Gotrade",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Putting educators at the center of AI learning",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T09:00:00+08:00",
+      "summary": "A collage of photos showcasing community engagement and professional events, including a workshop presentation, a woman outdoors near a bridge, a large group meeting, and a professional group photo in front of a Google sign.",
+      "body_text": "May 05, 2026\nGoogle is expanding the AI Opportunity Fund throughout the Asia-Pacific region with $10 million to equip 4.7 million students, teachers and workers with AI skills.\nI recently met with two educators in Singapore who had undergone training as part of the Google.org AI Opportunity Fund in Asia Pacific. They shared how AI is changing their classroom experience — from giving students tools",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "Google",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Image AI models now drive app growth, beating chatbot upgrades",
+      "link": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T03:12:49+08:00",
+      "summary": "Appfigures finds visual model launches generate 6.5x more downloads — but most don’t convert that spike into revenue.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nImage model releases are driving growth for AI mobile apps, generating 6.5x more downloads than traditional model updates, according to a new report from app intelligence provider Appfigures.\nThis marks a shift from earlier days, whe",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "聯發科「老戰友」供應鏈火熱　ASIC業務挑戰6成營收比重不是夢",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754130_LL92QM0W2K4QAZ1IUCYIK",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T03:00:00+08:00",
+      "summary": "台灣IC設計龍頭聯發科在2026年第1季法說會上，針對特用晶片（ASIC）業務的發展前景進一步上修，並且拋出了正向的市場震撼彈。聯發科供應鏈的「老戰友」們，像是封測大廠日月光集團、京元電子、測試介面領域的...",
+      "body_text": "台灣IC設計龍頭聯發科在2026年第1季法說會上，針對特用晶片（ASIC）業務的發展前景進一步上修，並且拋出了正向的市場震撼彈。聯發科供應鏈的「老戰友」們，像是封測大廠日月光集團、京元電子、測試介面領域的穎崴、中華精測、雍智、旺矽等，或是IP設計服務的創意電子，以及晶圓代工大哥台積電，都可持續感受到這股來自AI ASIC的熱度。\n無論是新訂單還是對既有客戶的貢獻價值提升，聯發科都表示，這會繼續向上成長，這也讓聯發科接下來ASIC業務定價調升的潛力，有了更大的想像空間。\n同時，執行長蔡力行大幅上修ASIC市場的總體潛在市場（TAM），也幾乎預示接下來ASIC的出貨量會再提升，聯發科未來一兩年的ASIC專案，有望迎來「價量齊升」榮景。\n聯發科的ASIC業務持續熱絡，對於半導體供應鏈來說也是一大喜訊，畢竟聯發科勢必得花更多的資源來確保供應端的狀況無虞，才能滿足大客戶Google的加單力度。\n熟悉",
+      "event_type": "earnings",
+      "tickers": [
+        "2454",
+        "2330",
+        "GOOGL"
+      ],
+      "companies": [
+        "聯發科",
+        "台積電",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Hut 8 swaps Coinbase loan for cheaper FalconX deal, slashing borrowing costs as it bets big on AI",
+      "link": "https://www.coindesk.com/markets/2026/04/28/hut-8-swaps-coinbase-credit-line-for-cheaper-falconx-deal-slashing-borrowing-costs-as-it-bets-big-on-ai",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T02:31:44+08:00",
+      "summary": "",
+      "body_text": "Hut 8 (HUT), a bitcoin miner turned energy and AI compute company, has refinanced its bitcoin-backed credit facility, replacing its existing Coinbase Credit arrangement with a new $200 million facility with FalconX.\nWith the new deal, Hut 8 cut its fixed interest rate to 7% from 9%, a 200-basis-point improvement, according to a press release . The move is part of the firm's focus on lowering its c",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The latest AI news we announced in April 2026",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T01:00:00+08:00",
+      "summary": "mp4 featuring an underwater video and a mobile AI video mockup.",
+      "body_text": "May 04, 2026\nHere’s a recap of our biggest AI updates from April, including Gemma 4, Deep Research Max and all the big announcements from Cloud Next ‘26.\nGoogle’s April updates focused on the \"agentic era,\" introducing the Gemini Enterprise Agent Platform, eighth-generation chips, and the powerful Gemma 4 open model. You can now access new tools like Google Vids for free video creation, Deep Resea",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Google Earnings, Meta Earnings",
+      "link": "https://stratechery.com/2026/google-earnings-meta-earnings",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T18:00:00+08:00",
+      "summary": "Wall Street loved Google's earnings, and hated Meta's, even though the latter's core business was more impressive. The difference is that Google is monetizing its investments now (and it might be all Anthropic).",
+      "body_text": "Wall Street loved Google’s earnings, and hated Meta’s, even though the latter’s core business was more impressive. The difference is that Google is monetizing its investments now (and it might be all Anthropic).\nSubscribe to Stratechery Plus for full access.\nWith Stratechery Plus you get access to the subscriber-only Stratechery Update and Stratechery Interviews , and the Sharp Tech, Sharp China, ",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Illusion of Sovereignty: How International Law and Big Tech are Eroding the State",
+      "link": "https://warontherocks.com/the-illusion-of-sovereignty-how-international-law-and-big-tech-are-eroding-the-state",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T15:30:38+08:00",
+      "summary": "Caught between two hammers &#8212; international law and technological dependence on the private sector &#8212; modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomatic sanctions and international condemnation but the loss of access to critical digital infrastructure owned by private corporations. In wartime, that loss is catastrophic, as we both experienced firsthand during Rus",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nCaught between two hammers — international law and technological dependence on the private sector — modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomati",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "\"Google ranking optimization(TG:e10838).oky\" - Results on X | Live Posts & Updates - x.com",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQclR0cVpMdUh1dmpWeExwM3RuTWY3c2VVOGhjeVA0RmtXbUtfT2xTSWgtdVFjbXVXV0RIbDRaZnVLdXk0eTJfdHlQRVFFakRTQWZjU2ZrbTYyeERDWkxtQmljdmZuSzl2OFhOazhYeG1kYW5fN200TFRSMGtqaG5zaHVqZlQxOE01XzUzUlhXRjRVZDFUX0xPZ1FLT1hYUQ",
+      "source": "X @ollama",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T07:07:40+08:00",
+      "summary": "\"Google ranking optimization(TG:e10838).oky\" - Results on X | Live Posts & Updates&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "\"Google Ranking für SEO(TG:e10838).kfb\" - Results on X | Live Posts & Updates - x.com",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5aWTZmS2pvUEFFaEluLV9hRGRXM0JLTjRHSXg2MncwZDY5MWZVMFB5VXAtNTZDQlVFQkNsYTVMcEdWbFB5TkFMRDdRWWk2WGJ6Q3NGZnB6OEpjb09mMGZVOTl2azVmRHVlTi1MQlFXSXZvaFVKaHIzVmVLRQ",
+      "source": "X @perplexity_ai",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T06:13:02+08:00",
+      "summary": "\"Google Ranking für SEO(TG:e10838).kfb\" - Results on X | Live Posts & Updates&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "\"Google External Ranking(TG:e10838).hps\" - Results on X | Live Posts & Updates - x.com",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaG5DUGFnMDhZdU1OaWd2SkM1SHdUTDJtSXNDQ0hpYUtkVnJBQnhka1I3RElWb3Z6YmRDaFk1bi1hUm0xeEdtQmxsd2xkcUJsRHljclZLdU1BeVB5SFhPX3hqRnk2eGVycXVPMXppTG54QzJsTjJVZHdpb0Nvek9KUA",
+      "source": "X @perplexity_ai",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T05:57:21+08:00",
+      "summary": "\"Google External Ranking(TG:e10838).hps\" - Results on X | Live Posts & Updates&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mLXBHSTdGWXBCQXBMQTZ0YkZXTmRCdkRfNlZOaFFmcUVjUGkzNEVwa0xKNlYzcVZ4WTdfUDNEM3ZHQnJMT2lDUlpGMDVzb2lWWGNyTnFPcHhoYXE3eHc?oc=5",
+      "source": "X @satyanadella",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T05:00:01+08:00",
+      "summary": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff.&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "META",
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Meta",
+        "Microsoft",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
     {
       "title": "NASA 下一代火星直升機轉子技術突破，旋翼葉片突破音速未解體",
       "link": "https://technews.tw/2026/05/10/nasa-aerovironment-skyfall-mars-helicopter",
@@ -135,13 +842,8 @@
       "published": "2026-05-10T16:24:21+08:00",
       "summary": "為了讓直升機在大氣稀薄的火星飛得更高、載得更重，NASA 噴射推進實驗室剛完成一項新技術挑戰：將火星直升機旋翼 [&#8230;]",
       "event_type": "news",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -152,49 +854,8 @@
       "published": "2026-05-10T15:31:52+08:00",
       "summary": "金星每天都是陰天，可能還會落下硫酸陣雨，過去探測器曾發現金星赤道有巨型大氣波反覆掃過，但原因不明。現在日本科學 [&#8230;]",
       "event_type": "news",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "Netflix 雖不靠遊戲賺錢，但做遊戲要幹麼腦袋還很清楚",
-      "link": "https://finance.technews.tw/2026/05/10/netflix-isnt-making-money-from-games-but-it-knows-exactly-why-its-making-them",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-10T14:00:55+08:00",
-      "summary": "Netflix 2026 年第一季財報帳面相當漂亮：營收為 122.5 億美元，年成長 16.2%；營業利益 [&#8230;]",
-      "event_type": "earnings",
-      "publisher": "TechNews 科技新報",
-      "author": "",
-      "tickers": [
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Amazon",
-        "Google"
-      ]
-    },
-    {
-      "title": "So you’ve heard these AI terms and nodded along; let’s fix that",
-      "link": "https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms",
-      "source": "TechCrunch AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-10T05:45:00+08:00",
-      "summary": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
-      "event_type": "earnings",
-      "publisher": "TechCrunch",
-      "author": "Natasha Lomas, Romain Dillet, Kyle Wiggers, Lucas Ropek",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -205,13 +866,8 @@
       "published": "2026-05-10T01:57:11+08:00",
       "summary": "Deletion of a longstanding privacy assurance sparks concerns",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -222,13 +878,8 @@
       "published": "2026-05-09T21:13:35+08:00",
       "summary": "Broadcom shares jump after securing long-term AI chip and networking agreements with Google&nbsp;&nbsp;MSN",
       "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -239,17 +890,10 @@
       "published": "2026-05-09T19:00:51+08:00",
       "summary": "These connected companions could disrupt everything from make-believe to bedtime stories. No wonder some lawmakers want them banned.",
       "event_type": "news",
-      "publisher": "Ars Technica",
-      "author": "WIRED",
       "tickers": [
         "AMZN",
         "META",
         "GOOGL"
-      ],
-      "companies": [
-        "Amazon",
-        "Meta",
-        "Google"
       ]
     },
     {
@@ -260,47 +904,8 @@
       "published": "2026-05-09T15:23:40+08:00",
       "summary": "Article URL: https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md Comments URL: https://news.ycombinator.com/item?id=48072720 Points: 175 # Comments: 70",
       "event_type": "news",
-      "publisher": "Adële's blog",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "aaif-goose/goose",
-      "link": "https://github.com/aaif-goose/goose",
-      "source": "GitHub Trending (All)",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T09:00:57.787979+08:00",
-      "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM 🦆 goose has moved! This project has moved from block/goose to the Agentic AI Foundation (AAIF) at the Linux Foundation. Some links and references are still being updated — please bear with us during the transition. goose your native open source AI agent — desktop app, CLI, and API — for code, workflows, and everything in between goose is a general-purpose AI agent that runs on yo",
-      "event_type": "news",
-      "publisher": "GitHub",
-      "author": "",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "decolua/9router",
-      "link": "https://github.com/decolua/9router",
-      "source": "GitHub Trending (All)",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T09:00:57.787472+08:00",
-      "summary": "🆓 Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. 9Router - FREE AI Router &amp; Token Saver Never stop coding. Save 20-40% tokens with RTK + auto-fallback to FREE &amp; cheap AI models. Connect All AI Code Tools (Claude Code, Cursor, Antigravity, Copilot, Codex, Gemini, OpenCode, Cline, OpenClaw...) to 40+ AI Providers &amp; 100+ Models. 🚀 Quick Start • 💡 Feat",
-      "event_type": "news",
-      "publisher": "GitHub",
-      "author": "",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -311,32 +916,9 @@
       "published": "2026-05-09T07:01:55+08:00",
       "summary": "From dancefloor bangers to heartfelt ballads, here are the highlights and low points of Eurovision.",
       "event_type": "news",
-      "publisher": "BBC News",
-      "author": "Mark Savage",
       "tickers": [
         "META",
         "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Alphabet"
-      ]
-    },
-    {
-      "title": "Course correction: Google to link more sources in AI Overviews",
-      "link": "https://arstechnica.com/google/2026/05/google-will-put-more-links-to-websites-in-ai-overviews",
-      "source": "Ars Technica AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T03:43:47+08:00",
-      "summary": "Google's AI search will start citing its sources in several new ways.",
-      "event_type": "earnings",
-      "publisher": "Ars Technica",
-      "author": "Ryan Whitwam",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -347,15 +929,9 @@
       "published": "2026-05-09T03:12:29+08:00",
       "summary": "",
       "event_type": "news",
-      "publisher": "CoinDesk",
-      "author": "Margaux Nijkerk",
       "tickers": [
         "MSFT",
         "GOOGL"
-      ],
-      "companies": [
-        "Microsoft",
-        "Google"
       ]
     },
     {
@@ -366,34 +942,10 @@
       "published": "2026-05-09T03:00:21+08:00",
       "summary": "From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle. The post Which AI Glasses Are Right For You? appeared first on Meta Newsroom.",
       "event_type": "news",
-      "publisher": "Meta Newsroom",
-      "author": "joedamiani",
       "tickers": [
         "META",
         "AAPL",
         "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Apple",
-        "Google"
-      ]
-    },
-    {
-      "title": "RT Pushmeet Kohli: The future of Math is mathematicians and AI agents working together. Very pleased to introduce @GoogleDeepMind's AI co-mathematicia...",
-      "link": "https://x.com/GoogleDeepMind/status/2052836125866127617",
-      "source": "X @GoogleDeepMind",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-09T02:07:14+08:00",
-      "summary": "RT Pushmeet KohliThe future of Math is mathematicians and AI agents working together.Very pleased to introduce @GoogleDeepMind's AI co-mathematician: a multi-agent system designed to actively collaborate with human experts on open-ended research mathematics.Mathematicians testing the agent across areas as diverse as group theory, Hamiltonian systems, and algebraic combinatorics have reported impressive results.In autonomous mode evaluation on the rigorous FrontierMath Tier 4 problems, AI co-math",
-      "event_type": "earnings",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -404,36 +956,9 @@
       "published": "2026-05-09T01:17:17+08:00",
       "summary": "You can stop Chrome from taking up 4GB of storage for local AI, but that shouldn't be your problem.",
       "event_type": "news",
-      "publisher": "Ars Technica",
-      "author": "Ryan Whitwam",
       "tickers": [
         "GOOGL",
         "AAPL"
-      ],
-      "companies": [
-        "Google",
-        "Apple"
-      ]
-    },
-    {
-      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
-      "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-08T23:25:02+08:00",
-      "summary": "When OpenAI was busy experimenting with AI-powered gaming bots, Microsoft CEO Satya Nadella and OpenAI CEO Sam Altman were in the early days of forming an AI partnership. Court documents from the ongoing Musk v. Altman trial have provided a rare look at the communications between Microsoft's top executives about investing in OpenAI and fears [&#8230;]",
-      "event_type": "earnings",
-      "publisher": "The Verge",
-      "author": "Tom Warren",
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "Google"
       ]
     },
     {
@@ -444,13 +969,8 @@
       "published": "2026-05-08T23:00:00+08:00",
       "summary": "black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe",
       "event_type": "news",
-      "publisher": "Google",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -461,13 +981,8 @@
       "published": "2026-05-08T09:21:06+08:00",
       "summary": "Google is testing an AI agent called Remy&nbsp;&nbsp;Phandroid",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -478,13 +993,8 @@
       "published": "2026-05-08T08:40:13+08:00",
       "summary": "清晨 7 時許，吉隆坡單軌列車咖啡山站（Bukit Nanas）外騎樓，飄出椰漿飯融合參峇醬香氣。60 多歲馬 [&#8230;]",
       "event_type": "news",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -495,13 +1005,8 @@
       "published": "2026-05-08T08:30:49+08:00",
       "summary": "挪威中央銀行 7 日決議調高基準利率 1 碼至 4.25%，成為自中東戰爭爆發以來首個採取升息行動的歐洲國家。",
       "event_type": "news",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -512,32 +1017,8 @@
       "published": "2026-05-08T08:20:44+08:00",
       "summary": "最低工資年年上調，但勞保最高級距卻近十年未動。勞工團體日前五一大遊行時提出勞保最高級距應升至新台幣 4 萬 8 [&#8230;]",
       "event_type": "news",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "「聯電第二」來了！力積電躋身英特爾 EMIB 先進封裝夥伴",
-      "link": "https://technews.tw/2026/05/08/psmc-into-intel-emib",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T08:10:42+08:00",
-      "summary": "力積電營運傳捷報，繼中介層產品成為台積電 CoWoS 先進封裝夥伴之後，再打入英特爾當紅 EMIB 先進封裝供 [&#8230;]",
-      "event_type": "earnings",
-      "publisher": "TechNews 科技新報",
-      "author": "",
-      "tickers": [
-        "2330",
-        "GOOGL"
-      ],
-      "companies": [
-        "台積電",
-        "Google"
       ]
     },
     {
@@ -548,30 +1029,8 @@
       "published": "2026-05-08T04:52:05+08:00",
       "summary": "Chrome is quietly installing a 4GB AI on your devices. And now, its latest version has removed the disclosure that promised to keep your data off Google’s servers.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "It’s getting better at humor",
-      "link": "https://www.reddit.com/r/ChatGPT/comments/1t6mmdg/its_getting_better_at_humor",
-      "source": "Reddit r/ChatGPT",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-08T04:33:21+08:00",
-      "summary": "Just messing with my girlfriend, this was the first response to “Create a fake google search image where the question being asked is “Does Tori know anything at all?” And the queried responses being humorous “no’s” &#32; submitted by &#32; /u/Living_Bench4646 [link] &#32; [comments]",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -582,13 +1041,8 @@
       "published": "2026-05-08T04:31:57+08:00",
       "summary": "Chrome users were caught off guard by a 4-GB Google AI model baked into Chrome, sparking privacy concerns. The good news: You can easily uninstall it. The bad? You might not want to.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -599,15 +1053,9 @@
       "published": "2026-05-08T03:06:46+08:00",
       "summary": "A new study finds ChatGPT, Claude, Grok, and Perplexity all share user data with third-party ad trackers—sometimes even when you say no to cookies.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META",
         "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Google"
       ]
     },
     {
@@ -618,13 +1066,8 @@
       "published": "2026-05-08T00:00:00+08:00",
       "summary": "To celebrate Teacher Appreciation Week, Googlers thanked the educators who inspired them to try new things.",
       "event_type": "news",
-      "publisher": "Google",
-      "author": "",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     },
     {
@@ -635,136 +1078,8 @@
       "published": "2026-05-08T00:00:00+08:00",
       "summary": "A laptop sits against a blue background surrounded by safety and security-related icons. On the laptop screen is the letter G inside a blue shield.",
       "event_type": "news",
-      "publisher": "Google",
-      "author": "Sriram Karra",
       "tickers": [
         "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "Notes from inside China's AI labs",
-      "link": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs",
-      "source": "Interconnects AI",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-07T23:42:43+08:00",
-      "summary": "Lessons from my trip to talk to most of the leading AI labs in China.",
-      "event_type": "earnings",
-      "publisher": "Interconnects AI",
-      "author": "Nathan Lambert",
-      "tickers": [
-        "GOOGL",
-        "NVDA"
-      ],
-      "companies": [
-        "Google",
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "Algorithms are part of nearly every aspect of life, from the physics of the natural world to planning shipping routes. Our Gemini-powered coding agent...",
-      "link": "https://x.com/GoogleDeepMind/status/2052403306257940967",
-      "source": "X @GoogleDeepMind",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-07T23:00:54+08:00",
-      "summary": "Algorithms are part of nearly every aspect of life, from the physics of the natural world to planning shipping routes.Our Gemini-powered coding agent AlphaEvolve has been accelerating progress over the last year - from quantum and biotechnology to logistics and @Google’s AI infrastructure. ↓ https://goo.gle/4uzfe0C",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "New AI-powered bidding and budgeting innovations in Search and Shopping",
-      "link": "https://blog.google/products/ads-commerce/bidding-budgeting-google-marketing-live-2026",
-      "source": "Google Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-07T23:00:00+08:00",
-      "summary": "The Road To Google Marketing Live",
-      "event_type": "news",
-      "publisher": "Google",
-      "author": "Josh Braverman",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "Find out how AlphaEvolve has gone from research to solving real-life problems.",
-      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/alphaevolve-updates",
-      "source": "Google Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-07T23:00:00+08:00",
-      "summary": "AlphaEvolve has become a powerful engine for scientific and societal progress.",
-      "event_type": "earnings",
-      "publisher": "Google",
-      "author": "",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "Google unveils screenless Fitbit Air and Google Health app to replace Fitbit",
-      "link": "https://arstechnica.com/gadgets/2026/05/google-unveils-screenless-fitbit-air-and-google-health-app-to-replace-fitbit",
-      "source": "Ars Technica AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-07T22:00:50+08:00",
-      "summary": "The $100 Fitbit Air is available for preorder today.",
-      "event_type": "news",
-      "publisher": "Ars Technica",
-      "author": "Ryan Whitwam",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ]
-    },
-    {
-      "title": "Google’s taking a big swing at AI health with the Fitbit Air",
-      "link": "https://www.theverge.com/gadgets/925458/google-health-fitbit-air-ai-coaching-wearables-fitness-trackers",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-07T22:00:00+08:00",
-      "summary": "It's a Whoop dupe. That was my first thought when I saw the new $99 Google Fitbit Air. You can hardly blame me. The band is screenless with a metallic fabric clasp. My eyes flickered between the Fitbit Air and my wrist, where I'm wearing a Whoop MG. Was I not seeing double? But as [&#8230;]",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "GOOGL",
-        "META"
-      ],
-      "companies": [
-        "Google",
-        "Meta"
-      ]
-    },
-    {
-      "title": "A new era for your wellness: Introducing the Google Health app",
-      "link": "https://blog.google/products-and-platforms/products/google-health/google-health-app",
-      "source": "Google Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-07T22:00:00+08:00",
-      "summary": "Google Health logo",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
       ]
     }
   ],
@@ -824,47 +1139,123 @@
       "guidance_summary": ""
     }
   ],
+  "fundamentals": {
+    "ticker": "GOOGL",
+    "market": "us",
+    "company_name": "Alphabet Inc.",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 109896000000.0,
+      "gross_profit": null,
+      "operating_income": 39696000000.0,
+      "net_income": 62578000000.0,
+      "eps": 5.11,
+      "fcf": 10116000000.0,
+      "ocf": 45790000000.0,
+      "capex": 35674000000.0,
+      "gross_margin": null,
+      "op_margin": 0.36121423891679405,
+      "net_margin": 0.5694292785906675,
+      "fcf_margin": 0.09205066608429788,
+      "capex_intensity": 0.3246160005823688,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": -61.97462345202711,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 109896000000.0,
+        "gross_profit": null,
+        "operating_income": 39696000000.0,
+        "net_income": 62578000000.0,
+        "eps_diluted": 5.11,
+        "fcf": 10116000000.0,
+        "ocf": 45790000000.0,
+        "capex": 35674000000.0,
+        "company_name": "Alphabet Inc."
+      },
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q3",
+        "revenue": 289007000000.0,
+        "gross_profit": null,
+        "operating_income": 93105000000.0,
+        "net_income": 97715000000.0,
+        "eps_diluted": 7.99,
+        "fcf": 48715000000.0,
+        "ocf": 112311000000.0,
+        "capex": 63596000000.0,
+        "company_name": "Alphabet Inc."
+      },
+      {
+        "fiscal_year": 2015,
+        "fiscal_period": "FY",
+        "revenue": 74989000000.0,
+        "gross_profit": null,
+        "operating_income": 19360000000.0,
+        "net_income": 16348000000.0,
+        "eps_diluted": 20.57,
+        "fcf": 16657000000.0,
+        "ocf": 26572000000.0,
+        "capex": 9915000000.0,
+        "company_name": "Alphabet Inc."
+      }
+    ],
+    "health": {
+      "tier": "steady",
+      "label": "穩健",
+      "summary": "營益率 36% 業界頂尖",
+      "icon": "🔵",
+      "score": 2
+    }
+  },
   "co_mentions": [
     {
       "ticker": "META",
-      "count": 6
+      "count": 13
+    },
+    {
+      "ticker": "MSFT",
+      "count": 10
     },
     {
       "ticker": "AMZN",
-      "count": 3
+      "count": 7
+    },
+    {
+      "ticker": "NVDA",
+      "count": 6
+    },
+    {
+      "ticker": "2330",
+      "count": 4
+    },
+    {
+      "ticker": "AAPL",
+      "count": 4
     },
     {
       "ticker": "BRK-B",
       "count": 2
     },
     {
-      "ticker": "NVDA",
+      "ticker": "BLSH",
       "count": 2
     },
     {
-      "ticker": "2330",
-      "count": 2
-    },
-    {
-      "ticker": "MSFT",
-      "count": 2
-    },
-    {
-      "ticker": "AAPL",
+      "ticker": "6488",
       "count": 2
     },
     {
       "ticker": "TWST",
       "count": 1
-    },
-    {
-      "ticker": "ACHC",
-      "count": 1
-    },
-    {
-      "ticker": "BLSH",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:22:11Z"
+  "generated_at": "2026-05-11T03:33:21Z"
 }

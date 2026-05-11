@@ -1,0 +1,28 @@
+{
+  "ticker": "4090",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "RTX 4090 sent for repair is a sophisticated fake with laser-etched VRAM and core, 'This is the best scam I've ever seen' — Scammers pulled a factory-level job to sell a dud to unsuspecting customer",
+      "link": "https://www.tomshardware.com/pc-components/gpus/rtx-4090-sent-for-repair-is-a-sophisticated-fake-with-laser-etched-vram-and-core-this-is-the-best-scam-ive-ever-seen-scammers-pulled-a-factory-level-job-to-sell-a-dud-to-unsuspecting-customer",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-26T23:33:35+08:00",
+      "summary": "Northwest Repair was sent an Asus ROG Strix 4090 that had a dead core and memory chips with fake markings to make it look like the real thing. Unfortunately, there's no way of telling what these counterfeit parts actually were, but the main takeaway is just how good these scammers are getting as of late.",
+      "event_type": "news",
+      "tickers": [
+        "4090"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

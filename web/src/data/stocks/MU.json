@@ -1,0 +1,178 @@
+{
+  "ticker": "MU",
+  "market": "us",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "$MU CEO said it directly after last earnings—the company can only supply 50% to 65% of what customers are asking for. 2026 HBM supply is already sold out. Multiyear volume and pricing agreements are already locked in. This is not a demand forecast. This - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxWm9KUjdkMC1qUW9MR09lbS12aGROZ0o4Tl8xQ3poanlhaVZvSDRHVFhKcjJKVXRfdVNPVHdpVkdXcnRiWkh4QWtDaUZNODIwc1dVZ2VXWEN6TWI5c3NYSGN1UG9xa2M",
+      "source": "X @vllm_project",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T05:51:04+08:00",
+      "summary": "$MU CEO said it directly after last earnings—the company can only supply 50% to 65% of what customers are asking for. 2026 HBM supply is already sold out. Multiyear volume and pricing agreements are already locked in. This is not a demand forecast. This&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "MU"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "$MU 目標價遭Citi 調降 Citi 將 $MU 的目標價由$510 下調至$425，主因是自該晶片製造商於三月公布第二季財報以來，主流 DDR5 16GB DRAM 產品價格已下跌約6%。 $UNH 獲調升評級，看好獲利增長空間 Raymond James 將 $UNH 的評級由「符合市場表現」上調 - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mbFltSFpzOVd2NEU4U0QtTUdpYVp3YmdDVG5oVnplVVNLLVhCeXBjeFEwMHEyQTJ4eHlQVW5WN0J6X0lSR2wwcTRGa0xMTUdrVTdwbGU1cjVGMjdJQmtkYkhhMnhZeTg",
+      "source": "X 中文科技熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-05T06:06:27+08:00",
+      "summary": "$MU 目標價遭Citi 調降 Citi 將 $MU 的目標價由$510 下調至$425，主因是自該晶片製造商於三月公布第二季財報以來，主流 DDR5 16GB DRAM 產品價格已下跌約6%。 $UNH 獲調升評級，看好獲利增長空間 Raymond James 將 $UNH 的評級由「符合市場表現」上調&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "MU",
+        "UNH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Nvidia vs Memory Stocks: SNDK, WDC, STX, MU Lead Chip Rally - Micron Technology (NASDAQ:MU), NVIDIA (NASD - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObFlMM01wcFhKVHRGdE9YakdjZVhMSnJQajdTbGtQWFhCS3JORFhfUDU2RkdyamVhamdWYWZnNThQMnhRVURobjZuUURKTXBFWVpRa1NGdUpSS0VCMFZUQ2dLYm5RLUlIM29Wdm5ld0doTGhwb0tUX1AzTjhWa0Ffd0RpQllFdUdaNWxUX1htRF96VVQ3amhZUTRjT2llSnNmOVBKQVRuRmhQQ2Z1?oc=5",
+      "source": "記憶體產業",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-15T04:48:36+08:00",
+      "summary": "Nvidia vs Memory Stocks: SNDK, WDC, STX, MU Lead Chip Rally - Micron Technology (NASDAQ:MU), NVIDIA (NASD&nbsp;&nbsp;Benzinga",
+      "event_type": "news",
+      "tickers": [
+        "MU",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "AI Memory: Ignore The FUD - This Is A Supercycle (NASDAQ:MU) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaWtWYzhjUGxadjVxQzExSjJkUGJSdm44YTVZcTJuUGJXcTZDVXktZG1TNFBLTXpZUUdqRFRXTW5SV2twNVVORklRNEEyTVg4cXpDMGVGSnlCSF9FdldVVmxrSUNrbktoVndNbTEzRzFBTjZZdGRuanU3b0F2czBJclJjOHJRU0FsQzNWd0ZIUQ",
+      "source": "記憶體產業",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-14T05:27:15+08:00",
+      "summary": "AI Memory: Ignore The FUD - This Is A Supercycle (NASDAQ:MU)&nbsp;&nbsp;Seeking Alpha",
+      "event_type": "news",
+      "tickers": [
+        "MU"
+      ]
+    },
+    {
+      "title": "Ingested SP500 9.4M total facts across 4844 filings. 9.4M total facts across 4,844 filings 65.3% overall dimensioned (corpus-wide) All of this will be available for instant query in stock equity first research assistance. Why this matters? When you search for $MU, - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsQldVVVlNY1pYeWR4MEh5R1FqVG5BZ3lacG8zTmRSN2hhMERZbm1ROXR3Vjh0Y0xGLVpjLTJnWEdhS21sQXlRUkMybmhRZHFiVElvb3BSUmFIQ1BEOEhyOGhWdno2UE0",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-06T03:27:23+08:00",
+      "summary": "Ingested SP500 9.4M total facts across 4844 filings. 9.4M total facts across 4,844 filings 65.3% overall dimensioned (corpus-wide) All of this will be available for instant query in stock equity first research assistance. Why this matters? When you search for $MU,&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "MU",
+        "4844"
+      ]
+    },
+    {
+      "title": "TurboQuant Fears Overblown, Micron Deserves A Buy (NASDAQ:MU) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeWpXT2N6RkhPbFVFeFVWTWpHRDN0eVM5SURpMFRnRjloR00yOFlxM2NKVmJhcDFzMG1CajdBSDlkX0tPN1llX2dkV205TWZxRDNMdTkwS1I3YVlGbEsyNk5jelZJUVV0R0NFR3dHNnFRbV9ROE5SazJLbkppT3FkaGJpeGdCRi1XdGZhbmF6eTNNV0U?oc=5",
+      "source": "記憶體產業",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-04T21:26:42+08:00",
+      "summary": "TurboQuant Fears Overblown, Micron Deserves A Buy (NASDAQ:MU)&nbsp;&nbsp;Seeking Alpha",
+      "event_type": "news",
+      "tickers": [
+        "MU"
+      ]
+    },
+    {
+      "title": "$MU $SNDK $GOOG $GOOGL Mizuho 對 $MU $SNDK 均維持「跑贏大盤」評級，目標價分別定為530 美元與710 美元，Mizuho 指出「記憶體封頂」擔憂過度 市場對「記憶體需求見頂」的恐懼過於誇大，目前正是買入$MU $SNDK 股票的時機。 Mizuho 提到，$GOOGL - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5IYXgwRzBiY21GemRGOTBnZy1WeHdMYUxETU9zaHpKdzZVcVNjNFh2QTZ1aUFqVFNKT1FNai1XNTJMRGFfOTdtVXpYbk94b0V1Qk5KX1dGR2pSY0wzaFVWSVZ0YmlLVDA",
+      "source": "X 中文科技熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-04T05:41:49+08:00",
+      "summary": "$MU $SNDK $GOOG $GOOGL Mizuho 對 $MU $SNDK 均維持「跑贏大盤」評級，目標價分別定為530 美元與710 美元，Mizuho 指出「記憶體封頂」擔憂過度 市場對「記憶體需求見頂」的恐懼過於誇大，目前正是買入$MU $SNDK 股票的時機。 Mizuho 提到，$GOOGL&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "MU",
+        "SNDK",
+        "GOOG",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Micron: Don't Fall For The Low P/E - It's A Value Trap $MU $MU:CA #economy #stocks #stockmarket - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82cnJIdlV4NUhJeDhzdW5OVDVvTVFXLUZSc3JRWWVqdEtQa2Q0R2FESkQ2UEdqejZybGpPNHpaQWtZOE1YVmdTQmRsbDBTclhxLS1qOXJNeXUzRklWOWJyZnRUNA",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-31T06:10:04+08:00",
+      "summary": "Micron: Don't Fall For The Low P/E - It's A Value Trap $MU $MU:CA #economy #stocks #stockmarket&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "MU"
+      ]
+    },
+    {
+      "title": "The AI data center bottlenecks map: Demand: $MSFT, $GOOGL, $META, $AMZN, and foundational AI models. • Layer 1 - Systems & colocation: $DELL, $HPQ, $SMCI, $EQIX, $DLR • Layer 2A - Memory: $MU, $HYNSE, $SMSD • Layer 2B - Networking & optic - x.com",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1DS0dlSVpybXE0SVQ1ZE9wTS10eTRFcVpmSFk0WjFTRHRLVDE4cmZIRzAxUHhJcXNsOGVSRUtQbjk4dEw2R0pBdzd1cWJyMklObGNFOFlLTFFMWWl5NlVRSWcxMHBhWkZrTUY1OC1aQVM3UQ",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-29T04:01:00+08:00",
+      "summary": "The AI data center bottlenecks map: Demand: $MSFT, $GOOGL, $META, $AMZN, and foundational AI models. • Layer 1 - Systems & colocation: $DELL, $HPQ, $SMCI, $EQIX, $DLR • Layer 2A - Memory: $MU, $HYNSE, $SMSD • Layer 2B - Networking & optic&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "AMZN",
+        "DELL",
+        "HPQ",
+        "SMCI",
+        "EQIX",
+        "DLR",
+        "MU",
+        "HYNSE",
+        "SMSD"
+      ]
+    },
+    {
+      "title": "Micron: AI Memory Paradox Could Send Demand Exploding Despite Margin Risks $MU $MU:CA $ZMIC:CA #economy #markets #stocks - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBtanFoXzZqdXRDWC1XdVlsbzNQM0w5dGtKRXVrUm1HZ2JVVUd3MWhDaUxpeGRFak5BOXBFTG16MzFwWDItdW9YTmdsNzFoMEJvaGNzNnVJb2xpQy1hRjFYQmFrWQ?oc=5",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-29T03:50:02+08:00",
+      "summary": "Micron: AI Memory Paradox Could Send Demand Exploding Despite Margin Risks $MU $MU:CA $ZMIC:CA #economy #markets #stocks&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "MU",
+        "ZMIC"
+      ]
+    },
+    {
+      "title": "Micron: AI Memory Paradox Could Send Demand Exploding Despite Margin Risks (NASDAQ:MU) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNR25aYXhCUzR5YUdkSEVOWnRKZ3NESHhJLXFYRlp0U0UtQWx3b1NkWVNiWC1SNVgtVmRRY3RVQ21xeWZLWHoyUGE3QlhzdjI5aW1faS1tdUJrZnd4VE1lRFcxa0JHZE4tQkQ1UGZrNGlfMTBQSzM2djU1N0N4Mnh6eWZ3WFE1NmsyLUNMYm1CZmpNbndjQTZmZnExTVlTcVVONEQtOVZvaHVkUTVGTUhrSVE4cm4",
+      "source": "記憶體產業",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-03-28T23:55:07+08:00",
+      "summary": "Micron: AI Memory Paradox Could Send Demand Exploding Despite Margin Risks (NASDAQ:MU)&nbsp;&nbsp;Seeking Alpha",
+      "event_type": "news",
+      "tickers": [
+        "MU"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "UNH",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

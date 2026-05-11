@@ -1,0 +1,80 @@
+{
+  "ticker": "1957",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Sharpening Signals and Reducing Noise for Better Defense Budgets",
+      "link": "https://warontherocks.com/2026/04/sharpening-signals-and-reducing-noise-for-better-defense-budgets",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-06T15:15:02+08:00",
+      "summary": "Editor&#8217;s note: This article is the fifth in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the Potomac Institute for Policy Studies&#160;and&#160;War on the Rocks. Prior installments can be found at the&#160;War by Other Ledgers&#160;page.&#160;Debates over defense budgets and economic statecraft are not a distrac",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nEditor’s note: This article is the fifth in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the ",
+      "event_type": "earnings",
+      "tickers": [
+        "1957"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Trump is waging war based on instinct and it isn't working",
+      "link": "https://www.bbc.com/news/articles/c5y969pnxgvo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-03-29T08:02:46+08:00",
+      "summary": "One month into the conflict in Iran, Trump's gut-instinct approach is not proving effective.",
+      "body_text": "Some old truths about warfare have been knocking on the door of the Oval Office in the month since US President Donald Trump and Israel's Prime Minister Benjamin Netanyahu sent US and Israeli warplanes to bomb Iran.\nThe failure to learn from the past means that Donald Trump now faces a stark choice. If he can not get a deal with Iran, he can either try to declare a victory that will fool no-one, o",
+      "event_type": "earnings",
+      "tickers": [
+        "1871",
+        "1944",
+        "1957",
+        "1979",
+        "1956"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Why are modern Chinese audiences shying away from dubbed films?",
+      "link": "https://www.scmp.com/news/china/politics/article/3352213/why-are-modern-chinese-film-audiences-shying-away-dubbed-films",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-02T16:37:09+08:00",
+      "summary": "At the December premiere of the Chinese-dubbed 1957 Billy Wilder classic Witness for the Prosecution in a Shanghai cinema, dubbing artist Qiao Zhen voiced a more immediate mystery: “Do you still enjoy Chinese-dubbed films?” When audience members, mainly nostalgia-seeking fans, responded with applause and shouts of “Yes!”, the 83-year-old veteran became emotional, offering a moving defence of his art form. “Several years ago we felt this profession had fallen into a low point,” he told the...",
+      "event_type": "news",
+      "tickers": [
+        "1957"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1871",
+      "count": 1
+    },
+    {
+      "ticker": "1944",
+      "count": 1
+    },
+    {
+      "ticker": "1979",
+      "count": 1
+    },
+    {
+      "ticker": "1956",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

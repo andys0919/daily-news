@@ -46,92 +46,21 @@
   "holdings": [],
   "recent_news": [
     {
-      "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
-      "link": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
-      "source": "Lobsters AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T23:49:49+08:00",
-      "summary": "Comments",
-      "event_type": "earnings",
-      "publisher": "Cocoa with Love",
-      "author": "Matt Gallagher",
-      "tickers": [
-        "1000",
-        "AAPL",
-        "META"
-      ],
-      "companies": [
-        "Apple",
-        "Meta"
-      ]
-    },
-    {
-      "title": "ds4 webui",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1t8ho70/ds4_webui",
-      "source": "Reddit r/LocalLLaMA",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T03:48:46+08:00",
-      "summary": "Hey guys I made a minimal web ui for ds4.c server (https://github.com/antirez/ds4), it's open source so you can try it too (if you can!) Here's what it looks like, running on M3 Ultra 256GB Memory, using the smaller model (q2). Not sped up. 1X speed. Pretty fast. Caveat (big caveat): You need at least 128GB memory Apple Silicon mac. github: https://github.com/cocktailpeanut/ds4.pinokio more details on x: https://x.com/cocktailpeanut/status/2053193902694256758?s=20 I tried a bunch of prompts and ",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "AAPL"
-      ],
-      "companies": [
-        "Apple"
-      ]
-    },
-    {
-      "title": "Apple Removes 256GB M3 Ultra Mac Studio Model From Online Store",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1t8f33t/apple_removes_256gb_m3_ultra_mac_studio_model",
-      "source": "Reddit r/LocalLLaMA",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T03:15:17+08:00",
-      "summary": "Getting really worried about the m5 Ultra. From removing 512gb -&gt; 256gb -&gt; 96gb. &#32; submitted by &#32; /u/rotatingphasor [link] &#32; [comments]",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "AAPL"
-      ],
-      "companies": [
-        "Apple"
-      ]
-    },
-    {
       "title": "Bank of America says stocks like Apple have plenty of upside following earnings",
       "link": "https://www.cnbc.com/2026/05/09/bank-of-america-stocks-with-upside-after-earnings.html",
       "source": "CNBC Top News",
       "category": "💰 財經與總經",
       "published": "2026-05-09T20:38:13+08:00",
       "summary": "The firm named five stocks that have more room to run following earnings.",
+      "body_text": "",
       "event_type": "earnings",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "AAPL"
       ],
       "companies": [
         "Apple"
-      ]
-    },
-    {
-      "title": "macOS 27 threatens to bury Time Capsule, FOSS brings a shovel",
-      "link": "https://www.theregister.com/software/2026/05/09/macos-27-threatens-to-bury-time-capsule-foss-brings-a-shovel/5234824",
-      "source": "The Register",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T20:25:00+08:00",
-      "summary": "Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "AAPL"
       ],
-      "companies": [
-        "Apple"
-      ]
+      "guidance_direction": null
     },
     {
       "title": "慧榮：AI儲存需求續旺　NAND Flash缺到2028年",
@@ -140,14 +69,785 @@
       "category": "💰 財經與總經",
       "published": "2026-05-09T18:11:57+08:00",
       "summary": "（中央社記者張建中台北9日電）記憶體控制晶片廠慧榮總經理苟嘉章今天表示，今年人工智慧（AI）推論投資超越訓練投資，將帶動儲存需求持續增長，預期儲存型快閃記憶體（NAND Flash）可能一路缺貨到2028年，今年下半年價格應可一路往上揚升。",
+      "body_text": "（中央社記者張建中台北9日電）記憶體控制晶片廠慧榮總經理苟嘉章今天表示，今年人工智慧（AI）推論投資超越訓練投資，將帶動儲存需求持續增長，預期儲存型快閃記憶體（NAND Flash）可能一路缺貨到2028年，今年下半年價格應可一路往上揚升。\n苟嘉章今天出席愛心園遊會，他受訪說，目前動態隨機存取記憶體（DRAM）與NAND Flash市場缺貨，記憶體廠投資擴產除面臨土地缺乏問題，還要花時間建置無塵室，設備交期也要1年至1年半，估計投資到產品產品需要2年時間。\n苟嘉章表示，DRAM與NAND Flash可能一路缺貨到2028年，供需吃緊情況何時能夠緩解難以預測。在缺貨情況下，今年下半年記憶體價格應會一路往上，不過，預期價格漲幅應小於上半年。\n他說，記憶體價格高漲，可能影響產業均衡發展，部分手機和電腦廠已無法接受高昂的價格，預期蘋果（Apple）因具採購優勢，市占率可望出現跳躍式成長。\n苟嘉章表",
       "event_type": "capex",
-      "publisher": "中央社 CNA",
-      "author": "江明晏",
       "tickers": [
         "AAPL"
       ],
       "companies": [
         "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Meta’s Position on Canada’s Bill C-22",
+      "link": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T06:46:00+08:00",
+      "summary": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians. &#160; Delivered by Rachel Curran, Director of Public Policy, Canada, Meta &#160; Thank you, M. Chair. Good afternoon and thank you for the opportunity to appear before the Committee today. My name is Rachel Curran and ",
+      "body_text": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians.\nDelivered by Rachel Curran, Director of Public Policy, Canada, Meta\nThank you, M. Chair.\nGood afternoon and thank you f",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "蘋果研發支出突破10%大關　全面衝刺AI與硬體革新",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754518_U0N4ODZB25XW637U0HJSM",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T02:27:33+08:00",
+      "summary": "蘋果（Apple）在2026財年第2季（2QFY26）財報中揭露，其研究與開發（R&amp;D）支出，30年來首次在營收比重中突破10%；該數字顯現了即將進入管理層交接之際的蘋果，對於轉型的積極與急迫性。據CNBC報導，蘋果在2QFY26的研發支出佔營收比重達到10.3%，相較於1QFY26的7.6%以及2025年同期的9%...",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft Earnings, Apple Earnings",
+      "link": "https://stratechery.com/2026/microsoft-earnings-apple-earnings",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T18:00:00+08:00",
+      "summary": "Microsoft unveils its new agentic business model, and Apple confronts shortages in memory and chips even as the Mac benefits from AI.",
+      "body_text": "Microsoft unveils its new agentic business model, and Apple confronts shortages in memory and chips even as the Mac benefits from AI.\nSubscribe to Stratechery Plus for full access.\nWith Stratechery Plus you get access to the subscriber-only Stratechery Update and Stratechery Interviews , and the Sharp Tech, Sharp China, Dithering, Greatest of All Talk, and Asianometry podcasts.\nStratechery Update ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AAPL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Prudential Profit Rises Even as Firm Grapples With Japan Pause",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-05/prudential-profit-rises-even-as-firm-grapples-with-japan-pause",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T05:09:01+08:00",
+      "summary": "Prudential Financial Inc.’s first-quarter profit beat Wall Street’s expectations, relieving pressure on Chief Executive Officer Andy Sullivan as he contends with a sales pause in one of its biggest markets.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple plans to make iOS 27 a Choose Your Own Adventure of AI models",
+      "link": "https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T04:56:41+08:00",
+      "summary": "With Apple's latest operating system updates, users will reportedly have their pick of which third-party AI models they want to use for a host of tasks.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nWhen iOS 27 is released later this year, iPhone users will reportedly have a lot of choice when it comes to which AI models they want to use on-device.\nA new report from Bloomberg says that Apple plans to give users their pick of a n",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "傳與蘋果談生產晶片　英特爾股價勁揚14%創新高",
+      "link": "https://www.cna.com.tw/news/afe/202605060003.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T01:36:20+08:00",
+      "summary": "（中央社聖克拉拉5日綜合外電報導）美國晶片製造大廠英特爾（Intel）股價今天勁揚14%，創下歷史新高，延續自4月以來的強勁漲勢。",
+      "body_text": "（中央社聖克拉拉5日綜合外電報導）美國晶片製造大廠英特爾（Intel）股價今天勁揚14%，創下歷史新高，延續自4月以來的強勁漲勢。\n這波上漲源自彭博（Bloomberg News）報導指出，蘋果公司（Apple Inc.）正在與英特爾和三星電子（Samsung Electronics）洽談，計劃在美國生產旗下裝置的主要處理器。這家iPhone製造商長期以來一直依賴台積電的晶片。\n對於相關報導，英特爾與三星電子均不願置評。蘋果則未回覆置評請求。\n美國財經媒體CNBC報導，英特爾才剛創下在那斯達克掛牌55年來表現最佳的單月行情，股價在4月狂飆114%，市值突破4700億美元。\n幾項重要的合作也協助推動這波漲勢。英特爾上月宣布將擴大與谷歌公司（Google）的合作夥伴關係，並計劃加入馬斯克（Elon Musk）的Terafab專案。此外，英特爾還宣布將斥資142億美元，買回位於愛爾蘭的Fab 3",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "2330",
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Apple",
+        "台積電",
+        "Google",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple Manufacturing Academy accelerates AI use in U.S. supply chains",
+      "link": "https://www.apple.com/newsroom/2026/05/apple-manufacturing-academy-accelerates-ai-use-in-us-supply-chains",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T20:59:35+08:00",
+      "summary": "Apple’s Manufacturing Academy hosted its inaugural Spring Forum, bringing together U.S. manufacturers to accelerate the use of AI in supply chains.",
+      "body_text": "Text of this article\nMay 5, 2026\nUPDATE\nApple Manufacturing Academy brings together hundreds of U.S. manufacturers to accelerate AI use in American supply chains\nThe Apple Manufacturing Academy hosted hundreds of manufacturers at its inaugural Spring Forum in East Lansing, Michigan. The academy’s largest event to date brought together U.S. manufacturers, industry leaders, and academics at Michigan",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Putting educators at the center of AI learning",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/putting-educators-at-the-center-of-ai-learning",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T09:00:00+08:00",
+      "summary": "A collage of photos showcasing community engagement and professional events, including a workshop presentation, a woman outdoors near a bridge, a large group meeting, and a professional group photo in front of a Google sign.",
+      "body_text": "May 05, 2026\nGoogle is expanding the AI Opportunity Fund throughout the Asia-Pacific region with $10 million to equip 4.7 million students, teachers and workers with AI skills.\nI recently met with two educators in Singapore who had undergone training as part of the Google.org AI Opportunity Fund in Asia Pacific. They shared how AI is changing their classroom experience — from giving students tools",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "Google",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Why Kim Jong Un Won’t Pick Up the Phone and What to Do About It",
+      "link": "https://warontherocks.com/why-kim-jong-un-wont-pick-up-the-phone-and-what-to-do-about-it",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T15:15:30+08:00",
+      "summary": "Every American administration pledges to learn from the past when devising a strategy for contending with nuclear North Korea. And yet, few portfolios are so paralyzed by path dependency and resistance to learning. But now, confronted with the inescapable prospect that the legacy approach is actually creating risk rather than reducing it, the time has come to learn and pivot.The Trump administration should sharpen the choice for North Korea, making it enticing, raising the stakes, and being prep",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nEvery American administration pledges to learn from the past when devising a strategy for contending with nuclear North Korea. And yet, few portfolios are so paralyzed by path dependency and resistance to learning. But now, confronted with the inescapable prospect that the ",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mLXBHSTdGWXBCQXBMQTZ0YkZXTmRCdkRfNlZOaFFmcUVjUGkzNEVwa0xKNlYzcVZ4WTdfUDNEM3ZHQnJMT2lDUlpGMDVzb2lWWGNyTnFPcHhoYXE3eHc?oc=5",
+      "source": "X @satyanadella",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T05:00:01+08:00",
+      "summary": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff.&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "META",
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Meta",
+        "Microsoft",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "蘋果iPhone、Mac銷售逆勢續強　評析：台積先進製程仍是「唯一拘束」",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754056_WEN1OJGS4IE2LG7WVSH8Y",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T02:26:39+08:00",
+      "summary": "蘋果（Apple）公布最新2026會計年度第2季財報仍然亮眼，全產品線都繳出年成長，iPhone更是繳出歷年同期新高，其中在中國市場，蘋果無論是iPhone和Mac電腦皆有相當亮眼的表現。現在市場上對於消費性電子產品的廣泛悲觀情緒，似乎對於蘋果沒有帶來太大影響，對蘋果來說，現階段最大的挑戰仍然是半導體先進製程的產能......",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AI music is flooding streaming services — but who wants it?",
+      "link": "https://www.theverge.com/column/921599/ai-music-is-flooding-streaming-services-but-who-wants-it",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-03T20:00:00+08:00",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on how AI is changing music and the music industry, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started The use of generative AI [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Streaming\nThey won’t ban it. They won’t embrace it either.\nPosts from this author will be added to your d",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "AAPL",
+        "META",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Apple",
+        "Meta",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Open Design: Use Your Coding Agent as a Design Engine",
+      "link": "https://github.com/nexu-io/open-design",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-02T20:16:16+08:00",
+      "summary": "Article URL: https://github.com/nexu-io/open-design Comments URL: https://news.ycombinator.com/item?id=47985750 Points: 169 # Comments: 84",
+      "body_text": "The open-source alternative to Claude Design . Local-first, web-deployable, BYOK at every layer — 12 coding-agent CLIs auto-detected on your PATH (Claude Code, Codex, Devin for Terminal, Cursor Agent, Gemini CLI, OpenCode, Qwen, GitHub Copilot CLI, Hermes, Kimi, Pi, Kiro) become the design engine, driven by 31 composable Skills and 72 brand-grade Design Systems . No CLI? An OpenAI-compatible BYOK ",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Replit’s Amjad Masad on the Cursor deal, fighting Apple, and why he’d rather not sell",
+      "link": "https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-02T07:06:50+08:00",
+      "summary": "At TechCrunch's sold-out StrictlyVC event in San Francisco on Thursday night, we covered a lot of ground in a short time, beginning with the question everyone in the industry is asking right now: in a world where rival Cursor is reportedly in talks to be acquired by SpaceX for $60 billion, is Replit also bound to sell?",
+      "body_text": "Amjad Masad has been building Replit for a decade, but the last 18 months have been something else entirely. The AI coding assistant company went from $2.8 million in revenue in all of 2024 to tracking toward what Masad describes as a billion-dollar annual run rate.\nAt TechCrunch’s sold-out StrictlyVC event in San Francisco on Thursday night, we covered a lot of ground in a short time, beginning w",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple's stock gains as company execs cite iPhone, Mac demand in boosting guidance",
+      "link": "https://www.cnbc.com/2026/05/01/apple-stock-rallies-on-q2-earnings-and-q3-guidance.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T04:11:58+08:00",
+      "summary": "On its quarterly earnings call, Apple said revenue growth in the current quarter would be between 14% and 17%, well above analysts' estimates.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Did you know you can’t steal a charity? Don’t worry. Elon Musk will remind you.",
+      "link": "https://techcrunch.com/podcast/did-you-know-you-cant-steal-a-charity-dont-worry-elon-musk-will-remind-you",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-02T01:44:29+08:00",
+      "summary": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it&#8217;s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk&#8217;s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the [&#8230;]",
+      "body_text": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it’s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk’s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the benefit of humanity” mission Musk",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "TSLA",
+        "AMZN",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Tesla",
+        "Amazon",
+        "Meta",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Minnesota passes ban on fake AI nudes; app makers risk $500K fines",
+      "link": "https://arstechnica.com/tech-policy/2026/05/minnesota-set-to-be-first-state-to-ban-nudification-apps",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-02T01:36:29+08:00",
+      "summary": "More evidence of Grok CSAM seen as Minnesota passes nudifying app ban.",
+      "body_text": "More evidence of Grok CSAM seen as Minnesota passes nudifying app ban.\nThis week, Minnesota became the first state to pass a law banning nudification apps that make it easy to “undress” or sexualize images of real people.\nUnder the law , developers of websites, apps, software, or other services designed to “nudify” images risk extensive damages, including punitive damages, if a victim decides to s",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Google",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "蘋果財報、展望雙超標：iPhone 17熱賣撐盤 但記憶體成本壓力浮現",
+      "link": "https://money.udn.com/money/story/123398/9475730",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T08:50:30+08:00",
+      "summary": "蘋果（Apple）周四公布優於預期的財報與展望，主要受惠於iPhone 17系列與Mac新品需求強勁。但蘋果同時警告，記憶體成本上升與供應鏈限制將持續影未來表現壓力。",
+      "body_text": "本文共1065字\n蘋果（Apple）周四公布優於預期的財報與展望，主要受惠於iPhone 17系列與Mac新品需求強勁。但蘋果同時警告，記憶體成本上升與供應鏈限制將持續影未來表現壓力。\n在截至3月28日的第2季，蘋果營收年增約17%至1,111.8億美元，遠高於市場預估的年增9.5%，增至1,096.6億美元；每股盈餘2.01美元，也優於預估的1.95美元。毛利率升至約49.3%，超越預期，顯示服務業務與產品組合改善帶動獲利能力提升。\n產品方面，iPhone營收年增22%至約570億美元。執行長庫克（Tim Cook）指出，iPhone 17系列成為歷來最受歡迎產品陣容，「需求非常強勁」。他同時指出，受處理器供應限制影響，iPhone銷售未完全反映需求。\nMac業務則受惠於3月推出的599美元平價筆電MacBook Neo，營收達84億美元，高於預期。市場認為該產品有助蘋果切入由Chrom",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Australia and Japan markets climb, looking past Iran war escalation fears",
+      "link": "https://www.cnbc.com/2026/05/01/asia-markets-today-asx-200-nikkei-225-labor-day-live-updates.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T08:35:13+08:00",
+      "summary": "This comes as investors took in strong earnings stateside, looking past weaker-than-expected economic data and threats of escalation in Iran.",
+      "body_text": "Markets in Australia and Japan mostly rose Friday, mirroring gains on Wall Street that saw both the S&P 500 and Nasdaq Composite reach new highs.\nThis comes as investors took in strong earnings from Apple and Caterpillar , looking past weaker-than-expected economic data and threats of escalation in Iran by U.S. President Donald Trump.\nBrent crude prices had risen to top $126 a barrel after Axios r",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple delivers a nearly perfect quarter, with a CEO change and an AI update ahead",
+      "link": "https://www.cnbc.com/2026/04/30/apple-delivers-a-nearly-perfect-quarter-with-a-ceo-change-and-an-ai-update-ahead.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T07:43:06+08:00",
+      "summary": "In fact, it was the best March quarter in company history, and Apple stock jumped 4% in after-hours trading.",
+      "body_text": "Got a confidential news tip? We want to hear from you.\nSign up for free newsletters and get more CNBC delivered to your inbox\nGet this delivered to your inbox, and more info about our products and services.\n© 2026 Versant Media, LLC. All Rights Reserved. A Versant Media Company.\nData is a real-time snapshot *Data is delayed at least 15 minutes. Global Business and Financial News, Stock Quotes, and",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
+      "link": "https://www.cnbc.com/2026/04/30/apple-aapl-q2-2026-earnings-report.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T07:06:23+08:00",
+      "summary": "Apple reported 17% revenue growth, topping estimates, even as iPhone sales came up short.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": "up"
+    },
+    {
+      "title": "Apple was surprised by AI-driven demand for Macs",
+      "link": "https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-01T06:12:52+08:00",
+      "summary": "Apple said it will be supply-constrained on Mac mini, Studio, and Neo in the next quarter, too.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nThe first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nApple’s iPhone sales and Services revenue were the stars of the show in the tech giant’s most recent quarter, but the Mac quietly outperformed — helped by growing demand for AI workloads.\nWall Street investors had expected t",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple reports second quarter results",
+      "link": "https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T04:30:59+08:00",
+      "summary": "Apple today announced financial results for its fiscal 2026 second quarter ended March 28, 2026.",
+      "body_text": "Consolidated Financial Statements\nApple periodically provides information for investors on its corporate website, apple.com , and its investor relations website, investor.apple.com . This includes press releases and other information about financial performance, reports filed or furnished with the SEC, information on corporate governance, and details related to its annual meeting of shareholders.\n",
+      "event_type": "earnings",
+      "tickers": [
+        "1984",
+        "1142",
+        "3123",
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "S&P 500 heads for its best month since 2020 — plus, Apple earnings on deck",
+      "link": "https://www.cnbc.com/2026/04/30/sp-500-heads-for-its-best-month-since-2020-plus-apple-earnings-on-deck.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T02:40:22+08:00",
+      "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple execs to talk China and tariffs, but will avoid discussing foldable iPhone, per traders on Kalshi",
+      "link": "https://www.cnbc.com/2026/04/30/what-bettors-think-apple-will-talk-about-on-its-earnings-call.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T01:56:28+08:00",
+      "summary": "Apple is set to report earnings after the bell on Thursday, with its conference call scheduled for 5:00 pm ET.",
+      "body_text": "On Apple's first earnings call since the company announced its planned C-suite changes, traders on Kalshi think the company may discuss its creator studio, streaming platform and a fellow megacap tech company's artificial intelligence model.\nApple is set to report earnings after the bell on Thursday, just over a week since the company announced that longtime CEO Tim Cook will be leaving in Septemb",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Download: the North Pole’s future and humanoid data",
+      "link": "https://www.technologyreview.com/2026/04/30/1136713/the-download-north-pole-future-humanoid-data",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T20:10:00+08:00",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Digging for clues about the North Pole’s past In the past, getting to the North Pole involved a treacherous trip through ice many meters thick. But last year, a research vessel&#8230;",
+      "body_text": "Plus: Google, Microsoft, Amazon and Meta have all set AI spending records.\nThis is today's edition of The Download , our weekday newsletter that provides a daily dose of what's going on in the world of technology.\nIn the past, getting to the North Pole involved a treacherous trip through ice many meters thick. But last year, a research vessel encountered open water and thin ice, which created an e",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "AMZN",
+        "META",
+        "AAPL"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Amazon",
+        "Meta",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Building Pi, and what makes self-modifying software so fascinating",
+      "link": "https://newsletter.pragmaticengineer.com/p/building-pi-and-what-makes-self-modifying",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-29T22:30:17+08:00",
+      "summary": "Mario Zechner, creator of Pi, joins Armin Ronacher to explore AI coding&#8217;s limits, arguing that human judgment still matters most in an agent-driven world.",
+      "body_text": "Listen and watch now on YouTube , Spotify , and Apple . See the episode transcript at the top of this page, and timestamps for the episode at the bottom.\n• Statsig – ⁠ The unified platform for flags, analytics, experiments, and more. Stop switching between different tools, and have them all in one place.\n• Sonar — The makers of SonarQube, the industry standard for code verification and automated c",
+      "event_type": "earnings",
+      "tickers": [
+        "1989",
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "UK's biggest drugmakers see surprise profit bump, even as pharma grapples with U.S. policies",
+      "link": "https://www.cnbc.com/2026/04/29/astrazeneca-gsk-q1-earnings-stock-sales-profit-trump-mfn-pharma.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-29T21:35:59+08:00",
+      "summary": "AstraZeneca and GSK, the U.K.'s second and ninth most valuable companies, both saw first-quarter profits beat expectations early Wednesday.",
+      "body_text": "U.K. pharma giants AstraZeneca and GSK saw first-quarter profits beat expectations early Wednesday, as pharma executives become increasingly outspoken about the risk to European patients losing out on new medicines as a result of U.S. drug pricing policy.\nSeveral pharma CEOs have warned that Europe could see fewer new drugs launched amid a push by U.S. President Donald Trump to lower prices for me",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Formula 1® returns to the U.S. this weekend, streaming live on Apple TV",
+      "link": "https://www.apple.com/newsroom/2026/04/formula-1-returns-to-the-us-this-weekend-streaming-live-on-apple-tv",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-29T20:59:15+08:00",
+      "summary": "Formula 1® returns to the U.S. this weekend with the Miami Grand Prix, streaming exclusively on Apple TV with every session available live.",
+      "body_text": "Text of this article\nApril 29, 2026\nUPDATE\nFormula 1® returns :br(s):to the U.S. this:br(s): weekend with the:br(s): Miami Grand Prix, streaming live on Apple TV\nFormula 1® returns to the U.S. this weekend for the FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026 — streaming exclusively on Apple TV, with every session live and on demand. 1\nAnticipation builds as the 2026 season resumes and the battle for",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "OpenAI Prepares AI-First Smartphone for 2028",
+      "link": "https://www.eetimes.com/openai-prepares-ai-first-smartphone-for-2028",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-28T19:07:17+08:00",
+      "summary": "OpenAI’s new smartphone reportedly aims to replace apps with AI agents. The post OpenAI Prepares AI-First Smartphone for 2028 appeared first on EE Times.",
+      "body_text": "ChatGPT creator OpenAI is working closely with Qualcomm and MediaTek to develop processors for an AI-first smartphone, which is reportedly co-designed and manufactured by China’s Luxshare with a launch planned in 2028. The news comes from Ming-Chi Kuo, an analyst at China-based TF International Securities, who is known for sniffing out plans of large tech firms through supply-chain sources.\nKuo, b",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Stock futures inch higher after the S&P 500 posts another record, Wall Street awaits earnings: Live updates",
+      "link": "https://www.cnbc.com/2026/04/27/stock-market-today-live-updates.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-28T07:45:31+08:00",
+      "summary": "The S&amp;P 500 and Nasdaq Composite closed at new record highs on Monday.",
+      "body_text": "U.S. stock futures ticked up on Monday night after the S&P 500 and Nasdaq Composite closed the regular session with new records.\nS&P 500 futures and Nasdaq Composite futures each added about 0.2%. Futures tied to the Dow Jones Industrial Average gained 66 points, or 0.1%.\nDuring the day's regular trading, both the S&P 500 and tech-heavy Nasdaq hit new intraday and closing highs. The broad market i",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "AMZN",
+        "META",
+        "MSFT",
+        "AAPL"
+      ],
+      "companies": [
+        "Alphabet",
+        "Amazon",
+        "Meta",
+        "Microsoft",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "華爾街標普與那指創新高　中東衝突走向仍推升不確定性",
+      "link": "https://www.cna.com.tw/news/aopl/202604280011.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-28T05:43:46+08:00",
+      "summary": "（中央社紐約27日綜合外電報導）伊朗戰爭可能如何發展的不確定性於週末升高，帶動國際油價同步上揚。美國股市那斯達克和標普500指數今天雖然雙創新高，因伊朗和談陷入停滯，漲幅受到壓抑。",
+      "body_text": "（中央社紐約27日綜合外電報導）伊朗戰爭可能如何發展的不確定性於週末升高，帶動國際油價同步上揚。美國股市那斯達克和標普500指數今天雖然雙創新高，因伊朗和談陷入停滯，漲幅受到壓抑。\nCNBC報導，標普500指數上漲0.12%，收在7173.91點。那斯達克綜合指數也上揚0.20%，以24887.10作收。道瓊工業指數則下跌62.92點，跌幅0.13%，收在49167.79點。\n美國總統川普25日取消派遣特使魏科夫（Steve Witkoff）、女婿庫許納（Jared Kushner）前往巴基斯坦展開對伊朗停火談判計畫，並表示相關協商可透過電話進行。\n伊朗外交部發言人貝卡伊（Esmaeil Baqaei）則表示，目前德黑蘭與華府之間沒有任何會面計畫。\n法新社報導，英國券商哈格里夫斯藍斯唐（Hargreaves Lansdown）證券分析部門主管奈森（Derren Nathan）表示：「外交突",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "META"
+      ],
+      "companies": [
+        "Apple",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Download: DeepSeek’s latest AI breakthrough, and the race to build world models",
+      "link": "https://www.technologyreview.com/2026/04/27/1136438/the-download-deepseek-v4-ai-world-models",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-27T20:10:00+08:00",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Three reasons why DeepSeek’s new model matters On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited new flagship model. Notably, the model can process much longer prompts&#8230;",
+      "body_text": "Plus: China has blocked Meta’s $2 billion acquisition of AI startup Manus.\nThis is today's edition of The Download , our weekday newsletter that provides a daily dose of what's going on in the world of technology.\nOn Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited new flagship model. Notably, the model can process much longer prompts than its last generation, thanks to ",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "GOOGL",
+        "NVDA",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Google",
+        "NVIDIA",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Intel's stock has best day since 1987, soaring 24% as chipmaker shows signs of a turnaround",
+      "link": "https://www.cnbc.com/2026/04/24/intel-stock-soars-more-than-20percent-as-chipmaker-shows-signs-of-turnaround.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-04-25T07:04:19+08:00",
+      "summary": "Shares of Intel have more than doubled this year on optimism that backing from the government will help the company's position in AI.",
+      "body_text": "Intel shares soared 24% on Friday, their best performance since October 1987, as investors cheered signs of renewed growth due to mounting artificial intelligence demand.\nThe stock closed at $82.57 and is now up 124% this year after jumping 84% in 2025. Friday's rally topped a 23% gain for the stock on Sept. 18, when Nvidia agreed to invest $5 billion in the company.\nCEO Lip-Bu Tan, who took the h",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "NVDA",
+        "AAPL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Musk vs. Altman is here, and it&#8217;s going to get messy",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-24T20:00:00+08:00",
+      "summary": "Elon Musk cofounded OpenAI, and then flounced off in a huff when he wasn't anointed CEO, leaving Sam Altman as the last power-hungry man standing. Now, Musk is back with a lawsuit, and a trial is scheduled to start in Oakland, California, on April 27th. Theoretically, it's a legal case about whether OpenAI defrauded Musk. [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nIt’s all about the court of public opinion.\nPosts from this author will be added to your daily ema",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "TSLA",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Tesla",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Trump warns of ‘big tariff’ if UK doesn’t drop digital services tax on U.S. tech firms",
+      "link": "https://www.cnbc.com/2026/04/24/trump-tariffs-uk-tech-apple-google-meta.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-24T19:45:05+08:00",
+      "summary": "The tax is a 2% levy on the revenues of search engines, social media services and online marketplaces that derive value from U.K. users.",
+      "body_text": "U.S. President Donald Trump has delivered a stark warning to the U.K., threatening to impose steep tariffs on the country unless it drops its digital services tax on U.S. tech companies.\nThe tax, which was first introduced in 2020, is a 2% levy on the revenues of search engines, social media services and online marketplaces that derive value from U.K. users. This includes several U.S. companies li",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "AAPL"
+      ],
+      "companies": [
+        "Alphabet",
+        "Google",
+        "Meta",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The week that Meta employees became training data",
+      "link": "https://www.platformer.news/meta-mci-monitoring-layoffs-knowledge-work",
+      "source": "Platformer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-24T08:47:42+08:00",
+      "summary": "Invasive monitoring and a fresh round of layoffs have workers I spoke to on edge. Is this the future of knowledge work?",
+      "body_text": "Invasive monitoring and a fresh round of layoffs have workers I spoke to on edge. Is this the future of knowledge work?\nThis is a column about AI. My fiancé works at Anthropic. See my full ethics disclosure here .\nHaving your every click, tap, pause, and scroll monitored has long been part of the bargain of using Facebook and Instagram. Now it’s part of the bargain of working there, too.\nReuters r",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "AMZN",
+        "AAPL",
+        "GOOGL",
+        "MSFT",
+        "NVDA"
+      ],
+      "companies": [
+        "Meta",
+        "Amazon",
+        "Apple",
+        "Google",
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Seeing the Cyber in Economic Statecraft",
+      "link": "https://warontherocks.com/seeing-the-cyber-in-economic-statecraft",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-23T15:00:45+08:00",
+      "summary": "Editor&#8217;s note: This article is the seventh in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the&#160;Potomac Institute for Policy Studies&#160;and War on the Rocks. Prior installments can be found at the&#160;War by Other Ledgers&#160;page.Americans lost nearly $21 billion to cybercrime in 2025, a new record for ",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nEditor’s note: This article is the seventh in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by th",
+      "event_type": "policy",
+      "tickers": [
+        "1977",
+        "AAPL",
+        "JPM"
+      ],
+      "companies": [
+        "Apple",
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "macOS 27 threatens to bury Time Capsule, FOSS brings a shovel",
+      "link": "https://www.theregister.com/software/2026/05/09/macos-27-threatens-to-bury-time-capsule-foss-brings-a-shovel/5234824",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-09T20:25:00+08:00",
+      "summary": "Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot",
+      "event_type": "news",
+      "tickers": [
+        "AAPL"
       ]
     },
     {
@@ -158,15 +858,9 @@
       "published": "2026-05-09T15:06:54+08:00",
       "summary": "Qualcomm Weighs AI Upside As Apple Locks In TSMC 2nm Supply&nbsp;&nbsp;simplywall.st",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "AAPL",
         "TSM"
-      ],
-      "companies": [
-        "Apple",
-        "TSMC"
       ]
     },
     {
@@ -177,15 +871,9 @@
       "published": "2026-05-09T07:43:46+08:00",
       "summary": "「華爾街日報」引述知情人士報導指出，蘋果（Apple）與英特爾（Intel）已初步達成協議，將由英特爾為蘋果裝置生產部分晶片。 「華爾街日報」報導指出，蘋果與英特爾先前...…",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "2330",
         "AAPL"
-      ],
-      "companies": [
-        "台積電",
-        "Apple"
       ]
     },
     {
@@ -196,17 +884,10 @@
       "published": "2026-05-09T06:18:30+08:00",
       "summary": "Samsung, Intel and Taiwan Semiconductor are the only three companies in the world capable of manufacturing the most advanced chips needed for AI.",
       "event_type": "news",
-      "publisher": "CNBC",
-      "author": "Katie Tarasov",
       "tickers": [
         "AAPL",
         "TSM",
         "NVDA"
-      ],
-      "companies": [
-        "Apple",
-        "TSMC",
-        "NVIDIA"
       ]
     },
     {
@@ -217,13 +898,8 @@
       "published": "2026-05-09T04:17:26+08:00",
       "summary": "A preliminary Apple-Intel manufacturing agreement—backed by a White House push—sent Intel stock above $130 on Friday.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "AAPL"
-      ],
-      "companies": [
-        "Apple"
       ]
     },
     {
@@ -234,17 +910,10 @@
       "published": "2026-05-09T04:02:52+08:00",
       "summary": "Intel's stock has risen a stunning 490% over the past year, a bet by Wall Street that may be running well ahead of the company's actual turnaround.",
       "event_type": "news",
-      "publisher": "TechCrunch",
-      "author": "Connie Loizos",
       "tickers": [
         "AAPL",
         "TSLA",
         "TSM"
-      ],
-      "companies": [
-        "Apple",
-        "Tesla",
-        "TSMC"
       ]
     },
     {
@@ -255,17 +924,10 @@
       "published": "2026-05-09T03:00:21+08:00",
       "summary": "From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle. The post Which AI Glasses Are Right For You? appeared first on Meta Newsroom.",
       "event_type": "news",
-      "publisher": "Meta Newsroom",
-      "author": "joedamiani",
       "tickers": [
         "META",
         "AAPL",
         "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Apple",
-        "Google"
       ]
     },
     {
@@ -276,15 +938,9 @@
       "published": "2026-05-09T02:18:19+08:00",
       "summary": "（中央社紐約8日綜合外電報導）「華爾街日報」今天引述知情人士報導，蘋果（Apple）與英特爾（Intel）已達成一項初步協議，將由英特爾為蘋果裝置生產部分晶片。",
       "event_type": "news",
-      "publisher": "中央社 CNA",
-      "author": "徐睿承",
       "tickers": [
         "AAPL",
         "TSLA"
-      ],
-      "companies": [
-        "Apple",
-        "Tesla"
       ]
     },
     {
@@ -295,13 +951,8 @@
       "published": "2026-05-09T02:09:03+08:00",
       "summary": "Intel and Apple have reportedly reached a deal in which the former will manufacture chips for the latter.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "AAPL"
-      ],
-      "companies": [
-        "Apple"
       ]
     },
     {
@@ -312,32 +963,9 @@
       "published": "2026-05-09T01:17:17+08:00",
       "summary": "You can stop Chrome from taking up 4GB of storage for local AI, but that shouldn't be your problem.",
       "event_type": "news",
-      "publisher": "Ars Technica",
-      "author": "Ryan Whitwam",
       "tickers": [
         "GOOGL",
         "AAPL"
-      ],
-      "companies": [
-        "Google",
-        "Apple"
-      ]
-    },
-    {
-      "title": "You can do CUDA inference on an Apple Silicon Mac with PCI Passthrough",
-      "link": "https://www.reddit.com/r/LocalLLaMA/comments/1t7cqg9/you_can_do_cuda_inference_on_an_apple_silicon_mac",
-      "source": "Reddit r/LocalLLaMA",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T00:20:42+08:00",
-      "summary": "I have been working on a project to adapt QEMU, running on macOS, to support passing through a GPU into a Linux VM. I wrote this post walking through some of the interesting challenges there, along with benchmarks. The post focuses a lot on gaming, but there are AI benchmarks there as well. &#32; submitted by &#32; /u/scottjgo [link] &#32; [comments]",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "AAPL"
-      ],
-      "companies": [
-        "Apple"
       ]
     },
     {
@@ -348,15 +976,9 @@
       "published": "2026-05-08T23:46:17+08:00",
       "summary": "Everyone wants a piece of the&#160;enterprise&#160;AI pie, and this week, we saw a string of companies making their moves. From&#160;Anthropic and OpenAI announcing new joint ventures&#160;targeting enterprise AI deployment to&#160;SAP dropping $1B&#160;on German AI startup Prior Labs,&#160;it&#8217;s&#160;becoming clear that if&#160;you&#8217;re&#160;a startup building enterprise tools,&#160;you&#8217;re&#160;likely an&#160;acquisition target.&#160; On this episode of TechCrunch&#8217;s&#160;Eq",
       "event_type": "news",
-      "publisher": "TechCrunch",
-      "author": "",
       "tickers": [
         "AAPL",
         "TSLA"
-      ],
-      "companies": [
-        "Apple",
-        "Tesla"
       ]
     },
     {
@@ -367,53 +989,8 @@
       "published": "2026-05-08T21:31:37+08:00",
       "summary": "Sometimes, companies pick CEOs based on carefully laid succession plans designed to maximize investor confidence and future performance. Other times, apparently, companies pick CEOs based on a bunch of video calls while the current CEO is texting the former CEO about who the new CEO even is. Such was the story of The Blip, the [&#8230;]",
       "event_type": "news",
-      "publisher": "The Verge",
-      "author": "David Pierce",
       "tickers": [
         "AAPL"
-      ],
-      "companies": [
-        "Apple"
-      ]
-    },
-    {
-      "title": "Chip Industry Week In Review",
-      "link": "https://semiengineering.com/chip-industry-week-in-review-137",
-      "source": "Semiconductor Engineering",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T15:01:11+08:00",
-      "summary": "New Taiwan adv. packaging site; M&#038;A activity; GF's CPO solution; Apple looks beyond TSMC; EU chip companies map; strong earnings; MIT's new lidar chip; gallium production; AI inferencing at sea; quantum HW funding; PCIe 7 tool; home data centers; AI security warnings; temperature impact on EVs. The post Chip Industry Week In Review appeared first on Semiconductor Engineering.",
-      "event_type": "earnings",
-      "publisher": "Semiconductor Engineering",
-      "author": "The SE Staff",
-      "tickers": [
-        "AAPL",
-        "TSM",
-        "META"
-      ],
-      "companies": [
-        "Apple",
-        "TSMC",
-        "Meta"
-      ]
-    },
-    {
-      "title": "Meta’s Position on Canada’s Bill C-22",
-      "link": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22",
-      "source": "Meta Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T06:46:00+08:00",
-      "summary": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians. &#160; Delivered by Rachel Curran, Director of Public Policy, Canada, Meta &#160; Thank you, M. Chair. Good afternoon and thank you for the opportunity to appear before the Committee today. My name is Rachel Curran and ",
-      "event_type": "earnings",
-      "publisher": "Meta Newsroom",
-      "author": "juliaperreira",
-      "tickers": [
-        "META",
-        "AAPL"
-      ],
-      "companies": [
-        "Meta",
-        "Apple"
       ]
     },
     {
@@ -424,15 +1001,9 @@
       "published": "2026-05-08T05:47:23+08:00",
       "summary": "The Trump ⁠administration is inviting CEOs from ⁠Nvidia, Apple, Exxon, Boeing and other big companies to accompany the president on his trip to China next week, Semafor reported on Thursday. Executives from Qualcomm, Blackstone, Citigroup ‌and Visa are also on the invitation list, according to the report. A person familiar with the matter confirmed that Citigroup CEO Jane Fraser was invited. Qualcomm confirmed the invitation but declined to comment further. Reuters was not able to confirm ⁠the..",
       "event_type": "news",
-      "publisher": "South China Morning Post",
-      "author": "Reuters",
       "tickers": [
         "NVDA",
         "AAPL"
-      ],
-      "companies": [
-        "NVIDIA",
-        "Apple"
       ]
     },
     {
@@ -443,15 +1014,9 @@
       "published": "2026-05-08T03:39:22+08:00",
       "summary": "Apple's rumored AirPods with cameras are nearing a stage where the company will test early mass production, Bloomberg's Mark Gurman reports. Currently, Apple testers are \"actively using\" prototypes that are in the design validation test stage, which is one step before the production validation test stage. The AirPods' cameras \"aren't designed\" to snap photos or [&#8230;]",
       "event_type": "news",
-      "publisher": "The Verge",
-      "author": "Jay Peters",
       "tickers": [
         "AAPL",
         "META"
-      ],
-      "companies": [
-        "Apple",
-        "Meta"
       ]
     },
     {
@@ -462,32 +1027,9 @@
       "published": "2026-05-08T02:32:26+08:00",
       "summary": "（中央社華盛頓7日綜合外電報導）美國媒體Semafor今天報導，美國政府邀請輝達（Nvidia）、蘋果（Apple）、埃克森美孚（Exxon）、波音（Boeing）及其他大型企業的執行長，於下週陪同總統川普訪中。",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "NVDA",
         "AAPL"
-      ],
-      "companies": [
-        "NVIDIA",
-        "Apple"
-      ]
-    },
-    {
-      "title": "蘋果研發支出突破10%大關　全面衝刺AI與硬體革新",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754518_U0N4ODZB25XW637U0HJSM",
-      "source": "DIGITIMES AI應用",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T02:27:33+08:00",
-      "summary": "蘋果（Apple）在2026財年第2季（2QFY26）財報中揭露，其研究與開發（R&amp;D）支出，30年來首次在營收比重中突破10%；該數字顯現了即將進入管理層交接之際的蘋果，對於轉型的積極與急迫性。據CNBC報導，蘋果在2QFY26的研發支出佔營收比重達到10.3%，相較於1QFY26的7.6%以及2025年同期的9%...",
-      "event_type": "earnings",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "AAPL"
-      ],
-      "companies": [
-        "Apple"
       ]
     },
     {
@@ -498,15 +1040,9 @@
       "published": "2026-05-08T02:27:32+08:00",
       "summary": "Nvidia, Apple and Boeing CEOs to join Trump for US–China summit&nbsp;&nbsp;Firstpost",
       "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
       "tickers": [
         "NVDA",
         "AAPL"
-      ],
-      "companies": [
-        "NVIDIA",
-        "Apple"
       ]
     },
     {
@@ -517,13 +1053,8 @@
       "published": "2026-05-08T01:00:28+08:00",
       "summary": "Emerging filmmakers in the MAMI Select: Filmed on iPhone program use iPhone 17 Pro Max to redefine cinematic language and storytelling.",
       "event_type": "news",
-      "publisher": "Apple Newsroom",
-      "author": "",
       "tickers": [
         "AAPL"
-      ],
-      "companies": [
-        "Apple"
       ]
     },
     {
@@ -534,19 +1065,11 @@
       "published": "2026-05-08T00:45:31+08:00",
       "summary": "Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small &#8220;AI-forward&#8221; teams, and more",
       "event_type": "news",
-      "publisher": "The Pragmatic Engineer",
-      "author": "Gergely Orosz",
       "tickers": [
         "AMZN",
         "META",
         "AAPL",
         "MSFT"
-      ],
-      "companies": [
-        "Amazon",
-        "Meta",
-        "Apple",
-        "Microsoft"
       ]
     },
     {
@@ -557,15 +1080,9 @@
       "published": "2026-05-07T21:59:24+08:00",
       "summary": "Meet four Swift Student Challenge winners who are creating innovative apps that leverage AI and focus on accessibility.",
       "event_type": "news",
-      "publisher": "Apple Newsroom",
-      "author": "",
       "tickers": [
         "AAPL",
         "GOOGL"
-      ],
-      "companies": [
-        "Apple",
-        "Google"
       ]
     },
     {
@@ -576,38 +1093,73 @@
       "published": "2026-05-07T21:14:01+08:00",
       "summary": "Musk was “prepared to do the for-profit, provided he would get control.”",
       "event_type": "news",
-      "publisher": "Ars Technica",
-      "author": "Financial Times",
       "tickers": [
         "TSLA",
         "AAPL",
         "GOOGL"
-      ],
-      "companies": [
-        "Tesla",
-        "Apple",
-        "Google"
       ]
     },
     {
-      "title": "CloakHQ/CloakBrowser",
-      "link": "https://github.com/CloakHQ/CloakBrowser",
-      "source": "GitHub Trending (Python)",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-07T09:00:53.560139+08:00",
-      "summary": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed. Stealth Chromium that passes every bot detection test. Not a patched config. Not a JS injection. A real Chromium binary with fingerprints modified at the C++ source level. Antibot systems score it as a normal browser — because it is a normal browser. Cloudflare Turnstile — 3 live tests passing (headed mode, macOS) Drop-in Playwright/Puppeteer replacemen",
-      "event_type": "earnings",
-      "publisher": "GitHub",
-      "author": "",
+      "title": "日本研討手機統一回收價，蘋果反對並罕見批評競爭對手",
+      "link": "https://technews.tw/2026/05/07/japan-considers-unified-phone-recycling-prices-apple-opposes",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T07:10:58+08:00",
+      "summary": "日本總務省早前召開「利用者視角審視流動市場專門委員會」第六次會議，研究所有智慧手機的統一回收價計算比率。蘋果（ [&#8230;]",
+      "event_type": "news",
       "tickers": [
-        "8080",
-        "9222",
         "AAPL",
-        "NVDA"
-      ],
-      "companies": [
-        "Apple",
-        "NVIDIA"
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "（獨家）NVIDIA GPU升級緩加上CPU、記憶體雙缺　PC主板廠出貨目標全線崩跌",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754394_2M94CB7W8M7OAA5Z4THE5",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T03:00:00+08:00",
+      "summary": "AI需求爆發引發晶片產能排擠，記憶體與中央處理器（CPU）出現嚴重缺貨漲價，品牌NB、桌上型電腦（DT）產品買氣下滑，PC DIY通路市況更是慘澹。PC供應鏈人士透露，台系四大品牌主機板廠於2025年底所設下的2026全年出貨目標全下修，且幾乎是「全線崩跌」。較過往金融海嘯、COVID-...",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "蘋果尋晶片第二來源　三星2奈米迎契機、效能有別成隱憂",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754406_P7A5NJSDL2DCX27PKXEVQ",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T02:52:11+08:00",
+      "summary": "日前傳出蘋果（Apple）為尋求台積電以外的供應來源，考慮將自家處理器委託給三星電子（Samsung Electronics）與英特爾（Intel）代工，市場因此高度關注對三星晶圓代工事業的可能影響，以及蘋果此舉能否擺脫對台積電先進製程的依賴。據韓媒韓聯社、Digital...",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "2330"
+      ]
+    },
+    {
+      "title": "Apple to pay $250M to settle lawsuit over Siri’s delayed AI features",
+      "link": "https://techcrunch.com/2026/05/06/apple-to-pay-250m-to-settle-lawsuit-over-siris-delayed-ai-features",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T23:12:49+08:00",
+      "summary": "Apple has agreed to pay $250 million to settle a class action lawsuit for overpromising the arrival of Siri's AI features.",
+      "event_type": "news",
+      "tickers": [
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Apple Will Pay $250 Million to Settle Lawsuit Over Siri’s AI Features",
+      "link": "https://www.wired.com/story/apple-will-pay-dollar250-million-to-settle-lawsuit-over-siris-ai-features",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T18:41:37+08:00",
+      "summary": "If you bought an iPhone 15 or 16 in the US, you could be set to pocket up to $95 per device as part of the settlement.",
+      "event_type": "news",
+      "tickers": [
+        "AAPL"
       ]
     }
   ],
@@ -667,9 +1219,84 @@
       "guidance_summary": ""
     }
   ],
+  "fundamentals": {
+    "ticker": "AAPL",
+    "market": "us",
+    "company_name": "Apple Inc.",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "revenue": 254940000000.0,
+      "gross_profit": 124012000000.0,
+      "operating_income": 86737000000.0,
+      "net_income": 71675000000.0,
+      "eps": 4.85,
+      "fcf": 78283000000.0,
+      "ocf": 82627000000.0,
+      "capex": 4344000000.0,
+      "gross_margin": 0.48643602416254805,
+      "op_margin": 0.3402251510159253,
+      "net_margin": 0.28114458303914647,
+      "fcf_margin": 0.3070644073115243,
+      "capex_intensity": 0.017039303365497763,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 77.34216310971368,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q2",
+        "revenue": 254940000000.0,
+        "gross_profit": 124012000000.0,
+        "operating_income": 86737000000.0,
+        "net_income": 71675000000.0,
+        "eps_diluted": 4.85,
+        "fcf": 78283000000.0,
+        "ocf": 82627000000.0,
+        "capex": 4344000000.0,
+        "company_name": "Apple Inc."
+      },
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 143756000000.0,
+        "gross_profit": 70537000000.0,
+        "operating_income": 52503000000.0,
+        "net_income": 42097000000.0,
+        "eps_diluted": 6.45,
+        "fcf": 51552000000.0,
+        "ocf": 53925000000.0,
+        "capex": 2373000000.0,
+        "company_name": "Apple Inc."
+      }
+    ],
+    "health": {
+      "tier": "steady",
+      "label": "穩健",
+      "summary": "營益率 34% 業界頂尖・FCF margin 31% 現金力強",
+      "icon": "🔵",
+      "score": 3
+    }
+  },
   "co_mentions": [
     {
+      "ticker": "GOOGL",
+      "count": 17
+    },
+    {
       "ticker": "META",
+      "count": 13
+    },
+    {
+      "ticker": "MSFT",
+      "count": 6
+    },
+    {
+      "ticker": "AMZN",
       "count": 6
     },
     {
@@ -677,37 +1304,25 @@
       "count": 5
     },
     {
-      "ticker": "TSM",
-      "count": 4
-    },
-    {
       "ticker": "TSLA",
-      "count": 4
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 4
-    },
-    {
-      "ticker": "1000",
-      "count": 1
+      "count": 3
     },
     {
       "ticker": "2330",
       "count": 1
     },
     {
-      "ticker": "AMZN",
+      "ticker": "1984",
       "count": 1
     },
     {
-      "ticker": "MSFT",
+      "ticker": "1142",
       "count": 1
     },
     {
-      "ticker": "8080",
+      "ticker": "3123",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:22:11Z"
+  "generated_at": "2026-05-11T03:33:21Z"
 }

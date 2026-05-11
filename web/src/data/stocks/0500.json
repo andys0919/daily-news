@@ -1,0 +1,72 @@
+{
+  "ticker": "0500",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Inside India newsletter: Tariffs and Iran war threaten India's $100 billion garments export goal",
+      "link": "https://www.cnbc.com/2026/04/09/inside-india-newsletter-tariffs-iran-war-india-massive-garments-industry.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-09T08:06:58+08:00",
+      "summary": "U.S. tariffs and the Iran war have battered India’s garment industry, raising costs, hitting exports, and dashing hopes of a recovery.",
+      "body_text": "Monday - Friday, 11:00 - 12:00 SIN/HK | 0500 - 06:00 CET\nThis report is from this week's \"Inside India\" newsletter, which brings you timely, insightful news and market commentary on the emerging powerhouse — Subscribe today\nHello, this is Priyanka Salve, writing to you from Singapore.\nWelcome to the latest edition of \" Inside India \" — your one-stop destination for stories and developments from th",
+      "event_type": "policy",
+      "tickers": [
+        "0500"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Inside India newsletter: The worst might not be over for Indian equities",
+      "link": "https://www.cnbc.com/2026/04/02/iran-war-indian-stocks-meltdown-worsen.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-02T08:10:51+08:00",
+      "summary": "Indian equities plunged as the Iran war triggered a record wave of foreign investor sell‑offs. Experts warn the downturn may not be over yet.",
+      "body_text": "Monday - Friday, 11:00 - 12:00 SIN/HK | 0500 - 06:00 CET\nThis report is from this week's \"Inside India\" newsletter, which brings you timely, insightful news and market commentary on the emerging powerhouse — Subscribe today\nHello, this is Priyanka Salve, writing to you from Singapore.\nWelcome to the latest edition of \" Inside India \" — your one-stop destination for stories and developments from th",
+      "event_type": "earnings",
+      "tickers": [
+        "0500"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Inside India newsletter: AI is exposing cracks in India’s growth story as it hits high-paying IT jobs",
+      "link": "https://www.cnbc.com/2026/04/30/ai-threat-indias-growth-story-jobs.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T08:53:25+08:00",
+      "summary": "India’s IT sector fueled consumption growth, but AI is reducing mass hiring now, revealing a shortage of quality jobs, risking future economic momentum.",
+      "event_type": "news",
+      "tickers": [
+        "0500"
+      ]
+    },
+    {
+      "title": "Step aside Tesla, BYD: Japanese carmakers deepen their hold on India's auto market with hybrids",
+      "link": "https://www.cnbc.com/2026/04/23/japanese-carmakers-deepen-hold-in-india-with-hybrids.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-23T08:14:48+08:00",
+      "summary": "In the world's third-largest auto market, demand for hybrid cars is racing ahead of EVs, deepening the hold of Japanese carmakers in India.",
+      "event_type": "news",
+      "tickers": [
+        "0500",
+        "TSLA"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

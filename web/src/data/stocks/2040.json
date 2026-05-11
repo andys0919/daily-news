@@ -1,0 +1,138 @@
+{
+  "ticker": "2040",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "TSMC taps wind power as AI chip demand soars, Taiwan feels energy crunch",
+      "link": "https://arstechnica.com/gadgets/2026/05/tsmc-taps-wind-power-as-ai-chip-demand-soars-taiwan-feels-energy-crunch",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T05:47:27+08:00",
+      "summary": "TSMC backs renewables during record demand for energy-hungry chip manufacturing.",
+      "body_text": "TSMC backs renewables during record demand for energy-hungry chip manufacturing.\nTaiwanese chipmaker TSMC is raking in record profits during the AI boom—but it is also racing to help Taiwan develop wind power and other energy alternatives to fossil fuels amid a global energy crisis.\nThe chipmaker has signed a 30-year corporate power purchase agreement for 100 percent of the power produced by the H",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "2040",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The New Resource Curse",
+      "link": "https://www.foreignaffairs.com/united-states/new-resource-curse",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-30T12:00:00+08:00",
+      "summary": "Critical minerals will scramble geopolitics.",
+      "body_text": "RABAH AREZKI is Director of Research at the French National Center for Scientific Research and a Senior Fellow at the Harvard Kennedy School. He previously served as Vice President and Chief Economist at the African Development Bank and as Chief Economist for the Middle East and North Africa at the World Bank.\nFREDERICK VAN DER PLOEG is Professor of Economics at the University of Oxford and Resear",
+      "event_type": "earnings",
+      "tickers": [
+        "2040",
+        "1974",
+        "1945",
+        "1986"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Goldman Sachs Bets Big On Agentic AI Boom By 2040, But Warns Bad Data Could Leave A Bad Taste - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMXNkVktfRHlaYzZlWTFrRWkzWUtlNVdxS09vVzk4aERWY0FEYlJCQXBWM3R3cUhvaFU4emVJdFJnX2U4RHE2X2QtcFZyUllwMm1OQUc0M0Z2ZkwxZ2Z3QXY0YmNJVlZGdXJpQXJNazBfX1pPNDM0VDZCa0xfM2ltVnUzQ1NiRVI0OTBjNUJpMWF0dkM1OXE3QmpfWG1TZFhzdWRPOE9SWGNwLWluYVFfY3Z1NW3SAboBQVVfeXFMTUJ0UzJOVDNQeFVNb21qS3RiSWVrNE5BaU5YbElUWXp5OXA0YVl0WUp5YmVHUjJCdWIzSUwtZmdkQ3o4cndYNEZyMzdaSXJtTVUzSGo4ajFWRkxROEVtdlRPSlZVMnlzWUkzZXJPMWtpeWpWeWtPRWx1bUhzbDlkSGVDMkpDemhJRDM3d0Vrd2ZXQmpFdUJFbThLMkExZTV6N0JJc2FjWW5xNjEyalFVOF9PejJpcEFfY1ZR?oc=5",
+      "source": "LLM 應用與商用化",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T21:59:00+08:00",
+      "summary": "Goldman Sachs Bets Big On Agentic AI Boom By 2040, But Warns Bad Data Could Leave A Bad Taste&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "2040"
+      ]
+    },
+    {
+      "title": "用過時資料訓練語言模型的「AI 時光機」，能否準確預測現在？",
+      "link": "https://technews.tw/2026/05/07/turning-back-the-clock-by-making-an-ai-time-machine-chatbot-based-only-on-information-available-before-the-1930s",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T07:20:49+08:00",
+      "summary": "富比士專欄作者蘭斯·艾略特（Lance Eliot） 5 日撰文指出，AI 業界又興起以「過時資料」訓練大型語 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "1930",
+        "1931",
+        "2040",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "In Japan, the robot isn’t coming for your job; it’s filling the one nobody wants",
+      "link": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-05T22:00:00+08:00",
+      "summary": "Driven by labor shortages, Japan is pushing physical AI from pilot projects into real-world deployment.",
+      "event_type": "news",
+      "tickers": [
+        "2040"
+      ]
+    },
+    {
+      "title": "Suncor plans major shift in focus to in situ oil sands output by 2040 - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1oQ1J4cEhOZGxwVWRPdGJ5TUlJa0xTUnlaZnp4MUM5Y0tEM1AtZGo4Y0w0dVE4LUdKYVVFcVppV1dVTVU0TVNVNjZWcVhvcV9Ca2JQbnF4UEJqY1drVGVrRWpINA",
+      "source": "X 宏觀市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-01T06:35:15+08:00",
+      "summary": "Suncor plans major shift in focus to in situ oil sands output by 2040&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "2040"
+      ]
+    },
+    {
+      "title": "Next-generation LED Drivers for Exterior Lighting in the SDV",
+      "link": "https://www.eetimes.com/next-generation-led-drivers-for-exterior-lighting-in-the-sdv",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-03-31T21:41:56+08:00",
+      "summary": "The trend toward SDV has significant implications for automotive exterior lighting. ROHM is addressing these challenges with its new driver ICs. The post Next-generation LED Drivers for Exterior Lighting in the SDV appeared first on EE Times.",
+      "event_type": "news",
+      "tickers": [
+        "2040"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "2035",
+      "count": 1
+    },
+    {
+      "ticker": "TSM",
+      "count": 1
+    },
+    {
+      "ticker": "1974",
+      "count": 1
+    },
+    {
+      "ticker": "1945",
+      "count": 1
+    },
+    {
+      "ticker": "1986",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

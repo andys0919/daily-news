@@ -1,0 +1,58 @@
+{
+  "ticker": "3081",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "飆股幕後》營收可望季增 聯亞今年飆漲3.24倍",
+      "link": "https://ec.ltn.com.tw/article/paper/1751408",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-18T05:30:00+08:00",
+      "summary": "記者王憶紅／特稿 光通訊廠聯亞光電（3081）受惠AI強勁需求，與CPO（共同封裝光學）持續增溫，在矽光子（SiPh）CW（連續波）雷射量產的激勵下，股價不斷走高，昨日開高後不久即攻上漲停2600元，再刷歷史新天價，總計本週漲幅12.31%、本月以來漲幅65.08%，今年以來的漲幅更高達3.24倍…",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "3081"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "聯亞、台燿、台光電 3月獲利躍進",
+      "link": "https://ec.ltn.com.tw/article/paper/1750862",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-14T05:30:00+08:00",
+      "summary": "聯亞單月獲利 即逼近去年上半年的1.51元 〔記者卓怡君、王憶紅／綜合報導〕熱門股銅箔基板（CCL）廠台光電（2383）、台燿（6274）及光通訊廠聯亞（3081）昨公告3月獲利，呈現大躍進，其中聯亞在規模放大下，3月稅後盈餘1.26億元，年增3.5倍，每股稅後盈餘1.36元，單月獲利即逼近去年…",
+      "event_type": "news",
+      "tickers": [
+        "2383",
+        "6274",
+        "3081"
+      ]
+    },
+    {
+      "title": "千金股解密—聯亞3081",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5387442",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-02T07:20:00+08:00",
+      "summary": "〔財經頻道／綜合報導〕聯亞（3081）核心技術在化合物半導體磊晶與元件製造，包括磷化銦（InP）和砷化鎵（GaAs）晶片，這類材料主要應用於高速光通訊。聯亞擅長磊晶技術，是光通訊元件最關鍵的門檻...…",
+      "event_type": "news",
+      "tickers": [
+        "3081"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

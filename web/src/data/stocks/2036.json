@@ -1,0 +1,52 @@
+{
+  "ticker": "2036",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Three scenarios for the USMCA’s review—and why auto manufacturers should prepare now",
+      "link": "https://www.atlanticcouncil.org/dispatches/three-scenarios-for-the-usmcas-review-and-why-auto-manufacturers-should-prepare-now",
+      "source": "Atlantic Council",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T03:21:42+08:00",
+      "summary": "Auto manufacturers should take steps to make their supply chains and investments more resilient to shocks resulting from significant changes to the agreement or its expiration. The post Three scenarios for the USMCA’s review—and why auto manufacturers should prepare now appeared first on Atlantic Council.",
+      "body_text": "WASHINGTON—The United States-Mexico-Canada Agreement ( USMCA ), which entered into force in 2020, has delivered predictability and stability to North American automotive manufacturers. But that stability is not permanent. The agreement’s built-in review and sunset mechanisms require the three countries to jointly affirm its continuation this July. While the USMCA’s future is far from certain, auto",
+      "event_type": "earnings",
+      "tickers": [
+        "2036",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Global Quantum Computing Advanced Packaging Market to Reach USD 278.65 Million by 2036 - openPR.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUUxFbnVxNVhGa1FKYXdxVE1HQ2drOHM1cWthYUlteFJjQk9TbXlrLWxjNW1XNlZJWEpIbEFPd2puQTRIU2RmdlM1eWlvOHJEc3NyczN5dGtZUzB5SDRUb1BySGpiZDd3bXlBZks3bUwtTXRSOUItWEZwX2lTQ3ZfRktEQWJmZzQ0UEdsVXZNb3cwNi1OUUVKcWZJbXpwZWZE?oc=5",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-23T23:02:30+08:00",
+      "summary": "Global Quantum Computing Advanced Packaging Market to Reach USD 278.65 Million by 2036&nbsp;&nbsp;openPR.com",
+      "event_type": "news",
+      "tickers": [
+        "2036"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "META",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

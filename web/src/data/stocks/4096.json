@@ -1,0 +1,31 @@
+{
+  "ticker": "4096",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models",
+      "link": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b",
+      "source": "Hugging Face Blog",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T01:41:05+08:00",
+      "summary": "",
+      "body_text": "Why this matters Why a small specialized model, not just a small model A 5-minute walkthrough Why AMD MI300X The training data The recipe Companion model: same recipe, different substrate Challenges and fixes Try it yourself Intended use What's next Closing Built for the AMD Developer Hackathon · Trained on a single AMD Instinct MI300X · Apache 2.0\nFrontier models are very good at very many things",
+      "event_type": "earnings",
+      "tickers": [
+        "4096"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

@@ -1,0 +1,98 @@
+{
+  "ticker": "1947",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Thousands of 'lost Canadians' have applied for dual citizenship - is Canada ready?",
+      "link": "https://www.bbc.com/news/articles/cp8pmnlejgro",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-02T07:02:27+08:00",
+      "summary": "Changes to Canadian citizenship rules have led to thousands of new applications - many coming from the US.",
+      "event_type": "news",
+      "tickers": [
+        "1947"
+      ]
+    },
+    {
+      "title": "Relatives of 10 scientists who died or vanished grapple with impact of wild speculation",
+      "link": "https://www.bbc.com/news/articles/cwyw9rpdl4po",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-25T04:15:17+08:00",
+      "summary": "Conspiracies are running rampant online after the deaths or disappearances of at least 10 people tied to sensitive US research.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "The Trouble With Permanent Alliances",
+      "link": "https://www.foreignaffairs.com/iran/trouble-permanent-alliances",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-13T12:00:00+08:00",
+      "summary": "America’s pacts should have expiration dates.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "1756",
+        "1778",
+        "1793",
+        "1796",
+        "1917",
+        "1969",
+        "1945",
+        "1955",
+        "1979",
+        "1986",
+        "1973",
+        "1972",
+        "1960",
+        "1952"
+      ]
+    },
+    {
+      "title": "Why Today’s AR Displays Fall Short and a 75-Year-Old Idea May Help",
+      "link": "https://www.eetimes.com/why-todays-ar-displays-fall-short-and-a-75-year-old-idea-may-help",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-03T23:54:23+08:00",
+      "summary": "Discover how 75-year-old holography tech could finally unlock true AR smart glasses. The post Why Today’s AR Displays Fall Short and a 75-Year-Old Idea May Help appeared first on EE Times.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "META"
+      ]
+    },
+    {
+      "title": "India begins counting more than a billion people in massive census",
+      "link": "https://www.bbc.com/news/articles/c7vqnpqrgy3o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-01T08:11:33+08:00",
+      "summary": "The two-phase exercise - the world’s most ambitious - will see three million officials count every Indian.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "1872",
+        "1881",
+        "1901",
+        "1941",
+        "1951",
+        "1961"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

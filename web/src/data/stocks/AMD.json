@@ -44,7 +44,111 @@
   "insider": [],
   "short_interest": [],
   "holdings": [],
-  "recent_news": [],
+  "recent_news": [
+    {
+      "title": "AMD (NASDAQ:AMD) Surges After Strong Q1 Earnings Beat and Upbeat AI-Driven Forecast - ChartMill",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcE5GTjRTUVV3ODJBRnYydG1jT3VRN0YwV3hzZV9lRFMybkRyWkpsZmNoTkw4czR6Ujh3LVJXQVpWMy1nRGwtZFl5RHRjYUJkc2JiWHl5WGpRcEZmblVPeGdKa2VsX0xDMENjMjZaVG9GNFVTa0o5YlFTakoyWWxRaEl0QlA5ZjZjelBfS3lLaml0dG11WXpZR2o0YWE0Q1EwOFFodVpLTjdOY21KamJITENDZ2I5R2xGX08wcmgtWTVpM29xMTNKYUs1UQ?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T04:45:51+08:00",
+      "summary": "AMD (NASDAQ:AMD) Surges After Strong Q1 Earnings Beat and Upbeat AI-Driven Forecast&nbsp;&nbsp;ChartMill",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AMD"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "$AMD reports First Quarter 2026 financial results. View non-GAAP financial measures reconciliation & cautionary statement: https://ir.amd.com/news-eve...",
+      "link": "https://x.com/AMD/status/2051758675426005380",
+      "source": "X @AMD",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-06T04:19:22+08:00",
+      "summary": "$AMD reports First Quarter 2026 financial results. View non-GAAP financial measures reconciliation &amp; cautionary statement: https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AMD",
+        "1284"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "🚨 Get Ready for Another Explosive Week of Trading with our Weekly Calendar of Market Moving Events Be Ready!! 🏛️ Fed Speakers All Week 🔥 Huge Earnings $PLTR $AMD $SMCI $NET $CRWV $COIN $MCD $UBER $RKLB & many more 📊 NFP, Average - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5saEU1WW1vNUpNOThSQThYNll3UGp3VV9WYmRaM2FPeFpwV1VlM3lWV192Y1NVMFN4aFQ2eDBuVWtuRm14cEdTQ1Rlc2dQWEdlZi1iTmF0ckpORno2MnRrVmZOSEV5RnM",
+      "source": "X @AMD",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T06:20:33+08:00",
+      "summary": "🚨 Get Ready for Another Explosive Week of Trading with our Weekly Calendar of Market Moving Events Be Ready!! 🏛️ Fed Speakers All Week 🔥 Huge Earnings $PLTR $AMD $SMCI $NET $CRWV $COIN $MCD $UBER $RKLB & many more 📊 NFP, Average&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "PLTR",
+        "AMD",
+        "SMCI",
+        "NET",
+        "CRWV",
+        "COIN",
+        "MCD",
+        "UBER",
+        "RKLB"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Here is the earnings calendar for the week ... we are still in the thick of earnings season We will have earnings from companies including Palantir $PLTR Shopify $SHOP $AMD Disney $DIS $UBER and much more ... get ready! - x.com",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EOGwxN0lvZmFxUXZlejN2eW1VQURZMnktNG8tNUNEOFpERm5qTEZfdVBHUm1PZlY2czVoSG43WW1xVGxnNzNiV1huUzVzTGpZLURJWVNHc3lHbHR6Q3A1YTg2bmY5UFdXMTNBSmFR?oc=5",
+      "source": "X @AMD",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T05:01:18+08:00",
+      "summary": "Here is the earnings calendar for the week ... we are still in the thick of earnings season We will have earnings from companies including Palantir $PLTR Shopify $SHOP $AMD Disney $DIS $UBER and much more ... get ready!&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "PLTR",
+        "SHOP",
+        "AMD",
+        "DIS",
+        "UBER"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "BREAKING $AMD is the Premier AI 2026-2027🚀 Bank of America analysts have identified @AMD @nvidia , @Broadcom as their preferred investments within the artificial intelligence computing space, establishing specific price objectives and evaluating pote - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5OaDNqakRvUEpaMG5Fb0Q1SVRiMGNvYUlIS2lfaWhxTFZseWszTlMyUWpob1Q0ak40dW83UWt4ZXZWLUpmRXQzTkZicVpibzItMEg3c045TW5mSUp3S0lUMmh3Zw?oc=5",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-31T05:27:43+08:00",
+      "summary": "BREAKING $AMD is the Premier AI 2026-2027🚀 Bank of America analysts have identified @AMD @nvidia , @Broadcom as their preferred investments within the artificial intelligence computing space, establishing specific price objectives and evaluating pote&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "AMD",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "TSMC is reportedly preparing to begin 3nm mass production as early as the 2H 2027 at its Arizona fab, with all overseas capacity expected to account for 20% of its total capacity by 2028. $TSM $NVDA $AMD $AVGO - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tdDZydlJQV2poMXQtRmhBa3lENXFqYzAyNGNvQThRbDNuWGp6WWl3N3IxX1M3OXlSZHZ3U2xPb1JTZ2F6dTNMNEZhSVpoRlJKNEdIaW9NRUZEcmlHa1kzdVdB",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-29T06:22:27+08:00",
+      "summary": "TSMC is reportedly preparing to begin 3nm mass production as early as the 2H 2027 at its Arizona fab, with all overseas capacity expected to account for 20% of its total capacity by 2028. $TSM $NVDA $AMD $AVGO&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "TSM",
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ]
+    }
+  ],
   "history": [
     {
       "fiscal_year": 2025,
@@ -65,6 +169,97 @@
       "guidance_summary": "Generally Accepted Accounting Principles (“GAAP”) basis, contains certain non-GAAP financial information and forward-looking financial guidance."
     }
   ],
-  "co_mentions": [],
-  "generated_at": "2026-05-11T03:22:11Z"
+  "fundamentals": {
+    "ticker": "AMD",
+    "market": "us",
+    "company_name": "ADVANCED MICRO DEVICES INC",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "revenue": 24369000000.0,
+      "gross_profit": 11575000000.0,
+      "operating_income": 1942000000.0,
+      "net_income": 2824000000.0,
+      "eps": 1.73,
+      "fcf": 4357000000.0,
+      "ocf": 5109000000.0,
+      "capex": 752000000.0,
+      "gross_margin": 0.47498871517091384,
+      "op_margin": 0.07969141121917189,
+      "net_margin": 0.11588493577906356,
+      "fcf_margin": 0.17879272846649433,
+      "capex_intensity": 0.030858878082810126,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q3",
+        "revenue": 24369000000.0,
+        "gross_profit": 11575000000.0,
+        "operating_income": 1942000000.0,
+        "net_income": 2824000000.0,
+        "eps_diluted": 1.73,
+        "fcf": 4357000000.0,
+        "ocf": 5109000000.0,
+        "capex": 752000000.0,
+        "company_name": "ADVANCED MICRO DEVICES INC"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "營益率 8% 偏低",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "PLTR",
+      "count": 2
+    },
+    {
+      "ticker": "UBER",
+      "count": 2
+    },
+    {
+      "ticker": "1284",
+      "count": 1
+    },
+    {
+      "ticker": "SMCI",
+      "count": 1
+    },
+    {
+      "ticker": "NET",
+      "count": 1
+    },
+    {
+      "ticker": "CRWV",
+      "count": 1
+    },
+    {
+      "ticker": "COIN",
+      "count": 1
+    },
+    {
+      "ticker": "MCD",
+      "count": 1
+    },
+    {
+      "ticker": "RKLB",
+      "count": 1
+    },
+    {
+      "ticker": "SHOP",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:21Z"
 }

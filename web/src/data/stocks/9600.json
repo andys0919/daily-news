@@ -1,0 +1,105 @@
+{
+  "ticker": "9600",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Russian-Chinese Irtysh 32-core CPU runs The Witcher 3 at 30+ FPS — heavyweight chip still imposes CPU bottleneck despite impressive specs",
+      "link": "https://www.tomshardware.com/pc-components/cpus/russian-chinese-irtysh-32-core-cpu-runs-the-witcher-3-at-30-fps-heavyweight-chip-still-imposes-cpu-bottleneck-despite-impressive-specs",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-28T02:27:31+08:00",
+      "summary": "Russian YouTube channel PRO Hi-Tech shows what the 32-core Irtysh C632 processor can achieve in The Witcher 3: Wild Hunt when paired with an AMD Radeon RX 9600 XT graphics card.",
+      "event_type": "news",
+      "tickers": [
+        "9600"
+      ]
+    },
+    {
+      "title": "Google unveils two new TPUs designed for the \"agentic era\"",
+      "link": "https://arstechnica.com/ai/2026/04/google-unveils-two-new-tpus-designed-for-the-agentic-era",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-23T01:10:32+08:00",
+      "summary": "Google's new generation of Tensor AI chips is actually two chips, one for inference and one for training.",
+      "event_type": "news",
+      "tickers": [
+        "9600",
+        "GOOGL",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "聯發科天璣 9600 Pro 效能情報，CPU 有可能略贏高通 - ePrice.TW",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Ralp4YkZXcVJsZHRFdXJVaVRzaVo0Qm4wa3FWUkd3VmY1WlZ5ZmluczRyRE9JSFdTWGstQmozVXRFX2ZPWjBMNlpydkFXYVJ3N2M1MWZLeDE0QWV4ZmMybjl3?oc=5",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-18T10:19:00+08:00",
+      "summary": "聯發科天璣 9600 Pro 效能情報，CPU 有可能略贏高通&nbsp;&nbsp;ePrice.TW",
+      "event_type": "news",
+      "tickers": [
+        "9600",
+        "2454"
+      ]
+    },
+    {
+      "title": "Dimensity 9600 Pro Specifications Leak Point Towards A Major Flagship Chipset Release To Challenge Both Apple & Qualcomm This Year - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUWlSM1hSYnp2bnJXNXRHUzBlMXltTDRnNE1ta2M2OERzbUVEN2xFeEJXMHpkQXdMQUVtR0VzWHhEbVdlakpEY3JOUGVmNjBaRXl4TmxUUzFERXpCM0pleGl1T0wxbGxLdDRjZHJJSi1keTZMVWZiUXJyN05fRlEyQTQyVlNCUkZ3V0V2VGw4N1dBU0QzUmQ2Znl4dXF5UzTSAZ8BQVVfeXFMTVFpUjNYUmJ6dm5yVzV0R1MwZTF5bUw0ZzRNbWtjNjhEc21FRDdsRXhCVzB6ZEF3TEFFbUdFc1h4RG1XZWpKRGNyTlBlZjYwWkV5eE5sVFMxREV6QjNKZXhpdU9MMWxsS3Q0Y2RySUotZHk2TFVmYlFycjdOX0ZRMkE0MlZTQlJGd1dFdlRsODdXQVNEM1JkNmZ5eHVxeVM0?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-09T15:04:00+08:00",
+      "summary": "Dimensity 9600 Pro Specifications Leak Point Towards A Major Flagship Chipset Release To Challenge Both Apple & Qualcomm This Year&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "9600",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "傳天璣 Dimensity 9600 Pro 擁有接近 5GHz 的高頻率，不過散熱恐成最大隱憂 - UNIKO's Hardware",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQXVZV0I4eWNQRGdyWlZyNkxNMFdzRXNhc0xQUUNuTnppLXdFOGFFd3p5LWtwWVgwcTJTekI5eU1nSlBsckVnYWFxTlN5YktNd2VRYkUzYU9EdnpfZTdZNWhNdVFMRUZDbzRQY0FCOHAwcjV5TDVxMkVCdnQ3bFlhVQ",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-08T15:32:19+08:00",
+      "summary": "傳天璣 Dimensity 9600 Pro 擁有接近 5GHz 的高頻率，不過散熱恐成最大隱憂&nbsp;&nbsp;UNIKO's Hardware",
+      "event_type": "news",
+      "tickers": [
+        "9600"
+      ]
+    },
+    {
+      "title": "New Leak Claims MediaTek's Dimensity 9600 will use TSMC's 2nm N2P Process - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54a2QzMkVnRHJuUlNJVW9GVHo2ZjcwZlVDQTFNOVRJWnI3NU9jN2pEazlreUNqR0RSOG1DaTdsRmhBZjhEWjZFTHdKSkVLUzM2UUhaVkdDTHhmVXF4czQ5X3ZBdDZSYms",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-02T04:23:48+08:00",
+      "summary": "New Leak Claims MediaTek's Dimensity 9600 will use TSMC's 2nm N2P Process&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "9600",
+        "TSM"
+      ]
+    },
+    {
+      "title": "MediaTek Dimensity 9600 Chip To Feature 2 Ultra ARM Cores For The First Time In A 2+3+3 Overall CPU Configuration - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNlhGbVpMUHh3M0lnUjlwM1ozejFwTkFqRUd4LVV3THQ4VWh6a1c0eHZjNVcxYjlzM1ZJRk9xMG11b21IMG5VdjNiM01UejVBbFJWRWNoMm1tX0FfSmE2bDhlMUxITTBYT0lJMlp1LXN1ZWdMU0M3QkZiTEpudmRHR3VaeWRFOFZZRWU4a3F2Y2hCTERtWVFucEJSUXZfT0FFVHRTZm1UdVZXTUxOTzlsaW8xNUhKYWwyd3BOWi1SU28xXzRrX1pMUmhEWkV2TUtyQ2tOdmF30gHbAUFVX3lxTE84Rk5FRHN4dUZMR05JdHNRTEp5TWxoQlhZUTZEZUt5YmlSX20zd1dFRk5YVlE2MDMxcWF4RHFTN3RMa21Ib2QxaXMyb2pqUy1kRkJjaTJFb0F0T0o4R2QzMjd4dUt2dUF3N0VaLTYwZ0ZCZzZZUkJYVVBWTmw3SDBOQlBSeDlxOUp3QXpHdVJnRmpIOTVOdlVqRFcxU3RZU09uai10U3hsT2tQOVRtNG1yb01VNFRtVDM1UDU0dFFLa0l4NVdxWDZPVWJpRGdKS2l6OFY3bGo4SFhjUQ?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-02T00:02:00+08:00",
+      "summary": "MediaTek Dimensity 9600 Chip To Feature 2 Ultra ARM Cores For The First Time In A 2+3+3 Overall CPU Configuration&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "9600"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

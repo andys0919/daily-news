@@ -1,0 +1,90 @@
+{
+  "ticker": "1978",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "The Pentagon Needs a Playbook for Munitions Surge Production",
+      "link": "https://warontherocks.com/cogs-of-war/the-pentagon-needs-a-playbook-for-munitions-surge-production",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-07T16:00:13+08:00",
+      "summary": "The Tomahawk Land Attack Missiles the U.S. military fired during Operation Epic Fury take months to put on contract and years to produce.Whether driven by U.S. military operations or support to partners, the challenge of quickly replenishing U.S. munitions is not new. Exquisite munitions often take an exquisite amount of time to manufacture and deliver. Defense officials, in turn, frequently want to compress that time as much as possible, seeking to restock fast and mitigate future risks.The Rus",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe Tomahawk Land Attack Missiles the U.S. military fired during Operation Epic Fury take months to put on contract and years to produce. Whether driven by U.S. military operations or support to partners, the challenge of quickly replenishing U.S. munitions is not new . Exq",
+      "event_type": "earnings",
+      "tickers": [
+        "1978"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Xi’s Forever Purge",
+      "link": "https://www.foreignaffairs.com/china/xis-forever-purge",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T12:00:00+08:00",
+      "summary": "The real goal behind China’s “self-revolution.”",
+      "body_text": "Neil Thomas is a Fellow on Chinese Politics at Asia Society Policy Institute’s Center for China Analysis.\nShengyu Wang is a Research Assistant at Asia Society Policy Institute’s Center for China Analysis.\nThe Real Goal Behind China’s “Self-Revolution”\nNeil Thomas and Shengyu Wang\nSince becoming China’s leader in 2012, Xi Jinping has carried out stunning assaults on both the Chinese Communist Party",
+      "event_type": "earnings",
+      "tickers": [
+        "1978",
+        "1945"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Airwaves of Power: Why the Pentagon Should Shift to a Commercial-First Spectrum Model",
+      "link": "https://warontherocks.com/cogs-of-war/airwaves-of-power-why-the-pentagon-should-shift-to-a-commercial-first-spectrum-model",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-24T16:00:32+08:00",
+      "summary": "The U.S. military is firing million-dollar missiles at Iranian drones that cost a tiny fraction as much &#8212; a striking example of the kind of overmatch modern warfare punishes.The Department of Defense&#8217;s approach to electromagnetic spectrum policy follows a similar logic, occupying prime mid-band frequencies for vital but relatively low-throughput national security uses &#8212; including radars, satellite communications, navigation, and electronic warfare &#8212; even as those same ban",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe U.S. military is firing million-dollar missiles at Iranian drones that cost a tiny fraction as much — a striking example of the kind of overmatch modern warfare punishes. The Department of Defense’s approach to electromagnetic spectrum policy follows a similar logic, oc",
+      "event_type": "earnings",
+      "tickers": [
+        "1922",
+        "1934",
+        "1978"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Here’s how technology transformed babymaking",
+      "link": "https://www.technologyreview.com/2026/05/08/1136974/heres-how-technology-transformed-babymaking-ivf",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T17:00:00+08:00",
+      "summary": "Technology is changing the way we make babies. The pioneering work of the scientists who invented IVF led to the birth of the first “test tube baby” in 1978. We’ve come a long, long way since then. This week, I’ve been working on a piece about the cutting edge of IVF technologies and what’s coming&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "1978"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1945",
+      "count": 1
+    },
+    {
+      "ticker": "1922",
+      "count": 1
+    },
+    {
+      "ticker": "1934",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

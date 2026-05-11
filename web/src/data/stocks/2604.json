@@ -1,0 +1,28 @@
+{
+  "ticker": "2604",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "EU fact of the day",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/eu-fact-of-the-day.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T14:51:19+08:00",
+      "summary": "You do not hear this point made too often, yet it is true: Very interesting new study finding that *even in large European cities*, in most places it is easier to access opportunities by car than by public transport https://arxiv.org/pdf/2604.01019 The exceptions are Paris, Zurich and the innermost parts of Milan and Barcelona That is [&#8230;] The post EU fact of the day appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "2604"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

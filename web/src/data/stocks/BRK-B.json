@@ -1,0 +1,439 @@
+{
+  "ticker": "BRK-B",
+  "market": "us",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Twist Bioscience Corporation (TWST) Announces Q2 2026 Financial Results",
+      "link": "https://www.insidermonkey.com/blog/twist-bioscience-corporation-twst-announces-q2-2026-financial-results-1758209",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-11T07:14:23+08:00",
+      "summary": "Twist Bioscience Corporation (NASDAQ:TWST) is one of the best performing healthcare stocks so far in 2026. Twist Bioscience Corporation (NASDAQ:TWST) announced its fiscal Q2 2026 financial results and business highlights on May 4, reporting solid performance in the first half of 2026. It ended fiscal Q2 with its 13th consecutive quarter of growth, with total [&#8230;]",
+      "body_text": "Twist Bioscience Corporation (NASDAQ: TWST ) is one of the best performing healthcare stocks so far in 2026 . Twist Bioscience Corporation (NASDAQ:TWST) announced its fiscal Q2 2026 financial results and business highlights on May 4, reporting solid performance in the first half of 2026. It ended fiscal Q2 with its 13th consecutive quarter of growth, with total revenue for the quarter reaching $11",
+      "event_type": "earnings",
+      "tickers": [
+        "TWST",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "RBC Capital Lifts PT on Acadia Healthcare Company (ACHC) Following Q1 Earnings Beat",
+      "link": "https://www.insidermonkey.com/blog/rbc-capital-lifts-pt-on-acadia-healthcare-company-achc-following-q1-earnings-beat-1758210",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-11T07:14:16+08:00",
+      "summary": "Acadia Healthcare Company, Inc. (NASDAQ:ACHC) is one of the best performing healthcare stocks so far in 2026. Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price target on the stock to $31 from $28 and reiterating an Outperform rating on the shares. The [&#8230;]",
+      "body_text": "Acadia Healthcare Company, Inc. (NASDAQ: ACHC ) is one of the best performing healthcare stocks so far in 2026 . Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price target on the stock to $31 from $28 and reiterating an Outperform rating on the shares. The rating update came after the company delivered its fiscal Q1 earn",
+      "event_type": "earnings",
+      "tickers": [
+        "ACHC",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Berkshire shares trade lower even after Abel scores good marks at meeting, earnings jump",
+      "link": "https://www.cnbc.com/2026/05/04/berkshire-shares-trade-higher-as-buffett-successor-abel-scores-good-marks-at-meeting-earnings-jump.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T04:03:39+08:00",
+      "summary": "Many in the investment community were reassured by Abel's firm grasp over Berkshire's sprawling enterprise.",
+      "body_text": "Berkshire Hathaway shares gave up gains Monday afternoon following CEO Greg Abel 's solid performance over the weekend helming the annual meeting for the first time, as well as a jump in the conglomerate's earnings.\nClass B shares of the conglomerate closed nearly 1% lower, after rising earlier in the session following the positive reception to Warren Buffett 's handpicked successor at the Berkshi",
+      "event_type": "earnings",
+      "tickers": [
+        "BRK-B"
+      ],
+      "companies": [
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Peru’s electoral board calls for audit of election results",
+      "link": "https://www.investing.com/news/world-news/perus-electoral-board-calls-for-audit-of-election-results-4654797",
+      "source": "Investing.com",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T08:18:25+08:00",
+      "summary": "",
+      "body_text": "Berkshire Hathaway reports 18% jump in Q1 profit as cash hoard nears $400 billion",
+      "event_type": "earnings",
+      "tickers": [
+        "BRK-B"
+      ],
+      "companies": [
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Berkshire Operating Profits Rose 18% in First Quarter. The Company Bought Back $235 Million of Stock. - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOGJXc3p2dkRCandlaDEzVUlXRXBwX1E1d0ZOOThhUHJkMzJZNDVuOG5KY3VrUW5BZDBBbHYwaElqZGJJUWtMVWh1UFM5bjQyY04wb1d0b1poX05xTmpVQk1LUHlaZXhyY05zTm1oRXdwWEJEdW9WLXdia1pkaDRXUlJtYmVxa1l6",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T20:54:00+08:00",
+      "summary": "Berkshire Operating Profits Rose 18% in First Quarter. The Company Bought Back $235 Million of Stock.&nbsp;&nbsp;Barron's",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "BRK-B"
+      ],
+      "companies": [
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Berkshire cash pile climbs to $380bn as stock sales streak hits 14th quarter - Financial Times",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcUdOdEtvVmhvTmktRlIxX2NzTnJpNTFHODdxaE03dzViWkZzUUQ4bzRIZTc1YVF3alZhaEVJZFc4NDl2cFpVSWN3WkpITmZfRzBEbWhNM2NDeXhmb2xLWjBnMDM3TjdLWmV1cTV1YlEwMlFsV2pLaHRrUHVBYkRMZkQ1eEc",
+      "source": "FT (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T20:39:44+08:00",
+      "summary": "Berkshire cash pile climbs to $380bn as stock sales streak hits 14th quarter&nbsp;&nbsp;Financial Times",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "BRK-B"
+      ],
+      "companies": [
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Jim Cramer says the market powered through a tough earnings week but 'that doesn't mean we're out of the woods yet'",
+      "link": "https://www.cnbc.com/2026/05/01/cramer-look-ahead-earnings.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T06:33:26+08:00",
+      "summary": "CNBC's Jim Cramer looks to the jam-packed earnings week ahead and explains what he's looking for.",
+      "body_text": "CNBC's Jim Cramer said the market just powered through the toughest week of earnings \"with flying colors,\" but warned that next week could be even more treacherous.\n\"All the big techs did well … Everything connected with the data center went bonkers ,\" the \" Mad Money \" host said.\nHowever, he cautioned against complacency.\n\"That doesn't mean we are out of the woods yet,\" Cramer said, calling the w",
+      "event_type": "earnings",
+      "tickers": [
+        "BRK-B"
+      ],
+      "companies": [
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Gates Foundation reviewing Jeffrey Epstein ties, will slash 20% of staff, WSJ reports",
+      "link": "https://www.cnbc.com/2026/04/21/gates-foundation-jeffrey-epstein-jobs-cuts.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-22T05:18:37+08:00",
+      "summary": "Berkshire Hathaway Chair Warren Buffett had told CNBC he hasn't spoken to Bill Gates since details of Jeffrey Epstein's communications with him were revealed.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "BRK-B"
+      ],
+      "companies": [
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "亞伯首場波克夏股東大會受到肯定 但龐大銀彈會怎麼用未給答案",
+      "link": "https://money.udn.com/money/story/5599/9479734",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T08:14:02+08:00",
+      "summary": "亞伯接任波克夏（Berkshire Hathaway）執行長的頭一場年度股東大會，投資人普遍肯定他的表現，不過他們心中仍有疑問未解，巴菲特留下的龐大現金，他打算如何運用。",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Greg Abel rules out Berkshire break-up, stresses continuity with Buffett's legacy at annual meeting",
+      "link": "https://www.cnbc.com/2026/05/03/berkshire-annual-meeting-greg-abel-rules-out-break-up-stressing-continuity-with-buffett.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T07:14:58+08:00",
+      "summary": "New CEO Greg Abel did most of the talking at his first Berkshire Hathaway shareholders meeting, but Warren Buffett was still a major presence.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Greg Abel earns solid scorecard from Berkshire shareholders after first annual meeting",
+      "link": "https://www.cnbc.com/2026/05/03/berkshire-ceo-greg-abel-earns-solid-first-scorecard-after-first-annual-meeting.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T05:14:08+08:00",
+      "summary": "The reviews from longtime shareholders and professional investors were broadly positive, even as many acknowledged the notable absence of Warren Buffett.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Greg Abel leaves unanswered questions about Berkshire’s war chest - Financial Times",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYjdMYnFLU09xalh5WkFXQ09mRVdkTDNXOTRBUnFyZVRoOWwyNjRxMFJERlFaU1lmeUVTNGxWcEV1eHVfNDNYR294V1dSUS1Ja0JlT1F1MERfQjlTMjd5cjBhODgxNmQ3V2Y1M3NKNW41VUQ3bW1iOFdyU29ZZS16MzNhNVE",
+      "source": "FT (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T04:04:20+08:00",
+      "summary": "Greg Abel leaves unanswered questions about Berkshire’s war chest&nbsp;&nbsp;Financial Times",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire’s Greg Abel Marks His First Annual Meeting as CEO. We’d Give Him a B-Plus. - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYlRqSndkTUtEYmliclZIdy1faUh2SGV1b3FDRmk3RzkyZW5VS19DNklfV2l1Qm82UXJ4cUxhT284WXdFdjg0X0pVa1IzX2JPWm5aeFR0ajROa2pmcWFUWE4ycjlQSXluVmlTZ0RveHBER1NIck8wRmp1S2xuOEZqcEV4T1hyTUpNdU85SVdSeVhzb3NfeV84UGF3RXV2STJJMi1B?oc=5",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T23:06:00+08:00",
+      "summary": "Berkshire’s Greg Abel Marks His First Annual Meeting as CEO. We’d Give Him a B-Plus.&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "波克夏股東會六大重點！阿貝爾首秀、巴菲特示警 AI 曝「現金近 4,000 億美元」",
+      "link": "https://finance.technews.tw/2026/05/03/berkshire-hathaway-shareholders-meeting",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-03T09:03:27+08:00",
+      "summary": "年度金融盛事，波克夏海瑟威（Berkshire Hathaway）股東大會 5 月 2 日在美國內布拉斯加州奧 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire annual meeting recap: Buffett says investing environment not ideal, sees 'gambling' in markets",
+      "link": "https://www.cnbc.com/2026/05/02/warren-buffett-berkshire-hathaway-annual-meeting-2026-live-updates.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T03:02:23+08:00",
+      "summary": "Warren Buffett has loomed large at Berkshire Hathaway's annual shareholder meetings. Greg Abel tackled a wide array of topics in his first as CEO.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire Investors Praise Greg Abel at Post-Buffett Meeting",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-02/berkshire-meeting-highlights-tough-balancing-act-for-greg-abel",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T02:16:31+08:00",
+      "summary": "Greg Abel didn’t take long to address the elephant in the room.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire Meeting Highlights Tough Balancing Act for Greg Abel - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbWZZVzJJVmhQSVZZWkhObGdlVDZoWG1TUUtMdTF0QkQ3cGVCb05sdXhsM3k2YXNPTWJpbFlmQmNfNkt3cDRiTWR2Ym5Vd252el9DeWVUTzBVamF6WEIyWEJfZ3g5SUNHNlFqcWFwZFhRYjFKa1V3QjFKWGRZSE5QeW9vQlR2Qjl2RmRwM0R5OWZnWE4tR1RxMUg1eWtkZ1UtS0VxamhpSjZmVDFGa2Z4b19GMlFDaS10RkZNSEZYRQ?oc=5",
+      "source": "Bloomberg Markets (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T02:16:31+08:00",
+      "summary": "Berkshire Meeting Highlights Tough Balancing Act for Greg Abel&nbsp;&nbsp;Bloomberg.com",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Sneakers, Chocolate, and a Greg Abel Doll: Berkshire Shopping Day Is a Hit With Shareholders - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbVlqbWNiOTJHX2I4djZ0aU1lSDJBNU11SzJ1TC1VRlJaUy04VEJkMVM5WEhIR0RyU1BBZXl0UDNFbGxSbGk5M0kxdXJHTVp0RC1OZExyN3BydXlKMTBvTGlLUjluX1UyNkRQVG5iMWw4YVdOa3RGUk95VjU3ci15VWQ0V0d3dFhSMWphbDBwRVFUa21FSW9BY3J0Z3E0Mk5ZYjhMS1hjcmlpN2pRZGpZUGJNOUQxdGd2d3p4MFMxaXdWczcxRHRRSWhR",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T07:44:00+08:00",
+      "summary": "Sneakers, Chocolate, and a Greg Abel Doll: Berkshire Shopping Day Is a Hit With Shareholders&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire Hathaway’s shopping extravaganza draws lighter crowds as spotlight shifts to Greg Abel",
+      "link": "https://www.cnbc.com/2026/05/01/berkshire-hathaways-shopping-extravaganza-draws-lighter-crowds-as-spotlight-shifts-to-greg-abel.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T06:18:59+08:00",
+      "summary": "Greg Abel made a point of stopping by every booth in the hall, greeting employees and shaking hands with shareholders.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Cautious optimism: Berkshire investors weigh future under new CEO Greg Abel",
+      "link": "https://www.cnbc.com/2026/05/01/berkshire-investors-weigh-future-under-new-ceo-greg-abel.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T05:39:03+08:00",
+      "summary": "The mood in the air was cautiously optimistic as new and returning investors weighed the company's direction under a new chief executive.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Brooks Apparel 'Resonating' With Chinese Runners, Says CEO Dan Sheridan",
+      "link": "https://www.bloomberg.com/news/videos/2026-05-01/brooks-apparel-resonating-with-china-says-ceo-video",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T04:28:11+08:00",
+      "summary": "Dan Sheridan, CEO of Brooks Running, said that his company is resonating with runners in China as the activewear brand grew over a 130% in the region. Sheridan said that while China remains a small percentage of Brooks' business, the 'everyone's a runner' positioning and multi-use clothing consumers can wear off the run is driving growth. Sheridan joined Bloomberg Businessweek from the floor of the Berkshire Hathaway shareholder conference in Omaha. (Source: Bloomberg)",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire shares struggle into annual meeting. Can Abel rekindle enthusiasm without Buffett center stage?",
+      "link": "https://www.cnbc.com/2026/05/01/berkshire-hathaway-annual-meeting-new-era-warren-buffett-off-center-stage.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T19:12:47+08:00",
+      "summary": "For the first time, the 95-year-old Buffett won't be the central figure on stage, marking a new era for one of investing's most closely watched rituals.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire CEO Greg Abel to Host First Annual Meeting; Here Are 10 Tough Questions - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvc2RQYkpBdW90M3ZpN21JUXFrRkpQNDFrUmFjNDQyeXFxeHN5SndKTlFpb2hBTEQwd1VUay1rUzl1SkFTY2hqS0dRVERydjR3d0xKY3BqS1FBVC1FMWJZeWN1R2txdVdFUEdkMktpVk95X2ZwNXAxTFVhMkNrNWs",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T07:07:00+08:00",
+      "summary": "Berkshire CEO Greg Abel to Host First Annual Meeting; Here Are 10 Tough Questions&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Bill Ackman's Pershing Square USA fund falls sharply in public market debut",
+      "link": "https://www.cnbc.com/2026/04/29/bill-ackmans-5-billion-pershing-square-ipo-to-start-trading-testing-berkshire-style-vision.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T04:07:10+08:00",
+      "summary": "The listing gives public investors their first direct stake in Ackman's investment platform, which runs a concentrated portfolio of 10 large-cap names.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Berkshire’s Domino’s Holding Is Another Loser Among Its Smaller Stock Investments - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcGZtVDFiRGdBR3dGbG1VSjhVcExGcGdKMXFEQWQzVDk4bUd3U2pRV1U4UDJZYXdyalFNejFUSHhSaUd3SWJXSjR0RjhzWmZKb3paaG1HZUVCU3pBLUtNdHNxNDFHZzlKbm9fR21WdjdfZmZyTmpfQlBRMGt3RnZUWlowNW1TZzlEd2c",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-04-28T06:08:00+08:00",
+      "summary": "Berkshire’s Domino’s Holding Is Another Loser Among Its Smaller Stock Investments&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Good entry point for Berkshire Hathaway after underperformance - Barron's",
+      "link": "https://seekingalpha.com/news/4579716-good-entry-point-for-berkshire-hathaway-after-underperformance---barrons?feed_item_type=news",
+      "source": "Seeking Alpha",
+      "category": "💰 財經與總經",
+      "published": "2026-04-26T01:40:28+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Berkshire attracts interest as it slips further behind the S&P 500",
+      "link": "https://www.cnbc.com/2026/04/25/berkshire-attracts-interest-as-it-slips-further-behind-the-sp-500.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-25T20:35:30+08:00",
+      "summary": "As Berkshire Hathaway shares fall, the stock is drawing attention from some investors.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Greg Abel is shaking up Berkshire Hathaway's portfolio. These stocks could be affected",
+      "link": "https://www.cnbc.com/2026/04/20/greg-abel-is-shaking-up-berkshire-hathaways-portfolio-these-stocks-could-be-affected.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-20T21:53:16+08:00",
+      "summary": "The new CEO has already sold stocks previously overseen by Combs after the longtime investment manager and Geico chief left for JPMorgan at the end of 2025.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B",
+        "JPM"
+      ]
+    },
+    {
+      "title": "Berkshire May Have Sold $15 Billion of Stocks Run by Former Manager - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMkVVWE1Wd09kdzlReVBuUjhfS1hmMl9tQXZQUTVhSFFtOWRkMjFjc29xWWszSHJZanNjY29OX21wREw5SHBFaHNBMndaNUVWTTF2UHRnZmZGYWJkVk5GYjVfdjBYby13MG8tbnlvQzE2eDVSUFZkZUU1aDhIcUJMTG42SFZGM20zdEE2RWwyOVpBRUJxd1lFOA",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-04-18T23:58:00+08:00",
+      "summary": "Berkshire May Have Sold $15 Billion of Stocks Run by Former Manager&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "Warren Buffett says Iran bomb would make nuclear disaster harder to avoid",
+      "link": "https://www.cnbc.com/2026/03/31/warren-buffett-says-iran-bomb-would-make-nuclear-disaster-harder-to-avoid.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-01T01:16:22+08:00",
+      "summary": "The Berkshire Hathaway chairman said the growing number of nuclear-armed states has fundamentally altered the global risk landscape.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "GOOGL",
+      "count": 2
+    },
+    {
+      "ticker": "TWST",
+      "count": 1
+    },
+    {
+      "ticker": "ACHC",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

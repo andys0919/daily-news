@@ -1,0 +1,43 @@
+{
+  "ticker": "3060",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Nvidia RTX 3060 comeback in 2026 could alleviate soaring GPU prices and memory shortages — rumored RTX 5050 9GB abruptly shelved amid speculation",
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-3060-comeback-in-2026-could-alleviate-soaring-gpu-prices-and-memory-shortages-rumored-rtx-5050-9gb-abruptly-shelved-amid-speculation",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-18T23:53:44+08:00",
+      "summary": "If relaunched at the right price, the RTX 3060 could re-enter the market as a viable option in a segment facing increasing cost pressures.",
+      "event_type": "news",
+      "tickers": [
+        "3060",
+        "5050",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "The Relaunch of AMD Ryzen 5800X3D and NVIDIA RTX 3060 Shows Just How Bad It Is For PC Gamers In 2026 - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTmNGMnRQWU94ZE9LZ0NvVU0wN1pUcVRqbTZEWnJaYWZXYjE0dzJiZURmblgzdE9vRDFyMk9pb1VrVVRZclZNTkthLVdSV1ZNXzgxYUZoMG1TUnlpNEh5Nk44amctLU1ROVd4RUsxRVJmOEFQak5nazhMRWtoSkFkMUNHTG82T3RwN01YVGpqQjJNaFBiVGNTVEVHVU1ZbFJGa2fSAacBQVVfeXFMTWJfVzV6MkZPQmlKS2pNQkxod1R3OEVJZ29mV3dFMFJfazg5dUNKZHV2a1dQdHAzZXBfRlIzcG5GbkhzQXpLLW9RdHFoa1ZjQ0xyS0pYZ2gyX3NPTU1OTUJXdEVDZ2V6WlFubEl5d3ZHWVhwX2pnNmZoTHpiRHNKMkJnUWhEYVdUYmoxemZCNEI2ejF6UGNrY29oWUVNSG9EZk9wZHp1UVE?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-18T20:18:00+08:00",
+      "summary": "The Relaunch of AMD Ryzen 5800X3D and NVIDIA RTX 3060 Shows Just How Bad It Is For PC Gamers In 2026&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "3060",
+        "NVDA"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

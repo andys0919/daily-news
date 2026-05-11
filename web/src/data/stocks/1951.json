@@ -1,0 +1,112 @@
+{
+  "ticker": "1951",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "The Other China Flash Point",
+      "link": "https://www.foreignaffairs.com/united-states/other-china-flash-point",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-24T12:00:00+08:00",
+      "summary": "Like Taiwan, the South China Sea could spark a U.S.-China war.",
+      "body_text": "HENRIETTA LEVIN is a Senior Fellow with the Center for Strategic and International Studies. She previously held senior positions at the U.S. Department of State and the National Security Council.\nLike Taiwan, the South China Sea Could Spark a U.S.-China War\nHenrietta Levin\nWhen imagining how the U.S.-Chinese relationship might devolve into war, experts often cite Taiwan as the most obvious flash p",
+      "event_type": "earnings",
+      "tickers": [
+        "1951",
+        "1971"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Europe’s New Defense Core",
+      "link": "https://www.foreignaffairs.com/europe/europes-new-defense-core",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-10T12:00:00+08:00",
+      "summary": "As America steps back, four countries will shape the continent’s security.",
+      "body_text": "ETHAN B. KAPSTEIN is Executive Director of the Empirical Studies of Conflict Project at Princeton University and an Adjunct Fellow at the RAND Corporation.\nJONATHAN CAVERLEY is a Visiting Senior Fellow at the International Institute for Strategic Studies and Professor of Strategic and Operational Research at the U.S. Naval War College. The views expressed here are his own.\nAs America Steps Back, F",
+      "event_type": "earnings",
+      "tickers": [
+        "1951",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Iran’s New Oil Weapon",
+      "link": "https://www.foreignaffairs.com/iran/irans-new-oil-weapon",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T12:00:00+08:00",
+      "summary": "How America can protect itself—and the global economy.",
+      "event_type": "news",
+      "tickers": [
+        "1951",
+        "1954",
+        "1973",
+        "1967",
+        "1970",
+        "1974",
+        "1975",
+        "1979",
+        "1980"
+      ]
+    },
+    {
+      "title": "Pioneering wildlife cameraman Doug Allan dies in Nepal",
+      "link": "https://www.bbc.com/news/articles/czx9kvqxeq5o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-09T06:08:33+08:00",
+      "summary": "The cameraman and photographer won eight Emmy Awards for his work on acclaimed series like Blue Planet alongside Sir David Attenborough.",
+      "event_type": "news",
+      "tickers": [
+        "1951",
+        "1956",
+        "1981"
+      ]
+    },
+    {
+      "title": "India begins counting more than a billion people in massive census",
+      "link": "https://www.bbc.com/news/articles/c7vqnpqrgy3o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-01T08:11:33+08:00",
+      "summary": "The two-phase exercise - the world’s most ambitious - will see three million officials count every Indian.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "1872",
+        "1881",
+        "1901",
+        "1941",
+        "1951",
+        "1961"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1971",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

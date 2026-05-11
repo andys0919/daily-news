@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import tickerIndex from "../data/tickers.json";
 
 interface Props {
   title?: string;
@@ -14,6 +15,15 @@ const nav = [
   { id: "decisions", href: "/decisions", label: "日誌" },
   { id: "explore", href: "/explore", label: "探索" },
 ];
+
+// Embed lightweight ticker index as JSON for client-side search.
+const tickers = (tickerIndex.tickers ?? []).map((t: any) => ({
+  t: t.ticker,
+  n: t.name || "",
+  m: t.market,
+  a: t.articles,
+  r: t.reports,
+}));
 ---
 <!doctype html>
 <html lang="zh-Hant">
@@ -42,9 +52,19 @@ const nav = [
             <a href={n.href} class="navlink" data-active={active === n.id ? "" : undefined}>{n.label}</a>
           ))}
         </div>
-        <div class="topnav-meta">
-          <kbd class="kbd">/</kbd>
-          <span class="muted">search</span>
+        <div class="topnav-search" style="margin-left: auto; position: relative;">
+          <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input
+              id="ticker-search"
+              type="text"
+              placeholder="搜尋台股 / 美股 (e.g. 2330, NVDA, 台積電)"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <kbd class="kbd" style="margin-left: 6px;">/</kbd>
+          </div>
+          <div id="search-results" class="search-results" hidden></div>
         </div>
       </div>
     </nav>
@@ -56,5 +76,95 @@ const nav = [
       <span class="muted">·</span>
       <span class="muted">私人投資研究輔助，非投資建議</span>
     </footer>
+
+    <script is:inline set:html={`window.__TICKERS__ = ${JSON.stringify(tickers)};`}></script>
+    <script is:inline>
+      (function () {
+        const TICKERS = window.__TICKERS__ || [];
+        const input = document.getElementById("ticker-search");
+        const results = document.getElementById("search-results");
+        if (!input || !results) return;
+
+        function render(matches, query) {
+          if (!matches.length) {
+            results.innerHTML = '<div class="search-empty">沒有匹配的 ticker — 試試 <span class="mono">2330</span> 或 <span class="mono">NVDA</span></div>';
+            results.hidden = false;
+            return;
+          }
+          results.innerHTML = matches.map((m, i) => {
+            const marketChip = `<span class="search-market ${m.m}">${m.m === "tw" ? "TW" : "US"}</span>`;
+            const name = m.n ? `<span class="search-name">${m.n}</span>` : "";
+            const counts = `<span class="search-count mono">${m.a}篇 ${m.r ? "· " + m.r + "份報表" : ""}</span>`;
+            return `<a class="search-row" data-idx="${i}" href="/stocks/${m.t}/">
+              ${marketChip}
+              <span class="search-ticker mono">${m.t}</span>
+              ${name}
+              ${counts}
+            </a>`;
+          }).join("");
+          results.hidden = false;
+        }
+
+        function search(q) {
+          const query = q.trim().toLowerCase();
+          if (!query) { results.hidden = true; return; }
+          const matches = TICKERS.filter((m) => {
+            return (
+              m.t.toLowerCase().startsWith(query) ||
+              m.t.toLowerCase().includes(query) ||
+              (m.n && m.n.toLowerCase().includes(query))
+            );
+          }).slice(0, 12);
+          render(matches, query);
+        }
+
+        let activeIdx = -1;
+        function setActive(idx) {
+          activeIdx = idx;
+          results.querySelectorAll(".search-row").forEach((r, i) => {
+            r.classList.toggle("active", i === idx);
+          });
+        }
+
+        input.addEventListener("input", (e) => {
+          search(e.target.value);
+          activeIdx = -1;
+        });
+        input.addEventListener("keydown", (e) => {
+          const rows = results.querySelectorAll(".search-row");
+          if (e.key === "ArrowDown") {
+            e.preventDefault();
+            if (rows.length) setActive(Math.min(activeIdx + 1, rows.length - 1));
+          } else if (e.key === "ArrowUp") {
+            e.preventDefault();
+            if (rows.length) setActive(Math.max(activeIdx - 1, 0));
+          } else if (e.key === "Enter") {
+            e.preventDefault();
+            if (activeIdx >= 0 && rows[activeIdx]) {
+              window.location.href = rows[activeIdx].getAttribute("href");
+            } else if (rows.length > 0) {
+              window.location.href = rows[0].getAttribute("href");
+            } else {
+              // try direct ticker
+              const q = input.value.trim().toUpperCase();
+              if (q) window.location.href = `/stocks/${q}/`;
+            }
+          } else if (e.key === "Escape") {
+            input.blur();
+            results.hidden = true;
+          }
+        });
+        input.addEventListener("blur", () => { setTimeout(() => { results.hidden = true; }, 150); });
+        input.addEventListener("focus", () => { if (input.value) search(input.value); });
+
+        document.addEventListener("keydown", (e) => {
+          // Press "/" to focus search from anywhere
+          if (e.key === "/" && document.activeElement !== input) {
+            e.preventDefault();
+            input.focus();
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

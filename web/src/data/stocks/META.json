@@ -52,9 +52,8 @@
       "category": "🔬 半導體與硬體",
       "published": "2026-05-11T06:30:07+08:00",
       "summary": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公佈的就業報告數據優於市場預期，上週五（5月8日）美國股市 [&#8230;]",
+      "body_text": "隨著全球市場對美伊衝突的關注度逐漸降溫，加上美國最新公布的就業報告數據優於市場預期，上週五（5 月 8 日）美國股市迎來強勁的慶祝行情。美股四大指數全面收紅，這情況帶動美股兩大記憶體龍頭 SanDisk 與美光科技的爆炸性驚人表現。其中，SanDisk 更是單日狂飆 16.6%，收盤價來到 1,562.34 美元。而美光科技股價單日大漲 15.52%，收在 746.79 美元附近。而這情況，即將為 11 日（週一）開盤的台股帶來什麼樣的激勵作用，投資人都在密切關注。\n上週五美國股市迎來強勁的慶祝行情。美股四大指數全面收紅，其中標普500指數上漲0.84%（收7,398.93點），那斯達克指數上漲1.71%（收26,247.08點），雙雙再創歷史新高。然而，真正震撼市場並推動科技股大漲的核心動力，是飆升5.51%的費城半導體指數（收11,775.50點）。這對於即將在5月11日開盤的台灣股市",
       "event_type": "earnings",
-      "publisher": "TechNews 科技新報",
-      "author": "",
       "tickers": [
         "NVDA",
         "GOOGL",
@@ -67,8 +66,783 @@
         "Meta",
         "台積電",
         "Google"
-      ]
+      ],
+      "guidance_direction": null
     },
+    {
+      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
+      "link": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T02:33:21+08:00",
+      "summary": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nCloudflare on Thursday joined a growing list of tech companies — including Meta, Microsoft, and Amazon — that have reported increased revenue alongside massive layoffs, attributing both trends to their use of AI.\nCloudflare, which pr",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "AMZN"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Trump gives EU ultimatum deadline to approve trade deal with US",
+      "link": "https://www.bbc.com/news/articles/cp3pyk4nw3lo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-08T07:11:35+08:00",
+      "summary": "Trump's deadline to the European Union came as a trade court ruled his global tariff policy violated US law.",
+      "body_text": "President Donald Trump has threatened \"much higher\" tariffs on the European Union (EU) by 4 July if the bloc fails to drop its levies on the US to zero.\nAfter a phone call with European Commission President Ursula von der Leyen, Trump said he agreed to give her until \"our Country's 250th Birthday or, unfortunately, their Tariffs would immediately jump to much higher levels\".\nHowever, von der Leyen",
+      "event_type": "policy",
+      "tickers": [
+        "1974",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Meta’s Position on Canada’s Bill C-22",
+      "link": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T06:46:00+08:00",
+      "summary": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians. &#160; Delivered by Rachel Curran, Director of Public Policy, Canada, Meta &#160; Thank you, M. Chair. Good afternoon and thank you for the opportunity to appear before the Committee today. My name is Rachel Curran and ",
+      "body_text": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians.\nDelivered by Rachel Curran, Director of Public Policy, Canada, Meta\nThank you, M. Chair.\nGood afternoon and thank you f",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale - simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWlE2X3lZRm5fZndLTEprOWJlNzFOREZoVHNsdWF1UDB2WEVsZzFqc1BRVTI4QUdjRjFBaXhXWmJ5amFCUHlrVV9ZMnRGWlpWb0wzYVFhR1V6d21CUzdVbDhEWk9UZzFGODJZYWpub183TFduaUN6c0U5Tzlsa0ZGOFMyVGVuTkNMV1pOUDBTME5mcVBDNVBMcUpZRDdtOEtyTm8yUFh5RjdfQTd2NWxWdnVqR25Pay1ZMFctSFhLRkhNNmhJdUcwWNIBzgFBVV95cUxPQlgxSDd4MHU3b2dsTkl4T1lLakRvWEszQlB6SFBGZ0F3QnllV0hUNWlDbEZBSnJlZzhvZjVWTFc2MklBQzZ0WnkyeDVqR1NhSDNweTFsdXZzNWk5QTFkU3dwSmRDRWZCNjI5T1pjS1VqN1BzSVdFUUo4NUQxUlNqZWQzS0c0NEVjTUhjbFFCQkZrRnlQWk1HY095dzljRGZRU0hySzkxQkpYU0F2ZUJrX0J2SWtEVVBhdXFSa2prMzBxSkNnaTFYbWlfbmNrZw",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T04:01:31+08:00",
+      "summary": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale&nbsp;&nbsp;simplywall.st",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "As the Trump-Xi summit draws closer, trade uncertainty still looms large",
+      "link": "https://www.atlanticcouncil.org/blogs/econographics/as-the-trump-xi-summit-draws-closer-trade-uncertainty-still-looms-large",
+      "source": "Atlantic Council",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T03:32:19+08:00",
+      "summary": "What China and the United States manage to agree on in Beijing on key export controls or purchase agreements will significantly shape the Trump administration’s approach to rebuilding its tariff wall. The post As the Trump-Xi summit draws closer, trade uncertainty still looms large appeared first on Atlantic Council.",
+      "body_text": "By Jessie Yin\nNext week, US President Donald Trump and Chinese President Xi Jinping will once again walk the red-carpeted corridors of the Great Hall of the People. In the high-level talks that follow, they will discuss the tense relationship between the world’s two largest economies. And there is plenty to cover, especially on the economic front.\nFor one, the conflict in the Middle East, which in",
+      "event_type": "policy",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Is xAI a neocloud now?",
+      "link": "https://techcrunch.com/2026/05/06/is-xai-a-neocloud-now",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T05:32:55+08:00",
+      "summary": "xAI's real business may be more about building data centers than training AI models.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nOn Wednesday, xAI and Anthropic announced a surprise partnership that has the Claude-maker buying out “all of the compute capacity at [xAI’s] Colossus 1 data center,” roughly 300MW that allowed Anthropic to immediately raise its usag",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "GOOGL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "How David Sacks crashed and burned in the White House",
+      "link": "https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T04:18:00+08:00",
+      "summary": "Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers about tech, politics, and Washington intrigue. (It's basically House of Cards, but for nerds.) Not a subscriber yet? You really should become one, and to save you a Google search, here is the direct link to do so! And do you think I should [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nThe Trump administration pulled a 180 on AI oversight, inducing Sacks’ worst nightmare: more gover",
+      "event_type": "policy",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "NVDA",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "NVIDIA",
+        "Amazon",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem",
+      "link": "https://tilde.run/",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-06T23:58:34+08:00",
+      "summary": "Article URL: https://tilde.run/ Comments URL: https://news.ycombinator.com/item?id=48037724 Points: 124 # Comments: 90",
+      "body_text": "Let AI agents loose on production. Without the risk.\nTilde turns every agent run into a transaction you can roll back. Code from GitHub, data from S3, and documents from Drive show up as a single versioned filesystem. Every outbound call is checked and logged. Autonomous code, finally safe to use against real data.\nFree to start · Join the private preview\nThree guarantees that make autonomous code",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "North American AI Data Center Expansion Drives 2026 CapEx of Top Nine CSPs to US$830 Billion, Says TrendForce",
+      "link": "https://www.trendforce.com/presscenter/news/20260506-13033.html",
+      "source": "TrendForce 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T17:02:29+08:00",
+      "summary": "TrendForce’s latest findings on the AI industry highlight that several major North American CSPs have recently raised their 2026 capital expenditure (CapEx) guidance in response to strong AI demand. As a result, TrendForce has revised its forecast for the combined CapEx of the world’s top nine CSPs—Google, AWS, Meta, Microsoft, Oracle, ByteDance, Tencent, Alibaba, and Baidu—up to approximately US$830 billion in 2026, with the annual growth rate raised from 61% to 79%.",
+      "body_text": "TrendForce’s latest findings on the AI industry highlight that several major North American CSPs have recently raised their 2026 capital expenditure (CapEx) guidance in response to strong AI demand. As a result, TrendForce has revised its forecast for the combined CapEx of the world’s top nine CSPs—Google, AWS, Meta, Microsoft, Oracle, ByteDance, Tencent, Alibaba, and Baidu—up to approximately US$",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Could development economics be more useful?",
+      "link": "https://www.noahpinion.blog/p/could-development-economics-be-more",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T14:08:15+08:00",
+      "summary": "What's really needed is humility.",
+      "body_text": "The above image is from a recent tweet by University of Pennsylvania economist Jesús Fernández-Villaverde (henceforth referred to as “JFV”), in which he criticizes the field of development economics for ignoring the big questions. He writes:\nA fundamental lesson from my posts these last two weeks on modernization, industrial policy, and development is that development economics should be about und",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "資料中心業務年營收大漲 57%，帶動 AMD 第一季財報亮眼盤後大漲逾 12%",
+      "link": "https://finance.technews.tw/2026/05/06/amds-first-quarter-earnings-exceeded-market-expectations",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T06:30:24+08:00",
+      "summary": "受惠於人工智慧 （AI） 工作執行對晶片的強勁需求，處理器大廠 AMD 公布的第一季財報超乎市場的預期，同時發 [&#8230;]",
+      "body_text": "受惠於人工智慧 （AI） 工作執行對晶片的強勁需求，處理器大廠 AMD 公布的第一季財報超乎市場的預期，同時發布了優於預期的第二季財測。財報發表後，AMD 股價在盤後交易中大漲超過 12%。\n根據財報資料，AMD 在截至 3 月的2026年第一季交出了亮眼的成績單。包括總營收達 102.5 億美元，高於預期的 98.9 億美元，較 2025 年同期的 74.4 億美元大幅成長 38%。淨利從 2025 年同期的 7.09 億美元攀升至 13.8 億美元。EPS 調整後來到 1.37 美元，高於市場預期的 1.29 美元。其中，資料中心業務表現最為強勁，營收較 2025 年同期大增 57%，從 36.7 億美元攀升至 58 億美元。\nAMD 執行長蘇姿丰 （Lisa Su） 在聲明中表示，資料中心部門現在是 AMD 營收與獲利成長的主要驅動力。她進一步指出，隨著公司擴大供應以滿足市場需求，預",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Meta",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "ASML CEO Christophe Fouquet on his company’s monopoly: no one is coming for us",
+      "link": "https://techcrunch.com/2026/05/05/asml-ceo-christophe-fouquet-no-one-is-coming-for-us",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T04:06:40+08:00",
+      "summary": "Christophe Fouquet, who became ASML's CEO in 2024 after more than a decade at the company, sat down with this editor on the rooftop deck of his Beverly Hills hotel Tuesday morning ahead of his appearance at the Milken Institute Global Conference. Dressed in a blue suit and white shirt, he was relaxed — even when the conversation turned to the rivals.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nEvery time you use AI, you are, in some small way, depending on a 42-year-old, 44,000-person Dutch company that spends €4.5 billion each year to advance its technology.\nASML, headquartered in the Netherlands, makes the machines that ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSM"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta",
+        "Amazon",
+        "Google",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "四大CSP資本支出上修至超過7千億美元　記憶體結構性供需缺口延至2028年",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754242_MEF1Q9665H9PFJ12TO3FL",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T03:00:00+08:00",
+      "summary": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳...",
+      "body_text": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳沛銘表示，更多客戶主動要求，近期「被客戶逼著」簽訂3年合約，以確保供貨，預期記憶體結構性供給缺口，將延續至2028年以後。\n三星電子（Samsung Electronics）、SK海力士（SK Hynix）、美光（Micron）、SanDisk陸續與客戶綁定LTA合約，甚至有CSP客戶已將預付款提高至LTA長約總價值的10~30%，反映產業供應緊缺的長期趨勢，買家寧願付出高額溢價。\n儘管產能供不應求，但華邦電對LTA態度相對被動，簽訂LTA也是被客戶所逼，希望能承諾未來3年的供貨量，再逐季談價格。不過陳沛銘認為，隨著高雄新廠B模組持續推動，屆時在導入設備及產能規劃時，也將考慮跟客戶提前",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "GOOGL",
+        "AMZN"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Alphabet",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Chinese cloud infrastructure spend up 26% in Q4 2025",
+      "link": "https://www.datacenterdynamics.com/en/news/chinese-cloud-infrastructure-spend-up-26-in-q4-2025",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T01:00:34+08:00",
+      "summary": "Spending in Mainland China reaches $14.7bn in quarter",
+      "body_text": "Spending in Mainland China reaches $14.7bn in quarter\nSpending on cloud infrastructure services in Mainland China grew some 26 percent Year-on-Year in Q4 2025.\nAccording to research by Omdia, spending reached $14.7 billion and marked the third consecutive quarter where growth was more than 20 percent. The technology research and advisory group is expected to see similar levels of growth throughout",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Meta raises AI capex forecast, stock drops despite Q1 earnings beat - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBJLVFidlhrb0pZNXZ5VWpUY2xRRkRUdUdBeWh4SWg1M2J6dVhHaExuS3ViTGpzR2NpeG5WNlQ2R2l6QXljOFpURjJPXzEtQTh2NXNXV3F6Wk1sbHhyQzNfUDRxeDFmNnozaVY4LWhGbHN0dEpzOVgtdlk3RQ?oc=5",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T20:42:02+08:00",
+      "summary": "Meta raises AI capex forecast, stock drops despite Q1 earnings beat&nbsp;&nbsp;AOL.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Big Tech AI Capex Frenzy: Meta, Alphabet Lead 2026 Spend - Gotrade",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaGZrRlRpN3R5Z0g3bHFZYjEtYWRLcmYxU0t0emF4Wmo3eThHaTRsMkp6LTN1NFNYclY5cmxEV0hzaUZib191M2twc2YwWlpKM253dVpsWHRoVjkyQ01sV2tmaG5yLVNjLVFnbE4zZ1FHRy1INVk0YmNzc0haaEZjYWtQSQ?oc=5",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T17:35:31+08:00",
+      "summary": "Big Tech AI Capex Frenzy: Meta, Alphabet Lead 2026 Spend&nbsp;&nbsp;Gotrade",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "When everyone has AI and the company still learns nothing",
+      "link": "https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-05T17:30:22+08:00",
+      "summary": "Article URL: https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/ Comments URL: https://news.ycombinator.com/item?id=48020063 Points: 307 # Comments: 216",
+      "body_text": "Are people using AI, or is the organization learning from it? What changed because we spent those tokens? And who moves discoveries from individuals to teams to organizational capabilities?\nEthan Mollick has been writing about AI adoption in organizations for a while now. In Making AI Work: Leadership, Lab, and Crowd , he makes the point that individual productivity gains from AI do not automatica",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Image AI models now drive app growth, beating chatbot upgrades",
+      "link": "https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T03:12:49+08:00",
+      "summary": "Appfigures finds visual model launches generate 6.5x more downloads — but most don’t convert that spike into revenue.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nImage model releases are driving growth for AI mobile apps, generating 6.5x more downloads than traditional model updates, according to a new report from app intelligence provider Appfigures.\nThis marks a shift from earlier days, whe",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Influential study touting ChatGPT in education retracted over red flags",
+      "link": "https://arstechnica.com/ai/2026/05/influential-study-touting-chatgpt-in-education-retracted-over-red-flags",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-05T03:03:39+08:00",
+      "summary": "The retracted study on ChatGPT in education was already cited hundreds of times.",
+      "body_text": "The retracted study on ChatGPT in education was already cited hundreds of times.\nA study that claimed OpenAI’s ChatGPT can positively impact student learning has been retracted nearly one year after publication. The journal publisher, Springer Nature, cited “discrepancies” in the analysis and a lack of confidence in the conclusions—but not before the paper racked up hundreds of citations and made ",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Meta AI capex (up 7%) is a bad surprise -- could this be the next metaverse? - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPazRoUUV4azI3eWRwamtQZEVMVVBNVEdUNF94N3VoWldDY2ZYWU5lN3N0V1hCdFRRUUZUSjJ2TTA3Z0lGY1ZwZFQtR1A2MnlNc2ZOZ3VKRTdUcW5KdFFoR0IzRVFNLXRrNzFCdE5mTTV2OGNDRUFKbm8zQ0VnVW1XTHZYWWVKY1h6eWtPV2hxeUtuQnE5QmM3MHk1b3VtdlVoRG9EQnE2bXJsQ19DZXlvdTV3TWtYNW9BbXE3NkZ6bGpmTlEwVmNfZ2pxcGN2VXRpOC1qOU8tMk9YVmFxdE1oeFhwYVFpdWpMdTZGNjZudw",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-04T21:23:00+08:00",
+      "summary": "Meta AI capex (up 7%) is a bad surprise -- could this be the next metaverse?&nbsp;&nbsp;MSN",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Manufacturing Steady in April as Inflation and Iran War Weigh In",
+      "link": "https://www.eetimes.com/manufacturing-steady-in-april-as-inflation-and-iran-war-weigh-in",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T21:16:31+08:00",
+      "summary": "Manufacturing continued to expand in April despite supply chain issues and higher prices. The post Manufacturing Steady in April as Inflation and Iran War Weigh In appeared first on EE Times.",
+      "body_text": "U.S. manufacturing activity continued to expand modestly in April. It held the line for a fourth consecutive month, despite a dramatic surge in raw material costs and deepening geopolitical anxieties.\nThe Institute for Supply Management (ISM) reported that its Manufacturing Purchasing Managers’ Index (PMI) registered 52.7% in April. This matched the March reading. The data signals that the broader",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "TSM"
+      ],
+      "companies": [
+        "Meta",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Google Earnings, Meta Earnings",
+      "link": "https://stratechery.com/2026/google-earnings-meta-earnings",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T18:00:00+08:00",
+      "summary": "Wall Street loved Google's earnings, and hated Meta's, even though the latter's core business was more impressive. The difference is that Google is monetizing its investments now (and it might be all Anthropic).",
+      "body_text": "Wall Street loved Google’s earnings, and hated Meta’s, even though the latter’s core business was more impressive. The difference is that Google is monetizing its investments now (and it might be all Anthropic).\nSubscribe to Stratechery Plus for full access.\nWith Stratechery Plus you get access to the subscriber-only Stratechery Update and Stratechery Interviews , and the Sharp Tech, Sharp China, ",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Illusion of Sovereignty: How International Law and Big Tech are Eroding the State",
+      "link": "https://warontherocks.com/the-illusion-of-sovereignty-how-international-law-and-big-tech-are-eroding-the-state",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T15:30:38+08:00",
+      "summary": "Caught between two hammers &#8212; international law and technological dependence on the private sector &#8212; modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomatic sanctions and international condemnation but the loss of access to critical digital infrastructure owned by private corporations. In wartime, that loss is catastrophic, as we both experienced firsthand during Rus",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nCaught between two hammers — international law and technological dependence on the private sector — modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomati",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Meta裁員以縮減資本支出　Mark Zuckerberg稱不排除再裁員",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754092_4LR1W9WX8D12A43OO26OK",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T11:58:35+08:00",
+      "summary": "Meta執行長Mark Zuckerberg在日前舉辦的公司大會上向全體員工表示，Meta計劃裁員的原因在於人工智慧（AI）領域的資本支出增加，且未來可能再進一步裁員。這是Meta繼2026年3月被報導將進行大規模裁員以來...",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mLXBHSTdGWXBCQXBMQTZ0YkZXTmRCdkRfNlZOaFFmcUVjUGkzNEVwa0xKNlYzcVZ4WTdfUDNEM3ZHQnJMT2lDUlpGMDVzb2lWWGNyTnFPcHhoYXE3eHc?oc=5",
+      "source": "X @satyanadella",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T05:00:01+08:00",
+      "summary": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff.&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "META",
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Meta",
+        "Microsoft",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "🔎 Broadcom's latest moves in AI chip deals are making waves across the market. The stock surged from $314 to over $350, driven by expanded partnerships with Google, Meta, and Anthropic. Their AI revenue leaped 106% year-over-year, underlining the skyr - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85SjV6aXBnbWVDMS1rWS1ibkZkaC1Fd0g1LUFpM01paEJvdDA0YUxjR0lEVGRZV2NicGEya1oteXZaT3NnVjJ6RU1lNVlZSDk1OVNKNTByeDVXQi1hR0FfX2hqM3JiLW8?oc=5",
+      "source": "X @sundarpichai",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T04:53:33+08:00",
+      "summary": "🔎 Broadcom's latest moves in AI chip deals are making waves across the market. The stock surged from $314 to over $350, driven by expanded partnerships with Google, Meta, and Anthropic. Their AI revenue leaped 106% year-over-year, underlining the skyr&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Jim Chanos Warns AI Capex To Boost S&P 500 EPS Estimates - Meta Platforms (NASDAQ:META) - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZlZWZnZISUwxMmRUTk90SUNQb0RXQmEzWUJ3ampZT081VExNY1djZG1kQXBvbEI3QWw4Q1Q4VlNPdV9PWWktY09qTWVTX05sNzhnNWNwNFEtRzkzdVJJZlVUSWlVc094ZHRRVHk5bmRmbXdVSGZxaWhoWFJISzZjQ0JFcm1rT2NUV2tMakVqSHBockdRMDk3TDVYSUc0dWFqWVB4aGRUYlBkM0RWQk04",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-04T03:00:34+08:00",
+      "summary": "Jim Chanos Warns AI Capex To Boost S&amp;P 500 EPS Estimates - Meta Platforms (NASDAQ:META)&nbsp;&nbsp;Benzinga",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AI music is flooding streaming services — but who wants it?",
+      "link": "https://www.theverge.com/column/921599/ai-music-is-flooding-streaming-services-but-who-wants-it",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-03T20:00:00+08:00",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on how AI is changing music and the music industry, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started The use of generative AI [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Streaming\nThey won’t ban it. They won’t embrace it either.\nPosts from this author will be added to your d",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "AAPL",
+        "META",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Apple",
+        "Meta",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Open Design: Use Your Coding Agent as a Design Engine",
+      "link": "https://github.com/nexu-io/open-design",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-02T20:16:16+08:00",
+      "summary": "Article URL: https://github.com/nexu-io/open-design Comments URL: https://news.ycombinator.com/item?id=47985750 Points: 169 # Comments: 84",
+      "body_text": "The open-source alternative to Claude Design . Local-first, web-deployable, BYOK at every layer — 12 coding-agent CLIs auto-detected on your PATH (Claude Code, Codex, Devin for Terminal, Cursor Agent, Gemini CLI, OpenCode, Qwen, GitHub Copilot CLI, Hermes, Kimi, Pi, Kiro) become the design engine, driven by 31 composable Skills and 72 brand-grade Design Systems . No CLI? An OpenAI-compatible BYOK ",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Did you know you can’t steal a charity? Don’t worry. Elon Musk will remind you.",
+      "link": "https://techcrunch.com/podcast/did-you-know-you-cant-steal-a-charity-dont-worry-elon-musk-will-remind-you",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-02T01:44:29+08:00",
+      "summary": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it&#8217;s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk&#8217;s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the [&#8230;]",
+      "body_text": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it’s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk’s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the benefit of humanity” mission Musk",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "TSLA",
+        "AMZN",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Tesla",
+        "Amazon",
+        "Meta",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Minnesota passes ban on fake AI nudes; app makers risk $500K fines",
+      "link": "https://arstechnica.com/tech-policy/2026/05/minnesota-set-to-be-first-state-to-ban-nudification-apps",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-02T01:36:29+08:00",
+      "summary": "More evidence of Grok CSAM seen as Minnesota passes nudifying app ban.",
+      "body_text": "More evidence of Grok CSAM seen as Minnesota passes nudifying app ban.\nThis week, Minnesota became the first state to pass a law banning nudification apps that make it easy to “undress” or sexualize images of real people.\nUnder the law , developers of websites, apps, software, or other services designed to “nudify” images risk extensive damages, including punitive damages, if a victim decides to s",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Google",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Skyrocketing component prices push Big Tech capex to record $725 billion — Microsoft alone attributes $25 billion of AI budget to increased memory and chip costs",
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/microsoft-attributed-25-billion-of-its-record-ai-budget-to-memory-chip-costs",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-01T23:49:09+08:00",
+      "summary": "Google, Amazon, Microsoft, and Meta plan to spend a combined $725 billion on capital expenditure in 2026, a 77% increase over last year's record $410 billion.",
+      "body_text": "Meta cited the same pressure, raising its spending forecast by $10 billion. Google Cloud grew 63%.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nGoogle , Amazon , Microsoft , and Meta plan to spend a combined $725 billion on capital expenditure in 2026, a 77% increase over last year's record $410 billion, according to first-quarter earnings",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "META",
+        "GOOGL",
+        "AMZN",
+        "NVDA",
+        "TSM"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta",
+        "Google",
+        "Amazon",
+        "Alphabet",
+        "NVIDIA",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "UK exports to U.S. plunge by 25% after Trump's 'liberation day' tariffs blitz",
+      "link": "https://www.cnbc.com/2026/05/01/uk-exports-us-fall-25-trump-tariffs-liberation-day.html",
+      "source": "CNBC Economy",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T23:11:44+08:00",
+      "summary": "The U.K. is now running a trade deficit with its largest trading partner.",
+      "body_text": "U.K. goods exported to the U.S. plunged around 25% following President Donald Trump 's \"liberation day\" tariff blitz and have remained muted since, official data shows.\nGoods exports to the United States, excluding precious metals, fell by £1.5 billion, or 24.7%, following the introduction of tariffs, the Office for National Statistics (ONS) said Friday.\nThe statistics body added that car exports ",
+      "event_type": "policy",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Meta sinks, Alphabet jumps as AI capex gap widens - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZjVuTUJTdjlfMmJuLURqUGNBcjRPUlBkeEZvNHZWMG93Z040YXgtYXNCYnpWbG5NNG96aG5uSmVHWDd0S0NhQ0ZaZDFELTk3UUpiUnNpMmxCMDZfXzZ5SUgzUE1qQkotZkpuSlFpaEFlaXM3MzJTcTMwSWV0VThCQzlYM01ZMjlCSkFxMTZtRHZHVVQ1MWQxYVJneUVQOEFyUkRPVlRGRnpfYzJESkhSazU4S2l4VDcyMWpGQTBvOHltNkYtWGc4T0s4Tnlia1NoNVNTQ25iQ3pXQUdvcFlZZHV3YXQ",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-01T18:49:34+08:00",
+      "summary": "Meta sinks, Alphabet jumps as AI capex gap widens&nbsp;&nbsp;MSN",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Modern Combat Requires Warrior Medics Modeled After Machaon",
+      "link": "https://warontherocks.com/modern-combat-requires-warrior-medics-modeled-after-machaon",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-01T15:30:02+08:00",
+      "summary": "Modern peer combat has blown apart the myth of protected combat medical units. On the battlefields of Ukraine, scores of medical personnel, shielded in theory by both international law and historic norms, now lie dead. To survive in this environment while rescuing others, medics ranging from junior enlisted caregivers to senior physicians need tactical experience under fire. Skipping this training leaves them vulnerable and turns them into a security risk &#8212; a losing formula in modern comba",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nModern peer combat has blown apart the myth of protected combat medical units. On the battlefields of Ukraine, scores of medical personnel, shielded in theory by both international law and historic norms, now lie dead . To survive in this environment while rescuing others, ",
+      "event_type": "earnings",
+      "tickers": [
+        "1952",
+        "1864",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "China scraps tariffs for all but one African nation",
+      "link": "https://www.bbc.com/news/articles/cwy2v509217o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-01T08:02:57+08:00",
+      "summary": "The zero-tariff regime gives China's soft power a boost, but may lead to uneven gains, say analysts.",
+      "body_text": "China will scrap tariffs for all African countries from Friday – except Eswatini, which maintains ties with Taiwan.\nAs of December 2024, China had already implemented a duty-free policy for 33 least-developed African nations. The policy now covers 53 countries, and will be in place until 30 April 2028. It is unclear what will happen after that.\nBeijing has boasted that it is the first major econom",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Stock Market Today, April 30: Meta Falls as Higher AI Capex Outlook Overshadows Strong Q1 Results - The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQemRXY2lvenc5eTA2WVFBLWVrNWZXUVpxRy1Zcm5xa1RqWlVNa2ZERUQ4RmpHUy1UbWZhQ1VPWGgxaWdhTzlNTVMyekstcmZWbGIzWjNzVXB5TTNaZERMbU9ybGsyb1VkM1RtQkZjQU9rNDIwOGE0S3l3NzFJWnNjTnNLQ1RmTU5XOFg3QVdVYWVBLWV2MF9zdHBsazZrUVpJQ3lGYzJsWDZ2YXZuNGhQcFZTSVJIT3pMUGFnaE9XYmtUczBEMmpsVWp2b2RHV3lCdFUwRmRKaGlydkJmZ0pRODdMNVY2dDU0VW1wcg",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-01T05:56:36+08:00",
+      "summary": "Stock Market Today, April 30: Meta Falls as Higher AI Capex Outlook Overshadows Strong Q1 Results&nbsp;&nbsp;The Motley Fool",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Meta CEO Zuckerberg blames layoffs on capital spending, won't rule out more job cuts - Reuters",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQd0VMdWRDTV9zanF6TC1venRyaHQtZk1hUTR3U0E2YjFRN3dfbWFzNmRtcGFsR0xKUjRtT05RWVVDTUQ0aTJMallnemltMzhKTTlySkxzRDRIUHVFb2h6ZEhTOEZTcWRUMm05bkhvN2FtS3VFN1p1M2ZOcExqeVFRSWt1MUp1MG1sS3pzLTFOUUlRYnI1Wno2cDZHYU54T2VBUW1FemVHNl9TNkFSTjRUZFdIYlBGajFLYktuRzhzT2s3cUVDOXpB?oc=5",
+      "source": "Reuters (Google News)",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-01T05:33:55+08:00",
+      "summary": "Meta CEO Zuckerberg blames layoffs on capital spending, won't rule out more job cuts&nbsp;&nbsp;Reuters",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "美股收紅　標普、那指創紀錄新高",
+      "link": "https://www.cna.com.tw/news/afe/202605010010.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T05:00:51+08:00",
+      "summary": "（中央社紐約30日綜合外電報導）由於企業財報令投資人樂觀，且美國經濟成長仍具韌性，美股主要指數今天收紅，標普、那指收在紀錄新高，同時也創下自2020年以來的單月最佳表現。",
+      "body_text": "（中央社紐約30日綜合外電報導）由於企業財報令投資人樂觀，且美國經濟成長仍具韌性，美股主要指數今天收紅，標普、那指收在紀錄新高，同時也創下自2020年以來的單月最佳表現。\n道瓊工業指數上漲790.33點或1.62%，收49652.14點。\n標普500指數勁揚73.06點或1.02%，收7209.01點。\n那斯達克指數上漲219.07點或0.89%，收24892.31點。\n費城半導體指數勁揚232.40點或2.26%，收10503.70點。\n個股方面，Meta股價重挫約8.6%，谷歌（Google）母公司Alphabet則大漲近10%。這兩家科技巨擘稍早公布季度財報，對於它們出巨資押注人工智慧（AI），投資人反應截然不同。（編譯：楊昭彥）1150501\n選擇與事實站在一起，您的每一份贊助，都是守護新聞自由的力量\n下載中央社「一手新聞」APP，即時掌握最新消息\n本網站之文字、圖片及影音，非經授",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Google",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
     {
       "title": "Israeli weapon fires tiny metal cubes into people in Lebanon, like Gaza",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/10/israeli-weapon-fires-tiny-metal-cubes-into-people-in-lebanon-like-gaza?traffic_source=rss",
@@ -77,50 +851,8 @@
       "published": "2026-05-11T05:10:46+08:00",
       "summary": "Tiny tungsten cubes from Israeli bombs are causing devastating internal injuries to people in Lebanon.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
-      ]
-    },
-    {
-      "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
-      "link": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
-      "source": "Lobsters AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T23:49:49+08:00",
-      "summary": "Comments",
-      "event_type": "earnings",
-      "publisher": "Cocoa with Love",
-      "author": "Matt Gallagher",
-      "tickers": [
-        "1000",
-        "AAPL",
-        "META"
-      ],
-      "companies": [
-        "Apple",
-        "Meta"
-      ]
-    },
-    {
-      "title": "Parax v0.7: Parametric Modeling in JAX [P]",
-      "link": "https://www.reddit.com/r/MachineLearning/comments/1t929x3/parax_v07_parametric_modeling_in_jax_p",
-      "source": "Reddit r/MachineLearning",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T17:31:35+08:00",
-      "summary": "Hi everyone! Parax is a library for &quot;Parametric modeling&quot; in JAX, attempting to bridge the approach between pure JAX PyTrees, and more object-orientated modeling approaches (e.g. using Equinox). v0.7 has been released, featuring a more polished API as well as some detailed examples in the documentation. Some of Parax's features: Derived/constrained parameters with metadata Computed PyTrees and callable parameterizations Abstract interfaces for fixed, bounded, and probabilistic PyTrees ",
-      "event_type": "news",
-      "publisher": "",
-      "author": "",
-      "tickers": [
-        "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -131,17 +863,10 @@
       "published": "2026-05-09T19:00:51+08:00",
       "summary": "These connected companions could disrupt everything from make-believe to bedtime stories. No wonder some lawmakers want them banned.",
       "event_type": "news",
-      "publisher": "Ars Technica",
-      "author": "WIRED",
       "tickers": [
         "AMZN",
         "META",
         "GOOGL"
-      ],
-      "companies": [
-        "Amazon",
-        "Meta",
-        "Google"
       ]
     },
     {
@@ -152,13 +877,8 @@
       "published": "2026-05-09T18:30:00+08:00",
       "summary": "Plus: Meta officially kills encrypted Instagram DMs, the Trump administration targets “violent left wing extremists,” leaked documents reveal Russia's school for elite hackers, and more.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -169,15 +889,9 @@
       "published": "2026-05-09T07:01:55+08:00",
       "summary": "From dancefloor bangers to heartfelt ballads, here are the highlights and low points of Eurovision.",
       "event_type": "news",
-      "publisher": "BBC News",
-      "author": "Mark Savage",
       "tickers": [
         "META",
         "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Alphabet"
       ]
     },
     {
@@ -188,13 +902,8 @@
       "published": "2026-05-09T05:29:50+08:00",
       "summary": "The wheels are coming off the Cybertruck. That's not just a metaphor.&nbsp;&nbsp;Mashable",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -205,13 +914,8 @@
       "published": "2026-05-09T03:38:44+08:00",
       "summary": "The Senate Democrat said Meta’s reported plans to partner with a third-party stablecoin issuer could undermine “competition, privacy… and financial stability.”",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -222,38 +926,10 @@
       "published": "2026-05-09T03:00:21+08:00",
       "summary": "From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle. The post Which AI Glasses Are Right For You? appeared first on Meta Newsroom.",
       "event_type": "news",
-      "publisher": "Meta Newsroom",
-      "author": "joedamiani",
       "tickers": [
         "META",
         "AAPL",
         "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Apple",
-        "Google"
-      ]
-    },
-    {
-      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
-      "link": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high",
-      "source": "TechCrunch AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-09T02:33:21+08:00",
-      "summary": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
-      "event_type": "earnings",
-      "publisher": "TechCrunch",
-      "author": "Julie Bort",
-      "tickers": [
-        "META",
-        "MSFT",
-        "AMZN"
-      ],
-      "companies": [
-        "Meta",
-        "Microsoft",
-        "Amazon"
       ]
     },
     {
@@ -264,13 +940,8 @@
       "published": "2026-05-09T02:16:01+08:00",
       "summary": "Elizabeth Warren asked the Meta CEO to provide details on a stablecoin integration to the platform, a week after a small rollout to creators in Colombia and the Philippines.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -281,34 +952,8 @@
       "published": "2026-05-08T20:42:00+08:00",
       "summary": "After years of insisting end-to-end encryption was the future of online comms, Zuckcorp has handed itself full visibility into user chats once again",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
-      ]
-    },
-    {
-      "title": "Chip Industry Week In Review",
-      "link": "https://semiengineering.com/chip-industry-week-in-review-137",
-      "source": "Semiconductor Engineering",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T15:01:11+08:00",
-      "summary": "New Taiwan adv. packaging site; M&#038;A activity; GF's CPO solution; Apple looks beyond TSMC; EU chip companies map; strong earnings; MIT's new lidar chip; gallium production; AI inferencing at sea; quantum HW funding; PCIe 7 tool; home data centers; AI security warnings; temperature impact on EVs. The post Chip Industry Week In Review appeared first on Semiconductor Engineering.",
-      "event_type": "earnings",
-      "publisher": "Semiconductor Engineering",
-      "author": "The SE Staff",
-      "tickers": [
-        "AAPL",
-        "TSM",
-        "META"
-      ],
-      "companies": [
-        "Apple",
-        "TSMC",
-        "Meta"
       ]
     },
     {
@@ -319,31 +964,8 @@
       "published": "2026-05-08T08:00:02+08:00",
       "summary": "Meta 近期揭露以軟體記錄員工的滑鼠移動、鍵盤輸入甚至螢幕畫面，用來訓練人工智慧。表面是提升效率，但也讓人擔 [&#8230;]",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
-      ]
-    },
-    {
-      "title": "Trump gives EU ultimatum deadline to approve trade deal with US",
-      "link": "https://www.bbc.com/news/articles/cp3pyk4nw3lo",
-      "source": "BBC World",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-08T07:11:35+08:00",
-      "summary": "Trump's deadline to the European Union came as a trade court ruled his global tariff policy violated US law.",
-      "event_type": "policy",
-      "publisher": "BBC News",
-      "author": "Rachel Clun",
-      "tickers": [
-        "1974",
-        "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -354,49 +976,8 @@
       "published": "2026-05-08T07:01:50+08:00",
       "summary": "The investment story for Corning looks even sweeter in the wake of Jim Cramer's sit-down with CEO Wendell Weeks.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
-      ]
-    },
-    {
-      "title": "Meta’s Position on Canada’s Bill C-22",
-      "link": "https://about.fb.com/news/2026/05/metas-position-on-canadas-bill-c-22",
-      "source": "Meta Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T06:46:00+08:00",
-      "summary": "Today, Meta appeared in front of the Standing Committee on Public Safety and National Security, where a version of this post was delivered as speaking remarks. We are grateful to the Standing Committee for inviting us to share our perspective with committee members and Canadians. &#160; Delivered by Rachel Curran, Director of Public Policy, Canada, Meta &#160; Thank you, M. Chair. Good afternoon and thank you for the opportunity to appear before the Committee today. My name is Rachel Curran and ",
-      "event_type": "earnings",
-      "publisher": "Meta Newsroom",
-      "author": "juliaperreira",
-      "tickers": [
-        "META",
-        "AAPL"
-      ],
-      "companies": [
-        "Meta",
-        "Apple"
-      ]
-    },
-    {
-      "title": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale - simplywall.st",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWlE2X3lZRm5fZndLTEprOWJlNzFOREZoVHNsdWF1UDB2WEVsZzFqc1BRVTI4QUdjRjFBaXhXWmJ5amFCUHlrVV9ZMnRGWlpWb0wzYVFhR1V6d21CUzdVbDhEWk9UZzFGODJZYWpub183TFduaUN6c0U5Tzlsa0ZGOFMyVGVuTkNMV1pOUDBTME5mcVBDNVBMcUpZRDdtOEtyTm8yUFh5RjdfQTd2NWxWdnVqR25Pay1ZMFctSFhLRkhNNmhJdUcwWNIBzgFBVV95cUxPQlgxSDd4MHU3b2dsTkl4T1lLakRvWEszQlB6SFBGZ0F3QnllV0hUNWlDbEZBSnJlZzhvZjVWTFc2MklBQzZ0WnkyeDVqR1NhSDNweTFsdXZzNWk5QTFkU3dwSmRDRWZCNjI5T1pjS1VqN1BzSVdFUUo4NUQxUlNqZWQzS0c0NEVjTUhjbFFCQkZrRnlQWk1HY095dzljRGZRU0hySzkxQkpYU0F2ZUJrX0J2SWtEVVBhdXFSa2prMzBxSkNnaTFYbWlfbmNrZw",
-      "source": "AI 產業化與投資信號",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-08T04:01:31+08:00",
-      "summary": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale&nbsp;&nbsp;simplywall.st",
-      "event_type": "capex",
-      "publisher": "Google News",
-      "author": "",
-      "tickers": [
-        "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -407,32 +988,9 @@
       "published": "2026-05-08T03:39:22+08:00",
       "summary": "Apple's rumored AirPods with cameras are nearing a stage where the company will test early mass production, Bloomberg's Mark Gurman reports. Currently, Apple testers are \"actively using\" prototypes that are in the design validation test stage, which is one step before the production validation test stage. The AirPods' cameras \"aren't designed\" to snap photos or [&#8230;]",
       "event_type": "news",
-      "publisher": "The Verge",
-      "author": "Jay Peters",
       "tickers": [
         "AAPL",
         "META"
-      ],
-      "companies": [
-        "Apple",
-        "Meta"
-      ]
-    },
-    {
-      "title": "As the Trump-Xi summit draws closer, trade uncertainty still looms large",
-      "link": "https://www.atlanticcouncil.org/blogs/econographics/as-the-trump-xi-summit-draws-closer-trade-uncertainty-still-looms-large",
-      "source": "Atlantic Council",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-08T03:32:19+08:00",
-      "summary": "What China and the United States manage to agree on in Beijing on key export controls or purchase agreements will significantly shape the Trump administration’s approach to rebuilding its tariff wall. The post As the Trump-Xi summit draws closer, trade uncertainty still looms large appeared first on Atlantic Council.",
-      "event_type": "policy",
-      "publisher": "Atlantic Council",
-      "author": "jyin",
-      "tickers": [
-        "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -443,15 +1001,9 @@
       "published": "2026-05-08T03:06:46+08:00",
       "summary": "A new study finds ChatGPT, Claude, Grok, and Perplexity all share user data with third-party ad trackers—sometimes even when you say no to cookies.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "META",
         "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Google"
       ]
     },
     {
@@ -462,13 +1014,8 @@
       "published": "2026-05-08T02:00:00+08:00",
       "summary": "OpenAI is launching an optional safety feature for ChatGPT that allows adult users to assign an emergency contact for mental health and safety concerns. Friends, family members, or caregivers designated as a \"Trusted Contact\" will be notified if OpenAI detects that a person may have discussed topics like self-harm or suicide with the chatbot. \"Trusted [&#8230;]",
       "event_type": "news",
-      "publisher": "The Verge",
-      "author": "Jess Weatherbed",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
       ]
     },
     {
@@ -479,19 +1026,11 @@
       "published": "2026-05-08T00:45:31+08:00",
       "summary": "Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small &#8220;AI-forward&#8221; teams, and more",
       "event_type": "news",
-      "publisher": "The Pragmatic Engineer",
-      "author": "Gergely Orosz",
       "tickers": [
         "AMZN",
         "META",
         "AAPL",
         "MSFT"
-      ],
-      "companies": [
-        "Amazon",
-        "Meta",
-        "Apple",
-        "Microsoft"
       ]
     },
     {
@@ -502,15 +1041,9 @@
       "published": "2026-05-08T00:30:28+08:00",
       "summary": "Wyoming governor Mark Gordon is welcoming the hyperscalers to the Cowboy State",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT",
         "META"
-      ],
-      "companies": [
-        "Microsoft",
-        "Meta"
       ]
     },
     {
@@ -521,32 +1054,34 @@
       "published": "2026-05-07T22:00:00+08:00",
       "summary": "It's a Whoop dupe. That was my first thought when I saw the new $99 Google Fitbit Air. You can hardly blame me. The band is screenless with a metallic fabric clasp. My eyes flickered between the Fitbit Air and my wrist, where I'm wearing a Whoop MG. Was I not seeing double? But as [&#8230;]",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "GOOGL",
         "META"
-      ],
-      "companies": [
-        "Google",
-        "Meta"
       ]
     },
     {
-      "title": "A Self-Attentive Meta-Optimizer with Group-Adaptive Learning Rates and Weight Decay",
-      "link": "https://arxiv.org/abs/2605.04055",
-      "source": "arXiv 機器學習",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-07T12:00:00+08:00",
-      "summary": "arXiv:2605.04055v1 Announce Type: new Abstract: Adaptive optimizers like AdamW apply uniform hyperparameters across all parameter groups, ignoring heterogeneous optimization dynamics across layers and modules. We address this limitation by proposing MetaAdamW - a new optimizer that integrates a self-attention mechanism to dynamically modulate per-group learning rates and weight decay. The modulation factors are produced by a lightweight Transformer encoder that operates on statistical features (",
+      "title": "五大出版商告Meta侵權　Mark Zuckerberg遭點名助長盜用風氣",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754377_CGF20HC88JDEYS6IKZK2N",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T02:06:38+08:00",
+      "summary": "Meta遭作家與五大出版商指控，從盜版網站取得數百萬本書籍與期刊訓練Llama人工智慧（AI）模型，為史上規模最大著作權侵權案之一。綜合金融時報（FT）、華爾街日報（WSJ）與路透（Reuters）報導，由Hachette、Macmillan、McGraw Hill、Elsevier、Cengage等五家出版商及暢銷作家Scott...",
       "event_type": "news",
-      "publisher": "arXiv.org",
-      "author": "",
       "tickers": [
         "META"
-      ],
-      "companies": [
-        "Meta"
+      ]
+    },
+    {
+      "title": "Broadcom Stock: Google, Meta and Anthropic Make June 3 the Real AVGO Test - Techi",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcUFzY2FkZ3NScDI5Q3JGUmdoUDFldGVRQ0NxWVpWZkVST0tJWWlCTU1hZ1c0THhBXzVVN0MyWTBVUGtNZGMxdWVoVUxLRTVMWXdsbUF1aksxQkVUQ25ZUlhpNk1LSDI3WlQtdWRpb1cyX2pOOWJXWmt1a0xwY0tCOXFxLTUxc1ZqLVBOZXlGZ3I",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T17:36:19+08:00",
+      "summary": "Broadcom Stock: Google, Meta and Anthropic Make June 3 the Real AVGO Test&nbsp;&nbsp;Techi",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL",
+        "META"
       ]
     }
   ],
@@ -588,9 +1123,84 @@
       "guidance_summary": ""
     }
   ],
+  "fundamentals": {
+    "ticker": "META",
+    "market": "us",
+    "company_name": "Meta Platforms, Inc.",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 56311000000.0,
+      "gross_profit": null,
+      "operating_income": 22872000000.0,
+      "net_income": 26773000000.0,
+      "eps": 10.44,
+      "fcf": 13229000000.0,
+      "ocf": 32226000000.0,
+      "capex": 18997000000.0,
+      "gross_margin": null,
+      "op_margin": 0.40617286143027115,
+      "net_margin": 0.47544884658414877,
+      "fcf_margin": 0.23492745644723056,
+      "capex_intensity": 0.33735859778728844,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": -60.0837864084552,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 56311000000.0,
+        "gross_profit": null,
+        "operating_income": 22872000000.0,
+        "net_income": 26773000000.0,
+        "eps_diluted": 10.44,
+        "fcf": 13229000000.0,
+        "ocf": 32226000000.0,
+        "capex": 18997000000.0,
+        "company_name": "Meta Platforms, Inc."
+      },
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q3",
+        "revenue": 141073000000.0,
+        "gross_profit": null,
+        "operating_income": 58531000000.0,
+        "net_income": 37690000000.0,
+        "eps_diluted": 14.62,
+        "fcf": 31278000000.0,
+        "ocf": 79586000000.0,
+        "capex": 48308000000.0,
+        "company_name": "Meta Platforms, Inc."
+      }
+    ],
+    "health": {
+      "tier": "steady",
+      "label": "穩健",
+      "summary": "營益率 41% 業界頂尖・FCF margin 23% 現金力強",
+      "icon": "🔵",
+      "score": 3
+    }
+  },
   "co_mentions": [
     {
       "ticker": "GOOGL",
+      "count": 20
+    },
+    {
+      "ticker": "MSFT",
+      "count": 8
+    },
+    {
+      "ticker": "AMZN",
+      "count": 8
+    },
+    {
+      "ticker": "NVDA",
       "count": 6
     },
     {
@@ -598,33 +1208,25 @@
       "count": 6
     },
     {
-      "ticker": "AMZN",
+      "ticker": "TSM",
       "count": 3
     },
     {
-      "ticker": "MSFT",
-      "count": 3
-    },
-    {
-      "ticker": "NVDA",
-      "count": 1
+      "ticker": "TSLA",
+      "count": 2
     },
     {
       "ticker": "2330",
       "count": 1
     },
     {
-      "ticker": "1000",
-      "count": 1
-    },
-    {
-      "ticker": "TSM",
-      "count": 1
-    },
-    {
       "ticker": "1974",
+      "count": 1
+    },
+    {
+      "ticker": "2035",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:22:11Z"
+  "generated_at": "2026-05-11T03:33:21Z"
 }

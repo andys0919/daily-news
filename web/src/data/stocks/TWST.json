@@ -1,0 +1,151 @@
+{
+  "ticker": "TWST",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "TWST",
+    "company_name": "Twist Bioscience Corp",
+    "quarterly": {
+      "market": "us",
+      "ticker": "TWST",
+      "company_name": "Twist Bioscience Corp",
+      "cik": "0001581280",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-05-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1581280/000158128026000040/twst-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": null,
+      "monthly_revenue": null,
+      "net_income": -74528000.0,
+      "operating_income": -78763000.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": -1.21,
+      "operating_cash_flow": -42373000.0,
+      "capex": 17861000.0,
+      "free_cash_flow": -60234000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-05-04\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1581280/000158128026000040/twst-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2025-10-01\", \"end\": \"2026-03-31\", \"val\": -74528000, \"accn\": \"0001581280-26-000040\", \"fy\": 2026, \"fp\": \"Q2\", \"form\": \"10-Q\", \"filed\": \"2026-05-04\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Twist Bioscience Corporation (TWST) Announces Q2 2026 Financial Results",
+      "link": "https://www.insidermonkey.com/blog/twist-bioscience-corporation-twst-announces-q2-2026-financial-results-1758209",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-11T07:14:23+08:00",
+      "summary": "Twist Bioscience Corporation (NASDAQ:TWST) is one of the best performing healthcare stocks so far in 2026. Twist Bioscience Corporation (NASDAQ:TWST) announced its fiscal Q2 2026 financial results and business highlights on May 4, reporting solid performance in the first half of 2026. It ended fiscal Q2 with its 13th consecutive quarter of growth, with total [&#8230;]",
+      "body_text": "Twist Bioscience Corporation (NASDAQ: TWST ) is one of the best performing healthcare stocks so far in 2026 . Twist Bioscience Corporation (NASDAQ:TWST) announced its fiscal Q2 2026 financial results and business highlights on May 4, reporting solid performance in the first half of 2026. It ended fiscal Q2 with its 13th consecutive quarter of growth, with total revenue for the quarter reaching $11",
+      "event_type": "earnings",
+      "tickers": [
+        "TWST",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-05-04",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": null,
+      "monthly_revenue": null,
+      "net_income": -74528000.0,
+      "operating_income": -78763000.0,
+      "gross_profit": null,
+      "eps_diluted": -1.21,
+      "operating_cash_flow": -42373000.0,
+      "capex": 17861000.0,
+      "free_cash_flow": -60234000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "TWST",
+    "market": "us",
+    "company_name": "Twist Bioscience Corp",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "revenue": null,
+      "gross_profit": null,
+      "operating_income": -78763000.0,
+      "net_income": -74528000.0,
+      "eps": -1.21,
+      "fcf": -60234000.0,
+      "ocf": -42373000.0,
+      "capex": 17861000.0,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": null,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q2",
+        "revenue": null,
+        "gross_profit": null,
+        "operating_income": -78763000.0,
+        "net_income": -74528000.0,
+        "eps_diluted": -1.21,
+        "fcf": -60234000.0,
+        "ocf": -42373000.0,
+        "capex": 17861000.0,
+        "company_name": "Twist Bioscience Corp"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "BRK-B",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

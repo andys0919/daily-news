@@ -1,0 +1,46 @@
+{
+  "ticker": "1789",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "The Lessons of the Long Confucian Peace",
+      "link": "https://www.foreignaffairs.com/china/lessons-long-confucian-peace",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T12:00:00+08:00",
+      "summary": "Can ideology prevent war in East Asia?",
+      "event_type": "news",
+      "tickers": [
+        "1988",
+        "1598",
+        "1894",
+        "1712",
+        "1788",
+        "1789",
+        "1624"
+      ]
+    },
+    {
+      "title": "OpenAI’s cozy partner Cerebras is on track for a blockbuster IPO",
+      "link": "https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T05:53:21+08:00",
+      "summary": "AI chip maker Cerebras is heading for a blockbuster IPO that could value it at $26.6 billion or more. Its relationship with OpenAI is deep and rich.",
+      "event_type": "news",
+      "tickers": [
+        "1789"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

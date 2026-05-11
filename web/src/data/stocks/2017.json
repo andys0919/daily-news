@@ -1,0 +1,716 @@
+{
+  "ticker": "2017",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2017",
+    "company_name": "官田鋼",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2017",
+      "company_name": "官田鋼",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -300314.0,
+      "operating_income": -402736.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": -95158.0,
+      "capex": 237577.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業收入合計\", \"2,734,198\", \"100.00\", \"3,281,159\", \"100.00\"], [\"營業成本合計\", \"2,722,218\", \"99.56\", \"3,105,323\", \"94.64\"], [\"營業毛利（毛損）\", \"11,980\", \"0.44\", \"175,836\", \"5.36\"], [\"營業毛利（毛損）淨額\", \"11,980\", \"0.44\", \"175,836\", \"5.36\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"90,773\", \"3.32\", \"86,874\", \"2.65\"], [\"　　管理費用\", \"321,367\", \"11.75\", \"317,285\", \"9.67\"], [\"　　研究發展費用\", \"1,654\", \"0.06\", \"2,239\", \"0.07\"], [\"　　預期信用減損損失（利益）\", \"775\", \"0.03\", \"5,048\", \"0.15\"], [\"　營業費用合計\", \"414,569\", \"15.16\", \"411,446\", \"12.54\"], [\"其他收益及費損淨額\", \"\", \"\", \"\", \"\"], [\"　其他收益及費損淨額\", \"-147\", \"-0.01\", \"-662\", \"-0.02\"], [\"營業利益（損失）\", \"-402,736\", \"-14.73\", \"-236,272\", \"-7.20\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"8,421\", \"0.31\", \"4,805\", \"0.15\"], [\"　　其他收入\", \"73,152\", \"2.68\", \"61,060\", \"1.86\"], [\"　　其他利益及損失淨額\", \"68,281\", \"2.50\", \"345,721\", \"10.54\"], [\"　　財務成本淨額\", \"141,628\", \"5.18\", \"118,950\", \"3.63\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"91,934\", \"3.36\", \"120,373\", \"3.67\"], [\"　營業外收入及支出合計\", \"100,160\", \"3.66\", \"413,009\", \"12.59\"], [\"稅前淨利（淨損）\", \"-302,576\", \"-11.07\", \"176,737\", \"5.39\"], [\"所得稅費用（利益）合計\", \"-2,262\", \"-0.08\", \"12,524\", \"0.38\"], [\"繼續營業單位本期淨利（淨損）\", \"-300,314\", \"-10.98\", \"164,213\", \"5.00\"], [\"本期淨利（淨損）\", \"-300,314\", \"-10.98\", \"164,213\", \"5.00\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"-158\", \"-0.01\", \"349\", \"0.01\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"-231,561\", \"-8.47\", \"-381,391\", \"-11.62\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-不重分類至損益之項目\", \"-5,076\", \"-0.19\", \"-8,752\", \"-0.27\"], [\"　　　與不重分類之項目相關之所得稅\", \"-32\", \"0.00\", \"82\", \"0.00\"], [\"　不重分類至損益之項目：\", \"-236,763\", \"-8.66\", \"-389,876\", \"-11.88\"], [\"　其他綜合損益（淨額）\", \"-236,763\", \"-8.66\", \"-389,876\", \"-11.88\"], [\"本期綜合損益總額\", \"-537,077\", \"-19.64\", \"-225,663\", \"-6.88\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利∕損）\", \"-239,440\", \"-8.76\", \"119,485\", \"3.64\"], [\"　非控制權益（淨利∕損）\", \"-60,874\", \"-2.23\", \"44,728\", \"1.36\"], [\"　母公司業主（綜合損益）\", \"-425,730\", \"-15.57\", \"-225,085\", \"-6.86\"], [\"　非控制權益（綜合損益）\", \"-111,347\", \"-4.07\", \"-578\", \"-0.02\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"-0.56\", \"\", \"0.28\", \"\"], [\"　基本每股盈餘\", \"-0.56\", \"\", \"0.28\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"-0.56\", \"\", \"0.28\", \"\"], [\"　稀釋每股盈餘\", \"-0.56\", \"\", \"0.28\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2017&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2017&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}, {\"main\": \"113年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"官田鋼\"}, \"datetime\": \"115/04/09 09:02:59\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"294,265\", \"2.16\", \"522,799\", \"3.95\"], [\"　　　透過損益按公允價值衡量之金融資產－流動\", \"0\", \"0.00\", \"5,273\", \"0.04\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－流動\", \"1,802,048\", \"13.20\", \"2,015,643\", \"15.23\"], [\"　　　按攤銷後成本衡量之金融資產－流動\", \"275,394\", \"2.02\", \"114,683\", \"0.87\"], [\"　　　應收票據淨額\", \"122,029\", \"0.89\", \"92,676\", \"0.70\"], [\"　　　應收帳款淨額\", \"141,191\", \"1.03\", \"200,116\", \"1.51\"], [\"　　　其他應收款淨額\", \"12,796\", \"0.09\", \"5,652\", \"0.04\"], [\"　　　本期所得稅資產\", \"5,915\", \"0.04\", \"4,204\", \"0.03\"], [\"　　　存貨\", \"1,161,332\", \"8.51\", \"1,154,423\", \"8.72\"], [\"　　　其他流動資產\", \"168,535\", \"1.23\", \"141,651\", \"1.07\"], [\"　　流動資產合計\", \"3,983,505\", \"29.18\", \"4,257,120\", \"32.16\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－非流動\", \"387,590\", \"2.84\", \"446,036\", \"3.37\"], [\"　　　按攤銷後成本衡量之金融資產－非流動\", \"213,500\", \"1.56\", \"208,100\", \"1.57\"], [\"　　　採用權益法之投資\", \"594,659\", \"4.36\", \"627,271\", \"4.74\"], [\"　　　不動產、廠房及設備\", \"3,982,450\", \"29.17\", \"3,798,486\", \"28.70\"], [\"　　　使用權資產\", \"601,475\", \"4.41\", \"636,629\", \"4.81\"], [\"　　　投資性不動產淨額\", \"1,588,621\", \"11.64\", \"1,614,091\", \"12.19\"], [\"　　　無形資產\", \"264,775\", \"1.94\", \"253,036\", \"1.91\"], [\"　　　遞延所得稅資產\", \"200,910\", \"1.47\", \"191,654\", \"1.45\"], [\"　　　其他非流動資產\", \"1,834,599\", \"13.44\", \"1,203,826\", \"9.09\"], [\"　　非流動資產合計\", \"9,668,579\", \"70.82\", \"8,979,129\", \"67.84\"], [\"　資產總額\", \"13,652,084\", \"100.00\", \"13,236,249\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"663,114\", \"4.86\", \"971,559\", \"7.34\"], [\"　　　應付短期票券\", \"2,574,008\", \"18.85\", \"1,901,653\", \"14.37\"], [\"　　　合約負債－流動\", \"63,295\", \"0.46\", \"68,142\", \"0.51\"], [\"　　　應付票據\", \"798\", \"0.01\", \"579\", \"0.00\"], [\"　　　應付帳款\", \"24,233\", \"0.18\", \"29,953\", \"0.23\"], [\"　　　其他應付款\", \"240,017\", \"1.76\", \"291,593\", \"2.20\"], [\"　　　本期所得稅負債\", \"1,590\", \"0.01\", \"22\", \"0.00\"], [\"　　　租賃負債－流動\", \"82,327\", \"0.60\", \"78,754\", \"0.59\"], [\"　　　其他流動負債\", \"84,452\", \"0.62\", \"234,839\", \"1.77\"], [\"　　流動負債合計\", \"3,733,834\", \"27.35\", \"3,577,094\", \"27.02\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　長期借款\", \"3,032,342\", \"22.21\", \"2,126,680\", \"16.07\"], [\"　　　遞延所得稅負債\", \"4,920\", \"0.04\", \"4,913\", \"0.04\"], [\"　　　租賃負債－非流動\", \"424,455\", \"3.11\", \"501,289\", \"3.79\"], [\"　　　其他非流動負債\", \"24,739\", \"0.18\", \"25,879\", \"0.20\"], [\"　　非流動負債合計\", \"3,486,456\", \"25.54\", \"2,658,761\", \"20.09\"], [\"　負債總額\", \"7,220,290\", \"52.89\", \"6,235,855\", \"47.11\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"4,468,747\", \"32.73\", \"4,468,747\", \"33.76\"], [\"　　　股本合計\", \"4,468,747\", \"32.73\", \"4,468,747\", \"33.76\"], [\"　　資本公積\", \"\", \"\", \"\", \"\"], [\"　　　資本公積合計\", \"575,758\", \"4.22\", \"579,374\", \"4.38\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"96,030\", \"0.70\", \"93,595\", \"0.71\"], [\"　　　　特別盈餘公積\", \"24,700\", \"0.18\", \"2,785\", \"0.02\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"-226,840\", \"-1.66\", \"24,350\", \"0.18\"], [\"　　　保留盈餘合計\", \"-106,110\", \"-0.78\", \"120,730\", \"0.91\"], [\"　　其他權益\", \"\", \"\", \"\", \"\"], [\"　　　其他權益合計\", \"70,690\", \"0.52\", \"271,345\", \"2.05\"], [\"　　　庫藏股票\", \"-269,970\", \"-1.98\", \"-267,966\", \"-2.02\"], [\"　　歸屬於母公司業主之權益合計\", \"4,739,115\", \"34.71\", \"5,172,230\", \"39.08\"], [\"　　非控制權益\", \"1,692,679\", \"12.40\", \"1,828,164\", \"13.81\"], [\"　權益總額\", \"6,431,794\", \"47.11\", \"7,000,394\", \"52.89\"], [\"　負債及權益總計\", \"13,652,084\", \"100.00\", \"13,236,249\", \"100.00\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"19,752,931\", \"\", \"19,533,437\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2017&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2017&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年12月31日\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}, {\"main\": \"113年12月31日\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"官田鋼\"}, \"datetime\": \"115/04/09 09:02:59\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"-302,576\", \"176,737\"], [\"　本期稅前淨利（淨損）\", \"-302,576\", \"176,737\"], [\"　　　折舊費用\", \"226,365\", \"206,162\"], [\"　　　攤銷費用\", \"28,746\", \"30,355\"], [\"　　　預期信用減損損失（利益）數∕呆帳費用提列（轉列收入）數\", \"775\", \"5,048\"], [\"　　　透過損益按公允價值衡量金融資產及負債之淨損失（利益）\", \"-261\", \"-1,513\"], [\"　　　利息費用\", \"141,628\", \"118,950\"], [\"　　　利息收入\", \"-8,421\", \"-4,805\"], [\"　　　股利收入\", \"-31,214\", \"-33,980\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-91,934\", \"-120,373\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"-16,553\", \"1,494\"], [\"　　　不動產、廠房及設備轉列費用數\", \"21\", \"0\"], [\"　　　處分投資性不動產損失（利益）\", \"-64,681\", \"0\"], [\"　　　處分無形資產損失（利益）\", \"0\", \"4\"], [\"　　　處分採用權益法之投資損失（利益）\", \"0\", \"-355,110\"], [\"　　　非金融資產減損損失\", \"44,174\", \"0\"], [\"　　　非金融資產減損迴轉利益\", \"0\", \"-27,210\"], [\"　　　未實現外幣兌換損失（利益）\", \"-275\", \"0\"], [\"　　　其他項目\", \"0\", \"-113\"], [\"　　　收益費損項目合計\", \"228,370\", \"-181,091\"], [\"　　　　應收票據（增加）減少\", \"19,936\", \"54,102\"], [\"　　　　應收帳款（增加）減少\", \"58,150\", \"-70,635\"], [\"　　　　其他應收款（增加）減少\", \"-7,703\", \"-4,271\"], [\"　　　　存貨（增加）減少\", \"-51,083\", \"-158,375\"], [\"　　　　其他流動資產（增加）減少\", \"-26,560\", \"-40,027\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"-7,260\", \"-219,206\"], [\"　　　　合約負債增加（減少）\", \"-4,847\", \"-18,063\"], [\"　　　　應付票據增加（減少）\", \"219\", \"-33\"], [\"　　　　應付帳款增加（減少）\", \"-5,720\", \"-297\"], [\"　　　　其他應付款增加（減少）\", \"4,590\", \"-15,533\"], [\"　　　　負債準備增加（減少）\", \"-438\", \"75\"], [\"　　　　其他流動負債增加（減少）\", \"612\", \"-14,476\"], [\"　　　　淨確定福利負債增加(減少)\", \"-1,010\", \"-4,946\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"-6,594\", \"-53,273\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"-13,854\", \"-272,479\"], [\"　　調整項目合計\", \"214,516\", \"-453,570\"], [\"　營運產生之現金流入（流出）\", \"-88,060\", \"-276,833\"], [\"　退還（支付）之所得稅\", \"-7,098\", \"-36,320\"], [\"營業活動之淨現金流入（流出）\", \"-95,158\", \"-313,153\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　取得透過其他綜合損益按公允價值衡量之金融資產\", \"-72,478\", \"-625,236\"], [\"　處分透過其他綜合損益按公允價值衡量之金融資產\", \"112,967\", \"132,899\"], [\"　透過其他綜合損益按公允價值衡量之金融資產減資退回股款\", \"0\", \"128\"], [\"　取得按攤銷後成本衡量之金融資產\", \"-166,111\", \"-166,016\"], [\"　處分透過損益按公允價值衡量之金融資產\", \"5,534\", \"24,800\"], [\"　取得採用權益法之投資\", \"0\", \"-74,687\"], [\"　採用權益法之被投資公司減資退回股款\", \"0\", \"900\"], [\"　取得不動產、廠房及設備\", \"-237,577\", \"-220,558\"], [\"　處分不動產、廠房及設備\", \"28,553\", \"2,367\"], [\"　存出保證金增加\", \"-30,482\", \"-34,399\"], [\"　存出保證金減少\", \"332\", \"35,228\"], [\"　取得無形資產\", \"-40,485\", \"-20,699\"], [\"　取得使用權資產\", \"-3,177\", \"-7,521\"], [\"　取得投資性不動產\", \"-288\", \"-252\"], [\"　處分投資性不動產\", \"20,872\", \"0\"], [\"　其他非流動資產增加\", \"-3,087\", \"-15,453\"], [\"　預付設備款增加\", \"-767,900\", \"-789,768\"], [\"　收取之利息\", \"8,525\", \"4,805\"], [\"　收取之股利\", \"150,684\", \"151,312\"], [\"　其他投資活動\", \"-897\", \"-16,143\"], [\"　投資活動之淨現金流入（流出）\", \"-995,015\", \"-1,618,293\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款增加\", \"3,560,200\", \"4,679,839\"], [\"　短期借款減少\", \"-3,870,345\", \"-4,506,285\"], [\"　應付短期票券增加\", \"17,515,500\", \"10,759,500\"], [\"　應付短期票券減少\", \"-16,841,000\", \"-10,034,000\"], [\"　舉借長期借款\", \"9,359,516\", \"3,307,329\"], [\"　償還長期借款\", \"-8,578,206\", \"-2,556,702\"], [\"　存入保證金增加\", \"150\", \"700\"], [\"　租賃本金償還\", \"-89,224\", \"-52,842\"], [\"　庫藏股票買回成本\", \"-2,938\", \"-16,650\"], [\"　取得子公司股權\", \"-12,652\", \"-7,649\"], [\"　支付之利息\", \"-163,429\", \"-101,896\"], [\"　非控制權益變動\", \"0\", \"646,222\"], [\"　其他籌資活動\", \"-15,933\", \"-20,737\"], [\"　籌資活動之淨現金流入（流出）\", \"861,639\", \"2,096,829\"], [\"本期現金及約當現金增加（減少）數\", \"-228,534\", \"165,383\"], [\"期初現金及約當現金餘額\", \"522,799\", \"357,416\"], [\"期末現金及約當現金餘額\", \"294,265\", \"522,799\"], [\"　資產負債表帳列之現金及約當現金\", \"294,265\", \"522,799\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2017&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2017&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}]}, {\"main\": \"113年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"官田鋼\"}, \"datetime\": \"115/04/09 09:02:59\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2017",
+      "company_name": "官田鋼",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 223070.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2017\", \"公司名稱\": \"官田鋼\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"223070\", \"營業收入-上月營收\": \"216832\", \"營業收入-去年當月營收\": \"268146\", \"營業收入-上月比較增減(%)\": \"2.8768816410861864\", \"營業收入-去年同月增減(%)\": \"-16.810245164947453\", \"累計營業收入-當月累計營收\": \"670131\", \"累計營業收入-去年累計營收\": \"731720\", \"累計營業收入-前期比較增減(%)\": \"-8.417017438364402\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Why a 2017 Linux bug is now a major concern for the crypto industry",
+      "link": "https://cointelegraph.com/features/copy-fail-linux-vulnerability-crypto-security",
+      "source": "Cointelegraph",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T23:30:00+08:00",
+      "summary": "The “Copy Fail” Linux bug could impact crypto infrastructure that relies on Linux servers, highlighting growing cybersecurity risks in the digital asset industry. Format: Explained",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that Musk tried to poach Sam Altman",
+      "link": "https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T07:59:19+08:00",
+      "summary": "In the second week of the landmark trial between Elon Musk and OpenAI, Musk’s motivations for bringing the suit were under scrutiny. Last week, Musk took the stand, alleging that OpenAI CEO Sam Altman and president Greg Brockman had deceived him into donating $38 million to the company. He claimed that they’d promised to maintain&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "MSFT",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
+      "link": "https://www.cnbc.com/2026/05/08/iran-focus-at-trump-xi-summit-may-delay-progress-on-tariffs-rare-earths.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T02:44:26+08:00",
+      "summary": "Thanks to the Iran war, big issues for U.S. businesses like rare earths and supply chains may take a back seat on the agenda for the Trump-Xi summit.",
+      "event_type": "policy",
+      "tickers": []
+    },
+    {
+      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
+      "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T23:25:02+08:00",
+      "summary": "When OpenAI was busy experimenting with AI-powered gaming bots, Microsoft CEO Satya Nadella and OpenAI CEO Sam Altman were in the early days of forming an AI partnership. Court documents from the ongoing Musk v. Altman trial have provided a rare look at the communications between Microsoft's top executives about investing in OpenAI and fears [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Devastating 'Dirty Frag' exploit leaks out, gives immediate root access on most Linux machines since 2017, no patches available, no warning given — Copy Fail-like vulnerability had its embargo broken",
+      "link": "https://www.tomshardware.com/tech-industry/cyber-security/dirty-frag-exploit-gets-root-on-most-linux-machines-since-2017-no-patches-available-no-warning-given-copy-fail-like-vulnerability-had-its-embargo-broken",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T08:17:41+08:00",
+      "summary": "Dirty Frag exploit gets root on most Linux machines since 2017, no patches available",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Elon Musk tried to hire OpenAI founders to start AI unit inside Tesla",
+      "link": "https://www.ft.com/content/c93ba0c9-caec-4707-8f27-a1abb8de115e",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T21:14:01+08:00",
+      "summary": "Musk was “prepared to do the for-profit, provided he would get control.”",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "This Is Not the World Russia Wants",
+      "link": "https://www.foreignaffairs.com/united-states/not-world-russia-wants",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-07T12:00:00+08:00",
+      "summary": "A belligerent America is foiling Putin’s strategy.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Musk’s biggest loyalist became his biggest liability",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/925665/musk-altman-trial-shivon-zilis-testimony",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T07:37:02+08:00",
+      "summary": "I sat down in the Musk v. Altman trial courtroom today, painfully aware that no one was going to ask Shivon Zilis the question on everyone's minds: Girl, what the fuck are you doing? Zilis, who testified under oath that she is the mother of four of Musk's children, was… what's the best way to [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Elon Musk’s Last-Ditch Effort to Control OpenAI: Recruit Sam Altman to Tesla",
+      "link": "https://www.wired.com/story/elon-musk-recruit-sam-altman-tesla-ai-lab-trial",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T07:23:45+08:00",
+      "summary": "Messages between Shivon Zilis and Tesla executives reveal plans in 2017 to start a rival AI lab, potentially led by Altman or Demis Hassabis.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "How Elon Musk left OpenAI, according to Greg Brockman",
+      "link": "https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T02:23:54+08:00",
+      "summary": "Cutthroat negotiations between startup founders are rarely shared so publicly, especially when a company becomes as world-changing as OpenAI.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "CPMI-IOSCO publishes for consultation updated guidance and public disclosures to support the implementation of initial margin proposals",
+      "link": "https://www.bis.org/press/p260506.htm",
+      "source": "BIS Press Releases",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T21:25:00+08:00",
+      "summary": "CPMI-IOSCO is seeking input from interested stakeholders on amendments to CCP-related resilience guidance and public quantitative disclosures requirements.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Could development economics be more useful?",
+      "link": "https://www.noahpinion.blog/p/could-development-economics-be-more",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T14:08:15+08:00",
+      "summary": "What's really needed is humility.",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
+      "title": "OpenAI president forced to read his personal diary entries to jury",
+      "link": "https://arstechnica.com/tech-policy/2026/05/openai-president-explains-to-jury-why-his-diary-entries-sound-greedy",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-06T06:28:12+08:00",
+      "summary": "Elon Musk argued the journals show the moment when OpenAI abandoned its mission.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "AI didn't delete your database, you did",
+      "link": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-05T22:07:50+08:00",
+      "summary": "Article URL: https://idiallo.com/blog/ai-didnt-delete-your-database-you-did Comments URL: https://news.ycombinator.com/item?id=48022742 Points: 489 # Comments: 269",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "OpenAI’s president does ‘all the things,’ except answer a question",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/923684/musk-brockman-altman-openai-trial",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T07:49:33+08:00",
+      "summary": "The strongest witness for Elon Musk's case against OpenAI so far has been Greg Brockman's journal. Brockman himself is running as a close second. Brockman was called to the stand in a rather unusual way - he was cross-examined first, followed by a direct examination - and he had some serious high school debate club [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "MSFT",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Why Kim Jong Un Won’t Pick Up the Phone and What to Do About It",
+      "link": "https://warontherocks.com/why-kim-jong-un-wont-pick-up-the-phone-and-what-to-do-about-it",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T15:15:30+08:00",
+      "summary": "Every American administration pledges to learn from the past when devising a strategy for contending with nuclear North Korea. And yet, few portfolios are so paralyzed by path dependency and resistance to learning. But now, confronted with the inescapable prospect that the legacy approach is actually creating risk rather than reducing it, the time has come to learn and pivot.The Trump administration should sharpen the choice for North Korea, making it enticing, raising the stakes, and being prep",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ]
+    },
+    {
+      "title": "獨家 OLED 面板供應、記憶體短缺推升成本，iPhone 20 價格看漲",
+      "link": "https://technews.tw/2026/05/02/samsung-display-tipped-to-win-exclusive-iphone-20-oled-deal",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-02T17:24:35+08:00",
+      "summary": "蘋果傳在 2027 年 iPhone 20 改採前所未有的全新設計，搭載四曲面螢幕，結合蘋果的 Liquid [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Elon Musk’s worst enemy in court is Elon Musk",
+      "link": "https://www.theverge.com/tech/921022/elon-musk-cross-openai-altman",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T08:01:24+08:00",
+      "summary": "About five hours into Elon Musk's testimony, I typed the following sentence into my notes: \"I have never been more sympathetic to Sam Altman in my life.\" Musk's direct testimony was an improvement over yesterday - even if his lawyer kept asking leading questions to cue him in how to answer. But that memory was [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "GOOGL",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "On the stand, Elon Musk can’t escape his own tweets",
+      "link": "https://techcrunch.com/2026/04/29/on-the-stand-elon-musk-cant-escape-his-own-tweets",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T07:58:36+08:00",
+      "summary": "Elon Musk took the stand for the second day for his attempt to legally dismantle OpenAI.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "GOOGL",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "How information and communication technologies can empower women in Senegal",
+      "link": "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/how-information-and-communication-technologies-can-empower-women-in-senegal",
+      "source": "Atlantic Council",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-30T03:21:21+08:00",
+      "summary": "Data and interview results show how information and communication technologies are empowering women in Senegal's informal economy. The post How information and communication technologies can empower women in Senegal appeared first on Atlantic Council.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "All the evidence unveiled so far in Musk v. Altman",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T02:03:05+08:00",
+      "summary": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and corporate documents are circulating from the earliest days of OpenAI - and from before the AI lab even had a name. Some high-level takeaways: [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT",
+        "META",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Building Pi, and what makes self-modifying software so fascinating",
+      "link": "https://newsletter.pragmaticengineer.com/p/building-pi-and-what-makes-self-modifying",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-29T22:30:17+08:00",
+      "summary": "Mario Zechner, creator of Pi, joins Armin Ronacher to explore AI coding&#8217;s limits, arguing that human judgment still matters most in an agent-driven world.",
+      "event_type": "earnings",
+      "tickers": [
+        "1989",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Western Withdrawal, Jihadist Expansion: How the Sahel Became Ground Zero for Global Terrorism",
+      "link": "https://warontherocks.com/western-withdrawal-jihadist-expansion-how-the-sahel-became-ground-zero-for-global-terrorism",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-29T15:30:34+08:00",
+      "summary": "On April 25, armed groups launched near-simultaneous attacks against military installations and key strategic sites across Mali. Claimed by Jama&#8217;at Nusrat al-Islam wal-Muslimin, a jihadist group, and conducted in coordination with Tuareg separatist forces from the Front de lib&#233;ration de l&#8217;Azawad, the attacks targeted multiple nodes across the country&#8217;s security architecture simultaneously, from the capital Bamako to Gao, Mopti, and Kidal.While the attacks themselves were a",
+      "event_type": "earnings",
+      "tickers": [
+        "7008"
+      ]
+    },
+    {
+      "title": "The Disposable Oligarchs",
+      "link": "https://www.foreignaffairs.com/united-states/disposable-oligarchs",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T12:00:00+08:00",
+      "summary": "Why wealthy elites come to regret their bargains with authoritarians.",
+      "event_type": "policy",
+      "tickers": [
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSLA",
+        "JPM"
+      ]
+    },
+    {
+      "title": "How we're shaking up Platformer for the AI era",
+      "link": "https://www.platformer.news/platformer-schedule-changes-ai-automation",
+      "source": "Platformer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T08:27:26+08:00",
+      "summary": "On newsletters in the age of AI automation. PLUS: Musk and OpenAI in court, and China blocks Meta's Manus acquisition",
+      "event_type": "earnings",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
+      "title": "Elon Musk and Sam Altman are going to court over OpenAI’s future",
+      "link": "https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-28T06:52:57+08:00",
+      "summary": "After a yearslong legal feud, Elon Musk and OpenAI CEO Sam Altman are heading to trial this week in Northern California in a case that could have sweeping consequences. Ahead of OpenAI’s highly anticipated IPO, the court could rule on whether the company is allowed to exist as a for-profit enterprise and might even oust&#8230;",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Musk and Altman face off in trial that will determine OpenAI's future",
+      "link": "https://arstechnica.com/tech-policy/2026/04/musk-and-altman-face-off-in-trial-that-will-determine-openais-future",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-28T04:45:18+08:00",
+      "summary": "Musk’s shifting stance on AI dangers may complicate trial over OpenAI’s mission.",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "TSLA",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "How Project Maven taught the military to love AI",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-25T01:00:00+08:00",
+      "summary": "In the first 24 hours of the assault on Iran, the US military struck more than 1,000 targets, nearly double the scale of the \"shock and awe\" attack on Iraq over two decades ago. This acceleration was made possible by AI systems that speed up the targeting process. Chief among them is the Maven Smart [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Presence or Capacity? The Coast Guard Can Have Both Through Small Boat Stations",
+      "link": "https://warontherocks.com/presence-or-capacity-the-coast-guard-can-have-both-through-small-boat-stations",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-24T15:30:17+08:00",
+      "summary": "Closing small boat stations has proven difficult. Leaving them unchanged is operationally inefficient. These units are enduring parts of the Coast Guard&#8217;s force structure, yet their full potential is not always realized. This article proposes a model to better align their mission with national priorities.During the recent Senate confirmation hearing for the next commandant of the U.S. Coast Guard, senators raised a wide range of global maritime concerns, including Arctic competition, cyber",
+      "event_type": "earnings",
+      "tickers": [
+        "1844",
+        "1973",
+        "1988"
+      ]
+    },
+    {
+      "title": "Brazil beckoned: China now has stock and bond ‘connect’ schemes in these 5 regions",
+      "link": "https://www.scmp.com/economy/global-economy/article/3351185/brazil-beckoned-china-now-has-stock-and-bond-connect-schemes-these-5-regions",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-24T07:00:10+08:00",
+      "summary": "China has launched a bond-market-connect scheme with Brazil, Chinese media outlets reported this week, marking the first such link among emerging markets. Schemes such as this one, often dubbed “connects” between Chinese bond or stock markets and their offshore counterparts, typically allow investors to bypass special permits or capital-flow controls when trading on either side’s exchanges. China now maintains at least five offshore capital-market “connect” schemes on three continents. Hong...",
+      "event_type": "news",
+      "tickers": []
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -300314.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": -95158.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150424",
+      "filed_at": "1150424",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -239440.0,
+      "operating_income": -402736.0,
+      "gross_profit": 11980.0,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150417",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -239440.0,
+      "operating_income": -402736.0,
+      "gross_profit": 11980.0,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150409",
+      "filed_at": "1150409",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -239440.0,
+      "operating_income": -402736.0,
+      "gross_profit": 11980.0,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150408",
+      "filed_at": "1150408",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -239440.0,
+      "operating_income": -402736.0,
+      "gross_profit": 11980.0,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150403",
+      "filed_at": "1150403",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -239440.0,
+      "operating_income": -402736.0,
+      "gross_profit": 11980.0,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150402",
+      "filed_at": "1150402",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -239440.0,
+      "operating_income": -402736.0,
+      "gross_profit": 11980.0,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 223070.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150416",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 223070.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11502",
+      "period_end": "11502",
+      "filed_at": "1150317",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 216832.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 2734198.0,
+      "monthly_revenue": null,
+      "net_income": -300314.0,
+      "operating_income": -402736.0,
+      "gross_profit": null,
+      "eps_diluted": -0.56,
+      "operating_cash_flow": -95158.0,
+      "capex": 237577.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2017",
+    "market": "tw",
+    "company_name": "官田鋼鐵股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 2734198.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": -300314.0,
+      "eps": -0.56,
+      "fcf": null,
+      "ocf": -95158.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": -0.10983622985606749,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 0.0,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 2734198.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": -300314.0,
+        "eps_diluted": -0.56,
+        "fcf": null,
+        "ocf": -95158.0,
+        "capex": null,
+        "company_name": "官田鋼鐵股份有限公司"
+      },
+      {
+        "fiscal_year": 114,
+        "fiscal_period": "Q4",
+        "revenue": 2734198.0,
+        "gross_profit": 11980.0,
+        "operating_income": -402736.0,
+        "net_income": -239440.0,
+        "eps_diluted": -0.56,
+        "fcf": null,
+        "ocf": -95158.0,
+        "capex": 237577.0,
+        "company_name": "官田鋼"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:20Z"
+}

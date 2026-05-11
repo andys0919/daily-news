@@ -380,13 +380,140 @@ def _bundle_to_dict(bundle: fr.FinancialSnapshotBundle | None) -> dict | None:
     }
 
 
+def _meaningful_news_for_ticker(db_path: Path, ticker: str, limit: int = 40) -> list[dict]:
+    """Pull only news with investment substance for a ticker.
+
+    Substance = (a) event_type is set, OR (b) title contains a guidance phrase.
+    Plain ticker-mention noise is dropped.
+    """
+    conn = _connect(db_path)
+    try:
+        rows = conn.execute(
+            """
+            SELECT title, link, source, category, published, summary, body_text,
+                   tickers_json, companies_json, event_type
+            FROM articles
+            WHERE tickers_json LIKE ?
+            ORDER BY published DESC
+            LIMIT 400
+            """,
+            (f'%"{ticker}"%',),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+    finally:
+        conn.close()
+    NOISY_SOURCE_SUBSTR = (
+        "arxiv", "lobsters", "servethehome", "github trending",
+        "x @googledeepmind", "x @openai", "reddit r/", "hackernews",
+        "semiconductor engineering",
+    )
+    NOISY_TITLE_PATTERNS = (
+        "arxiv:",
+        "/ (arxiv",
+        " (arxiv",
+        "[paper]",
+        "open-source github",
+        "github.com/",
+        "best gaming",
+        "best laptop",
+        "best deal",
+        "early black friday",
+        "amazon.com:",
+    )
+    out: list[dict] = []
+    seen_titles: set[str] = set()
+    for row in rows:
+        rec = dict(row)
+        t_list = _parse_tickers(rec.pop("tickers_json", None))
+        if ticker.upper() not in t_list:
+            continue
+        title = (rec["title"] or "").strip()
+        if not title:
+            continue
+        src = (rec.get("source") or "").strip().lower()
+        if any(s in src for s in NOISY_SOURCE_SUBSTR):
+            continue
+        lower_title = title.lower()
+        if any(p in lower_title for p in NOISY_TITLE_PATTERNS):
+            continue
+        norm = lower_title.split(" - ")[0].strip()
+        if norm in seen_titles:
+            continue
+        seen_titles.add(norm)
+        event = (rec.get("event_type") or "").lower()
+        has_specific_event = event in {"earnings", "capex", "policy", "filing"}
+        guidance_dir = _classify_guidance(title)
+        if not has_specific_event and not guidance_dir:
+            continue
+        rec["tickers"] = t_list
+        rec["companies"] = _parse_companies(rec.pop("companies_json", None))
+        rec["guidance_direction"] = guidance_dir
+        rec["body_text"] = (rec.get("body_text") or "")[:400]
+        out.append(rec)
+        if len(out) >= limit:
+            break
+    return out
+
+
+_NOISY_SRC_SUBSTR = (
+    "arxiv", "lobsters", "servethehome", "github trending",
+    "x @googledeepmind", "x @openai", "reddit r/", "hackernews",
+    "semiconductor engineering",
+)
+
+
+def _finance_news_for_ticker(db_path: Path, ticker: str, limit: int = 25) -> list[dict]:
+    """Recent news (any tag) for ticker, but filtered to drop dev/academic sources."""
+    conn = _connect(db_path)
+    try:
+        rows = conn.execute(
+            """
+            SELECT title, link, source, category, published, summary,
+                   tickers_json, event_type
+            FROM articles
+            WHERE tickers_json LIKE ?
+            ORDER BY published DESC
+            LIMIT 200
+            """,
+            (f'%"{ticker}"%',),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return []
+    finally:
+        conn.close()
+    out: list[dict] = []
+    seen: set[str] = set()
+    for r in rows:
+        rec = dict(r)
+        src = (rec.get("source") or "").lower()
+        if any(s in src for s in _NOISY_SRC_SUBSTR):
+            continue
+        title = (rec.get("title") or "").strip()
+        if not title:
+            continue
+        norm = title.lower().split(" - ")[0]
+        if norm in seen:
+            continue
+        seen.add(norm)
+        rec["tickers"] = _parse_tickers(rec.pop("tickers_json", None))
+        out.append(rec)
+        if len(out) >= limit:
+            break
+    return out
+
+
 def _per_stock(
     db_path: Path,
     market: str,
     ticker: str,
     recent_news_pool: list[dict] | None = None,
 ) -> dict:
-    bundle = fr.get_financial_snapshot_bundle(db_path, market=market, ticker=ticker)
+    bundle = None
+    try:
+        bundle = fr.get_financial_snapshot_bundle(db_path, market=market, ticker=ticker)
+    except Exception:
+        bundle = None
     try:
         transcripts = fr.get_recent_issuer_materials(db_path, market=market, ticker=ticker, limit=5) or []
     except Exception:
@@ -400,18 +527,25 @@ def _per_stock(
     except Exception:
         shorts = []
     history = _financial_history(db_path, ticker, market, limit=20)
-    if recent_news_pool is None:
-        conn = _connect(db_path)
-        try:
-            recent_news_pool = _recent_news(conn, limit=2000)
-        finally:
-            conn.close()
-    related = [n for n in recent_news_pool if ticker.upper() in (n.get("tickers") or [])][:40]
+    # Two-tier news lists:
+    #   meaningful_news: strict (earnings/capex/policy/filing OR guidance phrase)
+    #   recent_news: finance-source-filtered general news (drops arxiv/dev/etc)
+    related = _meaningful_news_for_ticker(db_path, ticker, limit=40)
+    general = _finance_news_for_ticker(db_path, ticker, limit=30)
+    # Drop articles already in `related` from general to avoid dupes
+    related_links = {n.get("link") for n in related if n.get("link")}
+    general = [n for n in general if n.get("link") not in related_links]
     co_mentions: Counter[str] = Counter()
     for n in related:
         for other in n.get("tickers") or []:
             if other.upper() != ticker.upper():
                 co_mentions[other.upper()] += 1
+    latest_fund: dict | None = None
+    if history:
+        f_sum = _fundamentals_summary(db_path, [ticker])
+        if f_sum:
+            latest_fund = f_sum[0]
+            latest_fund["health"] = _classify_health(latest_fund.get("latest"))
     return {
         "ticker": ticker.upper(),
         "market": market,
@@ -421,7 +555,9 @@ def _per_stock(
         "short_interest": shorts,
         "holdings": [],
         "recent_news": related,
+        "general_news": general,
         "history": history,
+        "fundamentals": latest_fund,
         "co_mentions": [{"ticker": t, "count": c} for t, c in co_mentions.most_common(10)],
         "generated_at": _utcnow_iso(),
     }
@@ -1084,11 +1220,66 @@ def export_all(
     _write(watchlist_path, {"tickers": tickers})
     artefacts["watchlist"] = watchlist_path
 
-    for ticker in tickers:
-        market = _infer_market(ticker)
+    # Build a wider universe of tickers with enough data to merit a page.
+    universe: dict[str, dict] = {}
+    for c in coverage:
+        t = c["ticker"]
+        if not t:
+            continue
+        # Filter: keep if has reports OR >= 3 articles OR is in watchlist
+        if c.get("reports", 0) > 0 or c.get("articles", 0) >= 3 or t in {x.upper() for x in tickers}:
+            universe[t] = c
+
+    # Always include watchlist
+    for t in tickers:
+        u = t.upper()
+        if u not in universe:
+            universe[u] = {"ticker": u, "market": _infer_market(t), "articles": 0, "reports": 0}
+
+    # Generate per-ticker JSON for the full universe
+    for ticker, meta in universe.items():
+        market = meta.get("market") or _infer_market(ticker)
         path = output_dir / "stocks" / f"{ticker.upper()}.json"
         _write(path, _per_stock(db_path, market, ticker, recent_news_pool=recent_news_pool))
         artefacts[f"stock:{ticker}"] = path
+
+    # Lookup company names from financial_reports
+    name_map: dict[str, str] = {}
+    try:
+        conn2 = _connect(db_path)
+        try:
+            for row in conn2.execute(
+                "SELECT ticker, company_name FROM financial_reports WHERE company_name IS NOT NULL GROUP BY ticker"
+            ).fetchall():
+                if row["ticker"] and row["company_name"]:
+                    name_map[row["ticker"].upper()] = row["company_name"]
+        finally:
+            conn2.close()
+    except Exception:
+        pass
+
+    # Search index — articles-first ranking (newsworthy beats raw-reports count)
+    search_index = sorted(
+        [
+            {
+                "ticker": t,
+                "name": name_map.get(t, ""),
+                "market": meta.get("market") or _infer_market(t),
+                "articles": meta.get("articles", 0),
+                "reports": meta.get("reports", 0),
+                "label": f"{t} ({'TW' if (meta.get('market') == 'tw' or t.isdigit()) else 'US'})",
+            }
+            for t, meta in universe.items()
+        ],
+        key=lambda x: (
+            -1 if x["articles"] == 0 else 0,  # has-articles first
+            x["articles"] * 3 + x["reports"],
+        ),
+        reverse=True,
+    )
+    search_path = output_dir / "tickers.json"
+    _write(search_path, {"generated_at": _utcnow_iso(), "tickers": search_index})
+    artefacts["tickers"] = search_path
 
     return artefacts
 

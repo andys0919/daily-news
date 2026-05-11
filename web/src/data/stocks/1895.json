@@ -1,0 +1,95 @@
+{
+  "ticker": "1895",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Venezuela Needs Regime Change",
+      "link": "https://www.foreignaffairs.com/venezuela/venezuela-needs-regime-change-javier-corrales",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The narrow path to a democratic transition.",
+      "body_text": "The Narrow Path to a Democratic Transition\nJavier Corrales\nMay/June 2026\nWhen U.S. forces swooped into Caracas in January to seize President Nicolás Maduro, many Venezuelans inside and outside the country rejoiced. Maduro’s ouster seemed to signal the imminent end of a regime that had for years oppressed and immiserated its people. Thanks to bold U.S. action, a government that had rankled its neig",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1935",
+        "1958",
+        "1989",
+        "1975",
+        "1895"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "'They told me he was dead': Children born near army base learn truth about UK soldier dads",
+      "link": "https://www.bbc.com/news/articles/c895k3537kgo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-20T07:07:52+08:00",
+      "summary": "A DNA and legal project has identified the fathers of 20 children born near a military base in Kenya.",
+      "body_text": "\"Edward\", a nine-year old Kenyan boy, has always been aware his father worked for the British military. The boy's skin colour, lighter than his peers, has provoked years of bullying. His father disappeared before Edward [not his real name] was born, leaving his mum living in extreme poverty, ostracised by some of her family.\nNow this man, who worked as a contractor at a British army base in Kenya,",
+      "event_type": "earnings",
+      "tickers": [
+        "1964",
+        "1895",
+        "1963"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Is Japan’s treaty-day Taiwan Strait warship transit a new flashpoint with China?",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3350646/japans-treaty-day-taiwan-strait-warship-transit-new-flashpoint-china",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-19T23:55:08+08:00",
+      "summary": "Tensions in East Asia reached a fresh peak with a Japanese warship’s transit of the Taiwan Strait on a historically freighted date for China. According to the PLA Eastern Theatre Command, the Japanese destroyer JS Ikazuchi spent 14 hours navigating the sensitive waterway on Friday, the anniversary of the 1895 Treaty of Shimonoseki or Treaty of Maguan, an unequal treaty that forced the then-ruling Qing dynasty administration to cede Taiwan to Japanese colonial rule. In a commentary on Saturday,..",
+      "event_type": "news",
+      "tickers": [
+        "1895"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1961",
+      "count": 1
+    },
+    {
+      "ticker": "1935",
+      "count": 1
+    },
+    {
+      "ticker": "1958",
+      "count": 1
+    },
+    {
+      "ticker": "1989",
+      "count": 1
+    },
+    {
+      "ticker": "1975",
+      "count": 1
+    },
+    {
+      "ticker": "1964",
+      "count": 1
+    },
+    {
+      "ticker": "1963",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

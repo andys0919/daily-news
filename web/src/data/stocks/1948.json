@@ -1,0 +1,78 @@
+{
+  "ticker": "1948",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
+      "link": "https://www.cnbc.com/2026/04/30/inside-the-fed-powell-and-warsh-set-to-clash.html",
+      "source": "CNBC Economy",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T03:25:06+08:00",
+      "summary": "When the Fed gathers again, it will mark the first time a sitting and former chair conduct business together in nearly 80 years.",
+      "body_text": "When the Federal Open Market Committee gathers again in mid-June, it will mark the first time in nearly 80 years that a sitting and former chair conduct business together, a historic overlap that comes at a sensitive time for the central bank.\nWhile the scenario could look something like the clash of the policy titans, the meeting with the incoming Chair Kevin Warsh and outgoing Jerome Powell like",
+      "event_type": "policy",
+      "tickers": [
+        "1969",
+        "1948"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "CEOs admit AI had no impact on employment or productivity",
+      "link": "https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-20T05:56:22+08:00",
+      "summary": "Article URL: https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study/ Comments URL: https://news.ycombinator.com/item?id=47827985 Points: 69 # Comments: 58",
+      "body_text": "In 1987, economist and Nobel laureate Robert Solow made a stark observation about the stalling evolution of the Information Age: Following the advent of transistors, microprocessors, integrated circuits, and memory chips of the 1960s, economists and companies expected these new technologies to disrupt workplaces and result in a surge of productivity. Instead, productivity growth slowed , dropping ",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "1948",
+        "1973"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Lebanon’s Coming Collapse",
+      "link": "https://www.foreignaffairs.com/lebanon/lebanons-coming-collapse",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-03T12:00:00+08:00",
+      "summary": "An Israeli assault is pushing the fragile country to the brink.",
+      "event_type": "news",
+      "tickers": [
+        "1701",
+        "1982",
+        "1948",
+        "1967"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1969",
+      "count": 1
+    },
+    {
+      "ticker": "1987",
+      "count": 1
+    },
+    {
+      "ticker": "1973",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

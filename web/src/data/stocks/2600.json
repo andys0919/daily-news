@@ -1,0 +1,161 @@
+{
+  "ticker": "2600",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "三星傻眼了！台積電放大絕，要餐桌上不留一點菜給競爭對手",
+      "link": "https://finance.technews.tw/2026/04/17/tsmc-goes-all-out-leaving-no-food-for-its-competitors-to-eat",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-17T06:00:18+08:00",
+      "summary": "隨著全球人工智慧 （AI） 技術的爆發性成長，半導體產業的先進製程正面臨史無前例的供需失衡。根據韓國媒體近期的 [&#8230;]",
+      "body_text": "隨著全球人工智慧（AI）技術的爆發性成長，半導體產業的先進製程正面臨史無前例的供需失衡。根據韓國媒體近期的深入分析與報導，全球晶圓代工龍頭 台積電 （TSMC）的 2 奈米製程產能已全面滿載至 2028 年，這為長期受制於市占率落後的三星電子帶來了絕佳的「替代效應」商機。然而，台積電並未給予對手太多喘息空間，正透過大幅度的擴產與資本支出計畫，強力防堵三星藉機搶占市場占有率，就是「餐桌上不留任何一點菜給競爭對手」。\n在AI大熱潮的推動下，台積電目前的產能已經達到了極限。根據產業界消息指出，台積電的 2 奈米製程訂單已經被輝達（Nvidia）、超微（AMD）、高通（Qualcomm）與蘋果（Apple）等大型科技巨頭全數包攬，預約期一路排到了 2028 年。甚至連台積電預計於 2030 年才開始量產、專攻 2 奈米以下製程的美國亞利桑那州第四座晶圓廠（Fab 4），在尚未動工前就已傳出產能幾乎",
+      "event_type": "earnings",
+      "tickers": [
+        "2600",
+        "2330",
+        "TSM",
+        "NVDA",
+        "AAPL",
+        "GOOGL",
+        "AMZN",
+        "TSLA"
+      ],
+      "companies": [
+        "台積電",
+        "TSMC",
+        "NVIDIA",
+        "Apple",
+        "Google",
+        "Amazon",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Why TSMC grew four times faster than its foundry rivals in 2025 — price hikes, vertical integration, and commanding technology lead pay dividends",
+      "link": "https://www.tomshardware.com/tech-industry/why-tsmc-grew-four-times-faster-than-its-foundry-rivals-in-2025",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-07T03:07:23+08:00",
+      "summary": "That lopsided split isn’t a one-quarter anomaly or a function of a single product cycle, but instead reflects three massive advantages held by TSMC.",
+      "body_text": "A 36% versus 8% growth split comes down to three advantages competitors can’t quickly replicate.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nGet Tom's Hardware's best news and in-depth reviews, straight to your inbox.\nYou are now subscribed\nYour newsletter sign-up was successful\nCounterpoint Research's full-year Foundry Market Supply Trac",
+      "event_type": "earnings",
+      "tickers": [
+        "2500",
+        "2600",
+        "TSM",
+        "NVDA",
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "TSMC",
+        "NVIDIA",
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Micron Readies Client Storage for AI",
+      "link": "https://www.eetimes.com/micron-readies-client-storage-for-ai",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-01T22:00:00+08:00",
+      "summary": "Privacy and security concerns are expected to drive more on-premises AI workloads, bringing sensitive IP onto desktops. The post Micron Readies Client Storage for AI appeared first on EE Times.",
+      "body_text": "Micron Technology is prepping desktops for AI.\nIts latest QLC SSD targets mainstream PCs and ultra-thin laptops and, according to the company, is the industry’s first PCIe Gen5 QLC SSD for client computing.\nChristopher Moore, VP of marketing for Micron’s mobile and client business unit, said Micron foresees commercial client computing to increasingly require local AI capabilities primarily due to ",
+      "event_type": "earnings",
+      "tickers": [
+        "3610",
+        "2600"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Monday assorted links",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/monday-assorted-links-556.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T00:05:08+08:00",
+      "summary": "1. Sindarov profile. And: &#8220;I know this GM who made 2600 at 19 without reading a chess book in his life.&#8221; And Magnus on Sindarov vs. Gukesh. 2. Inflation-adjusted book prices over time. 3. On the Amanat Iran book and its excellence. 4. More on the wet market hypothesis. We should all be uncertain, but [&#8230;] The post Monday assorted links appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "2600"
+      ]
+    },
+    {
+      "title": "Samsung's 2nm Exynos 2600 loses to Qualcomm's 3nm on battery and thermals - digitimes.com",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaGpwd0pjLUd2UUZqUi1kNW9JUnpGN2JMd2N0bUl5X1QyRzM5aTcwdUZtRTdrVEt1NmhUOVBpSUVmNlB1VnBvbmJJNDc3b0huTHJHM25DdC1NY3FlVnBuZk5sbWVMeldHaDBXeldweHlTRjgtcHhtem94STFxRENOZGl1NFNGSnBsVHc?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-01T07:45:15+08:00",
+      "summary": "Samsung's 2nm Exynos 2600 loses to Qualcomm's 3nm on battery and thermals&nbsp;&nbsp;digitimes.com",
+      "event_type": "news",
+      "tickers": [
+        "2600"
+      ]
+    },
+    {
+      "title": "Exynos 2600 經實測峰值功耗達 30W！三星 2 奈米 GAA 效能仍輸台積 3 奈米",
+      "link": "https://technews.tw/2026/03/28/exynos-2600-samsung-2nm-gaa",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-03-28T10:13:15+08:00",
+      "summary": "Exynos 2600 是三星首款 2 奈米 GAA 製程晶片，照理說應該比舊製程有更高效能和能效，但根據最新 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "2600"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "TSM",
+      "count": 2
+    },
+    {
+      "ticker": "NVDA",
+      "count": 2
+    },
+    {
+      "ticker": "AAPL",
+      "count": 2
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 2
+    },
+    {
+      "ticker": "2330",
+      "count": 1
+    },
+    {
+      "ticker": "AMZN",
+      "count": 1
+    },
+    {
+      "ticker": "TSLA",
+      "count": 1
+    },
+    {
+      "ticker": "2500",
+      "count": 1
+    },
+    {
+      "ticker": "3610",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

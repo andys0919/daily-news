@@ -1,0 +1,70 @@
+{
+  "ticker": "1800",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "CNBC's UK Exchange newsletter: Brace yourself for rising bills as new tax year kicks off",
+      "link": "https://www.cnbc.com/2026/04/08/uk-exchange-tax-year-rising-bills-labour-government.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-08T13:30:20+08:00",
+      "summary": "Along with higher energy costs, due to the Middle East conflict, U.K. tax changes promise to add to the unpopularity of the Labour government in coming months.",
+      "body_text": "This report is from this week's CNBC's UK Exchange newsletter, which brings you expert insights on the most critical business stories in Britain. You can subscribe here .\nHello and welcome to this week's CNBC U.K. Exchange.\nThis week I am assessing the many changes taking place with the start of the new tax year and the largely negative consequences they will have for British households and busine",
+      "event_type": "earnings",
+      "tickers": [
+        "1752",
+        "1800"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Cost of Hesitation: Why “Finishing the Mission” is Imperative in Iran",
+      "link": "https://warontherocks.com/2026/03/the-cost-of-hesitation-why-finishing-the-mission-is-imperative-in-iran",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-31T15:15:53+08:00",
+      "summary": "Editor&#8217;s Note: War on the Rocks is running &#8220;for&#8221; and &#8220;against&#8221; articles on the war with Iran by legislators with military backgrounds. You can find the other article here.The view from a C-130 during a combat mission in the Middle East provides clarity that is often lost in the sanitized briefing rooms of Washington. As an Air Force medical crew director, I have looked into the eyes of young servicemembers being medevacked out of theater, and I lived through what de",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nEditor’s Note: War on the Rocks is running “for” and “against” articles on the war with Iran by legislators with military backgrounds. You can find the other article here . The view from a C-130 during a combat mission in the Middle East provides clarity that is often lost ",
+      "event_type": "policy",
+      "tickers": [
+        "1800",
+        "1422"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "HyperX Eve 1800 Review: Not worth $50",
+      "link": "https://www.tomshardware.com/peripherals/gaming-keyboards/hyperx-eve-1800-review",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-11T20:00:00+08:00",
+      "summary": "The HyperX Eve 1800 is not a good keyboard, even for $50, as it’s lacking in features and not pleasant to use.",
+      "event_type": "news",
+      "tickers": [
+        "1800"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1752",
+      "count": 1
+    },
+    {
+      "ticker": "1422",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

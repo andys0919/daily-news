@@ -1,0 +1,588 @@
+{
+  "ticker": "2029",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2029",
+    "company_name": "盛餘",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2029",
+      "company_name": "盛餘",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 13270890.0,
+      "monthly_revenue": null,
+      "net_income": 252112.0,
+      "operating_income": 293991.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 0.74,
+      "operating_cash_flow": 1104105.0,
+      "capex": 371806.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　銷貨收入淨額\", \"13,270,890\", \"100.00\", \"13,690,701\", \"100.00\"], [\"營業收入合計\", \"13,270,890\", \"100.00\", \"13,690,701\", \"100.00\"], [\"　銷貨成本\", \"11,903,711\", \"89.70\", \"12,376,090\", \"90.40\"], [\"營業成本合計\", \"11,903,711\", \"89.70\", \"12,376,090\", \"90.40\"], [\"營業毛利（毛損）\", \"1,367,179\", \"10.30\", \"1,314,611\", \"9.60\"], [\"營業毛利（毛損）淨額\", \"1,367,179\", \"10.30\", \"1,314,611\", \"9.60\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"734,281\", \"5.53\", \"363,603\", \"2.66\"], [\"　　管理費用\", \"251,646\", \"1.90\", \"242,116\", \"1.77\"], [\"　　研究發展費用\", \"87,261\", \"0.66\", \"83,741\", \"0.61\"], [\"　營業費用合計\", \"1,073,188\", \"8.09\", \"689,460\", \"5.04\"], [\"營業利益（損失）\", \"293,991\", \"2.22\", \"625,151\", \"4.57\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"74,717\", \"0.56\", \"76,663\", \"0.56\"], [\"　　其他收入\", \"183\", \"0.00\", \"180\", \"0.00\"], [\"　　其他利益及損失淨額\", \"-47,296\", \"-0.36\", \"61,011\", \"0.45\"], [\"　　財務成本淨額\", \"5,637\", \"0.04\", \"3,444\", \"0.03\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"1,573\", \"0.01\", \"-24,757\", \"-0.18\"], [\"　營業外收入及支出合計\", \"23,540\", \"0.18\", \"109,653\", \"0.80\"], [\"稅前淨利（淨損）\", \"317,531\", \"2.39\", \"734,804\", \"5.37\"], [\"所得稅費用（利益）合計\", \"65,419\", \"0.49\", \"144,857\", \"1.06\"], [\"繼續營業單位本期淨利（淨損）\", \"252,112\", \"1.90\", \"589,947\", \"4.31\"], [\"本期淨利（淨損）\", \"252,112\", \"1.90\", \"589,947\", \"4.31\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"29,725\", \"0.22\", \"83,407\", \"0.61\"], [\"　　　與不重分類之項目相關之所得稅\", \"5,945\", \"0.04\", \"16,681\", \"0.12\"], [\"　不重分類至損益之項目：\", \"23,780\", \"0.18\", \"66,726\", \"0.49\"], [\"　　　國外營運機構財務報表換算之兌換差額\", \"1,699\", \"0.01\", \"14,480\", \"0.11\"], [\"　　　與可能重分類之項目相關之所得稅\", \"0\", \"0.00\", \"289\", \"0.00\"], [\"　後續可能重分類至損益之項目：\", \"1,699\", \"0.01\", \"14,191\", \"0.10\"], [\"　其他綜合損益（淨額）\", \"25,479\", \"0.19\", \"80,917\", \"0.59\"], [\"本期綜合損益總額\", \"277,591\", \"2.09\", \"670,864\", \"4.90\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利∕損）\", \"239,101\", \"1.80\", \"581,233\", \"4.25\"], [\"　非控制權益（淨利∕損）\", \"13,011\", \"0.10\", \"8,714\", \"0.06\"], [\"　母公司業主（綜合損益）\", \"264,506\", \"1.99\", \"660,440\", \"4.82\"], [\"　非控制權益（綜合損益）\", \"13,085\", \"0.10\", \"10,424\", \"0.08\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"0.74\", \"\", \"1.81\", \"\"], [\"　基本每股盈餘\", \"0.74\", \"\", \"1.81\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　　繼續營業單位淨利（淨損）\", \"0.74\", \"\", \"1.81\", \"\"], [\"　稀釋每股盈餘\", \"0.74\", \"\", \"1.81\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2029&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2029&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"盛餘\"}, \"datetime\": \"115/05/10 09:00:50\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"2,986,466\", \"26.38\", \"2,767,824\", \"24.04\"], [\"　　　合約資產－流動\", \"28,243\", \"0.25\", \"47,764\", \"0.41\"], [\"　　　應收票據淨額\", \"27,667\", \"0.24\", \"9,013\", \"0.08\"], [\"　　　應收帳款淨額\", \"644,135\", \"5.69\", \"1,008,663\", \"8.76\"], [\"　　　其他應收款淨額\", \"36,432\", \"0.32\", \"47,395\", \"0.41\"], [\"　　　存貨\", \"1,843,816\", \"16.29\", \"2,137,813\", \"18.57\"], [\"　　　預付款項\", \"169,347\", \"1.50\", \"142,026\", \"1.23\"], [\"　　　待出售非流動資產（或處分群組）淨額\", \"233,700\", \"2.06\", \"0\", \"0.00\"], [\"　　　其他流動資產\", \"2,191,487\", \"19.36\", \"2,073,442\", \"18.01\"], [\"　　流動資產合計\", \"8,161,293\", \"72.10\", \"8,233,940\", \"71.52\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　採用權益法之投資\", \"0\", \"0.00\", \"259,841\", \"2.26\"], [\"　　　不動產、廠房及設備\", \"2,458,715\", \"21.72\", \"2,361,531\", \"20.51\"], [\"　　　使用權資產\", \"15,492\", \"0.14\", \"10,621\", \"0.09\"], [\"　　　投資性不動產淨額\", \"308,425\", \"2.72\", \"310,402\", \"2.70\"], [\"　　　無形資產\", \"16,015\", \"0.14\", \"15,672\", \"0.14\"], [\"　　　遞延所得稅資產\", \"92,362\", \"0.82\", \"84,498\", \"0.73\"], [\"　　　其他非流動資產\", \"267,357\", \"2.36\", \"236,403\", \"2.05\"], [\"　　非流動資產合計\", \"3,158,366\", \"27.90\", \"3,278,968\", \"28.48\"], [\"　資產總額\", \"11,319,659\", \"100.00\", \"11,512,908\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"189,294\", \"1.67\", \"151,735\", \"1.32\"], [\"　　　合約負債－流動\", \"97,555\", \"0.86\", \"42,751\", \"0.37\"], [\"　　　應付票據\", \"171\", \"0.00\", \"495\", \"0.00\"], [\"　　　應付帳款\", \"153,623\", \"1.36\", \"223,498\", \"1.94\"], [\"　　　應付帳款－關係人\", \"89,166\", \"0.79\", \"122,707\", \"1.07\"], [\"　　　其他應付款\", \"449,007\", \"3.97\", \"464,535\", \"4.03\"], [\"　　　本期所得稅負債\", \"15,275\", \"0.13\", \"68,671\", \"0.60\"], [\"　　　租賃負債－流動\", \"4,975\", \"0.04\", \"5,438\", \"0.05\"], [\"　　　其他流動負債\", \"66,162\", \"0.58\", \"60,737\", \"0.53\"], [\"　　流動負債合計\", \"1,065,228\", \"9.41\", \"1,140,567\", \"9.91\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　負債準備－非流動\", \"10,947\", \"0.10\", \"9,452\", \"0.08\"], [\"　　　遞延所得稅負債\", \"78,276\", \"0.69\", \"72,597\", \"0.63\"], [\"　　　租賃負債－非流動\", \"9,927\", \"0.09\", \"4,597\", \"0.04\"], [\"　　　其他非流動負債\", \"515\", \"0.00\", \"515\", \"0.00\"], [\"　　非流動負債合計\", \"99,665\", \"0.88\", \"87,161\", \"0.76\"], [\"　負債總額\", \"1,164,893\", \"10.29\", \"1,227,728\", \"10.66\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"3,211,800\", \"28.37\", \"3,211,800\", \"27.90\"], [\"　　　股本合計\", \"3,211,800\", \"28.37\", \"3,211,800\", \"27.90\"], [\"　　資本公積\", \"\", \"\", \"\", \"\"], [\"　　　資本公積合計\", \"1,557,969\", \"13.76\", \"1,557,364\", \"13.53\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"1,967,195\", \"17.38\", \"1,902,403\", \"16.52\"], [\"　　　　特別盈餘公積\", \"0\", \"0.00\", \"7,023\", \"0.06\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"3,331,285\", \"29.43\", \"3,527,632\", \"30.64\"], [\"　　　保留盈餘合計\", \"5,298,480\", \"46.81\", \"5,437,058\", \"47.23\"], [\"　　其他權益\", \"\", \"\", \"\", \"\"], [\"　　　其他權益合計\", \"7,105\", \"0.06\", \"5,496\", \"0.05\"], [\"　　歸屬於母公司業主之權益合計\", \"10,075,354\", \"89.01\", \"10,211,718\", \"88.70\"], [\"　　非控制權益\", \"79,412\", \"0.70\", \"73,462\", \"0.64\"], [\"　權益總額\", \"10,154,766\", \"89.71\", \"10,285,180\", \"89.34\"], [\"　負債及權益總計\", \"11,319,659\", \"100.00\", \"11,512,908\", \"100.00\"], [\"　待註銷股本股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"0\", \"\", \"0\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2029&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2029&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年12月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年12月31日\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"盛餘\"}, \"datetime\": \"115/05/10 09:00:51\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"317,531\", \"734,804\"], [\"　本期稅前淨利（淨損）\", \"317,531\", \"734,804\"], [\"　　　折舊費用\", \"239,672\", \"272,974\"], [\"　　　攤銷費用\", \"6,990\", \"5,238\"], [\"　　　利息費用\", \"5,637\", \"3,444\"], [\"　　　利息收入\", \"-74,717\", \"-76,663\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-1,573\", \"24,757\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"2,664\", \"2,662\"], [\"　　　處分投資損失（利益）\", \"2,459\", \"0\"], [\"　　　非金融資產減損損失\", \"77,467\", \"0\"], [\"　　　非金融資產減損迴轉利益\", \"0\", \"-4,130\"], [\"　　　未實現外幣兌換損失（利益）\", \"-73\", \"0\"], [\"　　　其他項目\", \"39,124\", \"18,509\"], [\"　　　收益費損項目合計\", \"297,650\", \"246,791\"], [\"　　　　合約資產（增加）減少\", \"19,521\", \"-6,052\"], [\"　　　　應收票據（增加）減少\", \"-18,583\", \"-7,303\"], [\"　　　　應收帳款（增加）減少\", \"364,530\", \"-227,203\"], [\"　　　　其他應收款（增加）減少\", \"10,655\", \"-14,028\"], [\"　　　　存貨（增加）減少\", \"207,701\", \"-327,169\"], [\"　　　　預付款項（增加）減少\", \"-27,321\", \"-25,253\"], [\"　　　　其他流動資產（增加）減少\", \"7,458\", \"-5,714\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"563,961\", \"-612,722\"], [\"　　　　合約負債增加（減少）\", \"54,804\", \"3,922\"], [\"　　　　應付票據增加（減少）\", \"-324\", \"329\"], [\"　　　　應付帳款增加（減少）\", \"-69,875\", \"40,915\"], [\"　　　　應付帳款－關係人增加（減少）\", \"-33,541\", \"11,396\"], [\"　　　　其他應付款增加（減少）\", \"35,812\", \"57,748\"], [\"　　　　負債準備增加（減少）\", \"-46\", \"-108\"], [\"　　　　其他流動負債增加（減少）\", \"585\", \"104\"], [\"　　　　淨確定福利負債增加(減少)\", \"-9,900\", \"-17,150\"], [\"　　　　其他營業負債增加（減少）\", \"4,865\", \"2,546\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"-17,620\", \"99,702\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"546,341\", \"-513,020\"], [\"　　調整項目合計\", \"843,991\", \"-266,229\"], [\"　營運產生之現金流入（流出）\", \"1,161,522\", \"468,575\"], [\"　收取之利息\", \"75,025\", \"76,971\"], [\"　支付之利息\", \"-5,497\", \"-3,304\"], [\"　退還（支付）之所得稅\", \"-126,945\", \"-144,426\"], [\"營業活動之淨現金流入（流出）\", \"1,104,105\", \"397,816\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　處分子公司\", \"20,368\", \"0\"], [\"　取得不動產、廠房及設備\", \"-371,806\", \"-362,582\"], [\"　處分不動產、廠房及設備\", \"50\", \"0\"], [\"　存出保證金增加\", \"-2,419\", \"-61\"], [\"　取得無形資產\", \"-7,333\", \"-5,587\"], [\"　取得投資性不動產\", \"0\", \"-11,650\"], [\"　其他金融資產增加\", \"-125,503\", \"-1,312,963\"], [\"　其他非流動資產增加\", \"-14\", \"-293\"], [\"　投資活動之淨現金流入（流出）\", \"-486,657\", \"-1,693,136\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款增加\", \"481,664\", \"334,680\"], [\"　短期借款減少\", \"-442,022\", \"-246,691\"], [\"　租賃本金償還\", \"-6,198\", \"-5,882\"], [\"　發放現金股利\", \"-401,475\", \"-401,475\"], [\"　取得子公司股權\", \"-5,849\", \"0\"], [\"　非控制權益變動\", \"-7,135\", \"-832\"], [\"　籌資活動之淨現金流入（流出）\", \"-381,015\", \"-320,200\"], [\"匯率變動對現金及約當現金之影響\", \"-17,791\", \"1,161\"], [\"本期現金及約當現金增加（減少）數\", \"218,642\", \"-1,614,359\"], [\"期初現金及約當現金餘額\", \"2,767,824\", \"4,382,183\"], [\"期末現金及約當現金餘額\", \"2,986,466\", \"2,767,824\"], [\"　資產負債表帳列之現金及約當現金\", \"2,986,466\", \"2,767,824\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2029&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2029&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"盛餘\"}, \"datetime\": \"115/05/10 09:00:51\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2029",
+      "company_name": "盛餘",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 1247752.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2029\", \"公司名稱\": \"盛餘\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"1247752\", \"營業收入-上月營收\": \"832620\", \"營業收入-去年當月營收\": \"1343529\", \"營業收入-上月比較增減(%)\": \"49.8585188921717\", \"營業收入-去年同月增減(%)\": \"-7.128763130531607\", \"累計營業收入-當月累計營收\": \"3111785\", \"累計營業收入-去年累計營收\": \"3798303\", \"累計營業收入-前期比較增減(%)\": \"-18.07433477529307\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "FCC reverses course, allows software updates for foreign-made drones and routers until 2029 — agency says blocking security patches could create cybersecurity risks",
+      "link": "https://www.tomshardware.com/networking/routers/fcc-reverses-course-allows-software-updates-for-foreign-made-drones-and-routers-until-2029-agency-says-blocking-security-patches-could-create-cybersecurity-risks",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-09T22:35:02+08:00",
+      "summary": "The FCC has extended waivers allowing certain covered foreign-produced drones, drone components, and routers to continue receiving software and firmware updates until at least 2029, citing cybersecurity and consumer protection concerns.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Meet China’s moon porter for Chang’e-8 mission: a 4-wheeled robot with 2 arms",
+      "link": "https://www.scmp.com/news/china/science/article/3352998/meet-chinas-moon-porter-change-8-mission-4-wheeled-robot-2-arms",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-09T20:00:05+08:00",
+      "summary": "China is sending a new kind of explorer to the moon – with a humanoid upper body and four wheels. The lunar rover, developed by a team led by the Hong Kong University of Science and Technology (HKUST), is designed to act as an AI-powered porter for the Chang’e-8 mission, scheduled for 2029. The 100kg (220lbs) robot will transport, deploy and install instruments and sensors at their designated lunar locations after the Chang’e-8 probe lands. It is also tasked with collecting samples of the moon’s",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Rocket Lab surges 34% in best day ever on revenue beat, record-setting launch deal",
+      "link": "https://www.cnbc.com/2026/05/08/rocket-lab-rklb-q1-earnings-2026.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T05:15:33+08:00",
+      "summary": "Enthusiasm for space stocks has skyrocketed ahead of SpaceX's anticipated IPO.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "As Adversaries Integrate, U.S. Partners Bypass Washington",
+      "link": "https://warontherocks.com/as-adversaries-integrate-u-s-partners-bypass-washington",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T15:30:53+08:00",
+      "summary": "The drones hitting Gulf Arab states daily since the United States and Israel launched large-scale military operations against Iran in February are not merely Iranian. They are originally Iranian, yes. But these designs and production processes were improved and refined by Russia through years of battlefield testing against Ukrainian defenses. So, they were returned to Tehran from Moscow. Confronted with a threat that Ukraine has spent four years learning to counter, the United States found itsel",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "'I'd rather live in hiding in the US than return to Somalia'",
+      "link": "https://www.bbc.com/news/articles/cvgz3l4zyq4o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-08T07:54:06+08:00",
+      "summary": "Fear and uncertainty linger for Somali migrants in Minnesota despite a legal reprieve.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Pantheon eyes large-scale behind-the-meter data center campus in Croatia",
+      "link": "https://www.datacenterdynamics.com/en/news/pantheon-eyes-large-scale-behind-the-meter-data-center-campus-in-croatia",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T21:00:39+08:00",
+      "summary": "Project set to be “the largest investment” in the country’s history, company claims",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Why data foundations will define the AI economy",
+      "link": "https://www.datacenterdynamics.com/en/opinions/why-data-foundations-will-define-the-ai-economy",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T21:00:36+08:00",
+      "summary": "Storage is the grounding of AI - it needs to be strong",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "OpenAI missed revenue and user targets, faces internal concern over meeting data center spend commitments - report",
+      "link": "https://www.datacenterdynamics.com/en/news/openai-missed-revenue-and-user-targets-faces-internal-concern-over-meeting-data-center-spend-commitments-report",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T02:29:30+08:00",
+      "summary": "As company reworks Stargate and preps for IPO",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Texans sign Pro Bowl LB Azeez Al-Shaair to 3-year extension that'll keep him in Houston through 2029 - AP News",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX2ZISTRSTGFsajRDYWZaenNuTWtVU0NPQlRKQnA1dHpiNmxjZkNZd29qOHNhLWF2bDh5TnpyMDBJd3BUeU9zWlFqYldmVEhEbmF3SFE2alFTVklHeUdzcDJFMDYwRHB6dXRiT3BjRzF1WEdMajNLRC1wMEtEai1VWThwaVNRUmpYazI4VXRaTQ",
+      "source": "AP News",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-02T08:00:00+08:00",
+      "summary": "Texans sign Pro Bowl LB Azeez Al-Shaair to 3-year extension that'll keep him in Houston through 2029&nbsp;&nbsp;AP News",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "iShares iBonds 2029 Term High Yield and Income ETF declares monthly distribution of $0.1223",
+      "link": "https://seekingalpha.com/news/4584430-ishares-ibonds-2029-term-high-yield-and-income-etf-declares-monthly-distribution-of-01223?feed_item_type=news",
+      "source": "Seeking Alpha",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T07:15:20+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "1223"
+      ]
+    },
+    {
+      "title": "台積電最新 SoIC 3D 封裝藍圖，瞄準 2029 年 A14 製程推動 AI 與 HPC 效能升級 - TechNews 科技新報",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTmNLZ0V3MnZZT1RlZjFwaVRVRGRBTmZHWW1DM3dFVFVvSy1Pa1RXc2VMRHJkbTlyYm51VHJOb1ZyVmZmMUdhQ0lsSHhwSG54Z2hJUWptT0gxUTB2aVdjX0xtWnRoV0Z0bmFmTk4yWnZ1NDNaRWI3ZzhQN0szR2RqbzVrbDE4ZkU?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T07:07:12+08:00",
+      "summary": "台積電最新 SoIC 3D 封裝藍圖，瞄準 2029 年 A14 製程推動 AI 與 HPC 效能升級&nbsp;&nbsp;TechNews 科技新報",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "Lumai Productizes Lens-Based Optical Computer",
+      "link": "https://www.eetimes.com/lumai-productizes-lens-based-optical-computer",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-30T01:00:00+08:00",
+      "summary": "New systems are for evaluation, with commercial systems coming by 2029. The post Lumai Productizes Lens-Based Optical Computer appeared first on EE Times.",
+      "event_type": "earnings",
+      "tickers": [
+        "2048"
+      ]
+    },
+    {
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "link": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "source": "OpenAI Blog",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-29T23:00:00+08:00",
+      "summary": "OpenAI scales Stargate to build the compute infrastructure powering AGI, adding new data center capacity to meet growing AI demand.",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "TSMC SoIC 3D stacking roadmap outlines path from 6-micron pitches today to 4.5-micron in 2029 — Fujitsu's Monaka CPU to benefit from face-to-face chiplet stacking",
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-soic-3d-stacking-roadmap-outlines-path-from-6-micron-pitches-today-to-4-5-micron-in-2029-fujitsus-monaka-cpu-to-benefit-from-face-to-face-chiplet-stacking",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-29T21:26:22+08:00",
+      "summary": "TSMC adds support for face-to-face stacking, 6.5 µm and 4.5 µm pitches for the next generation of SoIC 3D stacking.",
+      "event_type": "news",
+      "tickers": [
+        "TSM"
+      ]
+    },
+    {
+      "title": "Trump’s Golden Dome aimed at combating China’s ‘hypersonic weapons, cruise missiles’",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3351626/trumps-golden-dome-will-combat-chinas-hypersonic-weapons-cruise-missiles",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-28T07:28:59+08:00",
+      "summary": "The United States has “no defence against hypersonic weapons or cruise missiles”, a senior Pentagon official told Congress on Monday, as US President Donald Trump’s US$185 billion Golden Dome missile shield faces continued scepticism. “The Golden Dome will strengthen deterrence by denying adversaries the ability to achieve their objectives through coercion or aggression,” Marc Berkowitz, the assistant secretary of defence for missile defence and deterrence policy, told a Senate hearing on...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "TSMC's details next-gen CoWoS roadmap: over 14-reticle packages and 48x leap in compute power expected by 2029 — massive size enables 24 HBM5E stacks and additional memory bandwidth jump - Tom's Hardware",
+      "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPUlFoNnFCTWF2OGN1Sl9uRDRIb19VeTdPbjZXZW9UbzdQNy1GSjVTRkxHSVBlaVNQLWtJNklpY0ZvcXFGZ0VEdUs3WThJRmp0YUtIcTJyZUdWVHF0RzV1TGd2eFJ3ektncnVrejZEQ3lET2t5ZGpWTTA5cHdud3lud1B4S2l6WlpRSVhQLUxBQkVNcVdYWjZkZlZLMUJHMl9HWkpIYzlCb2R4am9MV0JPbmNIZ3NfRnE2VTZjRzJ0dUk1V0owUGltV0k0MWp1Rk80V0NWbzhmYndCY2wzdmZlc0tnZzI2ejRuUWZzNktidFRQLUdTamNOZHVtdmdZc3Z1NWFaWUxGdnJtZF93bmxRZ09ORm5NdU1wUkhlMmRYVWJhODFlVk54aUx4ZGlCZGlSTXlUa0xiczBwMmpFZkdxeEFaS0FQTDZSMmNUMWFLdWFUU0VZekxENzFHemo",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-27T19:56:06+08:00",
+      "summary": "TSMC's details next-gen CoWoS roadmap: over 14-reticle packages and 48x leap in compute power expected by 2029 — massive size enables 24 HBM5E stacks and additional memory bandwidth jump&nbsp;&nbsp;Tom's Hardware",
+      "event_type": "news",
+      "tickers": [
+        "TSM"
+      ]
+    },
+    {
+      "title": "台積電魏哲家證實：美國廠良率已與台灣看齊，2029 計畫將 CoWoS 先進封裝移師北美 - T客邦",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9JdWZHcFFadzJnU0J5aGEzTU9CcHdZeUMwVXE4Y2JCc0pPV25ORW93Qk1JVW0yYUhfQWNScEhuOXJQR3ZoQUVMcHJpb3ptQ1pfdE1SdkFhTVk4MUtScXhaYXZNNXI2SzJOcW1IU1l1ZW1WYjd0MWg1TQ",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-26T07:30:00+08:00",
+      "summary": "台積電魏哲家證實：美國廠良率已與台灣看齊，2029 計畫將 CoWoS 先進封裝移師北美&nbsp;&nbsp;T客邦",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "Wärtsilä inks two natural gas supply deals with data center operators in Ohio and Texas",
+      "link": "https://www.datacenterdynamics.com/en/news/w%C3%A4rtsil%C3%A4-inks-two-natural-gas-supply-deals-with-data-center-operators-in-ohio-and-texas",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-24T23:29:51+08:00",
+      "summary": "For more than 1GW of combined capacity",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "三菱電機2029年度EML產能倍增　因應AI資料中心光通訊需求",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000753024_2FQ1PC3L1PP4DX5K20TPK",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-24T02:34:31+08:00",
+      "summary": "因應AI資料中心需求，三菱電機（Mitsubishi Electric）預計到2029年度（2029/4~2030/3），將資料中心使用的光元件「電吸收調變雷射」（Electro-absorption Modulated Laser；EML）組裝產線的產能倍增...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "TSMC Maps Out A13 “1.3nm” & A12 “1.2nm” Nodes For 2029, Sidesteps ASML’s Priciest EUV Tools For Now - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcDkyRW0wcUN1VXBhSGN4TmFJYWJTdU5HSEhRYVdOTjI0SDVUR2dkLVFNc0VNYjJtbUtlVU5jQ0U5dDVDb3BYZTVDMkdYOTNqMUhRY0dRVnRabXpRTGlGbVB0UkxDQkg5M3ltdXV6YUFTOGtEQVpCQnRSbGlaN3UwZHN3UTVfUTZiUWpRVlRaV2FCUkNudHdjSzJ0ZEFHelJFMGfSAacBQVVfeXFMTVJGRUh2cmtyYmZ1ejFLRjZEdmV3V2poZzFMSkJvNWxMczh4X0FiclRBaWdsUXNkV0tNaDBtaVMyeWJuQndxOHlxT2N3N1pCT2NNejFhWUVUWklnaVJ3bnVORWhOUDZCZVI3OW9pX1dadWFfNUpScXFjblV0QkNGbG8zeWpjbV92ZTFPeXlERTZ5ZENsUmZCSHJjc3hXTENEaWRxbWJYclU?oc=5",
+      "source": "ASML News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-23T15:15:00+08:00",
+      "summary": "TSMC Maps Out A13 “1.3nm” & A12 “1.2nm” Nodes For 2029, Sidesteps ASML’s Priciest EUV Tools For Now&nbsp;&nbsp;Wccftech",
+      "event_type": "earnings",
+      "tickers": [
+        "TSM"
+      ]
+    },
+    {
+      "title": "台積電預告 A13/A12 製程 2029 量產 暫不採 ASML 高數值孔徑 EUV - 商傳媒",
+      "link": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxPcUc5VHhRYm1MUXBUQlRmcS01VkdqYi0zTFQ1d2p6MXFNY0dWWVUwclpmR3NOX3NHSTl3b0FJS3kxa1JlNEI1Y25ucnNvbTN4eVE1SUFVcXNPaExNR3hNT2RWSkRxaUhLeHBmeFV0R3FHZGdyanFXRWRYVUZMczhfbXFTY3o4Q0tXMzlwcnRndkJIMVV2UW4za3pzMjFGY0pKTEVfSmhiMmdNOHBOaFJWQlRGY0o3NmdsX1VBWWR2VUFfdVJRejc5UlEtTTZsYWFCblF3UksyOTVhdU0tSVp1SnU4Z1A3bkhLRjIwdS1VMEZ4VXlwMHBuRnVLNXAwZDUtWmdvaEdETGs4cWdxdVByVjlKWUd1dm4zWVJweXN0aU9sc19LVmhSc1BMbWVLVnNWTGVIRVpfellsYkhiU3hpYXhGZ21uSE9qcjRiNmhpOWMtUmdscmw1SVI1UHltSzNPWGVUNHF2YVpiN2RZbXB3RXc3TQ",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-23T08:56:21+08:00",
+      "summary": "台積電預告 A13/A12 製程 2029 量產 暫不採 ASML 高數值孔徑 EUV&nbsp;&nbsp;商傳媒",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "台積電證實艾司摩爾 High-NA EUV 太貴暫緩部署 2029年啟用美封裝廠",
+      "link": "https://money.udn.com/money/story/5599/9458925",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-23T07:35:08+08:00",
+      "summary": "台積電（2330）今天在2026年北美技術論壇表示，為節省開支，2029 年底之前不會在晶片生產中部署艾司摩爾（ASML）最先進的微影設備，對這家荷蘭晶片設備大廠來說，無疑是一大挫折。",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "DARPA 研發粉末血液替代品，15 分鐘內恢復失血量",
+      "link": "https://technews.tw/2026/04/23/darpa-blood",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-23T07:20:37+08:00",
+      "summary": "美國國防部國防高等研究計劃署（DARPA）最近宣布，其研發的粉末狀血液替代品在動物實驗中取得了成功，為未來的戰 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Too Expensive! Taiwan Semiconductor: No Plans to Deploy ASML Holding's Latest Lithography Machine Before 2029 - 富途牛牛",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbXBCZ0FoNkdtVTZ0WVVkdUM2c2pQVWlsZWxJZ0pPUGR6UUpIMF9OeDFQamIzeTd1cy1jVEFUR3dMM0wyeDduZllBemlwSkdYSVdXaUxSUTJsekVFNnc3azhIYkJmT1QxM1NaNHdzWXFYRDhrTDIzZVFQSHAtVEY3ZlJWOEViVmZYS0dpWjFjdnhCWDJXWkJZczBCcTgyeEt0cGk3YWdoWTFTbG8",
+      "source": "ASML News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-23T04:58:49+08:00",
+      "summary": "Too Expensive! Taiwan Semiconductor: No Plans to Deploy ASML Holding's Latest Lithography Machine Before 2029&nbsp;&nbsp;富途牛牛",
+      "event_type": "news",
+      "tickers": [
+        "TSM"
+      ]
+    },
+    {
+      "title": "TSMC unveils process technology roadmap through 2029: A12, A13, N2U announced, A16 slips to 2027",
+      "link": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-unveils-process-technology-roadmap-through-2029-a12-a13-n2u-announced-a16-slips-to-2027",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-23T04:44:57+08:00",
+      "summary": "TSMC strengthens its bifurcated process technology development approach with A14, A13, and N2U aimed at client applications and A16, A12, and N2X for high-performance data center designs.",
+      "event_type": "news",
+      "tickers": [
+        "TSM"
+      ]
+    },
+    {
+      "title": "TSMC Debuts A13, Holds Off on ASML’s High-NA EUV Tools Until 2029 - TechStock²",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV0tldWktN0tlVWhrUlVYNl9DaEd4Y2hlVVZYb2N0b3RQdm1EejgxMU1XNWJWWUlDUUdiMHdpa0U3VWs1MVNKc0dENXJiR001bUxtRGFnQ3pKNFN4cGlvX1hoSEhXcUdkeWx1RF80dThZXy01UzRNaUd3azJXQlptd2g3WkY1d0dKR2lMMg",
+      "source": "ASML News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-23T04:39:17+08:00",
+      "summary": "TSMC Debuts A13, Holds Off on ASML’s High-NA EUV Tools Until 2029&nbsp;&nbsp;TechStock²",
+      "event_type": "news",
+      "tickers": [
+        "TSM"
+      ]
+    },
+    {
+      "title": "TSMC Unfolds Map for Process, Packaging Tech",
+      "link": "https://www.eetimes.com/tsmc-unfolds-map-for-process-packaging-tech",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-23T03:00:00+08:00",
+      "summary": "TSMC unveils chip tech roadmap, slashing AI power use and boosting density. The post TSMC Unfolds Map for Process, Packaging Tech appeared first on EE Times.",
+      "event_type": "earnings",
+      "tickers": [
+        "1965",
+        "TSM"
+      ]
+    },
+    {
+      "title": "AT&T keen to scale up Lumen assets as carrier continues fiber push",
+      "link": "https://www.datacenterdynamics.com/en/news/att-keen-to-scale-up-lumen-assets-as-carrier-continues-fiber-push",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-23T00:07:54+08:00",
+      "summary": "The telco reported revenue growth of 2.9 percent for the quarter",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "China’s shipyards secure wave of oil tanker orders as Iran war drives demand",
+      "link": "https://www.scmp.com/economy/global-economy/article/3350872/chinas-shipyards-secure-wave-oil-tanker-orders-iran-war-drives-demand",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-22T08:00:20+08:00",
+      "summary": "China’s shipyards are emerging as beneficiaries from the US-Israeli war on Iran, securing new orders as crude transport bottlenecks worsen and global demand for large oil tankers rises. With the United States and Iran effectively blockading the Strait of Hormuz – a chokepoint that handles about a quarter of the world’s seaborne oil – shipping companies are racing to expand capacity, particularly in very large crude carriers (VLCCs) capable of transporting about 2 million barrels of oil per...",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Automaker Stellantis aims to reduce data center footprint by 60%, migrates to Microsoft Azure",
+      "link": "https://www.datacenterdynamics.com/en/news/automaker-stellantis-aims-to-reduce-data-center-footprint-by-60-migrates-to-microsoft-azure",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-22T00:20:34+08:00",
+      "summary": "Stellantis and Microsoft sign five-year agreement to support migration",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 13270890.0,
+      "monthly_revenue": null,
+      "net_income": 252112.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 0.74,
+      "operating_cash_flow": 1104105.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150428",
+      "filed_at": "1150428",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 13270890.0,
+      "monthly_revenue": null,
+      "net_income": 239101.0,
+      "operating_income": 293991.0,
+      "gross_profit": 1367179.0,
+      "eps_diluted": 0.74,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150422",
+      "filed_at": "1150422",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 13270890.0,
+      "monthly_revenue": null,
+      "net_income": 239101.0,
+      "operating_income": 293991.0,
+      "gross_profit": 1367179.0,
+      "eps_diluted": 0.74,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150419",
+      "filed_at": "1150419",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 13270890.0,
+      "monthly_revenue": null,
+      "net_income": 239101.0,
+      "operating_income": 293991.0,
+      "gross_profit": 1367179.0,
+      "eps_diluted": 0.74,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 1247752.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 13270890.0,
+      "monthly_revenue": null,
+      "net_income": 252112.0,
+      "operating_income": 293991.0,
+      "gross_profit": null,
+      "eps_diluted": 0.74,
+      "operating_cash_flow": 1104105.0,
+      "capex": 371806.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2029",
+    "market": "tw",
+    "company_name": "盛餘股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 13270890.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 252112.0,
+      "eps": 0.74,
+      "fcf": null,
+      "ocf": 1104105.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.01899736943038485,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 0.0,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 13270890.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 252112.0,
+        "eps_diluted": 0.74,
+        "fcf": null,
+        "ocf": 1104105.0,
+        "capex": null,
+        "company_name": "盛餘股份有限公司"
+      },
+      {
+        "fiscal_year": 114,
+        "fiscal_period": "Q4",
+        "revenue": 13270890.0,
+        "gross_profit": 1367179.0,
+        "operating_income": 293991.0,
+        "net_income": 252112.0,
+        "eps_diluted": 0.74,
+        "fcf": null,
+        "ocf": 1104105.0,
+        "capex": 371806.0,
+        "company_name": "盛餘"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

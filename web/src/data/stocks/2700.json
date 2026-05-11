@@ -1,0 +1,52 @@
+{
+  "ticker": "2700",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Samsung eyes Exynos 2700 as test for chip-unit recovery - digitimes",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRmNCZUFMbEJaWk9ISXRTQzRFNm55MnV3cktQQlk2amNUWXJ1eHkyTE84dUptU09jVE9keVFha2laTGc4bWJZOS0tSER6RHZTRHVjN0k1WXFybXN6amRPZ0VYTDVCbEdibjZZcWlQakcxXzdvcnA5cS1iMl9ibmF5NWxDbmtDSWdaN1lKX1dRUTl4QjRyZE1VVTFJSQ",
+      "source": "記憶體產業",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T08:11:05+08:00",
+      "summary": "Samsung eyes Exynos 2700 as test for chip-unit recovery&nbsp;&nbsp;digitimes",
+      "event_type": "news",
+      "tickers": [
+        "2700"
+      ]
+    },
+    {
+      "title": "三星非記憶體事業何時終結虧損　關鍵在Galaxy S27的Exynos搭載率",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754336_HZB4NU4E2AL6J172X42RN",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T02:57:08+08:00",
+      "summary": "三星電子（Samsung Electronics）預計於2027年初三星推出的Galaxy S27系列，其應用處理器（AP）Exynos 2700（暫稱）搭載比例與效能將驗證成果，將影響非記憶體事業表現。據韓媒IT Chosun引述業界消息，三星非記憶體事業&mdash;&amp;mdash...",
+      "event_type": "news",
+      "tickers": [
+        "2700"
+      ]
+    },
+    {
+      "title": "從三明治到側向排列　三星Exynos 2700挑戰高通霸權",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000753473_ZT65YMLZ65BSQ94DVZ9AN",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-28T02:43:02+08:00",
+      "summary": "傳三星電子（Samsung Electronics）正透過下一代行動應用處理器（AP）Exynos 2700（暫稱），試圖重返全球行動AP市場核心舞台。相較於單純效能升級，此次產品更被視為一場，針對行動晶片架構的「設計典範轉移」。據外媒Wccftech報導，三星有望在Exynos 2700導入全新側向排列（Side-by-...",
+      "event_type": "news",
+      "tickers": [
+        "2700"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

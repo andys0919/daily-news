@@ -1,0 +1,136 @@
+{
+  "ticker": "2955",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Federal Reserve Board announces approval of related applications by Columbia Bank MHC, and Columbia Financial, Inc.",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260508a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-09T05:00:00+08:00",
+      "summary": "Federal Reserve Board announces approval of related applications by Columbia Bank MHC, and Columbia Financial, Inc.",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Federal Reserve Board announces approval of application by Banco de Credito del Peru",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-25T04:00:00+08:00",
+      "summary": "Federal Reserve Board announces approval of application by Banco de Credito del Peru",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-25T04:00:00+08:00",
+      "summary": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of First Financial Bank",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260422a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-22T23:00:00+08:00",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of First Financial Bank",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with Community Bankshares, Inc.",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260416a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-16T23:00:00+08:00",
+      "summary": "Federal Reserve Board issues enforcement action with Community Bankshares, Inc.",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260414a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-15T02:00:00+08:00",
+      "summary": "Minutes of the Board’s discount rate meetings on February 9 and March 18, 2026",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Federal Reserve Board announces approval of application by Burke & Herbert Financial Services Corp.",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260410a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-11T04:15:00+08:00",
+      "summary": "Federal Reserve Board announces approval of application by Burke &amp; Herbert Financial Services Corp.",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, March 17–18, 2026",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260408a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-09T02:00:00+08:00",
+      "summary": "Minutes of the Federal Open Market Committee, March 17–18, 2026",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Federal Reserve Board invites public comment on proposal that would allow U.S. banks and credit unions to use intermediaries to transfer funds through the FedNow Service",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/other20260408a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-08T23:30:00+08:00",
+      "summary": "Federal Reserve Board invites public comment on proposal that would allow U.S. banks and credit unions to use intermediaries to transfer funds through the FedNow Service",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of United Bank",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260403a.htm",
+      "source": "Fed 聯準會",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-03T23:00:00+08:00",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of United Bank",
+      "event_type": "news",
+      "tickers": [
+        "2955"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

@@ -1,0 +1,40 @@
+{
+  "ticker": "4050",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Ryzen 7 7735HS, RTX 4050 Lenovo laptop is perfect for price conscious gamers - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZHpmdGVjcjM4RjNKYzNkX2JtWWNKbEhIOTJMS1E2RHNfbWRveTl5TUdwdzJQTUc3YktQZ1JDMmJ1U1p0MlRYSGpvb3NNWlpTelBaVEV3OTM5NVd5ZUhCQlJoMG1zYWNELUZyTEVGckVUVk5VUHp1cWN3dnNsTmJ3MjVkWDRBVW1wRTBSeGxGeThiY2tVbmVWMzdDd1FDUlBXbk1wQzhQUUVCQQ",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-02T01:23:31+08:00",
+      "summary": "Ryzen 7 7735HS, RTX 4050 Lenovo laptop is perfect for price conscious gamers&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "4050"
+      ]
+    },
+    {
+      "title": "Lenovo’s RTX 4050 gaming laptop dips to $1,039, comes with a free 7‑in‑1 USB‑C hub - WePC",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZjhIbm9CX3RQSURlMWs5YlIzam41QWY2dnNRaXA4ei02bkY2VVN6UkVYOWJ1aTJoemlRRWN4U0RGcE5DVU1PSFZJdkdOQ3ZCVkx4bGF1X1ZOZlVnRVFvTWpJdTF2dXIyOGVDcmlRa3Q3cnNPWkVablFnWHBIOXN6dE9RYUdCRnpjaENLRXZEb2R5Yk5ZdjlsT3Z5ZGZuUQ?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-02T00:05:08+08:00",
+      "summary": "Lenovo’s RTX 4050 gaming laptop dips to $1,039, comes with a free 7‑in‑1 USB‑C hub&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "4050"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "5000",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "RT Denny: Re @ollama + GLM-5 > Opus 4.5",
+      "link": "https://x.com/ollama/status/2041018086690828751",
+      "source": "X @ollama",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-06T12:59:03+08:00",
+      "summary": "RT DennyRe @ollama + GLM-5 &gt; Opus 4.5Denny: WTF? I guess these $200 subscriptions really cost them $5000 each",
+      "event_type": "news",
+      "tickers": [
+        "5000"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

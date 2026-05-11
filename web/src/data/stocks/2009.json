@@ -1,0 +1,462 @@
+{
+  "ticker": "2009",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2009",
+    "company_name": "第一銅",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2009",
+      "company_name": "第一銅",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 2905229.0,
+      "monthly_revenue": null,
+      "net_income": 121501.0,
+      "operating_income": -75271.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 0.34,
+      "operating_cash_flow": 198745.0,
+      "capex": 81079.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"個別\", \"year\": \"114\", \"reportList\": [[\"　銷貨收入淨額\", \"2,905,229\", \"100.00\", \"3,128,075\", \"100.00\"], [\"營業收入合計\", \"2,905,229\", \"100.00\", \"3,128,075\", \"100.00\"], [\"營業成本合計\", \"2,917,000\", \"100.41\", \"3,009,825\", \"96.22\"], [\"營業毛利（毛損）\", \"-11,771\", \"-0.41\", \"118,250\", \"3.78\"], [\"營業毛利（毛損）淨額\", \"-11,771\", \"-0.41\", \"118,250\", \"3.78\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　營業費用合計\", \"63,500\", \"2.19\", \"62,139\", \"1.99\"], [\"營業利益（損失）\", \"-75,271\", \"-2.59\", \"56,111\", \"1.79\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"607\", \"0.02\", \"890\", \"0.03\"], [\"　　其他收入\", \"229,805\", \"7.91\", \"230,011\", \"7.35\"], [\"　　其他利益及損失淨額\", \"-1,206\", \"-0.04\", \"128\", \"0.00\"], [\"　　財務成本淨額\", \"25,206\", \"0.87\", \"27,796\", \"0.89\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"8\", \"0.00\", \"11\", \"0.00\"], [\"　營業外收入及支出合計\", \"204,008\", \"7.02\", \"203,244\", \"6.50\"], [\"稅前淨利（淨損）\", \"128,737\", \"4.43\", \"259,355\", \"8.29\"], [\"所得稅費用（利益）合計\", \"7,236\", \"0.25\", \"-6,210\", \"-0.20\"], [\"繼續營業單位本期淨利（淨損）\", \"121,501\", \"4.18\", \"265,565\", \"8.49\"], [\"本期淨利（淨損）\", \"121,501\", \"4.18\", \"265,565\", \"8.49\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"4,505\", \"0.16\", \"-1,896\", \"-0.06\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"2,596,620\", \"89.38\", \"928,109\", \"29.67\"], [\"　　　與不重分類之項目相關之所得稅\", \"901\", \"0.03\", \"-380\", \"-0.01\"], [\"　不重分類至損益之項目：\", \"2,600,224\", \"89.50\", \"926,593\", \"29.62\"], [\"　其他綜合損益（淨額）\", \"2,600,224\", \"89.50\", \"926,593\", \"29.62\"], [\"本期綜合損益總額\", \"2,721,725\", \"93.68\", \"1,192,158\", \"38.11\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　基本每股盈餘\", \"0.34\", \"\", \"0.74\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　稀釋每股盈餘\", \"0.34\", \"\", \"0.74\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2009&SYEAR=2025&SSEASON=4&REPORT_ID=A\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2009&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}, {\"main\": \"113年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"第一銅\"}, \"datetime\": \"115/04/09 09:02:59\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"個別\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"101,700\", \"0.87\", \"139,179\", \"1.54\"], [\"　　　應收帳款淨額\", \"270,565\", \"2.33\", \"233,061\", \"2.57\"], [\"　　　應收帳款－關係人淨額\", \"3,040\", \"0.03\", \"1,636\", \"0.02\"], [\"　　　其他應收款淨額\", \"49,592\", \"0.43\", \"43,096\", \"0.48\"], [\"　　　本期所得稅資產\", \"111\", \"0.00\", \"96\", \"0.00\"], [\"　　　存貨\", \"1,873,726\", \"16.12\", \"1,910,788\", \"21.11\"], [\"　　　其他流動資產\", \"24,177\", \"0.21\", \"15,821\", \"0.17\"], [\"　　流動資產合計\", \"2,322,911\", \"19.98\", \"2,343,677\", \"25.89\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－非流動\", \"7,998,423\", \"68.80\", \"5,401,803\", \"59.68\"], [\"　　　採用權益法之投資\", \"138\", \"0.00\", \"145\", \"0.00\"], [\"　　　不動產、廠房及設備\", \"1,040,910\", \"8.95\", \"1,040,128\", \"11.49\"], [\"　　　投資性不動產淨額\", \"213,154\", \"1.83\", \"216,139\", \"2.39\"], [\"　　　無形資產\", \"244\", \"0.00\", \"183\", \"0.00\"], [\"　　　遞延所得稅資產\", \"24,375\", \"0.21\", \"31,210\", \"0.34\"], [\"　　　其他非流動資產\", \"25,067\", \"0.22\", \"18,257\", \"0.20\"], [\"　　非流動資產合計\", \"9,302,311\", \"80.02\", \"6,707,865\", \"74.11\"], [\"　資產總額\", \"11,625,222\", \"100.00\", \"9,051,542\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"867,491\", \"7.46\", \"520,057\", \"5.75\"], [\"　　　應付短期票券\", \"599,712\", \"5.16\", \"906,564\", \"10.02\"], [\"　　　合約負債－流動\", \"141\", \"0.00\", \"14,773\", \"0.16\"], [\"　　　應付票據\", \"4,308\", \"0.04\", \"2,897\", \"0.03\"], [\"　　　應付帳款\", \"78,005\", \"0.67\", \"64,360\", \"0.71\"], [\"　　　其他應付款\", \"75,407\", \"0.65\", \"76,820\", \"0.85\"], [\"　　　其他流動負債\", \"17,764\", \"0.15\", \"26,893\", \"0.30\"], [\"　　流動負債合計\", \"1,642,828\", \"14.13\", \"1,612,364\", \"17.81\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　遞延所得稅負債\", \"268,480\", \"2.31\", \"267,178\", \"2.95\"], [\"　　非流動負債合計\", \"268,480\", \"2.31\", \"267,178\", \"2.95\"], [\"　負債總額\", \"1,911,308\", \"16.44\", \"1,879,542\", \"20.76\"], [\"　股本\", \"\", \"\", \"\", \"\"], [\"　　　普通股股本\", \"3,596,222\", \"30.93\", \"3,596,222\", \"39.73\"], [\"　　股本合計\", \"3,596,222\", \"30.93\", \"3,596,222\", \"39.73\"], [\"　資本公積\", \"\", \"\", \"\", \"\"], [\"　　資本公積合計\", \"0\", \"0.00\", \"0\", \"0.00\"], [\"　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　法定盈餘公積\", \"88,401\", \"0.76\", \"61,996\", \"0.68\"], [\"　　　特別盈餘公積\", \"262,845\", \"2.26\", \"262,845\", \"2.90\"], [\"　　　未分配盈餘（或待彌補虧損）\", \"224,087\", \"1.93\", \"305,198\", \"3.37\"], [\"　　保留盈餘合計\", \"575,333\", \"4.95\", \"630,039\", \"6.96\"], [\"　其他權益\", \"\", \"\", \"\", \"\"], [\"　　其他權益合計\", \"5,542,359\", \"47.68\", \"2,945,739\", \"32.54\"], [\"　權益總額\", \"9,713,914\", \"83.56\", \"7,172,000\", \"79.24\"], [\"　負債及權益總計\", \"11,625,222\", \"100.00\", \"9,051,542\", \"100.00\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"0\", \"\", \"0\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2009&SYEAR=2025&SSEASON=4&REPORT_ID=A\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2009&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年12月31日\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}, {\"main\": \"113年12月31日\", \"sub\": [{\"main\": \"金額\", \"sub\": []}, {\"main\": \"%\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"第一銅\"}, \"datetime\": \"115/04/09 09:03:00\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"個別\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"128,737\", \"259,355\"], [\"　本期稅前淨利（淨損）\", \"128,737\", \"259,355\"], [\"　　　折舊費用\", \"93,824\", \"88,496\"], [\"　　　攤銷費用\", \"114\", \"77\"], [\"　　　利息費用\", \"25,206\", \"27,796\"], [\"　　　利息收入\", \"-607\", \"-890\"], [\"　　　股利收入\", \"-208,569\", \"-208,564\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-8\", \"-11\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"-471\", \"-116\"], [\"　　　其他項目\", \"-103\", \"357\"], [\"　　　收益費損項目合計\", \"-90,614\", \"-92,855\"], [\"　　　　應收帳款（增加）減少\", \"-37,504\", \"5,585\"], [\"　　　　應收帳款－關係人（增加）減少\", \"-1,404\", \"-1,636\"], [\"　　　　其他應收款（增加）減少\", \"-6,496\", \"47,508\"], [\"　　　　存貨（增加）減少\", \"37,062\", \"-155,967\"], [\"　　　　其他流動資產（增加）減少\", \"-8,356\", \"-7,601\"], [\"　　　　其他營業資產（增加）減少\", \"-1,274\", \"-1,296\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"-17,972\", \"-113,407\"], [\"　　　　合約負債增加（減少）\", \"-14,632\", \"9,904\"], [\"　　　　應付票據增加（減少）\", \"1,411\", \"377\"], [\"　　　　應付帳款增加（減少）\", \"13,645\", \"-2,861\"], [\"　　　　其他應付款增加（減少）\", \"-7,911\", \"18,290\"], [\"　　　　其他流動負債增加（減少）\", \"-9,026\", \"21,036\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"-16,513\", \"46,746\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"-34,485\", \"-66,661\"], [\"　　調整項目合計\", \"-125,099\", \"-159,516\"], [\"　營運產生之現金流入（流出）\", \"3,638\", \"99,839\"], [\"　收取之利息\", \"607\", \"890\"], [\"　收取之股利\", \"208,584\", \"208,564\"], [\"　支付之利息\", \"-14,069\", \"-12,981\"], [\"　退還（支付）之所得稅\", \"-15\", \"-62\"], [\"營業活動之淨現金流入（流出）\", \"198,745\", \"296,250\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　取得不動產、廠房及設備\", \"-81,079\", \"-77,518\"], [\"　處分不動產、廠房及設備\", \"471\", \"116\"], [\"　存出保證金增加\", \"-1,031\", \"0\"], [\"　取得無形資產\", \"-175\", \"-176\"], [\"　取得投資性不動產\", \"-153\", \"0\"], [\"　預付設備款增加\", \"0\", \"-9,023\"], [\"　投資活動之淨現金流入（流出）\", \"-81,967\", \"-86,601\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款增加\", \"347,434\", \"0\"], [\"　短期借款減少\", \"0\", \"-283,162\"], [\"　應付短期票券增加\", \"0\", \"141,938\"], [\"　應付短期票券減少\", \"-317,659\", \"0\"], [\"　存入保證金增加\", \"0\", \"2,627\"], [\"　存入保證金減少\", \"-2,266\", \"0\"], [\"　發放現金股利\", \"-181,766\", \"-448\"], [\"　籌資活動之淨現金流入（流出）\", \"-154,257\", \"-139,045\"], [\"本期現金及約當現金增加（減少）數\", \"-37,479\", \"70,604\"], [\"期初現金及約當現金餘額\", \"139,179\", \"68,575\"], [\"期末現金及約當現金餘額\", \"101,700\", \"139,179\"], [\"　資產負債表帳列之現金及約當現金\", \"101,700\", \"139,179\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2009&SYEAR=2025&SSEASON=4&REPORT_ID=A\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2009&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"main\": \"會計項目\", \"sub\": []}, {\"main\": \"114年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}]}, {\"main\": \"113年度\", \"sub\": [{\"main\": \"金額\", \"sub\": []}]}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"第一銅\"}, \"datetime\": \"115/04/09 09:03:00\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2009",
+      "company_name": "第一銅",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 271253.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2009\", \"公司名稱\": \"第一銅\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"271253\", \"營業收入-上月營收\": \"267118\", \"營業收入-去年當月營收\": \"262096\", \"營業收入-上月比較增減(%)\": \"1.5480050015349023\", \"營業收入-去年同月增減(%)\": \"3.4937580123313596\", \"累計營業收入-當月累計營收\": \"799069\", \"累計營業收入-去年累計營收\": \"616661\", \"累計營業收入-前期比較增減(%)\": \"29.57994749140938\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Barack Obama was a successful President",
+      "link": "https://www.noahpinion.blog/p/barack-obama-was-a-successful-president-7bb",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T14:22:14+08:00",
+      "summary": "A repost, because I'm annoyed.",
+      "event_type": "news",
+      "tickers": [
+        "1933",
+        "1965"
+      ]
+    },
+    {
+      "title": "Why Kim Jong Un Won’t Pick Up the Phone and What to Do About It",
+      "link": "https://warontherocks.com/why-kim-jong-un-wont-pick-up-the-phone-and-what-to-do-about-it",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T15:15:30+08:00",
+      "summary": "Every American administration pledges to learn from the past when devising a strategy for contending with nuclear North Korea. And yet, few portfolios are so paralyzed by path dependency and resistance to learning. But now, confronted with the inescapable prospect that the legacy approach is actually creating risk rather than reducing it, the time has come to learn and pivot.The Trump administration should sharpen the choice for North Korea, making it enticing, raising the stakes, and being prep",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Xi’s Forever Purge",
+      "link": "https://www.foreignaffairs.com/china/xis-forever-purge",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T12:00:00+08:00",
+      "summary": "The real goal behind China’s “self-revolution.”",
+      "event_type": "earnings",
+      "tickers": [
+        "1978",
+        "1945"
+      ]
+    },
+    {
+      "title": "The Disposable Oligarchs",
+      "link": "https://www.foreignaffairs.com/united-states/disposable-oligarchs",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T12:00:00+08:00",
+      "summary": "Why wealthy elites come to regret their bargains with authoritarians.",
+      "event_type": "policy",
+      "tickers": [
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSLA",
+        "JPM"
+      ]
+    },
+    {
+      "title": "Europe’s rearmament push drives global military spending to record $2.9 trillion despite U.S. pullback",
+      "link": "https://www.cnbc.com/2026/04/27/global-military-spending-record-2025-europe-asia-ukraine-sipri.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-28T07:08:10+08:00",
+      "summary": "Global military spending rose for an 11th straight year to a record $2.89 trillion in 2025, driven by Europe’s rearmament push, even as U.S. outlays declined.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Trump factor drives up Asia-Pacific military spending at fastest pace since 2009",
+      "link": "https://www.scmp.com/news/china/military/article/3351456/trump-factor-drives-asia-pacific-military-spending-fastest-pace-2009",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-27T06:00:18+08:00",
+      "summary": "Military spending in the Asia-Pacific rose at the fastest pace for 16 years in 2025 as US allies felt “growing uncertainty” over whether Washington would honour its security commitments, according to a new report. Total global spending reached US$2.89 trillion, an increase of 2.9 per cent from 2024, the Stockholm International Peace Research Institute (SIPRI) think tank said in its annual report on military expenditure published Monday. That marked the 11th consecutive year of increases and...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Tim Cook’s Impeccable Timing",
+      "link": "https://stratechery.com/2026/tim-cooks-impeccable-timing",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T18:00:00+08:00",
+      "summary": "Tim Cook had an extraordinary run — and impeccable timing, both in terms of when he became CEO, and when he is stepping down.",
+      "event_type": "earnings",
+      "tickers": [
+        "1984",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "How North Korea Won",
+      "link": "https://www.foreignaffairs.com/north-korea/how-north-korea-won-jung-pak",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The Strange Triumph of Kim Jong Un.",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1973",
+        "1950",
+        "META"
+      ]
+    },
+    {
+      "title": "Robot runner handily beats humans in half-marathon, setting new record",
+      "link": "https://arstechnica.com/ai/2026/04/robot-runner-handily-beats-humans-in-half-marathon-setting-new-record",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-21T01:56:27+08:00",
+      "summary": "A humanoid robot's record half-marathon run shows China's speed in robotics.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Tactical Success, Strategic Failure? Washington Walks the Path to Defeat in Iran",
+      "link": "https://warontherocks.com/tactical-success-strategic-failure-washington-walks-the-path-to-defeat-in-iran",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-14T15:30:36+08:00",
+      "summary": "Six weeks after the United States and Israel launched a war against Iran, what was the political object? Not the military means and objectives &#8212; those are the hammer, not the nail. The nail is: What condition in the world, what durable change in Iran&#8217;s relationship to the United States and its neighbors, were these strikes meant to produce? That question was never answered, because it was never seriously asked. The Trump administration confused the instrument for the purpose and then",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "OpenAI has bought AI personal finance startup Hiro",
+      "link": "https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-14T08:23:33+08:00",
+      "summary": "The acquisition indicates a capability that OpenAI is building into ChatGPT: financial planning.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Can a New Bridge Finally Save the Pentagon’s Best Ideas?",
+      "link": "https://warontherocks.com/can-a-new-bridge-finally-save-the-pentagons-best-ideas",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-13T16:00:43+08:00",
+      "summary": "In May 1953, in the desert west of Idaho Falls, a crew powered up the world&#8217;s first naval nuclear propulsion system. What made it possible was daringly aggressive innovation: Adm. Hyman Rickover insisted that the Submarine Thermal Reactor Mark I be built to exactly the specifications that would later be required inside a submarine. This meant hundreds of pounds of simulated sea pressure per square inch, shock resistance tested to the standards of a depth-charge attack, and air conditioning",
+      "event_type": "earnings",
+      "tickers": [
+        "1953"
+      ]
+    },
+    {
+      "title": "Regime Change in Iran, Underpants Gnomes, and the Phase II Problem",
+      "link": "https://warontherocks.com/regime-change-in-iran-underpants-gnomes-and-the-phase-ii-problem",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-13T15:15:59+08:00",
+      "summary": "U.S. President Donald Trump and Israeli Prime Minister Benjamin Netanyahu started the Iran war off with a bang &#8212; not just the bang of bombs and rockets, but the rhetorical bang of declaring their intent to spur the Iranian people to overthrow the Islamic Republic.As a ceasefire pauses more than a month of combat, and failed talks lead to a planned blockade of the Strait of Hormuz, what has happened to their dreams of regime change? They seem to have fallen prey to the magical thinking of S",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Prosecutors seek Tiger Woods' prescription drug records after Florida arrest",
+      "link": "https://www.bbc.com/news/articles/c77mz26ed80o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-09T06:46:58+08:00",
+      "summary": "A legal order seeking the golfer's medications - including dosage and warnings about driving on pill bottles - will be issued later this month, court record shows.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "How the War with Iran Ends",
+      "link": "https://warontherocks.com/2026/04/how-the-war-with-iran-ends",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-03T15:15:40+08:00",
+      "summary": "Three weeks into the joint American-Israeli military operation against Iran, a pressing question occupies Washington: What will ultimately follow these strikes? The attacks themselves are already degrading Tehran&#8217;s military capacity, but the more crucial focus is the aftermath &#8212; specifically, whether the pressures now weighing on the theocracy point to a negotiated settlement, prolonged attrition, or the collapse of the Islamic Republic from within.This month, I turn 40. I was born i",
+      "event_type": "news",
+      "tickers": [
+        "1906"
+      ]
+    },
+    {
+      "title": "The Real War for Iran’s Future",
+      "link": "https://www.foreignaffairs.com/iran/real-war-irans-future",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-31T12:00:00+08:00",
+      "summary": "Who will determine the fate of the Islamic Republic?",
+      "event_type": "earnings",
+      "tickers": [
+        "1979",
+        "1981",
+        "1988",
+        "1989"
+      ]
+    },
+    {
+      "title": "Okta&#8217;s CEO is betting big on AI agent identity",
+      "link": "https://www.theverge.com/podcast/902264/oktas-ceo-is-betting-big-on-ai-agent-identity",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-03-30T23:15:00+08:00",
+      "summary": "Today, I’m talking with Todd McKinnon, who is co-founder and CEO of Okta, a platform that lets big companies manage security and identity across all the apps and services their employees use. Think of it like login management — actually, that’s a great way to think about it because the way most people encounter Okta [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "META",
+        "AAPL"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 2905229.0,
+      "monthly_revenue": null,
+      "net_income": 121501.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 0.34,
+      "operating_cash_flow": 198745.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）"
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150427",
+      "filed_at": "1150427",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2905229.0,
+      "monthly_revenue": null,
+      "net_income": 121501.0,
+      "operating_income": -75271.0,
+      "gross_profit": -11771.0,
+      "eps_diluted": 0.34,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150409",
+      "filed_at": "1150409",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 2905229.0,
+      "monthly_revenue": null,
+      "net_income": 121501.0,
+      "operating_income": -75271.0,
+      "gross_profit": -11771.0,
+      "eps_diluted": 0.34,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 271253.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11502",
+      "period_end": "11502",
+      "filed_at": "1150317",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 267118.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 2905229.0,
+      "monthly_revenue": null,
+      "net_income": 121501.0,
+      "operating_income": -75271.0,
+      "gross_profit": null,
+      "eps_diluted": 0.34,
+      "operating_cash_flow": 198745.0,
+      "capex": 81079.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2009",
+    "market": "tw",
+    "company_name": "第一伸銅科技股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 2905229.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 121501.0,
+      "eps": 0.34,
+      "fcf": null,
+      "ocf": 198745.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.041821488082350824,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 0.0,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 2905229.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 121501.0,
+        "eps_diluted": 0.34,
+        "fcf": null,
+        "ocf": 198745.0,
+        "capex": null,
+        "company_name": "第一伸銅科技股份有限公司"
+      },
+      {
+        "fiscal_year": 114,
+        "fiscal_period": "Q4",
+        "revenue": 2905229.0,
+        "gross_profit": -11771.0,
+        "operating_income": -75271.0,
+        "net_income": 121501.0,
+        "eps_diluted": 0.34,
+        "fcf": null,
+        "ocf": 198745.0,
+        "capex": 81079.0,
+        "company_name": "第一銅"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

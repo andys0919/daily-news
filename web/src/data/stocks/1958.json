@@ -1,0 +1,137 @@
+{
+  "ticker": "1958",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "The United States Is Repeating Its Silicon Mistake with Gallium Nitride",
+      "link": "https://warontherocks.com/cogs-of-war/the-united-states-is-repeating-its-silicon-mistake-with-gallium-nitride",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T16:00:13+08:00",
+      "summary": "China controls 99 percent of the world&#8217;s primary gallium, a critical mineral and semiconductor crucial for building the microchips of the future. In 2023, it placed export controls on gallium to retaliate against American restrictions on the export of advanced chips to China. In December 2024, China escalated to an outright ban on gallium exports to the United States. The U.S. National Defense Stockpile had zero gallium reserves when that ban landed.The United States has been here before. ",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nChina controls 99 percent of the world’s primary gallium , a critical mineral and semiconductor crucial for building the microchips of the future. In 2023, it placed export controls on gallium to retaliate against American restrictions on the export of advanced chips to Chi",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "1976",
+        "1985",
+        "1958",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Venezuela Needs Regime Change",
+      "link": "https://www.foreignaffairs.com/venezuela/venezuela-needs-regime-change-javier-corrales",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The narrow path to a democratic transition.",
+      "body_text": "The Narrow Path to a Democratic Transition\nJavier Corrales\nMay/June 2026\nWhen U.S. forces swooped into Caracas in January to seize President Nicolás Maduro, many Venezuelans inside and outside the country rejoiced. Maduro’s ouster seemed to signal the imminent end of a regime that had for years oppressed and immiserated its people. Thanks to bold U.S. action, a government that had rankled its neig",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1935",
+        "1958",
+        "1989",
+        "1975",
+        "1895"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "What is Strategic Rivalry? Why Should We Care?",
+      "link": "https://warontherocks.com/2026/04/what-is-strategic-rivalry-why-should-we-care",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-09T15:30:49+08:00",
+      "summary": "The states most likely to draw America into its next major crisis or war are not unknowns. They are the usual suspects: The same handful of states that have threatened the United States repeatedly across decades. Interstate rivals have caused roughly 80 percent of history&#8217;s wars and the odds of any given rivalry ending peacefully are little better than a coin toss. Yet America&#8217;s key strategy documents since the 2017 National Security Strategy have used phrases like great power compet",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe states most likely to draw America into its next major crisis or war are not unknowns. They are the usual suspects: The same handful of states that have threatened the United States repeatedly across decades. Interstate rivals have caused roughly 80 percent of history’s",
+      "event_type": "earnings",
+      "tickers": [
+        "1873",
+        "1945",
+        "1816",
+        "1949",
+        "1958",
+        "1989",
+        "1979",
+        "1972",
+        "1815"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "The AI Great Leap Forward",
+      "link": "https://leehanchung.github.io/blogs/2026/04/05/the-ai-great-leap-forward",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-09T04:10:51+08:00",
+      "summary": "Article URL: https://leehanchung.github.io/blogs/2026/04/05/the-ai-great-leap-forward/ Comments URL: https://news.ycombinator.com/item?id=47695647 Points: 76 # Comments: 35",
+      "event_type": "news",
+      "tickers": [
+        "2193",
+        "1958",
+        "1956",
+        "META"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1989",
+      "count": 2
+    },
+    {
+      "ticker": "1987",
+      "count": 1
+    },
+    {
+      "ticker": "1976",
+      "count": 1
+    },
+    {
+      "ticker": "1985",
+      "count": 1
+    },
+    {
+      "ticker": "TSM",
+      "count": 1
+    },
+    {
+      "ticker": "1961",
+      "count": 1
+    },
+    {
+      "ticker": "1935",
+      "count": 1
+    },
+    {
+      "ticker": "1975",
+      "count": 1
+    },
+    {
+      "ticker": "1895",
+      "count": 1
+    },
+    {
+      "ticker": "1873",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

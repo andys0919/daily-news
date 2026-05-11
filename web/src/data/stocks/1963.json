@@ -1,0 +1,90 @@
+{
+  "ticker": "1963",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Roundup #81: Back to our regular programming",
+      "link": "https://www.noahpinion.blog/p/roundup-81-back-to-our-regular-programming",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-01T16:57:37+08:00",
+      "summary": "National debt; AI cyberattacks; Phone bans; AI and coding jobs; Millennials vs. Boomers; Public order; California YIMBYism",
+      "body_text": "Hi, folks! My father unfortunately passed away two weeks ago from chemotherapy complications, and as you can imagine, I’ve been busy dealing with that, so posting has been a bit light. My apologies. (I will probably write something about my father on this blog at some point in the near future.)\nAnyway, there’s tons of stuff happening out there in the world — far too much to fit in a single roundup",
+      "event_type": "earnings",
+      "tickers": [
+        "1963"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Transatlantic MAGA Fantasy",
+      "link": "https://www.foreignaffairs.com/europe/transatlantic-maga-fantasy",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-29T12:00:00+08:00",
+      "summary": "How Trump misread Europe.",
+      "body_text": "LIANA FIX is Senior Fellow for Europe at the Council on Foreign Relations and the author of the forthcoming book Germany Rearmed: The Return of War and the End of Illusions .\nMICHAEL KIMMAGE is Director of the Kennan Institute and the author of Collisions: The Origins of the War in Ukraine and the New Global Instability .\nHow Trump Misread Europe\nLiana Fix and Michael Kimmage\nPresident Donald Trum",
+      "event_type": "earnings",
+      "tickers": [
+        "1956",
+        "1963"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "'They told me he was dead': Children born near army base learn truth about UK soldier dads",
+      "link": "https://www.bbc.com/news/articles/c895k3537kgo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-20T07:07:52+08:00",
+      "summary": "A DNA and legal project has identified the fathers of 20 children born near a military base in Kenya.",
+      "body_text": "\"Edward\", a nine-year old Kenyan boy, has always been aware his father worked for the British military. The boy's skin colour, lighter than his peers, has provoked years of bullying. His father disappeared before Edward [not his real name] was born, leaving his mum living in extreme poverty, ostracised by some of her family.\nNow this man, who worked as a contractor at a British army base in Kenya,",
+      "event_type": "earnings",
+      "tickers": [
+        "1964",
+        "1895",
+        "1963"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Is each American generation doing better?",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/is-each-american-generation-doing-better.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-23T14:53:42+08:00",
+      "summary": "We construct a posttax, posttransfer income measure from 1963 to 2023 based on the Current Population Survey Annual Social and Economic Supplement that allows us to consistently compare the economic well-being of five generations of Americans at ages 36–40. We find that Millennials had a real median household income that was 20% higher than that [&#8230;] The post Is each American generation doing better? appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "1963"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1956",
+      "count": 1
+    },
+    {
+      "ticker": "1964",
+      "count": 1
+    },
+    {
+      "ticker": "1895",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

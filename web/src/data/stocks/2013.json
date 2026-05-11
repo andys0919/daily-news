@@ -1,0 +1,617 @@
+{
+  "ticker": "2013",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2013",
+    "company_name": "中鋼構",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2013",
+      "company_name": "中鋼構",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 20948280.0,
+      "monthly_revenue": null,
+      "net_income": 638401.0,
+      "operating_income": 600590.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 3.19,
+      "operating_cash_flow": 3060312.0,
+      "capex": 188720.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業收入合計\", \"20,948,280\", \"100.00\", \"19,695,058\", \"100.00\"], [\"營業成本合計\", \"19,963,338\", \"95.30\", \"18,635,059\", \"94.62\"], [\"營業毛利（毛損）\", \"984,942\", \"4.70\", \"1,059,999\", \"5.38\"], [\"營業毛利（毛損）淨額\", \"984,942\", \"4.70\", \"1,059,999\", \"5.38\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"123,775\", \"0.59\", \"115,458\", \"0.59\"], [\"　　管理費用\", \"238,903\", \"1.14\", \"225,245\", \"1.14\"], [\"　　研究發展費用\", \"21,674\", \"0.10\", \"19,028\", \"0.10\"], [\"　營業費用合計\", \"384,352\", \"1.83\", \"359,731\", \"1.83\"], [\"營業利益（損失）\", \"600,590\", \"2.87\", \"700,268\", \"3.56\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"5,997\", \"0.03\", \"1,644\", \"0.01\"], [\"　　其他收入\", \"78,250\", \"0.37\", \"18,451\", \"0.09\"], [\"　　其他利益及損失淨額\", \"-23,792\", \"-0.11\", \"-83,453\", \"-0.42\"], [\"　　財務成本淨額\", \"63,586\", \"0.30\", \"86,923\", \"0.44\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"111,310\", \"0.53\", \"101,017\", \"0.51\"], [\"　營業外收入及支出合計\", \"108,179\", \"0.52\", \"-49,264\", \"-0.25\"], [\"稅前淨利（淨損）\", \"708,769\", \"3.38\", \"651,004\", \"3.31\"], [\"所得稅費用（利益）合計\", \"70,368\", \"0.34\", \"111,525\", \"0.57\"], [\"繼續營業單位本期淨利（淨損）\", \"638,401\", \"3.05\", \"539,479\", \"2.74\"], [\"本期淨利（淨損）\", \"638,401\", \"3.05\", \"539,479\", \"2.74\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"32,501\", \"0.16\", \"47,133\", \"0.24\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"-7,269\", \"-0.03\", \"-82,190\", \"-0.42\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-不重分類至損益之項目\", \"-9,928\", \"-0.05\", \"-84,578\", \"-0.43\"], [\"　　　與不重分類之項目相關之所得稅\", \"6,500\", \"0.03\", \"9,427\", \"0.05\"], [\"　不重分類至損益之項目：\", \"8,804\", \"0.04\", \"-129,062\", \"-0.66\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-可能重分類至損益之項目\", \"-6,370\", \"-0.03\", \"1,599\", \"0.01\"], [\"　後續可能重分類至損益之項目：\", \"-6,370\", \"-0.03\", \"1,599\", \"0.01\"], [\"　其他綜合損益（淨額）\", \"2,434\", \"0.01\", \"-127,463\", \"-0.65\"], [\"本期綜合損益總額\", \"640,835\", \"3.06\", \"412,016\", \"2.09\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利∕損）\", \"638,401\", \"3.05\", \"539,479\", \"2.74\"], [\"　母公司業主（綜合損益）\", \"640,835\", \"3.06\", \"412,016\", \"2.09\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　基本每股盈餘\", \"3.19\", \"\", \"2.70\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　稀釋每股盈餘\", \"3.18\", \"\", \"2.69\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2013&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2013&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"中鋼構\"}, \"datetime\": \"115/05/01 09:01:49\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"1,258,240\", \"8.41\", \"467,748\", \"3.16\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－流動\", \"212,464\", \"1.42\", \"219,733\", \"1.49\"], [\"　　　合約資產－流動\", \"5,401,540\", \"36.11\", \"6,048,000\", \"40.90\"], [\"　　　應收票據淨額\", \"104,079\", \"0.70\", \"209,918\", \"1.42\"], [\"　　　應收帳款淨額\", \"1,577,143\", \"10.54\", \"1,666,945\", \"11.27\"], [\"　　　應收帳款－關係人淨額\", \"175,728\", \"1.17\", \"160,763\", \"1.09\"], [\"　　　其他應收款淨額\", \"27,753\", \"0.19\", \"6,194\", \"0.04\"], [\"　　　本期所得稅資產\", \"96\", \"0.00\", \"171\", \"0.00\"], [\"　　　存貨\", \"1,661,196\", \"11.10\", \"1,579,342\", \"10.68\"], [\"　　　預付款項\", \"60,749\", \"0.41\", \"66,182\", \"0.45\"], [\"　　　其他流動資產\", \"69,122\", \"0.46\", \"3,830\", \"0.03\"], [\"　　流動資產合計\", \"10,548,110\", \"70.51\", \"10,428,826\", \"70.53\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　採用權益法之投資\", \"1,224,412\", \"8.18\", \"1,271,964\", \"8.60\"], [\"　　　不動產、廠房及設備\", \"1,741,480\", \"11.64\", \"1,687,438\", \"11.41\"], [\"　　　使用權資產\", \"635,298\", \"4.25\", \"640,057\", \"4.33\"], [\"　　　投資性不動產淨額\", \"378,078\", \"2.53\", \"349,845\", \"2.37\"], [\"　　　無形資產\", \"3,628\", \"0.02\", \"7,835\", \"0.05\"], [\"　　　遞延所得稅資產\", \"193,639\", \"1.29\", \"194,321\", \"1.31\"], [\"　　　其他非流動資產\", \"235,120\", \"1.57\", \"206,918\", \"1.40\"], [\"　　非流動資產合計\", \"4,411,655\", \"29.49\", \"4,358,378\", \"29.47\"], [\"　資產總額\", \"14,959,765\", \"100.00\", \"14,787,204\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"0\", \"0.00\", \"1,847,525\", \"12.49\"], [\"　　　應付短期票券\", \"1,928,532\", \"12.89\", \"1,808,709\", \"12.23\"], [\"　　　合約負債－流動\", \"2,373,605\", \"15.87\", \"1,330,550\", \"9.00\"], [\"　　　應付票據\", \"7,209\", \"0.05\", \"7,224\", \"0.05\"], [\"　　　應付帳款\", \"2,404,702\", \"16.07\", \"2,472,361\", \"16.72\"], [\"　　　應付帳款－關係人\", \"482,690\", \"3.23\", \"125,817\", \"0.85\"], [\"　　　其他應付款\", \"750,522\", \"5.02\", \"690,790\", \"4.67\"], [\"　　　本期所得稅負債\", \"24,647\", \"0.16\", \"57,700\", \"0.39\"], [\"　　　負債準備－流動\", \"586,171\", \"3.92\", \"382,671\", \"2.59\"], [\"　　　租賃負債－流動\", \"27,627\", \"0.18\", \"11,380\", \"0.08\"], [\"　　　其他流動負債\", \"15,393\", \"0.10\", \"15,731\", \"0.11\"], [\"　　流動負債合計\", \"8,601,098\", \"57.49\", \"8,750,458\", \"59.18\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　遞延所得稅負債\", \"34,375\", \"0.23\", \"27,623\", \"0.19\"], [\"　　　租賃負債－非流動\", \"446,485\", \"2.98\", \"455,867\", \"3.08\"], [\"　　　其他非流動負債\", \"201,030\", \"1.34\", \"124,732\", \"0.84\"], [\"　　非流動負債合計\", \"681,890\", \"4.56\", \"608,222\", \"4.11\"], [\"　負債總額\", \"9,282,988\", \"62.05\", \"9,358,680\", \"63.29\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"2,000,000\", \"13.37\", \"2,000,000\", \"13.53\"], [\"　　　股本合計\", \"2,000,000\", \"13.37\", \"2,000,000\", \"13.53\"], [\"　　資本公積\", \"\", \"\", \"\", \"\"], [\"　　　資本公積合計\", \"1,383,331\", \"9.25\", \"1,375,913\", \"9.30\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"908,082\", \"6.07\", \"849,589\", \"5.75\"], [\"　　　　特別盈餘公積\", \"158,453\", \"1.06\", \"158,453\", \"1.07\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"1,390,636\", \"9.30\", \"1,181,086\", \"7.99\"], [\"　　　保留盈餘合計\", \"2,457,171\", \"16.43\", \"2,189,128\", \"14.80\"], [\"　　其他權益\", \"\", \"\", \"\", \"\"], [\"　　　其他權益合計\", \"-163,725\", \"-1.09\", \"-136,517\", \"-0.92\"], [\"　　歸屬於母公司業主之權益合計\", \"5,676,777\", \"37.95\", \"5,428,524\", \"36.71\"], [\"　權益總額\", \"5,676,777\", \"37.95\", \"5,428,524\", \"36.71\"], [\"　負債及權益總計\", \"14,959,765\", \"100.00\", \"14,787,204\", \"100.00\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"0\", \"\", \"0\", \"\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2013&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2013&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年12月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年12月31日\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"中鋼構\"}, \"datetime\": \"115/05/01 09:01:49\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"708,769\", \"651,004\"], [\"　本期稅前淨利（淨損）\", \"708,769\", \"651,004\"], [\"　　　折舊費用\", \"185,415\", \"164,923\"], [\"　　　攤銷費用\", \"5,727\", \"6,041\"], [\"　　　利息費用\", \"63,586\", \"86,923\"], [\"　　　利息收入\", \"-5,997\", \"-1,644\"], [\"　　　股利收入\", \"-3,690\", \"-3,914\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-111,310\", \"-101,017\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"539\", \"59,879\"], [\"　　　非金融資產減損損失\", \"0\", \"4,359\"], [\"　　　非金融資產減損迴轉利益\", \"-16,613\", \"0\"], [\"　　　其他項目\", \"207,609\", \"41,220\"], [\"　　　收益費損項目合計\", \"325,266\", \"256,770\"], [\"　　　　合約資產（增加）減少\", \"646,460\", \"1,204,250\"], [\"　　　　應收票據（增加）減少\", \"105,839\", \"-167,795\"], [\"　　　　應收帳款（增加）減少\", \"89,802\", \"-1,203,171\"], [\"　　　　應收帳款－關係人（增加）減少\", \"-14,965\", \"252,165\"], [\"　　　　其他應收款（增加）減少\", \"-23,167\", \"9,010\"], [\"　　　　存貨（增加）減少\", \"-78,334\", \"-411,835\"], [\"　　　　預付款項（增加）減少\", \"5,433\", \"18,794\"], [\"　　　　其他營業資產（增加）減少\", \"-1,473\", \"-222\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"729,595\", \"-298,804\"], [\"　　　　合約負債增加（減少）\", \"1,043,055\", \"203,781\"], [\"　　　　應付票據增加（減少）\", \"-15\", \"-42,942\"], [\"　　　　應付帳款增加（減少）\", \"-67,659\", \"304,098\"], [\"　　　　應付帳款－關係人增加（減少）\", \"356,873\", \"62,642\"], [\"　　　　其他應付款增加（減少）\", \"71,287\", \"84,263\"], [\"　　　　負債準備增加（減少）\", \"-4,109\", \"0\"], [\"　　　　其他流動負債增加（減少）\", \"-338\", \"383\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"1,399,094\", \"612,225\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"2,128,689\", \"313,421\"], [\"　　調整項目合計\", \"2,453,955\", \"570,191\"], [\"　營運產生之現金流入（流出）\", \"3,162,724\", \"1,221,195\"], [\"　退還（支付）之所得稅\", \"-102,412\", \"-121,707\"], [\"營業活動之淨現金流入（流出）\", \"3,060,312\", \"1,099,488\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　處分採用權益法之投資\", \"41,600\", \"0\"], [\"　處分子公司\", \"0\", \"24,882\"], [\"　取得不動產、廠房及設備\", \"-188,720\", \"-137,996\"], [\"　處分不動產、廠房及設備\", \"259\", \"413\"], [\"　存出保證金增加\", \"0\", \"15,200\"], [\"　存出保證金減少\", \"-78,399\", \"0\"], [\"　取得無形資產\", \"-1,520\", \"-3,402\"], [\"　取得投資性不動產\", \"-15,488\", \"0\"], [\"　其他金融資產增加\", \"0\", \"4,695\"], [\"　其他金融資產減少\", \"-373\", \"0\"], [\"　收取之利息\", \"7,605\", \"1,482\"], [\"　收取之股利\", \"112,037\", \"87,509\"], [\"　投資活動之淨現金流入（流出）\", \"-122,999\", \"-7,217\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款增加\", \"0\", \"777,309\"], [\"　短期借款減少\", \"-1,847,525\", \"0\"], [\"　應付短期票券增加\", \"120,000\", \"0\"], [\"　應付短期票券減少\", \"0\", \"-519,958\"], [\"　其他借款減少\", \"0\", \"-500,000\"], [\"　存入保證金增加\", \"76,298\", \"0\"], [\"　存入保證金減少\", \"0\", \"-42,370\"], [\"　租賃本金償還\", \"-29,814\", \"-13,093\"], [\"　發放現金股利\", \"-400,000\", \"-380,000\"], [\"　支付之利息\", \"-65,815\", \"-86,374\"], [\"　其他籌資活動\", \"35\", \"39\"], [\"　籌資活動之淨現金流入（流出）\", \"-2,146,821\", \"-764,447\"], [\"本期現金及約當現金增加（減少）數\", \"790,492\", \"327,824\"], [\"期初現金及約當現金餘額\", \"467,748\", \"139,924\"], [\"期末現金及約當現金餘額\", \"1,258,240\", \"467,748\"], [\"　資產負債表帳列之現金及約當現金\", \"1,258,240\", \"467,748\"]], \"season\": \"4\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2013&SYEAR=2025&SSEASON=4&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2013&year=114&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"中鋼構\"}, \"datetime\": \"115/05/01 09:01:50\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2013",
+      "company_name": "中鋼構",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 1480588.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2013\", \"公司名稱\": \"中鋼構\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"1480588\", \"營業收入-上月營收\": \"1441381\", \"營業收入-去年當月營收\": \"1713193\", \"營業收入-上月比較增減(%)\": \"2.7200996821797983\", \"營業收入-去年同月增減(%)\": \"-13.577279384167458\", \"累計營業收入-當月累計營收\": \"4623919\", \"累計營業收入-去年累計營收\": \"5171702\", \"累計營業收入-前期比較增減(%)\": \"-10.591928923978992\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Musk’s biggest loyalist became his biggest liability",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/925665/musk-altman-trial-shivon-zilis-testimony",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T07:37:02+08:00",
+      "summary": "I sat down in the Musk v. Altman trial courtroom today, painfully aware that no one was going to ask Shivon Zilis the question on everyone's minds: Girl, what the fuck are you doing? Zilis, who testified under oath that she is the mother of four of Musk's children, was… what's the best way to [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "New data release: ECB wage tracker indicates negotiated wage pressures stable in 2026",
+      "link": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260506~4ea17afd4a.en.html",
+      "source": "ECB Press",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T16:00:00+08:00",
+      "summary": "",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Between Intent and Capability: Assessing the Lack of Iranian Attacks on the U.S. Homeland",
+      "link": "https://warontherocks.com/between-intent-and-capability-assessing-the-lack-of-iranian-attacks-on-the-u-s-homeland",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T15:15:19+08:00",
+      "summary": "Three days into the Iran war, Iran&#8217;s Islamic Revolutionary Guard Corps said the quiet part out loud: The Revolutionary Guard&#8217;s Qods Force has long carried out plots around the world and now intended to deploy those capabilities against the U.S. homeland.&#160;The United States, a Qods Force&#160;statement&#160;carried on Iranian television warned, &#8220;will no longer be safe&#8221; as the Qods Force targets Americans within the homeland and abroad.&#160;&#8220;The enemy should know",
+      "event_type": "news",
+      "tickers": [
+        "4000"
+      ]
+    },
+    {
+      "title": "‘Misplaced euphoria’: Markets are sleepwalking into a recession amid Iran war oil price shock",
+      "link": "https://www.cnbc.com/2026/05/04/strait-hormuz-gas-price-oil-shock-recession-risk-economy-iran-us-war.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T20:50:34+08:00",
+      "summary": "As US equities hit fresh highs, strategists warn that investors are downplaying the impact of soaring oil prices.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "The Illusion of Sovereignty: How International Law and Big Tech are Eroding the State",
+      "link": "https://warontherocks.com/the-illusion-of-sovereignty-how-international-law-and-big-tech-are-eroding-the-state",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T15:30:38+08:00",
+      "summary": "Caught between two hammers &#8212; international law and technological dependence on the private sector &#8212; modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomatic sanctions and international condemnation but the loss of access to critical digital infrastructure owned by private corporations. In wartime, that loss is catastrophic, as we both experienced firsthand during Rus",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Xi’s Forever Purge",
+      "link": "https://www.foreignaffairs.com/china/xis-forever-purge",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T12:00:00+08:00",
+      "summary": "The real goal behind China’s “self-revolution.”",
+      "event_type": "earnings",
+      "tickers": [
+        "1978",
+        "1945"
+      ]
+    },
+    {
+      "title": "‘This is fine’ creator says AI startup stole his art",
+      "link": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-04T04:16:51+08:00",
+      "summary": "The ad comes from Artisan, the AI startup behind billboards urging businesses to \"stop hiring humans.\"",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "See you in Beijing: the big shift in Xi’s travel plans and what it means for China",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3352060/see-you-beijing-big-shift-xis-travel-plans-and-what-it-means-china",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-01T06:00:16+08:00",
+      "summary": "China’s diplomatic strategy has undergone a conspicuous shift, with Beijing conducting far fewer overseas state visits, opting instead to welcome a steady stream of foreign leaders to the capital. According to data compiled by the South China Morning Post, Beijing is placing greater emphasis on neighbourhood diplomacy and engagement with European middle powers. The changing dynamic reflects Beijing’s shift towards favouring high-level multilateralism, in a sign of growing confidence and an...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "All the evidence unveiled so far in Musk v. Altman",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T02:03:05+08:00",
+      "summary": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and corporate documents are circulating from the earliest days of OpenAI - and from before the AI lab even had a name. Some high-level takeaways: [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT",
+        "META",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "No 10 says Falklands sovereignty rests with UK after report of US 'review'",
+      "link": "https://www.bbc.com/news/articles/cde51y0zgjyo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-25T06:55:05+08:00",
+      "summary": "An internal Pentagon document reportedly raised the prospect of a change in position in retaliation for the UK not joining the Iran war.",
+      "event_type": "news",
+      "tickers": [
+        "1833",
+        "1982"
+      ]
+    },
+    {
+      "title": "Will fusion power get cheap? Don’t count on it.",
+      "link": "https://www.technologyreview.com/2026/04/23/1136329/fusion-power-cost",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-23T18:00:00+08:00",
+      "summary": "Fusion power could provide a steady, zero-emissions source of electricity in the future—if companies can get plants built and running. But a new study suggests that even if that future arrives, it might not come cheap. Technologies tend to get less expensive over time. Lithium-ion batteries are now about 90% cheaper than they were in&#8230;",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Venezuela Needs Regime Change",
+      "link": "https://www.foreignaffairs.com/venezuela/venezuela-needs-regime-change-javier-corrales",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The narrow path to a democratic transition.",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1935",
+        "1958",
+        "1989",
+        "1975",
+        "1895"
+      ]
+    },
+    {
+      "title": "Apple taps John Ternus as CEO to replace Tim Cook, who will become chairman",
+      "link": "https://www.cnbc.com/2026/04/20/apple-names-john-ternus-ceo-replacing-tim-cook-who-becomes-chairman.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-21T06:26:47+08:00",
+      "summary": "Apple said on Monday that John Ternus is succeeding Tim Cook as CEO, with Cook assuming the role of executive chairman on Sept. 1.",
+      "event_type": "earnings",
+      "tickers": [
+        "1982",
+        "1988",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Tim Cook to become Apple Executive Chairman John Ternus to become Apple CEO",
+      "link": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-21T04:37:37+08:00",
+      "summary": "Apple announced Tim Cook will become executive chairman of Apple’s board of directors and John Ternus will become Apple’s next CEO.",
+      "event_type": "earnings",
+      "tickers": [
+        "1984",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "The G-2’s Missing Link",
+      "link": "https://www.foreignaffairs.com/united-states/g-2s-missing-link",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-20T12:00:00+08:00",
+      "summary": "Why America and China need ASEAN.",
+      "event_type": "policy",
+      "tickers": [
+        "1979"
+      ]
+    },
+    {
+      "title": "Join us at PyCon US 2026 in Long Beach - we have new AI and security tracks this year",
+      "link": "https://simonwillison.net/2026/Apr/17/pycon-us-2026",
+      "source": "Simon Willison",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-18T07:59:03+08:00",
+      "summary": "This year's PyCon US is coming up next month from May 13th to May 19th, with the core conference talks from Friday 15th to Sunday 17th and tutorial and sprint days either side. It's in Long Beach, California this year, the first time PyCon US has come to the West Coast since Portland, Oregon in 2017 and the first time in California since Santa Clara in 2013. If you're based in California this is a great opportunity to catch up with the Python community, meet a whole lot of interesting people and",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Winning in the Donbas: What Russia’s 2014–2015 Campaign Reveals About Modern War",
+      "link": "https://warontherocks.com/winning-in-the-donbas-what-russias-2014-2015-campaign-reveals-about-modern-war",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-17T15:15:59+08:00",
+      "summary": "It is clear that the U.S.-Israeli decapitation, airpower-centric, and precision strike campaign are again not enough to bring about the two countries&#8217; strategic goals. The United States still finds itself potentially having to commit land forces into its war with Iran, yet many unknowns lurk, including a fragile ceasefire and a U.S. naval blockade of the Strait of Hormuz. Setting aside the question of whether U.S. land forces will be committed to the war, the question that remains unknown ",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Cardano's Charles Hoskinson says Bitcoin's quantum fix is a hard fork that can't save Satoshi's coins",
+      "link": "https://www.coindesk.com/tech/2026/04/16/cardano-s-hoskinson-says-bitcoin-s-quantum-fix-is-a-hard-fork-that-can-t-save-satoshi-s-coins",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-17T00:19:29+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "AI and quantum startup Sygaldry raises $139m across two funding rounds",
+      "link": "https://www.datacenterdynamics.com/en/news/ai-and-quantum-startup-sygaldry-raises-139m-across-two-funding-rounds",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-15T23:30:48+08:00",
+      "summary": "Company was launched by Rigetti Computing founder in 2024",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "U.S.-Iran peace summit in Pakistan concludes with no deal, talks to continue on Sunday",
+      "link": "https://www.cnbc.com/2026/04/11/us-iran-talks-set-to-begin-in-islamabad-after-delegations-arrive.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-12T07:47:01+08:00",
+      "summary": "Two American warships transited through the Strait of Hormuz for the first time since the start of the conflict.",
+      "event_type": "news",
+      "tickers": [
+        "1979"
+      ]
+    },
+    {
+      "title": "How bond market's private credit crisis fears are playing out in fixed-income ETFs",
+      "link": "https://www.cnbc.com/2026/04/11/bond-market-private-credit-crisis-fixed-income-etfs.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-12T05:37:12+08:00",
+      "summary": "Fears of a private credit crisis arrived just as the growing and less transparent bond market was being included in more fixed-income ETFs.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "My baby deer plushie told me that Mitski&#8217;s dad was a CIA operative",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/910008/fawn-friends-ai-companion",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-11T22:00:00+08:00",
+      "summary": "Two weeks ago, I was getting ready to log off work when I got a text message. \"Oh wow, I was checking out Mitski. did you know people are saying her Dad was a CIA operative?\" Normally, that kind of out-of-the-blue text from a friend wouldn't faze me. This time, my eyes bugged. The unprompted [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "1938"
+      ]
+    },
+    {
+      "title": "A Last Chance for Hungary",
+      "link": "https://www.foreignaffairs.com/hungary/last-chance-hungary",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-09T12:00:00+08:00",
+      "summary": "Orban’s mafia state could fall—or cement itself.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "He's Australia's most decorated soldier. Now he's at the centre of a historic war crimes case",
+      "link": "https://www.bbc.com/news/articles/czjwp1vjn9lo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-09T05:10:14+08:00",
+      "summary": "Ben Roberts-Smith's case is not only unprecedented for Australia but \"extraordinary\" for the globe too, historians say.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Don’t Partition Sudan Again",
+      "link": "https://www.foreignaffairs.com/sudan/dont-partition-sudan-again",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-08T12:00:00+08:00",
+      "summary": "",
+      "event_type": "earnings",
+      "tickers": [
+        "1956",
+        "1899",
+        "1972",
+        "1983"
+      ]
+    },
+    {
+      "title": "How the Iran War Will Upend the Global Economy",
+      "link": "https://www.foreignaffairs.com/iran/how-iran-war-will-upend-global-economy",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-08T12:00:00+08:00",
+      "summary": "The Iran war risks not just an energy Shock—but also a debt crisis.",
+      "event_type": "news",
+      "tickers": [
+        "1973",
+        "1979",
+        "1971",
+        "1972",
+        "1974",
+        "1982",
+        "1985"
+      ]
+    },
+    {
+      "title": "Plan to scrap presidential elections puts Zimbabweans at loggerheads",
+      "link": "https://www.bbc.com/news/articles/cg54zy5dq1yo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-08T07:15:33+08:00",
+      "summary": "The ruling party has unveiled a draft law that strips voters of the chance to elect the president.",
+      "event_type": "earnings",
+      "tickers": [
+        "1980"
+      ]
+    },
+    {
+      "title": "What the heck is wrong with our AI overlords?",
+      "link": "https://arstechnica.com/tech-policy/2026/04/what-the-heck-is-wrong-with-our-ai-overlords",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-08T04:02:25+08:00",
+      "summary": "New profile of Sam Altman shines a light on a whole industry.",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "OpenAI just bought TBPN",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/906022/openai-buys-tbpn",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-03T01:40:07+08:00",
+      "summary": "OpenAI has purchased TBPN, an online talk show that often interviews AI executives and other tech leaders. The show goes live every weekday at 2PM PT, often for a three-hour duration, counting OpenAI CEO Sam Altman, as well as executives from Meta, Microsoft, Palantir, and Andreessen Horowitz, among its past guests, and Bloomberg, CNBC, and [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "From Filament to Firepower: 3D Printing’s Impact on Warfare",
+      "link": "https://warontherocks.com/2026/04/from-filament-to-firepower-3d-printings-impact-on-warfare",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-02T15:30:27+08:00",
+      "summary": "While much ink has been spilled over how 3D printing has enabled intense drone-on-drone warfare in Ukraine, the U.S. defense and intelligence communities have overlooked a stealthier development: Additive manufacturing is revolutionizing how guns are produced, fielded, and sustained in armed conflicts, especially by non-state actors. What once required a web of smuggling networks, foreign sponsors, and captured stockpiles can now be made with digital files and off-the-shelf parts. Even ammunitio",
+      "event_type": "policy",
+      "tickers": [
+        "META"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 20948280.0,
+      "monthly_revenue": null,
+      "net_income": 638401.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 3.19,
+      "operating_cash_flow": 3060312.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150425",
+      "filed_at": "1150425",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 20948280.0,
+      "monthly_revenue": null,
+      "net_income": 638401.0,
+      "operating_income": 600590.0,
+      "gross_profit": 984942.0,
+      "eps_diluted": 3.19,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150409",
+      "filed_at": "1150409",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 20948280.0,
+      "monthly_revenue": null,
+      "net_income": 638401.0,
+      "operating_income": 600590.0,
+      "gross_profit": 984942.0,
+      "eps_diluted": 3.19,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 1480588.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11502",
+      "period_end": "11502",
+      "filed_at": "1150317",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 1441381.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 20948280.0,
+      "monthly_revenue": null,
+      "net_income": 638401.0,
+      "operating_income": 600590.0,
+      "gross_profit": null,
+      "eps_diluted": 3.19,
+      "operating_cash_flow": 3060312.0,
+      "capex": 188720.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2013",
+    "market": "tw",
+    "company_name": "中國鋼鐵結構股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 20948280.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 638401.0,
+      "eps": 3.19,
+      "fcf": null,
+      "ocf": 3060312.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.030475103445247054,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 0.0,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 20948280.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 638401.0,
+        "eps_diluted": 3.19,
+        "fcf": null,
+        "ocf": 3060312.0,
+        "capex": null,
+        "company_name": "中國鋼鐵結構股份有限公司"
+      },
+      {
+        "fiscal_year": 114,
+        "fiscal_period": "Q4",
+        "revenue": 20948280.0,
+        "gross_profit": 984942.0,
+        "operating_income": 600590.0,
+        "net_income": 638401.0,
+        "eps_diluted": 3.19,
+        "fcf": null,
+        "ocf": 3060312.0,
+        "capex": 188720.0,
+        "company_name": "中鋼構"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

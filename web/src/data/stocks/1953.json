@@ -1,0 +1,67 @@
+{
+  "ticker": "1953",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Dispatch from Kyiv: Europe steps up on security as the US steps back",
+      "link": "https://www.atlanticcouncil.org/dispatches/dispatch-from-kyiv-europe-steps-up-on-security-as-the-us-steps-back",
+      "source": "Atlantic Council",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T03:55:48+08:00",
+      "summary": "European states are now urgently strengthening their militaries and incorporating Ukraine into their defenses. The post Dispatch from Kyiv: Europe steps up on security as the US steps back appeared first on Atlantic Council.",
+      "body_text": "KYIV—Two ill-conceived external actions over the past few years have fundamentally changed how European nations view their security. Russian President Vladimir Putin’s invasion of Ukraine and, more recently, US President Donald Trump’s threats to take Greenland have led many Europeans to two conclusions. First, Russia is the primary threat to Europe’s security. Second, Europeans can no longer coun",
+      "event_type": "earnings",
+      "tickers": [
+        "1953"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Iran War Is an Expectations Game",
+      "link": "https://www.foreignaffairs.com/iran/iran-war-expectations-game",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "How perceptions shape a conflict’s outcome.",
+      "body_text": "DOMINIC TIERNEY is Claude Smith Professor of Political Science at Swarthmore College, a Senior Fellow at the Foreign Policy Research Institute, and the author of The Right Way to Lose a War: America in an Age of Unwinnable Conflicts .\nHow Perceptions Shape a Conflict’s Outcome\nDominic Tierney\nOn April 8, the United States and Iran agreed to a two-week cease-fire. But despite two days of negotiatio",
+      "event_type": "earnings",
+      "tickers": [
+        "1953",
+        "1962"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Can a New Bridge Finally Save the Pentagon’s Best Ideas?",
+      "link": "https://warontherocks.com/can-a-new-bridge-finally-save-the-pentagons-best-ideas",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-13T16:00:43+08:00",
+      "summary": "In May 1953, in the desert west of Idaho Falls, a crew powered up the world&#8217;s first naval nuclear propulsion system. What made it possible was daringly aggressive innovation: Adm. Hyman Rickover insisted that the Submarine Thermal Reactor Mark I be built to exactly the specifications that would later be required inside a submarine. This meant hundreds of pounds of simulated sea pressure per square inch, shock resistance tested to the standards of a depth-charge attack, and air conditioning",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nIn May 1953, in the desert west of Idaho Falls, a crew powered up the world’s first naval nuclear propulsion system . What made it possible was daringly aggressive innovation: Adm. Hyman Rickover insisted that the Submarine Thermal Reactor Mark I be built to exactly the spe",
+      "event_type": "earnings",
+      "tickers": [
+        "1953"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1962",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

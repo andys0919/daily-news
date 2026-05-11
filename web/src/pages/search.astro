@@ -1,0 +1,69 @@
+---
+import Base from "../layouts/Base.astro";
+import tickerIndex from "../data/tickers.json";
+
+interface Row { ticker: string; name: string; market: string; articles: number; reports: number }
+const all = (tickerIndex.tickers ?? []) as Row[];
+const tw = all.filter((r) => r.market === "tw");
+const us = all.filter((r) => r.market === "us");
+---
+<Base title="搜尋 — 台股 / 美股" active="search">
+  <section class="hero">
+    <div>
+      <span class="live"><span class="live-dot"></span>{all.length} 檔可查</span>
+      <h1 class="mt-2">搜尋 <span class="accent">台美股</span></h1>
+      <p class="hero-sub">
+        上方搜尋框可即時搜 ticker 或公司名。下面是完整清單，按新聞量排序。每檔個股頁只列「有意義的新聞」（earnings / capex / guidance / 法說等），純被提及的新聞被過濾掉。
+      </p>
+    </div>
+    <div class="hero-meta">
+      <div>🇹🇼 <span class="ts mono">{tw.length}</span> 檔</div>
+      <div>🇺🇸 <span class="ts mono">{us.length}</span> 檔</div>
+    </div>
+  </section>
+
+  <div class="filters" id="filter-bar">
+    <button class="fbtn" data-market="" data-active="true">全部 · {all.length}</button>
+    <button class="fbtn" data-market="us">🇺🇸 美股 · {us.length}</button>
+    <button class="fbtn" data-market="tw">🇹🇼 台股 · {tw.length}</button>
+  </div>
+
+  <article class="glass bento">
+    <header class="bento-head">
+      <h2 class="bento-title">完整清單 · 按新聞量排序</h2>
+    </header>
+    <div class="cov-grid" id="ticker-grid">
+      {all.map((r) => (
+        <a href={`/stocks/${r.ticker}/`} class="cov-cell" data-market={r.market}>
+          <span class="t">{r.ticker}</span>
+          <span class="meta" style="margin-top: 2px;">
+            {r.name && <span class="line-clamp-1" style="color: var(--fg-300); font-size: 11px; font-family: 'IBM Plex Sans', sans-serif;">{r.name}</span>}
+          </span>
+          <span class="meta" style="margin-top: 2px;">
+            {r.articles > 0 && <><span class="dot a"></span>{r.articles}A </>}
+            {r.reports > 0 && <><span class="dot r"></span>{r.reports}R</>}
+          </span>
+        </a>
+      ))}
+    </div>
+  </article>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bar = document.getElementById("filter-bar");
+      const cells = Array.from(document.querySelectorAll("#ticker-grid .cov-cell"));
+      if (!bar) return;
+      bar.addEventListener("click", (e) => {
+        const t = e.target;
+        if (!(t instanceof HTMLElement) || !t.matches(".fbtn")) return;
+        const want = t.getAttribute("data-market") || "";
+        bar.querySelectorAll(".fbtn").forEach((b) => b.removeAttribute("data-active"));
+        t.setAttribute("data-active", "true");
+        cells.forEach((c) => {
+          const m = c.getAttribute("data-market") || "";
+          c.style.display = !want || m === want ? "" : "none";
+        });
+      });
+    });
+  </script>
+</Base>

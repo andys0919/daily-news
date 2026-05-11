@@ -1,0 +1,155 @@
+{
+  "ticker": "GLW",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "GLW",
+    "company_name": "CORNING INC /NY",
+    "quarterly": {
+      "market": "us",
+      "ticker": "GLW",
+      "company_name": "CORNING INC /NY",
+      "cik": "0000024741",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-05-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000205/glw-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 4144000000.0,
+      "monthly_revenue": null,
+      "net_income": 371000000.0,
+      "operating_income": 639000000.0,
+      "gross_profit": 1528000000.0,
+      "gross_margin": 0.3687258687258687,
+      "operating_margin": 0.1541988416988417,
+      "eps_diluted": 0.43,
+      "operating_cash_flow": 362000000.0,
+      "capex": 241000000.0,
+      "free_cash_flow": 121000000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-05-01\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/24741/000002474126000205/glw-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2026-01-01\", \"end\": \"2026-03-31\", \"val\": 4144000000, \"accn\": \"0000024741-26-000205\", \"fy\": 2026, \"fp\": \"Q1\", \"form\": \"10-Q\", \"filed\": \"2026-05-01\", \"frame\": \"CY2026Q1\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "NVIDIA and Corning Announce Long-Term Partnership to Strengthen US Manufacturing for AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-emerald-ai-join-leading-energy-companies-to-pioneer-flexible-ai-factories-as-grid-assets",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T19:30:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.",
+      "body_text": "NVIDIA's Endeavor building in Santa Clara, Calif.\nNVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.\nCorning will increase its U.S.-based optical connectivity manufacturing capacit",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "GLW",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-05-01",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 4144000000.0,
+      "monthly_revenue": null,
+      "net_income": 371000000.0,
+      "operating_income": 639000000.0,
+      "gross_profit": 1528000000.0,
+      "eps_diluted": 0.43,
+      "operating_cash_flow": 362000000.0,
+      "capex": 241000000.0,
+      "free_cash_flow": 121000000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "GLW",
+    "market": "us",
+    "company_name": "CORNING INC /NY",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 4144000000.0,
+      "gross_profit": 1528000000.0,
+      "operating_income": 639000000.0,
+      "net_income": 371000000.0,
+      "eps": 0.43,
+      "fcf": 121000000.0,
+      "ocf": 362000000.0,
+      "capex": 241000000.0,
+      "gross_margin": 0.3687258687258687,
+      "op_margin": 0.1541988416988417,
+      "net_margin": 0.08952702702702703,
+      "fcf_margin": 0.0291988416988417,
+      "capex_intensity": 0.05815637065637066,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 4144000000.0,
+        "gross_profit": 1528000000.0,
+        "operating_income": 639000000.0,
+        "net_income": 371000000.0,
+        "eps_diluted": 0.43,
+        "fcf": 121000000.0,
+        "ocf": 362000000.0,
+        "capex": 241000000.0,
+        "company_name": "CORNING INC /NY"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "營益率 15% 健康",
+      "icon": "🟡",
+      "score": 1
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "1933",
+      "count": 1
+    },
+    {
+      "ticker": "1934",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

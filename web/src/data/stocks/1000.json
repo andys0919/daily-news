@@ -1,0 +1,244 @@
+{
+  "ticker": "1000",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "How Spain’s ICFO Helped Build a Quantum Security Startup for the AI Era",
+      "link": "https://www.eetimes.com/how-spains-icfo-helped-build-a-quantum-security-startup-for-the-ai-era",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T16:00:07+08:00",
+      "summary": "ICFO spinoff Quside has developed a quantum random number generator chip for secure cryptography applications. The post How Spain’s ICFO Helped Build a Quantum Security Startup for the AI Era appeared first on EE Times.",
+      "body_text": "In Barcelona, Quside is using photonic chip technology to generate what it calls high-quality, verifiable entropy—the unpredictable input used to create encryption keys, secure communications, authentication credentials, and other cryptographic functions. As AI infrastructure expands and organizations prepare for the shift to quantum-safe cryptography, the company argues that demand for secure, ha",
+      "event_type": "earnings",
+      "tickers": [
+        "1000"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Why shoplifting is bad",
+      "link": "https://www.noahpinion.blog/p/why-shoplifting-is-bad",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-25T06:30:08+08:00",
+      "summary": "It may feel like a small act of rebellion, but it hurts a lot of people who don't deserve it.",
+      "body_text": "“Shoplifters of the world/ Unite and take over” — The Smiths\n“When she wants something, man, she don’t wanna pay for it” — Jane’s Addiction\nSeven years ago, when I wanted some toothpaste, I would walk down to my local Walgreens, grab a box of Crest off of the shelf, pay for it at the register, and walk home with it. Today, when I want some toothpaste, I open up Amazon.com and buy it in bulk. What ",
+      "event_type": "earnings",
+      "tickers": [
+        "1000",
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Why Chip Sovereignty Is No Longer About Chips—But Systems",
+      "link": "https://www.eetimes.com/why-chip-sovereignty-is-no-longer-about-chips-but-systems",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-24T04:30:00+08:00",
+      "summary": "Exclusive interviews with Mark Papermaster, CTO of AMD, and Chris Miller, author of “Chip War” and professor at Tufts University The post Why Chip Sovereignty Is No Longer About Chips—But Systems appeared first on EE Times.",
+      "body_text": "Governments around the world are pouring tens of billions into semiconductor manufacturing in the name of chip sovereignty. From the U.S. to Europe to Asia, the assumption is clear: Control the fabs, and you control the future of computing.\nBut as AI reshapes the semiconductor landscape, that assumption no longer captures where value is created. Strategic advantage is shifting toward a broader—and",
+      "event_type": "earnings",
+      "tickers": [
+        "1000"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Which Chips Actually Matter? Europe Reassesses Its Semiconductor Strategy After Nexperia Wakeup Call",
+      "link": "https://www.eetimes.com/which-chips-actually-matter-europe-reassesses-its-semiconductor-strategy-after-nexperia-wakeup-call",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-09T16:00:00+08:00",
+      "summary": "As the Nexperia episode sharpens Europe’s focus, experts say resilience will hinge on application relevance, supply chain depth, and smarter investment priorities. The post Which Chips Actually Matter? Europe Reassesses Its Semiconductor Strategy After Nexperia Wakeup Call appeared first on EE Times.",
+      "body_text": "The political shockwaves from the Nexperia episode are still reverberating across Europe’s semiconductor debate. What began as a company-specific controversy has evolved into a broader strategic question: Is Europe focusing on the right parts of the chip value chain—or chasing technological prestige at the expense of practical resilience?\nFor policymakers in Brussels and national capitals, the mor",
+      "event_type": "earnings",
+      "tickers": [
+        "1000"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "From Defect Images to Die Prediction: How Intel Is Scaling AI in Advanced Manufacturing",
+      "link": "https://www.eetimes.com/from-defect-images-to-die-prediction-how-intel-is-scaling-ai-in-advanced-manufacturing",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-08T01:00:00+08:00",
+      "summary": "Intel’s AI strategy focuses on operational scale, lifecycle management, and factory-wide deployment. The post From Defect Images to Die Prediction: How Intel Is Scaling AI in Advanced Manufacturing appeared first on EE Times.",
+      "body_text": "Artificial intelligence has long been embedded in semiconductor manufacturing, quietly supporting inspection tools, statistical process control, and yield analysis. What is changing is not the mere presence of AI but its operational role. As device architectures grow more complex and process windows tighten, AI is increasingly becoming part of the core infrastructure that keeps advanced fabs runni",
+      "event_type": "earnings",
+      "tickers": [
+        "1000"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Europe’s Semiconductor Strategy Meets Market Reality",
+      "link": "https://www.eetimes.com/europes-semiconductor-strategy-meets-market-reality",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-03-30T16:29:54+08:00",
+      "summary": "As Brussels sharpens its de-risking agenda, analysts warn that the real test of Europe’s chip ambitions may come from market economics, not geopolitics. The post Europe’s Semiconductor Strategy Meets Market Reality appeared first on EE Times.",
+      "body_text": "Europe’s semiconductor strategy has largely been framed as a geopolitical balancing act. Policymakers in Brussels speak of “de-risking, not decoupling,” aiming to reduce strategic dependencies without dismantling the global openness that built the modern chip industry.\nBut a more consequential stress test is emerging—one driven less by export controls and more by market economics.\nFor Antonia Hmai",
+      "event_type": "policy",
+      "tickers": [
+        "1000"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Plentiful, high-paying jobs in the age of AI",
+      "link": "https://www.noahpinion.blog/p/plentiful-high-paying-jobs-in-the-ff9",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-28T16:50:55+08:00",
+      "summary": "A timely repost, with some needed clarifications.",
+      "body_text": "I’m traveling today, so here’s a timely repost.\nTwo years ago, I wrote a post on AI and jobs that ignited a firestorm of discussion and criticism:\nMost people interpreted me as arguing that human beings will definitely have plentiful, high-paying jobs, no matter how good AI gets, because of the law of comparative advantage. If you only read the headline and the introduction, I guess maybe you coul",
+      "event_type": "earnings",
+      "tickers": [
+        "1974",
+        "1950",
+        "1000",
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Here's How Much You'd Have If You Invested $1000 in Broadcom Inc. a Decade Ago - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNX2w4S3VCeWw5TTZvVUNrX0N2T2RUTW5qdXZvX0NEX1kzaUZBQWthUER3SFRXSWRZWFRKRU5DZzN4N0JOVHU2eE44blNidHowZTM4OWh2Q2JQQUhCT2ZnUm5FVWkwOFB1Y3Y5Y1R1WkN6MlF0S0RkcGZQcWVGTTFQVzB2SjN0aEY1aThUR1VwZkVFYTJWYXFJd3ZR?oc=5",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-27T20:30:04+08:00",
+      "summary": "Here's How Much You'd Have If You Invested $1000 in Broadcom Inc. a Decade Ago&nbsp;&nbsp;Yahoo Finance",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "If You Invested $1000 in Micron a Decade Ago, This is How Much It'd Be Worth Now - qz.com",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQzN2VV8zdEVPT2l6VWZWaTFTTUNaeW53SVkxeW50NWxIUTVuVENPQnNRdG5fVWlFaHE4eE1DVnY2TF9YaUJFaXJ1ZHFhYTBZblIwQWs0ZFR1bFhtLXBlcUFkYnQ5a08xVFNXeVVVdkQ0MGo0a1EzNng4TjhvQ1RJaDREMlFQUUJtWEdCRC1WS1RvMEV6RWRiRA?oc=5",
+      "source": "記憶體產業",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-21T03:36:01+08:00",
+      "summary": "If You Invested $1000 in Micron a Decade Ago, This is How Much It'd Be Worth Now&nbsp;&nbsp;qz.com",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "Hasan Piker is bad for the Democrats",
+      "link": "https://www.noahpinion.blog/p/hasan-piker-is-bad-for-the-democrats",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-18T04:45:24+08:00",
+      "summary": "Republicans embraced extremist ideology and it backfired on them. Democrats shouldn't follow suit.",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "How Europe Actually Finances Semiconductor Investments",
+      "link": "https://www.eetimes.com/how-europe-actually-finances-semiconductor-investments",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-15T16:00:00+08:00",
+      "summary": "As Europe’s semiconductor ambitions shift from policy announcements to real industrial projects, a less visible question is coming into focus: How do those projects actually get financed? The post How Europe Actually Finances Semiconductor Investments appeared first on EE Times.",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "If You Invested $1000 in Broadcom Inc. a Decade Ago, This is How Much It'd Be Worth Now - qz.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOX3BPZm54Zkw1VTFULW1jZHlyLXZlR3RIMmY1RHRublYyMmx0d1NzMzhMUUlLOWg3VGtCWkE5U3BOSTFBZUxGbXFkS3hMb1JzeTZFeG5nYktUT1VqZThMY19vNlBLRVhJa0RMcFFyQml5QnIwZTFVV1RHVFU0SlpSVGFtX0FvYVB6TnUwaXFzbDQtMDVKSEZfSDNZTjU3RmlQ",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-11T08:08:00+08:00",
+      "summary": "If You Invested $1000 in Broadcom Inc. a Decade Ago, This is How Much It'd Be Worth Now&nbsp;&nbsp;qz.com",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "Canadian Listings of Ryzen 9 9950X3D2 Indicate Near-$1000 US Pricing - TechPowerUp",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbHBaUGhyal9SRDZLTFZmUDM5Y0FaaFI0STFob3NuYjNCTFFnNlZyV3RHalp1cHhpRm1RRE13c01aMHAxVUFFODMwa3lzQVZVMTBuMFZ2UjU2UndQTnBxM1g1TFB0VGl2V0lNMml3T3VqQVNZMHJDUlo3enBGeGlEeXhpbVZvYXpDdjNkZzNmS2ZqZ1pXb3E3VExFNGxzWW9mZjJBa0Y0bG9aQdIBrwFBVV95cUxQdFBGa2FEd3pFMDVQOHA4X09vUHpYRkZXbjZRY25tb3dRQXR6S0tpZEZTSm5jRmlVeXhGVlRfaW5oYzAzR0k0bktQZmktamxvMGh3Nk1IVFRYZ05CRVY3S3EyVGxqclBfUjY5R3dLRUg0TTQ3YzNMUjZTY0JTdkRKb19nYmV3MS1ZaWJDd0o1RkV0MDRGQU5lUEZUczNWQjZTMkhFcmFTUWY1MjFMZFRF",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-06T16:16:50+08:00",
+      "summary": "Canadian Listings of Ryzen 9 9950X3D2 Indicate Near-$1000 US Pricing&nbsp;&nbsp;TechPowerUp",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "AMD Ryzen 9 9950X3D2 Dual Edition Starts Appearing In Retail Stores At Nearly $1000 - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeTlEVW9NWVRKc0ZkTlY5a25ucUM2aFNmbGVUQ0tLYWh3bmV1Njd1eElhdFBHWlA5blpTSjR3SWZERk9DSloyb29fRjV4ZG00NmZieDgxckNVc1NianlBQ2VVYldycWZBX1lRSm1WVFh0bGhRTVFoelc2cDVhNlFHaGJhODJQODhyTi1ZVUZqRzRwa1I2SnV0ekpjZkRMLXU4LWdaTmplRdIBrAFBVV95cUxOXzZtTlJSQUFOS3RBcUNWSmhKcXhWeGVwZjYtUHFfeVp2YXh2bUFZQXF1QzF2V2JqMG9OTzNwOEMteUVldlA5Vlg2S2VqbmJzcUxsVURnMUZUSkF3cTZKT0syd1JHckJCZXZLbnFLSjhROGdTMjVWMzV4UkNjb2NEMGZGTm5BckZqYllma0RRVTVQS3FRSGJENjlsS2Ewd2hWLUNzY2NnMS1ZdXpZ?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-05T20:47:00+08:00",
+      "summary": "AMD Ryzen 9 9950X3D2 Dual Edition Starts Appearing In Retail Stores At Nearly $1000&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "1000"
+      ]
+    },
+    {
+      "title": "SanDisk Tops Q1 Russell 1000 on NAND Shortage; Nvidia & Broadcom AI Chip Analysis - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdkJkVzZNcnVFakxoS1hTcDFYV3VfMmdoVGs4QlpFU2p6M0YtajA4MkpYOHNheTFIUkpIbFdQTUJsQzJ3MDFnRmhKa29KM2ZIQ2hWNlgyQXZWMTI3UXNYWXlJTVVnem5VVGxQVzhvYzhzUk9qcTdyUERjUVl0MHpRT3pLN3FybGlheHNYWDhfaW8tQjd5UkZNSmM0cDdHSGo1NmlRR1owZkJjbXltY2R3WDhmbFVrazcwNFluTUhOS1dFZTJNbW1oTHZB",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-05T14:01:00+08:00",
+      "summary": "SanDisk Tops Q1 Russell 1000 on NAND Shortage; Nvidia & Broadcom AI Chip Analysis - News and Statistics&nbsp;&nbsp;IndexBox",
+      "event_type": "news",
+      "tickers": [
+        "1000",
+        "NVDA"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "AMZN",
+      "count": 1
+    },
+    {
+      "ticker": "1974",
+      "count": 1
+    },
+    {
+      "ticker": "1950",
+      "count": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

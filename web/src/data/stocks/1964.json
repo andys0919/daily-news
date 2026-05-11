@@ -1,0 +1,94 @@
+{
+  "ticker": "1964",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "When Cleaning Gets Hard, Collaboration Gets to Work: KOKI and ZESTRON to Host Technical Webinar on Solving Low-Standoff Challenges",
+      "link": "https://www.3dincites.com/2026/05/when-cleaning-gets-hard-collaboration-gets-to-work-koki-and-zestron-to-host-technical-webinar-on-solving-low-standoff-challenges",
+      "source": "3D InCites",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T21:23:14+08:00",
+      "summary": "Have you ever had a process issue, called a supplier, and heard: “Yeah, we don’t think it’s our product causing the issue”? KOKI Solder America and ZESTRON Corporation take a different approach, one rooted in shared responsibility, technical collaboration, and a commitment to solving the full process, not just isolated steps. On Tuesday, May 12th [&#8230;] The post When Cleaning Gets Hard, Collaboration Gets to Work: KOKI and ZESTRON to Host Technical Webinar on Solving Low-Standoff Challenges a",
+      "body_text": "Have you ever had a process issue, called a supplier, and heard: “Yeah, we don’t think it’s our product causing the issue”?\nKOKI Solder America and ZESTRON Corporation take a different approach, one rooted in shared responsibility, technical collaboration, and a commitment to solving the full process, not just isolated steps.\nOn Tuesday, May 12th at 10:00 AM PT / 12:00 PM CT / 1:00 PM ET, KOKI and",
+      "event_type": "earnings",
+      "tickers": [
+        "1964"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "'They told me he was dead': Children born near army base learn truth about UK soldier dads",
+      "link": "https://www.bbc.com/news/articles/c895k3537kgo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-20T07:07:52+08:00",
+      "summary": "A DNA and legal project has identified the fathers of 20 children born near a military base in Kenya.",
+      "body_text": "\"Edward\", a nine-year old Kenyan boy, has always been aware his father worked for the British military. The boy's skin colour, lighter than his peers, has provoked years of bullying. His father disappeared before Edward [not his real name] was born, leaving his mum living in extreme poverty, ostracised by some of her family.\nNow this man, who worked as a contractor at a British army base in Kenya,",
+      "event_type": "earnings",
+      "tickers": [
+        "1964",
+        "1895",
+        "1963"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Ineos Automotive: Startup backed by a knighted billionaire and soccer mogul wants to rekindle the rugged SUV market",
+      "link": "https://www.cnbc.com/2026/04/13/ineos-automotive-grenadier-suv-james-ratcliffe.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-13T20:36:10+08:00",
+      "summary": "The automaker has plans to grow sales in the U.S. by roughly 30% to 35%, as well as a target to achieve breakeven this year, executives exclusively told CNBC.",
+      "body_text": "An automotive startup founded by a knighted billionaire, U.K. chemical mogul and minority owner of one of the world's most prominent soccer clubs wants to rekindle the rugged SUV market.\nThe company — Ineos Automotive — has produced more than 35,000 off-road SUVs and pickups since starting in 2022, with ambitious growth plans that include potentially expanding vehicle production to the U.S. and a ",
+      "event_type": "earnings",
+      "tickers": [
+        "1964"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "The U.S. Military Risks Letting Contractors Define How It Sees the Battlefield",
+      "link": "https://warontherocks.com/2026/03/the-u-s-military-risks-letting-contractors-define-how-it-sees-the-battlefield",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-31T16:00:10+08:00",
+      "summary": "In the 1964 black comedy Dr. Strangelove, an emergency war plan called &#8220;Plan R&#8221; allows an unhinged U.S. Air Force commander, Jack Ripper, to launch a nuclear strike without presidential authorization. Once the president, the joint chiefs, and the Soviet ambassador convene in the war room, the bombers are already airborne. Only Ripper knows the three-letter prefix needed to recall them, until his aide, Lionel Mandrake, reconstructs it from Ripper&#8217;s notes. Although nearly all pla",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nIn the 1964 black comedy Dr. Strangelove , an emergency war plan called “Plan R” allows an unhinged U.S. Air Force commander, Jack Ripper, to launch a nuclear strike without presidential authorization. Once the president, the joint chiefs, and the Soviet ambassador convene ",
+      "event_type": "earnings",
+      "tickers": [
+        "1964",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1895",
+      "count": 1
+    },
+    {
+      "ticker": "1963",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

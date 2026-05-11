@@ -1,0 +1,685 @@
+{
+  "ticker": "JPM",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "JPM",
+    "company_name": "JPMORGAN CHASE & CO",
+    "quarterly": {
+      "market": "us",
+      "ticker": "JPM",
+      "company_name": "JPMORGAN CHASE & CO",
+      "cik": "0000019617",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2014,
+      "fiscal_period": "Q3",
+      "period_end": "2014-09-30",
+      "filed_at": "2014-11-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026029344/jpm-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 71693000000.0,
+      "monthly_revenue": null,
+      "net_income": 16494000000.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 5.94,
+      "operating_cash_flow": -211761000000.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "Under the terms of the Series PP Preferred Stock, the ability of the Company to pay dividends on, make distributions with respect to, or to redeem, purchase or acquire, or make a liquidation payment on its common stock or any preferred stoc",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-05-01\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/19617/000162828026029344/jpm-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2014-01-01\", \"end\": \"2014-09-30\", \"val\": 71693000000, \"accn\": \"0000019617-14-000451\", \"fy\": 2014, \"fp\": \"Q3\", \"form\": \"10-Q\", \"filed\": \"2014-11-03\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Whirlpool says Iran war causing 'recession-level industry decline.' The shares are down 12%",
+      "link": "https://www.cnbc.com/2026/05/07/whirlpool-says-iran-war-causing-recession-level-industry-decline-the-shares-are-down-20percent.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T05:35:53+08:00",
+      "summary": "\"War in Iran resulted in recession-level industry decline in the U.S. as consumer confidence collapsed in late February and March,\" the company said.",
+      "body_text": "Whirlpool shares tumbled Thursday after the iconic appliance maker warned that the Iran war triggered a severe downturn, underscoring how sharply higher fuel prices and collapsing consumer confidence are beginning to weigh on big-ticket purchases.\n\"War in Iran resulted in recession-level industry decline in the U.S. as consumer confidence collapsed in late February and March,\" the company said in ",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apollo CEO Rowan warns of market correction, slams 'egregious' practices at rival insurers",
+      "link": "https://www.cnbc.com/2026/05/06/apollo-ceo-rowan-market-correction-rival-insurers.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T04:33:58+08:00",
+      "summary": "Apollo CEO Marc Rowan warned that markets face an elevated risk of unexpected shocks, saying he is positioning the firm defensively for an expected correction.",
+      "body_text": "Apollo Global Management CEO Marc Rowan on Wednesday warned investors that he is preparing his giant asset management firm for a potential market downturn and sharply criticized what he called the \"egregious\" practices of some rival insurers.\nThe current solid economic backdrop — which helped Apollo report a banner quarter, in which the firm reached $1 trillion in assets under management and recor",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Anthropic CEO warns of cyber ‘moment of danger’ as AI exposes thousands of vulnerabilities",
+      "link": "https://www.cnbc.com/2026/05/05/anthropic-ceo-cyber-moment-of-danger-mythos-vulnerabilities.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T03:36:16+08:00",
+      "summary": "Anthropic CEO Dario Amodei warned AI has created a narrow window for software firms, governments and banks to fix tens of thousands of vulnerabilities.",
+      "body_text": "Anthropic CEO Dario Amodei warned Tuesday that artificial intelligence has created a narrow window for the world's tech firms, governments and banks to fix tens of thousands of software vulnerabilities found by his company's latest model.\nThat AI model, Mythos, was previewed last month along with the disclosure that it had unearthed decades-old vulnerabilities in crucial software.\nSince AI models ",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "JPMorgan Downgrades Meta to Neutral: Are AI CapEx Concerns Finally Catching Up? - 24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORGRld1ZybkMycGpsclZvZlBkNkhVWWtRSEgtdmFybThRY2F2UXBXd3RtUDJIaHBhTW5qa1BCR2tfb19Fa1BiVnA2OUFUNzF1dDJlTjR3LUVqZFN2OUs1ZnlQcUJ6aXVzNWlYaDVzejRzSVNDOGF2WF8ySE9QMFNzd3pZVVBmRUxtcUVwMEFKSHhjVVJJTncwLVZWVnJFRTdlM1YzVUs1c3lKeEpGSWV2Rk5WMmxuUEV5SnZVWjJB?oc=5",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-01T00:45:24+08:00",
+      "summary": "JPMorgan Downgrades Meta to Neutral: Are AI CapEx Concerns Finally Catching Up?&nbsp;&nbsp;24/7 Wall St.",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "JPM",
+        "META"
+      ],
+      "companies": [
+        "JPMorgan",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Disposable Oligarchs",
+      "link": "https://www.foreignaffairs.com/united-states/disposable-oligarchs",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T12:00:00+08:00",
+      "summary": "Why wealthy elites come to regret their bargains with authoritarians.",
+      "body_text": "CHRISTOPHER A. HARTWELL is Professor of International Business Policy and Head of the International Management Institute at the Zurich University of Applied Sciences School of Management and Law and a Professor at Kozminski University.\nTRICIA D. OLSEN is Professor of Global Public Policy and Political Science and Harold E. Stassen Chair at the University of Minnesota’s Humphrey School of Public Af",
+      "event_type": "policy",
+      "tickers": [
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSLA",
+        "JPM"
+      ],
+      "companies": [
+        "Meta",
+        "Amazon",
+        "Google",
+        "Tesla",
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Goldman, JPMorgan Show Wall Street’s Split in Quantum Computing Race",
+      "link": "https://www.bloomberg.com/news/features/2026-04-26/wall-street-s-quantum-computing-divide-goldman-retreats-jpmorgan-invests",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-04-27T05:00:18+08:00",
+      "summary": "As a breakthrough proves elusive in the quest to deploy the nascent technology and boost earnings, global finance is divided on how to proceed.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Seeing the Cyber in Economic Statecraft",
+      "link": "https://warontherocks.com/seeing-the-cyber-in-economic-statecraft",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-23T15:00:45+08:00",
+      "summary": "Editor&#8217;s note: This article is the seventh in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the&#160;Potomac Institute for Policy Studies&#160;and War on the Rocks. Prior installments can be found at the&#160;War by Other Ledgers&#160;page.Americans lost nearly $21 billion to cybercrime in 2025, a new record for ",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nEditor’s note: This article is the seventh in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by th",
+      "event_type": "policy",
+      "tickers": [
+        "1977",
+        "AAPL",
+        "JPM"
+      ],
+      "companies": [
+        "Apple",
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Anthropic releases a new Opus model amid Mythos Preview buzz",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/913184/anthropic-claude-opus-4-7-cybersecurity",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-16T23:59:24+08:00",
+      "summary": "Anthropic has released its most powerful \"generally available\" model to date: Claude Opus 4.7. The company called it a step up from Opus 4.6 for advanced software engineering tasks, particularly in complex coding areas that in the past required more hand-holding. It's also supposed to be better at analyzing images and following instructions, and it [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All News\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Anthropic\nBut Opus 4.7 got worse results than Mythos Preview on every evaluation.\nBut Opus 4.7 got worse re",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "JPM",
+        "GOOGL",
+        "AAPL",
+        "MSFT"
+      ],
+      "companies": [
+        "NVIDIA",
+        "JPMorgan",
+        "Google",
+        "Apple",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "JPMorgan tops estimates on Wall Street results, Dimon flags 'increasingly complex' economic risks",
+      "link": "https://www.cnbc.com/2026/04/14/jpmorgan-chase-jpm-earnings-1q-2026.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-14T21:14:08+08:00",
+      "summary": "JPMorgan CEO Jamie Dimon called the economy resilient, but pointed to an \"increasingly complex set of risks\" across global markets.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": "up"
+    },
+    {
+      "title": "Cramer warns of ‘incredibly overconfident’ market after U.S.-Iran ceasefire",
+      "link": "https://www.cnbc.com/2026/04/10/cramer-warns-overconfident-market-after-us-iran-ceasefire.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-11T06:57:10+08:00",
+      "summary": "\"The idea that everything will finally go right in the Middle East seems like a real stretch to me,\" Cramer said.",
+      "body_text": "CNBC's Jim Cramer said Friday that the market's become \"incredibly overconfident\" following the Iran-U.S. ceasefire news, which caused a massive rally in stocks this week.\nThe S&P 500 closed Friday up 3.6% week to date. Gains were fueled by President Donald Trump 's two-week pause on Iranian strikes, announced late Tuesday, which gave the market a brief reprieve from the conflict that has pressure",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "A new Anthropic model found security problems &#8216;in every major operating system and web browser&#8217;",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/908114/anthropic-project-glasswing-cybersecurity",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-08T02:00:00+08:00",
+      "summary": "Anthropic is debuting a new AI model as part of a cybersecurity partnership with Nvidia, Google, Amazon Web Services, Apple, Microsoft, and other companies. Project Glasswing, as it's called, is billed as a way for large companies, and potentially even the government, to flag vulnerabilities in their systems with virtually no human intervention. Anthropic is [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All News\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Anthropic\nFor now, the company is only releasing Project Glasswing to “defensive security” partners.\nFor no",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "GOOGL",
+        "AMZN",
+        "AAPL",
+        "MSFT",
+        "JPM"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Google",
+        "Amazon",
+        "Apple",
+        "Microsoft",
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "JPMorgan says crypto flows drop to $11 billion in Q1, about one-third of first quarter last year",
+      "link": "https://www.theblock.co/post/396327/jpmorgan-crypto-flows-drop-11-billion-q1",
+      "source": "The Block",
+      "category": "💰 財經與總經",
+      "published": "2026-04-04T02:46:32+08:00",
+      "summary": "Earlier this year, JPMorgan expected flows to rise further in 2026 after a record inflow of nearly $130 billion in 2025.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Visa launches new AI tools to manage the charge dispute process",
+      "link": "https://www.cnbc.com/2026/04/01/visa-ai-tools-dispute-management.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-01T23:26:51+08:00",
+      "summary": "Visa's new tools are part of a larger push by major banks and financial institutions to incorporate AI into their businesses.",
+      "body_text": "Visa is launching six new tools using artificial intelligence to modernize the process of disputing credit card charges, the company told CNBC exclusively.\nThe digital payments company said the tools are designed to reduce the costs and frustration of \"outdated\" dispute processes for multiple entities involved in the payments process: merchants, issuers and acquirers.\n\"Some of the challenges are t",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "CoreWeave secures $8.5bn loan for GPU purchases",
+      "link": "https://www.datacenterdynamics.com/en/news/coreweave-secures-85bn-loan-for-gpu-purchases",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-01T01:00:42+08:00",
+      "summary": "Reportedly backed by Meta deal signed last year",
+      "body_text": "DCD Magazine #60 is out now! Download and read for free here\nReportedly backed by Meta deal signed last year\nAI cloud CoreWeave has secured an $8.5 billion delayed draw loan facility to meet a customer contract.\nAccording to the filing with the Securities and Exchange Commission (SEC) , the loan will be used primarily to finance capital expenditures for a customer contract, including the \"acquisit",
+      "event_type": "capex",
+      "tickers": [
+        "META",
+        "JPM",
+        "NVDA"
+      ],
+      "companies": [
+        "Meta",
+        "JPMorgan",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "JPMorgan says bitcoin is gaining over gold as debasement trade after Iran conflict",
+      "link": "https://www.theblock.co/post/400486/jpmorgan-bitcoin-over-gold-debasement-trade-iran-conflict",
+      "source": "The Block",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T04:01:51+08:00",
+      "summary": "Investors are increasingly choosing bitcoin over gold as a debasement trade since the Iran conflict began, JPMorgan analysts said.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan says Strategy’s bitcoin buying could reach $30 billion this year at current pace",
+      "link": "https://www.theblock.co/post/400443/jpmorgan-strategy-bitcoin-buying-30-billion-mstr",
+      "source": "The Block",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T23:39:42+08:00",
+      "summary": "Michael Saylor's Strategy has added 145,834 bitcoin worth around $11 billion so far this year, JPMorgan analysts noted.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "Ondo, JPMorgan, Mastercard and Ripple Team to Settle Tokenized Treasuries on XRP Ledger",
+      "link": "https://decrypt.co/367033/ondo-jpmorgan-mastercard-ripple-settle-tokenized-treasuries-xrp-ledger",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T02:52:46+08:00",
+      "summary": "Major financial institutions use XRP Ledger to demonstrate blockchain's ability to settle tokenized Treasuries across borders in seconds.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "Anthropic強攻華爾街　推10款金融AI代理",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754399_MK34SKRR8BR2ANL2D1PF2",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T02:32:41+08:00",
+      "summary": "Anthropic於5日在紐約舉辦金融服務專場活動，執行長Dario Amodei與摩根大通（JPMorgan）董事長兼執行長Jamie Dimon首度同台，討論人工智慧（AI）對金融市場、勞動力與總體經濟的影響。綜合CNBC、財富（Fortune）及華爾街日報（WSJ）報導，Dimon以自身經驗開場，分享使用Claude...",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "Ripple, JPMorgan and others use XRP Ledger to cash out tokenized Treasurys fund internationally",
+      "link": "https://www.theblock.co/post/400281/ripple-jpmorgan-xrp-ledger-transfer-tokenized-treasury-across-borders",
+      "source": "The Block",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T01:41:29+08:00",
+      "summary": "The transaction represents an example of crypto firms and Wall Street institutions jointly exploring 24/7 settlement systems.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan's Jamie Dimon issued vague credit recession warning, but the bond market has more pressing issues",
+      "link": "https://www.cnbc.com/2026/05/02/kevin-warsh-federal-reserve-interest-rates-bonds-fixed-income.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T07:23:07+08:00",
+      "summary": "As fears about a credit crisis rise, bond investors may be too complacent with Kevin Warsh to become next Fed chair and volatility in rates likely to follow.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan says rising stablecoin use may not lead to similar market cap growth",
+      "link": "https://www.theblock.co/post/399767/jpmorgan-rising-stablecoin-use-may-not-lead-similar-market-cap-growth",
+      "source": "The Block",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T04:15:52+08:00",
+      "summary": "Stablecoin transaction volume is rising fast, but higher velocity may limit how much total market cap grows, JPMorgan analysts said.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "離職男職員控告遭女上司性騷擾　摩根大通指全為捏造",
+      "link": "https://www.cna.com.tw/news/aopl/202605010257.aspx",
+      "source": "中央社 國際",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-01T23:07:00+08:00",
+      "summary": "（中央社紐約1日綜合外電報導）美國知名投資銀行摩根大通（JPMorgan）爆發1名現已離職的男性職員控告女主管對他性騷擾，還下藥將他當作性奴。同列被告的摩通則告訴「紐約郵報」，這名前職員說法全為捏造。",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan hires former Goldman Sachs exec for Kinexys. Here is why he believes tokenization is only half the battle",
+      "link": "https://www.coindesk.com/business/2026/04/29/jpmorgan-s-new-blockchain-chief-warns-that-tokenization-does-not-equal-liquidity",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T02:29:12+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "Jamie Dimon warns of 'some kind of bond crisis' ahead as global debt risks build",
+      "link": "https://www.cnbc.com/2026/04/28/jamie-dimon-bond-crisis-global-debt-risks.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-29T02:44:41+08:00",
+      "summary": "Dimon, who runs JPMorgan Chase, the world's largest bank by market cap, said that today's growing mix of risks could combine in unpredictable ways.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan says tokenization will drive change across entire funds industry, but ‘good use cases’ still years away",
+      "link": "https://www.theblock.co/post/398876/jpmorgan-tokenization-will-change-entire-funds-industry-good-use-cases-years-away",
+      "source": "The Block",
+      "category": "💰 財經與總經",
+      "published": "2026-04-25T05:12:35+08:00",
+      "summary": "\"Tokenization is that it will become part of the ETF ecosystem, but we’re a couple of years away from some good use cases,” said the bank.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan says persistent security flaws curb DeFi’s institutional appeal",
+      "link": "https://www.coindesk.com/tech/2026/04/23/jpmorgan-says-persistent-security-flaws-curb-defi-s-institutional-appeal",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-23T22:38:42+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan expands $1.5 trillion economic security splurge into Europe",
+      "link": "https://www.cnbc.com/2026/04/21/jpmorgan-chase-security-defense-spending-ai-europe-uk-dimon.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-21T15:49:06+08:00",
+      "summary": "The banking giant is looking to invest in areas deemed critical to economic security, including defense and AI.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "Chase got a spiff of $77 million to create one job with New York datacenter",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/04/20/chase_77m_tax_subsidy_datacenter_job",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-21T05:25:11+08:00",
+      "summary": "Official involved in deal tells El Reg number doesn't paint entire picture of datacenter's economic benefit When Rockland County, New York, approved nearly $77 million in tax breaks for JPMorgan Chase's datacenter expansion in 2024, no one showed up to object. Two years and a whole lot of bit barns in the news cycle later, government watchdogs are calling foul over the project's lone permanent job.…",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "New Jersey datacenter expansion got $77m in tax breaks to create exactly one permanent job — JPMorgan's site already scored $35m and currently employs just 25 workers",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-jersey-datacenter-expansion-got-usd77m-in-tax-breaks-to-create-exactly-one-permanent-job-jpmorgans-site-already-scored-usd35m-and-currently-employs-just-25-workers",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-21T02:53:47+08:00",
+      "summary": "A New Jersey data center expansion saw a tax break of $77,000,000, despite the fact that it would create exactly one new permanent job in the state.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "Greg Abel is shaking up Berkshire Hathaway's portfolio. These stocks could be affected",
+      "link": "https://www.cnbc.com/2026/04/20/greg-abel-is-shaking-up-berkshire-hathaways-portfolio-these-stocks-could-be-affected.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-20T21:53:16+08:00",
+      "summary": "The new CEO has already sold stocks previously overseen by Combs after the longtime investment manager and Geico chief left for JPMorgan at the end of 2025.",
+      "event_type": "news",
+      "tickers": [
+        "BRK-B",
+        "JPM"
+      ]
+    },
+    {
+      "title": "Anthropic’s new cybersecurity model could get it back in the government’s good graces",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/914229/tides-turning-anthropic-trump-administration-cybersecurity-mythos-preview",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-18T04:14:21+08:00",
+      "summary": "The Trump administration has spent nearly two months fighting with AI company Anthropic. It's dubbed the company a \"RADICAL LEFT, WOKE COMPANY\" full of \"Leftwing nut jobs\" and a menace to national security. But some of the ice may reportedly be melting between the two, thanks to Anthropic's buzzy new cybersecurity-focused model: Claude Mythos Preview. [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "NVDA",
+        "JPM"
+      ]
+    },
+    {
+      "title": "Wells Fargo, Citigroup, JPMorgan, Globalstar, American, Tesla, Robinhood, Credo, and More Movers - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE04aEdlZklvUmZzeGExMGF0bC1WTGctMVRsXzM1R2tBRnN6aUc4SkZRMjVRU3ExTG1TYk5UcUwxWE5DREJtQjc1M1hvcHFiV2gwc0hQQjcwd2FtTmQ5eDFyNjVZR0Q?oc=5",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-04-15T04:36:00+08:00",
+      "summary": "Wells Fargo, Citigroup, JPMorgan, Globalstar, American, Tesla, Robinhood, Credo, and More Movers&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "JPM",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Anthropic co-founder confirms the company briefed the Trump administration on Mythos",
+      "link": "https://techcrunch.com/2026/04/14/anthropic-co-founder-confirms-the-company-briefed-the-trump-administration-on-mythos",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-15T02:09:12+08:00",
+      "summary": "In an interview at the Semafor World Economy summit this week, Anthropic co-founder Jack Clark explained why the company was still engaged with the U.S. government while simultaneously suing them.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "JPMorgan has stark message for investors on market weakness",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-stark-message-investors-market-174700070.html",
+      "source": "Yahoo Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-15T01:47:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    },
+    {
+      "title": "Stocks making the biggest moves premarket: Novo Nordisk, JPMorgan Chase, United Airlines & more",
+      "link": "https://www.cnbc.com/2026/04/14/stocks-making-the-biggest-moves-premarket-nvo-jpm-ual.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-14T20:49:26+08:00",
+      "summary": "These are the stocks posting the largest moves premarket.",
+      "event_type": "news",
+      "tickers": [
+        "JPM"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2014,
+      "fiscal_period": "Q3",
+      "period_end": "2014-09-30",
+      "filed_at": "2014-11-03",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 71693000000.0,
+      "monthly_revenue": null,
+      "net_income": 16494000000.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 5.94,
+      "operating_cash_flow": -211761000000.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "JPM",
+    "market": "us",
+    "company_name": "JPMORGAN CHASE & CO",
+    "latest": {
+      "fiscal_year": 2014,
+      "fiscal_period": "Q3",
+      "revenue": 71693000000.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 16494000000.0,
+      "eps": 5.94,
+      "fcf": null,
+      "ocf": -211761000000.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.2300643019541657,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2014,
+        "fiscal_period": "Q3",
+        "revenue": 71693000000.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 16494000000.0,
+        "eps_diluted": 5.94,
+        "fcf": null,
+        "ocf": -211761000000.0,
+        "capex": null,
+        "company_name": "JPMORGAN CHASE & CO"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "META",
+      "count": 3
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 3
+    },
+    {
+      "ticker": "AAPL",
+      "count": 3
+    },
+    {
+      "ticker": "NVDA",
+      "count": 3
+    },
+    {
+      "ticker": "AMZN",
+      "count": 2
+    },
+    {
+      "ticker": "MSFT",
+      "count": 2
+    },
+    {
+      "ticker": "TSLA",
+      "count": 1
+    },
+    {
+      "ticker": "1977",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

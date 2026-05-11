@@ -1,0 +1,88 @@
+{
+  "ticker": "1970",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Iran and the Indispensable Broker: How Pakistan Outmaneuvers India on the World Stage",
+      "link": "https://warontherocks.com/iran-and-the-indispensable-broker-how-pakistan-outmaneuvers-india-on-the-world-stage",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-20T15:30:06+08:00",
+      "summary": "In Sept. 2025, Pakistan and Saudi Arabia signed a mutual defense pact, formalizing what decades of quiet cooperation had already made real. The defense pact signed in Riyadh was presented in official communiqu&#233;s as a natural deepening of bilateral ties. It was that, but it was also something larger: The latest installment in a pattern that has persisted for half a century and that continues to confound the logic of power politics. Pakistan, a state dependent on International Monetary Fund b",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nIn Sept. 2025, Pakistan and Saudi Arabia signed a mutual defense pact, formalizing what decades of quiet cooperation had already made real. The defense pact signed in Riyadh was presented in official communiqués as a natural deepening of bilateral ties. It was that, but it ",
+      "event_type": "policy",
+      "tickers": [
+        "1969",
+        "1970",
+        "1971"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Iran’s New Oil Weapon",
+      "link": "https://www.foreignaffairs.com/iran/irans-new-oil-weapon",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T12:00:00+08:00",
+      "summary": "How America can protect itself—and the global economy.",
+      "event_type": "news",
+      "tickers": [
+        "1951",
+        "1954",
+        "1973",
+        "1967",
+        "1970",
+        "1974",
+        "1975",
+        "1979",
+        "1980"
+      ]
+    },
+    {
+      "title": "What should I ask Bob Spitz?",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/what-should-i-ask-bob-spitz.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-11T01:02:20+08:00",
+      "summary": "Yes I will be doing a Conversation with him, Wikipedia here. I very much enjoyed his new book on the Rolling Stones, plus he has many older books of note, including on the 1969-1970 Knicks, Woodstock, Ronald Reagan, Bob Dylan, the Beatles, Led Zeppelin, and Julia Child. All good books! He also for a while [&#8230;] The post What should I ask Bob Spitz? appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "1969",
+        "1970"
+      ]
+    },
+    {
+      "title": "新七度時空模型完美破解宇宙兩大謎團：黑洞資訊悖論與希格斯場起源",
+      "link": "https://technews.tw/2026/04/10/dimension-black-hole-information-paradox-einstein-cartan-theory",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-10T18:40:02+08:00",
+      "summary": "1970 年代，理論物理學家史蒂芬·霍金證明黑洞會發出微弱輻射，直到最後完全消失，然而這過程衍生出「黑洞資訊悖 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "1970"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1969",
+      "count": 1
+    },
+    {
+      "ticker": "1971",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

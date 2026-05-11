@@ -1,0 +1,361 @@
+{
+  "ticker": "2031",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2031",
+    "company_name": "新光鋼鐵股份有限公司",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2031",
+      "company_name": "新光鋼鐵股份有限公司",
+      "cik": "",
+      "source_type": "tpex-finance-report",
+      "source_confidence": "official-tpex",
+      "form_type": "TPEX-Q",
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_url": "https://dsp.tpex.org.tw/storage/finance_report/company_finance_report.php",
+      "report_kind": "quarterly",
+      "revenue": 16798091.0,
+      "monthly_revenue": null,
+      "net_income": 1099977.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 3.3,
+      "operating_cash_flow": 2707286.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）",
+      "filing_excerpt": "投資活動現金流量 -137,186、籌資活動現金流量 -2,510,350",
+      "payload_json": "{\"company\": {\"COMPANY_TEL\": \"02-2978-8888\", \"PRESIDENT_NAME_E\": \"Ming-shan Jheng\", \"INTERNET_ADDRESS\": \"www.hkssteel.com.tw\", \"LAWSUIT_EADR\": \"\", \"COMPANY_ADDRESS\": \"新北市三重區重新路4段97號25樓\", \"CHAIRMAN_NAME_E\": \"Alexander Sue\", \"ENGLISH_NAME\": \"Hsin Kuang Steel co. LTD.,\", \"CHAIRMAN_NAME\": \"粟明德\", \"MAR_KIND\": \"sii\", \"LAWSUIT_CADR\": \"\", \"LAWSUIT_TEL\": \"\", \"CAPITAL_AMT\": \"3211463410\", \"COMPANY_ID\": \"2031\", \"SPOKENMAN\": \"劉百慧\", \"ENAME\": \"Iron and Steel\", \"INVO_NO\": \"35836625\", \"ENGLISH_ABBR_NAME\": \"Hkssteel\", \"ESTABLISH_DATE\": \"19670101\", \"STK_ASSIGN_ORG\": \"統一綜合證券股份有限公司\", \"LAWSUIT_CNAME\": \"\", \"PSB_RISK\": \"\", \"FIN_CODE\": \"\", \"SPOKENMAN_E\": \"Jessica P.H. Liu\", \"STK_ASSIGN_TEL\": \"02-2746-3797\", \"NAME\": \"鋼鐵工業\", \"GDR_NUM\": \"新台幣                 10.0000元\", \"PRESIDENT_NAME\": \"曾明山\", \"MAIN_BUSINESS3\": \"各種鋼鐵代理報價買賣\", \"LAWSUIT_ENAME\": \"\", \"MAIN_BUSINESS2\": \"各種鋼構構件製作加工買賣\", \"COMPANY_NAME\": \"新光鋼鐵股份有限公司\", \"CODE\": \"10\", \"PSB_FLAG\": \"0\", \"COMPANY_ABBR_NAME\": \"新光鋼\", \"MAIN_BUSINESS4\": \"1.Coil leveling and shearing business, cutting business of plates, shapes, \\nalloy steel and special steel, other cutting and drawing business\\n2.Wholesale and retail sale of ironware, building materials, pipe and steel \\nmaterials\\n3.Metal architectural components manufacturing, pipe manufacturing, metal line \\nproducts manufacturing, fabricated metal products manufacturing\\n4.Specialized field construction and development, new county and community \\nconstruction and investment\\n5.International trading and agency of above listing products\\n6.All business items that are not prohibited or restricted by law, except \\nthose \\nare subject to special approval.\", \"CUR_ID\": \"NTD\", \"ENGLISH_ADDRESS_2\": \"San-Chung City,Taipei  Taiwan R.O.C\", \"MAIN_BUSINESS1\": \"各種鋼鐵整平裁剪加工買賣\", \"GDR_NUM_2\": \"10.0000\", \"ENGLISH_ADDRESS_1\": \"25FL,.No.97,SEC.4,Chung-Sing RD.,\", \"LISTING_DATE\": \"20000911\"}, \"finance\": {\"AccOp\": [{\"accYear\": 2025, \"accRptKind\": 2, \"accType\": [{\"type27\": \"N\", \"type26\": \"N\", \"type25\": \"N\", \"type24\": \"N\", \"type23\": \"N\", \"type22\": \"N\", \"type21\": \"N\", \"type1\": \"3 \", \"type28\": \"N\"}], \"accSeason\": 4}], \"Bank_Code\": \"1\", \"Company_ID\": \"2031\", \"Data\": [{\"BookValue\": \"36.55\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 15194770, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 13523411, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 28718181, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 8917653, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 7343654, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 16261307, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 11737450, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 943445, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 6836001, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": 746541, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 719424, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 12456874, \"Date_Kind\": \"A\"}], \"Season\": 4}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 16798091, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 15306354, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 1491737, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 586439, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 905298, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7000\", \"Amont\": 413984, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7900\", \"Amont\": 1319282, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 219305, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8000\", \"Amont\": 1099977, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8200\", \"Amont\": 1099977, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8300\", \"Amont\": -164655, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8500\", \"Amont\": 935322, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"9750\", \"Amont\": 3.3, \"Date_Kind\": \"F\"}], \"Season\": 4}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 2707286, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -137186, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -2510350, \"Date_Kind\": \"F\"}], \"Season\": 4}, {\"BookValue\": \"36.35\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 15894775, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 13289824, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 29184599, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 9767667, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 7059044, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 16826711, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 11672648, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 943445, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 6667748, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": 849992, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 685240, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 12357888, \"Date_Kind\": \"A\"}], \"Season\": 3}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 13465025, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 12387642, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 1077383, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 414328, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 663055, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7000\", \"Amont\": 405360, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7900\", \"Amont\": 1068415, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 177072, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8000\", \"Amont\": 891343, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8200\", \"Amont\": 891343, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8300\", \"Amont\": -31412, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8500\", \"Amont\": 859931, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"9750\", \"Amont\": 2.67, \"Date_Kind\": \"F\"}], \"Season\": 3}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 1721492, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -70305, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -1571911, \"Date_Kind\": \"F\"}], \"Season\": 3}, {\"BookValue\": \"36.98\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 17088023, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 13862231, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 30950254, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 11193728, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 7199269, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 18392997, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 11875841, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 943445, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 6474820, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": 1246113, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 681416, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 12557257, \"Date_Kind\": \"A\"}], \"Season\": 2}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 9644612, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 8899053, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 745559, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 280772, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 464787, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7000\", \"Amont\": 364915, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7900\", \"Amont\": 829702, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 135285, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8000\", \"Amont\": 694417, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8200\", \"Amont\": 694417, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8300\", \"Amont\": 364709, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8500\", \"Amont\": 1059126, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"9750\", \"Amont\": 2.07, \"Date_Kind\": \"F\"}], \"Season\": 2}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -26467, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -43075, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 94390, \"Date_Kind\": \"F\"}], \"Season\": 2}, {\"BookValue\": \"32.43\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 16657812, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 13403389, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 30061201, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 11735198, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 7211602, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 18946800, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 3211463, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 10414828, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 943445, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 5471306, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": 788614, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 699573, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 11114401, \"Date_Kind\": \"A\"}], \"Season\": 1}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 5040841, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 4701641, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 339200, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 114716, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 224484, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"7000\", \"Amont\": -502324, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"7900\", \"Amont\": -277840, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 60004, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8000\", \"Amont\": -337844, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8200\", \"Amont\": -337844, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8300\", \"Amont\": -92790, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8500\", \"Amont\": -430634, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"9750\", \"Amont\": -1.06, \"Date_Kind\": \"A\"}], \"Season\": 1}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -522667, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -54183, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 545881, \"Date_Kind\": \"F\"}], \"Season\": 1}]}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2031",
+      "company_name": "新光鋼",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 1786298.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2031\", \"公司名稱\": \"新光鋼\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"1786298\", \"營業收入-上月營收\": \"1208738\", \"營業收入-去年當月營收\": \"1780383\", \"營業收入-上月比較增減(%)\": \"47.78206691607279\", \"營業收入-去年同月增減(%)\": \"0.33223188493711747\", \"累計營業收入-當月累計營收\": \"4589073\", \"累計營業收入-去年累計營收\": \"5040841\", \"累計營業收入-前期比較增減(%)\": \"-8.962155322891558\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Dell Grants COO Clarke Performance Options Worth $132 Million",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-04/dell-grants-coo-clarke-performance-options-worth-132-million",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T06:16:51+08:00",
+      "summary": "Dell Technologies Inc. granted Chief Operating Officer Jeff Clarke stock options estimated to be worth $132.4 million in 2031 if the company meets annual performance goals.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Why a 5-year defence pact between North Korea and Russia could make China uneasy",
+      "link": "https://www.scmp.com/news/china/military/article/3352265/why-5-year-defence-pact-between-north-korea-and-russia-could-make-china-uneasy",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-03T22:00:08+08:00",
+      "summary": "China may be feeling uneasy about talk of a rare five-year defence cooperation plan between North Korea and Russia that could accelerate Pyongyang’s military modernisation on multiple fronts, analysts said. According to the Russian state news agency Tass, Russian Defence Minister Andrey Belousov held talks to North Korean leader Kim Jong-un in Pyongyang on April 26, with Belousov describing relations between the countries as at an “unprecedentedly high level”. Belousov also said preparations...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "F1 will have V8 engines by 2031, possibly 2030, says FIA president - Reuters",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSV8tbDRBbG9ER0VJNWJvQjI3NV92aWs5WFF3VnBaTXFtaEJIakc5N1I5aVdJMDZfaFpMdFdXa0VvbTNpbFd1emxJcDVVOFVjaDN0UXZfNDVUQWU3a2lnNGo1amlBb0daUlhHbmktWkV0SjRQTlY0eWw3SDlaRWdIWWRmMWZUN0RPU3llWUl6X1lyeWlQeTR4OTU1ZVVvUWVIa2lIbWFsaTFVOU9IYnNXRkpYSXphTVE?oc=5",
+      "source": "Reuters (Google News)",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-03T17:09:43+08:00",
+      "summary": "F1 will have V8 engines by 2031, possibly 2030, says FIA president&nbsp;&nbsp;Reuters",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "iShares iBonds 2031 Term High Yield And Income ETF declares monthly distribution of $0.1374",
+      "link": "https://seekingalpha.com/news/4584432-ishares-ibonds-2031-term-high-yield-and-income-etf-declares-monthly-distribution-of-01374?feed_item_type=news",
+      "source": "Seeking Alpha",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T07:17:12+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "1374"
+      ]
+    },
+    {
+      "title": "China’s Tiangong space station to double in size as Nasa phases out ISS",
+      "link": "https://www.scmp.com/news/china/science/article/3352049/chinas-tiangong-space-station-double-size-nasa-phases-out-iss",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-30T21:00:13+08:00",
+      "summary": "China has confirmed plans to expand its space station, potentially more than doubling in size to meet growing scientific demand and expand international cooperation. The Tiangong and the International Space Station (ISS) are the only space stations operating in low Earth orbit. The ISS, led by Nasa and built with contributions from 15 countries, is the biggest structure in space and has been a laboratory for more than 3,000 experiments. Nasa plans to retire the ISS in early 2031, using a...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "German asset manager Kauri acquires 55,000 sqm parcel in Hochheim for data center",
+      "link": "https://www.datacenterdynamics.com/en/news/german-asset-manager-kauri-acquires-55000-sqm-parcel-in-hochheim-for-data-center",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-21T00:20:29+08:00",
+      "summary": "Construction estimated to finish in 2031",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "ASML extends Low NA EUV to 2031, ramps up High NA production - digitimes",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSlFDY2xEN3FCcmpRVV9HRVVzNVVRMVM3NHFtc0xqdUNSa3JVbDFoZDdOUUdqSk5pRkxjTnE1YnlHeHZlTTlKaU1wWnJDdTFSY3l6UmlKSmkzZ0FIbWtTa19CaENqNDluSHBnY3I2VkpGem95TlZFTVEwbmY3dHVTWnB5NnpESEdUVlE?oc=5",
+      "source": "半導體設備與產能",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-17T11:33:02+08:00",
+      "summary": "ASML extends Low NA EUV to 2031, ramps up High NA production&nbsp;&nbsp;digitimes",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "AI Memory Products Market to Reach USD 92.4 Billion by 2031, Driven by Explosive Demand for HBM and AI Servers | Valuates Reports - Bolsamania",
+      "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQcVc1Y1Z4RmZlaDkzbktxTV92VmlzdFBKUWU2WmJ2Mk1DZXJSdlhoRGlsM2NFd3hqRmxMYnQyZjUyci03bTBuMHR6Q3dxcGFqdU1rOHBVdU4ydlBMSkJiREdRdUlwNGZweVl1ZW1oV25NTXAxY21MYXd1SEt2dlctdnctRzE0dndVUWFRdWxab2FHcmlscjE0UnNET0FoVENVQy1JLTBjZlU2Y015RXZxY3IwMENyeTkzWWsza25PMGk2SnhXcFppaHFTZy1taTZrT2pfaXU0eUMyazF3YzE0TEdwZ2JxOXlTMi1iSTYtVGdVTFV1bTdMQ0N0OE1VOUtKTFB1OVFVUjhpUjd1T0ZBSHpHWjIzRlFDUWNr0gGgAkFVX3lxTE43SDdxX0k4ZHVZa3FYUk1wSEdrU0U5US1jVDVFTnVMTDMtWW9tN3ItOFJUNUJyX09RMWlXQWtKRkV4OE5Tb21lcUdFSjNtUkExN2I1MUp4aVJKQ19ZZjUxMEYxNTRsbm54NTBHd3NLRGxoZ1VFZll3c012MVNwVzRVSWVtWklidUFNQXBKV3hCWkRfWUhTS0F2RDk0UnpPeTBzdjd1VWFuWER0Q3J1TWF5ZDZtSW40ZmxlTks5M2t5d1g5NUE0REdETTNKbzJPUlJPWHRKdHNybm5MT0JWN19LcE1zajUwRW95MTVXcWhhdzFpbmNFdW1rYXFGeW9BT0JsN25VaWFHNi03dldWWWNfalQ2ZEV0VHNLQmYyMFdSTw",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-16T22:01:00+08:00",
+      "summary": "AI Memory Products Market to Reach USD 92.4 Billion by 2031, Driven by Explosive Demand for HBM and AI Servers | Valuates Reports&nbsp;&nbsp;Bolsamania",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Switch secures $768 million in ABS funding",
+      "link": "https://www.datacenterdynamics.com/en/news/switch-secures-768-million-in-abs-funding",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-15T00:30:31+08:00",
+      "summary": "Secured against firm's Reno data center",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Humanoids Hit the Factory Floor",
+      "link": "https://www.eetimes.com/humanoids-hit-the-factory-floor",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-14T01:00:00+08:00",
+      "summary": "Humanoid robots have reached manufacturing lines. Success now hinges on power, production-level reliability, and real-world data streams. The post Humanoids Hit the Factory Floor appeared first on EE Times.",
+      "event_type": "news",
+      "tickers": [
+        "2035",
+        "GOOGL",
+        "NVDA",
+        "META",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "The inevitable need for an open model consortium",
+      "link": "https://www.interconnects.ai/p/the-inevitable-need-for-an-open-model",
+      "source": "Interconnects AI",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-11T21:02:06+08:00",
+      "summary": "And yes, I hate consortia too.",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "META",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "日本政府批准追加 6,315 億日圓補助 Rapidus，力拚 AI 晶片量產",
+      "link": "https://technews.tw/2026/04/11/japan-approves-additional-631-5-billion-for-state-backed-rapidus",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-11T17:59:23+08:00",
+      "summary": "日本政府批准追加 6,315 億日圓補助，加速半導體製造商 Rapidus 進入競爭激烈的 AI 晶片製造領域 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "2330",
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "PQC Timelines Provide Direction, but Not Action",
+      "link": "https://www.eetimes.com/pqc-timelines-provide-direction-but-not-action",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-10T16:22:48+08:00",
+      "summary": "U.K. and EU PQC adoption timelines provide direction but lack regulatory teeth. Learn why delaying migration creates critical security risks. The post PQC Timelines Provide Direction, but Not Action appeared first on EE Times.",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Hyperscale operators now account for nearly half of all data center capacity worldwide",
+      "link": "https://www.datacenterdynamics.com/en/news/hyperscale-operators-now-account-for-nearly-half-of-all-data-center-capacity-worldwide",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-08T22:00:40+08:00",
+      "summary": "Could hold more than two-thirds of the market by 2031",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Silicon Synergy: Broadcom and Google Solidify Decade-Long AI Dominance Through 2031 - FinancialContent",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTGk1SjBjWVFYSGpHUzUxRzh4OW1Xck5ZQk5Xc0dXQ19CU0VLTDFFQllyUHZxV3RPaG1QdzY2UC14bTV1T3J5cWc0Y1gxMlVnTm42TVJCVkRjOV9KdWlQYmh5RGFLaklRTnJoN05JcFR1YjBidWJRS0M1WlFrUUVTOGxqa1VGaG9YYzlBSTRBTEZ3YTA1b0dZTkctN0F5YTd1akUzelRQcFlybDRWdWJkeURBaktUVzFmeHA1U2ttb2dJSDV0Mmtvd1JjNnNDanEyTUozNXYzTmtRRkpneGhfYnFKV1Y3aEtGaW96Wg?oc=5",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-07T22:05:00+08:00",
+      "summary": "Silicon Synergy: Broadcom and Google Solidify Decade-Long AI Dominance Through 2031&nbsp;&nbsp;FinancialContent",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Broadcom Inc Co And Google Enter Long-Term Tpu And Networking Supply Agreement Through 2031 - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdnZSM3c4R2dZcm5wWjZBVVBfT3YzeTEzOWRiRmJ5NlRLcVNlTDN2UlBvTjFacWNRa1hMSlpuOWNaMGZvcG5ZR1p5TkNpUnZlcEw5dFF2cUdUTzR0RHc1RE1wY3ZEM2hVOE0tQ0lBRXBpNFBwYTBYMHhrclhlRDQtOXdYb2tYNFVmMGFpNlYtU3VFaVNpUGk5Nk5seEk4MEhLcW56NjRSTjZPNGZhY29aUEJyQXVFVTVyYnh6aHFSMlpoekRIMUg0bUhLSGtBY3dibVRmdzlaMTB6YWpMRHVGYThHTWhTOF9OOVFBcGF1QlJEVHc",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-07T05:37:09+08:00",
+      "summary": "Broadcom Inc Co And Google Enter Long-Term Tpu And Networking Supply Agreement Through 2031&nbsp;&nbsp;TradingView",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Atlas Energy Solutions offers $300M convertible senior notes due 2031",
+      "link": "https://seekingalpha.com/news/4572626-atlas-energy-solutions-offers-300m-convertible-senior-notes-due-2031?feed_item_type=news",
+      "source": "Seeking Alpha",
+      "category": "💰 財經與總經",
+      "published": "2026-04-06T19:20:40+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": []
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 16798091.0,
+      "monthly_revenue": null,
+      "net_income": 1099977.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 3.3,
+      "operating_cash_flow": 2707286.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）"
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 1786298.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2031",
+    "market": "tw",
+    "company_name": "新光鋼鐵股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 16798091.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 1099977.0,
+      "eps": 3.3,
+      "fcf": null,
+      "ocf": 2707286.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.06548226224039386,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 16798091.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 1099977.0,
+        "eps_diluted": 3.3,
+        "fcf": null,
+        "ocf": 2707286.0,
+        "capex": null,
+        "company_name": "新光鋼鐵股份有限公司"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

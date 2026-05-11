@@ -1,0 +1,151 @@
+{
+  "ticker": "ACHC",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "ACHC",
+    "company_name": "Acadia Healthcare Company, Inc.",
+    "quarterly": {
+      "market": "us",
+      "ticker": "ACHC",
+      "company_name": "Acadia Healthcare Company, Inc.",
+      "cik": "0001520697",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1520697/000119312526192508/achc-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 828802000.0,
+      "monthly_revenue": null,
+      "net_income": 4105000.0,
+      "operating_income": 132849000.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": 0.1602903950521355,
+      "eps_diluted": 0.05,
+      "operating_cash_flow": 61531000.0,
+      "capex": 76564000.0,
+      "free_cash_flow": -15033000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-04-30\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1520697/000119312526192508/achc-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2026-01-01\", \"end\": \"2026-03-31\", \"val\": 828802000, \"accn\": \"0001193125-26-192508\", \"fy\": 2026, \"fp\": \"Q1\", \"form\": \"10-Q\", \"filed\": \"2026-04-30\", \"frame\": \"CY2026Q1\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "RBC Capital Lifts PT on Acadia Healthcare Company (ACHC) Following Q1 Earnings Beat",
+      "link": "https://www.insidermonkey.com/blog/rbc-capital-lifts-pt-on-acadia-healthcare-company-achc-following-q1-earnings-beat-1758210",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-11T07:14:16+08:00",
+      "summary": "Acadia Healthcare Company, Inc. (NASDAQ:ACHC) is one of the best performing healthcare stocks so far in 2026. Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price target on the stock to $31 from $28 and reiterating an Outperform rating on the shares. The [&#8230;]",
+      "body_text": "Acadia Healthcare Company, Inc. (NASDAQ: ACHC ) is one of the best performing healthcare stocks so far in 2026 . Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price target on the stock to $31 from $28 and reiterating an Outperform rating on the shares. The rating update came after the company delivered its fiscal Q1 earn",
+      "event_type": "earnings",
+      "tickers": [
+        "ACHC",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-30",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 828802000.0,
+      "monthly_revenue": null,
+      "net_income": 4105000.0,
+      "operating_income": 132849000.0,
+      "gross_profit": null,
+      "eps_diluted": 0.05,
+      "operating_cash_flow": 61531000.0,
+      "capex": 76564000.0,
+      "free_cash_flow": -15033000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "ACHC",
+    "market": "us",
+    "company_name": "Acadia Healthcare Company, Inc.",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 828802000.0,
+      "gross_profit": null,
+      "operating_income": 132849000.0,
+      "net_income": 4105000.0,
+      "eps": 0.05,
+      "fcf": -15033000.0,
+      "ocf": 61531000.0,
+      "capex": 76564000.0,
+      "gross_margin": null,
+      "op_margin": 0.1602903950521355,
+      "net_margin": 0.004952932063387878,
+      "fcf_margin": -0.018138228430915948,
+      "capex_intensity": 0.09237912070675505,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 828802000.0,
+        "gross_profit": null,
+        "operating_income": 132849000.0,
+        "net_income": 4105000.0,
+        "eps_diluted": 0.05,
+        "fcf": -15033000.0,
+        "ocf": 61531000.0,
+        "capex": 76564000.0,
+        "company_name": "Acadia Healthcare Company, Inc."
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "營益率 16% 健康・FCF margin -2% 燒錢中",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "BRK-B",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

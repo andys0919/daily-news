@@ -1,0 +1,121 @@
+{
+  "ticker": "1940",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "AI's big messaging pivot",
+      "link": "https://www.noahpinion.blog/p/ais-big-messaging-pivot",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-05T14:06:01+08:00",
+      "summary": "Some top AI leaders now say their technology will create jobs. Should we believe them?",
+      "body_text": "Something big happened in the world of AI the other day: Sam Altman, founder and CEO of OpenAI, and probably the person who’s most commonly regarded as the face of the industry, declared that the purpose of AI is not to take people’s jobs :\nAnd he recently called AI CEOs “tone-deaf” for declaring that AI is going to take people’s jobs:\nIn fact, this shift represents more evolution than revolution.",
+      "event_type": "earnings",
+      "tickers": [
+        "1940",
+        "MSFT",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "'Godspeed my friend': Inside the final hours of Spirit Airlines",
+      "link": "https://www.cnbc.com/2026/05/02/spirit-airlines-shutdown-inside-the-final-hours.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T08:26:04+08:00",
+      "summary": "Spirit Airlines ceased operations overnight after a failed government bailout.",
+      "body_text": "BALTIMORE/NEW YORK — Spirit Airlines was hours away from its final flights Friday afternoon. Jeremiah Burton was hours away from his first.\n\"It's my first time flying,\" Burton, a 45-year-old air conditioning and heating technician, told CNBC at Baltimore/Washington International Thurgood Marshall Airport on Friday, shortly before he was scheduled to depart for New Orleans to visit his daughter and",
+      "event_type": "earnings",
+      "tickers": [
+        "1940",
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "CNBC's UK Exchange newsletter: UK defense spending — or lack thereof — haunts Starmer's government",
+      "link": "https://www.cnbc.com/2026/04/22/uk-defense-spending-delays-arguments-starmer-government.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-22T14:29:39+08:00",
+      "summary": "U.K. defense spending has fallen for years but concerns are growing over the threat posed to the country in increasingly uncertain times.",
+      "body_text": "This report is from this week's CNBC's UK Exchange newsletter. Like what you see? You can subscribe here.\nSpeeches from 80-year old politicians who last served in government more than a quarter of a century ago seldom have an impact.\nThat makes the speech delivered nine days ago by George Robertson, defense secretary in former Prime Minister Tony Blair's first administration and later the 10th sec",
+      "event_type": "earnings",
+      "tickers": [
+        "1935",
+        "1939",
+        "1940"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Roundup #80: All AI, all the time",
+      "link": "https://www.noahpinion.blog/p/roundup-80-all-ai-all-the-time",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-05T23:47:30+08:00",
+      "summary": "Growth; Biosecurity; Cybersecurity; Pseudonymity; Quant trading; AI adoption",
+      "body_text": "I promise I’ll write something soon about the flaming, crashing disaster that is the Trump administration — and about other topics of interest. But before I do that, here’s a roundup full of short takes and stories about AI.\nFirst, though, an episode of Econ 102! Officially the podcast is over, but we still occasionally do a reprise episode. This one, fittingly, is about AI biosecurity:\nAnyway, he",
+      "event_type": "earnings",
+      "tickers": [
+        "1940",
+        "1971",
+        "AAPL",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Google"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "GOOGL",
+      "count": 2
+    },
+    {
+      "ticker": "MSFT",
+      "count": 1
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "1935",
+      "count": 1
+    },
+    {
+      "ticker": "1939",
+      "count": 1
+    },
+    {
+      "ticker": "1971",
+      "count": 1
+    },
+    {
+      "ticker": "AAPL",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

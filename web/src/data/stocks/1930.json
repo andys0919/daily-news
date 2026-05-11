@@ -1,0 +1,120 @@
+{
+  "ticker": "1930",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Only Congress Can Fix American Trade",
+      "link": "https://www.foreignaffairs.com/united-states/only-congress-can-fix-american-trade",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-05T12:00:00+08:00",
+      "summary": "Trump’s tariff mess offers a chance to restore legislative oversight.",
+      "body_text": "TREVOR SUTTON is a Nonresident Senior Fellow at the Center for International Policy and a Senior Researcher at the Center for Global Energy Policy at Columbia University.\nTrump’s Tariff Mess Offers a Chance to Restore Legislative Oversight\nTrevor Sutton\nIn February, the U.S. Supreme Court struck down President Donald Trump’s sweeping “Liberation Day” tariffs. Among American commentators, the react",
+      "event_type": "earnings",
+      "tickers": [
+        "1962",
+        "1974",
+        "1988",
+        "1890",
+        "1930"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "This AI Was Trained Only on Pre-1930 Text. We Asked It About Hitler, Stocks, and the Future",
+      "link": "https://decrypt.co/366015/talkie-1930-ai-model-pre-1931-training-hitler-stocks",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T03:38:03+08:00",
+      "summary": "Talkie-1930 is a 13-billion-parameter model that has never heard of the internet, World War II, or modern politics. The results are fascinating, funny, and occasionally unsettling.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "1930"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "用過時資料訓練語言模型的「AI 時光機」，能否準確預測現在？",
+      "link": "https://technews.tw/2026/05/07/turning-back-the-clock-by-making-an-ai-time-machine-chatbot-based-only-on-information-available-before-the-1930s",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T07:20:49+08:00",
+      "summary": "富比士專欄作者蘭斯·艾略特（Lance Eliot） 5 日撰文指出，AI 業界又興起以「過時資料」訓練大型語 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "1930",
+        "1931",
+        "2040",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Vintage chatbot lives in the past like an elderly relative",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/04/28/vintage_chatbot_lives_in_past",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-29T01:51:08+08:00",
+      "summary": "Talkie's training data stops at the end of 1930, and its creators hope it'll help us better understand how AI thinks If you're tired of interacting with a bot that spews Nazi propaganda or refers to itself as MechaHitler, you could sign off of Elon Musk's xAI. Or, just to be sure, use an LLM whose training data ends in 1930, three years before the Nazis took power in Germany and nine years before World War II started.…",
+      "event_type": "news",
+      "tickers": [
+        "1930"
+      ]
+    },
+    {
+      "title": "talkie: an LM from 1930",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/talkie-an-lm-from-1930.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T19:37:13+08:00",
+      "summary": "Here is the link, with explanation. The post talkie: an LM from 1930 appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "1930"
+      ]
+    },
+    {
+      "title": "Introducing talkie: a 13B vintage language model from 1930",
+      "link": "https://simonwillison.net/2026/Apr/28/talkie",
+      "source": "Simon Willison",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-28T10:47:42+08:00",
+      "summary": "Introducing talkie: a 13B vintage language model from 1930 New project from Nick Levine, David Duvenaud, and Alec Radford (of GPT, GPT-2, Whisper fame). talkie-1930-13b-base (53.1 GB) is a \"13B language model trained on 260B tokens of historical pre-1931 English text\". talkie-1930-13b-it (26.6 GB) is a checkpoint \"finetuned using a novel dataset of instruction-response pairs extracted from pre-1931 reference works\", designed to power a chat interface. You can try that out here. Both models are A",
+      "event_type": "news",
+      "tickers": [
+        "1930",
+        "1931"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1962",
+      "count": 1
+    },
+    {
+      "ticker": "1974",
+      "count": 1
+    },
+    {
+      "ticker": "1988",
+      "count": 1
+    },
+    {
+      "ticker": "1890",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

@@ -1,0 +1,140 @@
+{
+  "ticker": "2881",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "《台北股市》投信08日賣超股：台新新光金、玉山金、富邦金 - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTlN3NHFEV0N2bnV4QktnZFNOdjhoN0VrOWpuemdtY21iNngtbzlPWHo4eW9UT0x3TGNQcGdNTVZ2MGhwcGl2QmJpRUpoZG9hUGhOSnRZMTY5cmJneVlhX3g0UnlZV3RJcTJiOUVrR2cyaWdDQkRGVXVSZFJwVEhGTGVibVdZVHZC?oc=5",
+      "source": "台股三大法人 (Google News)",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-11T07:34:00+08:00",
+      "summary": "《台北股市》投信08日賣超股：台新新光金、玉山金、富邦金&nbsp;&nbsp;ww2.money-link.com.tw",
+      "event_type": "news",
+      "tickers": [
+        "2881"
+      ]
+    },
+    {
+      "title": "《台北股市》外資08日買超股：群創、富邦金、台新新光金 - ww2.money-link.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSEhsUjdpY2JxNkZ2RElwd3phWENfT1YtNUJUOHBIYl8wcGtydDFZMFZ0MTZjNUw0S09HWXVIeVAybnlydFJrRllqbkd3RzBDb3ZDaTQ5YkpxT3pGU2VITXNTZHVOeWxvRlVjWlRXQUxwVU5SV2NDWDJjY29VNks3aXZidXdEMG1G?oc=5",
+      "source": "台股三大法人 (Google News)",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-11T07:34:00+08:00",
+      "summary": "《台北股市》外資08日買超股：群創、富邦金、台新新光金&nbsp;&nbsp;ww2.money-link.com.tw",
+      "event_type": "news",
+      "tickers": [
+        "2881"
+      ]
+    },
+    {
+      "title": "《外資》買超股：鴻海、富邦金、長榮 - 富聯網",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRzMweEZyQ1JrTlEtbldVZTNOc3RzY1hDZ29PM2VsUkF6a3NNVGw1LWVzSy03ZU53NE4yMV9Bak1Ha051NjVhZkEzdkpKamtwVVZqckFPd3NUVXlCTS02YUhyaWNEZlItUzRqVl81NnJTS0gwODh5WEVxQWJqRlFyLU9xSGxzZVVm",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T07:33:00+08:00",
+      "summary": "《外資》買超股：鴻海、富邦金、長榮&nbsp;&nbsp;富聯網",
+      "event_type": "news",
+      "tickers": [
+        "2317",
+        "2881"
+      ]
+    },
+    {
+      "title": "台積電像「彗星」帶動供應鏈 富邦金羅瑋：促成台灣經濟結構「回春」 - 壹蘋新聞網",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92c3JERWtQcFltNlc4RVZJaUVjdTBNWGpjbkVXbXNRYTd3TWVRakhORl8xTWFlTVBWTTY3U1dvWnk2T2FRVmZpUkJnNjJveEZnb2F1MGo5eURvRGRFTWc3VmxGTW1FdjlTNlJOTEtFZVFfaTFlcVhEbzAtekNhRUE?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-04T03:55:00+08:00",
+      "summary": "台積電像「彗星」帶動供應鏈 富邦金羅瑋：促成台灣經濟結構「回春」&nbsp;&nbsp;壹蘋新聞網",
+      "event_type": "news",
+      "tickers": [
+        "2330",
+        "2881"
+      ]
+    },
+    {
+      "title": "全台 13 家金控股利出爐！中信金、富邦金、凱基金 9 家現金殖利率衝破 4%",
+      "link": "https://finance.technews.tw/2026/05/03/financial-holdings-profits-released",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-03T16:06:11+08:00",
+      "summary": "全台 13 家金控股利政策全數出爐，受惠 2025 年獲利動能強勁，今年金控業預計發放的現金股息總額高達 3, [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "2881",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "富邦金看下半年經濟　荷莫茲海峽1個月內能否解封關鍵",
+      "link": "https://www.cna.com.tw/news/afe/202604300396.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T22:25:06+08:00",
+      "summary": "（中央社記者蘇思云台北30日電）富邦金今天對全球經濟情勢進行分析，富邦金經濟學家邱郁潔表示，若荷莫茲海峽未來1個月內仍未恢復航運，恐導致部分產業鏈運作停擺，今年下半年主要國家與亞洲經濟恐出現下行風險，金融市場資產也將面臨重新定價的壓力。",
+      "event_type": "news",
+      "tickers": [
+        "2881"
+      ]
+    },
+    {
+      "title": "響應世界地球日　金融業募二手袋、推廚餘全循環應用",
+      "link": "https://www.cna.com.tw/news/afe/202604220389.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-22T20:57:40+08:00",
+      "summary": "（中央社記者蘇思云台北22日電）金融業響應2026年世界地球日，富邦金持續擴大綠色投融資規模，北富銀活動也串聯環境部二手袋募集計畫，號召員工捐出閒置、乾淨的紙袋與環保袋；凱基人壽攜手供應商推動廚餘全循環應用研究計畫，將員工餐廳廚餘轉化為有機農作資源，讓餐桌成為循環經濟的起點。",
+      "event_type": "news",
+      "tickers": [
+        "2881"
+      ]
+    },
+    {
+      "title": "《外資》買超股：鴻海、富邦金、中信金(2-2) - 富聯網",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQY1NLaGctUU44NGg4dWJiZkZJTTdWNmRUOVJoVjdkTTlVeVc0ODAyQmJYZmtyWG9XV2lDX2VXUVdHS3Q0Y2E2clVsRVpicjlBMWR1RXo1bF9OemxzazE1TV9iRWJWUVNPM242NmluVW9qdGI3ZHJIRnlnbzJDeUdaemVVb2NRdmRT",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-22T07:39:00+08:00",
+      "summary": "《外資》買超股：鴻海、富邦金、中信金(2-2)&nbsp;&nbsp;富聯網",
+      "event_type": "news",
+      "tickers": [
+        "2317",
+        "2881"
+      ]
+    },
+    {
+      "title": "富邦金力挺中研院推進淨零能源技術- 日報 - 工商時報",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uV0s1aG9ROGs4bEdiSkFFZ2NhVzBITFhkNnVtZ0RFSGZFMUExQjkzakFoUmc5b2dwM0NHY3dSSzJTeENpdHZSNmZuUDRod2stSlNIT3dxS3ZGYWJ4WjJJ?oc=5",
+      "source": "工商時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-03T03:00:00+08:00",
+      "summary": "富邦金力挺中研院推進淨零能源技術- 日報&nbsp;&nbsp;工商時報",
+      "event_type": "news",
+      "tickers": [
+        "2881"
+      ]
+    },
+    {
+      "title": "中研院淨零研發推進，深層地熱能源驗證、海域發電完成測試",
+      "link": "https://technews.tw/2026/04/02/geothermal-and-ocean-power",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-02T15:57:30+08:00",
+      "summary": "中央研究院昨（1）日頒授「中研院富邦金控暨台灣大哥大淨零科技研發講座」，表彰「地熱 Alpha 計畫」主持人李 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "2881"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

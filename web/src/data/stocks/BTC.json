@@ -1,0 +1,200 @@
+{
+  "ticker": "BTC",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "BTC",
+    "company_name": "Grayscale Bitcoin Mini Trust ETF",
+    "quarterly": {
+      "market": "us",
+      "ticker": "BTC",
+      "company_name": "Grayscale Bitcoin Mini Trust ETF",
+      "cik": "0002015034",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025-09-30",
+      "filed_at": "2025-11-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2015034/000119312525266856/btc-20250930.htm",
+      "report_kind": "quarterly",
+      "revenue": null,
+      "monthly_revenue": null,
+      "net_income": 855200000.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": -1051861000.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "The Index’s algorithm is expected to reflect a five-pronged methodology to calculate the Index Price from the Constituent Trading Platforms for Bitcoin: • Volume Weighting: Constituent Trading Platforms with greater liquidity receive a high",
+      "filing_excerpt": "The Index’s algorithm is expected to reflect a five-pronged methodology to calculate the Index Price from the Constituent Trading Platforms for Bitcoin: • Volume Weighting: Constituent Trading Platforms with greater liquidity receive a high",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2025-11-05\", \"period_end\": \"2025-09-30\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/2015034/000119312525266856/btc-20250930.htm\"}, \"anchor_fact\": {\"start\": \"2025-01-01\", \"end\": \"2025-09-30\", \"val\": 855200000, \"accn\": \"0001193125-25-266856\", \"fy\": 2025, \"fp\": \"Q3\", \"form\": \"10-Q\", \"filed\": \"2025-11-05\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Bitcoin preps highest weekly close since January as BTC price nears $79K",
+      "link": "https://cointelegraph.com/markets/bitcoin-preps-highest-weekly-close-since-january-as-btc-price-nears-79k",
+      "source": "Cointelegraph",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T00:26:22+08:00",
+      "summary": "Bitcoin canceled out the week's earlier losses to tease the highest BTC price weekly candle close since the end of January near $79,000.",
+      "body_text": "Bitcoin canceled out the week's earlier losses to tease the highest BTC price weekly candle close since the end of January near $79,000.\nBitcoin (BTC) eyed $79,000 into Sunday’s weekly close as crypto markets continued to be guided by the US-Iran war.\nData from TradingView showed BTC/USD attempting to hold higher after cancelling out losses from earlier in the week.\nFinishing the week above $78,67",
+      "event_type": "earnings",
+      "tickers": [
+        "BTC"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Current price of #Bitcoin, measured in United States #Dollars $BTC / $USD: 💵 $69,223.16 - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE80cW1PZWtfSlhVYTFNZ0tqRTFNd0JKVkVrbDRsdjNQNDY4azF6WFhyeE9ibzJ5cDBVR1dwc1p6cU8wR2tSb2tlbTQxT1JHQVptaERoaDJBWVlYaUVE",
+      "source": "X 加密市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-06T08:43:48+08:00",
+      "summary": "Current price of #Bitcoin, measured in United States #Dollars $BTC / $USD: 💵 $69,223.16&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "BTC",
+        "USD"
+      ]
+    },
+    {
+      "title": "Current price of #Bitcoin, measured in #Silver $BTC / $XAG: 🥈 920.558 oz - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xQzdib0MwT25QN3Q3MC1DSkREaGRuOTZUSEhibHpEd1kwcHd1WEx0SUlDQy1wYkkwdG9oNjVGZjBFdVMteEUwZ09rSmZSUEkyYS1zRXY4SlVITG9q",
+      "source": "X 加密市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-05T08:43:54+08:00",
+      "summary": "Current price of #Bitcoin, measured in #Silver $BTC / $XAG: 🥈 920.558 oz&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "BTC",
+        "XAG"
+      ]
+    },
+    {
+      "title": "🟠 Charles Schwab expands into direct #Bitcoin trading. The firm is launching 'Schwab Crypto,' allowing clients to buy and sell $BTC directly. 💸 This move brings them into direct competition with Robinhood and Coinbase for retail investors. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BV0QwclNPc2M4THJ4eTlBZzJRLVVRNFBfTFUteDI0ZGh5cEZiaWFmRUFscHJidnIwR1BGQzJhS2JTMEtRcnVOSXVoSmlGQlAtUmRKaWljMTNiYWIxQlNFc0RR",
+      "source": "X 加密市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-04T05:02:40+08:00",
+      "summary": "🟠 Charles Schwab expands into direct #Bitcoin trading. The firm is launching 'Schwab Crypto,' allowing clients to buy and sell $BTC directly. 💸 This move brings them into direct competition with Robinhood and Coinbase for retail investors.&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "🚨 UPDATE: Bitcoin buying is failing to offset a wave of selling by large holders, with $BTC trading at $68,217 and down 22% year to date, per Bloomberg. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50S19nck1YVEdObTd1VnBBNWdBVHFLU3AxcGpPRHpXMGtqNkQ5dVRVMW5saUNiVFdXZlFtWHVXNGFkeVg0QTJsQ0E2Nnotc3hwYjlpSmZkTFJsUlNOSVBpZmFsWVI",
+      "source": "X 加密市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-02T07:40:50+08:00",
+      "summary": "🚨 UPDATE: Bitcoin buying is failing to offset a wave of selling by large holders, with $BTC trading at $68,217 and down 22% year to date, per Bloomberg.&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "BTC"
+      ]
+    },
+    {
+      "title": "Quantum risk resurfaces for $BTC just as Iran war macro pressure sends it below $67K. Crypto Daybook Americas, presented by @Nexo. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE55S2p5U2hFcDh3T0hZMGpreTRkN1JxalBoVklNVFJnYU5hdk1wUEY1MnlQV3YxYTUwUGFyUlZFUXdfR0xFYTdTNUQ1aC1UbWZhODQ0NWRqN0pkSGdjUkM3eWpxbmg3TzJY?oc=5",
+      "source": "X 加密市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-01T05:00:24+08:00",
+      "summary": "Quantum risk resurfaces for $BTC just as Iran war macro pressure sends it below $67K. Crypto Daybook Americas, presented by @Nexo.&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "BTC"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025-09-30",
+      "filed_at": "2025-11-05",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": null,
+      "monthly_revenue": null,
+      "net_income": 855200000.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": -1051861000.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "The Index’s algorithm is expected to reflect a five-pronged methodology to calculate the Index Price from the Constituent Trading Platforms for Bitcoin: • Volume Weighting: Constituent Trading Platforms with greater liquidity receive a high"
+    }
+  ],
+  "fundamentals": {
+    "ticker": "BTC",
+    "market": "us",
+    "company_name": "Grayscale Bitcoin Mini Trust ETF",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "revenue": null,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 855200000.0,
+      "eps": null,
+      "fcf": null,
+      "ocf": -1051861000.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": null,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q3",
+        "revenue": null,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 855200000.0,
+        "eps_diluted": null,
+        "fcf": null,
+        "ocf": -1051861000.0,
+        "capex": null,
+        "company_name": "Grayscale Bitcoin Mini Trust ETF"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

@@ -1,0 +1,181 @@
+{
+  "ticker": "5060",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Stylish RTX 5060 Ti 8GB gaming PC with loads of DDR5 RAM tumbles under $1,450 with Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQU2Z1djh3RGx1Wk1yQXdaQm1KTzdRNHVuQXpyMmdxcC1VSFdCM1owNV81eEJ4bU51ZmNka202cTZVa1VjVWFGeC13M2ZZX0FIcUwtbXBQSER5bG1RWm1fQTFZS2UxU00tSDlaVGZyVVF5OS1YazZFWF9uMDNBVmZMVnFnVi1OY1VjVk9xamQ3aklYam1TREZud2ZMVXgwZXhwU3R4eTRKWE9KMFZmUU1lY0syYzFlZ24wTDNQWlNUM3E?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-19T15:22:02+08:00",
+      "summary": "Stylish RTX 5060 Ti 8GB gaming PC with loads of DDR5 RAM tumbles under $1,450 with Newegg deal&nbsp;&nbsp;PC Guide",
+      "body_text": "",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ],
+      "companies": [],
+      "guidance_direction": "down"
+    }
+  ],
+  "general_news": [
+    {
+      "title": "This Gigabyte gaming Copilot+ laptop deal packs AMD Ryzen 7, Nvidia 5060, 16GB RAM, 1TB SSD - Neowin",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPR3o3Z1drdlBTMUhLSW4zREM1clEtSlg2aE9VdXlEUWVXWXBTazVUUkp6R2Rzc3VUdm54OEowOFAyVS1MT2ZBQ2hLaEVaSzcwWmFSSFd6MHVFWUt2S1EzZVZSRkNoU1dwS3B2S0tOZGlZeWR2dTJ0VWUyTENGN19MajY1MF9kTDIxSks5eEh4SnYza1FMak5GcmFtRTJxOWU5UTNUMWJkVlZEVnJBSVFQemk1NENFaWhU0gG2AUFVX3lxTE93SHZac1FQRjZQV2ZBUWFlUXFoaGFScWlvU2pDLVJtb1F0dklYNER1S0dqMmFjbTJNbXo5akd1QjE3WmpSV1VuZElOa3hNMmRRZEd2bDZHVl9LMnBfc2t0dndjV0VLNlE0Tk5raFN6VGVlYVhOd2lLN1QxZExOd3dtSHFkZEJ0TDhtNmlsVDcxd2dyUzJLR1QtVW83cG1lMHlYd1J5MFdzZFRySTlUa0d2ZExMVENB",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T02:16:00+08:00",
+      "summary": "This Gigabyte gaming Copilot+ laptop deal packs AMD Ryzen 7, Nvidia 5060, 16GB RAM, 1TB SSD&nbsp;&nbsp;Neowin",
+      "event_type": "news",
+      "tickers": [
+        "5060",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Save $575 off this stellar gaming PC armed with a 16GB RTX 5060 Ti and 32GB of DDR5 memory — $1424.99 ABS Flux II Aqua Gaming PC prebuilt costs less than some of its parts",
+      "link": "https://www.tomshardware.com/peripherals/gaming-mice/save-usd575-off-this-stellar-gaming-pc-armed-with-a-16gb-rtx-5060-ti-and-32gb-of-ddr5-memory-usd1424-99-abs-flux-ii-aqua-gaming-pc-prebuilt-costs-less-than-some-of-its-parts",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T19:22:14+08:00",
+      "summary": "A 16GB RTX 5060 Ti and 32GB of DDR5-6400 RAM are highlights of this great value ABS Flux II Aqua prebuilt gaming PC.",
+      "event_type": "news",
+      "tickers": [
+        "5060",
+        "1424",
+        "6400"
+      ]
+    },
+    {
+      "title": "Intel's Arc Pro B70 workstation GPU with 32GB of VRAM gets tested in games — Roughly twice as fast as Arc B580 on average, beats RTX 5060 Ti in some titles",
+      "link": "https://www.tomshardware.com/pc-components/gpus/intels-arc-pro-b70-workstation-gpu-with-32gb-of-vram-gets-tested-in-games-roughly-twice-as-fast-as-arc-b580-on-average-beats-rtx-5060-ti-in-some-titles",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T22:22:09+08:00",
+      "summary": "In a new review for the Arc Pro B70, the workstation GPU performs rather well across five games tested at 1440p resolution. On average, it loses to the RTX 5060 Ti 16GB in traditional raster but beats it in ray tracing. Overall, the B70 was only 2.9% behind the 5060 Ti in all games when you average out both RT and raster.",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    },
+    {
+      "title": "Grab a 1440p-capable gaming rig with an RTX 5060 for just $1,049 — Save up to 25% on ABS Flux & Cyclone prebuilts that also feature 32 GB of RAM",
+      "link": "https://www.tomshardware.com/pc-components/grab-a-1440p-capable-gaming-rig-with-an-rtx-5060-for-just-usd1-049-save-up-to-25-percent-on-abs-flux-and-cyclone-prebuilts-that-also-feature-32-gb-of-ram",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-03T05:14:29+08:00",
+      "summary": "Building a PC has its advantages, such as cheaper parts costs and a learning experience that'll stick with you forever. However, when our AI overlords suck the joy out of DIY custom rigs, we need to venture out to find good deals in such turbulent times, and these prebuilts from ABS provide exactly that.",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    },
+    {
+      "title": "Gamers, this Ryzen 7 7800X3D, RTX 5060 Ti 16GB system is now $200 less - WePC",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdHFGdmx2NmFWdlBhaGVLbzNvRWZlSGRBWE1tWWNHSE5DbzBzSjZVdUpqZkNENERkR1I4TDN2UlhzRGFrdUpBM2xzYks0SjlQYW9SYVU2V241di1QQThORE9iT0tUbkdITl9nanFlOTA1aVhxTXF0akZXT3ZBMDJCb290V2hSOVdtUnl0UHdzZnRmNDh1ZmFVcFhB?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T22:50:04+08:00",
+      "summary": "Gamers, this Ryzen 7 7800X3D, RTX 5060 Ti 16GB system is now $200 less&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    },
+    {
+      "title": "For new PC gamers, this RTX 5060 desktop deal is a smart choice - WePC",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMlEybm53SThRVkY3NmtBMEtVdWVfbUpMQXFVek1XT3VHcjNLVnowNVhWbnk0WDdrbFQ5WjRoWGkycUJmbEx6WlRSZ3I3RFFpZDZvcXFteVBnNFVZUF9paENNQnhiU3JsSmJCRDVIXzhNcWxLQWhoOEprU0JRQmxrYTNYZl94S2FOLThZTktKRXZ5am8?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T00:12:29+08:00",
+      "summary": "For new PC gamers, this RTX 5060 desktop deal is a smart choice&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    },
+    {
+      "title": "RTX 5060 Ti gaming PC deal also comes with a solid Ryzen CPU and 32GB DDR5 RAM in a great case - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZG5KWktSZERzTi1BVE92QVM1QUkxY18tQ1V4SWh2bkFaSEFpOTZtN3N0aWVON2FsQ3NuY3lWS0ZrSU51dnBhN3RQSXMyOUMzLXlmVm5kQS15QXlWM0xxalpnbVR5bUJ2YnVDTmlxbktDR1hObHZsTTVtRzJNYWNhSXhSY2laWkFrU1IwRWVnVHh1QjI5TW9iUlRnRllEMFRuTG0xLWduVUlEbmFEUTBzSHVnNWF6QkZCdWg4dlUzX2FSZFU",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-30T07:40:48+08:00",
+      "summary": "RTX 5060 Ti gaming PC deal also comes with a solid Ryzen CPU and 32GB DDR5 RAM in a great case&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    },
+    {
+      "title": "Deal | ROG Zephyrus G14 with AMD Ryzen 9 270 and Nvidia RTX 5060 discounted by $500 - Notebookcheck",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQWhiSFktQjdTZkozcEdkY0xCMzdBaFlscGxSN191Sk5zQXE3aDVRSzBra2JZSTF0SFo0a3phWmJJaFhWMG9CWEJkSDRTMjV1bkRndWU2akc4ajB6bjJ5TGhTSi1JRFV6WFFYYzJZZzhIQlhNS1VmNVBFekNwS0hYNUgzOGZ6RkRBSU14c3l6TXZNQ3pBZUM5Ny1HdXY1NXVuUG1RbXNjRHpyaXQwSElKbGlnRXFsZjFza25TSQ",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-27T00:47:00+08:00",
+      "summary": "Deal | ROG Zephyrus G14 with AMD Ryzen 9 270 and Nvidia RTX 5060 discounted by $500&nbsp;&nbsp;Notebookcheck",
+      "event_type": "news",
+      "tickers": [
+        "5060",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "RTX 5060 gaming PC with Ryzen CPU is just $1,149.99 in Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQczIweWMtRGJweVFYaHZ5UnRScFE3aEVLWWJTbnk4dnNiWHZHakdzZ1JZcFVoRGU1U2tfUU00RzlKcHYtVVVOU0RVSUZYbnpkVEFqVzhRSU1HX1Z1U0ttMllYNjdFTEZMOVFMRXRNOFRIekE2QU9YRzlFQ2J5U3R6akNNaXAybGdDTXU2bTQyaF83THY2Z1lqMzBIQQ",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-10T07:09:33+08:00",
+      "summary": "RTX 5060 gaming PC with Ryzen CPU is just $1,149.99 in Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    },
+    {
+      "title": "ASUS RTX 5060, Ryzen 7-powered gaming laptop with 64GB DDR5 RAM now has over $250 shaved off its asking price - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZlhzdV9UTjljemg1SEU4NFBpRnNBbjQxTjNyMXRMcXhWVG95ejFid29tZDQwUHQ5c3lOR3BJdjJJLU9CU2ZoaFNUeWZjbGJOa3pOaUFkY3Y1b2sxVUt3cGJMSzItb2VfRmhqV3pLQWJBWmhIVExQWHVtaV9kMkFBQm9XR1RtdzRLQmRtbm5jaFNJWEZ6Si1NczNLcGZ5azlQUF9icFVuQ1FtdzRPamJGTC1yVHdxN2NBQjJTdnIzUl9BYmxSN2V6QjJPNjV4VmRTM3hndw?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-06T22:59:02+08:00",
+      "summary": "ASUS RTX 5060, Ryzen 7-powered gaming laptop with 64GB DDR5 RAM now has over $250 shaved off its asking price&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    },
+    {
+      "title": "Powerful RTX 5060 laptop with 64GB of DDR5 RAM drops $250 in Amazon deal - WePC",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWXJDQW05TEVRQlprcVhfcEtRcVRNXzE0NURBZlNGZmlLUG1rLWhXRXNJWklzQUlSc2RUYTAyMThfLUNxZEtMS2lGRy11X0dZYnJyRzhUbEw4Q2xmQkhZT3d3VWdYdWtHcWhsVDRtWkdJTkQ2VTR4ckJIU1RubWM4Z0c1a3ctcnhIZW9WTkZRWGlRUkgzOXBGS0pTLXFYSXc?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-03T23:27:53+08:00",
+      "summary": "Powerful RTX 5060 laptop with 64GB of DDR5 RAM drops $250 in Amazon deal&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5060",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Great value Copilot+ PC deal pairs an RTX 5060 with Ryzen AI 7 350 plus 16GB of RAM and 1TB SSD - WePC",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUk80RTFuX29sN3pxZ3ljZE05LWRHVjgzWm1uV1RfSnZoeHhBMWpyUmZ0RENPd29teFBReHJOd0V0Y1I0eUF0NEVZU0M2U2xSeUphVk4tdnd2S25xc2tYdGVTcmJ1eEJKTkZxZWpVR0ZMTHBiRTA4OGU2UDdGRmEyZ24xYllUYlV1QnFrMFI2VGtPdk0tOVFvSm9TUkpQRk1qSENIbm9GZHdCRXFCQlVIbWdEbElidWZlQ0xZajRn",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-03T01:27:33+08:00",
+      "summary": "Great value Copilot+ PC deal pairs an RTX 5060 with Ryzen AI 7 350 plus 16GB of RAM and 1TB SSD&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5060"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

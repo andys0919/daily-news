@@ -1,0 +1,130 @@
+{
+  "ticker": "1961",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Why Eurovision's fallout over Israel may change the competition forever",
+      "link": "https://www.bbc.com/news/articles/cgkpgm6vk48o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-11T07:33:57+08:00",
+      "summary": "With Eurovision facing its biggest boycott in 70 years, questions are growing over the competition's future.",
+      "body_text": "Moments after Austria overtook Israel to win last May's Eurovision Song Contest and in doing so won the right to host this year's event, UK viewers heard commentator Graham Norton say organisers \"will be breathing the largest sigh of relief that they're not faced with a Tel Aviv final next year\".\nAnti-Israel protests had built ahead of the contest. At a demonstration of several hundred people in B",
+      "event_type": "earnings",
+      "tickers": [
+        "1973",
+        "1961",
+        "1975",
+        "1980"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Venezuela Needs Regime Change",
+      "link": "https://www.foreignaffairs.com/venezuela/venezuela-needs-regime-change-javier-corrales",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The narrow path to a democratic transition.",
+      "body_text": "The Narrow Path to a Democratic Transition\nJavier Corrales\nMay/June 2026\nWhen U.S. forces swooped into Caracas in January to seize President Nicolás Maduro, many Venezuelans inside and outside the country rejoiced. Maduro’s ouster seemed to signal the imminent end of a regime that had for years oppressed and immiserated its people. Thanks to bold U.S. action, a government that had rankled its neig",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1935",
+        "1958",
+        "1989",
+        "1975",
+        "1895"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "How North Korea Won",
+      "link": "https://www.foreignaffairs.com/north-korea/how-north-korea-won-jung-pak",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The Strange Triumph of Kim Jong Un.",
+      "body_text": "The Strange Triumph of Kim Jong Un\nJung H. Pak\nMay/June 2026\nThe 75th anniversary of the Korean Workers Party in October 2020 was not the festive affair that North Korean leader Kim Jong Un wanted it to be. Despite the fireworks, military flyover, and procession of new intercontinental missiles, Kim appeared to wipe away tears when he approached the lectern and apologized to the crowd: “My efforts",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1973",
+        "1950",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "India begins counting more than a billion people in massive census",
+      "link": "https://www.bbc.com/news/articles/c7vqnpqrgy3o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-01T08:11:33+08:00",
+      "summary": "The two-phase exercise - the world’s most ambitious - will see three million officials count every Indian.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "1872",
+        "1881",
+        "1901",
+        "1941",
+        "1951",
+        "1961"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1973",
+      "count": 2
+    },
+    {
+      "ticker": "1975",
+      "count": 2
+    },
+    {
+      "ticker": "1980",
+      "count": 1
+    },
+    {
+      "ticker": "1935",
+      "count": 1
+    },
+    {
+      "ticker": "1958",
+      "count": 1
+    },
+    {
+      "ticker": "1989",
+      "count": 1
+    },
+    {
+      "ticker": "1895",
+      "count": 1
+    },
+    {
+      "ticker": "1950",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

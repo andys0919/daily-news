@@ -16,8 +16,11 @@ const quarterly = bundle?.quarterly ?? null;
 const monthly = bundle?.monthly_revenue ?? null;
 const history: any[] = (data.history ?? []).slice().reverse();
 const recentNews: any[] = data.recent_news ?? [];
+const generalNews: any[] = data.general_news ?? [];
 const coMentions: any[] = data.co_mentions ?? [];
 const transcripts: any[] = data.transcripts ?? [];
+const fund = data.fundamentals ?? null;
+const health = fund?.health ?? null;
 
 function fmtMoney(n: number | null | undefined, scale = 1e9, digits = 2, suffix = "B"): string {
   if (n == null || isNaN(Number(n))) return "—";
@@ -58,12 +61,18 @@ const epsSpark = svgPath(epsPoints);
 <Base title={`${data.ticker} · 個股深度`}>
   <section class="hero">
     <div>
-      <span class="live"><span class="live-dot"></span>{data.market.toUpperCase()} · {recentNews.length} 篇新聞</span>
+      <span class="live"><span class="live-dot"></span>{data.market.toUpperCase()} · 重點新聞 {recentNews.length} 篇 · 其他 {generalNews.length} 篇</span>
       <h1 class="mt-2 mono">
         <span class="accent">{data.ticker}</span>
         {bundle?.company_name && <span style="font-size:18px; color: var(--fg-300); font-family: 'IBM Plex Sans', sans-serif; margin-left:12px; font-weight:400;">{bundle.company_name}</span>}
       </h1>
-      <p class="hero-sub">{history.length} 期官方財報 · {transcripts.length} 份 IR / 法說 · 共同提及 {coMentions.length} 檔關聯個股</p>
+      {health && (
+        <div style="margin-top: 10px; display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 24px;">{health.icon}</span>
+          <span class={`label ${health.tier}`} style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px;">{health.label}</span>
+          <span style="font-size: 13px; color: var(--fg-300);">{health.summary}</span>
+        </div>
+      )}
     </div>
     <div class="hero-meta">
       <div class="ts mono">{(data.generated_at ?? "").slice(0, 10)}</div>
@@ -206,11 +215,10 @@ const epsSpark = svgPath(epsPoints);
     </article>
   </section>
 
-  <!-- 相關新聞 ─────────────────────────────────────────────── -->
-  <section class="glass bento">
+  <!-- 重點新聞 (event-tagged or guidance) ───────────────────── -->
+  <section class="glass bento" style="margin-bottom: 16px;">
     <header class="bento-head">
-      <h2 class="bento-title">相關新聞 · 最新 {recentNews.length} 篇</h2>
-      <a href="/news" class="bento-link">全部 →</a>
+      <h2 class="bento-title">⭐ 重點新聞 · earnings / capex / 目標價 / guidance ({recentNews.length})</h2>
     </header>
     <div class="timeline">
       {recentNews.slice(0, 30).map((n: any) => (
@@ -221,18 +229,48 @@ const epsSpark = svgPath(epsPoints);
           </div>
           <div class="tl-body">
             <div class="h">
+              {n.guidance_direction === "up" && <span class="delta-up">▲</span>}
+              {n.guidance_direction === "down" && <span class="delta-down">▼</span>}
               <a href={n.link} target="_blank" rel="noopener"><strong>{n.title}</strong></a>
               <span class="muted-2 mono" style="font-size:11px;">· {n.source}</span>
             </div>
             {n.summary && <p class="summary line-clamp-2">{n.summary}</p>}
             <div class="tags">
+              {n.event_type && n.event_type !== "news" && <span class={`chip-mini evt-${n.event_type}`}>{n.event_type}</span>}
+              {n.guidance_direction && <span class="chip-mini">{n.guidance_direction.toUpperCase()}</span>}
               {n.category && <span class="chip-mini">{n.category}</span>}
-              {n.event_type && <span class={`chip-mini evt-${n.event_type}`}>{n.event_type}</span>}
             </div>
           </div>
         </article>
       ))}
-      {recentNews.length === 0 && <p class="muted text-sm">（暫無相關新聞）</p>}
+      {recentNews.length === 0 && <p class="muted text-sm">（這檔近 30 天沒有 earnings / capex / 目標價變動類新聞 — 看下方一般新聞）</p>}
     </div>
   </section>
+
+  <!-- 一般相關新聞 (finance sources only) ───────────────────── -->
+  {generalNews.length > 0 && (
+    <section class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">📰 其他相關新聞 ({generalNews.length})</h2>
+        <span class="bento-link mono">finance sources only</span>
+      </header>
+      <div class="timeline">
+        {generalNews.slice(0, 25).map((n: any) => (
+          <article class="tl-item">
+            <div class="tl-stamp">
+              <div>{(n.published ?? "").slice(0, 10)}</div>
+              <div class="muted-2">{(n.published ?? "").slice(11, 16)}</div>
+            </div>
+            <div class="tl-body">
+              <div class="h">
+                <a href={n.link} target="_blank" rel="noopener">{n.title}</a>
+                <span class="muted-2 mono" style="font-size:11px;">· {n.source}</span>
+              </div>
+              {n.summary && <p class="summary line-clamp-2">{n.summary}</p>}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
 </Base>

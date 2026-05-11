@@ -1,0 +1,573 @@
+{
+  "ticker": "BLSH",
+  "market": "us",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Agentic commerce will run on crypto rails, PayPal and Google reps tell Consensus Miami",
+      "link": "https://www.coindesk.com/business/2026/05/10/agentic-commerce-will-run-on-crypto-rails-paypal-and-google-reps-tell-consensus-miami",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T22:00:00+08:00",
+      "summary": "",
+      "body_text": "MIAMI BEACH, Fla. — Senior figures from Google Cloud and PayPal told CoinDesk's Consensus Miami conference on Thursday that the next wave of internet commerce will run on crypto rails because AI agents structurally cannot use traditional financial accounts.\nRichard Widmann, global head of Web3 strategy at Google Cloud, said the existing internet user experience does not extend to autonomous agents",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Trump Media’s Q1 loss widens to $406 million on bitcoin, CRO markdowns",
+      "link": "https://www.coindesk.com/business/2026/05/09/trump-media-s-q1-loss-widens-to-usd406-million-on-bitcoin-cro-markdowns",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T01:28:08+08:00",
+      "summary": "",
+      "body_text": "Trump Media & Technology Group (DJT) reported a $405.9 million first-quarter net loss on $871,200 in revenue, widening from $31.7 million a year earlier as unrealized losses on its crypto holdings weighed on results.\nThe parent company of Truth Social booked $244 million in unrealized losses on its cryptocurrency holdings. It also recorded a $108.2 million investment loss tied mostly to equity sec",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Coinbase rebounds as altcoins surge with bitcoin holding above $80,000",
+      "link": "https://www.coindesk.com/markets/2026/05/08/coinbase-rebounds-as-altcoins-surge-with-bitcoin-holding-above-usd80-000",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T04:59:25+08:00",
+      "summary": "",
+      "body_text": "With bitcoin holding above $80,000 and stocks pushing to fresh record highs, risk appetite spilled deeper into crypto markets Friday, lifting altcoins and blockchain infrastructure plays.\nSolana (SOL), Chainlink LINK $ 10.43 , SUI $ 1.0766 and DOT $ 1.3764 rose around 5%, while Near Protocol (NEAR) and Uniswap (UNI) gained roughly 7%. Internet Computer Protocol’s ICP jumped nearly 12%, leading maj",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "0766",
+        "3764"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Coinbax wins $20,000 PitchFest prize at Consensus Miami for stablecoin compliance",
+      "link": "https://www.coindesk.com/business/2026/05/07/coinbax-wins-usd20-000-pitchfest-prize-at-consensus-miami-for-stablecoin-compliance",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T05:35:01+08:00",
+      "summary": "",
+      "body_text": "MIAMI – Coinbax won the $20,000 grand prize at Consensus Miami’s PitchFest after pitching a system designed to help banks and financial firms manage compliance for stablecoin payments.\nThe company, founded by former Jack Henry executive Peter Glyman, builds programmable escrow infrastructure that adds controls to wallet-to-wallet crypto transactions. The software is meant to reduce the risks finan",
+      "event_type": "policy",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Michael Saylor's Strategy signals potential bitcoin sale to fund dividends obligations",
+      "link": "https://www.coindesk.com/business/2026/05/05/michael-saylor-s-strategy-signals-potential-bitcoin-sale-to-fund-dividends-obligations",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T07:43:44+08:00",
+      "summary": "",
+      "body_text": "Strategy (MSTR), the world’s largest publicly traded corporate holder of bitcoin, floated the idea of selling bitcoin in order to cover its dividend obligations. Executive Chairman Michael Saylor suggested, during its Q1 2026 earnings call, the company may sell a portion of its bitcoin holdings to fund dividend payments, stating: “We will probably sell some bitcoin to pay a dividend just to inocul",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Hut 8 swaps Coinbase loan for cheaper FalconX deal, slashing borrowing costs as it bets big on AI",
+      "link": "https://www.coindesk.com/markets/2026/04/28/hut-8-swaps-coinbase-credit-line-for-cheaper-falconx-deal-slashing-borrowing-costs-as-it-bets-big-on-ai",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T02:31:44+08:00",
+      "summary": "",
+      "body_text": "Hut 8 (HUT), a bitcoin miner turned energy and AI compute company, has refinanced its bitcoin-backed credit facility, replacing its existing Coinbase Credit arrangement with a new $200 million facility with FalconX.\nWith the new deal, Hut 8 cut its fixed interest rate to 7% from 9%, a 200-basis-point improvement, according to a press release . The move is part of the firm's focus on lowering its c",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Bitcoin miner Riot's shares jump 8% after expanding AMD data center deal, signaling AI pivot",
+      "link": "https://www.coindesk.com/markets/2026/05/01/bitcoin-miner-riot-s-shares-jump-8-after-expanding-amd-data-center-deal-signaling-ai-pivot",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T04:59:09+08:00",
+      "summary": "",
+      "body_text": "Riot Platforms (RIOT) shares jumped about 8% on Friday after Advanced Micro Devices (AMD) expanded its capacity at the company’s Rockdale, Texas campus, highlighting Riot’s continued pivot from bitcoin mining into AI and high-performance computing.\nAccording to the Q1 financial results , AMD exercised an option to double its contracted capacity to 50 megawatts (MW), with the potential to upsize to",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Ethereum Foundation finalizes sale of 10,000 ether to BitMine as part of its treasury strategy",
+      "link": "https://www.coindesk.com/business/2026/05/01/ethereum-foundation-finalizes-sale-of-10-000-ether-to-bitmine-as-part-of-its-treasury-strategy",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T02:16:40+08:00",
+      "summary": "",
+      "body_text": "The Ethereum Foundation has sold another 10,000 ether (ETH) in an over-the-counter deal to Tom Lee's BitMine (BMNR), continuing a string of treasury sales this year.\nIn a post on X on Friday, the organization said it finalized the sale at an average price of $2,292.15 per token, implying proceeds of roughly $22.9 million. The counterparty was BitMine Immersion Technologies, a repeat buyer that has",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "U.S. senators won't be weighing in on prediction markets bets after banning themselves",
+      "link": "https://www.coindesk.com/policy/2026/04/30/u-s-senators-won-t-be-weighing-in-on-prediction-markets-bets-after-banning-themselves",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T06:13:13+08:00",
+      "summary": "",
+      "body_text": "A U.S. Senate that's struggled to move crypto market structure legislation moved like lightning on Thursday to ban themselves from participating in prediction markets.\nActing on a simple, 14-line resolution pushed by Ohio Republican Senator Bernie Moreno, the Senate agreed unanimously to put a restriction between members and the increasingly popular, controversial betting platforms that have drawn",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Senator Warren questions Commerce Secretary Lutnick on Tether loan to family",
+      "link": "https://www.coindesk.com/policy/2026/04/30/senator-warren-questions-commerce-secretary-lutnick-on-tether-loan-to-family",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T01:06:21+08:00",
+      "summary": "",
+      "body_text": "U.S. Secretary of Commerce Howard Lutnick, the former CEO of Cantor Fitzgerald that handles Tether's finances in the U.S., has been questioned by Senate Democrats on reports that a trust tied to his children received a loan from Tether meant to help finance Lutnick's divestiture of his company stake that went to his children.\nSenators Elizabeth Warren, who is the ranking Democrat on the Senate Ban",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Jack Mallers' Twenty One Capital surges after majority holder Tether proposes 3-way merger",
+      "link": "https://www.coindesk.com/markets/2026/04/29/jack-mallers-twenty-one-capital-surges-after-majority-holder-tether-proposes-3-way-merger",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T06:12:53+08:00",
+      "summary": "",
+      "body_text": "The shares of Twenty One Capital (XXI), the bitcoin-focused firm, are up over 8% in after-hours trading on Wednesday, after majority shareholder Tether Investments proposed a merger with Strike and Elektron Energy.\nTether Investment, the independent investment arm of the stablecoin issuer, said it intends to vote its shares in favor of combining XXI with Strike, a global bitcoin financial services",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tether's $344 million USDT freeze linked to U.S. 'Economic Fury' against Iran regime",
+      "link": "https://www.coindesk.com/policy/2026/04/24/tether-s-usd344-million-usdt-freeze-linked-to-u-s-economic-fury-against-iran-regime",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-25T03:50:07+08:00",
+      "summary": "",
+      "body_text": "The U.S. Treasury Department said Friday that a $344 million cryptocurrency freeze is part of its latest effort to disrupt financial networks tied to Iran.\nTreasury Secretary Scott Bessent said in an X post that the Treasury’s Office of Foreign Assets Control (OFAC) is sanctioning multiple crypto wallets linked to Iran, resulting in the freeze of $344 million in cryptocurrency.\n\"We will follow the",
+      "event_type": "policy",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk's Tesla reports unchanged bitcoin holdings, books $173 million digital asset loss",
+      "link": "https://www.coindesk.com/markets/2026/04/22/elon-musk-s-tesla-reports-unchanged-bitcoin-holdings-books-usd173-million-digital-asset-loss",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-23T04:36:19+08:00",
+      "summary": "",
+      "body_text": "Elon Musk's Tesla's (TSLA) bitcoin BTC $ 78,409.11 holdings were unchanged in the first quarter of 2026, with the company continuing to hold its 11,509 BTC stockpile.\nThe company booked an after-tax impairment loss of $173 million on its digital asset holdings, according to its first quarter earnings report.\nThe value of that stash declined as bitcoin fell from around $90,000 at the start of the y",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "This little-known token just posted a 6,000% rally — and traders are trying to figure out why",
+      "link": "https://www.coindesk.com/markets/2026/04/13/this-little-known-token-just-posted-a-6-000-rally-and-traders-are-trying-to-figure-out-why",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-14T04:20:24+08:00",
+      "summary": "",
+      "body_text": "RAVE, the native token of RaveDAO, has surged more than 6,000% over the past month, capping off one of the most explosive rallies in the crypto market this year and reigniting debate about speculative excesses in digital assets.\nThe token jumped 198% in the last 24 hours alone and more than 5,600% over the past week, briefly pushing it into the top 50 cryptocurrencies by market capitalization. Pri",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Musk’s SpaceX holds $603 million in bitcoin despite $5 billion loss stemming from xAI",
+      "link": "https://www.coindesk.com/markets/2026/04/11/musk-s-spacex-holds-usd603-million-in-bitcoin-despite-usd5-billion-loss-stemming-from-xai",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-12T03:30:00+08:00",
+      "summary": "",
+      "body_text": "SpaceX is sitting on 8,285 BTC worth $603 million in Coinbase Prime custody while reporting a loss of nearly $5 billion for 2025, according to Arkham Intelligence data and a report from The Information published late Friday.\nThe loss marks a sharp reversal from a year earlier when SpaceX generated roughly $8 billion in profit on revenues estimated between $15 billion and $16 billion.\nRevenue grew ",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Bitcoin tops $72,000, but Circle and Bullish drop sharply after downgrades",
+      "link": "https://www.coindesk.com/markets/2026/04/09/bitcoin-tops-usd72-000-but-circle-and-bullish-drop-sharply-after-downgrades",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-10T05:10:46+08:00",
+      "summary": "",
+      "body_text": "Crypto prices and U.S. stocks rallied Thursday on diminishing Middle East worries, but Circle (CRCL), Bullish (BLSH) and Coinbase (COIN) all posted sizable declines.\nCircle tumbled 9.9% to $85.10 after Compass Point downgraded the stock to Sell from Neutral and cut its price target by $2 to $77. The brokerage said USDC has held up better than in prior down cycles, but argued that supply growth is ",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "CZ says SBF asked for billions 'like a Bologna sandwich' as FTX collapsed",
+      "link": "https://www.coindesk.com/business/2026/04/07/cz-says-sbf-asked-for-billions-like-a-bologna-sandwich-as-ftx-collapsed",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-08T08:00:00+08:00",
+      "summary": "",
+      "body_text": "Binance founder Changpeng Zhao (CZ) says Sam Bankman-Fried asked him for \"a couple of billion dollars nonchalantly, as if he were asking for a bologna sandwich\" during the phone call that preceded Binance's attempt to acquire FTX in November 2022 , and that he never had any intention of going through with it.\n\"I didn't have any interest in owning FTX. I also wasn't that interested in helping SBF,\"",
+      "event_type": "policy",
+      "tickers": [
+        "BLSH",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "U.S. rule change may open trillions in 401(k) funds to crypto",
+      "link": "https://www.coindesk.com/policy/2026/03/30/u-s-rule-change-may-open-trillions-in-401-k-funds-to-crypto",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-03-31T06:00:08+08:00",
+      "summary": "",
+      "body_text": "The U.S. Department of Labor has proposed a rule that would make it easier for 401(k) plans to include alternative assets such as cryptocurrencies, private equity and real estate.\nThe proposal is in response to President Donald Trump’s executive order , released in August, which directed the Labor Department and the Securities and Exchange Commission to facilitate expanded access to alternative as",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Democrats urge warnings to federal officials against insider bets on prediction markets",
+      "link": "https://www.coindesk.com/policy/2026/03/30/democrats-urge-warnings-to-federal-officials-against-insider-bets-on-prediction-markets",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-03-31T05:37:35+08:00",
+      "summary": "",
+      "body_text": "More than 40 Democrats in the U.S. Senate and House of Representatives sent a letter to a federal regulator and to ethics officials to ask them to warn government officials that insider trading in derivatives is illegal and that bets they make on prediction markets firms like Polymarket and Kalshi qualify under that category.\nThe ranking Democrats on the Senate Banking Committee (Senator Elizabeth",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Crypto industry cheers Senate Clarity Act markup date as market structure push resumes",
+      "link": "https://www.coindesk.com/policy/2026/05/09/crypto-industry-cheers-senate-clarity-act-markup-date-as-market-structure-push-resumes",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T23:56:49+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Senate Banking Committee plans to hold key market structure hearing on Thursday",
+      "link": "https://www.coindesk.com/policy/2026/05/08/senate-banking-committee-plans-to-hold-key-market-structure-hearing-on-thursday",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T07:20:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "SEC chair Atkins signals new rules for onchain markets, AI-driven finance",
+      "link": "https://www.coindesk.com/policy/2026/05/08/sec-chair-atkins-signals-new-rules-for-onchain-markets-ai-driven-finance",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T02:32:23+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Privacy and accountability can coexist onchain, say panelists at Consensus Miami",
+      "link": "https://www.coindesk.com/tech/2026/05/07/privacy-and-accountability-can-coexist-onchain-say-panelists-at-consensus-miami",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T05:14:23+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Coinbase stock declines 5% after missing Q1 estimates on crypto slowdown",
+      "link": "https://www.coindesk.com/markets/2026/05/07/coinbase-stock-drops-4-after-surprise-1q-miss-as-crypto-trading-slows",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T04:51:35+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Grant Cardone says bitcoin-real estate strategy could outperform REITs, adds more BTC to treasury",
+      "link": "https://www.coindesk.com/business/2026/05/06/bitcoin-real-estate-strategy-could-outperform-reits-says-grant-cardone-he-adds-btc-to-treasury",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T06:32:30+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH",
+        "GOOGL",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Wall Street's clearinghouse seeks 'high-performance' blockchains to tokenize corporate actions",
+      "link": "https://www.coindesk.com/business/2026/05/06/wall-street-s-clearinghouse-seeks-high-performance-blockchains-to-tokenize-corporate-actions",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T06:29:43+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Trust in crypto remains biggest barrier to adoption, say Consensus Miami 2026 panelists",
+      "link": "https://www.coindesk.com/policy/2026/05/05/trust-in-crypto-remains-biggest-barrier-to-adoption-say-consensus-miami-2026-panelists",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T06:39:33+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "It's transparency, not tech alone, that drives crypto adoption, panelists tell Consensus Miami",
+      "link": "https://www.coindesk.com/business/2026/05/05/it-s-transparency-not-tech-alone-that-drives-crypto-adoption-panelists-tell-consensus-miami",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T06:04:41+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "GameStop's $55.5 billion eBay takeover bid puts its $368 million bitcoin stash in the crosshairs",
+      "link": "https://www.coindesk.com/business/2026/05/04/gamestop-s-usd55-5-billion-ebay-takeover-bid-puts-its-usd368-million-bitcoin-stash-in-the-crosshairs",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T04:16:04+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "The government should promote innovation, not punish it",
+      "link": "https://www.coindesk.com/opinion/2026/05/04/the-government-should-promote-innovation-not-punish-it",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T00:30:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Policy Summit and other things at Consensus 2026: State of Crypto",
+      "link": "https://www.coindesk.com/policy/2026/05/03/policy-summit-and-other-things-at-consensus-2026-state-of-crypto",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T02:30:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "U.S. voters don't trust Trump administration to oversee crypto sector, CoinDesk poll finds",
+      "link": "https://www.coindesk.com/policy/2026/05/03/u-s-voters-don-t-trust-trump-administration-to-oversee-crypto-sector-coindesk-poll-finds",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-03T22:00:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "The $292M crypto hack exposed DeFi's weak spots. Here’s what must change, insiders say",
+      "link": "https://www.coindesk.com/business/2026/05/02/the-usd292m-crypto-hack-exposed-defi-s-weak-spots-here-s-what-must-change-insiders-say",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T21:00:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Canadian pension giant AIMCo buys the dip in Strategy, now sitting on $69 million unrealized gain",
+      "link": "https://www.coindesk.com/markets/2026/05/01/canadian-pension-giant-aimco-buys-the-dip-in-strategy-now-sitting-on-usd69-million-unrealized-gain",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-02T01:40:40+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "A Polymarket-linked bet on the weather in France forecasts a major data issue",
+      "link": "https://www.coindesk.com/opinion/2026/04/30/a-polymarket-linked-bet-on-the-weather-in-france-forecasts-a-major-data-issue",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T23:27:33+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Eric Trump says bitcoin in its 'greatest period ever' as Wall Street falls in line",
+      "link": "https://www.coindesk.com/markets/2026/04/29/eric-trump-says-bitcoin-in-its-greatest-period-ever-as-wall-street-falls-in-line",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T03:49:14+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "Fed chair Jerome Powell says he will stay on as Govenor after term amid legal pressure",
+      "link": "https://www.coindesk.com/markets/2026/04/29/fed-chair-jerome-powell-says-he-will-stay-on-as-govenor-after-term-amid-legal-pressure",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T03:17:51+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
+      "title": "CFTC sues Wisconsin in agency's legal campaign defending prediction markets authority",
+      "link": "https://www.coindesk.com/policy/2026/04/28/cftc-sues-wisconsin-in-agency-s-legal-campaign-defending-prediction-markets-authority",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-29T02:22:41+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "META",
+      "count": 3
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 2
+    },
+    {
+      "ticker": "0766",
+      "count": 1
+    },
+    {
+      "ticker": "3764",
+      "count": 1
+    },
+    {
+      "ticker": "TSLA",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

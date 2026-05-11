@@ -1,0 +1,265 @@
+{
+  "ticker": "5090",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "What is inference engineering? Deepdive",
+      "link": "https://newsletter.pragmaticengineer.com/p/what-is-inference-engineering",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-01T01:01:00+08:00",
+      "summary": "Many engineers use inference daily, but inference engineering is a bit obscure &#8211; and an area rich with interesting challenges. Philip Kiely, author of the new book, &#8220;Inference Engineering,&#8221; explains",
+      "body_text": "Two years ago, we learned about how LLMs work at a high level from the ChatGPT team , and today, almost all software engineers use large language models (LLMs) in our day-to-day work. The most visible part of using an LLM is inference ; when an existing model takes an input (prompt) and generates an output, one token at a time. So, with AI models and AI agents everywhere across the tech industry i",
+      "event_type": "earnings",
+      "tickers": [
+        "6000",
+        "5090",
+        "NVDA",
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Google",
+        "Apple"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Retailer selling broken RTX 5090 GPUs for as low as $1,760 — GPUs were damaged during transport, but include all components on the PCB",
+      "link": "https://www.tomshardware.com/pc-components/gpus/retailer-selling-broken-rtx-5090-gpus-for-as-low-as-usd1-760-gpus-were-damaged-during-transport-but-include-all-components-on-the-pcb",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-02T22:20:36+08:00",
+      "summary": "A French retailer is willing to sell you defective RTX 5090s for half of what they cost new, on the condition that you'll be able to repair or recycle them. You can either get a random 5090 variant, depending on stock, for around $1,760 or pay almost $2,000 specifically for an MSI Ventus 3X OC model. The units come with transport-related damage.",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "The Blood of Dawnwalker Demands an RTX 5090 for Native 4K/60 Ultra, but DLSS and FSR Will Soften the Blow - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5wY2xOQ2Q2SDdfdGRUc3BzdGZ2R2RubWg1aVl3NEV1aEZkVmpmc1gtN1NST0lCT1JmRDRCOTRZQm50VjNmZnVEQmhRS0F3YjA3cWNQREFzYXF5aGNsZkZIQWNaaU11UVpvSDhiRE9Vd0U2Z9IBd0FVX3lxTE0xRGhnc2tEdlE4ejNzRDEzOV9PSDkwdlhGekFBdUdnXzFKS3J0M2stbDgxRWtsVzZZdWhGaHNEaVVSOXNBWlZwRXR2WC1STlVHYUYxdUM0cWhkVjM4eVZrN3ppR1ZSXzVTa0FVOGRmMmNjMVdNWDRv",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-29T01:00:00+08:00",
+      "summary": "The Blood of Dawnwalker Demands an RTX 5090 for Native 4K/60 Ultra, but DLSS and FSR Will Soften the Blow&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "The Top-Tier iBuypower Gaming PC With AMD Ryzen 9 9950X3D CPU and 5090 GPU Drops Below $5,000 - IGN Southeast Asia",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSW50YkVMVW9LdFFpSkNWV3N3cDhBU190MDhuUHl5T0tQNGhjRnZVckhTZlBHRU5KQVhMbkJxNTUxcnNKclFKbGFNMTdZUmY2TFdSSlRPZDdWSjdKM1ZaT3VuMFNyV3l4R2xYX1oxbEpoUWhNUldkckI3QnlqeXVpbUlIY1kxSXdheHB2amVuY1l2dzhfaVhFLUJrb1FhYlFuMzFya0thNlhiS1pGNzQxUlpEWW1WdmJSbkw2Q0VCcFVOT2NERnQ2MTZkTHZkMHRTLVZqbg",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-25T04:18:08+08:00",
+      "summary": "The Top-Tier iBuypower Gaming PC With AMD Ryzen 9 9950X3D CPU and 5090 GPU Drops Below $5,000&nbsp;&nbsp;IGN Southeast Asia",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "MAINGEAR MG-1 Gaming PC Launched with Ryzen 9 9950X3D2 and RTX 5090 Support - Gizmochina",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOVpWbnUwb2xpVVJBbTVEZEFnUEkySUx2VlFvUG4zQXIwamg4VEZoQ0plNWRySDRkVUVOMmthLVFVbkJXQmpwQ3hqbXdhMXNYcUpEeTJsdW1fU1VrMnZIY2hGUFU4bHh2S1FEUVgzeEhnWS1Uekh4Mzc2ellXRGNrZ0xqN3BWV1U",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-23T07:30:38+08:00",
+      "summary": "MAINGEAR MG-1 Gaming PC Launched with Ryzen 9 9950X3D2 and RTX 5090 Support&nbsp;&nbsp;Gizmochina",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Maingear MG 1 Mk. II Chassis Redesign for Ryzen 9 9950X3D2 and RTX 5090 High Performance - Technetbook",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUDhFYXFZaFd4VHAwZUVtaVQ3MGZwaWw3LVJFOTNMc1JBcFdFY2FaWC1LX1RuM0Fxd0IzZE8zUGl2YWJBUVFpSWdnVy1kVXBxNUZDNEMtYTlXcGpyd3FxTW5qcVpsSzVqUnd3MmZNVXA2YXRETWY1UmJrMC1VbzMtRGhyU1Q?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-22T23:56:00+08:00",
+      "summary": "Maingear MG 1 Mk. II Chassis Redesign for Ryzen 9 9950X3D2 and RTX 5090 High Performance&nbsp;&nbsp;Technetbook",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Framework’s first eGPUs turn its laptop into a desktop PC",
+      "link": "https://www.theverge.com/gadgets/915328/framework-oculink-egpu-dev-kit-laptop-16",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-22T02:07:24+08:00",
+      "summary": "Remember when Framework made the first laptop where you can easily upgrade its entire internal video card in three minutes flat? The company's getting into the external graphics game, too. As promised last August, you'll be able to turn the Framework Laptop 16's GPU modules into external ones instead. Or, you can plug in a [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Save $800 On the Alienware Area-51 Gaming PC With AMD Ryzen 9850X3D CPU and RTX 5090 GPU - IGN Southeast Asia",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRW9rNVpBZHlQX2FObEltVFNPQXZxTXBfMEFiVmpIdndiMm5obC16LW82V0d5SW9uTjliX2tYT01qM0NWVmlZU3RXTXJoaHRNQ2Rad2xtQnRaZ2NlZ2syNDFjb0F4UFI2S2NDaVNsYmRxVktqZ1pHZXJyLUZkN3ZGbzc0azhWand6UlQyZHFYcWFuN2VMYU1Yc2VFZmo4a1RXOF9nV1MwN05udkJQQXRvYlFtWnVKMk1FN0tGaHpzeHVKMXlJSUR3TjV3",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-21T08:28:17+08:00",
+      "summary": "Save $800 On the Alienware Area-51 Gaming PC With AMD Ryzen 9850X3D CPU and RTX 5090 GPU&nbsp;&nbsp;IGN Southeast Asia",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Get an entire Lenovo Legion Pro 7i RTX 5090 gaming laptop with OLED screen for $3,199, less than the price of a desktop RTX 5090 graphics card — save $800 while stocks last on this monster machine",
+      "link": "https://www.tomshardware.com/laptops/gaming-laptops/get-an-entire-lenovo-legion-pro-7i-rtx-5090-gaming-laptop-with-oled-screen-for-usd3-199-less-than-the-price-of-a-desktop-rtx-5090-graphics-card-save-usd800-while-stocks-last-on-this-monster-machine",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-16T22:21:06+08:00",
+      "summary": "Save $800 on this over-the-top RTX 5090 beast. The Lenovo Legion Pro 7i gaming laptop is on sale for $3199.",
+      "event_type": "news",
+      "tickers": [
+        "5090",
+        "3199"
+      ]
+    },
+    {
+      "title": "'CopprLink' destroys every eGPU standard in new test, achieves near-native-level performance with an RTX 5090 — setup requires $2,300 worth of additional hardware",
+      "link": "https://www.tomshardware.com/pc-components/gpus/copprlink-destroys-every-egpu-standard-in-new-test-achieves-near-native-level-performance-with-an-rtx-5090-setup-requires-usd2-300-worth-of-additional-hardware",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-13T19:20:07+08:00",
+      "summary": "An RTX 5090 plugged into this eGPU using the CopprLink standard was able to get essentially the same level of performance as the GPU directly plugged into the motherboard. The setup requires a $1,300 enclosure and a $1,000 adapter card, and it's only meant for enterprise markets, but it shows what the future of eGPUs could be for consumers.",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Crazy powerful RTX 5090 PC with Ryzen 9800X3D processor is $700 cheaper in unmissable Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOUNzaXpvYXQ2R19MV0MzRlZvNTR2Q0dBTjAzdnNsWm1QSEdRMEw5anpmN2czaHlGSjlhbnUxTFJ6b09PejRyanFYWTR6dVByLS02TTBmU0tUQTZjSWd0NnIzZ2tsYjcyei1JWEdEU25EUmlXcFp2ZWl5RGo1VVJTNGVtdXpNaHY1NzQ0VkFIWnJFVl94N29FdXZhQzBOYWZpcmp0T1M2cVFkOEpDenJPa2NUcUNWVG5sNzY4UVc2X3pScXpoUnc",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-12T01:18:27+08:00",
+      "summary": "Crazy powerful RTX 5090 PC with Ryzen 9800X3D processor is $700 cheaper in unmissable Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Grab an entire RTX 5090 gaming PC for just $8 more than the GPU itself and score a whopping $1,600 off — huge HP discount requires a $39 controller or monitor to secure you a 4K powerhouse with a 9800X3D, 32GB DDR5, and a 1TB SSD",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/grab-an-entire-rtx-5090-gaming-pc-for-just-usd8-more-than-the-gpu-itself-and-score-a-whopping-usd1-600-off-huge-hp-discount-requires-a-usd39-controller-or-monitor-to-secure-you-a-4k-powerhouse-with-a-9800x3d-32gb-ddr5-and-a-1tb-ssd",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-08T19:44:59+08:00",
+      "summary": "An epic deal over at HP's website is knocking over $1,600 off the price of this Omen Max gaming PC, fitted with an RTX 5090, 9800X3D, 32GB RAM, and a 1TB SSD, all for just $3,808.69 if you purchase it with a monitor or a $39 accessory.",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "HP’s flagship Omen Max 45L with an RTX 5090 is on sale for $1,000 off — get a top-shelf 4K gaming PC with 64GB DDR5 and 4TB SSD for $5,499",
+      "link": "https://www.tomshardware.com/pc-components/hps-flagship-omen-max-45l-with-an-rtx-5090-is-on-sale-for-usd1-000-off-get-a-top-shelf-4k-gaming-pc-with-64gb-ddr5-and-4tb-ssd-for-usd5-499",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-07T00:18:10+08:00",
+      "summary": "HP’s Omen Max 45L offers a powerful alternative to building your own PC amid rising component prices.",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Newegg deal shaves $400 off monster RTX 5090 and Ryzen 9 9950X3D Andromeda Insights gaming PC - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVzV1Qld2RWhiLU04SldxVnZBZFVMSlZfU3o4TDN5MjZvSHBCdDBuX28tTnRGdUtacS1RR3lSMl83bEt0RDNwOGwtX05qc0J1cHBxaHhuTmlpNDlSbFJQVEZzanN0X3VDeDZycGd3NTJNV21EWGhFa2RtbGJKbWYtQll6TnNmckJJbWJReVlBOGVtcF96RGZNTEZqamQ3aGd5amFBWlh4RmFVc2k1a0QwNlBJc1FzWWx1ZWJzb19DdGU?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-06T21:51:22+08:00",
+      "summary": "Newegg deal shaves $400 off monster RTX 5090 and Ryzen 9 9950X3D Andromeda Insights gaming PC&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
+      "link": "https://github.com/fikrikarim/parlor",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-06T01:53:19+08:00",
+      "summary": "Related: https://news.ycombinator.com/item?id=47653752 Comments URL: https://news.ycombinator.com/item?id=47652007 Points: 94 # Comments: 6",
+      "event_type": "news",
+      "tickers": [
+        "5090",
+        "8000",
+        "GOOGL",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Save a massive $950 on this epic Alienware Area-51 gaming PC with an RTX 5090 and 9950X3D — grab this liquid-cooled 4K gaming powerhouse with 32GB DDR5 and a 2TB SSD for just $5,299 while you can",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-a-massive-usd950-on-this-epic-alienware-area-51-gaming-pc-with-an-rtx-5090-and-9950x3d-grab-this-liquid-cooled-4k-gaming-powerhouse-with-32gb-ddr5-and-a-2tb-ssd-for-just-usd5-299-while-you-can",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-02T19:56:31+08:00",
+      "summary": "Grab this Alienware Area-51 gaming PC with performance that few can rival. It's on sale with a huge $950 discount right now, shipping with an RTX 5090, AMD Ryzen 9 9950X3D, 32GB of RAM, and a 2TB SSD, all for only $5,299.99",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Save $950 Off the Alienware Area-51 Gaming PC With AMD Ryzen 9850X3D CPU and RTX 5090 GPU - IGN",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbUExNU1IemprYklLUm9NM3diZ0tWUXNoWUt4eGFqel9wNUoyUlZHRERvVUFpZWhIY3hqRFZWZDlXeEUtTmtaV0gtQXZaRmVPZEVUNlV5VXZ1QkdvRDBocmJmbzZVWENsSFJlZUhTTThmbm8tYXFPNEJNLW1IZWlVTVJpcXZBQTJzcjdkOA?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-02T01:07:21+08:00",
+      "summary": "Save $950 Off the Alienware Area-51 Gaming PC With AMD Ryzen 9850X3D CPU and RTX 5090 GPU&nbsp;&nbsp;IGN",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
+      "title": "Face meltingly powerful RTX 5090 and Ryzen 9950X3D PC is $600 cheaper in this Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcFdlOUVpTGRVVHBpWlFVRXN5MlBKUDRqLVNqNFFKb2V1WVplNGpWbl8zSW9VTVh5UXlVVWtpWG9mbVRyN0dXNmViYlh2dUNWa3l2R2lRcDd3UGJEWHgyNGVTckliY0tRRzdNNFJCdk0tekR5YzRjVy1iWGtsR2M1WDBIdG9MU3F0T1pWMUd6YmtFZXJkU3phWmVLaExEbVYyTU5HVTBPeTNFVktTLVpIekRIZVpETmlZVDRJ?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-03-31T23:33:25+08:00",
+      "summary": "Face meltingly powerful RTX 5090 and Ryzen 9950X3D PC is $600 cheaper in this Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "6000",
+      "count": 1
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "AAPL",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

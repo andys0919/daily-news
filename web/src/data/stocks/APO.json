@@ -1,0 +1,137 @@
+{
+  "ticker": "APO",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "APO",
+    "company_name": "Apollo Global Management, Inc.",
+    "quarterly": {
+      "market": "us",
+      "ticker": "APO",
+      "company_name": "Apollo Global Management, Inc.",
+      "cik": "0001858681",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025-09-30",
+      "filed_at": "2025-11-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1858681/000185868125000139/apo-20250930.htm",
+      "report_kind": "quarterly",
+      "revenue": 22185000000.0,
+      "monthly_revenue": null,
+      "net_income": 2808000000.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 4.47,
+      "operating_cash_flow": 2577000000.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2025-11-10\", \"period_end\": \"2025-09-30\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1858681/000185868125000139/apo-20250930.htm\"}, \"anchor_fact\": {\"start\": \"2025-01-01\", \"end\": \"2025-09-30\", \"val\": 22185000000, \"accn\": \"0001858681-25-000139\", \"fy\": 2025, \"fp\": \"Q3\", \"form\": \"10-Q\", \"filed\": \"2025-11-10\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Intel to Repurchase 49% Equity Interest in Ireland Fab Joint Venture",
+      "link": "https://newsroom.intel.com/corporate/intel-repurchase-49-equity-interest-ireland-fab-joint-venture",
+      "source": "Intel Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-01T21:00:55+08:00",
+      "summary": "SANTA CLARA, Calif. and NEW YORK, April 1, 2026 &#8211; Intel Corporation&#160;(Nasdaq: INTC) and Apollo (NYSE: APO) today announced a definitive agreement for Intel to repurchase the 49% equity interest in the joint venture related to Intel&#8217;s Fab 34 in Ireland not held by Intel for $14.2 billion. The agreement reflects Intel&#8217;s continued business momentum &#8230; The post Intel to Repurchase 49% Equity Interest in Ireland Fab Joint Venture appeared first on Newsroom.",
+      "body_text": "SANTA CLARA, Calif. and NEW YORK, April 1, 2026 – Intel Corporation (Nasdaq: INTC) and Apollo (NYSE: APO) today announced a definitive agreement for Intel to repurchase the 49% equity interest in the joint venture related to Intel’s Fab 34 in Ireland not held by Intel for $14.2 billion. The agreement reflects Intel’s continued business momentum underpinned by the growing and essential role CPUs pl",
+      "event_type": "earnings",
+      "tickers": [
+        "APO"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025-09-30",
+      "filed_at": "2025-11-10",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 22185000000.0,
+      "monthly_revenue": null,
+      "net_income": 2808000000.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 4.47,
+      "operating_cash_flow": 2577000000.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "APO",
+    "market": "us",
+    "company_name": "Apollo Global Management, Inc.",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "revenue": 22185000000.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 2808000000.0,
+      "eps": 4.47,
+      "fcf": null,
+      "ocf": 2577000000.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.12657200811359026,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q3",
+        "revenue": 22185000000.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 2808000000.0,
+        "eps_diluted": 4.47,
+        "fcf": null,
+        "ocf": 2577000000.0,
+        "capex": null,
+        "company_name": "Apollo Global Management, Inc."
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

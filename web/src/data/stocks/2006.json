@@ -1,0 +1,484 @@
+{
+  "ticker": "2006",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2006",
+    "company_name": "東和鋼鐵",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2006",
+      "company_name": "東和鋼鐵",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 57855435.0,
+      "monthly_revenue": null,
+      "net_income": 4757984.0,
+      "operating_income": 5846938.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 6.47,
+      "operating_cash_flow": 8642137.0,
+      "capex": 1075263.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業收入合計\", \"57,855,435\", \"100.00\", \"60,162,997\", \"100.00\"], [\"營業成本合計\", \"49,278,447\", \"85.18\", \"51,772,427\", \"86.05\"], [\"營業毛利（毛損）\", \"8,576,988\", \"14.82\", \"8,390,570\", \"13.95\"], [\"營業毛利（毛損）淨額\", \"8,576,988\", \"14.82\", \"8,390,570\", \"13.95\"], [\"營業費用\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"1,141,800\", \"1.97\", \"1,131,847\", \"1.88\"], [\"　　管理費用\", \"1,551,342\", \"2.68\", \"1,545,055\", \"2.57\"], [\"　　預期信用減損損失（利益）\", \"36,908\", \"0.06\", \"8,726\", \"0.01\"], [\"　營業費用合計\", \"2,730,050\", \"4.72\", \"2,685,628\", \"4.46\"], [\"營業利益（損失）\", \"5,846,938\", \"10.11\", \"5,704,942\", \"9.48\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"30,982\", \"0.05\", \"33,848\", \"0.06\"], [\"　　其他收入\", \"174,701\", \"0.30\", \"134,651\", \"0.22\"], [\"　　其他利益及損失淨額\", \"-66,085\", \"-0.11\", \"98,325\", \"0.16\"], [\"　　財務成本淨額\", \"238,075\", \"0.41\", \"343,750\", \"0.57\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"168,972\", \"0.29\", \"96,770\", \"0.16\"], [\"　營業外收入及支出合計\", \"70,495\", \"0.12\", \"19,844\", \"0.03\"], [\"稅前淨利（淨損）\", \"5,917,433\", \"10.23\", \"5,724,786\", \"9.52\"], [\"所得稅費用（利益）合計\", \"1,159,449\", \"2.00\", \"1,199,072\", \"1.99\"], [\"繼續營業單位本期淨利（淨損）\", \"4,757,984\", \"8.22\", \"4,525,714\", \"7.52\"], [\"本期淨利（淨損）\", \"4,757,984\", \"8.22\", \"4,525,714\", \"7.52\"], [\"其他綜合損益(淨額)\", \"\", \"\", \"\", \"\"], [\"　　　確定福利計畫之再衡量數\", \"92,855\", \"0.16\", \"126,587\", \"0.21\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"1\", \"0.00\", \"-13,386\", \"-0.02\"], [\"　　　採用權益法認列之關聯企業及合資之其他綜合損益之份額-不重分類至損益之項目\", \"275\", \"0.00\", \"217\", \"0.00\"], [\"　　　與不重分類之項目相關之所得稅\", \"18,570\", \"0.03\", \"120\", \"0.00\"], [\"　不重分類至損益之項目：\", \"74,561\", \"0.13\", \"113,298\", \"0.19\"], [\"　　　國外營運機構財務報表換算之兌換差額\", \"-169,798\", \"-0.29\", \"62,761\", \"0.10\"], [\"　　　與可能重分類之項目相關之所得稅\", \"0\", \"0.00\", \"0\", \"0.00\"], [\"　後續可能重分類至損益之項目：\", \"-169,798\", \"-0.29\", \"62,761\", \"0.10\"], [\"　其他綜合損益（淨額）\", \"-95,237\", \"-0.16\", \"176,059\", \"0.29\"], [\"本期綜合損益總額\", \"4,662,747\", \"8.06\", \"4,701,773\", \"7.82\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利∕損）\", \"4,720,934\", \"8.16\", \"4,479,837\", \"7.45\"], [\"　非控制權益（淨利∕損）\", \"37,050\", \"0.06\", \"45,877\", \"0.08\"], [\"　母公司業主（綜合損益）\", \"4,626,616\", \"8.00\", \"4,655,548\", \"7.74\"], [\"　非控制權益（綜合損益）\", \"36,131\", \"0.06\", \"46,225\", \"0.08\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\"], [\"　基本每股盈餘\", \"6.47\", \"\", \"6.13\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\"], [\"　稀釋每股盈餘\", \"6.44\", \"\", \"6.12\", \"\"]], \"season\": \"4\", \"urlList\": [{\"name\": \"XBRL資訊平台\", \"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2006&SYEAR=2025&SSEASON=4&REPORT_ID=C\"}, {\"name\": \"電子書查詢\", \"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2006&year=114&mtype=A\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"東和鋼鐵\"}, \"datetime\": \"115/04/14 09:02:58\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"1,267,035\", \"2.44\", \"1,519,082\", \"2.77\"], [\"　　　透過損益按公允價值衡量之金融資產－流動\", \"111,606\", \"0.21\", \"109,204\", \"0.20\"], [\"　　　合約資產－流動\", \"5,983,887\", \"11.51\", \"5,492,215\", \"10.01\"], [\"　　　應收票據淨額\", \"101,051\", \"0.19\", \"73,381\", \"0.13\"], [\"　　　應收帳款淨額\", \"2,706,246\", \"5.20\", \"3,361,617\", \"6.13\"], [\"　　　其他應收款淨額\", \"39,667\", \"0.08\", \"32,152\", \"0.06\"], [\"　　　存貨\", \"16,684,734\", \"32.09\", \"19,073,355\", \"34.75\"], [\"　　　預付款項\", \"327,756\", \"0.63\", \"308,987\", \"0.56\"], [\"　　　其他流動資產\", \"1,245,323\", \"2.39\", \"1,138,055\", \"2.07\"], [\"　　流動資產合計\", \"28,467,305\", \"54.75\", \"31,108,048\", \"56.68\"], [\"　非流動資產\", \"\", \"\", \"\", \"\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－非流動\", \"725,766\", \"1.40\", \"619,100\", \"1.13\"], [\"　　　採用權益法之投資\", \"1,534,974\", \"2.95\", \"1,494,909\", \"2.72\"], [\"　　　不動產、廠房及設備\", \"18,152,919\", \"34.91\", \"18,782,636\", \"34.22\"], [\"　　　礦產資源淨額\", \"7,058\", \"0.01\", \"8,342\", \"0.02\"], [\"　　　使用權資產\", \"307,000\", \"0.59\", \"289,112\", \"0.53\"], [\"　　　投資性不動產淨額\", \"1,977,879\", \"3.80\", \"1,974,279\", \"3.60\"], [\"　　　無形資產\", \"156,779\", \"0.30\", \"164,019\", \"0.30\"], [\"　　　遞延所得稅資產\", \"90,775\", \"0.17\", \"72,075\", \"0.13\"], [\"　　　其他非流動資產\", \"576,754\", \"1.11\", \"368,097\", \"0.67\"], [\"　　非流動資產合計\", \"23,529,904\", \"45.25\", \"23,772,569\", \"43.32\"], [\"　資產總額\", \"51,997,209\", \"100.00\", \"54,880,617\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"6,149,312\", \"11.83\", \"8,770,644\", \"15.98\"], [\"　　　透過損益按公允價值衡量之金融負債－流動\", \"158\", \"0.00\", \"3,855\", \"0.01\"], [\"　　　合約負債－流動\", \"3,654,076\", \"7.03\", \"3,581,004\", \"6.53\"], [\"　　　應付票據\", \"24,103\", \"0.05\", \"249,352\", \"0.45\"], [\"　　　應付帳款\", \"2,427,431\", \"4.67\", \"2,671,231\", \"4.87\"], [\"　　　其他應付款\", \"2,651,269\", \"5.10\", \"2,461,096\", \"4.48\"], [\"　　　本期所得稅負債\", \"607,910\", \"1.17\", \"599,889\", \"1.09\"], [\"　　　負債準備－流動\", \"6,657\", \"0.01\", \"920\", \"0.00\"], [\"　　　租賃負債－流動\", \"50,850\", \"0.10\", \"39,209\", \"0.07\"], [\"　　　其他流動負債\", \"91,120\", \"0.18\", \"318,282\", \"0.58\"], [\"　　流動負債合計\", \"15,662,886\", \"30.12\", \"18,695,482\", \"34.07\"], [\"　非流動負債\", \"\", \"\", \"\", \"\"], [\"　　　長期借款\", \"1,350,000\", \"2.60\", \"2,941,324\", \"5.36\"], [\"　　　負債準備－非流動\", \"157,388\", \"0.30\", \"137,207\", \"0.25\"], [\"　　　遞延所得稅負債\", \"207,437\", \"0.40\", \"174,230\", \"0.32\"], [\"　　　租賃負債－非流動\", \"140,349\", \"0.27\", \"122,965\", \"0.22\"], [\"　　　其他非流動負債\", \"16,803\", \"0.03\", \"47,313\", \"0.09\"], [\"　　非流動負債合計\", \"1,871,977\", \"3.60\", \"3,423,039\", \"6.24\"], [\"　負債總額\", \"17,534,863\", \"33.72\", \"22,118,521\", \"40.30\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"7,302,138\", \"14.04\", \"7,302,138\", \"13.31\"], [\"　　　股本合計\", \"7,302,138\", \"14.04\", \"7,302,138\", \"13.31\"], [\"　　資本公積\", \"\", \"\", \"\", \"\"], [\"　　　資本公積合計\", \"7,745,045\", \"14.90\", \"7,742,308\", \"14.11\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"6,061,645\", \"11.66\", \"5,600,943\", \"10.21\"], [\"　　　　特別盈餘公積\", \"527,593\", \"1.01\", \"614,156\", \"1.12\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"13,113,694\", \"25.22\", \"11,636,693\", \"21.20\"], [\"　　　保留盈餘合計\", \"19,702,932\", \"37.89\", \"17,851,792\", \"32.53\"], [\"　　其他權益\", \"\", \"\", \"\", \"\"], [\"　　　其他權益合計\", \"-404,143\", \"-0.78\", \"-256,750\", \"-0.47\"], [\"　　歸屬於母公司業主之權益合計\", \"34,345,972\", \"66.05\", \"32,639,488\", \"59.47\"], [\"　　非控制權益\", \"116,374\", \"0.22\", \"122,608\", \"0.22\"], [\"　權益總額\", \"34,462,346\", \"66.28\", \"32,762,096\", \"59.70\"], [\"　負債及權益總計\", \"51,997,209\", \"100.00\", \"54,880,617\", \"100.00\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"0\", \"\", \"0\", \"\"]], \"season\": \"4\", \"urlList\": [{\"name\": \"XBRL資訊平台\", \"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2006&SYEAR=2025&SSEASON=4&REPORT_ID=C\"}, {\"name\": \"電子書查詢\", \"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2006&year=114&mtype=A\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年12月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"113年12月31日\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"東和鋼鐵\"}, \"datetime\": \"115/04/14 09:02:58\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"114\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"5,917,433\", \"5,724,786\"], [\"　本期稅前淨利（淨損）\", \"5,917,433\", \"5,724,786\"], [\"　　　折舊費用\", \"1,579,109\", \"1,545,938\"], [\"　　　攤銷費用\", \"56,768\", \"53,739\"], [\"　　　預期信用減損損失（利益）數∕呆帳費用提列（轉列收入）數\", \"36,908\", \"8,726\"], [\"　　　透過損益按公允價值衡量金融資產及負債之淨損失（利益）\", \"30,031\", \"-148,036\"], [\"　　　利息費用\", \"238,075\", \"343,750\"], [\"　　　利息收入\", \"-30,982\", \"-33,848\"], [\"　　　股利收入\", \"-36,491\", \"-39,803\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-168,972\", \"-96,770\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"65,926\", \"2,401\"], [\"　　　不動產、廠房及設備轉列費用數\", \"152\", \"6,955\"], [\"　　　金融資產減損損失\", \"0\", \"20,563\"], [\"　　　未實現外幣兌換損失（利益）\", \"5,654\", \"-8,777\"], [\"　　　其他項目\", \"-3\", \"7,916\"], [\"　　　收益費損項目合計\", \"1,776,175\", \"1,662,754\"], [\"　　　　強制透過損益按公允價值衡量之金融資產（增加）減少\", \"-70,830\", \"126,445\"], [\"　　　　合約資產（增加）減少\", \"-491,672\", \"-1,065,511\"], [\"　　　　應收票據（增加）減少\", \"-27,878\", \"140,312\"], [\"　　　　應收帳款（增加）減少\", \"618,803\", \"821,455\"], [\"　　　　其他應收款（增加）減少\", \"-46,312\", \"-18,713\"], [\"　　　　存貨（增加）減少\", \"2,382,615\", \"819,900\"], [\"　　　　預付款項（增加）減少\", \"-18,128\", \"7,821\"], [\"　　　　其他流動資產（增加）減少\", \"-14,990\", \"142,728\"], [\"　　　　其他營業資產（增加）減少\", \"-22,050\", \"-4,489\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"2,309,558\", \"969,948\"], [\"　　　　合約負債增加（減少）\", \"73,072\", \"589,336\"], [\"　　　　應付票據增加（減少）\", \"-225,249\", \"231,545\"], [\"　　　　應付帳款增加（減少）\", \"-243,800\", \"-314,281\"], [\"　　　　其他應付款增加（減少）\", \"197,813\", \"-9,633\"], [\"　　　　負債準備增加（減少）\", \"25,918\", \"16,184\"], [\"　　　　其他流動負債增加（減少）\", \"-2,316\", \"444\"], [\"　　　　淨確定福利負債增加(減少)\", \"-28,398\", \"-46,826\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"-202,960\", \"466,769\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"2,106,598\", \"1,436,717\"], [\"　　調整項目合計\", \"3,882,773\", \"3,099,471\"], [\"　營運產生之現金流入（流出）\", \"9,800,206\", \"8,824,257\"], [\"　收取之利息\", \"31,010\", \"33,356\"], [\"　收取之股利\", \"199,580\", \"160,684\"], [\"　支付之利息\", \"-247,404\", \"-346,783\"], [\"　退還（支付）之所得稅\", \"-1,141,255\", \"-1,291,763\"], [\"營業活動之淨現金流入（流出）\", \"8,642,137\", \"7,379,751\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　取得透過其他綜合損益按公允價值衡量之金融資產\", \"-116,090\", \"-3,858\"], [\"　處分透過其他綜合損益按公允價值衡量之金融資產\", \"317\", \"2,318\"], [\"　透過其他綜合損益按公允價值衡量之金融資產減資退回股款\", \"9,108\", \"5,400\"], [\"　處分透過損益按公允價值衡量之金融資產\", \"34,700\", \"0\"], [\"　處分子公司\", \"4,292\", \"196,039\"], [\"　取得不動產、廠房及設備\", \"-1,075,263\", \"-946,306\"], [\"　處分不動產、廠房及設備\", \"4,332\", \"2,568\"], [\"　存出保證金增加\", \"-101,787\", \"0\"], [\"　存出保證金減少\", \"0\", \"54,908\"], [\"　取得投資性不動產\", \"-8,334\", \"-56,012\"], [\"　其他非流動資產增加\", \"-40,600\", \"-95,464\"], [\"　預付設備款增加\", \"-124,116\", \"-106,499\"], [\"　投資活動之淨現金流入（流出）\", \"-1,413,441\", \"-946,906\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款增加\", \"79,588,062\", \"87,285,464\"], [\"　短期借款減少\", \"-82,076,728\", \"-92,498,344\"], [\"　應付短期票券增加\", \"0\", \"1,550,000\"], [\"　應付短期票券減少\", \"0\", \"-1,550,000\"], [\"　舉借長期借款\", \"3,590,000\", \"5,807,000\"], [\"　償還長期借款\", \"-5,406,170\", \"-4,200,110\"], [\"　存入保證金增加\", \"0\", \"2,525\"], [\"　存入保證金減少\", \"-2,260\", \"0\"], [\"　租賃本金償還\", \"-55,261\", \"-50,863\"], [\"　發放現金股利\", \"-2,920,855\", \"-3,066,898\"], [\"　非控制權益變動\", \"-42,365\", \"-36,167\"], [\"　其他籌資活動\", \"89\", \"0\"], [\"　籌資活動之淨現金流入（流出）\", \"-7,325,488\", \"-6,757,393\"], [\"匯率變動對現金及約當現金之影響\", \"-155,255\", \"110,963\"], [\"本期現金及約當現金增加（減少）數\", \"-252,047\", \"-213,585\"], [\"期初現金及約當現金餘額\", \"1,519,082\", \"1,732,667\"], [\"期末現金及約當現金餘額\", \"1,267,035\", \"1,519,082\"], [\"　資產負債表帳列之現金及約當現金\", \"1,267,035\", \"1,519,082\"]], \"season\": \"4\", \"urlList\": [{\"name\": \"XBRL資訊平台\", \"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2006&SYEAR=2025&SSEASON=4&REPORT_ID=C\"}, {\"name\": \"電子書查詢\", \"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2006&year=114&mtype=A\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"114年度\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"113年度\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"東和鋼鐵\"}, \"datetime\": \"115/04/14 09:02:58\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2006",
+      "company_name": "東和鋼鐵",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 5359720.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2006\", \"公司名稱\": \"東和鋼鐵\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"5359720\", \"營業收入-上月營收\": \"3280507\", \"營業收入-去年當月營收\": \"5382681\", \"營業收入-上月比較增減(%)\": \"63.38084326599517\", \"營業收入-去年同月增減(%)\": \"-0.4265718143059193\", \"累計營業收入-當月累計營收\": \"13612432\", \"累計營業收入-去年累計營收\": \"14518709\", \"累計營業收入-前期比較增減(%)\": \"-6.242132134475593\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Could Russia Follow the “Hormuz Playbook” in the Baltic and Black Seas?",
+      "link": "https://warontherocks.com/could-russia-follow-the-hormuz-playbook-in-the-baltic-and-black-seas",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T15:15:22+08:00",
+      "summary": "On the eve of the U.S.-Israeli strikes on Iran, 56 tankers sailed through the Strait of Hormuz. Two days later, Lloyd&#8217;s List, the maritime industry&#8217;s journal of record, counted just seven tankers and a single gas carrier &#8212; all small and three of them shadow-fleet vessels &#8212; with hundreds more drifting in the Gulf of Oman. One of the world&#8217;s most important maritime chokepoints had not been mined, blockaded, or seized by a navy. Rather, it had been priced shut by a han",
+      "event_type": "earnings",
+      "tickers": [
+        "1936"
+      ]
+    },
+    {
+      "title": "'The Devil Wears Prada 2' kicks off summer movie season in style with $77 million opening",
+      "link": "https://www.cnbc.com/2026/05/04/the-devil-wears-prada-2-kicks-off-summer-box-office.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T07:14:02+08:00",
+      "summary": "Disney and 20th Century Studios' \"The Devil Wears Prada 2\" opened the summer movie season with $77 million in ticket sales.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "The latest AI news we announced in April 2026",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T01:00:00+08:00",
+      "summary": "mp4 featuring an underwater video and a mobile AI video mockup.",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "The Claude Delusion: Richard Dawkins believes his AI chatbot is conscious",
+      "link": "https://www.dailygrail.com/2026/05/the-claude-delusion-richard-dawkins-believes-his-female-ai-chatbot-is-conscious",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-03T06:44:23+08:00",
+      "summary": "Article URL: https://www.dailygrail.com/2026/05/the-claude-delusion-richard-dawkins-believes-his-female-ai-chatbot-is-conscious/ Comments URL: https://news.ycombinator.com/item?id=47991340 Points: 53 # Comments: 47",
+      "event_type": "news",
+      "tickers": [
+        "1950"
+      ]
+    },
+    {
+      "title": "The New Resource Curse",
+      "link": "https://www.foreignaffairs.com/united-states/new-resource-curse",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-30T12:00:00+08:00",
+      "summary": "Critical minerals will scramble geopolitics.",
+      "event_type": "earnings",
+      "tickers": [
+        "2040",
+        "1974",
+        "1945",
+        "1986"
+      ]
+    },
+    {
+      "title": "Lenovo abandons separate magnesium frame for latest P16 Gen 3 laptop after 20 years — robust feature introduced in ThinkPad T60 in 2006, company now integrates material into outer shell for a thinner design",
+      "link": "https://www.tomshardware.com/laptops/lenovo-abandons-separate-magnesium-frame-for-latest-p16-gen-3-laptop-after-20-years-robust-feature-introduced-in-thinkpad-t60-in-2006-company-now-integrates-material-into-outer-shell-for-a-thinner-design",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-29T21:32:21+08:00",
+      "summary": "Lenovo has reportedly stopped using magnesium alloy subframes in the ThinkPad P16 Gen 3 to save on weight and thickness. This feature was first introduced on the ThinkPad T60 in 2006 and was added to ensure rigidity for the brand's workstation laptops.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
+      "link": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-29T00:00:00+08:00",
+      "summary": "The Google Translate logo sits in the middle of colorful illustrated scenes, including people translating live conversations and a birthday cake topped by candles with the numeral 20",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Dirk Kempthorne, former Idaho governor and U.S. Interior secretary, dies at 74",
+      "link": "https://www.npr.org/2026/04/25/nx-s1-5799519/dirk-kempthorne-obit",
+      "source": "NPR Politics",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-26T05:49:31+08:00",
+      "summary": "Dirk Kempthorne, a Republican, was elected mayor of Boise at age 34 and served seven years before serving one term in the U.S. Senate and then as governor until 2006.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "The Iran War Is an Expectations Game",
+      "link": "https://www.foreignaffairs.com/iran/iran-war-expectations-game",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "How perceptions shape a conflict’s outcome.",
+      "event_type": "earnings",
+      "tickers": [
+        "1953",
+        "1962"
+      ]
+    },
+    {
+      "title": "Silent Killers, Not Signals: Why States Use Poison in Assassinations",
+      "link": "https://warontherocks.com/silent-killers-not-signals-why-states-use-poison-in-assassinations",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-15T15:30:15+08:00",
+      "summary": "The recent news that Russian opposition leader Alexei Navalny&#8217;s death was caused by epibatidine &#8212; a South American frog toxin &#8212; has reignited interest in state use of poisons and toxins in assassinations. Although state use of such compounds has a long history, the erosion of the norms prohibiting assassinations and chemical and biological weapons increases the likelihood of future assassinations using poisons and toxins. As demonstrated in the recent targeting of the Iranian l",
+      "event_type": "policy",
+      "tickers": [
+        "1946",
+        "1987",
+        "1989",
+        "1981",
+        "1975",
+        "1980"
+      ]
+    },
+    {
+      "title": "BBC joins paramedics on duty in Lebanon after Israeli strikes",
+      "link": "https://www.bbc.com/news/videos/cwyk8rz1pzyo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-14T05:29:23+08:00",
+      "summary": "BBC Middle East correspondent Hugo Bachega joins paramedics on duty in Nabatieh - a city that was once vibrant, but is now abandoned.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "The Iran War’s Real Lessons for China",
+      "link": "https://www.foreignaffairs.com/iran/iran-wars-real-lessons-china",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-10T12:00:00+08:00",
+      "summary": "U.S. tactical successes should give Beijing pause.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Elon Musk Is Reviving His 2006 ‘Master Plan’—If This Secret Tesla Project Launches - inc.com",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMnVNRldZYkIySlZJUTZQY1RINEk2N2otVEZwQzdsUWZVNzEzd2FNT19rVEF6Y0JXWWJVMnc2eHdiVzJXSUlHVkpLVEd1SGx5VDZYWjRWT0UyQmYyNTVFcXJLR3E0VFQ3bnVfbHdSRHkyLXF4WENEZXA1cGttdkpXQTdGczVVQWstX3h4V2ZPRFdOa0g2OElRQlp1bTU3MkhQa2NKRWd0VUlILVZjbmxRSTh1cjdzNnotcWROTW9mcw?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-10T03:18:27+08:00",
+      "summary": "Elon Musk Is Reviving His 2006 ‘Master Plan’—If This Secret Tesla Project Launches&nbsp;&nbsp;inc.com",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "AWS boss explains why investing billions in both Anthropic and OpenAI is an OK conflict",
+      "link": "https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-09T04:09:14+08:00",
+      "summary": "AWS has an ingrained culture of handling competition, he explained, because the cloud giant also competes with its partners.",
+      "event_type": "news",
+      "tickers": [
+        "AMZN",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Stockland files to build 168MW data center in Sydney, Australia",
+      "link": "https://www.datacenterdynamics.com/en/news/stockland-files-to-build-168mw-data-center-in-sydney-australia",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-06T19:00:32+08:00",
+      "summary": "Real estate firm targets Kemps Creek development",
+      "event_type": "news",
+      "tickers": [
+        "1952"
+      ]
+    },
+    {
+      "title": "The Iran Shock",
+      "link": "https://www.foreignaffairs.com/iran/iran-shock",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-06T12:00:00+08:00",
+      "summary": "The dangerous allure of energy autarky.",
+      "event_type": "earnings",
+      "tickers": [
+        "1973",
+        "1974",
+        "1913"
+      ]
+    },
+    {
+      "title": "Lebanon’s Coming Collapse",
+      "link": "https://www.foreignaffairs.com/lebanon/lebanons-coming-collapse",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-03T12:00:00+08:00",
+      "summary": "An Israeli assault is pushing the fragile country to the brink.",
+      "event_type": "news",
+      "tickers": [
+        "1701",
+        "1982",
+        "1948",
+        "1967"
+      ]
+    },
+    {
+      "title": "Bell Called Watson; Today, We Call AI",
+      "link": "https://www.eetimes.com/bell-called-watson-today-we-call-ai",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-02T16:22:06+08:00",
+      "summary": "AI may not solve the telecom industry’s revenue dilemma overnight, but it offers a credible path from infrastructure investment to tangible growth. The post Bell Called Watson; Today, We Call AI appeared first on EE Times.",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "The Iran Imperative",
+      "link": "https://www.foreignaffairs.com/iran/iran-imperative",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-02T12:00:00+08:00",
+      "summary": "How America and Israel can shape a new Middle East.",
+      "event_type": "earnings",
+      "tickers": []
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 57855435.0,
+      "monthly_revenue": null,
+      "net_income": 4757984.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 6.47,
+      "operating_cash_flow": 8642137.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）"
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150426",
+      "filed_at": "1150426",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 57855435.0,
+      "monthly_revenue": null,
+      "net_income": 4720934.0,
+      "operating_income": 5846938.0,
+      "gross_profit": 8576988.0,
+      "eps_diluted": 6.47,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150414",
+      "filed_at": "1150414",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 57855435.0,
+      "monthly_revenue": null,
+      "net_income": 4720934.0,
+      "operating_income": 5846938.0,
+      "gross_profit": 8576988.0,
+      "eps_diluted": 6.47,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 5359720.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150413",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 5359720.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 57855435.0,
+      "monthly_revenue": null,
+      "net_income": 4757984.0,
+      "operating_income": 5846938.0,
+      "gross_profit": null,
+      "eps_diluted": 6.47,
+      "operating_cash_flow": 8642137.0,
+      "capex": 1075263.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2006",
+    "market": "tw",
+    "company_name": "東和鋼鐵企業股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 57855435.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 4757984.0,
+      "eps": 6.47,
+      "fcf": null,
+      "ocf": 8642137.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.08223918807282324,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 0.0,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 57855435.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 4757984.0,
+        "eps_diluted": 6.47,
+        "fcf": null,
+        "ocf": 8642137.0,
+        "capex": null,
+        "company_name": "東和鋼鐵企業股份有限公司"
+      },
+      {
+        "fiscal_year": 114,
+        "fiscal_period": "Q4",
+        "revenue": 57855435.0,
+        "gross_profit": 8576988.0,
+        "operating_income": 5846938.0,
+        "net_income": 4757984.0,
+        "eps_diluted": 6.47,
+        "fcf": null,
+        "ocf": 8642137.0,
+        "capex": 1075263.0,
+        "company_name": "東和鋼鐵"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

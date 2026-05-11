@@ -1,0 +1,72 @@
+{
+  "ticker": "1954",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "The looks turning heads on the Met Gala carpet",
+      "link": "https://www.bbc.com/news/articles/c5y9wq9y0p1o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-05T08:02:18+08:00",
+      "summary": "The theme for 2026 Met Gala fundraiser is \"Costume Art\", exploring fashion as an embodied art form.",
+      "body_text": "The biggest night in fashion has begun.\nCelebrities are arriving to the 2026 Met Gala with their take on this year's theme - Costume Art - where organisers asked attendees to experiment with the lavish and whimsical dress code.\nThe annual event is a fundraiser for the Metropolitan Museum of Art's Costume Institute, and serves as chance for celebrities and design houses to go all-out on spectacle.\n",
+      "event_type": "earnings",
+      "tickers": [
+        "1954",
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Iran’s New Oil Weapon",
+      "link": "https://www.foreignaffairs.com/iran/irans-new-oil-weapon",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T12:00:00+08:00",
+      "summary": "How America can protect itself—and the global economy.",
+      "event_type": "news",
+      "tickers": [
+        "1951",
+        "1954",
+        "1973",
+        "1967",
+        "1970",
+        "1974",
+        "1975",
+        "1979",
+        "1980"
+      ]
+    },
+    {
+      "title": "Intel developing two-lever retention mechanism for LGA 1954 socket, according to new leak — Premium Nova Lake-S motherboards will feature 2L-ILM sockets",
+      "link": "https://www.tomshardware.com/pc-components/cpus/intel-developing-two-lever-retention-mechanism-for-lga-1954-socket-according-to-new-leak-premium-nova-lake-s-motherboards-will-feature-2l-ilm-sockets",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-09T20:01:06+08:00",
+      "summary": "Some high-end motherboards for Intel's upcoming Nova Lake processors have been tipped to include a dual-lever retention mechanism called \"2L-ILM.\" We've seen something similar before with LGA 2011, but that a server platform. Boards with 2L-ILM will live alongside standard ILM (1L-ILM?) variants that are cheaper to produce.",
+      "event_type": "news",
+      "tickers": [
+        "1954"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "AMZN",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

@@ -1,0 +1,82 @@
+{
+  "ticker": "1935",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "CNBC's UK Exchange newsletter: UK defense spending — or lack thereof — haunts Starmer's government",
+      "link": "https://www.cnbc.com/2026/04/22/uk-defense-spending-delays-arguments-starmer-government.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-04-22T14:29:39+08:00",
+      "summary": "U.K. defense spending has fallen for years but concerns are growing over the threat posed to the country in increasingly uncertain times.",
+      "body_text": "This report is from this week's CNBC's UK Exchange newsletter. Like what you see? You can subscribe here.\nSpeeches from 80-year old politicians who last served in government more than a quarter of a century ago seldom have an impact.\nThat makes the speech delivered nine days ago by George Robertson, defense secretary in former Prime Minister Tony Blair's first administration and later the 10th sec",
+      "event_type": "earnings",
+      "tickers": [
+        "1935",
+        "1939",
+        "1940"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Venezuela Needs Regime Change",
+      "link": "https://www.foreignaffairs.com/venezuela/venezuela-needs-regime-change-javier-corrales",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The narrow path to a democratic transition.",
+      "body_text": "The Narrow Path to a Democratic Transition\nJavier Corrales\nMay/June 2026\nWhen U.S. forces swooped into Caracas in January to seize President Nicolás Maduro, many Venezuelans inside and outside the country rejoiced. Maduro’s ouster seemed to signal the imminent end of a regime that had for years oppressed and immiserated its people. Thanks to bold U.S. action, a government that had rankled its neig",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1935",
+        "1958",
+        "1989",
+        "1975",
+        "1895"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1939",
+      "count": 1
+    },
+    {
+      "ticker": "1940",
+      "count": 1
+    },
+    {
+      "ticker": "1961",
+      "count": 1
+    },
+    {
+      "ticker": "1958",
+      "count": 1
+    },
+    {
+      "ticker": "1989",
+      "count": 1
+    },
+    {
+      "ticker": "1975",
+      "count": 1
+    },
+    {
+      "ticker": "1895",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

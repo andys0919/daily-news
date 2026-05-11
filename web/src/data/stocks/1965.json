@@ -1,0 +1,75 @@
+{
+  "ticker": "1965",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "TSMC Unfolds Map for Process, Packaging Tech",
+      "link": "https://www.eetimes.com/tsmc-unfolds-map-for-process-packaging-tech",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-23T03:00:00+08:00",
+      "summary": "TSMC unveils chip tech roadmap, slashing AI power use and boosting density. The post TSMC Unfolds Map for Process, Packaging Tech appeared first on EE Times.",
+      "body_text": "TSMC just gave a peek at its chip roadmap for new process and packaging technology, including a photonics solution that promises to cut power consumption and reduce latency in AI data centers.\nSVP Kevin Zhang briefed reporters and analysts a day before the opening of TSMC’s annual technology symposium , starting in California and continuing later this year around the world.\nThe company announced t",
+      "event_type": "earnings",
+      "tickers": [
+        "1965",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Is fake grass a bad idea? The AstroTurf wars are far from over.",
+      "link": "https://www.technologyreview.com/2026/04/09/1135092/astroturf-fake-grass-artificial-heated-debates",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-09T18:00:00+08:00",
+      "summary": "A rare warm spell in January melted enough snow to uncover Cornell University’s newest athletic field, built for field hockey. Months before, it was a meadow teeming with birds and bugs; now it’s more than an acre of synthetic turf roughly the color of the felt on a pool table, almost digital in its saturation.&#8230;",
+      "body_text": "Around the country, heated debates are taking place over whether to install artificial turf, pitting neighbors against each other.\nA rare warm spell in January melted enough snow to uncover Cornell University’s newest athletic field, built for field hockey. Months before, it was a meadow teeming with birds and bugs; now it’s more than an acre of synthetic turf roughly the color of the felt on a po",
+      "event_type": "earnings",
+      "tickers": [
+        "1965",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Barack Obama was a successful President",
+      "link": "https://www.noahpinion.blog/p/barack-obama-was-a-successful-president-7bb",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T14:22:14+08:00",
+      "summary": "A repost, because I'm annoyed.",
+      "event_type": "news",
+      "tickers": [
+        "1933",
+        "1965"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "TSM",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

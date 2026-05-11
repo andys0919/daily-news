@@ -1,0 +1,96 @@
+{
+  "ticker": "1952",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Modern Combat Requires Warrior Medics Modeled After Machaon",
+      "link": "https://warontherocks.com/modern-combat-requires-warrior-medics-modeled-after-machaon",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-01T15:30:02+08:00",
+      "summary": "Modern peer combat has blown apart the myth of protected combat medical units. On the battlefields of Ukraine, scores of medical personnel, shielded in theory by both international law and historic norms, now lie dead. To survive in this environment while rescuing others, medics ranging from junior enlisted caregivers to senior physicians need tactical experience under fire. Skipping this training leaves them vulnerable and turns them into a security risk &#8212; a losing formula in modern comba",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nModern peer combat has blown apart the myth of protected combat medical units. On the battlefields of Ukraine, scores of medical personnel, shielded in theory by both international law and historic norms, now lie dead . To survive in this environment while rescuing others, ",
+      "event_type": "earnings",
+      "tickers": [
+        "1952",
+        "1864",
+        "META"
+      ],
+      "companies": [
+        "Meta"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "The Trouble With Permanent Alliances",
+      "link": "https://www.foreignaffairs.com/iran/trouble-permanent-alliances",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-13T12:00:00+08:00",
+      "summary": "America’s pacts should have expiration dates.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "1756",
+        "1778",
+        "1793",
+        "1796",
+        "1917",
+        "1969",
+        "1945",
+        "1955",
+        "1979",
+        "1986",
+        "1973",
+        "1972",
+        "1960",
+        "1952"
+      ]
+    },
+    {
+      "title": "Stockland files to build 168MW data center in Sydney, Australia",
+      "link": "https://www.datacenterdynamics.com/en/news/stockland-files-to-build-168mw-data-center-in-sydney-australia",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-06T19:00:32+08:00",
+      "summary": "Real estate firm targets Kemps Creek development",
+      "event_type": "news",
+      "tickers": [
+        "1952"
+      ]
+    },
+    {
+      "title": "CoinDesk 20 performance update: Ethereum (ETH) price rises 4.2% over weekend",
+      "link": "https://www.coindesk.com/coindesk-indices/2026/03/30/coindesk-20-performance-update-ethereum-eth-price-rises-4-2-over-weekend",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-03-30T21:14:33+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH",
+        "1952"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1864",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

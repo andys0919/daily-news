@@ -45,6 +45,73 @@
   "short_interest": [],
   "holdings": [],
   "recent_news": [],
+  "general_news": [
+    {
+      "title": "Broadcom-Meta Deal Helps ETF Investors Spot AI Wins - Broadcom (NASDAQ:AVGO) - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQamZwWm9BSkFXMnFPZVJqdC0tMnNZa2lKWnRpeUwwa0NfMmZqZER2V3k2SUhUQWx0dDBmSXVsQUx5ZjhtZzB4VFNjdjRMVGVxQzNnOGdGak5zbVhpaXRXdmhqaXlhUzJISHg4MXZ4TElxQzFBeVR2UlNuWWQ4U1hoZDB6OXMwS1JRUXRaazJWaUNzVW5ybE5vaF9jM3JzZXlUZVlqNVE2c3JoT1VmUV9qRVdyWWJFVHdMaUE0Vk1WRC02SGY2ZHdubTZHNF9RdE1BSl9IRFJjR0Q?oc=5",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-21T00:10:36+08:00",
+      "summary": "Broadcom-Meta Deal Helps ETF Investors Spot AI Wins - Broadcom (NASDAQ:AVGO)&nbsp;&nbsp;Benzinga",
+      "event_type": "news",
+      "tickers": [
+        "AVGO",
+        "META"
+      ]
+    },
+    {
+      "title": "What's Going On With Broadcom Stock Thursday? - Broadcom (NASDAQ:AVGO) - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRnpJbXYwbTdlbHdYZVJ3YUk5V1hhUjM4R1VybjFkZmdORkszaGtOZi1WY2RYNVl3a19oZU9wbXo5VW1fcmZDUnFfUkl6cmZRRXJ3NWpZandGTTI2dDNUek1jMVotYkpHeVhzMnJHT0lra0RhVm9yaW1pQ19RUUxkVVV4TzA5WGpnM2Z4OG5DMXpmd0FacUY0dVZPZWJmSXc1bzBPdkpyZC1heWdMMWhQYnlCblozQQ?oc=5",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-16T17:30:31+08:00",
+      "summary": "What's Going On With Broadcom Stock Thursday? - Broadcom (NASDAQ:AVGO)&nbsp;&nbsp;Benzinga",
+      "event_type": "news",
+      "tickers": [
+        "AVGO"
+      ]
+    },
+    {
+      "title": "Broadcom (NASDAQ: AVGO) expands Google, Anthropic AI TPU and networking deals - Stock Titan",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS2hPVC13NkhnVl9VbmxZb3kyYnFOa1lCR3dPS3MyT0tlYjk3RUNIb2F3Q18zNHZKdGJWWXI4QVM3dzV2UFh4eWFYV1Ntd2ZfZlIzcFZpcGU1V29Gd1VNdHdaQ3Zsd3BEaURZWE5MTXZob1F2MF9IRDJDUDVNTHhBMjlGYVE0TDJ6ZzZxVnZXaXdzRnJmLTZTZmVpOW1JZWlHOWZv?oc=5",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-07T05:22:08+08:00",
+      "summary": "Broadcom (NASDAQ: AVGO) expands Google, Anthropic AI TPU and networking deals&nbsp;&nbsp;Stock Titan",
+      "event_type": "news",
+      "tickers": [
+        "AVGO",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Broadcom Inc. $AVGO Stake Boosted by Brookstone Capital Management - National Today",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdFZwc3F1MFBDaENud0xUdnVzNW5iUHRzMmpRWUptZzl5c245ZnRwQ29ZSlJDSEt0MlY4am56dmJxYnhYVndSdzZDZVZnVWFZTV9QR3djaDVVLWxqYWdBMnJEbEhLQ0VVTjE5ZTJUZURkLXFab1dZeTc0VjhkVGV0bWRzajhaMEFjQ2lPbVFRN0ZKcW5mLUdYUlo2TF9wVXBQOW9YNEJURVl6RzNuZHRPTmRUdHJnV2ItSkVJbA",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-04T16:35:24+08:00",
+      "summary": "Broadcom Inc. $AVGO Stake Boosted by Brookstone Capital Management&nbsp;&nbsp;National Today",
+      "event_type": "news",
+      "tickers": [
+        "AVGO"
+      ]
+    },
+    {
+      "title": "TSMC is reportedly preparing to begin 3nm mass production as early as the 2H 2027 at its Arizona fab, with all overseas capacity expected to account for 20% of its total capacity by 2028. $TSM $NVDA $AMD $AVGO - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tdDZydlJQV2poMXQtRmhBa3lENXFqYzAyNGNvQThRbDNuWGp6WWl3N3IxX1M3OXlSZHZ3U2xPb1JTZ2F6dTNMNEZhSVpoRlJKNEdIaW9NRUZEcmlHa1kzdVdB",
+      "source": "X 半導體供應鏈熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-29T06:22:27+08:00",
+      "summary": "TSMC is reportedly preparing to begin 3nm mass production as early as the 2H 2027 at its Arizona fab, with all overseas capacity expected to account for 20% of its total capacity by 2028. $TSM $NVDA $AMD $AVGO&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "TSM",
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ]
+    }
+  ],
   "history": [
     {
       "fiscal_year": 2026,
@@ -65,6 +132,56 @@
       "guidance_summary": "These forward-looking statements are based on current expectations and beliefs of Broadcom’s management, current information available to Broadcom’s management, and current market trends and market conditions, and involve risks and uncertai"
     }
   ],
+  "fundamentals": {
+    "ticker": "AVGO",
+    "market": "us",
+    "company_name": "Broadcom Inc.",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 19311000000.0,
+      "gross_profit": 13157000000.0,
+      "operating_income": 8563000000.0,
+      "net_income": 1877000000.0,
+      "eps": 1.5,
+      "fcf": 8010000000.0,
+      "ocf": 8260000000.0,
+      "capex": 250000000.0,
+      "gross_margin": 0.681321526591062,
+      "op_margin": 0.44342602661695407,
+      "net_margin": 0.09719848790844596,
+      "fcf_margin": 0.41478949821345346,
+      "capex_intensity": 0.01294598933250479,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 19311000000.0,
+        "gross_profit": 13157000000.0,
+        "operating_income": 8563000000.0,
+        "net_income": 1877000000.0,
+        "eps_diluted": 1.5,
+        "fcf": 8010000000.0,
+        "ocf": 8260000000.0,
+        "capex": 250000000.0,
+        "company_name": "Broadcom Inc."
+      }
+    ],
+    "health": {
+      "tier": "steady",
+      "label": "穩健",
+      "summary": "營益率 44% 業界頂尖・FCF margin 41% 現金力強",
+      "icon": "🔵",
+      "score": 3
+    }
+  },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:22:11Z"
+  "generated_at": "2026-05-11T03:33:22Z"
 }

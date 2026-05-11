@@ -1,0 +1,188 @@
+{
+  "ticker": "1987",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Intel's stock has best day since 1987, soaring 24% as chipmaker shows signs of a turnaround",
+      "link": "https://www.cnbc.com/2026/04/24/intel-stock-soars-more-than-20percent-as-chipmaker-shows-signs-of-turnaround.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-04-25T07:04:19+08:00",
+      "summary": "Shares of Intel have more than doubled this year on optimism that backing from the government will help the company's position in AI.",
+      "body_text": "Intel shares soared 24% on Friday, their best performance since October 1987, as investors cheered signs of renewed growth due to mounting artificial intelligence demand.\nThe stock closed at $82.57 and is now up 124% this year after jumping 84% in 2025. Friday's rally topped a 23% gain for the stock on Sept. 18, when Nvidia agreed to invest $5 billion in the company.\nCEO Lip-Bu Tan, who took the h",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "NVDA",
+        "AAPL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Nvidia stock closes at record, pushing market cap past $5 trillion",
+      "link": "https://www.cnbc.com/2026/04/24/nvidia-stock-closes-at-record-pushing-market-cap-past-5-trillion.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-25T06:40:51+08:00",
+      "summary": "Nvidia's stock closed at its first record since October, as a rally in Intel pushed chipmakers higher.",
+      "body_text": "Nvidia shares closed at a record on Friday for the first time since October, pushing the company's market cap past $5 trillion, as investors piled into the AI chip trade ahead of earnings next week from tech's hyperscalers.\nThe stock rose 4.3% to close at $208.27. Nvidia is up more than 14-fold since the end of 2022, driven by soaring demand for artificial intelligence services and models. Nvidia'",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "NVDA",
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Amazon",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The United States Is Repeating Its Silicon Mistake with Gallium Nitride",
+      "link": "https://warontherocks.com/cogs-of-war/the-united-states-is-repeating-its-silicon-mistake-with-gallium-nitride",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T16:00:13+08:00",
+      "summary": "China controls 99 percent of the world&#8217;s primary gallium, a critical mineral and semiconductor crucial for building the microchips of the future. In 2023, it placed export controls on gallium to retaliate against American restrictions on the export of advanced chips to China. In December 2024, China escalated to an outright ban on gallium exports to the United States. The U.S. National Defense Stockpile had zero gallium reserves when that ban landed.The United States has been here before. ",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nChina controls 99 percent of the world’s primary gallium , a critical mineral and semiconductor crucial for building the microchips of the future. In 2023, it placed export controls on gallium to retaliate against American restrictions on the export of advanced chips to Chi",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "1976",
+        "1985",
+        "1958",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "CEOs admit AI had no impact on employment or productivity",
+      "link": "https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-20T05:56:22+08:00",
+      "summary": "Article URL: https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study/ Comments URL: https://news.ycombinator.com/item?id=47827985 Points: 69 # Comments: 58",
+      "body_text": "In 1987, economist and Nobel laureate Robert Solow made a stark observation about the stalling evolution of the Information Age: Following the advent of transistors, microprocessors, integrated circuits, and memory chips of the 1960s, economists and companies expected these new technologies to disrupt workplaces and result in a surge of productivity. Instead, productivity growth slowed , dropping ",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "1948",
+        "1973"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Silent Killers, Not Signals: Why States Use Poison in Assassinations",
+      "link": "https://warontherocks.com/silent-killers-not-signals-why-states-use-poison-in-assassinations",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-15T15:30:15+08:00",
+      "summary": "The recent news that Russian opposition leader Alexei Navalny&#8217;s death was caused by epibatidine &#8212; a South American frog toxin &#8212; has reignited interest in state use of poisons and toxins in assassinations. Although state use of such compounds has a long history, the erosion of the norms prohibiting assassinations and chemical and biological weapons increases the likelihood of future assassinations using poisons and toxins. As demonstrated in the recent targeting of the Iranian l",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe recent news that Russian opposition leader Alexei Navalny’s death was caused by epibatidine — a South American frog toxin — has reignited interest in state use of poisons and toxins in assassinations. Although state use of such compounds has a long history, the erosion ",
+      "event_type": "policy",
+      "tickers": [
+        "1946",
+        "1987",
+        "1989",
+        "1981",
+        "1975",
+        "1980"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "It’s time to make a plan for nuclear waste",
+      "link": "https://www.technologyreview.com/2026/04/29/1136659/plan-nuclear-waste",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-29T16:00:00+08:00",
+      "summary": "Today, nuclear energy enjoys a rare moment of support across the political spectrum in the US. Interest from tech companies that are scrambling to meet demand for massive data centers has sparked a resurgence of money and attention in the industry. That newfound interest is exactly why it’s time to talk about an old problem:&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "2035",
+        "1987"
+      ]
+    },
+    {
+      "title": "Trump's 1987 Bombshell on Iran Oil Goes Viral — Can the US Really Seize It? timesnownews.com/world/us/us-ne… - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBxM20xOHBzSEJJTU80aDZ3VUI4aEhHS2NjTDBQaDh6ejFiU0pCdW9YUEhoc0lWcUJyMy1pM0tKeURwOVVMTlRNbVNtWFY5eWpsSjhYSTFmaThSLVYyY3c",
+      "source": "X 宏觀市場熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-03-31T08:24:42+08:00",
+      "summary": "Trump's 1987 Bombshell on Iran Oil Goes Viral — Can the US Really Seize It? timesnownews.com/world/us/us-ne…&nbsp;&nbsp;x.com",
+      "event_type": "news",
+      "tickers": [
+        "1987"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 2
+    },
+    {
+      "ticker": "AAPL",
+      "count": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "MSFT",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    },
+    {
+      "ticker": "AMZN",
+      "count": 1
+    },
+    {
+      "ticker": "1976",
+      "count": 1
+    },
+    {
+      "ticker": "1985",
+      "count": 1
+    },
+    {
+      "ticker": "1958",
+      "count": 1
+    },
+    {
+      "ticker": "TSM",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

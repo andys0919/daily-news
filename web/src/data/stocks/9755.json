@@ -1,0 +1,40 @@
+{
+  "ticker": "9755",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "AMD's 8-core Ryzen 7 PRO 9755 leaks on PassMark, the second unannounced Ryzen PRO chip to surface this week - TweakTown",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPSFFZOUpyVV9leHBSaVQ3VDNTdndkT0E4U0RvUVdUUU93WkRpdW9RWUFja2JBeWhhV184RVZSdjlER1dVSXNPLWtsUW9UVjFiTGoxLVdFN2ItV3E5OC1xTldqdDR2UjljTW5mcmNVWXltSFo3SEhLVnp0LTJIdldiYldjYmU1Nk1jVFUyQ3J1b2d1ZHFiT05PUUloelI1cXZqd3NWZG50ZHFLQjZRbFBtazN5UVY1aG5EdlJST0hBa0gwQUNtVm0wVzFhMG5fZnJvZTI4YU56MGNEZ3NNSzJ2MTFKY2lSV3FOMmc?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T02:50:07+08:00",
+      "summary": "AMD's 8-core Ryzen 7 PRO 9755 leaks on PassMark, the second unannounced Ryzen PRO chip to surface this week&nbsp;&nbsp;TweakTown",
+      "event_type": "news",
+      "tickers": [
+        "9755"
+      ]
+    },
+    {
+      "title": "AMD Ryzen 7 Pro 9755 Leaks With Zen 5, 8 Cores and Small Performance Boost - eTeknix",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZmQxcS1GYXdXdWltdHZLMTNzNVVtUWF5OHdVYW9FYmdxc1BzM0JnbERIWGp2N2NYLUxnTFJacXJQa2dxOEZOVGJ4VmZ0emxLbTFXQjFhci1DbWhhSHUxa3dlT0NsLTJOLUcxdkdzRGJFblFSWnhIdUxMMU45Z3l3ZkppVWUzenh0NVoyVGtPdjhOSU8wZWRBc0k2NVhSemM?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T02:06:17+08:00",
+      "summary": "AMD Ryzen 7 Pro 9755 Leaks With Zen 5, 8 Cores and Small Performance Boost&nbsp;&nbsp;eTeknix",
+      "event_type": "news",
+      "tickers": [
+        "9755"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

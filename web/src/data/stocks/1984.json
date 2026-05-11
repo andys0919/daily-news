@@ -1,0 +1,146 @@
+{
+  "ticker": "1984",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Apple reports second quarter results",
+      "link": "https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T04:30:59+08:00",
+      "summary": "Apple today announced financial results for its fiscal 2026 second quarter ended March 28, 2026.",
+      "body_text": "Consolidated Financial Statements\nApple periodically provides information for investors on its corporate website, apple.com , and its investor relations website, investor.apple.com . This includes press releases and other information about financial performance, reports filed or furnished with the SEC, information on corporate governance, and details related to its annual meeting of shareholders.\n",
+      "event_type": "earnings",
+      "tickers": [
+        "1984",
+        "1142",
+        "3123",
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tim Cook’s Impeccable Timing",
+      "link": "https://stratechery.com/2026/tim-cooks-impeccable-timing",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T18:00:00+08:00",
+      "summary": "Tim Cook had an extraordinary run — and impeccable timing, both in terms of when he became CEO, and when he is stepping down.",
+      "body_text": "It’s the nature of business that the eulogy for a chief executive doesn’t happen when they die, but when they retire, or, in the case of Apple CEO Tim Cook, announce that they will step up to the role of Executive Chairman on September 1 . The one morbid exception is when a CEO dies on the job — or quits because they are dying — and the truth of the matter is that that is where any honest recounti",
+      "event_type": "earnings",
+      "tickers": [
+        "1984",
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tim Cook to become Apple Executive Chairman John Ternus to become Apple CEO",
+      "link": "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-21T04:37:37+08:00",
+      "summary": "Apple announced Tim Cook will become executive chairman of Apple’s board of directors and John Ternus will become Apple’s next CEO.",
+      "body_text": "Text of this article\nApril 20, 2026\nPRESS RELEASE\nTim Cook to become :br(s): :br(m): :br(l): :br(xl):Apple Executive Chairman John Ternus to become Apple CEO\nCUPERTINO, CALIFORNIA Apple announced that Tim Cook will become executive chairman of Apple’s board of directors and John Ternus, senior vice president of Hardware Engineering, will become Apple’s next chief executive officer effective on Sep",
+      "event_type": "earnings",
+      "tickers": [
+        "1984",
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Apple’s 50 Years of Integration",
+      "link": "https://stratechery.com/2026/apples-50-years-of-integration",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-31T18:00:00+08:00",
+      "summary": "Apple has survived 50 years by being the only company integrating hardware and software; if the company loses because of AI it will be because the point of integration changes.",
+      "body_text": "There is a weird phenomenon as a sports fan where the athletes on the field or court are older than you…and then they’re your age…and then they’re all younger than you; for me the last athlete I could look up to, at least in terms of age, was Tom Brady.\nTech companies are similar, in a way. I like to write about tech history, and the importance of origin stories for understanding company cultures,",
+      "event_type": "earnings",
+      "tickers": [
+        "1977",
+        "1984",
+        "AAPL",
+        "MSFT",
+        "NVDA"
+      ],
+      "companies": [
+        "Apple",
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Johny Srouji named Apple’s Chief Hardware Officer",
+      "link": "https://www.apple.com/newsroom/2026/04/johny-srouji-named-apples-chief-hardware-officer",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-21T04:31:30+08:00",
+      "summary": "Apple today announced that, effective immediately, Apple executive Johny Srouji will become chief hardware officer.",
+      "event_type": "news",
+      "tickers": [
+        "1984",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Cattle prices soar to record highs as grilling season heats up",
+      "link": "https://www.cnbc.com/2026/04/15/beef-cattle-grilling-inflation.html",
+      "source": "CNBC Economy",
+      "category": "💰 財經與總經",
+      "published": "2026-04-16T04:31:04+08:00",
+      "summary": "Cattle futures contracts have jumped more than 25% over the past 12 months as ranchers face rising costs and cut the size of herds.",
+      "event_type": "news",
+      "tickers": [
+        "1984"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "AAPL",
+      "count": 4
+    },
+    {
+      "ticker": "1142",
+      "count": 1
+    },
+    {
+      "ticker": "3123",
+      "count": 1
+    },
+    {
+      "ticker": "1977",
+      "count": 1
+    },
+    {
+      "ticker": "MSFT",
+      "count": 1
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

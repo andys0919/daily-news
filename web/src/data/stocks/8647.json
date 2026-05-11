@@ -1,0 +1,76 @@
+{
+  "ticker": "8647",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "被控威脅川普生命 前FBI局長柯米到案出庭",
+      "link": "https://money.udn.com/money/story/5599/9473263",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T08:36:21+08:00",
+      "summary": "前美國聯邦調查局（FBI）局長柯米（James Comey）因被控在社群媒體貼文威脅總統川普的生命，今天向維吉尼亞州當局...",
+      "event_type": "news",
+      "tickers": [
+        "8647"
+      ]
+    },
+    {
+      "title": "被控威脅川普生命　前FBI局長柯米到案出庭",
+      "link": "https://www.cna.com.tw/news/aopl/202604300022.aspx",
+      "source": "中央社 國際",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-30T08:24:38+08:00",
+      "summary": "（中央社華盛頓29日綜合外電報導）前美國聯邦調查局（FBI）局長柯米（James Comey）因被控在社群媒體貼文威脅總統川普的生命，今天向維吉尼亞州當局投案並出庭應訊。",
+      "event_type": "news",
+      "tickers": [
+        "8647"
+      ]
+    },
+    {
+      "title": "'8647' got James Comey indicted. What exactly does it mean?",
+      "link": "https://www.npr.org/2026/04/29/nx-s1-5804483/8647-meaning-comey-indictment",
+      "source": "NPR Politics",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-29T23:22:54+08:00",
+      "summary": "A grand jury charged Comey with threatening Trump's life through his since-deleted 2025 post of seashells forming \"8647.\" Trump is the 47th president, and the term \"86\" has a few possible meanings.",
+      "event_type": "news",
+      "tickers": [
+        "8647"
+      ]
+    },
+    {
+      "title": "James Comey charged with threatening Trump's life in ‘8647’ seashell post",
+      "link": "https://www.cnbc.com/2026/04/28/james-comey-indicted-trump-seashell-8647.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-29T06:17:07+08:00",
+      "summary": "Trump had accused the former FBI Director Comey of \"calling for the assassination of the president\" by sharing the image of the numbers in an Instagram post.",
+      "event_type": "news",
+      "tickers": [
+        "8647"
+      ]
+    },
+    {
+      "title": "Grand jury indicts former FBI director James Comey for a second time",
+      "link": "https://www.npr.org/2026/04/28/nx-s1-5803167/james-comey-indictment",
+      "source": "NPR Politics",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-29T03:31:31+08:00",
+      "summary": "The case revolves around a photo the former FBI director posted online last year of seashells on a beach arranged to say \"8647.\"",
+      "event_type": "news",
+      "tickers": [
+        "8647"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

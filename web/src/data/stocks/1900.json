@@ -1,0 +1,30 @@
+{
+  "ticker": "1900",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "That was then, that was then",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/that-was-then-that-was-then.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-14T01:54:58+08:00",
+      "summary": "Fred Anderson has demonstrated how a futuristic novel written in 1763 can help to shed light on British thinking about the long-term consequences of the peace [from the Seven Years&#8217; War]. The anonymously published The Reign of George VI, 1900-1925 presents a scenario far in the future, in the early twentieth century. The book&#8217;s counterhistorical [&#8230;] The post That was then, that was then appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "1763",
+        "1900",
+        "1925"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

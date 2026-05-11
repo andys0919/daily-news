@@ -1,0 +1,133 @@
+{
+  "ticker": "1983",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "FPGA Maker’s Strategic Pivot into Firmware World",
+      "link": "https://www.eetimes.com/fpga-makers-strategic-pivot-into-firmware-world",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T21:32:49+08:00",
+      "summary": "Lattice acquires AMI to combine its low-power FPGAs with open-source firmware platforms. The post FPGA Maker’s Strategic Pivot into Firmware World appeared first on EE Times.",
+      "body_text": "Low-power FPGA maker Lattice Semiconductor is consolidating its software prowess by acquiring open-source firmware developer AMI in a cash-and-stock deal valued at $1.65 billion. The Duluth, Georgia-based AMI develops platform firmware and infrastructure manageability solutions for cloud and AI environments.\nThe deal is expected to help the Hillsboro, Oregon-based Lattice consolidate its position ",
+      "event_type": "earnings",
+      "tickers": [
+        "1983",
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Israel and Lebanon agree 10-day ceasefire, Trump says",
+      "link": "https://www.bbc.com/news/articles/c8x7w1w9gd2o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-17T05:18:31+08:00",
+      "summary": "The US president invites the two countries' leaders to Washington as Israel's prime minister insists troops will not leave southern Lebanon.",
+      "body_text": "The leaders of Israel and Lebanon have agreed a 10-day ceasefire, US President Donald Trump has said, starting from 17:00 EST (21:00 GMT; midnight local time) on Thursday.\nFor the past six weeks, Israel and Hezbollah - an Iran-backed armed group - have been fighting in southern Lebanon.\nIsraeli Prime Minister Benjamin Netanyahu confirmed Israel's participation in the truce, but said troops would m",
+      "event_type": "earnings",
+      "tickers": [
+        "1983"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Don’t Partition Sudan Again",
+      "link": "https://www.foreignaffairs.com/sudan/dont-partition-sudan-again",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-08T12:00:00+08:00",
+      "summary": "",
+      "body_text": "FRANCIS M. DENG served as Sudan’s Minister of State for Foreign Affairs, South Sudan’s first Permanent Representative to the United Nations, and the UN Secretary-General’s Special Adviser on the Prevention of Genocide. AHMED KODOUDA is Senior Technical Adviser at Impact Policy Group, a firm advising humanitarian and development institutions in conflict and postconflict settings.\nSplitting It Didn’",
+      "event_type": "earnings",
+      "tickers": [
+        "1956",
+        "1899",
+        "1972",
+        "1983"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Dispatch from Beirut: Israel-Hezbollah talks risk falling into a failed, decades-long pattern",
+      "link": "https://www.atlanticcouncil.org/blogs/menasource/dispatch-from-beirut-israel-hezbollah-talks-risk-falling-into-a-failed-decades-long-pattern",
+      "source": "Atlantic Council",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T00:28:22+08:00",
+      "summary": "As the war with Israel revives Hezbollah and divides Lebanon, the ongoing negotiations echo failed 1983 talks. The post Dispatch from Beirut: Israel-Hezbollah talks risk falling into a failed, decades-long pattern appeared first on Atlantic Council.",
+      "event_type": "news",
+      "tickers": [
+        "1983"
+      ]
+    },
+    {
+      "title": "The best AI dictation apps, tested and ranked",
+      "link": "https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-03T00:00:00+08:00",
+      "summary": "AI-powered dictation apps are useful for replying to emails, taking notes, and even coding through your voice",
+      "event_type": "news",
+      "tickers": [
+        "1983"
+      ]
+    },
+    {
+      "title": "OMS Group snaps up second Exail DriX vessel for subsea surveys",
+      "link": "https://www.datacenterdynamics.com/en/news/oms-group-snaps-up-second-exail-drix-vessel-for-subsea-surveys",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-22T23:10:32+08:00",
+      "summary": "The DriX O-16 will support data collection for OMS Group",
+      "event_type": "news",
+      "tickers": [
+        "1983"
+      ]
+    },
+    {
+      "title": "Oil falls as Trump reiterates Iran war ‘should’ end soon and Israel-Lebanon truce lifts hopes",
+      "link": "https://www.cnbc.com/2026/04/17/oil-prices-wti-brent-israel-lebanon-ceasefire-trump.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-17T08:57:36+08:00",
+      "summary": "Oil prices fell after Donald Trump said Israel and Lebanon had agreed to a 10-day ceasefire following talks in Washington.",
+      "event_type": "news",
+      "tickers": [
+        "1983"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "1956",
+      "count": 1
+    },
+    {
+      "ticker": "1899",
+      "count": 1
+    },
+    {
+      "ticker": "1972",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

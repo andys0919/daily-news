@@ -1,0 +1,88 @@
+{
+  "ticker": "2603",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "ALTK‑Evolve: On‑the‑Job Learning for AI Agents",
+      "link": "https://huggingface.co/blog/ibm-research/altk-evolve",
+      "source": "Hugging Face Blog",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-08T22:27:42+08:00",
+      "summary": "",
+      "body_text": "Imagine a brilliant line cook who has memorized every cookbook but forgets your kitchen every morning. They don’t remember your oven runs hot, or that regulars like extra salt; they’ll follow a recipe card yet freeze when you’re out of lemons. That’s most AI agents: excellent at following prompts, poor at accumulating wisdom about your environment. Feeding yesterday’s logs back into the prompt jus",
+      "event_type": "earnings",
+      "tickers": [
+        "2603"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Latest open artifacts (#20): New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others",
+      "link": "https://www.interconnects.ai/p/latest-open-artifacts-20-new-orgs",
+      "source": "Interconnects AI",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-30T21:02:45+08:00",
+      "summary": "New orgs! New types of models! With Nemotron Super, Sarvam, Cohere Transcribe, & others",
+      "body_text": "This Artifacts Log post is unusual in how many diverse, quirky models there are across use-cases and modalities. Normally these model roundups are dominated by big models from the likes of Qwen, DeepSeek, Kimi, etc. There are models for all sorts of different use-cases in this post, from optical character recognition (OCR), RAG search, audio transcription, computer-use, code-editing, math theorem ",
+      "event_type": "earnings",
+      "tickers": [
+        "2603",
+        "NVDA",
+        "MSFT"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "看好運價 長榮︰未來半年展望正向",
+      "link": "https://ec.ltn.com.tw/article/paper/1752249",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-25T05:30:00+08:00",
+      "summary": "〔記者王憶紅／台北報導〕長榮（2603）昨日舉行法說會，總經理吳光輝表示，中東戰爭後油價走揚，推升運價回升、貨量也上升，目前已有航商喊出美西線每櫃加價2000美元，預期其他航商陸續跟進，樂觀看5月中旬後的運價表現。 他說，因貨主考量運價走高、供應鏈斷鏈導致庫存水位不足，預期貨主會提早在旺季前拉…",
+      "event_type": "news",
+      "tickers": [
+        "2603"
+      ]
+    },
+    {
+      "title": "What I’ve been building: ATOM Report, post-training course, finishing my book, and ongoing research",
+      "link": "https://www.interconnects.ai/p/what-ive-been-building-atom-report",
+      "source": "Interconnects AI",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-15T04:41:12+08:00",
+      "summary": "What I've been up to!",
+      "event_type": "news",
+      "tickers": [
+        "2604",
+        "2603",
+        "AMZN",
+        "META"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "MSFT",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

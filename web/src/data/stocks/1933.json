@@ -1,0 +1,125 @@
+{
+  "ticker": "1933",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "NVIDIA and IREN Announce Strategic Partnership to Accelerate Deployment of up to 5 Gigawatts of AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-iren-announce-strategic-partnership-to-accelerate-deployment-of-up-to-5-gigawatts-of-ai-infrastructure",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T04:34:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.",
+      "body_text": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.\nThe partnership is intended to accelerate deployment of large-scale AI factories by combining NVIDIA’s DSX AI factory architecture with IREN’s expertise across power, land, data centers, GPU deployment and infrastructure operations.\nF",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "IREN",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA and Corning Announce Long-Term Partnership to Strengthen US Manufacturing for AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-emerald-ai-join-leading-energy-companies-to-pioneer-flexible-ai-factories-as-grid-assets",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T19:30:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.",
+      "body_text": "NVIDIA's Endeavor building in Santa Clara, Calif.\nNVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.\nCorning will increase its U.S.-based optical connectivity manufacturing capacit",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "GLW",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The insider trading suspicions looming over Trump's presidency",
+      "link": "https://www.bbc.com/news/articles/cge0grppe3po",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-20T07:02:06+08:00",
+      "summary": "The BBC has found a pattern of spikes in trades ahead of public announcements by the US president.",
+      "body_text": "Throughout US President Donald Trump's second term in office, traders have been betting millions of dollars just before he makes major announcements.\nThe BBC has examined trade volume data on several financial markets and matched them to some of the president's most significant market-moving statements.\nIt found a consistent pattern of spikes just hours, or sometimes minutes, before a social media",
+      "event_type": "policy",
+      "tickers": [
+        "1933"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA AI Ecosystem Expands as Marvell Joins Forces Through NVLink Fusion",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-03-31T20:00:00+08:00",
+      "summary": "NVIDIA and Marvell Technology, Inc. (NASDAQ: MRVL) today announced a strategic partnership to connect Marvell to the NVIDIA AI factory and AI-RAN ecosystem through NVIDIA NVLink Fusion™, offering customers building on NVIDIA architectures greater choice and flexibility in developing next-generation infrastructure.",
+      "body_text": "NVIDIA's Endeavor building in Santa Clara, Calif.\nNVIDIA and Marvell Technology, Inc. (NASDAQ: MRVL) today announced a strategic partnership to connect Marvell to the NVIDIA AI factory and AI-RAN ecosystem through NVIDIA NVLink Fusion™, offering customers building on NVIDIA architectures greater choice and flexibility in developing next-generation infrastructure. The companies will also collaborat",
+      "event_type": "earnings",
+      "tickers": [
+        "MRVL",
+        "NVDA",
+        "1933"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Barack Obama was a successful President",
+      "link": "https://www.noahpinion.blog/p/barack-obama-was-a-successful-president-7bb",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T14:22:14+08:00",
+      "summary": "A repost, because I'm annoyed.",
+      "event_type": "news",
+      "tickers": [
+        "1933",
+        "1965"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 3
+    },
+    {
+      "ticker": "1934",
+      "count": 2
+    },
+    {
+      "ticker": "IREN",
+      "count": 1
+    },
+    {
+      "ticker": "GLW",
+      "count": 1
+    },
+    {
+      "ticker": "MRVL",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

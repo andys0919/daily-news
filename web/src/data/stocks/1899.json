@@ -1,0 +1,61 @@
+{
+  "ticker": "1899",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Don’t Partition Sudan Again",
+      "link": "https://www.foreignaffairs.com/sudan/dont-partition-sudan-again",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-08T12:00:00+08:00",
+      "summary": "",
+      "body_text": "FRANCIS M. DENG served as Sudan’s Minister of State for Foreign Affairs, South Sudan’s first Permanent Representative to the United Nations, and the UN Secretary-General’s Special Adviser on the Prevention of Genocide. AHMED KODOUDA is Senior Technical Adviser at Impact Policy Group, a firm advising humanitarian and development institutions in conflict and postconflict settings.\nSplitting It Didn’",
+      "event_type": "earnings",
+      "tickers": [
+        "1956",
+        "1899",
+        "1972",
+        "1983"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Mr. Chatterbox is a (weak) Victorian-era ethically trained model you can run on your own computer",
+      "link": "https://simonwillison.net/2026/Mar/30/mr-chatterbox",
+      "source": "Simon Willison",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-03-30T22:28:34+08:00",
+      "summary": "Trip Venturella released Mr. Chatterbox, a language model trained entirely on out-of-copyright text from the British Library. Here's how he describes it: Mr. Chatterbox is a language model trained entirely from scratch on a corpus of over 28,000 Victorian-era British texts published between 1837 and 1899, drawn from a dataset made available by the British Library. The model has absolutely no training inputs from after 1899 — the vocabulary and ideas are formed exclusively from nineteenth-century",
+      "event_type": "news",
+      "tickers": [
+        "1837",
+        "1899"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1956",
+      "count": 1
+    },
+    {
+      "ticker": "1972",
+      "count": 1
+    },
+    {
+      "ticker": "1983",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

@@ -1,0 +1,62 @@
+{
+  "ticker": "2408",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "南亞科4月營收255億 月增4成、年增717%創新高",
+      "link": "https://ec.ltn.com.tw/article/paper/1753582",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T05:30:00+08:00",
+      "summary": "〔記者洪友芳／新竹報導〕受惠市況缺貨漲價，DRAM廠南亞科（2408）昨日公布4月自結合併營收為254.91億元，首度破200億元大關，月增40.29%、年增717.33%，創單月營收歷史新高，值得留意的是，自去年DRAM缺貨潮以來，南亞科4月營收月增與年增幅度也雙雙創新高。 南亞科今年前4月累計…",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "2408"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "熱門族群》AI引爆記憶體進入超級循環  缺貨延續到2028年",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5430848",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T07:02:00+08:00",
+      "summary": "受惠AI需求大爆發，帶動記憶體市況缺貨漲價，DRAM廠南亞科（2408）、華邦電（2344）及記憶體模組廠威剛（3260）、創見（2451）、宜鼎（5289）等，第一季相...…",
+      "event_type": "news",
+      "tickers": [
+        "2408",
+        "2344",
+        "3260",
+        "2451",
+        "5289"
+      ]
+    },
+    {
+      "title": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元 - sinotrade.com.tw",
+      "link": "https://news.google.com/rss/articles/CBMi2gRBVV95cUxOV1A0UEhkbExQWUwzRGtvQWlRODlxSDdINkgySUZ0a3pYemNsZTc1SVhxd1JoTnRkbmN2aDhFVG5HSHRzcUppN0lkeU5jX3NHem8tZm5CTVhneVJ1eEI5Y1hKLV9VQlZkc25PVkRXT0ZlTFVONGVQZEFVNHF4NzdsdDQ3ZmdGdmNEOFg0ZGJ6UFFaU3BPMDI1ZUM0LWtTY1VLSHdpdEE0dGl4M3N6bDVQanhlTjZQaUxSM1RxRGRCY3cxYnNnckF4dGhOT25TYm9heUtPS3VDVEg4eDNIZ2dESjAtcnBuTjQ2QW5vQ19pTmVrVl9sd2JNT0dibkFNZUpkMm13c01ZdzBTeENkN21QelVodTdnSm5QM3BMY0ttTURZQWJEUC1ldXJWSFJOZi15S2gyY3NnNjU3dmpTQzlkVzJleW1Oc2hNZXBGdG94emRxclhUaGRvZzJoZTVYWmp5SEFUY0ppYUFJOFN6Ul9FS2ZIR0tNV2dWQTdZRjQwVDhXQzhCV3c1Zml0ZGlYN3dyaE1qX2N1Z3hwTlV1Z3NoQURoa1RWQ3U4cXRWMXlGQjhFbThfMUdkdTNRb3VVM0RJNnZZb3BqYjhzb2dyeFpRVU9taUNQMVA5M2JjTkh4QWtQSG13OGt4YnROem13NlZPTHptak9NVE4xSWc3TlZ4QUF2VEZaY1YzamhqQVNZSmVuZDNFUzRDR1FiN1RENzBpeTBoQlE1UDZqSVlTWDQwaDRGakFmYzVpYjUyN3gzcVUtcnpPWXdiWFVqeGxOX25hTi1rVnBDRjRoZw?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T14:51:32+08:00",
+      "summary": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元&nbsp;&nbsp;sinotrade.com.tw",
+      "event_type": "news",
+      "tickers": [
+        "2330",
+        "2317",
+        "2408"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

@@ -1,0 +1,155 @@
+{
+  "ticker": "IREN",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "IREN",
+    "company_name": "IREN Ltd",
+    "quarterly": {
+      "market": "us",
+      "ticker": "IREN",
+      "company_name": "IREN Ltd",
+      "cik": "0001878848",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "period_end": "2025-12-31",
+      "filed_at": "2026-02-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm",
+      "report_kind": "quarterly",
+      "revenue": 424987000.0,
+      "monthly_revenue": null,
+      "net_income": 229204000.0,
+      "operating_income": -192808000.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": -0.4536797596161765,
+      "eps_diluted": 0.68,
+      "operating_cash_flow": 214004000.0,
+      "capex": 720001000.0,
+      "free_cash_flow": -505997000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-02-05\", \"period_end\": \"2025-12-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1878848/000187884826000015/iren-20251231.htm\"}, \"anchor_fact\": {\"start\": \"2025-07-01\", \"end\": \"2025-12-31\", \"val\": 424987000, \"accn\": \"0001878848-26-000015\", \"fy\": 2026, \"fp\": \"Q2\", \"form\": \"10-Q\", \"filed\": \"2026-02-05\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "NVIDIA and IREN Announce Strategic Partnership to Accelerate Deployment of up to 5 Gigawatts of AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-iren-announce-strategic-partnership-to-accelerate-deployment-of-up-to-5-gigawatts-of-ai-infrastructure",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T04:34:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.",
+      "body_text": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.\nThe partnership is intended to accelerate deployment of large-scale AI factories by combining NVIDIA’s DSX AI factory architecture with IREN’s expertise across power, land, data centers, GPU deployment and infrastructure operations.\nF",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "IREN",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "period_end": "2025-12-31",
+      "filed_at": "2026-02-05",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 424987000.0,
+      "monthly_revenue": null,
+      "net_income": 229204000.0,
+      "operating_income": -192808000.0,
+      "gross_profit": null,
+      "eps_diluted": 0.68,
+      "operating_cash_flow": 214004000.0,
+      "capex": 720001000.0,
+      "free_cash_flow": -505997000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "IREN",
+    "market": "us",
+    "company_name": "IREN Ltd",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q2",
+      "revenue": 424987000.0,
+      "gross_profit": null,
+      "operating_income": -192808000.0,
+      "net_income": 229204000.0,
+      "eps": 0.68,
+      "fcf": -505997000.0,
+      "ocf": 214004000.0,
+      "capex": 720001000.0,
+      "gross_margin": null,
+      "op_margin": -0.4536797596161765,
+      "net_margin": 0.5393200262596267,
+      "fcf_margin": -1.1906175953617404,
+      "capex_intensity": 1.6941718217263115,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q2",
+        "revenue": 424987000.0,
+        "gross_profit": null,
+        "operating_income": -192808000.0,
+        "net_income": 229204000.0,
+        "eps_diluted": 0.68,
+        "fcf": -505997000.0,
+        "ocf": 214004000.0,
+        "capex": 720001000.0,
+        "company_name": "IREN Ltd"
+      }
+    ],
+    "health": {
+      "tier": "warn",
+      "label": "警示",
+      "summary": "營益率 -45% 偏弱・FCF margin -119% 燒錢中",
+      "icon": "🔴",
+      "score": -2
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "1933",
+      "count": 1
+    },
+    {
+      "ticker": "1934",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

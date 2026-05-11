@@ -1,0 +1,228 @@
+{
+  "ticker": "6000",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "What is inference engineering? Deepdive",
+      "link": "https://newsletter.pragmaticengineer.com/p/what-is-inference-engineering",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-01T01:01:00+08:00",
+      "summary": "Many engineers use inference daily, but inference engineering is a bit obscure &#8211; and an area rich with interesting challenges. Philip Kiely, author of the new book, &#8220;Inference Engineering,&#8221; explains",
+      "body_text": "Two years ago, we learned about how LLMs work at a high level from the ChatGPT team , and today, almost all software engineers use large language models (LLMs) in our day-to-day work. The most visible part of using an LLM is inference ; when an existing model takes an input (prompt) and generates an output, one token at a time. So, with AI models and AI agents everywhere across the tech industry i",
+      "event_type": "earnings",
+      "tickers": [
+        "6000",
+        "5090",
+        "NVDA",
+        "GOOGL",
+        "AAPL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Google",
+        "Apple"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Accelerating Gemma 4: faster inference with  multi-token prediction drafters",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T00:00:00+08:00",
+      "summary": "Gemma 4 MTP Drafter",
+      "event_type": "news",
+      "tickers": [
+        "6000",
+        "GOOGL",
+        "NVDA",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Get a DDR5 starter build with a Ryzen 5 7600X and ASRock B650M Pro motherboard for 23% off — $430 bundle helps avoid inflated RAM prices",
+      "link": "https://www.tomshardware.com/pc-components/get-a-ddr5-starter-build-with-a-ryzen-5-7600x-and-asrock-b650m-pro-motherboard-for-23-percent-off-usd430-bundle-helps-avoid-inflated-ram-prices",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T02:01:48+08:00",
+      "summary": "Start your next gaming build with this this combo from Newegg featuring a Ryzen 5 7600X, 16GB of DDR5-6000 memory, and a Micro-ATX B650M motherboard from ASRock for just $430.",
+      "event_type": "news",
+      "tickers": [
+        "6000"
+      ]
+    },
+    {
+      "title": "QNAP Pairs a 6-Year-Old Zen 2 EPYC With NVIDIA’s 96GB RTX PRO 6000 Blackwell in Its New Edge AI NAS - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWjUxN3FqVjZNRFhjcVU3TnF5UE9yVGItWUo5SWh6U3ZTcjhvN2l3SWptSWdzSEZ6MUZEWGY1eVBTR2Vrb040RDM3c3JuS24tZWIzd2hub3VTeFlXckRVWER3U0JOdU94ZXA0OFpVWEczcVduMEx3VnZ1WmZGVi15dEhwX0c3X1FqcFdZRGJueF9na1dyUTA5dzUwM1dUd2JCQUt5eFZxRmlEYXl5SFZhekh0d9IBuAFBVV95cUxPdjh1R0NkdTdTM0p3VFpaMzU0VEZ3TjgxLWV6SW5yWmtxTko1S0szUURqVGkwOEtPendFVzhMNUh0aElwbGhvRm5wOGxaY21GOTNGdE9nUXc4d0FTbU9YYVZ6YTNrc0Y4NW9xM3FRODk3dGVfRzVDV0lYRHVjNTJxMTg5OWhNLWN3NVNNbENWQkZNcHF4c3N0SzlPX3BHQnpiVVEzNUJYeVBicHlHR00zTTlEaDgyZy1h?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-03T02:00:00+08:00",
+      "summary": "QNAP Pairs a 6-Year-Old Zen 2 EPYC With NVIDIA’s 96GB RTX PRO 6000 Blackwell in Its New Edge AI NAS&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "6000",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Get 32GB of Corsair Vengeance DDR5 RAM for just $249 — act fast and don't miss Woot's blowout sale",
+      "link": "https://www.tomshardware.com/pc-components/get-32gb-of-corsair-vengeance-ddr5-ram-for-just-usd249-act-fast-and-dont-miss-woots-blowout-sale",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-30T00:12:15+08:00",
+      "summary": "Save 25% on this Corsair Vengeance 32GB DDR5-6000 RAM, on sale at Woot for a limited time only.",
+      "event_type": "news",
+      "tickers": [
+        "6000"
+      ]
+    },
+    {
+      "title": "Mushroom facts of the day",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/mushroom-facts-of-the-day.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-27T03:41:21+08:00",
+      "summary": "You would be surprised to learn that almost 69% of the US mushroom production occurs in the borough of Kennett Square, Pennsylvania. It is a small town of about 6000 people, but mushroom-growing facilities around town produce almost 451 million pounds of mushrooms annually (2024). 451 million pounds of mushrooms would occupy about 45 American football fields or 35 [&#8230;] The post Mushroom facts of the day appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "6000"
+      ]
+    },
+    {
+      "title": "Save a massive $520 on a gaming PC upgrade with this mega Newegg DDR5 RAM combo worth $1,159 separately — free 1TB SSD thrown in ramps up the value of this $639.99 upgrade bundle with 32GB memory kit and a MSI MAG motherboard",
+      "link": "https://www.tomshardware.com/pc-components/save-a-massive-usd520-on-a-gaming-pc-upgrade-with-this-mega-newegg-ddr5-ram-combo-worth-usd1-159-separately-free-1tb-ssd-thrown-in-ramps-up-the-value-of-this-usd639-99-upgrade-bundle-with-32gb-memory-kit-and-a-msi-mag-motherboard",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-24T20:40:04+08:00",
+      "summary": "Start your AM5 build off right and save almost $200 with this Newegg combo. Get 32GB of DDR5-6000 CL28 RAM, an MSI X870E Tomahawk Wifi motherboard, and a FREE 1TB Western Digital SN850X M.2 SSD for only $639.99.",
+      "event_type": "news",
+      "tickers": [
+        "6000"
+      ]
+    },
+    {
+      "title": "Electrical panel company SPAN launches XFRA \"distributed data center\" offering",
+      "link": "https://www.datacenterdynamics.com/en/news/electrical-panel-company-span-launches-xfra-distributed-data-center-offering",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-24T01:00:26+08:00",
+      "summary": "Aims to use underutilized electrical capacity in homes and commercial spaces",
+      "event_type": "news",
+      "tickers": [
+        "6000",
+        "NVDA",
+        "GOOGL",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "NVIDIA and Google Cloud Collaborate to Advance Agentic and Physical AI",
+      "link": "https://blogs.nvidia.com/blog/google-cloud-agentic-physical-ai-factories",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-22T20:00:00+08:00",
+      "summary": "NVIDIA and Google Cloud have collaborated for more than a decade, co‑engineering a full‑stack AI platform that spans every technology layer — from performance‑optimized libraries and frameworks to enterprise‑grade cloud services. This foundation enables developers, startups and enterprises to push agentic and physical AI out of the lab and into production — from agents that […]",
+      "event_type": "news",
+      "tickers": [
+        "6000",
+        "NVDA",
+        "GOOGL",
+        "META"
+      ]
+    },
+    {
+      "title": "Corsair Vengeance RGB Custom Lab Cherry Blossom DDR5-6000 C36 2x16GB Review: RAM customization made easy",
+      "link": "https://www.tomshardware.com/pc-components/ram/corsair-vengeance-rgb-custom-lab-cherry-blossom-ddr5-6000-c36-2x16gb-review",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-15T20:00:00+08:00",
+      "summary": "Corsair has launched a custom creator program to customize the memory you buy. Is it unique enough to make it stand out among the competition?",
+      "event_type": "news",
+      "tickers": [
+        "6000"
+      ]
+    },
+    {
+      "title": "Save $680 instantly on this massive Corsair 96GB DDR5-6000 RAM kit — 57% discount slashes price tag to $499",
+      "link": "https://www.tomshardware.com/pc-components/ram/save-usd680-instantly-on-this-massive-corsair-96gb-ddr5-6000-ram-kit-57-percent-discount-slashes-price-tag-to-usd499",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-11T23:59:46+08:00",
+      "summary": "If you've been looking to score a high-capacity kit of RAM but the AI boom has destroyed any chance of that happening, Newegg might have just the deal for you. The 96GB Corsair Vengeance DDR5-6000 RAM kit usually costs over $1,100, but you can get it for less than half if you act quickly.",
+      "event_type": "news",
+      "tickers": [
+        "6000"
+      ]
+    },
+    {
+      "title": "Rubin Faces Delay Risks Amid Ongoing Supply Chain Adjustments; Blackwell to Account for Over 70% of NVIDIA’s High-End GPU Shipments in 2026, Says TrendForce",
+      "link": "https://www.trendforce.com/presscenter/news/20260408-13003.html",
+      "source": "TrendForce 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-08T17:00:54+08:00",
+      "summary": "According to TrendForce’s latest findings on AI servers, NVIDIA’s high-end AI chip shipment mix is expected to change in 2026. The combined share of Hopper and Rubin series in overall high-end GPU shipments is anticipated to decrease due to geopolitical issues and ongoing supply chain changes. Meanwhile, the Blackwell series is projected to grow markedly from 61% to 71%, solidifying its leading position in the market.",
+      "event_type": "news",
+      "tickers": [
+        "4500",
+        "6000",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "蘋果核准 Mac 與輝達 eGPU 連結運行，為 Mac 生態系發展 AI 奠基",
+      "link": "https://technews.tw/2026/04/06/apple-approves-macs-to-connect-and-run-with-nvidia-egpus",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-06T15:00:36+08:00",
+      "summary": "在人工智慧需求持續呈現爆炸性成長的今日，蘋果宣布了一項足以改變業界生態的重大硬體支援決策，也就是蘋果已正式核准 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "6000",
+        "NVDA",
+        "AAPL",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Save $240 on Intel's Core Ultra 7 270K Plus with 32GB of DDR5-6000 and Z890 motherboard — get Intel's newest, fastest gaming CPU in a bundle that's 23% off",
+      "link": "https://www.tomshardware.com/pc-components/save-usd240-on-intels-core-ultra-7-270k-plus-with-32gb-of-ddr5-6000-and-z890-motherboard-get-intels-newest-fastest-gaming-cpu-in-a-bundle-thats-23-percent-off",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-03T23:00:02+08:00",
+      "summary": "Score Intel's latest Core Ultra 7 270K Plus with a Z890 motherboard and 32GB of DDR5-6000 memory for $240 off with this bundle.",
+      "event_type": "news",
+      "tickers": [
+        "6000"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "5090",
+      "count": 1
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "AAPL",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

@@ -1,0 +1,135 @@
+{
+  "ticker": "1985",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "The United States Is Repeating Its Silicon Mistake with Gallium Nitride",
+      "link": "https://warontherocks.com/cogs-of-war/the-united-states-is-repeating-its-silicon-mistake-with-gallium-nitride",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T16:00:13+08:00",
+      "summary": "China controls 99 percent of the world&#8217;s primary gallium, a critical mineral and semiconductor crucial for building the microchips of the future. In 2023, it placed export controls on gallium to retaliate against American restrictions on the export of advanced chips to China. In December 2024, China escalated to an outright ban on gallium exports to the United States. The U.S. National Defense Stockpile had zero gallium reserves when that ban landed.The United States has been here before. ",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nChina controls 99 percent of the world’s primary gallium , a critical mineral and semiconductor crucial for building the microchips of the future. In 2023, it placed export controls on gallium to retaliate against American restrictions on the export of advanced chips to Chi",
+      "event_type": "earnings",
+      "tickers": [
+        "1987",
+        "1976",
+        "1985",
+        "1958",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Updated thoughts on industrial policy",
+      "link": "https://www.noahpinion.blog/p/updated-thoughts-on-industrial-policy",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-20T13:07:55+08:00",
+      "summary": "Economic consensus is changing, but it has a long way to go.",
+      "body_text": "I’ve long been an industrial policy enthusiast. My favorite popular nonfiction book is Joe Studwell’s How Asia Works , a synthesis of decades of research about the economic miracles in Japan, South Korea, and Taiwan. I wrote a whole series of posts examining the successes and failures of various developing countries through the lens of Studwell’s ideas:\nThere are a bunch of other good books and pa",
+      "event_type": "earnings",
+      "tickers": [
+        "1985",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "How Iran Should End the War",
+      "link": "https://www.foreignaffairs.com/middle-east/how-iran-should-end-war",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-03T12:00:00+08:00",
+      "summary": "A deal Tehran could take.",
+      "body_text": "M. JAVAD ZARIF is Associate Professor of Global Studies at the University of Tehran and Founder and President of Possibilities Architects. He previously served as Iran’s Vice President, Foreign Minister, and Permanent Representative in the United Nations. The views expressed here are his own.\nA Deal Tehran Could Take\nM. Javad Zarif\nIran did not start its war with the United States and Israel. But ",
+      "event_type": "policy",
+      "tickers": [
+        "1985"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "The case for fixing everything",
+      "link": "https://www.technologyreview.com/2026/04/17/1135408/book-review-stewart-brand-fixing-everything-maintenance",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-17T18:00:00+08:00",
+      "summary": "The handsome new book Maintenance: Of Everything, Part One, by the tech industry legend Stewart Brand, promises to be the first in a series offering “a comprehensive overview of the civilizational importance of maintenance.” One of Brand’s several biographers described him as a mainstay of both counterculture and cyberculture, and with Maintenance, Brand wants us&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "1938",
+        "1966",
+        "1980",
+        "1968",
+        "1985"
+      ]
+    },
+    {
+      "title": "An Interview with F1 Driver and Venture Capitalist Nico Rosberg About the Drive to Win",
+      "link": "https://stratechery.com/2026/an-interview-with-f1-driver-and-venture-capitalist-nico-rosberg-about-the-drive-to-win",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-16T18:00:00+08:00",
+      "summary": "An interview with former F1 driver and current venture capitalist Nico Rosberg about finding the mental edge and maximizing opportunities.",
+      "event_type": "news",
+      "tickers": [
+        "1985",
+        "1982"
+      ]
+    },
+    {
+      "title": "How the Iran War Will Upend the Global Economy",
+      "link": "https://www.foreignaffairs.com/iran/how-iran-war-will-upend-global-economy",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-08T12:00:00+08:00",
+      "summary": "The Iran war risks not just an energy Shock—but also a debt crisis.",
+      "event_type": "news",
+      "tickers": [
+        "1973",
+        "1979",
+        "1971",
+        "1972",
+        "1974",
+        "1982",
+        "1985"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "TSM",
+      "count": 2
+    },
+    {
+      "ticker": "1987",
+      "count": 1
+    },
+    {
+      "ticker": "1976",
+      "count": 1
+    },
+    {
+      "ticker": "1958",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

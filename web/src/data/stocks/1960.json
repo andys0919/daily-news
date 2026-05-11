@@ -1,0 +1,91 @@
+{
+  "ticker": "1960",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Why the Next India-Pakistan War Will Escalate",
+      "link": "https://www.foreignaffairs.com/india/why-next-india-pakistan-war-will-escalate",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T12:00:00+08:00",
+      "summary": "America will struggle to contain it.",
+      "body_text": "ELIZABETH THRELKELD is a Senior Fellow and Director of the South Asia Program at the Stimson Center.\nAnd Why America Will Struggle to Contain It\nElizabeth Threlkeld\nIn his 2026 State of the Union address, U.S. President Donald Trump repeated a familiar refrain celebrating his role in ending the May 2025 conflict between India and Pakistan—the deal he has said he is most proud of. He declared that ",
+      "event_type": "earnings",
+      "tickers": [
+        "1960",
+        "1971"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "link": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260505_1~2e47b4c747.en.html",
+      "source": "ECB Press",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T23:40:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "2100",
+        "1981",
+        "1960",
+        "2050"
+      ]
+    },
+    {
+      "title": "The Trouble With Permanent Alliances",
+      "link": "https://www.foreignaffairs.com/iran/trouble-permanent-alliances",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-13T12:00:00+08:00",
+      "summary": "America’s pacts should have expiration dates.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "1756",
+        "1778",
+        "1793",
+        "1796",
+        "1917",
+        "1969",
+        "1945",
+        "1955",
+        "1979",
+        "1986",
+        "1973",
+        "1972",
+        "1960",
+        "1952"
+      ]
+    },
+    {
+      "title": "How Regions Shaped World Population Growth since 1960",
+      "link": "https://www.stlouisfed.org/on-the-economy/2026/apr/how-regions-shaped-world-population-growth-1960",
+      "source": "St. Louis Fed On the Economy",
+      "category": "💰 財經與總經",
+      "published": "2026-04-06T17:30:00+08:00",
+      "summary": "While the global population more than doubled from 1960 to 2020, the growth was unevenly distributed. Two regions accounted for most of that population change.",
+      "event_type": "news",
+      "tickers": [
+        "1960"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1971",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

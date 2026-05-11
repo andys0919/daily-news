@@ -1,0 +1,67 @@
+{
+  "ticker": "9100",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Save $290 on this Ryzen 7 9800X3D, 32GB DDR5, Samsung 9100 Pro 1TB combo from Newegg — $949.99 bundle includes free 750W power supply and one-year VPN subscription - Tom's Hardware",
+      "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQUXM3QkNNc3puSVVzLWlXWTZ2OG9WbXdVUkJWNE9RYlp4elRPZlRJVmgyZEhMVGVlRzB0MUhKZ0E2TFFpNlpGSlMwZ1laVXRQX2pWX0c4Ym5qMlJPMG1aeHYyZE42OHpKUlBJN3d2YmVySmJhcmNJUFFGd3lLbl9qMnYtc0E5aEdtNnE2bTZPU2FFZnIzMHE0bTJaRlJjbGNPc3F1N0hub3FEMlRsNEppbHFCRy0tMU0tLXdzci1jYXJkMjFxcHczQ0JZY1E1bVJLQ2VWbU5PVjlNM2JINjBPdzk5TUY5MXJQSVFMMFZhZkFwcGUyMGRGd0w5dVdfYzRJeFYxVGJKSE9SN1dNM1JIYTA5MDF4NUxMSUlDZ1d4X2h0LWFQbDdXaG5kZjdKMHc",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-09T21:58:58+08:00",
+      "summary": "Save $290 on this Ryzen 7 9800X3D, 32GB DDR5, Samsung 9100 Pro 1TB combo from Newegg — $949.99 bundle includes free 750W power supply and one-year VPN subscription&nbsp;&nbsp;Tom's Hardware",
+      "event_type": "news",
+      "tickers": [
+        "9100"
+      ]
+    },
+    {
+      "title": "Save $290 on this Ryzen 7 9800X3D, 32GB DDR5, Samsung 9100 Pro 1TB combo from Newegg —  $949.99 bundle includes free 750W power supply and one-year VPN subscription",
+      "link": "https://www.tomshardware.com/pc-components/save-usd290-on-this-ryzen-7-9800x3d-32gb-ddr5-samsung-9100-pro-1tb-combo-from-newegg-usd949-99-bundle-includes-free-750w-power-supply-and-one-year-vpn-subscription",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-09T21:58:58+08:00",
+      "summary": "Newegg’s latest AM5 combo pairs the Ryzen 7 9800X3D with 32GB DDR5 memory, a Samsung Gen 5 SSD, a free Corsair PSU, and a NordVPN subscription.",
+      "event_type": "news",
+      "tickers": [
+        "9100"
+      ]
+    },
+    {
+      "title": "Outstanding RTX 5080 combo bundle saves you $1,385 on a complete high-spec PC build — 64GB of RAM, 9850X3D, 2TB Samsung 9100 Pro, Corsair Case, and Power Supply for $2849",
+      "link": "https://www.tomshardware.com/speakers/outstanding-rtx-5080-combo-bundle-saves-you-usd1-385-on-a-complete-high-spec-pc-build-64gb-of-ram-9850x3d-2tb-samsung-9100-pro-corsair-case-and-power-supply-for-usd2849",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T19:31:42+08:00",
+      "summary": "Every hardware component you need to build a top-tier gaming PC, all in one Newegg combo bundle. It also helps that it saves you a whopping $1,385 and includes a powerful RTX 5080 and 9850X3D.",
+      "event_type": "news",
+      "tickers": [
+        "5080",
+        "9100",
+        "2849"
+      ]
+    },
+    {
+      "title": "Pay $611 for 64GB of Corsair Vengeance RAM and Samsung's 2TB PCIe Gen 5 9100 Pro when paired with a Gigabyte X870 Auros Elite motherboard and Corsair Frame 5000D case — matching colors for a pure white build",
+      "link": "https://www.tomshardware.com/pc-components/pay-usd611-for-64gb-of-corsair-vengeance-ram-and-samsungs-2tb-pcie-gen-5-9100-pro-when-paired-with-a-gigabyte-x870-auros-elite-motherboard-and-corsair-frame-5000d-case-matching-colors-for-a-pure-white-build",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-01T19:23:35+08:00",
+      "summary": "Bag 64GB of DDR5-6400 RAM, a 2TB Samsung 9100 Pro SSD, X870 motherboard, and Corsair Frame PC Case",
+      "event_type": "news",
+      "tickers": [
+        "9100",
+        "6400"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

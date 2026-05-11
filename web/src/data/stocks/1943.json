@@ -1,0 +1,67 @@
+{
+  "ticker": "1943",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "The Importance of the Battle of Savo Island",
+      "link": "https://warontherocks.com/the-importance-of-the-battle-of-savo-island",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-27T15:15:26+08:00",
+      "summary": "On the night of Aug. 9, 1942, an Allied fleet of 17 warships guarded the approaches to Guadalcanal. The fleet was newer, larger, and better equipped than the Japanese force bearing down on it. It had six heavy cruisers, two light cruisers, and nine destroyers. It carried radar, a technology that should have detected the enemy long before any lookout could spot a ship through the darkness. By the numbers, the Allied squadron was on average 10 years newer and outweighed its opponent by more than 8",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nOn the night of Aug. 9, 1942, an Allied fleet of 17 warships guarded the approaches to Guadalcanal. The fleet was newer, larger, and better equipped than the Japanese force bearing down on it. It had six heavy cruisers, two light cruisers, and nine destroyers. It carried ra",
+      "event_type": "earnings",
+      "tickers": [
+        "1942",
+        "0053",
+        "0144",
+        "0150",
+        "0216",
+        "1943",
+        "1950",
+        "1949"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1942",
+      "count": 1
+    },
+    {
+      "ticker": "0053",
+      "count": 1
+    },
+    {
+      "ticker": "0144",
+      "count": 1
+    },
+    {
+      "ticker": "0150",
+      "count": 1
+    },
+    {
+      "ticker": "0216",
+      "count": 1
+    },
+    {
+      "ticker": "1950",
+      "count": 1
+    },
+    {
+      "ticker": "1949",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:26Z"
+}

@@ -1,0 +1,167 @@
+{
+  "ticker": "1945",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Xi’s Forever Purge",
+      "link": "https://www.foreignaffairs.com/china/xis-forever-purge",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T12:00:00+08:00",
+      "summary": "The real goal behind China’s “self-revolution.”",
+      "body_text": "Neil Thomas is a Fellow on Chinese Politics at Asia Society Policy Institute’s Center for China Analysis.\nShengyu Wang is a Research Assistant at Asia Society Policy Institute’s Center for China Analysis.\nThe Real Goal Behind China’s “Self-Revolution”\nNeil Thomas and Shengyu Wang\nSince becoming China’s leader in 2012, Xi Jinping has carried out stunning assaults on both the Chinese Communist Party",
+      "event_type": "earnings",
+      "tickers": [
+        "1978",
+        "1945"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "The New Resource Curse",
+      "link": "https://www.foreignaffairs.com/united-states/new-resource-curse",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-30T12:00:00+08:00",
+      "summary": "Critical minerals will scramble geopolitics.",
+      "body_text": "RABAH AREZKI is Director of Research at the French National Center for Scientific Research and a Senior Fellow at the Harvard Kennedy School. He previously served as Vice President and Chief Economist at the African Development Bank and as Chief Economist for the Middle East and North Africa at the World Bank.\nFREDERICK VAN DER PLOEG is Professor of Economics at the University of Oxford and Resear",
+      "event_type": "earnings",
+      "tickers": [
+        "2040",
+        "1974",
+        "1945",
+        "1986"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "What is Strategic Rivalry? Why Should We Care?",
+      "link": "https://warontherocks.com/2026/04/what-is-strategic-rivalry-why-should-we-care",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-09T15:30:49+08:00",
+      "summary": "The states most likely to draw America into its next major crisis or war are not unknowns. They are the usual suspects: The same handful of states that have threatened the United States repeatedly across decades. Interstate rivals have caused roughly 80 percent of history&#8217;s wars and the odds of any given rivalry ending peacefully are little better than a coin toss. Yet America&#8217;s key strategy documents since the 2017 National Security Strategy have used phrases like great power compet",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe states most likely to draw America into its next major crisis or war are not unknowns. They are the usual suspects: The same handful of states that have threatened the United States repeatedly across decades. Interstate rivals have caused roughly 80 percent of history’s",
+      "event_type": "earnings",
+      "tickers": [
+        "1873",
+        "1945",
+        "1816",
+        "1949",
+        "1958",
+        "1989",
+        "1979",
+        "1972",
+        "1815"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "A Gaza for Gazans",
+      "link": "https://www.foreignaffairs.com/israel/gaza-gazans",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-23T12:00:00+08:00",
+      "summary": "Palestinians must lead the rebuilding of the strip.",
+      "event_type": "news",
+      "tickers": [
+        "1945",
+        "1980"
+      ]
+    },
+    {
+      "title": "The Trouble With Permanent Alliances",
+      "link": "https://www.foreignaffairs.com/iran/trouble-permanent-alliances",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-13T12:00:00+08:00",
+      "summary": "America’s pacts should have expiration dates.",
+      "event_type": "news",
+      "tickers": [
+        "1947",
+        "1756",
+        "1778",
+        "1793",
+        "1796",
+        "1917",
+        "1969",
+        "1945",
+        "1955",
+        "1979",
+        "1986",
+        "1973",
+        "1972",
+        "1960",
+        "1952"
+      ]
+    },
+    {
+      "title": "The Campaign Ends at the Breach: Lessons from Ukraine on Why Armies Fail",
+      "link": "https://warontherocks.com/2026/04/the-campaign-ends-at-the-breach-lessons-from-ukraine-on-why-armies-fail",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-08T15:30:34+08:00",
+      "summary": "Somewhere behind the Novodarivka breach point in June 2023, Ukrainian armored formations sat staged and ready. The ammunition was there. The fuel was there. The original concept of operations called for 12 brigades to push through roughly 30 kilometers of frontage, isolate Tokmak within days, and drive south before Russian forces could consolidate. They never moved. The engineers could not open the lane. Without the lane, none of the rest of it mattered.Against prepared defenses, breaching and g",
+      "event_type": "news",
+      "tickers": [
+        "1945",
+        "META"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1978",
+      "count": 1
+    },
+    {
+      "ticker": "2040",
+      "count": 1
+    },
+    {
+      "ticker": "1974",
+      "count": 1
+    },
+    {
+      "ticker": "1986",
+      "count": 1
+    },
+    {
+      "ticker": "1873",
+      "count": 1
+    },
+    {
+      "ticker": "1816",
+      "count": 1
+    },
+    {
+      "ticker": "1949",
+      "count": 1
+    },
+    {
+      "ticker": "1958",
+      "count": 1
+    },
+    {
+      "ticker": "1989",
+      "count": 1
+    },
+    {
+      "ticker": "1979",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

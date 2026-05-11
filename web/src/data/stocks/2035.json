@@ -1,0 +1,406 @@
+{
+  "ticker": "2035",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "TSMC taps wind power as AI chip demand soars, Taiwan feels energy crunch",
+      "link": "https://arstechnica.com/gadgets/2026/05/tsmc-taps-wind-power-as-ai-chip-demand-soars-taiwan-feels-energy-crunch",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T05:47:27+08:00",
+      "summary": "TSMC backs renewables during record demand for energy-hungry chip manufacturing.",
+      "body_text": "TSMC backs renewables during record demand for energy-hungry chip manufacturing.\nTaiwanese chipmaker TSMC is raking in record profits during the AI boom—but it is also racing to help Taiwan develop wind power and other energy alternatives to fossil fuels amid a global energy crisis.\nThe chipmaker has signed a 30-year corporate power purchase agreement for 100 percent of the power produced by the H",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "2040",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Is xAI a neocloud now?",
+      "link": "https://techcrunch.com/2026/05/06/is-xai-a-neocloud-now",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T05:32:55+08:00",
+      "summary": "xAI's real business may be more about building data centers than training AI models.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nOn Wednesday, xAI and Anthropic announced a surprise partnership that has the Claude-maker buying out “all of the compute capacity at [xAI’s] Colossus 1 data center,” roughly 300MW that allowed Anthropic to immediately raise its usag",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "GOOGL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Looming Quantum Threat as PQC Market Expands",
+      "link": "https://www.eetimes.com/looming-quantum-threat-as-pqc-market-expands",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T19:37:53+08:00",
+      "summary": "PQC market will expand from $1.2 billion in 2026 to $13 billion by 2035, driven by \"Harvest Now, Decrypt Later.\" The post Looming Quantum Threat as PQC Market Expands appeared first on EE Times.",
+      "body_text": "A recent study by Juniper Research projects that the post-quantum cryptography (PQC) market will expand from $1.2 billion in 2026 to $13 billion by 2035, with a compound annual growth rate of 30%.\nThis growth is driven by emerging regulations and sustained R&D aimed at preparing for “ Q-Day ,” when quantum computers could break current encryption. The study examines technology adoption across 61 c",
+      "event_type": "earnings",
+      "tickers": [
+        "2035"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Real Threat to Taiwan",
+      "link": "https://www.foreignaffairs.com/china/real-threat-taiwan",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-29T12:00:00+08:00",
+      "summary": "America Is preparing for the wrong kind of crisis",
+      "body_text": "EYCK FREYMANN is a Hoover Fellow at Stanford University, Nonresident Research Fellow at the U.S. Naval War College, and Director of Indo-Pacific at Greenmantle. He is the author of Defending Taiwan: A Strategy to Prevent War with China .\nAmerica Is Preparing for the Wrong Kind of Crisis\nEyck Freymann\nIt begins not with missiles but with cutter ships. One morning, dozens of Chinese coast guard vess",
+      "event_type": "earnings",
+      "tickers": [
+        "2049",
+        "1914",
+        "2035",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Western Union eyeing stablecoin launch to settle global transactions without SWIFT, CEO says",
+      "link": "https://www.coindesk.com/business/2026/04/27/western-union-eyeing-stablecoin-launch-to-settle-global-transactions-without-swift-ceo-says",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-28T04:35:56+08:00",
+      "summary": "",
+      "body_text": "Western Union (WU) is preparing to roll out a stablecoin strategy that could reshape how the 175-year-old money-transfer company settles payments across its global network.\nCEO Devin McGranahan said on the company's first-quarter earnings call that Western Union’s U.S. dollar stablecoin (USDPT) is in the final stages of readiness and is expected to launch next month. The firm announced in October ",
+      "event_type": "earnings",
+      "tickers": [
+        "2035"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Allbirds abandons clothes, pivots to \"AI compute infrastructure\"",
+      "link": "https://arstechnica.com/ai/2026/04/bubble-watch-fashion-brand-allbirds-pivots-hard-to-become-ai-services-company",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-15T23:26:56+08:00",
+      "summary": "Desperate stock-boosting move recalls 2017's \"Long Island Blockchain\" frenzy.",
+      "body_text": "Desperate stock-boosting move recalls 2017’s “Long Island Blockchain” frenzy.\nIf you know the name Allbirds, it’s probably for the company’s longstanding stated commitment to “sustainable shoes and apparel.” Going forward, though, the corporate entity wants to be known for its “long-term vision to become a fully integrated GPU-as-a-Service (GPUaaS) and AI-native cloud solutions provider.”\nIn a new",
+      "event_type": "earnings",
+      "tickers": [
+        "2035"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "PQC Timelines Provide Direction, but Not Action",
+      "link": "https://www.eetimes.com/pqc-timelines-provide-direction-but-not-action",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-10T16:22:48+08:00",
+      "summary": "U.K. and EU PQC adoption timelines provide direction but lack regulatory teeth. Learn why delaying migration creates critical security risks. The post PQC Timelines Provide Direction, but Not Action appeared first on EE Times.",
+      "body_text": "Current post-quantum cryptography (PQC) adoption timelines in the U.K. and the European Union provide direction, but they do not compel action. That distinction is becoming one of the most important and underappreciated risks in cybersecurity today.\nIn the U.K., the National Cyber Security Centre (NCSC) has set out a clear roadmap: discovery and planning by 2028, priority system migration by 2031,",
+      "event_type": "earnings",
+      "tickers": [
+        "2035",
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "The latest GHG protocol proposal raises the bar for “100% renewable” reporting in data centers",
+      "link": "https://www.datacenterdynamics.com/en/opinions/the-latest-ghg-protocol-proposal-raises-the-bar-for-100-renewable-reporting-in-data-centers",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-10T21:00:28+08:00",
+      "summary": "Hourly data highlights where renewable coverage still falls short",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Govt bets on five local semiconductor companies capturing 7% of global advanced packaging market by 2035 - The Edge Malaysia",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9tTnctNXg0cFQ3eTBucjUzVURTdUpVN1pIbmN4eGhoN3F1ZjlPS2d5cTVaaHkyWW1vUmg0T3k2dzNfbVg2dTdnMmVfdFd6YkRB?oc=5",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T15:33:36+08:00",
+      "summary": "Govt bets on five local semiconductor companies capturing 7% of global advanced packaging market by 2035&nbsp;&nbsp;The Edge Malaysia",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Malaysia wants 7% of the global advanced packaging market by 2035. Right now, it has zero. - Tech Wire Asia",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcVIxVnZ5NXV5aE1TVHpYNEZfQUV5Q28wQVRyOEJxbHVJOHNka09nOEp1VHFTRktmbndfTmRaWmoyMC10NU8zak1iS1JwS2hXN2k2SEx3RGREMVJoVHRDbTJUaDVLbWtUYlJycWNSNEdPY2I1MHJUSkRnMUNPQTViMzdkZUg2NkpGTm1pdzVB",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T18:00:42+08:00",
+      "summary": "Malaysia wants 7% of the global advanced packaging market by 2035. Right now, it has zero.&nbsp;&nbsp;Tech Wire Asia",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Asian Development Bank's $70 billion energy and digital infra push puts Southeast Asia center stage",
+      "link": "https://www.cnbc.com/2026/05/07/adb-70-billion-plan-southeast-asia-digital-infrastructure-power.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T13:47:25+08:00",
+      "summary": "Southeast Asia to benefit significantly from Asian Development Bank's $70 billion new energy and digital infrastructure plan in Asia and the Pacific by 2035.",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "AI agents becoming more relevant than humans by 2035 has Big Tech 'terrified', says Hoskinson",
+      "link": "https://www.coindesk.com/business/2026/05/06/ai-agents-will-become-more-relevant-than-humans-by-2035-says-charles-hoskinson",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-07T06:35:57+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "2035",
+        "GOOGL",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "It’s time to make a plan for nuclear waste",
+      "link": "https://www.technologyreview.com/2026/04/29/1136659/plan-nuclear-waste",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-29T16:00:00+08:00",
+      "summary": "Today, nuclear energy enjoys a rare moment of support across the political spectrum in the US. Interest from tech companies that are scrambling to meet demand for massive data centers has sparked a resurgence of money and attention in the industry. That newfound interest is exactly why it’s time to talk about an old problem:&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "2035",
+        "1987"
+      ]
+    },
+    {
+      "title": "Cross-border B2B stablecoin payments to hit $5 trillion by 2035, says Juniper Research",
+      "link": "https://www.coindesk.com/business/2026/04/27/cross-border-b2b-stablecoin-payments-to-rise-by-over-37-000-to-usd5t-by-2035",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-27T23:49:01+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Future of Advanced Packaging Semiconductor Market (2026-2035) - openPR.com",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdkk3QVdDOG5XQlhwTS1tSUt1U1ZVbHZtc1BCMk9QYzhvY21WcTBEMlZPeHFuOVZQWlVLazZMc3dDTWRBel9CTGZiQzZVR0lKUGk1NDA3REo1ZVFVa2pmZnNPSElzc0dzOXRsblo4dGFERXJkSkUwVzByeWRYUmMzdlRaQUUwSzFQLU1ma2RVRGJzSS03UHkzNGtYQQ?oc=5",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-24T19:42:10+08:00",
+      "summary": "Future of Advanced Packaging Semiconductor Market (2026-2035)&nbsp;&nbsp;openPR.com",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Electronic Thermal Materials Market Fueled by Advanced Packaging Demands, Analysis to 2035 - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY3FaMDBRd1Bacy1YT0RtemxXTFZYYnlyaDFFSzVESFluVDhIYzItR2dFcEhrV3ZPOFBRSS1kZTM1cEJJcThvY3Y0MFAya0dmTXlxVktjQU5Hc1h5M3UwUXJqamdrSVhvYW15UFBjTXBSV0p0Sm5wdDFtd3I4RG1MS19rT1VXTzZ3Q1FtaWxCaEl6VDJIS3pNR2Z5NTNqSjZGX21YTzB6M3JEdVYxWTR3QzJtZDZidDQzdEpr",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-20T16:16:05+08:00",
+      "summary": "Electronic Thermal Materials Market Fueled by Advanced Packaging Demands, Analysis to 2035 - News and Statistics&nbsp;&nbsp;IndexBox",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "中國目標 2035 前非化石能源拚翻倍：加速再生能源發展，今年 7 座核電上線",
+      "link": "https://technews.tw/2026/04/17/china-clean-energy-nuclear-green",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-17T15:40:47+08:00",
+      "summary": "中國正同步加快核能與非化石能源布局。根據彭博社報導，今年預計將有 7 座核電反應爐完工並投入運轉；同時，官方也 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Humanoids Hit the Factory Floor",
+      "link": "https://www.eetimes.com/humanoids-hit-the-factory-floor",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-14T01:00:00+08:00",
+      "summary": "Humanoid robots have reached manufacturing lines. Success now hinges on power, production-level reliability, and real-world data streams. The post Humanoids Hit the Factory Floor appeared first on EE Times.",
+      "event_type": "news",
+      "tickers": [
+        "2035",
+        "GOOGL",
+        "NVDA",
+        "META",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "HBM Chip Market Growth Driven by 56.3% CAGR by 2035 - Global Growth Insights",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1XLVJCNmktN0VZN21Ia2ZWVW05NDBKbjNpWnNDQTg4UkhUNVdPVFFuYVVLM2dlX21CZndFQ2dfUENSZll4V1d2aWVUcm83aUtmczBQOFJBcHd1QlRsTEhVVlVYa05mNXlSbWdxRUI2WnFlTU5ub2haLTV5X3lGVVE?oc=5",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-10T17:11:10+08:00",
+      "summary": "HBM Chip Market Growth Driven by 56.3% CAGR by 2035&nbsp;&nbsp;Global Growth Insights",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Disperse to Survive: The Logic of French Forward Deterrence",
+      "link": "https://warontherocks.com/2026/04/disperse-to-survive-the-logic-of-french-forward-deterrence",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-10T15:30:43+08:00",
+      "summary": "In his long-awaited nuclear deterrence speech, French President Emmanuel Macron laid out his new doctrine of &#8220;forward deterrence&#8221; (dissuasion avanc&#233;e) and &#8212; for the first time in history &#8212; offered to deploy the French Strategic Air Forces to European countries. &#8220;In the same way that our strategic submarines dilute naturally in the oceans,&#8221; the French president said, &#8220;our strategic air forces will also be able to be spread deep into the European cont",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Stablecoin volumes to reach $719T by 2035 as generational wealth shift speeds up crypto adoption",
+      "link": "https://www.coindesk.com/business/2026/04/09/stablecoin-volumes-to-reach-usd719t-by-2035-as-generational-wealth-shift-speeds-up-crypto-adoption",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-09T22:57:10+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Desalination technology, by the numbers",
+      "link": "https://www.technologyreview.com/2026/04/09/1135495/desalination-technology-numbers",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-09T18:00:00+08:00",
+      "summary": "When I started digging into desalination technology for a new story, I couldn’t help but obsess over the numbers. I’d known on some level that desalination—pulling salt out of seawater to produce fresh water—was an increasingly important technology, especially in water-stressed regions including the Middle East. But just how much some countries rely on desalination,&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Stablecoin Trading Volume Could Skyrocket to $1.5 Quadrillion by 2035: Chainalysis",
+      "link": "https://decrypt.co/363685/stablecoin-trading-volume-skyrocket-1-5-quadrillion-2035-chainalysis",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-04-09T03:06:15+08:00",
+      "summary": "Generational wealth transfer and point-of-sale adoption could drive stablecoin volumes to eclipse traditional payment rails, says Chainalysis.",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "Stablecoin volumes could hit $1.5 quadrillion by 2035 as onchain payments begin to rival Mastercard, Visa: Chainalysis",
+      "link": "https://www.theblock.co/post/396745/stablecoin-volumes-onchain-payments-rival-mastercard-visa-chainalysis",
+      "source": "The Block",
+      "category": "💰 財經與總經",
+      "published": "2026-04-09T01:25:22+08:00",
+      "summary": "Stablecoins volumes could rival Visa and Mastercard, processing up to $1.5 quadrillion annually by 2035 per a new Chainalysis report.",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "國原院啟動 SMR 研究，估最快 2035 年台灣發出第一度電",
+      "link": "https://technews.tw/2026/04/06/nari-smr",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-06T10:45:14+08:00",
+      "summary": "國家原子能科技研究院今年啟動小型模組化反應器（SMR）研究計畫，國原院已初步盤點 3 種 SMR 技術可讓高階 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "2035"
+      ]
+    },
+    {
+      "title": "German males under 45 may need military approval for long stays abroad",
+      "link": "https://www.bbc.com/news/articles/cvg3nr83xyvo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-05T05:16:42+08:00",
+      "summary": "Under the law, travel approvals must generally be granted and it remains unclear how the rule would be enforced if breached.",
+      "event_type": "news",
+      "tickers": [
+        "1956",
+        "2035"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "TSM",
+      "count": 2
+    },
+    {
+      "ticker": "GOOGL",
+      "count": 2
+    },
+    {
+      "ticker": "2040",
+      "count": 1
+    },
+    {
+      "ticker": "META",
+      "count": 1
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "2049",
+      "count": 1
+    },
+    {
+      "ticker": "1914",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

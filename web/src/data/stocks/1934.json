@@ -1,0 +1,111 @@
+{
+  "ticker": "1934",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "NVIDIA and IREN Announce Strategic Partnership to Accelerate Deployment of up to 5 Gigawatts of AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-iren-announce-strategic-partnership-to-accelerate-deployment-of-up-to-5-gigawatts-of-ai-infrastructure",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-08T04:34:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.",
+      "body_text": "NVIDIA (NASDAQ: NVDA) and IREN Limited (NASDAQ: IREN) (“IREN”) today announced a strategic partnership to accelerate deployment of next-generation AI infrastructure.\nThe partnership is intended to accelerate deployment of large-scale AI factories by combining NVIDIA’s DSX AI factory architecture with IREN’s expertise across power, land, data centers, GPU deployment and infrastructure operations.\nF",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "IREN",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA and Corning Announce Long-Term Partnership to Strengthen US Manufacturing for AI Infrastructure",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-and-emerald-ai-join-leading-energy-companies-to-pioneer-flexible-ai-factories-as-grid-assets",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T19:30:00+08:00",
+      "summary": "NVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.",
+      "body_text": "NVIDIA's Endeavor building in Santa Clara, Calif.\nNVIDIA (NASDAQ: NVDA) and Corning Incorporated (NYSE: GLW) today announced a multiyear commercial and technology partnership to dramatically expand U.S.-based manufacturing of the advanced optical connectivity solutions needed to power next-generation AI infrastructure.\nCorning will increase its U.S.-based optical connectivity manufacturing capacit",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "GLW",
+        "1933",
+        "1934"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Airwaves of Power: Why the Pentagon Should Shift to a Commercial-First Spectrum Model",
+      "link": "https://warontherocks.com/cogs-of-war/airwaves-of-power-why-the-pentagon-should-shift-to-a-commercial-first-spectrum-model",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-24T16:00:32+08:00",
+      "summary": "The U.S. military is firing million-dollar missiles at Iranian drones that cost a tiny fraction as much &#8212; a striking example of the kind of overmatch modern warfare punishes.The Department of Defense&#8217;s approach to electromagnetic spectrum policy follows a similar logic, occupying prime mid-band frequencies for vital but relatively low-throughput national security uses &#8212; including radars, satellite communications, navigation, and electronic warfare &#8212; even as those same ban",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe U.S. military is firing million-dollar missiles at Iranian drones that cost a tiny fraction as much — a striking example of the kind of overmatch modern warfare punishes. The Department of Defense’s approach to electromagnetic spectrum policy follows a similar logic, oc",
+      "event_type": "earnings",
+      "tickers": [
+        "1922",
+        "1934",
+        "1978"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "US regulator to review Disney broadcast licences after Jimmy Kimmel joke about Melania Trump",
+      "link": "https://www.bbc.com/news/articles/c4g0zwxl3k0o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-29T03:48:49+08:00",
+      "summary": "The move comes as the White House pressures Disney-owned ABC to fire Kimmel after he called Melania an \"expectant widow\".",
+      "event_type": "news",
+      "tickers": [
+        "1934"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 2
+    },
+    {
+      "ticker": "1933",
+      "count": 2
+    },
+    {
+      "ticker": "IREN",
+      "count": 1
+    },
+    {
+      "ticker": "GLW",
+      "count": 1
+    },
+    {
+      "ticker": "1922",
+      "count": 1
+    },
+    {
+      "ticker": "1978",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

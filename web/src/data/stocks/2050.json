@@ -1,0 +1,102 @@
+{
+  "ticker": "2050",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Libya’s False Peace",
+      "link": "https://www.foreignaffairs.com/libya/libyas-false-peace",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-01T12:00:00+08:00",
+      "summary": "Libya needs political unity, not Washington’s dealmaking.",
+      "body_text": "JALEL HARCHAOUI is a Libya specialist with the Royal United Services Institute.\nFREDERIC WEHREY is Senior Fellow in the Middle East Program at the Carnegie Endowment for International Peace.\nThe Fractured Country Needs Political Unity, Not Washington’s Dealmaking\nJalel Harchaoui and Frederic Wehrey\nFor decades, U.S. involvement in Libya has oscillated between neglect and fleeting moments of attent",
+      "event_type": "earnings",
+      "tickers": [
+        "2050"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "A Post-American Persian Gulf?",
+      "link": "https://www.foreignaffairs.com/iran/post-american-persian-gulf",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-01T12:00:00+08:00",
+      "summary": "The Iran war will accelerate the region’s economic transformation.",
+      "body_text": "KAREN E. YOUNG is Senior Research Scholar at the Center on Global Energy Policy at Columbia University, a Senior Fellow at the Middle East Institute, and author of The Economic Statecraft of the Gulf Arab States: Deploying Aid, Investment, and Development Across the MENAP .\nThe Iran War Will Accelerate the Region’s Economic Transformation\nKaren E. Young\nThe U.S.-Israeli war against Iran has create",
+      "event_type": "earnings",
+      "tickers": [
+        "2050"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "link": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260505_1~2e47b4c747.en.html",
+      "source": "ECB Press",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T23:40:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "2100",
+        "1981",
+        "1960",
+        "2050"
+      ]
+    },
+    {
+      "title": "The new word in home construction could be “plastics”",
+      "link": "https://www.technologyreview.com/2026/04/21/1134856/the-new-word-in-home-construction-could-be-plastics",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-22T05:00:00+08:00",
+      "summary": "Single-use plastics are a persistent source of environmental pollution, and the need to house a growing global population puts increasing pressure on resources such as timber. MIT engineers have an idea that could make a dent in both problems at once. In a recent study, a team led by mechanical engineering professor David Hardt, SM&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "2050",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Desalination plants in the Middle East are increasingly vulnerable",
+      "link": "https://www.technologyreview.com/2026/04/07/1135235/desalination-technology-water",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-07T22:54:06+08:00",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. As the conflict in Iran has escalated, a crucial resource is under fire: the desalination technology that supplies water across much of the region. In early&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "2050"
+      ]
+    },
+    {
+      "title": "Four things we’d need to put data centers in space",
+      "link": "https://www.technologyreview.com/2026/04/03/1135073/four-things-wed-need-to-put-data-centers-in-space",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-04T01:03:19+08:00",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. In January, Elon Musk’s SpaceX filed an application with the US Federal Communications Commission to launch up to one million data centers into Earth’s orbit. The&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "2050",
+        "AMZN",
+        "GOOGL",
+        "NVDA"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:24Z"
+}

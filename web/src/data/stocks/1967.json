@@ -1,0 +1,77 @@
+{
+  "ticker": "1967",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Iran’s New Oil Weapon",
+      "link": "https://www.foreignaffairs.com/iran/irans-new-oil-weapon",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T12:00:00+08:00",
+      "summary": "How America can protect itself—and the global economy.",
+      "event_type": "news",
+      "tickers": [
+        "1951",
+        "1954",
+        "1973",
+        "1967",
+        "1970",
+        "1974",
+        "1975",
+        "1979",
+        "1980"
+      ]
+    },
+    {
+      "title": "The UAE’s exit from Opec could bring ‘even bigger trouble’: Chinese expert",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3351896/uaes-exit-opec-could-bring-even-bigger-trouble-chinese-expert",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-30T06:00:16+08:00",
+      "summary": "The United Arab Emirates’ decision to leave a global cartel of major oil-exporting countries is seen to reflect a widening fracture within the Gulf Cooperation Council (GCC). The UAE announced on Tuesday that it would leave the Organisation of the Petroleum Exporting Countries (Opec) and the wider Opec+ alliance, effective on Friday. The country joined the group in 1971, though one of its emirates – Abu Dhabi – joined in 1967. The UAE’s Ministry of Infrastructure said in a statement that the...",
+      "event_type": "news",
+      "tickers": [
+        "1971",
+        "1967"
+      ]
+    },
+    {
+      "title": "America Should Be Israel’s Partner, Not Its Patron",
+      "link": "https://www.foreignaffairs.com/united-states/america-should-be-israels-partner-not-its-patron",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-22T12:00:00+08:00",
+      "summary": "The pro-Israel case for ending U.S. aid",
+      "event_type": "news",
+      "tickers": [
+        "1967",
+        "1973"
+      ]
+    },
+    {
+      "title": "Lebanon’s Coming Collapse",
+      "link": "https://www.foreignaffairs.com/lebanon/lebanons-coming-collapse",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-03T12:00:00+08:00",
+      "summary": "An Israeli assault is pushing the fragile country to the brink.",
+      "event_type": "news",
+      "tickers": [
+        "1701",
+        "1982",
+        "1948",
+        "1967"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

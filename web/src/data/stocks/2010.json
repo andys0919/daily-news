@@ -1,0 +1,655 @@
+{
+  "ticker": "2010",
+  "market": "tw",
+  "bundle": {
+    "market": "tw",
+    "ticker": "2010",
+    "company_name": "春源",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "2010",
+      "company_name": "春源",
+      "cik": "",
+      "source_type": "mops-api",
+      "source_confidence": "official-mops",
+      "form_type": "MOPS-Q",
+      "fiscal_year": 115,
+      "fiscal_period": "Q1",
+      "period_end": "115Q1",
+      "filed_at": "115Q1",
+      "source_url": "https://mops.twse.com.tw/mops/api/t164sb04",
+      "report_kind": "quarterly",
+      "revenue": 6434872.0,
+      "monthly_revenue": null,
+      "net_income": 374039.0,
+      "operating_income": 464114.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 0.57,
+      "operating_cash_flow": 432525.0,
+      "capex": 15789.0,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"income\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"115\", \"reportList\": [[\"營業收入合計\", \"6,434,872\", \"100.00\", \"6,434,872\", \"100.00\", \"5,595,130\", \"100.00\", \"5,595,130\", \"100.00\"], [\"營業成本合計\", \"5,752,233\", \"89.39\", \"5,752,233\", \"89.39\", \"4,926,013\", \"88.04\", \"4,926,013\", \"88.04\"], [\"營業毛利（毛損）\", \"682,639\", \"10.61\", \"682,639\", \"10.61\", \"669,117\", \"11.96\", \"669,117\", \"11.96\"], [\"營業毛利（毛損）淨額\", \"682,639\", \"10.61\", \"682,639\", \"10.61\", \"669,117\", \"11.96\", \"669,117\", \"11.96\"], [\"營業費用\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　推銷費用\", \"115,446\", \"1.79\", \"115,446\", \"1.79\", \"120,630\", \"2.16\", \"120,630\", \"2.16\"], [\"　　管理費用\", \"98,548\", \"1.53\", \"98,548\", \"1.53\", \"101,610\", \"1.82\", \"101,610\", \"1.82\"], [\"　　預期信用減損損失（利益）\", \"4,531\", \"0.07\", \"4,531\", \"0.07\", \"3,389\", \"0.06\", \"3,389\", \"0.06\"], [\"　營業費用合計\", \"218,525\", \"3.40\", \"218,525\", \"3.40\", \"225,629\", \"4.03\", \"225,629\", \"4.03\"], [\"營業利益（損失）\", \"464,114\", \"7.21\", \"464,114\", \"7.21\", \"443,488\", \"7.93\", \"443,488\", \"7.93\"], [\"營業外收入及支出\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　利息收入\", \"2,008\", \"0.03\", \"2,008\", \"0.03\", \"2,028\", \"0.04\", \"2,028\", \"0.04\"], [\"　　其他收入\", \"24,184\", \"0.38\", \"24,184\", \"0.38\", \"30,940\", \"0.55\", \"30,940\", \"0.55\"], [\"　　其他利益及損失淨額\", \"-15,982\", \"-0.25\", \"-15,982\", \"-0.25\", \"-13,733\", \"-0.25\", \"-13,733\", \"-0.25\"], [\"　　財務成本淨額\", \"24,682\", \"0.38\", \"24,682\", \"0.38\", \"26,448\", \"0.47\", \"26,448\", \"0.47\"], [\"　　採用權益法認列之關聯企業及合資損益之份額淨額\", \"23,361\", \"0.36\", \"23,361\", \"0.36\", \"24,804\", \"0.44\", \"24,804\", \"0.44\"], [\"　營業外收入及支出合計\", \"8,889\", \"0.14\", \"8,889\", \"0.14\", \"17,591\", \"0.31\", \"17,591\", \"0.31\"], [\"稅前淨利（淨損）\", \"473,003\", \"7.35\", \"473,003\", \"7.35\", \"461,079\", \"8.24\", \"461,079\", \"8.24\"], [\"所得稅費用（利益）合計\", \"98,964\", \"1.54\", \"98,964\", \"1.54\", \"95,150\", \"1.70\", \"95,150\", \"1.70\"], [\"繼續營業單位本期淨利（淨損）\", \"374,039\", \"5.81\", \"374,039\", \"5.81\", \"365,929\", \"6.54\", \"365,929\", \"6.54\"], [\"停業單位損益\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"本期淨利（淨損）\", \"374,039\", \"5.81\", \"374,039\", \"5.81\", \"365,929\", \"6.54\", \"365,929\", \"6.54\"], [\"　　　透過其他綜合損益按公允價值衡量之權益工具投資未實現評價損益\", \"18,269\", \"0.28\", \"18,269\", \"0.28\", \"-32,271\", \"-0.58\", \"-32,271\", \"-0.58\"], [\"　不重分類至損益之項目：\", \"18,269\", \"0.28\", \"18,269\", \"0.28\", \"-32,271\", \"-0.58\", \"-32,271\", \"-0.58\"], [\"　　　國外營運機構財務報表換算之兌換差額\", \"73,900\", \"1.15\", \"73,900\", \"1.15\", \"60,869\", \"1.09\", \"60,869\", \"1.09\"], [\"　後續可能重分類至損益之項目：\", \"73,900\", \"1.15\", \"73,900\", \"1.15\", \"60,869\", \"1.09\", \"60,869\", \"1.09\"], [\"　其他綜合損益（淨額）\", \"92,169\", \"1.43\", \"92,169\", \"1.43\", \"28,598\", \"0.51\", \"28,598\", \"0.51\"], [\"本期綜合損益總額\", \"466,208\", \"7.25\", \"466,208\", \"7.25\", \"394,527\", \"7.05\", \"394,527\", \"7.05\"], [\"淨利（損）歸屬於：\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　母公司業主（淨利／損）\", \"369,123\", \"5.74\", \"369,123\", \"5.74\", \"362,680\", \"6.48\", \"362,680\", \"6.48\"], [\"　非控制權益（淨利／損）\", \"4,916\", \"0.08\", \"4,916\", \"0.08\", \"3,249\", \"0.06\", \"3,249\", \"0.06\"], [\"　母公司業主（綜合損益）\", \"457,119\", \"7.10\", \"457,119\", \"7.10\", \"387,049\", \"6.92\", \"387,049\", \"6.92\"], [\"　非控制權益（綜合損益）\", \"9,089\", \"0.14\", \"9,089\", \"0.14\", \"7,478\", \"0.13\", \"7,478\", \"0.13\"], [\"基本每股盈餘\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　基本每股盈餘\", \"0.57\", \"\", \"0.57\", \"\", \"0.56\", \"\", \"0.56\", \"\"], [\"稀釋每股盈餘\", \"\", \"\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　稀釋每股盈餘\", \"0.57\", \"\", \"0.57\", \"\", \"0.56\", \"\", \"0.56\", \"\"]], \"season\": \"1\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2010&SYEAR=2026&SSEASON=1&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2010&year=115&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"115年01月01日至115年03月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"115年第1季\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年01月01日至114年03月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年第1季\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"春源\"}, \"datetime\": \"115/05/10 09:00:49\"}, \"balance\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"115\", \"reportList\": [[\"　流動資產\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　現金及約當現金\", \"619,531\", \"2.57\", \"609,169\", \"2.51\", \"669,302\", \"2.75\"], [\"　　　透過損益按公允價值衡量之金融資產－流動\", \"118,197\", \"0.49\", \"127,999\", \"0.53\", \"115,491\", \"0.47\"], [\"　　　避險之金融資產－流動\", \"0\", \"0.00\", \"0\", \"0.00\", \"1,155\", \"0.00\"], [\"　　　合約資產－流動\", \"4,202,438\", \"17.44\", \"4,801,409\", \"19.82\", \"5,005,795\", \"20.54\"], [\"　　　應收票據淨額\", \"898,739\", \"3.73\", \"1,006,529\", \"4.16\", \"886,761\", \"3.64\"], [\"　　　應收帳款淨額\", \"5,077,770\", \"21.08\", \"4,535,490\", \"18.72\", \"4,215,270\", \"17.30\"], [\"　　　應收帳款－關係人淨額\", \"78,335\", \"0.33\", \"12,617\", \"0.05\", \"33,321\", \"0.14\"], [\"　　　其他應收款淨額\", \"39,287\", \"0.16\", \"33,271\", \"0.14\", \"35,183\", \"0.14\"], [\"　　　其他應收款－關係人淨額\", \"4,119\", \"0.02\", \"2,484\", \"0.01\", \"1,319\", \"0.01\"], [\"　　　存貨\", \"3,904,379\", \"16.21\", \"3,835,093\", \"15.83\", \"5,028,262\", \"20.63\"], [\"　　　預付款項\", \"84,623\", \"0.35\", \"115,844\", \"0.48\", \"223,524\", \"0.92\"], [\"　　　其他流動資產\", \"322,956\", \"1.34\", \"403,137\", \"1.66\", \"357,813\", \"1.47\"], [\"　　流動資產合計\", \"15,350,374\", \"63.71\", \"15,483,042\", \"63.92\", \"16,573,196\", \"68.01\"], [\"　非流動資產\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　透過其他綜合損益按公允價值衡量之金融資產－非流動\", \"1,069,337\", \"4.44\", \"1,051,068\", \"4.34\", \"842,668\", \"3.46\"], [\"　　　採用權益法之投資\", \"762,570\", \"3.17\", \"739,209\", \"3.05\", \"699,819\", \"2.87\"], [\"　　　不動產、廠房及設備\", \"6,419,457\", \"26.64\", \"6,201,981\", \"25.60\", \"5,963,001\", \"24.47\"], [\"　　　使用權資產\", \"78,344\", \"0.33\", \"81,784\", \"0.34\", \"47,467\", \"0.19\"], [\"　　　無形資產\", \"3,778\", \"0.02\", \"3,726\", \"0.02\", \"3,758\", \"0.02\"], [\"　　　遞延所得稅資產\", \"59,571\", \"0.25\", \"64,563\", \"0.27\", \"104,181\", \"0.43\"], [\"　　　其他非流動資產\", \"349,808\", \"1.45\", \"598,831\", \"2.47\", \"133,755\", \"0.55\"], [\"　　非流動資產合計\", \"8,742,865\", \"36.29\", \"8,741,162\", \"36.08\", \"7,794,649\", \"31.99\"], [\"　資產總額\", \"24,093,239\", \"100.00\", \"24,224,204\", \"100.00\", \"24,367,845\", \"100.00\"], [\"　流動負債\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　短期借款\", \"3,537,293\", \"14.68\", \"3,937,158\", \"16.25\", \"4,405,493\", \"18.08\"], [\"　　　應付短期票券\", \"0\", \"0.00\", \"199,963\", \"0.83\", \"399,943\", \"1.64\"], [\"　　　避險之金融負債－流動\", \"0\", \"0.00\", \"0\", \"0.00\", \"1,975\", \"0.01\"], [\"　　　合約負債－流動\", \"2,124,820\", \"8.82\", \"2,254,822\", \"9.31\", \"2,447,554\", \"10.04\"], [\"　　　應付票據\", \"3,513\", \"0.01\", \"64,152\", \"0.26\", \"57,304\", \"0.24\"], [\"　　　應付票據－關係人\", \"2,957\", \"0.01\", \"8,936\", \"0.04\", \"18,613\", \"0.08\"], [\"　　　應付帳款\", \"1,511,566\", \"6.27\", \"1,289,892\", \"5.32\", \"1,422,166\", \"5.84\"], [\"　　　應付帳款－關係人\", \"871\", \"0.00\", \"108,278\", \"0.45\", \"694\", \"0.00\"], [\"　　　其他應付款\", \"1,850,614\", \"7.68\", \"647,453\", \"2.67\", \"1,298,299\", \"5.33\"], [\"　　　其他應付款項－關係人\", \"15,031\", \"0.06\", \"0\", \"0.00\", \"13,174\", \"0.05\"], [\"　　　本期所得稅負債\", \"259,833\", \"1.08\", \"178,350\", \"0.74\", \"251,133\", \"1.03\"], [\"　　　負債準備－流動\", \"43,936\", \"0.18\", \"42,859\", \"0.18\", \"38,367\", \"0.16\"], [\"　　　租賃負債－流動\", \"16,981\", \"0.07\", \"17,819\", \"0.07\", \"9,607\", \"0.04\"], [\"　　　其他流動負債\", \"27,089\", \"0.11\", \"23,733\", \"0.10\", \"238,279\", \"0.98\"], [\"　　流動負債合計\", \"9,394,504\", \"38.99\", \"8,773,415\", \"36.22\", \"10,602,601\", \"43.51\"], [\"　非流動負債\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　長期借款\", \"1,338,370\", \"5.55\", \"1,255,860\", \"5.18\", \"687,960\", \"2.82\"], [\"　　　遞延所得稅負債\", \"842,371\", \"3.50\", \"837,427\", \"3.46\", \"856,607\", \"3.52\"], [\"　　　租賃負債－非流動\", \"27,520\", \"0.11\", \"30,720\", \"0.13\", \"3,011\", \"0.01\"], [\"　　　其他非流動負債\", \"28,049\", \"0.12\", \"27,653\", \"0.11\", \"25,868\", \"0.11\"], [\"　　非流動負債合計\", \"2,236,310\", \"9.28\", \"2,151,660\", \"8.88\", \"1,573,446\", \"6.46\"], [\"　負債總額\", \"11,630,814\", \"48.27\", \"10,925,075\", \"45.10\", \"12,176,047\", \"49.97\"], [\"　歸屬於母公司業主之權益\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　股本\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　　普通股股本\", \"6,476,554\", \"26.88\", \"6,476,554\", \"26.74\", \"6,476,554\", \"26.58\"], [\"　　　股本合計\", \"6,476,554\", \"26.88\", \"6,476,554\", \"26.74\", \"6,476,554\", \"26.58\"], [\"　　資本公積\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　資本公積合計\", \"178,331\", \"0.74\", \"177,964\", \"0.73\", \"177,964\", \"0.73\"], [\"　　保留盈餘\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　　法定盈餘公積\", \"2,253,127\", \"9.35\", \"2,097,271\", \"8.66\", \"2,097,271\", \"8.61\"], [\"　　　　特別盈餘公積\", \"1,324,287\", \"5.50\", \"1,324,287\", \"5.47\", \"1,324,287\", \"5.43\"], [\"　　　　未分配盈餘（或待彌補虧損）\", \"1,973,483\", \"8.19\", \"3,055,527\", \"12.61\", \"1,859,644\", \"7.63\"], [\"　　　保留盈餘合計\", \"5,550,897\", \"23.04\", \"6,477,085\", \"26.74\", \"5,281,202\", \"21.67\"], [\"　　其他權益\", \"\", \"\", \"\", \"\", \"\", \"\"], [\"　　　　國外營運機構財務報表換算之兌換差額\", \"-125,894\", \"-0.52\", \"-195,621\", \"-0.81\", \"-144,614\", \"-0.59\"], [\"　　　　透過其他綜合損益按公允價值衡量之金融資產未實現評價損益\", \"-5,564\", \"-0.02\", \"-23,833\", \"-0.10\", \"18,108\", \"0.07\"], [\"　　　其他權益合計\", \"-131,458\", \"-0.55\", \"-219,454\", \"-0.91\", \"-126,506\", \"-0.52\"], [\"　　歸屬於母公司業主之權益合計\", \"12,074,324\", \"50.11\", \"12,912,149\", \"53.30\", \"11,809,214\", \"48.46\"], [\"　　非控制權益\", \"388,101\", \"1.61\", \"386,980\", \"1.60\", \"382,584\", \"1.57\"], [\"　權益總額\", \"12,462,425\", \"51.73\", \"13,299,129\", \"54.90\", \"12,191,798\", \"50.03\"], [\"　負債及權益總計\", \"24,093,239\", \"100.00\", \"24,224,204\", \"100.00\", \"24,367,845\", \"100.00\"], [\"　預收股款（權益項下）之約當發行股數（單位：股）\", \"0\", \"\", \"0\", \"\", \"0\", \"\"], [\"　母公司暨子公司所持有之母公司庫藏股股數（單位：股）\", \"0\", \"\", \"0\", \"\", \"0\", \"\"]], \"season\": \"1\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2010&SYEAR=2026&SSEASON=1&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2010&year=115&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"115年03月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年12月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}, {\"sub\": [], \"main\": \"%\"}], \"main\": \"114年03月31日\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"春源\"}, \"datetime\": \"115/05/10 09:00:49\"}, \"cashflow\": {\"code\": 200, \"message\": \"查詢成功\", \"result\": {\"reportType\": \"合併\", \"year\": \"115\", \"reportList\": [[\"營業活動之現金流量－間接法\", \"\", \"\"], [\"　繼續營業單位稅前淨利（淨損）\", \"473,003\", \"461,079\"], [\"　本期稅前淨利（淨損）\", \"473,003\", \"461,079\"], [\"　　　折舊費用\", \"78,995\", \"74,655\"], [\"　　　攤銷費用\", \"5,483\", \"5,308\"], [\"　　　預期信用減損損失（利益）數／呆帳費用提列（轉列收入）數\", \"4,531\", \"3,389\"], [\"　　　透過損益按公允價值衡量金融資產及負債之淨損失（利益）\", \"10,300\", \"5,233\"], [\"　　　利息費用\", \"24,682\", \"26,448\"], [\"　　　利息收入\", \"-2,008\", \"-2,028\"], [\"　　　採用權益法認列之關聯企業及合資損失（利益）之份額\", \"-23,361\", \"-24,804\"], [\"　　　處分及報廢不動產、廠房及設備損失（利益）\", \"453\", \"-250\"], [\"　　　收益費損項目合計\", \"99,075\", \"87,951\"], [\"　　　　合約資產（增加）減少\", \"598,971\", \"-1,077,393\"], [\"　　　　應收票據（增加）減少\", \"109,695\", \"91,769\"], [\"　　　　應收帳款（增加）減少\", \"-548,843\", \"-126,923\"], [\"　　　　應收帳款－關係人（增加）減少\", \"-65,717\", \"-30,685\"], [\"　　　　其他應收款（增加）減少\", \"-5,835\", \"-3,262\"], [\"　　　　其他應收款－關係人（增加）減少\", \"-1,635\", \"-409\"], [\"　　　　存貨（增加）減少\", \"-70,553\", \"-670,550\"], [\"　　　　預付款項（增加）減少\", \"31,221\", \"-41,844\"], [\"　　　　其他流動資產（增加）減少\", \"2,076\", \"-9,835\"], [\"　　　　其他營業資產（增加）減少\", \"-554\", \"340\"], [\"　　　　與營業活動相關之資產之淨變動合計\", \"48,826\", \"-1,868,792\"], [\"　　　　合約負債增加（減少）\", \"-130,002\", \"773,482\"], [\"　　　　應付票據增加（減少）\", \"-60,639\", \"6,449\"], [\"　　　　應付票據－關係人增加（減少）\", \"-5,979\", \"4,208\"], [\"　　　　應付帳款增加（減少）\", \"221,674\", \"341,137\"], [\"　　　　應付帳款－關係人增加（減少）\", \"-107,407\", \"-31,690\"], [\"　　　　其他應付款增加（減少）\", \"-90,881\", \"-107,972\"], [\"　　　　其他應付款－關係人增加（減少）\", \"15,031\", \"13,174\"], [\"　　　　負債準備增加（減少）\", \"1,077\", \"1,526\"], [\"　　　　其他流動負債增加（減少）\", \"-1,024\", \"-2,193\"], [\"　　　　與營業活動相關之負債之淨變動合計\", \"-158,150\", \"998,121\"], [\"　　　與營業活動相關之資產及負債之淨變動合計\", \"-109,324\", \"-870,671\"], [\"　　調整項目合計\", \"-10,249\", \"-782,720\"], [\"　營運產生之現金流入（流出）\", \"462,754\", \"-321,641\"], [\"　收取之利息\", \"1,827\", \"1,255\"], [\"　支付之利息\", \"-25,167\", \"-25,545\"], [\"　退還（支付）之所得稅\", \"-6,889\", \"-11,735\"], [\"營業活動之淨現金流入（流出）\", \"432,525\", \"-357,666\"], [\"投資活動之現金流量\", \"\", \"\"], [\"　取得透過損益按公允價值衡量之金融資產\", \"-497\", \"0\"], [\"　取得不動產、廠房及設備\", \"-15,789\", \"-30,947\"], [\"　處分不動產、廠房及設備\", \"491\", \"1,976\"], [\"　存出保證金增加\", \"0\", \"-1,790\"], [\"　存出保證金減少\", \"29\", \"0\"], [\"　其他金融資產增加\", \"0\", \"-44,609\"], [\"　其他金融資產減少\", \"78,105\", \"0\"], [\"　其他非流動資產增加\", \"-113\", \"0\"], [\"　其他非流動資產減少\", \"0\", \"1,892\"], [\"　預付設備款增加\", \"-10,548\", \"-30,058\"], [\"　其他預付款項增加\", \"-10,395\", \"-2,214\"], [\"　投資活動之淨現金流入（流出）\", \"41,283\", \"-105,750\"], [\"籌資活動之現金流量\", \"\", \"\"], [\"　短期借款增加\", \"0\", \"705,088\"], [\"　短期借款減少\", \"-399,865\", \"0\"], [\"　應付短期票券減少\", \"-199,963\", \"-101,910\"], [\"　舉借長期借款\", \"94,190\", \"29,710\"], [\"　償還長期借款\", \"-7,300\", \"-67,162\"], [\"　存入保證金增加\", \"396\", \"356\"], [\"　租賃本金償還\", \"-5,126\", \"-4,397\"], [\"　非控制權益變動\", \"-7,968\", \"-8,714\"], [\"　籌資活動之淨現金流入（流出）\", \"-525,636\", \"552,971\"], [\"匯率變動對現金及約當現金之影響\", \"62,190\", \"51,020\"], [\"本期現金及約當現金增加（減少）數\", \"10,362\", \"140,575\"], [\"期初現金及約當現金餘額\", \"609,169\", \"528,727\"], [\"期末現金及約當現金餘額\", \"619,531\", \"669,302\"], [\"　資產負債表帳列之現金及約當現金\", \"619,531\", \"669,302\"]], \"season\": \"1\", \"urlList\": [{\"url\": \"https://mopsov.twse.com.tw/server-java/t164sb01?step=1&CO_ID=2010&SYEAR=2026&SSEASON=1&REPORT_ID=C\", \"name\": \"XBRL資訊平台\"}, {\"url\": \"http://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2010&year=115&mtype=A\", \"name\": \"電子書查詢\"}], \"titles\": [{\"sub\": [], \"main\": \"會計項目\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"115年01月01日至115年03月31日\"}, {\"sub\": [{\"sub\": [], \"main\": \"金額\"}], \"main\": \"114年01月01日至114年03月31日\"}], \"fiscalYear\": \" \", \"subsidiary\": [], \"companyAbbreviation\": \"春源\"}, \"datetime\": \"115/05/10 09:00:49\"}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "2010",
+      "company_name": "春源",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 2377195.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2010\", \"公司名稱\": \"春源\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"2377195\", \"營業收入-上月營收\": \"1937614\", \"營業收入-去年當月營收\": \"2052836\", \"營業收入-上月比較增減(%)\": \"22.6867167557625\", \"營業收入-去年同月增減(%)\": \"15.800531557318752\", \"累計營業收入-當月累計營收\": \"6428980\", \"累計營業收入-去年累計營收\": \"5592564\", \"累計營業收入-前期比較增減(%)\": \"14.95585924452541\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Gold vs water: Argentina opens glaciers to mining but at what cost to world food supplies?",
+      "link": "https://www.scmp.com/news/china/science/article/3352693/gold-vs-water-argentina-opens-glaciers-mining-what-cost-world-food-supplies",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-10T06:00:06+08:00",
+      "summary": "Beneath the shining white glaciers of the Andean mountains lie valuable deposits of gold, copper and molybdenum which, until recently, were off-limits to the mining companies that have set their eyes on these untapped minerals. That could be about to change, after legislators in Argentina agreed to amend the Glacier Law that has prohibited all mining and exploration activities in the country’s glacier regions since 2010. The legislation defined the country’s 16,000 glaciers – covering an area of",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "UK PM Starmer says he plans to remain in office despite crushing local elections defeat",
+      "link": "https://www.cnbc.com/2026/05/09/uk-pm-starmer-says-no-plans-to-quit-despite-local-elections-defeat.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T21:02:59+08:00",
+      "summary": "The appointment comes amid crushing results for Prime Minister Starmer's ruling Labour Party in local elections.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Hungary's new PM to be sworn in during 'regime change' party",
+      "link": "https://www.bbc.com/news/articles/ce3pqvvzgnko",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-09T08:46:16+08:00",
+      "summary": "Nearly a month ago Péter Magyar steered his Tisza party to a landslide victory, sweeping away 16 years of rule by Viktor Orbán.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Barack Obama was a successful President",
+      "link": "https://www.noahpinion.blog/p/barack-obama-was-a-successful-president-7bb",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-08T14:22:14+08:00",
+      "summary": "A repost, because I'm annoyed.",
+      "event_type": "news",
+      "tickers": [
+        "1933",
+        "1965"
+      ]
+    },
+    {
+      "title": "The Cop on the Corner Is Our First Line of Defense: Local Police and the Surveillance Detection Gap",
+      "link": "https://warontherocks.com/the-cop-on-the-corner-is-our-first-line-of-defense-local-police-and-the-surveillance-detection-gap",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T15:30:15+08:00",
+      "summary": "Just before midnight on Nov. 24, 2025, New Castle County police officers conducting a routine property check in Wilmington&#8217;s Canby Park spotted a white Toyota Tacoma parked after hours. What initially appeared to be a standard traffic stop uncovered a detailed terror plot. The suspect &#8212; a University of Delaware student &#8212; was found in possession of a converted machine gun, more than 100 rounds of ammunition, body armor, and a handwritten notebook mapping out a planned attack on ",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Philip R. Lane: Climate change and monetary policy",
+      "link": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260505_1~2e47b4c747.en.html",
+      "source": "ECB Press",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T23:40:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "2100",
+        "1981",
+        "1960",
+        "2050"
+      ]
+    },
+    {
+      "title": "AI didn't delete your database, you did",
+      "link": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-05T22:07:50+08:00",
+      "summary": "Article URL: https://idiallo.com/blog/ai-didnt-delete-your-database-you-did Comments URL: https://news.ycombinator.com/item?id=48022742 Points: 489 # Comments: 269",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Why does China portray India as an elephant? Decoding the politics of animal analogy",
+      "link": "https://www.scmp.com/news/china/diplomacy/article/3352233/why-does-china-portray-india-elephant-decoding-politics-animal-analogy",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-03T12:00:24+08:00",
+      "summary": "In December 2010, on the final day of his three-day India visit, Chinese premier Wen Jiabao offered a metaphorical vision for bilateral ties, suggesting that “the dragon and the elephant should tango”. The analogy – dragon for China, elephant for India – had already circulated in Western academic and media circles as a comparative frame. With Wen’s remark, it formally entered China’s diplomatic lexicon. Over the past 15 years, through cycles of border tensions and uneasy resets, China’s...",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
+      "title": "The hidden cost of Google's AI defaults and the illusion of choice",
+      "link": "https://arstechnica.com/ai/2026/04/googles-privacy-maze-how-gemini-traps-you-and-your-data",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-30T19:00:31+08:00",
+      "summary": "Google says it respects user privacy in AI, but the reality is not so black and white.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Rethinking Corporate Risk and Alignment in an Era of Economic Statecraft",
+      "link": "https://warontherocks.com/rethinking-corporate-risk-and-alignment-in-an-era-of-economic-statecraft",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-30T15:00:42+08:00",
+      "summary": "Editor&#8217;s note: This article is the eighth in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the Potomac Institute for Policy Studies&#160;and&#160;War on the Rocks. Prior installments can be found at the&#160;War by Other Ledgers&#160;page.In Sept. 2010, following a collision between a Chinese trawler and Japanese",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "The New Resource Curse",
+      "link": "https://www.foreignaffairs.com/united-states/new-resource-curse",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-30T12:00:00+08:00",
+      "summary": "Critical minerals will scramble geopolitics.",
+      "event_type": "earnings",
+      "tickers": [
+        "2040",
+        "1974",
+        "1945",
+        "1986"
+      ]
+    },
+    {
+      "title": "Orbán steps down from Hungarian parliament after landslide defeat",
+      "link": "https://www.bbc.com/news/articles/cd9v1wll8qqo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-26T03:22:31+08:00",
+      "summary": "The outgoing prime minister will not take up his seat after leading his party back into opposition.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Seeing the Cyber in Economic Statecraft",
+      "link": "https://warontherocks.com/seeing-the-cyber-in-economic-statecraft",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-23T15:00:45+08:00",
+      "summary": "Editor&#8217;s note: This article is the seventh in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the&#160;Potomac Institute for Policy Studies&#160;and War on the Rocks. Prior installments can be found at the&#160;War by Other Ledgers&#160;page.Americans lost nearly $21 billion to cybercrime in 2025, a new record for ",
+      "event_type": "policy",
+      "tickers": [
+        "1977",
+        "AAPL",
+        "JPM"
+      ]
+    },
+    {
+      "title": "Why police are seeking to arrest billionaire K-pop mogul behind BTS",
+      "link": "https://www.bbc.com/news/articles/cz78zj74548o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-22T06:28:21+08:00",
+      "summary": "Bang Si-hyuk, who created the supergroup, denies defrauding investors before his $7.3bn company went public.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Tim Cook’s Impeccable Timing",
+      "link": "https://stratechery.com/2026/tim-cooks-impeccable-timing",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T18:00:00+08:00",
+      "summary": "Tim Cook had an extraordinary run — and impeccable timing, both in terms of when he became CEO, and when he is stepping down.",
+      "event_type": "earnings",
+      "tickers": [
+        "1984",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "How North Korea Won",
+      "link": "https://www.foreignaffairs.com/north-korea/how-north-korea-won-jung-pak",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "The Strange Triumph of Kim Jong Un.",
+      "event_type": "earnings",
+      "tickers": [
+        "1961",
+        "1973",
+        "1950",
+        "META"
+      ]
+    },
+    {
+      "title": "Meta and CBRE Invest in American Jobs Through New Fiber Technician Training Program",
+      "link": "https://about.fb.com/news/2026/04/meta-cbre-invest-in-american-jobs-new-fiber-technician-training-program",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-20T21:00:55+08:00",
+      "summary": "The LevelUp Fiber Technician Pathway is a training program designed to prepare people to fill fiber technician jobs at US data centers and our construction sites. The post Meta and CBRE Invest in American Jobs Through New Fiber Technician Training Program appeared first on Meta Newsroom.",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
+      "title": "Canada Research Chair chemist Janusz Pawliszyn joins Chinese university",
+      "link": "https://www.scmp.com/news/china/science/article/3350619/canada-research-chair-chemist-janusz-pawliszyn-joins-chinese-university",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-19T22:00:10+08:00",
+      "summary": "Janusz Pawliszyn, the 71-year-old recipient of the Chemical Institute of Canada’s highest honour and a fellow of the Royal Society of Canada, has joined Guangzhou’s Sun Yat-sen University, the institution announced on April 9. Pawliszyn has supervised more than 110 master’s and doctoral students as well as nearly 200 postdoctoral students and visiting scholars, many of them from China. Ouyang Gangfeng was one of them. From 2004 to 2005, he was a postdoctoral fellow at Pawliszyn’s laboratory. He.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "China begins building US$1 billion hydropower station in Cambodia amid energy crisis",
+      "link": "https://www.scmp.com/economy/china-economy/article/3350480/china-begins-building-us1-billion-hydropower-station-cambodia-amid-energy-crisis",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-19T08:00:15+08:00",
+      "summary": "Construction of a US$1 billion Chinese-invested hydropower station has begun in Cambodia to facilitate the Southeast Asian country’s use of renewable energy as the fallout from the Iran war constricts developing countries’ access to traditional fuel supplies. Work on the Upper Tatay pumped-storage hydropower project in the hilly southwestern province of Koh Kong started on April 10, Xinhua reported, describing it as a future “green power bank” for Cambodia’s national grid. It said the project...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Trump’s posting even more AI-generated Trump-Jesus fan art",
+      "link": "https://www.theverge.com/column/912627/trump-jesus-ai-whcd-penguin-meme",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-16T03:50:31+08:00",
+      "summary": "Hello and welcome to Regulator, a newsletter for Verge subscribers about Big Tech power plays in Washington and beyond. (And when I say beyond, I mean the great beyond, like Heaven, maybe.) If you've found your way to this newsletter from the wild, annual subscriptions are currently 50 percent off. That's $30 a year for [&#8230;]",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "No one’s sure if synthetic mirror life will kill us all",
+      "link": "https://www.technologyreview.com/2026/04/15/1135197/synthetic-mirror-life-microbes-kill-us-all",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-15T17:00:00+08:00",
+      "summary": "For four days in February 2019, some 30 synthetic biologists and ethicists hunkered down at a conference center in Northern Virginia to brainstorm high-risk, cutting-­edge, irresistibly exciting ideas that the National Science Foundation should fund. By the end of the meeting, they’d landed on a compelling contender: making “mirror” bacteria. Should they come to be,&#8230;",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Silent Killers, Not Signals: Why States Use Poison in Assassinations",
+      "link": "https://warontherocks.com/silent-killers-not-signals-why-states-use-poison-in-assassinations",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-15T15:30:15+08:00",
+      "summary": "The recent news that Russian opposition leader Alexei Navalny&#8217;s death was caused by epibatidine &#8212; a South American frog toxin &#8212; has reignited interest in state use of poisons and toxins in assassinations. Although state use of such compounds has a long history, the erosion of the norms prohibiting assassinations and chemical and biological weapons increases the likelihood of future assassinations using poisons and toxins. As demonstrated in the recent targeting of the Iranian l",
+      "event_type": "policy",
+      "tickers": [
+        "1946",
+        "1987",
+        "1989",
+        "1981",
+        "1975",
+        "1980"
+      ]
+    },
+    {
+      "title": "How Orban Defeated Himself",
+      "link": "https://www.foreignaffairs.com/europe/how-orban-defeated-himself",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-15T12:00:00+08:00",
+      "summary": "Lessons from Hungary for pro-democracy movements worldwide.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Retrial over death of Argentina legend Maradona begins",
+      "link": "https://www.bbc.com/news/articles/cj377mm7zzvo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-15T01:44:44+08:00",
+      "summary": "The first trial - which saw members of Maradona's medical team accused of poor care - collapsed after a judge let cameras into the court.",
+      "event_type": "earnings",
+      "tickers": [
+        "1986"
+      ]
+    },
+    {
+      "title": "Strategy Without Hubris: How China Rose by Managing America’s Reaction",
+      "link": "https://warontherocks.com/strategy-without-hubris-how-china-rose-by-managing-americas-reaction",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-14T15:15:47+08:00",
+      "summary": "Oriana Skylar Mastro, Upstart: How China Became a Great Power&#160;(Oxford University Press, 2024)Why didn&#8217;t China&#8217;s rise trigger containment sooner?For three decades, Beijing&#8217;s economic weight expanded dramatically, its military modernized at speed, and its diplomatic footprint widened across every region. Structural theories of power transition would lead us to expect sharper and earlier confrontation as capabilities converged. Instead, the U.S.-Chinese rivalry deepened gradu",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "A Last Chance for Hungary",
+      "link": "https://www.foreignaffairs.com/hungary/last-chance-hungary",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-09T12:00:00+08:00",
+      "summary": "Orban’s mafia state could fall—or cement itself.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Mustafa Suleyman: AI development won’t hit a wall anytime soon—here’s why",
+      "link": "https://www.technologyreview.com/2026/04/08/1135398/mustafa-suleyman-ai-future",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-08T22:00:00+08:00",
+      "summary": "We evolved for a linear world. If you walk for an hour, you cover a certain distance. Walk for two hours and you cover double that distance. This intuition served us well on the savannah. But it catastrophically fails when confronting AI and the core exponential trends at its heart. From the time I began&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Cisco CEO Chuck Robbins wants data centers in space",
+      "link": "https://www.theverge.com/podcast/906727/cisco-ceo-chuck-robbins-data-centers-space-ai-elon-musk-interview",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-06T23:15:00+08:00",
+      "summary": "Today, I’m talking with Chuck Robbins, CEO of Cisco. Cisco is one of those big companies that everyone has heard of but that most of us don’t have to interact with very much; it’s not really a consumer brand. But all of us are in some way using Cisco’s products and services every day because [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "MSFT",
+        "NVDA",
+        "AAPL",
+        "GOOGL",
+        "META"
+      ]
+    },
+    {
+      "title": "Sharpening Signals and Reducing Noise for Better Defense Budgets",
+      "link": "https://warontherocks.com/2026/04/sharpening-signals-and-reducing-noise-for-better-defense-budgets",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-06T15:15:02+08:00",
+      "summary": "Editor&#8217;s note: This article is the fifth in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the Potomac Institute for Policy Studies&#160;and&#160;War on the Rocks. Prior installments can be found at the&#160;War by Other Ledgers&#160;page.&#160;Debates over defense budgets and economic statecraft are not a distrac",
+      "event_type": "earnings",
+      "tickers": [
+        "1957"
+      ]
+    },
+    {
+      "title": "Does this have implications for higher ed in particular?",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/04/does-this-have-implications-for-higher-ed-in-particular.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-06T13:15:04+08:00",
+      "summary": "Declining fertility and population loss pose significant challenges for state and federal local governments responsible for providing a range of services to citizens, including education, health care, and infrastructure. Indeed, many areas are already experiencing outright population decline, with roughly half of U.S. counties losing population between 2010 and 2020. This paper examines how shrinking [&#8230;] The post Does this have implications for higher ed in particular? appeared first on Ma",
+      "event_type": "news",
+      "tickers": []
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 24189382.0,
+      "monthly_revenue": null,
+      "net_income": 1520837.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 2.32,
+      "operating_cash_flow": 1992929.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）"
+    },
+    {
+      "fiscal_year": 115,
+      "fiscal_period": "Q1",
+      "period_end": "115Q1",
+      "filed_at": "115Q1",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 6434872.0,
+      "monthly_revenue": null,
+      "net_income": 374039.0,
+      "operating_income": 464114.0,
+      "gross_profit": null,
+      "eps_diluted": 0.57,
+      "operating_cash_flow": 432525.0,
+      "capex": 15789.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 115,
+      "fiscal_period": "Q1",
+      "period_end": "1150510",
+      "filed_at": "1150510",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 6434872.0,
+      "monthly_revenue": null,
+      "net_income": 369123.0,
+      "operating_income": 464114.0,
+      "gross_profit": 682639.0,
+      "eps_diluted": 0.57,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 115,
+      "fiscal_period": "Q1",
+      "period_end": "1150509",
+      "filed_at": "1150509",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 6434872.0,
+      "monthly_revenue": null,
+      "net_income": 369123.0,
+      "operating_income": 464114.0,
+      "gross_profit": 682639.0,
+      "eps_diluted": 0.57,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150426",
+      "filed_at": "1150426",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 24189382.0,
+      "monthly_revenue": null,
+      "net_income": 1505028.0,
+      "operating_income": 1732594.0,
+      "gross_profit": 2658465.0,
+      "eps_diluted": 2.32,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "1150419",
+      "filed_at": "1150419",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 24189382.0,
+      "monthly_revenue": null,
+      "net_income": 1505028.0,
+      "operating_income": 1732594.0,
+      "gross_profit": 2658465.0,
+      "eps_diluted": 2.32,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11503",
+      "period_end": "11503",
+      "filed_at": "1150417",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 2377195.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 114,
+      "fiscal_period": "Q4",
+      "period_end": "114Q4",
+      "filed_at": "114Q4",
+      "source_type": "mops-api",
+      "form_type": "MOPS-Q",
+      "revenue": 24189382.0,
+      "monthly_revenue": null,
+      "net_income": 1520837.0,
+      "operating_income": 1732594.0,
+      "gross_profit": null,
+      "eps_diluted": 2.32,
+      "operating_cash_flow": 1992929.0,
+      "capex": 396807.0,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "2010",
+    "market": "tw",
+    "company_name": "春源鋼鐵工業股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 24189382.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 1520837.0,
+      "eps": 2.32,
+      "fcf": null,
+      "ocf": 1992929.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.062872089911185,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 275.91084950873926,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 24189382.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 1520837.0,
+        "eps_diluted": 2.32,
+        "fcf": null,
+        "ocf": 1992929.0,
+        "capex": null,
+        "company_name": "春源鋼鐵工業股份有限公司"
+      },
+      {
+        "fiscal_year": 115,
+        "fiscal_period": "Q1",
+        "revenue": 6434872.0,
+        "gross_profit": 682639.0,
+        "operating_income": 464114.0,
+        "net_income": 374039.0,
+        "eps_diluted": 0.57,
+        "fcf": null,
+        "ocf": 432525.0,
+        "capex": 15789.0,
+        "company_name": "春源"
+      },
+      {
+        "fiscal_year": 114,
+        "fiscal_period": "Q4",
+        "revenue": 24189382.0,
+        "gross_profit": 2658465.0,
+        "operating_income": 1732594.0,
+        "net_income": 1520837.0,
+        "eps_diluted": 2.32,
+        "fcf": null,
+        "ocf": 1992929.0,
+        "capex": 396807.0,
+        "company_name": "春源"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:21Z"
+}

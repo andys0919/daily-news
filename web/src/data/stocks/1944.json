@@ -1,0 +1,67 @@
+{
+  "ticker": "1944",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "From Slogan to Standard: How the Pentagon Should Define Affordable Mass",
+      "link": "https://warontherocks.com/cogs-of-war/from-slogan-to-standard-how-the-pentagon-should-define-affordable-mass",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-27T16:00:51+08:00",
+      "summary": "The term &#8220;affordable mass&#8221; entered public defense discourse in 2021 as a munitions concept, which the Air Force adopted in 2023 to describe its effort to field large numbers of lower-cost, semi-autonomous aircraft to complement crewed fighters. The term has since spread in defense reporting, think-tank commentary, service initiatives, and even on War on the Rocks.The Air Force, Army, and Navy are all pursuing low-cost, high-volume buying efforts to augment the force of the &#8220;few",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe term “ affordable mass ” entered public defense discourse in 2021 as a munitions concept, which the Air Force adopted in 2023 to describe its effort to field large numbers of lower-cost, semi-autonomous aircraft to complement crewed fighters. The term has since spread i",
+      "event_type": "earnings",
+      "tickers": [
+        "1944"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Trump is waging war based on instinct and it isn't working",
+      "link": "https://www.bbc.com/news/articles/c5y969pnxgvo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-03-29T08:02:46+08:00",
+      "summary": "One month into the conflict in Iran, Trump's gut-instinct approach is not proving effective.",
+      "body_text": "Some old truths about warfare have been knocking on the door of the Oval Office in the month since US President Donald Trump and Israel's Prime Minister Benjamin Netanyahu sent US and Israeli warplanes to bomb Iran.\nThe failure to learn from the past means that Donald Trump now faces a stark choice. If he can not get a deal with Iran, he can either try to declare a victory that will fool no-one, o",
+      "event_type": "earnings",
+      "tickers": [
+        "1871",
+        "1944",
+        "1957",
+        "1979",
+        "1956"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1871",
+      "count": 1
+    },
+    {
+      "ticker": "1957",
+      "count": 1
+    },
+    {
+      "ticker": "1979",
+      "count": 1
+    },
+    {
+      "ticker": "1956",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

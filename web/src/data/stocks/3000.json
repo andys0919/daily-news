@@ -1,0 +1,58 @@
+{
+  "ticker": "3000",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Cheap Missiles, Not Drones, Will Win the Next Air War",
+      "link": "https://warontherocks.com/cogs-of-war/cheap-missiles-not-drones-will-win-the-next-air-war",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T16:00:51+08:00",
+      "summary": "After four years of watching the war in Ukraine, NATO defense decision-makers are finally beginning to pour money into drones. The Iran conflict has drawn further attention to these investments. The assumption is that unmanned aerial systems will ensure a long-term advantage in conflicts requiring ground operations and infrastructure defense.But the battlefield in Ukraine is already pointing toward a different future. Russia is transforming slow, propeller-driven Shahed drones into cheap, missil",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nAfter four years of watching the war in Ukraine, NATO defense decision-makers are finally beginning to pour money into drones. The Iran conflict has drawn further attention to these investments. The assumption is that unmanned aerial systems will ensure a long-term advantag",
+      "event_type": "earnings",
+      "tickers": [
+        "3000"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Industry leaders are pouring hundreds of millions into a rescue plan for Aave users after massive crypto hack",
+      "link": "https://www.coindesk.com/tech/2026/04/27/industry-leaders-are-pouring-hundreds-of-millions-into-a-rescue-plan-for-aave-users-after-massive-crypto-hack",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-28T05:40:04+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "3000"
+      ]
+    },
+    {
+      "title": "《投信買超3-1》聯電(11524)、高股息(3000)、聯發科(1281) - 富聯網",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcll0d2ZxR0FfY1FVdkppQ1d5Zy1QenhjekFxSnJMdWU3dVduV0ZZU3J1eVJwbXp4Z2hpRkdUd2hkU2p6M2lka2NVZVZxTTJMczRzQVVPSXBhbjdJd25uMXFRUmRLaVhycXYwNFczbnFNdWxiaHktRWZsdnZfZWtETUFIZGYtVkpx",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-17T16:05:00+08:00",
+      "summary": "《投信買超3-1》聯電(11524)、高股息(3000)、聯發科(1281)&nbsp;&nbsp;富聯網",
+      "event_type": "news",
+      "tickers": [
+        "3000",
+        "1281",
+        "2454"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

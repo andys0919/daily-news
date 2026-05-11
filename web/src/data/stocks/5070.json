@@ -1,0 +1,385 @@
+{
+  "ticker": "5070",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "RX 9070 XT and Ryzen 9700X PC deal delivers RTX 5070 Ti level raster performance at a much cheaper price - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcXBFUG96Q21rOGFSU3A2RHY2X25zc0N4Rk1OOFdvZzkzODkySjd5SkxwZ3lJZXlIc1h4aldHVjd6WnljUkVWUDZnM2hsaHc4Sy02cG9UbnJYSXVFSDJBVkZwWXJscnY5My01RVdjekZ2NzB2bFliNzRqeFZJa1NucHh2YzdOZUpDSmM2Nmc3SmNfc2xXNThvVnRyUEppdmJrM05uY096U2U0VF9UdXJ0SXNhZW9wNGxsOTd3XzhMeDJlaTRNbGhhYWRrSVFmTmxH",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T03:00:51+08:00",
+      "summary": "RX 9070 XT and Ryzen 9700X PC deal delivers RTX 5070 Ti level raster performance at a much cheaper price&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "9070",
+        "5070"
+      ]
+    },
+    {
+      "title": "Ryzen 9 9850HX laptop with RTX 5070 GPU and 300Hz 2.5K screen is amazingly affordable at just $1,599 in this Amazon deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNVd6OWNOMHdqWnhwRDRIV010bHlpUGE5UjFUcHh0MFEtaU05c2RxT01nV3l6TEh4bURHLUF3cnFEQ3dqYTRaNzNmc2pZVWpydFZZazdkcEp3eGlHOGxMNnhnalJzWG9saTRlVnVIUnlXaXIwbXRiUDE3djFOaUZjMlpjZmYtSnFUekQ2ci03V2MwMmJNb0tWZ1MwT0otNE5OLUVyT2pLU2FKQW43VE9GcFJ2RGtrQk5VakYwcGxpb2NQUWI1ZVprVW9kWjNSb1JENDdPbW1DWFhyX3lyNkdZRVVkdw?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T20:05:13+08:00",
+      "summary": "Ryzen 9 9850HX laptop with RTX 5070 GPU and 300Hz 2.5K screen is amazingly affordable at just $1,599 in this Amazon deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Save $444 on this top-tier gaming PC combo with Asus Prime RTX 5070, Ryzen 9850X3D, X870E motherboard, and 32GB of RAM — world's fastest gaming CPU meets copious amount of RAM",
+      "link": "https://www.tomshardware.com/pc-components/save-usd444-on-a-stellar-gaming-pc-combo-with-asus-prime-rtx-5070-ryzen-9850x3d-x870e-motherboard-and-32gb-of-ram-worlds-fastest-gaming-cpu-meets-copious-amount-of-ram",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-08T19:46:57+08:00",
+      "summary": "Newegg’s latest combo deal packs AMD’s Ryzen 7 9850X3D, an Asus X870E motherboard, RTX 5070 graphics card, and 32GB of DDR5 RAM into a nearly complete AM5 gaming PC for just $1,494.99 - a massive $444 off",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Save $1,100 on this powerful gaming rig with Nvidia RTX 5070 Ti, Intel 14900KF, 32GB of RAM, and 2TB of storage — ABS Stratos Aqua on deep discount",
+      "link": "https://www.tomshardware.com/pc-components/save-usd1-100-on-this-powerful-gaming-rig-with-nvidia-rtx-5070-ti-intel-14900kf-32gb-of-ram-and-2tb-of-storage-abs-stratos-aqua-on-deep-discount",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T20:04:43+08:00",
+      "summary": "Score the potent ABS Stratos Aqua ready-to-game prebuilt with i9-14900KF and RTX 5070 Ti for just $2,175.",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Asus launches 18-inch Tianxuan 7 Pro Max gaming laptop with Ryzen 9 9955HX & up to RTX 5070 Ti - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNkhhUWVCM2Z1SzZhWHFhZXpwMkJpay13cEpSODFLNEtxZ0FuSm9qY2F2S1ljcWZDU2ROaWdEMjBIWHhhUGJ2RC1rWk9LaVZZUHcxMkV2blB0NEY3cnpJMUNQbDhhVU5kelZTS0pEUkRfSF9VOFVYc0tUa2tlalJjX3htaEVUOFB6ck1YWkxITV94dWtCT1BrckxHZVdLR0FiTTZmamRfMzJBeTZENHpKQkhqcGZCRmtDUWMtdlV0SmFEZEs3eHAzNmtLWmNnOXJTbW9MMWFDSDlxWGhxUnZidk00OA",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T05:29:33+08:00",
+      "summary": "Asus launches 18-inch Tianxuan 7 Pro Max gaming laptop with Ryzen 9 9955HX & up to RTX 5070 Ti&nbsp;&nbsp;MSN",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Strong 1440p gaming PC with RTX 5070 Ti GPU is $200 off on Amazon right now - WePC",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMjU1RTFYeVVqOE56NmJTZmg0VVFTT2t5cFZXT1JxQkxqRk1VX3p5T3lTOTRhcENGVG5BajAyZEk1MUZZb28tNXI3RERrdTlpdk5qbkdxOFNJMHRtb1JGa1BveHplbS1famdxVk9yLWVzbUJrcFVSRTZWYnRzQldNTmMwcmh0TFZURUxGeVpDNF8wUTZmYUgtTTh3QmJHSC0zZk5r",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T04:17:43+08:00",
+      "summary": "Strong 1440p gaming PC with RTX 5070 Ti GPU is $200 off on Amazon right now&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "RTX 5070 Ti and Ryzen 7 gaming PC gets a $200 discount on Amazon - WePC",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN2R2bWFsMmZ1eHZhR25uUUNMUVk0RVdYRkdtSmtOaDI4bUpBblQzRUp0dkg3ZGQyMllzZDhuYV9QY3JySzFiR21yUWZSaE1iS3dOanl5LXk0OWF5REx5UXRVNnFDcXZCYWtHSl9tQlFEY2F3bGlnMFRZTXZ4UTh2d3FyMmtKQVZhRkFwc0FJLWROSUdU?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T02:45:35+08:00",
+      "summary": "RTX 5070 Ti and Ryzen 7 gaming PC gets a $200 discount on Amazon&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "$600 off this Ryzen 9 9850HX and RTX 5070 Thunderobot laptop is hard to ignore - WePC",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZU10TFZuSkpRRjEzejJHRzJVWW0zM0lzNGo2RGZXdjVNd25rQjhkQ1hxRExzeGlFOXJ4VFU2OHkxdnZWSGtTeDQ2ZlVNTDdPT3Q2V1RjUExjdkRZNk9zZF9HWF8wZC1uZktsQWhsM1NYVmVDTkltckZrMC1oaFlDSFlwUE9BbzlHN19WQWlvcVhJeWV0b1VBcFkxcGZod2NqeHNWdWZ2QQ",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-01T00:32:09+08:00",
+      "summary": "$600 off this Ryzen 9 9850HX and RTX 5070 Thunderobot laptop is hard to ignore&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Save $600 on powerful Ryzen 9 9850HX-based gaming laptop with RTX 5070, 300Hz display, and 32GB RAM - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOLVpjS2NPM3JCS0xjU1RpQ0FaZG5OUVQ0NkxRbjNmdDF1dHNoT1RMakRBWmdOWHU5UTNqeXBmUUhJaHZUdkxYZ19peVJ0MnBnQ0Fpc1I4dElTbHNGbWRpWl9TMjA5andvUlpCZ3pPMGlJZ0VtRUlEYTdFX2psaWwxbThadTAyY2t5TEUwWmEzb3NSSkVNMmRncE1IUmJRRGV6Q1ZrUE1MY3NKblhrR3JTTE51ZjFfUlN4U0VwYmhXSlgxb1VJTEE?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-30T22:49:21+08:00",
+      "summary": "Save $600 on powerful Ryzen 9 9850HX-based gaming laptop with RTX 5070, 300Hz display, and 32GB RAM&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Costco Shopper Walks Out With A Ryzen 9800X3D + RTX 5070 PC Build For $1,100 While Others Pay $2,000 - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTUluOG1SZVpIS1JjczZVSEl6NzRWRUFhQ3hzNVlrX1Znc29rTG93YWtNZm93Z0V2RjhrRVZET2FWTWJFVGk5Sk1rSms3dVZ0SDR1U2RRM1hUcnpvN292VHQxaWlUYzNnYWlHWWVxdXBoVUE3LUhieVc5UFUtWFZueTN1MDFPS2ttaUktQUE2WmJYY2lmR0hTeFhn0gGfAUFVX3lxTE1OcE5hbENSMkJjaUlvMktXRXhIMUhfbG95SXl2X3NERi1QbHpCeTZvQ0R5TndvVk5PZGFMNFNoVmFZZXlaYTQ2WHVkSEx1cVRuN0VieWp6cUF3YTZrLXdqMWtfOFdZSllBeUJNOFQxaUY4MmlfLVl2aWNGNkxuRU81cWl4UFhuOUxlX1F5ZHA2eGc4UVRlR1k2djJHN2Nnbw?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-29T23:25:00+08:00",
+      "summary": "Costco Shopper Walks Out With A Ryzen 9800X3D + RTX 5070 PC Build For $1,100 While Others Pay $2,000&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "This coupon saves you $400 on powerful Ryzen 7 9850X3D gaming PC with RTX 5070 Ti - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU0dRM09UNEJyMjZ4dEthUWVkQmZHWkNTUXRiUF84XzZyU3dvYmt4ak53X0RYZmcxS0psY0xucWVGUk9KVEhxVGVmeXBnb1FYZDFzZmdLRl9OT0lsalBxV2xJVkpOZ0g1RjBLa09UazhLMEZPY3pOLWlVYTJueGdCVUpwNzZuZllPc3hCdTBya1R1MGJVNnVzS0ZobnFVMVN1RVNyQmxjbjBrT3p5Ykp1dw?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-29T22:36:46+08:00",
+      "summary": "This coupon saves you $400 on powerful Ryzen 7 9850X3D gaming PC with RTX 5070 Ti&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Framework's new RTX 5070 12GB graphics module costs a whopping $1,199 — 72% more expensive than $699 8GB version, says pricing is beyond its control",
+      "link": "https://www.tomshardware.com/pc-components/gpus/frameworks-new-rtx-5070-12gb-graphics-module-costs-a-whopping-usd1-199-72-percent-more-expensive-than-usd699-8gb-version-says-pricing-is-beyond-its-control",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-29T20:20:58+08:00",
+      "summary": "Framework has just launched a new graphics module featuring the RTX 5070 mobile 12GB, and it costs a cool $1,200, representing a 72% raise in pricing over the 8GB variant, that's $699. Both GPUs are identical apart from the memory capacity (and bandwidth), but Framework says pricing is out of its control.",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Nvidia quietly launches 12GB RTX 5070 laptop GPU — midrange mobile gaming gets more VRAM amid the RAMpocalypse",
+      "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-quietly-launches-12gb-rtx-5070-laptop-gpu-midrange-mobile-gaming-gets-more-vram-amid-the-rampocalypse",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-29T03:17:15+08:00",
+      "summary": "Despite ongoing memory shortages, Nvidia has launched a higher-capacity 12GB trim of its RTX 5070 laptop GPU. The new part has 50% more capacity compared to Nvidia's existing RTX 5070 8GB model.",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "This compact RTX 5070 Ti gaming PC is $166 off while component prices keep rising - WePC",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMHdyblhnemIzUm02RnNnZG5pR0FYVzE0bC1TaTJKZHVkRXFiblRJVTFGeHRqalZfVmFPZVZNWjluTWFYNmltQ2xnN3VwV0JLc3lmVnMyNW9aSG8zU1RoMVFvVENUckxTVUt3YWdLSUl2TGhOZjFUZkEyU0d2dWNJVjNrVklXcHlNQWtUUmItR2dLYzZ4Y2lfMHpTNFA0STJqR2tzZEJOX0VfUFE?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-28T22:55:34+08:00",
+      "summary": "This compact RTX 5070 Ti gaming PC is $166 off while component prices keep rising&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Bombastic RTX 5070 Ti and Ryzen 7 9800X3D gaming PC has 300 bucks sliced off the price in Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQY0tqZFVvMXRJbEJ1MV8xeGJSTXRoU3d5eDlHS3ZoTGZWelNkeHVGaDd3ckdBbXVxTmpxcDdYTFdhWjlQRXdKVXBDME1SNnVDU0xvTkFPT09ERnUydzZBZEdlZ3VEZ0h0eHR5a21zOWlndmZDTVBMSkR5UThvTHo4MWVYS0pkc2wzTGlzVHF3d2hkbFFVOXZRSlVORU1CLWVjbE5FZE9DalNqRlpBUHY1UmVuZTVVSi0ycnFzdFdwWmRYWVJrc21XbHFfQlM?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-28T01:12:38+08:00",
+      "summary": "Bombastic RTX 5070 Ti and Ryzen 7 9800X3D gaming PC has 300 bucks sliced off the price in Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Score an RTX 5070 prebuilt with a Ryzen 7 7700X & 16 GB of DDR5 for $650 off — Stack these promo codes to save on Skytech Gaming's high-end systems",
+      "link": "https://www.tomshardware.com/pc-components/score-an-rtx-5070-prebuilt-with-a-ryzen-7-7700x-and-16-gb-of-ddr5-for-usd650-off-stack-these-promo-codes-to-save-on-skytech-gamings-high-end-systems",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-26T03:42:53+08:00",
+      "summary": "You don't need to spend upwards of $1,500 to build and RTX 5070 system anymore as Skytech has two great prebuilts ready for you. Whether you're rocking a stealthy black setup or a minimal white one, the Shadow 5 and Archangel 5 are both ready to level it up.",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Alienware Area-51 gaming desktop now available with AMD’s flagship Ryzen 9 9950X3D2 Dual Edition — top CPU config starts at $4,449.99 with RTX 5070 and 32GB DDR5",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/alienware-area-51-gaming-desktop-now-available-with-amds-flagship-ryzen-9-9950x3d2-dual-edition-base-config-starts-at-usd4-299-99-with-rtx-5070-and-32gb-ddr5",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-22T22:00:03+08:00",
+      "summary": "Alienware is the first to launch a system powered by AMD’s Ryzen 9 9950X3D2 Dual Edition, combining the new flagship CPU with high-end components.",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Save $500 on Lenovo's Legion 5i gaming laptop at only $1,599 — bright OLED display, 32GB of RAM, and powerful RTX 5070 GPU",
+      "link": "https://www.tomshardware.com/laptops/gaming-laptops/save-usd500-on-lenovos-legion-5i-gaming-laptop-at-only-usd1-599-bright-oled-display-32gb-of-ram-and-powerful-rtx-5070-gpu",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-21T19:24:34+08:00",
+      "summary": "A powerful RTX 5070 GPU, 32GB of RAM, and a crisp OLED display are highlights of this $1599 Lenovo Legion 5i deal at B&amp;H Photo",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "1599"
+      ]
+    },
+    {
+      "title": "The CyberPowerPC RTX 5070 Gaming PC Drops to a New Price Low, Now Includes a Hot New Game - IGN",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNnN0aDFSaWRhZU9VaEM5MHdFdDJnaUNHdEVMU3pJWDZNd1NlUm54X0UzbllHZS1EanBxd0lJeldZTXN1Z1lBZnRpMk53cmJCa1lRRi1ZUjB1MVdaQTFxcEpIMml4MW9sdWxOZzlORWZSYUFqM25kTkhKYlhfUU5wRlVLYlV5TFZIb3pj",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-21T05:45:00+08:00",
+      "summary": "The CyberPowerPC RTX 5070 Gaming PC Drops to a New Price Low, Now Includes a Hot New Game&nbsp;&nbsp;IGN",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Ryzen 9800X3D and RTX 5070 Ti PC has $400 knocked off in this great Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2s4bFZqTzJvUUhaelpoQks2RWtGM1hEc0xUdUE3cmZsLVBvVGY3M25ldDNjLWRTTE9uc1hLQjdTTUpMV1pYSFhVYWIycDhYZ2hfanNQR0tDa1lMcURMRmg5S0hBTy1scl9NRXhBc1VUcXlocGphNE1taG53T0ZuMm40S2xvZ1g0UlZaSm9JQ2N6enVILThPUGZteF82Q3A0aUJCY3o3SVpSdVliS2c?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-21T00:47:39+08:00",
+      "summary": "Ryzen 9800X3D and RTX 5070 Ti PC has $400 knocked off in this great Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "RTX 5070 PC deal with 32GB of DDR5 RAM and 2TB SSD storage is $240 cheaper in Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZzNKM0oxeUNCUVZwOXlHMHBVamlNT1duaUVsbEpTcE1nRGV6TFgxZmcwVWk0SmJ1SkFxUGpQMmJETW84d2wzam85aVFRMWdOMWpDMFB3TUdhdWxnbEoxcHhXV1dJbm1rRG1QN3UwLXBwUVR4ZzQwNXdSaWZyUFprUjlXVU1zdmwxaXZwQXFUWF9RbGNkYjNCV09NWWhQUlZZbTA5U2o5Zm5ySkhDNUFLTUltRWNLclhoQlB3",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-19T07:10:50+08:00",
+      "summary": "RTX 5070 PC deal with 32GB of DDR5 RAM and 2TB SSD storage is $240 cheaper in Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Nvidia RTX 5070 Ti gaming laptop is on sale for 19% off — MSI's Vector 16 has a 144 Hz screen, and comes with Pragmata for free",
+      "link": "https://www.tomshardware.com/laptops/gaming-laptops/nvidia-rtx-5070-ti-gaming-laptop-is-on-sale-for-19-percent-off-msis-vector-16-has-a-144-hz-screen-and-comes-with-pragmata-for-free",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-18T23:41:40+08:00",
+      "summary": "MSI has put its Vector 16 gaming laptop on sale for just $1,529 at Newegg, offering a solid discount for a beastly hardware combo. You get a Core Ultra 7 255HX paired with a 140W RTX 5070 Ti, 16GB of RAM, and a 512GB SSD, all of which are upgradeable. All that is backed up by a 90 Wh battery and displayed on a 144 Hz FHD+ screen.",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Ryzen 9800X3D gaming PC deal comes with near RTX 5070 Ti performance plus 32GB of DDR5 RAM and 2TB SSD storage - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQ2VMOXZXR3ExV1ZWWmh4dGxac1VsaGVkVkZmTnhkWHo2aFVzcHNvUmpmUHZyVHlicEZlMk5xVVhxUUFzZTFEeDFDNWJaRmo4UUFyTmJzYUFmWjdQU3pNVUFGWllTU2JXTzhZaVdRUWhBNXhvN0lwNVdrdDhHTHUxems0al84ZDJXUlBNeUNZb01yRzVPajc2ZUtoa29RRU5uZXl6UUg3ejVWd2dUUlU2SVRHVWFCTEhqY3ZQRGEzTE4ySkNJRk16SndyLVN1X1hES2UzNlJROWk?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-18T01:58:57+08:00",
+      "summary": "Ryzen 9800X3D gaming PC deal comes with near RTX 5070 Ti performance plus 32GB of DDR5 RAM and 2TB SSD storage&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Superbly priced RTX 5070 PC with Ryzen 7800X3D CPU and 32GB of DDR5 RAM is just $1,999.99 in Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSVl6VzFZaW5Wd1l6dEIxbV91N0lTTjZ3dWxScVA5dGdiYk5ZUDR1NWlQcmpIakQ4eWxxdE1LdVJpR1A4bENrM0JVNnNobExpRWwtZ2tVdS0tblRqU3pCYnZDMFdUc0RNOE9hVEJ2dlhyMG45STZhdmR6Ykg3Zm4tVW1iSnFVQTgxRXJOWnYzLTk3aW5aV3JCTE1weC1rVFFuUVlQWFEwMnY0Q3dEX1h6a05IZERBajlyOTNzZnZWTW9IcXFrNHZpV1JEcE5IZw?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-18T01:33:56+08:00",
+      "summary": "Superbly priced RTX 5070 PC with Ryzen 7800X3D CPU and 32GB of DDR5 RAM is just $1,999.99 in Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Build an entire 9800X3D PC with 128GB of RAM for $2,999 — Newegg bundle includes Asus B850 motherboard, 1TB of storage, and RTX 5070 Ti",
+      "link": "https://www.tomshardware.com/pc-components/build-an-entire-9800x3d-pc-with-128gb-of-ram-for-usd2-999-newegg-bundle-includes-asus-b850-motherboard-1tb-of-storage-and-rtx-5070-ti",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-17T20:35:22+08:00",
+      "summary": "Score a massive Newegg combo deal: save $1,933 on a high-end gaming PC bundle with Ryzen 7 9800X3D, 128GB DDR5, RTX 5070 Ti, and more - premium parts, matching aesthetics, and serious performance.",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Save a massive $700 on this 4K-ready HP gaming PC with a 9800X3D and RTX 5070 Ti, now just $2,499 — discounted HP Omen 35L pre-built powerhouse ships with 32GB DDR5 RAM and a 1TB SSD",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-a-massive-usd700-on-this-4k-ready-hp-gaming-pc-with-a-9800x3d-and-rtx-5070-ti-now-just-usd2-499-discounted-hp-omen-35l-pre-built-powerhouse-ships-with-32gb-ddr5-ram-and-a-1tb-ssd",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-13T19:42:43+08:00",
+      "summary": "Save a massive $700 on this epic HP Omen 45L gaming rig, fitted with a 9800X3D, RTX 5070 Ti, 32GB of DDR RAM, and a 1TB SSD, all for just $2,499.99.",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Ryzen 9800X3D and Nvidia RTX 5070 Ti Gaming PC drops to just $2,349.99 in Newegg deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTEVhNWFKNFdNY3p3UUdDNzdxUDQ0ODhUYjlIdTN3cldyQ2t0WVJYUDY4VV84c1RrQ0k4alNJVnV1R0FyMnVwbDVMcnhQSkVZWDV0RzdyRGUzWHlpYS1YdmYyQ2dGLTA0dUx3VTltZUxqWFR1d2RKNnVEcUtuSHdnYXhFbFZBd1JBWF9FdmxnTS1xbmJVSG9XUkNyb1dzalNyQVRXNGh3dnBSVllhMWE3UEJKMWE?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-10T22:29:46+08:00",
+      "summary": "Ryzen 9800X3D and Nvidia RTX 5070 Ti Gaming PC drops to just $2,349.99 in Newegg deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Enticingly affordable RTX 5070 PC deal also packs 32GB DDR5 RAM and 2TB SSD storage - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbUlPWkhwMEVYZjZMTUZuMFo2WnQwSkY5MTdWakNPakVnNUJFNEhFNENYRUJ4NGpRMmo1eVROYklIYkc3YXJhUVBJTlVkdk1hRlAzRFMyZnRWSU0tNVA5NUJpWml5eklpeldEMHM1ZGJ3cWM5by12N0pOQTNPcXNnaXV6VHZyVnFOclY5Yy10MlhrV3lWZmxpdXhmc08ydFQyVzk0SXZwZmZkMFpfWVhXdzZSSjc?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-10T21:47:50+08:00",
+      "summary": "Enticingly affordable RTX 5070 PC deal also packs 32GB DDR5 RAM and 2TB SSD storage&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Build a $5,000 AM5 gaming PC for just $2,771 with this Newegg combo deal — 9800X3D and RTX 5070 also come with 128GB of DDR5 RAM, 4TB SSD, X870E motherboard, and AIO cooler",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/build-a-usd5-000-am5-gaming-pc-for-just-usd2-771-with-this-newegg-combo-deal-9800x3d-and-rtx-5070-also-come-with-128gb-of-ddr5-ram-4tb-ssd-x870e-motherboard-and-aio-cooler",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-09T20:07:29+08:00",
+      "summary": "Build a gaming PC worth $5,019 for just $2,771.98 in this epic Newegg combo deal with a 9800X3D, a whopping 128GB of DDR5 RAM, an MSI X870E motherboard, and a RTX 5070, along with a free 4TB SSD, MSI MAG liquid cooler, and three free games, saving you over $2,247 in total.",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    },
+    {
+      "title": "Snag this 1440p iBuyPower gaming PC with a 7800X3D and RTX 5070 for just $2,049 right now — 32GB of fast DDR5 RAM and a 2TB SSD round off powerhouse specs, with an extra $200 off this custom-built AMD rig",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/snag-this-1440p-ibuypower-gaming-pc-with-a-7800x3d-and-rtx-5070-for-just-usd2-049-right-now-32gb-of-fast-ddr5-ram-and-a-2tb-ssd-round-off-powerhouse-specs-with-an-extra-usd200-off-this-custom-built-amd-rig",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-07T20:11:55+08:00",
+      "summary": "Save $200 on this awesome AMD build from iBuyPower, featuring an AMD Ryzen 7 7800X3D, RTX 5070, 32GB of DDR5 RAM, and a 2TB SSD, all for just $2,049 right now.",
+      "event_type": "news",
+      "tickers": [
+        "5070"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "4000",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "Between Intent and Capability: Assessing the Lack of Iranian Attacks on the U.S. Homeland",
+      "link": "https://warontherocks.com/between-intent-and-capability-assessing-the-lack-of-iranian-attacks-on-the-u-s-homeland",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T15:15:19+08:00",
+      "summary": "Three days into the Iran war, Iran&#8217;s Islamic Revolutionary Guard Corps said the quiet part out loud: The Revolutionary Guard&#8217;s Qods Force has long carried out plots around the world and now intended to deploy those capabilities against the U.S. homeland.&#160;The United States, a Qods Force&#160;statement&#160;carried on Iranian television warned, &#8220;will no longer be safe&#8221; as the Qods Force targets Americans within the homeland and abroad.&#160;&#8220;The enemy should know",
+      "event_type": "news",
+      "tickers": [
+        "4000"
+      ]
+    },
+    {
+      "title": "OpenAI 結盟聯發科跨足AI手機硬體，市場看好聯發科(2454) 評價調升 目標價挑戰 4000 元 - 理財周刊",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6czlOUzRuQXRDb0FEUEV2eWRjeTZlelpOSG9KWk5XQ1VkRWkzUzNUNkJsNDFvcll6UkdJQ0xTZWJuUWV4SDllSDVpN2ZtZHNLUldBUFUtLVFhOTlHVXk0dzZWRlBOOXFfZ3BXdUI1cw",
+      "source": "聯發科/MediaTek",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-28T08:53:12+08:00",
+      "summary": "OpenAI 結盟聯發科跨足AI手機硬體，市場看好聯發科(2454) 評價調升 目標價挑戰 4000 元&nbsp;&nbsp;理財周刊",
+      "event_type": "news",
+      "tickers": [
+        "2454",
+        "4000"
+      ]
+    },
+    {
+      "title": "Hands On: Corsair’s Frame Configurator brings dozens of customization options (and rippling wood) to its 4000 Series PC cases",
+      "link": "https://www.tomshardware.com/pc-components/pc-cases/hands-on-corsairs-frame-configurator-brings-dozens-of-customization-options-and-rippling-wood-to-its-4000-series-pc-cases",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-23T21:00:00+08:00",
+      "summary": "Corsair’s 4000-Series cases and configurator offer up dozens of customization options, including unique wood and RGB front panels, three motherboard trays, and more.",
+      "event_type": "news",
+      "tickers": [
+        "4000"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

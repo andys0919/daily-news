@@ -46,6 +46,840 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
+      "link": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T02:33:21+08:00",
+      "summary": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nCloudflare on Thursday joined a growing list of tech companies — including Meta, Microsoft, and Amazon — that have reported increased revenue alongside massive layoffs, attributing both trends to their use of AI.\nCloudflare, which pr",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "AMZN"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
+      "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T23:25:02+08:00",
+      "summary": "When OpenAI was busy experimenting with AI-powered gaming bots, Microsoft CEO Satya Nadella and OpenAI CEO Sam Altman were in the early days of forming an AI partnership. Court documents from the ongoing Musk v. Altman trial have provided a rare look at the communications between Microsoft's top executives about investing in OpenAI and fears [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Gaming\nThe early days of Microsoft’s OpenAI partnership have been revealed in detail in court documents t",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+      "link": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T07:38:14+08:00",
+      "summary": "CoreWeave has been raising debt to finance its data center buildout, and S&amp;P has boosted the company's credit rating.",
+      "body_text": "CoreWeave shares tumbled as much as 10% in extended trading on Thursday after the AI infrastructure provider issued light revenue guidance and increased its 2026 capital spending forecast.\nHere's how the company did in comparison with LSEG consensus:\nRevenue more than doubled in the quarter, from $981.8 million a year earlier, according to a statement . Net loss widened to $740 million from $315 m",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Mira Murati’s deposition pulled back the curtain on Sam Altman’s ouster",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T03:55:22+08:00",
+      "summary": "The week leading up to Thanksgiving 2023 was the AI industry's biggest soap opera moment. OpenAI CEO Sam Altman was abruptly ousted from his role at the ChatGPT maker. The explanation? That Altman was \"not consistently candid in his communications with the board.\" Now, via witness testimony and trial exhibits in Musk v. Altman, the [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\n﻿The former OpenAI CTO had receipts. But they mostly confuse her own story.\nPosts from this author",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Spooked by Mythos, Trump suddenly realized AI safety testing might be good",
+      "link": "https://arstechnica.com/tech-policy/2026/05/everything-that-could-go-wrong-with-trumps-ai-safety-tests-according-to-experts",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T05:20:14+08:00",
+      "summary": "Trump forced to admit Biden was right on AI safety testing.",
+      "body_text": "Trump forced to admit Biden was right on AI safety testing.\nThis week, the Trump administration backpedaled and signed agreements with Google DeepMind, Microsoft, and xAI to run government safety checks on the firms’ frontier AI models before and after their release.\nPreviously, Donald Trump had stubbornly cast aside the Biden-era policy , dismissing the need for voluntary safety checks as overreg",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "How David Sacks crashed and burned in the White House",
+      "link": "https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T04:18:00+08:00",
+      "summary": "Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers about tech, politics, and Washington intrigue. (It's basically House of Cards, but for nerds.) Not a subscriber yet? You really should become one, and to save you a Google search, here is the direct link to do so! And do you think I should [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nThe Trump administration pulled a 180 on AI oversight, inducing Sacks’ worst nightmare: more gover",
+      "event_type": "policy",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "NVDA",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "NVIDIA",
+        "Amazon",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "NVIDIA Spectrum-X — the Open, AI-Native Ethernet Fabric — Sets the Standard for Gigascale AI, Now With MRC",
+      "link": "https://blogs.nvidia.com/blog/spectrum-x-ethernet-mrc",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T19:30:20+08:00",
+      "summary": "The race to build the world’s most powerful AI factories demands networking that keeps pace with the ambitions of AI itself. NVIDIA Spectrum-X Ethernet scale-out infrastructure stands at the forefront of that race as the most advanced AI networking technology available today, deployed by industry leaders who can’t afford to compromise on performance, resilience or […]",
+      "body_text": "Share This Article\nX\nFacebook\nLinkedIn\nCopy link\nThe race to build the world’s most powerful AI factories demands networking that keeps pace with the ambitions of AI itself.\nNVIDIA Spectrum-X Ethernet scale-out infrastructure stands at the forefront of that race as the most advanced AI networking technology available today, deployed by industry leaders who can’t afford to compromise on performance",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft Earnings, Apple Earnings",
+      "link": "https://stratechery.com/2026/microsoft-earnings-apple-earnings",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T18:00:00+08:00",
+      "summary": "Microsoft unveils its new agentic business model, and Apple confronts shortages in memory and chips even as the Mac benefits from AI.",
+      "body_text": "Microsoft unveils its new agentic business model, and Apple confronts shortages in memory and chips even as the Mac benefits from AI.\nSubscribe to Stratechery Plus for full access.\nWith Stratechery Plus you get access to the subscriber-only Stratechery Update and Stratechery Interviews , and the Sharp Tech, Sharp China, Dithering, Greatest of All Talk, and Asianometry podcasts.\nStratechery Update ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AAPL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "North American AI Data Center Expansion Drives 2026 CapEx of Top Nine CSPs to US$830 Billion, Says TrendForce",
+      "link": "https://www.trendforce.com/presscenter/news/20260506-13033.html",
+      "source": "TrendForce 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T17:02:29+08:00",
+      "summary": "TrendForce’s latest findings on the AI industry highlight that several major North American CSPs have recently raised their 2026 capital expenditure (CapEx) guidance in response to strong AI demand. As a result, TrendForce has revised its forecast for the combined CapEx of the world’s top nine CSPs—Google, AWS, Meta, Microsoft, Oracle, ByteDance, Tencent, Alibaba, and Baidu—up to approximately US$830 billion in 2026, with the annual growth rate raised from 61% to 79%.",
+      "body_text": "TrendForce’s latest findings on the AI industry highlight that several major North American CSPs have recently raised their 2026 capital expenditure (CapEx) guidance in response to strong AI demand. As a result, TrendForce has revised its forecast for the combined CapEx of the world’s top nine CSPs—Google, AWS, Meta, Microsoft, Oracle, ByteDance, Tencent, Alibaba, and Baidu—up to approximately US$",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Meta",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Trump administration's AI doomer moment",
+      "link": "https://www.platformer.news/trump-administration-doomers-ai",
+      "source": "Platformer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-06T08:00:22+08:00",
+      "summary": "A year ago, officials all but sneered at the idea of AI safety. A new frontier model has them reconsidering",
+      "body_text": "A year ago, officials all but sneered at the idea of AI safety. A new frontier model has them reconsidering\nThis is a column about AI. My fiancé works at Anthropic. See my full ethics disclosure here .\nIn February 2025, Vice President JD Vance took the stage at the Paris AI Action Summit to share the administration’s views on AI regulation. “The AI future is not going to be won by hand-wringing ab",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AMD expects 20% decline in gaming revenue from 'higher memory and component costs' in the second half of the year — CEO Lisa Su warns of further memory crunch",
+      "link": "https://www.tomshardware.com/tech-industry/amd-expects-20-percent-decline-in-gaming-revenue-from-higher-memory-and-component-costs-in-the-second-half-of-the-year-ceo-lisa-su-warns-of-further-memory-crunch",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T06:19:10+08:00",
+      "summary": "AMD is expecting the memory crunch to hit its gaming business in the second half of the year, with revenue expected to decline by \"more than 20%.\"",
+      "body_text": "The memory squeeze hits the balance sheet.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nAMD announced its financial results for the first quarter of 2026 on Tuesday, noting record revenue in the data center while warning of a further memory crunch on the consumer side. AMD says it's bracing for impact in the second half of the year, noting",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "ASML CEO Christophe Fouquet on his company’s monopoly: no one is coming for us",
+      "link": "https://techcrunch.com/2026/05/05/asml-ceo-christophe-fouquet-no-one-is-coming-for-us",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T04:06:40+08:00",
+      "summary": "Christophe Fouquet, who became ASML's CEO in 2024 after more than a decade at the company, sat down with this editor on the rooftop deck of his Beverly Hills hotel Tuesday morning ahead of his appearance at the Milken Institute Global Conference. Dressed in a blue suit and white shirt, he was relaxed — even when the conversation turned to the rivals.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nEvery time you use AI, you are, in some small way, depending on a 42-year-old, 44,000-person Dutch company that spends €4.5 billion each year to advance its technology.\nASML, headquartered in the Netherlands, makes the machines that ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSM"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta",
+        "Amazon",
+        "Google",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "四大CSP資本支出上修至超過7千億美元　記憶體結構性供需缺口延至2028年",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754242_MEF1Q9665H9PFJ12TO3FL",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-06T03:00:00+08:00",
+      "summary": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳...",
+      "body_text": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳沛銘表示，更多客戶主動要求，近期「被客戶逼著」簽訂3年合約，以確保供貨，預期記憶體結構性供給缺口，將延續至2028年以後。\n三星電子（Samsung Electronics）、SK海力士（SK Hynix）、美光（Micron）、SanDisk陸續與客戶綁定LTA合約，甚至有CSP客戶已將預付款提高至LTA長約總價值的10~30%，反映產業供應緊缺的長期趨勢，買家寧願付出高額溢價。\n儘管產能供不應求，但華邦電對LTA態度相對被動，簽訂LTA也是被客戶所逼，希望能承諾未來3年的供貨量，再逐季談價格。不過陳沛銘認為，隨著高雄新廠B模組持續推動，屆時在導入設備及產能規劃時，也將考慮跟客戶提前",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "GOOGL",
+        "AMZN"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Alphabet",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Netflix’s $25 Billion Buyback Looks Big. Microsoft’s $190 Billion AI Capex Bill Looks Bigger - TechStock²",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWTNnb3piWmI3dEx5emw1ME82TG9ZVjIwcVQzS24tVnVjY3NfdFNseVlVV1ZDa1ZNcUxteUdZTGlqUHRMSEkxM2RWWGxuUV9NQ0FBVDNwRmxreXpxSnBRUzJCWll0YTc1ZHRPbUdtOEphTVZmckljcExvM1VHeFMwM2lEYjFlQndvSmNDYS00ZnBsWV85VWg1WUN1aERFMEpIdFdDcDU1VGE0Z0Zf",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T23:11:00+08:00",
+      "summary": "Netflix’s $25 Billion Buyback Looks Big. Microsoft’s $190 Billion AI Capex Bill Looks Bigger&nbsp;&nbsp;TechStock²",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AI's big messaging pivot",
+      "link": "https://www.noahpinion.blog/p/ais-big-messaging-pivot",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-05T14:06:01+08:00",
+      "summary": "Some top AI leaders now say their technology will create jobs. Should we believe them?",
+      "body_text": "Something big happened in the world of AI the other day: Sam Altman, founder and CEO of OpenAI, and probably the person who’s most commonly regarded as the face of the industry, declared that the purpose of AI is not to take people’s jobs :\nAnd he recently called AI CEOs “tone-deaf” for declaring that AI is going to take people’s jobs:\nIn fact, this shift represents more evolution than revolution.",
+      "event_type": "earnings",
+      "tickers": [
+        "1940",
+        "MSFT",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Illusion of Sovereignty: How International Law and Big Tech are Eroding the State",
+      "link": "https://warontherocks.com/the-illusion-of-sovereignty-how-international-law-and-big-tech-are-eroding-the-state",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T15:30:38+08:00",
+      "summary": "Caught between two hammers &#8212; international law and technological dependence on the private sector &#8212; modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomatic sanctions and international condemnation but the loss of access to critical digital infrastructure owned by private corporations. In wartime, that loss is catastrophic, as we both experienced firsthand during Rus",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nCaught between two hammers — international law and technological dependence on the private sector — modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomati",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff. - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mLXBHSTdGWXBCQXBMQTZ0YkZXTmRCdkRfNlZOaFFmcUVjUGkzNEVwa0xKNlYzcVZ4WTdfUDNEM3ZHQnJMT2lDUlpGMDVzb2lWWGNyTnFPcHhoYXE3eHc?oc=5",
+      "source": "X @satyanadella",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-04T05:00:01+08:00",
+      "summary": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff.&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "META",
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Meta",
+        "Microsoft",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Amazon vs. Microsoft and the Great AI Capex Divergence - 24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNc2g0RFNHRWVNeDBjZHRQX0oxaW84MHZJZVE2U05PNnpkc0pJZGF3Uks2VGFmRmdCUldleWpEeENQUXJfTHltT2U2MnFNUjNKR0I1RU82NFk3VHd6RjgzZVUxQjVmYUMwWUtoQ2RrdFd6RDA4X3pzdDJSODdicjR2OU5wbkxVM2pYRjBIckc0TjRuVHRQOTlNU0tOV3JCZw",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-02T02:48:58+08:00",
+      "summary": "Amazon vs. Microsoft and the Great AI Capex Divergence&nbsp;&nbsp;24/7 Wall St.",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "AMZN",
+        "MSFT"
+      ],
+      "companies": [
+        "Amazon",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Skyrocketing component prices push Big Tech capex to record $725 billion — Microsoft alone attributes $25 billion of AI budget to increased memory and chip costs",
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/microsoft-attributed-25-billion-of-its-record-ai-budget-to-memory-chip-costs",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-01T23:49:09+08:00",
+      "summary": "Google, Amazon, Microsoft, and Meta plan to spend a combined $725 billion on capital expenditure in 2026, a 77% increase over last year's record $410 billion.",
+      "body_text": "Meta cited the same pressure, raising its spending forecast by $10 billion. Google Cloud grew 63%.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nGoogle , Amazon , Microsoft , and Meta plan to spend a combined $725 billion on capital expenditure in 2026, a 77% increase over last year's record $410 billion, according to first-quarter earnings",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "META",
+        "GOOGL",
+        "AMZN",
+        "NVDA",
+        "TSM"
+      ],
+      "companies": [
+        "Microsoft",
+        "Meta",
+        "Google",
+        "Amazon",
+        "Alphabet",
+        "NVIDIA",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Bank of America resets Microsoft stock forecast after earnings",
+      "link": "https://www.thestreet.com/investing/stocks/bank-of-america-reiterates-buy-rating-microsoft-stock-after-earnings",
+      "source": "Yahoo Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T09:03:00+08:00",
+      "summary": "",
+      "body_text": "Microsoft ( MSFT ) is a software giant, known for its Windows operating system and Office software suite. It is also a hyperscaler. The biggest driver for the stock is artificial intelligence.\nThe company's revenue comes from three different business segments. These include Productivity and Business Processes, Intelligent Cloud, and More Personal Computing. Microsoft’s cloud computing platform is ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Google",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk's 7 biggest stumbles on the stand at OpenAI trial",
+      "link": "https://arstechnica.com/tech-policy/2026/04/elon-musks-7-biggest-stumbles-on-the-stand-at-openai-trial",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-01T05:11:51+08:00",
+      "summary": "Elon Musk spent three days testifying as the first witness in his trial against OpenAI.",
+      "body_text": "Elon Musk spent three days testifying as the first witness in his trial against OpenAI.\nElon Musk seems tired and cranky. On Thursday, he took the stand for the third day in a four-week trial stemming from his lawsuit alleging that OpenAI abandoned its mission and should be blocked from taking the company public later this year. If Musk plays his cards right, Sam Altman could be ousted and OpenAI ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "TSLA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Google cloud growth tops Microsoft and Amazon as all three beat estimates on AI demand",
+      "link": "https://www.cnbc.com/2026/04/30/google-microsoft-and-amazon-all-report-cloud-beats-in-earnings.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-01T04:00:59+08:00",
+      "summary": "Amazon, Google and Microsoft all reported better-than-expected first-quarter cloud results, signaling an acceleration of AI demand",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Amazon"
+      ],
+      "guidance_direction": "up"
+    },
+    {
+      "title": "Microsoft Reports Strong Results but Flags Massive AI Capex - Let's Data Science",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTjNiUjJycHNqYUxNa1YxX2JGVXp0ZGpyWjlJQjlOVjFaNWxoSUpPbFFMdG1iQnE5OUNEeXdPWlJEbENnTWFQeGZUckpVcmV0Y09YV0lBbG1zRFlrcGJhWUtrM0QwS0JDb0xmWWxuWlJDbll2Y2tJeFNGVWU3STdKTkZVM1hqNl9rWkIxSFhBSUNPbjBPQVpvU1JaZGVNWjFyYjNN",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-01T01:37:36+08:00",
+      "summary": "Microsoft Reports Strong Results but Flags Massive AI Capex&nbsp;&nbsp;Let's Data Science",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft brings 1GW of capacity online in latest quarter, again",
+      "link": "https://www.datacenterdynamics.com/en/news/microsoft-brings-1gw-of-capacity-online-in-latest-quarter-again",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-01T00:30:35+08:00",
+      "summary": "On track to double footprint in two years",
+      "body_text": "On track to double footprint in two years\nMicrosoft is continuing its trend of standing up 1GW of capacity every three months, having managed the task for the second consecutive quarter.\nCEO Satya Nadella revealed that the company's capacity expansion plans remain \"on track to double our overall footprint in just two years\" during the company's Q3 FY2026 earnings call held on April 29.\nCapex for t",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Google, Microsoft, Meta, and Amazon capex spending to hit $725 billion in 2026, up 77% from last year — analyst says bear thesis is 'garbage'",
+      "link": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-30T21:18:23+08:00",
+      "summary": "Google, Amazon, Microsoft, and Meta collectively plan to spend $725 billion on capex in 2026, up 77% from last year's record $410 billion.",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "META",
+        "AMZN"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The 'Prove It' Quarter: How Meta, Microsoft, Amazon, And Alphabet Backed AI Capex With Real Run Rates - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNa2tsNkFRSGVnRnZWTlZtaWhheG5KWkF1SjRTTFlLWGpnUDhiaHB2VmhVLVNvWjlNYzhfbkdPbUFkOEUzYUFRZjJ5R0RGUWFNdHNLQWE0Z2VXbjhlcXQ1MDdTWkctNnAxTEdPc2Z6U24xNGp3dy1CTVFvRWFHRm1PS0dkc1lobXVXbDAwVlVOdDR2UllqTE16SkVyQ2JrM19kSzdEYlQxMGNQbXhjMnFTVnRsdHFrQWJrV2JKNWg5eDVsMnNMMlFmcG9MdVBYNDl0ZV9wS0wtVVVpVnBxWFhJbFM5Rzl5djg?oc=5",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T21:05:09+08:00",
+      "summary": "The 'Prove It' Quarter: How Meta, Microsoft, Amazon, And Alphabet Backed AI Capex With Real Run Rates&nbsp;&nbsp;Benzinga",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Amazon",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Download: the North Pole’s future and humanoid data",
+      "link": "https://www.technologyreview.com/2026/04/30/1136713/the-download-north-pole-future-humanoid-data",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T20:10:00+08:00",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Digging for clues about the North Pole’s past In the past, getting to the North Pole involved a treacherous trip through ice many meters thick. But last year, a research vessel&#8230;",
+      "body_text": "Plus: Google, Microsoft, Amazon and Meta have all set AI spending records.\nThis is today's edition of The Download , our weekday newsletter that provides a daily dose of what's going on in the world of technology.\nIn the past, getting to the North Pole involved a treacherous trip through ice many meters thick. But last year, a research vessel encountered open water and thin ice, which created an e",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "MSFT",
+        "AMZN",
+        "META",
+        "AAPL"
+      ],
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Amazon",
+        "Meta",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tech Earnings Show AI Is Driving A Massive Spending Race",
+      "link": "https://www.bloomberg.com/news/videos/2026-04-30/tech-earnings-show-ai-is-driving-a-massive-spending-race-video",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T08:38:14+08:00",
+      "summary": "Amazon, Meta, Microsoft and Google's quarterly earnings all tell the same story. AI demand is exploding, and it’s driving a massive spending race. Ed Ludlow reports. (Source: Bloomberg)",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "META",
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Meta",
+        "Microsoft",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft delivers a promising quarter but can't shake the software fears",
+      "link": "https://www.cnbc.com/2026/04/29/microsoft-delivers-a-promising-quarter-but-cant-shake-software-fears.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T08:23:30+08:00",
+      "summary": "With plenty of puts and takes, it's not surprising to see the stock oscillating between modest gains and losses in after-hours trading.",
+      "body_text": "Got a confidential news tip? We want to hear from you.\nSign up for free newsletters and get more CNBC delivered to your inbox\nGet this delivered to your inbox, and more info about our products and services.\n© 2026 Versant Media, LLC. All Rights Reserved. A Versant Media Company.\nData is a real-time snapshot *Data is delayed at least 15 minutes. Global Business and Financial News, Stock Quotes, and",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk’s worst enemy in court is Elon Musk",
+      "link": "https://www.theverge.com/tech/921022/elon-musk-cross-openai-altman",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T08:01:24+08:00",
+      "summary": "About five hours into Elon Musk's testimony, I typed the following sentence into my notes: \"I have never been more sympathetic to Sam Altman in my life.\" Musk's direct testimony was an improvement over yesterday - even if his lawyer kept asking leading questions to cue him in how to answer. But that memory was [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Tech\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nIt’s dangerous to tell a courtroom “I don’t lose my temper.”\nPosts from this author will be added to",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "GOOGL",
+        "MSFT"
+      ],
+      "companies": [
+        "Tesla",
+        "Google",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft calls for $190 billion in 2026 capital spending on soaring memory prices",
+      "link": "https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T07:46:48+08:00",
+      "summary": "Microsoft's forecast on revenue and operating margin was light, but the company sees $190 billion in 2026 capital spending, well above Wall Street's estimate.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Big Tech's multi-billion dollar AI bets are still on track as Mag 7 giants report earnings",
+      "link": "https://www.coindesk.com/markets/2026/04/29/big-tech-s-multi-billion-dollar-ai-bets-are-still-on-track-as-mag-7-giants-report-earnings",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T05:07:33+08:00",
+      "summary": "",
+      "body_text": "Four of the Magnificent Seven (Mag 7) tech giants are still on track to meet their massive artificial intelligence (AI) spending targets this year, according to their earnings report.\nThe companies that have reported quarterly earnings post-market on Wednesday are Microsoft (MSFT), Alphabet (GOOG), Meta (META) and Amazon (AMZ), with a combined market cap of approximately $12 trillion.\nPreviously, ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "META",
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Alphabet",
+        "Meta",
+        "Amazon",
+        "NVIDIA",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "All the evidence unveiled so far in Musk v. Altman",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T02:03:05+08:00",
+      "summary": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and corporate documents are circulating from the earliest days of OpenAI - and from before the AI lab even had a name. Some high-level takeaways: [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\n﻿Emails going as far back as 2015 give a glimpse into the foundations of OpenAI and the early tens",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT",
+        "META",
+        "TSLA"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft",
+        "Meta",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Traders brace for $800 billion in earnings-related stock movement",
+      "link": "https://www.cnbc.com/2026/04/29/traders-brace-for-800-billion-in-earnings-related-stock-movement.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-04-30T01:24:27+08:00",
+      "summary": "Wenesday night is the main event for earnings season, with Alphabet, Amazon, Meta and Microsoft – four of the \"Magnificent Seven\" — set to report.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "AMZN",
+        "META",
+        "MSFT"
+      ],
+      "companies": [
+        "Alphabet",
+        "Amazon",
+        "Meta",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "微軟不再獨家代理後 亞馬遜也將銷售OpenAI技術",
+      "link": "https://money.udn.com/money/story/5599/9470748",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-29T08:49:46+08:00",
+      "summary": "雲端服務巨人亞馬遜（Amazon）在人工智慧（AI）熱潮的前三年裡，看著追求OpenAI最新技術的客戶，將業務訂單轉向微軟（Microsoft），原因是微軟靠著搶先對OpenAI投資，掌握了OpenA",
+      "body_text": "本文共947字\n雲端服務巨人亞馬遜（Amazon）在人工智慧（AI）熱潮的前三年裡，看著追求OpenAI最新技術的客戶，將業務訂單轉向微軟（Microsoft），原因是微軟靠著搶先對OpenAI投資，掌握了OpenAI產品的獨家權利。\n如今，就在微軟同意放棄代售OpenAI產品獨家權利的隔天，亞馬遜就表示，終於能將ChatGPT開發商OpenAI的AI模型提供給自家雲端客戶。微軟是亞馬遜最大雲端市場競爭對手。\n亞馬遜雲端事業AWS執行長賈曼（Matt Garman）在彭博電視的訪談中說：「這是我們的客戶長期以來一直在要求的事。」他提及AWS從周二起就提供OpenAI部分最新模型的預覽，而最強大的GPT模型則會在「接下來幾周內」推出。\n微軟由於早期即對OpenAI進行大規模投資，因此微軟在AI的大型語言模型（LLM）時代搶得先機，旗下雲端事業 Azure取得銷售OpenAI最強模型的獨家權利",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "MSFT"
+      ],
+      "companies": [
+        "Amazon",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Unlocking human ambition to drive business growth with AI",
+      "link": "https://blogs.microsoft.com/blog/2026/04/28/unlocking-human-ambition-to-drive-business-growth-with-ai",
+      "source": "Microsoft Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-29T01:34:47+08:00",
+      "summary": "As our customers progress toward becoming Frontier Firms, they are using AI not only to optimize how work gets done, but to reinvent their business on the promise of growth. Organizations can now unlock creativity, accelerate innovation and democratize intelligence by bringing Copilots and agents directly into the tools people love and use every day.... The post Unlocking human ambition to drive business growth with AI appeared first on The Official Microsoft Blog.",
+      "body_text": "Apr 28, 2026 | Judson Althoff - CEO, Microsoft Commercial Business\nAs our customers progress toward becoming Frontier Firms, they are using AI not only to optimize how work gets done, but to reinvent their business on the promise of growth. Organizations can now unlock creativity, accelerate innovation and democratize intelligence by bringing Copilots and agents directly into the tools people love",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "An Interview with OpenAI CEO Sam Altman and AWS CEO Matt Garman About Bedrock Managed Agents",
+      "link": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-29T01:00:00+08:00",
+      "summary": "An interview with OpenAI CEO Sam Altman and AWS CEO Matt Garman about their new partnership, plus my thoughts on OpenAI and Microsoft's new deal.",
+      "body_text": "As I noted yesterday, today’s Stratechery Interview is early in terms of my timing — Tuesday instead of Thursday — and late in terms of delivery — 1pm Eastern instead of 6am — because the topic was embargoed. That embargo created a bit of a weird situation for me over the last several days:\nI think the Microsoft-OpenAI deal makes a lot of sense for both sides. Here are the bullet points of the new",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Market slumps as OpenAI reportedly misses internal targets for active users and revenue — Nvidia, Oracle, AMD, and CoreWeave shares all tremble on the news",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/market-slumps-as-openai-reportedly-misses-internal-targets-for-active-users-and-revenue-nvidia-oracle-amd-and-coreweave-shares-all-tremble-on-the-news",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-28T23:50:26+08:00",
+      "summary": "Nvidia, Oracle, SoftBank, and CoreWeave saw their stock prices go down because of news that OpenAI has been missing its internal targets. SoftBank stock lost 9.9% of its value on the Tokyo Stock Exchange. Nvidia, AMD, Oracle, and CoreWeave also dropped during pre-market trading and remain down after the market opened.",
+      "body_text": "OpenAI's apparent missed targets shake up investor confidence.\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\nOpenAI has reportedly missed its internal targets for the number of active ChatGPT users, as well as multiple revenue goals. Because of this, The Wall Street Journal reports that CFO Sarah Friar has expressed worries about whether th",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT",
+        "GOOGL"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "GitHub will start charging Copilot users based on their actual AI usage",
+      "link": "https://arstechnica.com/ai/2026/04/github-will-start-charging-copilot-users-based-on-their-actual-ai-usage",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-28T23:41:32+08:00",
+      "summary": "GitHub says it can no longer absorb \"escalating inference cost\" from it heaviest AI users.",
+      "body_text": "GitHub says it can no longer absorb “escalating inference cost” from it heaviest AI users.\nGitHub has announced that it will be shifting to a usage-based billing model for its GitHub Copilot AI service starting on June 1. The move is pitched as a way to “better align pricing with actual usage” and a necessary step to keep Copilot financially sustainable amid surging demand for limited AI computing",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "OpenAI and Microsoft's alliance fractures as cloud exclusivity deal ends — Azure's single-provider monopoly for ChatGPT is officially over",
+      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-and-microsofts-alliance-fractures-as-cloud-exclusivity-deal-ends-azures-single-provider-monopoly-for-chatgpt-is-officially-over",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-28T21:56:50+08:00",
+      "summary": "Microsoft and OpenAI have announced a restructuring of their relationship. No longer will Microsoft pay OpenAI a revenue share, but it will continue to flow the other way. Microsoft will also retain model access and a first-refusal for its Azure server services, but OpenAI will be able to work with other CSPs.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT"
+      ],
+      "companies": [
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
       "title": "OpenAI攜五大科技廠開發MRC協議　化解AI訓練效率瓶頸",
       "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754591_VO54Y2L1LFA2CP0EGHMPG",
       "source": "DIGITIMES AI應用",
@@ -53,32 +887,9 @@
       "published": "2026-05-11T02:40:03+08:00",
       "summary": "OpenAI攜手超微（AMD）、博通（Broadcom）、英特爾（Intel）、微軟（Microsoft）及NVIDIA，歷時2年共同開發超級電腦網路「多路徑可靠連線」（Multipath Reliable Connection；MRC）協議，透過開放運...",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT",
         "NVDA"
-      ],
-      "companies": [
-        "Microsoft",
-        "NVIDIA"
-      ]
-    },
-    {
-      "title": "lobehub/lobehub",
-      "link": "https://github.com/lobehub/lobehub",
-      "source": "GitHub Trending (All)",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-10T09:00:18.242120+08:00",
-      "summary": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction. LobeHub LobeHub is the ultimate space for work and life: to find, build, and collaborate with agent teammates that grow with you. We’re building the world’s largest human–agent co-evolving network. English · 简体中文 · Off",
-      "event_type": "earnings",
-      "publisher": "GitHub",
-      "author": "",
-      "tickers": [
-        "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
       ]
     },
     {
@@ -89,13 +900,8 @@
       "published": "2026-05-10T00:18:43+08:00",
       "summary": "Microsoft’s AI Safety Role Grows As Infrastructure Hiring And Security Risks Mount&nbsp;&nbsp;Yahoo Finance",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
       ]
     },
     {
@@ -106,15 +912,9 @@
       "published": "2026-05-09T07:59:19+08:00",
       "summary": "In the second week of the landmark trial between Elon Musk and OpenAI, Musk’s motivations for bringing the suit were under scrutiny. Last week, Musk took the stand, alleging that OpenAI CEO Sam Altman and president Greg Brockman had deceived him into donating $38 million to the company. He claimed that they’d promised to maintain&#8230;",
       "event_type": "news",
-      "publisher": "MIT Technology Review",
-      "author": "Michelle Kim",
       "tickers": [
         "MSFT",
         "TSLA"
-      ],
-      "companies": [
-        "Microsoft",
-        "Tesla"
       ]
     },
     {
@@ -125,13 +925,8 @@
       "published": "2026-05-09T04:03:47+08:00",
       "summary": "The infamous Three Mile Island nuclear plant is poised for a comeback, driven by AI’s massive energy needs. Thanks to a long-term agreement signed by Microsoft Corp. and Constellation Energy Corp. in September 2024, the energy from the plant will power chatbots and other artificial intelligence applications. All this under a new and baggage-free name: the Crane Clean Energy Center. The agreement commits Microsoft to buying all the electricity produced by the site’s remaining functional 835-megaw",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
       ]
     },
     {
@@ -142,57 +937,9 @@
       "published": "2026-05-09T03:12:29+08:00",
       "summary": "",
       "event_type": "news",
-      "publisher": "CoinDesk",
-      "author": "Margaux Nijkerk",
       "tickers": [
         "MSFT",
         "GOOGL"
-      ],
-      "companies": [
-        "Microsoft",
-        "Google"
-      ]
-    },
-    {
-      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
-      "link": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high",
-      "source": "TechCrunch AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-09T02:33:21+08:00",
-      "summary": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
-      "event_type": "earnings",
-      "publisher": "TechCrunch",
-      "author": "Julie Bort",
-      "tickers": [
-        "META",
-        "MSFT",
-        "AMZN"
-      ],
-      "companies": [
-        "Meta",
-        "Microsoft",
-        "Amazon"
-      ]
-    },
-    {
-      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
-      "link": "https://www.theverge.com/report/926771/microsoft-openai-amazon-worries-shit-talk-azure",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-08T23:25:02+08:00",
-      "summary": "When OpenAI was busy experimenting with AI-powered gaming bots, Microsoft CEO Satya Nadella and OpenAI CEO Sam Altman were in the early days of forming an AI partnership. Court documents from the ongoing Musk v. Altman trial have provided a rare look at the communications between Microsoft's top executives about investing in OpenAI and fears [&#8230;]",
-      "event_type": "earnings",
-      "publisher": "The Verge",
-      "author": "Tom Warren",
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "Google"
       ]
     },
     {
@@ -203,13 +950,8 @@
       "published": "2026-05-08T20:54:14+08:00",
       "summary": "A top Microsoft exec has admitted that Windows 11 still relies on a bunch of old code from the 1990s.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
       ]
     },
     {
@@ -220,36 +962,9 @@
       "published": "2026-05-08T09:42:14+08:00",
       "summary": "Leaders at the tech giant were skeptical of OpenAI—but wary of pushing it into the arms of Amazon, according to emails dating back to 2018.",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT",
         "AMZN"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon"
-      ]
-    },
-    {
-      "title": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-      "link": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T07:38:14+08:00",
-      "summary": "CoreWeave has been raising debt to finance its data center buildout, and S&amp;P has boosted the company's credit rating.",
-      "event_type": "earnings",
-      "publisher": "CNBC",
-      "author": "Jordan Novet",
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "NVDA"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "NVIDIA"
       ]
     },
     {
@@ -260,30 +975,8 @@
       "published": "2026-05-08T06:18:25+08:00",
       "summary": "Microsoft AI Governance And Teams Integrations Meet Undervalued Stock Story&nbsp;&nbsp;Yahoo Finance",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
-      ]
-    },
-    {
-      "title": "Mira Murati’s deposition pulled back the curtain on Sam Altman’s ouster",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/926383/mira-murati-sam-altman-musk-trial-ouster",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-08T03:55:22+08:00",
-      "summary": "The week leading up to Thanksgiving 2023 was the AI industry's biggest soap opera moment. OpenAI CEO Sam Altman was abruptly ousted from his role at the ChatGPT maker. The explanation? That Altman was \"not consistently candid in his communications with the board.\" Now, via witness testimony and trial exhibits in Musk v. Altman, the [&#8230;]",
-      "event_type": "earnings",
-      "publisher": "The Verge",
-      "author": "Hayden Field",
-      "tickers": [
-        "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
       ]
     },
     {
@@ -294,19 +987,11 @@
       "published": "2026-05-08T00:45:31+08:00",
       "summary": "Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small &#8220;AI-forward&#8221; teams, and more",
       "event_type": "news",
-      "publisher": "The Pragmatic Engineer",
-      "author": "Gergely Orosz",
       "tickers": [
         "AMZN",
         "META",
         "AAPL",
         "MSFT"
-      ],
-      "companies": [
-        "Amazon",
-        "Meta",
-        "Apple",
-        "Microsoft"
       ]
     },
     {
@@ -317,15 +1002,9 @@
       "published": "2026-05-08T00:30:28+08:00",
       "summary": "Wyoming governor Mark Gordon is welcoming the hyperscalers to the Cowboy State",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT",
         "META"
-      ],
-      "companies": [
-        "Microsoft",
-        "Meta"
       ]
     },
     {
@@ -336,13 +1015,8 @@
       "published": "2026-05-07T22:50:33+08:00",
       "summary": "Data center was first announced in May 2024",
       "event_type": "news",
-      "publisher": "",
-      "author": "",
       "tickers": [
         "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
       ]
     },
     {
@@ -353,13 +1027,8 @@
       "published": "2026-05-07T22:27:39+08:00",
       "summary": "The 2026 FIFA World Cup is expected to add over $40 billion to the global GDP with its most lucrative edition ever.",
       "event_type": "news",
-      "publisher": "CNBC",
-      "author": "Sawdah Bhaimiya",
       "tickers": [
         "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
       ]
     },
     {
@@ -370,32 +1039,137 @@
       "published": "2026-05-07T15:54:00+08:00",
       "summary": "Why OpenAI, AMD, NVIDIA, Intel, Broadcom, and Microsoft all agreed on one networking protocol&nbsp;&nbsp;digit.in",
       "event_type": "news",
-      "publisher": "Google News",
-      "author": "",
       "tickers": [
         "NVDA",
         "MSFT"
-      ],
-      "companies": [
-        "NVIDIA",
-        "Microsoft"
       ]
     },
     {
-      "title": "bunkerity/bunkerweb",
-      "link": "https://github.com/bunkerity/bunkerweb",
-      "source": "GitHub Trending (Python)",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-07T09:00:53.560696+08:00",
-      "summary": "🛡️ Open-source and cloud-native Web Application Firewall (WAF) 🌐 Website | 🤝 Panel | 📓 Documentation | 👨‍💻 Demo | 📱 Demo UI | 🧩 Templates | 🛡️ Examples 💬 Chat | 📝 Forum | 📝 Community | 🗺️ Threatmap | 📊 Status | 🔎 Feedback 🛡️ Make security by default great again! BunkerWeb BunkerWeb is a next-generation, open-source Web Application Firewall (WAF). Being a full-featured web server (based on NGINX under the hood), it will protect your web services to make them \"secure by default.\" BunkerWeb integra",
+      "title": "Musk’s biggest loyalist became his biggest liability",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/925665/musk-altman-trial-shivon-zilis-testimony",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T07:37:02+08:00",
+      "summary": "I sat down in the Musk v. Altman trial courtroom today, painfully aware that no one was going to ask Shivon Zilis the question on everyone's minds: Girl, what the fuck are you doing? Zilis, who testified under oath that she is the mother of four of Musk's children, was… what's the best way to [&#8230;]",
       "event_type": "news",
-      "publisher": "GitHub",
-      "author": "",
+      "tickers": [
+        "TSLA",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Most of Fortune 500 Firms Lack Agentic AI Governance: Microsoft - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbEU0UXBGNldZWWpJSnJJX2YxRWlydlFrWWVzZ1JfQkYxbDVsck9kYWZTaHY5VXJlb3NCUkh2cGFIMXdpWXh6d0F6bXRBbl9YTnBJeUpvdWswNW1tYml3U3hCbGxDZzBDdFEwVk51bFk5bjhLVlJBcFRLT1c1RjNJZ2YtQnF5ekl1N19QZi1VM3JrYTctWjdHWlU5SXQwVHNhOXlnNjJ6MDlPQQ?oc=5",
+      "source": "LLM 應用與商用化",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T06:30:00+08:00",
+      "summary": "Most of Fortune 500 Firms Lack Agentic AI Governance: Microsoft&nbsp;&nbsp;Mexico Business News",
+      "event_type": "news",
       "tickers": [
         "MSFT"
-      ],
-      "companies": [
-        "Microsoft"
+      ]
+    },
+    {
+      "title": "Anthropic raises Claude Code usage limits, credits new deal with SpaceX",
+      "link": "https://arstechnica.com/ai/2026/05/anthropic-raises-claude-code-usage-limits-credits-new-deal-with-spacex",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T06:09:14+08:00",
+      "summary": "Deal follows others with Microsoft, Amazon, and more.",
+      "event_type": "news",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "OpenAI built a networking protocol with AMD, Broadcom, Intel, Microsoft, and NVIDIA to fix AI supercomputer bottlenecks - the-decoder.com",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRllINlM4LWNhbjZCdURrMUZRcVUwbXRVYW00UUdLTFp5LXNLZlFCQ3ZmT1RtZ1E1aU9lNHlLQ2U4X0d6eFNXWlYyWUszVVFuNUhsSGVVR0I1NUp2bzl1WXdseklDcV9TY0xIT1ZxZ2lHSkxjRjV3c2lNZ0hTendwOEtoYmxGVWdKYk9YeFhlaHpKYTFucVJ4eS0wSG1ESTFwLWw1SjE3WC0tTVpGSHJuVElteWQ5QmdwVFEwZHM0WVZjWEloRWVwdjF4S0wyWjZMNmN3MUJGcw",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T03:16:51+08:00",
+      "summary": "OpenAI built a networking protocol with AMD, Broadcom, Intel, Microsoft, and NVIDIA to fix AI supercomputer bottlenecks&nbsp;&nbsp;the-decoder.com",
+      "event_type": "news",
+      "tickers": [
+        "MSFT",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Xbox啟動高層大換血　力求扭轉硬體銷售頹勢",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754347_XZF2NVH25D0I1R6AF385B",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T02:34:38+08:00",
+      "summary": "微軟（Microsoft）遊戲部門Xbox執行長Asha Sharma於週二發布內部備忘錄，宣布啟動大規模領導層重組。這項行動正值微軟軟體業務尋求重振其影像遊戲單位成長，並試圖扭轉硬體銷量持續下滑的關鍵時刻。據CNBC報導，Asha...",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
+      ]
+    },
+    {
+      "title": "科技1分鐘：Xbox高層大換血，象徵一個舊時代的結束",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754440_UHY5GFHX3J4OVN1DKMG26",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T02:11:34+08:00",
+      "summary": "2026年，微軟遊戲部門（Microsoft Gaming）迎來了近十年最大規模的人事震盪。隨著多位長期主導硬體開發與傳統零售通路的高層相繼離職，取而代之的是一群具備強烈「訂閱服務」與「多平台發行」背景的新銳主管。這場高層大換血，不僅是內部權力的更迭，更標誌著 Xbox...",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Xbox CEO Asha Sharma kills Copilot for Gaming — overhauls leadership with CoreAI veterans",
+      "link": "https://www.tomshardware.com/video-games/xbox/xbox-ceo-asha-sharma-kills-copilot-for-gaming",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-07T01:51:36+08:00",
+      "summary": "Sharma took over as Xbox CEO in February after Phil Spencer retired following 38 years at Microsoft.",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+      "link": "https://www.anthropic.com/news/higher-limits-spacex",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T00:17:33+08:00",
+      "summary": "Article URL: https://www.anthropic.com/news/higher-limits-spacex Comments URL: https://news.ycombinator.com/item?id=48037986 Points: 373 # Comments: 313",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "GOOGL",
+        "AMZN",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "At AI scale, raw bandwidth breaks down. What matters is resilience, recovery, and consistency under load. AMD in collaboration with Microsoft and @Ope...",
+      "link": "https://x.com/AMD/status/2052028386562736466",
+      "source": "X @AMD",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-06T22:11:06+08:00",
+      "summary": "At AI scale, raw bandwidth breaks down. What matters is resilience, recovery, and consistency under load. AMD in collaboration with Microsoft and @OpenAI defines a proven solution approach to AI networking with MRC. Learn more now: https://bit.ly/3QRaPro",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Microsoft’s Office and LinkedIn chief now runs Teams in latest reshuffle",
+      "link": "https://www.theverge.com/tech/924931/microsoft-office-copilot-windows-reorg-shuffle",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-06T19:45:41+08:00",
+      "summary": "Microsoft's LinkedIn chief, Ryan Roslansky, took on an expanded role at the company as head of Office last year, and he's now getting more responsibilities as part of the latest leadership reshuffle inside Microsoft. Sources tell me that the Microsoft Teams organization is moving to report to Roslansky, who will now lead a new Work [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
       ]
     }
   ],
@@ -437,31 +1211,102 @@
       "guidance_summary": ""
     }
   ],
+  "fundamentals": {
+    "ticker": "MSFT",
+    "market": "us",
+    "company_name": "MICROSOFT CORP",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "revenue": 241832000000.0,
+      "gross_profit": 164983000000.0,
+      "operating_income": 114634000000.0,
+      "net_income": 97983000000.0,
+      "eps": 13.14,
+      "fcf": 47348000000.0,
+      "ocf": 127494000000.0,
+      "capex": 80146000000.0,
+      "gross_margin": 0.6822215422276622,
+      "op_margin": 0.4740232888947699,
+      "net_margin": 0.40516970458830925,
+      "fcf_margin": 0.19578881206788185,
+      "capex_intensity": 0.3314118892454266,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": 52.14727014206083,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q3",
+        "revenue": 241832000000.0,
+        "gross_profit": 164983000000.0,
+        "operating_income": 114634000000.0,
+        "net_income": 97983000000.0,
+        "eps_diluted": 13.14,
+        "fcf": 47348000000.0,
+        "ocf": 127494000000.0,
+        "capex": 80146000000.0,
+        "company_name": "MICROSOFT CORP"
+      },
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q2",
+        "revenue": 158946000000.0,
+        "gross_profit": 108925000000.0,
+        "operating_income": 76236000000.0,
+        "net_income": 66205000000.0,
+        "eps_diluted": 8.87,
+        "fcf": 31545000000.0,
+        "ocf": 80815000000.0,
+        "capex": 49270000000.0,
+        "company_name": "MICROSOFT CORP"
+      }
+    ],
+    "health": {
+      "tier": "steady",
+      "label": "穩健",
+      "summary": "營益率 47% 業界頂尖",
+      "icon": "🔵",
+      "score": 2
+    }
+  },
   "co_mentions": [
     {
-      "ticker": "AMZN",
-      "count": 5
+      "ticker": "GOOGL",
+      "count": 23
     },
     {
-      "ticker": "NVDA",
-      "count": 3
+      "ticker": "AMZN",
+      "count": 19
     },
     {
       "ticker": "META",
-      "count": 3
+      "count": 15
     },
     {
-      "ticker": "GOOGL",
-      "count": 2
-    },
-    {
-      "ticker": "TSLA",
-      "count": 1
+      "ticker": "NVDA",
+      "count": 9
     },
     {
       "ticker": "AAPL",
+      "count": 3
+    },
+    {
+      "ticker": "TSLA",
+      "count": 3
+    },
+    {
+      "ticker": "TSM",
+      "count": 2
+    },
+    {
+      "ticker": "1940",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:22:11Z"
+  "generated_at": "2026-05-11T03:33:21Z"
 }

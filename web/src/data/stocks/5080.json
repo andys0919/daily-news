@@ -1,0 +1,166 @@
+{
+  "ticker": "5080",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Linked and Loaded: Gaijin Single Sign-On Now Available on GeForce NOW",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-gaijin-sso",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T21:00:27+08:00",
+      "summary": "Less typing, more tanking. Faster logins mean more time in the gaming action — and this week provides GeForce NOW members with a smoother path straight into the battlefield. Cloud gaming is all about instant access to titles across devices, and the latest GeForce NOW update removes another layer for members jumping into their Gaijin […]",
+      "body_text": "Share This Article\nX\nFacebook\nLinkedIn\nCopy link\nLess typing, more tanking.\nFaster logins mean more time in the gaming action — and this week provides GeForce NOW members with a smoother path straight into the battlefield.\nCloud gaming is all about instant access to titles across devices, and the latest GeForce NOW update removes another layer for members jumping into their Gaijin libraries from a",
+      "event_type": "earnings",
+      "tickers": [
+        "5080",
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Ryzen 9800X3D and NVIDIA RTX 5080 PC deal knocks $300 off the MSRP on Newegg right now - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZHdNenNKTnU3Ty1aRjJUeGpyWU84YTc4SzBZa2R0Q3otWVVsa2RVOWd1S3pDekszd1NzZEpyeC1xM2dTSFRDRno3ejZfZTgzYUdHb1MwYlItYU5OOXRjQUFwbEZ2UDdBWTl6MWljMk1XOGVUWWVDTEU3dEFzRUk0NWVRMENaVjhhSlFNUnFGaUt5TXRNTjZGZjZVRXFhSkZJRkVNQ28zVF9vOEtnc2owSWdkTEdTRHc?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T19:47:32+08:00",
+      "summary": "Ryzen 9800X3D and NVIDIA RTX 5080 PC deal knocks $300 off the MSRP on Newegg right now&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5080",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Premium Ryzen 9800X3D and RTX 5080 prebuilt PC deal on Newegg knocks $300 off the MSRP - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVlY0YkJqUndtVENsZzZsb19oa05yTTFJendmYmtyNzV6Q1BzTmNHdV8wd09Jc3RiMDVGYmVYTmE1WjkzRTVoeDZaenlLY0xRbHowM0M3clJzeTVHeE5TTVJXaXQ2R1MwMVdMdU4xd1ZpSjBKRVVXbHNheU9vR1RxR3N2cnRmSm9qYmR3Ykc3WWdqTjRpT2o1NzMtLWxhdGpheTFLT3ppS0VXa2xPUXdENGd6bHk1bGs?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T05:51:48+08:00",
+      "summary": "Premium Ryzen 9800X3D and RTX 5080 prebuilt PC deal on Newegg knocks $300 off the MSRP&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5080"
+      ]
+    },
+    {
+      "title": "Outstanding RTX 5080 combo bundle saves you $1,385 on a complete high-spec PC build — 64GB of RAM, 9850X3D, 2TB Samsung 9100 Pro, Corsair Case, and Power Supply for $2849",
+      "link": "https://www.tomshardware.com/speakers/outstanding-rtx-5080-combo-bundle-saves-you-usd1-385-on-a-complete-high-spec-pc-build-64gb-of-ram-9850x3d-2tb-samsung-9100-pro-corsair-case-and-power-supply-for-usd2849",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-05T19:31:42+08:00",
+      "summary": "Every hardware component you need to build a top-tier gaming PC, all in one Newegg combo bundle. It also helps that it saves you a whopping $1,385 and includes a powerful RTX 5080 and 9850X3D.",
+      "event_type": "news",
+      "tickers": [
+        "5080",
+        "9100",
+        "2849"
+      ]
+    },
+    {
+      "title": "It’s Gonna Be May: 16 Games Hit the Cloud This Month, With More NVIDIA GeForce RTX 5080 Power",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-may-2026-games-list",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-30T21:00:47+08:00",
+      "summary": "It’s gonna be May — and the cloud’s in full festival mode. 16 games are joining GeForce NOW this month, including new AAA titles arriving on launch day from Steam, Xbox, PC Game Pass and GOG, so members can stream their PC libraries instantly across almost any device. Headline launches include the highly anticipated Forza […]",
+      "event_type": "news",
+      "tickers": [
+        "5080",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "MSI's Flagship 18\" 4K+ Gaming Laptop with AMD Ryzen 9 X3D CPU and RTX 5080 GPU for $2,599 - IGN",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE15Mm1STTB1R1VVbm1tUXlGNlJib3M2d1VBa2p4U3Z1ZFd1YUhkb1FLSGp1ZVpMNVV2TXE1ZjkwNEdFVFpDcWJTejVKOE12a08yQTdKbFhUUzQ2aENXOHZPWEpvaWpOanprMWdCSnRDa0JFRW82b0ZyZER3",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-30T05:40:00+08:00",
+      "summary": "MSI's Flagship 18\" 4K+ Gaming Laptop with AMD Ryzen 9 X3D CPU and RTX 5080 GPU for $2,599&nbsp;&nbsp;IGN",
+      "event_type": "news",
+      "tickers": [
+        "5080"
+      ]
+    },
+    {
+      "title": "Save a huge $460 on this RTX 5080 gaming PC with a 9800X3D, 32GB of DDR5 RAM, and a 2TB SSD — $3,039.99 sale price nets you this Newegg ABS pre-built powerhouse that's made for 4K gaming",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/save-a-huge-usd460-on-this-rtx-5080-gaming-pc-with-a-9800x3d-32gb-of-ddr5-ram-and-a-2tb-ssd-usd3-039-99-sale-price-nets-you-this-newegg-abs-pre-built-powerhouse-thats-made-for-4k-gaming",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-21T19:41:35+08:00",
+      "summary": "Snag a huge bargain on this ABS Kaze II gaming rig from Newegg, fitted with a 9800X3D, RTX 5080, 32GB of DDR5 RAM, and a 2TB SSD, all for just $3,039.99 using a coupon code.",
+      "event_type": "news",
+      "tickers": [
+        "5080"
+      ]
+    },
+    {
+      "title": "Excellent value RTX 5080 and Ryzen 9800X3D PC deal slashes $300 off the price on Newegg right now - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYVJFdjhkRHpZQVFwcXk3cldHWTg2dUV1RXlmLUotNGNIQU9nbThKNXptR1A2c1J4ZkpPcTg4cHYtcWhnb0ZEVkEzaGdjWkRJeWdrbk9yVWxKY2tIVVFMVlFxblNMS2R4SjhKSVZtN2Fvc1NiYVBKanVJeVNJYktTN3ZwNm9CY2Q1QW8yZkNlaUw5emZLaktMc3RraVR5Q0tPZ2YwTjFTV1BFY1F1TVA2TTZ6TWZPVXY1a0NjUkRyM3FhWU9zLUE?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-18T01:39:42+08:00",
+      "summary": "Excellent value RTX 5080 and Ryzen 9800X3D PC deal slashes $300 off the price on Newegg right now&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5080"
+      ]
+    },
+    {
+      "title": "Grab MSI’s RTX 5080 gaming laptop for just over $2,000 — offers fast 240 Hz QHD+ display, dual storage slots, and expandable DDR5 memory",
+      "link": "https://www.tomshardware.com/pc-components/grab-msis-rtx-5080-gaming-laptop-for-just-over-usd2-000-offers-fast-240-hz-qhd-display-dual-storage-slots-and-expandable-ddr5-memory",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-13T01:07:40+08:00",
+      "summary": "Combining a 240Hz QHD+ display, Core Ultra 9 CPU, and RTX 5080 GPU, this deal offers high-end performance at a relatively competitive price point",
+      "event_type": "news",
+      "tickers": [
+        "5080"
+      ]
+    },
+    {
+      "title": "Strength and Destiny Collide: ‘Samson: A Tyndalston Story’ Arrives in the Cloud",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-samson-a-tyndalston-story",
+      "source": "NVIDIA Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-09T21:00:57+08:00",
+      "summary": "A timeless story of grit, faith and rebellion takes center stage as Samson: A Tyndalston Story joins the GeForce NOW library today. The highly anticipated release from Liquid Swords can now be streamed on nearly any device with GeForce NOW bringing cinematic intensity and mythic storytelling to the cloud. Catch it as part of four […]",
+      "event_type": "news",
+      "tickers": [
+        "5080",
+        "NVDA",
+        "META"
+      ]
+    },
+    {
+      "title": "This gaming desktop has an RTX 5080 and AMD's newest Ryzen chip - MSN",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWjlDd3htWE94OEp4VVdDZ0x2My1sYzBCQjVNOFVNZ0xYQlM3WXM0VjR0alBkRmRuSi1MRVQ3LVl1ekZVRjdCVjdrTEF0UnFVSkhTeV84VU1qMkhJclNocW1Kd29IVDZNZnJfSW5acTZxTmdWd1VRMEV1dDhINi1YYzRjaV9ITVlCVnN3R0xoZjRrS19GQi1tNkpNZXFLenlsQ2xnLS1mMjVVZ3dMUFVZMW9oenJUTm8",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-03T05:56:15+08:00",
+      "summary": "This gaming desktop has an RTX 5080 and AMD's newest Ryzen chip&nbsp;&nbsp;MSN",
+      "event_type": "news",
+      "tickers": [
+        "5080"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "NVDA",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:22Z"
+}

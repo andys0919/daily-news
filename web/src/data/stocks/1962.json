@@ -1,0 +1,87 @@
+{
+  "ticker": "1962",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Only Congress Can Fix American Trade",
+      "link": "https://www.foreignaffairs.com/united-states/only-congress-can-fix-american-trade",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-05T12:00:00+08:00",
+      "summary": "Trump’s tariff mess offers a chance to restore legislative oversight.",
+      "body_text": "TREVOR SUTTON is a Nonresident Senior Fellow at the Center for International Policy and a Senior Researcher at the Center for Global Energy Policy at Columbia University.\nTrump’s Tariff Mess Offers a Chance to Restore Legislative Oversight\nTrevor Sutton\nIn February, the U.S. Supreme Court struck down President Donald Trump’s sweeping “Liberation Day” tariffs. Among American commentators, the react",
+      "event_type": "earnings",
+      "tickers": [
+        "1962",
+        "1974",
+        "1988",
+        "1890",
+        "1930"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Iran War Is an Expectations Game",
+      "link": "https://www.foreignaffairs.com/iran/iran-war-expectations-game",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "How perceptions shape a conflict’s outcome.",
+      "body_text": "DOMINIC TIERNEY is Claude Smith Professor of Political Science at Swarthmore College, a Senior Fellow at the Foreign Policy Research Institute, and the author of The Right Way to Lose a War: America in an Age of Unwinnable Conflicts .\nHow Perceptions Shape a Conflict’s Outcome\nDominic Tierney\nOn April 8, the United States and Iran agreed to a two-week cease-fire. But despite two days of negotiatio",
+      "event_type": "earnings",
+      "tickers": [
+        "1953",
+        "1962"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Putin says he thinks Russia-Ukraine war is coming to an end",
+      "link": "https://www.cnbc.com/2026/05/09/putin-says-he-thinks-the-ukraine-conflict-is-coming-to-an-end.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-10T05:03:54+08:00",
+      "summary": "\"I think that the matter is coming to an end,\" Putin told reporters of the Ukraine war.",
+      "event_type": "news",
+      "tickers": [
+        "1962",
+        "1989",
+        "1941"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1974",
+      "count": 1
+    },
+    {
+      "ticker": "1988",
+      "count": 1
+    },
+    {
+      "ticker": "1890",
+      "count": 1
+    },
+    {
+      "ticker": "1930",
+      "count": 1
+    },
+    {
+      "ticker": "1953",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

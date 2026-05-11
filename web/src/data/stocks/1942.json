@@ -1,0 +1,107 @@
+{
+  "ticker": "1942",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "The Importance of the Battle of Savo Island",
+      "link": "https://warontherocks.com/the-importance-of-the-battle-of-savo-island",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-27T15:15:26+08:00",
+      "summary": "On the night of Aug. 9, 1942, an Allied fleet of 17 warships guarded the approaches to Guadalcanal. The fleet was newer, larger, and better equipped than the Japanese force bearing down on it. It had six heavy cruisers, two light cruisers, and nine destroyers. It carried radar, a technology that should have detected the enemy long before any lookout could spot a ship through the darkness. By the numbers, the Allied squadron was on average 10 years newer and outweighed its opponent by more than 8",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nOn the night of Aug. 9, 1942, an Allied fleet of 17 warships guarded the approaches to Guadalcanal. The fleet was newer, larger, and better equipped than the Japanese force bearing down on it. It had six heavy cruisers, two light cruisers, and nine destroyers. It carried ra",
+      "event_type": "earnings",
+      "tickers": [
+        "1942",
+        "0053",
+        "0144",
+        "0150",
+        "0216",
+        "1943",
+        "1950",
+        "1949"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "A Formal Defense Pact in the Indo-Pacific Is the Wrong Answer",
+      "link": "https://warontherocks.com/a-formal-defense-pact-in-the-indo-pacific-is-the-wrong-answer",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-23T15:30:25+08:00",
+      "summary": "The debate over how best to deter China in the western Pacific has reached a new level of ambition. Ely Ratner, a former senior defense official in the Biden administration, proposed a &#8220;Pacific Defense Pact&#8221; &#8212; a legally binding multilateral treaty among the United States, Japan, Australia, and the Philippines. This reflects serious concerns over China&#8217;s rise and its potential future use of force along the first island chain. The underlying diagnosis is sound: Existing U.S",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nThe debate over how best to deter China in the western Pacific has reached a new level of ambition. Ely Ratner, a former senior defense official in the Biden administration, proposed a “ Pacific Defense Pact ” — a legally binding multilateral treaty among the United States,",
+      "event_type": "earnings",
+      "tickers": [
+        "1941",
+        "1942"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "Japan's Tokyu to trial data centers along Tokyo railway line",
+      "link": "https://www.datacenterdynamics.com/en/news/japans-tokyu-to-trial-data-centers-along-tokyo-railway-line",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-03-30T21:30:30+08:00",
+      "summary": "Company says railway line already has ample fiber connectivity",
+      "body_text": "DCD Magazine #60 is out now! Download and read for free here\nCompany says railway line already has ample fiber connectivity\nJapanese rail conglomerate Tokyu is exploring deploying data centers along one of its railway routes.\nTokyu Corporation, Tokyu Electric Railway Co., iTSCOM, and Tokyu Construction Co., last week announced they will start a demonstration experiment to develop urban data center",
+      "event_type": "earnings",
+      "tickers": [
+        "1910",
+        "1942"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "0053",
+      "count": 1
+    },
+    {
+      "ticker": "0144",
+      "count": 1
+    },
+    {
+      "ticker": "0150",
+      "count": 1
+    },
+    {
+      "ticker": "0216",
+      "count": 1
+    },
+    {
+      "ticker": "1943",
+      "count": 1
+    },
+    {
+      "ticker": "1950",
+      "count": 1
+    },
+    {
+      "ticker": "1949",
+      "count": 1
+    },
+    {
+      "ticker": "1941",
+      "count": 1
+    },
+    {
+      "ticker": "1910",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:25Z"
+}

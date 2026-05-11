@@ -1,0 +1,45 @@
+{
+  "ticker": "2048",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Lumai Productizes Lens-Based Optical Computer",
+      "link": "https://www.eetimes.com/lumai-productizes-lens-based-optical-computer",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-30T01:00:00+08:00",
+      "summary": "New systems are for evaluation, with commercial systems coming by 2029. The post Lumai Productizes Lens-Based Optical Computer appeared first on EE Times.",
+      "body_text": "British startup Lumai is productizing its lens-based optical computer for matrix-multiply acceleration in AI inference. This is the first time an optical computing system has successfully run billion-parameter models and goes a long way towards demonstrating the technology’s commercial viability, Phil Burr, head of product at Lumai, told EE Times.\nThe company has engineered out the reasons existin",
+      "event_type": "earnings",
+      "tickers": [
+        "2048"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "The post-quantum transition can’t be postponed any longer",
+      "link": "https://www.coindesk.com/opinion/2026/03/31/the-post-quantum-transition-can-t-be-postponed-any-longer",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-01T02:05:00+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "2048",
+        "GOOGL"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-11T03:33:23Z"
+}

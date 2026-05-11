@@ -1,0 +1,1188 @@
+{
+  "ticker": "TSLA",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "TSLA",
+    "company_name": "Tesla, Inc.",
+    "quarterly": {
+      "market": "us",
+      "ticker": "TSLA",
+      "company_name": "Tesla, Inc.",
+      "cik": "0001318605",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 22387000000.0,
+      "monthly_revenue": null,
+      "net_income": 477000000.0,
+      "operating_income": 941000000.0,
+      "gross_profit": 4720000000.0,
+      "gross_margin": 0.21083664626792334,
+      "operating_margin": 0.04203332291061777,
+      "eps_diluted": 0.13,
+      "operating_cash_flow": 3937000000.0,
+      "capex": 2493000000.0,
+      "free_cash_flow": 1444000000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-04-23\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2026-01-01\", \"end\": \"2026-03-31\", \"val\": 22387000000, \"accn\": \"0001628280-26-026673\", \"fy\": 2026, \"fp\": \"Q1\", \"form\": \"10-Q\", \"filed\": \"2026-04-23\", \"frame\": \"CY2026Q1\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "Tesla's Real 2026 Problem: AI Capex Eats the EV Cash Machine - techi.com",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qMlFGckE1V19nNVFzQ1FkSjB5Y2FKLXhMa3pZMGpyNjQyY0t6UjBIVVpJOHVjQVp2ZVpLekV0bEJEVHVSRDk5RU9Gb1NUU01xUDlZcXJ3TkNVNmtudlFtVDlzWQ?oc=5",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T00:07:01+08:00",
+      "summary": "Tesla's Real 2026 Problem: AI Capex Eats the EV Cash Machine&nbsp;&nbsp;techi.com",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Open Design: Use Your Coding Agent as a Design Engine",
+      "link": "https://github.com/nexu-io/open-design",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-02T20:16:16+08:00",
+      "summary": "Article URL: https://github.com/nexu-io/open-design Comments URL: https://news.ycombinator.com/item?id=47985750 Points: 169 # Comments: 84",
+      "body_text": "The open-source alternative to Claude Design . Local-first, web-deployable, BYOK at every layer — 12 coding-agent CLIs auto-detected on your PATH (Claude Code, Codex, Devin for Terminal, Cursor Agent, Gemini CLI, OpenCode, Qwen, GitHub Copilot CLI, Hermes, Kimi, Pi, Kiro) become the design engine, driven by 31 composable Skills and 72 brand-grade Design Systems . No CLI? An OpenAI-compatible BYOK ",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tesla (TSLA) Reports $500M Revenue from Elon Musk-Linked Ventures - GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU3EweGVFNW9XZkhHalhMUHIwXzNjMHVVVzlHaTE1M1d1QVN6b0s2aXhGRjZiX2UyUXd6TmFpd3A3UVdmN0ZzaWkxT2hxMFJUakZTM1F3UnBqdFR1d2NIY3FBTldnbGxTZFZSX0FGRXNqMk1lWFF1aFl5dk8wbFA0akxTdTNxRTAzU3FFTXBtWVZZOWZhWEdSdEg3ZDk4NFdHTlE?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-02T04:03:33+08:00",
+      "summary": "Tesla (TSLA) Reports $500M Revenue from Elon Musk-Linked Ventures&nbsp;&nbsp;GuruFocus",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Did you know you can’t steal a charity? Don’t worry. Elon Musk will remind you.",
+      "link": "https://techcrunch.com/podcast/did-you-know-you-cant-steal-a-charity-dont-worry-elon-musk-will-remind-you",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-02T01:44:29+08:00",
+      "summary": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it&#8217;s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk&#8217;s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the [&#8230;]",
+      "body_text": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it’s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk’s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the benefit of humanity” mission Musk",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "TSLA",
+        "AMZN",
+        "META",
+        "GOOGL"
+      ],
+      "companies": [
+        "Apple",
+        "Tesla",
+        "Amazon",
+        "Meta",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk's 7 biggest stumbles on the stand at OpenAI trial",
+      "link": "https://arstechnica.com/tech-policy/2026/04/elon-musks-7-biggest-stumbles-on-the-stand-at-openai-trial",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-01T05:11:51+08:00",
+      "summary": "Elon Musk spent three days testifying as the first witness in his trial against OpenAI.",
+      "body_text": "Elon Musk spent three days testifying as the first witness in his trial against OpenAI.\nElon Musk seems tired and cranky. On Thursday, he took the stand for the third day in a four-week trial stemming from his lawsuit alleging that OpenAI abandoned its mission and should be blocked from taking the company public later this year. If Musk plays his cards right, Sam Altman could be ousted and OpenAI ",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "TSLA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "US singer D4vd bought tools online to dispose of girl's body, prosecutors allege",
+      "link": "https://www.bbc.com/news/articles/cvgzll79529o",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-30T08:19:36+08:00",
+      "summary": "The Tiktok star's attorneys have maintained his innocence and vowed to \"vigorously defend\" him.",
+      "body_text": "US singer D4vd has been accused of purchasing tools online - including chainsaws - after prosecutors say he stabbed a teen girl to death.\nThe allegations were released in an evidence filing, which details his alleged motive and steps prosecutors say he took to cover his tracks before 14-year-old Celeste Rivas Hernandez's dismembered body was found in his car.\nProsecutors say he met Rivas Hernandez",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk’s worst enemy in court is Elon Musk",
+      "link": "https://www.theverge.com/tech/921022/elon-musk-cross-openai-altman",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T08:01:24+08:00",
+      "summary": "About five hours into Elon Musk's testimony, I typed the following sentence into my notes: \"I have never been more sympathetic to Sam Altman in my life.\" Musk's direct testimony was an improvement over yesterday - even if his lawyer kept asking leading questions to cue him in how to answer. But that memory was [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Tech\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nIt’s dangerous to tell a courtroom “I don’t lose my temper.”\nPosts from this author will be added to",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "GOOGL",
+        "MSFT"
+      ],
+      "companies": [
+        "Tesla",
+        "Google",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "All the evidence unveiled so far in Musk v. Altman",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-30T02:03:05+08:00",
+      "summary": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and corporate documents are circulating from the earliest days of OpenAI - and from before the AI lab even had a name. Some high-level takeaways: [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\n﻿Emails going as far back as 2015 give a glimpse into the foundations of OpenAI and the early tens",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "MSFT",
+        "META",
+        "TSLA"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Microsoft",
+        "Meta",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Disposable Oligarchs",
+      "link": "https://www.foreignaffairs.com/united-states/disposable-oligarchs",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-28T12:00:00+08:00",
+      "summary": "Why wealthy elites come to regret their bargains with authoritarians.",
+      "body_text": "CHRISTOPHER A. HARTWELL is Professor of International Business Policy and Head of the International Management Institute at the Zurich University of Applied Sciences School of Management and Law and a Professor at Kozminski University.\nTRICIA D. OLSEN is Professor of Global Public Policy and Political Science and Harold E. Stassen Chair at the University of Minnesota’s Humphrey School of Public Af",
+      "event_type": "policy",
+      "tickers": [
+        "META",
+        "AMZN",
+        "GOOGL",
+        "TSLA",
+        "JPM"
+      ],
+      "companies": [
+        "Meta",
+        "Amazon",
+        "Google",
+        "Tesla",
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk and Sam Altman are going to court over OpenAI’s future",
+      "link": "https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-28T06:52:57+08:00",
+      "summary": "After a yearslong legal feud, Elon Musk and OpenAI CEO Sam Altman are heading to trial this week in Northern California in a case that could have sweeping consequences. Ahead of OpenAI’s highly anticipated IPO, the court could rule on whether the company is allowed to exist as a for-profit enterprise and might even oust&#8230;",
+      "body_text": "Elon Musk says he’s suing to save the company’s mission. The case could have huge consequences for OpenAI and the AI race.\nAfter a yearslong legal feud, Elon Musk and OpenAI CEO Sam Altman are heading to trial this week in Northern California in a case that could have sweeping consequences. Ahead of OpenAI’s highly anticipated IPO, the court could rule on whether the company is allowed to exist as",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "TSLA"
+      ],
+      "companies": [
+        "Microsoft",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Musk and Altman face off in trial that will determine OpenAI's future",
+      "link": "https://arstechnica.com/tech-policy/2026/04/musk-and-altman-face-off-in-trial-that-will-determine-openais-future",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-28T04:45:18+08:00",
+      "summary": "Musk’s shifting stance on AI dangers may complicate trial over OpenAI’s mission.",
+      "body_text": "Musk’s shifting stance on AI dangers may complicate trial over OpenAI’s mission.\nA hotly anticipated trial starts this week, where Elon Musk will attempt to prove that OpenAI, under Sam Altman, has abandoned its mission to remain a nonprofit in order to ensure that artificial intelligence serves humanity, and not just billionaires.\nMany view the lawsuit as a grudge match between Musk—who left Open",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL",
+        "TSLA",
+        "MSFT"
+      ],
+      "companies": [
+        "Google",
+        "Tesla",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Musk vs. Altman is here, and it&#8217;s going to get messy",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-24T20:00:00+08:00",
+      "summary": "Elon Musk cofounded OpenAI, and then flounced off in a huff when he wasn't anointed CEO, leaving Sam Altman as the last power-hungry man standing. Now, Musk is back with a lawsuit, and a trial is scheduled to start in Oakland, California, on April 27th. Theoretically, it's a legal case about whether OpenAI defrauded Musk. [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nIt’s all about the court of public opinion.\nPosts from this author will be added to your daily ema",
+      "event_type": "earnings",
+      "tickers": [
+        "META",
+        "MSFT",
+        "TSLA",
+        "AAPL"
+      ],
+      "companies": [
+        "Meta",
+        "Microsoft",
+        "Tesla",
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk warns investors as Tesla plans $25B capex to scale AI and robotics - mezha.net",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9vTHdTNk9iNmZzeDFTcllYSlA3MmU2TDgtczZzYnFOYTFNZldYV05TRW5HM19IT29Xb2dRUTZaOUJvZFBGeklLN0JuZ3R4dTNCOEJ1bjNBOA",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-23T08:54:03+08:00",
+      "summary": "Elon Musk warns investors as Tesla plans $25B capex to scale AI and robotics&nbsp;&nbsp;mezha.net",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tesla Earnings Beat, But TSLA Stock Falls On Elon Musk Comments; HW3.0 'Does Not Have The Capability' - Investor's Business Daily",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYzFDaG90eV9heVVPZ1RpMThNeTg4SDJQRmhyODQxTHBReEdoaTR2OHo5ZF80ZjFfUHUzQmZvR00yOGw3TFRDUEFkQ2RhM3kzWVgyVzR5dGoxVGZTdl9Xa3RWazZta0M5WVFEZnNSQ01HSHZENzRBdFVhTld4VTFQemNB",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-23T08:27:00+08:00",
+      "summary": "Tesla Earnings Beat, But TSLA Stock Falls On Elon Musk Comments; HW3.0 'Does Not Have The Capability'&nbsp;&nbsp;Investor's Business Daily",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tesla just increased its spending plan to $25 billion. Here’s where the money is going.",
+      "link": "https://techcrunch.com/2026/04/22/tesla-just-increased-its-capex-to-25b-heres-where-the-money-is-going",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-23T07:56:52+08:00",
+      "summary": "Tesla's planned capex for 2026 is three times higher than what the company has historically spent. Its CFO said, as a result, Tesla will have a negative free cash flow the rest of the year.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nSave up to $680 on your Disrupt 2026 pass. Ends 11:59 p.m. PT tonight. REGISTER NOW .\nTesla CEO Elon Musk kicked off the company’s first-quarter earnings call with a monetary heads-up — or depending on the mindset of the investor, a warning. Tesla’s capital expenditures will skyrocket to $25 billion in 2026, fa",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Tesla",
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tesla lifts 2026 spending plans by a quarter as Musk funds AI and robotic dreams - Reuters",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdG1nY0hsQks1UXZDNmhhLVY2cFg1TmRQeGlrM2M1QUpMUzdSel90UGJHYlhPQ1pzLW8ybkFLTVJmcjRNeHdvalUzYVU0T1lYUWpDSVBZMllPUjJGM1FPWW5PX3YyQzBkek9KdldBcDdiUWxZcEZrWlY1WVNjbU9wMFIwcWRTcV95WjlQN0FsV0hySk4zQzA1bGZ4NlRKV25TX25pbmc1bHE1dlJOVDRpeQ",
+      "source": "Reuters (Google News)",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-04-23T07:30:28+08:00",
+      "summary": "Tesla lifts 2026 spending plans by a quarter as Musk funds AI and robotic dreams&nbsp;&nbsp;Reuters",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Tesla misses on revenue but beats on profit as auto margins jump",
+      "link": "https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-23T06:55:08+08:00",
+      "summary": "Tesla's stock has underperformed all of its megacap peers so far this year as global competition ramps up in the electric vehicle market.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk's Tesla reports unchanged bitcoin holdings, books $173 million digital asset loss",
+      "link": "https://www.coindesk.com/markets/2026/04/22/elon-musk-s-tesla-reports-unchanged-bitcoin-holdings-books-usd173-million-digital-asset-loss",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-04-23T04:36:19+08:00",
+      "summary": "",
+      "body_text": "Elon Musk's Tesla's (TSLA) bitcoin BTC $ 78,409.11 holdings were unchanged in the first quarter of 2026, with the company continuing to hold its 11,509 BTC stockpile.\nThe company booked an after-tax impairment loss of $173 million on its digital asset holdings, according to its first quarter earnings report.\nThe value of that stash declined as bitcoin fell from around $90,000 at the start of the y",
+      "event_type": "earnings",
+      "tickers": [
+        "BLSH",
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "How to Fight an Economic War",
+      "link": "https://www.foreignaffairs.com/united-states/how-fight-economic-war-fishman",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T12:00:00+08:00",
+      "summary": "A field manual for a ruptured world.",
+      "body_text": "A Field Manual for a Ruptured World\nEdward Fishman\nMay/June 2026\nThe World Economic Forum at Davos is rarely the site of geopolitical rupture. But this year, Canadian Prime Minister Mark Carney stood before the assembled executives and dignitaries to declare the end of an era. Globalization, with its promise of win-win cooperation, had given way to intensifying economic warfare. “Great powers have",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "TSLA"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "美股四大指數飆 本周緊盯中東局勢變化、科技七雄財報",
+      "link": "https://money.udn.com/money/story/123398/9450356",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-19T02:41:43+08:00",
+      "summary": "美國股市17日大漲，道瓊工業指數大漲868點，標普500指數、那斯達克綜合指數、費城半導體指數再創新高。本周投資人持續緊盯中東局勢變化，及美股財報季，尤其是由特斯拉（Tesla）打頭陣的科技七雄的業績。",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "三星傻眼了！台積電放大絕，要餐桌上不留一點菜給競爭對手",
+      "link": "https://finance.technews.tw/2026/04/17/tsmc-goes-all-out-leaving-no-food-for-its-competitors-to-eat",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-17T06:00:18+08:00",
+      "summary": "隨著全球人工智慧 （AI） 技術的爆發性成長，半導體產業的先進製程正面臨史無前例的供需失衡。根據韓國媒體近期的 [&#8230;]",
+      "body_text": "隨著全球人工智慧（AI）技術的爆發性成長，半導體產業的先進製程正面臨史無前例的供需失衡。根據韓國媒體近期的深入分析與報導，全球晶圓代工龍頭 台積電 （TSMC）的 2 奈米製程產能已全面滿載至 2028 年，這為長期受制於市占率落後的三星電子帶來了絕佳的「替代效應」商機。然而，台積電並未給予對手太多喘息空間，正透過大幅度的擴產與資本支出計畫，強力防堵三星藉機搶占市場占有率，就是「餐桌上不留任何一點菜給競爭對手」。\n在AI大熱潮的推動下，台積電目前的產能已經達到了極限。根據產業界消息指出，台積電的 2 奈米製程訂單已經被輝達（Nvidia）、超微（AMD）、高通（Qualcomm）與蘋果（Apple）等大型科技巨頭全數包攬，預約期一路排到了 2028 年。甚至連台積電預計於 2030 年才開始量產、專攻 2 奈米以下製程的美國亞利桑那州第四座晶圓廠（Fab 4），在尚未動工前就已傳出產能幾乎",
+      "event_type": "earnings",
+      "tickers": [
+        "2600",
+        "2330",
+        "TSM",
+        "NVDA",
+        "AAPL",
+        "GOOGL",
+        "AMZN",
+        "TSLA"
+      ],
+      "companies": [
+        "台積電",
+        "TSMC",
+        "NVIDIA",
+        "Apple",
+        "Google",
+        "Amazon",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "台積電揭露最新藍圖！　先進製程與封裝戰略全面修正",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000752461_GLW5ULZL5GZHG820QZWH2",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-17T03:00:00+08:00",
+      "summary": "台積電首季營運創高，2026年第2季續登峰，全年美元營收增幅上修至逾3成，董事長魏哲家於法說會不斷強調產能供不應求，3奈米首季營收比重約25%...",
+      "body_text": "台積電首季營運創高，2026年第2季續登峰，全年美元營收增幅上修至逾3成，董事長魏哲家於法說會不斷強調產能供不應求，3奈米首季營收比重約25%，台美日三地將有3奈米新產能於2027、2028年陸續開出，這也是台積首度在一製程技術達標後再擴產。魏哲家更首次親口說出下世代先進封裝「CoPoS」。\n據設備供應鏈透露，由於產能吃緊，除了Tesla已與三星電子（Samsung Electronics）簽訂長約，市場頻傳NVIDIA、超微（AMD）、高通（Qualcomm）、Google、AWS與Meta等，有意將部分訂單轉至三星、英特爾（Intel），也使得台積過去1年來不斷調整台灣與海外產能配置。\n除了竹科6、8吋晶圓廠改造外，先進製程產能、先進封裝量產時程新藍圖，也持續調整中。\n其中，南科新增1座3奈米晶圓廠，預計2027年上半量產，美國亞利桑那州第2座晶圓廠也採3奈米，2027年下半量產；日本",
+      "event_type": "earnings",
+      "tickers": [
+        "2330",
+        "TSLA",
+        "NVDA",
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "台積電",
+        "Tesla",
+        "NVIDIA",
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "為何英特爾睽違兩年半之後，股價拉出一波連九漲高達 58% 漲勢？",
+      "link": "https://finance.technews.tw/2026/04/14/after-a-two-and-a-half-year-hiatus-intels-stock-price-surged-for-nine-consecutive-days-rising-by-a-staggering-58",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-14T07:30:30+08:00",
+      "summary": "美國半導體大廠英特爾 （Intel） 近期在資本市場與產業佈局上獲得了史詩級的逆轉。受惠於一系列重大戰略合作與 [&#8230;]",
+      "body_text": "美國半導體大廠英特爾（Intel）近期在資本市場與產業佈局上獲得了史詩級的逆轉。受惠於一系列重大戰略合作與利多消息，英特爾股價在近九個交易日內拉出歷史性的連九漲紅盤，期間累計漲幅高達 58%。這一波驚人的漲勢主要由兩大核心動能所帶動，包括與 Google 在 AI 基礎設施上的深化合作，以及確認加入由特斯拉執行長 Elon Musk 主導的「Terafab」超級晶圓廠計畫。這些動作不僅大幅提升了投資人的信心，也預示著全球半導體供應鏈板塊正迎接劇烈變動。\n英特爾的九天連漲創下了自 2023 年 9 月以來的最長連漲紀錄，而前一次出現更長的 13 天連漲，甚至要追溯至 2005 年 5 月。這股強勁的市場動能背後，除了大型商業合約的加持外，更反映了英特爾近期在財務體質上的顯著改善。本月初，英特爾斥資 142 億美元，全數買回了其在愛爾蘭晶圓廠的剩餘股份。相較於 2024 年出售該廠 49% 股",
+      "event_type": "capex",
+      "tickers": [
+        "GOOGL",
+        "NVDA",
+        "TSLA",
+        "2330"
+      ],
+      "companies": [
+        "Google",
+        "NVIDIA",
+        "Tesla",
+        "台積電"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "每日椽真：長鑫存儲上市計畫牽動供需 | 波蘭成台灣無人機最大買家 | 中國人形機器人大廠成形",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000751457_6G05Q1KO4OFWKU8T84IZP",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-08T05:25:56+08:00",
+      "summary": "時序進入第2季，據悉，蘋果（Apple）預計將大幅改變2026年手機與其他消費性電子產品的出貨時間規劃，基本款iPhone可能在第2季預先亮相。外界普遍認為，無論實際進度為何，蘋果2026年核心策略與2025年無異，仍主要爭奪「市佔率」。尤其藉由顯著的性價比，在手機與PC兩大領域吸引更多新用戶加入蘋果陣營。美伊戰事完......",
+      "body_text": "時序進入第2季，據悉，蘋果（Apple）預計將大幅改變2026年手機與其他消費性電子產品的出貨時間規劃，基本款iPhone可能在第2季預先亮相。外界普遍認為，無論實際進度為何，蘋果2026年核心策略與2025年無異，仍主要爭奪「市佔率」。尤其藉由顯著的性價比，在手機與PC兩大領域吸引更多 新用戶加入蘋果陣營 。\n美伊戰事完全告終可能還需數個星期，相較一時的地緣政治震盪，AI大勢卻是一世商機。以往台積電總在財報季搶頭香釋出景氣展望，此次ASML早一天於4月15日舉行2026年第1季法說，可望描繪出記憶體廠商與新增邏輯晶片晶圓大廠， 將如何改變半導體製造版圖 。\n中國DRAM龍頭長鑫存儲上市時程可能延後，可望緩解市場對記憶體供應擴大的擔憂。南韓業界認為，原本預期的產能擴充時點被推遲，將讓南韓記憶體業者得以稍微喘息，創造出較有利的環境。\n韓媒iNews24引述金融投資業界消息，稱長鑫存儲原計劃於",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL",
+        "2330",
+        "AMZN",
+        "GOOGL",
+        "TSLA"
+      ],
+      "companies": [
+        "Apple",
+        "台積電",
+        "Amazon",
+        "Google",
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Intel will help build Elon Musk’s Terafab AI chip factory",
+      "link": "https://www.theverge.com/transportation/907976/elon-musk-terafab-intel-ai-chip-spacex-tesla",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-07T23:43:17+08:00",
+      "summary": "Elon Musk's Terafab AI chip project in Austin, Texas, is gaining a crucial new partner: Intel. On Tuesday, the American chipmaker announced it was signing on to help design and build the sprawling facility, which would supply AI chips to Musk's two companies, SpaceX (newly merged with xAI) and Tesla. Musk needs AI chips to [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Transportation\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All News\nThe chipmaker will help design and build a semiconductor factory for SpaceX and Tesla.\nThe c",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "TSM"
+      ],
+      "companies": [
+        "Tesla",
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "5 Interesting Startup Deals You May Have Missed: A Credit Card Backed By Mineral Rights, Flying Ferries, And A Foundation AI Model For Plants",
+      "link": "https://news.crunchbase.com/venture/interesting-startup-deals-mineral-rights-flying-ferry-ai-clean-tech",
+      "source": "Crunchbase News",
+      "category": "💰 財經與總經",
+      "published": "2026-04-07T19:00:35+08:00",
+      "summary": "In a quarter when nearly two-thirds of global venture capital went to just four companies, it’s easy to lose track of the many other companies getting funding to tackle interesting problems. We spotted five companies in just the past month working on issues from cleaner ferries and trains to foundational AI for the crop industry.",
+      "body_text": "This is a monthly column that runs down five interesting startup funding deals that may have flown under the radar. Check out our previous entry here .\nIn a quarter when nearly two-thirds of global venture capital went to just four companies , it’s easy to lose track of the many other companies getting funding to tackle interesting problems. Nonetheless, we spotted five companies in just the past ",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk is about to be a very busy boy!",
+      "link": "https://www.theverge.com/tech/906027/elon-musk-lawsuit-ipo-spacex-tesla",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-03T02:15:00+08:00",
+      "summary": "To be honest, I thought Elon Musk would confidentially file for SpaceX's IPO on the 20th of this month, rather than the 1st. But maybe that just means he's moved on to other numbers, and we should all mark our calendars for June 7th as an IPO date just in case. Based on the April [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Tech\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Business\nI’m sure he’d call it ‘freaking epic.’\nPosts from this author will be added to your daily email di",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "MSFT"
+      ],
+      "companies": [
+        "Tesla",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "America Is Losing the Innovation Race",
+      "link": "https://www.foreignaffairs.com/united-states/america-losing-innovation-race",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-01T12:00:00+08:00",
+      "summary": "Why the future of science might be Chinese.",
+      "body_text": "L. RAFAEL REIF is President Emeritus and Ray and Maria Stata Professor of Electrical Engineering and Computer Science at the Massachusetts Institute of Technology.\nWhy the Future of Science Might Be Chinese\nL. Rafael Reif\nChina has long been dismissed as the world’s factory floor—a country that excels at manufacturing technologies invented elsewhere yet is unable to invent anything radically new o",
+      "event_type": "earnings",
+      "tickers": [
+        "1980",
+        "META",
+        "GOOGL",
+        "TSLA",
+        "NVDA"
+      ],
+      "companies": [
+        "Meta",
+        "Google",
+        "Tesla",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Elon Musk announces disappointing Tesla Optimus update - Teslarati",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVVlibVZCXzFsLVpQQTZ2dlhEdEIyOHNfaG5NNlNlWkxkSjZrLXBIUDJtakt3aXRFMTY3cV9nMVVxb0R3emU5OUFpdWQtMHM5QW9WRjFWS0JsMXRBc09OaTVPYnl2cVQ1LWg0SDVkaEphZnBPbnV4MnlXQ2ZIc2xNbWE2dHVYVTYw?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-01T05:44:16+08:00",
+      "summary": "Elon Musk announces disappointing Tesla Optimus update&nbsp;&nbsp;Teslarati",
+      "body_text": "",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": "down"
+    },
+    {
+      "title": "TeraFab: What If It Is Done Differently?",
+      "link": "https://www.eetimes.com/terafab-what-if-it-is-done-differently",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-03-31T04:00:00+08:00",
+      "summary": "Musk unveils TeraFab, aiming to disrupt chipmaking with AI-driven, human-free fabs. The post TeraFab: What If It Is Done Differently? appeared first on EE Times.",
+      "body_text": "On March 21, Elon Musk announced TeraFab, a proposed semiconductor complex in Austin, backed by Tesla, SpaceX, and xAI, targeting 2-nm logic, memory, advanced packaging, and a mask shop—all under one roof.\nThe ambition is extreme. Musk framed the goal as enabling on the order of a terawatt of AI compute annually—an implied scale far beyond today’s leading-edge capacity.\nThe reaction from the semic",
+      "event_type": "earnings",
+      "tickers": [
+        "4680",
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Maybe you should have bought an electric car",
+      "link": "https://www.noahpinion.blog/p/maybe-you-should-have-bought-an-electric",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-03-30T10:08:06+08:00",
+      "summary": "The Iran War is illustrating the cost of anti-EV nonsense.",
+      "body_text": "“Without fuel they were nothing. They'd built a house of straw. The thundering machines sputtered and stopped.” — “The Road Warrior”\nHere is a chart of U.S. gasoline prices:\n$4/gallon gas isn’t historically that high. If you measure relative to typical American incomes, it’s considerably lower now than it was in the early 2010s. But that’s cold comfort to people who have to commute every day to wo",
+      "event_type": "policy",
+      "tickers": [
+        "1973",
+        "1979",
+        "TSLA"
+      ],
+      "companies": [
+        "Tesla"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Elon Musk tours Intel’s semiconductor fab plant in Hillsboro ahead of Tesla, SpaceX partnership - KPTV",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdlc5X2RmZm5VU2pjVG1Fd195SXB6TC0ycXpqb2pLN0dqN3ZpeTZhX2lVYW1XSFJKQ3RhcHZ2TEM5TjJPYzh6blNIVXNmSjRZWE9mVWlZaG0yVGNZSFRQWk5Td3pDZFlScFY1R2pBTUtCVVIySjVIWVdNejZHbnNTX01KNkhGMlh4QldvNVNYcEhTVVBaZHZZQjh3b3dicWt4RlZDczVZelRfUUE3ODNDVHhNZXJIY1pHbU5vUA?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T06:50:00+08:00",
+      "summary": "Elon Musk tours Intel’s semiconductor fab plant in Hillsboro ahead of Tesla, SpaceX partnership&nbsp;&nbsp;KPTV",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "AI4為跳板、AI5為目標　樂金Innotek叩關Tesla ABF載板鏈",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754529_XPN6D9EW117Z5JLC0W5BY",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T02:46:39+08:00",
+      "summary": "樂金Innotek（LG Innotek）傳正積極爭取為Tesla目前主力量產的AI4晶片供應ABF載板。據韓媒ZDNet Korea引述業界消息，樂金Innotek預計於2026年第2~3季與Tesla展開AI4用ABF載板量產認證程序。儘管目...",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "This Week In Tesla: Robotaxi Ramp, French Sales Grow 111%, NHTSA Recalls And More - Tesla (NASDAQ:TSLA) - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTVBubDdRRkZjRUc4VGJIbmpZTXZHekozVHJqQUlNYkRZWlhJbHFEVGhBRzZROXhvRWM1VFdnd3VqbmxxQW14eTV4UmpnNkx2UDItcnhGZzBVMGV5NVpUNE1hVnVpZmc1ZmFzNmVzUm95bnlMUi1RaFpfMjZLZEIzSDdZejR3UkNkd1hrQ3dZa1liWlNSZzdoV253WllOb3pXWWdfWlpQUlpSNXVwODhWcmFXbzdaTkdLN0RGTHF1dmxPVzR6TUg5bTdn?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T21:25:36+08:00",
+      "summary": "This Week In Tesla: Robotaxi Ramp, French Sales Grow 111%, NHTSA Recalls And More - Tesla (NASDAQ:TSLA)&nbsp;&nbsp;Benzinga",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Last Tesla Model S and X Roll Off Production Line - Gizmodo",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYzR4VEYzSWdRTTVyb1lFdk84UGhXTFZ4Mms2T1BxVXJWNllWNWZCRnZzRVc4MG9hb29sWEVKQldmak5xVWd6SGItQ0Fnb2p0OTh0OENTTlJYRGM5NDBYajZWeFdyOE9fN2tpOExvNUVaTWZBbVVJLUxpd2xOYTVMeFJjUktuQnJyeVZaZS1NQ04zWnVrT0Fn?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T18:00:43+08:00",
+      "summary": "Last Tesla Model S and X Roll Off Production Line&nbsp;&nbsp;Gizmodo",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Wedbush sends blunt message on Elon Musk’s Tesla and Intel deal - thestreet.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd2dGMW9nT0lxSmlqLXpNNW1vVnVKcHdzNm1rdnhFOWVBalU0YXkyVk4zNUpoMzFNVlBsMW5OUW1FZWJmQ3cxbXNfZWJqR2R5QWhmbXZGRUpZUXpjcmNpaHBKMjZvQjBzcFh1UXBfeHFwbkp2anJRMHRMTENsMzRoek1IaS1jdTVtemJTY2hzd3diMGdjdkhqc3licWYxWWww?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T06:37:00+08:00",
+      "summary": "Wedbush sends blunt message on Elon Musk’s Tesla and Intel deal&nbsp;&nbsp;thestreet.com",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "US Judge will not rubber-stamp SEC settlement with Elon Musk - driveteslacanada.ca",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1hRjRYWkNQX0NCa293VW9hblVXZHdxQlItOHVHcTZXSllxUjZGSXlqWGNYelp3ZHVkMlowMFZwMU02Nkw2UXpaMDVBX3BwUQ?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-10T02:10:48+08:00",
+      "summary": "US Judge will not rubber-stamp SEC settlement with Elon Musk&nbsp;&nbsp;driveteslacanada.ca",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that Musk tried to poach Sam Altman",
+      "link": "https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T07:59:19+08:00",
+      "summary": "In the second week of the landmark trial between Elon Musk and OpenAI, Musk’s motivations for bringing the suit were under scrutiny. Last week, Musk took the stand, alleging that OpenAI CEO Sam Altman and president Greg Brockman had deceived him into donating $38 million to the company. He claimed that they’d promised to maintain&#8230;",
+      "event_type": "news",
+      "tickers": [
+        "MSFT",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Intel’s comeback story is even wilder than it seems",
+      "link": "https://techcrunch.com/2026/05/08/intels-comeback-story-is-even-wilder-than-it-seems",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-09T04:02:52+08:00",
+      "summary": "Intel's stock has risen a stunning 490% over the past year, a bet by Wall Street that may be running well ahead of the company's actual turnaround.",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "TSLA",
+        "TSM"
+      ]
+    },
+    {
+      "title": "華爾街日報：英特爾奪蘋果晶片訂單　雙方達初步協議",
+      "link": "https://www.cna.com.tw/news/ait/202605090003.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-09T02:18:19+08:00",
+      "summary": "（中央社紐約8日綜合外電報導）「華爾街日報」今天引述知情人士報導，蘋果（Apple）與英特爾（Intel）已達成一項初步協議，將由英特爾為蘋果裝置生產部分晶片。",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "The “people’s airline” and the enterprise AI gold rush",
+      "link": "https://techcrunch.com/podcast/the-peoples-airline-and-the-enterprise-ai-gold-rush",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T23:46:17+08:00",
+      "summary": "Everyone wants a piece of the&#160;enterprise&#160;AI pie, and this week, we saw a string of companies making their moves. From&#160;Anthropic and OpenAI announcing new joint ventures&#160;targeting enterprise AI deployment to&#160;SAP dropping $1B&#160;on German AI startup Prior Labs,&#160;it&#8217;s&#160;becoming clear that if&#160;you&#8217;re&#160;a startup building enterprise tools,&#160;you&#8217;re&#160;likely an&#160;acquisition target.&#160; On this episode of TechCrunch&#8217;s&#160;Eq",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "French prosecutors escalate probe of Elon Musk and X to criminal investigation",
+      "link": "https://www.cnbc.com/2026/05/07/french-prosecutors-probe-of-elon-musk-x-now-a-criminal-investigation.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-05-08T04:54:17+08:00",
+      "summary": "France is investigating whether Elon Musk and his social media app X were complicit in spreading harmful AI deepfakes.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "SpaceX has a $55 billion plan to build AI chips in Texas",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/926356/spacex-terafab-plant-cost-ai-chips",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-08T03:26:16+08:00",
+      "summary": "Elon Musk's plans to get into the AI chip manufacturing business are going to be costly. As the New York Times and CNBC report, SpaceX is planning to invest at least $55 billion into its \"Terafab\" chip plant in Austin, Texas. That's according to the details of a public hearing notice filed in Grimes County, [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Elon Musk tried to hire OpenAI founders to start AI unit inside Tesla",
+      "link": "https://www.ft.com/content/c93ba0c9-caec-4707-8f27-a1abb8de115e",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-07T21:14:01+08:00",
+      "summary": "Musk was “prepared to do the for-profit, provided he would get control.”",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Tesla Cybertruck too safe for even Musk’s biggest critics to ignore - Teslarati",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOc1pYaXlJeHktMlo2ZDNDOGNPdjd6c0kxS3Bpak1MSWZvenFiRHF5R3hFS1ZYbUpRaFlPSmthbWVCbTRqTVhGZUVLT1o5djlXN1JmWjFLTUdkSDZVRExYUThDR3h2SldJNzVoalBwbFc5c3FDQUxIcWtCVjNNYkdrdm5GOWJ1Q0pUWTFHR2l3?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T08:15:00+08:00",
+      "summary": "Tesla Cybertruck too safe for even Musk’s biggest critics to ignore&nbsp;&nbsp;Teslarati",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Musk’s biggest loyalist became his biggest liability",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/925665/musk-altman-trial-shivon-zilis-testimony",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T07:37:02+08:00",
+      "summary": "I sat down in the Musk v. Altman trial courtroom today, painfully aware that no one was going to ask Shivon Zilis the question on everyone's minds: Girl, what the fuck are you doing? Zilis, who testified under oath that she is the mother of four of Musk's children, was… what's the best way to [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Elon Musk’s Last-Ditch Effort to Control OpenAI: Recruit Sam Altman to Tesla",
+      "link": "https://www.wired.com/story/elon-musk-recruit-sam-altman-tesla-ai-lab-trial",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T07:23:45+08:00",
+      "summary": "Messages between Shivon Zilis and Tesla executives reveal plans in 2017 to start a rival AI lab, potentially led by Altman or Demis Hassabis.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Tesla Semi Lands 370 Unit Order: Is Jay Leno Right About Game Changer For Elon Musk's Company? - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY3lHMEFTN0pwT3AwRm51QUtmWG1fWDAtek9YTVcxc1R0UVRRdk5HeG0tQjVyejUwdVNyRldRZUlOc1c3OGpmLTNEMXZHdkhESFJPRDg2OW8zVzR6UFUtQ3E0SU1CUEVybWg1VVB1ZWd0SkVHdDRoYURycnhXWUdWS3g5bVQzQVk3Sk5kUXVYNXVKSjFxSjdqODNVaWVMcEZMWDJGWE51U3ZaZTVFOXhrNkE0S3hCOWViYjhwbDFsRGxqR2hwZTVjZmJ5bjRRSzAzSUFiTW1scmFJTVROSWNVRnBEbw?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T06:46:40+08:00",
+      "summary": "Tesla Semi Lands 370 Unit Order: Is Jay Leno Right About Game Changer For Elon Musk's Company?&nbsp;&nbsp;Benzinga",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Elon Musk tried to recruit Sam Altman for role at Tesla before falling out at OpenAI - Financial Times",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hNl9YSzRFM1pwLUZDQmhPWTl2U2FLb1BIeVRad2U1V2JfMEtqTGNXbjEtZkxNSS1QNTIydVVGQWUzZkhOdlZwSnVUVVJJMFp2SW05amlLV21ya3BXS3FZZFptejRJZFNGOWRkTEZSeG4?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-07T06:14:31+08:00",
+      "summary": "Elon Musk tried to recruit Sam Altman for role at Tesla before falling out at OpenAI&nbsp;&nbsp;Financial Times",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "How Elon Musk left OpenAI, according to Greg Brockman",
+      "link": "https://techcrunch.com/2026/05/06/how-elon-musk-left-openai-according-to-greg-brockman",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-07T02:23:54+08:00",
+      "summary": "Cutthroat negotiations between startup founders are rarely shared so publicly, especially when a company becomes as world-changing as OpenAI.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "OpenAI president forced to read his personal diary entries to jury",
+      "link": "https://arstechnica.com/tech-policy/2026/05/openai-president-explains-to-jury-why-his-diary-entries-sound-greedy",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-06T06:28:12+08:00",
+      "summary": "Elon Musk argued the journals show the moment when OpenAI abandoned its mission.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "OpenAI trial: Brockman rebuts Musk's take on startup's history, recounts secret work for Tesla",
+      "link": "https://www.cnbc.com/2026/05/05/open-ai-altman-musk-trial-brockman-testimony.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-06T06:27:03+08:00",
+      "summary": "OpenAI President Greg Brockman concluded his testimony on Tuesday as the blockbuster trial between the AI startup and Elon Musk rolled into its second week.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "As Tesla Passes Another One Of Its FSD Goalposts Without Autonomous Driving, It Has Become Clear It's Likely Never Happening (And That Was Always the Plan) - Autonocion.com",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96cXJwbzFiWGJjSmpqZjNvREdQZVlsdmNabnRPd0JWdEtZQzJFQWxjQjljbVpZRWx0c25UU3JSWUpMbHJHX2FIT2RLZVpLdmhveDFKVkpyLWFRRGhlZ0thNi1ZS0RZQ29QSk1GMFpSQlM?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T05:31:18+08:00",
+      "summary": "As Tesla Passes Another One Of Its FSD Goalposts Without Autonomous Driving, It Has Become Clear It's Likely Never Happening (And That Was Always the Plan)&nbsp;&nbsp;Autonocion.com",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "2 Notable Numbers for Tesla Stock Today. Which One Matters More. - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rcjRVR2ZoVnF6TFQxMGJ3dDhYcjlDWTZLODZxT1plV1VfYWtVbF9JVGwxQXl1dDJJTHg4bXVrS1gwRmdDRWhnVDZSWG12dTV1QkhXejluM0tDM1V5SGZVZHR2WVBLSUk2X0J6Z0I0M1NsNFFsTTV3V0pOTHhqUQ?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T04:22:00+08:00",
+      "summary": "2 Notable Numbers for Tesla Stock Today. Which One Matters More.&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "AI didn't delete your database, you did",
+      "link": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
+      "source": "Hacker News AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-05T22:07:50+08:00",
+      "summary": "Article URL: https://idiallo.com/blog/ai-didnt-delete-your-database-you-did Comments URL: https://news.ycombinator.com/item?id=48022742 Points: 489 # Comments: 269",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "These Stocks Are Today’s Movers: Coinbase, AMD, Palantir, Tesla, eBay, GameStop, FedEx, UPS, Micron, and More - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tVjNsTk0wMTVkN1U5VC1OVXRtOHdTNkJ6SVJpajJtM0tRQmVzSHdOQTMxcnEzQmQwaDNoNUh4NGg0VUQtTDYyRHkxUWF6Q2kybVNwMlB0aVJXQzd1MXpNRmloRzg?oc=5",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T04:57:00+08:00",
+      "summary": "These Stocks Are Today’s Movers: Coinbase, AMD, Palantir, Tesla, eBay, GameStop, FedEx, UPS, Micron, and More&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Canadian election databases use \"canary traps\"—and they work",
+      "link": "https://arstechnica.com/tech-policy/2026/05/in-canada-a-canary-trap-springs-shut-and-ids-election-database-leak",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-05T03:45:57+08:00",
+      "summary": "Intentional errors can be useful.",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Tesla Drivers Face a New Problem With Full Self-Driving - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE02WDdYMXZYUzBOYnIxNnJmS0hwX0VEOEhuazZvRFJZVnZzR09LaEJ6Z2xLTDdWOHVheFdZMmtrMDE2emJUcElqajRDZlJNN3BaaUNNcDEzdnFDUG56cDdHNXE1eFh6M2EzaldUMkRNS3p0ZkxtMjhtelJoWDM",
+      "source": "Barron's (Google News)",
+      "category": "💰 財經與總經",
+      "published": "2026-05-04T01:27:00+08:00",
+      "summary": "Tesla Drivers Face a New Problem With Full Self-Driving&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Bill Gates Once Called Tesla's Semi Truck Impractical, But Gavin Newsom May Need Elon Musk's All-Electric Hauler To Bolster Clean Energy Bid - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeEVpc09OSjlnUEhzVkRDekI3Y3R0T2JtX0ktT01TZGpTVTlpR3FveHdUN1VtVEdOb1oweHR0dHFSQXdOQzV0eVNsa0hPenFVcDlqSjQ5M1NoUFZiRzlZYUU4MHduZFV3SEkwSS1kSkF2NEY5SkVoOWFwRWdVdzFJZUlXMElzbGRFWmcxMi1zeVJfZ3MtaDRxNXJ0cHJUMEk?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-04T00:30:44+08:00",
+      "summary": "Bill Gates Once Called Tesla's Semi Truck Impractical, But Gavin Newsom May Need Elon Musk's All-Electric Hauler To Bolster Clean Energy Bid&nbsp;&nbsp;Yahoo Finance",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Tesla's Week Explained: Elon Musk's $158 Billion Payout, Semi Truck Hits Production And More - Tesla (NAS - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOOU1nNkFiZTFIbGQ0cUpQNUtOQV9nMGxfbUhUaE9UcC1xNVJJMktacmptZjJBQ3hVRnBGcXQ2anJfckczWGNqbUxTZ3MyeXlsTG83Q3VUSmFicHJGUVFMRDA4UmtDTnhtLTFLRHAzODM5WEIycmlISjBoVi1CVnM3dXpSWjFBSENfREZqN2xFY2hiVDNRT3JEd016QWx2clZZblNkY0V5X0dQT0xTVnpFMkxXVUZVS3VqZkpHUDM3ZW12ZDhPMVo0aGlBeU5IODg5SXNlUXFPRQ?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-04T00:02:02+08:00",
+      "summary": "Tesla's Week Explained: Elon Musk's $158 Billion Payout, Semi Truck Hits Production And More - Tesla (NAS&nbsp;&nbsp;Benzinga",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-04-23",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 22387000000.0,
+      "monthly_revenue": null,
+      "net_income": 477000000.0,
+      "operating_income": 941000000.0,
+      "gross_profit": 4720000000.0,
+      "eps_diluted": 0.13,
+      "operating_cash_flow": 3937000000.0,
+      "capex": 2493000000.0,
+      "free_cash_flow": 1444000000.0,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q3",
+      "period_end": "2025-09-30",
+      "filed_at": "2025-10-23",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 69926000000.0,
+      "monthly_revenue": null,
+      "net_income": 2954000000.0,
+      "operating_income": 2946000000.0,
+      "gross_profit": 12085000000.0,
+      "eps_diluted": 0.84,
+      "operating_cash_flow": 10934000000.0,
+      "capex": 6134000000.0,
+      "free_cash_flow": 4800000000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "TSLA",
+    "market": "us",
+    "company_name": "Tesla, Inc.",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 22387000000.0,
+      "gross_profit": 4720000000.0,
+      "operating_income": 941000000.0,
+      "net_income": 477000000.0,
+      "eps": 0.13,
+      "fcf": 1444000000.0,
+      "ocf": 3937000000.0,
+      "capex": 2493000000.0,
+      "gross_margin": 0.21083664626792334,
+      "op_margin": 0.04203332291061777,
+      "net_margin": 0.02130700853173717,
+      "fcf_margin": 0.06450171974806808,
+      "capex_intensity": 0.11135927100549425,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": -67.9847267110946,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 22387000000.0,
+        "gross_profit": 4720000000.0,
+        "operating_income": 941000000.0,
+        "net_income": 477000000.0,
+        "eps_diluted": 0.13,
+        "fcf": 1444000000.0,
+        "ocf": 3937000000.0,
+        "capex": 2493000000.0,
+        "company_name": "Tesla, Inc."
+      },
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q3",
+        "revenue": 69926000000.0,
+        "gross_profit": 12085000000.0,
+        "operating_income": 2946000000.0,
+        "net_income": 2954000000.0,
+        "eps_diluted": 0.84,
+        "fcf": 4800000000.0,
+        "ocf": 10934000000.0,
+        "capex": 6134000000.0,
+        "company_name": "Tesla, Inc."
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "營益率 4% 偏弱",
+      "icon": "🟡",
+      "score": -1
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "GOOGL",
+      "count": 11
+    },
+    {
+      "ticker": "MSFT",
+      "count": 8
+    },
+    {
+      "ticker": "META",
+      "count": 7
+    },
+    {
+      "ticker": "NVDA",
+      "count": 7
+    },
+    {
+      "ticker": "AMZN",
+      "count": 6
+    },
+    {
+      "ticker": "AAPL",
+      "count": 5
+    },
+    {
+      "ticker": "2330",
+      "count": 4
+    },
+    {
+      "ticker": "TSM",
+      "count": 2
+    },
+    {
+      "ticker": "JPM",
+      "count": 1
+    },
+    {
+      "ticker": "BLSH",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-11T03:33:21Z"
+}
