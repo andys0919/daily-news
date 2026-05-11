@@ -7,14 +7,7 @@ interface Props {
   active?: string;
 }
 const { title = "投資決策 Dashboard", active = "home" } = Astro.props;
-const nav = [
-  { id: "takeaway", href: "/#takeaway", label: "今日重點" },
-  { id: "guidance", href: "/#guidance", label: "指引" },
-  { id: "analyst", href: "/#analyst", label: "法人看法" },
-  { id: "revenue", href: "/#revenue", label: "營收" },
-  { id: "internal", href: "/#internal", label: "公司資料" },
-  { id: "watchlist", href: "/#watchlist", label: "Watchlist" },
-];
+const nav: { id: string; href: string; label: string }[] = [];
 
 // Embed lightweight ticker index as JSON for client-side search.
 const tickers = (tickerIndex.tickers ?? []).map((t: any) => ({
@@ -47,11 +40,13 @@ const tickers = (tickerIndex.tickers ?? []).map((t: any) => ({
           <span class="brand-name">Daily-News</span>
           <span class="brand-meta">Investment Desk</span>
         </a>
-        <div class="navlinks">
-          {nav.map((n) => (
-            <a href={n.href} class="navlink" data-active={active === n.id ? "" : undefined}>{n.label}</a>
-          ))}
-        </div>
+        {nav.length > 0 && (
+          <div class="navlinks">
+            {nav.map((n) => (
+              <a href={n.href} class="navlink" data-active={active === n.id ? "" : undefined}>{n.label}</a>
+            ))}
+          </div>
+        )}
         <div class="topnav-search" style="margin-left: auto; position: relative;">
           <div class="search-box">
             <span class="search-icon">⌕</span>
