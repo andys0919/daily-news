@@ -1,0 +1,12 @@
+# Cloudflare Pages config (TEMPLATE — copy to wrangler.toml and fill in real values)
+# DO NOT commit wrangler.toml. It is in .gitignore.
+
+name = "daily-news-dashboard"
+compatibility_date = "2026-05-01"
+pages_build_output_dir = "dist"
+
+# Account binding — replace placeholder before running wrangler commands.
+# account_id = "${CF_ACCOUNT_ID}"
+
+# Required env vars (set in CF dashboard Pages → Settings → Environment variables):
+#   PUBLIC_SITE_URL  — e.g. https://invest.your-domain.com
