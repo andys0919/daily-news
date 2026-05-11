@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-05-10T00:00:00Z",
+  "watchlist": ["NVDA", "TSM", "2330", "AAPL", "MSFT"],
+  "top_transcripts": [
+    {
+      "ticker": "NVDA",
+      "title": "NVDA Q1 2026 transcript",
+      "body_excerpt": "Blackwell ramp drives data center revenue. Gross margin expanded to 75%.",
+      "fetched_at": "2026-05-09T00:00:00Z"
+    }
+  ],
+  "top_insider_trades": [
+    {
+      "ticker": "AAPL",
+      "insider_name": "Cook Timothy D",
+      "transaction_type": "S",
+      "shares": 10000,
+      "price": 180.5,
+      "transaction_date": "2026-04-15"
+    }
+  ],
+  "top_holdings_changes": [],
+  "market_indices": {
+    "indices": [
+      { "symbol": "SPY", "price": 580.4, "change_pct": 0.42 },
+      { "symbol": "QQQ", "price": 510.1, "change_pct": 0.68 },
+      { "symbol": "^TWII", "price": 22130.5, "change_pct": -0.15 }
+    ]
+  }
+}

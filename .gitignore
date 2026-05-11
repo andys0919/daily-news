@@ -12,6 +12,9 @@ Thumbs.db
 
 # Data
 data/
+# Exception: dashboard JSON snapshots are tracked
+!web/src/data/
+!web/src/data/**
 
 # Generated reports
 *.html

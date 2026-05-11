@@ -1,0 +1,69 @@
+---
+import Base from "../layouts/Base.astro";
+import BentoCard from "../components/BentoCard.astro";
+import TickerChip from "../components/TickerChip.astro";
+import overview from "../data/overview.json";
+
+const indices = (overview.market_indices?.indices ?? []) as Array<{ symbol: string; price: number; change_pct: number }>;
+const transcripts = (overview.top_transcripts ?? []) as Array<any>;
+const insiders = (overview.top_insider_trades ?? []) as Array<any>;
+const watchlist = (overview.watchlist ?? []) as string[];
+---
+<Base title="總覽 — 投資決策 Dashboard">
+  <header class="mb-6 flex items-baseline justify-between">
+    <h1 class="text-3xl font-semibold tracking-tight">總覽</h1>
+    <span class="text-xs opacity-60 mono">data @ {overview.generated_at}</span>
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <BentoCard title="指數" span="1">
+      <ul class="space-y-1">
+        {indices.map((ix) => (
+          <li class="flex justify-between mono text-sm">
+            <span>{ix.symbol}</span>
+            <span>{ix.price.toLocaleString()}</span>
+            <span class={ix.change_pct >= 0 ? "delta-up" : "delta-down"}>
+              {ix.change_pct >= 0 ? "+" : ""}{ix.change_pct.toFixed(2)}%
+            </span>
+          </li>
+        ))}
+      </ul>
+    </BentoCard>
+
+    <BentoCard title="Watchlist" span="1">
+      <div class="flex flex-wrap gap-2">
+        {watchlist.map((t) => <TickerChip ticker={t} />)}
+      </div>
+    </BentoCard>
+
+    <BentoCard title="今日重點訊號" span="1" href="/news">
+      <p class="text-xs opacity-70">最近 transcript / 內部人 / 大額機構變動 5 條</p>
+    </BentoCard>
+
+    <BentoCard title="最新法說會 transcripts" span="2" href="/news">
+      <ul class="space-y-2">
+        {transcripts.map((t) => (
+          <li class="text-sm">
+            <TickerChip ticker={t.ticker} /> <span class="opacity-80">{t.title}</span>
+            <p class="text-xs opacity-60 mt-1 line-clamp-2">{t.body_excerpt}</p>
+          </li>
+        ))}
+      </ul>
+    </BentoCard>
+
+    <BentoCard title="近期內部人交易" span="1">
+      <ul class="space-y-2 text-sm">
+        {insiders.map((i) => (
+          <li>
+            <TickerChip ticker={i.ticker} />
+            <span class="opacity-80">{i.insider_name}</span>
+            <span class={i.transaction_type === "S" ? "delta-down" : "delta-up"}>
+              {i.transaction_type === "S" ? "賣" : "買"}
+            </span>
+            <span class="mono opacity-70">{i.shares.toLocaleString()} @ ${i.price.toFixed(2)}</span>
+          </li>
+        ))}
+      </ul>
+    </BentoCard>
+  </div>
+</Base>
