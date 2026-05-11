@@ -1,69 +1,236 @@
 ---
 import Base from "../layouts/Base.astro";
-import BentoCard from "../components/BentoCard.astro";
-import TickerChip from "../components/TickerChip.astro";
 import overview from "../data/overview.json";
 
-const indices = (overview.market_indices?.indices ?? []) as Array<{ symbol: string; price: number; change_pct: number }>;
-const transcripts = (overview.top_transcripts ?? []) as Array<any>;
-const insiders = (overview.top_insider_trades ?? []) as Array<any>;
+interface Index { symbol: string; price: number; change_pct: number }
+interface Transcript { ticker: string; title: string; body_excerpt: string; fetched_at: string }
+interface Insider { ticker: string; insider_name: string; transaction_type: string; shares: number; price: number; transaction_date: string }
+
+const indices = ((overview.market_indices?.indices ?? []) as Index[]).slice(0, 4);
+const transcripts = ((overview.top_transcripts ?? []) as Transcript[]).slice(0, 4);
+const insiders = ((overview.top_insider_trades ?? []) as Insider[]).slice(0, 4);
+const holdings = ((overview.top_holdings_changes ?? []) as any[]).slice(0, 4);
 const watchlist = (overview.watchlist ?? []) as string[];
+const generatedAt = overview.generated_at ?? "";
+const generatedDay = generatedAt.slice(0, 10);
+const generatedTime = generatedAt.slice(11, 16);
+
+function fmtNumber(n: number, digits = 2): string {
+  return n.toLocaleString(undefined, { maximumFractionDigits: digits, minimumFractionDigits: digits });
+}
+function fmtPct(n: number): string {
+  return `${n >= 0 ? "+" : ""}${n.toFixed(2)}%`;
+}
+function ago(iso: string | undefined): string {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso.slice(0, 10);
+  const diff = Date.now() - d.getTime();
+  const h = Math.floor(diff / 3.6e6);
+  if (h < 1) return "<1h ago";
+  if (h < 24) return `${h}h ago`;
+  const days = Math.floor(h / 24);
+  return `${days}d ago`;
+}
 ---
 <Base title="總覽 — 投資決策 Dashboard">
-  <header class="mb-6 flex items-baseline justify-between">
-    <h1 class="text-3xl font-semibold tracking-tight">總覽</h1>
-    <span class="text-xs opacity-60 mono">data @ {overview.generated_at}</span>
-  </header>
+  <!-- HERO ─────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div>
+      <span class="live"><span class="live-dot"></span>data fresh</span>
+      <h1 class="mt-2">
+        盤前 <span class="accent">訊號掃描</span>
+      </h1>
+      <p class="hero-sub">
+        昨日重點 transcript、內部人交易、機構持股變動，與市場指數、追蹤名單，一頁濃縮。
+        所有資料來自 daily-news pipeline，每天 09:00 自動刷新。
+      </p>
+    </div>
+    <div class="hero-meta">
+      <div><span class="ts mono">{generatedDay}</span></div>
+      <div class="mono">{generatedTime}Z · UTC</div>
+      <div class="mt-1">watchlist <span class="mono">{watchlist.length}</span> / transcripts <span class="mono">{transcripts.length}</span></div>
+    </div>
+  </section>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <BentoCard title="指數" span="1">
-      <ul class="space-y-1">
-        {indices.map((ix) => (
-          <li class="flex justify-between mono text-sm">
-            <span>{ix.symbol}</span>
-            <span>{ix.price.toLocaleString()}</span>
-            <span class={ix.change_pct >= 0 ? "delta-up" : "delta-down"}>
-              {ix.change_pct >= 0 ? "+" : ""}{ix.change_pct.toFixed(2)}%
-            </span>
-          </li>
-        ))}
-      </ul>
-    </BentoCard>
-
-    <BentoCard title="Watchlist" span="1">
-      <div class="flex flex-wrap gap-2">
-        {watchlist.map((t) => <TickerChip ticker={t} />)}
+  <!-- KPI STRIP ────────────────────────────────────────────────── -->
+  <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+    {indices.map((ix) => (
+      <div class="kpi">
+        <div class="kpi-symbol">{ix.symbol}</div>
+        <div class="kpi-price">{fmtNumber(ix.price)}</div>
+        <div class="kpi-delta">
+          <span class={`kpi-delta-pill ${ix.change_pct < 0 ? "down" : ""}`}>
+            {fmtPct(ix.change_pct)}
+          </span>
+        </div>
       </div>
-    </BentoCard>
+    ))}
+    {indices.length === 0 && (
+      <div class="kpi" style="grid-column: 1 / -1;">
+        <div class="kpi-symbol muted">市場指數</div>
+        <div class="muted text-sm">（暫無資料，待 market_overview_cache 刷新）</div>
+      </div>
+    )}
+  </section>
 
-    <BentoCard title="今日重點訊號" span="1" href="/news">
-      <p class="text-xs opacity-70">最近 transcript / 內部人 / 大額機構變動 5 條</p>
-    </BentoCard>
-
-    <BentoCard title="最新法說會 transcripts" span="2" href="/news">
-      <ul class="space-y-2">
-        {transcripts.map((t) => (
-          <li class="text-sm">
-            <TickerChip ticker={t.ticker} /> <span class="opacity-80">{t.title}</span>
-            <p class="text-xs opacity-60 mt-1 line-clamp-2">{t.body_excerpt}</p>
-          </li>
+  <!-- ROW 1: 訊號 + watchlist ──────────────────────────────────── -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+    <article class="glass bento lg:col-span-2">
+      <header class="bento-head">
+        <h2 class="bento-title">今日重點訊號</h2>
+        <a href="/news" class="bento-link">新聞時間軸 →</a>
+      </header>
+      <div class="signals">
+        {transcripts.slice(0, 3).map((t) => (
+          <div class="signal">
+            <span class="signal-tag transcript">法說</span>
+            <div class="signal-body">
+              <div><a href={`/stocks/${t.ticker}`} class="mono"><strong>{t.ticker}</strong></a> <span class="muted">·</span> {t.title}</div>
+              <div class="meta line-clamp-1">{t.body_excerpt}</div>
+            </div>
+            <span class="signal-meta">{ago(t.fetched_at)}</span>
+          </div>
         ))}
-      </ul>
-    </BentoCard>
-
-    <BentoCard title="近期內部人交易" span="1">
-      <ul class="space-y-2 text-sm">
-        {insiders.map((i) => (
-          <li>
-            <TickerChip ticker={i.ticker} />
-            <span class="opacity-80">{i.insider_name}</span>
-            <span class={i.transaction_type === "S" ? "delta-down" : "delta-up"}>
-              {i.transaction_type === "S" ? "賣" : "買"}
-            </span>
-            <span class="mono opacity-70">{i.shares.toLocaleString()} @ ${i.price.toFixed(2)}</span>
-          </li>
+        {insiders.slice(0, 2).map((i) => (
+          <div class="signal">
+            <span class="signal-tag insider">內部人</span>
+            <div class="signal-body">
+              <div><a href={`/stocks/${i.ticker}`} class="mono"><strong>{i.ticker}</strong></a> <span class="muted">·</span> {i.insider_name} <span class={i.transaction_type === "S" ? "delta-down" : "delta-up"}>{i.transaction_type === "S" ? "賣出" : "買進"}</span></div>
+              <div class="meta mono">{i.shares.toLocaleString()} 股 @ ${fmtNumber(i.price)}</div>
+            </div>
+            <span class="signal-meta">{i.transaction_date}</span>
+          </div>
         ))}
-      </ul>
-    </BentoCard>
-  </div>
+        {holdings.slice(0, 1).map((h: any) => (
+          <div class="signal">
+            <span class="signal-tag holdings">13F</span>
+            <div class="signal-body">
+              <div class="mono"><strong>{h.reporter_name ?? "Institutional"}</strong> <span class="muted">·</span> {h.action ?? "持倉變動"}</div>
+              <div class="meta">{h.note ?? ""}</div>
+            </div>
+            <span class="signal-meta">{h.period_end ?? ""}</span>
+          </div>
+        ))}
+        {transcripts.length === 0 && insiders.length === 0 && (
+          <div class="signal">
+            <span class="signal-tag">—</span>
+            <div class="signal-body muted">（暫無訊號 — 等候今日 pipeline 跑完）</div>
+            <span></span>
+          </div>
+        )}
+      </div>
+    </article>
+
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">Watchlist</h2>
+        <span class="bento-link mono">{watchlist.length} 檔</span>
+      </header>
+      <div class="watchgrid">
+        {watchlist.map((t) => (
+          <a href={`/stocks/${t.toUpperCase()}`} class="watchcell">
+            <span class="t">{t.toUpperCase()}</span>
+            <span class="m">{t.match(/^\d+$/) ? "TW" : "US"}</span>
+          </a>
+        ))}
+      </div>
+    </article>
+  </section>
+
+  <!-- ROW 2: transcripts + insider ────────────────────────────── -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+    <article class="glass bento lg:col-span-2">
+      <header class="bento-head">
+        <h2 class="bento-title">最新法說會 transcripts</h2>
+        <a href="/news" class="bento-link">全部 →</a>
+      </header>
+      <div class="trx">
+        {transcripts.length === 0 ? (
+          <p class="muted text-sm">（暫無 transcript — 待 ir_materials ingest 刷新）</p>
+        ) : (
+          transcripts.map((t) => (
+            <div class="trx-item">
+              <div class="trx-stamp">{(t.fetched_at ?? "").slice(0, 10)}</div>
+              <div class="trx-body">
+                <div class="h">
+                  <a href={`/stocks/${t.ticker}`} class="mono"><strong>{t.ticker}</strong></a>
+                  <span>{t.title}</span>
+                </div>
+                <p class="line-clamp-2">{t.body_excerpt}</p>
+              </div>
+            </div>
+          ))
+        )}
+      </div>
+    </article>
+
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">近 90 天內部人交易</h2>
+        <a href="/news" class="bento-link">filter →</a>
+      </header>
+      <div class="insider">
+        {insiders.length === 0 ? (
+          <p class="muted text-sm">（暫無紀錄）</p>
+        ) : (
+          insiders.map((i) => (
+            <div class="insider-row">
+              <div>
+                <div class="insider-name">
+                  <a href={`/stocks/${i.ticker}`} class="mono"><strong>{i.ticker}</strong></a>
+                  <span class="muted"> · </span>{i.insider_name}
+                </div>
+                <div class="insider-meta">{i.transaction_date} · {i.shares.toLocaleString()} 股</div>
+              </div>
+              <div class="insider-amount">
+                <div class={i.transaction_type === "S" ? "delta-down" : "delta-up"}>
+                  {i.transaction_type === "S" ? "−" : "+"}${fmtNumber(i.shares * i.price, 0)}
+                </div>
+                <div class="muted-2 text-xs">@ ${fmtNumber(i.price)}</div>
+              </div>
+            </div>
+          ))
+        )}
+      </div>
+    </article>
+  </section>
+
+  <!-- ROW 3: 三張輔助卡 ───────────────────────────────────────── -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">13F 機構動向</h2>
+        <a href="/news" class="bento-link">filings →</a>
+      </header>
+      {holdings.length === 0 ? (
+        <p class="muted text-sm">（本季尚無 13F 變動紀錄）</p>
+      ) : (
+        <ul class="space-y-2 text-sm">
+          {holdings.map((h: any) => (
+            <li>
+              <span class="mono"><strong>{h.reporter_name ?? "Reporter"}</strong></span>
+              <span class="muted"> · {h.issuer_name ?? ""}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </article>
+
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">即將事件</h2>
+        <a href="/calendar" class="bento-link">月曆 →</a>
+      </header>
+      <p class="muted text-sm">下次 daily-news pipeline 跑完後，這裡會列出未來 7 天的法說、財報、總體數據發布。</p>
+    </article>
+
+    <article class="glass bento">
+      <header class="bento-head">
+        <h2 class="bento-title">決策日誌</h2>
+        <a href="/decisions" class="bento-link">全部 →</a>
+      </header>
+      <p class="muted text-sm">最近 3 筆論點與部位調整摘要，從 decisions.json 載入。</p>
+    </article>
+  </section>
 </Base>

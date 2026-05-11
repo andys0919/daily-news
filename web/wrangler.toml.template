@@ -9,4 +9,4 @@ pages_build_output_dir = "dist"
 # account_id = "${CF_ACCOUNT_ID}"
 
 # Required env vars (set in CF dashboard Pages → Settings → Environment variables):
-#   PUBLIC_SITE_URL  — e.g. https://invest.your-domain.com
+#   PUBLIC_SITE_URL  — e.g. https://invest.aihost.dev

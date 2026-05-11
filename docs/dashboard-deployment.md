@@ -1,6 +1,6 @@
 # Investment Dashboard — Cloudflare Pages 部署指南
 
-> ⚠️ **不會覆蓋你既有的 Cloudflare 服務**：本 dashboard 使用獨立的 Pages 專案名 `daily-news-dashboard`，只 deploy 到你自選的 **subdomain**（例如 `invest.your-domain.com`），絕不動 root domain 或現有專案。
+> ⚠️ **不會覆蓋你既有的 Cloudflare 服務**：本 dashboard 使用獨立的 Pages 專案名 `daily-news-dashboard`，只 deploy 到你自選的 **subdomain**（例如 `invest.aihost.dev`），絕不動 root domain 或現有專案。
 
 ## 前置條件
 
@@ -31,11 +31,11 @@ npm run preview      # http://localhost:4321 確認 5 頁亮著
 | Project name | **`daily-news-dashboard`**（請務必用這個名稱，不要覆蓋既有專案） |
 | Build command | `cd web && npm install && npm run build` |
 | Build output directory | `web/dist` |
-| Environment variables | `PUBLIC_SITE_URL=https://invest.your-domain.com` |
+| Environment variables | `PUBLIC_SITE_URL=https://invest.aihost.dev` |
 
 ### 3. 綁定 custom domain（subdomain only）
 
-Pages → 你的專案 → **Custom domains → Set up a custom domain** → 輸入 `invest.your-domain.com`（自選 subdomain，例如 `invest`、`dashboard`、`hub`…）。
+Pages → 你的專案 → **Custom domains → Set up a custom domain** → 輸入 `invest.aihost.dev`（自選 subdomain，例如 `invest`、`dashboard`、`hub`…）。
 
 > ⚠️ **請務必使用 subdomain**，避免 deploy 到 root domain 影響你現有的服務。
 
@@ -46,9 +46,9 @@ CF 會自動產生 CNAME。等 DNS 生效後就可以從子網域訪問。
 **Zero Trust → Access → Applications → Add an application**:
 
 - Type：**Self-hosted**
-- Application domain：`invest.your-domain.com`
+- Application domain：`invest.aihost.dev`
 - Identity providers：**Google**（或 One-time PIN email）
-- Policy：**Include → Emails → 你的 email**（或 `Emails ending in @your-domain.com`）
+- Policy：**Include → Emails → 你的 email**（或 `Emails ending in @aihost.dev`）
 
 存檔後，未通過驗證的訪客會看到 CF Access login 畫面。
 
