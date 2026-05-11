@@ -1,0 +1,13 @@
+---
+interface Props { label: string; value: string; delta?: number | null }
+const { label, value, delta = null } = Astro.props;
+---
+<div class="flex justify-between items-baseline border-b border-white/5 py-1 last:border-b-0">
+  <span class="text-xs uppercase tracking-wider opacity-60">{label}</span>
+  <span class="mono text-sm">{value}</span>
+  {delta != null && (
+    <span class={`mono text-xs ml-2 ${delta >= 0 ? "delta-up" : "delta-down"}`}>
+      {delta >= 0 ? "+" : ""}{delta.toFixed(2)}%
+    </span>
+  )}
+</div>
