@@ -1,0 +1,59 @@
+{
+  "articles": [
+    {
+      "title": "NVIDIA sets new AI compute record",
+      "link": "https://example.com/n1",
+      "source": "CNBC",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-09T08:00:00Z",
+      "summary": "NVIDIA announced new Blackwell training cluster running at 1.2x prior benchmark.",
+      "tickers": ["NVDA"],
+      "companies": ["NVIDIA"],
+      "event_type": "news"
+    },
+    {
+      "title": "Berkshire 13F shows reduced AAPL stake",
+      "link": "https://example.com/n2",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-09T11:00:00Z",
+      "summary": "Berkshire trimmed AAPL by approximately 13% in Q1 disclosure.",
+      "tickers": ["AAPL"],
+      "companies": ["Apple"],
+      "event_type": "filing"
+    },
+    {
+      "title": "TSMC 4 月營收創歷史新高",
+      "link": "https://example.com/n3",
+      "source": "鉅亨網 台股",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-10T01:00:00Z",
+      "summary": "台積電 4 月合併營收 2,950 億元，年增 38%，HPC 比重續升。",
+      "tickers": ["2330", "TSM"],
+      "companies": ["台積電"],
+      "event_type": "earnings"
+    },
+    {
+      "title": "Howard Marks new memo: cycles in credit",
+      "link": "https://example.com/n4",
+      "source": "Howard Marks Memos",
+      "category": "📊 券商與分析師研究",
+      "published": "2026-05-08T15:00:00Z",
+      "summary": "Marks 提醒當前信用利差處於歷史低位，週期定位需謹慎。",
+      "tickers": [],
+      "companies": [],
+      "event_type": "news"
+    },
+    {
+      "title": "US April CPI rose to 3.2%",
+      "link": "https://example.com/n5",
+      "source": "Fed Working Papers",
+      "category": "🌐 宏觀與產業數據",
+      "published": "2026-05-09T13:00:00Z",
+      "summary": "April CPI print 3.2% vs 3.1% consensus, core CPI 3.0%.",
+      "tickers": [],
+      "companies": [],
+      "event_type": "policy"
+    }
+  ]
+}
