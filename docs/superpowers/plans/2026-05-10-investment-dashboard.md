@@ -77,7 +77,7 @@ Phase success = no NEW Python test regressions + `cd web && npm install && npm r
 
 ### Task 1: OpenSpec scaffold
 
-- [ ] **Step 1: `openspec/changes/investment-dashboard/proposal.md`**
+- [x] **Step 1: `openspec/changes/investment-dashboard/proposal.md`**
 
 ```markdown
 ## Why
@@ -104,7 +104,7 @@ daily-news produces rich data (news, financials, transcripts, insider, 13F, shor
 - No deployment executed by ralph. User runs `wrangler deploy` manually.
 ```
 
-- [ ] **Step 2: `openspec/changes/investment-dashboard/design.md`**
+- [x] **Step 2: `openspec/changes/investment-dashboard/design.md`**
 
 ```markdown
 # Design — investment-dashboard
@@ -125,28 +125,28 @@ See master spec at `docs/superpowers/specs/2026-05-10-investment-dashboard-desig
 - Mobile-native app.
 ```
 
-- [ ] **Step 3: `openspec/changes/investment-dashboard/tasks.md`**
+- [x] **Step 3: `openspec/changes/investment-dashboard/tasks.md`**
 
 ```markdown
 # Tasks — investment-dashboard
 
-- [ ] Task 1 OpenSpec skeleton committed
-- [ ] Task 2 dashboard_export.py + tests
-- [ ] Task 3 web/ Astro scaffold + Tailwind + Base layout
-- [ ] Task 4 Home page bento grid
-- [ ] Task 5 Per-stock dynamic page with tabs
-- [ ] Task 6 News timeline + filter island
-- [ ] Task 7 Calendar widget
-- [ ] Task 8 Decisions journal
-- [ ] Task 9 UI polish (apply ui-ux-pro-max heuristics)
-- [ ] Task 10 wrangler.toml.template + .env.example
-- [ ] Task 11 launchd/export-dashboard-data.sh
-- [ ] Task 12 docs/dashboard-deployment.md
-- [ ] Task 13 Local build smoke + commit
-- [ ] Task 14 Final commit + PHASE_DONE
+- [x] Task 1 OpenSpec skeleton committed
+- [x] Task 2 dashboard_export.py + tests
+- [x] Task 3 web/ Astro scaffold + Tailwind + Base layout
+- [x] Task 4 Home page bento grid
+- [x] Task 5 Per-stock dynamic page with tabs
+- [x] Task 6 News timeline + filter island
+- [x] Task 7 Calendar widget
+- [x] Task 8 Decisions journal
+- [x] Task 9 UI polish (apply ui-ux-pro-max heuristics)
+- [x] Task 10 wrangler.toml.template + .env.example
+- [x] Task 11 launchd/export-dashboard-data.sh
+- [x] Task 12 docs/dashboard-deployment.md
+- [x] Task 13 Local build smoke + commit
+- [x] Task 14 Final commit + PHASE_DONE
 ```
 
-- [ ] **Step 4: `openspec/changes/investment-dashboard/specs/investment-dashboard/spec.md`**
+- [x] **Step 4: `openspec/changes/investment-dashboard/specs/investment-dashboard/spec.md`**
 
 ```markdown
 ## ADDED Requirements
@@ -177,7 +177,7 @@ The system SHALL provide `wrangler.toml.template` and `.env.example` with placeh
 - **THEN** only placeholder patterns like `${CF_API_TOKEN}` or `your-domain.com` SHALL appear
 ```
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add openspec/changes/investment-dashboard/
@@ -192,7 +192,7 @@ git commit -m "openspec: scaffold investment-dashboard change"
 - Create: `dashboard_export.py`
 - Create: `tests/test_dashboard_export.py`
 
-- [ ] **Step 1: Write failing test**
+- [x] **Step 1: Write failing test**
 
 `tests/test_dashboard_export.py`:
 
@@ -276,13 +276,13 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-- [ ] **Step 2: Run test, expect failure**
+- [x] **Step 2: Run test, expect failure**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest tests.test_dashboard_export
 ```
 
-- [ ] **Step 3: Create `dashboard_export.py`**
+- [x] **Step 3: Create `dashboard_export.py`**
 
 ```python
 """Export daily-news SQLite + bundle data to JSON for the dashboard."""
@@ -509,13 +509,13 @@ if __name__ == "__main__":
     raise SystemExit(main())
 ```
 
-- [ ] **Step 4: Run tests, expect pass**
+- [x] **Step 4: Run tests, expect pass**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest tests.test_dashboard_export -v
 ```
 
-- [ ] **Step 5: Run full Python suite**
+- [x] **Step 5: Run full Python suite**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest discover -s tests 2>&1 | grep -E "^(FAIL|ERROR|Ran |FAILED|OK)"
@@ -523,7 +523,7 @@ uv run --with-requirements requirements.txt --python python3 python -m unittest 
 
 Expected: only baseline failures.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add dashboard_export.py tests/test_dashboard_export.py
@@ -536,7 +536,7 @@ git commit -m "feat(dashboard): add dashboard_export.py + tests"
 
 **Files:** create everything under `web/`.
 
-- [ ] **Step 1: `web/package.json`**
+- [x] **Step 1: `web/package.json`**
 
 ```json
 {
@@ -563,7 +563,7 @@ git commit -m "feat(dashboard): add dashboard_export.py + tests"
 }
 ```
 
-- [ ] **Step 2: `web/astro.config.mjs`**
+- [x] **Step 2: `web/astro.config.mjs`**
 
 ```js
 import { defineConfig } from "astro/config";
@@ -578,7 +578,7 @@ export default defineConfig({
 });
 ```
 
-- [ ] **Step 3: `web/tsconfig.json`**
+- [x] **Step 3: `web/tsconfig.json`**
 
 ```json
 {
@@ -587,7 +587,7 @@ export default defineConfig({
 }
 ```
 
-- [ ] **Step 4: `web/tailwind.config.mjs`** (kept for clarity even with Vite plugin)
+- [x] **Step 4: `web/tailwind.config.mjs`** (kept for clarity even with Vite plugin)
 
 ```js
 export default {
@@ -610,7 +610,7 @@ export default {
 };
 ```
 
-- [ ] **Step 5: `web/src/styles/global.css`**
+- [x] **Step 5: `web/src/styles/global.css`**
 
 ```css
 @import "tailwindcss";
@@ -640,7 +640,7 @@ body {
 .delta-down { color: #ff6b81; }
 ```
 
-- [ ] **Step 6: `web/src/layouts/Base.astro`**
+- [x] **Step 6: `web/src/layouts/Base.astro`**
 
 ```astro
 ---
@@ -677,7 +677,7 @@ const { title = "投資決策 Dashboard" } = Astro.props;
 </html>
 ```
 
-- [ ] **Step 7: `web/src/components/BentoCard.astro`**
+- [x] **Step 7: `web/src/components/BentoCard.astro`**
 
 ```astro
 ---
@@ -700,7 +700,7 @@ const colSpan = { "1": "md:col-span-1", "2": "md:col-span-2", "3": "md:col-span-
 </div>
 ```
 
-- [ ] **Step 8: `web/src/components/TickerChip.astro`**
+- [x] **Step 8: `web/src/components/TickerChip.astro`**
 
 ```astro
 ---
@@ -714,7 +714,7 @@ const cls = marketStr === "tw" ? "bg-bg-800 text-accent-400 border-accent-500/40
 </span>
 ```
 
-- [ ] **Step 9: `web/.gitignore`**
+- [x] **Step 9: `web/.gitignore`**
 
 ```
 node_modules/
@@ -726,7 +726,7 @@ wrangler.toml
 .DS_Store
 ```
 
-- [ ] **Step 10: Commit**
+- [x] **Step 10: Commit**
 
 ```bash
 git add web/package.json web/astro.config.mjs web/tsconfig.json web/tailwind.config.mjs \
@@ -740,7 +740,7 @@ git commit -m "feat(dashboard): scaffold astro+tailwind shell + base layout"
 
 ### Task 4: Home page bento grid
 
-- [ ] **Step 1: Sample `web/src/data/overview.json`**
+- [x] **Step 1: Sample `web/src/data/overview.json`**
 
 ```json
 {
@@ -757,7 +757,7 @@ git commit -m "feat(dashboard): scaffold astro+tailwind shell + base layout"
 }
 ```
 
-- [ ] **Step 2: `web/src/pages/index.astro`**
+- [x] **Step 2: `web/src/pages/index.astro`**
 
 ```astro
 ---
@@ -831,7 +831,7 @@ const watchlist = overview.watchlist ?? [];
 </Base>
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add web/src/data/overview.json web/src/pages/index.astro
@@ -842,7 +842,7 @@ git commit -m "feat(dashboard): home bento grid with indices/watchlist/transcrip
 
 ### Task 5: Per-stock dynamic page with tabs
 
-- [ ] **Step 1: Sample `web/src/data/stocks/NVDA.json`**
+- [x] **Step 1: Sample `web/src/data/stocks/NVDA.json`**
 
 ```json
 {
@@ -868,7 +868,7 @@ git commit -m "feat(dashboard): home bento grid with indices/watchlist/transcrip
 }
 ```
 
-- [ ] **Step 2: `web/src/pages/stocks/[ticker].astro`**
+- [x] **Step 2: `web/src/pages/stocks/[ticker].astro`**
 
 ```astro
 ---
@@ -949,7 +949,7 @@ const quarterly = bundle?.quarterly ?? null;
 </Base>
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add web/src/data/stocks/NVDA.json web/src/pages/stocks/[ticker].astro
@@ -960,7 +960,7 @@ git commit -m "feat(dashboard): per-stock dynamic page with 5 bento sections"
 
 ### Task 6: News timeline + filter
 
-- [ ] **Step 1: Sample `web/src/data/news.json`**
+- [x] **Step 1: Sample `web/src/data/news.json`**
 
 ```json
 {
@@ -971,7 +971,7 @@ git commit -m "feat(dashboard): per-stock dynamic page with 5 bento sections"
 }
 ```
 
-- [ ] **Step 2: `web/src/pages/news.astro`**
+- [x] **Step 2: `web/src/pages/news.astro`**
 
 ```astro
 ---
@@ -1013,7 +1013,7 @@ const categories = Array.from(new Set(articles.map(a => a.category))).filter(Boo
 </Base>
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add web/src/data/news.json web/src/pages/news.astro
@@ -1024,7 +1024,7 @@ git commit -m "feat(dashboard): news timeline with category filter"
 
 ### Task 7: Calendar widget
 
-- [ ] **Step 1: Sample `web/src/data/events.json`**
+- [x] **Step 1: Sample `web/src/data/events.json`**
 
 ```json
 {
@@ -1035,7 +1035,7 @@ git commit -m "feat(dashboard): news timeline with category filter"
 }
 ```
 
-- [ ] **Step 2: `web/src/pages/calendar.astro`**
+- [x] **Step 2: `web/src/pages/calendar.astro`**
 
 ```astro
 ---
@@ -1073,7 +1073,7 @@ const dates = Object.keys(byDate).sort();
 </Base>
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add web/src/data/events.json web/src/pages/calendar.astro
@@ -1084,7 +1084,7 @@ git commit -m "feat(dashboard): event calendar page"
 
 ### Task 8: Decisions journal
 
-- [ ] **Step 1: Sample `web/src/data/decisions.json`**
+- [x] **Step 1: Sample `web/src/data/decisions.json`**
 
 ```json
 {
@@ -1094,7 +1094,7 @@ git commit -m "feat(dashboard): event calendar page"
 }
 ```
 
-- [ ] **Step 2: `web/src/pages/decisions.astro`**
+- [x] **Step 2: `web/src/pages/decisions.astro`**
 
 ```astro
 ---
@@ -1124,7 +1124,7 @@ const decisions = (data.decisions ?? []) as Array<any>;
 </Base>
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add web/src/data/decisions.json web/src/pages/decisions.astro
@@ -1142,11 +1142,11 @@ Apply ui-ux-pro-max heuristics:
 - contrast ≥ AA on text
 - mono font for any number / ticker
 
-- [ ] **Step 1: Touch up `global.css` if needed**
+- [x] **Step 1: Touch up `global.css` if needed**
 
 Add focus state + skeleton placeholder helper. Skip if existing class works.
 
-- [ ] **Step 2: Add `web/src/components/StatLine.astro`** for reuse on per-stock page
+- [x] **Step 2: Add `web/src/components/StatLine.astro`** for reuse on per-stock page
 
 ```astro
 ---
@@ -1160,7 +1160,7 @@ const { label, value, delta = null } = Astro.props;
 </div>
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add web/src/components/StatLine.astro web/src/styles/global.css
@@ -1171,7 +1171,7 @@ git commit -m "feat(dashboard): StatLine reusable component + style polish"
 
 ### Task 10: wrangler template + env example
 
-- [ ] **Step 1: `web/wrangler.toml.template`**
+- [x] **Step 1: `web/wrangler.toml.template`**
 
 ```toml
 # Cloudflare Pages config (TEMPLATE — copy to wrangler.toml and fill in)
@@ -1186,7 +1186,7 @@ pages_build_output_dir = "dist"
 # account_id = "${CF_ACCOUNT_ID}"
 ```
 
-- [ ] **Step 2: `web/.env.example`**
+- [x] **Step 2: `web/.env.example`**
 
 ```
 # Copy to .env.local and fill in real values. NEVER commit .env or .env.local.
@@ -1197,7 +1197,7 @@ CF_DEPLOYMENT_DOMAIN=invest.your-domain.com
 PUBLIC_SITE_URL=https://invest.your-domain.com
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add web/wrangler.toml.template web/.env.example
@@ -1208,7 +1208,7 @@ git commit -m "chore(dashboard): wrangler + env templates (placeholders only)"
 
 ### Task 11: launchd export script
 
-- [ ] **Step 1: `launchd/export-dashboard-data.sh`**
+- [x] **Step 1: `launchd/export-dashboard-data.sh`**
 
 ```bash
 #!/usr/bin/env bash
@@ -1231,13 +1231,13 @@ uv run --with-requirements requirements.txt --python python3 \
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] dashboard JSON refreshed"
 ```
 
-- [ ] **Step 2: chmod**
+- [x] **Step 2: chmod**
 
 ```bash
 chmod +x launchd/export-dashboard-data.sh
 ```
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add launchd/export-dashboard-data.sh
@@ -1248,7 +1248,7 @@ git commit -m "chore(dashboard): launchd export script (daily JSON refresh)"
 
 ### Task 12: Deployment guide
 
-- [ ] **Step 1: `docs/dashboard-deployment.md`**
+- [x] **Step 1: `docs/dashboard-deployment.md`**
 
 ````markdown
 # Investment Dashboard — Cloudflare Pages 部署指南
@@ -1329,7 +1329,7 @@ cd web && npm run build && wrangler pages deploy dist --project-name daily-news-
 - ralph 自動化不會執行 `wrangler deploy`
 ````
 
-- [ ] **Step 2: Commit**
+- [x] **Step 2: Commit**
 
 ```bash
 git add docs/dashboard-deployment.md
@@ -1340,13 +1340,13 @@ git commit -m "docs(dashboard): cloudflare pages deployment guide"
 
 ### Task 13: Local build smoke
 
-- [ ] **Step 1: Check node availability**
+- [x] **Step 1: Check node availability**
 
 ```bash
 node --version 2>&1 | head -1 || echo "node not available"
 ```
 
-- [ ] **Step 2: If node ≥ 22 present, install + build**
+- [x] **Step 2: If node ≥ 22 present, install + build**
 
 ```bash
 cd web && npm install --no-audit --no-fund 2>&1 | tail -5
@@ -1360,7 +1360,7 @@ If node is missing, append to `web/README.md`:
 > **Build prerequisite:** Node 22+ is required. Install via `nvm install 22 && nvm use 22` before running `npm install && npm run build`.
 ```
 
-- [ ] **Step 3: `web/README.md`** (regardless of node availability)
+- [x] **Step 3: `web/README.md`** (regardless of node availability)
 
 ````markdown
 # daily-news-dashboard
@@ -1394,7 +1394,7 @@ python dashboard_export.py --output web/src/data
 See `docs/dashboard-deployment.md`.
 ````
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add web/README.md
@@ -1405,15 +1405,15 @@ git commit -m "docs(dashboard): web README + build prerequisites"
 
 ### Task 14: Final commit + PHASE_DONE
 
-- [ ] **Step 1: Mark all tasks completed in `openspec/changes/investment-dashboard/tasks.md`** (replace each `- [ ]` with `- [x]`)
+- [x] **Step 1: Mark all tasks completed in `openspec/changes/investment-dashboard/tasks.md`** (replace each `- [x]` with `- [x]`)
 
-- [ ] **Step 2: openspec validate**
+- [x] **Step 2: openspec validate**
 
 ```bash
 command -v openspec >/dev/null && openspec validate investment-dashboard 2>&1 | tail -3 || echo "openspec CLI not installed locally — skip"
 ```
 
-- [ ] **Step 3: Final test sweep**
+- [x] **Step 3: Final test sweep**
 
 ```bash
 uv run --with-requirements requirements.txt --python python3 python -m unittest discover -s tests 2>&1 | grep -E "^(FAIL|ERROR|Ran |FAILED|OK)"
@@ -1421,7 +1421,7 @@ uv run --with-requirements requirements.txt --python python3 python -m unittest 
 
 Expected: only the two baseline failures.
 
-- [ ] **Step 4: Final commit**
+- [x] **Step 4: Final commit**
 
 ```bash
 git add openspec/changes/investment-dashboard/tasks.md
@@ -1436,7 +1436,7 @@ deploy must be performed manually by user with their own
 domain/token. No existing service touched."
 ```
 
-- [ ] **Step 5: Emit promise**
+- [x] **Step 5: Emit promise**
 
 Reply ONLY with `<promise>PHASE_DONE</promise>` (no other text) when:
 1. All 14 tasks are committed
