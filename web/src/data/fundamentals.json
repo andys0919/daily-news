@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T03:16:26Z",
+  "generated_at": "2026-05-11T03:22:11Z",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -42,12 +42,35 @@
           "capex": 790000000.0,
           "company_name": "NVIDIA CORP"
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 58% 業界頂尖・FCF margin 44% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "TSM",
       "market": "us",
-      "periods": []
+      "periods": [],
+      "health": {
+        "tier": "unknown",
+        "label": "資料不足",
+        "summary": "尚未建檔最新一季財報",
+        "icon": "⚫"
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "2330",
@@ -116,7 +139,19 @@
           "capex": 1272410529.0,
           "company_name": "台積電"
         }
-      ]
+      ],
+      "health": {
+        "tier": "watch",
+        "label": "觀望",
+        "summary": "資料不足",
+        "icon": "🟡",
+        "score": 0
+      },
+      "guidance": {
+        "up": 1,
+        "down": 0,
+        "net": 1
+      }
     },
     {
       "ticker": "AAPL",
@@ -172,7 +207,19 @@
           "capex": 2373000000.0,
           "company_name": "Apple Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 34% 業界頂尖・FCF margin 31% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "MSFT",
@@ -228,7 +275,19 @@
           "capex": 49270000000.0,
           "company_name": "MICROSOFT CORP"
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 47% 業界頂尖",
+        "icon": "🔵",
+        "score": 2
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "GOOGL",
@@ -297,7 +356,19 @@
           "capex": 9915000000.0,
           "company_name": "Alphabet Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 36% 業界頂尖",
+        "icon": "🔵",
+        "score": 2
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "META",
@@ -353,7 +424,19 @@
           "capex": 48308000000.0,
           "company_name": "Meta Platforms, Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 41% 業界頂尖・FCF margin 23% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "AMD",
@@ -396,7 +479,19 @@
           "capex": 752000000.0,
           "company_name": "ADVANCED MICRO DEVICES INC"
         }
-      ]
+      ],
+      "health": {
+        "tier": "watch",
+        "label": "觀望",
+        "summary": "營益率 8% 偏低",
+        "icon": "🟡",
+        "score": 0
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "AVGO",
@@ -439,7 +534,19 @@
           "capex": 250000000.0,
           "company_name": "Broadcom Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 44% 業界頂尖・FCF margin 41% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "2454",
@@ -508,7 +615,19 @@
           "capex": 15059115.0,
           "company_name": "聯發科"
         }
-      ]
+      ],
+      "health": {
+        "tier": "watch",
+        "label": "觀望",
+        "summary": "資料不足",
+        "icon": "🟡",
+        "score": 0
+      },
+      "guidance": {
+        "up": 3,
+        "down": 0,
+        "net": 3
+      }
     }
   ]
 }

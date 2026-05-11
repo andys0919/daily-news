@@ -590,3 +590,135 @@ a:hover { color: var(--fg-100); }
 .line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
 .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ───────────────────────────────────────────────────────────────
+   Takeaway hero cards — retail "today's signal"
+   ─────────────────────────────────────────────────────────────── */
+.take-cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 720px) { .take-cards { grid-template-columns: repeat(3, 1fr); } }
+.take {
+  padding: 18px 20px; border-radius: var(--radius-lg);
+  border: 1px solid var(--border-base);
+  background: var(--bg-880);
+  display: flex; flex-direction: column; gap: 6px;
+}
+.take.positive { border-left: 3px solid var(--ok); }
+.take.negative { border-left: 3px solid var(--bad); }
+.take.neutral { border-left: 3px solid var(--accent); }
+.take-tag {
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--fg-400);
+}
+.take-headline {
+  font-size: 17px; font-weight: 500; color: var(--fg-100);
+  line-height: 1.35; letter-spacing: -0.005em;
+}
+.take.positive .take-headline { color: var(--fg-100); }
+.take.positive .take-tag { color: var(--ok); }
+.take.negative .take-tag { color: var(--bad); }
+.take.neutral .take-tag { color: var(--accent-strong); }
+.take-detail { font-size: 12.5px; color: var(--fg-300); line-height: 1.55; margin-top: 4px; }
+
+/* ───────────────────────────────────────────────────────────────
+   Verdict signal-light card (watchlist)
+   ─────────────────────────────────────────────────────────────── */
+.verdict-grid {
+  display: grid; grid-template-columns: repeat(1, 1fr); gap: 8px;
+}
+@media (min-width: 640px) { .verdict-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .verdict-grid { grid-template-columns: repeat(2, 1fr); } }
+.verdict {
+  display: grid; grid-template-columns: 54px 1fr auto; gap: 14px; align-items: center;
+  padding: 14px 16px; border-radius: var(--radius-md);
+  background: var(--bg-880);
+  border: 1px solid var(--border-base);
+  transition: all var(--duration-fast) var(--ease);
+}
+.verdict:hover {
+  border-color: rgba(122, 162, 255, 0.3);
+  background: rgba(122, 162, 255, 0.04);
+}
+.verdict-icon {
+  font-size: 28px; line-height: 1; text-align: center;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.05));
+}
+.verdict-body { min-width: 0; }
+.verdict-head {
+  display: flex; align-items: baseline; gap: 8px;
+  font-size: 16px; font-weight: 500;
+}
+.verdict-head .t {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--fg-100); font-weight: 600; font-size: 16px;
+  letter-spacing: -0.01em;
+}
+.verdict-head .label {
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 999px;
+}
+.verdict-head .label.strong { color: var(--ok); background: rgba(61, 220, 151, 0.10); border: 1px solid rgba(61, 220, 151, 0.3); }
+.verdict-head .label.steady { color: var(--accent-strong); background: var(--accent-bg); border: 1px solid rgba(122, 162, 255, 0.3); }
+.verdict-head .label.watch { color: var(--warn); background: rgba(255, 174, 92, 0.10); border: 1px solid rgba(255, 174, 92, 0.3); }
+.verdict-head .label.warn { color: var(--bad); background: rgba(255, 107, 129, 0.10); border: 1px solid rgba(255, 107, 129, 0.3); }
+.verdict-head .label.unknown { color: var(--fg-400); background: var(--bg-700); border: 1px solid var(--border-base); }
+.verdict-summary {
+  font-size: 12.5px; color: var(--fg-300); margin-top: 4px;
+  line-height: 1.5;
+}
+.verdict-meta {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px; color: var(--fg-400);
+  text-align: right; line-height: 1.5;
+  display: flex; flex-direction: column; gap: 3px;
+  align-items: flex-end;
+}
+.verdict-meta .pos { color: var(--ok); }
+.verdict-meta .neg { color: var(--bad); }
+.verdict-mini-bar {
+  display: flex; gap: 2px; margin-top: 4px; height: 4px; align-items: stretch;
+}
+.verdict-mini-bar span { display: block; width: 4px; border-radius: 2px; background: var(--bg-700); }
+.verdict-mini-bar span.fill-ok { background: var(--ok); }
+.verdict-mini-bar span.fill-bad { background: var(--bad); }
+
+/* ───────────────────────────────────────────────────────────────
+   News flash strip (top 5 up / down in plain words)
+   ─────────────────────────────────────────────────────────────── */
+.flash-list { display: flex; flex-direction: column; gap: 1px; }
+.flash {
+  display: grid; grid-template-columns: 28px 1fr auto; gap: 12px;
+  padding: 12px 4px; align-items: baseline;
+  border-bottom: 1px solid var(--border-base);
+  transition: background-color var(--duration-fast) var(--ease);
+}
+.flash:hover { background: rgba(255, 255, 255, 0.025); }
+.flash:last-child { border-bottom: none; }
+.flash-arrow { font-size: 18px; line-height: 1; }
+.flash-arrow.up { color: var(--ok); }
+.flash-arrow.down { color: var(--bad); }
+.flash-arrow.mixed { color: var(--warn); }
+.flash-text { font-size: 13.5px; line-height: 1.5; color: var(--fg-100); }
+.flash-text .ticker {
+  color: var(--accent-strong); font-family: "JetBrains Mono", monospace;
+  font-weight: 500; font-size: 12.5px;
+  padding: 1px 6px; border-radius: 4px; background: var(--accent-bg);
+  margin-right: 6px;
+}
+.flash-time {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px; color: var(--fg-400);
+  white-space: nowrap;
+}
+
+/* Section header (retail-friendly tight) */
+.section-h {
+  display: flex; align-items: baseline; gap: 12px;
+  margin: 36px 0 14px;
+}
+.section-h h2 {
+  font-size: 19px; font-weight: 500;
+  color: var(--fg-100); letter-spacing: -0.01em;
+}
+.section-h .sub {
+  font-size: 12px; color: var(--fg-400);
+}

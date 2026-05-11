@@ -728,6 +728,170 @@ def _fundamentals_summary(db_path: Path, tickers: list[str]) -> list[dict]:
     return out
 
 
+def _classify_health(latest: dict | None) -> dict:
+    """Plain-language tier + verdict for retail readers.
+
+    Returns dict with: tier (strong/steady/watch/warn/unknown), label, summary.
+    Thresholds picked to roughly match large-cap tech/semis norms; not exact
+    industry-tuned, but enough to anchor a retail-level "good / OK / bad".
+    """
+    if not latest:
+        return {"tier": "unknown", "label": "資料不足", "summary": "尚未建檔最新一季財報", "icon": "⚫"}
+
+    rev_yoy = latest.get("rev_yoy")
+    eps_yoy = latest.get("eps_yoy")
+    op_margin = latest.get("op_margin")
+    fcf_margin = latest.get("fcf_margin")
+    accel = latest.get("rev_yoy_accel")
+
+    bits: list[str] = []
+    score = 0  # +ve = healthier
+
+    if rev_yoy is not None:
+        if rev_yoy >= 20:
+            bits.append(f"營收年增 {rev_yoy:+.0f}% 強勁")
+            score += 2
+        elif rev_yoy >= 10:
+            bits.append(f"營收年增 {rev_yoy:+.0f}% 健康")
+            score += 1
+        elif rev_yoy >= 0:
+            bits.append(f"營收年增 {rev_yoy:+.0f}% 平平")
+        elif rev_yoy >= -10:
+            bits.append(f"營收年減 {rev_yoy:.0f}% 走弱")
+            score -= 1
+        else:
+            bits.append(f"營收年減 {rev_yoy:.0f}% 大跌")
+            score -= 2
+
+    if op_margin is not None:
+        op = op_margin * 100
+        if op >= 30:
+            bits.append(f"營益率 {op:.0f}% 業界頂尖")
+            score += 2
+        elif op >= 15:
+            bits.append(f"營益率 {op:.0f}% 健康")
+            score += 1
+        elif op >= 5:
+            bits.append(f"營益率 {op:.0f}% 偏低")
+        else:
+            bits.append(f"營益率 {op:.0f}% 偏弱")
+            score -= 1
+
+    if fcf_margin is not None:
+        f = fcf_margin * 100
+        if f >= 20:
+            bits.append(f"FCF margin {f:.0f}% 現金力強")
+            score += 1
+        elif f < 0:
+            bits.append(f"FCF margin {f:.0f}% 燒錢中")
+            score -= 1
+
+    if accel is not None:
+        if accel >= 5:
+            bits.append("成長加速中")
+            score += 1
+        elif accel <= -5:
+            bits.append("成長動能放緩")
+            score -= 1
+
+    if score >= 4:
+        tier, label, icon = "strong", "強勢", "🟢"
+    elif score >= 2:
+        tier, label, icon = "steady", "穩健", "🔵"
+    elif score >= -1:
+        tier, label, icon = "watch", "觀望", "🟡"
+    else:
+        tier, label, icon = "warn", "警示", "🔴"
+
+    summary = "・".join(bits[:3]) if bits else "資料不足"
+    return {"tier": tier, "label": label, "summary": summary, "icon": icon, "score": score}
+
+
+def _per_ticker_guidance(guidance_feed: list[dict]) -> dict[str, dict]:
+    """Aggregate guidance counts per ticker for retail-friendly net score."""
+    out: dict[str, dict] = defaultdict(lambda: {"up": 0, "down": 0, "neutral": 0, "mixed": 0, "items": []})
+    for g in guidance_feed:
+        for t in g.get("tickers") or []:
+            out[t][g["direction"]] = out[t].get(g["direction"], 0) + 1
+            out[t]["items"].append({
+                "title": g["title"],
+                "direction": g["direction"],
+                "published": g["published"],
+                "source": g["source"],
+                "link": g["link"],
+            })
+    return {t: {**v, "net": v["up"] - v["down"]} for t, v in out.items()}
+
+
+def _today_takeaways(
+    guidance_up: list[dict],
+    guidance_down: list[dict],
+    fundamentals: list[dict],
+    health_by_ticker: dict[str, dict],
+) -> list[dict]:
+    """Generate 3 plain-language takeaways for hero."""
+    out: list[dict] = []
+    up_n, down_n = len(guidance_up), len(guidance_down)
+    if up_n + down_n > 0:
+        if up_n >= down_n * 2:
+            mood = "市場上修聲音明顯多過下修"
+            kind = "positive"
+        elif down_n >= up_n * 2:
+            mood = "市場下修聲音明顯多過上修"
+            kind = "negative"
+        else:
+            mood = "市場上修與下修聲音相當"
+            kind = "neutral"
+        out.append({
+            "kind": kind,
+            "headline": f"{mood} ({up_n} 上修 / {down_n} 下修)",
+            "detail": "近 30 天分析師目標價、財測、EPS beat/miss 統計。",
+        })
+
+    strong = [f for f in fundamentals if (health_by_ticker.get(f["ticker"], {}) or {}).get("tier") == "strong"]
+    warn = [f for f in fundamentals if (health_by_ticker.get(f["ticker"], {}) or {}).get("tier") == "warn"]
+    if strong:
+        names = "、".join(f["ticker"] for f in strong[:4])
+        out.append({
+            "kind": "positive",
+            "headline": f"Watchlist 中 {names} 基本面強勢",
+            "detail": "營收年增強、營益率業界頂尖。",
+        })
+    if warn:
+        names = "、".join(f["ticker"] for f in warn[:4])
+        out.append({
+            "kind": "negative",
+            "headline": f"Watchlist 中 {names} 出現警訊",
+            "detail": "營收衰退或營益率偏弱，需注意。",
+        })
+
+    big_movers = [g for g in (guidance_down or []) if any(
+        kw in (g.get("title") or "").lower()
+        for kw in ("plummet", "plunges", "slashes", "下修", "崩跌")
+    )]
+    if big_movers:
+        sample = big_movers[0]["title"][:60]
+        out.append({
+            "kind": "negative",
+            "headline": "本週重大下修事件",
+            "detail": f"例：{sample}…",
+        })
+
+    big_up = [g for g in (guidance_up or []) if any(
+        kw in (g.get("title") or "").lower()
+        for kw in ("surge", "soar", "上看", "飆", "raises guidance", "lifts target")
+    )]
+    if big_up and len(out) < 3:
+        sample = big_up[0]["title"][:60]
+        out.append({
+            "kind": "positive",
+            "headline": "本週重大上修事件",
+            "detail": f"例：{sample}…",
+        })
+
+    return out[:3]
+
+
 def _events_calendar(articles: list[dict]) -> list[dict]:
     """Build event entries from earnings / capex / policy / filing tagged articles."""
     events = []
@@ -813,6 +977,16 @@ def export_all(
         for t in g.get("tickers") or []:
             guidance_by_ticker[t].append(g)
 
+    health_by_ticker = {f["ticker"]: _classify_health(f.get("latest")) for f in fundamentals}
+    per_ticker_guidance = _per_ticker_guidance(guidance_feed)
+    takeaways = _today_takeaways(guidance_up, guidance_down, fundamentals, health_by_ticker)
+
+    # Attach health + guidance count to each fundamentals entry for the UI
+    for f in fundamentals:
+        f["health"] = health_by_ticker.get(f["ticker"], {"tier": "unknown", "label": "—", "summary": "", "icon": "⚫"})
+        pg = per_ticker_guidance.get(f["ticker"], {"up": 0, "down": 0, "net": 0, "items": []})
+        f["guidance"] = {"up": pg["up"], "down": pg["down"], "net": pg["net"]}
+
     artefacts: dict[str, Path] = {}
 
     overview = {
@@ -834,6 +1008,7 @@ def export_all(
         },
         "watchlist": tickers,
         "fundamentals": fundamentals,
+        "takeaways": takeaways,
         "guidance_up": guidance_up[:25],
         "guidance_down": guidance_down[:25],
         "guidance_recent": guidance_feed[:40],

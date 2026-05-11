@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-11T03:16:26Z",
+  "generated_at": "2026-05-11T03:22:11Z",
   "stats": {
     "articles_total": 55879,
-    "articles_24h": 534,
-    "articles_7d": 4024,
+    "articles_24h": 531,
+    "articles_7d": 4021,
     "articles_30d": 15000,
     "reports_total": 316,
     "insider_total": 0,
@@ -69,12 +69,35 @@
           "capex": 790000000.0,
           "company_name": "NVIDIA CORP"
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 58% 業界頂尖・FCF margin 44% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "TSM",
       "market": "us",
-      "periods": []
+      "periods": [],
+      "health": {
+        "tier": "unknown",
+        "label": "資料不足",
+        "summary": "尚未建檔最新一季財報",
+        "icon": "⚫"
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "2330",
@@ -143,7 +166,19 @@
           "capex": 1272410529.0,
           "company_name": "台積電"
         }
-      ]
+      ],
+      "health": {
+        "tier": "watch",
+        "label": "觀望",
+        "summary": "資料不足",
+        "icon": "🟡",
+        "score": 0
+      },
+      "guidance": {
+        "up": 1,
+        "down": 0,
+        "net": 1
+      }
     },
     {
       "ticker": "AAPL",
@@ -199,7 +234,19 @@
           "capex": 2373000000.0,
           "company_name": "Apple Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 34% 業界頂尖・FCF margin 31% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "MSFT",
@@ -255,7 +302,19 @@
           "capex": 49270000000.0,
           "company_name": "MICROSOFT CORP"
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 47% 業界頂尖",
+        "icon": "🔵",
+        "score": 2
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "GOOGL",
@@ -324,7 +383,19 @@
           "capex": 9915000000.0,
           "company_name": "Alphabet Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 36% 業界頂尖",
+        "icon": "🔵",
+        "score": 2
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "META",
@@ -380,7 +451,19 @@
           "capex": 48308000000.0,
           "company_name": "Meta Platforms, Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 41% 業界頂尖・FCF margin 23% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "AMD",
@@ -423,7 +506,19 @@
           "capex": 752000000.0,
           "company_name": "ADVANCED MICRO DEVICES INC"
         }
-      ]
+      ],
+      "health": {
+        "tier": "watch",
+        "label": "觀望",
+        "summary": "營益率 8% 偏低",
+        "icon": "🟡",
+        "score": 0
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "AVGO",
@@ -466,7 +561,19 @@
           "capex": 250000000.0,
           "company_name": "Broadcom Inc."
         }
-      ]
+      ],
+      "health": {
+        "tier": "steady",
+        "label": "穩健",
+        "summary": "營益率 44% 業界頂尖・FCF margin 41% 現金力強",
+        "icon": "🔵",
+        "score": 3
+      },
+      "guidance": {
+        "up": 0,
+        "down": 0,
+        "net": 0
+      }
     },
     {
       "ticker": "2454",
@@ -535,7 +642,36 @@
           "capex": 15059115.0,
           "company_name": "聯發科"
         }
-      ]
+      ],
+      "health": {
+        "tier": "watch",
+        "label": "觀望",
+        "summary": "資料不足",
+        "icon": "🟡",
+        "score": 0
+      },
+      "guidance": {
+        "up": 3,
+        "down": 0,
+        "net": 3
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "kind": "positive",
+      "headline": "市場上修聲音明顯多過下修 (12 上修 / 6 下修)",
+      "detail": "近 30 天分析師目標價、財測、EPS beat/miss 統計。"
+    },
+    {
+      "kind": "negative",
+      "headline": "本週重大下修事件",
+      "detail": "例：CSL shares plummet 18% on profit guidance cut, $5 bln impair…"
+    },
+    {
+      "kind": "positive",
+      "headline": "本週重大上修事件",
+      "detail": "例：AI ASIC好熱，聯發科小金雞EPS從11.77元到上看20元，本益比26倍挾成長實力，中長線看好嗎？ - 經濟日報…"
     }
   ],
   "guidance_up": [
