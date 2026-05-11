@@ -1,0 +1,8 @@
+{
+  "events": [
+    { "date": "2026-05-15", "ticker": "NVDA", "type": "earnings", "title": "NVDA Q1 法說會" },
+    { "date": "2026-05-18", "ticker": "", "type": "macro", "title": "US CPI release" },
+    { "date": "2026-05-22", "ticker": "2330", "type": "earnings", "title": "台積電 法說會" },
+    { "date": "2026-05-29", "ticker": "AAPL", "type": "filing", "title": "Apple 10-K filing" }
+  ]
+}

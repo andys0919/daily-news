@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import TickerChip from "../components/TickerChip.astro";
+import events from "../data/events.json";
+
+const list = (events.events ?? []) as Array<any>;
+const byDate = list.reduce((acc: Record<string, any[]>, e) => {
+  (acc[e.date] = acc[e.date] || []).push(e);
+  return acc;
+}, {});
+const dates = Object.keys(byDate).sort();
+---
+<Base title="月曆 — 投資決策 Dashboard">
+  <header class="mb-6">
+    <h1 class="text-3xl font-semibold tracking-tight">事件月曆</h1>
+  </header>
+  {dates.length === 0 ? (
+    <p class="opacity-60">尚無事件資料（Python 端 events export 待補）</p>
+  ) : (
+    <ul class="space-y-3">
+      {dates.map((d) => (
+        <li class="glass rounded-xl p-4">
+          <div class="mono text-sm opacity-70 mb-2">{d}</div>
+          <ul class="space-y-1">
+            {byDate[d].map((e: any) => (
+              <li class="flex gap-2 items-baseline text-sm">
+                {e.ticker && <TickerChip ticker={e.ticker} />}
+                <span class="opacity-90">{e.title}</span>
+                <span class="ml-auto text-xs opacity-60">{e.type}</span>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
+  )}
+</Base>
