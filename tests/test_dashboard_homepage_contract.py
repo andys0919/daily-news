@@ -10,36 +10,43 @@ class DashboardHomepageContractTests(unittest.TestCase):
         self.index = (ROOT / "web" / "src" / "pages" / "index.astro").read_text(encoding="utf-8")
         self.css = (ROOT / "web" / "src" / "styles" / "global.css").read_text(encoding="utf-8")
 
-    def test_homepage_is_investor_research_queue_not_help_page(self):
+    def test_homepage_is_stock_search_portal_not_research_queue(self):
         required_copy = [
-            "今日研究隊列",
-            "高優先研究",
-            "需要驗證",
-            "風險雷達",
-            "為什麼現在",
-            "下一步查核",
-            "風險觸發",
+            "個股快搜",
+            "即時個股資訊入口",
+            "即時新聞",
+            "法人 / 分析師",
+            "財報",
+            "電話會議",
+            "快速搜尋",
+            "熱門快搜",
+            "相關資料入口",
         ]
         for copy in required_copy:
             self.assertIn(copy, self.index)
 
         self.assertNotIn("本頁如何使用", self.index)
         self.assertNotIn("details class=\"guide\"", self.index)
+        self.assertNotIn("今日研究隊列", self.index)
+        self.assertNotIn("高優先研究", self.index)
+        self.assertNotIn("風險雷達", self.index)
 
-    def test_homepage_uses_investment_signal_data_sources(self):
+    def test_homepage_uses_stock_search_data_sources(self):
+        self.assertIn('import newsData from "../data/news.json";', self.index)
+        self.assertIn('import tickerIndex from "../data/tickers.json";', self.index)
         self.assertIn('import screens from "../data/screens.json";', self.index)
-        self.assertIn('../data/decisions.json";', self.index)
-        self.assertIn("const decisions =", self.index)
-        self.assertIn("researchQueue", self.index)
+        self.assertIn("stockSearchItems", self.index)
+        self.assertIn("callArticles", self.index)
         self.assertIn("momentumByTicker", self.index)
 
-    def test_homepage_has_responsive_research_desk_styles(self):
+    def test_homepage_has_responsive_search_portal_styles(self):
         required_selectors = [
-            ".desk-hero",
-            ".idea-grid",
-            ".research-card",
-            ".signal-lane",
-            ".evidence-rail",
+            ".search-hero",
+            ".stock-command",
+            ".quick-ticker-grid",
+            ".coverage-grid",
+            ".source-lane",
+            ".ticker-result-list",
         ]
         for selector in required_selectors:
             self.assertIn(selector, self.css)

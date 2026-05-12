@@ -15,7 +15,7 @@
 dashboard_export.py    Python → JSON (讀 SQLite，寫 web/src/data/)
 web/                   Astro + Tailwind 4 靜態網站
   src/pages/
-    index.astro        ← 單頁主視角（idea-generation 研究隊列）
+    index.astro        ← 單頁主視角（個股快搜 + 即時資料入口）
     stocks/[ticker].astro  ← 171 檔個股深度頁
   src/layouts/Base.astro    ← 共用 layout，含搜尋框 + 搜尋 index
   src/styles/global.css     ← 全套 design tokens
@@ -28,12 +28,12 @@ tests/test_dashboard_homepage_contract.py ← 首頁資訊架構合約測試
 
 ## 單頁結構（index.astro）
 
-1. **今日研究隊列 hero**：顯示產出日期、上修/下修 breadth、可搜尋標的數、財報樣本數、首要追蹤標的
-2. **Sticky section index**：研究隊列 / Watchlist / 市場訊號 / 原文證據
-3. **研究隊列**：高優先研究 / 需要驗證 / 風險雷達；每張卡回答「為什麼現在 / 下一步查核 / 風險觸發」
-4. **Watchlist 決策表**：用同一套 researchQueue 排序，集中顯示狀態、證據信心、風險與數字快照
-5. **市場訊號**：上修、下修、新聞熱度三欄
-6. **原文證據**：SEC filing excerpt + 公司內部 feed
+1. **個股快搜 hero**：大搜尋框、熱門 ticker shortcut、即時新聞 / 法人 / 財報 / 電話會議覆蓋數
+2. **Sticky section index**：快速搜尋 / 熱門快搜 / 相關資料入口 / 最新資料流
+3. **快速搜尋**：以 ticker card 進個股頁，露出新聞數、財報數、新聞熱度
+4. **熱門快搜**：用 `screens.momentum` 排序近期升溫標的
+5. **相關資料入口**：即時新聞、法人 / 分析師、財報、電話會議四欄來源流
+6. **最新資料流**：最近進來的個股相關資料與公司事件
 
 ## 資料來源
 
@@ -51,11 +51,12 @@ tests/test_dashboard_homepage_contract.py ← 首頁資訊架構合約測試
 | YoY 在 Scorecard 顯示「—」 | TW data 重複 row 已 dedupe 但缺去年同期可比資料 |
 | Watchlist hardcode | 已補 `data/watchlist.yaml`；`dashboard_export.py` 預設讀 yaml，沒有檔案才 fallback |
 | 主 branch 未 merge | 已 fast-forward merge 到 main |
-| 首頁舊 Scorecard/guide 很難讀 | 已改成投資研究隊列：高優先研究 / 需要驗證 / 風險雷達 / Watchlist 決策表 |
+| 首頁定位偏成投資建議隊列 | 已改成個股快搜入口：ticker 搜尋、熱門快搜、即時新聞 / 法人 / 財報 / 電話會議資料流 |
 
 ## 最近 commits（main）
 
 ```
+ui(dashboard): refocus homepage on stock search
 ui(dashboard): research-queue homepage redesign
 data(dashboard): refresh latest snapshot
 fix(dashboard): finalize local tunnel refresh

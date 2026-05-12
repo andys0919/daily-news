@@ -2,16 +2,17 @@
 import Base from "../layouts/Base.astro";
 import overview from "../data/overview.json";
 import screens from "../data/screens.json";
-import decisionsData from "../data/decisions.json";
+import newsData from "../data/news.json";
+import tickerIndex from "../data/tickers.json";
 
-interface Guidance {
+interface Article {
   title: string;
-  link: string;
+  link: string | null;
   source: string;
   published: string;
-  direction: string;
-  excerpt: string;
   tickers: string[];
+  event_type: string | null;
+  category?: string;
 }
 interface Analyst {
   title: string;
@@ -20,27 +21,6 @@ interface Analyst {
   published: string;
   tickers: string[];
   direction: string | null;
-}
-interface RevenueRow {
-  ticker: string;
-  market: string;
-  company_name: string | null;
-  q_year: number | null;
-  q_period: string | null;
-  q_revenue: number | null;
-  q_eps: number | null;
-  q_rev_yoy: number | null;
-  m_year: number | null;
-  m_period: string | null;
-  m_revenue: number | null;
-}
-interface InternalItem {
-  title: string;
-  link: string;
-  source: string;
-  published: string;
-  tickers: string[];
-  event_type: string | null;
 }
 interface FilingExcerpt {
   ticker: string;
@@ -54,9 +34,8 @@ interface Fundamental {
   ticker: string;
   market: string;
   company_name: string | null;
-  latest: any;
-  health: { tier: string; label: string; summary: string; score?: number };
-  guidance: { up: number; down: number; net: number };
+  latest: { revenue?: number | null; eps?: number | null; rev_yoy?: number | null } | null;
+  health?: { tier: string; label: string; summary: string };
 }
 interface MomentumRow {
   ticker: string;
@@ -65,76 +44,37 @@ interface MomentumRow {
   delta: number;
   pct_change: number;
 }
-interface Decision {
-  date: string;
-  ticker: string;
-  action: string;
-  size_pct?: number;
-  thesis: string;
-  follow_up: string;
-}
-interface ResearchItem {
+interface TickerEntry {
   ticker: string;
   name: string;
   market: string;
-  tier: string;
+  articles: number;
+  reports: number;
   label: string;
-  score: number;
-  why: string;
-  next: string;
-  risk: string;
-  confidence: string;
-  confidenceClass: string;
-  revenue: string;
-  eps: string;
-  revYoy: string;
-  monthRevenue: string;
-  momentum: MomentumRow | null;
-  event: Guidance | null;
-  analystNet: number;
-  guidanceNet: number;
 }
 
 const stats: any = overview.stats ?? {};
-const fundamentals = (overview.fundamentals ?? []) as Fundamental[];
-const guidanceUp = (overview.guidance_up ?? []) as Guidance[];
-const guidanceDown = (overview.guidance_down ?? []) as Guidance[];
-const guidanceRecent = (overview.guidance_recent ?? []) as Guidance[];
-const analyst = (overview.analyst_views ?? []) as Analyst[];
-const revenue = (overview.revenue_pulse ?? []) as RevenueRow[];
-const internal = (overview.internal_feed ?? []) as InternalItem[];
-const filings = (overview.filing_excerpts ?? []) as FilingExcerpt[];
-const momentumRows = ((screens as any).momentum ?? []) as MomentumRow[];
-const decisions = ((decisionsData as any).decisions ?? []) as Decision[];
 const generated = overview.generated_at ?? "";
-
-const tierScore: Record<string, number> = { strong: 4, steady: 3, watch: 1, warn: -3, unknown: 0 };
-const tierOrder: Record<string, number> = { strong: 0, steady: 1, watch: 2, unknown: 3, warn: 4 };
-
-const revByTicker: Record<string, RevenueRow> = {};
-for (const row of revenue) revByTicker[row.ticker] = row;
+const articles = ((newsData as any).articles ?? []) as Article[];
+const analystViews = (overview.analyst_views ?? []) as Analyst[];
+const fundamentals = (overview.fundamentals ?? []) as Fundamental[];
+const filings = (overview.filing_excerpts ?? []) as FilingExcerpt[];
+const internalFeed = (overview.internal_feed ?? []) as Article[];
+const momentumRows = ((screens as any).momentum ?? []) as MomentumRow[];
+const stockSearchItems = ((tickerIndex as any).tickers ?? []) as TickerEntry[];
 
 const momentumByTicker: Record<string, MomentumRow> = {};
 for (const row of momentumRows) momentumByTicker[row.ticker] = row;
 
-const analystCount: Record<string, { up: number; down: number; total: number; net: number }> = {};
-for (const view of analyst) {
-  for (const ticker of view.tickers || []) {
-    if (!analystCount[ticker]) analystCount[ticker] = { up: 0, down: 0, total: 0, net: 0 };
-    analystCount[ticker].total += 1;
-    if (view.direction === "up") analystCount[ticker].up += 1;
-    if (view.direction === "down") analystCount[ticker].down += 1;
-    analystCount[ticker].net = analystCount[ticker].up - analystCount[ticker].down;
-  }
-}
-
-const latestEventByTicker: Record<string, Guidance> = {};
-for (const item of guidanceRecent) {
-  for (const ticker of item.tickers || []) {
-    const current = latestEventByTicker[ticker];
-    if (!current || (item.published || "") > (current.published || "")) latestEventByTicker[ticker] = item;
-  }
-}
+const stockNews = articles.filter((item) => (item.tickers ?? []).length > 0);
+const callArticles = articles.filter((item) =>
+  /transcript|earnings call|conference call|prepared remarks|法說|電話會議/i.test(`${item.title} ${item.source} ${item.category}`)
+);
+const topSearchItems = stockSearchItems.slice(0, 12);
+const hotTickers = topSearchItems
+  .map((item) => ({ ...item, momentum: momentumByTicker[item.ticker] ?? null }))
+  .sort((a, b) => (b.momentum?.delta ?? 0) - (a.momentum?.delta ?? 0) || b.articles - a.articles)
+  .slice(0, 12);
 
 function ago(iso: string | undefined): string {
   if (!iso) return "無時間";
@@ -150,7 +90,11 @@ function plainTitle(title: string): string {
   return (title || "").split(" - ")[0].replace(/\s+/g, " ").trim();
 }
 
-function fmtRevenue(n: number | null | undefined, market: string | undefined): string {
+function marketLabel(market: string): string {
+  return market === "tw" ? "TW" : "US";
+}
+
+function fmtMoney(n: number | null | undefined, market: string): string {
   if (n == null || !Number.isFinite(Number(n))) return "缺資料";
   if (market === "tw") {
     const yi = Number(n) / 1e5;
@@ -159,436 +103,282 @@ function fmtRevenue(n: number | null | undefined, market: string | undefined): s
   return `$${(Number(n) / 1e9).toFixed(1)}B`;
 }
 
-function fmtMonthly(n: number | null | undefined, market: string | undefined): string {
-  if (n == null || !Number.isFinite(Number(n))) return "缺資料";
-  if (market === "tw") return `NT$${Math.round(Number(n) / 1e5).toLocaleString()}億`;
-  return `$${(Number(n) / 1e9).toFixed(2)}B`;
+function tickerHref(ticker: string | undefined): string {
+  return ticker ? `/stocks/${ticker}/` : "#";
 }
 
-function fmtPct(n: number | null | undefined): string {
-  if (n == null || !Number.isFinite(Number(n))) return "缺資料";
-  return `${Number(n) >= 0 ? "+" : ""}${Number(n).toFixed(1)}%`;
+function articleHref(item: Article | Analyst): string {
+  return item.link || tickerHref(item.tickers?.[0]);
 }
 
-function fmtNum(n: number | null | undefined, digits = 2): string {
-  if (n == null || !Number.isFinite(Number(n))) return "缺資料";
-  return Number(n).toFixed(digits);
-}
-
-function bounded(value: number, min: number, max: number): number {
-  return Math.max(min, Math.min(max, value));
-}
-
-function companyLabel(item: Fundamental): string {
-  return item.company_name?.slice(0, 30) || (item.market === "tw" ? "台股" : "美股");
-}
-
-function eventSentence(event: Guidance | null): string | null {
-  if (!event) return null;
-  const direction = event.direction === "down" ? "負向事件" : event.direction === "up" ? "正向事件" : "事件";
-  return `${direction}：${plainTitle(event.title)}`;
-}
-
-function whyNow(item: Fundamental, row: RevenueRow | undefined, event: Guidance | null, momentum: MomentumRow | null): string {
-  const g = item.guidance ?? { up: 0, down: 0, net: 0 };
-  if (g.net > 0 && event) return eventSentence(event) ?? `${item.ticker} 近 30 天上修訊號多於下修。`;
-  if (g.net < 0 && event) return eventSentence(event) ?? `${item.ticker} 近 30 天下修訊號需要先排除。`;
-  if (momentum && momentum.delta >= 10) return `7 日新聞提及增加 ${momentum.delta} 次，市場關注升溫，需要確認是否有基本面支撐。`;
-  if (row?.q_rev_yoy != null) return `最新季營收 YoY ${fmtPct(row.q_rev_yoy)}，先看成長是否延續。`;
-  if (item.health?.summary) return item.health.summary;
-  return "目前缺少明確催化，先確認最新財報與公司原文。";
-}
-
-function nextCheck(item: Fundamental, row: RevenueRow | undefined, event: Guidance | null): string {
-  if (event) return "打開事件來源，確認是否改變營收、毛利率或財測假設。";
-  if (row?.m_revenue != null) return "比對月營收趨勢與下一季 EPS，避免只看單月雜訊。";
-  if (row?.q_revenue != null) return "進個股頁檢查近幾季營收、EPS、現金流是否一致。";
-  if (item.health?.tier === "unknown") return "先補最新季報或官方原文，再決定是否納入研究。";
-  return "找下一個公司事件或法說摘要，確認估值故事是否仍成立。";
-}
-
-function riskTrigger(item: Fundamental, row: RevenueRow | undefined, momentum: MomentumRow | null): string {
-  const g = item.guidance ?? { up: 0, down: 0, net: 0 };
-  if (g.down > 0) return "下修或 miss 事件持續增加，先降研究優先權。";
-  if (row?.q_rev_yoy != null && row.q_rev_yoy < 0) return "營收 YoY 轉負但市場仍給高期待。";
-  if (item.health?.tier === "watch" || item.health?.tier === "warn") return "健康度偏弱或缺毛利/營益率證據，不能只看題材。";
-  if (momentum && momentum.delta >= 10 && !item.latest?.revenue) return "新聞熱度高但財報資料不足，容易變成追消息。";
-  return "下一次財報或指引沒有跟上目前敘事。";
-}
-
-function confidence(item: Fundamental, row: RevenueRow | undefined, event: Guidance | null): { label: string; cls: string } {
-  const hasFinancials = row?.q_revenue != null || item.latest?.revenue != null;
-  const hasEvent = Boolean(event);
-  if (hasFinancials && hasEvent) return { label: "高", cls: "high" };
-  if (hasFinancials) return { label: "中", cls: "mid" };
-  return { label: "低", cls: "low" };
-}
-
-function buildResearchItem(item: Fundamental): ResearchItem {
-  const row = revByTicker[item.ticker];
-  const event = latestEventByTicker[item.ticker] ?? null;
-  const momentum = momentumByTicker[item.ticker] ?? null;
-  const g = item.guidance ?? { up: 0, down: 0, net: 0 };
-  const a = analystCount[item.ticker] ?? { up: 0, down: 0, total: 0, net: 0 };
-  const revScore = row?.q_rev_yoy == null ? 0 : bounded(row.q_rev_yoy / 10, -2, 3);
-  const momentumScore = momentum ? bounded(momentum.delta / 20, 0, 2.5) : 0;
-  const score = (tierScore[item.health?.tier ?? "unknown"] ?? 0) + g.net * 2 + a.net + revScore + momentumScore;
-  const c = confidence(item, row, event);
-  return {
-    ticker: item.ticker,
-    name: companyLabel(item),
-    market: item.market,
-    tier: item.health?.tier ?? "unknown",
-    label: item.health?.label ?? "資料不足",
-    score,
-    why: whyNow(item, row, event, momentum),
-    next: nextCheck(item, row, event),
-    risk: riskTrigger(item, row, momentum),
-    confidence: c.label,
-    confidenceClass: c.cls,
-    revenue: fmtRevenue(row?.q_revenue ?? item.latest?.revenue, row?.market ?? item.market),
-    eps: fmtNum(row?.q_eps ?? item.latest?.eps, 2),
-    revYoy: fmtPct(row?.q_rev_yoy ?? item.latest?.rev_yoy),
-    monthRevenue: fmtMonthly(row?.m_revenue, row?.market ?? item.market),
-    momentum,
-    event,
-    analystNet: a.net,
-    guidanceNet: g.net,
-  };
-}
-
-const researchQueue = fundamentals
-  .map(buildResearchItem)
-  .sort((a, b) => b.score - a.score || (tierOrder[a.tier] ?? 9) - (tierOrder[b.tier] ?? 9));
-
-const highPriority = researchQueue
-  .filter((item) => item.score >= 4 && item.guidanceNet >= 0)
-  .slice(0, 4);
-const highPriorityTickers = new Set(highPriority.map((item) => item.ticker));
-const verifyQueue = researchQueue
-  .filter((item) => !highPriorityTickers.has(item.ticker))
-  .filter((item) => item.confidenceClass === "low" || (item.momentum?.delta ?? 0) >= 10 || item.tier === "unknown")
-  .slice(0, 4);
-const verifyQueueTickers = new Set(verifyQueue.map((item) => item.ticker));
-const riskQueue = researchQueue
-  .filter((item) => !highPriorityTickers.has(item.ticker) && !verifyQueueTickers.has(item.ticker))
-  .filter((item) => item.tier === "watch" || item.tier === "warn" || item.guidanceNet < 0)
-  .slice(0, 4);
-
-const queueSections = [
-  {
-    title: "高優先研究",
-    kicker: "上修或品質支撐",
-    tone: "opportunity",
-    items: highPriority.length ? highPriority : researchQueue.slice(0, 3),
-  },
-  {
-    title: "需要驗證",
-    kicker: "有熱度但證據不足",
-    tone: "verify",
-    items: verifyQueue.length ? verifyQueue : researchQueue.slice(0, 3),
-  },
-  {
-    title: "風險雷達",
-    kicker: "先排除反轉風險",
-    tone: "risk",
-    items: riskQueue.length ? riskQueue : researchQueue.slice(-3).reverse(),
-  },
+const sourceTiles = [
+  { label: "即時新聞", value: stats.articles_24h ?? 0, sub: `${stats.articles_7d ?? 0} 篇 / 7 日`, tone: "news" },
+  { label: "法人 / 分析師", value: analystViews.length, sub: "評等、目標價、機構觀點", tone: "analyst" },
+  { label: "財報", value: stats.reports_total ?? 0, sub: "SEC / TWSE / MOPS / TPEx", tone: "financials" },
+  { label: "電話會議", value: callArticles.length, sub: "transcript / earnings call", tone: "calls" },
 ];
-
-const lead = highPriority[0] ?? researchQueue[0];
-const guidanceTotal = Number(stats.guidance_up_30d ?? 0) + Number(stats.guidance_down_30d ?? 0);
-const signalBalance = guidanceTotal > 0
-  ? Math.round((Number(stats.guidance_up_30d ?? 0) / guidanceTotal) * 100)
-  : 50;
-const latestDecision = decisions[0];
 ---
-<Base title="Daily-News 投資雷達" active="home">
-  <section class="desk-hero">
-    <div class="desk-hero-main">
-      <div class="desk-eyebrow">Investment Idea Desk · {generated.slice(0, 10)} · {ago(generated)} ago</div>
-      <h1>今日研究隊列</h1>
+<Base title="個股快搜 · Daily-News" active="home">
+  <section class="search-hero">
+    <div class="search-hero-copy">
+      <span class="portal-kicker">即時個股資訊入口 · {generated.slice(0, 10)} · {ago(generated)} ago</span>
+      <h1>個股快搜</h1>
       <p>
-        用 idea-generation 的方式先篩研究優先順序：把財報健康度、上修/下修、法人聲量、新聞熱度與公司原文合在一起，讓一般投資人先知道今天該追哪幾檔、為什麼、下一步查什麼。
+        這裡是個股相關資訊的快速搜尋網站：輸入 ticker 或公司名，就能進到個股頁看即時新聞、法人 / 分析師、財報、電話會議、公司原文與相關標的。idea-generation 只用來幫你排序熱門入口，不替你下買賣結論。
       </p>
-      <div class="desk-metrics">
-        <div>
-          <span>{stats.guidance_up_30d ?? 0}</span>
-          <small>30 日上修</small>
-        </div>
-        <div>
-          <span>{stats.guidance_down_30d ?? 0}</span>
-          <small>30 日下修</small>
-        </div>
-        <div>
-          <span>{stats.tickers_tracked ?? researchQueue.length}</span>
-          <small>可搜尋標的</small>
-        </div>
-        <div>
-          <span>{stats.reports_total ?? 0}</span>
-          <small>財報樣本</small>
-        </div>
+
+      <div class="stock-command">
+        <span class="command-icon">⌕</span>
+        <input
+          id="stock-command-input"
+          type="text"
+          placeholder="快速搜尋 2330、NVDA、台積電、NVIDIA..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <kbd class="kbd">Enter</kbd>
+        <div id="stock-command-results" class="ticker-result-list" hidden></div>
+      </div>
+
+      <div class="quick-strip" aria-label="popular ticker shortcuts">
+        <span>熱門快搜</span>
+        {topSearchItems.slice(0, 8).map((item) => (
+          <a href={`/stocks/${item.ticker}/`}>{item.ticker}</a>
+        ))}
       </div>
     </div>
 
-    {lead && (
-      <a class="hero-ticket" href={`/stocks/${lead.ticker}/`}>
-        <span class="ticket-label">首要追蹤</span>
-        <strong>{lead.ticker}</strong>
-        <span>{lead.name}</span>
-        <div class="ticket-score">
-          <span>研究分數</span>
-          <b>{lead.score.toFixed(1)}</b>
-        </div>
-        <p>{lead.why}</p>
-      </a>
-    )}
-  </section>
-
-  <nav class="sec-index" id="sec-nav">
-    <a href="#queue" data-target="queue">研究隊列</a>
-    <a href="#watchlist" data-target="watchlist">Watchlist</a>
-    <a href="#signals" data-target="signals">市場訊號</a>
-    <a href="#evidence" data-target="evidence">原文證據</a>
-  </nav>
-
-  <section class="signal-breadth" aria-label="market signal balance">
-    <div class="breadth-copy">
-      <span class="section-kicker">Market signal</span>
-      <strong>上修聲量佔 {signalBalance}%</strong>
-      <span>這不是買賣建議，只是把今日研究方向先排出優先順序。</span>
-    </div>
-    <div class="breadth-bar" style={`--w:${signalBalance}%`}>
-      <span></span>
-    </div>
-  </section>
-
-  <section id="queue">
-    <div class="section-title">
-      <span>01</span>
-      <div>
-        <h2>今天先看哪幾檔</h2>
-        <p>每張卡都回答三件事：為什麼現在、下一步查核、風險觸發。</p>
-      </div>
-    </div>
-
-    <div class="idea-grid">
-      {queueSections.map((section) => (
-        <section class={`signal-lane ${section.tone}`}>
-          <header>
-            <span>{section.kicker}</span>
-            <h3>{section.title}</h3>
-          </header>
-          <div class="lane-stack">
-            {section.items.map((item) => (
-              <a class="research-card" href={`/stocks/${item.ticker}/`}>
-                <div class="research-top">
-                  <div>
-                    <strong>{item.ticker}</strong>
-                    <span>{item.name}</span>
-                  </div>
-                  <b class={`tier-pill ${item.tier}`}>{item.label}</b>
-                </div>
-                <p>{item.why}</p>
-                <div class="research-facts">
-                  <span>Rev {item.revenue}</span>
-                  <span>EPS {item.eps}</span>
-                  <span>{item.momentum ? `熱度 +${item.momentum.delta}` : "熱度持平"}</span>
-                </div>
-                <div class="research-next">
-                  <span>下一步查核</span>
-                  <em>{item.next}</em>
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
+    <div class="coverage-grid">
+      {sourceTiles.map((tile) => (
+        <a class={`coverage-card ${tile.tone}`} href={`#${tile.tone}`}>
+          <span>{tile.label}</span>
+          <strong>{tile.value}</strong>
+          <em>{tile.sub}</em>
+        </a>
       ))}
     </div>
   </section>
 
-  <section id="watchlist">
-    <div class="section-title">
+  <nav class="sec-index" id="sec-nav">
+    <a href="#quick-search" data-target="quick-search">快速搜尋</a>
+    <a href="#hot" data-target="hot">熱門快搜</a>
+    <a href="#sources" data-target="sources">相關資料入口</a>
+    <a href="#latest" data-target="latest">最新資料流</a>
+  </nav>
+
+  <section id="quick-search">
+    <div class="section-title compact">
+      <span>01</span>
+      <div>
+        <h2>快速搜尋</h2>
+        <p>先從 ticker 進個股頁，再看新聞、法人、財報、電話會議與公司原文。</p>
+      </div>
+    </div>
+
+    <div class="quick-ticker-grid">
+      {hotTickers.map((item) => (
+        <a href={`/stocks/${item.ticker}/`} class="quick-ticker-card">
+          <div>
+            <strong>{item.ticker}</strong>
+            <span>{marketLabel(item.market)}</span>
+          </div>
+          <p>{item.name || item.label}</p>
+          <footer>
+            <span>{item.articles} 篇新聞</span>
+            <span>{item.reports} 份財報</span>
+            <span>{item.momentum ? `熱度 +${item.momentum.delta}` : "熱度持平"}</span>
+          </footer>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section id="hot">
+    <div class="section-title compact">
       <span>02</span>
       <div>
-        <h2>Watchlist 決策表</h2>
-        <p>把標的從「看起來很多資料」整理成可執行的研究清單。</p>
+        <h2>熱門快搜</h2>
+        <p>用 idea-generation 的思路把新聞熱度與資料覆蓋排在前面，方便快速打開個股頁查證。</p>
       </div>
     </div>
 
-    <div class="research-table-wrap">
-      <table class="research-table">
-        <thead>
-          <tr>
-            <th>標的</th>
-            <th>狀態</th>
-            <th>為什麼現在</th>
-            <th>下一步查核</th>
-            <th>風險觸發</th>
-            <th>數字快照</th>
-          </tr>
-        </thead>
-        <tbody>
-          {researchQueue.map((item) => (
-            <tr>
-              <td>
-                <a href={`/stocks/${item.ticker}/`} class="ticker-lockup">
-                  <strong>{item.ticker}</strong>
-                  <span>{item.name}</span>
-                </a>
-              </td>
-              <td>
-                <span class={`tier-pill ${item.tier}`}>{item.label}</span>
-                <span class={`confidence ${item.confidenceClass}`}>證據 {item.confidence}</span>
-              </td>
-              <td>{item.why}</td>
-              <td>{item.next}</td>
-              <td>{item.risk}</td>
-              <td class="metric-cell">
-                <span>{item.revenue}</span>
-                <span>EPS {item.eps}</span>
-                <span>YoY {item.revYoy}</span>
-                <span>月營收 {item.monthRevenue}</span>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div class="ticker-rank-list">
+      {momentumRows.slice(0, 10).map((item, index) => (
+        <a href={`/stocks/${item.ticker}/`}>
+          <b>{String(index + 1).padStart(2, "0")}</b>
+          <strong>{item.ticker}</strong>
+          <span>7 日提及 {item.mentions_7d} 次</span>
+          <em>較前期 +{item.delta} / {item.pct_change >= 100 ? "突然升溫" : `${item.pct_change.toFixed(1)}%`}</em>
+        </a>
+      ))}
     </div>
   </section>
 
-  <section id="signals">
-    <div class="section-title">
+  <section id="sources">
+    <div class="section-title compact">
       <span>03</span>
       <div>
-        <h2>市場訊號</h2>
-        <p>把可能催化投資想法的事件拆成上修、下修與新聞熱度，避免只看一張雜訊清單。</p>
+        <h2>相關資料入口</h2>
+        <p>把同一檔股票常用的資料來源拆開：新聞、法人、財報、電話會議。</p>
       </div>
     </div>
 
-    <div class="evidence-grid">
-      <section class="evidence-rail positive">
+    <div class="source-lane-grid">
+      <section class="source-lane" id="news">
         <header>
-          <span>Revision up</span>
-          <b>{guidanceUp.length}</b>
+          <span>即時新聞</span>
+          <b>{stockNews.length}</b>
         </header>
-        {guidanceUp.slice(0, 8).map((item) => (
-          <a href={item.link} target="_blank" rel="noopener">
+        {stockNews.slice(0, 8).map((item) => (
+          <a href={articleHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
+            <strong>{item.tickers[0]}</strong>
+            <span>{plainTitle(item.title)}</span>
+            <em>{item.source} · {ago(item.published)}</em>
+          </a>
+        ))}
+      </section>
+
+      <section class="source-lane" id="analyst">
+        <header>
+          <span>法人 / 分析師</span>
+          <b>{analystViews.length}</b>
+        </header>
+        {analystViews.slice(0, 8).map((item) => (
+          <a href={articleHref(item)} target="_blank" rel="noopener">
             <strong>{item.tickers[0] ?? "市場"}</strong>
             <span>{plainTitle(item.title)}</span>
             <em>{item.source} · {ago(item.published)}</em>
           </a>
         ))}
-        {guidanceUp.length === 0 && <p class="empty-state">目前沒有明確上修訊號。</p>}
+        {analystViews.length === 0 && <p class="empty-state">目前沒有法人 / 分析師資料。</p>}
       </section>
 
-      <section class="evidence-rail negative">
+      <section class="source-lane" id="financials">
         <header>
-          <span>Revision down</span>
-          <b>{guidanceDown.length}</b>
+          <span>財報</span>
+          <b>{stats.reports_total ?? fundamentals.length}</b>
         </header>
-        {guidanceDown.slice(0, 8).map((item) => (
-          <a href={item.link} target="_blank" rel="noopener">
-            <strong>{item.tickers[0] ?? "市場"}</strong>
-            <span>{plainTitle(item.title)}</span>
-            <em>{item.source} · {ago(item.published)}</em>
-          </a>
-        ))}
-        {guidanceDown.length === 0 && <p class="empty-state">目前沒有明確下修訊號。</p>}
-      </section>
-
-      <section class="evidence-rail momentum">
-        <header>
-          <span>News heat</span>
-          <b>{momentumRows.length}</b>
-        </header>
-        {momentumRows.slice(0, 8).map((item) => (
+        {fundamentals.slice(0, 8).map((item) => (
           <a href={`/stocks/${item.ticker}/`}>
             <strong>{item.ticker}</strong>
-            <span>7 日提及 {item.mentions_7d} 次，較前期增加 {item.delta} 次</span>
-            <em>{item.pct_change >= 100 ? "突然升溫" : `+${item.pct_change.toFixed(1)}%`}</em>
+            <span>{item.company_name || item.ticker}</span>
+            <em>{fmtMoney(item.latest?.revenue, item.market)} · EPS {item.latest?.eps ?? "缺資料"} · {item.health?.label ?? "資料不足"}</em>
           </a>
         ))}
       </section>
-    </div>
-  </section>
 
-  <section id="evidence">
-    <div class="section-title">
-      <span>04</span>
-      <div>
-        <h2>原文證據</h2>
-        <p>先看公司自己寫的內容，再回頭判斷新聞與法人解讀是否合理。</p>
-      </div>
-    </div>
-
-    <div class="source-grid">
-      <section class="source-panel">
+      <section class="source-lane" id="calls">
         <header>
-          <span>Company filings</span>
-          <b>{filings.length}</b>
+          <span>電話會議</span>
+          <b>{callArticles.length}</b>
         </header>
-        {filings.length === 0 ? (
-          <p class="empty-state">目前沒有 filing excerpt。</p>
-        ) : (
-          filings.slice(0, 5).map((item) => (
-            <article>
-              <div>
-                <a href={`/stocks/${item.ticker}/`}>{item.ticker}</a>
-                <span>{item.form_type} · {item.fiscal_year}{item.fiscal_period}</span>
-              </div>
-              <p>{item.excerpt}</p>
-            </article>
-          ))
-        )}
-      </section>
-
-      <section class="source-panel">
-        <header>
-          <span>Internal feed</span>
-          <b>{internal.length}</b>
-        </header>
-        {internal.slice(0, 7).map((item) => (
-          <a class="source-row" href={item.link} target="_blank" rel="noopener">
-            <strong>{item.tickers[0] ?? "市場"}</strong>
+        {callArticles.slice(0, 8).map((item) => (
+          <a href={articleHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
+            <strong>{item.tickers[0] ?? "CALL"}</strong>
             <span>{plainTitle(item.title)}</span>
             <em>{item.source} · {ago(item.published)}</em>
           </a>
         ))}
-        {internal.length === 0 && <p class="empty-state">目前沒有公司內部事件。</p>}
+        {callArticles.length === 0 && <p class="empty-state">目前沒有電話會議 transcript 文章。</p>}
       </section>
     </div>
   </section>
 
-  {latestDecision && (
-    <section class="decision-strip">
-      <span>最近決策紀錄</span>
-      <strong>{latestDecision.ticker} · {latestDecision.action}</strong>
-      <p>{latestDecision.thesis}</p>
-      <em>{latestDecision.follow_up}</em>
-    </section>
-  )}
+  <section id="latest">
+    <div class="section-title compact">
+      <span>04</span>
+      <div>
+        <h2>最新資料流</h2>
+        <p>最近進來的個股資料，點 ticker 或標題就能回到相關來源。</p>
+      </div>
+    </div>
+
+    <div class="latest-feed">
+      {[...stockNews, ...internalFeed].slice(0, 14).map((item) => (
+        <a href={articleHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
+          <time>{ago(item.published)}</time>
+          <strong>{item.tickers?.[0] ?? "市場"}</strong>
+          <span>{plainTitle(item.title)}</span>
+          <em>{item.source}</em>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="filing-strip">
+    <span>公司原文</span>
+    {filings.slice(0, 5).map((item) => (
+      <a href={`/stocks/${item.ticker}/`}>
+        <strong>{item.ticker}</strong>
+        <em>{item.form_type} · {item.fiscal_year}{item.fiscal_period}</em>
+      </a>
+    ))}
+  </section>
 
   <p class="disclaimer">
-    本頁只做公開資訊整理與研究排序，非投資建議；真正下結論前請進個股頁核對原始來源、財報與風險假設。
+    本站整理公開資料，協助個股快速搜尋與交叉查證；資料可能延遲或缺漏，非投資建議。
   </p>
 
   <script is:inline>
     document.addEventListener("DOMContentLoaded", () => {
+      const tickers = window.__TICKERS__ || [];
+      const input = document.getElementById("stock-command-input");
+      const results = document.getElementById("stock-command-results");
+      if (input && results) {
+        const render = (matches) => {
+          if (!matches.length) {
+            results.innerHTML = '<div class="ticker-result-empty">沒有匹配，試試 2330、NVDA、TSM</div>';
+            results.hidden = false;
+            return;
+          }
+          results.innerHTML = matches.map((item) => {
+            const market = item.m === "tw" ? "TW" : "US";
+            const name = item.n ? `<span>${item.n}</span>` : "";
+            return `<a href="/stocks/${item.t}/">
+              <strong>${item.t}</strong>
+              ${name}
+              <em>${market} · ${item.a} 篇新聞${item.r ? ` · ${item.r} 份財報` : ""}</em>
+            </a>`;
+          }).join("");
+          results.hidden = false;
+        };
+        const search = () => {
+          const q = input.value.trim().toLowerCase();
+          if (!q) {
+            results.hidden = true;
+            return;
+          }
+          const matches = tickers.filter((item) =>
+            item.t.toLowerCase().includes(q) || (item.n && item.n.toLowerCase().includes(q))
+          ).slice(0, 10);
+          render(matches);
+        };
+        input.addEventListener("input", search);
+        input.addEventListener("focus", search);
+        input.addEventListener("keydown", (event) => {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            const first = results.querySelector("a");
+            if (first) window.location.href = first.getAttribute("href");
+            else if (input.value.trim()) window.location.href = `/stocks/${input.value.trim().toUpperCase()}/`;
+          }
+          if (event.key === "Escape") results.hidden = true;
+        });
+        input.addEventListener("blur", () => setTimeout(() => { results.hidden = true; }, 150));
+      }
+
       const navLinks = document.querySelectorAll("#sec-nav a");
-      const sections = ["queue", "watchlist", "signals", "evidence"]
+      const sections = ["quick-search", "hot", "sources", "latest"]
         .map((id) => document.getElementById(id))
         .filter(Boolean);
-      function updateActive() {
+      const updateActive = () => {
         let current = sections[0]?.id;
         const top = window.scrollY + 160;
-        for (const section of sections) {
-          if (section.offsetTop <= top) current = section.id;
-        }
+        for (const section of sections) if (section.offsetTop <= top) current = section.id;
         navLinks.forEach((link) => {
           link.toggleAttribute("data-current", link.getAttribute("data-target") === current);
         });
-      }
+      };
       window.addEventListener("scroll", updateActive, { passive: true });
       updateActive();
     });

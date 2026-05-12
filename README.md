@@ -19,7 +19,7 @@
 
 ## 投資 Dashboard (web/)
 
-`web/` 是一個獨立的 Astro + Tailwind 靜態網站，把 daily-news pipeline 產生的資料以單頁形式呈現，方便每日做投資決策時參考。
+`web/` 是一個獨立的 Astro + Tailwind 靜態網站，把 daily-news pipeline 產生的個股新聞、法人 / 分析師、財報、電話會議與公司原文做成快速搜尋入口。
 
 - 部署：Cloudflare Tunnel（`com.dailynews.cloudflared` launchd service）+ 本機 `python3 -m http.server` 服務 `web/dist/`
 - 自架 domain：`https://invest.aihost.dev/`（自家 subdomain，不覆蓋其他 service）
@@ -30,10 +30,10 @@
 
 | Section | 內容 |
 |---|---|
-| ① 今日研究隊列 | 以 idea-generation 思路排序：高優先研究 / 需要驗證 / 風險雷達 |
-| ② Watchlist 決策表 | 一行一檔：為什麼現在、下一步查核、風險觸發、數字快照 |
-| ③ 市場訊號 | 上修 / 下修 / 新聞熱度三欄，避免混成一張雜訊清單 |
-| ④ 原文證據 | SEC filing excerpt 與公司內部 feed，用來驗證新聞與法人敘事 |
+| ① 個股快搜 | 大搜尋框 + 熱門 ticker shortcut，快速進個股頁 |
+| ② 熱門快搜 | 用新聞熱度與資料覆蓋排序常查標的 |
+| ③ 相關資料入口 | 即時新聞 / 法人 / 財報 / 電話會議四欄來源流 |
+| ④ 最新資料流 | 最近進來的個股相關文章與公司事件 |
 
 ### 本機開發
 
