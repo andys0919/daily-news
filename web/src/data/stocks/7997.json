@@ -1,0 +1,29 @@
+{
+  "ticker": "7997",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "4 - DANHAKL JOHN G (0001162644) (Reporting)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1162644/000119312526217635/0001193125-26-217635-index.htm",
+      "source": "SEC Form 4 (Atom)",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:56:44+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001193125-26-217635 Size: 6 KB",
+      "event_type": "news",
+      "tickers": [
+        "1231",
+        "7997"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-12T01:54:32Z"
+}

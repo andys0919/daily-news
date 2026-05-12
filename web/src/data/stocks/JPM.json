@@ -46,6 +46,23 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mount",
+      "link": "https://www.cnbc.com/2026/05/11/kkr-private-credit-fund-fsk-jpmorgan-chase-credit.html",
+      "source": "CNBC Finance",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T03:32:25+08:00",
+      "summary": "The KKR fund, often referred to by its ticker, FSK, has become one of the most visible fault lines in the private credit story.",
+      "body_text": "A JPMorgan Chase -led group of banks cut their exposure to a private credit fund co-managed by KKR days before the asset manager announced it was spending $300 million to prop up the troubled vehicle.\nThe fund, FS KKR Capital Corp ., said Monday in a release that KKR will inject $150 million into the fund as equity and spend another $150 million to buy shares from investors who want to exit.\nThose",
+      "event_type": "earnings",
+      "tickers": [
+        "JPM"
+      ],
+      "companies": [
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "Whirlpool says Iran war causing 'recession-level industry decline.' The shares are down 12%",
       "link": "https://www.cnbc.com/2026/05/07/whirlpool-says-iran-war-causing-recession-level-industry-decline-the-shares-are-down-20percent.html",
       "source": "CNBC Finance",
@@ -563,18 +580,6 @@
       "tickers": [
         "JPM"
       ]
-    },
-    {
-      "title": "Stocks making the biggest moves premarket: Novo Nordisk, JPMorgan Chase, United Airlines & more",
-      "link": "https://www.cnbc.com/2026/04/14/stocks-making-the-biggest-moves-premarket-nvo-jpm-ual.html",
-      "source": "CNBC Finance",
-      "category": "💰 財經與總經",
-      "published": "2026-04-14T20:49:26+08:00",
-      "summary": "These are the stocks posting the largest moves premarket.",
-      "event_type": "news",
-      "tickers": [
-        "JPM"
-      ]
     }
   ],
   "history": [
@@ -681,5 +686,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:28Z"
 }

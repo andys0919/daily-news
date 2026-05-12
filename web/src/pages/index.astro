@@ -36,6 +36,26 @@ function fmtMoney(n: number | null | undefined, scale = 1e9, digits = 2, suffix 
   if (n == null || isNaN(Number(n))) return "—";
   return `${(Number(n) / scale).toFixed(digits)}${suffix}`;
 }
+// TW financial_reports stores values in TWD thousand (千元). Convert to 億 NTD
+// for display so units don't mix with USD billions.
+function fmtRevenue(n: number | null | undefined, market: string | undefined): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  if (market === "tw") {
+    // raw is TWD thousand, /1e5 thousand = 億
+    const yi = Number(n) / 1e5;
+    return `NT$${yi >= 10000 ? (yi / 10000).toFixed(1) + "兆" : Math.round(yi).toLocaleString() + "億"}`;
+  }
+  // US: raw is USD, /1e9 = billion
+  return `$${(Number(n) / 1e9).toFixed(1)}B`;
+}
+function fmtMonthly(n: number | null | undefined, market: string | undefined): string {
+  if (n == null || isNaN(Number(n))) return "—";
+  if (market === "tw") {
+    const yi = Number(n) / 1e5;
+    return `${Math.round(yi).toLocaleString()}億`;
+  }
+  return `$${(Number(n) / 1e9).toFixed(2)}B`;
+}
 function fmtPct(n: number | null | undefined): string {
   if (n == null || isNaN(Number(n))) return "—";
   return `${n >= 0 ? "+" : ""}${Number(n).toFixed(1)}%`;
@@ -106,24 +126,11 @@ for (const f of sortedFundamentals) {
 }
 ---
 <Base title="投資 dashboard · 一頁總覽" active="home">
-  <!-- HERO ─────────────────────────────────────────────────── -->
-  <header class="page-h">
-    <div class="eyebrow">{generated.slice(0, 10)} · {ago(generated)} ago · daily refresh</div>
-    <h1>投資 <span class="accent">一頁</span> 看完</h1>
-    <p>
-      把今天該關注的「指引變動、法人看法、營收動能、公司內部資料、watchlist 健康度」濃縮在一頁。
-      <strong>主視角是個股 Scorecard</strong> — 一行一檔，橫掃看完。下面是訊號流、公司原文、資料缺口說明。
-    </p>
-    <div class="meta">
-      <div>24h <strong>{stats.articles_24h ?? 0}</strong></div>
-      <div>▲ 上修 <strong>{stats.guidance_up_30d ?? 0}</strong></div>
-      <div>▼ 下修 <strong>{stats.guidance_down_30d ?? 0}</strong></div>
-      <div>🟢 強 <strong>{tierDist.strong}</strong></div>
-      <div>🔵 穩 <strong>{tierDist.steady}</strong></div>
-      <div>🟡 觀望 <strong>{tierDist.watch}</strong></div>
-      <div>個股 <strong>{stats.tickers_tracked ?? 0}</strong></div>
-    </div>
-  </header>
+  <!-- MINIMAL HERO — just a date stamp -->
+  <div style="display: flex; align-items: baseline; gap: var(--s-3); padding: var(--s-4) 0 var(--s-2); border-bottom: 1px solid var(--border-base); margin-bottom: var(--s-6);">
+    <span class="mono" style="font-size: var(--t-small); color: var(--fg-200); font-weight: 500;">{generated.slice(0, 10)}</span>
+    <span class="muted-2" style="font-size: var(--t-label);">{ago(generated)} ago</span>
+  </div>
 
   <!-- STICKY SECTION INDEX -->
   <nav class="sec-index" id="sec-nav">
@@ -131,7 +138,6 @@ for (const f of sortedFundamentals) {
     <a href="#scorecard" data-target="scorecard">個股 Scorecard</a>
     <a href="#pulse" data-target="pulse">訊號流</a>
     <a href="#filings" data-target="filings">公司原文</a>
-    <a href="#gaps" data-target="gaps">資料缺口</a>
   </nav>
 
   <!-- MASTER GUIDE (single collapsible card) -->
@@ -247,10 +253,10 @@ for (const f of sortedFundamentals) {
                   </div>
                 </td>
                 <td><span class={`tier ${h.tier}`}>{h.label}</span></td>
-                <td>{r?.q_revenue ? fmtMoney(r.q_revenue, 1e9, 1) : "—"}</td>
+                <td>{fmtRevenue(r?.q_revenue, r?.market ?? f.market)}</td>
                 <td>{r?.q_eps != null ? fmtNum(r.q_eps, 2) : "—"}</td>
                 <td class={deltaCls(r?.q_rev_yoy)}>{fmtPct(r?.q_rev_yoy)}</td>
-                <td>{r?.m_revenue ? fmtMoney(r.m_revenue, 1e9, 2) : "—"}</td>
+                <td>{fmtMonthly(r?.m_revenue, r?.market ?? f.market)}</td>
                 <td>
                   {(a?.up ?? 0) > 0 && <span class="delta-up">↑{a!.up}</span>}
                   {(a?.up ?? 0) > 0 && (a?.down ?? 0) > 0 && " · "}
@@ -296,7 +302,7 @@ for (const f of sortedFundamentals) {
                 {f.company_name && <span class="name">{f.company_name.slice(0, 16)}</span>}
               </div>
               <div class="stats">
-                Q rev {r?.q_revenue ? fmtMoney(r.q_revenue, 1e9, 1) : "—"}
+                Q rev {fmtRevenue(r?.q_revenue, r?.market ?? f.market)}
                 {r?.q_rev_yoy != null && (
                   <> · <span class={deltaCls(r.q_rev_yoy)}>{fmtPct(r.q_rev_yoy)}</span></>
                 )}
@@ -462,39 +468,6 @@ for (const f of sortedFundamentals) {
         ))}
       </div>
     )}
-  </section>
-
-  <!-- DATA GAPS ────────────────────────────────────────────── -->
-  <section id="gaps">
-    <div class="section-h2">
-      <h2>資料缺口</h2>
-      <span class="h-sub">誠實標示哪些資料還沒進來</span>
-    </div>
-    <article class="filing-card">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4" style="font-size: var(--t-small); color: var(--fg-300); line-height: 1.7;">
-        <div>
-          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">✓ 已有資料</p>
-          <ul style="list-style: disc; padding-left: var(--s-5);">
-            <li>{(stats.articles_total ?? 0).toLocaleString()} 篇新聞（ticker / event_type 標記）</li>
-            <li>{stats.reports_total ?? 0} 份官方財報（TWSE / MOPS / TPEx / SEC）</li>
-            <li>{filings.length} 份 SEC 10-Q forward-looking 摘錄</li>
-            <li>{analyst.length} 條法人 / 分析師看法</li>
-            <li>{internal.length} 條公司內部資料</li>
-            <li>{revenue.length} 檔最新季 + 月營收快照</li>
-          </ul>
-        </div>
-        <div>
-          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">✗ 缺的資料</p>
-          <ul style="list-style: disc; padding-left: var(--s-5);">
-            <li><strong>內部人交易</strong>（SEC Form 4）：表空，需 ingest</li>
-            <li><strong>機構 13F 持倉</strong>：表空</li>
-            <li><strong>短信餘額 / short interest</strong>：表空</li>
-            <li><strong>共識估值</strong>：需付費資料源 (Finnhub / Refinitiv)</li>
-            <li><strong>即時股價</strong>：Yahoo unofficial endpoint IP throttled</li>
-          </ul>
-        </div>
-      </div>
-    </article>
   </section>
 
   <!-- NEXT STEPS ────────────────────────────────────────────── -->

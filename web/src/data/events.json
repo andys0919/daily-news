@@ -1,6 +1,1409 @@
 {
-  "generated_at": "2026-05-11T03:56:22Z",
+  "generated_at": "2026-05-12T01:54:26Z",
   "events": [
+    {
+      "kind": "earnings",
+      "title": "OpenTalker/SadTalker",
+      "date": "2026-05-12",
+      "source": "GitHub Trending (Python)",
+      "link": null,
+      "tickers": [],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "policy",
+      "title": "Trump says Iran ceasefire is on 'massive life support'",
+      "date": "2026-05-12",
+      "source": "BBC World",
+      "link": null,
+      "tickers": [],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "earnings",
+      "title": "Cronos Group Inc. (CRON:CA) Q1 2026 Earnings Call Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "Brazil’s Petrobras clocks 7% drop in first-quarter profit",
+      "date": "2026-05-12",
+      "source": "Investing.com",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "policy",
+      "title": "華爾街日報：阿聯祕密空襲伊朗　由受襲方轉交戰方",
+      "date": "2026-05-12",
+      "source": "經濟日報 產經",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Kaltura forecasts 2026 adjusted EBITDA of $13.8M-$15.2M as it raises revenue outlook following PathFactory close",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Kaltura, Inc. (KLTR) Q1 2026 Earnings Call Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "CleanSpark, Inc. (CLSK) Q2 2026 Earnings Call Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "Power Solutions International, Inc. (PSIX) Q1 2026 Earnings Call Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "Riding an AI rally, Robinhood preps second retail venture IPO",
+      "date": "2026-05-12",
+      "source": "TechCrunch Venture",
+      "link": null,
+      "tickers": [
+        "3909"
+      ],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+      "date": "2026-05-12",
+      "source": "Insider Monkey",
+      "link": null,
+      "tickers": [
+        "RLAY",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "category": "👁️ 內部人與機構持股"
+    },
+    {
+      "kind": "policy",
+      "title": "Asia markets rise as investors brush off Trump’s ceasefire warning",
+      "date": "2026-05-12",
+      "source": "CNBC Top News",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Bristol-Myers Squibb Company (BMY) Myers Beats Quarterly Profit Estimates",
+      "date": "2026-05-12",
+      "source": "Insider Monkey",
+      "link": null,
+      "tickers": [
+        "BMY"
+      ],
+      "category": "👁️ 內部人與機構持股"
+    },
+    {
+      "kind": "earnings",
+      "title": "Evercore ISI Keeps an “In Line” Rating on Guardant Health, Inc. (GH)",
+      "date": "2026-05-12",
+      "source": "Insider Monkey",
+      "link": null,
+      "tickers": [
+        "GH"
+      ],
+      "category": "👁️ 內部人與機構持股"
+    },
+    {
+      "kind": "earnings",
+      "title": "Peraso expects Q2 2026 revenue of about $1.2M while diversifying suppliers after Q1 shipment delay",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Peraso Inc. (PRSO) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Blink targets $105M-$115M 2026 revenue as DC fast-charging build-out moves toward 27 sites live by year-end",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Getty Images forecasts $948M-$988M 2026 revenue while awaiting U.K. CMA merger decision in June",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Stock futures are little changed as traders await inflation reading, monitor Iran war developments: Live updates",
+      "date": "2026-05-12",
+      "source": "CNBC Top News",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Petrobras Misses Profit Estimates Despite War-Driven Oil Rally",
+      "date": "2026-05-12",
+      "source": "Bloomberg Markets",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+      "date": "2026-05-12",
+      "source": "Hugging Face Blog",
+      "link": null,
+      "tickers": [
+        "NVDA",
+        "AMZN"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "【即時新聞】鴻海4月營收達8320億元，年成長29.74%，AI需求帶動雙增表現 - CMoney投資網誌",
+      "date": "2026-05-12",
+      "source": "鴻海/Foxconn",
+      "link": null,
+      "tickers": [
+        "2317"
+      ],
+      "category": "🏢 科技廠動態"
+    },
+    {
+      "kind": "earnings",
+      "title": "Sharplink, Inc. (SBET) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "The Arena Group Holdings, Inc. (AREN) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Kodiak Gas Services, Inc. (KGS) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Redefine Properties Limited (RDPEF) Q2 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Evonik Industries AG (EVKIY) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Goldman’s Japan Revenue Hits 15-Year High as Foreign Banks Shine - Bloomberg.com",
+      "date": "2026-05-12",
+      "source": "Odd Lots / Bloomberg 深度",
+      "link": null,
+      "tickers": [],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "Telefônica Brasil S.A. (VIV) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Trump heads to China with Musk, Cook and top CEOs for Xi talks",
+      "date": "2026-05-12",
+      "source": "南華早報 科技",
+      "link": null,
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "policy",
+      "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
+      "date": "2026-05-12",
+      "source": "DIGITIMES 半導體",
+      "link": null,
+      "tickers": [
+        "2330",
+        "NVDA",
+        "AAPL",
+        "2317"
+      ],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - Volato Group, Inc. (0001853070) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "4522"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "LY Corporation (YAHOY) Q4 2025 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - MAMMOTH ENERGY SERVICES, INC. (0001679268) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "1389"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K/A - Lunai Bioworks Inc. (0001527728) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "0630",
+        "2834"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - ARMSTRONG WORLD INDUSTRIES INC (0000007431) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "3089"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - Better Home & Finance Holding Co (0001835856) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "6163"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - Mobia Medical, Inc. (0001489993) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "3841"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - SHF Holdings, Inc. (0001854963) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - UNITEDHEALTH GROUP INC (0000731766) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "8-K - Star Equity Holdings, Inc. (0001210708) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - Genvor Inc (0001792941) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - SOUNDHOUND AI, INC. (0001840856) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "7372"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - Traeger, Inc. (0001857853) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "3630"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - ACTUATE THERAPEUTICS, INC. (0001652935) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - Exodus Movement, Inc. (0001821534) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "8-K - ASHFORD HOSPITALITY TRUST INC (0001232582) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - Blue Acquisition Corp/Cayman (0002059654) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - International Seaways, Inc. (0001679049) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - John Hancock Comvest Private Income Fund (0001987221) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "8-K - CarParts.com, Inc. (0001378950) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 8-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - CAMBER ENERGY, INC. (0001309082) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - FACT II Acquisition Corp. (0002028935) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-Q - BuzzFeed, Inc. (0001828972) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-Q Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "【即時新聞】鴻海4月營收達8320億元年增29.74% 貢獻上市櫃最強表現 - CMoney投資網誌",
+      "date": "2026-05-12",
+      "source": "鴻海/Foxconn",
+      "link": null,
+      "tickers": [
+        "2317"
+      ],
+      "category": "🏢 科技廠動態"
+    },
+    {
+      "kind": "earnings",
+      "title": "I catalogued every way local models break JSON output and built a repair library, here's what I found across 288 model calls",
+      "date": "2026-05-12",
+      "source": "Reddit r/LocalLLaMA",
+      "link": null,
+      "tickers": [],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "earnings",
+      "title": "MARA Q1 revenue drops 18%, says bitcoin mining remains ‘operational foundation’",
+      "date": "2026-05-12",
+      "source": "The Block",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Janus Living, Inc. (JAN) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "盛弘4月營收3.85億元年增8.59% 1—4月達14.60億元 - news.cnyes.com",
+      "date": "2026-05-12",
+      "source": "鉅亨網 法人說明會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "鼎炫-KY4月營收3.33億元年增95.5% 1—4月達12.43億元 - news.cnyes.com",
+      "date": "2026-05-12",
+      "source": "鉅亨網 法人說明會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "立大開發4月營收3.93億元年增3.91% 1—4月達13.62億元 - news.cnyes.com",
+      "date": "2026-05-12",
+      "source": "鉅亨網 法人說明會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "慶豐富4月營收4.12億元年增9.36% 1—4月達16.19億元 - news.cnyes.com",
+      "date": "2026-05-12",
+      "source": "鉅亨網 法人說明會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "福興4月營收6.03億元年增3.13% 1—4月達20.86億元 - news.cnyes.com",
+      "date": "2026-05-12",
+      "source": "鉅亨網 法人說明會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "policy",
+      "title": "助伊朗石油銷運中國　3人9企業遭美制裁",
+      "date": "2026-05-12",
+      "source": "中央社 國際",
+      "link": null,
+      "tickers": [],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "earnings",
+      "title": "Bitcoin miner CleanSpark’s Q2 losses swell after losing $224 million on BTC holdings",
+      "date": "2026-05-12",
+      "source": "The Block",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "昱臺國際4月營收1.65億元年減7.78% 1—4月達6.11億元 - news.cnyes.com",
+      "date": "2026-05-12",
+      "source": "鉅亨網 法人說明會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "群利科技4月營收0.33億元年增25.18% 1—4月達1.19億元 - news.cnyes.com",
+      "date": "2026-05-12",
+      "source": "鉅亨網 法人說明會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Weekly Economic Snapshot: Resilience in the Labor Market",
+      "date": "2026-05-12",
+      "source": "ETF Trends",
+      "link": null,
+      "tickers": [],
+      "category": "📉 融券與資金流"
+    },
+    {
+      "kind": "policy",
+      "title": "EU, UK sanction Russians over deportations of Ukrainian children",
+      "date": "2026-05-12",
+      "source": "Al Jazeera English",
+      "link": null,
+      "tickers": [],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K - ELECTRONIC ARTS INC. (0000712515) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "0331",
+        "7372"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Nintendo plunges 8% after Switch 2 price hike and weak sales forecast",
+      "date": "2026-05-12",
+      "source": "CNBC Business",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "policy",
+      "title": "EU sanctions violent Israeli settlers after months of deadlock",
+      "date": "2026-05-12",
+      "source": "Al Jazeera English",
+      "link": null,
+      "tickers": [],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "earnings",
+      "title": "Iren SpA (IRDEY) Q1 2026 Earnings Call Transcript - Seeking Alpha",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Cisco Catalyst C1300-16XTS Review A 16-Port 10G Switch",
+      "date": "2026-05-12",
+      "source": "ServeTheHome",
+      "link": null,
+      "tickers": [
+        "AMZN",
+        "META"
+      ],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "SpaceX Preps For Starship Flight; Cathie Wood To Rebalance Holdings - Investor's Business Daily",
+      "date": "2026-05-12",
+      "source": "Tesla/SpaceX",
+      "link": null,
+      "tickers": [],
+      "category": "🏢 科技廠動態"
+    },
+    {
+      "kind": "earnings",
+      "title": "The 529 Evolution: From College Savings to Versatile Financial Tool",
+      "date": "2026-05-12",
+      "source": "ETF Trends",
+      "link": null,
+      "tickers": [],
+      "category": "📉 融券與資金流"
+    },
+    {
+      "kind": "earnings",
+      "title": "'A big nothing burger': A Q&A with Strategy's Michael Saylor on selling bitcoin",
+      "date": "2026-05-12",
+      "source": "CoinDesk",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K - IIOT-OXYS, Inc. (0001290658) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "7372"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Can KLA's advanced packaging strength support $1B revenue target? - MSN",
+      "date": "2026-05-12",
+      "source": "HBM/先進封裝",
+      "link": null,
+      "tickers": [],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K/A - NEXTNRG, INC. (0001817004) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "5500"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K/A - Green Brick Partners, Inc. (0001373670) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [
+        "1231",
+        "1531"
+      ],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K - Graf Global Corp. (0001897463) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "'I don’t think that’s crazy': Here is why Circle is betting on new $3 billion blockchain",
+      "date": "2026-05-12",
+      "source": "CoinDesk",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "policy",
+      "title": "Another Crack in the Tariff Wall - CSIS | Center for Strategic and International Studies",
+      "date": "2026-05-12",
+      "source": "CSIS 分析",
+      "link": null,
+      "tickers": [],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mount",
+      "date": "2026-05-12",
+      "source": "CNBC Finance",
+      "link": null,
+      "tickers": [
+        "JPM"
+      ],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "英特爾有望回歸蘋果晶片供應鏈　關鍵信任票遠勝短期營收",
+      "date": "2026-05-12",
+      "source": "DIGITIMES 半導體",
+      "link": null,
+      "tickers": [
+        "AAPL"
+      ],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "電阻交期5週大幅延長至15週　光頡AI營收佔比衝上12%",
+      "date": "2026-05-12",
+      "source": "DIGITIMES 半導體",
+      "link": null,
+      "tickers": [],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "AMD’s vLLM-ATOM Plugin Supercharges DeepSeek-R1, Kimi-K2, and gpt-oss-120B AI LLM Inference on Instinct MI350 and MI400 Accelerators - Wccftech",
+      "date": "2026-05-12",
+      "source": "AMD News",
+      "link": null,
+      "tickers": [],
+      "category": "🏢 科技廠動態"
+    },
+    {
+      "kind": "earnings",
+      "title": "天鈺擬調價迎2Q成長　OLED DDI量產、其他新品放量衝刺",
+      "date": "2026-05-12",
+      "source": "DIGITIMES 半導體",
+      "link": null,
+      "tickers": [],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "Passing Multidimensional time series to VLM [R]",
+      "date": "2026-05-12",
+      "source": "Reddit r/MachineLearning",
+      "link": null,
+      "tickers": [],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K/A - STEELE BANCORP INC (0000779227) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "policy",
+      "title": "【漫圖秒懂】受中美雙重夾擊　黃仁勳：放棄中國市場缺乏戰略意義",
+      "date": "2026-05-12",
+      "source": "DIGITIMES AI應用",
+      "link": null,
+      "tickers": [
+        "NVDA"
+      ],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K/A - Translational Development Acquisition Corp. (0001926599) (Filer)",
+      "date": "2026-05-12",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "Micron Stock Feels Unstoppable and That’s Good for This ETF",
+      "date": "2026-05-12",
+      "source": "ETF Trends",
+      "link": null,
+      "tickers": [],
+      "category": "📉 融券與資金流"
+    },
+    {
+      "kind": "earnings",
+      "title": "Three things in AI to watch, according to a Nobel-winning economist",
+      "date": "2026-05-12",
+      "source": "MIT Technology Review",
+      "link": null,
+      "tickers": [
+        "GOOGL"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "Our new initiative to apply quantum science and AI to the life sciences",
+      "date": "2026-05-12",
+      "source": "Google Blog",
+      "link": null,
+      "tickers": [
+        "GOOGL"
+      ],
+      "category": "🏢 科技廠動態"
+    },
+    {
+      "kind": "earnings",
+      "title": "Rocket Labs (RKLB) Surge Boosts Space ETF UFO",
+      "date": "2026-05-12",
+      "source": "ETF Trends",
+      "link": null,
+      "tickers": [],
+      "category": "📉 融券與資金流"
+    },
+    {
+      "kind": "earnings",
+      "title": "上市櫃營收五大天王出列 鴻海穩居「營收王」台積電維持亞軍 | 市場焦點 | 證券 - 經濟日報",
+      "date": "2026-05-12",
+      "source": "鴻海/Foxconn",
+      "link": null,
+      "tickers": [
+        "2317",
+        "2330"
+      ],
+      "category": "🏢 科技廠動態"
+    },
+    {
+      "kind": "earnings",
+      "title": "AiOnX secures hyperscale tenant for Irish data center campus outside Dublin",
+      "date": "2026-05-12",
+      "source": "Data Center Dynamics",
+      "link": null,
+      "tickers": [
+        "AMZN"
+      ],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "Powerhouse AI ETF DRAM Hits $6.5 Billion at Record Pace",
+      "date": "2026-05-12",
+      "source": "ETF Trends",
+      "link": null,
+      "tickers": [],
+      "category": "📉 融券與資金流"
+    },
+    {
+      "kind": "earnings",
+      "title": "Sharplink Q1 revenue tops $12 million as it pursues ‘singles and doubles’ hits in ETH yield",
+      "date": "2026-05-12",
+      "source": "The Block",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Hantavirus cases spark brief surge in pharma and biotech stocks — here’s why trading is so volatile",
+      "date": "2026-05-12",
+      "source": "CNBC Earnings",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "The Crystallization of Transformer Architectures (2017-2025)",
+      "date": "2026-05-12",
+      "source": "Lobsters AI",
+      "link": null,
+      "tickers": [
+        "META"
+      ],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "earnings",
+      "title": "UK should commit to rejoin the EU, London mayor tells CNBC",
+      "date": "2026-05-11",
+      "source": "CNBC Earnings",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Can Strong Smartphone Demand Boost AMKR's Communications Revenues? - The Globe and Mail",
+      "date": "2026-05-11",
+      "source": "HBM/先進封裝",
+      "link": null,
+      "tickers": [],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "How ChatGPT adoption broadened in early 2026",
+      "date": "2026-05-11",
+      "source": "OpenAI Blog",
+      "link": null,
+      "tickers": [],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "Roblox 1Q'26: Age Check Hangover, But Aiming to Go Beyond the Blocks",
+      "date": "2026-05-11",
+      "source": "Mostly Borrowed Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "At TV upfronts, AI is in and corporate shuffles are reshaping the lineup",
+      "date": "2026-05-11",
+      "source": "CNBC Business",
+      "link": null,
+      "tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "capex",
+      "title": "Alphabet Seeks Yen Bonds to Fund AI Capex - Let's Data Science",
+      "date": "2026-05-11",
+      "source": "AI 產業化與投資信號",
+      "link": null,
+      "tickers": [
+        "GOOGL"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "Hedge Funds Quarterly Outlook Q2 2026 - J.P. Morgan",
+      "date": "2026-05-11",
+      "source": "JPM Outlook (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "Broadcom Inc. stock (US11135F1012): Solid Q1 earnings beat estimates - AD HOC NEWS",
+      "date": "2026-05-11",
+      "source": "Broadcom News",
+      "link": null,
+      "tickers": [],
+      "category": "🏢 科技廠動態"
+    },
+    {
+      "kind": "earnings",
+      "title": "Fostering breakthrough AI innovation through customer-back engineering",
+      "date": "2026-05-11",
+      "source": "MIT Technology Review",
+      "link": null,
+      "tickers": [],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "policy",
+      "title": "Iran says it will 'never bow' as Trump rejects peace counteroffer, prolonging Middle East conflict",
+      "date": "2026-05-11",
+      "source": "CNBC Economy",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Will Starmer’s election woes force a shake-up in the UK’s ties with China?",
+      "date": "2026-05-11",
+      "source": "南華早報 科技",
+      "link": null,
+      "tickers": [],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "earnings",
+      "title": "High gas prices are hurting restaurant sales — but not all chains",
+      "date": "2026-05-11",
+      "source": "CNBC Business",
+      "link": null,
+      "tickers": [
+        "AAPL"
+      ],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Innovation abounds in device charging",
+      "date": "2026-05-11",
+      "source": "MIT Technology Review",
+      "link": null,
+      "tickers": [],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "policy",
+      "title": "Trump heads to Beijing with tariff uncertainty, AI communication, and the Strait of Hormuz in focus - Yahoo Finance",
+      "date": "2026-05-11",
+      "source": "中美科技戰",
+      "link": null,
+      "tickers": [],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "filing",
+      "title": "10-K - COMMVAULT SYSTEMS INC (0001169561) (Filer)",
+      "date": "2026-05-11",
+      "source": "SEC 10-K Filings (Atom)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "earnings",
+      "title": "寶成4月營收年增3.8%　累計前4月微減3.5%",
+      "date": "2026-05-11",
+      "source": "中央社 財經",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Is reproducing or implementing a paper considered research? [R]",
+      "date": "2026-05-11",
+      "source": "Reddit r/MachineLearning",
+      "link": null,
+      "tickers": [],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "policy",
+      "title": "Here’s how China plans to sanction-proof its C919 passenger jet",
+      "date": "2026-05-11",
+      "source": "南華早報 科技",
+      "link": null,
+      "tickers": [],
+      "category": "🌏 地緣政治與科技政策"
+    },
+    {
+      "kind": "earnings",
+      "title": "The Inference Shift",
+      "date": "2026-05-11",
+      "source": "Stratechery",
+      "link": null,
+      "tickers": [
+        "NVDA"
+      ],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "Wooptix Targets AI Packaging Bottleneck with Astronomy Tech",
+      "date": "2026-05-11",
+      "source": "EE Times",
+      "link": null,
+      "tickers": [
+        "1000",
+        "TSM"
+      ],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "天鈺法說會／首季EPS 1.86元季增逾18%，電子紙與Edge AI挹注動能，第二季全產品線成長可期｜股市話題 - sinotrade.com.tw",
+      "date": "2026-05-11",
+      "source": "台股法說會 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "🏛️ 法說與 IR 材料"
+    },
+    {
+      "kind": "policy",
+      "title": "Tyrants are losing wars",
+      "date": "2026-05-11",
+      "source": "Noahpinion",
+      "link": null,
+      "tickers": [],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "艾瑞生醫經營權易主後重新出發！目標三年內營收倍增拚 IPO 掛牌",
+      "date": "2026-05-11",
+      "source": "科技新報",
+      "link": null,
+      "tickers": [],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "劍麟穩固汽車安全件布局　散熱分歧管1Q26驗證力拚營運第二曲線",
+      "date": "2026-05-11",
+      "source": "DIGITIMES AI應用",
+      "link": null,
+      "tickers": [],
+      "category": "🔬 半導體與硬體"
+    },
+    {
+      "kind": "earnings",
+      "title": "SLS Stock’s Short Interest Hits 8-Year High Ahead Of Key Phase 3 Leukemia Data, Q1 Earnings – Here’s What Wall Street Expects - Stocktwits",
+      "date": "2026-05-11",
+      "source": "US Short Interest (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "📉 融券與資金流"
+    },
+    {
+      "kind": "earnings",
+      "title": "Ankara’s Crossroads: Rearmament, Risk, and the Prospect of War with Israel",
+      "date": "2026-05-11",
+      "source": "War on the Rocks",
+      "link": null,
+      "tickers": [],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "Conflict, CASEVAC, and the Golden Hour in the Age of Persistent Surveillance",
+      "date": "2026-05-11",
+      "source": "War on the Rocks",
+      "link": null,
+      "tickers": [
+        "1975"
+      ],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "OpenAI launches DeployCo to help businesses build around intelligence",
+      "date": "2026-05-11",
+      "source": "OpenAI Blog",
+      "link": null,
+      "tickers": [],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "policy",
+      "title": "Nintendo hikes Switch 2 prices and expects console sales to decline as memory crunch bites",
+      "date": "2026-05-11",
+      "source": "CNBC Business",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Saudi Aramco first-quarter profit jumps 26% as key pipeline reaches capacity amid Iran war",
+      "date": "2026-05-11",
+      "source": "CNBC Business",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Could Anthropic actually surpass Google in revenue by 2026? Secondary markets are valuing Anthropic at nearly $1.2 trillion, and Claude's ARR has reportedly hit a $30 billion run rate. The numbers are moving quickly, and enterprise AI demand is a major re - LinkedIn",
+      "date": "2026-05-11",
+      "source": "Anthropic News",
+      "link": null,
+      "tickers": [
+        "GOOGL"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "policy",
+      "title": "The Winners and Losers of the Iran Energy Shock",
+      "date": "2026-05-11",
+      "source": "Foreign Affairs",
+      "link": null,
+      "tickers": [
+        "1979"
+      ],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "The Stakes of Trump vs. Xi",
+      "date": "2026-05-11",
+      "source": "Foreign Affairs",
+      "link": null,
+      "tickers": [
+        "1612",
+        "1972"
+      ],
+      "category": "🧭 深度觀點與分析"
+    },
+    {
+      "kind": "earnings",
+      "title": "Robustness of Refugee-Matching Gains to Off-Policy Evaluation Choices",
+      "date": "2026-05-11",
+      "source": "arXiv 機器學習",
+      "link": null,
+      "tickers": [
+        "2605"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "A Hierarchical Ensemble Pipeline for Anomaly Detection in ESA Satellite Telemetry",
+      "date": "2026-05-11",
+      "source": "arXiv 機器學習",
+      "link": null,
+      "tickers": [
+        "2605"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "On the Role of Strain and Vorticity in Numerical Integration Error for Flow Matching",
+      "date": "2026-05-11",
+      "source": "arXiv 機器學習",
+      "link": null,
+      "tickers": [
+        "2605"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "Group of Skills: Group-Structured Skill Retrieval for Agent Skill Libraries",
+      "date": "2026-05-11",
+      "source": "arXiv 計算語言學",
+      "link": null,
+      "tickers": [
+        "2605"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "When Does Critique Improve AI-Assisted Theoretical Physics? SCALAR: Structured Critic--Actor Loop for Agentic Reasoning",
+      "date": "2026-05-11",
+      "source": "arXiv AI",
+      "link": null,
+      "tickers": [
+        "2605"
+      ],
+      "category": "🧠 AI 研究與突破"
+    },
+    {
+      "kind": "earnings",
+      "title": "Luis de Guindos: Interview with Financial Times",
+      "date": "2026-05-11",
+      "source": "ECB Press",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "TSMC's Paradox: Record Revenue and Margins Can't Ease the Capacity Squeeze on Its Biggest Clients - AD HOC NEWS",
+      "date": "2026-05-11",
+      "source": "半導體設備與產能",
+      "link": null,
+      "tickers": [
+        "TSM"
+      ],
+      "category": "🔬 半導體與硬體"
+    },
     {
       "kind": "earnings",
       "title": "datawhalechina/easy-vibe",
@@ -556,1385 +1959,6 @@
       "link": null,
       "tickers": [],
       "category": "📊 券商與分析師研究"
-    },
-    {
-      "kind": "policy",
-      "title": "5月10日　美伊戰爭對國際經濟、財經市場與民生衝擊",
-      "date": "2026-05-10",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Hudbay Minerals (TSX:HBM) Valuation Check After Strong Q1 2026 Earnings Buyback And Dividend Update - simplywall.st",
-      "date": "2026-05-10",
-      "source": "HBM/先進封裝",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Netflix 雖不靠遊戲賺錢，但做遊戲要幹麼腦袋還很清楚",
-      "date": "2026-05-10",
-      "source": "科技新報",
-      "link": null,
-      "tickers": [
-        "AMZN",
-        "GOOGL"
-      ],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "policy",
-      "title": "美議員提案嚇阻中共　犯台將受毀滅性制裁",
-      "date": "2026-05-10",
-      "source": "中央社 政治",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "capex",
-      "title": "Adam Khoo: AI Capex stocks may face 50 percent drawdown soon - Traders Union",
-      "date": "2026-05-10",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "policy",
-      "title": "Tariffs, rare earths, tech curbs: stock trader's guide to navigating high-stakes Trump-Xi summit - The Business Times",
-      "date": "2026-05-10",
-      "source": "中美科技戰",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Voice AI in India is hard. Wispr Flow is betting on it anyway.",
-      "date": "2026-05-10",
-      "source": "TechCrunch AI",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "Aurora: A Leverage-Aware Optimizer for Rectangular Matrices",
-      "date": "2026-05-10",
-      "source": "Lobsters AI",
-      "link": null,
-      "tickers": [
-        "3225",
-        "3175",
-        "1500",
-        "NVDA"
-      ],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "lobehub/lobehub",
-      "date": "2026-05-10",
-      "source": "GitHub Trending (All)",
-      "link": null,
-      "tickers": [
-        "MSFT"
-      ],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "熱門族群》代工廠基本面太強 老AI類股奮起衝鋒",
-      "date": "2026-05-10",
-      "source": "自由時報 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "capex",
-      "title": "【即時新聞】台積電規劃2026年資本支出上調至520-560億美元，強化AI供應鏈樞紐地位 - CMoney投資網誌",
-      "date": "2026-05-10",
-      "source": "TSMC News",
-      "link": null,
-      "tickers": [
-        "2330"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "So you’ve heard these AI terms and nodded along; let’s fix that",
-      "date": "2026-05-10",
-      "source": "TechCrunch AI",
-      "link": null,
-      "tickers": [
-        "GOOGL"
-      ],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "Lebanon says Israeli strikes killed 39",
-      "date": "2026-05-10",
-      "source": "BBC World",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Cloudflare Cuts 1,100 Jobs Despite Record Revenue Growth, Cites Restructuring for “agentic AI era,” - Tekedia",
-      "date": "2026-05-10",
-      "source": "LLM 應用與商用化",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "台積電4月營收爆強卻藏貓膩？蔡明翰示警這波過熱「這時間」恐回檔 - Yahoo新聞",
-      "date": "2026-05-10",
-      "source": "TSMC News",
-      "link": null,
-      "tickers": [
-        "2330"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "台積電營收藏貓膩？　這4檔ETF最紅出列 - 鏡週刊Mirror Media",
-      "date": "2026-05-10",
-      "source": "TSMC News",
-      "link": null,
-      "tickers": [
-        "2330"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "LLM rankings are not a ladder: experimental results from a transitive benchmark graph [D]",
-      "date": "2026-05-10",
-      "source": "Reddit r/MachineLearning",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "創意前四月營收靚- 日報 - 工商時報",
-      "date": "2026-05-10",
-      "source": "工商時報 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "12 out of 14 utility stocks deliver EPS wins this week: Earnings Scorecard",
-      "date": "2026-05-10",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "\"OncoAgent: A Dual-Tier Multi-Agent Framework for Privacy-Preserving Oncology Clinical Decision Support\"",
-      "date": "2026-05-10",
-      "source": "Hugging Face Blog",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "Anthropic Signs SpaceX Colossus 1 Data Center to Boost Capacity",
-      "date": "2026-05-10",
-      "source": "ServeTheHome",
-      "link": null,
-      "tickers": [
-        "NVDA"
-      ],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Trump Media’s Q1 loss widens to $406 million on bitcoin, CRO markdowns",
-      "date": "2026-05-10",
-      "source": "CoinDesk",
-      "link": null,
-      "tickers": [
-        "BLSH"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "8 out of 9 S&P 500 energy stocks beat EPS estimates this week",
-      "date": "2026-05-10",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Sports betting should be regulated as a financial product, not gambling, aspiring prediction market provider says",
-      "date": "2026-05-10",
-      "source": "CoinDesk",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Micron Technology stock (US5951121038): Strong fiscal Q2 2026 results lift shares on AI?driven memor - AD HOC NEWS",
-      "date": "2026-05-09",
-      "source": "記憶體產業",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "TeraWulf doubles AI revenue but posts $427M quarterly loss as mining income declines",
-      "date": "2026-05-09",
-      "source": "Cointelegraph",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "Trump heads to China weakened as Xi gains leverage ahead of summit",
-      "date": "2026-05-09",
-      "source": "南華早報 科技",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Bank of America says stocks like Apple have plenty of upside following earnings",
-      "date": "2026-05-09",
-      "source": "CNBC Top News",
-      "link": null,
-      "tickers": [
-        "AAPL"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "capex",
-      "title": "I Traced The AI Capex, And Found 6 Profit Pools (One Is An Asymmetric Bet) (SP500) - Seeking Alpha",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "Broadcom Inc. stock (US11135F1012): AI?driven growth ahead of Q2 earnings - AD HOC NEWS",
-      "date": "2026-05-09",
-      "source": "Broadcom News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "ASML Holding N.V. stock (NL0010273215): AI?driven results lift guidance as shares hit new highs - AD HOC NEWS",
-      "date": "2026-05-09",
-      "source": "ASML News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "capex",
-      "title": "慧榮：AI儲存需求續旺　NAND Flash缺到2028年",
-      "date": "2026-05-09",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [
-        "AAPL"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Neurips : Pushing anonymous repo after rebuttal [D]",
-      "date": "2026-05-09",
-      "source": "Reddit r/MachineLearning",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "AI ASIC好熱，聯發科小金雞EPS從11.77元到上看20元，本益比26倍挾成長實力，中長線看好嗎？ - 經濟日報",
-      "date": "2026-05-09",
-      "source": "聯發科/MediaTek",
-      "link": null,
-      "tickers": [
-        "2454"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "Broadcom Inc. stock (US11135F1012): AI-driven growth ahead of Q2 earnings - AD HOC NEWS",
-      "date": "2026-05-09",
-      "source": "Broadcom News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "台灣健身風潮帶旺營運　世界健身、柏文布局新引擎",
-      "date": "2026-05-09",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "DeepSeek V4 paper full version is out, FP4 QAT details and stability tricks [D]",
-      "date": "2026-05-09",
-      "source": "Reddit r/MachineLearning",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "policy",
-      "title": "US sanctions 9 mainland China and Hong Kong entities over alleged Iran military links",
-      "date": "2026-05-09",
-      "source": "南華早報 科技",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "capex",
-      "title": "North American CSPs raise 2026 AI CapEx targets amid surging demand - Communications Today",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "policy",
-      "title": "Cytek Biosciences Faces Rising Risk From U.S.–China Trade Tensions and Tariff Pressures - TipRanks",
-      "date": "2026-05-09",
-      "source": "中美科技戰",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "policy",
-      "title": "Whisky business: Investors pin hopes on Trump’s Scotch tariff reversal after dire three years",
-      "date": "2026-05-09",
-      "source": "CNBC Earnings",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "China exports jump 14.1% in April despite Iran war, US tariff pressures - Business Standard",
-      "date": "2026-05-09",
-      "source": "中美科技戰",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Did Stronger Q1 Earnings and a New Buyback Just Shift Hudbay Minerals' (TSX:HBM) Investment Narrative? - Yahoo Finance",
-      "date": "2026-05-09",
-      "source": "HBM/先進封裝",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "policy",
-      "title": "川習會  摩根大通：可能達成進一步談判框架協議",
-      "date": "2026-05-09",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "How Hudbay’s Q1 2026 Earnings Jump and 5% Buyback At Hudbay Minerals (TSX:HBM) Has Changed Its Investment Story - simplywall.st",
-      "date": "2026-05-09",
-      "source": "HBM/先進封裝",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "policy",
-      "title": "川習會前夕  美制裁伊朗武器供應鏈中國香港企業入列",
-      "date": "2026-05-09",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "xming521/WeClone",
-      "date": "2026-05-09",
-      "source": "GitHub Trending (Python)",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "awslabs/aidlc-workflows",
-      "date": "2026-05-09",
-      "source": "GitHub Trending (Python)",
-      "link": null,
-      "tickers": [
-        "AMZN"
-      ],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "被處置照樣衝！聯發科飆天價「晉升台股2哥」、週線狂漲39% 4月營收出爐 - Yahoo股市",
-      "date": "2026-05-09",
-      "source": "聯發科/MediaTek",
-      "link": null,
-      "tickers": [
-        "2454"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "policy",
-      "title": "美巴領袖再度會晤　魯拉川普談關稅與中國投資影響",
-      "date": "2026-05-09",
-      "source": "經濟日報 產經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "What is next for Verizon after strong Q1 2026 earnings and fiber expansion?",
-      "date": "2026-05-09",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "美巴領袖再度會晤　魯拉川普談關稅與中國投資影響",
-      "date": "2026-05-09",
-      "source": "中央社 國際",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "閎康Q1獲利年增三倍   矽光子是驅動引擎",
-      "date": "2026-05-09",
-      "source": "自由時報 財經",
-      "link": null,
-      "tickers": [
-        "3587"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Is hojicha the next matcha? The Japanese tea creeping onto menus",
-      "date": "2026-05-09",
-      "source": "BBC World",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "policy",
-      "title": "Trump appeals latest court loss on tariffs as chaos and uncertainty amp up",
-      "date": "2026-05-09",
-      "source": "南華早報 科技",
-      "link": null,
-      "tickers": [
-        "1974"
-      ],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Florida, Louisiana-Focused Insurer Safepoint Files for IPO",
-      "date": "2026-05-09",
-      "source": "Bloomberg Markets",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "【即時新聞】台積電4月營收4107億元創同期新高，年增17.5%前四月業績成長29% - CMoney投資網誌",
-      "date": "2026-05-09",
-      "source": "TSMC News",
-      "link": null,
-      "tickers": [
-        "2330"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "老人的錢好好賺？這家公司業績飆新高",
-      "date": "2026-05-09",
-      "source": "自由時報 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "The Federal Reserve is quickly running out of reasons to cut interest rates",
-      "date": "2026-05-09",
-      "source": "CNBC Top News",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Rocket Lab surges 34% in best day ever on revenue beat, record-setting launch deal",
-      "date": "2026-05-09",
-      "source": "CNBC Top News",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "GPT-5.5 may burn fewer tokens, but it always burns more cash",
-      "date": "2026-05-09",
-      "source": "The Register",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Qualcomm Inc stock (US7475251036): AI chip partnership and earnings lift shares 8% on Nasdaq QCOM - AD HOC NEWS",
-      "date": "2026-05-09",
-      "source": "Qualcomm/Arm",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "Coinbase rebounds as altcoins surge with bitcoin holding above $80,000",
-      "date": "2026-05-09",
-      "source": "CoinDesk",
-      "link": null,
-      "tickers": [
-        "BLSH",
-        "0766",
-        "3764"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Brookfield Glides Through Credit Stress, SaaS Woes With Strong Quarter - Bloomberg.com",
-      "date": "2026-05-09",
-      "source": "Odd Lots / Bloomberg 深度",
-      "link": null,
-      "tickers": [],
-      "category": "🧭 深度觀點與分析"
-    },
-    {
-      "kind": "earnings",
-      "title": "TeraWulf's AI Compute Revenue Outpaces Bitcoin Mining Amid $427 Million Loss",
-      "date": "2026-05-09",
-      "source": "Decrypt",
-      "link": null,
-      "tickers": [
-        "9996",
-        "3268",
-        "3494"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "ASML CEO Defends EUV Lead And Addresses Export Controls For Investors - simplywall.st",
-      "date": "2026-05-09",
-      "source": "ASML News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "Stocks Hit Record High on Jobs as Chipmakers Surge",
-      "date": "2026-05-09",
-      "source": "Bloomberg Markets",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "聯發科4月營收降溫 要靠AI回春 - 中時新聞網",
-      "date": "2026-05-09",
-      "source": "聯發科/MediaTek",
-      "link": null,
-      "tickers": [
-        "2454"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "Geopolitics Is Rewriting Memory Sourcing",
-      "date": "2026-05-09",
-      "source": "EE Times",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Course correction: Google to link more sources in AI Overviews",
-      "date": "2026-05-09",
-      "source": "Ars Technica AI",
-      "link": null,
-      "tickers": [
-        "GOOGL"
-      ],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "Fitness wearable Whoop to offer on-demand clinician access to U.S. users",
-      "date": "2026-05-09",
-      "source": "CNBC Top News",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "聯發科4月營收降溫 要靠AI回春 - 工商時報",
-      "date": "2026-05-09",
-      "source": "工商時報 財經",
-      "link": null,
-      "tickers": [
-        "2454"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "松瑞藥首季EPS 0.29元 - 工商時報",
-      "date": "2026-05-09",
-      "source": "工商時報 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "貨櫃三雄上月營收重返雙增- 日報 - 工商時報",
-      "date": "2026-05-09",
-      "source": "工商時報 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "AMD Stock Surges on Blowout Earnings: Do the Results Justify the Hype? - MarketWise",
-      "date": "2026-05-09",
-      "source": "AMD News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "policy",
-      "title": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
-      "date": "2026-05-09",
-      "source": "CNBC Finance",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
-      "date": "2026-05-09",
-      "source": "TechCrunch AI",
-      "link": null,
-      "tickers": [
-        "META",
-        "MSFT",
-        "AMZN"
-      ],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "U.S. payrolls jump more than expected, but the report had several red flags for the economy",
-      "date": "2026-05-09",
-      "source": "CNBC Economy",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "How much further does this Teflon market have to go? Here's what traders say",
-      "date": "2026-05-09",
-      "source": "CNBC Finance",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "RT Pushmeet Kohli: The future of Math is mathematicians and AI agents working together. Very pleased to introduce @GoogleDeepMind's AI co-mathematicia...",
-      "date": "2026-05-09",
-      "source": "X @GoogleDeepMind",
-      "link": null,
-      "tickers": [
-        "GOOGL"
-      ],
-      "category": "🔥 X 社群熱議"
-    },
-    {
-      "kind": "earnings",
-      "title": "Teaching Claude Why",
-      "date": "2026-05-09",
-      "source": "Hacker News AI",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models",
-      "date": "2026-05-09",
-      "source": "Hugging Face Blog",
-      "link": null,
-      "tickers": [
-        "4096"
-      ],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "capex",
-      "title": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says - MSN",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "policy",
-      "title": "Friday assorted links",
-      "date": "2026-05-09",
-      "source": "Marginal Revolution",
-      "link": null,
-      "tickers": [],
-      "category": "🧭 深度觀點與分析"
-    },
-    {
-      "kind": "policy",
-      "title": "Trump threatens EU with ‘much higher’ tariffs if no trade deal signed by new deadline",
-      "date": "2026-05-09",
-      "source": "CNBC Earnings",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "capex",
-      "title": "AI Capex Squeeze: MSFT, AMZN, GOOGL Cash Burn Mounts - NAI500",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "capex",
-      "title": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says - Business Insider",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "capex",
-      "title": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says - Business Insider Africa",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "capex",
-      "title": "Amazon Stock's Real 2026 Test: Can Logistics Pay for the AI Capex Boom? - techi.com",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [
-        "AMZN"
-      ],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "PlayStation sees AI as a ‘powerful tool’ to help make games",
-      "date": "2026-05-09",
-      "source": "The Verge AI",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "policy",
-      "title": "Consumer sentiment falls to fresh record low in May as surging gas prices hit outlook",
-      "date": "2026-05-09",
-      "source": "CNBC Economy",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "What is the next SOTA model you are excited about?",
-      "date": "2026-05-09",
-      "source": "Reddit r/LocalLLaMA",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "capex",
-      "title": "Tesla's Real 2026 Problem: AI Capex Eats the EV Cash Machine - techi.com",
-      "date": "2026-05-09",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [
-        "TSLA"
-      ],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "EMO: Pretraining mixture of experts for emergent modularity",
-      "date": "2026-05-09",
-      "source": "Hugging Face Blog",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "TeraWulf’s $21 million HPC revenue surpasses bitcoin mining for first time in Q1",
-      "date": "2026-05-08",
-      "source": "The Block",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Formalizing statistical learning theory in Lean 4 [R]",
-      "date": "2026-05-08",
-      "source": "Reddit r/MachineLearning",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
-      "date": "2026-05-08",
-      "source": "The Verge AI",
-      "link": null,
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "GOOGL"
-      ],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "policy",
-      "title": "Kalshi Market Trends May 2026 | US China Tariffs & World Cup Odds - PlayUSA",
-      "date": "2026-05-08",
-      "source": "中美科技戰",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Anthropic grew 80-fold in a single quarter. Now it’s renting Elon Musk’s data center to cope - Fortune",
-      "date": "2026-05-08",
-      "source": "Anthropic News",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "元太首季每股賺2.41元　彩色電子紙出貨表現亮眼",
-      "date": "2026-05-08",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Show HN: Git for AI Agents",
-      "date": "2026-05-08",
-      "source": "Hacker News AI",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "policy",
-      "title": "富采：首季本業虧損收斂　今年力拚轉虧為盈",
-      "date": "2026-05-08",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Can KLA's Advanced Packaging Strength Support $1B Revenue Target? - Yahoo Finance",
-      "date": "2026-05-08",
-      "source": "HBM/先進封裝",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "佳世達宣示導入AI轉型　布局4大事業",
-      "date": "2026-05-08",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Coinbase bulls point to crypto legislation and stablecoins after earnings miss",
-      "date": "2026-05-08",
-      "source": "CoinDesk",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "Why Iran’s ambassador to China thinks the US can’t turn Beijing against it",
-      "date": "2026-05-08",
-      "source": "南華早報 科技",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "巨大首季每股虧0.51元　董事會通過買4000張庫藏股",
-      "date": "2026-05-08",
-      "source": "中央社 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Running Codex safely at OpenAI",
-      "date": "2026-05-08",
-      "source": "OpenAI Blog",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "capex",
-      "title": "Why $700 billion in AI capex cannot rescue tech stocks from the next leg - MSN",
-      "date": "2026-05-08",
-      "source": "AI 產業化與投資信號",
-      "link": null,
-      "tickers": [],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "Broadcom Inc. Stock (US11135F1012): Analyst Upgrade and Strong Earnings Drive Investor Interest - AD HOC NEWS",
-      "date": "2026-05-08",
-      "source": "Broadcom News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "ASML Holding N.V. stock (NL0010273215): New 12?month high amid analyst upgrades and strong earnings - AD HOC NEWS",
-      "date": "2026-05-08",
-      "source": "ASML News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "首季營收年減15%！鴻海小金雞揭密「訂單狀況」喊：美國製造有望今年達標 - Yahoo股市",
-      "date": "2026-05-08",
-      "source": "鴻海/Foxconn",
-      "link": null,
-      "tickers": [
-        "2317"
-      ],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "policy",
-      "title": "川普全球10%關稅遭判違法　經貿辦：效力僅限原告",
-      "date": "2026-05-08",
-      "source": "中央社 政治",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Broadcom Inc. stock (US11135F1012): Q1 2026 earnings beat and $10 billion buyback boost sentiment - AD HOC NEWS",
-      "date": "2026-05-08",
-      "source": "Broadcom News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "Sony targets double-digit profit growth despite slowdown in PlayStation 5 sales amid memory price crunch",
-      "date": "2026-05-08",
-      "source": "CNBC Business",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "US Court Curbs Trump's 10% Global Tariff, Weakening Leverage Ahead of China Visit - Seoul Economic Daily",
-      "date": "2026-05-08",
-      "source": "中美科技戰",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Commerzbank boss pledges to defend shareholders in UniCredit takeover battle",
-      "date": "2026-05-08",
-      "source": "CNBC Earnings",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Broadcom Stock Strong Buy in 2026 as AI Revenue Explodes 106% and Analysts See Further Upside - International Business Times Australia",
-      "date": "2026-05-08",
-      "source": "Broadcom News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "Toyota fourth-quarter profit misses by wide margin as U.S. tariffs drive 49% slump",
-      "date": "2026-05-08",
-      "source": "CNBC Business",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Could Russia Follow the “Hormuz Playbook” in the Baltic and Black Seas?",
-      "date": "2026-05-08",
-      "source": "War on the Rocks",
-      "link": null,
-      "tickers": [
-        "1936"
-      ],
-      "category": "🧭 深度觀點與分析"
-    },
-    {
-      "kind": "earnings",
-      "title": "Chip Industry Week In Review",
-      "date": "2026-05-08",
-      "source": "Semiconductor Engineering",
-      "link": null,
-      "tickers": [
-        "AAPL",
-        "TSM",
-        "META"
-      ],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "BofA Lifts Price Objective, Estimates for ASML Amid Expected Earnings Growth on Low-NA EUV Boost - marketscreener.com",
-      "date": "2026-05-08",
-      "source": "ASML News",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "ECCV Stupid Reviewer Behavior (Any AC here?) [R]",
-      "date": "2026-05-08",
-      "source": "Reddit r/MachineLearning",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "Why China Waits",
-      "date": "2026-05-08",
-      "source": "Foreign Affairs",
-      "link": null,
-      "tickers": [
-        "2049"
-      ],
-      "category": "🧭 深度觀點與分析"
-    },
-    {
-      "kind": "earnings",
-      "title": "America and the Gulf Still Need Each Other",
-      "date": "2026-05-08",
-      "source": "Foreign Affairs",
-      "link": null,
-      "tickers": [],
-      "category": "🧭 深度觀點與分析"
-    },
-    {
-      "kind": "earnings",
-      "title": "Internalizing Outcome Supervision into Process Supervision: A New Paradigm for Reinforcement Learning for Reasoning",
-      "date": "2026-05-08",
-      "source": "arXiv 機器學習",
-      "link": null,
-      "tickers": [
-        "2605"
-      ],
-      "category": "🧠 AI 研究與突破"
-    },
-    {
-      "kind": "earnings",
-      "title": "bwya77/vscode-dark-islands",
-      "date": "2026-05-08",
-      "source": "GitHub Trending (All)",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "AI電源架構升級、高階功率電感需求升溫 新聿科4月營收1.16億元",
-      "date": "2026-05-08",
-      "source": "自由時報 財經",
-      "link": null,
-      "tickers": [
-        "7912",
-        "NVDA"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Earnings call transcript: Full House Resorts Q1 2026 misses earnings forecasts",
-      "date": "2026-05-08",
-      "source": "Investing.com",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Earnings call transcript: BILL Holdings Q3 2026 beats expectations",
-      "date": "2026-05-08",
-      "source": "Investing.com",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Corpay signals $5.29B 2026 revenue midpoint and $26.70 cash EPS midpoint following Q1 outperformance",
-      "date": "2026-05-08",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Globus Medical targets 2026 non-GAAP EPS of $4.70-$4.80 while reaffirming $3.18B-$3.22B revenue guidance",
-      "date": "2026-05-08",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Varex outlines FY2026 revenue of $860M-$880M and non-GAAP EPS of $0.80-$1.00 while shifting to annual guidance",
-      "date": "2026-05-08",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Acorn reiterates 20% average annual revenue growth target as it expects $350k-$500k 2026 hardware from telecom customer",
-      "date": "2026-05-08",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Perdoceo forecasts 2026 adjusted EPS of $3.05-$3.16, driven by retention and marketing investments",
-      "date": "2026-05-08",
-      "source": "Seeking Alpha",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "川普關稅戰又輸了！美國貿易法院裁定「10％全球關稅無效」",
-      "date": "2026-05-08",
-      "source": "自由時報 財經",
-      "link": null,
-      "tickers": [
-        "1974"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "「聯電第二」來了！力積電躋身英特爾 EMIB 先進封裝夥伴",
-      "date": "2026-05-08",
-      "source": "科技新報",
-      "link": null,
-      "tickers": [
-        "2330",
-        "GOOGL"
-      ],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Arm AGI CPU Launch and Record Q4 FY2026 Results: Arm's Strategic Shift - News and Statistics - IndexBox",
-      "date": "2026-05-08",
-      "source": "Qualcomm/Arm",
-      "link": null,
-      "tickers": [],
-      "category": "🏢 科技廠動態"
-    },
-    {
-      "kind": "earnings",
-      "title": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-      "date": "2026-05-08",
-      "source": "CNBC Top News",
-      "link": null,
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "NVDA"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "創見第一季EPS 18.93元創歷史新高紀錄- 產業 - 工商時報",
-      "date": "2026-05-08",
-      "source": "工商時報 財經",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "崇越科技首季 EPS 年增超過四成，金額達到 6.86 元創單季新高",
-      "date": "2026-05-08",
-      "source": "科技新報",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Extracted MTP tensor GGUFs - smaller donor models for grafting.",
-      "date": "2026-05-08",
-      "source": "Reddit r/LocalLLaMA",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "Coinbase posts steep first-quarter loss after slide in crypto prices; shares fall 4%",
-      "date": "2026-05-08",
-      "source": "CNBC Top News",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
     }
   ]
 }

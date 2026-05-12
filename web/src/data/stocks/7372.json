@@ -1,0 +1,57 @@
+{
+  "ticker": "7372",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "10-Q - SOUNDHOUND AI, INC. (0001840856) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1840856/000184085626000015/0001840856-26-000015-index.htm",
+      "source": "SEC 10-Q Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T05:28:02+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001840856-26-000015 Size: 8 MB",
+      "body_text": "EIN. : 000000000 | State of Incorp.: DE | Fiscal Year End: 1231 Type: 10-Q | Act: 34 | File No.: 001-40193 | Film No.: 26964619 SIC : 7372 Services-Prepackaged Software (CF Office: 06 Technology)",
+      "event_type": "filing",
+      "tickers": [
+        "1231",
+        "7372"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "10-K - ELECTRONIC ARTS INC. (0000712515) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/712515/000162828026033617/0001628280-26-033617-index.htm",
+      "source": "SEC 10-K Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T04:46:45+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001628280-26-033617 Size: 13 MB",
+      "body_text": "EIN. : 942838567 | State of Incorp.: DE | Fiscal Year End: 0331 Type: 10-K | Act: 34 | File No.: 000-17948 | Film No.: 26964055 SIC : 7372 Services-Prepackaged Software (CF Office: 06 Technology)",
+      "event_type": "filing",
+      "tickers": [
+        "0331",
+        "7372"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1231",
+      "count": 1
+    },
+    {
+      "ticker": "0331",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-12T01:54:33Z"
+}

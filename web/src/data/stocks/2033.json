@@ -75,6 +75,16 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "Quantum Computing Advanced Packaging Market Accelerates Growth with Forecast to $241.8M by 2033 - SRI - openPR.com",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQLXNsNktqaGVMdGlWVXFUczA0SWwtRHdnSWhaRTEwUm1welF1eGJqc3QySmVlNEx1VndUVWF1TktIMzVOa2xhUGxHZTQtZUNUMUxnTzhSejVOY2JPRTV0WWdRaHduVnZBaDZCTk5xbzVOV0xWRnFobFdHSXhMMEhmYTB0Z1dGWDhmR0JvVFYwT0Vtd2hVSWc?oc=5",
+      "source": "HBM/先進封裝",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T19:36:57+08:00",
+      "summary": "Quantum Computing Advanced Packaging Market Accelerates Growth with Forecast to $241.8M by 2033 - SRI&nbsp;&nbsp;openPR.com",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
       "title": "It might be too late for bitcoin’s quantum migration, Project Eleven report argues",
       "link": "https://www.coindesk.com/business/2026/05/09/it-might-be-too-late-for-bitcoin-s-quantum-migration-project-eleven-report-argues",
       "source": "CoinDesk",
@@ -225,5 +235,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

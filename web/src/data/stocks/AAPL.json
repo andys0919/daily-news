@@ -46,6 +46,86 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Trump heads to China with Musk, Cook and top CEOs for Xi talks",
+      "link": "https://www.scmp.com/news/china/article/3353199/trump-heads-china-musk-cook-and-top-ceos-xi-talks",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T05:49:13+08:00",
+      "summary": "US President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week. The White House on Monday released the list of leaders set to travel to China alongside Musk and Cook, including Larry Fink of BlackRock, Kelly Ortberg of Boeing, Dina Powell McCormick of Meta and Ryan McInerney of Visa. The delegation spans key industries, including aviation, technology, banking and...",
+      "body_text": "Business delegation spanning tech, aviation and finance joins Beijing trip as trade, investment and supply chains top agenda\nUS President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week.\nThe White House on Monday released the list of leaders set to travel to China a",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754948_62DLT45H3QXIIQ93SHEFX",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T05:40:34+08:00",
+      "summary": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS...",
+      "body_text": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS/ODM業者成長與否的最大關鍵，也影響到前20大業者排名的 重新洗牌 。\n在人工智慧（AI）帶來的大量高效運算（HPC）晶片需求下，台積電無論前段先進製程或後段先進封裝，當前均陷入客戶爭搶、產能供不應求的情況。有業者開始選擇提前向上升級至更高階的製程搶先卡位，另有業者則考慮進一步增加投片合作對象，或是如先前喊出 自建晶圓產線雄心 的科技大廠。\n英特爾（Intel）在晶圓代工市場相繼掌握NVIDIA、蘋果（Apple）等核心科技大廠客戶，業務逐漸步入軌道。相對地，一直被視為台積電唯一替代方案、長期維持全球代工第二名地位的三星電子（Samsung Electronics），也將陷入更嚴峻的市佔率競爭困境。\n據韓",
+      "event_type": "policy",
+      "tickers": [
+        "2330",
+        "NVDA",
+        "AAPL",
+        "2317"
+      ],
+      "companies": [
+        "台積電",
+        "NVIDIA",
+        "Apple",
+        "鴻海"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "英特爾有望回歸蘋果晶片供應鏈　關鍵信任票遠勝短期營收",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754895_JFC77CQEL8ZV444KTGPYA",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:57:43+08:00",
+      "summary": "日前傳出蘋果（Apple）與英特爾（Intel）已正式達成晶片代工初步協議，未來部分蘋果裝置核心晶片將交由英特爾生產。這不僅代表英特爾有望重返蘋果供應鏈，也象徵全球半導體產業在人工智慧（AI）需求全面爆發後，先進製程競爭進入新階段。綜合華爾街日報（WSJ）、彭博（Bloomberg）、CNBC、Wccftech等報導，傳蘋...",
+      "body_text": "日前傳出蘋果（Apple）與英特爾（Intel）已正式達成晶片代工初步協議，未來部分蘋果裝置核心晶片將交由英特爾生產。這不僅代表英特爾有望重返蘋果供應鏈，也象徵全球半導體產業在人工智慧（AI）需求全面爆發後，先進製程競爭進入新階段。綜合... 會員登入 【範例：user@company.com】 忘記密碼 | 重寄啟用信 記住帳號密碼 登入 ★ 若您是第一次使用會員資料庫，請先點選 【帳號啟用】 會員服務申請/試用 試用申請 產業研究諮詢 會員服務介紹 常見問題 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱： member@digitimes.com (一個工作日內將回覆您的來信) 訂閱DIGITIMES 行動版 會員服務申請/試用 申請專線： +886-02-87125398。 (週一至週五工作日9:00~18:00) 會員信箱： m",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "High gas prices are hurting restaurant sales — but not all chains",
+      "link": "https://www.cnbc.com/2026/05/11/gas-prices-hurt-restaurant-spending-at-dominos-applebees.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T21:00:01+08:00",
+      "summary": "Restaurant traffic fell 2.3% in March compared with the year-ago period, according to Black Box Intelligence.",
+      "body_text": "From Domino's Pizza to Applebee's, restaurant chains are reporting that sales softened in March as gas prices spiked.\nThe U.S. war with Iran has led to an average national gas price of more than $4.50 per gallon — and contributed to a new record low for consumer sentiment . As consumers pay more for their fuel, they are trying to save money in other areas. A survey of drivers conducted by Numerato",
+      "event_type": "earnings",
+      "tickers": [
+        "AAPL"
+      ],
+      "companies": [
+        "Apple"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "Bank of America says stocks like Apple have plenty of upside following earnings",
       "link": "https://www.cnbc.com/2026/05/09/bank-of-america-stocks-with-upside-after-earnings.html",
       "source": "CNBC Top News",
@@ -743,101 +823,139 @@
         "Apple"
       ],
       "guidance_direction": null
-    },
-    {
-      "title": "Musk vs. Altman is here, and it&#8217;s going to get messy",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-04-24T20:00:00+08:00",
-      "summary": "Elon Musk cofounded OpenAI, and then flounced off in a huff when he wasn't anointed CEO, leaving Sam Altman as the last power-hungry man standing. Now, Musk is back with a lawsuit, and a trial is scheduled to start in Oakland, California, on April 27th. Theoretically, it's a legal case about whether OpenAI defrauded Musk. [&#8230;]",
-      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nIt’s all about the court of public opinion.\nPosts from this author will be added to your daily ema",
-      "event_type": "earnings",
-      "tickers": [
-        "META",
-        "MSFT",
-        "TSLA",
-        "AAPL"
-      ],
-      "companies": [
-        "Meta",
-        "Microsoft",
-        "Tesla",
-        "Apple"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Trump warns of ‘big tariff’ if UK doesn’t drop digital services tax on U.S. tech firms",
-      "link": "https://www.cnbc.com/2026/04/24/trump-tariffs-uk-tech-apple-google-meta.html",
-      "source": "CNBC Earnings",
-      "category": "💰 財經與總經",
-      "published": "2026-04-24T19:45:05+08:00",
-      "summary": "The tax is a 2% levy on the revenues of search engines, social media services and online marketplaces that derive value from U.K. users.",
-      "body_text": "U.S. President Donald Trump has delivered a stark warning to the U.K., threatening to impose steep tariffs on the country unless it drops its digital services tax on U.S. tech companies.\nThe tax, which was first introduced in 2020, is a 2% levy on the revenues of search engines, social media services and online marketplaces that derive value from U.K. users. This includes several U.S. companies li",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL",
-        "META",
-        "AAPL"
-      ],
-      "companies": [
-        "Alphabet",
-        "Google",
-        "Meta",
-        "Apple"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "The week that Meta employees became training data",
-      "link": "https://www.platformer.news/meta-mci-monitoring-layoffs-knowledge-work",
-      "source": "Platformer",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-04-24T08:47:42+08:00",
-      "summary": "Invasive monitoring and a fresh round of layoffs have workers I spoke to on edge. Is this the future of knowledge work?",
-      "body_text": "Invasive monitoring and a fresh round of layoffs have workers I spoke to on edge. Is this the future of knowledge work?\nThis is a column about AI. My fiancé works at Anthropic. See my full ethics disclosure here .\nHaving your every click, tap, pause, and scroll monitored has long been part of the bargain of using Facebook and Instagram. Now it’s part of the bargain of working there, too.\nReuters r",
-      "event_type": "earnings",
-      "tickers": [
-        "META",
-        "AMZN",
-        "AAPL",
-        "GOOGL",
-        "MSFT",
-        "NVDA"
-      ],
-      "companies": [
-        "Meta",
-        "Amazon",
-        "Apple",
-        "Google",
-        "Microsoft",
-        "NVIDIA"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Seeing the Cyber in Economic Statecraft",
-      "link": "https://warontherocks.com/seeing-the-cyber-in-economic-statecraft",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-04-23T15:00:45+08:00",
-      "summary": "Editor&#8217;s note: This article is the seventh in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by the&#160;Potomac Institute for Policy Studies&#160;and War on the Rocks. Prior installments can be found at the&#160;War by Other Ledgers&#160;page.Americans lost nearly $21 billion to cybercrime in 2025, a new record for ",
-      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nEditor’s note: This article is the seventh in an 11-part series examining how the United States should organize, lead, and integrate economic statecraft into strategy, defense practice, and the broader national security ecosystem. This special series is brought to you by th",
-      "event_type": "policy",
-      "tickers": [
-        "1977",
-        "AAPL",
-        "JPM"
-      ],
-      "companies": [
-        "Apple",
-        "JPMorgan"
-      ],
-      "guidance_direction": null
     }
   ],
   "general_news": [
+    {
+      "title": "Apple, Qualcomm and MediaTek take different paths as TSMC capacity stays tight - digitimes",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbkVwSzR1Sk0ta0ttenZqVGZUZE1NamhXN1N6R0FuQU9YT3ZwNFgtanZ6UVdhc1hlbjlQSE1CODZ2X2RRZlhmazVaRVpqWEw1cWFMa2N1aEdyVkNBZlNVaTBkV0YxYzdHMURWTXRMU1ExbXZJVXpqVTJ6WVpFNWRuaUx1c1htMFVmM0JpVEhvazd3Zw?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T08:44:53+08:00",
+      "summary": "Apple, Qualcomm and MediaTek take different paths as TSMC capacity stays tight&nbsp;&nbsp;digitimes",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "TSM"
+      ]
+    },
+    {
+      "title": "不畏英特爾搶單特斯拉 台積電台南2奈米廠將動土了",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5433690",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T08:43:31+08:00",
+      "summary": "外媒陸續釋出美國半導體大廠英特爾（Intel）在川普政府力挺下，將迎來與蘋果（Apple）、特斯拉（Tesla）代工訂單，但台灣半導體供應鏈仍不看好英特爾的晶圓代工能力，...…",
+      "event_type": "news",
+      "tickers": [
+        "2330",
+        "AAPL",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Nasdaq Today: Composite Closes at Record 26,274 as Micron Surges, Intel Secures Apple Deal - BBN Times",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQ0l1WlJlV1RvVndieGQyRVFRdUFZMGk2Mk9rd3RlV200SU5LaFdweDhPeWpFN1d4Sjh3Q20wY1kyMjZPcjN2VXBlaGlqX0ZYY3BzdEVDbDJQSHp0T0M2TWdOekJoMWhIUXhERGcxQy1va25IeDB1S0x0SXNuNTFPN2xiaXM5RGg3cEVtaWotYWV6YTk0Z1hFU3NERGZZdm1md3lrM0pFcnVKamFUVTBNcmJncXBPbHpKc1A5UVFkU0tEZw",
+      "source": "記憶體產業",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T06:35:34+08:00",
+      "summary": "Nasdaq Today: Composite Closes at Record 26,274 as Micron Surges, Intel Secures Apple Deal&nbsp;&nbsp;BBN Times",
+      "event_type": "news",
+      "tickers": [
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Here&#8217;s what Mira Murati&#8217;s AI company is up to",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/928309/mira-murati-thinking-machines-ai-interaction-model",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T06:19:15+08:00",
+      "summary": "Thinking Machines, the AI company founded by former OpenAI CTO Mira Murati, announced Monday that it's working on something called \"interaction models.\" The idea behind interaction models, according to Thinking Machines, is that they will let people \"collaborate with AI the way we naturally collaborate with each other - they continuously take in audio, video, [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "META"
+      ]
+    },
+    {
+      "title": "Apple's Tim Cook and Tesla's Elon Musk among top US CEOs to accompany Trump to China - Australian Broadcasting Corporation",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOHFKRHVENmRoVldhY3M2ck5Lb1hFSnI1REtnanRsSkItYUtNYkVLaS14Q0lZelpiODNSSlUtTS00WC0xUl9nRGxvTVpzeVBfTmtlRkdsQjg3aDJWZC1PTnlHb0FMQmpfei0xbDFWVHVDRWFpMVVpbmhydkJ5RElXUm9LLUpkNkN3YzgtT2J1bDRpLTREZ0lDdUVqTFo4d1MtLUVqWmpZM05HSEFPc2RsNg?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T05:08:05+08:00",
+      "summary": "Apple's Tim Cook and Tesla's Elon Musk among top US CEOs to accompany Trump to China&nbsp;&nbsp;Australian Broadcasting Corporation",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Apple CEO Tim Cook, Elon Musk to join President Trump’s China trip - MacDailyNews",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOelpoT19HaFphR2tvSVpNSkJ5NEowLVc5cF9DSS0yOFZRYVdWX1E3M2x4RmxfdWNpZUpJLVVVRWZkMkNwZGtLVTNxNkZnTXVBWXMwUWp2QUZVal9JMlROcnZVMFF4ei1kbDdla1J1aXE5NTB0OEdfMU0wLUV3eFNXblpQQ3hRdXZfWmEwXzRPbldPWkZFdWJ5LTNSX2RLTlVXSFAw0gGoAUFVX3lxTE1GdDh3MUk2Mk44aE9BR2otUjVWczh6Y01GTU9LZXcxWUZQbHYwVXNlbmM5WWFzMnYzeHdIN2lVUkxtdjQ2dnp0anlGV0h1cHV5c0o4WEN1ZzZqZng3dml4cEd4dlhwYUoycFU4dXRRZ2E1UUo2Z0otTGM4alJsWGN0bmNpMjZrNkN0MWtqNWN1VzFlZjBHTFE3ZTRYRHh0YWpfNUctd3Bacw?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T05:05:23+08:00",
+      "summary": "Apple CEO Tim Cook, Elon Musk to join President Trump’s China trip&nbsp;&nbsp;MacDailyNews",
+      "event_type": "news",
+      "tickers": [
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Tesla's Elon Musk, Apple's Tim Cook among CEOs set to join Trump on China trip - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9IZ0tkSF9idG1VUEN3QnZXVDFLTWg4RGdkUTVqUmVTWUM4QlI4S3VvOWNZQUZ0SkxWZU5sRW0zMU1BT2VjRER2RDBoMkU0N1JDZDZyWXUwanAxVERkZWV6Q2djemd2Wk13VWtiNWNMQTROLWR2YWUwU0t1SQ?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T04:32:26+08:00",
+      "summary": "Tesla's Elon Musk, Apple's Tim Cook among CEOs set to join Trump on China trip&nbsp;&nbsp;AOL.com",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "晶圓代工第二名之爭　英特爾接單蘋果恐讓三星腹背受敵",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754927_FO0LT3GJ1TML9D8W6KR85",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:26:38+08:00",
+      "summary": "英特爾（Intel）在晶圓代工市場相繼掌握NVIDIA、蘋果（Apple）等核心科技大廠客戶，業務逐漸步入軌道。相對地，一直被視為台積電唯一替代方案、長期維持全球代工第二名地位的三星電子（Samsung...",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "AAPL",
+        "2330"
+      ]
+    },
+    {
+      "title": "End-to-end encrypted RCS messaging begins rolling out today in beta",
+      "link": "https://www.apple.com/newsroom/2026/05/end-to-end-encrypted-rcs-messaging-begins-rolling-out-today-in-beta",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:10:35+08:00",
+      "summary": "Apple and Google collaborate with the GSMA to roll out end-to-end encrypted RCS messaging in beta, enhancing cross-platform communication security.",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "End-to-end encrypted RCS messaging begins rolling out today for Android and iPhone users",
+      "link": "https://blog.google/products-and-platforms/platforms/android/android-ios-end-to-end-encrypted-rcs-messaging",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:00:00+08:00",
+      "summary": "A woman texting on an Android phone with end-to-end encryption enabled",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL",
+        "AAPL"
+      ]
+    },
     {
       "title": "macOS 27 threatens to bury Time Capsule, FOSS brings a shovel",
       "link": "https://www.theregister.com/software/2026/05/09/macos-27-threatens-to-bury-time-capsule-foss-brings-a-shovel/5234824",
@@ -1005,162 +1123,6 @@
         "NVDA",
         "AAPL"
       ]
-    },
-    {
-      "title": "Apple&#8217;s AirPods with cameras for AI are apparently close to production",
-      "link": "https://www.theverge.com/tech/926376/apple-airpods-cameras-ai-production",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-08T03:39:22+08:00",
-      "summary": "Apple's rumored AirPods with cameras are nearing a stage where the company will test early mass production, Bloomberg's Mark Gurman reports. Currently, Apple testers are \"actively using\" prototypes that are in the design validation test stage, which is one step before the production validation test stage. The AirPods' cameras \"aren't designed\" to snap photos or [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "AAPL",
-        "META"
-      ]
-    },
-    {
-      "title": "川普下週訪問中國　傳邀輝達等大企業執行長同行",
-      "link": "https://www.cna.com.tw/news/aopl/202605080005.aspx",
-      "source": "中央社 國際",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-08T02:32:26+08:00",
-      "summary": "（中央社華盛頓7日綜合外電報導）美國媒體Semafor今天報導，美國政府邀請輝達（Nvidia）、蘋果（Apple）、埃克森美孚（Exxon）、波音（Boeing）及其他大型企業的執行長，於下週陪同總統川普訪中。",
-      "event_type": "news",
-      "tickers": [
-        "NVDA",
-        "AAPL"
-      ]
-    },
-    {
-      "title": "Nvidia, Apple and Boeing CEOs to join Trump for US–China summit - Firstpost",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdTJBcG9aMlpGOVU4ZGxNVGpzbDhiVkNTV19KaVhxblRGbUVZY0hEejlqVTNURlNIQ3RzWGZPQnMxUFNTREgtalRZQVFfSzczSXFUMXdBVUlEZ2JNdFRGU3RRMVNzeEVDLWVPZDlSaElzQUhtR0MyaXpPM0FROGkxLVFCRGZaeHZXOXltaThrYUN5anRNQXlrMXgxMFNHVEJHMzh2aVl6UWdsRzg",
-      "source": "中美科技戰",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-08T02:27:32+08:00",
-      "summary": "Nvidia, Apple and Boeing CEOs to join Trump for US–China summit&nbsp;&nbsp;Firstpost",
-      "event_type": "news",
-      "tickers": [
-        "NVDA",
-        "AAPL"
-      ]
-    },
-    {
-      "title": "How filmmakers are redefining the art form with MAMI Select: Filmed on iPhone",
-      "link": "https://www.apple.com/newsroom/2026/05/how-filmmakers-are-redefining-the-art-form-with-mami-select-filmed-on-iphone",
-      "source": "Apple Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T01:00:28+08:00",
-      "summary": "Emerging filmmakers in the MAMI Select: Filmed on iPhone program use iPhone 17 Pro Max to redefine cinematic language and storytelling.",
-      "event_type": "news",
-      "tickers": [
-        "AAPL"
-      ]
-    },
-    {
-      "title": "The Pulse: Did capacity shortages turn Anthropic hostile to devs?",
-      "link": "https://newsletter.pragmaticengineer.com/p/the-pulse-did-capacity-shortages",
-      "source": "The Pragmatic Engineer",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-08T00:45:31+08:00",
-      "summary": "Also: Amazon finally allows engineers to use Claude Code and Codex, Meta forcefully assigns engineers to data labelling work ahead of layoffs, more small &#8220;AI-forward&#8221; teams, and more",
-      "event_type": "news",
-      "tickers": [
-        "AMZN",
-        "META",
-        "AAPL",
-        "MSFT"
-      ]
-    },
-    {
-      "title": "AI meets accessibility in this year’s Swift Student Challenge",
-      "link": "https://www.apple.com/newsroom/2026/05/ai-meets-accessibility-in-this-years-swift-student-challenge",
-      "source": "Apple Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-07T21:59:24+08:00",
-      "summary": "Meet four Swift Student Challenge winners who are creating innovative apps that leverage AI and focus on accessibility.",
-      "event_type": "news",
-      "tickers": [
-        "AAPL",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Elon Musk tried to hire OpenAI founders to start AI unit inside Tesla",
-      "link": "https://www.ft.com/content/c93ba0c9-caec-4707-8f27-a1abb8de115e",
-      "source": "Ars Technica AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-07T21:14:01+08:00",
-      "summary": "Musk was “prepared to do the for-profit, provided he would get control.”",
-      "event_type": "news",
-      "tickers": [
-        "TSLA",
-        "AAPL",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "日本研討手機統一回收價，蘋果反對並罕見批評競爭對手",
-      "link": "https://technews.tw/2026/05/07/japan-considers-unified-phone-recycling-prices-apple-opposes",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-07T07:10:58+08:00",
-      "summary": "日本總務省早前召開「利用者視角審視流動市場專門委員會」第六次會議，研究所有智慧手機的統一回收價計算比率。蘋果（ [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "AAPL",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "（獨家）NVIDIA GPU升級緩加上CPU、記憶體雙缺　PC主板廠出貨目標全線崩跌",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754394_2M94CB7W8M7OAA5Z4THE5",
-      "source": "DIGITIMES 半導體",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-07T03:00:00+08:00",
-      "summary": "AI需求爆發引發晶片產能排擠，記憶體與中央處理器（CPU）出現嚴重缺貨漲價，品牌NB、桌上型電腦（DT）產品買氣下滑，PC DIY通路市況更是慘澹。PC供應鏈人士透露，台系四大品牌主機板廠於2025年底所設下的2026全年出貨目標全下修，且幾乎是「全線崩跌」。較過往金融海嘯、COVID-...",
-      "event_type": "news",
-      "tickers": [
-        "NVDA",
-        "AAPL"
-      ]
-    },
-    {
-      "title": "蘋果尋晶片第二來源　三星2奈米迎契機、效能有別成隱憂",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754406_P7A5NJSDL2DCX27PKXEVQ",
-      "source": "DIGITIMES 半導體",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-07T02:52:11+08:00",
-      "summary": "日前傳出蘋果（Apple）為尋求台積電以外的供應來源，考慮將自家處理器委託給三星電子（Samsung Electronics）與英特爾（Intel）代工，市場因此高度關注對三星晶圓代工事業的可能影響，以及蘋果此舉能否擺脫對台積電先進製程的依賴。據韓媒韓聯社、Digital...",
-      "event_type": "news",
-      "tickers": [
-        "AAPL",
-        "2330"
-      ]
-    },
-    {
-      "title": "Apple to pay $250M to settle lawsuit over Siri’s delayed AI features",
-      "link": "https://techcrunch.com/2026/05/06/apple-to-pay-250m-to-settle-lawsuit-over-siris-delayed-ai-features",
-      "source": "TechCrunch AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-06T23:12:49+08:00",
-      "summary": "Apple has agreed to pay $250 million to settle a class action lawsuit for overpromising the arrival of Siri's AI features.",
-      "event_type": "news",
-      "tickers": [
-        "AAPL"
-      ]
-    },
-    {
-      "title": "Apple Will Pay $250 Million to Settle Lawsuit Over Siri’s AI Features",
-      "link": "https://www.wired.com/story/apple-will-pay-dollar250-million-to-settle-lawsuit-over-siris-ai-features",
-      "source": "Wired AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-06T18:41:37+08:00",
-      "summary": "If you bought an iPhone 15 or 16 in the US, you could be set to pocket up to $95 per device as part of the settlement.",
-      "event_type": "news",
-      "tickers": [
-        "AAPL"
-      ]
     }
   ],
   "history": [
@@ -1285,23 +1247,23 @@
   "co_mentions": [
     {
       "ticker": "GOOGL",
-      "count": 17
+      "count": 15
     },
     {
       "ticker": "META",
-      "count": 13
+      "count": 11
     },
     {
-      "ticker": "MSFT",
+      "ticker": "NVDA",
       "count": 6
     },
     {
       "ticker": "AMZN",
-      "count": 6
+      "count": 5
     },
     {
-      "ticker": "NVDA",
-      "count": 5
+      "ticker": "MSFT",
+      "count": 4
     },
     {
       "ticker": "TSLA",
@@ -1309,6 +1271,10 @@
     },
     {
       "ticker": "2330",
+      "count": 2
+    },
+    {
+      "ticker": "2317",
       "count": 1
     },
     {
@@ -1318,11 +1284,7 @@
     {
       "ticker": "1142",
       "count": 1
-    },
-    {
-      "ticker": "3123",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

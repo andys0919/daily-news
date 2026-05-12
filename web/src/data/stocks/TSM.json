@@ -8,6 +8,41 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Wooptix Targets AI Packaging Bottleneck with Astronomy Tech",
+      "link": "https://www.eetimes.com/wooptix-targets-ai-packaging-bottleneck-with-astronomy-tech",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T16:57:35+08:00",
+      "summary": "A Canary Islands startup brings wavefront imaging to semiconductor metrology, aiming to tackle wafer shape challenges in 3D integration. The post Wooptix Targets AI Packaging Bottleneck with Astronomy Tech appeared first on EE Times.",
+      "body_text": "As chipmakers race to build faster AI processors, attention has shifted beyond transistor scaling and toward advanced packaging, hybrid bonding, and 3D integration. That shift is creating new manufacturing bottlenecks—among them, how to precisely measure wafer shape, topography, and warpage as devices become thinner, denser, and increasingly stacked.\nOne company hoping to capitalize on that transi",
+      "event_type": "earnings",
+      "tickers": [
+        "1000",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "TSMC's Paradox: Record Revenue and Margins Can't Ease the Capacity Squeeze on Its Biggest Clients - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQT1ZfdmplVWs3RndaUmdmbHQtV1lhekFsQURCUVdnM2U3dFJnLVZVUkF1QzBiVXZ6NFIydU50V20xSUNoUVRQZU9EWTRucWFhWlZ3SkFfOHBTb3YtMjRDVmo5eWQxVlZ0WFJkbm1yUk9JbjhJM3B0V3VIbU1aT2Y1RUNuV3VVYmVBbFMzUnpUUnMzaTl0QlplbVVkdEhQS0ZxQW5KUExRdDNod0U3UzdTNGxudHhNM1ByUGVFYm9yZjZuaFF1eHBDdzVLbC0",
+      "source": "半導體設備與產能",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T11:41:12+08:00",
+      "summary": "TSMC's Paradox: Record Revenue and Margins Can't Ease the Capacity Squeeze on Its Biggest Clients&nbsp;&nbsp;AD HOC NEWS",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "TSMC taps wind power as AI chip demand soars, Taiwan feels energy crunch",
       "link": "https://arstechnica.com/gadgets/2026/05/tsmc-taps-wind-power-as-ai-chip-demand-soars-taiwan-feels-energy-crunch",
       "source": "Ars Technica AI",
@@ -611,6 +646,31 @@
   ],
   "general_news": [
     {
+      "title": "Apple, Qualcomm and MediaTek take different paths as TSMC capacity stays tight - digitimes",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbkVwSzR1Sk0ta0ttenZqVGZUZE1NamhXN1N6R0FuQU9YT3ZwNFgtanZ6UVdhc1hlbjlQSE1CODZ2X2RRZlhmazVaRVpqWEw1cWFMa2N1aEdyVkNBZlNVaTBkV0YxYzdHMURWTXRMU1ExbXZJVXpqVTJ6WVpFNWRuaUx1c1htMFVmM0JpVEhvazd3Zw?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T08:44:53+08:00",
+      "summary": "Apple, Qualcomm and MediaTek take different paths as TSMC capacity stays tight&nbsp;&nbsp;digitimes",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "TSM"
+      ]
+    },
+    {
+      "title": "Applied Materials and TSMC Partner at the EPIC Center to Accelerate AI Scaling",
+      "link": "https://www.3dincites.com/2026/05/applied-materials-and-tsmc-partner-at-the-epic-center-to-accelerate-ai-scaling",
+      "source": "3D InCites",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:41:22+08:00",
+      "summary": "Building on more than 30 years of collaboration, Applied Materials, Inc. today announced a new innovation partnership with TSMC to accelerate the development and commercialization of semiconductor technologies required for the next era of AI. Working together at Applied’s EPIC Center in Silicon Valley, the companies will co-innovate to advance materials engineering, equipment innovation, and process integration technologies [&#8230;] The post Applied Materials and TSMC Partner at the EPIC Center",
+      "event_type": "news",
+      "tickers": [
+        "TSM"
+      ]
+    },
+    {
       "title": "Qualcomm Weighs AI Upside As Apple Locks In TSMC 2nm Supply - simplywall.st",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNUw0dmMwZlIwckZFYWR1X3Y5NHRLeDg4aUpGcU5jdWwxZUNEMTc4aXlzWHo3b1JTam9mNXFVUEthUENSY0FIZ3JNcnF3TjJiQmJ0U0RsWWNzd2xtRzRsUF9nMk5CdXBDZ0JnMmNBUHpKR3RUb2VCbUYyUVZpTUE4RkpCbU9Tc2Z4QVpqaFRzdU9rTUg3clVzdHptVVU1UVV5aFFsNVIwR2NoZnZsMkQtZ2NMY1JFZE9ucGxkeUx1dEwzbkFVUEtoUHlzOWHSAdIBQVVfeXFMUHJWWmtRbVA4UWJUTlBxV0ZOMnRqSU9oTHBvRk5GSk96ME0yOTBfUVI1M3NOT0VKNnRqdFU2eXBmbFZjUE9aWnpYbHRLUDhUWHI5bTBIdGtDLTJULXgtbTNnR0xzMmRSbGkybE1IVkZ0ZlR2TXpoMWpWR2VaZ2Ryb0tTLU1hVTZWU2s4d1NrRnpSaW50T1NmcFNRZy1xNV9sSE9iSTg1MHAwRFhtYTVzRklYb01PdzhWNzFWa21DeVJHd2NZLXRIbWhPcjUxTTNDblVn?oc=5",
       "source": "Qualcomm/Arm",
@@ -858,43 +918,6 @@
       "tickers": [
         "TSM"
       ]
-    },
-    {
-      "title": "TSMC SoIC 3D stacking roadmap outlines path from 6-micron pitches today to 4.5-micron in 2029 — Fujitsu's Monaka CPU to benefit from face-to-face chiplet stacking",
-      "link": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-soic-3d-stacking-roadmap-outlines-path-from-6-micron-pitches-today-to-4-5-micron-in-2029-fujitsus-monaka-cpu-to-benefit-from-face-to-face-chiplet-stacking",
-      "source": "Tom's Hardware",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-04-29T21:26:22+08:00",
-      "summary": "TSMC adds support for face-to-face stacking, 6.5 µm and 4.5 µm pitches for the next generation of SoIC 3D stacking.",
-      "event_type": "news",
-      "tickers": [
-        "TSM"
-      ]
-    },
-    {
-      "title": "神操作！台積電在費半創新高之際出清安謀持股",
-      "link": "https://money.udn.com/money/story/5599/9470695",
-      "source": "經濟日報 產經",
-      "category": "💰 財經與總經",
-      "published": "2026-04-29T08:09:28+08:00",
-      "summary": "台積電（2330）今天代子公司TSMC Partners Ltd.公告，已出清安謀（Arm）持股，套現2.31億美元。",
-      "event_type": "news",
-      "tickers": [
-        "2330",
-        "TSM"
-      ]
-    },
-    {
-      "title": "TSMC repeatedly hits high but valuation remains fair: Analyst|English News - 僑務電子報",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0xRk9iN3JvY2NRZTI4YWlvNDJwd2owNWsta1VnWkl6a2k3dkZ6S2dVbThYWFpWbVlrVU9iX0lVTmh1MWhTcFFIbl9PRQ?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-04-29T08:00:00+08:00",
-      "summary": "TSMC repeatedly hits high but valuation remains fair: Analyst|English News&nbsp;&nbsp;僑務電子報",
-      "event_type": "news",
-      "tickers": [
-        "TSM"
-      ]
     }
   ],
   "history": [],
@@ -941,5 +964,5 @@
       "count": 2
     }
   ],
-  "generated_at": "2026-05-11T03:56:24Z"
+  "generated_at": "2026-05-12T01:54:28Z"
 }

@@ -25,6 +25,21 @@
   ],
   "general_news": [
     {
+      "title": "AMD is reportedly developing an entry-level RDNA 4 GPU with 8GB of VRAM — RX 9050 rumored to debut with 2048 cores, more than RX 9060",
+      "link": "https://www.tomshardware.com/pc-components/gpus/amd-is-reportedly-developing-an-entry-level-rdna-4-gpu-with-8gb-of-vram-rx-9050-rumored-to-debut-with-2048-cores-more-than-rx-9060",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T01:50:12+08:00",
+      "summary": "AMD is allegedly planning to launch an RX 9050 SKU to compete with the RTX 5050, featuring more cores than the OEM-exclusive RX 9060.",
+      "event_type": "news",
+      "tickers": [
+        "9050",
+        "2048",
+        "9060",
+        "5050"
+      ]
+    },
+    {
       "title": "The post-quantum transition can’t be postponed any longer",
       "link": "https://www.coindesk.com/opinion/2026/03/31/the-post-quantum-transition-can-t-be-postponed-any-longer",
       "source": "CoinDesk",
@@ -41,5 +56,5 @@
   "history": [],
   "fundamentals": null,
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:25Z"
+  "generated_at": "2026-05-12T01:54:29Z"
 }

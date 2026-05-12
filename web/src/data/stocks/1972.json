@@ -8,6 +8,22 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "The Stakes of Trump vs. Xi",
+      "link": "https://www.foreignaffairs.com/united-states/stakes-trump-vs-xi-kurt-campbell",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T12:00:00+08:00",
+      "summary": "How the summit could change the course of U.S.-China competition.",
+      "body_text": "KURT M. CAMPBELL is Chairman and Co-Founder of The Asia Group. He served as Deputy Secretary of State and Indo-Pacific Coordinator at the National Security Council during the Biden administration.\nHow the Summit Could Change the Course of U.S.-China Competition\nKurt M. Campbell\nSingle combat, the practice of ritualized one-on-one fighting for enormous stakes, dates back to antiquity. In The Iliad ",
+      "event_type": "earnings",
+      "tickers": [
+        "1612",
+        "1972"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
       "title": "What is Strategic Rivalry? Why Should We Care?",
       "link": "https://warontherocks.com/2026/04/what-is-strategic-rivalry-why-should-we-care",
       "source": "War on the Rocks",
@@ -136,6 +152,10 @@
   "fundamentals": null,
   "co_mentions": [
     {
+      "ticker": "1612",
+      "count": 1
+    },
+    {
       "ticker": "1873",
       "count": 1
     },
@@ -170,11 +190,7 @@
     {
       "ticker": "1956",
       "count": 1
-    },
-    {
-      "ticker": "1899",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:25Z"
+  "generated_at": "2026-05-12T01:54:29Z"
 }

@@ -8,6 +8,26 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+      "link": "https://www.insidermonkey.com/blog/1759072-1759072",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:07:31+08:00",
+      "summary": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen. On April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that [&#8230;]",
+      "body_text": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen .\nOn April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that “derisk” the anticipated Phase 3 study.\nOn May 5, 2026, Rel",
+      "event_type": "earnings",
+      "tickers": [
+        "RLAY",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "Twist Bioscience Corporation (TWST) Announces Q2 2026 Financial Results",
       "link": "https://www.insidermonkey.com/blog/twist-bioscience-corporation-twst-announces-q2-2026-financial-results-1758209",
       "source": "Insider Monkey",
@@ -405,18 +425,6 @@
       "tickers": [
         "BRK-B"
       ]
-    },
-    {
-      "title": "Warren Buffett says Iran bomb would make nuclear disaster harder to avoid",
-      "link": "https://www.cnbc.com/2026/03/31/warren-buffett-says-iran-bomb-would-make-nuclear-disaster-harder-to-avoid.html",
-      "source": "CNBC Finance",
-      "category": "💰 財經與總經",
-      "published": "2026-04-01T01:16:22+08:00",
-      "summary": "The Berkshire Hathaway chairman said the growing number of nuclear-armed states has fundamentally altered the global risk landscape.",
-      "event_type": "news",
-      "tickers": [
-        "BRK-B"
-      ]
     }
   ],
   "history": [],
@@ -424,7 +432,11 @@
   "co_mentions": [
     {
       "ticker": "GOOGL",
-      "count": 2
+      "count": 3
+    },
+    {
+      "ticker": "RLAY",
+      "count": 1
     },
     {
       "ticker": "TWST",
@@ -435,5 +447,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:24Z"
+  "generated_at": "2026-05-12T01:54:28Z"
 }

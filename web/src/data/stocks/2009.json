@@ -75,6 +75,28 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "World Markets Watchlist: May 11, 2026",
+      "link": "https://www.advisorperspectives.com/dshort/updates/2026/05/11/world-markets-watchlist-may-11-2026",
+      "source": "ETF Trends",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T05:15:19+08:00",
+      "summary": "Our global markets watchlist tracks nine prominent indexes from economies around the world. The list includes the S&#38;P 500 from the United States, TSX from Canada, the FTSE 100 from England, the DAXK from Germany, the CAC 40 from France, the Nikkei 225 from Japan, the Shanghai from China, the Hang Seng from Hong Kong, [...] The post World Markets Watchlist: May 11, 2026 appeared first on ETF Trends.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Conflict, CASEVAC, and the Golden Hour in the Age of Persistent Surveillance",
+      "link": "https://warontherocks.com/conflict-casevac-and-the-golden-hour-in-the-age-of-persistent-surveillance",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:15:54+08:00",
+      "summary": "Editor&#8217;s Note: This article contains frank descriptions of battlefield conditions, including accounts of soldiers dying by suicide following injury.&#160;Western battlefield casualty evacuation doctrine is built on assumptions forged during the &#8220;Global War on Terror.&#8221; Central among these is the belief that the wounded can be rapidly moved from the point of injury to progressively higher levels of medical care within a defined timeframe, commonly referred to as the &#8220;golden",
+      "event_type": "earnings",
+      "tickers": [
+        "1975"
+      ]
+    },
+    {
       "title": "Barack Obama was a successful President",
       "link": "https://www.noahpinion.blog/p/barack-obama-was-a-successful-president-7bb",
       "source": "Noahpinion",
@@ -458,5 +480,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

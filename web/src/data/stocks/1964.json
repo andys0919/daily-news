@@ -73,7 +73,20 @@
       "guidance_direction": null
     }
   ],
-  "general_news": [],
+  "general_news": [
+    {
+      "title": "The peculiar recent behavior of unemployment",
+      "link": "https://fredblog.stlouisfed.org/2026/05/the-peculiar-recent-behavior-of-unemployment",
+      "source": "FRED Blog",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T21:00:00+08:00",
+      "summary": "Our FRED graph above shows that unemployment is almost always doing one of two things: (1) declining slowly during expansions or (2) rising rapidly during recessions. Friedman (1964, 1993) compared this behavior to playing a musical instrument, describing it as &#8230; Continue reading &#8594;",
+      "event_type": "news",
+      "tickers": [
+        "1964"
+      ]
+    }
+  ],
   "history": [],
   "fundamentals": null,
   "co_mentions": [
@@ -90,5 +103,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:26Z"
+  "generated_at": "2026-05-12T01:54:31Z"
 }

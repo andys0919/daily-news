@@ -15,8 +15,8 @@
       "form_type": "TWSE-Q",
       "fiscal_year": 115,
       "fiscal_period": "Q1",
-      "period_end": "1150511",
-      "filed_at": "1150511",
+      "period_end": "1150512",
+      "filed_at": "1150512",
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci",
       "report_kind": "quarterly",
       "revenue": 233432.0,
@@ -32,7 +32,7 @@
       "free_cash_flow": null,
       "guidance_summary": "",
       "filing_excerpt": "",
-      "payload_json": "{\"income\": {\"出表日期\": \"1150511\", \"年度\": \"115\", \"季別\": \"1\", \"公司代號\": \"2024\", \"公司名稱\": \"志聯\", \"營業收入\": \"233432.00\", \"營業成本\": \"213886.00\", \"原始認列生物資產及農產品之利益（損失）\": \"\", \"生物資產當期公允價值減出售成本之變動利益（損失）\": \"\", \"營業毛利（毛損）\": \"19546.00\", \"未實現銷貨（損）益\": \"\", \"已實現銷貨（損）益\": \"\", \"營業毛利（毛損）淨額\": \"19546.00\", \"營業費用\": \"13886.00\", \"其他收益及費損淨額\": \"\", \"營業利益（損失）\": \"5660.00\", \"營業外收入及支出\": \"9946.00\", \"稅前淨利（淨損）\": \"15606.00\", \"所得稅費用（利益）\": \"0.00\", \"繼續營業單位本期淨利（淨損）\": \"15606.00\", \"停業單位損益\": \"\", \"合併前非屬共同控制股權損益\": \"\", \"本期淨利（淨損）\": \"15606.00\", \"其他綜合損益（淨額）\": \"\", \"合併前非屬共同控制股權綜合損益淨額\": \"\", \"本期綜合損益總額\": \"15606.00\", \"淨利（淨損）歸屬於母公司業主\": \"\", \"淨利（淨損）歸屬於共同控制下前手權益\": \"\", \"淨利（淨損）歸屬於非控制權益\": \"\", \"綜合損益總額歸屬於母公司業主\": \"\", \"綜合損益總額歸屬於共同控制下前手權益\": \"\", \"綜合損益總額歸屬於非控制權益\": \"\", \"基本每股盈餘（元）\": \"0.16\"}, \"balance\": {\"出表日期\": \"1150511\", \"年度\": \"115\", \"季別\": \"1\", \"公司代號\": \"2024\", \"公司名稱\": \"志聯\", \"流動資產\": \"701978.00\", \"非流動資產\": \"923419.00\", \"資產總額\": \"1625397.00\", \"流動負債\": \"308309.00\", \"非流動負債\": \"186730.00\", \"負債總額\": \"495039.00\", \"股本\": \"975000.00\", \"權益─具證券性質之虛擬通貨\": \"\", \"資本公積\": \"10708.00\", \"保留盈餘\": \"144650.00\", \"其他權益\": \"\", \"庫藏股票\": \"\", \"歸屬於母公司業主之權益合計\": \"\", \"共同控制下前手權益\": \"\", \"合併前非屬共同控制股權\": \"\", \"非控制權益\": \"\", \"權益總額\": \"1130358.00\", \"預收股款（權益項下）之約當發行股數\": \"\", \"待註銷股本股數\": \"0.00\", \"母公司暨子公司所持有之母公司庫藏股股數\": \"0.00\", \"每股參考淨值\": \"11.59\"}}"
+      "payload_json": "{\"income\": {\"出表日期\": \"1150512\", \"年度\": \"115\", \"季別\": \"1\", \"公司代號\": \"2024\", \"公司名稱\": \"志聯\", \"營業收入\": \"233432.00\", \"營業成本\": \"213886.00\", \"原始認列生物資產及農產品之利益（損失）\": \"\", \"生物資產當期公允價值減出售成本之變動利益（損失）\": \"\", \"營業毛利（毛損）\": \"19546.00\", \"未實現銷貨（損）益\": \"\", \"已實現銷貨（損）益\": \"\", \"營業毛利（毛損）淨額\": \"19546.00\", \"營業費用\": \"13886.00\", \"其他收益及費損淨額\": \"\", \"營業利益（損失）\": \"5660.00\", \"營業外收入及支出\": \"9946.00\", \"稅前淨利（淨損）\": \"15606.00\", \"所得稅費用（利益）\": \"0.00\", \"繼續營業單位本期淨利（淨損）\": \"15606.00\", \"停業單位損益\": \"\", \"合併前非屬共同控制股權損益\": \"\", \"本期淨利（淨損）\": \"15606.00\", \"其他綜合損益（淨額）\": \"\", \"合併前非屬共同控制股權綜合損益淨額\": \"\", \"本期綜合損益總額\": \"15606.00\", \"淨利（淨損）歸屬於母公司業主\": \"\", \"淨利（淨損）歸屬於共同控制下前手權益\": \"\", \"淨利（淨損）歸屬於非控制權益\": \"\", \"綜合損益總額歸屬於母公司業主\": \"\", \"綜合損益總額歸屬於共同控制下前手權益\": \"\", \"綜合損益總額歸屬於非控制權益\": \"\", \"基本每股盈餘（元）\": \"0.16\"}, \"balance\": {\"出表日期\": \"1150512\", \"年度\": \"115\", \"季別\": \"1\", \"公司代號\": \"2024\", \"公司名稱\": \"志聯\", \"流動資產\": \"701978.00\", \"非流動資產\": \"923419.00\", \"資產總額\": \"1625397.00\", \"流動負債\": \"308309.00\", \"非流動負債\": \"186730.00\", \"負債總額\": \"495039.00\", \"股本\": \"975000.00\", \"權益─具證券性質之虛擬通貨\": \"\", \"資本公積\": \"10708.00\", \"保留盈餘\": \"144650.00\", \"其他權益\": \"\", \"庫藏股票\": \"\", \"歸屬於母公司業主之權益合計\": \"\", \"共同控制下前手權益\": \"\", \"合併前非屬共同控制股權\": \"\", \"非控制權益\": \"\", \"權益總額\": \"1130358.00\", \"預收股款（權益項下）之約當發行股數\": \"\", \"待註銷股本股數\": \"0.00\", \"母公司暨子公司所持有之母公司庫藏股股數\": \"0.00\", \"每股參考淨值\": \"11.59\"}}"
     },
     "monthly_revenue": {
       "market": "tw",
@@ -74,6 +74,114 @@
   "holdings": [],
   "recent_news": [],
   "general_news": [
+    {
+      "title": "US in closely-guarded talks to open new bases in Greenland",
+      "link": "https://www.bbc.com/news/articles/cx21669452lo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T07:56:11+08:00",
+      "summary": "It is seeking to open three bases in the south of the Arctic territory, according to multiple officials familiar with the talks.",
+      "event_type": "news",
+      "tickers": [
+        "1951"
+      ]
+    },
+    {
+      "title": "Weekly Economic Snapshot: Resilience in the Labor Market",
+      "link": "https://www.advisorperspectives.com/commentaries/2026/05/11/weekly-economic-snapshot-resilience-in-the-labor-market",
+      "source": "ETF Trends",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T04:56:31+08:00",
+      "summary": "The U.S. labor market demonstrated remarkable endurance in April, with job gains outpacing expectations and private sector expansion reaching its strongest point in over a year. This resilience has resonated through financial markets, propelling the S&#38;P 500 to its sixth consecutive weekly gain and a fresh record high. As the Federal Reserve maintains a steady [...] The post Weekly Economic Snapshot: Resilience in the Labor Market appeared first on ETF Trends.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Nintendo plunges 8% after Switch 2 price hike and weak sales forecast",
+      "link": "https://www.cnbc.com/2026/05/11/nintendo-stock-switch-2-price-rise-weak-sales-forecast.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T04:39:08+08:00",
+      "summary": "Investors are concerned about Nintendo's outlook of lower Switch 2 sales in the current fiscal year, driven by price increases for the console.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "The 529 Evolution: From College Savings to Versatile Financial Tool",
+      "link": "https://www.advisorperspectives.com/commentaries/2026/05/11/the-529-evolution-from-college-savings-to-versatile-financial-tool-1",
+      "source": "ETF Trends",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T04:27:19+08:00",
+      "summary": "For many years, the 529 plan was a straightforward investment vehicle. Parents saved for college, children used the funds for tuition, and penalties were incurred for any remaining funds. However, the 529 and its cousin, the ABLE (529A) account, have become versatile financial tools almost halfway through 2026. Key Takeaways: Total assets in education and [...] The post The 529 Evolution: From College Savings to Versatile Financial Tool appeared first on ETF Trends.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Three things in AI to watch, according to a Nobel-winning economist",
+      "link": "https://www.technologyreview.com/2026/05/11/1137090/three-things-in-ai-to-watch-according-to-a-nobel-winning-economist",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T01:35:12+08:00",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. A few months before he was awarded the Nobel Prize in economics in 2024, Daron Acemoglu published a paper that earned him few fans in Silicon Valley. Contrary to what Big Tech&#8230;",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "UK should commit to rejoin the EU, London mayor tells CNBC",
+      "link": "https://www.cnbc.com/2026/05/11/sadiq-khan-uk-rejoin-eu-labour-starmer.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T23:57:21+08:00",
+      "summary": "London mayor Sadiq Khan said that Prime Minister Keir Starmer should commit to rejoining the European Union and be \"bigger and bolder.\"",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "There aren’t enough rockets for space data centers — Cowboy Space raised $275M to build them",
+      "link": "https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-11T21:00:00+08:00",
+      "summary": "The apparently insatiable demand for AI compute has data center entrepreneurs looking to the stars. There's a key problem: There aren't enough rockets to put data centers in orbit around Earth, and they're too expensive.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Tyrants are losing wars",
+      "link": "https://www.noahpinion.blog/p/tyrants-are-losing-wars",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T16:36:24+08:00",
+      "summary": "Ruthlessness and machismo will only get you so far in a technological world.",
+      "event_type": "policy",
+      "tickers": []
+    },
+    {
+      "title": "Ankara’s Crossroads: Rearmament, Risk, and the Prospect of War with Israel",
+      "link": "https://warontherocks.com/ankaras-crossroads-rearmament-risk-and-the-prospect-of-war-with-israel",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:30:56+08:00",
+      "summary": "Talk of war in the Middle East abounds on social media, but not just about the one with Iran. A small, but significant, portion of this chatter relates to a conflict that has not begun. For more than a year now, pundits and politicians have warned of a potential clash between Israel and Turkey. Driving this hypothetical confrontation are a series of issues related to Syria, the Palestinian territories, and regional security as a whole. In December 2025, Israeli Prime Minister Benjamin Netanyahu ",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Conflict, CASEVAC, and the Golden Hour in the Age of Persistent Surveillance",
+      "link": "https://warontherocks.com/conflict-casevac-and-the-golden-hour-in-the-age-of-persistent-surveillance",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:15:54+08:00",
+      "summary": "Editor&#8217;s Note: This article contains frank descriptions of battlefield conditions, including accounts of soldiers dying by suicide following injury.&#160;Western battlefield casualty evacuation doctrine is built on assumptions forged during the &#8220;Global War on Terror.&#8221; Central among these is the belief that the wounded can be rapidly moved from the point of injury to progressively higher levels of medical care within a defined timeframe, commonly referred to as the &#8220;golden",
+      "event_type": "earnings",
+      "tickers": [
+        "1975"
+      ]
+    },
     {
       "title": "Ailing Iran Nobel laureate given bail and hospital transfer",
       "link": "https://www.bbc.com/news/articles/c1j257w87neo",
@@ -293,120 +401,6 @@
       "tickers": [
         "AAPL"
       ]
-    },
-    {
-      "title": "Microsoft and G42 data center in Kenya stalled due to lack of power capacity",
-      "link": "https://www.datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity",
-      "source": "Data Center Dynamics",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-07T22:50:33+08:00",
-      "summary": "Data center was first announced in May 2024",
-      "event_type": "news",
-      "tickers": [
-        "MSFT"
-      ]
-    },
-    {
-      "title": "Why Japan and South Korea Won’t Go Nuclear",
-      "link": "https://www.foreignaffairs.com/japan/why-japan-and-south-korea-wont-go-nuclear",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-07T21:09:00+08:00",
-      "summary": "America still needs to worry about proliferation in East Asia.",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "The Pentagon Needs a Playbook for Munitions Surge Production",
-      "link": "https://warontherocks.com/cogs-of-war/the-pentagon-needs-a-playbook-for-munitions-surge-production",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-07T16:00:13+08:00",
-      "summary": "The Tomahawk Land Attack Missiles the U.S. military fired during Operation Epic Fury take months to put on contract and years to produce.Whether driven by U.S. military operations or support to partners, the challenge of quickly replenishing U.S. munitions is not new. Exquisite munitions often take an exquisite amount of time to manufacture and deliver. Defense officials, in turn, frequently want to compress that time as much as possible, seeking to restock fast and mitigate future risks.The Rus",
-      "event_type": "earnings",
-      "tickers": [
-        "1978"
-      ]
-    },
-    {
-      "title": "What 300 Emails Say About Americans and the Army’s Direct Commission Program",
-      "link": "https://warontherocks.com/what-300-emails-say-about-americans-and-the-armys-direct-commission-program",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-07T15:30:52+08:00",
-      "summary": "For nine months in 2024 and 2025, I had an additional duty &#8212; monitoring an inbox that connected potential direct commission candidates with the Army&#8217;s individual branches. I served on the Army Reserve&#8217;s senior leadership team, helping to stand up a brokerage between mid-career professionals and the decentralized branch pipelines that controlled direct commission slots.During that time, I personally reviewed over 300 inquiries from accomplished professionals &#8212; data scienti",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "This Is Not the World Russia Wants",
-      "link": "https://www.foreignaffairs.com/united-states/not-world-russia-wants",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-07T12:00:00+08:00",
-      "summary": "A belligerent America is foiling Putin’s strategy.",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "German tourist wins payout after losing sun lounger race",
-      "link": "https://www.bbc.com/news/articles/c5y72g09d7jo",
-      "source": "BBC World",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-07T08:41:21+08:00",
-      "summary": "The man sued his tour operator for allowing people to reserve sun loungers with towels despite a hotel ban on the practice.",
-      "event_type": "news",
-      "tickers": [
-        "6211"
-      ]
-    },
-    {
-      "title": "'Enjoy the show. Ignore the war': Venice Biennale faces backlash after including Russia",
-      "link": "https://www.bbc.com/news/articles/cvgz14e1zeno",
-      "source": "BBC World",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-07T05:29:18+08:00",
-      "summary": "Protests have taken place at the prestigious arts fair over the inclusion of Russia for the first time since the full-scale invasion of Ukraine.",
-      "event_type": "policy",
-      "tickers": []
-    },
-    {
-      "title": "Google shuts down Project Mariner",
-      "link": "https://www.theverge.com/tech/925559/google-project-mariner-shut-down",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-07T05:21:45+08:00",
-      "summary": "Google has pulled the plug on Project Mariner, an experimental feature designed to perform tasks for you across the web, as reported earlier by Wired's Maxwell Zeff. The Project Mariner landing page now contains a message that says: \"Thank you for using Project Mariner. It was shut down on May 4th, 2026 and its technology [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "How David Sacks crashed and burned in the White House",
-      "link": "https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-07T04:18:00+08:00",
-      "summary": "Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers about tech, politics, and Washington intrigue. (It's basically House of Cards, but for nerds.) Not a subscriber yet? You really should become one, and to save you a Google search, here is the direct link to do so! And do you think I should [&#8230;]",
-      "event_type": "policy",
-      "tickers": [
-        "GOOGL",
-        "MSFT",
-        "META",
-        "NVDA",
-        "AMZN"
-      ]
-    },
-    {
-      "title": "Mira Murati tells the court that she couldn’t trust Sam Altman’s words",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/925338/openai-musk-v-altman-mira-murati",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-07T01:55:53+08:00",
-      "summary": "Mira Murati, OpenAI's former CTO, has testified under oath that CEO Sam Altman lied to her about the safety standards for a new AI model. In a video deposition shown during the ongoing Musk v. Altman trial on Wednesday, Murati said Altman falsely stated that OpenAI's legal department determined a new AI model did not [&#8230;]",
-      "event_type": "news",
-      "tickers": []
     }
   ],
   "history": [
@@ -445,6 +439,24 @@
       "capex": null,
       "free_cash_flow": null,
       "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q3）"
+    },
+    {
+      "fiscal_year": 115,
+      "fiscal_period": "Q1",
+      "period_end": "1150512",
+      "filed_at": "1150512",
+      "source_type": "twse-openapi-listed-ci",
+      "form_type": "TWSE-Q",
+      "revenue": 233432.0,
+      "monthly_revenue": null,
+      "net_income": 15606.0,
+      "operating_income": 5660.0,
+      "gross_profit": 19546.0,
+      "eps_diluted": 0.16,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
     },
     {
       "fiscal_year": 115,
@@ -751,24 +763,6 @@
       "capex": null,
       "free_cash_flow": null,
       "guidance_summary": ""
-    },
-    {
-      "fiscal_year": 114,
-      "fiscal_period": "Q4",
-      "period_end": "1150408",
-      "filed_at": "1150408",
-      "source_type": "twse-openapi-listed-ci",
-      "form_type": "TWSE-Q",
-      "revenue": 988898.0,
-      "monthly_revenue": null,
-      "net_income": -5884.0,
-      "operating_income": 6316.0,
-      "gross_profit": 67506.0,
-      "eps_diluted": -0.06,
-      "operating_cash_flow": null,
-      "capex": null,
-      "free_cash_flow": null,
-      "guidance_summary": ""
     }
   ],
   "fundamentals": {
@@ -861,5 +855,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:26Z"
 }

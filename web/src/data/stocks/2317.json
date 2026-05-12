@@ -74,6 +74,82 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "【即時新聞】鴻海4月營收達8320億元，年成長29.74%，AI需求帶動雙增表現 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbnRGOTc5WnJiUU9UTlVpV015SFZ2MVk3S1BLRUFNZ0NiTERUMndMWnkxaThJZ1duUHZTdy1wRHR1NFBNSHYyYUZmTWV4d3I5Y21CRThZSUctZ19GSnYtS3dqLTdXSHVHN2RSMThpMnRoQlBUZGEyajhab0cwRVpZOFdCV1RnclQwb1BJRXdyRmo",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:12:35+08:00",
+      "summary": "【即時新聞】鴻海4月營收達8320億元，年成長29.74%，AI需求帶動雙增表現&nbsp;&nbsp;CMoney投資網誌",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "2317"
+      ],
+      "companies": [
+        "鴻海"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754948_62DLT45H3QXIIQ93SHEFX",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T05:40:34+08:00",
+      "summary": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS...",
+      "body_text": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS/ODM業者成長與否的最大關鍵，也影響到前20大業者排名的 重新洗牌 。\n在人工智慧（AI）帶來的大量高效運算（HPC）晶片需求下，台積電無論前段先進製程或後段先進封裝，當前均陷入客戶爭搶、產能供不應求的情況。有業者開始選擇提前向上升級至更高階的製程搶先卡位，另有業者則考慮進一步增加投片合作對象，或是如先前喊出 自建晶圓產線雄心 的科技大廠。\n英特爾（Intel）在晶圓代工市場相繼掌握NVIDIA、蘋果（Apple）等核心科技大廠客戶，業務逐漸步入軌道。相對地，一直被視為台積電唯一替代方案、長期維持全球代工第二名地位的三星電子（Samsung Electronics），也將陷入更嚴峻的市佔率競爭困境。\n據韓",
+      "event_type": "policy",
+      "tickers": [
+        "2330",
+        "NVDA",
+        "AAPL",
+        "2317"
+      ],
+      "companies": [
+        "台積電",
+        "NVIDIA",
+        "Apple",
+        "鴻海"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "【即時新聞】鴻海4月營收達8320億元年增29.74% 貢獻上市櫃最強表現 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOb21QenR5dUxucUFzMEs0dUp3RjFrUE9sVXVubzhEWVBLbkhBR0xuMUdadTJ6MUx6RkJBeW9DN1RFTXJqLWl3M1VuaWJGVkhfN19HM2h2aDZkcmY2TXhlV1pjbHdZZDIzZk9TVk01X2pTTklsOU5sRmdqQlRyTlZDMzVrVElTWlZtZmoxVU81X0s",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T05:20:06+08:00",
+      "summary": "【即時新聞】鴻海4月營收達8320億元年增29.74% 貢獻上市櫃最強表現&nbsp;&nbsp;CMoney投資網誌",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "2317"
+      ],
+      "companies": [
+        "鴻海"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "上市櫃營收五大天王出列 鴻海穩居「營收王」台積電維持亞軍 | 市場焦點 | 證券 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QREJnTDdOMzlhVEp5MmliN0t5Umg2amI5Smo5RVg2Tkg0YzM0dEJVWGswdHo3REJSbnpCbkh4ZVROeGc1NkN6OFJfUlp5dUJfT3lidU5faXF6Zw?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:12:22+08:00",
+      "summary": "上市櫃營收五大天王出列 鴻海穩居「營收王」台積電維持亞軍 | 市場焦點 | 證券&nbsp;&nbsp;經濟日報",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "2317",
+        "2330"
+      ],
+      "companies": [
+        "鴻海",
+        "台積電"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "鴻海被嚴重低估？專家曝Rubin機櫃出貨EPS衝16元 「補漲」可期- 財經 - 中時新聞網",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1xdGRVd0lYT19tbzJacjBfXzFCT05hU1ZXcE1ReTNmc2l5a1JTRVlxd1l4ajBXdVRSZWFpYU5PZlNscVh1WDBtU2pHaVVodWVlMy00QXNfWWdDeWVsUGY2SWJOcnJ1eEtEc1J3RXln",
       "source": "鴻海/Foxconn",
@@ -626,6 +702,104 @@
   ],
   "general_news": [
     {
+      "title": "《投信買超5-5》台光電(118)、鴻海(113)、聚陽(111) - 富聯網",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbGtiOHJyUWFMMzRLaGctb1FacmRPQmFJYzdLeVE4WENmSjUwcWFTcExuNElNdHlsbjBCcUlybXZuUERtaEZST1dLcDNjalNOX1NnQmNXa1hadllwTDBITTktczdEcWdQUlJ5QmNfWFVsRmpFT0VILXBvRnFSMGpSUEhXNEt4bHpC",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:34:00+08:00",
+      "summary": "《投信買超5-5》台光電(118)、鴻海(113)、聚陽(111)&nbsp;&nbsp;富聯網",
+      "event_type": "news",
+      "tickers": [
+        "2317"
+      ]
+    },
+    {
+      "title": "鴻海(2317)法說來了！股價7天漲18%、外資連10天買超30萬張為哪樁？劉揚偉會端什麼好菜上場｜今周重磅| 今周刊 - LINE TODAY",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9LR2l4bXBheFo2Qk9UcnRFYkJ3NThuWGhVX2h6TTlrSDI5N2lUNVF1bzZQWjBKTjQ1Umg4cGE0SmdCVW5lRjFMY3ZrSmExR29iZTJUbmN3",
+      "source": "台股法說會 (Google News)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T05:03:15+08:00",
+      "summary": "鴻海(2317)法說來了！股價7天漲18%、外資連10天買超30萬張為哪樁？劉揚偉會端什麼好菜上場｜今周重磅| 今周刊&nbsp;&nbsp;LINE TODAY",
+      "event_type": "news",
+      "tickers": [
+        "2317"
+      ]
+    },
+    {
+      "title": "鴻海(2317)法說來了！股價7天漲18%、外資連10天買超30萬張為哪樁？劉揚偉會端什麼好菜上場｜今周重磅 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxNaUtKV2ZleWhReTN4aF9NMzRQb2dadG50anhCTUIyVFd2TjlnN041MXJLUDlWWUJuVkw1enJMVHdwUWI3WTA1cEZvSGpoUDd0dDY4QUFtRklKMG9OVEp5dy0zdkRfVURCb1l2TllLMTJzLXVaOE5qU2VWY2hlRHk5emY3Rjc5UzVUVXFRRlItSXotcnFOdHNMS1FSb0Q1THVpMW1GSmJnMVBDb3QtRGR4M3hhYUc3Mm15a2RXNk1uR1RBck5MY0FrNnE2UlhsODVqaDQzWU02NEJKZTREb0p4bFpKTExRTl9nOTQzV1BWQWQ2X0RBdGRtbGFRNW14SFNNMzhMcWpRdzVYT0U3RzhlV29oYUFoaXN6bnNJRVdZWDRFVXB1cGRVaTd5blFSODlDWjBLeGJVdVJWS0xpSlBTeWZ2WHdYVzMwc1Y3MTczdDJoXzZ1eF9FZzNqYm5ULW5jZUhN",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T05:00:01+08:00",
+      "summary": "鴻海(2317)法說來了！股價7天漲18%、外資連10天買超30萬張為哪樁？劉揚偉會端什麼好菜上場｜今周重磅&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "tickers": [
+        "2317"
+      ]
+    },
+    {
+      "title": "波蘭押寶台灣建科技城 台積電、鴻海、台塑全被點名 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQLVFpRFF1Z1VCSi1vSlg5c25CRVFfYWMzazJmSmRhNTBZWlFCbFBMWk01elY5TTc3cldTcE9kNjVnYi00RGJfZkdGUG5xbWpjQWZNUF92cHdVSXhaenlFR2RLVnhPS1o0R0ROYlg5THhTcjZ2Q3ZjYnlMRnRlN2Z0M09DbWotV05VZFFKVVh0Yi1QMllYXzB1eFZuVGhHSHRlSzdlVEY3dmVlTkZHZFN6bDFZTEo3ajRZUUpEVVNRQVBXTU5aLW83aTJacWdNSXZoc2hEanlfc3FCR1IxRFIxdGhydWpVZ2ExUkVWN3laSmNTX25jSm5nRnhSYXA2MzZYZXdFcENUVzZhdkdCSkQ3Ymo5VUtSc3ZBN3AxM1IzZFp0djlmeERqeU0xOU1SLWdBZmlCemE5OEU3QUJKM0phYnZuN2Z2UVFYZVFkVmxXeE5VQms?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:34:25+08:00",
+      "summary": "波蘭押寶台灣建科技城 台積電、鴻海、台塑全被點名&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "tickers": [
+        "2330",
+        "2317"
+      ]
+    },
+    {
+      "title": "軟銀為 AI 蓄電 堺工廠導入電池製造 助攻鴻海日本布局 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2U2xBZDR3ZWdwMUdzYWUzZzI4eGtIanZnbm1jZkhtWDZ6dXBXS3BUbmkzSm5DbWZnWHlSU2NWZ1gxbTVzZmhrbkV5bHFRUnBhN21RZUxqM0FSZ9IBX0FVX3lxTE5GSUpaeUZkTWdPZTJfV01sX2RpQXlLVzMycmRrR2hvaFNVS3NBVnYwZXJadm1nMzMxS2Z1U3I2LXh5VmlzQ0lzMTBnbkJkZGs5VWQ1UElLTkRNR09SdEN3?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:29:09+08:00",
+      "summary": "軟銀為 AI 蓄電 堺工廠導入電池製造 助攻鴻海日本布局&nbsp;&nbsp;經濟日報",
+      "event_type": "news",
+      "tickers": [
+        "2317"
+      ]
+    },
+    {
+      "title": "軟銀、鴻海複製經驗 搶美國商機 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWOTBsMGFqNnN6RkZ2R3lFSVFfN053eWNEMDJzMTB3anBnWnRjeXlucjFYYVVlaG1wN0p0U2U1U0hQWWh5ZkFfNGQ5YXVYX0dNNjZHWjB1X3pOZ9IBX0FVX3lxTE9YQ3BVeTNUYWMyUkxaUnFPVkU5eWk1QWJXSW10d1BuNUhVSF9oeGlGaW1ZQU00UlNFcUNEWDRQVDJGMlhqVTZvallaT2tUTWVQMkxBNnJkTHptdGxRSlpZ?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:24:21+08:00",
+      "summary": "軟銀、鴻海複製經驗 搶美國商機&nbsp;&nbsp;經濟日報",
+      "event_type": "news",
+      "tickers": [
+        "2317"
+      ]
+    },
+    {
+      "title": "鴻海期 動能強勁 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEeFExSTF2ZUhyVlFBcEh2WkdqSlBfNHlWMERkYU9MN1dFVTJIakdyTUQ3Y21zRVc0RHBaZkNJN2ViakpuZ0o5WDVoMjY3dVMwc2lUZ3hrMDlGVEHSAWBBVV95cUxQTlk1ejRBeVF5czNuQi0zV25TZVluc2pWdFdKckJ0RVBzaUhBTXR6Vk53Q1NfSE5wQ3pQdUhlUEtTN3p2R3RHb1lSemxSeFh6OFlJbzdtT2RTT00tNkIyemM?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T00:11:35+08:00",
+      "summary": "鴻海期 動能強勁&nbsp;&nbsp;經濟日報",
+      "event_type": "news",
+      "tickers": [
+        "2317"
+      ]
+    },
+    {
+      "title": "產學研AI盛會！ 臺東大學邀鴻海、NVIDIA專家探討智慧製造 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQRUJ5c2RfS1EwTDh6YkF3anVLODcwbTlzRS0ySEVRSndJY01SZzNxalVQLTRoS2RnUzRRWDRQaTNSY2Zhem9CUGZueklWcVUxa3RnOHBaRVdVTTJsN1J0dnV4RFhsNTc5MkZqRmFYN2pQTGNpRjNkUno2bnhpZGNBNHlMT1Q4TjU1T2VrTWVJYjhGNVdxbHhZZEYzcTNNZUNkc0JjOGpzeTY0VW81aTFiSVBZN1dveVhTSktTTmhWVEJ4TS1JTDNUanZjUy1WVEpTMWgzVjM5NmFqcVN4Wm9aRDFJUXU4WEZiNWlZd3prM1I1dnBxR2U4dUU4Y3hsMDE1M3BFdFhoc05wZnA2TFdRNmFRbm5DUVJKMGpISS1HVmVZZmx6N1hvci1DcW9nSDZvY3d1VTI1THRUek1yY0Y5MGwzMG9JazBCd01rYjVDeTI?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T22:56:58+08:00",
+      "summary": "產學研AI盛會！ 臺東大學邀鴻海、NVIDIA專家探討智慧製造&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "tickers": [
+        "2317",
+        "NVDA"
+      ]
+    },
+    {
       "title": "幕後》劉揚偉親自獵頭！辦鄭文燦卻成調查局長眼中釘 調查官變鴻海除弊大將 | 林益民 | VIP - 風傳媒",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1XNUhyZC1Tc25qTDZvay1JZzUxdzVfVG1WdXZLQ2VvakdROE1oZjlLNnVzaENSTUFmSk9GTS1NZjBuX1luajg3MWt5MG9kZw",
       "source": "鴻海/Foxconn",
@@ -827,144 +1001,6 @@
       "category": "🏢 科技廠動態",
       "published": "2026-05-09T03:00:00+08:00",
       "summary": "攜手輝達、鴻海軟銀要造日製AI伺服器- 日報&nbsp;&nbsp;工商時報",
-      "event_type": "news",
-      "tickers": [
-        "2317"
-      ]
-    },
-    {
-      "title": "一周熱門零股／0050、鴻海、南亞科 人氣旺 - 經濟日報",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kMjQ4d3JYdHZma1FZSzJFM1JWemswcFdHSWhMaVM2MUtTcXVnZ2Zfb3hfcVhHbnA4ZFdYVTgzSXJ4X2t4OXFDQk1oV1NVVVVwMVhodndNNVhIQdIBX0FVX3lxTE04TEJ5dUhyM3kwQmRlejJsTUUxODJjQWtMS3Rfd2staFppX202SElPNTFZS2ZpZ3RNTVBKUlpaYnRLLUNSYVBtclBORktOcjhsbko5Q0JKc2FyWEtHYTFN?oc=5",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T00:14:34+08:00",
-      "summary": "一周熱門零股／0050、鴻海、南亞科 人氣旺&nbsp;&nbsp;經濟日報",
-      "event_type": "news",
-      "tickers": [
-        "0050",
-        "2317"
-      ]
-    },
-    {
-      "title": "無懼荷姆茲「砲火隆隆」！美股四大指數全數開高 英特爾大漲6.88%、台積電、鴻海ADR雙雙上漲 - Yahoo股市",
-      "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxQcjlRYWpnRndvd0w3R0ZxTTBmWno5bXZUWVZINmdKX3B1NXdQMlkzQ19wUzczanc2OGtFTlRjRVE4eDE0bEgwRGVkNzdpYmpDWDdPN0xCa0lLeGE5REFoZ2h1S21HSW1teTZ1dkV3UlNfTk1UWlZXY3YwVzN0cG13NlhIVGN4RS11SV9mb1MtTENpQndabnY0bFhJbUtKSzY4TkNjZExfbzBNZGtFQmZWSkcwY1VPb3pYMDVCZ05TS1E0TGxmUHY4TlpzYkJkWm9hTXdsVVNpM0FxODBlaDJxaXZ2V09HUXZ5N3N1OWw5a0p4T2dUWFRvcFEyZnY4OGZ2cDRBdmlPOEVpNjBTSFFGRV9pd2oxNW5vTjRoc1Q5MzFORWVxcnVwZVJoYklGeEVFc3dRNkQtNXJwcGozMDJONU1qLXNkLVZBTUdWbGpSTW5DcGNkQ1ZXdWFrZDhGemJWd3RuNnhjRkF2dTlnSUxEMElEYzlfanlxeGpfbml4LW5EekRB?oc=5",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T22:16:00+08:00",
-      "summary": "無懼荷姆茲「砲火隆隆」！美股四大指數全數開高 英特爾大漲6.88%、台積電、鴻海ADR雙雙上漲&nbsp;&nbsp;Yahoo股市",
-      "event_type": "news",
-      "tickers": [
-        "2330",
-        "2317"
-      ]
-    },
-    {
-      "title": "別只盯著鴻海看！AI 機櫃「利潤王」現身：哪家公司一季賺 3 個股本？｜豐雲學堂 2026 年 05 月 - sinotrade.com.tw",
-      "link": "https://news.google.com/rss/articles/CBMivgNBVV95cUxPVjJOMm9HcExCYVNSQmk5NDVWLUJ6Mk84ZlhYUldiWTRhX19HXzQ2bTctTzNtaG43LTRSOXNQejBibDNTVVBkeG81ZzVvUGRRMnFPSUE2ell6Mm92Z2J6dURvbi04eUgwQ0liVUJZU29fV3FsUHp0Q2ZoWmZtSXUybVhqWTlUbkF5bTFHQnNESHh4MFJCbjZWcVBrY2JhRWdtS3B3RHozSUZJQVVRdkVOZW1vd2tfYlNpcnYzT3R2VF82dk1TY0E5cHJRbURnbFdxMzdTMk1ESmJJZmJ3WTNwd0xzZWpsY1lUajFZR09zZ1dtbXNZdFRGN3EtUF9DVlhLVnRIa3JqS3JxMW1nWF9pRlU0bkpYb3J4M1J4RkdpbTBaNWNkSVpHQUl0NXFMQVBpWjlBLVJpcVV6YTdrcEZWT0NwakRDLXF1QXZtNFl3VnR0S1NTcko4VkpZWnBOeDFZQXI1cTBISVB0YTBZMDNzUWhWSFY2MEh5WU1ySzR6MHM0UC0xcl9lVWpVTTR2VU5fekh5S285U0pMWDViU0ZUWmIyckpxUE56TkhRYTRpSk5Eb2ZBc0xqWXoyeU1zZw?oc=5",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T18:02:11+08:00",
-      "summary": "別只盯著鴻海看！AI 機櫃「利潤王」現身：哪家公司一季賺 3 個股本？｜豐雲學堂 2026 年 05 月&nbsp;&nbsp;sinotrade.com.tw",
-      "event_type": "news",
-      "tickers": [
-        "2317"
-      ]
-    },
-    {
-      "title": "三大法人買賣超 – 外資買超(2317)鴻海、(3450)聯鈞，投信買超(6669)緯穎、(2330)台積電，法人合計賣超200.03億元 - sinotrade.com.tw",
-      "link": "https://news.google.com/rss/articles/CBMiwgRBVV95cUxNYk5RQ2JocGJDV1ZXcVR6Ym5sS3I0TmFNcWl4M2NSREMxR0VEYklZQnFsc3ktUTRTYXQwQTE4cVprVjBtdVM2Z0Q0RzlCT2V4N2drUkc5d3NHSlNsYnhWYXlzQkdQN255OXh4dEtBeVhJbFFtMTM2NEpOSVRHMjRIWXh3OHdINXZiSzZRNWdoMUhLTXItMzlvRTZlSEN2Z2FQMExTU3RWb2thcXpPVk00VG5JcnhiTjFZNUpaVWttQ0UxQU9vQm5VaDZ4SEJ4d0dqQkNtOWFxdm92T2VDcXZrZGFlb3JBa29CY3ZRb2s1U0tJdWVRWUR2N1U5cC1Jal9LV2ZfakFVZTdYenA5ZGJaUnB0WjJtYkMtWnV1MmZMeWU3eUhhRjZiOFc2SndkNHlMUVVQd2J4LVU4Zk9mU1R2MHdBWU9UMUM0ZE5wNUx1Q1BjZVRUZUR5ZVo1dEpvX3ZHMTItNWVYRE9QY0c2TFZtYkFvZE01dGsxMzRERVZMQ0hvZHNVbFN0WmNsN1VlTWFUYzJOQ1ZQRE9uWDZxWEtLcEJoV0Fmd0JMQ2xmamZQX0ZtbF9jV2VQcnFobmc3YmV4M0ZFamJzcW1UZm9LajZPZ0NKelZFbFV3cDFHUENnT3RCZnlsU2M4RDJ2dGVqa3Z6NVRnVzlYMXk2c0xCMVpvX0w4LTI5RmR2Rk1DTkNqc2JDT09OaHNpNl96R0NiWVZqbzhyY2ktdzRpOFlzSmYzdkt1amtGeE1JcFd4U0E0a2xwQQ?oc=5",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T17:07:22+08:00",
-      "summary": "三大法人買賣超 – 外資買超(2317)鴻海、(3450)聯鈞，投信買超(6669)緯穎、(2330)台積電，法人合計賣超200.03億元&nbsp;&nbsp;sinotrade.com.tw",
-      "event_type": "news",
-      "tickers": [
-        "2317",
-        "3450",
-        "6669",
-        "2330"
-      ]
-    },
-    {
-      "title": "鴻海挾利多領軍老 AI 上衝還可以買？分析師點名這幾檔都有戲… - 經濟日報",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9XUzNwSVVKclIwRVZYWV81MmhJUHVIOGVFT3VXMWN2YkRQV2xwSlBUblp3U1NhUjAxMndwaWk3YU4wRVNZa21NMFVETDJ3RHpPaVl5Rm1BQ2lTd9IBX0FVX3lxTE9yNG0zNC1hMjU5dDg1UUl4dUZIZXBhbkg3Z1R0TTRMYWt3T2dMd2ZTYzh2QUJidGRZWDltOE5LMDB4OUNUV2tPaktYckNmbG4tVHBQNUJPeHBQcmVOMEZr?oc=5",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T17:00:00+08:00",
-      "summary": "鴻海挾利多領軍老 AI 上衝還可以買？分析師點名這幾檔都有戲…&nbsp;&nbsp;經濟日報",
-      "event_type": "news",
-      "tickers": [
-        "2317"
-      ]
-    },
-    {
-      "title": "鴻海300不是夢？達人見買盤「很不尋常」 3大利多吸資金卡位 - TVBS新聞網",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Udi1lNjhvYzNjMEN2dG9lN1F3a0RSR2MxUGxxU2xTYnFzakNIV2p3ekc5cGhSUVlYQjFyV3pOLUNNZ0pOMFViOXFrRGU2WkU",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T08:33:00+08:00",
-      "summary": "鴻海300不是夢？達人見買盤「很不尋常」 3大利多吸資金卡位&nbsp;&nbsp;TVBS新聞網",
-      "event_type": "news",
-      "tickers": [
-        "2317"
-      ]
-    },
-    {
-      "title": "軟銀攜手輝達、鴻海 擬打造「日本製」AI伺服器！布局垂直整合生態系 - 知新聞",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5hTFp1cm4xRVJNS05oOWhvOHpsNU5yNnZoVTVaT0x2MDZ5X1g3SERHVUhHM3d5R0JXeHU2MWJHMWZLd1YtS0NVX0pnZHdEdHo2YlZIQ1ZRLUdjclh5X29OdUNsNWx1QVRNcDRDb2Ixdw",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T08:31:00+08:00",
-      "summary": "軟銀攜手輝達、鴻海 擬打造「日本製」AI伺服器！布局垂直整合生態系&nbsp;&nbsp;知新聞",
-      "event_type": "news",
-      "tickers": [
-        "2317"
-      ]
-    },
-    {
-      "title": "傳軟銀洽輝達、鴻海擬打造「日本製」AI伺服器| 國際 - 非凡新聞台",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BT2RzRk5uNDM4MEdLVnRveW9URGVvaVVDV2RmWURRRjRYOUJTNlhLUlFMcUJqWUdIblpsMGtxNWo1d0lJMzlSTzFKUjVnLXNtV0ZUbEJUYWk3clRqYnVfNQ",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T08:18:00+08:00",
-      "summary": "傳軟銀洽輝達、鴻海擬打造「日本製」AI伺服器| 國際&nbsp;&nbsp;非凡新聞台",
-      "event_type": "news",
-      "tickers": [
-        "2317"
-      ]
-    },
-    {
-      "title": "軟銀據報正與Nvidia 及鴻海商議在日生產AI 伺服器財經新聞Financial News - AASTOCKS.com",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaDlwWGZnZmxMX3VUQzZXUmdhSHQtMUU4MEMySGtBRE5mbWc1WXhqM2Z0Y1pqZWU0NmN4RkJzcFRZek1WUnc1dWduZGFBNFZwaGJSSl9yRHdtdlJPYlVZNFFZTXZ4dVJVZjBnMWQxSWNRZFlnR19UNUUzcnMtWmFReVktbzNEeVJh",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T07:53:00+08:00",
-      "summary": "軟銀據報正與Nvidia 及鴻海商議在日生產AI 伺服器財經新聞Financial News&nbsp;&nbsp;AASTOCKS.com",
-      "event_type": "news",
-      "tickers": [
-        "NVDA",
-        "2317"
-      ]
-    },
-    {
-      "title": "《其他電》鴻海結盟波蘭EMP 評估設電動車製造研發中心 - 富聯網",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRWlsQ2tXSk84RDB1YUI0NXE5RFBkelZjUVFIZGY5VTIxTERSVzRmdFhiTVhIWjkyeERXc1JqcVhrazBROTJzS2pYV08tbG1ORmU3bEZwNE1kQXhLWWthUjJjelJQTGthXzhCOVk4N3RrWXdLeDg4c0RjZ2laVWVHY1pwYU1kdm9i?oc=5",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T07:41:00+08:00",
-      "summary": "《其他電》鴻海結盟波蘭EMP 評估設電動車製造研發中心&nbsp;&nbsp;富聯網",
-      "event_type": "news",
-      "tickers": [
-        "2317"
-      ]
-    },
-    {
-      "title": "日媒：軟銀將與輝達、鴻海合作打造國產AI伺服器 - Yahoo新聞",
-      "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQSEFTdW1feGRpZEVMRldhZlVNN2xGTVlZeEZNVWdzOHJGTUoycUlfOHlsVU8wX2ZOWHFwbkZ1VTBJeDdxTTFMQ0pzaU1fTDZndEtiUWQxZkdZakF3T1JtOTA1M1FkQ0RrZmZNWE5aZ05rT1ZmNEZLTTVOZ1FYWGE0dXA1a0ItWF82NWpORzg5eW0xNjRZeExveEMweHBZSm5oY2Z6WjNzZ3lXMUdGRmJTd05TYUxJQlpLTFdocm1sVnpqMkpSdER6aGRpTWE2d1g3TGFhWFhWQ1ZUNkdpQWFMemdRelFzVkRuYzNwUjdKaFlFVnBsN2JPRnExSmVTcmRNZE1jcDFHRGdVdUxmZUh5NzN4UW9ULUJJX2s1Wkt1LVVQd0s2NjBLLUpRenEtZmJYWVhuQlBzdERzempF?oc=5",
-      "source": "鴻海/Foxconn",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T07:34:55+08:00",
-      "summary": "日媒：軟銀將與輝達、鴻海合作打造國產AI伺服器&nbsp;&nbsp;Yahoo新聞",
       "event_type": "news",
       "tickers": [
         "2317"
@@ -1232,8 +1268,16 @@
   "co_mentions": [
     {
       "ticker": "2330",
-      "count": 3
+      "count": 5
+    },
+    {
+      "ticker": "NVDA",
+      "count": 1
+    },
+    {
+      "ticker": "AAPL",
+      "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

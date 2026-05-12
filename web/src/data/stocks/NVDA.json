@@ -46,6 +46,105 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+      "link": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+      "source": "Hugging Face Blog",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T07:18:26+08:00",
+      "summary": "",
+      "body_text": "The AWS Building Blocks Infrastructure: Compute, Network, and Storage Resource Orchestration: Slurm and Kubernetes ML Software Stack Observability Conclusion Authors For a long time, \"scaling\" in foundation models mostly meant one thing: spend more compute on pre-training and capabilities rise. That intuition was supported by empirical work such as Kaplan et al. (2020) , which reported predictable",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "AMZN"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Trump heads to China with Musk, Cook and top CEOs for Xi talks",
+      "link": "https://www.scmp.com/news/china/article/3353199/trump-heads-china-musk-cook-and-top-ceos-xi-talks",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T05:49:13+08:00",
+      "summary": "US President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week. The White House on Monday released the list of leaders set to travel to China alongside Musk and Cook, including Larry Fink of BlackRock, Kelly Ortberg of Boeing, Dina Powell McCormick of Meta and Ryan McInerney of Visa. The delegation spans key industries, including aviation, technology, banking and...",
+      "body_text": "Business delegation spanning tech, aviation and finance joins Beijing trip as trade, investment and supply chains top agenda\nUS President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week.\nThe White House on Monday released the list of leaders set to travel to China a",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754948_62DLT45H3QXIIQ93SHEFX",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T05:40:34+08:00",
+      "summary": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS...",
+      "body_text": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS/ODM業者成長與否的最大關鍵，也影響到前20大業者排名的 重新洗牌 。\n在人工智慧（AI）帶來的大量高效運算（HPC）晶片需求下，台積電無論前段先進製程或後段先進封裝，當前均陷入客戶爭搶、產能供不應求的情況。有業者開始選擇提前向上升級至更高階的製程搶先卡位，另有業者則考慮進一步增加投片合作對象，或是如先前喊出 自建晶圓產線雄心 的科技大廠。\n英特爾（Intel）在晶圓代工市場相繼掌握NVIDIA、蘋果（Apple）等核心科技大廠客戶，業務逐漸步入軌道。相對地，一直被視為台積電唯一替代方案、長期維持全球代工第二名地位的三星電子（Samsung Electronics），也將陷入更嚴峻的市佔率競爭困境。\n據韓",
+      "event_type": "policy",
+      "tickers": [
+        "2330",
+        "NVDA",
+        "AAPL",
+        "2317"
+      ],
+      "companies": [
+        "台積電",
+        "NVIDIA",
+        "Apple",
+        "鴻海"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "【漫圖秒懂】受中美雙重夾擊　黃仁勳：放棄中國市場缺乏戰略意義",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754276_71Z3EYMY6KJ7KT7UAF0X6",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:12:37+08:00",
+      "summary": "NVIDIA執行長黃仁勳近日透露，受美國出口管制與中國本土供應商崛起的雙重打擊，NVIDIA在中國AI加速器市場的市佔率已由過往的絕對領先慘跌至0%。黃仁勳警告，放棄中國如此規模的市場在戰略上並無意義。為因應地緣政治挑戰並維持長期競爭力，他呼籲美國政府應採取更開放的人才政策，並宣布NVIDIA已承諾投入5...",
+      "body_text": "",
+      "event_type": "policy",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The Inference Shift",
+      "link": "https://stratechery.com/2026/the-inference-shift",
+      "source": "Stratechery",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T18:00:00+08:00",
+      "summary": "Agentic inference is going to be different than the inference we use today, and it will change compute infrastructure because speed won't matter when humans aren't involved.",
+      "body_text": "If you were looking for the ideal time to IPO, being a chip company in May 2026 is hard to beat. Reuters reported over the weekend :\nCerebras Systems is set to raise the size and price of its initial public offering as soon as Monday, as demand for the artificial intelligence chipmaker’s shares continues to climb, two people familiar with the matter told Reuters on Sunday. The company is consideri",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA"
+      ],
+      "companies": [
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "美股續強台指期夜盤漲　投顧：台股有望衝42000點",
       "link": "https://www.cna.com.tw/news/afe/202605110019.aspx",
       "source": "中央社 財經",
@@ -725,109 +824,184 @@
         "NVIDIA"
       ],
       "guidance_direction": null
-    },
-    {
-      "title": "Samsung profit surges over eight-fold to beat estimates as AI boom fuels memory chip crunch",
-      "link": "https://www.cnbc.com/2026/04/30/samsung-q1-earnings-ai-memory-chip-demand-profit-record.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-04-30T08:32:15+08:00",
-      "summary": "Samsung Electronics reported an over eight-fold increase in first-quarter operating profits, hitting a new record and beating analysts' estimates.",
-      "body_text": "Samsung Electronics reported an over eight-fold increase in first-quarter operating profits on Thursday, hitting a new record and beating analysts' estimates on the explosive growth of its chip business.\nHere are Samsung's first-quarter results compared with LSEG SmartEstimate, which is weighted toward forecasts from analysts who are more consistently accurate:\nThe South Korean technology giant's ",
-      "event_type": "earnings",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ],
-      "guidance_direction": "up"
-    },
-    {
-      "title": "Big Tech's multi-billion dollar AI bets are still on track as Mag 7 giants report earnings",
-      "link": "https://www.coindesk.com/markets/2026/04/29/big-tech-s-multi-billion-dollar-ai-bets-are-still-on-track-as-mag-7-giants-report-earnings",
-      "source": "CoinDesk",
-      "category": "💰 財經與總經",
-      "published": "2026-04-30T05:07:33+08:00",
-      "summary": "",
-      "body_text": "Four of the Magnificent Seven (Mag 7) tech giants are still on track to meet their massive artificial intelligence (AI) spending targets this year, according to their earnings report.\nThe companies that have reported quarterly earnings post-market on Wednesday are Microsoft (MSFT), Alphabet (GOOG), Meta (META) and Amazon (AMZ), with a combined market cap of approximately $12 trillion.\nPreviously, ",
-      "event_type": "earnings",
-      "tickers": [
-        "MSFT",
-        "GOOGL",
-        "META",
-        "AMZN",
-        "NVDA"
-      ],
-      "companies": [
-        "Microsoft",
-        "Alphabet",
-        "Meta",
-        "Amazon",
-        "NVIDIA",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "NVIDIA Sets Conference Call for First-Quarter Financial Results",
-      "link": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-first-quarter-financial-results-6919947",
-      "source": "NVIDIA Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-04-30T05:00:00+08:00",
-      "summary": "NVIDIA will host a conference call on Wednesday, May 20, at 2 p.m. PT (5 p.m. ET) to discuss its financial results for the first quarter of fiscal year 2027, which ended April 26, 2026.",
-      "body_text": "NVIDIA will host a conference call on Wednesday, May 20, at 2 p.m. PT (5 p.m. ET) to discuss its financial results for the first quarter of fiscal year 2027, which ended April 26, 2026.\nThe call will be webcast live (in listen-only mode) on investor.nvidia.com . The company’s prepared remarks will be followed by a Q&A session, which will be limited to questions from financial analysts and institut",
-      "event_type": "earnings",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "All the evidence unveiled so far in Musk v. Altman",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-04-30T02:03:05+08:00",
-      "summary": "The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and corporate documents are circulating from the earliest days of OpenAI - and from before the AI lab even had a name. Some high-level takeaways: [&#8230;]",
-      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\n﻿Emails going as far back as 2015 give a glimpse into the foundations of OpenAI and the early tens",
-      "event_type": "earnings",
-      "tickers": [
-        "NVDA",
-        "MSFT",
-        "META",
-        "TSLA"
-      ],
-      "companies": [
-        "NVIDIA",
-        "Microsoft",
-        "Meta",
-        "Tesla"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Sanctioned Chinese AI Firm SenseTime Releases Image Model Built for Speed",
-      "link": "https://www.wired.com/story/chinese-ai-giant-sensetime-is-running-its-new-model-on-chinese-chips",
-      "source": "Wired AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-04-30T01:23:52+08:00",
-      "summary": "With US restrictions limiting its access to advanced tech, SenseTime is doubling down on open source with a new model optimized to run on Chinese-made chips.",
-      "body_text": "SenseTime, a Chinese AI company best known for its facial recognition technology, released a new open source model on Tuesday that it claims can both generate and interpret images far faster than top models developed by US competitors. SenseNova U1 could help the company reclaim lost ground after it slipped from its place among the leading players in China’s AI development race.\nThe model’s secret",
-      "event_type": "earnings",
-      "tickers": [
-        "NVDA"
-      ],
-      "companies": [
-        "NVIDIA"
-      ],
-      "guidance_direction": null
     }
   ],
   "general_news": [
+    {
+      "title": "AI 晶片沒得談？黃仁勳傳未隨川普訪中 沒在企業領袖邀請名單內",
+      "link": "https://money.udn.com/money/story/5599/9496587",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T08:29:40+08:00",
+      "summary": "路透、彭博等主要媒體周一（11日）都引述未具名的消息人士報導，輝達（NVIDIA）執行長黃仁勳這次不會隨美國總統川普訪問中國大陸，因為他並不在川普邀請的企業高層名單之中。",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Nvidia, Lumentum, Intel, Micron, Qualcomm, Tesla, Moderna, Circle Internet, and More Movers - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE93YUxyN2J0MWdTNnJid2RyVDZQcGt1OVFvODZFTGwtMHd1dVY1Y1Q1aDhuT0w5YzRfbXRKZzlibVN0LW9MdF9XX203VTl2THpQTmp1cjhUUml3YTdqRXNsQk9SUTY?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T04:40:00+08:00",
+      "summary": "Nvidia, Lumentum, Intel, Micron, Qualcomm, Tesla, Moderna, Circle Internet, and More Movers&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Elon Musk, Tim Cook among CEOs to join Trump on China visit, Nvidia’s Jensen Huang not included: Report - The Tech Portal",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSFBMT2o2ZjdUcHgxQ25haUxza3ZNaE9sR00wdUhVLThqcjlKMXY5YnVsendGNW5KOXF5QXNiSTV0UzFnSjdQTS1GdTR3eUNSUEJsajR4QTR1cTZMbHpKN1E5Vy1OZVN3T0o3dVZZald2cnhzbEEyM0tIWWJDNm5ScGhaZnlRWkp5NUR4enpnNldicC0xb1QzQkR3MmtnWlE0LXU3M3lYQ1NiNTRhTVZCSzhCQzlqdEF2OVhQUFM1Wk1ITW5lcWpwMXVsRnQyUkZYV1JB0gHYAUFVX3lxTFBZdndMWWtkem55Q2c5Z25KN0ZrbThPUGF4X3pqb1lway1ZeXRjZW1IUXFHYmRrZzJPS1pLOU01Z1JtT09NU2p4SnpIYTdpbVREbE1wMUw1cnBMRjZDM1lxbzJMUUxWZV9SMVktRHNZb0NfeW4zLWpGS2lWOVg2ci1ZWWhkU1FNMkNiRE9qSXVnelV6U0JVaXI0MjVVVE5VekthMksyQllzQW1HbHhOOTBLaENwSTdhVHBEVEVWWXdTZ0liY3hhTHh6SGlkNFdaNWducjBlTjdSTA",
+      "source": "中美科技戰",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T03:21:20+08:00",
+      "summary": "Elon Musk, Tim Cook among CEOs to join Trump on China visit, Nvidia’s Jensen Huang not included: Report&nbsp;&nbsp;The Tech Portal",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "生態系策略奏效　Alphabet市值距NVIDIA僅差4千億美元",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754929_YSBL1P4S1HW6VQLUF6S80",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:52:06+08:00",
+      "summary": "Alphabet憑藉生態系優勢，成功縮小與NVIDIA的市值差距，在短暫超越後雖有回落，目前差距已收窄至4,000億美元。綜合彭博、CNBC報導，Alphabet過去1年來累計漲幅達160%，截至上週5收盤，Alphabet市值為4.8兆美元，NVIDIA則為5....",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Arm AGI CPU需求大爆發　然供應鏈瓶頸成量產關鍵變數",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754627_98Q7WKK9125TOM8DT1PUE",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:52:05+08:00",
+      "summary": "從2016年軟銀（SoftBank）以320億美元收購，到2020年NVIDIA提出400億美元收購案最終破局，再到2023年以545億美元重新上市，IP大廠Arm的每一次身分轉變，都伴隨市場高度關注與質疑。如今Arm選擇親自下場做晶片，正式跨入原本客戶所在的戰場。自2026年起，Arm將由單純IP供應商，轉變為同時兼具...",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "晶圓代工第二名之爭　英特爾接單蘋果恐讓三星腹背受敵",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754927_FO0LT3GJ1TML9D8W6KR85",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:26:38+08:00",
+      "summary": "英特爾（Intel）在晶圓代工市場相繼掌握NVIDIA、蘋果（Apple）等核心科技大廠客戶，業務逐漸步入軌道。相對地，一直被視為台積電唯一替代方案、長期維持全球代工第二名地位的三星電子（Samsung...",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "AAPL",
+        "2330"
+      ]
+    },
+    {
+      "title": "川普訪中　美官員：馬斯克、庫克和波音執行長等將隨行",
+      "link": "https://www.cna.com.tw/news/aopl/202605120005.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T02:05:03+08:00",
+      "summary": "（中央社華盛頓11日綜合外電報導）美國總統川普預計本周訪問中國，白宮官員告訴路透社，隨行名單包括特斯拉執行長馬斯克（Elon Musk）、蘋果執行長庫克（Tim Cook）、奇異航太（GE Aerospace）執行長卡普（Larry Culp），以及波音執行長歐特柏格等人。",
+      "event_type": "news",
+      "tickers": [
+        "META",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "RT NVIDIA GTC: Taipei, are you ready? 🌏 NVIDIA CEO Jensen Huang is taking the stage at Taipei Music Center to unveil the breakthroughs driving the ...",
+      "link": "https://x.com/nvidia/status/2053940394917003332",
+      "source": "X @NVIDIA",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-12T01:00:00+08:00",
+      "summary": "RT NVIDIA GTCTaipei, are you ready? 🌏NVIDIA CEO Jensen Huang is taking the stage at Taipei Music Center to unveil the breakthroughs driving the next generation of AI.📍 Monday, June 1 | 11 a.m. Taipei Time🎥 Streaming worldwide: https://nvda.ws/4exill1#NVIDIAGTC",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "RT NVIDIA Robotics: The next chapter of space computing is here 🛰️ Together with our ecosystem, we're advancing AI from Earth to space across: ✔...",
+      "link": "https://x.com/nvidia/status/2053973682213773784",
+      "source": "X @NVIDIA",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-05-12T00:00:01+08:00",
+      "summary": "RT NVIDIA RoboticsThe next chapter of space computing is here 🛰️Together with our ecosystem, we're advancing AI from Earth to space across: ✔️ Earth orbit and infrared imagery✔️ Radio frequency and synthetic aperture radar✔️ Autonomous space operations🧵 Here’s a look at commercial space companies scheduling deployments of NVIDIA Jetson Orin, IGX Thor, and testing of the Vera Rubin Space-1 module.Learn more ➡️ https://nvda.ws/4ddGWsD",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "產學研AI盛會！ 臺東大學邀鴻海、NVIDIA專家探討智慧製造 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQRUJ5c2RfS1EwTDh6YkF3anVLODcwbTlzRS0ySEVRSndJY01SZzNxalVQLTRoS2RnUzRRWDRQaTNSY2Zhem9CUGZueklWcVUxa3RnOHBaRVdVTTJsN1J0dnV4RFhsNTc5MkZqRmFYN2pQTGNpRjNkUno2bnhpZGNBNHlMT1Q4TjU1T2VrTWVJYjhGNVdxbHhZZEYzcTNNZUNkc0JjOGpzeTY0VW81aTFiSVBZN1dveVhTSktTTmhWVEJ4TS1JTDNUanZjUy1WVEpTMWgzVjM5NmFqcVN4Wm9aRDFJUXU4WEZiNWlZd3prM1I1dnBxR2U4dUU4Y3hsMDE1M3BFdFhoc05wZnA2TFdRNmFRbm5DUVJKMGpISS1HVmVZZmx6N1hvci1DcW9nSDZvY3d1VTI1THRUek1yY0Y5MGwzMG9JazBCd01rYjVDeTI?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T22:56:58+08:00",
+      "summary": "產學研AI盛會！ 臺東大學邀鴻海、NVIDIA專家探討智慧製造&nbsp;&nbsp;Yahoo新聞",
+      "event_type": "news",
+      "tickers": [
+        "2317",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "OpenAI 攜手業界夥伴提出 MRC 協定，解決 AI 運算網路瓶頸",
+      "link": "https://technews.tw/2026/05/11/resilient-ai-supercomputer-networking-using-mrc-and-srv6",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:49:51+08:00",
+      "summary": "OpenAI 與來自 AMD、博通、英特爾、微軟、NVIDIA 的研究人員近日聯手發表一篇新論文，揭露 Ope [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "CUDA Proves Nvidia Is a Software Company",
+      "link": "https://www.wired.com/story/cuda-proves-nvidia-is-a-software-company",
+      "source": "Wired AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-11T18:00:00+08:00",
+      "summary": "There’s a deep, forbidding moat that surrounds Nvidia—and it has nothing to do with hardware.",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "AI 光纖市場「量價齊揚」！輝達攜康寧布局，中國光通訊供應鏈同步受惠",
+      "link": "https://technews.tw/2026/05/11/nvidia-corning-china-fibre-supply",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T16:57:58+08:00",
+      "summary": "NVIDIA 與美國光纖大廠康寧（Corning）近期宣布合作，將攜手擴充美國用於 AI 資料中心的光學連接產 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
+    {
+      "title": "OPINION: Nvidia and the Illusion of Control in the US–China Chip War - Capital FM Kenya",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVnp0ZEkzbkhZaHpBTXcycHRnU0ZxSnFjY3FkNFROUzhDQ0JCa0pVRlZQV2xsZkd5QllMUF8tYTNDOWlaNEJzYzFrc2NGeDhNOExOVVFQcjlWWkttMG55b2xCYnFiUF9rX3lTUWdSOVh6NnV3OG5qZ2lZTVpiRlVyWlpXVnEzamU2QjI0TWFGeTRNcE00R2pDb3BfT0FqTzRCVFdmNndsQ1dYZFhzb0E?oc=5",
+      "source": "中美科技戰",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-11T11:34:27+08:00",
+      "summary": "OPINION: Nvidia and the Illusion of Control in the US–China Chip War&nbsp;&nbsp;Capital FM Kenya",
+      "event_type": "news",
+      "tickers": [
+        "NVDA"
+      ]
+    },
     {
       "title": "‘Your Career Starts at the Beginning of the AI Revolution,’ NVIDIA CEO Tells Graduates",
       "link": "https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address",
@@ -939,225 +1113,6 @@
       "tickers": [
         "NVDA"
       ]
-    },
-    {
-      "title": "Testing Nvidia's RTX Mega Geometry tech — VRAM-reducing tech a leap forward for path-traced rendering",
-      "link": "https://www.tomshardware.com/pc-components/gpus/testing-nvidias-rtx-mega-geometry-tech-vram-reducing-tech-a-leap-forward-for-path-traced-rendering",
-      "source": "Tom's Hardware",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T21:00:38+08:00",
-      "summary": "We took Nvidia's RTX Mega Geometry technology through a series of tests in Alan Wake 2 and the RTX Bonsai Diorama Demo to see how this tech reduces VRAM consumption and eliminates visual artifacts, thus helping pave the way to photorealistic real-time graphics.",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Supermicro-tied execs used Thailand government entity to ship Nvidia AI GPUs to China — report alleges Chinese web giant Alibaba received restricted servers",
-      "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/supermicro-tied-execs-used-thailand-government-entity-to-ship-nvidia-ai-gpus-to-china-report-alleges-chinese-web-giant-alibaba-received-restricted-servers",
-      "source": "Tom's Hardware",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T18:40:00+08:00",
-      "summary": "A network to smuggle restricted Nvidia AI hardware has been found: it shipped to Alibaba, among other destinations.",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Sponsored: In-rack CDU v. floor-mounted CDU: Which option is better for your data center?",
-      "link": "https://www.datacenterdynamics.com/en/opinions/in-rack-cdu-v-floor-mounted-cdu-which-option-is-better-for-your-data-center",
-      "source": "Data Center Dynamics",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T15:00:00+08:00",
-      "summary": "Making a choice comes down to the specific requirements of the liquid cooling architecture in each implementation",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Qualcomm Eyes Nvidia’s Crown in AI Data Centre Chip Battle - outlookbusiness.com",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRTF3M2hKeGpzeDNMeHVrOHJsM21VRHRlZ3F0ZVVHRE5qVV9SamtUUjZacVFjWWRfOHVIOWdnZUNtUUNsRkR1UEY4a3RwYUZUQ21HLTk0My1oNHdTZDhVblgtTkhCZUE5Zm1LSVdWTG5kUFI2QkJiY3gzMHNzMndCY3BEYnYxdzN2Z01YREExU2VtOS01VHVWNHJMbk05aTTSAawBQVVfeXFMTXVPQ09UYUYtVVNUTWxhSW96LXN1VnhueGhEU3FRZ0JnT01jSjRJd3RjUmtXOXI1U1RsOGVyYWdrMzJuZE5QMkhZb3oyMV9NZGlmcEY4OHFXSm51TUhLaFBDdjFUSXFaVVNvRldGYUZFWFpucmNOdE9oSURjMmZJb25EUWF0T1IzdnJLbG41V2o5MnhMTjdGcDRLUDRXQUhNcWNKVFJxbG1BQU8yRQ?oc=5",
-      "source": "Qualcomm/Arm",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T12:35:38+08:00",
-      "summary": "Qualcomm Eyes Nvidia’s Crown in AI Data Centre Chip Battle&nbsp;&nbsp;outlookbusiness.com",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Elon Musk Called Claude 'Evil' — Now Anthropic Runs On His Nvidia Supercomputer - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSWozMXNZVW5vQTQ0SjdabHJPdExnT0g3NzJUeXhxejhoc3VtWkd2elM4blNLLTdPUzk1dFlyTEhjVjhfbUlWMEpkLWZMSk9UQmxhQzdkMU0zZktWNHNpRXdKUVYtZkJaNEF1MEZHN3pEODh5VnFEN0R6MlVyazFUTkNiUElVQ2pEeUhRMm5PZVN0ZUpiNFdGRE9KLTBzUQ",
-      "source": "Anthropic News",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-09T11:31:00+08:00",
-      "summary": "Elon Musk Called Claude 'Evil' — Now Anthropic Runs On His Nvidia Supercomputer&nbsp;&nbsp;Yahoo Finance",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Qualcomm builds data center CPUs and accelerators to challenge NVIDIA - NewsBytes",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQa2JmVVdhMkx2ZTd0RWxmS2JrRmF6TThLWkRHTnZCVW5WSFlzSnQtb1R4Vy1JOUN3Q1AyQk4wS0w2cEdKd2tFbDNLRDlTZDRXZi0zTm5xY1hfLWlubkJYaDRIeXlJQUJod2hHWEFldi1QWXNjZDc5bXNaeTdnb05WdFAwTXhkMGVEcGhwanNvdmVOV2NTQW15VVp1NndjX2RpM1czTS03eDQtbXJQY1ROQ1hrTE1HVFlI?oc=5",
-      "source": "Qualcomm/Arm",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T07:48:42+08:00",
-      "summary": "Qualcomm builds data center CPUs and accelerators to challenge NVIDIA&nbsp;&nbsp;NewsBytes",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Qualcomm bets on custom AI chips, targets Nvidia-led data centre market - The Economic Times",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNYUJvMXpJbnJuS3d1MFZxT1JkUWlYaWlSXzJQbDRpVmUwTGRBMFlMQVJESUV6WjVnd1NmbDByeVJXclJPUDFrWUctclllRG1OUjBRbTREWEhnZ2hHX3lSTmxfZmhmS2NCMTNFUFFLMDhmclFydmdOc0pXeGJQcWtjbVozVnJ5Rnh0MUhLMVEyVXFDZ1QyS1l6djczbDlFNTV3aVcwRmdGMmRvOFNLbjN1UFhFZDVtMThHLWt6aDhuTUI3MnMxblVLQWJGTlQ2SENFalptdUQzUXdpeFFGV0tQQ3pDMU4zeHVTTTB3Vnc4aEfSAfYBQVVfeXFMTlF4TTRra2pUQ01OUUFSVUZFaTRWMFVSNXBSek11dThFTmRVM2Q0MThRYkE4M2llVzJpT3BPRDlTTmRTSUp3WkpWQXdsNzN4MmdkTERLSTJYOFBSQXZWOXBIZHY3NGo3blYzbkRfTG81YVdGdXRCWGVWanBNcnJUMFBFOFkzSTlvbVZWY1FjemE3ZTl6UjdPY0FVNnlNUE5vdUVkaWp4VnQxM2d0QWt1TEt4ZmZRb3B1VEgtX3F4TFRyN3UyTzAtOUt0a2xzZjU4azBBc1lGWVlwY1NwcExDYmVMWHA5eDhKdVlNSkwtVThiSFFyS0Fn?oc=5",
-      "source": "Qualcomm/Arm",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T07:30:00+08:00",
-      "summary": "Qualcomm bets on custom AI chips, targets Nvidia-led data centre market&nbsp;&nbsp;The Economic Times",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "At #Knowledge26, our CEO Jensen Huang and @ServiceNow Chairman and CEO Bill McDermott unveiled the next chapter of enterprise AI. Through Project Arc ...",
-      "link": "https://x.com/nvidia/status/2052892173910098053",
-      "source": "X @NVIDIA",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-09T07:23:29+08:00",
-      "summary": "At #Knowledge26, our CEO Jensen Huang and @ServiceNow Chairman and CEO Bill McDermott unveiled the next chapter of enterprise AI. Through Project Arc and Vibe Coding, we are integrating the NVIDIA AI Factory into the ServiceNow platform to turn complex intent into seamless action.",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking",
-      "link": "https://www.cnbc.com/2026/05/08/intel-stock-apple-chip-deal.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T06:18:30+08:00",
-      "summary": "Samsung, Intel and Taiwan Semiconductor are the only three companies in the world capable of manufacturing the most advanced chips needed for AI.",
-      "event_type": "news",
-      "tickers": [
-        "AAPL",
-        "TSM",
-        "NVDA"
-      ]
-    },
-    {
-      "title": "NVIDIA Names Suzanne Nora Johnson to Board of Directors",
-      "link": "https://nvidianews.nvidia.com/news/nvidia-names-suzanne-nora-johnson-to-board-of-directors",
-      "source": "NVIDIA Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T04:30:00+08:00",
-      "summary": "NVIDIA today announced that it has named to its board of directors Suzanne Nora Johnson, effective July 13, 2026.",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Wall Street sees 'changing of the guard in AI' as Intel, AMD shares soar while Nvidia lags",
-      "link": "https://www.cnbc.com/2026/05/08/wall-street-ai-chip-love-moves-from-nvidia-to-intel-amd-and-micron.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T04:07:35+08:00",
-      "summary": "Intel, AMD and Micron surged double digits this week as investors bet on CPU makers and memory companies powering the next stage of AI",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "SanDisk Did In Months What Nvidia Took 9 Years To Pull Off — And The Chart Looks Almost Unreal - Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQakxkR3g5N1dpMUlIbnZuWWJ2LW1VLVNjYy1hX01PanhFT3N0UjJsVGhoZEFhTk9FZWtLZmZVVS1ZdS00QVhtXzRQMmRZWGJuQ3NFRDFZUnRWWnQyUEdDNWZTbzlwUE0yYWhhY1dOWTh5ZzRCb0M3ZFQ2dGNVdkFJcmZqSmRYeFBSSW1xWFluWUVUYm45M3YyRUlxb0xsY3M?oc=5",
-      "source": "記憶體產業",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T02:42:56+08:00",
-      "summary": "SanDisk Did In Months What Nvidia Took 9 Years To Pull Off — And The Chart Looks Almost Unreal&nbsp;&nbsp;Benzinga",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Meet the Super Semiconductor Stock Obliterating Nvidia, AMD, and Broadcom Right Now - The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOTRUTzlqVDBSMGRKQXJONzVYNUMySnpTNzdQMFJHSjVhODVPRlBXeEdjWW55MTNHS3hPazlpQmFMX183YUhuMDVKM3dxUDMzcDJfLUZqcjdhaXRFVUVFV01HeHc5QW5WY05rTHNPWHl1Z2U5RS03Q003VUhZdHFKZTFhLUlFSWpKVDZaRHYydUtDMDBuMzJSbg",
-      "source": "Broadcom News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T01:35:00+08:00",
-      "summary": "Meet the Super Semiconductor Stock Obliterating Nvidia, AMD, and Broadcom Right Now&nbsp;&nbsp;The Motley Fool",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Bitcoin Miner IREN Secures $3.4 Billion Nvidia AI Deal, With $2.1 Billion Share Option",
-      "link": "https://decrypt.co/367289/bitcoin-miner-iren-secures-3-4-billion-nvidia-ai-deal",
-      "source": "Decrypt",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T01:02:38+08:00",
-      "summary": "Nvidia gains rights to invest up to $2.1 billion in IREN as companies race to lock down massive AI compute capacity.",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Bernstein sets $100 IREN target after $3.4 billion NVIDIA AI deal",
-      "link": "https://www.theblock.co/post/400571/bernstein-100-iren-target-3-4-billion-nvidia-ai-deal",
-      "source": "The Block",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T22:07:34+08:00",
-      "summary": "Bernstein analysts set $100 IREN target after NVIDIA deal, citing $3.4B cloud contract and 76% implied upside.",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "China and US in AI revolution race as tech rivals battle for global supremacy",
-      "link": "https://www.scmp.com/news/china/diplomacy/article/3352950/china-and-us-ai-revolution-race-tech-rivals-battle-global-supremacy",
-      "source": "南華早報 科技",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-08T22:01:56+08:00",
-      "summary": "At a New York City ballroom late last month, a crowd of hi-tech luminaries gathered at an honours ceremony. The biggest draw for the assembled tech geniuses was Nvidia founder Jensen Huang, the superstar head of one of the world’s most valuable companies, set to receive the night’s top award. In some ways, engineers have been at the centre of every industrial revolution, Huang told the crowd, from steam to electricity to information technology. But this one, artificial intelligence (AI), will be",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Zacks Investment Ideas feature highlights: Broadcom, Taiwan Semiconductor and NVIDIA - The Globe and Mail",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPMEs4MHVHQUNEWlo4YWVZd3pwdGZWcnV1OVFYYjd4a253X0JmUjlYclphSmU1TnJRZi1vOVdYYTVtWXktY3VTU2Vtb3dOMnYxbUloc05HOG9vZjdpRG8wWV9Fc1NuRVJvMWlkdlM5Xy1UM0toZlY4bkstdkJ4c3pkVlhmZXdhSW05cDNvWmhRdFp5bXF3UUZRczBoNWs2Y1VPMHRUb29ueVEzT1ZEY25falNoQy14dzV6RWY1Z25YVXFHbS0wRHBocGhBUmhWLTJDVVJtSWVmRFAtZEM1WFEyQzAtYVA2dElseUsxcV91UkcyR2VIQWc4YkM2WQ?oc=5",
-      "source": "Broadcom News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T16:22:28+08:00",
-      "summary": "Zacks Investment Ideas feature highlights: Broadcom, Taiwan Semiconductor and NVIDIA&nbsp;&nbsp;The Globe and Mail",
-      "event_type": "news",
-      "tickers": [
-        "TSM",
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Nvidia funds construction of Corning plants, in addition to equity investment",
-      "link": "https://www.investing.com/news/stock-market-news/nvidia-funds-construction-ofcorning-plants-in-addition-to-equity-investment-4670532",
-      "source": "Investing.com",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T08:49:23+08:00",
-      "summary": "",
-      "event_type": "news",
-      "tickers": [
-        "NVDA"
-      ]
     }
   ],
   "history": [
@@ -1233,27 +1188,35 @@
   "co_mentions": [
     {
       "ticker": "GOOGL",
-      "count": 9
+      "count": 8
     },
     {
       "ticker": "META",
-      "count": 8
-    },
-    {
-      "ticker": "MSFT",
-      "count": 8
+      "count": 7
     },
     {
       "ticker": "2330",
-      "count": 5
+      "count": 6
+    },
+    {
+      "ticker": "MSFT",
+      "count": 6
     },
     {
       "ticker": "AMZN",
       "count": 5
     },
     {
+      "ticker": "AAPL",
+      "count": 4
+    },
+    {
       "ticker": "TSM",
       "count": 3
+    },
+    {
+      "ticker": "TSLA",
+      "count": 2
     },
     {
       "ticker": "0050",
@@ -1262,15 +1225,7 @@
     {
       "ticker": "1933",
       "count": 2
-    },
-    {
-      "ticker": "1934",
-      "count": 2
-    },
-    {
-      "ticker": "AAPL",
-      "count": 2
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:28Z"
 }

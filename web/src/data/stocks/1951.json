@@ -44,6 +44,18 @@
   ],
   "general_news": [
     {
+      "title": "US in closely-guarded talks to open new bases in Greenland",
+      "link": "https://www.bbc.com/news/articles/cx21669452lo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T07:56:11+08:00",
+      "summary": "It is seeking to open three bases in the south of the Arctic territory, according to multiple officials familiar with the talks.",
+      "event_type": "news",
+      "tickers": [
+        "1951"
+      ]
+    },
+    {
       "title": "Iran’s New Oil Weapon",
       "link": "https://www.foreignaffairs.com/iran/irans-new-oil-weapon",
       "source": "Foreign Affairs",
@@ -108,5 +120,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:26Z"
+  "generated_at": "2026-05-12T01:54:30Z"
 }

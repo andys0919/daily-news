@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-05-11T03:56:22Z",
+  "generated_at": "2026-05-12T01:54:26Z",
   "all": [
+    {
+      "title": "Broadcom Inc. stock (US11135F1012): Solid Q1 earnings beat estimates - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQ0g4ekdpSVFxbkdIRVpJVmhhb3lxM1JiZC1iQ2JqNlhob3EzUXdaQThQNGNzck9DblJqaWx1d0pLSFpuTGFjY2F3WGFXblhZdW8xbk91RXZqeVN5VkZaMHV6TnFROVZMNlNMV2pzeWlXakNtcU1BR2EzU3dJSEowWWZBR2prYUJhekFvRHVKWWlINmlIckRxWU5PUFRxMHpkeG9Zd3dxRExBSW5CTTdiQlFIZUtzMVRWeU9RbzY4ZTY",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T21:46:39+08:00",
+      "direction": "up",
+      "excerpt": "Broadcom Inc. stock (US11135F1012): Solid Q1 earnings beat estimates&nbsp;&nbsp;AD HOC NEWS",
+      "tickers": [
+        "AVGO"
+      ],
+      "companies": [],
+      "event_type": "earnings"
+    },
     {
       "title": "CSL shares plummet 18% on profit guidance cut, $5 bln impairment",
       "link": "https://www.investing.com/news/stock-market-news/csl-shares-plummet-18-on-profit-guidance-cut-5-bln-impairment-4674886",
@@ -246,21 +260,23 @@
       "tickers": [],
       "companies": [],
       "event_type": "news"
-    },
-    {
-      "title": "6 out of 7 S&P 500 energy stocks beat EPS estimates this week: Earnings Scorecard",
-      "link": "https://seekingalpha.com/news/4584115-6-out-of-7-sp-500-energy-stocks-beat-eps-estimates-this-week-earnings-scorecard?feed_item_type=news",
-      "source": "Seeking Alpha",
-      "category": "💰 財經與總經",
-      "published": "2026-05-03T01:10:00+08:00",
-      "direction": "up",
-      "excerpt": "",
-      "tickers": [],
-      "companies": [],
-      "event_type": "earnings"
     }
   ],
   "up": [
+    {
+      "title": "Broadcom Inc. stock (US11135F1012): Solid Q1 earnings beat estimates - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQ0g4ekdpSVFxbkdIRVpJVmhhb3lxM1JiZC1iQ2JqNlhob3EzUXdaQThQNGNzck9DblJqaWx1d0pLSFpuTGFjY2F3WGFXblhZdW8xbk91RXZqeVN5VkZaMHV6TnFROVZMNlNMV2pzeWlXakNtcU1BR2EzU3dJSEowWWZBR2prYUJhekFvRHVKWWlINmlIckRxWU5PUFRxMHpkeG9Zd3dxRExBSW5CTTdiQlFIZUtzMVRWeU9RbzY4ZTY",
+      "source": "Broadcom News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T21:46:39+08:00",
+      "direction": "up",
+      "excerpt": "Broadcom Inc. stock (US11135F1012): Solid Q1 earnings beat estimates&nbsp;&nbsp;AD HOC NEWS",
+      "tickers": [
+        "AVGO"
+      ],
+      "companies": [],
+      "event_type": "earnings"
+    },
     {
       "title": "AI代理與公共安全需求拉抬訂單　摩托羅拉系統上修財測",
       "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754688_DI775XOB79K9H995T12PP",
@@ -410,18 +426,6 @@
       "tickers": [],
       "companies": [],
       "event_type": "earnings"
-    },
-    {
-      "title": "6 out of 7 S&P 500 energy stocks beat EPS estimates this week: Earnings Scorecard",
-      "link": "https://seekingalpha.com/news/4584115-6-out-of-7-sp-500-energy-stocks-beat-eps-estimates-this-week-earnings-scorecard?feed_item_type=news",
-      "source": "Seeking Alpha",
-      "category": "💰 財經與總經",
-      "published": "2026-05-03T01:10:00+08:00",
-      "direction": "up",
-      "excerpt": "",
-      "tickers": [],
-      "companies": [],
-      "event_type": "earnings"
     }
   ],
   "down": [
@@ -499,6 +503,22 @@
     }
   ],
   "by_ticker": {
+    "AVGO": [
+      {
+        "title": "Broadcom Inc. stock (US11135F1012): Solid Q1 earnings beat estimates - AD HOC NEWS",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQ0g4ekdpSVFxbkdIRVpJVmhhb3lxM1JiZC1iQ2JqNlhob3EzUXdaQThQNGNzck9DblJqaWx1d0pLSFpuTGFjY2F3WGFXblhZdW8xbk91RXZqeVN5VkZaMHV6TnFROVZMNlNMV2pzeWlXakNtcU1BR2EzU3dJSEowWWZBR2prYUJhekFvRHVKWWlINmlIckRxWU5PUFRxMHpkeG9Zd3dxRExBSW5CTTdiQlFIZUtzMVRWeU9RbzY4ZTY",
+        "source": "Broadcom News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-11T21:46:39+08:00",
+        "direction": "up",
+        "excerpt": "Broadcom Inc. stock (US11135F1012): Solid Q1 earnings beat estimates&nbsp;&nbsp;AD HOC NEWS",
+        "tickers": [
+          "AVGO"
+        ],
+        "companies": [],
+        "event_type": "earnings"
+      }
+    ],
     "2454": [
       {
         "title": "AI ASIC好熱，聯發科小金雞EPS從11.77元到上看20元，本益比26倍挾成長實力，中長線看好嗎？ - 經濟日報",

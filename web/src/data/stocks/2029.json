@@ -75,6 +75,30 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+      "link": "https://www.insidermonkey.com/blog/1759072-1759072",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:07:31+08:00",
+      "summary": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen. On April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "RLAY",
+        "GOOGL",
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "UK should commit to rejoin the EU, London mayor tells CNBC",
+      "link": "https://www.cnbc.com/2026/05/11/sadiq-khan-uk-rejoin-eu-labour-starmer.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T23:57:21+08:00",
+      "summary": "London mayor Sadiq Khan said that Prime Minister Keir Starmer should commit to rejoining the European Union and be \"bigger and bolder.\"",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
       "title": "FCC reverses course, allows software updates for foreign-made drones and routers until 2029 — agency says blocking security patches could create cybersecurity risks",
       "link": "https://www.tomshardware.com/networking/routers/fcc-reverses-course-allows-software-updates-for-foreign-made-drones-and-routers-until-2029-agency-says-blocking-security-patches-could-create-cybersecurity-risks",
       "source": "Tom's Hardware",
@@ -386,28 +410,6 @@
       "summary": "The telco reported revenue growth of 2.9 percent for the quarter",
       "event_type": "earnings",
       "tickers": []
-    },
-    {
-      "title": "China’s shipyards secure wave of oil tanker orders as Iran war drives demand",
-      "link": "https://www.scmp.com/economy/global-economy/article/3350872/chinas-shipyards-secure-wave-oil-tanker-orders-iran-war-drives-demand",
-      "source": "南華早報 科技",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-04-22T08:00:20+08:00",
-      "summary": "China’s shipyards are emerging as beneficiaries from the US-Israeli war on Iran, securing new orders as crude transport bottlenecks worsen and global demand for large oil tankers rises. With the United States and Iran effectively blockading the Strait of Hormuz – a chokepoint that handles about a quarter of the world’s seaborne oil – shipping companies are racing to expand capacity, particularly in very large crude carriers (VLCCs) capable of transporting about 2 million barrels of oil per...",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "Automaker Stellantis aims to reduce data center footprint by 60%, migrates to Microsoft Azure",
-      "link": "https://www.datacenterdynamics.com/en/news/automaker-stellantis-aims-to-reduce-data-center-footprint-by-60-migrates-to-microsoft-azure",
-      "source": "Data Center Dynamics",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-04-22T00:20:34+08:00",
-      "summary": "Stellantis and Microsoft sign five-year agreement to support migration",
-      "event_type": "news",
-      "tickers": [
-        "MSFT"
-      ]
     }
   ],
   "history": [
@@ -584,5 +586,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

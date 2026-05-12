@@ -75,6 +75,148 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "Here&#8217;s what Mira Murati&#8217;s AI company is up to",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/928309/mira-murati-thinking-machines-ai-interaction-model",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T06:19:15+08:00",
+      "summary": "Thinking Machines, the AI company founded by former OpenAI CTO Mira Murati, announced Monday that it's working on something called \"interaction models.\" The idea behind interaction models, according to Thinking Machines, is that they will let people \"collaborate with AI the way we naturally collaborate with each other - they continuously take in audio, video, [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "META"
+      ]
+    },
+    {
+      "title": "LY Corporation (YAHOY) Q4 2025 Earnings Call Transcript - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVHRkUW16SG53Vk9HUWpJTTRRVnBkRTBfSVI4YWhSczJ0QzJIVDZkcE1GWDRwS3R1YURUTWs1eHZNMG1zU25aai1vZDB2ZzVhbUZJVkFlVGhtT2dMaUVnN0c1NHcybTBkRTVzUmVOV0QzNTRLNUFzYTRrT1cyajNjTUlFX1lzY2xCQ2EyZG9Pa1pDQnZQNV9Dd29B?oc=5",
+      "source": "Seeking Alpha Earnings Transcripts (Google News)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T05:30:42+08:00",
+      "summary": "LY Corporation (YAHOY) Q4 2025 Earnings Call Transcript&nbsp;&nbsp;Seeking Alpha",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Weekly Economic Snapshot: Resilience in the Labor Market",
+      "link": "https://www.advisorperspectives.com/commentaries/2026/05/11/weekly-economic-snapshot-resilience-in-the-labor-market",
+      "source": "ETF Trends",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T04:56:31+08:00",
+      "summary": "The U.S. labor market demonstrated remarkable endurance in April, with job gains outpacing expectations and private sector expansion reaching its strongest point in over a year. This resilience has resonated through financial markets, propelling the S&#38;P 500 to its sixth consecutive weekly gain and a fresh record high. As the Federal Reserve maintains a steady [...] The post Weekly Economic Snapshot: Resilience in the Labor Market appeared first on ETF Trends.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "The 529 Evolution: From College Savings to Versatile Financial Tool",
+      "link": "https://www.advisorperspectives.com/commentaries/2026/05/11/the-529-evolution-from-college-savings-to-versatile-financial-tool-1",
+      "source": "ETF Trends",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T04:27:19+08:00",
+      "summary": "For many years, the 529 plan was a straightforward investment vehicle. Parents saved for college, children used the funds for tuition, and penalties were incurred for any remaining funds. However, the 529 and its cousin, the ABLE (529A) account, have become versatile financial tools almost halfway through 2026. Key Takeaways: Total assets in education and [...] The post The 529 Evolution: From College Savings to Versatile Financial Tool appeared first on ETF Trends.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Kraken parent Payward seeks fresh funding at $20 billion valuation ahead of planned IPO",
+      "link": "https://www.coindesk.com/business/2026/05/08/kraken-parent-payward-seeks-fresh-funding-at-usd20-billion-valuation-ahead-of-potential-ipo",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T02:42:27+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "AiOnX secures hyperscale tenant for Irish data center campus outside Dublin",
+      "link": "https://www.datacenterdynamics.com/en/news/aionx-secures-hyperscale-tenant-for-irish-data-center-campus-outside-dublin",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T01:00:36+08:00",
+      "summary": "Tenant likely Amazon, first phase due to launch later this year",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Roblox 1Q'26: Age Check Hangover, But Aiming to Go Beyond the Blocks",
+      "link": "https://mbideepdives.substack.com/p/roblox-1q26-age-check-hangover-but",
+      "source": "Mostly Borrowed Ideas",
+      "category": "📊 券商與分析師研究",
+      "published": "2026-05-11T22:47:37+08:00",
+      "summary": "Programming Note: In case you missed it yesterday, I have released \"MBI\" Skill for Claude and Codex.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Joachim Nagel: Structural challenges for the German economy",
+      "link": "https://www.bis.org/review/r260511e.htm",
+      "source": "BIS Central Bank Speeches",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T20:33:00+08:00",
+      "summary": "Speech by Dr Joachim Nagel, President of the Deutsche Bundesbank, at the 79th Monetary Workshop, Darmstadt, 8 May 2025.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "How enterprises are scaling AI",
+      "link": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "source": "OpenAI Blog",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-11T18:00:00+08:00",
+      "summary": "How enterprises scale AI: from early experiments to compounding impact through trust, governance, workflow design, and quality at scale.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Ankara’s Crossroads: Rearmament, Risk, and the Prospect of War with Israel",
+      "link": "https://warontherocks.com/ankaras-crossroads-rearmament-risk-and-the-prospect-of-war-with-israel",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:30:56+08:00",
+      "summary": "Talk of war in the Middle East abounds on social media, but not just about the one with Iran. A small, but significant, portion of this chatter relates to a conflict that has not begun. For more than a year now, pundits and politicians have warned of a potential clash between Israel and Turkey. Driving this hypothetical confrontation are a series of issues related to Syria, the Palestinian territories, and regional security as a whole. In December 2025, Israeli Prime Minister Benjamin Netanyahu ",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Conflict, CASEVAC, and the Golden Hour in the Age of Persistent Surveillance",
+      "link": "https://warontherocks.com/conflict-casevac-and-the-golden-hour-in-the-age-of-persistent-surveillance",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:15:54+08:00",
+      "summary": "Editor&#8217;s Note: This article contains frank descriptions of battlefield conditions, including accounts of soldiers dying by suicide following injury.&#160;Western battlefield casualty evacuation doctrine is built on assumptions forged during the &#8220;Global War on Terror.&#8221; Central among these is the belief that the wounded can be rapidly moved from the point of injury to progressively higher levels of medical care within a defined timeframe, commonly referred to as the &#8220;golden",
+      "event_type": "earnings",
+      "tickers": [
+        "1975"
+      ]
+    },
+    {
+      "title": "The Winners and Losers of the Iran Energy Shock",
+      "link": "https://www.foreignaffairs.com/iran/winners-and-losers-iran-energy-shock",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T12:00:00+08:00",
+      "summary": "How the war created a new geopolitical divide.",
+      "event_type": "policy",
+      "tickers": [
+        "1979"
+      ]
+    },
+    {
+      "title": "The Stakes of Trump vs. Xi",
+      "link": "https://www.foreignaffairs.com/united-states/stakes-trump-vs-xi-kurt-campbell",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T12:00:00+08:00",
+      "summary": "How the summit could change the course of U.S.-China competition.",
+      "event_type": "earnings",
+      "tickers": [
+        "1612",
+        "1972"
+      ]
+    },
+    {
       "title": "Why Eurovision's fallout over Israel may change the competition forever",
       "link": "https://www.bbc.com/news/articles/cgkpgm6vk48o",
       "source": "BBC World",
@@ -259,142 +401,6 @@
       "category": "🌏 地緣政治與科技政策",
       "published": "2026-05-09T05:30:05+08:00",
       "summary": "The old order is dead. We just don’t know what will replace it. As Henry Kissinger reminded us in his 2014 book World Order, “no truly global order has ever existed”. After US President Donald Trump’s erratic actions, the gloves are off. American comedians and Iranian Lego cartoons tell us all we need to know about the demise of the old order. If the unipolar order is not viable, and America is abandoning the multilateral order and the rules of the game it created after World War II, what are...",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "Amazon Prime Day 2026 is in June. Get a $150 Amazon gift card and extra rewards with the right credit card",
-      "link": "https://www.cnbc.com/select/amazon-prime-day-2026",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T05:06:52+08:00",
-      "summary": "Amazon Prime Day is coming early this year; it's time to prepare. We explain when the sale is actually worth it and the right cards to use for added perks.",
-      "event_type": "news",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "title": "Crypto ‘wrench attacks’ on the rise, with victims’ family members increasingly at risk: CertiK",
-      "link": "https://www.theblock.co/post/400601/crypto-wrench-attacks-rise-victims-family-members-risk-certik",
-      "source": "The Block",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T02:53:06+08:00",
-      "summary": "There has been 34 verified incidents globally, a 41% increase from the same period in 2025, CertiK said in a report published Friday.",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "U.S. payrolls jump more than expected, but the report had several red flags for the economy",
-      "link": "https://www.cnbc.com/2026/05/08/jobs-report-april-2026.html",
-      "source": "CNBC Economy",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T02:22:51+08:00",
-      "summary": "Nonfarm payrolls were expected to increase by 55,000 in April, according to the Dow Jones consensus.",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "Lambda Closes $1 Billion Senior Secured Credit Facility to Meet Gigawatt-Scale AI Infrastructure Demand",
-      "link": "https://www.semiconductor-digest.com/lambda-closes-1-billion-senior-secured-credit-facility-to-meet-gigawatt-scale-ai-infrastructure-demand",
-      "source": "Semiconductor Digest",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T02:05:20+08:00",
-      "summary": "Upsized financing builds on August 2025 credit facility, supporting continued expansion of Lambda's AI factory footprint. The post Lambda Closes $1 Billion Senior Secured Credit Facility to Meet Gigawatt-Scale AI Infrastructure Demand appeared first on Semiconductor Digest.",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "Duos Edge AI opens 450kW facility in Corpus Christi, Texas",
-      "link": "https://www.datacenterdynamics.com/en/news/duos-edge-ai-opens-450kw-facility-in-corpus-christi-texas",
-      "source": "Data Center Dynamics",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-09T01:00:35+08:00",
-      "summary": "To be used for education, healthcare, business workloads",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "Consumer sentiment falls to fresh record low in May as surging gas prices hit outlook",
-      "link": "https://www.cnbc.com/2026/05/08/consumer-sentiment-falls-to-fresh-record-low-in-may-as-surging-gas-prices-hit-outlook.html",
-      "source": "CNBC Economy",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T00:10:36+08:00",
-      "summary": "Surging gas prices due to the Iran war sent consumer sentiment to a new low in the early part of May.",
-      "event_type": "policy",
-      "tickers": []
-    },
-    {
-      "title": "As Adversaries Integrate, U.S. Partners Bypass Washington",
-      "link": "https://warontherocks.com/as-adversaries-integrate-u-s-partners-bypass-washington",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-08T15:30:53+08:00",
-      "summary": "The drones hitting Gulf Arab states daily since the United States and Israel launched large-scale military operations against Iran in February are not merely Iranian. They are originally Iranian, yes. But these designs and production processes were improved and refined by Russia through years of battlefield testing against Ukrainian defenses. So, they were returned to Tehran from Moscow. Confronted with a threat that Ukraine has spent four years learning to counter, the United States found itsel",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "Could Russia Follow the “Hormuz Playbook” in the Baltic and Black Seas?",
-      "link": "https://warontherocks.com/could-russia-follow-the-hormuz-playbook-in-the-baltic-and-black-seas",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-08T15:15:22+08:00",
-      "summary": "On the eve of the U.S.-Israeli strikes on Iran, 56 tankers sailed through the Strait of Hormuz. Two days later, Lloyd&#8217;s List, the maritime industry&#8217;s journal of record, counted just seven tankers and a single gas carrier &#8212; all small and three of them shadow-fleet vessels &#8212; with hundreds more drifting in the Gulf of Oman. One of the world&#8217;s most important maritime chokepoints had not been mined, blockaded, or seized by a navy. Rather, it had been priced shut by a han",
-      "event_type": "earnings",
-      "tickers": [
-        "1936"
-      ]
-    },
-    {
-      "title": "Why China Waits",
-      "link": "https://www.foreignaffairs.com/taiwan/why-china-waits",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-08T12:00:00+08:00",
-      "summary": "Beijing is playing a long game on Taiwan.",
-      "event_type": "earnings",
-      "tickers": [
-        "2049"
-      ]
-    },
-    {
-      "title": "Hyperliquid Strategies posts $165 million net loss for nine months ended March 31 as HYPE treasury grows",
-      "link": "https://www.theblock.co/post/400512/hyperliquid-strategies-net-loss",
-      "source": "The Block",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T08:19:55+08:00",
-      "summary": "The firm has deployed $216 million to acquire approximately 7.3 million HYPE tokens since its inception in December 2025.",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "AI 重塑 Nokia：台廠 CPO 鎖定高階大單",
-      "link": "https://technews.tw/2026/05/08/ai-reshapes-nokia-taiwan-cpo-targets-high-end-orders",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T07:00:37+08:00",
-      "summary": "根據 Nokia 2026 年首季財報，業務重心因生成式 AI 趨勢發生偏移，由於 2025 年併購 Infi [&#8230;]",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "穎崴第一季 EPS 年增 62% 達 75.95 元，營收、獲利、EPS 均創同期新高",
-      "link": "https://finance.technews.tw/2026/05/08/winways-first-quarter-eps-increased-by-62-year-on-year-to-nt75-95",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T07:00:08+08:00",
-      "summary": "台股股后穎崴公布 2026 年第一季財報，合併營收金額達新台幣 2,765.08 億元，較 2025 年同期增 [&#8230;]",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "One year after India-Pakistan conflict, ceasefire holds - but little else does",
-      "link": "https://www.bbc.com/news/articles/c4g4093dy39o",
-      "source": "BBC World",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-08T06:59:31+08:00",
-      "summary": "A year after their military conflict, India and Pakistan avoid war, but diplomacy and trust remain frozen.",
       "event_type": "news",
       "tickers": []
     }
@@ -838,5 +844,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:26Z"
 }

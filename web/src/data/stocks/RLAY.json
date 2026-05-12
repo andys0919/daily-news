@@ -1,0 +1,151 @@
+{
+  "ticker": "RLAY",
+  "market": "us",
+  "bundle": {
+    "market": "us",
+    "ticker": "RLAY",
+    "company_name": "Relay Therapeutics, Inc.",
+    "quarterly": {
+      "market": "us",
+      "ticker": "RLAY",
+      "company_name": "Relay Therapeutics, Inc.",
+      "cik": "0001812364",
+      "source_type": "sec-companyfacts",
+      "source_confidence": "official",
+      "form_type": "10-Q",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-05-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1812364/000119312526206454/rlay-20260331.htm",
+      "report_kind": "quarterly",
+      "revenue": 3000000.0,
+      "monthly_revenue": null,
+      "net_income": -73291000.0,
+      "operating_income": -78590000.0,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": -26.196666666666665,
+      "eps_diluted": -0.41,
+      "operating_cash_flow": -51112000.0,
+      "capex": 384000.0,
+      "free_cash_flow": -51496000.0,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"submissions\": {\"form_type\": \"10-Q\", \"filed_at\": \"2026-05-05\", \"period_end\": \"2026-03-31\", \"source_url\": \"https://www.sec.gov/Archives/edgar/data/1812364/000119312526206454/rlay-20260331.htm\"}, \"anchor_fact\": {\"start\": \"2026-01-01\", \"end\": \"2026-03-31\", \"val\": 3000000, \"accn\": \"0001193125-26-206454\", \"fy\": 2026, \"fp\": \"Q1\", \"form\": \"10-Q\", \"filed\": \"2026-05-05\", \"frame\": \"CY2026Q1\"}}"
+    },
+    "monthly_revenue": null,
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+      "link": "https://www.insidermonkey.com/blog/1759072-1759072",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:07:31+08:00",
+      "summary": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen. On April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that [&#8230;]",
+      "body_text": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen .\nOn April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that “derisk” the anticipated Phase 3 study.\nOn May 5, 2026, Rel",
+      "event_type": "earnings",
+      "tickers": [
+        "RLAY",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [],
+  "history": [
+    {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "period_end": "2026-03-31",
+      "filed_at": "2026-05-05",
+      "source_type": "sec-companyfacts",
+      "form_type": "10-Q",
+      "revenue": 3000000.0,
+      "monthly_revenue": null,
+      "net_income": -73291000.0,
+      "operating_income": -78590000.0,
+      "gross_profit": null,
+      "eps_diluted": -0.41,
+      "operating_cash_flow": -51112000.0,
+      "capex": 384000.0,
+      "free_cash_flow": -51496000.0,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "RLAY",
+    "market": "us",
+    "company_name": "Relay Therapeutics, Inc.",
+    "latest": {
+      "fiscal_year": 2026,
+      "fiscal_period": "Q1",
+      "revenue": 3000000.0,
+      "gross_profit": null,
+      "operating_income": -78590000.0,
+      "net_income": -73291000.0,
+      "eps": -0.41,
+      "fcf": -51496000.0,
+      "ocf": -51112000.0,
+      "capex": 384000.0,
+      "gross_margin": null,
+      "op_margin": -26.196666666666665,
+      "net_margin": -24.430333333333333,
+      "fcf_margin": -17.165333333333333,
+      "capex_intensity": 0.128,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2026,
+        "fiscal_period": "Q1",
+        "revenue": 3000000.0,
+        "gross_profit": null,
+        "operating_income": -78590000.0,
+        "net_income": -73291000.0,
+        "eps_diluted": -0.41,
+        "fcf": -51496000.0,
+        "ocf": -51112000.0,
+        "capex": 384000.0,
+        "company_name": "Relay Therapeutics, Inc."
+      }
+    ],
+    "health": {
+      "tier": "warn",
+      "label": "警示",
+      "summary": "營益率 -2620% 偏弱・FCF margin -1717% 燒錢中",
+      "icon": "🔴",
+      "score": -2
+    }
+  },
+  "co_mentions": [
+    {
+      "ticker": "GOOGL",
+      "count": 1
+    },
+    {
+      "ticker": "BRK-B",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-12T01:54:28Z"
+}

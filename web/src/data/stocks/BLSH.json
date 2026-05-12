@@ -315,6 +315,18 @@
   ],
   "general_news": [
     {
+      "title": "Anchorage is stepping back from Robinhood and Kraken-backed stablecoin group",
+      "link": "https://www.coindesk.com/business/2026/05/11/anchorage-is-stepping-back-from-robinhood-and-kraken-backed-stablecoin-group",
+      "source": "CoinDesk",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T00:30:09+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "BLSH"
+      ]
+    },
+    {
       "title": "Crypto industry cheers Senate Clarity Act markup date as market structure push resumes",
       "link": "https://www.coindesk.com/policy/2026/05/09/crypto-industry-cheers-senate-clarity-act-markup-date-as-market-structure-push-resumes",
       "source": "CoinDesk",
@@ -531,18 +543,6 @@
       "tickers": [
         "BLSH"
       ]
-    },
-    {
-      "title": "CFTC sues Wisconsin in agency's legal campaign defending prediction markets authority",
-      "link": "https://www.coindesk.com/policy/2026/04/28/cftc-sues-wisconsin-in-agency-s-legal-campaign-defending-prediction-markets-authority",
-      "source": "CoinDesk",
-      "category": "💰 財經與總經",
-      "published": "2026-04-29T02:22:41+08:00",
-      "summary": "",
-      "event_type": "news",
-      "tickers": [
-        "BLSH"
-      ]
     }
   ],
   "history": [],
@@ -569,5 +569,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:24Z"
+  "generated_at": "2026-05-12T01:54:28Z"
 }

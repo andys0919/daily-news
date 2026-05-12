@@ -75,6 +75,16 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "Ankara’s Crossroads: Rearmament, Risk, and the Prospect of War with Israel",
+      "link": "https://warontherocks.com/ankaras-crossroads-rearmament-risk-and-the-prospect-of-war-with-israel",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:30:56+08:00",
+      "summary": "Talk of war in the Middle East abounds on social media, but not just about the one with Iran. A small, but significant, portion of this chatter relates to a conflict that has not begun. For more than a year now, pundits and politicians have warned of a potential clash between Israel and Turkey. Driving this hypothetical confrontation are a series of issues related to Syria, the Palestinian territories, and regional security as a whole. In December 2025, Israeli Prime Minister Benjamin Netanyahu ",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
       "title": "It might be too late for bitcoin’s quantum migration, Project Eleven report argues",
       "link": "https://www.coindesk.com/business/2026/05/09/it-might-be-too-late-for-bitcoin-s-quantum-migration-project-eleven-report-argues",
       "source": "CoinDesk",
@@ -397,16 +407,6 @@
       "summary": "",
       "event_type": "earnings",
       "tickers": []
-    },
-    {
-      "title": "Where Will Micron Stock Be by 2030? - The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaUxlVzFvdmE4TllrTU4yUW5LaE9qRUVNSlJrT3VUME03cTJ3SzVhYnFqbnBhVS1PTm9BT2FxRXZoamlBODlEbWNwRWgyZ0JtUThrZFpFaERoQ2lucmhzNVp3UUJkR3lEX091Y0taaHI3cW5tcXpYUVVlNVVCRHVwS3ZQNA",
-      "source": "記憶體產業",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-04-29T04:22:00+08:00",
-      "summary": "Where Will Micron Stock Be by 2030?&nbsp;&nbsp;The Motley Fool",
-      "event_type": "news",
-      "tickers": []
     }
   ],
   "history": [
@@ -650,5 +650,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

@@ -1,0 +1,55 @@
+{
+  "ticker": "9060",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "AMD is reportedly developing an entry-level RDNA 4 GPU with 8GB of VRAM — RX 9050 rumored to debut with 2048 cores, more than RX 9060",
+      "link": "https://www.tomshardware.com/pc-components/gpus/amd-is-reportedly-developing-an-entry-level-rdna-4-gpu-with-8gb-of-vram-rx-9050-rumored-to-debut-with-2048-cores-more-than-rx-9060",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T01:50:12+08:00",
+      "summary": "AMD is allegedly planning to launch an RX 9050 SKU to compete with the RTX 5050, featuring more cores than the OEM-exclusive RX 9060.",
+      "event_type": "news",
+      "tickers": [
+        "9050",
+        "2048",
+        "9060",
+        "5050"
+      ]
+    },
+    {
+      "title": "EmuDeck's Playnix console is stealing the Steam Machine spotlight with a Ryzen 5 and RX 9060 XT 16GB - TweakTown",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbmU3Mk9oYUxkaGxxWGtGbmtSeUJBRGM3UUdZZ085NmFIYTlEM0FsNHhnWXFJeFVJZUI0Qkgyc2wta3dzR3VwQVpyMmstWTNIOGRQTENILW0xUzJoZ0VkVVdrTDhtNGVKUFJBSTRhb18wa0V1U182UUw2ZnJMWGVWdHZMbmlOV2xnWTBwelNTUVFLYlVtcTkyNi10WkNmMnJxb1lYUGpQTHhVbGxtdDhrM0hhcnM0NS1vWUFySGxqMHpPLS1XaVE1UEFRclg5a1k4UlVRWDQ3U0ZMTEdBRU1RV2FR",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-19T22:47:05+08:00",
+      "summary": "EmuDeck's Playnix console is stealing the Steam Machine spotlight with a Ryzen 5 and RX 9060 XT 16GB&nbsp;&nbsp;TweakTown",
+      "event_type": "news",
+      "tickers": [
+        "9060"
+      ]
+    },
+    {
+      "title": "EmuDeck Built Its Own Steam Machine in an Xbox Series S Shell — Ryzen 5, RX 9060 XT, & $1,000 of Valve-Beating Hardware - Wccftech",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSmdabEpwMWlPTGt0UzQ3eXZKeTY1dzRJQXBjNGJsbGVTQWhqWUpCSndzYkoxaTlpWEtpZ05hWDNaTjZLbmw4UU5mU1lXSVlFeTRtU05ZRG1PWENNaEJxcW5USGc4TFNhcjhtempPZTRBZkNfeHJnelVXdHVBcFpZekZ2SUltaldadlNnRnJCREV4UFlJdWtTVURkVFJjWkppbEhVeG91T0QxZEHSAbABQVVfeXFMTUVuUWxFWDZyRWY0YS1PMlUxY3R4clcwZkdCTlp5bUFKVnNRUkdRd0pZXzJ2Sl9tb05jbDY1cDdlcVp6UjN2TVlCSVVrSGRUZUdLVTNKMkpuN1BDQ2t4a1lSNkpLUER2cUF5TXdLTEsySVczOWk5SEpQSy1zNHBGdzNILXIxRXhMRjFfQTN3d2VQbVp3aU01bFdyUC1tT01CU0pSYjgtRWM1YzE2YUpkd24?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-19T16:45:00+08:00",
+      "summary": "EmuDeck Built Its Own Steam Machine in an Xbox Series S Shell — Ryzen 5, RX 9060 XT, & $1,000 of Valve-Beating Hardware&nbsp;&nbsp;Wccftech",
+      "event_type": "news",
+      "tickers": [
+        "9060"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-12T01:54:33Z"
+}

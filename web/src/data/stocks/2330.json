@@ -74,6 +74,48 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754948_62DLT45H3QXIIQ93SHEFX",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T05:40:34+08:00",
+      "summary": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS...",
+      "body_text": "2026年甫跨入5月，DIGITIMES追蹤全球EMS/ODM業者，進行了2026年第1季前20大業者的排名。生成式AI帶動了科技業的典範轉移與勢力消長，仍然是2026年第1季影響EMS/ODM業者成長與否的最大關鍵，也影響到前20大業者排名的 重新洗牌 。\n在人工智慧（AI）帶來的大量高效運算（HPC）晶片需求下，台積電無論前段先進製程或後段先進封裝，當前均陷入客戶爭搶、產能供不應求的情況。有業者開始選擇提前向上升級至更高階的製程搶先卡位，另有業者則考慮進一步增加投片合作對象，或是如先前喊出 自建晶圓產線雄心 的科技大廠。\n英特爾（Intel）在晶圓代工市場相繼掌握NVIDIA、蘋果（Apple）等核心科技大廠客戶，業務逐漸步入軌道。相對地，一直被視為台積電唯一替代方案、長期維持全球代工第二名地位的三星電子（Samsung Electronics），也將陷入更嚴峻的市佔率競爭困境。\n據韓",
+      "event_type": "policy",
+      "tickers": [
+        "2330",
+        "NVDA",
+        "AAPL",
+        "2317"
+      ],
+      "companies": [
+        "台積電",
+        "NVIDIA",
+        "Apple",
+        "鴻海"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "上市櫃營收五大天王出列 鴻海穩居「營收王」台積電維持亞軍 | 市場焦點 | 證券 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QREJnTDdOMzlhVEp5MmliN0t5Umg2amI5Smo5RVg2Tkg0YzM0dEJVWGswdHo3REJSbnpCbkh4ZVROeGc1NkN6OFJfUlp5dUJfT3lidU5faXF6Zw?oc=5",
+      "source": "鴻海/Foxconn",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:12:22+08:00",
+      "summary": "上市櫃營收五大天王出列 鴻海穩居「營收王」台積電維持亞軍 | 市場焦點 | 證券&nbsp;&nbsp;經濟日報",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "2317",
+        "2330"
+      ],
+      "companies": [
+        "鴻海",
+        "台積電"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "美股續強台指期夜盤漲　投顧：台股有望衝42000點",
       "link": "https://www.cna.com.tw/news/afe/202605110019.aspx",
       "source": "中央社 財經",
@@ -753,122 +795,208 @@
         "台積電"
       ],
       "guidance_direction": null
-    },
-    {
-      "title": "【美股動態】台積電2.3億美元清倉Arm！這筆錢說的話比財報更誠實 - CMoney投資網誌",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNV29TNmRuX255aW12MzF5SGJIYnFwOHRVOGdYZDdQR2I5NDMwRDZTYjd4cXlsczc1dTdOdEFlUkJqUjFObW1IaDdjeTlJM0JKa1J5cEhUNzdRRENObWh0blBaUXJUcllHeG9Tb1Y4TTJVZ3BhSHVfZzBTUmw5eHExdHk0aDE0NFpkS1lRcTRR?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-04-30T06:26:12+08:00",
-      "summary": "【美股動態】台積電2.3億美元清倉Arm！這筆錢說的話比財報更誠實&nbsp;&nbsp;CMoney投資網誌",
-      "body_text": "",
-      "event_type": "earnings",
-      "tickers": [
-        "2330"
-      ],
-      "companies": [
-        "台積電"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "聯電漲價強調不做「投機短打」　英特爾案、記憶體代工傳言受矚",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000753809_P1P97ZNOLYOSU0L8H5AA0",
-      "source": "DIGITIMES 半導體",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-04-30T03:00:00+08:00",
-      "summary": "聯電召開法說會，其中，漲價議題、矽光子與先進封裝進展，以及是否切入記憶體代工，各界高度關注。外傳聯電先前向客戶正式漲價，8吋、12吋製程約漲8~10%，市場人士關注是否還有漲價空間，以及客戶回應。聯電表示...",
-      "body_text": "聯電召開法說會，其中，漲價議題、矽光子與先進封裝進展，以及是否切入記憶體代工，各界高度關注。\n外傳聯電先前向客戶正式漲價，8吋、12吋製程約漲8~10%，市場人士關注是否還有漲價空間，以及客戶回應。\n聯電表示，確實已告知客戶2026年下半會調整價格，預期第2季ASP有所提升，主係產品組合改善，其中22、28奈米製程是主要助力。\n由於原物料、能源及物流成本增加，遂決定在下半年進行調整，定價反映供需與持續投資的需求，價格策略基於產品、協議與長期合作關係，以紀律與永續方式執行，確保營運健康並支持客戶成長。\n聯電強調，不會成為利用客戶的「投機者」。定價策略錨定在價值之上，包括差異化技術、多元製造布點與客戶營運的加成。\n這些趨勢強化客戶的供應鏈韌性。市場對聯電的價值認可，正驅動結構性更高且永續的需求，聯電並未在信函中提到具體漲幅數字，定價完全基於不同技術與長期合作關係。\n聯電說明， 定價調整回歸價值",
-      "event_type": "earnings",
-      "tickers": [
-        "2330"
-      ],
-      "companies": [
-        "台積電"
-      ],
-      "guidance_direction": null
     }
   ],
   "general_news": [
     {
-      "title": "2330 台積電 - 關鍵場景越來越靠近❤️梅雨季不管天氣還是股市，都陰陽怪氣😏-股市爆料同學會 - CMoney",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5BcDlVd0JxWTRVTkVSYTZORzFyT3ZwLXpjaG5oU0RuS2tpTmwxcE12VzY4TS0tQUVHS3EtR2RIZnh4azlpVnFWcmNyNDNQa1p3c3NHUnpnSlA",
+      "title": "電力代操是什麼？獲利率不輸台積電星星電力總座關怡婷曝「像股票低買高賣」【Yahoo財經大人物】 - Yahoo股市",
+      "link": "https://news.google.com/rss/articles/CBMi2wRBVV95cUxNT1pkVGJCbnZjd3pKRFpCZ2V0NFUtcEFBb2k0RkFtSC1tX29sMm1jeWtGd3dMdkZwZG5aY0NKajc5eXBCdEFNZ0M4SDNoSXVhWHQ1RlNwZGthSS1pZW5wamI2ZXF2UW9UY2RBbjlYYWxfdm5MMlR0RVltZngxRW4tc2xZTmZ1clZKVm1DR25fTDMzcEZyZzQ3NmVIZW5QZnh1cEhWX1VRUkZaQkdHYkNyM0NXdFlZTnl6OWdKRVp3VnhWalZaT1JhNVRXdFVnS3BhOXBBS0hVY3gwTzZuY18wbTN5c2NubDVaV19EWGZwaFlqVmhOWWs3M2NvLTBVUUNScUV2S2pQT0lub09xTS02Z1RpTDhSdEpDRm1acjFKNlVlLTVPWVE4dlVvUmNMNmx5eWpack10VXNzS1ltZEpPdGZBQUE4V1F0STdkNHFDSmFob0RNM2MzQnYyQmdnLTFVYWFqVEFLX2FWeXd6WmUwdXRRSXd2cVVSR0M0M3Q3N1FON2hsNFpYRG93RHhaeWI3MkJXS1F2Z010UjJiS216OW93Qkp2SW1MaDJTRE1EeHd5OGZnVDZxU1RVd3JrRURYbS1zNm8zS2tQOFRiX2FLekhURWhkWE5wd2VBM0NyMERPQ1FNSi1Md3ZBbG9wOXdrNTkxWnNjWllRd3BsV2xtSlJvWjIxVS1LNmk1YTFmSVZKZHZ4MjU5OUxUZUJOXzNvdl9xYVBRbHBuYzQza202VDFOY3FEYWg4V0RySEV4b29rVkRQMUN6eS1BU3FBdzItTF9qdUtuakJRVWc",
       "source": "TSMC News",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-11T08:15:06+08:00",
-      "summary": "2330 台積電 - 關鍵場景越來越靠近❤️梅雨季不管天氣還是股市，都陰陽怪氣😏-股市爆料同學會&nbsp;&nbsp;CMoney",
+      "published": "2026-05-12T08:58:26+08:00",
+      "summary": "電力代操是什麼？獲利率不輸台積電星星電力總座關怡婷曝「像股票低買高賣」【Yahoo財經大人物】&nbsp;&nbsp;Yahoo股市",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "早安世界》傳英特爾取得蘋果訂單專家：台積電技術與良率仍是首選| 生活 - 中央社 CNA",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92R205THdxMnZDSGQyMmt6b0dJeks1b2xsbDV1ZGQwZFZrbXhlWkpaMVJUVm9Cd3g2NW1wSHdoUTRUS1NYbXVpR1pWdkVmNEtuRkRCMG12TFdGY1JDVTlF",
+      "title": "不畏英特爾搶單特斯拉 台積電台南2奈米廠將動土了 - 自由財經",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zYnVIZXBEa3lGNmp0cDZ5bmNIR2F4VDZhMllHUzIwdmdIck5fN2IwbHNvM3A0SlNCQzRLQ2dNdkd1OXoyQzFaZUg3aXFQa0VmcEZYeUN1Q2dMMnE1NVZB0gFkQVVfeXFMT0ljNFhNR2tCNk5Oc3dQZlc4RU05Wmx4UHZibWJ6N3N6ZFhnaEphUS1aLWszXy1oUFNvWjhVQWJXY3lWTHdiVzE2cWpZY0NTWWM1VGVHZnd2MTVhd0M1TGRKN3RnUg",
       "source": "TSMC News",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-11T07:52:00+08:00",
-      "summary": "早安世界》傳英特爾取得蘋果訂單專家：台積電技術與良率仍是首選| 生活&nbsp;&nbsp;中央社 CNA",
+      "published": "2026-05-12T08:43:31+08:00",
+      "summary": "不畏英特爾搶單特斯拉 台積電台南2奈米廠將動土了&nbsp;&nbsp;自由財經",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "蘋果轉單Intel！台積電利空，還是AI股新買點？ - news.cnyes.com",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1LLWpzclY0QWlkZlJoYkpXRjVva2VmNUtEemZOM09IT2FkT0Nfc1FDcUcxSnhLZWNvREJfd0tjUUZCcUc0S01ocDkzeHZtX1U?oc=5",
+      "title": "無視美伊停火僵局! 美股主指全收漲再創新高、台積電ADR跌1.73％ - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxPU29EakdFNWJiYmdfRFhreU9yVlVCaWJZWFMtLTY1Q2N2SzA4Q1k0OVMwZWZlRlZUaDhSVTZ5S0tKOWJxV2laUmZPcTJKRDVvMjQ4dnIzdW1tOVFxbDRSSW1yWkV4dF9ra1hRVTJ3SGt4SlZQYlpPa3hxdjdUeTZHbTRqVEpsbzdwX3JoUlNlUVM1YUtqU29RM3BvX2VhRC1sZmFIemd2NW5sMHBiN1ZhSExTdTlGTW1BMGFiYzBYUVNlZjJCVV9zb1dTRTNKZW5adEZMSzJ4dWl3Y3diRk5TZTZEZ284Q0N6NlAxd2NiZ0hRX0oxTm00a0tfUnVXZnc4QUJYdzR5NGtxSEE2cVRoSTdsYUJOTXBpRzh0SnY0d1p0VWZSRkNOQWRhZGE5VjcxVTFwVk4tVjZhMHdRM21uNmpOWG9JZ0lZUFhsWFY2TmxOQlY5ejR1RS1fRF9qdkcxYXR0RkFrdnRXei1jc0N4S1Awbw",
       "source": "TSMC News",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-11T07:40:24+08:00",
-      "summary": "蘋果轉單Intel！台積電利空，還是AI股新買點？&nbsp;&nbsp;news.cnyes.com",
+      "published": "2026-05-12T08:43:01+08:00",
+      "summary": "無視美伊停火僵局! 美股主指全收漲再創新高、台積電ADR跌1.73％&nbsp;&nbsp;Yahoo新聞",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "2 千億買盤湧向神山、中小股慘了？四問解讀「台積電條款」資金洗牌 - finance.technews.tw",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOam1PelhxOURJNUM0VEt5akNZS2lBWVRia1JzMEgyeG5VaU1EeXRLWk1LcHVSRVVLbGxvNnZlUlVaaUM5UVp0ZENxZkRlMWs4dlRuakZEeWVFcXVscVVPbmRBcjMtcDJ1TUI2SzE2VUs5eFUtTE8xdnBjNjN2TDBIUEMtZG0wN2Nubm1FS2ZRZkpzMHo5S2tsZ3VGVWw1UldyYUs0d3o1cHJDMU1IM05vWUdHWXNvTXB0V3c?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-11T07:33:15+08:00",
-      "summary": "2 千億買盤湧向神山、中小股慘了？四問解讀「台積電條款」資金洗牌&nbsp;&nbsp;finance.technews.tw",
+      "title": "沒跟上美光點火！「這檔記憶體」三大法人撤資、國家隊反手投入4億元台積電、緯創也在入手名單 - FTNN 新聞網",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1mcmtEX2RRbDhwRVNycUs5Qk5Xb2JCcXZCVDFtY3ZIbVFTLUEzQ0tLaWxlR0lYNmo5VzYxWC1ydnF1YUZpSE1uRzJJNA",
+      "source": "台股三大法人 (Google News)",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T08:40:00+08:00",
+      "summary": "沒跟上美光點火！「這檔記憶體」三大法人撤資、國家隊反手投入4億元台積電、緯創也在入手名單&nbsp;&nbsp;FTNN 新聞網",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "AI推半導體兆元時代提前4年　台積電領軍全球大擴產 - ETtoday財經雲",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xMDF2TGpBRm8wNmtLakZ4Y09OanhWcG1mNWdFTjVEemNpTHd4Yi05cUdlWGNCRGYzZFU0Rmc2Ymd3bkVXb2xBelUwOUJBNHRwQXfSAW5BVV95cUxNOXVBUWJlMkU5TWdCYjdKT1llclhhX1lUbG9GOGFiTEFLUG5NTnJVX3ZwWDdydHdiNzFWNGFlamJHY0gwRGFNYnlvYjdYVl9PV2tXWFdMWDFUSmRWQ0RjUWJ0eXdyRVo4N2VPT014QQ?oc=5",
+      "title": "AI下半場，最大的贏家依然是台積電？ - 鉅亨號",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE83UzlvSDhBcXJic0JxalZBd3p1NGJxZWZKLXJVQkxOeE9rUjRSb2dBRTdlbmNWalhNSFBtd2ZDUjV1X19TLWRWcw",
       "source": "TSMC News",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-11T07:24:00+08:00",
-      "summary": "AI推半導體兆元時代提前4年 台積電領軍全球大擴產&nbsp;&nbsp;ETtoday財經雲",
+      "published": "2026-05-12T08:35:28+08:00",
+      "summary": "AI下半場，最大的贏家依然是台積電？&nbsp;&nbsp;鉅亨號",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "Sony攜手台積電研發/製造次世代影像感測器- 新聞 - MoneyDJ理財網",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNmRTTjJOVW1LbFpNalJDMFdmbVMwTkVMeGp0b3pGSlZjN3pMM0lWdzE0NldFRVhtR2dLNVRybGcxZGFmdGtzOXlRb1hCZXpFYkgxTFVSaURZZ3BpZHBXV1FIQmNSYWtHcmNUWklsanZqNkNYcDN5TGtncFNPdXFUS3R4WlR6bHBkSXUxSzdPQkk3QQ?oc=5",
+      "title": "ETF「台積電條款」如果是短線送分題，現在該加碼嗎？台積電大波段怎麼抱？ - 商周財富網",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VamhtOFg0Q2RxbHlGRHM4THlXb2JuS1Fhei1RaW9BOHpzVk1vTnBuaUNVTU5OaTZqYUh0N1lUbi13RFp1YVRRU0V4WHhDa01McFhGVS1qTUJBQTFSLTlDWmxOTnVwb0ZQWUZaR2NQSlpJOEZUV0E?oc=5",
       "source": "TSMC News",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-11T07:10:00+08:00",
-      "summary": "Sony攜手台積電研發/製造次世代影像感測器- 新聞&nbsp;&nbsp;MoneyDJ理財網",
+      "published": "2026-05-12T08:02:39+08:00",
+      "summary": "ETF「台積電條款」如果是短線送分題，現在該加碼嗎？台積電大波段怎麼抱？&nbsp;&nbsp;商周財富網",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "手機寒風衝擊高通、聯發科下修在台積電產能，AMD 意外成最大受惠者 - finance.technews.tw",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQkZLNXlEdE5qTVNTSm8xcUJJUFRSZzRBckp6SUFJVVZBOTZNWmFfdWpPRWdLNkxIRGtfMlhCQmZsb0JCdElDcU5RT2RQM01UZDl2OEJNZVZHazdhSGFwaWg0VW02YTVMU28zQUZLLXprZjhlWkozMm5CSlNmU01ON2hza0V6R3BVSENHeXpSY3ptcy01QU1BY290Q3FzSURieWxkS1VLaDcyYTQtV1hNeVpaa1M?oc=5",
+      "title": "金管會解除ETF「台積電條款」，對投資人是利多？台股4萬點，現在還能加碼台積電？ - Smart自學網",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE14WERyTkNmLVBNRTAwU3pSR1NzMTBXdk85bnFOalZJQ19nNFFkcDNEbWRSS0VWamVUQV9ZN3cwUkYxQTZ0Z1VCTTFXV0tWX2otbWtJWU5EdFpIcFAtQ1Y2V21vbDVHbmh0bUlwQ1VZMmRuTkNfcTV1VEtVdHY?oc=5",
+      "source": "商業周刊",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-12T08:01:12+08:00",
+      "summary": "金管會解除ETF「台積電條款」，對投資人是利多？台股4萬點，現在還能加碼台積電？&nbsp;&nbsp;Smart自學網",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "【新新聞】台積電漲、千萬勞工退休金跟著漲 護國神山與台灣社會的命運共同體 - 新新聞",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB5bFlER3dfa2VUMEJVcDZhZFhEdkdSU3lWTnB6TFBOYTlaX3BDLURQTmtsT2M5WVdxZDlPaGFPOGlvWlFINjF3RXJ4TDVsUQ?oc=5",
       "source": "TSMC News",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-11T07:03:45+08:00",
-      "summary": "手機寒風衝擊高通、聯發科下修在台積電產能，AMD 意外成最大受惠者&nbsp;&nbsp;finance.technews.tw",
+      "published": "2026-05-12T07:58:35+08:00",
+      "summary": "【新新聞】台積電漲、千萬勞工退休金跟著漲 護國神山與台灣社會的命運共同體&nbsp;&nbsp;新新聞",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "2026年賺161億！台積電美廠卻慘遇這事？ - 鏡週刊Mirror Media",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xMC13NjJOcGhyY3pBY0JXN0UxTHJ6VE5aTGpxX2phWHQxdDN6OVNnNWM5bFpmUDlNUWtERml2NjBpVmlVOW5lMUFudnd4R29RZnh0NTd6SFBwUnhk0gFiQVVfeXFMUEhtank5cFZsaExuX0ZiZElYN296R0FacEhCVWN2VXlDckxsenVpbVAta25CcGZDNVN4UG5ndUVwRXJCY3NpY1FIZmxIRVYtanBrZUhKNmVkWXF6QUh1WHZpUUE?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:54:00+08:00",
+      "summary": "2026年賺161億！台積電美廠卻慘遇這事？&nbsp;&nbsp;鏡週刊Mirror Media",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "台積電美國廠獲利曝光！2026年猛賺161億 主委曝三大奪命危機連環爆 - 三立新聞網SETN.com",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fblN3Tl9MbVFaNnNWa3JfeFpQZWVqOWNxTFk2OU1Td3ZfRklQdnI3cV9WUlFMMjVkUkEyTEFOS3paMnVJRmM4RUFFdnRMRzVIbkUwZmd6UHPSAV9BVV95cUxOcE5XSzJrRVRMYVMzRzBnMHZ1ZExjbElRU0VzMU0yZXFxcnhqR0VheHZPUEYxcXpLaVZVNkl2WVg4MzB4UTNqWkl6di1mYkR5NDRrQUs2bUlUbi1USWxHYw?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:54:00+08:00",
+      "summary": "台積電美國廠獲利曝光！2026年猛賺161億 主委曝三大奪命危機連環爆&nbsp;&nbsp;三立新聞網SETN.com",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "台積電ADR逆勢收跌 費半創新高 日月光勁揚逾3% 聯電也收漲 - 經濟日報",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHZWktYnNEMmZQRVpEVEpid1NDUG1RNE5IZUpXRk4xMzlWVkxjZnR0RG9OVGNWUHljaldPZWRJUWRIMVp5Q1pvNTJFWi1rR2dBbnNPUnEtSlAwU2Ru0gFiQVVfeXFMUE5SY2V3QkJUS3dMR2I1N1JJTkpYSEJTZlZadmFtUkdJRHBBY2dVOTNEYllmekJWTkNQTFlDeFdDRC1mQzc3TVJDTExwNkpGc0YwcUJEYUFIV01SYXItcHg0cVE?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:46:48+08:00",
+      "summary": "台積電ADR逆勢收跌 費半創新高 日月光勁揚逾3% 聯電也收漲&nbsp;&nbsp;經濟日報",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "05/12 盤前快訊：費半狂飆 2.59%！AI算力抵銷台積電利空，台指夜盤大漲309點 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Dcm5JT3VETFBqdElxdEh0YmdTSHJzWE96ZWYtUjlETHJ6cWVKRWNxRGIzOU12QXoxZ3JzZHkyWEs3Nm5RQkxuQWpFWUtoblJJZnczSE1jZVpSVVRaZGV6RTJFM09RTzdsdXJtSU9oVENTVXBJbGNBN19GZ0xWZw?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:37:21+08:00",
+      "summary": "05/12 盤前快訊：費半狂飆 2.59%！AI算力抵銷台積電利空，台指夜盤大漲309點&nbsp;&nbsp;CMoney投資網誌",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "台積電ADR逆勢收跌費半創新高日月光勁揚逾3% 聯電也收漲| 全球財經| 全球 - 聯合新聞網",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBTTS03UW5YX1hpcWJCTFhscUNGVlFPSVBOLWpKS3FvRldmRXFFLWFJa1kzR0dUMEtTT0ZPVDlPRnUxSXZJY2dyMXZYTHY2Y3FM?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:36:28+08:00",
+      "summary": "台積電ADR逆勢收跌費半創新高日月光勁揚逾3% 聯電也收漲| 全球財經| 全球&nbsp;&nbsp;聯合新聞網",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "台積電產能滿載引排擠，半導體鏈迎漲價潮-財經焦點情報站 - CMoney投資網誌",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVHFxaGZYU1BwblB5YWttQWhKOWZScUpQdElIVXVQSEZBOGh2cC15R2NWZnRfQ3ZuWHVISHRJSXUxNHNRRUtIZEtkY3dYVXBZZGNQdURVQkZzbzg3NTlCbW9ubUt5UVRGS2FOMzJsLV9ySDExSjJrWkdwXzk4dkYxQXBR?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:30:32+08:00",
+      "summary": "台積電產能滿載引排擠，半導體鏈迎漲價潮-財經焦點情報站&nbsp;&nbsp;CMoney投資網誌",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "大型芯片股點火！美股無畏美伊戰爭收高 台積電ADR反跌1.76％ - facebook.com",
+      "link": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxOdXYzeWJTb2FLOGRTYUt2VDRoQXBGaGJWT1piWk5TZWlHejVuQWdhVTZpUU1TMWxmNVg3dGhMUGlJX1EtZGZnSl9XYlRHd1FnenFROXNwaVJ0VlhxQTJ0N1dGRk9NNDlJUkNhcHJpRUJZY3YtMzVxR2lidUJFc2xOVE5VMVk3aFJGNFZxTmtJLTFNNV9leFp2R0lTMHRueHpTdzZLdE5XY2RPWDFxQW5lUmlDXzdVWE11SU5sN1VLYlhWNW43alI2bVN1eUNHSEI3dklKUEZ5UHlsaVNMVW1fRGdyWnF6cGxGM0JFNXFPVzNQTGdnRGp2ZV9mbk56NkgyM0FHVVNpaWdpMzFTd3p6LUhIeWpXNjQyV29EV211QU1FYWJILVNqYWNhS2JTUmNodXIwWExxYUJFQjlWbEdLcGdyUUVOSEZXOU9JVDJGUzhSNTRWVHFBSHdrUWhIMlRDb0pKZTRLZ1I5QnhwdHFxZEtiVG5yUUF0aXc?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:22:40+08:00",
+      "summary": "大型芯片股點火！美股無畏美伊戰爭收高 台積電ADR反跌1.76％&nbsp;&nbsp;facebook.com",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "大型芯片股帶動！美股收紅「標普、那指再創高」 台積電ADR反跌7.14美元 - Yahoo股市",
+      "link": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxNOTJGV3FiWlh6U3BLRG90cUpJLU1keUxSUmxzdDRLWmtLZ3JSU1k4UmlfWGdFaFFhTWo0eFhUNWVCVkRCLTNhUjB1amZKUF91MU9mOGROSlMzRHQyaEpfZkp3VWQ0dkJ5SGJST0p2ckNzM0V6TVJqMjdXdTQ1eFBTNGxpenpmb3ZxTF9iTlpJbUJDU3ZZMmJiSjRhY3ptMTJwVlJQSmZqTjNRR2FxZmpKak9maGxEczVSVzBnMk1MYk1qaU85UE5rWmpVN1hvSl9xZEl4dnhyUFJKQ3lQemNEV1MwdFVYS1pCQzdSTkt1VzBCdzl2NzktWm41bFJMYjdHQUkwN3NHVW5ic20tSklLZG0xWFd0bUdVOFU1Y0tzaE9leWlMX3plOWE5aUpzZEdCQ0E3RzlEQ3hfVUpCVm1lQklRU3JvbUxtMVJ0WDl3cGZmaXFUaHFJZmRUaE5oMDd5UlV4SExPdnZ2cWlvTHlLZU9obC1lbzB3bXc?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:15:00+08:00",
+      "summary": "大型芯片股帶動！美股收紅「標普、那指再創高」 台積電ADR反跌7.14美元&nbsp;&nbsp;Yahoo股市",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "手機產業寒冬反成 AMD 養分？聯發科、高通撤出台積電 4/5nm，蘇姿丰低調接手台積電產能 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxOTmNwejIxNFJfSVh1THZBWU92TlJEYW9FVVpTd3FtVzMxejVFQUV2ZmRGOGhNb1YtRGlvd3l4X3ExdWVBd29zOHUzcnpXR0N5TG1PY3pTZEtmSUctX1JBbTlyVGhaVExJeTMwSjVENHUya0stQ3JHRGFHY1ZpS0V4cjV4X295TkZqdTRvYldMYUFPQWdqZkhWYUxyWWp4TmhHQXhpM2NzR1dFdFQ3YkhHYTdCenZ6ZEdXMUs5XzhSWkZaMmpyc24xNUk2M0lGbXNwdEw2dEVhMW1qQnFodGsyT0VVck9TenBqb3hRdWlaT0c0ZGVjaE5vYW9TNXFCWFZ1dHF1dWVGNEctYWlZRDNrLVF2N1dWc3RSYzVVeFNqVi1HZ3djX09oTGhJWUJuOXdFcEoxd0xid2w1aDRtcXd6Y0tzS0I4MTctM0ZNSw?oc=5",
+      "source": "TSMC News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T07:07:37+08:00",
+      "summary": "手機產業寒冬反成 AMD 養分？聯發科、高通撤出台積電 4/5nm，蘇姿丰低調接手台積電產能&nbsp;&nbsp;Yahoo新聞",
       "event_type": "news",
       "tickers": [
         "2454",
@@ -876,108 +1004,60 @@
       ]
     },
     {
-      "title": "台積電要緊張了？英特爾靠「1關鍵」搶下蘋果訂單　專家：情勢出現轉變 - 三立新聞網SETN.com",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqUk8xaUd4VWlGdkFsX2ZOZk9vSWF0T1ZlRloxaUhVY1d2Q3lGZndva19BSXZ3U1dWN2dwTktZZjVuZGxWamtreU5qanFHZnF5UVRPUWR4WUjSAV9BVV95cUxOQlpNWkQxSjJRQXJqX21tdVdBOVJzeFBPUnIwc3g3dzNKN3hEdWRMa0owUmhqa3lCSGpzako1YVpHdXhIR3JlQWk2d1U1RUpxZTZ6WUJ0d1lqc1B3Y0x2OA?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-11T05:20:00+08:00",
-      "summary": "台積電要緊張了？英特爾靠「1關鍵」搶下蘋果訂單 專家：情勢出現轉變&nbsp;&nbsp;三立新聞網SETN.com",
+      "title": "2030年前最大的半導體贏家 外媒單點台積電",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5433541",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T07:06:00+08:00",
+      "summary": "初次上稿05-11 22:01 更新時間05-12 07：06 〔財經頻道／綜合報導〕到2030年，半導體市場規模預期將翻倍，超過1.5兆美元，約為2025年規模的兩倍。外媒The Motl...…",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "〈台股盤前要聞〉台股衝浪再拚4萬2、台積電與Sony合資設廠、4月出口創單月次高 - news.cnyes.com",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBTVlI0VGE2YU1Mei16R2RYNnRNZnh3MDBFTGRQdlBnOUNOVHlNX21tNDlwTThwb2hUTlA3RGV1QVp2N3dwdXBPSFZSNlo3RDA?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-11T05:10:01+08:00",
-      "summary": "〈台股盤前要聞〉台股衝浪再拚4萬2、台積電與Sony合資設廠、4月出口創單月次高&nbsp;&nbsp;news.cnyes.com",
+      "title": "LTN經濟通》川普發功 半導體弱雞變鳳凰？",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5433156",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T06:48:28+08:00",
+      "summary": "英特爾股價一年漲幅483% 〔財經頻道／綜合報導〕美國晶片大廠英特爾18A製程技術（約等於台積電3奈米）產能據報已開始提升，與此同時，良率也出現改善。加上近日傳出，英特爾已與蘋果達成協議，將...…",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "台積電4、5奈米產能超微趁機接手- 日報 - 工商時報",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1FMlR6LWtTRElfd1lKOGdGMjllMEN4cXluN3M3Z1FzbWNnNXVTQnh6STZaQVlNZzI3clR6RUZ6Mk1ROXpyWUVYbUNja3VyUmVCb2RfdkdhVGdSdExGYjZz?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-11T03:00:00+08:00",
-      "summary": "台積電4、5奈米產能超微趁機接手- 日報&nbsp;&nbsp;工商時報",
+      "title": "美股收盤》無懼美伊停火僵局全數收紅 台積電ADR下跌1.73％",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5433631",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T06:31:10+08:00",
+      "summary": "針對美國與伊朗的外交僵局，美國總統川普稱美伊停火協議「岌岌可危」，不過市場對於人工智慧（AI）的樂觀情緒推動股市上漲，美國華爾街股市11日全數收紅，標普500指數、那斯達克指數均...…",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "台積AI霸權意外鬆動？　超微擁抱三星3/2奈米製程原因有三",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754759_S278VQ134VW60HLFW75X7",
+      "title": "台灣供應鏈「非積商機」來了！　英特爾滿血復活的三大關鍵",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754934_BJ485FF34JJG0R3X7CEKY",
       "source": "DIGITIMES 半導體",
       "category": "🔬 半導體與硬體",
-      "published": "2026-05-11T03:00:00+08:00",
-      "summary": "AI半導體供應鏈版圖出乎預期出現鬆動，台積電稱霸多時的晶圓代工戰情有所變化。市場盛傳，美系晶片廠陸續與三星電子（Samsung Electronics）、英特爾（Intel）展開合作，其中，超微（AMD）更已將2奈米訂單交...",
+      "published": "2026-05-12T03:00:00+08:00",
+      "summary": "台積電產能陷入供需失衡，一度被質疑面臨生死關頭的英特爾（Intel）取得突圍破口，在執行長陳立武以激進的轉型策略重整下，正重返半導體主要賽道。除了代理式AI帶動CPU需求，業界更解讀三個主要因素，促使英特爾「滿血復活」：美國製造、台積人才、取得台積供應商代碼的台灣供應鏈。台灣供應鏈也可望迎接「非積商機......",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "分析｜晶圓代工成熟製程股價跑贏台積電 一文看各業者擁有題材有哪些 - 知新聞",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5CRFFTNFVYVm9XRTRaek9sTnJxSE04RzQtdlRVZkxFckcyU0pqV3AtUW0yZU44QzVTMEhpemI0d0hGLXkta3diRG9iUnBKTDIzbTFjTk1taTRxbHU0VXhPUHM3aThDZHVmaE1NUkRVOA?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-11T02:49:55+08:00",
-      "summary": "分析｜晶圓代工成熟製程股價跑贏台積電 一文看各業者擁有題材有哪些&nbsp;&nbsp;知新聞",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "【Amy & Dr. Chip】台積電直衝1奈米　三星為何踩煞車？",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000753652_EUY7LI644VOZ7H3LCZVDB",
+      "title": "蘋果、高通與聯發科各有一條路　台積產能照樣搶破頭",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754837_CUJ7C1ON4IBMRI6EA5ICX",
       "source": "DIGITIMES 半導體",
       "category": "🔬 半導體與硬體",
-      "published": "2026-05-11T02:36:35+08:00",
-      "summary": "人工智慧（AI）需求全面爆發，晶圓代工戰局正式升級！台積電持續推進先進製程，朝1.x奈米邁進，試圖以技術領先搶佔高階人工智慧（AI）與高效運算（HPC）市場。三星電子（Samsung Electronics）則是選擇放慢...",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "【Amy & Dr. Chip】台積電直衝1奈米 三星為何踩煞車？ - DIGITIMES",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMEktSmpxa2Y4RnZjQjlVWHh4czBJRlNoNktzODM1X0k2aFdPSERtUkFpTGJkbEJ3U3p5bG10WEEtTHkzUFZwN3RWbG9hWmxxR2ExeUthckhwYlJrbEZFUERQdXVqS2hzdzhvYms4dy1nanZ0aUMyUlNic1RXbVNXMDF0Rkh2QklPMGlPeXFHUDIwYmp1eEo5LQ?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-11T02:36:00+08:00",
-      "summary": "【Amy & Dr. Chip】台積電直衝1奈米 三星為何踩煞車？&nbsp;&nbsp;DIGITIMES",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "ASML CEO回應張曉強　High-NA EUV可省下30%成本",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754728_IMQ8V7J41KTMA19LZG43O",
-      "source": "DIGITIMES 半導體",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-11T02:28:51+08:00",
-      "summary": "台積電副共同營運長張曉強近日在台積電北美技術論壇表示，ASML高數值孔徑極紫外光（High-NA EUV）微影設備非常昂貴。對此，ASML執行長Christophe Fouquet於5月5日出席米爾肯研究院全球會議（Milken...",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "聯發科高通傳釋台積電產能 AMD默默受惠 - Yahoo新聞",
-      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNQ1dzWVRvNFBWSUo3X2ZNYmo1TmcwYVdicUlaTTRHZGw0N0NsWDVLTUtiaXJIek5qcE5nRk01OUROejdRQkNKVlRGcE5aZ0Zod3dBRmUyT0NxSklBWjFuczVqaWhrblRpX2VBRzlvd1h5Wi1UV21mZkFwc1JKME5KLTBqNy1OZnMyeGtvODhaY0hBYXEwZVV2c21rMXN3S3loUkF0RmYxOVNaMFF4aTdTY0RaMFBLQTFpOGRwNmtQZmItaXZENl9GYlNZdzRVS2I3NWF0WHFWSzhhMjl2b2xSeXpXdTE5aTJVR19PUUxzZzR5Yk9acjFza3M3YW5iZHk3dHJScF9ZV2tBM0VEbWtrVUFlcWNQTzE4",
-      "source": "聯發科/MediaTek",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-10T23:20:26+08:00",
-      "summary": "聯發科高通傳釋台積電產能 AMD默默受惠&nbsp;&nbsp;Yahoo新聞",
+      "published": "2026-05-12T02:27:11+08:00",
+      "summary": "在人工智慧（AI）帶來的大量高效運算（HPC）晶片需求下，台積電無論前段先進製程或後段先進封裝，當前均陷入客戶爭搶、產能供不應求的情況。有業者開始選擇提前向上升級至更高階的製程搶先卡位，另有業者則考慮進一步增加投片合作對象，或是如先前喊出自建晶圓產線雄心的科技大廠。但以現狀來看，各家大廠其實都未真......",
       "event_type": "news",
       "tickers": [
         "2454",
@@ -985,25 +1065,26 @@
       ]
     },
     {
-      "title": "手機需求大減！聯發科高通傳砍台積電產能 AMD蘇姿丰揭「這異狀」 - Yahoo新聞",
-      "link": "https://news.google.com/rss/articles/CBMihwNBVV95cUxOeTNsNlNMWm96OFh6SnhFQkdvalBxdU1Sb1lLak4xaWt2cGI2YjZwQUJZLU1hRFJpQWh3ZzhacWJLZWhhUlZfbzhNUEs0SHZFLVFNaWg0VGdNTlRkbkxuaU9TZlZCVkM5MmVxMC1oVk1USE14T1VTWjAzZkF3VjFuS2ktSEpCWHNpT0VCVDBYbk9fdkJwT3EzOUs2NUM3UmNta3htQ1RkNnBzN2tIS05IM25Semd2M3ZhSkN0bHBFQ2xkaE9JeUZNYXJiOGU4cllqeUFDZ3A1cEdLV3JrQ0NXbVhGSW1tdXNxQW55RXowcmF1ZFNQUGQzZ2ZsWHdtN3ZGM1RrQzhNWkF1X21jRnlvaEZicG1Pa1dlclhYT3JqU0JWOXozaExORDJ6Sml5ck01RTNrdXc2d0xSb1pNS0k1WlhkM0dpQTRiVzh5a3lMQURsN3JBRlhlR1NadkVnMl9RaGJWZndzZHY0TmJaMGRORERpYzNod1lZVFpWNGFJalFPTXdDRTRN?oc=5",
-      "source": "聯發科/MediaTek",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-10T19:20:34+08:00",
-      "summary": "手機需求大減！聯發科高通傳砍台積電產能 AMD蘇姿丰揭「這異狀」&nbsp;&nbsp;Yahoo新聞",
+      "title": "晶圓代工第二名之爭　英特爾接單蘋果恐讓三星腹背受敵",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754927_FO0LT3GJ1TML9D8W6KR85",
+      "source": "DIGITIMES 半導體",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:26:38+08:00",
+      "summary": "英特爾（Intel）在晶圓代工市場相繼掌握NVIDIA、蘋果（Apple）等核心科技大廠客戶，業務逐漸步入軌道。相對地，一直被視為台積電唯一替代方案、長期維持全球代工第二名地位的三星電子（Samsung...",
       "event_type": "news",
       "tickers": [
-        "2454",
+        "NVDA",
+        "AAPL",
         "2330"
       ]
     },
     {
-      "title": "台股4萬1怕回檔？台積電買點在哪 分析師提2.5兆警訊：先砍鴻海一半持股 | 李瑋萱 | 新聞 - 風傳媒",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vcUwxVExKRDd3N3VKOUJIRjNoMllVUl9vem94T0hETGtJZHNWeG10YWpoOVBfTEN3ZWtFTVJiQ2E0ckFna3F6R0RsYTg3Zw?oc=5",
+      "title": "波蘭押寶台灣建科技城 台積電、鴻海、台塑全被點名 - Yahoo新聞",
+      "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQLVFpRFF1Z1VCSi1vSlg5c25CRVFfYWMzazJmSmRhNTBZWlFCbFBMWk01elY5TTc3cldTcE9kNjVnYi00RGJfZkdGUG5xbWpjQWZNUF92cHdVSXhaenlFR2RLVnhPS1o0R0ROYlg5THhTcjZ2Q3ZjYnlMRnRlN2Z0M09DbWotV05VZFFKVVh0Yi1QMllYXzB1eFZuVGhHSHRlSzdlVEY3dmVlTkZHZFN6bDFZTEo3ajRZUUpEVVNRQVBXTU5aLW83aTJacWdNSXZoc2hEanlfc3FCR1IxRFIxdGhydWpVZ2ExUkVWN3laSmNTX25jSm5nRnhSYXA2MzZYZXdFcENUVzZhdkdCSkQ3Ymo5VUtSc3ZBN3AxM1IzZFp0djlmeERqeU0xOU1SLWdBZmlCemE5OEU3QUJKM0phYnZuN2Z2UVFYZVFkVmxXeE5VQms?oc=5",
       "source": "鴻海/Foxconn",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-10T19:04:00+08:00",
-      "summary": "台股4萬1怕回檔？台積電買點在哪 分析師提2.5兆警訊：先砍鴻海一半持股 | 李瑋萱 | 新聞&nbsp;&nbsp;風傳媒",
+      "published": "2026-05-12T01:34:25+08:00",
+      "summary": "波蘭押寶台灣建科技城 台積電、鴻海、台塑全被點名&nbsp;&nbsp;Yahoo新聞",
       "event_type": "news",
       "tickers": [
         "2330",
@@ -1011,96 +1092,36 @@
       ]
     },
     {
-      "title": "英特爾傳奪蘋果訂單　專家：台積電技術與良率仍是蘋果代工首選",
-      "link": "https://www.cna.com.tw/news/afe/202605100085.aspx",
+      "title": "00403A前10大成分股揭曉　台積電居首位",
+      "link": "https://www.cna.com.tw/news/afe/202605110300.aspx",
       "source": "中央社 財經",
       "category": "💰 財經與總經",
-      "published": "2026-05-10T14:51:21+08:00",
-      "summary": "（中央社記者吳家豪台北10日電）外媒報導，蘋果與英特爾已達成初步協議，將由英特爾為蘋果裝置生產部分晶片。半導體產業專家指出，台積電憑藉領先的先進封裝技術、穩定的製程良率與交付紀錄、龐大的研發護城河，蘋果短期內仍難以將旗艦晶片訂單轉向英特爾，台積電仍是蘋果代工首選。",
+      "published": "2026-05-11T20:06:17+08:00",
+      "summary": "（中央社記者曾仁凱台北11日電）主動式台股ETF成為今年市場主流，其中備受矚目的新兵主動統一升級50（00403A）即將於12日掛牌上市，今天公布10大成份股名單，包括台積電、台光電、台達電等熱門股全入列。",
       "event_type": "news",
       "tickers": [
         "2330"
       ]
     },
     {
-      "title": "有能耐分食台積電訂單？Intel今年股價漲幅破200% 阮慕驊：白宮撐腰改變情勢 - Yahoo股市",
-      "link": "https://news.google.com/rss/articles/CBMiugNBVV95cUxNMGsxWTNwUUhxUG9pTUhORXBqTjFtQWR1bkRGTjRnYVd2cXhvMmhfMWNvNzM3dS1pYmlQTDAycl9tM3djY2JKYVFaRUp1Z1RXMERlMzNzY3VwMXExVmNCd0JJQlBqalMwZ3plaDh1UHdkX1ZHX21za1dNUGxyLXVnQ09Gbjd0bGpRdGVjRDJXWU9IelQxbjFrYUNLUjMySVZ2Vm5ia2JEY3ViSVFNRGFqZmJ2WWN5NHVmYTh0UmtyZHV4VVdZYlBqWDBPR3BmZi1wbjIwTUxUOTg3VlBKZ1JTMU5wbXdfV1J6ZE9iSDdudGtFdTEyellUQWkzSWF0V0VTU0NLOWRSZ19yOHNabTR0UlN2ZmpFUW9VdUNKNElueFNLSktDcGFCeFozTlkwVGFMWWRiRC1PUUJkSFpJWFRrRDh1dG00ekF0MlZ6bUsweTZQXy1yY05Wa3c4cDFhN2YyOVlyaFpwZFotaUN3NkZqNXVncUkyMDJRVGwyekt4c2R5V1Z3YnlDZ055QXFCNWIybTRFa2wyT2RnNi1LTFJKd2ZsZmtDSldjWjZuYlVGSGFaQmZBejVfZzRn",
+      "title": "台灣模式赴美設產業園區，台積電盼原料設備供應鏈進駐",
+      "link": "https://finance.technews.tw/2026/05/11/tsmc-hopes-raw-material-equipment-supply-chains-relocate-us-industrial-parks-following-taiwan-model",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:00:36+08:00",
+      "summary": "台灣政府規劃以「台灣模式」與美國供應鏈合作，在美國打造產業園區。國發會主委葉俊顯今天表示，目前正就德州休士頓、 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "2330"
+      ]
+    },
+    {
+      "title": "2330 台積電 - 關鍵場景越來越靠近❤️梅雨季不管天氣還是股市，都陰陽怪氣😏-股市爆料同學會 - CMoney",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5BcDlVd0JxWTRVTkVSYTZORzFyT3ZwLXpjaG5oU0RuS2tpTmwxcE12VzY4TS0tQUVHS3EtR2RIZnh4azlpVnFWcmNyNDNQa1p3c3NHUnpnSlA",
       "source": "TSMC News",
       "category": "🏢 科技廠動態",
-      "published": "2026-05-10T08:45:06+08:00",
-      "summary": "有能耐分食台積電訂單？Intel今年股價漲幅破200% 阮慕驊：白宮撐腰改變情勢&nbsp;&nbsp;Yahoo股市",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "外資狂賣台積電1兆台股為何還能噴？「大散戶時代」來了- 證券 - 工商時報",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zMDJCNkl5V1BndUhaelZmM0pHNWxIdDVfMnVMOFV3bXVXQ2FScEd0WDJfNzVtdDZ1TTNNb1JiNTNvbTcyMEM3blF2Y1BDbmZRS3dsNmRNSEV0UjBGbUhv",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-10T07:48:00+08:00",
-      "summary": "外資狂賣台積電1兆台股為何還能噴？「大散戶時代」來了- 證券&nbsp;&nbsp;工商時報",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "台積電主動找上門！台肥躋身綠色供應鏈 「廢硫酸回收廠」如何換來科技業入場券？ - 工商時報",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBBaElBLW1rMDZFS2N3enN2eEFabnYzWlRrQXV4WHIzS0hISmpReDIyV0gxaFFsUjVKelpoaHV6MzBCUEctcV85eE5uN1VQb0JsU1REdFZSWjBlVC1GLUNJ",
-      "source": "工商時報 財經",
-      "category": "💰 財經與總經",
-      "published": "2026-05-10T07:23:00+08:00",
-      "summary": "台積電主動找上門！台肥躋身綠色供應鏈 「廢硫酸回收廠」如何換來科技業入場券？&nbsp;&nbsp;工商時報",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "【先進封裝肉搏戰2-2】光罩尺寸不夠大？一窺台積電CoWoS、SoW-X發展藍圖| 財經焦點 - 太報 TaiSounds",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9neE81b0JOY1c1RjJ4djdKMTFRd29PbDZydHduLWFrNW41Tmk5OHo2RnBGNHNSWUlGR1JyNmtmUUlQQWlLRVNaUlVKVGVfdFI5cjdWWWlOM2l4WTB1?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-10T07:10:00+08:00",
-      "summary": "【先進封裝肉搏戰2-2】光罩尺寸不夠大？一窺台積電CoWoS、SoW-X發展藍圖| 財經焦點&nbsp;&nbsp;太報 TaiSounds",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "台積電工程師也驚呼「真的猛」！高職畢業正職技術員年薪150萬的秘密- 產業 - 工商時報",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1mei1nbHZ4QzhBVlZqUHM5bW1nN254LW51OEFFT3IwSlQ4cWhoZzhkdDlhZlV4VDZMdEYyYk55akVrcTJzTkNHVWxMQ2V4UnljZVNaSG5oZTFTYlYwOFJF?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-10T07:09:00+08:00",
-      "summary": "台積電工程師也驚呼「真的猛」！高職畢業正職技術員年薪150萬的秘密- 產業&nbsp;&nbsp;工商時報",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "【先進封裝肉搏戰2-1】英特爾EMIB-T來勢洶洶 台積電CoWoS嚴陣以待 - Yahoo新聞",
-      "link": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxQMjlneGRteDMwNm1RYlN5Wjl1dERkMnI5eEVReUtzRDdjU2RSLTd5ZjhRRGVueTFuQm5tNmJOekpwdExCYVZjRXFXWTN5cmFCT21rOEQtSWhZbExETzVMX2hDZ290azcxLWo4bDZSZzl4d1h4ZUYxVnpEUGliUHYwOU43bXpUbExFVGIzdlFpNG1TalRQTGhIUG5MV19MS0JTeFh4M3BxSnQyajdvY2dIbUpqdXRsNUNkQ2l0Ty1tWk9YbnhVdzJ0MFZ5QnNBejhLRUxabXlodnhVTVREZU1kNlhIV0N3T1hGeEpvYmlZOHIxZUJQa1BuUTZKRWhkaEVzVnlxeWttcDJlRlktZzBZQkp2SVpCWmtNUXdxUWQ0M2l3TWRpM1l0VU96aHdfTHpmUjBIa3hlc3cwbkFybkVPVWNPZEF6OEZta2UwZWJLMWthLVVja1lIb0xadkp2V2ZKSk1jbg?oc=5",
-      "source": "TSMC News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-10T07:00:00+08:00",
-      "summary": "【先進封裝肉搏戰2-1】英特爾EMIB-T來勢洶洶 台積電CoWoS嚴陣以待&nbsp;&nbsp;Yahoo新聞",
-      "event_type": "news",
-      "tickers": [
-        "2330"
-      ]
-    },
-    {
-      "title": "台積電亞利桑那2奈米廠封頂了  現場照片全曝光",
-      "link": "https://ec.ltn.com.tw/article/breakingnews/5431623",
-      "source": "自由時報 財經",
-      "category": "💰 財經與總經",
-      "published": "2026-05-10T06:50:30+08:00",
-      "summary": "初次上稿05-09 22:21 更新時間05-10 06：50 〔財經頻道／綜合報導〕護國神山台積電在領英（Linkedin）PO文指出，5日是亞利桑那廠的重要里程碑，當天舉行位於鳳凰城的第...…",
+      "published": "2026-05-11T08:15:06+08:00",
+      "summary": "2330 台積電 - 關鍵場景越來越靠近❤️梅雨季不管天氣還是股市，都陰陽怪氣😏-股市爆料同學會&nbsp;&nbsp;CMoney",
       "event_type": "news",
       "tickers": [
         "2330"
@@ -1548,7 +1569,11 @@
   "co_mentions": [
     {
       "ticker": "NVDA",
-      "count": 5
+      "count": 6
+    },
+    {
+      "ticker": "2317",
+      "count": 4
     },
     {
       "ticker": "GOOGL",
@@ -1559,21 +1584,17 @@
       "count": 3
     },
     {
-      "ticker": "0050",
+      "ticker": "AAPL",
       "count": 2
     },
     {
-      "ticker": "2317",
+      "ticker": "0050",
       "count": 2
     },
     {
       "ticker": "META",
       "count": 1
-    },
-    {
-      "ticker": "AAPL",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:26Z"
 }

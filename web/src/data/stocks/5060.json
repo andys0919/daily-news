@@ -25,6 +25,19 @@
   ],
   "general_news": [
     {
+      "title": "$500 slashed off this potent gaming PC with RTX 5060 Ti 16GB and an AMD Ryzen 7800X3D — mid-range iBuypower beast is just $1,599 in this deal",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/usd500-slashed-off-this-potent-gaming-pc-with-rtx-5060-ti-16gb-and-an-amd-ryzen-7800x3d-mid-range-ibuypower-beast-is-just-usd1-599-in-this-deal",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:52:06+08:00",
+      "summary": "Save $500 on an iBuypower Element 9 gaming PC from Newegg. $1599 PC includes a 16GB RTX 5060 Ti GPU and superfast Ryzen 7 7800X3D CPU.",
+      "event_type": "news",
+      "tickers": [
+        "5060",
+        "1599"
+      ]
+    },
+    {
       "title": "This Gigabyte gaming Copilot+ laptop deal packs AMD Ryzen 7, Nvidia 5060, 16GB RAM, 1TB SSD - Neowin",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPR3o3Z1drdlBTMUhLSW4zREM1clEtSlg2aE9VdXlEUWVXWXBTazVUUkp6R2Rzc3VUdm54OEowOFAyVS1MT2ZBQ2hLaEVaSzcwWmFSSFd6MHVFWUt2S1EzZVZSRkNoU1dwS3B2S0tOZGlZeWR2dTJ0VWUyTENGN19MajY1MF9kTDIxSks5eEh4SnYza1FMak5GcmFtRTJxOWU5UTNUMWJkVlZEVnJBSVFQemk1NENFaWhU0gG2AUFVX3lxTE93SHZac1FQRjZQV2ZBUWFlUXFoaGFScWlvU2pDLVJtb1F0dklYNER1S0dqMmFjbTJNbXo5akd1QjE3WmpSV1VuZElOa3hNMmRRZEd2bDZHVl9LMnBfc2t0dndjV0VLNlE0Tk5raFN6VGVlYVhOd2lLN1QxZExOd3dtSHFkZEJ0TDhtNmlsVDcxd2dyUzJLR1QtVW83cG1lMHlYd1J5MFdzZFRySTlUa0d2ZExMVENB",
       "source": "AMD News",
@@ -177,5 +190,5 @@
   "history": [],
   "fundamentals": null,
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:24Z"
+  "generated_at": "2026-05-12T01:54:29Z"
 }

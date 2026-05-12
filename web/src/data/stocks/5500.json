@@ -1,0 +1,63 @@
+{
+  "ticker": "5500",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "10-K/A - NEXTNRG, INC. (0001817004) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1817004/000149315226022229/0001493152-26-022229-index.htm",
+      "source": "SEC 10-K Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T04:14:34+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001493152-26-022229 Size: 17 MB",
+      "body_text": "EIN. : 834260623 | State of Incorp.: DE | Fiscal Year End: 1231 Type: 10-K/A | Act: 34 | File No.: 001-40809 | Film No.: 26963367 SIC : 5500 Retail-Auto Dealers & Gasoline Stations (CF Office: 07 Trade & Services)",
+      "event_type": "filing",
+      "tickers": [
+        "1231",
+        "5500"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "Score a Ryzen 5 5500, Motherboard and 16GB RAM for Just $227 While It Lasts - HotHardware",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNGdGTFc1ck5hSTZRVGlXSVpic2VwLVE4ald0d2R0Z3NUV0pHOGJ5YU9aR1AwbGhCWTl3dUtWanZKWHVNYTlJbFViTFVUTENqZGZndnFPa0tDUWZyYmU0aEdpOUtGZmJNMXJXTjZJQ1FmRGFZZG5HMllNbXB0ZHBpckdCMA?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-18T22:22:00+08:00",
+      "summary": "Score a Ryzen 5 5500, Motherboard and 16GB RAM for Just $227 While It Lasts&nbsp;&nbsp;HotHardware",
+      "event_type": "news",
+      "tickers": [
+        "5500"
+      ]
+    },
+    {
+      "title": "Budget gaming PC with RTX 3050 and Ryzen 5 5500 drops below $800 - WePC",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSVFEeE1YREU5dU5UejRFZG8zOTZOZ0dCblFKU1VmanlnWGRBTE9yLTJzak5TSFI5MEZTWWRxU0poNnhzUkhGMmE3a1RON1pwOVFsSGZxZlZzTGhaNjVCdGh4YndNNlBJemZiV0VxbnVWWkZxWUVLeU1iWXBzVlhOYm5uWjM3Y2lXcjVPbmxBVEhKTXNm",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-10T01:56:30+08:00",
+      "summary": "Budget gaming PC with RTX 3050 and Ryzen 5 5500 drops below $800&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "3050",
+        "5500"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "1231",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-12T01:54:33Z"
+}

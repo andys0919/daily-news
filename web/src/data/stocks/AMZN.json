@@ -46,6 +46,61 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+      "link": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+      "source": "Hugging Face Blog",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T07:18:26+08:00",
+      "summary": "",
+      "body_text": "The AWS Building Blocks Infrastructure: Compute, Network, and Storage Resource Orchestration: Slurm and Kubernetes ML Software Stack Observability Conclusion Authors For a long time, \"scaling\" in foundation models mostly meant one thing: spend more compute on pre-training and capabilities rise. That intuition was supported by empirical work such as Kaplan et al. (2020) , which reported predictable",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "AMZN"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AiOnX secures hyperscale tenant for Irish data center campus outside Dublin",
+      "link": "https://www.datacenterdynamics.com/en/news/aionx-secures-hyperscale-tenant-for-irish-data-center-campus-outside-dublin",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T01:00:36+08:00",
+      "summary": "Tenant likely Amazon, first phase due to launch later this year",
+      "body_text": "Tenant likely Amazon, first phase due to launch later this year\nData center firm AiOnX has secured a US hyperscaler for its debut campus outside Dublin, Ireland.\nThe company is owned by the SWI group, which is also looking to pivot some of its logistics and warehouse sites into data center developments.\nSWI is also set to acquire a cryptominer in the US and pivot some of those company's sites to A",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "At TV upfronts, AI is in and corporate shuffles are reshaping the lineup",
+      "link": "https://www.cnbc.com/2026/05/11/tv-upfronts-ai-data-industry-shifts.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T22:41:18+08:00",
+      "summary": "Advertisers will be hearing about the slate of live events in the coming year — and how AI is being integrated. Plus, media consolidation reshapes the lineup.",
+      "body_text": "For most media companies, recent upfront presentations — the annual slate of content pitches to advertisers — have been shaped by uncertainty , whether it be macroeconomic or geopolitical . This year, the shifts are coming largely from within.\nMedia executives told CNBC that while they have been cognizant of global economic issues, like the Middle East conflict and rising cost of fuel as well as t",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "Netflix 雖不靠遊戲賺錢，但做遊戲要幹麼腦袋還很清楚",
       "link": "https://finance.technews.tw/2026/05/10/netflix-isnt-making-money-from-games-but-it-knows-exactly-why-its-making-them",
       "source": "科技新報",
@@ -807,72 +862,59 @@
         "Amazon"
       ],
       "guidance_direction": null
-    },
-    {
-      "title": "An Interview with OpenAI CEO Sam Altman and AWS CEO Matt Garman About Bedrock Managed Agents",
-      "link": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents",
-      "source": "Stratechery",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-04-29T01:00:00+08:00",
-      "summary": "An interview with OpenAI CEO Sam Altman and AWS CEO Matt Garman about their new partnership, plus my thoughts on OpenAI and Microsoft's new deal.",
-      "body_text": "As I noted yesterday, today’s Stratechery Interview is early in terms of my timing — Tuesday instead of Thursday — and late in terms of delivery — 1pm Eastern instead of 6am — because the topic was embargoed. That embargo created a bit of a weird situation for me over the last several days:\nI think the Microsoft-OpenAI deal makes a lot of sense for both sides. Here are the bullet points of the new",
-      "event_type": "earnings",
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Shutdowns, power outages, and conflict: a review of Q1 2026 Internet disruptions",
-      "link": "https://blog.cloudflare.com/q1-2026-internet-disruption-summary",
-      "source": "Cloudflare Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-04-28T21:00:00+08:00",
-      "summary": "The first quarter of 2026 saw a surge in Internet disruptions, from nationwide shutdowns in Uganda and Iran to unprecedented drone strikes on cloud infrastructure. We explore the data behind these events using Cloudflare Radar.",
-      "body_text": "2026-04-28\nIn the first quarter of 2026, government-directed shutdowns figured prominently, with prolonged Internet blackouts in both Uganda and Iran, a stark contrast to the lack of observed government-directed shutdowns in the same quarter a year prior. This quarter, we also observed a number of Internet disruptions caused by power outages , including three separate collapses of Cuba's national ",
-      "event_type": "earnings",
-      "tickers": [
-        "AMZN"
-      ],
-      "companies": [
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "The Disposable Oligarchs",
-      "link": "https://www.foreignaffairs.com/united-states/disposable-oligarchs",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-04-28T12:00:00+08:00",
-      "summary": "Why wealthy elites come to regret their bargains with authoritarians.",
-      "body_text": "CHRISTOPHER A. HARTWELL is Professor of International Business Policy and Head of the International Management Institute at the Zurich University of Applied Sciences School of Management and Law and a Professor at Kozminski University.\nTRICIA D. OLSEN is Professor of Global Public Policy and Political Science and Harold E. Stassen Chair at the University of Minnesota’s Humphrey School of Public Af",
-      "event_type": "policy",
-      "tickers": [
-        "META",
-        "AMZN",
-        "GOOGL",
-        "TSLA",
-        "JPM"
-      ],
-      "companies": [
-        "Meta",
-        "Amazon",
-        "Google",
-        "Tesla",
-        "JPMorgan"
-      ],
-      "guidance_direction": null
     }
   ],
   "general_news": [
+    {
+      "title": "Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account - Amazon Web Services (AWS)",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUmZxSGR3dWhwMkRBNVgwSl91ZFVRLVptdTVhUERmcmF3dVROU21WT2hTeGExWldvNDBpN2RaNDY5MmxEa1llWGozcGRsZmNOeFJVLUFhVXoyYTlKMFhmWjc1dmRIckEyZVk4aTlGUk1jNGpuc2ZrMkhMN2xYRDM1dzBfWXN1SmtsRjRxaXJmYWtsMFJCb01UcEJkOWs2NEZGdWVhUjhmaktkLURIS0pnRzRham9JTldWNUREVmRLRERVNG1CLU5pSlBHbks2QQ",
+      "source": "Anthropic News",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T02:43:03+08:00",
+      "summary": "Introducing Claude Platform on AWS: Anthropic’s native platform, through your AWS account&nbsp;&nbsp;Amazon Web Services (AWS)",
+      "event_type": "news",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Amazon knocks exceptional mid-range RX 9070 XT, Ryzen 7 7700X gaming PC down by $100 in latest Amazon deal - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdjFpcmwydVgyaDBLSXVpbWE3WnF6dXREM2ZNdjhZM0F2ZHBTWGhCM09VNFZydWhfUVJ5Tkt0RVE4OEZQSW1VRW53NE1SUnEyNExrRUZCUVg1S0ljV1hEa0dWQ09MbFhGOFBLSzIwcjhGa1RtZFpjVnhKSGpNWjA1NWVyM1hzVTI4NUp6cTY4QVpwb0FDNFVRWVhFYkdBUmVDY0ZRZ1p4N0NuM0JWM0s1YkpndjhyWkp3Tk5ya0FfbjQ2dFdCMGhSMXVqTF9CQUdL",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:38:05+08:00",
+      "summary": "Amazon knocks exceptional mid-range RX 9070 XT, Ryzen 7 7700X gaming PC down by $100 in latest Amazon deal&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "9070",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Ryzen 7 7700X and RX 9070 XT gaming PC with 16GB VRAM now $100 on Amazon - WePC",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOc2NTeWh2RWQ2by1FUVdtUGxHa0d4X0VrcS1faVJpMU5iM3luczdZTmI2cF9lVkR6U19vVUZCam9TM2hQUEhwRF9NT1dNc3hQNEQ2dHpweTFkNVVMNk5Xa3lfTUlZQnRMRGNfTlJrOHkwaW1ZbEJtMy1UMUxzU2pKbGtKN0hqZ3hZM29uVWlpVHJPbnpvZHlHaFJTWW5mMjQ?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:09:45+08:00",
+      "summary": "Ryzen 7 7700X and RX 9070 XT gaming PC with 16GB VRAM now $100 on Amazon&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "9070",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "AWS Weekly Roundup: Amazon Bedrock AgentCore payments, Agent Toolkit for AWS, and more (May 11, 2026)",
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-agentcore-payments-agent-toolkit-for-aws-and-more-may-11-2026",
+      "source": "AWS Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T00:08:26+08:00",
+      "summary": "My most exciting news of last week: Amazon Bedrock AgentCore previewed the first managed payment capabilities enabling AI agents to autonomously access and pay for APIs, MCP servers, web content, and other agents. Built in partnership with Coinbase and Stripe, it removes the undifferentiated heavy lifting of building customized systems for billing, credential management, and […]",
+      "event_type": "news",
+      "tickers": [
+        "AMZN"
+      ]
+    },
     {
       "title": "HP OmniBook 3 16 Next Gen AI drops to $939.99 on Amazon - Technobezz",
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ0s1RjNxb1pqWENhMlpXZW9WYVEyV1BQMTZQR2dMUXUxUm5DbTVqTUhqQmlJc0JLcVVvWkJhMlNiNnRfSFRNSllPN3hVcDZvTVBOdHptTmpSZ0d6WXRhS2VReUt3SEZ6LXlrS0w4Rk9qWFV0VDAyMnFmOVhXUW9OaU95QVhQNGp6RnkwbU5n",
@@ -1083,30 +1125,6 @@
         "AMZN",
         "MSFT"
       ]
-    },
-    {
-      "title": "Modernize your workflows: Amazon WorkSpaces now gives AI agents their own desktop (preview)",
-      "link": "https://aws.amazon.com/blogs/aws/modernize-your-workflows-amazon-workspaces-now-gives-ai-agents-their-own-desktop-preview",
-      "source": "AWS Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-06T01:23:40+08:00",
-      "summary": "Amazon WorkSpaces now lets AI agents securely operate legacy desktop applications—without APIs or modernization—using IAM authentication, MCP support, and computer vision within existing security frameworks.",
-      "event_type": "news",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "title": "亞馬遜物流正式對外開放 ASCS 整合海陸空方案 FedEx、UPS 聞風重挫",
-      "link": "https://money.udn.com/money/story/5599/9481955",
-      "source": "經濟日報 產經",
-      "category": "💰 財經與總經",
-      "published": "2026-05-05T08:11:14+08:00",
-      "summary": "亞馬遜（Amazon.com）推出了一套物流服務，讓企業能以套裝形式購買其現有的貨運和配送方案。此消息一出，聯邦快遞（FedEx）和優比速（UPS）等同業聞風重挫。",
-      "event_type": "news",
-      "tickers": [
-        "AMZN"
-      ]
     }
   ],
   "history": [
@@ -1213,19 +1231,19 @@
   "co_mentions": [
     {
       "ticker": "GOOGL",
-      "count": 22
+      "count": 21
     },
     {
       "ticker": "MSFT",
-      "count": 19
+      "count": 18
     },
     {
       "ticker": "META",
-      "count": 16
+      "count": 15
     },
     {
       "ticker": "NVDA",
-      "count": 5
+      "count": 6
     },
     {
       "ticker": "AAPL",
@@ -1236,17 +1254,13 @@
       "count": 2
     },
     {
-      "ticker": "TSLA",
-      "count": 2
-    },
-    {
       "ticker": "1954",
       "count": 1
     },
     {
-      "ticker": "JPM",
+      "ticker": "TSLA",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:28Z"
 }

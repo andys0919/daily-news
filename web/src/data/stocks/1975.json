@@ -8,6 +8,21 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Conflict, CASEVAC, and the Golden Hour in the Age of Persistent Surveillance",
+      "link": "https://warontherocks.com/conflict-casevac-and-the-golden-hour-in-the-age-of-persistent-surveillance",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:15:54+08:00",
+      "summary": "Editor&#8217;s Note: This article contains frank descriptions of battlefield conditions, including accounts of soldiers dying by suicide following injury.&#160;Western battlefield casualty evacuation doctrine is built on assumptions forged during the &#8220;Global War on Terror.&#8221; Central among these is the belief that the wounded can be rapidly moved from the point of injury to progressively higher levels of medical care within a defined timeframe, commonly referred to as the &#8220;golden",
+      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nEditor’s Note: This article contains frank descriptions of battlefield conditions, including accounts of soldiers dying by suicide following injury. Western battlefield casualty evacuation doctrine is built on assumptions forged during the “Global War on Terror.” Central am",
+      "event_type": "earnings",
+      "tickers": [
+        "1975"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
       "title": "Why Eurovision's fallout over Israel may change the competition forever",
       "link": "https://www.bbc.com/news/articles/cgkpgm6vk48o",
       "source": "BBC World",
@@ -173,5 +188,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:25Z"
+  "generated_at": "2026-05-12T01:54:30Z"
 }

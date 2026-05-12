@@ -43,13 +43,13 @@
       "source_confidence": "official-openapi",
       "form_type": "TWSE-MONTHLY",
       "fiscal_year": null,
-      "fiscal_period": "11503",
-      "period_end": "11503",
-      "filed_at": "1150417",
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
       "report_kind": "monthly_revenue",
       "revenue": null,
-      "monthly_revenue": 6178135.0,
+      "monthly_revenue": 5990255.0,
       "net_income": null,
       "operating_income": null,
       "gross_profit": null,
@@ -61,7 +61,7 @@
       "free_cash_flow": null,
       "guidance_summary": "",
       "filing_excerpt": "",
-      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2023\", \"公司名稱\": \"燁輝\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"6178135\", \"營業收入-上月營收\": \"4381951\", \"營業收入-去年當月營收\": \"6752249\", \"營業收入-上月比較增減(%)\": \"40.99050856570509\", \"營業收入-去年同月增減(%)\": \"-8.502559665675836\", \"累計營業收入-當月累計營收\": \"16314318\", \"累計營業收入-去年累計營收\": \"18547430\", \"累計營業收入-前期比較增減(%)\": \"-12.040007699179887\", \"備註\": \"-\"}"
+      "payload_json": "{\"出表日期\": \"1150511\", \"資料年月\": \"11504\", \"公司代號\": \"2023\", \"公司名稱\": \"燁輝\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"5990255\", \"營業收入-上月營收\": \"6178135\", \"營業收入-去年當月營收\": \"6435100\", \"營業收入-上月比較增減(%)\": \"-3.0410471768583887\", \"營業收入-去年同月增減(%)\": \"-6.912790788021942\", \"累計營業收入-當月累計營收\": \"22304573\", \"累計營業收入-去年累計營收\": \"24982530\", \"累計營業收入-前期比較增減(%)\": \"-10.719318659879523\", \"備註\": \"-\"}"
     },
     "latest_transcript": null,
     "recent_insider_summary": null,
@@ -74,6 +74,36 @@
   "holdings": [],
   "recent_news": [],
   "general_news": [
+    {
+      "title": "China should stop hoarding food and fertiliser, says former World Bank chief",
+      "link": "https://www.bbc.com/news/articles/cwy2rnyg50zo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T08:02:58+08:00",
+      "summary": "David Malpass' comments come as US President Donald Trump and China's Xi Jinping are due to meet in Beijing.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "EU, UK sanction Russians over deportations of Ukrainian children",
+      "link": "https://www.aljazeera.com/news/2026/5/11/eu-and-uk-sanction-russians-over-deportations-of-ukrainian-children",
+      "source": "Al Jazeera English",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T04:56:26+08:00",
+      "summary": "Russian institutions and officials accused of systemic deportation and indoctrination of children during war on Ukraine.",
+      "event_type": "policy",
+      "tickers": []
+    },
+    {
+      "title": "Bitcoin ‘golden cross’ appears for the first time since 2023: Will BTC price rally?",
+      "link": "https://cointelegraph.com/markets/bitcoin-golden-cross-appears-first-time-since-2023-will-btc-price-rally",
+      "source": "Cointelegraph",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T01:35:04+08:00",
+      "summary": "Bitcoin’s MVRV suggests a shift to bullish momentum as BTC's market structure strengthens, which may be an early sign of a new bull market.",
+      "event_type": "news",
+      "tickers": []
+    },
     {
       "title": "Ailing Iran Nobel laureate given bail and hospital transfer",
       "link": "https://www.bbc.com/news/articles/c1j257w87neo",
@@ -379,41 +409,6 @@
         "TSLA",
         "GOOGL"
       ]
-    },
-    {
-      "title": "Philip R. Lane: Climate change and monetary policy",
-      "link": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260505_1~2e47b4c747.en.html",
-      "source": "ECB Press",
-      "category": "💰 財經與總經",
-      "published": "2026-05-05T23:40:00+08:00",
-      "summary": "",
-      "event_type": "news",
-      "tickers": [
-        "2100",
-        "1981",
-        "1960",
-        "2050"
-      ]
-    },
-    {
-      "title": "Acquisition Reform Needs Its Own Wargame",
-      "link": "https://warontherocks.com/cogs-of-war/acquisition-reform-needs-its-own-wargame",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-05T16:00:52+08:00",
-      "summary": "One number buried in the Pentagon&#8217;s Fiscal Year 2027 budget request reveals a decade of acquisition decisions in a data point: The U.S. Navy is requesting 785 Tomahawk cruise missiles. In 2025, Congress funded 55. That 1,200 percent jump is the cost of choices never stress-tested against the scenario unfolding today &#8212; a sustained air campaign against Iran while China watches the magazine drain.As a congressional staffer, I watch acquisition reform proposals grind through the legislat",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "Abandoned and Ungoverned: Lebanon’s Palestinian and Syrian Populations and the Emerging Radicalization Landscape",
-      "link": "https://warontherocks.com/abandoned-and-ungoverned-lebanons-palestinian-and-syrian-populations-and-the-emerging-radicalization-landscape",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-05T15:15:15+08:00",
-      "summary": "Inside Lebanon, the conditions for the next extremist uprising are quietly taking root.In the summer of 2007, the Lebanese Armed Forces fought Fatah al-Islam for three months inside Nahr al-Bared, a Palestinian refugee camp in northern Lebanon. Fatah al-Islam was a Salafi-jihadist group that exploited the camp&#8217;s power vacuum to establish a strong recruitment base, drawing recruits from Palestinian, Syrian, and broader Arab networks. Once the dust settled, more than 400 people were dead, an",
-      "event_type": "earnings",
-      "tickers": []
     }
   ],
   "history": [
@@ -706,6 +701,24 @@
       "guidance_summary": ""
     },
     {
+      "fiscal_year": null,
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 5990255.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
       "fiscal_year": 114,
       "fiscal_period": "Q4",
       "period_end": "1150331",
@@ -754,24 +767,6 @@
       "operating_income": 54909.0,
       "gross_profit": 5584787.0,
       "eps_diluted": -1.85,
-      "operating_cash_flow": null,
-      "capex": null,
-      "free_cash_flow": null,
-      "guidance_summary": ""
-    },
-    {
-      "fiscal_year": null,
-      "fiscal_period": "11503",
-      "period_end": "11503",
-      "filed_at": "1150417",
-      "source_type": "twse-openapi",
-      "form_type": "TWSE-MONTHLY",
-      "revenue": null,
-      "monthly_revenue": 6178135.0,
-      "net_income": null,
-      "operating_income": null,
-      "gross_profit": null,
-      "eps_diluted": null,
       "operating_cash_flow": null,
       "capex": null,
       "free_cash_flow": null,
@@ -855,5 +850,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:26Z"
 }

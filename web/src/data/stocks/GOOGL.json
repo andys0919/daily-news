@@ -46,6 +46,113 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+      "link": "https://www.insidermonkey.com/blog/1759072-1759072",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:07:31+08:00",
+      "summary": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen. On April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that [&#8230;]",
+      "body_text": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen .\nOn April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that “derisk” the anticipated Phase 3 study.\nOn May 5, 2026, Rel",
+      "event_type": "earnings",
+      "tickers": [
+        "RLAY",
+        "GOOGL",
+        "BRK-B"
+      ],
+      "companies": [
+        "Google",
+        "Berkshire"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Three things in AI to watch, according to a Nobel-winning economist",
+      "link": "https://www.technologyreview.com/2026/05/11/1137090/three-things-in-ai-to-watch-according-to-a-nobel-winning-economist",
+      "source": "MIT Technology Review",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T01:35:12+08:00",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. A few months before he was awarded the Nobel Prize in economics in 2024, Daron Acemoglu published a paper that earned him few fans in Silicon Valley. Contrary to what Big Tech&#8230;",
+      "body_text": "Daron Acemoglu is more cautious than most about predictions of a jobs apocalypse. Here’s what’s worrying him instead.\nThis story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here .\nA few months before he was awarded the Nobel Prize in economics in 2024, Daron Acemoglu published a paper that earned him few fans in Silicon V",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Our new initiative to apply quantum science and AI to the life sciences",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/quantum-computing/repliqa-quantum-computing-life-sciences",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:30:00+08:00",
+      "summary": "Wavy gold wires connecting tiered gold plates through circular cutouts.",
+      "body_text": "May 11, 2026\nGoogle is launching the Research Program at the Intersection of Life Sciences & Quantum AI (REPLIQA), an initiative committing $10 million to five universities to apply advanced quantum science and AI to the life sciences, to improve human outcomes.\nWe are launching the Research Program at the Intersection of the Life Sciences and Quantum AI (REPLIQA) to solve complex biological chall",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "At TV upfronts, AI is in and corporate shuffles are reshaping the lineup",
+      "link": "https://www.cnbc.com/2026/05/11/tv-upfronts-ai-data-industry-shifts.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T22:41:18+08:00",
+      "summary": "Advertisers will be hearing about the slate of live events in the coming year — and how AI is being integrated. Plus, media consolidation reshapes the lineup.",
+      "body_text": "For most media companies, recent upfront presentations — the annual slate of content pitches to advertisers — have been shaped by uncertainty , whether it be macroeconomic or geopolitical . This year, the shifts are coming largely from within.\nMedia executives told CNBC that while they have been cognizant of global economic issues, like the Middle East conflict and rising cost of fuel as well as t",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Alphabet Seeks Yen Bonds to Fund AI Capex - Let's Data Science",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLVB0dG5tcW40MnNNRGl2OVZFU1Nzc01Kel95MEJ6Mi1hR2Z5QUI1bkRDZUV1cWhzdGtIN1l0RXdxZThvUjJHU0FQaGhPaWtRM29QdVQyZGhCRWFYSVVaNkk5Q3FFdmVpbzFlWW1pbTNaVFltOUx5MkpLLVMwZ2xlT0YzZWVuQklCdkcw",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-11T22:27:23+08:00",
+      "summary": "Alphabet Seeks Yen Bonds to Fund AI Capex&nbsp;&nbsp;Let's Data Science",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Could Anthropic actually surpass Google in revenue by 2026? Secondary markets are valuing Anthropic at nearly $1.2 trillion, and Claude's ARR has reportedly hit a $30 billion run rate. The numbers are moving quickly, and enterprise AI demand is a major re - LinkedIn",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOUh0bHhYTUtFSWlWVVZHSUUyWElkd0FLVnd2ZnozQjZ4YVhLejRTdDdSRWZXVFB2UjRpTV9Ka3hITllET2hueEpBdFlqYVVKc3M3dEN6THp0YkI0ZTRKanFSNkc0MnlGakZLVTBqVXVzeUY5YzZZMUFEQU1HSXE4MnhzbXBTWXNPcGtrN1R0c2VWVzZzeGFUWmhqbG1CdVg1c3U5SV9hcUw2ZS1FUzBWZXFjRDBQZlhIbUVv?oc=5",
+      "source": "Anthropic News",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-11T13:30:13+08:00",
+      "summary": "Could Anthropic actually surpass Google in revenue by 2026? Secondary markets are valuing Anthropic at nearly $1.2 trillion, and Claude's ARR has reportedly hit a $30 billion run rate. The numbers are moving quickly, and enterprise AI demand is a major re&nbsp;&nbsp;LinkedIn",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "GOOGL"
+      ],
+      "companies": [
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "Twist Bioscience Corporation (TWST) Announces Q2 2026 Financial Results",
       "link": "https://www.insidermonkey.com/blog/twist-bioscience-corporation-twst-announces-q2-2026-financial-results-1758209",
       "source": "Insider Monkey",
@@ -715,125 +822,207 @@
         "Google"
       ],
       "guidance_direction": null
-    },
-    {
-      "title": "Google Earnings, Meta Earnings",
-      "link": "https://stratechery.com/2026/google-earnings-meta-earnings",
-      "source": "Stratechery",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-04T18:00:00+08:00",
-      "summary": "Wall Street loved Google's earnings, and hated Meta's, even though the latter's core business was more impressive. The difference is that Google is monetizing its investments now (and it might be all Anthropic).",
-      "body_text": "Wall Street loved Google’s earnings, and hated Meta’s, even though the latter’s core business was more impressive. The difference is that Google is monetizing its investments now (and it might be all Anthropic).\nSubscribe to Stratechery Plus for full access.\nWith Stratechery Plus you get access to the subscriber-only Stratechery Update and Stratechery Interviews , and the Sharp Tech, Sharp China, ",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL",
-        "META"
-      ],
-      "companies": [
-        "Google",
-        "Meta"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "The Illusion of Sovereignty: How International Law and Big Tech are Eroding the State",
-      "link": "https://warontherocks.com/the-illusion-of-sovereignty-how-international-law-and-big-tech-are-eroding-the-state",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-04T15:30:38+08:00",
-      "summary": "Caught between two hammers &#8212; international law and technological dependence on the private sector &#8212; modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomatic sanctions and international condemnation but the loss of access to critical digital infrastructure owned by private corporations. In wartime, that loss is catastrophic, as we both experienced firsthand during Rus",
-      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nCaught between two hammers — international law and technological dependence on the private sector — modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomati",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL",
-        "MSFT",
-        "META",
-        "AMZN"
-      ],
-      "companies": [
-        "Google",
-        "Microsoft",
-        "Meta",
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "\"Google ranking optimization(TG:e10838).oky\" - Results on X | Live Posts & Updates - x.com",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQclR0cVpMdUh1dmpWeExwM3RuTWY3c2VVOGhjeVA0RmtXbUtfT2xTSWgtdVFjbXVXV0RIbDRaZnVLdXk0eTJfdHlQRVFFakRTQWZjU2ZrbTYyeERDWkxtQmljdmZuSzl2OFhOazhYeG1kYW5fN200TFRSMGtqaG5zaHVqZlQxOE01XzUzUlhXRjRVZDFUX0xPZ1FLT1hYUQ",
-      "source": "X @ollama",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-04T07:07:40+08:00",
-      "summary": "\"Google ranking optimization(TG:e10838).oky\" - Results on X | Live Posts & Updates&nbsp;&nbsp;x.com",
-      "body_text": "",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "\"Google Ranking für SEO(TG:e10838).kfb\" - Results on X | Live Posts & Updates - x.com",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5aWTZmS2pvUEFFaEluLV9hRGRXM0JLTjRHSXg2MncwZDY5MWZVMFB5VXAtNTZDQlVFQkNsYTVMcEdWbFB5TkFMRDdRWWk2WGJ6Q3NGZnB6OEpjb09mMGZVOTl2azVmRHVlTi1MQlFXSXZvaFVKaHIzVmVLRQ",
-      "source": "X @perplexity_ai",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-04T06:13:02+08:00",
-      "summary": "\"Google Ranking für SEO(TG:e10838).kfb\" - Results on X | Live Posts & Updates&nbsp;&nbsp;x.com",
-      "body_text": "",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "\"Google External Ranking(TG:e10838).hps\" - Results on X | Live Posts & Updates - x.com",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaG5DUGFnMDhZdU1OaWd2SkM1SHdUTDJtSXNDQ0hpYUtkVnJBQnhka1I3RElWb3Z6YmRDaFk1bi1hUm0xeEdtQmxsd2xkcUJsRHljclZLdU1BeVB5SFhPX3hqRnk2eGVycXVPMXppTG54QzJsTjJVZHdpb0Nvek9KUA",
-      "source": "X @perplexity_ai",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-04T05:57:21+08:00",
-      "summary": "\"Google External Ranking(TG:e10838).hps\" - Results on X | Live Posts & Updates&nbsp;&nbsp;x.com",
-      "body_text": "",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL"
-      ],
-      "companies": [
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff. - x.com",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mLXBHSTdGWXBCQXBMQTZ0YkZXTmRCdkRfNlZOaFFmcUVjUGkzNEVwa0xKNlYzcVZ4WTdfUDNEM3ZHQnJMT2lDUlpGMDVzb2lWWGNyTnFPcHhoYXE3eHc?oc=5",
-      "source": "X @satyanadella",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-04T05:00:01+08:00",
-      "summary": "Weekend Round-Up: Apple's Record Quarter, Meta's Q1 Beat, Microsoft's AI Revenue Surge, Alphabet's Earnings Triumph And Spotify's Selloff.&nbsp;&nbsp;x.com",
-      "body_text": "",
-      "event_type": "earnings",
-      "tickers": [
-        "AAPL",
-        "META",
-        "MSFT",
-        "GOOGL"
-      ],
-      "companies": [
-        "Apple",
-        "Meta",
-        "Microsoft",
-        "Alphabet"
-      ],
-      "guidance_direction": null
     }
   ],
   "general_news": [
+    {
+      "title": "Google says it likely thwarted effort by hacker group to use AI for 'mass exploitation event'",
+      "link": "https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T05:13:21+08:00",
+      "summary": "Hackers are rapidly adopting AI to find previously unknown software flaws even without the help of Anthropic's powerful Mythos model.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Data center guzzled 30 million gallons of water and nobody noticed for months",
+      "link": "https://arstechnica.com/tech-policy/2026/05/data-center-used-30-million-gallons-of-water-without-initially-paying",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-12T04:37:00+08:00",
+      "summary": "Can AI save us from the AI industry’s endless thirst for water? Outlook not so good.",
+      "event_type": "news",
+      "tickers": [
+        "META",
+        "GOOGL",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Hackers Used AI to Build a Zero-Day Exploit That Bypasses Two-Factor Authentication: Google",
+      "link": "https://decrypt.co/367477/hackers-ai-zero-day-exploit-google",
+      "source": "Decrypt",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T03:49:10+08:00",
+      "summary": "Cybercriminals used an AI model to find and weaponize a previously unknown software flaw, Google's threat team confirmed Monday.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "生態系策略奏效　Alphabet市值距NVIDIA僅差4千億美元",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754929_YSBL1P4S1HW6VQLUF6S80",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T02:52:06+08:00",
+      "summary": "Alphabet憑藉生態系優勢，成功縮小與NVIDIA的市值差距，在短暫超越後雖有回落，目前差距已收窄至4,000億美元。綜合彭博、CNBC報導，Alphabet過去1年來累計漲幅達160%，截至上週5收盤，Alphabet市值為4.8兆美元，NVIDIA則為5....",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "End-to-end encrypted RCS messaging begins rolling out today in beta",
+      "link": "https://www.apple.com/newsroom/2026/05/end-to-end-encrypted-rcs-messaging-begins-rolling-out-today-in-beta",
+      "source": "Apple Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:10:35+08:00",
+      "summary": "Apple and Google collaborate with the GSMA to roll out end-to-end encrypted RCS messaging in beta, enhancing cross-platform communication security.",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "End-to-end encrypted RCS messaging begins rolling out today for Android and iPhone users",
+      "link": "https://blog.google/products-and-platforms/platforms/android/android-ios-end-to-end-encrypted-rcs-messaging",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T01:00:00+08:00",
+      "summary": "A woman texting on an Android phone with end-to-end encryption enabled",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL",
+        "AAPL"
+      ]
+    },
+    {
+      "title": "Google stopped a zero-day hack that it says was developed with AI",
+      "link": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T00:09:42+08:00",
+      "summary": "For the first time, Google says it has spotted and stopped a zero-day exploit developed with AI. According to a report from Google Threat Intelligence Group (GTIG), \"prominent cyber crime threat actors\" were planning to use the vulnerability for a \"mass exploitation event\" that would have allowed them to bypass two-factor authentication on an unnamed [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Digitize your paper notes with Gemini.",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/digitize-notes-gemini-study-guide",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T00:00:00+08:00",
+      "summary": "Gemini can turn hundreds of pages of notes into study guides or flashcards — or organize a semester’s worth of learning.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Read our new report on AI-powered threats and our latest defenses.",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/google-threat-intelligence-group-report",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T23:00:00+08:00",
+      "summary": "Learn more about how outside attackers are misusing AI, and what Google is doing to stop it.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "質量決定命運，新研究發現星團大小左右行星能否順利形成",
+      "link": "https://technews.tw/2026/05/11/massive-star-clusters-are-forming-faster",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T22:03:22+08:00",
+      "summary": "天文學家利用詹姆斯·韋伯太空望遠鏡，結合哈伯太空望遠鏡，深入觀測四個鄰近星系中數千個年輕星團，研究它們在不同演 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "There aren’t enough rockets for space data centers — Cowboy Space raised $275M to build them",
+      "link": "https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-11T21:00:00+08:00",
+      "summary": "The apparently insatiable demand for AI compute has data center entrepreneurs looking to the stars. There's a key problem: There aren't enough rockets to put data centers in orbit around Earth, and they're too expensive.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "OpenAI 攜手業界夥伴提出 MRC 協定，解決 AI 運算網路瓶頸",
+      "link": "https://technews.tw/2026/05/11/resilient-ai-supercomputer-networking-using-mrc-and-srv6",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:49:51+08:00",
+      "summary": "OpenAI 與來自 AMD、博通、英特爾、微軟、NVIDIA 的研究人員近日聯手發表一篇新論文，揭露 Ope [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "美媒：習近平側重國安與科技自主，中國經濟陷入困境",
+      "link": "https://finance.technews.tw/2026/05/11/us-media-xi-jinping-focuses-national-security-tech-self-reliance-china-economy-struggles",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:20:38+08:00",
+      "summary": "《華爾街日報》報導，自習近平 2012 年成為中國領導人後，中國軍事變得更強，科技發展縮小與美國的差距，並主導 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "研究揭工時過長恐助長肥胖，專家再倡每週工作四天",
+      "link": "https://technews.tw/2026/05/11/research-long-working-hours-obesity-experts-advocate-four-day-work-week",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:10:28+08:00",
+      "summary": "研究顯示，工時愈長的人愈容易肥胖，而減少工作時間，可能有助維持體重。倡議人士指出，朝九晚五、每週工作五天的制度 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "The new AI-powered Google Finance is expanding to Europe.",
+      "link": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe",
+      "source": "Google Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T14:00:00+08:00",
+      "summary": "A screenshot of the AI-powered experience on Google Finance.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Google推出新Health應用程式　無螢幕健康手環同步登場",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754891_KJY942RF8OOG692UHO5BY",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T11:56:04+08:00",
+      "summary": "Google近日宣布，為提供用戶更好的體驗性，Fitbit應用程式將升級為Google Health應用程式，同時推出由Gemini驅動的個人健康教練Google Health Coach，Fitbit Premium訂閱服務則將更名為Google Health...",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
     {
       "title": "NASA 下一代火星直升機轉子技術突破，旋翼葉片突破音速未解體",
       "link": "https://technews.tw/2026/05/10/nasa-aerovironment-skyfall-mars-helicopter",
@@ -853,230 +1042,6 @@
       "category": "🔬 半導體與硬體",
       "published": "2026-05-10T15:31:52+08:00",
       "summary": "金星每天都是陰天，可能還會落下硫酸陣雨，過去探測器曾發現金星赤道有巨型大氣波反覆掃過，但原因不明。現在日本科學 [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Google tweaks Chrome AI privacy wording, insists processing stays on-device",
-      "link": "https://www.theregister.com/ai-and-ml/2026/05/09/google-tweaks-chrome-ai-privacy-wording-insists-processing-stays-on-device/5237580",
-      "source": "The Register",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-10T01:57:11+08:00",
-      "summary": "Deletion of a longstanding privacy assurance sparks concerns",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Broadcom shares jump after securing long-term AI chip and networking agreements with Google - MSN",
-      "link": "https://news.google.com/rss/articles/CBMiuwNBVV95cUxOT3dOZ2g2bTE0SFQ2OFBLclljUjlLNUx4V05JMTFOZXRDYnZzcDZkTGo2MDlwSnNsYksxQU1abGNEaTVmaFZVV0ltWkUzYkRDNFhldk9idmxlejNHQmZ4aEh3LXl1aE02dTZwd0plekxlRlgwc3M4NkxUem96VmJ4WEhVMnFTT3RneGdMTmdLSEJQWFU1d0o5b2RoQnpMZHIzcDIzNVRucFJPLWY0TXp4MVdhV1lvenBGV1hydEx4RjJkZjlnTDZEYzBjbFlabWJROVpQd2k1VW04ZVBXXzl3YVJCOWZ1cHk2d2J0U21KcDZ4Xy1aSERjajZlaUxCWXRuZDdyUF84Zkh5Nmt6bnREYm1zRzFhWTFXa0VtT2w4WlVFWmFXSXlZQlItOWxXWXBQS2c5azVtYVEzbTZubnJYR2xBMThNTnNkZE85N19MVjFGUEdzZmxhNDhtakJoUEl2V2FFeUtNdjV5MEV5VGhkT1RNdGk3Vm5zeG1jYzVRbkRqNWJnd2dlVWtMMkFUTHI2d0JoUUpRTG0xaDg5LW9TR2NBc3F6MlpzSkp3LU9VU0dHdUNoc3NRUkVUaw",
-      "source": "Broadcom News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T21:13:35+08:00",
-      "summary": "Broadcom shares jump after securing long-term AI chip and networking agreements with Google&nbsp;&nbsp;MSN",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "The new Wild West of AI kids’ toys",
-      "link": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys",
-      "source": "Ars Technica AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T19:00:51+08:00",
-      "summary": "These connected companions could disrupt everything from make-believe to bedtime stories. No wonder some lawmakers want them banned.",
-      "event_type": "news",
-      "tickers": [
-        "AMZN",
-        "META",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "All my clients wanted a carousel, now it's an AI chatbot",
-      "link": "https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md",
-      "source": "Hacker News AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T15:23:40+08:00",
-      "summary": "Article URL: https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md Comments URL: https://news.ycombinator.com/item?id=48072720 Points: 175 # Comments: 70",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Anti-work anthems, Boy George and controversial lyrics: A guide to all 35 Eurovision songs",
-      "link": "https://www.bbc.com/news/articles/ce8pmrv2p1mo",
-      "source": "BBC World",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-09T07:01:55+08:00",
-      "summary": "From dancefloor bangers to heartfelt ballads, here are the highlights and low points of Eurovision.",
-      "event_type": "news",
-      "tickers": [
-        "META",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "AI agents fueled a frenzy of startup building at the Consensus Miami EasyA hackathon",
-      "link": "https://www.coindesk.com/tech/2026/05/08/ai-agents-fueled-a-frenzy-of-startup-building-at-the-consensus-miami-easya-hackathon",
-      "source": "CoinDesk",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T03:12:29+08:00",
-      "summary": "",
-      "event_type": "news",
-      "tickers": [
-        "MSFT",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Which AI Glasses Are Right For You?",
-      "link": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you",
-      "source": "Meta Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-09T03:00:21+08:00",
-      "summary": "From capturing hands-free content to tracking workouts and staying connected on the go, find the AI glasses that fit your lifestyle. The post Which AI Glasses Are Right For You? appeared first on Meta Newsroom.",
-      "event_type": "news",
-      "tickers": [
-        "META",
-        "AAPL",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Chrome's 4GB AI model isn't new, but you're not wrong for being confused",
-      "link": "https://arstechnica.com/google/2026/05/no-google-hasnt-changed-chromes-local-ai-features-its-just-as-confusing-as-ever",
-      "source": "Ars Technica AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T01:17:17+08:00",
-      "summary": "You can stop Chrome from taking up 4GB of storage for local AI, but that shouldn't be your problem.",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL",
-        "AAPL"
-      ]
-    },
-    {
-      "title": "See what happens when creative legends use AI to make ads for small businesses.",
-      "link": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief",
-      "source": "Google Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T23:00:00+08:00",
-      "summary": "black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Google is testing an AI agent called Remy - Phandroid",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPT3FEc3pPWVR0TTh1d3RoUVczUDh4ZGI2eXl6SmRMWnFwOU0tUkNBYk1MNGN4RlEwbWRuUU81c2ZWRkVNVkxUYlJwaVd5eUp0VHpVNzIxQkRVNXZRLTYwaEdEREJINDBLa2xrWXNRX0k0UlNlMlZadzNpR3pYSXNRR9IBhgFBVV95cUxORlpQQmdFOUxxYmZuRER0aUdrVVFiUVJSaTNrenFIRmQtWUZvZTRmTzRVZE16dnI4Q1gzRElkTUppaTdWeEVOWGdUdnZJRHpzaVZzc1RCSVNycDM3QmdyUG9SZ2ZXUWVVX1B0bmE4RDFCT1JZcWZvOVdidjRKaUMtcFRkMl9ndw?oc=5",
-      "source": "AI 實戰落地（工具/流程）",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-08T09:21:06+08:00",
-      "summary": "Google is testing an AI agent called Remy&nbsp;&nbsp;Phandroid",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "能源危機推升成本，馬來西亞「零工經濟」族拚生計",
-      "link": "https://technews.tw/2026/05/08/malaysia-gig-economy",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T08:40:13+08:00",
-      "summary": "清晨 7 時許，吉隆坡單軌列車咖啡山站（Bukit Nanas）外騎樓，飄出椰漿飯融合參峇醬香氣。60 多歲馬 [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "挪威央行升息 1 碼抗通膨，中東戰爭以來歐洲國家首見",
-      "link": "https://finance.technews.tw/2026/05/08/norways-central-bank-raises-interest-rates-to-curb-inflation",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T08:30:49+08:00",
-      "summary": "挪威中央銀行 7 日決議調高基準利率 1 碼至 4.25%，成為自中東戰爭爆發以來首個採取升息行動的歐洲國家。",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "勞保級距要動了？洪申翰允兩個月內提出評估資料",
-      "link": "https://finance.technews.tw/2026/05/08/labor-insurance-contribution-brackets-changing",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T08:20:44+08:00",
-      "summary": "最低工資年年上調，但勞保最高級距卻近十年未動。勞工團體日前五一大遊行時提出勞保最高級距應升至新台幣 4 萬 8 [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Chrome Deleted Its Own Privacy Promise for Sneaky On-Device AI",
-      "link": "https://decrypt.co/367193/chrome-removes-privacy-claim-gemini-nano-google",
-      "source": "Decrypt",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T04:52:05+08:00",
-      "summary": "Chrome is quietly installing a 4GB AI on your devices. And now, its latest version has removed the disclosure that promised to keep your data off Google’s servers.",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "How to Disable Google's Gemini in Chrome",
-      "link": "https://www.wired.com/story/you-can-disable-gemini-in-chrome-if-its-freaking-you-out",
-      "source": "Wired AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-08T04:31:57+08:00",
-      "summary": "Chrome users were caught off guard by a 4-GB Google AI model baked into Chrome, sparking privacy concerns. The good news: You can easily uninstall it. The bad? You might not want to.",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "Your AI Chatbot May Be Leaking Your Chats to Meta, TikTok and Google",
-      "link": "https://decrypt.co/367164/your-ai-chatbot-leaking-chats-meta-tiktok-google",
-      "source": "Decrypt",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T03:06:46+08:00",
-      "summary": "A new study finds ChatGPT, Claude, Grok, and Perplexity all share user data with third-party ad trackers—sometimes even when you say no to cookies.",
-      "event_type": "news",
-      "tickers": [
-        "META",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "This Teacher Appreciation Week, we’re celebrating educators who made a difference in our lives.",
-      "link": "https://blog.google/products-and-platforms/products/education/teacher-appreciation-week-videos",
-      "source": "Google Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T00:00:00+08:00",
-      "summary": "To celebrate Teacher Appreciation Week, Googlers thanked the educators who inspired them to try new things.",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "5 helpful tools from Google to keep your accounts safe",
-      "link": "https://blog.google/innovation-and-ai/technology/safety-security/world-password-day-2026",
-      "source": "Google Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-08T00:00:00+08:00",
-      "summary": "A laptop sits against a blue background surrounded by safety and security-related icons. On the laptop screen is the letter G inside a blue shield.",
       "event_type": "news",
       "tickers": [
         "GOOGL"
@@ -1218,11 +1183,11 @@
   "co_mentions": [
     {
       "ticker": "META",
-      "count": 13
+      "count": 10
     },
     {
       "ticker": "MSFT",
-      "count": 10
+      "count": 8
     },
     {
       "ticker": "AMZN",
@@ -1237,12 +1202,12 @@
       "count": 4
     },
     {
-      "ticker": "AAPL",
-      "count": 4
+      "ticker": "BRK-B",
+      "count": 3
     },
     {
-      "ticker": "BRK-B",
-      "count": 2
+      "ticker": "AAPL",
+      "count": 3
     },
     {
       "ticker": "BLSH",
@@ -1253,9 +1218,9 @@
       "count": 2
     },
     {
-      "ticker": "TWST",
+      "ticker": "RLAY",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

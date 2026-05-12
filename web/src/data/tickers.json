@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-11T03:56:28Z",
+  "generated_at": "2026-05-12T01:54:33Z",
   "tickers": [
     {
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
       "market": "us",
-      "articles": 962,
+      "articles": 984,
       "reports": 3,
       "label": "GOOGL (US)"
     },
@@ -13,7 +13,7 @@
       "ticker": "2330",
       "name": "台灣積體電路製造股份有限公司",
       "market": "tw",
-      "articles": 918,
+      "articles": 947,
       "reports": 21,
       "label": "2330 (TW)"
     },
@@ -21,7 +21,7 @@
       "ticker": "NVDA",
       "name": "NVIDIA CORP",
       "market": "us",
-      "articles": 619,
+      "articles": 638,
       "reports": 1,
       "label": "NVDA (US)"
     },
@@ -29,7 +29,7 @@
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "market": "us",
-      "articles": 575,
+      "articles": 585,
       "reports": 2,
       "label": "META (US)"
     },
@@ -45,7 +45,7 @@
       "ticker": "MSFT",
       "name": "MICROSOFT CORP",
       "market": "us",
-      "articles": 381,
+      "articles": 384,
       "reports": 2,
       "label": "MSFT (US)"
     },
@@ -53,7 +53,7 @@
       "ticker": "2317",
       "name": "鴻海",
       "market": "tw",
-      "articles": 360,
+      "articles": 372,
       "reports": 10,
       "label": "2317 (TW)"
     },
@@ -61,7 +61,7 @@
       "ticker": "AAPL",
       "name": "Apple Inc.",
       "market": "us",
-      "articles": 356,
+      "articles": 370,
       "reports": 3,
       "label": "AAPL (US)"
     },
@@ -69,7 +69,7 @@
       "ticker": "AMZN",
       "name": "AMAZON COM INC",
       "market": "us",
-      "articles": 342,
+      "articles": 350,
       "reports": 2,
       "label": "AMZN (US)"
     },
@@ -77,7 +77,7 @@
       "ticker": "2454",
       "name": "聯發科",
       "market": "tw",
-      "articles": 322,
+      "articles": 331,
       "reports": 10,
       "label": "2454 (TW)"
     },
@@ -85,7 +85,7 @@
       "ticker": "TSLA",
       "name": "Tesla, Inc.",
       "market": "us",
-      "articles": 256,
+      "articles": 262,
       "reports": 2,
       "label": "TSLA (US)"
     },
@@ -93,7 +93,7 @@
       "ticker": "TSM",
       "name": "",
       "market": "us",
-      "articles": 131,
+      "articles": 135,
       "reports": 0,
       "label": "TSM (US)"
     },
@@ -101,7 +101,7 @@
       "ticker": "2605",
       "name": "",
       "market": "tw",
-      "articles": 104,
+      "articles": 127,
       "reports": 0,
       "label": "2605 (TW)"
     },
@@ -109,7 +109,7 @@
       "ticker": "BLSH",
       "name": "",
       "market": "us",
-      "articles": 92,
+      "articles": 93,
       "reports": 0,
       "label": "BLSH (US)"
     },
@@ -125,7 +125,7 @@
       "ticker": "JPM",
       "name": "JPMORGAN CHASE & CO",
       "market": "us",
-      "articles": 58,
+      "articles": 59,
       "reports": 1,
       "label": "JPM (US)"
     },
@@ -141,7 +141,7 @@
       "ticker": "BRK-B",
       "name": "",
       "market": "us",
-      "articles": 35,
+      "articles": 36,
       "reports": 0,
       "label": "BRK-B (US)"
     },
@@ -149,7 +149,7 @@
       "ticker": "5090",
       "name": "",
       "market": "tw",
-      "articles": 33,
+      "articles": 34,
       "reports": 0,
       "label": "5090 (TW)"
     },
@@ -162,6 +162,14 @@
       "label": "6000 (TW)"
     },
     {
+      "ticker": "1000",
+      "name": "",
+      "market": "tw",
+      "articles": 27,
+      "reports": 0,
+      "label": "1000 (TW)"
+    },
+    {
       "ticker": "2035",
       "name": "",
       "market": "tw",
@@ -170,18 +178,10 @@
       "label": "2035 (TW)"
     },
     {
-      "ticker": "1000",
-      "name": "",
-      "market": "tw",
-      "articles": 25,
-      "reports": 0,
-      "label": "1000 (TW)"
-    },
-    {
       "ticker": "1979",
       "name": "",
       "market": "tw",
-      "articles": 24,
+      "articles": 25,
       "reports": 0,
       "label": "1979 (TW)"
     },
@@ -189,9 +189,17 @@
       "ticker": "5060",
       "name": "",
       "market": "tw",
-      "articles": 19,
+      "articles": 20,
       "reports": 0,
       "label": "5060 (TW)"
+    },
+    {
+      "ticker": "1231",
+      "name": "",
+      "market": "tw",
+      "articles": 20,
+      "reports": 0,
+      "label": "1231 (TW)"
     },
     {
       "ticker": "1973",
@@ -216,6 +224,14 @@
       "articles": 14,
       "reports": 0,
       "label": "5080 (TW)"
+    },
+    {
+      "ticker": "9070",
+      "name": "",
+      "market": "tw",
+      "articles": 13,
+      "reports": 0,
+      "label": "9070 (TW)"
     },
     {
       "ticker": "3090",
@@ -258,6 +274,14 @@
       "label": "1974 (TW)"
     },
     {
+      "ticker": "2048",
+      "name": "",
+      "market": "tw",
+      "articles": 11,
+      "reports": 0,
+      "label": "2048 (TW)"
+    },
+    {
       "ticker": "2881",
       "name": "",
       "market": "tw",
@@ -274,28 +298,12 @@
       "label": "4096 (TW)"
     },
     {
-      "ticker": "9070",
-      "name": "",
-      "market": "tw",
-      "articles": 10,
-      "reports": 0,
-      "label": "9070 (TW)"
-    },
-    {
       "ticker": "1956",
       "name": "",
       "market": "tw",
       "articles": 10,
       "reports": 0,
       "label": "1956 (TW)"
-    },
-    {
-      "ticker": "2048",
-      "name": "",
-      "market": "tw",
-      "articles": 10,
-      "reports": 0,
-      "label": "2048 (TW)"
     },
     {
       "ticker": "1969",
@@ -330,6 +338,14 @@
       "label": "1024 (TW)"
     },
     {
+      "ticker": "1972",
+      "name": "",
+      "market": "tw",
+      "articles": 9,
+      "reports": 0,
+      "label": "1972 (TW)"
+    },
+    {
       "ticker": "1988",
       "name": "",
       "market": "tw",
@@ -352,14 +368,6 @@
       "articles": 8,
       "reports": 0,
       "label": "6400 (TW)"
-    },
-    {
-      "ticker": "1972",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "1972 (TW)"
     },
     {
       "ticker": "2040",
@@ -418,6 +426,14 @@
       "label": "1971 (TW)"
     },
     {
+      "ticker": "1975",
+      "name": "",
+      "market": "tw",
+      "articles": 8,
+      "reports": 0,
+      "label": "1975 (TW)"
+    },
+    {
       "ticker": "3000",
       "name": "",
       "market": "tw",
@@ -442,6 +458,14 @@
       "label": "4090 (TW)"
     },
     {
+      "ticker": "HBM",
+      "name": "",
+      "market": "us",
+      "articles": 7,
+      "reports": 0,
+      "label": "HBM (US)"
+    },
+    {
       "ticker": "9600",
       "name": "",
       "market": "tw",
@@ -464,14 +488,6 @@
       "articles": 7,
       "reports": 0,
       "label": "1985 (TW)"
-    },
-    {
-      "ticker": "1975",
-      "name": "",
-      "market": "tw",
-      "articles": 7,
-      "reports": 0,
-      "label": "1975 (TW)"
     },
     {
       "ticker": "1983",
@@ -530,6 +546,14 @@
       "label": "0050 (TW)"
     },
     {
+      "ticker": "1951",
+      "name": "",
+      "market": "tw",
+      "articles": 6,
+      "reports": 0,
+      "label": "1951 (TW)"
+    },
+    {
       "ticker": "1984",
       "name": "",
       "market": "tw",
@@ -538,12 +562,12 @@
       "label": "1984 (TW)"
     },
     {
-      "ticker": "HBM",
+      "ticker": "1800",
       "name": "",
-      "market": "us",
+      "market": "tw",
       "articles": 6,
       "reports": 0,
-      "label": "HBM (US)"
+      "label": "1800 (TW)"
     },
     {
       "ticker": "1945",
@@ -586,14 +610,6 @@
       "label": "1947 (TW)"
     },
     {
-      "ticker": "1951",
-      "name": "",
-      "market": "tw",
-      "articles": 5,
-      "reports": 0,
-      "label": "1951 (TW)"
-    },
-    {
       "ticker": "1933",
       "name": "",
       "market": "tw",
@@ -602,12 +618,20 @@
       "label": "1933 (TW)"
     },
     {
-      "ticker": "1800",
+      "ticker": "1964",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "1800 (TW)"
+      "label": "1964 (TW)"
+    },
+    {
+      "ticker": "9100",
+      "name": "",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0,
+      "label": "9100 (TW)"
     },
     {
       "ticker": "1940",
@@ -658,6 +682,14 @@
       "label": "1957 (TW)"
     },
     {
+      "ticker": "2142",
+      "name": "",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0,
+      "label": "2142 (TW)"
+    },
+    {
       "ticker": "1952",
       "name": "",
       "market": "tw",
@@ -698,14 +730,6 @@
       "label": "9005 (TW)"
     },
     {
-      "ticker": "1964",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1964 (TW)"
-    },
-    {
       "ticker": "0500",
       "name": "",
       "market": "tw",
@@ -720,14 +744,6 @@
       "articles": 4,
       "reports": 0,
       "label": "8004 (TW)"
-    },
-    {
-      "ticker": "9100",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "9100 (TW)"
     },
     {
       "ticker": "1968",
@@ -834,6 +850,14 @@
       "label": "1978 (TW)"
     },
     {
+      "ticker": "7997",
+      "name": "",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0,
+      "label": "7997 (TW)"
+    },
+    {
       "ticker": "2308",
       "name": "台達電",
       "market": "tw",
@@ -856,14 +880,6 @@
       "articles": 3,
       "reports": 0,
       "label": "1944 (TW)"
-    },
-    {
-      "ticker": "2142",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "2142 (TW)"
     },
     {
       "ticker": "HOME",
@@ -930,6 +946,14 @@
       "label": "1949 (TW)"
     },
     {
+      "ticker": "8800",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "8800 (TW)"
+    },
+    {
       "ticker": "4050",
       "name": "",
       "market": "tw",
@@ -976,6 +1000,14 @@
       "articles": 3,
       "reports": 0,
       "label": "1200 (TW)"
+    },
+    {
+      "ticker": "5500",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "5500 (TW)"
     },
     {
       "ticker": "S",
@@ -1026,12 +1058,36 @@
       "label": "1953 (TW)"
     },
     {
+      "ticker": "5050",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "5050 (TW)"
+    },
+    {
       "ticker": "1895",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
       "label": "1895 (TW)"
+    },
+    {
+      "ticker": "9060",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "9060 (TW)"
+    },
+    {
+      "ticker": "1599",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "1599 (TW)"
     },
     {
       "ticker": "1935",
@@ -1056,6 +1112,14 @@
       "articles": 3,
       "reports": 0,
       "label": "2408 (TW)"
+    },
+    {
+      "ticker": "7372",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "7372 (TW)"
     },
     {
       "ticker": "INTC",
@@ -1086,7 +1150,7 @@
       "name": "志聯",
       "market": "tw",
       "articles": 0,
-      "reports": 35,
+      "reports": 36,
       "label": "2024 (TW)"
     },
     {
@@ -1102,7 +1166,7 @@
       "name": "燁輝",
       "market": "tw",
       "articles": 0,
-      "reports": 24,
+      "reports": 25,
       "label": "2023 (TW)"
     },
     {
@@ -1110,7 +1174,7 @@
       "name": "美亞",
       "market": "tw",
       "articles": 0,
-      "reports": 17,
+      "reports": 18,
       "label": "2020 (TW)"
     },
     {
@@ -1126,7 +1190,7 @@
       "name": "聚亨",
       "market": "tw",
       "articles": 0,
-      "reports": 13,
+      "reports": 14,
       "label": "2022 (TW)"
     },
     {
@@ -1138,20 +1202,20 @@
       "label": "2014 (TW)"
     },
     {
+      "ticker": "2017",
+      "name": "官田鋼",
+      "market": "tw",
+      "articles": 0,
+      "reports": 12,
+      "label": "2017 (TW)"
+    },
+    {
       "ticker": "2028",
       "name": "威致",
       "market": "tw",
       "articles": 0,
       "reports": 12,
       "label": "2028 (TW)"
-    },
-    {
-      "ticker": "2017",
-      "name": "官田鋼",
-      "market": "tw",
-      "articles": 0,
-      "reports": 11,
-      "label": "2017 (TW)"
     },
     {
       "ticker": "2027",
@@ -1280,6 +1344,14 @@
       "articles": 0,
       "reports": 1,
       "label": "IREN (US)"
+    },
+    {
+      "ticker": "RLAY",
+      "name": "Relay Therapeutics, Inc.",
+      "market": "us",
+      "articles": 0,
+      "reports": 1,
+      "label": "RLAY (US)"
     },
     {
       "ticker": "TWST",

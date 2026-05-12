@@ -1,0 +1,148 @@
+{
+  "ticker": "1231",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [
+    {
+      "title": "8-K - Volato Group, Inc. (0001853070) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1853070/000149315226022304/0001493152-26-022304-index.htm",
+      "source": "SEC 8-K Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T05:31:04+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001493152-26-022304 Size: 338 KB Item 5.07: Submission of Matters to a Vote of Security Holders Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
+      "body_text": "EIN. : 862707040 | State of Incorp.: DE | Fiscal Year End: 1231 Type: 8-K | Act: 34 | File No.: 001-41104 | Film No.: 26964665 SIC : 4522 Air Transportation, Nonscheduled (CF Office: 01 Energy & Transportation)",
+      "event_type": "filing",
+      "tickers": [
+        "1231",
+        "4522"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "10-Q - MAMMOTH ENERGY SERVICES, INC. (0001679268) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1679268/000162828026033686/0001628280-26-033686-index.htm",
+      "source": "SEC 10-Q Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T05:30:38+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001628280-26-033686 Size: 9 MB",
+      "body_text": "EIN. : 320498321 | State of Incorp.: DE | Fiscal Year End: 1231 Type: 10-Q | Act: 34 | File No.: 001-37917 | Film No.: 26964657 SIC : 1389 Oil & Gas Field Services, NEC (CF Office: 01 Energy & Transportation)",
+      "event_type": "filing",
+      "tickers": [
+        "1231",
+        "1389"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "10-K - IIOT-OXYS, Inc. (0001290658) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1290658/000168316826003672/0001683168-26-003672-index.htm",
+      "source": "SEC 10-K Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T04:21:43+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001683168-26-003672 Size: 7 MB",
+      "body_text": "EIN. : 562415252 | State of Incorp.: NV | Fiscal Year End: 1231 Type: 10-K | Act: 34 | File No.: 000-50773 | Film No.: 26963522 SIC : 7372 Services-Prepackaged Software (CF Office: 06 Technology)",
+      "event_type": "filing",
+      "tickers": [
+        "1231",
+        "7372"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
+      "title": "10-K/A - NEXTNRG, INC. (0001817004) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1817004/000149315226022229/0001493152-26-022229-index.htm",
+      "source": "SEC 10-K Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T04:14:34+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001493152-26-022229 Size: 17 MB",
+      "body_text": "EIN. : 834260623 | State of Incorp.: DE | Fiscal Year End: 1231 Type: 10-K/A | Act: 34 | File No.: 001-40809 | Film No.: 26963367 SIC : 5500 Retail-Auto Dealers & Gasoline Stations (CF Office: 07 Trade & Services)",
+      "event_type": "filing",
+      "tickers": [
+        "1231",
+        "5500"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    }
+  ],
+  "general_news": [
+    {
+      "title": "4 - DANHAKL JOHN G (0001162644) (Reporting)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1162644/000119312526217635/0001193125-26-217635-index.htm",
+      "source": "SEC Form 4 (Atom)",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:56:44+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001193125-26-217635 Size: 6 KB",
+      "event_type": "news",
+      "tickers": [
+        "1231",
+        "7997"
+      ]
+    },
+    {
+      "title": "13F-HR/A - Electric Capital Partners, LLC (0002087133) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/2087133/000199937126010494/0001999371-26-010494-index.htm",
+      "source": "SEC 13F-HR (Atom)",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T05:30:45+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001999371-26-010494 Size: 4 KB",
+      "event_type": "news",
+      "tickers": [
+        "1231"
+      ]
+    },
+    {
+      "title": "13F-HR - Capital Square, LLC (0001798736) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1798736/000179873626000002/0001798736-26-000002-index.htm",
+      "source": "SEC 13F-HR (Atom)",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T05:29:07+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001798736-26-000002 Size: 124 KB",
+      "event_type": "news",
+      "tickers": [
+        "1231"
+      ]
+    },
+    {
+      "title": "6-K - Cardiol Therapeutics Inc. (0001702123) (Filer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1702123/000110465926058766/0001104659-26-058766-index.htm",
+      "source": "SEC 6-K Filings (Atom)",
+      "category": "🏛️ 法說與 IR 材料",
+      "published": "2026-05-12T05:27:28+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001104659-26-058766 Size: 605 KB",
+      "event_type": "news",
+      "tickers": [
+        "1231",
+        "2836"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [
+    {
+      "ticker": "4522",
+      "count": 1
+    },
+    {
+      "ticker": "1389",
+      "count": 1
+    },
+    {
+      "ticker": "7372",
+      "count": 1
+    },
+    {
+      "ticker": "5500",
+      "count": 1
+    }
+  ],
+  "generated_at": "2026-05-12T01:54:29Z"
+}

@@ -8,6 +8,24 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Wooptix Targets AI Packaging Bottleneck with Astronomy Tech",
+      "link": "https://www.eetimes.com/wooptix-targets-ai-packaging-bottleneck-with-astronomy-tech",
+      "source": "EE Times",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T16:57:35+08:00",
+      "summary": "A Canary Islands startup brings wavefront imaging to semiconductor metrology, aiming to tackle wafer shape challenges in 3D integration. The post Wooptix Targets AI Packaging Bottleneck with Astronomy Tech appeared first on EE Times.",
+      "body_text": "As chipmakers race to build faster AI processors, attention has shifted beyond transistor scaling and toward advanced packaging, hybrid bonding, and 3D integration. That shift is creating new manufacturing bottlenecks—among them, how to precisely measure wafer shape, topography, and warpage as devices become thinner, denser, and increasingly stacked.\nOne company hoping to capitalize on that transi",
+      "event_type": "earnings",
+      "tickers": [
+        "1000",
+        "TSM"
+      ],
+      "companies": [
+        "TSMC"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "How Spain’s ICFO Helped Build a Quantum Security Startup for the AI Era",
       "link": "https://www.eetimes.com/how-spains-icfo-helped-build-a-quantum-security-startup-for-the-ai-era",
       "source": "EE Times",
@@ -224,6 +242,10 @@
   "fundamentals": null,
   "co_mentions": [
     {
+      "ticker": "TSM",
+      "count": 1
+    },
+    {
       "ticker": "AMZN",
       "count": 1
     },
@@ -240,5 +262,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:24Z"
+  "generated_at": "2026-05-12T01:54:29Z"
 }

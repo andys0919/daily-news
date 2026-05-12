@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T03:56:22Z",
+  "generated_at": "2026-05-12T01:54:26Z",
   "tickers": [
     {
       "ticker": "NVDA",
@@ -543,9 +543,9 @@
         "score": 3
       },
       "guidance": {
-        "up": 0,
+        "up": 1,
         "down": 0,
-        "net": 0
+        "net": 1
       }
     },
     {

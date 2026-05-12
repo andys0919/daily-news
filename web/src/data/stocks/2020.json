@@ -43,13 +43,13 @@
       "source_confidence": "official-openapi",
       "form_type": "TWSE-MONTHLY",
       "fiscal_year": null,
-      "fiscal_period": "11503",
-      "period_end": "11503",
-      "filed_at": "1150417",
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
       "report_kind": "monthly_revenue",
       "revenue": null,
-      "monthly_revenue": 352254.0,
+      "monthly_revenue": 408757.0,
       "net_income": null,
       "operating_income": null,
       "gross_profit": null,
@@ -61,7 +61,7 @@
       "free_cash_flow": null,
       "guidance_summary": "",
       "filing_excerpt": "",
-      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2020\", \"公司名稱\": \"美亞\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"352254\", \"營業收入-上月營收\": \"231956\", \"營業收入-去年當月營收\": \"423210\", \"營業收入-上月比較增減(%)\": \"51.862422183517566\", \"營業收入-去年同月增減(%)\": \"-16.766144467285745\", \"累計營業收入-當月累計營收\": \"1019073\", \"累計營業收入-去年累計營收\": \"1090617\", \"累計營業收入-前期比較增減(%)\": \"-6.559956428333686\", \"備註\": \"-\"}"
+      "payload_json": "{\"出表日期\": \"1150511\", \"資料年月\": \"11504\", \"公司代號\": \"2020\", \"公司名稱\": \"美亞\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"408757\", \"營業收入-上月營收\": \"352254\", \"營業收入-去年當月營收\": \"403147\", \"營業收入-上月比較增減(%)\": \"16.04041401942916\", \"營業收入-去年同月增減(%)\": \"1.3915519649160233\", \"累計營業收入-當月累計營收\": \"1427879\", \"累計營業收入-去年累計營收\": \"1493707\", \"累計營業收入-前期比較增減(%)\": \"-4.407022260724493\", \"備註\": \"-\"}"
     },
     "latest_transcript": null,
     "recent_insider_summary": null,
@@ -74,6 +74,83 @@
   "holdings": [],
   "recent_news": [],
   "general_news": [
+    {
+      "title": "US in closely-guarded talks to open new bases in Greenland",
+      "link": "https://www.bbc.com/news/articles/cx21669452lo",
+      "source": "BBC World",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T07:56:11+08:00",
+      "summary": "It is seeking to open three bases in the south of the Arctic territory, according to multiple officials familiar with the talks.",
+      "event_type": "news",
+      "tickers": [
+        "1951"
+      ]
+    },
+    {
+      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+      "link": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+      "source": "Hugging Face Blog",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T07:18:26+08:00",
+      "summary": "",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "World Markets Watchlist: May 11, 2026",
+      "link": "https://www.advisorperspectives.com/dshort/updates/2026/05/11/world-markets-watchlist-may-11-2026",
+      "source": "ETF Trends",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T05:15:19+08:00",
+      "summary": "Our global markets watchlist tracks nine prominent indexes from economies around the world. The list includes the S&#38;P 500 from the United States, TSX from Canada, the FTSE 100 from England, the DAXK from Germany, the CAC 40 from France, the Nikkei 225 from Japan, the Shanghai from China, the Hang Seng from Hong Kong, [...] The post World Markets Watchlist: May 11, 2026 appeared first on ETF Trends.",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "UK should commit to rejoin the EU, London mayor tells CNBC",
+      "link": "https://www.cnbc.com/2026/05/11/sadiq-khan-uk-rejoin-eu-labour-starmer.html",
+      "source": "CNBC Earnings",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T23:57:21+08:00",
+      "summary": "London mayor Sadiq Khan said that Prime Minister Keir Starmer should commit to rejoining the European Union and be \"bigger and bolder.\"",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Will Mounting Supply Chain Strains Hamstring the AI Investment Boom?",
+      "link": "https://libertystreeteconomics.newyorkfed.org/2026/05/will-mounting-supply-chain-strains-hamstring-the-ai-investment-boom",
+      "source": "Liberty Street Economics",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T19:00:00+08:00",
+      "summary": "The conflict in the Middle East has precipitated a global supply shock—the third in six years following the pandemic in 2020 and Russia’s invasion of Ukraine in 2022. The current shock raises the specter of spillovers to the U.S. through both prices and physical shortages of goods. A critical conduit for spillovers through these channels is via Asian supply chains, especially from middle- to lower-middle income countries in southeast Asia, which are key suppliers for goods needed for the AI infr",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Tyrants are losing wars",
+      "link": "https://www.noahpinion.blog/p/tyrants-are-losing-wars",
+      "source": "Noahpinion",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T16:36:24+08:00",
+      "summary": "Ruthlessness and machismo will only get you so far in a technological world.",
+      "event_type": "policy",
+      "tickers": []
+    },
+    {
+      "title": "The Winners and Losers of the Iran Energy Shock",
+      "link": "https://www.foreignaffairs.com/iran/winners-and-losers-iran-energy-shock",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T12:00:00+08:00",
+      "summary": "How the war created a new geopolitical divide.",
+      "event_type": "policy",
+      "tickers": [
+        "1979"
+      ]
+    },
     {
       "title": "Saylor signals another Bitcoin buy, after hinting at selling in Q1 earnings call",
       "link": "https://cointelegraph.com/news/saylor-bitcoin-buy-sale-announcement",
@@ -345,87 +422,6 @@
       "tickers": [
         "1963"
       ]
-    },
-    {
-      "title": "Libya’s False Peace",
-      "link": "https://www.foreignaffairs.com/libya/libyas-false-peace",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-01T12:00:00+08:00",
-      "summary": "Libya needs political unity, not Washington’s dealmaking.",
-      "event_type": "earnings",
-      "tickers": [
-        "2050"
-      ]
-    },
-    {
-      "title": "Friday's big stock stories: What’s likely to move the market in the next trading session",
-      "link": "https://www.cnbc.com/2026/04/30/fridays-big-stock-stories-whats-likely-to-move-the-market.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-01T07:14:53+08:00",
-      "summary": "Stocks ended April's trading on a high note, with the S&amp;P 500 closing above 7,200 for the first time and posting its strongly monthly performance since 2020.",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "Dow surges nearly 800 points, S&P 500 posts first close above 7,200 and best month since 2020: Live updates",
-      "link": "https://www.cnbc.com/2026/04/29/stock-market-today-live-updates.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-01T06:02:51+08:00",
-      "summary": "The broad market index jumped more than 10% in April for its best month since November 2020.",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "S&P 500 heads for its best month since 2020 — plus, Apple earnings on deck",
-      "link": "https://www.cnbc.com/2026/04/30/sp-500-heads-for-its-best-month-since-2020-plus-apple-earnings-on-deck.html",
-      "source": "CNBC Business",
-      "category": "💰 財經與總經",
-      "published": "2026-05-01T02:40:22+08:00",
-      "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "event_type": "earnings",
-      "tickers": [
-        "AAPL"
-      ]
-    },
-    {
-      "title": "Your car with Google built-in is about to get smarter, thanks to Gemini",
-      "link": "https://blog.google/products-and-platforms/platforms/android/cars-with-google-built-in-gemini-tips-2026",
-      "source": "Google Blog",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-01T00:00:00+08:00",
-      "summary": "Gemini navigation on a car screen",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "What Drove Down America’s Fentanyl Deaths?",
-      "link": "https://www.foreignaffairs.com/china/what-drove-down-americas-fentanyl-deaths",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-04-30T12:00:00+08:00",
-      "summary": "China might have—but wouldn’t want Washington to know.",
-      "event_type": "policy",
-      "tickers": []
-    },
-    {
-      "title": "The New Resource Curse",
-      "link": "https://www.foreignaffairs.com/united-states/new-resource-curse",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-04-30T12:00:00+08:00",
-      "summary": "Critical minerals will scramble geopolitics.",
-      "event_type": "earnings",
-      "tickers": [
-        "2040",
-        "1974",
-        "1945",
-        "1986"
-      ]
     }
   ],
   "history": [
@@ -665,6 +661,24 @@
     },
     {
       "fiscal_year": null,
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 408757.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
       "fiscal_period": "11503",
       "period_end": "11503",
       "filed_at": "1150417",
@@ -800,5 +814,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:26Z"
 }

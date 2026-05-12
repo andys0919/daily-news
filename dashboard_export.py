@@ -685,6 +685,8 @@ def _guidance_feed(
         )):
             continue
         excerpt = summary.strip() or body[:240].strip()
+        raw_tickers = _parse_tickers(row["tickers_json"])
+        augmented = _augment_tickers_from_title(title, raw_tickers)
         out.append({
             "title": title,
             "link": row["link"],
@@ -693,7 +695,7 @@ def _guidance_feed(
             "published": row["published"],
             "direction": direction,
             "excerpt": excerpt,
-            "tickers": _parse_tickers(row["tickers_json"]),
+            "tickers": augmented,
             "companies": _parse_companies(row["companies_json"]),
             "event_type": row["event_type"],
         })
@@ -1028,6 +1030,39 @@ def _today_takeaways(
     return out[:3]
 
 
+# Aliases for watchlist tickers — used for title-based fallback matching when
+# news_enrichment didn't tag the ticker. Maps lowercase needle → ticker.
+TICKER_ALIASES = {
+    "nvda": "NVDA", "nvidia": "NVDA", "輝達": "NVDA",
+    "tsm": "TSM", "tsmc": "TSM",
+    "2330": "2330", "台積電": "2330", "台積": "2330", "tsmc": "2330",
+    "aapl": "AAPL", "apple": "AAPL", "蘋果": "AAPL",
+    "msft": "MSFT", "microsoft": "MSFT", "微軟": "MSFT",
+    "googl": "GOOGL", "google": "GOOGL", "alphabet": "GOOGL", "google cloud": "GOOGL",
+    "meta": "META", "facebook": "META",
+    "amd": "AMD",
+    "avgo": "AVGO", "broadcom": "AVGO", "博通": "AVGO",
+    "2454": "2454", "聯發科": "2454", "mediatek": "2454",
+    "2317": "2317", "鴻海": "2317", "foxconn": "2317", "hon hai": "2317",
+    "tsla": "TSLA", "tesla": "TSLA",
+    "amzn": "AMZN", "amazon": "AMZN",
+    "2308": "2308", "台達電": "2308",
+    "2382": "2382", "廣達": "2382",
+}
+
+
+def _augment_tickers_from_title(title: str, tickers: list[str]) -> list[str]:
+    """Title-based fallback: if news_enrichment missed the ticker, scan known aliases."""
+    existing = set(tickers)
+    lower = title.lower()
+    for needle, ticker in TICKER_ALIASES.items():
+        if ticker in existing:
+            continue
+        if needle in lower:
+            existing.add(ticker)
+    return list(existing)
+
+
 ANALYST_KEYWORDS = (
     # English broker/analyst phrases
     "raises target", "raised target", "lowers target", "lowered target",
@@ -1094,12 +1129,13 @@ def _analyst_views(db_path: Path, since_iso: str, limit: int = 80) -> list[dict]
             continue
         seen.add(norm)
         direction = _classify_guidance(title)
+        raw = _parse_tickers(row["tickers_json"])
         out.append({
             "title": title,
             "link": row["link"],
             "source": row["source"],
             "published": row["published"],
-            "tickers": _parse_tickers(row["tickers_json"]),
+            "tickers": _augment_tickers_from_title(title, raw),
             "direction": direction,
             "summary": (row["summary"] or "")[:240],
         })
@@ -1108,14 +1144,19 @@ def _analyst_views(db_path: Path, since_iso: str, limit: int = 80) -> list[dict]
     return out
 
 
-def _revenue_pulse(db_path: Path, limit: int = 24) -> list[dict]:
+def _revenue_pulse(
+    db_path: Path,
+    limit: int = 24,
+    watchlist: list[str] | None = None,
+) -> list[dict]:
     """Latest revenue snapshot per ticker with simple trend.
 
-    Pulls deduped quarterly + monthly latest rows for top tickers by article count.
+    Includes the full watchlist plus top tickers by article activity.
+    Watchlist tickers are guaranteed to appear even with zero recent articles.
     """
     conn = _connect(db_path)
     try:
-        # Get tickers ranked by recent article volume — these are the ones users care about
+        # Get tickers ranked by recent article volume
         active = conn.execute(
             """
             SELECT tickers_json FROM articles
@@ -1130,7 +1171,17 @@ def _revenue_pulse(db_path: Path, limit: int = 24) -> list[dict]:
     for row in active:
         for t in _parse_tickers(row["tickers_json"]):
             counter[t] += 1
-    top_tickers = [t for t, _ in counter.most_common(40)]
+    seen: set[str] = set()
+    top_tickers: list[str] = []
+    for t in (watchlist or []):
+        u = t.upper()
+        if u not in seen:
+            top_tickers.append(u)
+            seen.add(u)
+    for t, _ in counter.most_common(40):
+        if t not in seen:
+            top_tickers.append(t)
+            seen.add(t)
 
     out: list[dict] = []
     try:
@@ -1267,7 +1318,7 @@ def _internal_data_feed(db_path: Path, since_iso: str, limit: int = 30) -> list[
             continue
         if any(kw in lower for kw in POLITICS_KW):
             continue
-        tickers = _parse_tickers(row["tickers_json"])
+        tickers = _augment_tickers_from_title(title, _parse_tickers(row["tickers_json"]))
         # Internal data should map to a ticker (real corporate news)
         if not tickers:
             # Allow event_type=filing/capex without tickers only if title is unambiguously corporate
@@ -1381,7 +1432,7 @@ def export_all(
     takeaways = _today_takeaways(guidance_up, guidance_down, fundamentals, health_by_ticker)
 
     analyst_views = _analyst_views(db_path, since_30, limit=60)
-    revenue_pulse = _revenue_pulse(db_path, limit=24)
+    revenue_pulse = _revenue_pulse(db_path, limit=24, watchlist=tickers)
     internal_feed = _internal_data_feed(db_path, since_30, limit=30)
 
     # Attach health + guidance count to each fundamentals entry for the UI

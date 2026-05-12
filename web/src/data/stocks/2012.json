@@ -75,6 +75,18 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "美媒：習近平側重國安與科技自主，中國經濟陷入困境",
+      "link": "https://finance.technews.tw/2026/05/11/us-media-xi-jinping-focuses-national-security-tech-self-reliance-china-economy-struggles",
+      "source": "科技新報",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:20:38+08:00",
+      "summary": "《華爾街日報》報導，自習近平 2012 年成為中國領導人後，中國軍事變得更強，科技發展縮小與美國的差距，並主導 [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
       "title": "Why Eurovision's fallout over Israel may change the competition forever",
       "link": "https://www.bbc.com/news/articles/cgkpgm6vk48o",
       "source": "BBC World",
@@ -550,5 +562,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

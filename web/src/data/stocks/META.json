@@ -46,6 +46,29 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Trump heads to China with Musk, Cook and top CEOs for Xi talks",
+      "link": "https://www.scmp.com/news/china/article/3353199/trump-heads-china-musk-cook-and-top-ceos-xi-talks",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T05:49:13+08:00",
+      "summary": "US President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week. The White House on Monday released the list of leaders set to travel to China alongside Musk and Cook, including Larry Fink of BlackRock, Kelly Ortberg of Boeing, Dina Powell McCormick of Meta and Ryan McInerney of Visa. The delegation spans key industries, including aviation, technology, banking and...",
+      "body_text": "Business delegation spanning tech, aviation and finance joins Beijing trip as trade, investment and supply chains top agenda\nUS President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week.\nThe White House on Monday released the list of leaders set to travel to China a",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "股價用喊的？SanDisk、美光股價飆漲為台股本周走勢埋下火種",
       "link": "https://finance.technews.tw/2026/05/11/sandisk-and-micron-shares-surged-last-week",
       "source": "科技新報",
@@ -820,29 +843,85 @@
         "Meta"
       ],
       "guidance_direction": null
-    },
-    {
-      "title": "美股收紅　標普、那指創紀錄新高",
-      "link": "https://www.cna.com.tw/news/afe/202605010010.aspx",
-      "source": "中央社 財經",
-      "category": "💰 財經與總經",
-      "published": "2026-05-01T05:00:51+08:00",
-      "summary": "（中央社紐約30日綜合外電報導）由於企業財報令投資人樂觀，且美國經濟成長仍具韌性，美股主要指數今天收紅，標普、那指收在紀錄新高，同時也創下自2020年以來的單月最佳表現。",
-      "body_text": "（中央社紐約30日綜合外電報導）由於企業財報令投資人樂觀，且美國經濟成長仍具韌性，美股主要指數今天收紅，標普、那指收在紀錄新高，同時也創下自2020年以來的單月最佳表現。\n道瓊工業指數上漲790.33點或1.62%，收49652.14點。\n標普500指數勁揚73.06點或1.02%，收7209.01點。\n那斯達克指數上漲219.07點或0.89%，收24892.31點。\n費城半導體指數勁揚232.40點或2.26%，收10503.70點。\n個股方面，Meta股價重挫約8.6%，谷歌（Google）母公司Alphabet則大漲近10%。這兩家科技巨擘稍早公布季度財報，對於它們出巨資押注人工智慧（AI），投資人反應截然不同。（編譯：楊昭彥）1150501\n選擇與事實站在一起，您的每一份贊助，都是守護新聞自由的力量\n下載中央社「一手新聞」APP，即時掌握最新消息\n本網站之文字、圖片及影音，非經授",
-      "event_type": "earnings",
-      "tickers": [
-        "META",
-        "GOOGL"
-      ],
-      "companies": [
-        "Meta",
-        "Google",
-        "Alphabet"
-      ],
-      "guidance_direction": null
     }
   ],
   "general_news": [
+    {
+      "title": "4 - Meta Platforms, Inc. (0001326801) (Issuer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007078/0000950103-26-007078-index.htm",
+      "source": "SEC Form 4 (Atom)",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:40:41+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0000950103-26-007078 Size: 27 KB",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
+      "title": "v0.23.3-rc1: mlx: fix macOS 26 target leakage in v3 metallib (#16053)",
+      "link": "https://github.com/ollama/ollama/releases/tag/v0.23.3-rc1",
+      "source": "Ollama Releases",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-12T07:37:57+08:00",
+      "summary": "MLX compiles the AIR objects with the requested -mmacosx-version-min, but its final metallib step invokes metal instead of metallib. With the macOS 26 SDK, that can stamp the Metal v3 library with a macOS 26 deployment target. Relink the generated AIR files with metallib before install until this is fixed upstream.",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
+      "title": "Here&#8217;s what Mira Murati&#8217;s AI company is up to",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/928309/mira-murati-thinking-machines-ai-interaction-model",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-12T06:19:15+08:00",
+      "summary": "Thinking Machines, the AI company founded by former OpenAI CTO Mira Murati, announced Monday that it's working on something called \"interaction models.\" The idea behind interaction models, according to Thinking Machines, is that they will let people \"collaborate with AI the way we naturally collaborate with each other - they continuously take in audio, video, [&#8230;]",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "META"
+      ]
+    },
+    {
+      "title": "Data center guzzled 30 million gallons of water and nobody noticed for months",
+      "link": "https://arstechnica.com/tech-policy/2026/05/data-center-used-30-million-gallons-of-water-without-initially-paying",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-12T04:37:00+08:00",
+      "summary": "Can AI save us from the AI industry’s endless thirst for water? Outlook not so good.",
+      "event_type": "news",
+      "tickers": [
+        "META",
+        "GOOGL",
+        "MSFT"
+      ]
+    },
+    {
+      "title": "川普訪中　美官員：馬斯克、庫克和波音執行長等將隨行",
+      "link": "https://www.cna.com.tw/news/aopl/202605120005.aspx",
+      "source": "中央社 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T02:05:03+08:00",
+      "summary": "（中央社華盛頓11日綜合外電報導）美國總統川普預計本周訪問中國，白宮官員告訴路透社，隨行名單包括特斯拉執行長馬斯克（Elon Musk）、蘋果執行長庫克（Tim Cook）、奇異航太（GE Aerospace）執行長卡普（Larry Culp），以及波音執行長歐特柏格等人。",
+      "event_type": "news",
+      "tickers": [
+        "META",
+        "NVDA"
+      ]
+    },
+    {
+      "title": "Meta at The Cannes Film Festival 2026",
+      "link": "https://about.fb.com/news/2026/05/meta-at-the-cannes-film-festival-2026",
+      "source": "Meta Newsroom",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-11T18:00:03+08:00",
+      "summary": "Meta is proud to be an Official Partner of the Festival de Cannes in a new multi-year strategic partnership. The post Meta at The Cannes Film Festival 2026 appeared first on Meta Newsroom.",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
     {
       "title": "Israeli weapon fires tiny metal cubes into people in Lebanon, like Gaza",
       "link": "https://www.aljazeera.com/video/newsfeed/2026/5/10/israeli-weapon-fires-tiny-metal-cubes-into-people-in-lebanon-like-gaza?traffic_source=rss",
@@ -1058,31 +1137,6 @@
         "GOOGL",
         "META"
       ]
-    },
-    {
-      "title": "五大出版商告Meta侵權　Mark Zuckerberg遭點名助長盜用風氣",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754377_CGF20HC88JDEYS6IKZK2N",
-      "source": "DIGITIMES AI應用",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-07T02:06:38+08:00",
-      "summary": "Meta遭作家與五大出版商指控，從盜版網站取得數百萬本書籍與期刊訓練Llama人工智慧（AI）模型，為史上規模最大著作權侵權案之一。綜合金融時報（FT）、華爾街日報（WSJ）與路透（Reuters）報導，由Hachette、Macmillan、McGraw Hill、Elsevier、Cengage等五家出版商及暢銷作家Scott...",
-      "event_type": "news",
-      "tickers": [
-        "META"
-      ]
-    },
-    {
-      "title": "Broadcom Stock: Google, Meta and Anthropic Make June 3 the Real AVGO Test - Techi",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcUFzY2FkZ3NScDI5Q3JGUmdoUDFldGVRQ0NxWVpWZkVST0tJWWlCTU1hZ1c0THhBXzVVN0MyWTBVUGtNZGMxdWVoVUxLRTVMWXdsbUF1aksxQkVUQ25ZUlhpNk1LSDI3WlQtdWRpb1cyX2pOOWJXWmt1a0xwY0tCOXFxLTUxc1ZqLVBOZXlGZ3I",
-      "source": "Broadcom News",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-06T17:36:19+08:00",
-      "summary": "Broadcom Stock: Google, Meta and Anthropic Make June 3 the Real AVGO Test&nbsp;&nbsp;Techi",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL",
-        "META"
-      ]
     }
   ],
   "history": [
@@ -1189,7 +1243,7 @@
   "co_mentions": [
     {
       "ticker": "GOOGL",
-      "count": 20
+      "count": 19
     },
     {
       "ticker": "MSFT",
@@ -1200,20 +1254,20 @@
       "count": 8
     },
     {
-      "ticker": "NVDA",
-      "count": 6
+      "ticker": "AAPL",
+      "count": 7
     },
     {
-      "ticker": "AAPL",
-      "count": 6
+      "ticker": "NVDA",
+      "count": 7
+    },
+    {
+      "ticker": "TSLA",
+      "count": 3
     },
     {
       "ticker": "TSM",
       "count": 3
-    },
-    {
-      "ticker": "TSLA",
-      "count": 2
     },
     {
       "ticker": "2330",
@@ -1228,5 +1282,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

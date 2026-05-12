@@ -43,13 +43,13 @@
       "source_confidence": "official-openapi",
       "form_type": "TWSE-MONTHLY",
       "fiscal_year": null,
-      "fiscal_period": "11503",
-      "period_end": "11503",
-      "filed_at": "1150417",
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
       "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
       "report_kind": "monthly_revenue",
       "revenue": null,
-      "monthly_revenue": 1239005.0,
+      "monthly_revenue": 1131640.0,
       "net_income": null,
       "operating_income": null,
       "gross_profit": null,
@@ -61,7 +61,7 @@
       "free_cash_flow": null,
       "guidance_summary": "",
       "filing_excerpt": "",
-      "payload_json": "{\"出表日期\": \"1150417\", \"資料年月\": \"11503\", \"公司代號\": \"2022\", \"公司名稱\": \"聚亨\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"1239005\", \"營業收入-上月營收\": \"1064207\", \"營業收入-去年當月營收\": \"812477\", \"營業收入-上月比較增減(%)\": \"16.42518795685426\", \"營業收入-去年同月增減(%)\": \"52.497239921868555\", \"累計營業收入-當月累計營收\": \"3466976\", \"累計營業收入-去年累計營收\": \"2192001\", \"累計營業收入-前期比較增減(%)\": \"58.16489134813351\", \"備註\": \"主要係因泰國鋼鐵內需市場回溫及地震影響對有認證之鋼筋需求增加，又受匯率變動影響，致合併營收增長\"}"
+      "payload_json": "{\"出表日期\": \"1150511\", \"資料年月\": \"11504\", \"公司代號\": \"2022\", \"公司名稱\": \"聚亨\", \"產業別\": \"鋼鐵工業\", \"營業收入-當月營收\": \"1131640\", \"營業收入-上月營收\": \"1239005\", \"營業收入-去年當月營收\": \"712943\", \"營業收入-上月比較增減(%)\": \"-8.665421043498613\", \"營業收入-去年同月增減(%)\": \"58.72797685088429\", \"累計營業收入-當月累計營收\": \"4598616\", \"累計營業收入-去年累計營收\": \"2904944\", \"累計營業收入-前期比較增減(%)\": \"58.303086049163085\", \"備註\": \"主要係因泰國鋼鐵內需市場回溫及地震影響對有認證之鋼筋需求增加，又受匯率變動影響，致合併營收增長\"}"
     },
     "latest_transcript": null,
     "recent_insider_summary": null,
@@ -74,6 +74,46 @@
   "holdings": [],
   "recent_news": [],
   "general_news": [
+    {
+      "title": "Southern California mayor will plead guilty to acting as agent for Chinese government",
+      "link": "https://www.scmp.com/news/world/united-states-canada/article/3353203/southern-california-mayor-will-plead-guilty-acting-agent-chinese-government",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T07:59:37+08:00",
+      "summary": "A Southern California mayor has agreed to plead guilty to acting as an illegal agent for the Chinese government, and has resigned from her city position, officials said on Monday. Eileen Wang, the mayor of Arcadia, was charged in April with one count of acting in the United States as an illegal agent of a foreign government. She was accused of doing the bidding of Chinese officials, such as sharing articles favourable to Beijing, without prior notification to the US government as required by...",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "EU, UK sanction Russians over deportations of Ukrainian children",
+      "link": "https://www.aljazeera.com/news/2026/5/11/eu-and-uk-sanction-russians-over-deportations-of-ukrainian-children",
+      "source": "Al Jazeera English",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T04:56:26+08:00",
+      "summary": "Russian institutions and officials accused of systemic deportation and indoctrination of children during war on Ukraine.",
+      "event_type": "policy",
+      "tickers": []
+    },
+    {
+      "title": "Will Mounting Supply Chain Strains Hamstring the AI Investment Boom?",
+      "link": "https://libertystreeteconomics.newyorkfed.org/2026/05/will-mounting-supply-chain-strains-hamstring-the-ai-investment-boom",
+      "source": "Liberty Street Economics",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T19:00:00+08:00",
+      "summary": "The conflict in the Middle East has precipitated a global supply shock—the third in six years following the pandemic in 2020 and Russia’s invasion of Ukraine in 2022. The current shock raises the specter of spillovers to the U.S. through both prices and physical shortages of goods. A critical conduit for spillovers through these channels is via Asian supply chains, especially from middle- to lower-middle income countries in southeast Asia, which are key suppliers for goods needed for the AI infr",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Luis de Guindos: Interview with Financial Times",
+      "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260511~3fa2df2fa9.en.html",
+      "source": "ECB Press",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T12:00:00+08:00",
+      "summary": "",
+      "event_type": "earnings",
+      "tickers": []
+    },
     {
       "title": "Why Eurovision's fallout over Israel may change the competition forever",
       "link": "https://www.bbc.com/news/articles/cgkpgm6vk48o",
@@ -370,52 +410,6 @@
       "summary": "Why Tokyo is bulking up its defense industrial base.",
       "event_type": "earnings",
       "tickers": []
-    },
-    {
-      "title": "Trump’s China Trap",
-      "link": "https://www.foreignaffairs.com/united-states/trumps-china-trap",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-05T12:00:00+08:00",
-      "summary": "Why Xi keeps winning the summitry game.",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "Only Congress Can Fix American Trade",
-      "link": "https://www.foreignaffairs.com/united-states/only-congress-can-fix-american-trade",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-05T12:00:00+08:00",
-      "summary": "Trump’s tariff mess offers a chance to restore legislative oversight.",
-      "event_type": "earnings",
-      "tickers": [
-        "1962",
-        "1974",
-        "1988",
-        "1890",
-        "1930"
-      ]
-    },
-    {
-      "title": "World Cup prize pool nears $900 million as FIFA boosts payouts. Here’s who gets what",
-      "link": "https://www.cnbc.com/2026/05/04/fifa-world-cup-team-payouts-ticket-prices.html",
-      "source": "CNBC Finance",
-      "category": "💰 財經與總經",
-      "published": "2026-05-05T07:14:37+08:00",
-      "summary": "FIFA's upcoming World Cup is set to be the most lucrative on-record, with a 'record breaking' prize pool on offer, as FIFA shrugs off other controversies.",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "SEC and Elon Musk agree to settle lawsuit over Twitter buyout in 2022 - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVHdyRnJ6eFdkLUcwdGN6QTB1OGhGOU9QczFQYVRBQ0JLeFRYWnRsTnNBRUJiNVluTjE3VHpBNVlCYU9yeDhsNG5IMFdKTWdOLWlkTXdGYXhDeDFidnV5cWhSSXFwY1htNkl4SWVPdUtJU0lRRHNwWmZYc2FFUHpQbTdXaGp2MmZTVU02dlUtUmkwamVjNEtHZXQ3cXhPZXFiQ0R0M0NKRXlKQdIBrwFBVV95cUxPaFVpNTI3TUhkTGItd0FRWFlIUkdaalBxdGt1aC05anlMcEJFTnN5VG90cHdkek9EYUQ1WlFENmg3dUF4a0VSeFVkOTRpZlZxMUxob0M3dVhzMTlzU2syazQ1Q0NsS1VWQUNsMDVPMjk2dXdaQXJmNnQtV0t2VF90M1VlMlNfMGIxb1ZHOVlDQktuX1cwMHB2Q3BXNEhDdzloTXRRMTlKTFhBdnpZUUlR?oc=5",
-      "source": "Tesla/SpaceX",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-05T04:22:10+08:00",
-      "summary": "SEC and Elon Musk agree to settle lawsuit over Twitter buyout in 2022&nbsp;&nbsp;CNBC",
-      "event_type": "news",
-      "tickers": []
     }
   ],
   "history": [
@@ -540,6 +534,24 @@
       "operating_income": 93767.0,
       "gross_profit": 934850.0,
       "eps_diluted": -0.02,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 1131640.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
       "operating_cash_flow": null,
       "capex": null,
       "free_cash_flow": null,
@@ -731,5 +743,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

@@ -1,0 +1,54 @@
+{
+  "ticker": "1599",
+  "market": "tw",
+  "bundle": null,
+  "transcripts": [],
+  "insider": [],
+  "short_interest": [],
+  "holdings": [],
+  "recent_news": [],
+  "general_news": [
+    {
+      "title": "$500 slashed off this potent gaming PC with RTX 5060 Ti 16GB and an AMD Ryzen 7800X3D — mid-range iBuypower beast is just $1,599 in this deal",
+      "link": "https://www.tomshardware.com/desktops/gaming-pcs/usd500-slashed-off-this-potent-gaming-pc-with-rtx-5060-ti-16gb-and-an-amd-ryzen-7800x3d-mid-range-ibuypower-beast-is-just-usd1-599-in-this-deal",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:52:06+08:00",
+      "summary": "Save $500 on an iBuypower Element 9 gaming PC from Newegg. $1599 PC includes a 16GB RTX 5060 Ti GPU and superfast Ryzen 7 7800X3D CPU.",
+      "event_type": "news",
+      "tickers": [
+        "5060",
+        "1599"
+      ]
+    },
+    {
+      "title": "Save $500 on Lenovo's Legion 5i gaming laptop at only $1,599 — bright OLED display, 32GB of RAM, and powerful RTX 5070 GPU",
+      "link": "https://www.tomshardware.com/laptops/gaming-laptops/save-usd500-on-lenovos-legion-5i-gaming-laptop-at-only-usd1-599-bright-oled-display-32gb-of-ram-and-powerful-rtx-5070-gpu",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-21T19:24:34+08:00",
+      "summary": "A powerful RTX 5070 GPU, 32GB of RAM, and a crisp OLED display are highlights of this $1599 Lenovo Legion 5i deal at B&amp;H Photo",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "1599"
+      ]
+    },
+    {
+      "title": "Skytech Gaming Shadow PC with AMD Ryzen 7 9700X drops to $1599.99 - Technobezz",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONUFWZ01pemdBQk16UlFqR25pNzJzc3Baek1xT2VNVFAtVkZHTEZWRC1yX3ctYjBXRVE0akhfaWZFaXhOT1ptSDQ2NEZ3RFVLNktCRkJXdzRCRm1DQzdWZzhiTnR2NnR6OGZjUC1FWXU3dW1faXRZWExDT2hWRF9FN012VHJIaWlMbllaRGE3b1JRaEFzbmljTUc1VQ?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-04-19T21:46:33+08:00",
+      "summary": "Skytech Gaming Shadow PC with AMD Ryzen 7 9700X drops to $1599.99&nbsp;&nbsp;Technobezz",
+      "event_type": "news",
+      "tickers": [
+        "1599"
+      ]
+    }
+  ],
+  "history": [],
+  "fundamentals": null,
+  "co_mentions": [],
+  "generated_at": "2026-05-12T01:54:33Z"
+}

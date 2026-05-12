@@ -9,6 +9,18 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "Save $210 on this 9800X3D bundle that includes 32GB of Corsair Vengeance RAM and a 1TB Samsung 9100 Pro SSD — start your AM5 build for just $979 and get a free power supply",
+      "link": "https://www.tomshardware.com/pc-components/save-usd210-on-this-9800x3d-bundle-that-includes-32gb-of-corsair-vengeance-ram-and-a-1tb-samsung-9100-pro-ssd-start-your-am5-build-for-just-usd979-and-get-a-free-power-supply",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-11T18:53:39+08:00",
+      "summary": "Get a brilliant 9800X3D processor, 32GB of RAM, 1TB SSD, and a PSU for just $979.",
+      "event_type": "news",
+      "tickers": [
+        "9100"
+      ]
+    },
+    {
       "title": "Save $290 on this Ryzen 7 9800X3D, 32GB DDR5, Samsung 9100 Pro 1TB combo from Newegg — $949.99 bundle includes free 750W power supply and one-year VPN subscription - Tom's Hardware",
       "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQUXM3QkNNc3puSVVzLWlXWTZ2OG9WbXdVUkJWNE9RYlp4elRPZlRJVmgyZEhMVGVlRzB0MUhKZ0E2TFFpNlpGSlMwZ1laVXRQX2pWX0c4Ym5qMlJPMG1aeHYyZE42OHpKUlBJN3d2YmVySmJhcmNJUFFGd3lLbl9qMnYtc0E5aEdtNnE2bTZPU2FFZnIzMHE0bTJaRlJjbGNPc3F1N0hub3FEMlRsNEppbHFCRy0tMU0tLXdzci1jYXJkMjFxcHczQ0JZY1E1bVJLQ2VWbU5PVjlNM2JINjBPdzk5TUY5MXJQSVFMMFZhZkFwcGUyMGRGd0w5dVdfYzRJeFYxVGJKSE9SN1dNM1JIYTA5MDF4NUxMSUlDZ1d4X2h0LWFQbDdXaG5kZjdKMHc",
       "source": "AMD News",
@@ -63,5 +75,5 @@
   "history": [],
   "fundamentals": null,
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:27Z"
+  "generated_at": "2026-05-12T01:54:31Z"
 }

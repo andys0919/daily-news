@@ -880,6 +880,44 @@
   ],
   "general_news": [
     {
+      "title": "OpenAI trial: Nadella says Musk never raised concerns to him about Microsoft investment",
+      "link": "https://www.cnbc.com/2026/05/11/microsoft-ceo-satya-nadella-musk-altman-trial.html",
+      "source": "CNBC Top News",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T07:30:35+08:00",
+      "summary": "Elon Musk named Microsoft as a defendant in his lawsuit against OpenAI",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Microsoft researchers find AI models and agents can't handle long-running tasks",
+      "link": "https://www.theregister.com/ai-ml/2026/05/11/microsoft-researchers-find-ai-models-and-agents-cant-handle-long-running-tasks/5238263",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-12T04:50:00+08:00",
+      "summary": "An intern who failed this much would be shown the door",
+      "event_type": "news",
+      "tickers": [
+        "MSFT"
+      ]
+    },
+    {
+      "title": "Data center guzzled 30 million gallons of water and nobody noticed for months",
+      "link": "https://arstechnica.com/tech-policy/2026/05/data-center-used-30-million-gallons-of-water-without-initially-paying",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-05-12T04:37:00+08:00",
+      "summary": "Can AI save us from the AI industry’s endless thirst for water? Outlook not so good.",
+      "event_type": "news",
+      "tickers": [
+        "META",
+        "GOOGL",
+        "MSFT"
+      ]
+    },
+    {
       "title": "OpenAI攜五大科技廠開發MRC協議　化解AI訓練效率瓶頸",
       "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754591_VO54Y2L1LFA2CP0EGHMPG",
       "source": "DIGITIMES AI應用",
@@ -1147,30 +1185,6 @@
         "AMZN",
         "MSFT"
       ]
-    },
-    {
-      "title": "At AI scale, raw bandwidth breaks down. What matters is resilience, recovery, and consistency under load. AMD in collaboration with Microsoft and @Ope...",
-      "link": "https://x.com/AMD/status/2052028386562736466",
-      "source": "X @AMD",
-      "category": "🔥 X 社群熱議",
-      "published": "2026-05-06T22:11:06+08:00",
-      "summary": "At AI scale, raw bandwidth breaks down. What matters is resilience, recovery, and consistency under load. AMD in collaboration with Microsoft and @OpenAI defines a proven solution approach to AI networking with MRC. Learn more now: https://bit.ly/3QRaPro",
-      "event_type": "news",
-      "tickers": [
-        "MSFT"
-      ]
-    },
-    {
-      "title": "Microsoft’s Office and LinkedIn chief now runs Teams in latest reshuffle",
-      "link": "https://www.theverge.com/tech/924931/microsoft-office-copilot-windows-reorg-shuffle",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-06T19:45:41+08:00",
-      "summary": "Microsoft's LinkedIn chief, Ryan Roslansky, took on an expanded role at the company as head of Office last year, and he's now getting more responsibilities as part of the latest leadership reshuffle inside Microsoft. Sources tell me that the Microsoft Teams organization is moving to report to Roslansky, who will now lead a new Work [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "MSFT"
-      ]
     }
   ],
   "history": [
@@ -1308,5 +1322,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

@@ -75,6 +75,28 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "There aren’t enough rockets for space data centers — Cowboy Space raised $275M to build them",
+      "link": "https://techcrunch.com/2026/05/11/there-arent-enough-rockets-for-space-data-centers-cowboy-space-raised-275-million-to-build-them",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-11T21:00:00+08:00",
+      "summary": "The apparently insatiable demand for AI compute has data center entrepreneurs looking to the stars. There's a key problem: There aren't enough rockets to put data centers in orbit around Earth, and they're too expensive.",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
+      "title": "Ankara’s Crossroads: Rearmament, Risk, and the Prospect of War with Israel",
+      "link": "https://warontherocks.com/ankaras-crossroads-rearmament-risk-and-the-prospect-of-war-with-israel",
+      "source": "War on the Rocks",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T15:30:56+08:00",
+      "summary": "Talk of war in the Middle East abounds on social media, but not just about the one with Iran. A small, but significant, portion of this chatter relates to a conflict that has not begun. For more than a year now, pundits and politicians have warned of a potential clash between Israel and Turkey. Driving this hypothetical confrontation are a series of issues related to Syria, the Palestinian territories, and regional security as a whole. In December 2025, Israeli Prime Minister Benjamin Netanyahu ",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
       "title": "Powell Stays…Should the Dot Plot?",
       "link": "https://www.wisdomtree.com/investments/blog/2026/05/06/powell-stays-should-the-dot-plot",
       "source": "ETF Trends",
@@ -391,32 +413,6 @@
         "AMZN",
         "MSFT"
       ]
-    },
-    {
-      "title": "OpenAI Prepares AI-First Smartphone for 2028",
-      "link": "https://www.eetimes.com/openai-prepares-ai-first-smartphone-for-2028",
-      "source": "EE Times",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-04-28T19:07:17+08:00",
-      "summary": "OpenAI’s new smartphone reportedly aims to replace apps with AI agents. The post OpenAI Prepares AI-First Smartphone for 2028 appeared first on EE Times.",
-      "event_type": "earnings",
-      "tickers": [
-        "AAPL",
-        "GOOGL"
-      ]
-    },
-    {
-      "title": "手機版圖迎改變？OpenAI 擬 2028 年推 AI 代理手機、亞馬遜計畫重返市場",
-      "link": "https://technews.tw/2026/04/28/qualcomm-openai-ai-smartphone-processors",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-04-28T17:09:45+08:00",
-      "summary": "高通 27 日股價一度大漲超過 8%，不過隨後回吐漲幅，理由是天風國際證券分析師郭明錤先前表示，OpenAI [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "2454",
-        "GOOGL"
-      ]
     }
   ],
   "history": [
@@ -701,5 +697,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

@@ -8,6 +8,21 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "The Winners and Losers of the Iran Energy Shock",
+      "link": "https://www.foreignaffairs.com/iran/winners-and-losers-iran-energy-shock",
+      "source": "Foreign Affairs",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-11T12:00:00+08:00",
+      "summary": "How the war created a new geopolitical divide.",
+      "body_text": "BENJAMIN H. BRADLOW is an Assistant Professor of Sociology and International Affairs at Princeton University and the author of the forthcoming book The Climate Hinge : Green Industrial Transitions in the Global South .\nHow the War Created a New Geopolitical Divide\nBenjamin H. Bradlow\nFor the Middle East, the war in Iran has been another tough lesson in how divisions and competition can yield bruta",
+      "event_type": "policy",
+      "tickers": [
+        "1979"
+      ],
+      "companies": [],
+      "guidance_direction": null
+    },
+    {
       "title": "The Price of Peace With Iran",
       "link": "https://www.foreignaffairs.com/iran/price-peace-iran",
       "source": "Foreign Affairs",
@@ -420,5 +435,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:24Z"
+  "generated_at": "2026-05-12T01:54:29Z"
 }

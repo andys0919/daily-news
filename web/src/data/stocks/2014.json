@@ -75,6 +75,20 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+      "link": "https://www.insidermonkey.com/blog/1759072-1759072",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:07:31+08:00",
+      "summary": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen. On April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "RLAY",
+        "GOOGL",
+        "BRK-B"
+      ]
+    },
+    {
       "title": "Twist Bioscience Corporation (TWST) Announces Q2 2026 Financial Results",
       "link": "https://www.insidermonkey.com/blog/twist-bioscience-corporation-twst-announces-q2-2026-financial-results-1758209",
       "source": "Insider Monkey",
@@ -417,22 +431,6 @@
         "1975",
         "1895"
       ]
-    },
-    {
-      "title": "How to Fight an Economic War",
-      "link": "https://www.foreignaffairs.com/united-states/how-fight-economic-war-fishman",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-04-21T12:00:00+08:00",
-      "summary": "A field manual for a ruptured world.",
-      "event_type": "earnings",
-      "tickers": [
-        "NVDA",
-        "AMZN",
-        "MSFT",
-        "GOOGL",
-        "TSLA"
-      ]
     }
   ],
   "history": [
@@ -743,5 +741,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

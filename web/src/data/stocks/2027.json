@@ -75,6 +75,70 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+      "link": "https://www.insidermonkey.com/blog/1759072-1759072",
+      "source": "Insider Monkey",
+      "category": "👁️ 內部人與機構持股",
+      "published": "2026-05-12T08:07:31+08:00",
+      "summary": "Relay Therapeutics, Inc. (NASDAQ:RLAY) is one of the 10 Best Biotech Stocks to Invest In According to Billionaire Steve Cohen. On April 29, 2026, H.C. Wainwright hiked Relay Therapeutics, Inc. (NASDAQ:RLAY)’ price target from $19 to $25. It also maintained a Buy rating on the stock. The firm noted Phase 1 zovegalisib triplet results that [&#8230;]",
+      "event_type": "earnings",
+      "tickers": [
+        "RLAY",
+        "GOOGL",
+        "BRK-B"
+      ]
+    },
+    {
+      "title": "CEO of world's largest oil company says markets may not return to normal until 2027",
+      "link": "https://seekingalpha.com/news/4590933-ceo-of-worlds-largest-oil-company-says-markets-may-not-return-to-normal-until-2027?feed_item_type=news",
+      "source": "Seeking Alpha",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T07:57:37+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": []
+    },
+    {
+      "title": "Weekly Economic Snapshot: Resilience in the Labor Market",
+      "link": "https://www.advisorperspectives.com/commentaries/2026/05/11/weekly-economic-snapshot-resilience-in-the-labor-market",
+      "source": "ETF Trends",
+      "category": "📉 融券與資金流",
+      "published": "2026-05-12T04:56:31+08:00",
+      "summary": "The U.S. labor market demonstrated remarkable endurance in April, with job gains outpacing expectations and private sector expansion reaching its strongest point in over a year. This resilience has resonated through financial markets, propelling the S&#38;P 500 to its sixth consecutive weekly gain and a fresh record high. As the Federal Reserve maintains a steady [...] The post Weekly Economic Snapshot: Resilience in the Labor Market appeared first on ETF Trends.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Nintendo plunges 8% after Switch 2 price hike and weak sales forecast",
+      "link": "https://www.cnbc.com/2026/05/11/nintendo-stock-switch-2-price-rise-weak-sales-forecast.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T04:39:08+08:00",
+      "summary": "Investors are concerned about Nintendo's outlook of lower Switch 2 sales in the current fiscal year, driven by price increases for the console.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Roblox 1Q'26: Age Check Hangover, But Aiming to Go Beyond the Blocks",
+      "link": "https://mbideepdives.substack.com/p/roblox-1q26-age-check-hangover-but",
+      "source": "Mostly Borrowed Ideas",
+      "category": "📊 券商與分析師研究",
+      "published": "2026-05-11T22:47:37+08:00",
+      "summary": "Programming Note: In case you missed it yesterday, I have released \"MBI\" Skill for Claude and Codex.",
+      "event_type": "earnings",
+      "tickers": []
+    },
+    {
+      "title": "Nintendo hikes Switch 2 prices and expects console sales to decline as memory crunch bites",
+      "link": "https://www.cnbc.com/2026/05/08/nintendo-switch-2-price-hike-sales-fall-memory-crunch.html",
+      "source": "CNBC Business",
+      "category": "💰 財經與總經",
+      "published": "2026-05-11T13:48:02+08:00",
+      "summary": "Nintendo said the price of the Switch 2 in the U.S. will rise from $449.99 to $499.99. In Japan, Nintendo will hike the price from 49,980 yen to 59,980 yen.",
+      "event_type": "policy",
+      "tickers": []
+    },
+    {
       "title": "2027(116年)行事曆：9個連假、春節放7天、全年無補班！國定假日＆請假攻略一次看 - 商周",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE03SU1zVWVQTHJvTXNHclZybGNQUE84ZkVBaFh0NXFPWXN3cUZGR0phbGctc1o3NFpZRGRvdWpXczlFRVFsSnVhZEtJT2VCSU5HUWlnN3c1REltVFdsWUtTUnZ3?oc=5",
       "source": "商業周刊",
@@ -335,68 +399,6 @@
       "summary": "One number buried in the Pentagon&#8217;s Fiscal Year 2027 budget request reveals a decade of acquisition decisions in a data point: The U.S. Navy is requesting 785 Tomahawk cruise missiles. In 2025, Congress funded 55. That 1,200 percent jump is the cost of choices never stress-tested against the scenario unfolding today &#8212; a sustained air campaign against Iran while China watches the magazine drain.As a congressional staffer, I watch acquisition reform proposals grind through the legislat",
       "event_type": "earnings",
       "tickers": []
-    },
-    {
-      "title": "The Return of Japanese Hard Power",
-      "link": "https://www.foreignaffairs.com/japan/return-japanese-hard-power",
-      "source": "Foreign Affairs",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-05T12:00:00+08:00",
-      "summary": "Why Tokyo is bulking up its defense industrial base.",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "AI Accelerator Spec Maintains Rapid Update Pace",
-      "link": "https://www.eetimes.com/ai-accelerator-spec-maintains-rapid-update-pace",
-      "source": "EE Times",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-05T02:48:16+08:00",
-      "summary": "UALink spec 2.0 launches with in-network compute, chiplet support, and smarter management. The post AI Accelerator Spec Maintains Rapid Update Pace appeared first on EE Times.",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "2027 AI資本支出料破1兆美元　前白宮顧問：拉抬美國GDP逾3個百分點",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754147_A4T07TXJ5ZVWHK6Z7YHO2",
-      "source": "DIGITIMES AI應用",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-05T02:46:21+08:00",
-      "summary": "各大科技巨擘相繼公布財報並上調資本支出，市場預估2027年人工智慧（AI）相關基礎設施投資總額將突破1兆美元，AI建設超級循環（CapEx super-cycle）確立。綜合CNBC、Benzinga報導，Evercore與美國銀行...",
-      "event_type": "earnings",
-      "tickers": []
-    },
-    {
-      "title": "Pantheon eyes large-scale behind-the-meter data center campus in Croatia",
-      "link": "https://www.datacenterdynamics.com/en/news/pantheon-eyes-large-scale-behind-the-meter-data-center-campus-in-croatia",
-      "source": "Data Center Dynamics",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-04T21:00:39+08:00",
-      "summary": "Project set to be “the largest investment” in the country’s history, company claims",
-      "event_type": "earnings",
-      "tickers": [
-        "NVDA"
-      ]
-    },
-    {
-      "title": "Morgan stanley: $1.1 Trillion AI Capex by 2027 turns the race - FXStreet",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcnZCcjh6NHN3NmgyTVpVdDk0Z3lWMlFMQWprRHcxWFk1Tlozd19pU3hydnJjcHh5RmhIam9JbWI1RG85d1JUdkM3WmJOOGtlT21Cb09vNEpXcF9nRFJiMWVxZkRLekRGQVZMOGtic3A5dFBmV3FnSmdtb3l3azFSVklUeUpvVlRSWV9ydEFyTEZET1k1OGRsMTVPM3VEOGtfd3VZ?oc=5",
-      "source": "AI 產業化與投資信號",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-04T16:47:07+08:00",
-      "summary": "Morgan stanley: $1.1 Trillion AI Capex by 2027 turns the race&nbsp;&nbsp;FXStreet",
-      "event_type": "capex",
-      "tickers": []
-    },
-    {
-      "title": "Results of the ECB Survey of Professional Forecasters for the second quarter of 2026",
-      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260504~bb7a0cbf4c.en.html",
-      "source": "ECB Press",
-      "category": "💰 財經與總經",
-      "published": "2026-05-04T16:00:00+08:00",
-      "summary": "",
-      "event_type": "earnings",
-      "tickers": []
     }
   ],
   "history": [
@@ -645,5 +647,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-11T03:56:22Z"
+  "generated_at": "2026-05-12T01:54:27Z"
 }

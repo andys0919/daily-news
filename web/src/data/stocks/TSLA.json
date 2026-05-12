@@ -46,6 +46,29 @@
   "holdings": [],
   "recent_news": [
     {
+      "title": "Trump heads to China with Musk, Cook and top CEOs for Xi talks",
+      "link": "https://www.scmp.com/news/china/article/3353199/trump-heads-china-musk-cook-and-top-ceos-xi-talks",
+      "source": "南華早報 科技",
+      "category": "🌏 地緣政治與科技政策",
+      "published": "2026-05-12T05:49:13+08:00",
+      "summary": "US President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week. The White House on Monday released the list of leaders set to travel to China alongside Musk and Cook, including Larry Fink of BlackRock, Kelly Ortberg of Boeing, Dina Powell McCormick of Meta and Ryan McInerney of Visa. The delegation spans key industries, including aviation, technology, banking and...",
+      "body_text": "Business delegation spanning tech, aviation and finance joins Beijing trip as trade, investment and supply chains top agenda\nUS President Donald Trump is expected to be accompanied by more than a dozen business leaders, including Tesla Chief Executive Elon Musk and Tim Cook of Apple, during his trip to China this week.\nThe White House on Monday released the list of leaders set to travel to China a",
+      "event_type": "earnings",
+      "tickers": [
+        "TSLA",
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "companies": [
+        "Tesla",
+        "Apple",
+        "Meta",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
       "title": "Tesla's Real 2026 Problem: AI Capex Eats the EV Cash Machine - techi.com",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qMlFGckE1V19nNVFzQ1FkSjB5Y2FKLXhMa3pZMGpyNjQyY0t6UjBIVVpJOHVjQVp2ZVpLekV0bEJEVHVSRDk5RU9Gb1NUU01xUDlZcXJ3TkNVNmtudlFtVDlzWQ?oc=5",
       "source": "AI 產業化與投資信號",
@@ -683,6 +706,71 @@
   ],
   "general_news": [
     {
+      "title": "不畏英特爾搶單特斯拉 台積電台南2奈米廠將動土了",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5433690",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T08:43:31+08:00",
+      "summary": "外媒陸續釋出美國半導體大廠英特爾（Intel）在川普政府力挺下，將迎來與蘋果（Apple）、特斯拉（Tesla）代工訂單，但台灣半導體供應鏈仍不看好英特爾的晶圓代工能力，...…",
+      "event_type": "news",
+      "tickers": [
+        "2330",
+        "AAPL",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Vintage Tesla Pre Madness Edition / Anti Elon Tesla Club Decal / Vinyl Sticker / Anti Elon - portalcantagalo.com.br",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYkZURjU4ZGJKbjdXajdFYnFtdlVZRzdUSlZkd2FNd3h3cjljek1lV1QyZWg4dHFqUERvU2x2MVF0dm1JakF1aVE1Wm9NanZwYjdaNkpzd2doZHdLcXlUbHNLRUVtZnlvOU1BdXQ5YzVucjA4WXI4ekFJYVBNU2ZTWUVFNGFtTm96V2tDdDFrUHZfZmQ2WDNHOVhfX2MzY0pMV01pNndYYlI?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T08:25:30+08:00",
+      "summary": "Vintage Tesla Pre Madness Edition / Anti Elon Tesla Club Decal / Vinyl Sticker / Anti Elon&nbsp;&nbsp;portalcantagalo.com.br",
+      "event_type": "news",
+      "tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Apple's Tim Cook and Tesla's Elon Musk among top US CEOs to accompany Trump to China - Australian Broadcasting Corporation",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOHFKRHVENmRoVldhY3M2ck5Lb1hFSnI1REtnanRsSkItYUtNYkVLaS14Q0lZelpiODNSSlUtTS00WC0xUl9nRGxvTVpzeVBfTmtlRkdsQjg3aDJWZC1PTnlHb0FMQmpfei0xbDFWVHVDRWFpMVVpbmhydkJ5RElXUm9LLUpkNkN3YzgtT2J1bDRpLTREZ0lDdUVqTFo4d1MtLUVqWmpZM05HSEFPc2RsNg?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T05:08:05+08:00",
+      "summary": "Apple's Tim Cook and Tesla's Elon Musk among top US CEOs to accompany Trump to China&nbsp;&nbsp;Australian Broadcasting Corporation",
+      "event_type": "news",
+      "tickers": [
+        "AAPL",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Nvidia, Lumentum, Intel, Micron, Qualcomm, Tesla, Moderna, Circle Internet, and More Movers - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE93YUxyN2J0MWdTNnJid2RyVDZQcGt1OVFvODZFTGwtMHd1dVY1Y1Q1aDhuT0w5YzRfbXRKZzlibVN0LW9MdF9XX203VTl2THpQTmp1cjhUUml3YTdqRXNsQk9SUTY?oc=5",
+      "source": "Qualcomm/Arm",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T04:40:00+08:00",
+      "summary": "Nvidia, Lumentum, Intel, Micron, Qualcomm, Tesla, Moderna, Circle Internet, and More Movers&nbsp;&nbsp;Barron's",
+      "event_type": "news",
+      "tickers": [
+        "NVDA",
+        "TSLA"
+      ]
+    },
+    {
+      "title": "Tesla's Elon Musk, Apple's Tim Cook among CEOs set to join Trump on China trip - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9IZ0tkSF9idG1VUEN3QnZXVDFLTWg4RGdkUTVqUmVTWUM4QlI4S3VvOWNZQUZ0SkxWZU5sRW0zMU1BT2VjRER2RDBoMkU0N1JDZDZyWXUwanAxVERkZWV6Q2djemd2Wk13VWtiNWNMQTROLWR2YWUwU0t1SQ?oc=5",
+      "source": "Tesla/SpaceX",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T04:32:26+08:00",
+      "summary": "Tesla's Elon Musk, Apple's Tim Cook among CEOs set to join Trump on China trip&nbsp;&nbsp;AOL.com",
+      "event_type": "news",
+      "tickers": [
+        "TSLA",
+        "AAPL"
+      ]
+    },
+    {
       "title": "Elon Musk tours Intel’s semiconductor fab plant in Hillsboro ahead of Tesla, SpaceX partnership - KPTV",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdlc5X2RmZm5VU2pjVG1Fd195SXB6TC0ycXpqb2pLN0dqN3ZpeTZhX2lVYW1XSFJKQ3RhcHZ2TEM5TjJPYzh6blNIVXNmSjRZWE9mVWlZaG0yVGNZSFRQWk5Td3pDZFlScFY1R2pBTUtCVVIySjVIWVdNejZHbnNTX01KNkhGMlh4QldvNVNYcEhTVVBaZHZZQjh3b3dicWt4RlZDczVZelRfUUE3ODNDVHhNZXJIY1pHbU5vUA?oc=5",
       "source": "Tesla/SpaceX",
@@ -966,79 +1054,6 @@
       "tickers": [
         "TSLA"
       ]
-    },
-    {
-      "title": "AI didn't delete your database, you did",
-      "link": "https://idiallo.com/blog/ai-didnt-delete-your-database-you-did",
-      "source": "Hacker News AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-05T22:07:50+08:00",
-      "summary": "Article URL: https://idiallo.com/blog/ai-didnt-delete-your-database-you-did Comments URL: https://news.ycombinator.com/item?id=48022742 Points: 489 # Comments: 269",
-      "event_type": "news",
-      "tickers": [
-        "TSLA"
-      ]
-    },
-    {
-      "title": "These Stocks Are Today’s Movers: Coinbase, AMD, Palantir, Tesla, eBay, GameStop, FedEx, UPS, Micron, and More - Barron's",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tVjNsTk0wMTVkN1U5VC1OVXRtOHdTNkJ6SVJpajJtM0tRQmVzSHdOQTMxcnEzQmQwaDNoNUh4NGg0VUQtTDYyRHkxUWF6Q2kybVNwMlB0aVJXQzd1MXpNRmloRzg?oc=5",
-      "source": "Barron's (Google News)",
-      "category": "💰 財經與總經",
-      "published": "2026-05-05T04:57:00+08:00",
-      "summary": "These Stocks Are Today’s Movers: Coinbase, AMD, Palantir, Tesla, eBay, GameStop, FedEx, UPS, Micron, and More&nbsp;&nbsp;Barron's",
-      "event_type": "news",
-      "tickers": [
-        "TSLA"
-      ]
-    },
-    {
-      "title": "Canadian election databases use \"canary traps\"—and they work",
-      "link": "https://arstechnica.com/tech-policy/2026/05/in-canada-a-canary-trap-springs-shut-and-ids-election-database-leak",
-      "source": "Ars Technica AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-05T03:45:57+08:00",
-      "summary": "Intentional errors can be useful.",
-      "event_type": "news",
-      "tickers": [
-        "TSLA",
-        "AAPL"
-      ]
-    },
-    {
-      "title": "Tesla Drivers Face a New Problem With Full Self-Driving - Barron's",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE02WDdYMXZYUzBOYnIxNnJmS0hwX0VEOEhuazZvRFJZVnZzR09LaEJ6Z2xLTDdWOHVheFdZMmtrMDE2emJUcElqajRDZlJNN3BaaUNNcDEzdnFDUG56cDdHNXE1eFh6M2EzaldUMkRNS3p0ZkxtMjhtelJoWDM",
-      "source": "Barron's (Google News)",
-      "category": "💰 財經與總經",
-      "published": "2026-05-04T01:27:00+08:00",
-      "summary": "Tesla Drivers Face a New Problem With Full Self-Driving&nbsp;&nbsp;Barron's",
-      "event_type": "news",
-      "tickers": [
-        "TSLA"
-      ]
-    },
-    {
-      "title": "Bill Gates Once Called Tesla's Semi Truck Impractical, But Gavin Newsom May Need Elon Musk's All-Electric Hauler To Bolster Clean Energy Bid - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeEVpc09OSjlnUEhzVkRDekI3Y3R0T2JtX0ktT01TZGpTVTlpR3FveHdUN1VtVEdOb1oweHR0dHFSQXdOQzV0eVNsa0hPenFVcDlqSjQ5M1NoUFZiRzlZYUU4MHduZFV3SEkwSS1kSkF2NEY5SkVoOWFwRWdVdzFJZUlXMElzbGRFWmcxMi1zeVJfZ3MtaDRxNXJ0cHJUMEk?oc=5",
-      "source": "Tesla/SpaceX",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-04T00:30:44+08:00",
-      "summary": "Bill Gates Once Called Tesla's Semi Truck Impractical, But Gavin Newsom May Need Elon Musk's All-Electric Hauler To Bolster Clean Energy Bid&nbsp;&nbsp;Yahoo Finance",
-      "event_type": "news",
-      "tickers": [
-        "TSLA"
-      ]
-    },
-    {
-      "title": "Tesla's Week Explained: Elon Musk's $158 Billion Payout, Semi Truck Hits Production And More - Tesla (NAS - Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOOU1nNkFiZTFIbGQ0cUpQNUtOQV9nMGxfbUhUaE9UcC1xNVJJMktacmptZjJBQ3hVRnBGcXQ2anJfckczWGNqbUxTZ3MyeXlsTG83Q3VUSmFicHJGUVFMRDA4UmtDTnhtLTFLRHAzODM5WEIycmlISjBoVi1CVnM3dXpSWjFBSENfREZqN2xFY2hiVDNRT3JEd016QWx2clZZblNkY0V5X0dQT0xTVnpFMkxXVUZVS3VqZkpHUDM3ZW12ZDhPMVo0aGlBeU5IODg5SXNlUXFPRQ?oc=5",
-      "source": "Tesla/SpaceX",
-      "category": "🏢 科技廠動態",
-      "published": "2026-05-04T00:02:02+08:00",
-      "summary": "Tesla's Week Explained: Elon Musk's $158 Billion Payout, Semi Truck Hits Production And More - Tesla (NAS&nbsp;&nbsp;Benzinga",
-      "event_type": "news",
-      "tickers": [
-        "TSLA"
-      ]
     }
   ],
   "history": [
@@ -1148,24 +1163,24 @@
       "count": 11
     },
     {
+      "ticker": "META",
+      "count": 8
+    },
+    {
+      "ticker": "NVDA",
+      "count": 8
+    },
+    {
       "ticker": "MSFT",
       "count": 8
     },
     {
-      "ticker": "META",
-      "count": 7
-    },
-    {
-      "ticker": "NVDA",
-      "count": 7
+      "ticker": "AAPL",
+      "count": 6
     },
     {
       "ticker": "AMZN",
       "count": 6
-    },
-    {
-      "ticker": "AAPL",
-      "count": 5
     },
     {
       "ticker": "2330",
@@ -1184,5 +1199,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-11T03:56:23Z"
+  "generated_at": "2026-05-12T01:54:28Z"
 }
