@@ -1,7 +1,73 @@
 {
   "ticker": "1231",
   "market": "tw",
-  "bundle": null,
+  "bundle": {
+    "market": "tw",
+    "ticker": "1231",
+    "company_name": "聯華食品工業股份有限公司",
+    "quarterly": {
+      "market": "tw",
+      "ticker": "1231",
+      "company_name": "聯華食品工業股份有限公司",
+      "cik": "",
+      "source_type": "tpex-finance-report",
+      "source_confidence": "official-tpex",
+      "form_type": "TPEX-Q",
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_url": "https://dsp.tpex.org.tw/storage/finance_report/company_finance_report.php",
+      "report_kind": "quarterly",
+      "revenue": 12867131.0,
+      "monthly_revenue": null,
+      "net_income": 1138582.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": 3.81,
+      "operating_cash_flow": 854418.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）",
+      "filing_excerpt": "投資活動現金流量 -657,618、籌資活動現金流量 -338,103",
+      "payload_json": "{\"company\": {\"COMPANY_TEL\": \"(02)25534546\", \"PRESIDENT_NAME_E\": \"FU CHOA MIN\", \"INTERNET_ADDRESS\": \"www.lianhwa.com.tw\", \"LAWSUIT_EADR\": \"\", \"COMPANY_ADDRESS\": \"台北市迪化街一段148號\", \"CHAIRMAN_NAME_E\": \"LEE KAI YUAN\", \"ENGLISH_NAME\": \"Lian Hwa Foods Corporation\", \"CHAIRMAN_NAME\": \"李開源\", \"MAR_KIND\": \"sii\", \"LAWSUIT_CADR\": \"\", \"LAWSUIT_TEL\": \"\", \"CAPITAL_AMT\": \"2984544750\", \"COMPANY_ID\": \"1231\", \"SPOKENMAN\": \"林志遠\", \"ENAME\": \"Food\", \"INVO_NO\": \"07569627\", \"ENGLISH_ABBR_NAME\": \"Lian Hwa Foods\", \"ESTABLISH_DATE\": \"19700707\", \"STK_ASSIGN_ORG\": \"永豐金證券股份有限公司\", \"LAWSUIT_CNAME\": \"\", \"PSB_RISK\": \"\", \"FIN_CODE\": \"\", \"SPOKENMAN_E\": \"LIN CHIH YUAN\", \"STK_ASSIGN_TEL\": \"(02)23816288\", \"NAME\": \"食品工業\", \"GDR_NUM\": \"新台幣                 10.0000元\", \"PRESIDENT_NAME\": \"扶兆民\", \"MAIN_BUSINESS3\": \"\", \"LAWSUIT_ENAME\": \"\", \"MAIN_BUSINESS2\": \"\", \"COMPANY_NAME\": \"聯華食品工業股份有限公司\", \"CODE\": \"02\", \"PSB_FLAG\": \"0\", \"COMPANY_ABBR_NAME\": \"聯華食\", \"MAIN_BUSINESS4\": \"RTE(Ready-to-Eat) Foods,Snack Food,Sea Hepaticae,Nut Class,Other Class are names \\nfrequently heard by consumers as these products are delicious foods that have \\naccompanied them to grow and pass happy childhood time.\\nOver the past 20 more years,efforts have been employed by us in improving and \\ncreating product quality and foavor.\\nThis is the main reason in keeping our products last longer and promoting them \\nas the main foods brands in local market.\", \"CUR_ID\": \"NTD\", \"ENGLISH_ADDRESS_2\": \"Taipei,Taiwan,R.O.C\", \"MAIN_BUSINESS1\": \"食品\", \"GDR_NUM_2\": \"10.0000\", \"ENGLISH_ADDRESS_1\": \"148 TI HWA STREET SEC.1,\", \"LISTING_DATE\": \"19951102\"}, \"finance\": {\"AccOp\": [{\"accYear\": 2025, \"accRptKind\": 2, \"accType\": [{\"type27\": \"N\", \"type26\": \"N\", \"type25\": \"N\", \"type24\": \"N\", \"type23\": \"N\", \"type22\": \"N\", \"type21\": \"N\", \"type1\": \"3 \", \"type28\": \"N\"}], \"accSeason\": 4}], \"Bank_Code\": \"1\", \"Company_ID\": \"1231\", \"Data\": [{\"BookValue\": \"24.29\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 6163334, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 8809134, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 14972468, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 4230574, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 3473292, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 7703866, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 2984544, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 2984544, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 7250697, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 93840, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 4155336, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": 16977, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 17905, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 7268602, \"Date_Kind\": \"A\"}], \"Season\": 4}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 12867131, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 10237541, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 2629590, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 1489237, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 1140353, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7000\", \"Amont\": 225977, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7900\", \"Amont\": 1366330, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 227748, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8000\", \"Amont\": 1138582, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8200\", \"Amont\": 1138582, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8300\", \"Amont\": 7007, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8500\", \"Amont\": 1145589, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"9750\", \"Amont\": 3.81, \"Date_Kind\": \"F\"}], \"Season\": 4}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 854418, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -657618, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -338103, \"Date_Kind\": \"F\"}], \"Season\": 4}, {\"BookValue\": \"22.66\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 6045827, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 8648185, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 14694012, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 4151452, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 3762421, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 7913873, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 2984544, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 2984544, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 6763315, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 93840, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 3679510, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": 5421, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 16824, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 6780139, \"Date_Kind\": \"A\"}], \"Season\": 3}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 9486468, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 7605813, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 1880655, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 1155926, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 724729, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7000\", \"Amont\": 85359, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7900\", \"Amont\": 810088, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 141627, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8000\", \"Amont\": 668461, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8200\", \"Amont\": 668461, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8300\", \"Amont\": -11335, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8500\", \"Amont\": 657126, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"9750\", \"Amont\": 2.24, \"Date_Kind\": \"F\"}], \"Season\": 3}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 271454, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -441142, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 72227, \"Date_Kind\": \"F\"}], \"Season\": 3}, {\"BookValue\": \"23.73\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 5796603, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 8608408, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 14405011, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 4193207, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 3756235, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 7949442, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 2984544, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 2713222, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 6439369, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 93840, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 3364697, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": -3712, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 16200, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 6455569, \"Date_Kind\": \"A\"}], \"Season\": 2}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 6105448, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 4899893, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 1205555, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 741123, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 464432, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7000\", \"Amont\": -30376, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7900\", \"Amont\": 434056, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 80319, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8000\", \"Amont\": 353737, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8200\", \"Amont\": 353737, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8300\", \"Amont\": -21181, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"8500\", \"Amont\": 332556, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"9750\", \"Amont\": 1.3, \"Date_Kind\": \"F\"}], \"Season\": 2}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 88359, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -302781, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 148521, \"Date_Kind\": \"F\"}], \"Season\": 2}, {\"BookValue\": \"24.58\", \"ReportKind\": \"A\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"11XX\", \"Amont\": 5926408, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"15XX\", \"Amont\": 8551180, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"1XXX\", \"Amont\": 14477588, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"21XX\", \"Amont\": 3748915, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"25XX\", \"Amont\": 4042322, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"2XXX\", \"Amont\": 7791237, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3100\", \"Amont\": 2713222, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3110\", \"Amont\": 2713222, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"31XX\", \"Amont\": 6668229, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3200\", \"Amont\": 93840, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3300\", \"Amont\": 3840401, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3400\", \"Amont\": 20766, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"36XX\", \"Amont\": 18122, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3998\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3999\", \"Amont\": 0, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"3XXX\", \"Amont\": 6686351, \"Date_Kind\": \"A\"}], \"Season\": 1}, {\"ReportKind\": \"B\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"4000\", \"Amont\": 3125895, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"5000\", \"Amont\": 2509525, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"5950\", \"Amont\": 616370, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"6000\", \"Amont\": 375446, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"6900\", \"Amont\": 240924, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"7000\", \"Amont\": -86586, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"7900\", \"Amont\": 154338, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"7950\", \"Amont\": 30323, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8000\", \"Amont\": 124015, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8200\", \"Amont\": 124015, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8300\", \"Amont\": 5207, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"8500\", \"Amont\": 129222, \"Date_Kind\": \"A\"}, {\"Account_ID_X\": \"9750\", \"Amont\": 0.46, \"Date_Kind\": \"A\"}], \"Season\": 1}, {\"ReportKind\": \"C\", \"year\": 2025, \"detail\": [{\"Account_ID_X\": \"AAAA\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 25389, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"BBBB\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": -137783, \"Date_Kind\": \"F\"}, {\"Account_ID_X\": \"CCCC\", \"Report_Kind\": \"C\", \"Report_Type\": \"C\", \"Amont\": 443853, \"Date_Kind\": \"F\"}], \"Season\": 1}]}}"
+    },
+    "monthly_revenue": {
+      "market": "tw",
+      "ticker": "1231",
+      "company_name": "聯華食",
+      "cik": "",
+      "source_type": "twse-openapi",
+      "source_confidence": "official-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "fiscal_year": null,
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
+      "source_url": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "report_kind": "monthly_revenue",
+      "revenue": null,
+      "monthly_revenue": 1007987.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "gross_margin": null,
+      "operating_margin": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "",
+      "filing_excerpt": "",
+      "payload_json": "{\"出表日期\": \"1150511\", \"資料年月\": \"11504\", \"公司代號\": \"1231\", \"公司名稱\": \"聯華食\", \"產業別\": \"食品工業\", \"營業收入-當月營收\": \"1007987\", \"營業收入-上月營收\": \"973737\", \"營業收入-去年當月營收\": \"998002\", \"營業收入-上月比較增減(%)\": \"3.51737686870274\", \"營業收入-去年同月增減(%)\": \"1.000498996995998\", \"累計營業收入-當月累計營收\": \"4356525\", \"累計營業收入-去年累計營收\": \"4123897\", \"累計營業收入-前期比較增減(%)\": \"5.640975029201748\", \"備註\": \"-\"}"
+    },
+    "latest_transcript": null,
+    "recent_insider_summary": null,
+    "latest_13f": null,
+    "short_interest": null
+  },
   "transcripts": [],
   "insider": [],
   "short_interest": [],
@@ -74,16 +140,16 @@
   ],
   "general_news": [
     {
-      "title": "4 - DANHAKL JOHN G (0001162644) (Reporting)",
-      "link": "https://www.sec.gov/Archives/edgar/data/1162644/000119312526217635/0001193125-26-217635-index.htm",
+      "title": "4 - Edwards Lifesciences Corp (0001099800) (Issuer)",
+      "link": "https://www.sec.gov/Archives/edgar/data/1099800/000122520826005133/0001225208-26-005133-index.htm",
       "source": "SEC Form 4 (Atom)",
       "category": "👁️ 內部人與機構持股",
-      "published": "2026-05-12T08:56:44+08:00",
-      "summary": "Filed: 2026-05-11 AccNo: 0001193125-26-217635 Size: 6 KB",
+      "published": "2026-05-12T09:59:57+08:00",
+      "summary": "Filed: 2026-05-11 AccNo: 0001225208-26-005133 Size: 9 KB",
       "event_type": "news",
       "tickers": [
         "1231",
-        "7997"
+        "3842"
       ]
     },
     {
@@ -124,8 +190,94 @@
       ]
     }
   ],
-  "history": [],
-  "fundamentals": null,
+  "history": [
+    {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "period_end": "2025Q4",
+      "filed_at": "2025Q4",
+      "source_type": "tpex-finance-report",
+      "form_type": "TPEX-Q",
+      "revenue": 12867131.0,
+      "monthly_revenue": null,
+      "net_income": 1138582.0,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": 3.81,
+      "operating_cash_flow": 854418.0,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": "會計師意見：標準式無保留核閱報告（2025Q4）"
+    },
+    {
+      "fiscal_year": null,
+      "fiscal_period": "11504",
+      "period_end": "11504",
+      "filed_at": "1150511",
+      "source_type": "twse-openapi",
+      "form_type": "TWSE-MONTHLY",
+      "revenue": null,
+      "monthly_revenue": 1007987.0,
+      "net_income": null,
+      "operating_income": null,
+      "gross_profit": null,
+      "eps_diluted": null,
+      "operating_cash_flow": null,
+      "capex": null,
+      "free_cash_flow": null,
+      "guidance_summary": ""
+    }
+  ],
+  "fundamentals": {
+    "ticker": "1231",
+    "market": "tw",
+    "company_name": "聯華食品工業股份有限公司",
+    "latest": {
+      "fiscal_year": 2025,
+      "fiscal_period": "Q4",
+      "revenue": 12867131.0,
+      "gross_profit": null,
+      "operating_income": null,
+      "net_income": 1138582.0,
+      "eps": 3.81,
+      "fcf": null,
+      "ocf": 854418.0,
+      "capex": null,
+      "gross_margin": null,
+      "op_margin": null,
+      "net_margin": 0.08848763566641235,
+      "fcf_margin": null,
+      "capex_intensity": null,
+      "rev_yoy": null,
+      "eps_yoy": null,
+      "op_income_yoy": null,
+      "rev_qoq": null,
+      "prior_rev_yoy": null,
+      "rev_yoy_accel": null
+    },
+    "history": [
+      {
+        "fiscal_year": 2025,
+        "fiscal_period": "Q4",
+        "revenue": 12867131.0,
+        "gross_profit": null,
+        "operating_income": null,
+        "net_income": 1138582.0,
+        "eps_diluted": 3.81,
+        "fcf": null,
+        "ocf": 854418.0,
+        "capex": null,
+        "company_name": "聯華食品工業股份有限公司"
+      }
+    ],
+    "health": {
+      "tier": "watch",
+      "label": "觀望",
+      "summary": "資料不足",
+      "icon": "🟡",
+      "score": 0
+    }
+  },
   "co_mentions": [
     {
       "ticker": "4522",
@@ -144,5 +296,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:14:02Z"
+  "generated_at": "2026-05-12T02:19:16Z"
 }

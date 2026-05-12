@@ -1,6 +1,181 @@
 {
-  "generated_at": "2026-05-12T02:14:00Z",
+  "generated_at": "2026-05-12T02:19:15Z",
   "events": [
+    {
+      "kind": "earnings",
+      "title": "wanshuiyin/Auto-claude-code-research-in-sleep",
+      "date": "2026-05-12",
+      "source": "GitHub Trending (Python)",
+      "link": null,
+      "tickers": [
+        "META",
+        "GOOGL"
+      ],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "earnings",
+      "title": "rohitg00/agentmemory",
+      "date": "2026-05-12",
+      "source": "GitHub Trending (All)",
+      "link": null,
+      "tickers": [
+        "3113",
+        "3114",
+        "3111"
+      ],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "earnings",
+      "title": "rasbt/LLMs-from-scratch",
+      "date": "2026-05-12",
+      "source": "GitHub Trending (All)",
+      "link": null,
+      "tickers": [],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "earnings",
+      "title": "flyExclusive, Inc. (FLYX) Q1 2026 Earnings Call Prepared Remarks Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "Found a way to cool the DGX",
+      "date": "2026-05-12",
+      "source": "Reddit r/LocalLLaMA",
+      "link": null,
+      "tickers": [],
+      "category": "🛠️ AI 工具與實戰"
+    },
+    {
+      "kind": "earnings",
+      "title": "焦點股》詩肯︰Q1賺贏去年一整年 股價跳空漲停",
+      "date": "2026-05-12",
+      "source": "自由時報 財經",
+      "link": null,
+      "tickers": [
+        "6195"
+      ],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "焦點股》台玻︰首季EPS 0.2元 翻身題材又起",
+      "date": "2026-05-12",
+      "source": "自由時報 財經",
+      "link": null,
+      "tickers": [
+        "1802"
+      ],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "policy",
+      "title": "川習會前再出手！美對涉伊朗石油運輸的香港企業 祭新制裁",
+      "date": "2026-05-12",
+      "source": "經濟日報 產經",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Bathurst Resources Q3 FY26 slides: cash strong despite revenue dip",
+      "date": "2026-05-12",
+      "source": "Investing.com",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Lenz outlines sales force reaching 15,000 eye care professionals by quarter end as VIZZ adoption actions roll out",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "LENZ Therapeutics, Inc. (LENZ) Q1 2026 Earnings Call Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "Trump puts Taiwan arms sales, Hong Kong jailed activist Lai on agenda ahead of meeting with Xi",
+      "date": "2026-05-12",
+      "source": "CNBC Top News",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "Microvast Holdings, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "Ceva signals 2026 revenue growth at top end of 8%-12% range as it targets 40%-50% non-GAAP profit growth",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha",
+      "link": null,
+      "tickers": [],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "CEVA, Inc. (CEVA) Q1 2026 Earnings Call Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
+    {
+      "kind": "earnings",
+      "title": "中租前4月營收下滑 獲利72.8億元、EPS4.26元",
+      "date": "2026-05-12",
+      "source": "自由時報 財經",
+      "link": null,
+      "tickers": [
+        "5871"
+      ],
+      "category": "💰 財經與總經"
+    },
+    {
+      "kind": "earnings",
+      "title": "《台北股市》不斷更新！最旺4月營收股 記憶體超狂人氣 4檔好吸金 - 富聯網",
+      "date": "2026-05-12",
+      "source": "台股三大法人 (Google News)",
+      "link": null,
+      "tickers": [],
+      "category": "📉 融券與資金流"
+    },
+    {
+      "kind": "earnings",
+      "title": "CI&T Inc. (CINT) Q1 2026 Earnings Call Transcript",
+      "date": "2026-05-12",
+      "source": "Seeking Alpha Top Ideas",
+      "link": null,
+      "tickers": [],
+      "category": "📊 券商與分析師研究"
+    },
     {
       "kind": "earnings",
       "title": "OpenTalker/SadTalker",
@@ -1786,179 +1961,6 @@
       "link": null,
       "tickers": [],
       "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "敦泰打進GoPro跟著上太空　OLED觸控等將帶動2Q26逐季成長",
-      "date": "2026-05-11",
-      "source": "DIGITIMES 半導體",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "DeepSeek-V4-Flash W4A16+FP8 with MTP self-speculation: 85 tok/s @ 524k on 2× RTX PRO 6000 Max-Q",
-      "date": "2026-05-11",
-      "source": "Reddit r/LocalLLaMA",
-      "link": null,
-      "tickers": [
-        "6000"
-      ],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "AI代理與公共安全需求拉抬訂單　摩托羅拉系統上修財測",
-      "date": "2026-05-11",
-      "source": "DIGITIMES AI應用",
-      "link": null,
-      "tickers": [],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Signals: finding the most informative agent traces without LLM judges [R]",
-      "date": "2026-05-11",
-      "source": "Reddit r/MachineLearning",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
-      "date": "2026-05-10",
-      "source": "Lobsters AI",
-      "link": null,
-      "tickers": [
-        "1000",
-        "AAPL",
-        "META"
-      ],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "policy",
-      "title": "日經：台日播下無人機合作種子　應對中國供應鏈挑戰",
-      "date": "2026-05-10",
-      "source": "中央社 政治",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "The Case For Compilers: A Look at SPEC CPU 2026 on LLVM 22",
-      "date": "2026-05-10",
-      "source": "ServeTheHome",
-      "link": null,
-      "tickers": [
-        "NVDA"
-      ],
-      "category": "🔬 半導體與硬體"
-    },
-    {
-      "kind": "earnings",
-      "title": "Quoting Andrew Quinn",
-      "date": "2026-05-10",
-      "source": "Simon Willison",
-      "link": null,
-      "tickers": [],
-      "category": "🛠️ AI 工具與實戰"
-    },
-    {
-      "kind": "earnings",
-      "title": "Powell Stays…Should the Dot Plot?",
-      "date": "2026-05-10",
-      "source": "ETF Trends",
-      "link": null,
-      "tickers": [],
-      "category": "📉 融券與資金流"
-    },
-    {
-      "kind": "earnings",
-      "title": "Agentic commerce will run on crypto rails, PayPal and Google reps tell Consensus Miami",
-      "date": "2026-05-10",
-      "source": "CoinDesk",
-      "link": null,
-      "tickers": [
-        "BLSH",
-        "GOOGL"
-      ],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Alarm.com Holdings, Inc. (ALRM) Q1 2026 Earnings Call Transcript - Seeking Alpha",
-      "date": "2026-05-10",
-      "source": "Seeking Alpha Earnings Transcripts (Google News)",
-      "link": null,
-      "tickers": [],
-      "category": "🏛️ 法說與 IR 材料"
-    },
-    {
-      "kind": "earnings",
-      "title": "\"MBI\" Skill for Claude and Codex",
-      "date": "2026-05-10",
-      "source": "Mostly Borrowed Ideas",
-      "link": null,
-      "tickers": [],
-      "category": "📊 券商與分析師研究"
-    },
-    {
-      "kind": "policy",
-      "title": "Buoyed by rare earths, China approaches Trump summit with fresh confidence",
-      "date": "2026-05-10",
-      "source": "南華早報 科技",
-      "link": null,
-      "tickers": [],
-      "category": "🌏 地緣政治與科技政策"
-    },
-    {
-      "kind": "earnings",
-      "title": "Three young DeFi apps return $100M in revenue to token holders in 30 days",
-      "date": "2026-05-10",
-      "source": "Cointelegraph",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "policy",
-      "title": "Information Grade",
-      "date": "2026-05-10",
-      "source": "Doomberg",
-      "link": null,
-      "tickers": [],
-      "category": "📊 券商與分析師研究"
-    },
-    {
-      "kind": "policy",
-      "title": "Retailers are on a hiring spree. But consumers are sending warning signs",
-      "date": "2026-05-10",
-      "source": "CNBC Economy",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Trump Media posts $406M quarterly loss as crypto bets turn sour",
-      "date": "2026-05-10",
-      "source": "Cointelegraph",
-      "link": null,
-      "tickers": [],
-      "category": "💰 財經與總經"
-    },
-    {
-      "kind": "earnings",
-      "title": "Hedge Funds Quarterly Outlook Q2 2026 - J.P. Morgan",
-      "date": "2026-05-10",
-      "source": "JPM Outlook (Google News)",
-      "link": null,
-      "tickers": [],
-      "category": "📊 券商與分析師研究"
     }
   ]
 }

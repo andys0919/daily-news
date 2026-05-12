@@ -75,6 +75,18 @@
   "recent_news": [],
   "general_news": [
     {
+      "title": "JX Metals Shares Drop Most Since April 2025 on Convertible Bond",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-12/jx-metals-shares-drop-most-since-april-2025-on-convertible-bond",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T10:06:27+08:00",
+      "summary": "Shares of Japanese metals refiner JX Advanced Metals Corp. slid after the company unveiled a plan to issue ¥250 billion ($1.6 billion) of bonds that can be converted into stocks to fund share buybacks.",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
       "title": "Here&#8217;s what Mira Murati&#8217;s AI company is up to",
       "link": "https://www.theverge.com/ai-artificial-intelligence/928309/mira-murati-thinking-machines-ai-interaction-model",
       "source": "The Verge AI",
@@ -393,16 +405,6 @@
       "tickers": [
         "BLSH"
       ]
-    },
-    {
-      "title": "Thanks to Trump, the gloves are off. There may be no new global order",
-      "link": "https://www.scmp.com/opinion/world-opinion/article/3352758/thanks-trump-gloves-are-there-may-be-no-new-global-order",
-      "source": "南華早報 科技",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-09T05:30:05+08:00",
-      "summary": "The old order is dead. We just don’t know what will replace it. As Henry Kissinger reminded us in his 2014 book World Order, “no truly global order has ever existed”. After US President Donald Trump’s erratic actions, the gloves are off. American comedians and Iranian Lego cartoons tell us all we need to know about the demise of the old order. If the unipolar order is not viable, and America is abandoning the multilateral order and the rules of the game it created after World War II, what are...",
-      "event_type": "news",
-      "tickers": []
     }
   ],
   "history": [
@@ -844,5 +846,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-12T02:14:00Z"
+  "generated_at": "2026-05-12T02:19:15Z"
 }

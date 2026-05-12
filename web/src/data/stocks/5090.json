@@ -33,6 +33,18 @@
   ],
   "general_news": [
     {
+      "title": "RTX 5090, Ryzen 7 9800X3D gaming PC with 64GB of DDR5 and 2TB Gen5 SSD hits lowest price in 30 days at Newegg - PC Guide",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNamhsTTh2eGpxNEFKaEd5V3B3czdEX0VsaXhEcXl5aXVtRXY3VDZLeHlMM3VmaGpOdVhCa1dCUzNwbFQ5ZE5RamFOdF9zNzR1cjdOcXNBS2hzSlFuMS15TWN4X09IMW9rOUFmZHFDbG5tVjJyWGw4eldkcVBkRXlUd3B3b3VuaC11bVRJNGF1aml6Z3BtR3BRUU1wWHluQTlkeXZEWktRREVsVjh6MERxbGlOR0dyQ3Q1SUxmNko3Z2ZPNmFMeHc2aXZEVVlaNC1hY19ycWp3",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-12T09:43:32+08:00",
+      "summary": "RTX 5090, Ryzen 7 9800X3D gaming PC with 64GB of DDR5 and 2TB Gen5 SSD hits lowest price in 30 days at Newegg&nbsp;&nbsp;PC Guide",
+      "event_type": "news",
+      "tickers": [
+        "5090"
+      ]
+    },
+    {
       "title": "Retailer selling broken RTX 5090 GPUs for as low as $1,760 — GPUs were damaged during transport, but include all components on the PCB",
       "link": "https://www.tomshardware.com/pc-components/gpus/retailer-selling-broken-rtx-5090-gpus-for-as-low-as-usd1-760-gpus-were-damaged-during-transport-but-include-all-components-on-the-pcb",
       "source": "Tom's Hardware",
@@ -261,5 +273,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:14:02Z"
+  "generated_at": "2026-05-12T02:19:17Z"
 }

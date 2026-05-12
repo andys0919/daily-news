@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T02:14:00Z",
+  "generated_at": "2026-05-12T02:19:15Z",
   "coverage": [
     {
       "ticker": "2024",
@@ -22,8 +22,8 @@
     {
       "ticker": "2330",
       "market": "tw",
-      "articles": 947,
-      "reports": 21
+      "articles": 955,
+      "reports": 22
     },
     {
       "ticker": "2020",
@@ -64,14 +64,14 @@
     {
       "ticker": "2317",
       "market": "tw",
-      "articles": 372,
-      "reports": 10
+      "articles": 374,
+      "reports": 11
     },
     {
       "ticker": "2454",
       "market": "tw",
-      "articles": 331,
-      "reports": 10
+      "articles": 335,
+      "reports": 11
     },
     {
       "ticker": "2027",
@@ -136,7 +136,7 @@
     {
       "ticker": "GOOGL",
       "market": "us",
-      "articles": 984,
+      "articles": 986,
       "reports": 3
     },
     {
@@ -172,7 +172,7 @@
     {
       "ticker": "META",
       "market": "us",
-      "articles": 585,
+      "articles": 589,
       "reports": 2
     },
     {
@@ -184,13 +184,19 @@
     {
       "ticker": "AMZN",
       "market": "us",
-      "articles": 350,
+      "articles": 351,
       "reports": 2
     },
     {
       "ticker": "TSLA",
       "market": "us",
       "articles": 262,
+      "reports": 2
+    },
+    {
+      "ticker": "1231",
+      "market": "tw",
+      "articles": 24,
       "reports": 2
     },
     {
@@ -322,7 +328,7 @@
     {
       "ticker": "5090",
       "market": "tw",
-      "articles": 34,
+      "articles": 35,
       "reports": 0
     },
     {
@@ -351,12 +357,6 @@
     },
     {
       "ticker": "5060",
-      "market": "tw",
-      "articles": 20,
-      "reports": 0
-    },
-    {
-      "ticker": "1231",
       "market": "tw",
       "articles": 20,
       "reports": 0
@@ -794,6 +794,12 @@
       "reports": 0
     },
     {
+      "ticker": "1965",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0
+    },
+    {
       "ticker": "1962",
       "market": "tw",
       "articles": 4,
@@ -944,12 +950,6 @@
       "reports": 0
     },
     {
-      "ticker": "1965",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0
-    },
-    {
       "ticker": "2036",
       "market": "tw",
       "articles": 3,
@@ -1011,6 +1011,12 @@
     },
     {
       "ticker": "2408",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0
+    },
+    {
+      "ticker": "3089",
       "market": "tw",
       "articles": 3,
       "reports": 0
@@ -1418,6 +1424,12 @@
       "reports": 0
     },
     {
+      "ticker": "2313",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
       "ticker": "6669",
       "market": "tw",
       "articles": 2,
@@ -1497,6 +1509,12 @@
     },
     {
       "ticker": "6600",
+      "market": "tw",
+      "articles": 2,
+      "reports": 0
+    },
+    {
+      "ticker": "3842",
       "market": "tw",
       "articles": 2,
       "reports": 0
@@ -1779,24 +1797,6 @@
     },
     {
       "ticker": "9500",
-      "market": "tw",
-      "articles": 1,
-      "reports": 0
-    },
-    {
-      "ticker": "3610",
-      "market": "tw",
-      "articles": 1,
-      "reports": 0
-    },
-    {
-      "ticker": "8005",
-      "market": "tw",
-      "articles": 1,
-      "reports": 0
-    },
-    {
-      "ticker": "2463",
       "market": "tw",
       "articles": 1,
       "reports": 0

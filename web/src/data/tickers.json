@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-12T02:14:06Z",
+  "generated_at": "2026-05-12T02:19:22Z",
   "tickers": [
     {
       "ticker": "GOOGL",
       "name": "Alphabet Inc.",
       "market": "us",
-      "articles": 984,
+      "articles": 986,
       "reports": 3,
       "label": "GOOGL (US)"
     },
@@ -13,8 +13,8 @@
       "ticker": "2330",
       "name": "台灣積體電路製造股份有限公司",
       "market": "tw",
-      "articles": 947,
-      "reports": 21,
+      "articles": 955,
+      "reports": 22,
       "label": "2330 (TW)"
     },
     {
@@ -29,7 +29,7 @@
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "market": "us",
-      "articles": 585,
+      "articles": 589,
       "reports": 2,
       "label": "META (US)"
     },
@@ -53,8 +53,8 @@
       "ticker": "2317",
       "name": "鴻海",
       "market": "tw",
-      "articles": 372,
-      "reports": 10,
+      "articles": 374,
+      "reports": 11,
       "label": "2317 (TW)"
     },
     {
@@ -69,7 +69,7 @@
       "ticker": "AMZN",
       "name": "AMAZON COM INC",
       "market": "us",
-      "articles": 350,
+      "articles": 351,
       "reports": 2,
       "label": "AMZN (US)"
     },
@@ -77,8 +77,8 @@
       "ticker": "2454",
       "name": "聯發科",
       "market": "tw",
-      "articles": 331,
-      "reports": 10,
+      "articles": 335,
+      "reports": 11,
       "label": "2454 (TW)"
     },
     {
@@ -149,7 +149,7 @@
       "ticker": "5090",
       "name": "",
       "market": "tw",
-      "articles": 34,
+      "articles": 35,
       "reports": 0,
       "label": "5090 (TW)"
     },
@@ -186,20 +186,20 @@
       "label": "1979 (TW)"
     },
     {
+      "ticker": "1231",
+      "name": "聯華食",
+      "market": "tw",
+      "articles": 24,
+      "reports": 2,
+      "label": "1231 (TW)"
+    },
+    {
       "ticker": "5060",
       "name": "",
       "market": "tw",
       "articles": 20,
       "reports": 0,
       "label": "5060 (TW)"
-    },
-    {
-      "ticker": "1231",
-      "name": "",
-      "market": "tw",
-      "articles": 20,
-      "reports": 0,
-      "label": "1231 (TW)"
     },
     {
       "ticker": "1973",
@@ -802,6 +802,14 @@
       "label": "1954 (TW)"
     },
     {
+      "ticker": "1965",
+      "name": "",
+      "market": "tw",
+      "articles": 4,
+      "reports": 0,
+      "label": "1965 (TW)"
+    },
+    {
       "ticker": "1962",
       "name": "",
       "market": "tw",
@@ -1018,14 +1026,6 @@
       "label": "S (US)"
     },
     {
-      "ticker": "1965",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "1965 (TW)"
-    },
-    {
       "ticker": "2036",
       "name": "",
       "market": "tw",
@@ -1112,6 +1112,14 @@
       "articles": 3,
       "reports": 0,
       "label": "2408 (TW)"
+    },
+    {
+      "ticker": "3089",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "3089 (TW)"
     },
     {
       "ticker": "7372",

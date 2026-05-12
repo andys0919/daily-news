@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-12T02:14:00Z",
+  "generated_at": "2026-05-12T02:19:15Z",
   "stats": {
-    "articles_total": 56600,
-    "articles_24h": 971,
-    "articles_7d": 4167,
+    "articles_total": 56703,
+    "articles_24h": 1073,
+    "articles_7d": 4267,
     "articles_30d": 15000,
-    "reports_total": 322,
+    "reports_total": 327,
     "insider_total": 0,
     "holdings_total": 0,
     "short_total": 0,
@@ -806,8 +806,8 @@
       "direction": "up",
       "excerpt": "聯發科（2454）飆漲停刷新天價！法人喊上看5000元 網嗨：取代台積電（2330）&nbsp;&nbsp;聯合新聞網",
       "tickers": [
-        "2330",
-        "2454"
+        "2454",
+        "2330"
       ],
       "companies": [
         "聯發科",
@@ -1118,8 +1118,8 @@
       "direction": "up",
       "excerpt": "聯發科（2454）飆漲停刷新天價！法人喊上看5000元 網嗨：取代台積電（2330）&nbsp;&nbsp;聯合新聞網",
       "tickers": [
-        "2330",
-        "2454"
+        "2454",
+        "2330"
       ],
       "companies": [
         "聯發科",
@@ -1177,6 +1177,35 @@
     }
   ],
   "analyst_views": [
+    {
+      "title": "韓股盤中急殺 Kospi 一度重挫5% 主因外資獲利了結賣壓出籠",
+      "link": "https://money.udn.com/money/story/5599/9496812",
+      "source": "經濟日報 產經",
+      "published": "2026-05-12T10:08:11+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "南韓股市今天（12日）盤中急殺，一度重挫5%，逆轉盤初時大漲超過2%的走勢，反映終於有投資人決定趁著韓股Kospi指數驚人的漲勢獲利了結。韓股迅速反轉下跌，也拖累亞洲其他市場以及美國股指期貨同步走低。"
+    },
+    {
+      "title": "美光續噴 今年狂漲178%還能追嗎？分析師揭記憶體比 CPU 更好賺的關鍵",
+      "link": "https://money.udn.com/money/story/123398/9496728",
+      "source": "經濟日報 產經",
+      "published": "2026-05-12T09:41:35+08:00",
+      "tickers": [],
+      "direction": null,
+      "summary": "記憶體大廠美光（Micron）股價周一（11日）繼續創新高。一位分析師表示，隨著AI模型規模持續擴大，並需要更多記憶體來予以改善，將進一步創造市場對記憶體的更多需求。"
+    },
+    {
+      "title": "台積電估值太誘人？科技四巨頭23兆熱錢湧入AI 分析師指這家風險最低 - 三立新聞網SETN.com",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAyemZDMjZYNHNuMGxReFhFZDZGeXRhVF92Z040cWJLclJyM0dIZS1XVkVEeWJmOWI1NHFTUE1vb1F1b0s1eUVEb0RtUWdhenhxQXdmZFBjeDPSAV9BVV95cUxNanlHTVZUMG9LX05wUnVHMnIybTRSMmJHQXdnZDNaSVVMOEZnY0hfeGdJVGdxUUh5Zmw0MndTQ2diYUFscVF3d3JwSlZGNWdJeFg5a0w5RDlzbXFCclI3OA",
+      "source": "TSMC News",
+      "published": "2026-05-12T09:37:00+08:00",
+      "tickers": [
+        "2330"
+      ],
+      "direction": null,
+      "summary": "台積電估值太誘人？科技四巨頭23兆熱錢湧入AI 分析師指這家風險最低&nbsp;&nbsp;三立新聞網SETN.com"
+    },
     {
       "title": "沒跟上美光點火！「這檔記憶體」三大法人撤資、國家隊反手投入4億元台積電、緯創也在入手名單 - FTNN 新聞網",
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1mcmtEX2RRbDhwRVNycUs5Qk5Xb2JCcXZCVDFtY3ZIbVFTLUEzQ0tLaWxlR0lYNmo5VzYxWC1ydnF1YUZpSE1uRzJJNA",
@@ -1514,8 +1543,8 @@
       "published": "2026-05-11T07:14:16+08:00",
       "tickers": [
         "BRK-B",
-        "ACHC",
-        "GOOGL"
+        "GOOGL",
+        "ACHC"
       ],
       "direction": null,
       "summary": "Acadia Healthcare Company, Inc. (NASDAQ:ACHC) is one of the best performing healthcare stocks so far in 2026. Acadia Healthcare Company, Inc. (NASDAQ:ACHC) received a rating update from RBC Capital on May 4, with the firm lifting the price "
@@ -1599,8 +1628,8 @@
       "source": "鴻海/Foxconn",
       "published": "2026-05-10T19:04:00+08:00",
       "tickers": [
-        "2317",
-        "2330"
+        "2330",
+        "2317"
       ],
       "direction": null,
       "summary": "台股4萬1怕回檔？台積電買點在哪 分析師提2.5兆警訊：先砍鴻海一半持股 | 李瑋萱 | 新聞&nbsp;&nbsp;風傳媒"
@@ -1731,9 +1760,9 @@
       "source": "鴻海/Foxconn",
       "published": "2026-05-09T14:51:32+08:00",
       "tickers": [
-        "2317",
+        "2408",
         "2330",
-        "2408"
+        "2317"
       ],
       "direction": null,
       "summary": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元&nbsp;&nbsp;sinotrade.com.tw"
@@ -1746,33 +1775,6 @@
       "tickers": [],
       "direction": null,
       "summary": "（中央社台北9日電）美國總統川普預計14至15日訪問中國，屆時將與中國國家主席習近平會談。摩根大通預測，川習會可能達成進一步談判的框架協議，中國可能同意大量購買美國大豆及其他農產品，以及波音飛機、原油和天然氣，以維持現有關稅狀態。"
-    },
-    {
-      "title": "Bitcoin profit-taking may 'accelerate' as price hits 3-month high: Analyst",
-      "link": "https://cointelegraph.com/news/bitcoin-profit-accelerate-price-3-month-high",
-      "source": "Cointelegraph",
-      "published": "2026-05-09T01:57:27+08:00",
-      "tickers": [],
-      "direction": null,
-      "summary": "Despite the short-term price recovery, Bitcoin remains in a bear market, according to CryptoQuant analyst Julio Moreno."
-    },
-    {
-      "title": "Worm rubs out competitor's malware, then takes control",
-      "link": "https://www.theregister.com/security/2026/05/08/worm-rubs-out-competitors-malware-then-takes-control/5237389",
-      "source": "The Register",
-      "published": "2026-05-09T01:26:00+08:00",
-      "tickers": [],
-      "direction": null,
-      "summary": "All your compromised credentials are belong to us now instead of the other gang"
-    },
-    {
-      "title": "Daiwa Just Upgraded Qualcomm to Outperform: $225 Price Target Bets on Data Center AI Pivot - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNM05mdzBrV1o1bkY3cDhfMlV6dnBCLUdXUm9FcHJpb1RadC04UnJqV2dnUHY2djBEWnZLRThUVTRZOWRFS2lSUU0yM3JWcnlXdEdvZldmQ1RvNXZCYXVIWTlBbERMZ2MweTVMc0tacXE1TTVXdUU5dkdRUUF3WGlMaWFnQ3lFMjNpamsw?oc=5",
-      "source": "AI 產業化與投資信號",
-      "published": "2026-05-09T00:16:59+08:00",
-      "tickers": [],
-      "direction": null,
-      "summary": "Daiwa Just Upgraded Qualcomm to Outperform: $225 Price Target Bets on Data Center AI Pivot&nbsp;&nbsp;AOL.com"
     }
   ],
   "revenue_pulse": [
@@ -1801,10 +1803,10 @@
       "q_eps": 66.26,
       "q_rev_yoy": null,
       "m_year": 2026,
-      "m_period": "11503",
-      "m_revenue": 415191699.0,
+      "m_period": "11504",
+      "m_revenue": 410725118.0,
       "q_count": 2,
-      "m_count": 2
+      "m_count": 3
     },
     {
       "ticker": "AAPL",
@@ -1906,10 +1908,10 @@
       "q_eps": 66.16,
       "q_rev_yoy": null,
       "m_year": 2026,
-      "m_period": "11503",
-      "m_revenue": 63219184.0,
+      "m_period": "11504",
+      "m_revenue": 46736664.0,
       "q_count": 2,
-      "m_count": 2
+      "m_count": 3
     },
     {
       "ticker": "2317",
@@ -1921,10 +1923,10 @@
       "q_eps": 13.61,
       "q_rev_yoy": null,
       "m_year": 2026,
-      "m_period": "11503",
-      "m_revenue": 803737716.0,
+      "m_period": "11504",
+      "m_revenue": 832097956.0,
       "q_count": 2,
-      "m_count": 2
+      "m_count": 3
     },
     {
       "ticker": "AMZN",
@@ -1970,9 +1972,69 @@
       "m_revenue": null,
       "q_count": 1,
       "m_count": 0
+    },
+    {
+      "ticker": "1231",
+      "market": "tw",
+      "company_name": "聯華食品工業股份有限公司",
+      "q_year": 2025,
+      "q_period": "Q4",
+      "q_revenue": 12867131.0,
+      "q_eps": 3.81,
+      "q_rev_yoy": null,
+      "m_year": 2026,
+      "m_period": "11504",
+      "m_revenue": 1007987.0,
+      "q_count": 1,
+      "m_count": 1
     }
   ],
   "internal_feed": [
+    {
+      "title": "flyExclusive, Inc. (FLYX) Q1 2026 Earnings Call Prepared Remarks Transcript",
+      "link": "https://seekingalpha.com/article/4902786-flyexclusive-inc-flyx-q1-2026-earnings-call-prepared-remarks-transcript",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-12T10:10:47+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "LENZ Therapeutics, Inc. (LENZ) Q1 2026 Earnings Call Transcript",
+      "link": "https://seekingalpha.com/article/4902778-lenz-therapeutics-inc-lenz-q1-2026-earnings-call-transcript",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-12T09:40:42+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "Microvast Holdings, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+      "link": "https://seekingalpha.com/article/4902776-microvast-holdings-inc-2026-q1-results-earnings-call-presentation?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-12T09:31:56+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "CEVA, Inc. (CEVA) Q1 2026 Earnings Call Transcript",
+      "link": "https://seekingalpha.com/article/4902625-ceva-inc-ceva-q1-2026-earnings-call-transcript?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-12T09:30:44+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
+    {
+      "title": "CI&T Inc. (CINT) Q1 2026 Earnings Call Transcript",
+      "link": "https://seekingalpha.com/article/4902774-ci-and-t-inc-cint-q1-2026-earnings-call-transcript?source=feed_all_articles",
+      "source": "Seeking Alpha Top Ideas",
+      "published": "2026-05-12T09:20:43+08:00",
+      "event_type": "earnings",
+      "tickers": [],
+      "summary": ""
+    },
     {
       "title": "Cronos Group Inc. (CRON:CA) Q1 2026 Earnings Call Transcript",
       "link": "https://seekingalpha.com/article/4902766-cronos-group-inc-cron-ca-q1-2026-earnings-call-transcript",
@@ -2109,8 +2171,8 @@
       "published": "2026-05-12T05:30:38+08:00",
       "event_type": "filing",
       "tickers": [
-        "1231",
-        "1389"
+        "1389",
+        "1231"
       ],
       "summary": "Filed: 2026-05-11 AccNo: 0001628280-26-033686 Size: 9 MB"
     },
@@ -2164,8 +2226,8 @@
       "published": "2026-05-12T04:46:45+08:00",
       "event_type": "filing",
       "tickers": [
-        "7372",
-        "0331"
+        "0331",
+        "7372"
       ],
       "summary": "Filed: 2026-05-11 AccNo: 0001628280-26-033617 Size: 13 MB"
     },
@@ -2218,53 +2280,6 @@
       "event_type": "news",
       "tickers": [],
       "summary": "【光頡法說會重點內容備忘錄】20260511&nbsp;&nbsp;富果直送"
-    },
-    {
-      "title": "【茂林-KY 法說會重點內容備忘錄】20260511 - 富果直送",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE90b1VJWkdqbnd6N0pSWGcwZThKSklNQWpXbWQwQjBzY1podFVjZEg3Ni1FOVpFMDhDdE5zZmpZMEYtS2x0VmhjRUxrZ2Z0TU5Ub05RUTlnTG9HLXlZaUFZQnNJd2hHclk",
-      "source": "台股法說會 (Google News)",
-      "published": "2026-05-11T21:46:39+08:00",
-      "event_type": "news",
-      "tickers": [],
-      "summary": "【茂林-KY 法說會重點內容備忘錄】20260511&nbsp;&nbsp;富果直送"
-    },
-    {
-      "title": "天鈺法說會／首季EPS 1.86元季增逾18%，電子紙與Edge AI挹注動能，第二季全產品線成長可期｜股市話題 - sinotrade.com.tw",
-      "link": "https://news.google.com/rss/articles/CBMisgRBVV95cUxOYlQwWnRKMlQ1NndTaDhkNjFrM1lqTWROeEN6LTh3Z3JMbTE3NE9rUXRDeFBneW4xd2VCaU53bGdDdHJoUlZGNU1XSnpPaEJ4eURodU5hZEpEZTBIbTVlVkRvWVFwTDBWb0lENVJTZE54NGVrcEhVaUxMUWw2QmZuNTBoWWhGT3hFOHVYM1RXSnJDT3BNTGZ6R0c4V25XUTYtaHAxVmdDUlUtdUhDTFg4TkxqMmF1a0lXWmdwOGcxeWFOeGRVM0dSLTFUdnZRU3U2LTNBc2w1Q2kxWmJzUUgwX0NmaWtDWE9nbEpsZXU4dUlvR19ZMi04MWJMWXAtSnhWN3pTdWdRSF9pZGt4TzhNVXp3R0pQaWwxTE1uLVVVSjdvVVp6UFZoQ0lXVFVDMVJNTWZybkR2SmU1VjFSeDRuS2VjTld2SlVVY0hNcDliSjlyNUJiM1lFSkt5UUQzWGZLTy1abnkxX2Y2ampfNUg4eTJwdVJGSlk2eFZxalBkR1RNZUNldUxIMFkyTGx3blBiRmxLbTZFbEppZVd1Z2oyMVZhUWRMT1hkZ0VtcUZ3MUJxelpZUnJwcC01YW0tV1owdzM5NEg3U284RWFLSUR1OUZaVzZidHJzQkM2bGRITmdyVkJFQ1BHTmZXRVM4cnJvLWw1VVYxb2FnS0xRR0pLc2w4SVZUQWJuQ1pKeGc1ZzQxcXBpaUtvbGNzbnF2X29lVVZRM2Z0SGRBZXFSYnJ0cy13?oc=5",
-      "source": "台股法說會 (Google News)",
-      "published": "2026-05-11T16:52:48+08:00",
-      "event_type": "earnings",
-      "tickers": [],
-      "summary": "天鈺法說會／首季EPS 1.86元季增逾18%，電子紙與Edge AI挹注動能，第二季全產品線成長可期｜股市話題&nbsp;&nbsp;sinotrade.com.tw"
-    },
-    {
-      "title": "個股：關貿(6183)5/12召開法說會 - 富聯網",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbWh4VjFodnZnSHF3QVEtNTBmQmVWakZLY2dXemYwcG1NYmVXanZ4YTZEbkFyM0s0b0lsc3hKVUhGQ3ZKOTd1RkVrektMZVhwbnBOaHBvdXBJMjNJWi1rbXg2TDl2NHNnaEFRdjdDaW1DLW5ibWJ3RS1hbjJTZEdkLWpTVmZuSXNf?oc=5",
-      "source": "台股法說會 (Google News)",
-      "published": "2026-05-11T13:57:00+08:00",
-      "event_type": "news",
-      "tickers": [
-        "6183"
-      ],
-      "summary": "個股：關貿(6183)5/12召開法說會&nbsp;&nbsp;富聯網"
-    },
-    {
-      "title": "Earnings call transcript: Evolus Inc Q1 2026 misses EPS forecast, stock rises",
-      "link": "https://www.investing.com/news/transcripts/earnings-call-transcript-evolus-inc-q1-2026-misses-eps-forecast-stock-rises-93CH-4674885",
-      "source": "Investing.com",
-      "published": "2026-05-11T08:18:45+08:00",
-      "event_type": "earnings",
-      "tickers": [],
-      "summary": ""
-    },
-    {
-      "title": "Macquarie Group Limited 2026 Q4 - Results - Earnings Call Presentation",
-      "link": "https://seekingalpha.com/article/4902304-macquarie-group-limited-2026-q4-results-earnings-call-presentation?source=feed_all_articles",
-      "source": "Seeking Alpha Top Ideas",
-      "published": "2026-05-11T07:39:39+08:00",
-      "event_type": "earnings",
-      "tickers": [],
-      "summary": ""
     }
   ],
   "filing_excerpts": [
@@ -2325,139 +2340,280 @@
     }
   ],
   "event_clusters": {
-    "earnings": [
+    "news": [
       {
-        "title": "OpenTalker/SadTalker",
+        "title": "romainsimon/paperasse",
         "source": "GitHub Trending (Python)",
         "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T09:01:03.660166+08:00",
-        "event_type": "earnings",
+        "published": "2026-05-12T10:17:30.386533+08:00",
+        "event_type": "news",
+        "tickers": [
+          "1965"
+        ]
+      },
+      {
+        "title": "ylytdeng/wechat-decrypt",
+        "source": "GitHub Trending (Python)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.382716+08:00",
+        "event_type": "news",
         "tickers": []
       },
       {
-        "title": "Cronos Group Inc. (CRON:CA) Q1 2026 Earnings Call Transcript",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T08:50:42+08:00",
-        "event_type": "earnings",
+        "title": "bytedance/UI-TARS",
+        "source": "GitHub Trending (Python)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.382346+08:00",
+        "event_type": "news",
         "tickers": []
       },
       {
-        "title": "Brazil’s Petrobras clocks 7% drop in first-quarter profit",
+        "title": "jwadow/kiro-gateway",
+        "source": "GitHub Trending (Python)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.382120+08:00",
+        "event_type": "news",
+        "tickers": [
+          "AMZN"
+        ]
+      },
+      {
+        "title": "millionco/react-doctor",
+        "source": "GitHub Trending (All)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.251160+08:00",
+        "event_type": "news",
+        "tickers": []
+      },
+      {
+        "title": "tinyhumansai/openhuman",
+        "source": "GitHub Trending (All)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.250911+08:00",
+        "event_type": "news",
+        "tickers": []
+      },
+      {
+        "title": "苗北千坪森態造鎮「與山前」 前庭後院拯救高壓生活-房地產 - 商周財富網",
+        "source": "商業周刊",
+        "category": "🧭 深度觀點與分析",
+        "published": "2026-05-12T10:13:27+08:00",
+        "event_type": "news",
+        "tickers": []
+      },
+      {
+        "title": "《六圖華爾街》導讀 ｜台積電危險了？英特爾搶單蘋果晶片，將正式拍板？協議一年前就開始？ - Yahoo新聞",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T10:13:13+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2330"
+        ]
+      },
+      {
+        "title": "Analysis-Stung by Iran war, Trump heads to China in need of wins",
         "source": "Investing.com",
         "category": "💰 財經與總經",
-        "published": "2026-05-12T08:46:38+08:00",
-        "event_type": "earnings",
+        "published": "2026-05-12T10:12:29+08:00",
+        "event_type": "news",
         "tickers": []
       },
       {
-        "title": "Kaltura forecasts 2026 adjusted EBITDA of $13.8M-$15.2M as it raises revenue outlook following PathFactory close",
-        "source": "Seeking Alpha",
+        "title": "海地總理：治安未達標準　8月無法舉行總統大選",
+        "source": "經濟日報 產經",
         "category": "💰 財經與總經",
-        "published": "2026-05-12T08:41:24+08:00",
-        "event_type": "earnings",
+        "published": "2026-05-12T10:12:18+08:00",
+        "event_type": "news",
         "tickers": []
       },
       {
-        "title": "Kaltura, Inc. (KLTR) Q1 2026 Earnings Call Transcript",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T08:40:42+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "CleanSpark, Inc. (CLSK) Q2 2026 Earnings Call Transcript",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T08:20:42+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Power Solutions International, Inc. (PSIX) Q1 2026 Earnings Call Transcript",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T08:10:42+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Riding an AI rally, Robinhood preps second retail venture IPO",
-        "source": "TechCrunch Venture",
+        "title": "月收1.1萬就可借信貸！LINE Bank大降門檻 兼職、接案與領現族都可",
+        "source": "自由時報 財經",
         "category": "💰 財經與總經",
-        "published": "2026-05-12T08:09:01+08:00",
-        "event_type": "earnings",
+        "published": "2026-05-12T10:12:15+08:00",
+        "event_type": "news",
+        "tickers": []
+      },
+      {
+        "title": "夏普新社長：不能單方面讓鴻海替夏普承擔重擔 - DIGITIMES",
+        "source": "鴻海/Foxconn",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T10:11:00+08:00",
+        "event_type": "news",
         "tickers": [
-          "3909"
+          "2317"
         ]
       },
       {
-        "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
-        "source": "Insider Monkey",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:07:31+08:00",
-        "event_type": "earnings",
-        "tickers": [
-          "RLAY",
-          "GOOGL",
-          "BRK-B"
-        ]
-      },
-      {
-        "title": "Bristol-Myers Squibb Company (BMY) Myers Beats Quarterly Profit Estimates",
-        "source": "Insider Monkey",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:02:30+08:00",
-        "event_type": "earnings",
-        "tickers": [
-          "BMY"
-        ]
-      },
-      {
-        "title": "Evercore ISI Keeps an “In Line” Rating on Guardant Health, Inc. (GH)",
-        "source": "Insider Monkey",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:02:06+08:00",
-        "event_type": "earnings",
-        "tickers": [
-          "GH"
-        ]
-      },
-      {
-        "title": "Peraso expects Q2 2026 revenue of about $1.2M while diversifying suppliers after Q1 shipment delay",
-        "source": "Seeking Alpha",
+        "title": "韓股盤中急殺 Kospi 一度重挫5% 主因外資獲利了結賣壓出籠",
+        "source": "經濟日報 產經",
         "category": "💰 財經與總經",
-        "published": "2026-05-12T08:01:33+08:00",
-        "event_type": "earnings",
+        "published": "2026-05-12T10:08:11+08:00",
+        "event_type": "news",
         "tickers": []
       },
       {
-        "title": "Peraso Inc. (PRSO) Q1 2026 Earnings Call Transcript - Seeking Alpha",
-        "source": "Seeking Alpha Earnings Transcripts (Google News)",
-        "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T08:00:45+08:00",
-        "event_type": "earnings",
+        "title": "GoPro啟動戰略評估！不排除出售公司或尋求合併 盤後股價飆升27％",
+        "source": "自由時報 財經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T10:07:50+08:00",
+        "event_type": "news",
         "tickers": []
       },
       {
-        "title": "Blink targets $105M-$115M 2026 revenue as DC fast-charging build-out moves toward 27 sites live by year-end",
-        "source": "Seeking Alpha",
+        "title": "美伊戰爭油價飛漲川普擬停徵聯邦燃油稅緩解衝擊- 國際 - 工商時報",
+        "source": "工商時報 財經",
         "category": "💰 財經與總經",
-        "published": "2026-05-12T07:51:34+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Getty Images forecasts $948M-$988M 2026 revenue while awaiting U.K. CMA merger decision in June",
-        "source": "Seeking Alpha",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T07:51:29+08:00",
-        "event_type": "earnings",
+        "published": "2026-05-12T10:07:00+08:00",
+        "event_type": "news",
         "tickers": []
       }
     ],
+    "earnings": [
+      {
+        "title": "wanshuiyin/Auto-claude-code-research-in-sleep",
+        "source": "GitHub Trending (Python)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.385755+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "META",
+          "GOOGL"
+        ]
+      },
+      {
+        "title": "rohitg00/agentmemory",
+        "source": "GitHub Trending (All)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.252663+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "3113",
+          "3114",
+          "3111"
+        ]
+      },
+      {
+        "title": "rasbt/LLMs-from-scratch",
+        "source": "GitHub Trending (All)",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:17:30.251663+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "flyExclusive, Inc. (FLYX) Q1 2026 Earnings Call Prepared Remarks Transcript",
+        "source": "Seeking Alpha Top Ideas",
+        "category": "📊 券商與分析師研究",
+        "published": "2026-05-12T10:10:47+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "Found a way to cool the DGX",
+        "source": "Reddit r/LocalLLaMA",
+        "category": "🛠️ AI 工具與實戰",
+        "published": "2026-05-12T10:05:50+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "焦點股》詩肯︰Q1賺贏去年一整年 股價跳空漲停",
+        "source": "自由時報 財經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T10:00:26+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "6195"
+        ]
+      },
+      {
+        "title": "焦點股》台玻︰首季EPS 0.2元 翻身題材又起",
+        "source": "自由時報 財經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T09:58:53+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "1802"
+        ]
+      },
+      {
+        "title": "Bathurst Resources Q3 FY26 slides: cash strong despite revenue dip",
+        "source": "Investing.com",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T09:48:55+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "Lenz outlines sales force reaching 15,000 eye care professionals by quarter end as VIZZ adoption actions roll out",
+        "source": "Seeking Alpha",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T09:41:47+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "LENZ Therapeutics, Inc. (LENZ) Q1 2026 Earnings Call Transcript",
+        "source": "Seeking Alpha Top Ideas",
+        "category": "📊 券商與分析師研究",
+        "published": "2026-05-12T09:40:42+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "Trump puts Taiwan arms sales, Hong Kong jailed activist Lai on agenda ahead of meeting with Xi",
+        "source": "CNBC Top News",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T09:37:46+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "Microvast Holdings, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "source": "Seeking Alpha Top Ideas",
+        "category": "📊 券商與分析師研究",
+        "published": "2026-05-12T09:31:56+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "Ceva signals 2026 revenue growth at top end of 8%-12% range as it targets 40%-50% non-GAAP profit growth",
+        "source": "Seeking Alpha",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T09:31:28+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "CEVA, Inc. (CEVA) Q1 2026 Earnings Call Transcript",
+        "source": "Seeking Alpha Top Ideas",
+        "category": "📊 券商與分析師研究",
+        "published": "2026-05-12T09:30:44+08:00",
+        "event_type": "earnings",
+        "tickers": []
+      },
+      {
+        "title": "中租前4月營收下滑 獲利72.8億元、EPS4.26元",
+        "source": "自由時報 財經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T09:30:24+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "5871"
+        ]
+      }
+    ],
     "policy": [
+      {
+        "title": "川習會前再出手！美對涉伊朗石油運輸的香港企業 祭新制裁",
+        "source": "經濟日報 產經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T09:55:27+08:00",
+        "event_type": "policy",
+        "tickers": []
+      },
       {
         "title": "Trump says Iran ceasefire is on 'massive life support'",
         "source": "BBC World",
@@ -2575,152 +2731,6 @@
         "category": "💰 財經與總經",
         "published": "2026-05-11T13:48:02+08:00",
         "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "The Winners and Losers of the Iran Energy Shock",
-        "source": "Foreign Affairs",
-        "category": "🧭 深度觀點與分析",
-        "published": "2026-05-11T12:00:00+08:00",
-        "event_type": "policy",
-        "tickers": [
-          "1979"
-        ]
-      }
-    ],
-    "news": [
-      {
-        "title": "電力代操是什麼？獲利率不輸台積電星星電力總座關怡婷曝「像股票低買高賣」【Yahoo財經大人物】 - Yahoo股市",
-        "source": "TSMC News",
-        "category": "🏢 科技廠動態",
-        "published": "2026-05-12T08:58:26+08:00",
-        "event_type": "news",
-        "tickers": [
-          "2330"
-        ]
-      },
-      {
-        "title": "4 - DANHAKL JOHN G (0001162644) (Reporting)",
-        "source": "SEC Form 4 (Atom)",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:56:44+08:00",
-        "event_type": "news",
-        "tickers": [
-          "1231",
-          "7997"
-        ]
-      },
-      {
-        "title": "4 - Life Time Group Holdings, Inc. (0001869198) (Issuer)",
-        "source": "SEC Form 4 (Atom)",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:56:44+08:00",
-        "event_type": "news",
-        "tickers": [
-          "1231",
-          "7997"
-        ]
-      },
-      {
-        "title": "4 - Galashan John Kristofer (0001590836) (Reporting)",
-        "source": "SEC Form 4 (Atom)",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:56:22+08:00",
-        "event_type": "news",
-        "tickers": [
-          "1231",
-          "7997"
-        ]
-      },
-      {
-        "title": "4 - Life Time Group Holdings, Inc. (0001869198) (Issuer)",
-        "source": "SEC Form 4 (Atom)",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:56:22+08:00",
-        "event_type": "news",
-        "tickers": [
-          "1231",
-          "7997"
-        ]
-      },
-      {
-        "title": "Macerich prices $403 million stock offering at $21 per share",
-        "source": "Investing.com",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:52:53+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "4/A - LAVIOLETTE PAUL A (0001191249) (Reporting)",
-        "source": "SEC Form 4 (Atom)",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:52:41+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "4/A - PULSE BIOSCIENCES, INC. (0001625101) (Issuer)",
-        "source": "SEC Form 4 (Atom)",
-        "category": "👁️ 內部人與機構持股",
-        "published": "2026-05-12T08:52:41+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "Cronos targets CanAdelaar close in summer 2026 while renewing $50M buyback",
-        "source": "Seeking Alpha",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:51:27+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "Trump Says US-Iran Ceasefire on ‘Massive Life Support’",
-        "source": "Bloomberg Markets",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:49:58+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "中文版-中文版首頁區塊-首頁資訊-本行發行存單-115年5月12日中央銀行存單申購發行資訊 - cbc.gov.tw",
-        "source": "中央銀行公告 (Google News)",
-        "category": "🌐 宏觀與產業數據",
-        "published": "2026-05-12T08:49:30+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "Astera Labs president & COO Gajendra Sanjay sells $45.7m in stock",
-        "source": "Investing.com",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:49:04+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "Access Industries affiliates sell $60.8m DigitalOcean shares",
-        "source": "Investing.com",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:49:03+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "川普嗆美伊停火命懸一線 伊朗國會議長回擊 預告美軍「等收驚喜」",
-        "source": "經濟日報 產經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:45:53+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "荷莫茲海峽封鎖重創出口　OPEC4月產量逾20年新低",
-        "source": "經濟日報 產經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:45:24+08:00",
-        "event_type": "news",
         "tickers": []
       }
     ],
@@ -3007,7 +3017,7 @@
   },
   "top_transcripts": [],
   "market_indices": {
-    "timestamp": "2026-05-12T09:03:10.880015+08:00",
+    "timestamp": "2026-05-12T10:19:03.541313+08:00",
     "fear_greed": "N/A",
     "indices": [
       {
@@ -3468,134 +3478,134 @@
       {
         "name": "台股加權",
         "symbol": "^TWII",
-        "price": 41790.06,
-        "change": 157.37,
-        "change_pct": 0.38,
-        "prev_close": 41632.69,
+        "price": 41724.51,
+        "change": -272.55,
+        "change_pct": -0.65,
+        "prev_close": 41997.06,
         "group": "tw_asia",
-        "week_pct": 1.13,
-        "ytd_pct": 41.75,
+        "week_pct": 1.42,
+        "ytd_pct": 42.16,
         "leaders": [
           {
             "symbol": "2330.TW",
             "name": "台積電",
-            "price": 2235.0,
-            "change_pct": -2.61,
-            "week_pct": -0.67,
-            "ytd_pct": 41.47
+            "price": 2220.0,
+            "change_pct": -1.33,
+            "week_pct": -1.33,
+            "ytd_pct": 40.52
           },
           {
             "symbol": "2317.TW",
             "name": "鴻海",
-            "price": 252.0,
-            "change_pct": 1.0,
-            "week_pct": 0.0,
-            "ytd_pct": 8.62
+            "price": 248.0,
+            "change_pct": -1.78,
+            "week_pct": -1.59,
+            "ytd_pct": 6.9
           },
           {
             "symbol": "2454.TW",
             "name": "聯發科",
-            "price": 3880.0,
-            "change_pct": 7.18,
-            "week_pct": 13.12,
-            "ytd_pct": 169.06
+            "price": 3795.0,
+            "change_pct": -3.92,
+            "week_pct": 10.64,
+            "ytd_pct": 163.17
           }
         ]
       },
       {
         "name": "日經225",
         "symbol": "^N225",
-        "price": 63106.21,
-        "change": 668.44,
-        "change_pct": 1.07,
+        "price": 62396.3,
+        "change": -41.47,
+        "change_pct": -0.07,
         "prev_close": 62437.77,
         "group": "tw_asia",
-        "week_pct": 6.04,
-        "ytd_pct": 21.75,
+        "week_pct": 4.84,
+        "ytd_pct": 20.38,
         "leaders": []
       },
       {
         "name": "恆生指數",
         "symbol": "^HSI",
-        "price": 26406.84,
-        "change": 13.13,
-        "change_pct": 0.05,
-        "prev_close": 26393.71,
+        "price": 26558.74,
+        "change": 151.9,
+        "change_pct": 0.58,
+        "prev_close": 26406.84,
         "group": "tw_asia",
-        "week_pct": 1.91,
-        "ytd_pct": 0.21,
+        "week_pct": 1.32,
+        "ytd_pct": 0.84,
         "leaders": []
       },
       {
         "name": "上證指數",
         "symbol": "000001.SS",
-        "price": 4225.02,
-        "change": 45.04,
-        "change_pct": 1.08,
-        "prev_close": 4179.98,
+        "price": 4215.41,
+        "change": -11.49,
+        "change_pct": -0.27,
+        "prev_close": 4226.9,
         "group": "tw_asia",
-        "week_pct": null,
-        "ytd_pct": null,
+        "week_pct": 1.33,
+        "ytd_pct": 4.77,
         "leaders": []
       },
       {
         "name": "KOSPI",
         "symbol": "^KS11",
-        "price": 7947.82,
-        "change": 117.99,
-        "change_pct": 1.51,
+        "price": 7517.27,
+        "change": -312.56,
+        "change_pct": -3.99,
         "prev_close": 7829.83,
         "group": "tw_asia",
-        "week_pct": 7.63,
-        "ytd_pct": 84.42,
+        "week_pct": 1.8,
+        "ytd_pct": 74.43,
         "leaders": []
       },
       {
         "name": "Bitcoin",
         "symbol": "BTC-USD",
-        "price": 81599.71,
-        "change": -125.45,
-        "change_pct": -0.15,
+        "price": 81186.82,
+        "change": -538.34,
+        "change_pct": -0.66,
         "prev_close": 81725.16,
         "group": "crypto",
-        "week_pct": 1.76,
-        "ytd_pct": -8.04,
+        "week_pct": 1.25,
+        "ytd_pct": -8.5,
         "leaders": []
       },
       {
         "name": "Ethereum",
         "symbol": "ETH-USD",
-        "price": 2334.36,
-        "change": -5.66,
-        "change_pct": -0.24,
+        "price": 2310.69,
+        "change": -29.33,
+        "change_pct": -1.25,
         "prev_close": 2340.02,
         "group": "crypto",
-        "week_pct": 1.19,
-        "ytd_pct": -22.2,
+        "week_pct": 0.16,
+        "ytd_pct": -22.99,
         "leaders": []
       },
       {
         "name": "Gold",
         "symbol": "GC=F",
-        "price": 4767.0,
-        "change": 80.0,
-        "change_pct": 1.71,
+        "price": 4739.0,
+        "change": 52.0,
+        "change_pct": 1.11,
         "prev_close": 4687.0,
         "group": "metals",
-        "week_pct": 1.82,
-        "ytd_pct": 10.49,
+        "week_pct": 1.22,
+        "ytd_pct": 9.84,
         "leaders": []
       },
       {
         "name": "Silver",
         "symbol": "SI=F",
-        "price": 87.07,
-        "change": 5.88,
-        "change_pct": 7.24,
+        "price": 86.89,
+        "change": 5.69,
+        "change_pct": 7.01,
         "prev_close": 81.2,
         "group": "metals",
-        "week_pct": 13.36,
-        "ytd_pct": 23.41,
+        "week_pct": 13.12,
+        "ytd_pct": 23.15,
         "leaders": []
       },
       {
@@ -3606,20 +3616,20 @@
         "change_pct": 0.05,
         "prev_close": 24338.63,
         "group": "europe",
-        "week_pct": -0.26,
-        "ytd_pct": -0.82,
+        "week_pct": -0.21,
+        "ytd_pct": -0.77,
         "leaders": []
       },
       {
         "name": "英國FTSE",
         "symbol": "^FTSE",
-        "price": 10269.43,
-        "change": 36.36,
+        "price": 10269.4,
+        "change": 36.33,
         "change_pct": 0.36,
         "prev_close": 10233.07,
         "group": "europe",
-        "week_pct": 0.14,
-        "ytd_pct": 2.83,
+        "week_pct": 0.49,
+        "ytd_pct": 3.2,
         "leaders": []
       },
       {
@@ -3630,8 +3640,8 @@
         "change_pct": 0.21,
         "prev_close": 611.48,
         "group": "europe",
-        "week_pct": 0.4,
-        "ytd_pct": 1.72,
+        "week_pct": 0.5,
+        "ytd_pct": 1.83,
         "leaders": []
       },
       {
@@ -3649,25 +3659,25 @@
       {
         "name": "美元指數",
         "symbol": "DX-Y.NYB",
-        "price": 98.02,
-        "change": -0.08,
-        "change_pct": -0.08,
+        "price": 98.11,
+        "change": 0.01,
+        "change_pct": 0.01,
         "prev_close": 98.1,
         "group": "forex",
-        "week_pct": -0.0,
-        "ytd_pct": -0.41,
+        "week_pct": 0.09,
+        "ytd_pct": -0.31,
         "leaders": []
       },
       {
         "name": "USD/TWD",
         "symbol": "USDTWD=X",
-        "price": 31.43,
-        "change": 0.08,
-        "change_pct": 0.25,
+        "price": 31.42,
+        "change": 0.07,
+        "change_pct": 0.22,
         "prev_close": 31.35,
         "group": "forex",
-        "week_pct": -0.37,
-        "ytd_pct": 0.4,
+        "week_pct": -0.4,
+        "ytd_pct": 0.37,
         "leaders": []
       },
       {
@@ -3675,35 +3685,35 @@
         "symbol": "EURUSD=X",
         "price": 1.18,
         "change": -0.0,
-        "change_pct": -0.12,
+        "change_pct": -0.2,
         "prev_close": 1.18,
         "group": "forex",
-        "week_pct": 0.48,
-        "ytd_pct": 0.18,
+        "week_pct": 0.42,
+        "ytd_pct": 0.12,
         "leaders": []
       },
       {
         "name": "USD/JPY",
         "symbol": "USDJPY=X",
-        "price": 157.43,
-        "change": 0.31,
-        "change_pct": 0.2,
-        "prev_close": 157.12,
+        "price": 157.56,
+        "change": 0.38,
+        "change_pct": 0.24,
+        "prev_close": 157.18,
         "group": "forex",
-        "week_pct": -0.16,
-        "ytd_pct": 0.45,
+        "week_pct": -0.07,
+        "ytd_pct": 0.53,
         "leaders": []
       },
       {
         "name": "USD/CNY",
         "symbol": "CNY=X",
         "price": 6.79,
-        "change": -0.01,
-        "change_pct": -0.08,
-        "prev_close": 6.8,
+        "change": -0.0,
+        "change_pct": -0.03,
+        "prev_close": 6.79,
         "group": "forex",
-        "week_pct": -0.43,
-        "ytd_pct": -2.8,
+        "week_pct": -0.55,
+        "ytd_pct": -2.91,
         "leaders": []
       }
     ]
@@ -3711,12 +3721,12 @@
   "top_tickers_7d": [
     {
       "ticker": "2330",
-      "mentions": 172,
+      "mentions": 180,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "GOOGL",
-      "mentions": 133,
+      "mentions": 135,
       "last_seen": "2026-05-12"
     },
     {
@@ -3731,7 +3741,12 @@
     },
     {
       "ticker": "2454",
-      "mentions": 74,
+      "mentions": 78,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "2317",
+      "mentions": 71,
       "last_seen": "2026-05-12"
     },
     {
@@ -3740,13 +3755,8 @@
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "2317",
-      "mentions": 69,
-      "last_seen": "2026-05-12"
-    },
-    {
       "ticker": "META",
-      "mentions": 63,
+      "mentions": 67,
       "last_seen": "2026-05-12"
     },
     {
@@ -3756,7 +3766,7 @@
     },
     {
       "ticker": "AMZN",
-      "mentions": 45,
+      "mentions": 46,
       "last_seen": "2026-05-12"
     },
     {
@@ -3765,13 +3775,13 @@
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "TSM",
-      "mentions": 22,
+      "ticker": "1231",
+      "mentions": 24,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "1231",
-      "mentions": 20,
+      "ticker": "TSM",
+      "mentions": 22,
       "last_seen": "2026-05-12"
     },
     {
@@ -3845,6 +3855,16 @@
       "last_seen": "2026-05-10"
     },
     {
+      "ticker": "3089",
+      "mentions": 3,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "5090",
+      "mentions": 3,
+      "last_seen": "2026-05-12"
+    },
+    {
       "ticker": "7372",
       "mentions": 3,
       "last_seen": "2026-05-12"
@@ -3898,37 +3918,27 @@
       "ticker": "2040",
       "mentions": 3,
       "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "1933",
-      "mentions": 3,
-      "last_seen": "2026-05-08"
-    },
-    {
-      "ticker": "2604",
-      "mentions": 3,
-      "last_seen": "2026-05-06"
     }
   ],
   "top_tickers_30d": [
     {
       "ticker": "2330",
-      "mentions": 582,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "GOOGL",
       "mentions": 580,
       "last_seen": "2026-05-12"
     },
     {
+      "ticker": "GOOGL",
+      "mentions": 576,
+      "last_seen": "2026-05-12"
+    },
+    {
       "ticker": "NVDA",
-      "mentions": 385,
+      "mentions": 383,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "META",
-      "mentions": 341,
+      "mentions": 343,
       "last_seen": "2026-05-12"
     },
     {
@@ -3943,17 +3953,17 @@
     },
     {
       "ticker": "2454",
-      "mentions": 227,
+      "mentions": 231,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "MSFT",
-      "mentions": 227,
+      "mentions": 226,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "2317",
-      "mentions": 224,
+      "mentions": 225,
       "last_seen": "2026-05-12"
     },
     {
@@ -3963,7 +3973,7 @@
     },
     {
       "ticker": "TSLA",
-      "mentions": 157,
+      "mentions": 156,
       "last_seen": "2026-05-12"
     },
     {
@@ -3978,7 +3988,7 @@
     },
     {
       "ticker": "BLSH",
-      "mentions": 54,
+      "mentions": 52,
       "last_seen": "2026-05-12"
     },
     {
@@ -3998,12 +4008,12 @@
     },
     {
       "ticker": "1231",
-      "mentions": 20,
+      "mentions": 24,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "5090",
-      "mentions": 19,
+      "mentions": 20,
       "last_seen": "2026-05-12"
     },
     {
@@ -4143,7 +4153,7 @@
       522,
       335,
       489,
-      502
+      605
     ],
     "by_category": {
       "2026-04-29": {
@@ -4277,57 +4287,62 @@
         "📉 融券與資金流": 14
       },
       "2026-05-12": {
-        "💰 財經與總經": 122,
-        "🏢 科技廠動態": 62,
+        "💰 財經與總經": 159,
+        "🏢 科技廠動態": 76,
+        "👁️ 內部人與機構持股": 60,
         "🏛️ 法說與 IR 材料": 58,
-        "🔬 半導體與硬體": 52,
-        "👁️ 內部人與機構持股": 45,
-        "🌏 地緣政治與科技政策": 42,
-        "🛠️ AI 工具與實戰": 33,
-        "🧭 深度觀點與分析": 28
+        "🔬 半導體與硬體": 55,
+        "🌏 地緣政治與科技政策": 48,
+        "🛠️ AI 工具與實戰": 44,
+        "🧭 深度觀點與分析": 33
       }
     }
   },
   "categories": [
     {
       "category": "💰 財經與總經",
-      "count": 4606,
+      "count": 4599,
       "pct": 30.7
     },
     {
       "category": "🌏 地緣政治與科技政策",
-      "count": 2338,
-      "pct": 15.6
+      "count": 2321,
+      "pct": 15.5
     },
     {
       "category": "🔬 半導體與硬體",
-      "count": 2083,
-      "pct": 13.9
+      "count": 2075,
+      "pct": 13.8
     },
     {
       "category": "🏢 科技廠動態",
-      "count": 1810,
+      "count": 1813,
       "pct": 12.1
     },
     {
       "category": "🧠 AI 研究與突破",
-      "count": 1708,
-      "pct": 11.4
+      "count": 1702,
+      "pct": 11.3
     },
     {
       "category": "🛠️ AI 工具與實戰",
-      "count": 1131,
-      "pct": 7.5
+      "count": 1136,
+      "pct": 7.6
     },
     {
       "category": "🧭 深度觀點與分析",
-      "count": 866,
+      "count": 869,
       "pct": 5.8
     },
     {
       "category": "🔥 X 社群熱議",
-      "count": 276,
-      "pct": 1.8
+      "count": 278,
+      "pct": 1.9
+    },
+    {
+      "category": "👁️ 內部人與機構持股",
+      "count": 71,
+      "pct": 0.5
     },
     {
       "category": "🏛️ 法說與 IR 材料",
@@ -4335,19 +4350,14 @@
       "pct": 0.4
     },
     {
-      "category": "👁️ 內部人與機構持股",
-      "count": 56,
-      "pct": 0.4
-    },
-    {
       "category": "📉 融券與資金流",
-      "count": 35,
+      "count": 37,
       "pct": 0.2
     },
     {
       "category": "📊 券商與分析師研究",
-      "count": 21,
-      "pct": 0.1
+      "count": 29,
+      "pct": 0.2
     },
     {
       "category": "🌐 宏觀與產業數據",
@@ -4362,15 +4372,15 @@
     },
     {
       "source": "工商時報 財經",
-      "count": 402
-    },
-    {
-      "source": "Bloomberg Markets",
       "count": 401
     },
     {
+      "source": "Bloomberg Markets",
+      "count": 399
+    },
+    {
       "source": "中央社 政治",
-      "count": 389
+      "count": 391
     },
     {
       "source": "中央社 財經",
@@ -4378,87 +4388,93 @@
     },
     {
       "source": "中央社 國際",
-      "count": 366
+      "count": 360
     },
     {
       "source": "經濟日報 產經",
-      "count": 336
+      "count": 335
     },
     {
       "source": "自由時報 財經",
-      "count": 323
+      "count": 330
     },
     {
       "source": "CNBC Top News",
-      "count": 316
-    },
-    {
-      "source": "南華早報 科技",
       "count": 310
     },
     {
-      "source": "Investing.com",
-      "count": 276
+      "source": "南華早報 科技",
+      "count": 308
     },
     {
-      "source": "Bloomberg Markets (Google News)",
-      "count": 272
+      "source": "Investing.com",
+      "count": 286
+    },
+    {
+      "source": "arXiv 機器學習",
+      "count": 270
     }
   ],
   "themes": [
     {
       "theme": "電動車",
-      "count": 1278,
+      "count": 1281,
       "examples": [
         {
-          "title": "Kaltura forecasts 2026 adjusted EBITDA of $13.8M-$15.2M as it raises revenue outlook following PathFactory close",
-          "source": "Seeking Alpha",
-          "published": "2026-05-12T08:41:24+08:00",
+          "title": "Hospitals evacuated, MSF services halted as rival gangs clash in Haiti’s capital",
+          "source": "Investing.com",
+          "published": "2026-05-12T10:00:25+08:00",
           "link": null,
           "tickers": []
         },
         {
-          "title": "Vintage Tesla Pre Madness Edition / Anti Elon Tesla Club Decal / Vinyl Sticker / Anti Elon - portalcantagalo.com.br",
-          "source": "Tesla/SpaceX",
-          "published": "2026-05-12T08:25:30+08:00",
+          "title": "4 - Yen Eve (0001790634) (Reporting)",
+          "source": "SEC Form 4 (Atom)",
+          "published": "2026-05-12T09:50:41+08:00",
           "link": null,
-          "tickers": [
-            "TSLA"
-          ]
+          "tickers": []
         },
         {
-          "title": "Is Biogen Inc. (BIIB) one of the Best Biotech Stocks to Invest In According to Billionaire Steve Cohen?",
-          "source": "Insider Monkey",
-          "published": "2026-05-12T08:05:28+08:00",
+          "title": "Bathurst Resources Q3 FY26 slides: cash strong despite revenue dip",
+          "source": "Investing.com",
+          "published": "2026-05-12T09:48:55+08:00",
           "link": null,
-          "tickers": [
-            "BIIB"
-          ]
+          "tickers": []
         },
         {
-          "title": "Is Regeneron Pharmaceuticals (REGN) Among the Best Biotech Stocks to Invest In According to Billionaire Steve Cohen?",
-          "source": "Insider Monkey",
-          "published": "2026-05-12T08:04:35+08:00",
+          "title": "🔥 BIG: OpenAI co-founder Ilya Sutskever reveals his stake in the company is worth roughly $7 billion, making him one of its largest individual shareholders. - x.com",
+          "source": "X @OpenAI",
+          "published": "2026-05-12T09:40:54+08:00",
           "link": null,
-          "tickers": [
-            "REGN"
-          ]
+          "tickers": []
         },
         {
-          "title": "Evercore ISI Keeps an “In Line” Rating on Guardant Health, Inc. (GH)",
-          "source": "Insider Monkey",
-          "published": "2026-05-12T08:02:06+08:00",
+          "title": "Ceva signals 2026 revenue growth at top end of 8%-12% range as it targets 40%-50% non-GAAP profit growth",
+          "source": "Seeking Alpha",
+          "published": "2026-05-12T09:31:28+08:00",
           "link": null,
-          "tickers": [
-            "GH"
-          ]
+          "tickers": []
         }
       ]
     },
     {
       "theme": "美國政策",
-      "count": 715,
+      "count": 714,
       "examples": [
+        {
+          "title": "Analysis-Stung by Iran war, Trump heads to China in need of wins",
+          "source": "Investing.com",
+          "published": "2026-05-12T10:12:29+08:00",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "title": "Trump puts Taiwan arms sales, Hong Kong jailed activist Lai on agenda ahead of meeting with Xi",
+          "source": "CNBC Top News",
+          "published": "2026-05-12T09:37:46+08:00",
+          "link": null,
+          "tickers": []
+        },
         {
           "title": "Trump says Iran ceasefire is on 'massive life support'",
           "source": "BBC World",
@@ -4479,27 +4495,27 @@
           "published": "2026-05-12T08:41:15+08:00",
           "link": null,
           "tickers": []
-        },
-        {
-          "title": "Oil prices extend gains as Trump comments diminish hopes for a U.S.-Iran peace deal",
-          "source": "CNBC Top News",
-          "published": "2026-05-12T08:25:10+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "華許接掌Fed主席邁進一步 提名案過參議院首關",
-          "source": "經濟日報 產經",
-          "published": "2026-05-12T08:22:14+08:00",
-          "link": null,
-          "tickers": []
         }
       ]
     },
     {
       "theme": "中國科技",
-      "count": 659,
+      "count": 656,
       "examples": [
+        {
+          "title": "Analysis-Stung by Iran war, Trump heads to China in need of wins",
+          "source": "Investing.com",
+          "published": "2026-05-12T10:12:29+08:00",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "title": "China's ChiNext Index Surges to 11-Year High on Semiconductor Rally and Policy Support - IndexBox",
+          "source": "中美科技戰",
+          "published": "2026-05-12T09:31:00+08:00",
+          "link": null,
+          "tickers": []
+        },
         {
           "title": "遭控充當中國代理人　加州阿凱迪亞市長辭職認罪",
           "source": "經濟日報 產經",
@@ -4520,71 +4536,57 @@
           "published": "2026-05-12T07:22:00+08:00",
           "link": null,
           "tickers": []
-        },
-        {
-          "title": "Elon Musk, Tim Cook and other CEOs set to join Trump’s China trip - The Independent",
-          "source": "Tesla/SpaceX",
-          "published": "2026-05-12T07:07:00+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "CNBC's The China Connection newsletter: Trump and Xi face a test over AI control - CNBC",
-          "source": "中美科技戰",
-          "published": "2026-05-12T07:00:01+08:00",
-          "link": null,
-          "tickers": []
         }
       ]
     },
     {
       "theme": "記憶體",
-      "count": 562,
+      "count": 564,
       "examples": [
         {
-          "title": "沒跟上美光點火！「這檔記憶體」三大法人撤資、國家隊反手投入4億元台積電、緯創也在入手名單 - FTNN 新聞網",
+          "title": "rohitg00/agentmemory",
+          "source": "GitHub Trending (All)",
+          "published": "2026-05-12T10:17:30.252663+08:00",
+          "link": null,
+          "tickers": [
+            "3113",
+            "3114",
+            "3111"
+          ]
+        },
+        {
+          "title": "美光續噴 今年狂漲178%還能追嗎？分析師揭記憶體比 CPU 更好賺的關鍵",
+          "source": "經濟日報 產經",
+          "published": "2026-05-12T09:41:35+08:00",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "title": "Micron vs. Sandisk: Which Memory Stock Is the Better Buy Right Now? - The Motley Fool",
+          "source": "記憶體產業",
+          "published": "2026-05-12T09:26:57+08:00",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "title": "Micron vs. Sandisk: Which Memory Stock Is the Better Buy Right Now? - The Globe and Mail",
+          "source": "記憶體產業",
+          "published": "2026-05-12T09:22:39+08:00",
+          "link": null,
+          "tickers": []
+        },
+        {
+          "title": "《台北股市》不斷更新！最旺4月營收股 記憶體超狂人氣 4檔好吸金 - 富聯網",
           "source": "台股三大法人 (Google News)",
-          "published": "2026-05-12T08:40:00+08:00",
-          "link": null,
-          "tickers": [
-            "2330"
-          ]
-        },
-        {
-          "title": "Deutsche Bank Raises Micron Stock (MU) Price Target to $1,000 on Strong AI Memory Demand - TipRanks",
-          "source": "記憶體產業",
-          "published": "2026-05-12T08:13:16+08:00",
+          "published": "2026-05-12T09:21:00+08:00",
           "link": null,
           "tickers": []
-        },
-        {
-          "title": "Micron (MU) Draws Bullish Call as AI Memory Demand Reshapes Growth Outlook - Yahoo Finance",
-          "source": "記憶體產業",
-          "published": "2026-05-12T07:57:05+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Intel, Micron and Qualcomm shares jump to records at open - Crypto Briefing",
-          "source": "Qualcomm/Arm",
-          "published": "2026-05-12T07:09:42+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "HBM Holdings (SEHK:2142) Valuation Check After FDA Green Light For HBM7004 Phase I Trial - simplywall.st",
-          "source": "HBM/先進封裝",
-          "published": "2026-05-12T06:40:12+08:00",
-          "link": null,
-          "tickers": [
-            "2142"
-          ]
         }
       ]
     },
     {
       "theme": "AI 算力",
-      "count": 354,
+      "count": 352,
       "examples": [
         {
           "title": "HBM Holdings (SEHK:2142) Valuation Check After FDA Green Light For HBM7004 Phase I Trial - simplywall.st",
@@ -4629,7 +4631,7 @@
     },
     {
       "theme": "雲端 / SaaS",
-      "count": 286,
+      "count": 284,
       "examples": [
         {
           "title": "Micron (MU) Draws Bullish Call as AI Memory Demand Reshapes Growth Outlook - Yahoo Finance",
@@ -4673,8 +4675,17 @@
     },
     {
       "theme": "資料中心",
-      "count": 257,
+      "count": 256,
       "examples": [
+        {
+          "title": "因應AI端至雲成長需求 聯發科技啟用銅鑼研發資料中心 - 電子工程專輯",
+          "source": "聯發科/MediaTek",
+          "published": "2026-05-12T10:01:09+08:00",
+          "link": null,
+          "tickers": [
+            "2454"
+          ]
+        },
         {
           "title": "高通股價創歷史新高，市場開始重估AI資料中心題材 - news.cnyes.com",
           "source": "鉅亨網 法人說明會 (Google News)",
@@ -4706,19 +4717,12 @@
             "GOOGL",
             "MSFT"
           ]
-        },
-        {
-          "title": "Data Center Hype Faces AI regulation and community resistance - Invest in Louisiana",
-          "source": "AI 安全與治理",
-          "published": "2026-05-12T04:10:26+08:00",
-          "link": null,
-          "tickers": []
         }
       ]
     },
     {
       "theme": "半導體設備",
-      "count": 173,
+      "count": 172,
       "examples": [
         {
           "title": "ASML Holding N.V. stock (USN070592100): Executes €79.4M share buybacks - AD HOC NEWS",
@@ -4761,7 +4765,7 @@
     },
     {
       "theme": "重大事件",
-      "count": 163,
+      "count": 162,
       "examples": [
         {
           "title": "Cronos targets CanAdelaar close in summer 2026 while renewing $50M buyback",
@@ -4804,7 +4808,7 @@
     },
     {
       "theme": "先進製程",
-      "count": 113,
+      "count": 112,
       "examples": [
         {
           "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
@@ -4865,16 +4869,16 @@
     },
     {
       "ticker": "2330",
-      "mentions_7d": 172,
+      "mentions_7d": 180,
       "mentions_prior_7d": 140,
-      "delta": 32,
-      "pct_change": 22.9
+      "delta": 40,
+      "pct_change": 28.6
     },
     {
       "ticker": "1231",
-      "mentions_7d": 20,
+      "mentions_7d": 24,
       "mentions_prior_7d": 0,
-      "delta": 20,
+      "delta": 24,
       "pct_change": 100.0
     },
     {
@@ -4890,6 +4894,13 @@
       "mentions_prior_7d": 54,
       "delta": 15,
       "pct_change": 27.8
+    },
+    {
+      "ticker": "2454",
+      "mentions_7d": 78,
+      "mentions_prior_7d": 70,
+      "delta": 8,
+      "pct_change": 11.4
     },
     {
       "ticker": "TSM",
@@ -4911,13 +4922,6 @@
       "mentions_prior_7d": 0,
       "delta": 5,
       "pct_change": 100.0
-    },
-    {
-      "ticker": "2454",
-      "mentions_7d": 74,
-      "mentions_prior_7d": 70,
-      "delta": 4,
-      "pct_change": 5.7
     },
     {
       "ticker": "1000",
@@ -4962,6 +4966,13 @@
       "pct_change": 300.0
     },
     {
+      "ticker": "3089",
+      "mentions_7d": 3,
+      "mentions_prior_7d": 0,
+      "delta": 3,
+      "pct_change": 100.0
+    },
+    {
       "ticker": "7372",
       "mentions_7d": 3,
       "mentions_prior_7d": 0,
@@ -4988,13 +4999,6 @@
       "mentions_prior_7d": 0,
       "delta": 3,
       "pct_change": 100.0
-    },
-    {
-      "ticker": "JPM",
-      "mentions_7d": 9,
-      "mentions_prior_7d": 7,
-      "delta": 2,
-      "pct_change": 28.6
     }
   ]
 }

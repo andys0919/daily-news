@@ -847,6 +847,30 @@
   ],
   "general_news": [
     {
+      "title": "California county sues Meta over scam ads",
+      "link": "https://www.investing.com/news/stock-market-news/california-county-sues-meta-over-scam-ads-4677183",
+      "source": "Investing.com",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T10:06:27+08:00",
+      "summary": "",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
+      "title": "JX Metals Shares Drop Most Since April 2025 on Convertible Bond",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-12/jx-metals-shares-drop-most-since-april-2025-on-convertible-bond",
+      "source": "Bloomberg Markets",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T10:06:27+08:00",
+      "summary": "Shares of Japanese metals refiner JX Advanced Metals Corp. slid after the company unveiled a plan to issue ¥250 billion ($1.6 billion) of bonds that can be converted into stocks to fund share buybacks.",
+      "event_type": "news",
+      "tickers": [
+        "META"
+      ]
+    },
+    {
       "title": "4 - Meta Platforms, Inc. (0001326801) (Issuer)",
       "link": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326007078/0000950103-26-007078-index.htm",
       "source": "SEC Form 4 (Atom)",
@@ -1111,32 +1135,6 @@
         "AAPL",
         "MSFT"
       ]
-    },
-    {
-      "title": "Data centers in the land of coal and cowboys",
-      "link": "https://www.datacenterdynamics.com/en/analysis/data-centers-in-the-land-of-coal-and-cowboys",
-      "source": "Data Center Dynamics",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-08T00:30:28+08:00",
-      "summary": "Wyoming governor Mark Gordon is welcoming the hyperscalers to the Cowboy State",
-      "event_type": "news",
-      "tickers": [
-        "MSFT",
-        "META"
-      ]
-    },
-    {
-      "title": "Google’s taking a big swing at AI health with the Fitbit Air",
-      "link": "https://www.theverge.com/gadgets/925458/google-health-fitbit-air-ai-coaching-wearables-fitness-trackers",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-07T22:00:00+08:00",
-      "summary": "It's a Whoop dupe. That was my first thought when I saw the new $99 Google Fitbit Air. You can hardly blame me. The band is screenless with a metallic fabric clasp. My eyes flickered between the Fitbit Air and my wrist, where I'm wearing a Whoop MG. Was I not seeing double? But as [&#8230;]",
-      "event_type": "news",
-      "tickers": [
-        "GOOGL",
-        "META"
-      ]
     }
   ],
   "history": [
@@ -1282,5 +1280,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:14:01Z"
+  "generated_at": "2026-05-12T02:19:16Z"
 }

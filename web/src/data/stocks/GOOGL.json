@@ -826,6 +826,18 @@
   ],
   "general_news": [
     {
+      "title": "Android與iPhone用戶注意！RCS「端對端加密」訊息今起正式推出",
+      "link": "https://ec.ltn.com.tw/article/breakingnews/5433787",
+      "source": "自由時報 財經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-12T09:56:58+08:00",
+      "summary": "Google宣布，Android與iPhone之間的RCS（RichCommunicationServices）訊息，已開始正式支援「端對端加密」（End-to-EndE...…",
+      "event_type": "news",
+      "tickers": [
+        "GOOGL"
+      ]
+    },
+    {
       "title": "Google says it likely thwarted effort by hacker group to use AI for 'mass exploitation event'",
       "link": "https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html",
       "source": "CNBC Top News",
@@ -1222,5 +1234,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:14:01Z"
+  "generated_at": "2026-05-12T02:19:16Z"
 }
