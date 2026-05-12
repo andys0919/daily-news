@@ -70,11 +70,7 @@
       "body_text": "L. RAFAEL REIF is President Emeritus and Ray and Maria Stata Professor of Electrical Engineering and Computer Science at the Massachusetts Institute of Technology.\nWhy the Future of Science Might Be Chinese\nL. Rafael Reif\nChina has long been dismissed as the world’s factory floor—a country that excels at manufacturing technologies invented elsewhere yet is unable to invent anything radically new o",
       "event_type": "earnings",
       "tickers": [
-        "1980",
-        "META",
-        "GOOGL",
-        "TSLA",
-        "NVDA"
+        "1980"
       ],
       "companies": [
         "Meta",
@@ -237,17 +233,13 @@
       "count": 1
     },
     {
-      "ticker": "META",
+      "ticker": "1979",
       "count": 1
     },
     {
-      "ticker": "GOOGL",
-      "count": 1
-    },
-    {
-      "ticker": "TSLA",
+      "ticker": "1982",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

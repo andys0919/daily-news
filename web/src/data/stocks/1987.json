@@ -17,9 +17,7 @@
       "body_text": "Intel shares soared 24% on Friday, their best performance since October 1987, as investors cheered signs of renewed growth due to mounting artificial intelligence demand.\nThe stock closed at $82.57 and is now up 124% this year after jumping 84% in 2025. Friday's rally topped a 23% gain for the stock on Sept. 18, when Nvidia agreed to invest $5 billion in the company.\nCEO Lip-Bu Tan, who took the h",
       "event_type": "earnings",
       "tickers": [
-        "1987",
-        "NVDA",
-        "AAPL"
+        "1987"
       ],
       "companies": [
         "NVIDIA",
@@ -38,11 +36,7 @@
       "event_type": "earnings",
       "tickers": [
         "1987",
-        "NVDA",
-        "GOOGL",
-        "MSFT",
-        "META",
-        "AMZN"
+        "NVDA"
       ],
       "companies": [
         "NVIDIA",
@@ -67,8 +61,7 @@
         "1987",
         "1976",
         "1985",
-        "1958",
-        "TSM"
+        "1958"
       ],
       "companies": [
         "TSMC"
@@ -145,26 +138,6 @@
   "co_mentions": [
     {
       "ticker": "NVDA",
-      "count": 2
-    },
-    {
-      "ticker": "AAPL",
-      "count": 1
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 1
-    },
-    {
-      "ticker": "MSFT",
-      "count": 1
-    },
-    {
-      "ticker": "META",
-      "count": 1
-    },
-    {
-      "ticker": "AMZN",
       "count": 1
     },
     {
@@ -180,9 +153,29 @@
       "count": 1
     },
     {
-      "ticker": "TSM",
+      "ticker": "1948",
+      "count": 1
+    },
+    {
+      "ticker": "1973",
+      "count": 1
+    },
+    {
+      "ticker": "1946",
+      "count": 1
+    },
+    {
+      "ticker": "1989",
+      "count": 1
+    },
+    {
+      "ticker": "1981",
+      "count": 1
+    },
+    {
+      "ticker": "1975",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:18Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

@@ -56,8 +56,7 @@
       "tickers": [
         "1961",
         "1973",
-        "1950",
-        "META"
+        "1950"
       ],
       "companies": [
         "Meta"
@@ -76,8 +75,7 @@
       "tickers": [
         "1974",
         "1950",
-        "1000",
-        "GOOGL"
+        "1000"
       ],
       "companies": [
         "Google"
@@ -139,9 +137,9 @@
       "count": 1
     },
     {
-      "ticker": "META",
+      "ticker": "1974",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:19Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

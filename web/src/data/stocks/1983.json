@@ -17,8 +17,7 @@
       "body_text": "Low-power FPGA maker Lattice Semiconductor is consolidating its software prowess by acquiring open-source firmware developer AMI in a cash-and-stock deal valued at $1.65 billion. The Duluth, Georgia-based AMI develops platform firmware and infrastructure manageability solutions for cloud and AI environments.\nThe deal is expected to help the Hillsboro, Oregon-based Lattice consolidate its position ",
       "event_type": "earnings",
       "tickers": [
-        "1983",
-        "NVDA"
+        "1983"
       ],
       "companies": [
         "NVIDIA"
@@ -113,10 +112,6 @@
   "fundamentals": null,
   "co_mentions": [
     {
-      "ticker": "NVDA",
-      "count": 1
-    },
-    {
       "ticker": "1956",
       "count": 1
     },
@@ -129,5 +124,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:19Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

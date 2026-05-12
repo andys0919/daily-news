@@ -69,8 +69,7 @@
       "tickers": [
         "1961",
         "1973",
-        "1950",
-        "META"
+        "1950"
       ],
       "companies": [
         "Meta"
@@ -137,8 +136,7 @@
       "event_type": "policy",
       "tickers": [
         "1973",
-        "1979",
-        "TSLA"
+        "1979"
       ],
       "companies": [
         "Tesla"
@@ -278,10 +276,6 @@
       "count": 1
     },
     {
-      "ticker": "META",
-      "count": 1
-    },
-    {
       "ticker": "1987",
       "count": 1
     },
@@ -292,7 +286,11 @@
     {
       "ticker": "1974",
       "count": 1
+    },
+    {
+      "ticker": "1913",
+      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

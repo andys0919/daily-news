@@ -33,8 +33,7 @@
       "body_text": "Listen and watch now on YouTube , Spotify , and Apple . See the episode transcript at the top of this page, and timestamps for the episode at the bottom.\n• Statsig – ⁠ The unified platform for flags, analytics, experiments, and more. Stop switching between different tools, and have them all in one place.\n• Sonar — The makers of SonarQube, the industry standard for code verification and automated c",
       "event_type": "earnings",
       "tickers": [
-        "1989",
-        "AAPL"
+        "1989"
       ],
       "companies": [
         "Apple"
@@ -217,10 +216,6 @@
       "count": 2
     },
     {
-      "ticker": "AAPL",
-      "count": 1
-    },
-    {
       "ticker": "1961",
       "count": 1
     },
@@ -235,7 +230,11 @@
     {
       "ticker": "1946",
       "count": 1
+    },
+    {
+      "ticker": "1987",
+      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

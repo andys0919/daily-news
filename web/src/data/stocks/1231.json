@@ -140,19 +140,6 @@
   ],
   "general_news": [
     {
-      "title": "4 - Edwards Lifesciences Corp (0001099800) (Issuer)",
-      "link": "https://www.sec.gov/Archives/edgar/data/1099800/000122520826005133/0001225208-26-005133-index.htm",
-      "source": "SEC Form 4 (Atom)",
-      "category": "👁️ 內部人與機構持股",
-      "published": "2026-05-12T09:59:57+08:00",
-      "summary": "Filed: 2026-05-11 AccNo: 0001225208-26-005133 Size: 9 KB",
-      "event_type": "news",
-      "tickers": [
-        "1231",
-        "3842"
-      ]
-    },
-    {
       "title": "13F-HR/A - Electric Capital Partners, LLC (0002087133) (Filer)",
       "link": "https://www.sec.gov/Archives/edgar/data/2087133/000199937126010494/0001999371-26-010494-index.htm",
       "source": "SEC 13F-HR (Atom)",
@@ -296,5 +283,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:16Z"
+  "generated_at": "2026-05-12T03:24:36Z"
 }

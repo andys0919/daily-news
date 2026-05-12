@@ -18,13 +18,7 @@
       "event_type": "earnings",
       "tickers": [
         "2600",
-        "2330",
-        "TSM",
-        "NVDA",
-        "AAPL",
-        "GOOGL",
-        "AMZN",
-        "TSLA"
+        "2330"
       ],
       "companies": [
         "台積電",
@@ -48,11 +42,7 @@
       "event_type": "earnings",
       "tickers": [
         "2500",
-        "2600",
-        "TSM",
-        "NVDA",
-        "AAPL",
-        "GOOGL"
+        "2600"
       ],
       "companies": [
         "TSMC",
@@ -121,31 +111,7 @@
   "fundamentals": null,
   "co_mentions": [
     {
-      "ticker": "TSM",
-      "count": 2
-    },
-    {
-      "ticker": "NVDA",
-      "count": 2
-    },
-    {
-      "ticker": "AAPL",
-      "count": 2
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 2
-    },
-    {
       "ticker": "2330",
-      "count": 1
-    },
-    {
-      "ticker": "AMZN",
-      "count": 1
-    },
-    {
-      "ticker": "TSLA",
       "count": 1
     },
     {
@@ -157,5 +123,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:19Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

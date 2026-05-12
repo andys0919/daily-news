@@ -56,7 +56,6 @@
       "event_type": "earnings",
       "tickers": [
         "ACHC",
-        "GOOGL",
         "BRK-B"
       ],
       "companies": [
@@ -139,13 +138,9 @@
   },
   "co_mentions": [
     {
-      "ticker": "GOOGL",
-      "count": 1
-    },
-    {
       "ticker": "BRK-B",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:16Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

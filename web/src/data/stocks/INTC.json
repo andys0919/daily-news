@@ -61,21 +61,7 @@
       "guidance_direction": null
     }
   ],
-  "general_news": [
-    {
-      "title": "Intel, Google Deepen Collaboration to Advance AI Infrastructure",
-      "link": "https://newsroom.intel.com/data-center/intel-google-deepen-collaboration-to-advance-ai-infrastructure",
-      "source": "Intel Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-04-09T21:00:03+08:00",
-      "summary": "NEWS HIGHLIGHTS: Intel&#174; Xeon&#174; processors to continue powering Google Cloud infrastructure across AI, inference and general-purpose workloads Expanded co-development of custom ASIC-based infrastructure processing units (IPUs) to improve efficiency, utilization and performance at scale Collaboration reinforces the central role of CPUs and IPUs in modern, heterogeneous AI systems SANTA CLARA, Calif.,&#160;April 9, 2026 &#8211; Intel &#8230; The post Intel, Google Deepen Collaboration to A",
-      "event_type": "news",
-      "tickers": [
-        "INTC",
-        "GOOGL"
-      ]
-    }
-  ],
+  "general_news": [],
   "history": [
     {
       "fiscal_year": 2025,
@@ -147,5 +133,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-12T02:19:16Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

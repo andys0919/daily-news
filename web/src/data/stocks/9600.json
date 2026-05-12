@@ -30,8 +30,7 @@
       "event_type": "news",
       "tickers": [
         "9600",
-        "GOOGL",
-        "NVDA"
+        "GOOGL"
       ]
     },
     {
@@ -81,8 +80,7 @@
       "summary": "New Leak Claims MediaTek's Dimensity 9600 will use TSMC's 2nm N2P Process&nbsp;&nbsp;x.com",
       "event_type": "news",
       "tickers": [
-        "9600",
-        "TSM"
+        "9600"
       ]
     },
     {
@@ -101,5 +99,5 @@
   "history": [],
   "fundamentals": null,
   "co_mentions": [],
-  "generated_at": "2026-05-12T02:19:18Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

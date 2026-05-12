@@ -73,48 +73,7 @@
   "short_interest": [],
   "holdings": [],
   "recent_news": [],
-  "general_news": [
-    {
-      "title": "Quantum Computing Advanced Packaging Market Accelerates Growth with Forecast to $241.8M by 2033 - SRI - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQLXNsNktqaGVMdGlWVXFUczA0SWwtRHdnSWhaRTEwUm1welF1eGJqc3QySmVlNEx1VndUVWF1TktIMzVOa2xhUGxHZTQtZUNUMUxnTzhSejVOY2JPRTV0WWdRaHduVnZBaDZCTk5xbzVOV0xWRnFobFdHSXhMMEhmYTB0Z1dGWDhmR0JvVFYwT0Vtd2hVSWc?oc=5",
-      "source": "HBM/先進封裝",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-11T19:36:57+08:00",
-      "summary": "Quantum Computing Advanced Packaging Market Accelerates Growth with Forecast to $241.8M by 2033 - SRI&nbsp;&nbsp;openPR.com",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "It might be too late for bitcoin’s quantum migration, Project Eleven report argues",
-      "link": "https://www.coindesk.com/business/2026/05/09/it-might-be-too-late-for-bitcoin-s-quantum-migration-project-eleven-report-argues",
-      "source": "CoinDesk",
-      "category": "💰 財經與總經",
-      "published": "2026-05-10T00:00:00+08:00",
-      "summary": "",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "Advanced Packaging and Cutting Equipment Market Size to Hit $8.83 Billion by 2033 at 7.10% CAGR - SPI - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWldfeEpsWnk3bUtVWEhNVWlpdm9MTFNGdTNKLTJMdFRQSFg5bG15aGMxSXNpZG92NUhPVU5hWTFXTkliN0xJdjJmaTFUMXQtQnJ0WTA5bXJqaEdKR3J1TzFkU2UyOWRfXzM4alEtN2V4dGxDZFZMNklTem9TS29ZX0sxbEtGQ09tN01ERGZ2V01lSjZkNHRTa3A3NA?oc=5",
-      "source": "HBM/先進封裝",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-04-10T19:10:29+08:00",
-      "summary": "Advanced Packaging and Cutting Equipment Market Size to Hit $8.83 Billion by 2033 at 7.10% CAGR - SPI&nbsp;&nbsp;openPR.com",
-      "event_type": "news",
-      "tickers": []
-    },
-    {
-      "title": "Iran war could make beer and bottled water pricier for Indians",
-      "link": "https://www.bbc.com/news/articles/c5ywqky5dd7o",
-      "source": "BBC World",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-04-03T07:16:37+08:00",
-      "summary": "Makers of plastic and glass bottles are struggling to access raw materials as the war squeezes supplies.",
-      "event_type": "news",
-      "tickers": []
-    }
-  ],
+  "general_news": [],
   "history": [
     {
       "fiscal_year": 2025,
@@ -235,5 +194,5 @@
     }
   },
   "co_mentions": [],
-  "generated_at": "2026-05-12T02:19:16Z"
+  "generated_at": "2026-05-12T03:24:36Z"
 }

@@ -18,8 +18,7 @@
       "event_type": "earnings",
       "tickers": [
         "2035",
-        "2040",
-        "TSM"
+        "2040"
       ],
       "companies": [
         "TSMC"
@@ -36,10 +35,7 @@
       "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nOn Wednesday, xAI and Anthropic announced a surprise partnership that has the Claude-maker buying out “all of the compute capacity at [xAI’s] Colossus 1 data center,” roughly 300MW that allowed Anthropic to immediately raise its usag",
       "event_type": "earnings",
       "tickers": [
-        "2035",
-        "GOOGL",
-        "META",
-        "NVDA"
+        "2035"
       ],
       "companies": [
         "Google",
@@ -75,8 +71,7 @@
       "tickers": [
         "2049",
         "1914",
-        "2035",
-        "TSM"
+        "2035"
       ],
       "companies": [
         "TSMC"
@@ -123,8 +118,7 @@
       "body_text": "Current post-quantum cryptography (PQC) adoption timelines in the U.K. and the European Union provide direction, but they do not compel action. That distinction is becoming one of the most important and underappreciated risks in cybersecurity today.\nIn the U.K., the National Cyber Security Centre (NCSC) has set out a clear roadmap: discovery and planning by 2028, priority system migration by 2031,",
       "event_type": "earnings",
       "tickers": [
-        "2035",
-        "GOOGL"
+        "2035"
       ],
       "companies": [
         "Google"
@@ -190,9 +184,7 @@
       "summary": "",
       "event_type": "news",
       "tickers": [
-        "2035",
-        "GOOGL",
-        "AMZN"
+        "2035"
       ]
     },
     {
@@ -265,11 +257,7 @@
       "summary": "Humanoid robots have reached manufacturing lines. Success now hinges on power, production-level reliability, and real-world data streams. The post Humanoids Hit the Factory Floor appeared first on EE Times.",
       "event_type": "news",
       "tickers": [
-        "2035",
-        "GOOGL",
-        "NVDA",
-        "META",
-        "TSLA"
+        "2035"
       ]
     },
     {
@@ -374,23 +362,7 @@
   "fundamentals": null,
   "co_mentions": [
     {
-      "ticker": "TSM",
-      "count": 2
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 2
-    },
-    {
       "ticker": "2040",
-      "count": 1
-    },
-    {
-      "ticker": "META",
-      "count": 1
-    },
-    {
-      "ticker": "NVDA",
       "count": 1
     },
     {
@@ -402,5 +374,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

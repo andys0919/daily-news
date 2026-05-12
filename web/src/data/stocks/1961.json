@@ -57,8 +57,7 @@
       "tickers": [
         "1961",
         "1973",
-        "1950",
-        "META"
+        "1950"
       ],
       "companies": [
         "Meta"
@@ -120,11 +119,7 @@
     {
       "ticker": "1950",
       "count": 1
-    },
-    {
-      "ticker": "META",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:20Z"
+  "generated_at": "2026-05-12T03:24:39Z"
 }

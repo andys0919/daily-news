@@ -63,8 +63,7 @@
       "summary": "Single-use plastics are a persistent source of environmental pollution, and the need to house a growing global population puts increasing pressure on resources such as timber. MIT engineers have an idea that could make a dent in both problems at once. In a recent study, a team led by mechanical engineering professor David Hardt, SM&#8230;",
       "event_type": "news",
       "tickers": [
-        "2050",
-        "AMZN"
+        "2050"
       ]
     },
     {
@@ -88,15 +87,12 @@
       "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. In January, Elon Musk’s SpaceX filed an application with the US Federal Communications Commission to launch up to one million data centers into Earth’s orbit. The&#8230;",
       "event_type": "news",
       "tickers": [
-        "2050",
-        "AMZN",
-        "GOOGL",
-        "NVDA"
+        "2050"
       ]
     }
   ],
   "history": [],
   "fundamentals": null,
   "co_mentions": [],
-  "generated_at": "2026-05-12T02:19:18Z"
+  "generated_at": "2026-05-12T03:24:39Z"
 }

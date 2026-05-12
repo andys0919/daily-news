@@ -46,25 +46,6 @@
   "holdings": [],
   "recent_news": [
     {
-      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
-      "link": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
-      "source": "Hugging Face Blog",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-12T07:18:26+08:00",
-      "summary": "",
-      "body_text": "The AWS Building Blocks Infrastructure: Compute, Network, and Storage Resource Orchestration: Slurm and Kubernetes ML Software Stack Observability Conclusion Authors For a long time, \"scaling\" in foundation models mostly meant one thing: spend more compute on pre-training and capabilities rise. That intuition was supported by empirical work such as Kaplan et al. (2020) , which reported predictable",
-      "event_type": "earnings",
-      "tickers": [
-        "NVDA",
-        "AMZN"
-      ],
-      "companies": [
-        "NVIDIA",
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
       "title": "AiOnX secures hyperscale tenant for Irish data center campus outside Dublin",
       "link": "https://www.datacenterdynamics.com/en/news/aionx-secures-hyperscale-tenant-for-irish-data-center-campus-outside-dublin",
       "source": "Data Center Dynamics",
@@ -77,65 +58,6 @@
         "AMZN"
       ],
       "companies": [
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "At TV upfronts, AI is in and corporate shuffles are reshaping the lineup",
-      "link": "https://www.cnbc.com/2026/05/11/tv-upfronts-ai-data-industry-shifts.html",
-      "source": "CNBC Business",
-      "category": "💰 財經與總經",
-      "published": "2026-05-11T22:41:18+08:00",
-      "summary": "Advertisers will be hearing about the slate of live events in the coming year — and how AI is being integrated. Plus, media consolidation reshapes the lineup.",
-      "body_text": "For most media companies, recent upfront presentations — the annual slate of content pitches to advertisers — have been shaped by uncertainty , whether it be macroeconomic or geopolitical . This year, the shifts are coming largely from within.\nMedia executives told CNBC that while they have been cognizant of global economic issues, like the Middle East conflict and rising cost of fuel as well as t",
-      "event_type": "earnings",
-      "tickers": [
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Amazon",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Netflix 雖不靠遊戲賺錢，但做遊戲要幹麼腦袋還很清楚",
-      "link": "https://finance.technews.tw/2026/05/10/netflix-isnt-making-money-from-games-but-it-knows-exactly-why-its-making-them",
-      "source": "科技新報",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-10T14:00:55+08:00",
-      "summary": "Netflix 2026 年第一季財報帳面相當漂亮：營收為 122.5 億美元，年成長 16.2%；營業利益 [&#8230;]",
-      "body_text": "Netflix 2026 年 第一季財報 帳面相當漂亮：營收為 122.5 億美元，年成長 16.2%；營業利益 39.57 億美元，營業利益率 32.3%；淨利 52.83 億美元，稀釋後每股盈餘 1.23 美元，高於 2025 年同期的 0.66 美元。公司也維持全年營收 507 億至 517 億美元、營業利益率 31.5% 財測。\n但這份財報的重點，不只是 Netflix 還能不能漲價、廣告收入能不能放大，而是如何解釋「串流成熟後還能做什麼」，包括增加會員娛樂價值、用技術改善服務、提高變現能力；而遊戲、影音 Podcast、直播活動都放在「讓 Netflix 成為最後被取消的服務」這條主線下。\n路透報導 指出 ，雖然 Netflix 第一季營收與獲利優於預期，但第二季每股盈餘展望低於分析師預估，加上全年財測沒有上修，使投資人認為「沒有改變投資命題的新東西」。換句話說，Netflix ",
-      "event_type": "earnings",
-      "tickers": [
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Amazon",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Cloudflare says AI made 1,100 jobs obsolete, even as revenue hit a record high",
-      "link": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high",
-      "source": "TechCrunch AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-09T02:33:21+08:00",
-      "summary": "Cloudflare announced its first large-scale layoff. CEO Matthew Prince says because of AI efficiency gains, the company doesn't need as many support roles.",
-      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nCloudflare on Thursday joined a growing list of tech companies — including Meta, Microsoft, and Amazon — that have reported increased revenue alongside massive layoffs, attributing both trends to their use of AI.\nCloudflare, which pr",
-      "event_type": "earnings",
-      "tickers": [
-        "META",
-        "MSFT",
-        "AMZN"
-      ],
-      "companies": [
-        "Meta",
-        "Microsoft",
         "Amazon"
       ],
       "guidance_direction": null
@@ -168,142 +90,10 @@
       "event_type": "earnings",
       "tickers": [
         "MSFT",
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-      "link": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T07:38:14+08:00",
-      "summary": "CoreWeave has been raising debt to finance its data center buildout, and S&amp;P has boosted the company's credit rating.",
-      "body_text": "CoreWeave shares tumbled as much as 10% in extended trading on Thursday after the AI infrastructure provider issued light revenue guidance and increased its 2026 capital spending forecast.\nHere's how the company did in comparison with LSEG consensus:\nRevenue more than doubled in the quarter, from $981.8 million a year earlier, according to a statement . Net loss widened to $740 million from $315 m",
-      "event_type": "earnings",
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "NVDA"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "NVIDIA"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "算力跟不上需求 Anthropic 成長80倍 執行長坦承「瘋狂」",
-      "link": "https://money.udn.com/money/story/5599/9487048",
-      "source": "經濟日報 產經",
-      "category": "💰 財經與總經",
-      "published": "2026-05-07T08:40:14+08:00",
-      "summary": "Anthropic 執行長阿莫代（Dario Amodei）表示，他的公司原先計劃預留 10 倍的成長空間。但第1季實際營收和使用量以年化計算成長了 80 倍，他說這正是一直跟不上需求的原因。",
-      "body_text": "本文共814字\nAnthropic 執行長阿莫代（Dario Amodei）表示，他的公司原先計劃預留 10 倍的成長空間。但第1季實際營收和使用量以年化計算成長了 80 倍，他說這正是一直跟不上需求的原因。\n阿莫代周三在舊金山舉行的開發者大會上坦承，「這就是我們在算力方面遭遇困難的原因」。他說，Antrhopic正「正在盡快擴充」算力，並會「盡早將算力提供給大家」。\n數小時前，Anthropic 才宣布和馬斯克旗下的 SpaceX 達成協議，將使用SpaceX位於田納西州曼菲斯Colossus 1資料中心的全部算力。根據協議，Anthropic 將獲得超過 300 MW的容量。SpaceX 旗下也有 AI 實驗室 xAI（現更名為 SpaceXAI），是Anthopic的競爭對手。\nAnthropic 成長驚人，是因為旗下 Claude AI 模型大受歡 迎，且自去年推出 Claude ",
-      "event_type": "earnings",
-      "tickers": [
         "AMZN"
       ],
       "companies": [
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "How David Sacks crashed and burned in the White House",
-      "link": "https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-07T04:18:00+08:00",
-      "summary": "Hello and welcome to Regulator, a newsletter exclusively for Verge subscribers about tech, politics, and Washington intrigue. (It's basically House of Cards, but for nerds.) Not a subscriber yet? You really should become one, and to save you a Google search, here is the direct link to do so! And do you think I should [&#8230;]",
-      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Policy\nThe Trump administration pulled a 180 on AI oversight, inducing Sacks’ worst nightmare: more gover",
-      "event_type": "policy",
-      "tickers": [
-        "GOOGL",
-        "MSFT",
-        "META",
-        "NVDA",
-        "AMZN"
-      ],
-      "companies": [
-        "Google",
         "Microsoft",
-        "Meta",
-        "NVIDIA",
-        "Amazon",
-        "Alphabet"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "ASML CEO Christophe Fouquet on his company’s monopoly: no one is coming for us",
-      "link": "https://techcrunch.com/2026/05/05/asml-ceo-christophe-fouquet-no-one-is-coming-for-us",
-      "source": "TechCrunch AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-06T04:06:40+08:00",
-      "summary": "Christophe Fouquet, who became ASML's CEO in 2024 after more than a decade at the company, sat down with this editor on the rooftop deck of his Beverly Hills hotel Tuesday morning ahead of his appearance at the Milken Institute Global Conference. Dressed in a blue suit and white shirt, he was relaxed — even when the conversation turned to the rivals.",
-      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nBuy one Disrupt pass, and get the second at 50% off. Ends May 8. Register now.\nEvery time you use AI, you are, in some small way, depending on a 42-year-old, 44,000-person Dutch company that spends €4.5 billion each year to advance its technology.\nASML, headquartered in the Netherlands, makes the machines that ",
-      "event_type": "earnings",
-      "tickers": [
-        "MSFT",
-        "META",
-        "AMZN",
-        "GOOGL",
-        "TSM"
-      ],
-      "companies": [
-        "Microsoft",
-        "Meta",
-        "Amazon",
-        "Google",
-        "TSMC"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "四大CSP資本支出上修至超過7千億美元　記憶體結構性供需缺口延至2028年",
-      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754242_MEF1Q9665H9PFJ12TO3FL",
-      "source": "DIGITIMES 半導體",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-06T03:00:00+08:00",
-      "summary": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳...",
-      "body_text": "近期全球四大雲端服務（CSP）廠上調資本支出至約7,250億美元，加劇記憶體資源朝向AI明顯傾斜，不僅國際原廠與客戶提前鎖定3~5年長期供應協議（LTA），確立記憶體成為AI浪潮下的戰略性資源；華邦電總經理陳沛銘表示，更多客戶主動要求，近期「被客戶逼著」簽訂3年合約，以確保供貨，預期記憶體結構性供給缺口，將延續至2028年以後。\n三星電子（Samsung Electronics）、SK海力士（SK Hynix）、美光（Micron）、SanDisk陸續與客戶綁定LTA合約，甚至有CSP客戶已將預付款提高至LTA長約總價值的10~30%，反映產業供應緊缺的長期趨勢，買家寧願付出高額溢價。\n儘管產能供不應求，但華邦電對LTA態度相對被動，簽訂LTA也是被客戶所逼，希望能承諾未來3年的供貨量，再逐季談價格。不過陳沛銘認為，隨著高雄新廠B模組持續推動，屆時在導入設備及產能規劃時，也將考慮跟客戶提前",
-      "event_type": "earnings",
-      "tickers": [
-        "META",
-        "MSFT",
-        "GOOGL",
-        "AMZN"
-      ],
-      "companies": [
-        "Meta",
-        "Microsoft",
-        "Alphabet",
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "Designing Data-Intensive Applications: The Cloud & Doing the Right Thing",
-      "link": "https://newsletter.pragmaticengineer.com/p/designing-data-intensive-applications-book-excerpt",
-      "source": "The Pragmatic Engineer",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-06T00:46:00+08:00",
-      "summary": "How the cloud changes the way we build applications, and why engineers&#8217; ethical choices matter more than ever. Excerpt from the book, &#8216;Designing Data-Intensive Applications&#8217;, 2nd edition",
-      "body_text": "In 2016, Martin Kleppmann published ‘Designing Data-Intensive Applications’, which quickly became a go-to book for those of us building backend applications and distributed systems. In it, Martin combined his experience as a startup founder with observations from his time at LinkedIn, and invested years of rigorous, fulltime research in the title.\nNine years later, he felt the time was ripe for an",
-      "event_type": "earnings",
-      "tickers": [
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
         "Amazon",
         "Google"
       ],
@@ -344,89 +134,6 @@
       "guidance_direction": null
     },
     {
-      "title": "The looks turning heads on the Met Gala carpet",
-      "link": "https://www.bbc.com/news/articles/c5y9wq9y0p1o",
-      "source": "BBC World",
-      "category": "🌏 地緣政治與科技政策",
-      "published": "2026-05-05T08:02:18+08:00",
-      "summary": "The theme for 2026 Met Gala fundraiser is \"Costume Art\", exploring fashion as an embodied art form.",
-      "body_text": "The biggest night in fashion has begun.\nCelebrities are arriving to the 2026 Met Gala with their take on this year's theme - Costume Art - where organisers asked attendees to experiment with the lavish and whimsical dress code.\nThe annual event is a fundraiser for the Metropolitan Museum of Art's Costume Institute, and serves as chance for celebrities and design houses to go all-out on spectacle.\n",
-      "event_type": "earnings",
-      "tickers": [
-        "1954",
-        "AMZN"
-      ],
-      "companies": [
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "The creator of Roomba is back with a furry robot companion",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/922947/roomba-creator-new-robot-familiar-machines-magic-ai-launch",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-05T00:51:38+08:00",
-      "summary": "Colin Angle, the maker of the Roomba and the man who helped put 50 million household robots into people's homes, is back with a new robot. But this one is designed as a companion, not a cleaner. The first robot from Angle's new company, Familiar Machines &#38; Magic, is a dog-sized robotic pet that resembles [&#8230;]",
-      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All News\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Report\nColin Angle revealed his latest creation this week: a dog-sized robot ‘Familiar’ designed for human ",
-      "event_type": "earnings",
-      "tickers": [
-        "AMZN",
-        "NVDA"
-      ],
-      "companies": [
-        "Amazon",
-        "NVIDIA"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "The Illusion of Sovereignty: How International Law and Big Tech are Eroding the State",
-      "link": "https://warontherocks.com/the-illusion-of-sovereignty-how-international-law-and-big-tech-are-eroding-the-state",
-      "source": "War on the Rocks",
-      "category": "🧭 深度觀點與分析",
-      "published": "2026-05-04T15:30:38+08:00",
-      "summary": "Caught between two hammers &#8212; international law and technological dependence on the private sector &#8212; modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomatic sanctions and international condemnation but the loss of access to critical digital infrastructure owned by private corporations. In wartime, that loss is catastrophic, as we both experienced firsthand during Rus",
-      "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nCaught between two hammers — international law and technological dependence on the private sector — modern state sovereignty is in crisis. When a state attempts to act decisively against an adversary operating below the threshold of armed attack, it risks not only diplomati",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL",
-        "MSFT",
-        "META",
-        "AMZN"
-      ],
-      "companies": [
-        "Google",
-        "Microsoft",
-        "Meta",
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
-      "title": "AI music is flooding streaming services — but who wants it?",
-      "link": "https://www.theverge.com/column/921599/ai-music-is-flooding-streaming-services-but-who-wants-it",
-      "source": "The Verge AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-03T20:00:00+08:00",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on how AI is changing music and the music industry, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started The use of generative AI [&#8230;]",
-      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All Column\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Streaming\nThey won’t ban it. They won’t embrace it either.\nPosts from this author will be added to your d",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL",
-        "AAPL",
-        "META",
-        "AMZN"
-      ],
-      "companies": [
-        "Google",
-        "Apple",
-        "Meta",
-        "Amazon"
-      ],
-      "guidance_direction": null
-    },
-    {
       "title": "Amazon vs. Microsoft and the Great AI Capex Divergence - 24/7 Wall St.",
       "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNc2g0RFNHRWVNeDBjZHRQX0oxaW84MHZJZVE2U05PNnpkc0pJZGF3Uks2VGFmRmdCUldleWpEeENQUXJfTHltT2U2MnFNUjNKR0I1RU82NFk3VHd6RjgzZVUxQjVmYUMwWUtoQ2RrdFd6RDA4X3pzdDJSODdicjR2OU5wbkxVM2pYRjBIckc0TjRuVHRQOTlNU0tOV3JCZw",
       "source": "AI 產業化與投資信號",
@@ -446,31 +153,6 @@
       "guidance_direction": null
     },
     {
-      "title": "Did you know you can’t steal a charity? Don’t worry. Elon Musk will remind you.",
-      "link": "https://techcrunch.com/podcast/did-you-know-you-cant-steal-a-charity-dont-worry-elon-musk-will-remind-you",
-      "source": "TechCrunch AI",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-05-02T01:44:29+08:00",
-      "summary": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it&#8217;s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk&#8217;s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the [&#8230;]",
-      "body_text": "Elon Musk spent the better part of three days on the witness stand this week in his lawsuit against OpenAI, and it’s already getting messy. Emails, texts, and his own tweets are surfacing in court, and there are plenty more witnesses to come. Musk’s argument against OpenAI? By converting the company to a for-profit model, Sam Altman betrayed the “nonprofit for the benefit of humanity” mission Musk",
-      "event_type": "earnings",
-      "tickers": [
-        "AAPL",
-        "TSLA",
-        "AMZN",
-        "META",
-        "GOOGL"
-      ],
-      "companies": [
-        "Apple",
-        "Tesla",
-        "Amazon",
-        "Meta",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
       "title": "Skyrocketing component prices push Big Tech capex to record $725 billion — Microsoft alone attributes $25 billion of AI budget to increased memory and chip costs",
       "link": "https://www.tomshardware.com/tech-industry/big-tech/microsoft-attributed-25-billion-of-its-record-ai-budget-to-memory-chip-costs",
       "source": "Tom's Hardware",
@@ -483,9 +165,7 @@
         "MSFT",
         "META",
         "GOOGL",
-        "AMZN",
-        "NVDA",
-        "TSM"
+        "AMZN"
       ],
       "companies": [
         "Microsoft",
@@ -518,27 +198,6 @@
         "Amazon"
       ],
       "guidance_direction": "up"
-    },
-    {
-      "title": "Microsoft brings 1GW of capacity online in latest quarter, again",
-      "link": "https://www.datacenterdynamics.com/en/news/microsoft-brings-1gw-of-capacity-online-in-latest-quarter-again",
-      "source": "Data Center Dynamics",
-      "category": "🔬 半導體與硬體",
-      "published": "2026-05-01T00:30:35+08:00",
-      "summary": "On track to double footprint in two years",
-      "body_text": "On track to double footprint in two years\nMicrosoft is continuing its trend of standing up 1GW of capacity every three months, having managed the task for the second consecutive quarter.\nCEO Satya Nadella revealed that the company's capacity expansion plans remain \"on track to double our overall footprint in just two years\" during the company's Q3 FY2026 earnings call held on April 29.\nCapex for t",
-      "event_type": "earnings",
-      "tickers": [
-        "MSFT",
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Microsoft",
-        "Amazon",
-        "Google"
-      ],
-      "guidance_direction": null
     },
     {
       "title": "Amazon's cloud sales are growing the most in 15 quarters. Investors sent the stock down on AI capex fears - Fortune",
@@ -604,31 +263,6 @@
       "guidance_direction": null
     },
     {
-      "title": "The Download: the North Pole’s future and humanoid data",
-      "link": "https://www.technologyreview.com/2026/04/30/1136713/the-download-north-pole-future-humanoid-data",
-      "source": "MIT Technology Review",
-      "category": "🧠 AI 研究與突破",
-      "published": "2026-04-30T20:10:00+08:00",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Digging for clues about the North Pole’s past In the past, getting to the North Pole involved a treacherous trip through ice many meters thick. But last year, a research vessel&#8230;",
-      "body_text": "Plus: Google, Microsoft, Amazon and Meta have all set AI spending records.\nThis is today's edition of The Download , our weekday newsletter that provides a daily dose of what's going on in the world of technology.\nIn the past, getting to the North Pole involved a treacherous trip through ice many meters thick. But last year, a research vessel encountered open water and thin ice, which created an e",
-      "event_type": "earnings",
-      "tickers": [
-        "GOOGL",
-        "MSFT",
-        "AMZN",
-        "META",
-        "AAPL"
-      ],
-      "companies": [
-        "Google",
-        "Microsoft",
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
-      "guidance_direction": null
-    },
-    {
       "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
       "link": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes",
       "source": "Stratechery",
@@ -678,8 +312,7 @@
       "body_text": "本文共1092字\n亞馬遜（Amazon）第1季為擴建資料中心的算力，支出超出預期，不過旗下雲端事業的銷售因而出現三年多來最快成長。上季公司整體營收與獲利均優於市場預期。\n亞馬遜股價在周三（29日）盤後交易先跌再漲，一度勁揚5%，後來漲幅收斂至2.7%；正常交易時收漲1.29%，報263.04美元。截至周三收盤，亞馬遜股價今年以來漲幅14%，居美股科技七雄前段班。\n亞馬遜周三表示，截至3月31日的過去12個月裡，公司在不動產與設備方面的支出達到1,510億美元，較去年同期增加579億美元，這些針對資料中心的開銷，目的在爭取人工智慧（AI）領導公司Anthropic和OpenAI更多業務。\n亞馬遜雲端事業AWS的營收，約占公司總體營收的五分之一，並貢獻大部分營業利益。今年第1季，AWS銷售額年增28%至376億美元，是2022年第2季以來的最大增幅。\nInvesting.com資深分析師Jes",
       "event_type": "earnings",
       "tickers": [
-        "AMZN",
-        "GOOGL"
+        "AMZN"
       ],
       "companies": [
         "Amazon",
@@ -731,8 +364,7 @@
       "body_text": "Amazon is now among the top three datacenter chip businesses in the world, as its semiconductor business surpassed a $20 billion annual run rate ... and it would be closer to $50 billion if it included itself among the customers, CEO Andy Jassy said during the company’s first quarter earnings call on Wednesday.\n“If our chips business was a standalone business and sold chips produced this year to A",
       "event_type": "earnings",
       "tickers": [
-        "AMZN",
-        "META"
+        "AMZN"
       ],
       "companies": [
         "Amazon",
@@ -758,32 +390,6 @@
       "guidance_direction": "up"
     },
     {
-      "title": "Big Tech's multi-billion dollar AI bets are still on track as Mag 7 giants report earnings",
-      "link": "https://www.coindesk.com/markets/2026/04/29/big-tech-s-multi-billion-dollar-ai-bets-are-still-on-track-as-mag-7-giants-report-earnings",
-      "source": "CoinDesk",
-      "category": "💰 財經與總經",
-      "published": "2026-04-30T05:07:33+08:00",
-      "summary": "",
-      "body_text": "Four of the Magnificent Seven (Mag 7) tech giants are still on track to meet their massive artificial intelligence (AI) spending targets this year, according to their earnings report.\nThe companies that have reported quarterly earnings post-market on Wednesday are Microsoft (MSFT), Alphabet (GOOG), Meta (META) and Amazon (AMZ), with a combined market cap of approximately $12 trillion.\nPreviously, ",
-      "event_type": "earnings",
-      "tickers": [
-        "MSFT",
-        "GOOGL",
-        "META",
-        "AMZN",
-        "NVDA"
-      ],
-      "companies": [
-        "Microsoft",
-        "Alphabet",
-        "Meta",
-        "Amazon",
-        "NVIDIA",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
       "title": "Traders brace for $800 billion in earnings-related stock movement",
       "link": "https://www.cnbc.com/2026/04/29/traders-brace-for-800-billion-in-earnings-related-stock-movement.html",
       "source": "CNBC Finance",
@@ -807,27 +413,6 @@
       "guidance_direction": null
     },
     {
-      "title": "Formula 1® returns to the U.S. this weekend, streaming live on Apple TV",
-      "link": "https://www.apple.com/newsroom/2026/04/formula-1-returns-to-the-us-this-weekend-streaming-live-on-apple-tv",
-      "source": "Apple Newsroom",
-      "category": "🏢 科技廠動態",
-      "published": "2026-04-29T20:59:15+08:00",
-      "summary": "Formula 1® returns to the U.S. this weekend with the Miami Grand Prix, streaming exclusively on Apple TV with every session available live.",
-      "body_text": "Text of this article\nApril 29, 2026\nUPDATE\nFormula 1® returns :br(s):to the U.S. this:br(s): weekend with the:br(s): Miami Grand Prix, streaming live on Apple TV\nFormula 1® returns to the U.S. this weekend for the FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026 — streaming exclusively on Apple TV, with every session live and on demand. 1\nAnticipation builds as the 2026 season resumes and the battle for",
-      "event_type": "earnings",
-      "tickers": [
-        "AAPL",
-        "AMZN",
-        "GOOGL"
-      ],
-      "companies": [
-        "Apple",
-        "Amazon",
-        "Google"
-      ],
-      "guidance_direction": null
-    },
-    {
       "title": "微軟不再獨家代理後 亞馬遜也將銷售OpenAI技術",
       "link": "https://money.udn.com/money/story/5599/9470748",
       "source": "經濟日報 產經",
@@ -847,14 +432,284 @@
       "guidance_direction": null
     },
     {
-      "title": "Can AI outperform doctors? Experts weigh the pros and cons",
-      "link": "https://www.cnbc.com/2026/04/29/can-ai-outperform-doctors-insilico-medicine-biocon-ceos-weigh-in.html",
+      "title": "OpenAI ends its exclusive partnership with Microsoft",
+      "link": "https://arstechnica.com/ai/2026/04/no-longer-exclusive-microsoft-agrees-to-let-openai-see-other-cloud-providers",
+      "source": "Ars Technica AI",
+      "category": "🛠️ AI 工具與實戰",
+      "published": "2026-04-28T04:10:11+08:00",
+      "summary": "Amended agreement clears the way for OpenAI models to run on Amazon Bedrock.",
+      "body_text": "Amended agreement clears the way for OpenAI models to run on Amazon Bedrock.\nSince Microsoft invested $1 billion in OpenAI in 2019 , the exclusive partnership between the two firms has been one of the strongest and most consequential in the AI industry. Today, though, OpenAI and Microsoft jointly announced an amended agreement that will allow the company to go beyond Microsoft’s Azure and “serve a",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Microsoft and OpenAI end exclusivity agreement, opening up potential partnerships with Amazon and Google — Microsoft will continue to receive revenue share through 2030",
+      "link": "https://www.tomshardware.com/tech-industry/microsoft-and-openai-end-exclusivity-agreement-opening-up-potential-partnerships-with-amazon-and-google-microsoft-will-continue-to-receive-revenue-share-through-2030",
+      "source": "Tom's Hardware",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-28T00:13:56+08:00",
+      "summary": "Microsoft and OpenAI are ending their long-standing exclusivity agreement, allowing OpenAI to leverage cloud providers like Amazon and Google.",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Learnings from conducting ~1,000 interviews at Amazon",
+      "link": "https://newsletter.pragmaticengineer.com/p/learnings-from-conducting-1000-interviews",
+      "source": "The Pragmatic Engineer",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-04-21T20:49:16+08:00",
+      "summary": "Steve Huynh, formerly Principal Engineer at Amazon, shares observations from 10+ years of interviewing software engineers, and an excerpt from his new book, Technical Behavioral Interview",
+      "body_text": "Steve Huynh, formerly Principal Engineer at Amazon, shares observations from Bar Raiser, and an excerpt from his new book, Technical Behavioral Interview\nTech interviews have two parts: the technical interview – with a focus on things like coding, software architecture, problem solving – and the behavioral part – with a focus on past experience, and the situations that show you’d be a good fit at ",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "AI chip startup Cerebras files for IPO",
+      "link": "https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-19T03:19:11+08:00",
+      "summary": "In recent months, the company announced an agreement with Amazon Web Services to use Cerebras chips in Amazon data centers, as well as a deal with OpenAI reportedly worth more than $10 billion.",
+      "body_text": "The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.\nSave up to $680 on your Disrupt 2026 pass. Ends 11:59 p.m. PT tonight. REGISTER NOW .\nCerebras Systems , a startup building what CEO Andrew Feldman describes as “the fastest AI hardware for training and inference,” has filed to go public .\nThe company previously filed for an initial public offering in 2024, but",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Data center lobby secured EU provision to keep environmental impact data confidential - report",
+      "link": "https://www.datacenterdynamics.com/en/news/data-center-lobby-secured-eu-provision-to-keep-environmental-impact-data-confidential-report",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-18T16:00:28+08:00",
+      "summary": "Includes the likes of Microsoft, Amazon, Google, and Meta",
+      "body_text": "Includes the likes of Microsoft, Amazon, Google, and Meta\nSeveral of the largest data center operators have been accused of using a secrecy provision in EU law to block public access to crucial information about the environmental impact of their data centers.\nAccording to reporting from Investigate Europe , Microsoft and DigitalEurope, a lobbying group that includes the likes of Amazon, Google, an",
+      "event_type": "earnings",
+      "tickers": [
+        "MSFT",
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Google",
+        "Meta"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "These stocks reporting next week are seeing their earnings momentum rise",
+      "link": "https://www.cnbc.com/2026/04/17/these-stocks-reporting-next-week-are-seeing-their-earnings-momentum-rise.html",
       "source": "CNBC Top News",
       "category": "💰 財經與總經",
-      "published": "2026-04-29T07:16:54+08:00",
-      "summary": "One CEO said people should be using AI to understand their health much more than they already do.",
-      "body_text": "CONVERGE LIVE - Singapore, 22-23 April 2026\nYou may already be familiar with AI taking notes in your doctor's office , or being used to help book appointments or analyze medical images.\nBut some experts believe consumers should be using AI even more to help understand their health.\n\"People should be using AI much more than they do today,\" according to Alex Zhavoronkov, founder and CEO of AI drug d",
+      "published": "2026-04-18T04:01:39+08:00",
+      "summary": "Stocks reporting earnings next week that are also seeing accelerating earnings momentum include Vertiv and Amazon.",
+      "body_text": "",
       "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Amazon (NSDQ:AMZN) US$200B AI Capex Bill, and Why AWS Still Wins - Stocks Down Under",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaC1nRU5vR1ZfeWVRZVpoZmFybFJ5ejVOaTFzNFBmUVVjeE9PZksyeDdQUnYtaHFKZG1TY005bWU1M2dFd3RsVEtVMGp1M0tUdjY4Q0YyQjF5UXV2WTJMZDdMRmZPR245MmpzbTlUZng4RnJOaHUtZkQzUlpOV0FsbkI0RUY5dFFHVkdBM2JfQm9TQQ",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-10T08:54:13+08:00",
+      "summary": "Amazon (NSDQ:AMZN) US$200B AI Capex Bill, and Why AWS Still Wins&nbsp;&nbsp;Stocks Down Under",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "亞馬遜考慮將自家晶片成櫃賣給第三方公司 股價大漲5.6%",
+      "link": "https://money.udn.com/money/story/5599/9432906",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-04-10T08:12:18+08:00",
+      "summary": "亞馬遜（Amazon.com）執行長賈西周四表示，考慮向其他公司出售自家研發的晶片；他說，該公司的晶片事業年營收預計將突破 200 億美元。",
+      "body_text": "本文共449字\n亞馬遜（Amazon.com）執行長賈西周四表示，考慮向其他公司出售自家研發的晶片；他說，該公司的晶片事業年營收預計將突破 200 億美元。\n這一揭露讓外界得以一窺亞馬遜自研晶片事業的規模，這部門生產通用型運算晶片、AI 加速器，以及能提升伺服器運作效率的晶片。\n受此消息激勵，亞馬遜周四股價大漲5.6%至233.65美元。\n目前亞馬遜是將這些硬體租賃給旗下雲端事業 AWS（Amazon Web Services）的客戶使用。不過，具備建置人工智慧（AI）模型能力的處理器需求極其旺盛，導致供應吃緊，促使各家公司紛紛尋求輝達（NVIDIA）領先市場的圖形處理器（GPU）以外的替代方案。\n賈西在年度股東信中說：「市場對我們晶片的需求非常大，未來很有可能以成櫃的方式賣給第三方。」\n這位接掌亞馬遜近五年的執行長說，如果他們的晶片事業是一家向 AWS 客戶及其他第三方銷售半導體的獨立企",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Amazon CEO takes aim at Nvidia, Intel, Starlink, more in annual shareholder letter",
+      "link": "https://techcrunch.com/2026/04/09/amazon-ceo-takes-aim-at-nvidia-intel-starlink-more-in-annual-shareholder-letter",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-09T22:27:57+08:00",
+      "summary": "Andy Jassy's annual shareholder letter reads something like a diss track to a wide range of competitors as he defends spending $200 billion in capex.",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Amazon",
+        "NVIDIA"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Amazon AI Capex Concerns 'Overdone,' Says Analyst—Urges Focus On These Two Metrics To Unlock 50% Upside - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPOU9Cc3VpTWFmdGJtRkk3RWtEaXNCZDF0Um1zVjRiVTZhRU9CM0ZaYnd3SkpET1NjZFh1TERJOFlZQzhsLTNGNmlWVGllZjhvdzRwSjY2N005ZjJaWGc3dWx5aFRZeENyejBWTk1BMmoyRlBkR19zQzYycHlqVHNtMml2cnUxWFZEamFOSGhicURrWGJNVVZpWlZXdnM3NTE2OXRmamZkdEl3dnVyejZEbE1IaWFZT0JHUFZzZlo0cENHc19tMEdSTXdlSy1tMW92a3hIVzVyZldWWkFJMV9MQWtGZXE5Sm8",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-08T18:30:17+08:00",
+      "summary": "Amazon AI Capex Concerns 'Overdone,' Says Analyst—Urges Focus On These Two Metrics To Unlock 50% Upside&nbsp;&nbsp;Benzinga",
+      "body_text": "",
+      "event_type": "capex",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "A new Anthropic model found security problems &#8216;in every major operating system and web browser&#8217;",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/908114/anthropic-project-glasswing-cybersecurity",
+      "source": "The Verge AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-08T02:00:00+08:00",
+      "summary": "Anthropic is debuting a new AI model as part of a cybersecurity partnership with Nvidia, Google, Amazon Web Services, Apple, Microsoft, and other companies. Project Glasswing, as it's called, is billed as a way for large companies, and potentially even the government, to flag vulnerabilities in their systems with virtually no human intervention. Anthropic is [&#8230;]",
+      "body_text": "Posts from this topic will be added to your daily email digest and your homepage feed.\nSee All AI\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All News\nPosts from this topic will be added to your daily email digest and your homepage feed.\nSee All Anthropic\nFor now, the company is only releasing Project Glasswing to “defensive security” partners.\nFor no",
+      "event_type": "earnings",
+      "tickers": [
+        "NVDA",
+        "GOOGL",
+        "AMZN",
+        "AAPL",
+        "MSFT"
+      ],
+      "companies": [
+        "NVIDIA",
+        "Google",
+        "Amazon",
+        "Apple",
+        "Microsoft",
+        "JPMorgan"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Iran threatens to attack OpenAI's Stargate data center in UAE",
+      "link": "https://www.datacenterdynamics.com/en/news/iran-threatens-to-attack-openais-stargate-data-center-in-uae-war",
+      "source": "Data Center Dynamics",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-04-08T00:36:00+08:00",
+      "summary": "After hitting Amazon and Oracle data centers",
+      "body_text": "DCD>Magazine #60 is out now! Download and read for free here\nAfter hitting Amazon and Oracle data centers\nIran’s Islamic Revolutionary Guard Corps (IRGC) threatened to attack G42's giant planned data center in the United Arab Emirates.\nThe 10-square-mile UAE-US AI Campus is currently under construction, with up to 1GW set to go to OpenAI under its Stargate initiative. The wider campus could grow t",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon",
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "The AI capital stack is rewritten! OpenAI secures a $122B funding round at an $852B valuation, crossing a critical 40% enterprise revenue threshold. Amazon's AGI reset clause, Sam Altman's super app plan #DjamgaMind #AI #TechNews #OpenAI - x.com",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE56ZmNhOC1zNjZQVVprUm52bTNOaHZUR2c5X3FfOFp1WGNzTkYxNk1HZjhtVmItRFlDdWdwU3BxdVdxY0s1a3VQSDBJcm91ckh0ZUE2VURSMUpzTnZE?oc=5",
+      "source": "X AI KOL 熱議",
+      "category": "🔥 X 社群熱議",
+      "published": "2026-04-02T05:01:26+08:00",
+      "summary": "The AI capital stack is rewritten! OpenAI secures a $122B funding round at an $852B valuation, crossing a critical 40% enterprise revenue threshold. Amazon's AGI reset clause, Sam Altman's super app plan #DjamgaMind #AI #TechNews #OpenAI&nbsp;&nbsp;x.com",
+      "body_text": "",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN"
+      ],
+      "companies": [
+        "Amazon"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "OpenAI, not yet public, raises $3B from retail investors in monster $122B fund raise",
+      "link": "https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise",
+      "source": "TechCrunch AI",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-04-01T05:25:04+08:00",
+      "summary": "OpenAI's latest funding round, led by Amazon, Nvidia, and SoftBank, values the AI lab at $852 billion as it nears an IPO.",
+      "body_text": "OpenAI has closed a deal to raise $122 billion at an $852 billion valuation, its largest funding round to date as the company is expected to hit the public markets this year.\nThe round will add to OpenAI’s war chest as it spends enormous amounts of money on AI chips, data center buildouts, and hiring top talent.\nSoftBank co-led the round alongside Andreessen Horowitz, D.E. Shaw Ventures, MGX, TPG,",
+      "event_type": "earnings",
+      "tickers": [
+        "AMZN",
+        "NVDA"
+      ],
+      "companies": [
+        "Amazon",
+        "NVIDIA",
+        "Microsoft",
+        "Meta",
+        "Alphabet"
+      ],
+      "guidance_direction": null
+    },
+    {
+      "title": "Amazon.com Inc Stock Faces Pressure from $200 Billion AI Capex Forecast Amid Free Cash Flow Concerns - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQamFJMlllVkVJaHJpa000OVdMMHdrVGFCVmpnaE1vZUFEaVpnNFp2eHhDTEFSZjRMdTBTS3RaZzRiYklhVDlGSjBzbmwxOXlLZjE3ZWFtLUZlV1BlcGVzbTdXUG5ONVRhdWotWlNQRHBzXzBSMmNxS0Z4eVFzclRnYktfNFRsNEVsWXVfWVdkd2V6LU8tMTRBaUpYVzY0OF9sdUFBZUxlRkdKaFZIZG1HN3BodVRYM0FyR0NxaHBOOVpPSTk1NlphRQ",
+      "source": "AI 產業化與投資信號",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-03-30T13:15:42+08:00",
+      "summary": "Amazon.com Inc Stock Faces Pressure from $200 Billion AI Capex Forecast Amid Free Cash Flow Concerns&nbsp;&nbsp;AD HOC NEWS",
+      "body_text": "",
+      "event_type": "capex",
       "tickers": [
         "AMZN"
       ],
@@ -966,32 +821,6 @@
       ]
     },
     {
-      "title": "Shein未扭轉局勢　巴黎指標性百貨空蕩畫面引熱議",
-      "link": "https://www.cna.com.tw/news/aopl/202605090207.aspx",
-      "source": "中央社 財經",
-      "category": "💰 財經與總經",
-      "published": "2026-05-09T20:23:59+08:00",
-      "summary": "（中央社記者曾依璇巴黎9日專電）中資超快時尚電商Shein實體店面去年底在巴黎指標性的BHV百貨開張。半年後，社群網站影片和媒體報導直指BHV業績一路下滑，樓層空蕩、電扶梯停用，店家則稱「翻修中」。",
-      "event_type": "news",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
-      "title": "The new Wild West of AI kids’ toys",
-      "link": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys",
-      "source": "Ars Technica AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-09T19:00:51+08:00",
-      "summary": "These connected companions could disrupt everything from make-believe to bedtime stories. No wonder some lawmakers want them banned.",
-      "event_type": "news",
-      "tickers": [
-        "AMZN",
-        "META",
-        "GOOGL"
-      ]
-    },
-    {
       "title": "Amazon Prime Day 2026 is in June. Get a $150 Amazon gift card and extra rewards with the right credit card",
       "link": "https://www.cnbc.com/select/amazon-prime-day-2026",
       "source": "CNBC Top News",
@@ -1017,18 +846,6 @@
       ]
     },
     {
-      "title": "Asia-Pacific markets open lower on fresh Iran-U.S. tensions following clashes",
-      "link": "https://www.cnbc.com/2026/05/08/asia-pacific-today-updates-nikkei-225-kospi-sensex-asi-hang-seng-csi-300.html",
-      "source": "CNBC Top News",
-      "category": "💰 財經與總經",
-      "published": "2026-05-08T08:11:01+08:00",
-      "summary": "Asia-Pacific markets open lower Friday, as concerns grew over renewed hostilities between Iran and the U.S. amid a fragile ceasefire.",
-      "event_type": "news",
-      "tickers": [
-        "AMZN"
-      ]
-    },
-    {
       "title": "Amazon’s new AI wallet: AWS, Coinbase, and Stripe build payment rails for bots",
       "link": "https://www.coindesk.com/business/2026/05/07/amazon-rolls-out-ai-agent-stablecoin-payments-platform-with-coinbase-and-stripe",
       "source": "CoinDesk",
@@ -1050,9 +867,7 @@
       "event_type": "news",
       "tickers": [
         "AMZN",
-        "META",
-        "AAPL",
-        "MSFT"
+        "META"
       ]
     },
     {
@@ -1069,34 +884,6 @@
       ]
     },
     {
-      "title": "AI agents becoming more relevant than humans by 2035 has Big Tech 'terrified', says Hoskinson",
-      "link": "https://www.coindesk.com/business/2026/05/06/ai-agents-will-become-more-relevant-than-humans-by-2035-says-charles-hoskinson",
-      "source": "CoinDesk",
-      "category": "💰 財經與總經",
-      "published": "2026-05-07T06:35:57+08:00",
-      "summary": "",
-      "event_type": "news",
-      "tickers": [
-        "2035",
-        "GOOGL",
-        "AMZN"
-      ]
-    },
-    {
-      "title": "Grant Cardone says bitcoin-real estate strategy could outperform REITs, adds more BTC to treasury",
-      "link": "https://www.coindesk.com/business/2026/05/06/bitcoin-real-estate-strategy-could-outperform-reits-says-grant-cardone-he-adds-btc-to-treasury",
-      "source": "CoinDesk",
-      "category": "💰 財經與總經",
-      "published": "2026-05-07T06:32:30+08:00",
-      "summary": "",
-      "event_type": "news",
-      "tickers": [
-        "BLSH",
-        "GOOGL",
-        "AMZN"
-      ]
-    },
-    {
       "title": "Anthropic raises Claude Code usage limits, credits new deal with SpaceX",
       "link": "https://arstechnica.com/ai/2026/05/anthropic-raises-claude-code-usage-limits-credits-new-deal-with-spacex",
       "source": "Ars Technica AI",
@@ -1106,24 +893,132 @@
       "event_type": "news",
       "tickers": [
         "MSFT",
-        "AMZN",
-        "NVDA",
-        "GOOGL"
+        "AMZN"
       ]
     },
     {
-      "title": "Higher usage limits for Claude and a compute deal with SpaceX",
-      "link": "https://www.anthropic.com/news/higher-limits-spacex",
-      "source": "Hacker News AI",
-      "category": "🛠️ AI 工具與實戰",
-      "published": "2026-05-07T00:17:33+08:00",
-      "summary": "Article URL: https://www.anthropic.com/news/higher-limits-spacex Comments URL: https://news.ycombinator.com/item?id=48037986 Points: 373 # Comments: 313",
+      "title": "Modernize your workflows: Amazon WorkSpaces now gives AI agents their own desktop (preview)",
+      "link": "https://aws.amazon.com/blogs/aws/modernize-your-workflows-amazon-workspaces-now-gives-ai-agents-their-own-desktop-preview",
+      "source": "AWS Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-06T01:23:40+08:00",
+      "summary": "Amazon WorkSpaces now lets AI agents securely operate legacy desktop applications—without APIs or modernization—using IAM authentication, MCP support, and computer vision within existing security frameworks.",
       "event_type": "news",
       "tickers": [
-        "NVDA",
-        "GOOGL",
-        "AMZN",
-        "MSFT"
+        "AMZN"
+      ]
+    },
+    {
+      "title": "亞馬遜物流正式對外開放 ASCS 整合海陸空方案 FedEx、UPS 聞風重挫",
+      "link": "https://money.udn.com/money/story/5599/9481955",
+      "source": "經濟日報 產經",
+      "category": "💰 財經與總經",
+      "published": "2026-05-05T08:11:14+08:00",
+      "summary": "亞馬遜（Amazon.com）推出了一套物流服務，讓企業能以套裝形式購買其現有的貨運和配送方案。此消息一出，聯邦快遞（FedEx）和優比速（UPS）等同業聞風重挫。",
+      "event_type": "news",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Amazon employees pushed for Claude Code. Now they're getting it — and Codex, too. - Business Insider",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQd084UHF5U1drcmZ1eTdnZE5yYTRpVm9ydjRtbmxNRElrTTdsa0EtYk50SVFxWlVxZ3M2ZG5zbi1ibXJPOWFuc3FaV2RIMEtRVlAxdktWRW9Zbkd1UHF6UkFfaExRcXhncktVZ3BxR3c5LTE2MkFCRVBtNGctcWhRdzBidjhkMFhwVkhvMmdIUUVNYUpXM3Jz",
+      "source": "Anthropic News",
+      "category": "🧠 AI 研究與突破",
+      "published": "2026-05-05T04:59:17+08:00",
+      "summary": "Amazon employees pushed for Claude Code. Now they're getting it — and Codex, too.&nbsp;&nbsp;Business Insider",
+      "event_type": "news",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Strong 1440p gaming PC with RTX 5070 Ti GPU is $200 off on Amazon right now - WePC",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMjU1RTFYeVVqOE56NmJTZmg0VVFTT2t5cFZXT1JxQkxqRk1VX3p5T3lTOTRhcENGVG5BajAyZEk1MUZZb28tNXI3RERrdTlpdk5qbkdxOFNJMHRtb1JGa1BveHplbS1famdxVk9yLWVzbUJrcFVSRTZWYnRzQldNTmMwcmh0TFZURUxGeVpDNF8wUTZmYUgtTTh3QmJHSC0zZk5r",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T04:17:43+08:00",
+      "summary": "Strong 1440p gaming PC with RTX 5070 Ti GPU is $200 off on Amazon right now&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "RTX 5070 Ti and Ryzen 7 gaming PC gets a $200 discount on Amazon - WePC",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN2R2bWFsMmZ1eHZhR25uUUNMUVk0RVdYRkdtSmtOaDI4bUpBblQzRUp0dkg3ZGQyMllzZDhuYV9QY3JySzFiR21yUWZSaE1iS3dOanl5LXk0OWF5REx5UXRVNnFDcXZCYWtHSl9tQlFEY2F3bGlnMFRZTXZ4UTh2d3FyMmtKQVZhRkFwc0FJLWROSUdU?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T02:45:35+08:00",
+      "summary": "RTX 5070 Ti and Ryzen 7 gaming PC gets a $200 discount on Amazon&nbsp;&nbsp;WePC",
+      "event_type": "news",
+      "tickers": [
+        "5070",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "AWS Weekly Roundup: What’s Next with AWS 2026, Amazon Quick, OpenAI partnership, and more (May 4, 2026)",
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026",
+      "source": "AWS Blog",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-05T01:05:41+08:00",
+      "summary": "Last week, I took some time off in York, England, often described as the most haunted city in the country. I wandered through the ruins of abbeys that have stood for nearly a thousand years, walked along medieval walls, and spent an evening on a ghost tour hearing stories passed down through centuries. There’s something […]",
+      "event_type": "news",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Inside Amazon Web Services' plan to make networking disappear",
+      "link": "https://go.theregister.com/feed/www.theregister.com/2026/05/04/amazon_web_services_cupertino_networking_lab",
+      "source": "The Register",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T23:39:08+08:00",
+      "summary": "The Register gets a look inside AWS' networking lab in Cupertino FEATURE In an unassuming three-story office building in Cupertino, California, engineers from Amazon Web Services are busy trying to make networking inconspicuous.…",
+      "event_type": "news",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "title": "AI應用催化消費電子5倍速成長　亞馬遜全球開店賦能台企布局全球",
+      "link": "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000754110_8H80ZDAE201BOHL29YHL2",
+      "source": "DIGITIMES AI應用",
+      "category": "🔬 半導體與硬體",
+      "published": "2026-05-04T11:59:01+08:00",
+      "summary": "AI除對工作方式、效率評估等帶來轉變外，對消費產品的銷售也產生一定的影響。亞馬遜全球開店（Amazon Global Selling）表示，依日前發表的《2026年全球消費趨勢報告》顯示，消費電子產品的需求成長動能，已逐...",
+      "event_type": "news",
+      "tickers": [
+        "AMZN"
+      ]
+    },
+    {
+      "title": "*Last Evenings with Teresa*",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/05/last-evenings-with-teresa.html",
+      "source": "Marginal Revolution",
+      "category": "🧭 深度觀點與分析",
+      "published": "2026-05-04T07:39:06+08:00",
+      "summary": "The author is Juan Marsé, this novel is set in 1956, first published in Spain in 1966, and only now appearing in English. Here is the Amazon link. Marsé is one of the handful of great authors who has no real presence in the Anglo world, Bioy Casares would be another. You can think of [&#8230;] The post *Last Evenings with Teresa* appeared first on Marginal REVOLUTION.",
+      "event_type": "news",
+      "tickers": [
+        "1956",
+        "1966",
+        "AMZN"
+      ]
+    },
+    {
+      "title": "Dell Inspiron 15 5515 with AMD Ryzen 5 drops to $520.54 on Amazon - Technobezz",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNb01UdFRPNHBNQnhYSjg0b2dRN0JJd2V0WEp0QWI4U3BYOVJid25jNEJheUZsbjhaaGVvYURDWXV6Vl9Ndk9Jcmg4cFAtdTA3ZVpoNzhRREtoQTRpYWMtNDN3cVQ1VC1UOVNDRmdsLUg4Ykt1Rjh0d2FZbVZtUzRWY28xaC1FSEZpSkNaUE1PbE1vSkNZYmF1S09uUQ?oc=5",
+      "source": "AMD News",
+      "category": "🏢 科技廠動態",
+      "published": "2026-05-04T00:29:07+08:00",
+      "summary": "Dell Inspiron 15 5515 with AMD Ryzen 5 drops to $520.54 on Amazon&nbsp;&nbsp;Technobezz",
+      "event_type": "news",
+      "tickers": [
+        "5515",
+        "AMZN"
       ]
     }
   ],
@@ -1230,37 +1125,25 @@
   },
   "co_mentions": [
     {
-      "ticker": "GOOGL",
-      "count": 21
+      "ticker": "MSFT",
+      "count": 13
     },
     {
-      "ticker": "MSFT",
-      "count": 18
+      "ticker": "GOOGL",
+      "count": 9
     },
     {
       "ticker": "META",
-      "count": 15
-    },
-    {
-      "ticker": "NVDA",
       "count": 6
     },
     {
+      "ticker": "NVDA",
+      "count": 3
+    },
+    {
       "ticker": "AAPL",
-      "count": 4
-    },
-    {
-      "ticker": "TSM",
-      "count": 2
-    },
-    {
-      "ticker": "1954",
-      "count": 1
-    },
-    {
-      "ticker": "TSLA",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:16Z"
+  "generated_at": "2026-05-12T03:24:36Z"
 }

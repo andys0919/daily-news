@@ -205,8 +205,7 @@
       "event_type": "earnings",
       "tickers": [
         "2454",
-        "2330",
-        "GOOGL"
+        "2330"
       ],
       "companies": [
         "聯發科",
@@ -419,8 +418,7 @@
       "event_type": "earnings",
       "tickers": [
         "2454",
-        "2330",
-        "NVDA"
+        "2330"
       ],
       "companies": [
         "聯發科",
@@ -1406,16 +1404,12 @@
     },
     {
       "ticker": "GOOGL",
-      "count": 3
-    },
-    {
-      "ticker": "NVDA",
-      "count": 1
+      "count": 2
     },
     {
       "ticker": "META",
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:15Z"
+  "generated_at": "2026-05-12T03:24:36Z"
 }

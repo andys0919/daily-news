@@ -101,8 +101,6 @@
       "event_type": "policy",
       "tickers": [
         "2330",
-        "NVDA",
-        "AAPL",
         "2317"
       ],
       "companies": [
@@ -1287,15 +1285,7 @@
     {
       "ticker": "2330",
       "count": 5
-    },
-    {
-      "ticker": "NVDA",
-      "count": 1
-    },
-    {
-      "ticker": "AAPL",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:15Z"
+  "generated_at": "2026-05-12T03:24:36Z"
 }

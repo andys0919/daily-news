@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-12T02:19:15Z",
+  "generated_at": "2026-05-12T03:24:35Z",
   "stats": {
     "articles_total": 56703,
-    "articles_24h": 1073,
-    "articles_7d": 4267,
-    "articles_30d": 15000,
+    "articles_24h": 156,
+    "articles_7d": 560,
+    "articles_30d": 1924,
     "reports_total": 327,
     "insider_total": 0,
     "holdings_total": 0,
     "short_total": 0,
     "ir_total": 0,
-    "tickers_tracked": 527,
+    "tickers_tracked": 400,
     "guidance_30d": 20,
     "guidance_up_30d": 12,
     "guidance_down_30d": 6
@@ -2247,8 +2247,8 @@
       "published": "2026-05-12T04:14:34+08:00",
       "event_type": "filing",
       "tickers": [
-        "5500",
-        "1231"
+        "1231",
+        "5500"
       ],
       "summary": "Filed: 2026-05-11 AccNo: 0001493152-26-022229 Size: 17 MB"
     },
@@ -2342,66 +2342,6 @@
   "event_clusters": {
     "news": [
       {
-        "title": "romainsimon/paperasse",
-        "source": "GitHub Trending (Python)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.386533+08:00",
-        "event_type": "news",
-        "tickers": [
-          "1965"
-        ]
-      },
-      {
-        "title": "ylytdeng/wechat-decrypt",
-        "source": "GitHub Trending (Python)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.382716+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "bytedance/UI-TARS",
-        "source": "GitHub Trending (Python)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.382346+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "jwadow/kiro-gateway",
-        "source": "GitHub Trending (Python)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.382120+08:00",
-        "event_type": "news",
-        "tickers": [
-          "AMZN"
-        ]
-      },
-      {
-        "title": "millionco/react-doctor",
-        "source": "GitHub Trending (All)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.251160+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "tinyhumansai/openhuman",
-        "source": "GitHub Trending (All)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.250911+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "苗北千坪森態造鎮「與山前」 前庭後院拯救高壓生活-房地產 - 商周財富網",
-        "source": "商業周刊",
-        "category": "🧭 深度觀點與分析",
-        "published": "2026-05-12T10:13:27+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
         "title": "《六圖華爾街》導讀 ｜台積電危險了？英特爾搶單蘋果晶片，將正式拍板？協議一年前就開始？ - Yahoo新聞",
         "source": "TSMC News",
         "category": "🏢 科技廠動態",
@@ -2410,30 +2350,6 @@
         "tickers": [
           "2330"
         ]
-      },
-      {
-        "title": "Analysis-Stung by Iran war, Trump heads to China in need of wins",
-        "source": "Investing.com",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T10:12:29+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "海地總理：治安未達標準　8月無法舉行總統大選",
-        "source": "經濟日報 產經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T10:12:18+08:00",
-        "event_type": "news",
-        "tickers": []
-      },
-      {
-        "title": "月收1.1萬就可借信貸！LINE Bank大降門檻 兼職、接案與領現族都可",
-        "source": "自由時報 財經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T10:12:15+08:00",
-        "event_type": "news",
-        "tickers": []
       },
       {
         "title": "夏普新社長：不能單方面讓鴻海替夏普承擔重擔 - DIGITIMES",
@@ -2446,78 +2362,139 @@
         ]
       },
       {
-        "title": "韓股盤中急殺 Kospi 一度重挫5% 主因外資獲利了結賣壓出籠",
-        "source": "經濟日報 產經",
+        "title": "California county sues Meta over scam ads",
+        "source": "Investing.com",
         "category": "💰 財經與總經",
-        "published": "2026-05-12T10:08:11+08:00",
+        "published": "2026-05-12T10:06:27+08:00",
         "event_type": "news",
-        "tickers": []
+        "tickers": [
+          "META"
+        ]
       },
       {
-        "title": "GoPro啟動戰略評估！不排除出售公司或尋求合併 盤後股價飆升27％",
+        "title": "因應AI端至雲成長需求 聯發科技啟用銅鑼研發資料中心 - 電子工程專輯",
+        "source": "聯發科/MediaTek",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T10:01:09+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2454"
+        ]
+      },
+      {
+        "title": "2317 鴻海 - 蘋果硬體研發全面轉向智慧眼鏡與AI穿戴-股市爆料同學會 - CMoney",
+        "source": "鴻海/Foxconn",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:53:11+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2317"
+        ]
+      },
+      {
+        "title": "台積電在AI競賽新階段穩操勝券 - 华尔街日报中文网",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:38:38+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2330"
+        ]
+      },
+      {
+        "title": "台積電估值太誘人？科技四巨頭23兆熱錢湧入AI 分析師指這家風險最低 - 三立新聞網SETN.com",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:37:00+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2330"
+        ]
+      },
+      {
+        "title": "聯發科親自找上她！綠電女將關婷怡靠「龜毛」打開科技業大門【Yahoo財經大人物】 - Yahoo股市",
+        "source": "聯發科/MediaTek",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:33:52+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2454"
+        ]
+      },
+      {
+        "title": "英特爾傳獲蘋果輝達訂單，台積電續擴建-財經焦點情報站 - CMoney投資網誌",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:31:50+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2330"
+        ]
+      },
+      {
+        "title": "台積電上揚台股指數創歷史新高- 上市櫃 - 旺得富理財網",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:30:00+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2330"
+        ]
+      },
+      {
+        "title": "焦點股》華通：美國衛星概念股發威 帶量反攻",
         "source": "自由時報 財經",
         "category": "💰 財經與總經",
-        "published": "2026-05-12T10:07:50+08:00",
+        "published": "2026-05-12T09:28:03+08:00",
         "event_type": "news",
-        "tickers": []
+        "tickers": [
+          "2313"
+        ]
       },
       {
-        "title": "美伊戰爭油價飛漲川普擬停徵聯邦燃油稅緩解衝擊- 國際 - 工商時報",
-        "source": "工商時報 財經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T10:07:00+08:00",
+        "title": "台股早盤漲逾300點衝盤中新高 台積電漲15元 - Yahoo新聞",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:19:49+08:00",
         "event_type": "news",
-        "tickers": []
+        "tickers": [
+          "2330"
+        ]
+      },
+      {
+        "title": "台積電回神、聯發科開低走高 台股早盤漲逾200點創高 42K失而復得 - 聯合新聞網",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:19:20+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2330",
+          "2454"
+        ]
+      },
+      {
+        "title": "聯發科摔45元、台達電走跌！台積電開平走高 台股開高漲367點站上42000關卡 - Yahoo股市",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T09:18:05+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2454",
+          "2330"
+        ]
+      },
+      {
+        "title": "電力代操是什麼？獲利率不輸台積電星星電力總座關怡婷曝「像股票低買高賣」【Yahoo財經大人物】 - Yahoo股市",
+        "source": "TSMC News",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T08:58:26+08:00",
+        "event_type": "news",
+        "tickers": [
+          "2330"
+        ]
       }
     ],
     "earnings": [
-      {
-        "title": "wanshuiyin/Auto-claude-code-research-in-sleep",
-        "source": "GitHub Trending (Python)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.385755+08:00",
-        "event_type": "earnings",
-        "tickers": [
-          "META",
-          "GOOGL"
-        ]
-      },
-      {
-        "title": "rohitg00/agentmemory",
-        "source": "GitHub Trending (All)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.252663+08:00",
-        "event_type": "earnings",
-        "tickers": [
-          "3113",
-          "3114",
-          "3111"
-        ]
-      },
-      {
-        "title": "rasbt/LLMs-from-scratch",
-        "source": "GitHub Trending (All)",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:17:30.251663+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "flyExclusive, Inc. (FLYX) Q1 2026 Earnings Call Prepared Remarks Transcript",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T10:10:47+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Found a way to cool the DGX",
-        "source": "Reddit r/LocalLLaMA",
-        "category": "🛠️ AI 工具與實戰",
-        "published": "2026-05-12T10:05:50+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
       {
         "title": "焦點股》詩肯︰Q1賺贏去年一整年 股價跳空漲停",
         "source": "自由時報 財經",
@@ -2539,62 +2516,6 @@
         ]
       },
       {
-        "title": "Bathurst Resources Q3 FY26 slides: cash strong despite revenue dip",
-        "source": "Investing.com",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T09:48:55+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Lenz outlines sales force reaching 15,000 eye care professionals by quarter end as VIZZ adoption actions roll out",
-        "source": "Seeking Alpha",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T09:41:47+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "LENZ Therapeutics, Inc. (LENZ) Q1 2026 Earnings Call Transcript",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T09:40:42+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Trump puts Taiwan arms sales, Hong Kong jailed activist Lai on agenda ahead of meeting with Xi",
-        "source": "CNBC Top News",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T09:37:46+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Microvast Holdings, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T09:31:56+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "Ceva signals 2026 revenue growth at top end of 8%-12% range as it targets 40%-50% non-GAAP profit growth",
-        "source": "Seeking Alpha",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T09:31:28+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
-        "title": "CEVA, Inc. (CEVA) Q1 2026 Earnings Call Transcript",
-        "source": "Seeking Alpha Top Ideas",
-        "category": "📊 券商與分析師研究",
-        "published": "2026-05-12T09:30:44+08:00",
-        "event_type": "earnings",
-        "tickers": []
-      },
-      {
         "title": "中租前4月營收下滑 獲利72.8億元、EPS4.26元",
         "source": "自由時報 財經",
         "category": "💰 財經與總經",
@@ -2603,41 +2524,131 @@
         "tickers": [
           "5871"
         ]
+      },
+      {
+        "title": "Riding an AI rally, Robinhood preps second retail venture IPO",
+        "source": "TechCrunch Venture",
+        "category": "💰 財經與總經",
+        "published": "2026-05-12T08:09:01+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "3909"
+        ]
+      },
+      {
+        "title": "H.C. Wainwright is Bullish on Relay Therapeutics, Inc. (RLAY)",
+        "source": "Insider Monkey",
+        "category": "👁️ 內部人與機構持股",
+        "published": "2026-05-12T08:07:31+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "RLAY",
+          "BRK-B"
+        ]
+      },
+      {
+        "title": "Bristol-Myers Squibb Company (BMY) Myers Beats Quarterly Profit Estimates",
+        "source": "Insider Monkey",
+        "category": "👁️ 內部人與機構持股",
+        "published": "2026-05-12T08:02:30+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "BMY"
+        ]
+      },
+      {
+        "title": "Evercore ISI Keeps an “In Line” Rating on Guardant Health, Inc. (GH)",
+        "source": "Insider Monkey",
+        "category": "👁️ 內部人與機構持股",
+        "published": "2026-05-12T08:02:06+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "GH"
+        ]
+      },
+      {
+        "title": "【即時新聞】鴻海4月營收達8320億元，年成長29.74%，AI需求帶動雙增表現 - CMoney投資網誌",
+        "source": "鴻海/Foxconn",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T07:12:35+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "2317"
+        ]
+      },
+      {
+        "title": "【即時新聞】鴻海4月營收達8320億元年增29.74% 貢獻上市櫃最強表現 - CMoney投資網誌",
+        "source": "鴻海/Foxconn",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T05:20:06+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "2317"
+        ]
+      },
+      {
+        "title": "英特爾有望回歸蘋果晶片供應鏈　關鍵信任票遠勝短期營收",
+        "source": "DIGITIMES 半導體",
+        "category": "🔬 半導體與硬體",
+        "published": "2026-05-12T02:57:43+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "AAPL"
+        ]
+      },
+      {
+        "title": "Our new initiative to apply quantum science and AI to the life sciences",
+        "source": "Google Blog",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T01:30:00+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "GOOGL"
+        ]
+      },
+      {
+        "title": "上市櫃營收五大天王出列 鴻海穩居「營收王」台積電維持亞軍 | 市場焦點 | 證券 - 經濟日報",
+        "source": "鴻海/Foxconn",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-12T01:12:22+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "2317",
+          "2330"
+        ]
+      },
+      {
+        "title": "Wooptix Targets AI Packaging Bottleneck with Astronomy Tech",
+        "source": "EE Times",
+        "category": "🔬 半導體與硬體",
+        "published": "2026-05-11T16:57:35+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "1000"
+        ]
+      },
+      {
+        "title": "Conflict, CASEVAC, and the Golden Hour in the Age of Persistent Surveillance",
+        "source": "War on the Rocks",
+        "category": "🧭 深度觀點與分析",
+        "published": "2026-05-11T15:15:54+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "1975"
+        ]
+      },
+      {
+        "title": "Could Anthropic actually surpass Google in revenue by 2026? Secondary markets are valuing Anthropic at nearly $1.2 trillion, and Claude's ARR has reportedly hit a $30 billion run rate. The numbers are moving quickly, and enterprise AI demand is a major re - LinkedIn",
+        "source": "Anthropic News",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-11T13:30:13+08:00",
+        "event_type": "earnings",
+        "tickers": [
+          "GOOGL"
+        ]
       }
     ],
     "policy": [
-      {
-        "title": "川習會前再出手！美對涉伊朗石油運輸的香港企業 祭新制裁",
-        "source": "經濟日報 產經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T09:55:27+08:00",
-        "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "Trump says Iran ceasefire is on 'massive life support'",
-        "source": "BBC World",
-        "category": "🌏 地緣政治與科技政策",
-        "published": "2026-05-12T08:59:12+08:00",
-        "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "華爾街日報：阿聯祕密空襲伊朗　由受襲方轉交戰方",
-        "source": "經濟日報 產經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:45:31+08:00",
-        "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "Asia markets rise as investors brush off Trump’s ceasefire warning",
-        "source": "CNBC Top News",
-        "category": "💰 財經與總經",
-        "published": "2026-05-12T08:05:46+08:00",
-        "event_type": "policy",
-        "tickers": []
-      },
       {
         "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
         "source": "DIGITIMES 半導體",
@@ -2646,92 +2657,90 @@
         "event_type": "policy",
         "tickers": [
           "2330",
-          "NVDA",
-          "AAPL",
           "2317"
         ]
       },
       {
-        "title": "助伊朗石油銷運中國　3人9企業遭美制裁",
-        "source": "中央社 國際",
-        "category": "🌏 地緣政治與科技政策",
-        "published": "2026-05-12T05:05:14+08:00",
+        "title": "川普關稅戰又輸了！美國貿易法院裁定「10％全球關稅無效」",
+        "source": "自由時報 財經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-08T08:25:20+08:00",
         "event_type": "policy",
-        "tickers": []
+        "tickers": [
+          "1974"
+        ]
       },
       {
-        "title": "EU, UK sanction Russians over deportations of Ukrainian children",
-        "source": "Al Jazeera English",
-        "category": "🌏 地緣政治與科技政策",
-        "published": "2026-05-12T04:56:26+08:00",
+        "title": "每日椽真：台廠赴美投資超預期 | 中系半導體供應鏈「螞蟻搬家」 | 三星30年績效制度釀罷工危機",
+        "source": "DIGITIMES 半導體",
+        "category": "🔬 半導體與硬體",
+        "published": "2026-05-08T05:34:23+08:00",
         "event_type": "policy",
-        "tickers": []
+        "tickers": [
+          "2330"
+        ]
       },
       {
-        "title": "EU sanctions violent Israeli settlers after months of deadlock",
-        "source": "Al Jazeera English",
-        "category": "🌏 地緣政治與科技政策",
-        "published": "2026-05-12T04:31:54+08:00",
+        "title": "選擇美國投資高峰會　美商務部長舉台積電設廠為例",
+        "source": "中央社 財經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-05T07:11:43+08:00",
         "event_type": "policy",
-        "tickers": []
+        "tickers": [
+          "2330"
+        ]
       },
       {
-        "title": "Another Crack in the Tariff Wall - CSIS | Center for Strategic and International Studies",
-        "source": "CSIS 分析",
-        "category": "🧭 深度觀點與分析",
-        "published": "2026-05-12T03:41:09+08:00",
-        "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "【漫圖秒懂】受中美雙重夾擊　黃仁勳：放棄中國市場缺乏戰略意義",
+        "title": "黃仁勳示警放棄中國市場缺乏戰略意義　NVIDIA投資強化美國供應鏈",
         "source": "DIGITIMES AI應用",
         "category": "🔬 半導體與硬體",
-        "published": "2026-05-12T02:12:37+08:00",
+        "published": "2026-05-04T11:34:40+08:00",
         "event_type": "policy",
         "tickers": [
           "NVDA"
         ]
       },
       {
-        "title": "Iran says it will 'never bow' as Trump rejects peace counteroffer, prolonging Middle East conflict",
+        "title": "輝達中國市占率降至零！黃仁勳：出口管制適得其反",
+        "source": "自由時報 財經",
+        "category": "💰 財經與總經",
+        "published": "2026-05-04T07:07:17+08:00",
+        "event_type": "policy",
+        "tickers": [
+          "NVDA"
+        ]
+      },
+      {
+        "title": "Jensen says Nvidia now has 'zero percent' market share in China — says US export policy 'has already largely backfired'",
+        "source": "Tom's Hardware",
+        "category": "🔬 半導體與硬體",
+        "published": "2026-05-03T20:08:47+08:00",
+        "event_type": "policy",
+        "tickers": [
+          "NVDA"
+        ]
+      },
+      {
+        "title": "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
         "source": "CNBC Economy",
         "category": "💰 財經與總經",
-        "published": "2026-05-11T21:25:34+08:00",
+        "published": "2026-05-01T03:25:06+08:00",
         "event_type": "policy",
-        "tickers": []
+        "tickers": [
+          "1969",
+          "1948"
+        ]
       },
       {
-        "title": "Trump heads to Beijing with tariff uncertainty, AI communication, and the Strait of Hormuz in focus - Yahoo Finance",
-        "source": "中美科技戰",
-        "category": "🌏 地緣政治與科技政策",
-        "published": "2026-05-11T20:59:43+08:00",
+        "title": "每日椽真：蘋果換帥震撼供應鏈 | Srouji如何看待台積電、英特爾與三星 | 台廠踴躍發放股利並調高薪資",
+        "source": "DIGITIMES 半導體",
+        "category": "🔬 半導體與硬體",
+        "published": "2026-04-22T05:40:49+08:00",
         "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "Here’s how China plans to sanction-proof its C919 passenger jet",
-        "source": "南華早報 科技",
-        "category": "🌏 地緣政治與科技政策",
-        "published": "2026-05-11T18:00:05+08:00",
-        "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "Tyrants are losing wars",
-        "source": "Noahpinion",
-        "category": "🧭 深度觀點與分析",
-        "published": "2026-05-11T16:36:24+08:00",
-        "event_type": "policy",
-        "tickers": []
-      },
-      {
-        "title": "Nintendo hikes Switch 2 prices and expects console sales to decline as memory crunch bites",
-        "source": "CNBC Business",
-        "category": "💰 財經與總經",
-        "published": "2026-05-11T13:48:02+08:00",
-        "event_type": "policy",
-        "tickers": []
+        "tickers": [
+          "2330",
+          "AAPL"
+        ]
       }
     ],
     "filing": [
@@ -2802,30 +2811,6 @@
         ]
       },
       {
-        "title": "8-K - SHF Holdings, Inc. (0001854963) (Filer)",
-        "source": "SEC 8-K Filings (Atom)",
-        "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T05:29:17+08:00",
-        "event_type": "filing",
-        "tickers": []
-      },
-      {
-        "title": "8-K - UNITEDHEALTH GROUP INC (0000731766) (Filer)",
-        "source": "SEC 8-K Filings (Atom)",
-        "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T05:28:55+08:00",
-        "event_type": "filing",
-        "tickers": []
-      },
-      {
-        "title": "8-K - Genvor Inc (0001792941) (Filer)",
-        "source": "SEC 8-K Filings (Atom)",
-        "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T05:28:52+08:00",
-        "event_type": "filing",
-        "tickers": []
-      },
-      {
         "title": "10-Q - SOUNDHOUND AI, INC. (0001840856) (Filer)",
         "source": "SEC 10-Q Filings (Atom)",
         "category": "🏛️ 法說與 IR 材料",
@@ -2848,36 +2833,48 @@
         ]
       },
       {
-        "title": "8-K - ACTUATE THERAPEUTICS, INC. (0001652935) (Filer)",
-        "source": "SEC 8-K Filings (Atom)",
+        "title": "10-K - ELECTRONIC ARTS INC. (0000712515) (Filer)",
+        "source": "SEC 10-K Filings (Atom)",
         "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T05:27:24+08:00",
+        "published": "2026-05-12T04:46:45+08:00",
         "event_type": "filing",
-        "tickers": []
+        "tickers": [
+          "0331",
+          "7372"
+        ]
       },
       {
-        "title": "10-Q - Exodus Movement, Inc. (0001821534) (Filer)",
-        "source": "SEC 10-Q Filings (Atom)",
+        "title": "10-K - IIOT-OXYS, Inc. (0001290658) (Filer)",
+        "source": "SEC 10-K Filings (Atom)",
         "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T05:26:43+08:00",
+        "published": "2026-05-12T04:21:43+08:00",
         "event_type": "filing",
-        "tickers": []
+        "tickers": [
+          "1231",
+          "7372"
+        ]
       },
       {
-        "title": "10-Q - Blue Acquisition Corp/Cayman (0002059654) (Filer)",
-        "source": "SEC 10-Q Filings (Atom)",
+        "title": "10-K/A - NEXTNRG, INC. (0001817004) (Filer)",
+        "source": "SEC 10-K Filings (Atom)",
         "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T05:26:17+08:00",
+        "published": "2026-05-12T04:14:34+08:00",
         "event_type": "filing",
-        "tickers": []
+        "tickers": [
+          "1231",
+          "5500"
+        ]
       },
       {
-        "title": "8-K - International Seaways, Inc. (0001679049) (Filer)",
-        "source": "SEC 8-K Filings (Atom)",
+        "title": "10-K/A - Green Brick Partners, Inc. (0001373670) (Filer)",
+        "source": "SEC 10-K Filings (Atom)",
         "category": "🏛️ 法說與 IR 材料",
-        "published": "2026-05-12T05:25:04+08:00",
+        "published": "2026-05-12T04:12:33+08:00",
         "event_type": "filing",
-        "tickers": []
+        "tickers": [
+          "1231",
+          "1531"
+        ]
       }
     ],
     "capex": [
@@ -2892,22 +2889,6 @@
         ]
       },
       {
-        "title": "先進封測「大擴產時代」來臨　業界上演廠房、設備搶購潮",
-        "source": "DIGITIMES 半導體",
-        "category": "🔬 半導體與硬體",
-        "published": "2026-05-11T03:00:00+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
-        "title": "Adam Khoo: AI Capex stocks may face 50 percent drawdown soon - Traders Union",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-10T13:00:09+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
         "title": "【即時新聞】台積電規劃2026年資本支出上調至520-560億美元，強化AI供應鏈樞紐地位 - CMoney投資網誌",
         "source": "TSMC News",
         "category": "🏢 科技廠動態",
@@ -2916,64 +2897,6 @@
         "tickers": [
           "2330"
         ]
-      },
-      {
-        "title": "I Traced The AI Capex, And Found 6 Profit Pools (One Is An Asymmetric Bet) (SP500) - Seeking Alpha",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-09T20:30:00+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
-        "title": "慧榮：AI儲存需求續旺　NAND Flash缺到2028年",
-        "source": "中央社 財經",
-        "category": "💰 財經與總經",
-        "published": "2026-05-09T18:11:57+08:00",
-        "event_type": "capex",
-        "tickers": [
-          "AAPL"
-        ]
-      },
-      {
-        "title": "North American CSPs raise 2026 AI CapEx targets amid surging demand - Communications Today",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-09T14:57:31+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
-        "title": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says - MSN",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-09T01:34:53+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
-        "title": "AI Capex Squeeze: MSFT, AMZN, GOOGL Cash Burn Mounts - NAI500",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-09T00:52:45+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
-        "title": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says - Business Insider",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-09T00:51:57+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
-        "title": "AI capex is coming at the expense of a crucial pillar for stock gains, Goldman says - Business Insider Africa",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-09T00:51:39+08:00",
-        "event_type": "capex",
-        "tickers": []
       },
       {
         "title": "Amazon Stock's Real 2026 Test: Can Logistics Pay for the AI Capex Boom? - techi.com",
@@ -2996,18 +2919,113 @@
         ]
       },
       {
-        "title": "Why $700 billion in AI capex cannot rescue tech stocks from the next leg - MSN",
-        "source": "AI 產業化與投資信號",
-        "category": "🧠 AI 研究與突破",
-        "published": "2026-05-08T19:42:02+08:00",
-        "event_type": "capex",
-        "tickers": []
-      },
-      {
         "title": "Why Meta (META) Is Down 8.4% After Massive AI Capex Hike And $25 Billion Bond Sale - simplywall.st",
         "source": "AI 產業化與投資信號",
         "category": "🧠 AI 研究與突破",
         "published": "2026-05-08T04:01:31+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "META"
+        ]
+      },
+      {
+        "title": "Celestica: A Bet On AI CapEx Growth (NYSE:CLS) - Seeking Alpha",
+        "source": "AI 產業化與投資信號",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-06T16:51:18+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "CLS"
+        ]
+      },
+      {
+        "title": "【即時新聞】鴻海(2317)今日AI伺服器供應鏈受CSP資本支出上修，外資4月回補股價自低檔彈升 - CMoney投資網誌",
+        "source": "鴻海/Foxconn",
+        "category": "🏢 科技廠動態",
+        "published": "2026-05-06T06:21:15+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "2317"
+        ]
+      },
+      {
+        "title": "Netflix’s $25 Billion Buyback Looks Big. Microsoft’s $190 Billion AI Capex Bill Looks Bigger - TechStock²",
+        "source": "AI 產業化與投資信號",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-05T23:11:00+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "MSFT"
+        ]
+      },
+      {
+        "title": "Big Tech AI Capex Frenzy: Meta, Alphabet Lead 2026 Spend - Gotrade",
+        "source": "AI 產業化與投資信號",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-05T17:35:31+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "META",
+          "GOOGL"
+        ]
+      },
+      {
+        "title": "Meta AI capex (up 7%) is a bad surprise -- could this be the next metaverse? - MSN",
+        "source": "AI 產業化與投資信號",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-04T21:23:00+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "META"
+        ]
+      },
+      {
+        "title": "Meta AI Capex (Up 7%) Is a Bad Surprise -- Could This Be the Next Metaverse? - Yahoo Finance",
+        "source": "AI 產業化與投資信號",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-04T20:43:00+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "META"
+        ]
+      },
+      {
+        "title": "Meta裁員以縮減資本支出　Mark Zuckerberg稱不排除再裁員",
+        "source": "DIGITIMES AI應用",
+        "category": "🔬 半導體與硬體",
+        "published": "2026-05-04T11:58:35+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "META"
+        ]
+      },
+      {
+        "title": "Amazon vs. Microsoft and the Great AI Capex Divergence - 24/7 Wall St.",
+        "source": "AI 產業化與投資信號",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-02T02:48:58+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "AMZN",
+          "MSFT"
+        ]
+      },
+      {
+        "title": "Meta sinks, Alphabet jumps as AI capex gap widens - MSN",
+        "source": "AI 產業化與投資信號",
+        "category": "🧠 AI 研究與突破",
+        "published": "2026-05-01T18:49:34+08:00",
+        "event_type": "capex",
+        "tickers": [
+          "META",
+          "GOOGL"
+        ]
+      },
+      {
+        "title": "Meta CEO Zuckerberg blames layoffs on capital spending, won't rule out more job cuts - Reuters",
+        "source": "Reuters (Google News)",
+        "category": "🌏 地緣政治與科技政策",
+        "published": "2026-05-01T05:33:55+08:00",
         "event_type": "capex",
         "tickers": [
           "META"
@@ -3721,27 +3739,12 @@
   "top_tickers_7d": [
     {
       "ticker": "2330",
-      "mentions": 180,
+      "mentions": 175,
       "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "GOOGL",
-      "mentions": 135,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "NVDA",
-      "mentions": 123,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "2605",
-      "mentions": 104,
-      "last_seen": "2026-05-11"
     },
     {
       "ticker": "2454",
-      "mentions": 78,
+      "mentions": 75,
       "last_seen": "2026-05-12"
     },
     {
@@ -3750,48 +3753,43 @@
       "last_seen": "2026-05-12"
     },
     {
+      "ticker": "NVDA",
+      "mentions": 49,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "GOOGL",
+      "mentions": 42,
+      "last_seen": "2026-05-12"
+    },
+    {
       "ticker": "AAPL",
-      "mentions": 69,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "META",
-      "mentions": 67,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "MSFT",
-      "mentions": 55,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "AMZN",
-      "mentions": 46,
+      "mentions": 26,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "TSLA",
-      "mentions": 35,
+      "mentions": 20,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "1231",
-      "mentions": 24,
+      "mentions": 16,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "TSM",
-      "mentions": 22,
+      "ticker": "META",
+      "mentions": 14,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "BLSH",
-      "mentions": 17,
+      "ticker": "MSFT",
+      "mentions": 13,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "JPM",
-      "mentions": 9,
+      "ticker": "AMZN",
+      "mentions": 12,
       "last_seen": "2026-05-12"
     },
     {
@@ -3800,68 +3798,13 @@
       "last_seen": "2026-05-10"
     },
     {
-      "ticker": "5070",
-      "mentions": 7,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1000",
-      "mentions": 6,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "9070",
-      "mentions": 5,
-      "last_seen": "2026-05-12"
-    },
-    {
       "ticker": "6488",
       "mentions": 5,
       "last_seen": "2026-05-11"
     },
     {
-      "ticker": "1974",
-      "mentions": 5,
-      "last_seen": "2026-05-09"
-    },
-    {
-      "ticker": "7997",
-      "mentions": 4,
-      "last_seen": "2026-05-12"
-    },
-    {
       "ticker": "BRK-B",
       "mentions": 4,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "9100",
-      "mentions": 4,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "5060",
-      "mentions": 4,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "5080",
-      "mentions": 4,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "8080",
-      "mentions": 4,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "3089",
-      "mentions": 3,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "5090",
-      "mentions": 3,
       "last_seen": "2026-05-12"
     },
     {
@@ -3870,32 +3813,7 @@
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "2048",
-      "mentions": 3,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "1975",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1979",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
       "ticker": "2881",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1980",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "4060",
       "mentions": 3,
       "last_seen": "2026-05-11"
     },
@@ -3905,90 +3823,170 @@
       "last_seen": "2026-05-10"
     },
     {
-      "ticker": "1024",
-      "mentions": 3,
+      "ticker": "1000",
+      "mentions": 2,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1975",
+      "mentions": 2,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "0050",
+      "mentions": 2,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2700",
+      "mentions": 2,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1962",
+      "mentions": 2,
       "last_seen": "2026-05-10"
     },
     {
-      "ticker": "3090",
-      "mentions": 3,
-      "last_seen": "2026-05-10"
+      "ticker": "1974",
+      "mentions": 2,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "1933",
+      "mentions": 2,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "1934",
+      "mentions": 2,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "1930",
+      "mentions": 2,
+      "last_seen": "2026-05-07"
     },
     {
       "ticker": "2040",
-      "mentions": 3,
-      "last_seen": "2026-05-09"
+      "mentions": 2,
+      "last_seen": "2026-05-07"
+    },
+    {
+      "ticker": "AMD",
+      "mentions": 2,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "6195",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "1802",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "5871",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "2313",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "6472",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "3909",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "RLAY",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "BIIB",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "REGN",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "AZN",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "RGEN",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "BMY",
+      "mentions": 1,
+      "last_seen": "2026-05-12"
     }
   ],
   "top_tickers_30d": [
     {
       "ticker": "2330",
-      "mentions": 580,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "GOOGL",
-      "mentions": 576,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "NVDA",
-      "mentions": 383,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "META",
-      "mentions": 343,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "2604",
-      "mentions": 267,
-      "last_seen": "2026-05-06"
-    },
-    {
-      "ticker": "AAPL",
-      "mentions": 237,
+      "mentions": 572,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "2454",
-      "mentions": 231,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "MSFT",
-      "mentions": 226,
+      "mentions": 230,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "2317",
-      "mentions": 225,
+      "mentions": 224,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "AMZN",
-      "mentions": 206,
+      "ticker": "GOOGL",
+      "mentions": 210,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "NVDA",
+      "mentions": 143,
       "last_seen": "2026-05-12"
     },
     {
       "ticker": "TSLA",
-      "mentions": 156,
+      "mentions": 109,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "2605",
-      "mentions": 127,
-      "last_seen": "2026-05-11"
+      "ticker": "META",
+      "mentions": 103,
+      "last_seen": "2026-05-12"
     },
     {
-      "ticker": "TSM",
+      "ticker": "AAPL",
       "mentions": 97,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "BLSH",
-      "mentions": 52,
+      "ticker": "MSFT",
+      "mentions": 75,
+      "last_seen": "2026-05-12"
+    },
+    {
+      "ticker": "AMZN",
+      "mentions": 55,
       "last_seen": "2026-05-12"
     },
     {
@@ -3997,49 +3995,14 @@
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "JPM",
-      "mentions": 27,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "5070",
-      "mentions": 27,
-      "last_seen": "2026-05-11"
-    },
-    {
       "ticker": "1231",
-      "mentions": 24,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "5090",
-      "mentions": 20,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "6000",
-      "mentions": 17,
-      "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "1000",
       "mentions": 16,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "5060",
-      "mentions": 15,
-      "last_seen": "2026-05-11"
-    },
-    {
       "ticker": "2035",
-      "mentions": 15,
+      "mentions": 14,
       "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "1979",
-      "mentions": 10,
-      "last_seen": "2026-05-11"
     },
     {
       "ticker": "2881",
@@ -4047,79 +4010,134 @@
       "last_seen": "2026-05-11"
     },
     {
-      "ticker": "5080",
-      "mentions": 9,
+      "ticker": "1000",
+      "mentions": 6,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "6488",
+      "mentions": 5,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1979",
+      "mentions": 5,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1989",
+      "mentions": 5,
       "last_seen": "2026-05-10"
     },
     {
-      "ticker": "3090",
-      "mentions": 9,
-      "last_seen": "2026-05-10"
+      "ticker": "6000",
+      "mentions": 5,
+      "last_seen": "2026-05-06"
     },
     {
-      "ticker": "9070",
-      "mentions": 8,
-      "last_seen": "2026-05-12"
-    },
-    {
-      "ticker": "1980",
-      "mentions": 8,
+      "ticker": "0050",
+      "mentions": 4,
       "last_seen": "2026-05-11"
     },
     {
       "ticker": "1973",
-      "mentions": 7,
+      "mentions": 4,
       "last_seen": "2026-05-11"
-    },
-    {
-      "ticker": "8080",
-      "mentions": 7,
-      "last_seen": "2026-05-10"
-    },
-    {
-      "ticker": "4096",
-      "mentions": 7,
-      "last_seen": "2026-05-09"
     },
     {
       "ticker": "1930",
-      "mentions": 7,
+      "mentions": 4,
       "last_seen": "2026-05-07"
     },
     {
-      "ticker": "3000",
-      "mentions": 7,
-      "last_seen": "2026-05-04"
+      "ticker": "1983",
+      "mentions": 4,
+      "last_seen": "2026-05-06"
     },
     {
-      "ticker": "2048",
-      "mentions": 6,
+      "ticker": "AMD",
+      "mentions": 4,
+      "last_seen": "2026-05-06"
+    },
+    {
+      "ticker": "1988",
+      "mentions": 4,
+      "last_seen": "2026-05-05"
+    },
+    {
+      "ticker": "1986",
+      "mentions": 4,
+      "last_seen": "2026-05-01"
+    },
+    {
+      "ticker": "1984",
+      "mentions": 4,
+      "last_seen": "2026-05-01"
+    },
+    {
+      "ticker": "1987",
+      "mentions": 4,
+      "last_seen": "2026-04-25"
+    },
+    {
+      "ticker": "7372",
+      "mentions": 3,
       "last_seen": "2026-05-12"
     },
     {
-      "ticker": "1975",
-      "mentions": 6,
+      "ticker": "1964",
+      "mentions": 3,
       "last_seen": "2026-05-11"
     },
     {
-      "ticker": "1500",
-      "mentions": 6,
+      "ticker": "HBM",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1975",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2700",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "1961",
+      "mentions": 3,
+      "last_seen": "2026-05-11"
+    },
+    {
+      "ticker": "2408",
+      "mentions": 3,
       "last_seen": "2026-05-10"
     },
     {
-      "ticker": "1989",
-      "mentions": 6,
+      "ticker": "1962",
+      "mentions": 3,
       "last_seen": "2026-05-10"
     },
     {
       "ticker": "1974",
-      "mentions": 6,
-      "last_seen": "2026-05-09"
+      "mentions": 3,
+      "last_seen": "2026-05-08"
     },
     {
-      "ticker": "1983",
-      "mentions": 6,
-      "last_seen": "2026-05-06"
+      "ticker": "1934",
+      "mentions": 3,
+      "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "1978",
+      "mentions": 3,
+      "last_seen": "2026-05-07"
+    },
+    {
+      "ticker": "2040",
+      "mentions": 3,
+      "last_seen": "2026-05-07"
     }
   ],
   "velocity": {
@@ -4140,453 +4158,398 @@
       "2026-05-12"
     ],
     "totals": [
-      615,
-      708,
-      659,
-      497,
-      396,
-      615,
-      580,
-      599,
-      584,
-      609,
-      522,
-      335,
-      489,
-      605
+      76,
+      97,
+      86,
+      78,
+      52,
+      88,
+      63,
+      77,
+      71,
+      76,
+      72,
+      46,
+      56,
+      108
     ],
     "by_category": {
       "2026-04-29": {
-        "💰 財經與總經": 186,
-        "🌏 地緣政治與科技政策": 92,
-        "🔬 半導體與硬體": 89,
-        "🧠 AI 研究與突破": 89,
-        "🏢 科技廠動態": 67,
-        "🛠️ AI 工具與實戰": 52,
-        "🧭 深度觀點與分析": 34,
-        "🔥 X 社群熱議": 6
+        "🏢 科技廠動態": 41,
+        "💰 財經與總經": 16,
+        "🔬 半導體與硬體": 13,
+        "🧭 深度觀點與分析": 5,
+        "🧠 AI 研究與突破": 1
       },
       "2026-04-30": {
-        "💰 財經與總經": 226,
-        "🔬 半導體與硬體": 113,
-        "🌏 地緣政治與科技政策": 103,
-        "🧠 AI 研究與突破": 96,
-        "🏢 科技廠動態": 80,
-        "🧭 深度觀點與分析": 44,
-        "🛠️ AI 工具與實戰": 38,
-        "🔥 X 社群熱議": 8
+        "🏢 科技廠動態": 41,
+        "💰 財經與總經": 30,
+        "🔬 半導體與硬體": 14,
+        "🧠 AI 研究與突破": 9,
+        "🧭 深度觀點與分析": 2,
+        "🌏 地緣政治與科技政策": 1
       },
       "2026-05-01": {
-        "💰 財經與總經": 194,
-        "🌏 地緣政治與科技政策": 107,
-        "🧠 AI 研究與突破": 105,
-        "🏢 科技廠動態": 74,
-        "🔬 半導體與硬體": 73,
-        "🛠️ AI 工具與實戰": 54,
-        "🧭 深度觀點與分析": 46,
-        "🔥 X 社群熱議": 6
+        "🏢 科技廠動態": 42,
+        "💰 財經與總經": 19,
+        "🔬 半導體與硬體": 12,
+        "🧭 深度觀點與分析": 5,
+        "🧠 AI 研究與突破": 5,
+        "🛠️ AI 工具與實戰": 2,
+        "🌏 地緣政治與科技政策": 1
       },
       "2026-05-02": {
-        "💰 財經與總經": 199,
-        "🌏 地緣政治與科技政策": 78,
-        "🔬 半導體與硬體": 62,
-        "🏢 科技廠動態": 59,
-        "🧠 AI 研究與突破": 42,
-        "🛠️ AI 工具與實戰": 36,
-        "🧭 深度觀點與分析": 18,
-        "🔥 X 社群熱議": 3
+        "🏢 科技廠動態": 44,
+        "💰 財經與總經": 21,
+        "🔬 半導體與硬體": 9,
+        "🧠 AI 研究與突破": 2,
+        "🛠️ AI 工具與實戰": 1,
+        "🌏 地緣政治與科技政策": 1
       },
       "2026-05-03": {
-        "💰 財經與總經": 137,
-        "🌏 地緣政治與科技政策": 88,
-        "🔬 半導體與硬體": 49,
-        "🛠️ AI 工具與實戰": 40,
-        "🏢 科技廠動態": 40,
-        "🧭 深度觀點與分析": 19,
-        "🧠 AI 研究與突破": 16,
-        "🔥 X 社群熱議": 7
+        "🏢 科技廠動態": 30,
+        "💰 財經與總經": 14,
+        "🔬 半導體與硬體": 7,
+        "🔥 X 社群熱議": 1
       },
       "2026-05-04": {
-        "💰 財經與總經": 171,
-        "🔥 X 社群熱議": 106,
-        "🌏 地緣政治與科技政策": 88,
-        "🏢 科技廠動態": 63,
-        "🧠 AI 研究與突破": 59,
-        "🔬 半導體與硬體": 59,
-        "🛠️ AI 工具與實戰": 39,
-        "🧭 深度觀點與分析": 30
+        "🏢 科技廠動態": 44,
+        "🔬 半導體與硬體": 13,
+        "💰 財經與總經": 13,
+        "🔥 X 社群熱議": 11,
+        "🧭 深度觀點與分析": 4,
+        "🧠 AI 研究與突破": 3
       },
       "2026-05-05": {
-        "💰 財經與總經": 175,
-        "🔬 半導體與硬體": 85,
-        "🌏 地緣政治與科技政策": 80,
-        "🧠 AI 研究與突破": 71,
-        "🏢 科技廠動態": 63,
-        "🛠️ AI 工具與實戰": 59,
-        "🧭 深度觀點與分析": 43,
-        "🔥 X 社群熱議": 4
+        "🏢 科技廠動態": 30,
+        "🔬 半導體與硬體": 17,
+        "💰 財經與總經": 9,
+        "🧠 AI 研究與突破": 3,
+        "🧭 深度觀點與分析": 3,
+        "🌏 地緣政治與科技政策": 1
       },
       "2026-05-06": {
-        "💰 財經與總經": 172,
-        "🔬 半導體與硬體": 108,
-        "🏢 科技廠動態": 80,
-        "🧠 AI 研究與突破": 78,
-        "🌏 地緣政治與科技政策": 73,
-        "🛠️ AI 工具與實戰": 51,
-        "🧭 深度觀點與分析": 31,
-        "🔥 X 社群熱議": 6
+        "🏢 科技廠動態": 50,
+        "🔬 半導體與硬體": 13,
+        "💰 財經與總經": 9,
+        "🧭 深度觀點與分析": 2,
+        "🧠 AI 研究與突破": 2,
+        "🔥 X 社群熱議": 1
       },
       "2026-05-07": {
-        "💰 財經與總經": 160,
-        "🔬 半導體與硬體": 106,
-        "🧠 AI 研究與突破": 94,
-        "🌏 地緣政治與科技政策": 71,
-        "🏢 科技廠動態": 62,
-        "🛠️ AI 工具與實戰": 44,
-        "🧭 深度觀點與分析": 41,
-        "🔥 X 社群熱議": 6
+        "🏢 科技廠動態": 40,
+        "🔬 半導體與硬體": 15,
+        "💰 財經與總經": 12,
+        "🛠️ AI 工具與實戰": 2,
+        "🧭 深度觀點與分析": 1,
+        "🧠 AI 研究與突破": 1
       },
       "2026-05-08": {
-        "💰 財經與總經": 164,
-        "🔬 半導體與硬體": 100,
-        "🏢 科技廠動態": 85,
-        "🧠 AI 研究與突破": 81,
-        "🌏 地緣政治與科技政策": 76,
-        "🛠️ AI 工具與實戰": 50,
-        "🧭 深度觀點與分析": 44,
-        "🔥 X 社群熱議": 9
+        "🏢 科技廠動態": 45,
+        "💰 財經與總經": 17,
+        "🔬 半導體與硬體": 10,
+        "🧠 AI 研究與突破": 2,
+        "🧭 深度觀點與分析": 2
       },
       "2026-05-09": {
-        "💰 財經與總經": 166,
-        "🏢 科技廠動態": 82,
-        "🌏 地緣政治與科技政策": 75,
-        "🧠 AI 研究與突破": 61,
-        "🔬 半導體與硬體": 57,
-        "🛠️ AI 工具與實戰": 47,
-        "🧭 深度觀點與分析": 28,
-        "🔥 X 社群熱議": 6
+        "🏢 科技廠動態": 45,
+        "💰 財經與總經": 18,
+        "🔬 半導體與硬體": 6,
+        "🧠 AI 研究與突破": 2,
+        "🛠️ AI 工具與實戰": 1
       },
       "2026-05-10": {
-        "💰 財經與總經": 113,
-        "🌏 地緣政治與科技政策": 65,
-        "🏢 科技廠動態": 52,
-        "🔬 半導體與硬體": 33,
-        "🛠️ AI 工具與實戰": 31,
-        "🧠 AI 研究與突破": 17,
-        "🧭 深度觀點與分析": 15,
-        "📊 券商與分析師研究": 3
+        "🏢 科技廠動態": 34,
+        "💰 財經與總經": 8,
+        "🔬 半導體與硬體": 4
       },
       "2026-05-11": {
-        "💰 財經與總經": 126,
-        "🔬 半導體與硬體": 82,
-        "🌏 地緣政治與科技政策": 67,
-        "🧠 AI 研究與突破": 66,
-        "🏢 科技廠動態": 40,
-        "🛠️ AI 工具與實戰": 35,
-        "🧭 深度觀點與分析": 27,
-        "📉 融券與資金流": 14
+        "🏢 科技廠動態": 24,
+        "🔬 半導體與硬體": 12,
+        "👁️ 內部人與機構持股": 8,
+        "💰 財經與總經": 3,
+        "📉 融券與資金流": 3,
+        "🧠 AI 研究與突破": 2,
+        "🧭 深度觀點與分析": 2,
+        "🏛️ 法說與 IR 材料": 1
       },
       "2026-05-12": {
-        "💰 財經與總經": 159,
-        "🏢 科技廠動態": 76,
-        "👁️ 內部人與機構持股": 60,
-        "🏛️ 法說與 IR 材料": 58,
-        "🔬 半導體與硬體": 55,
-        "🌏 地緣政治與科技政策": 48,
-        "🛠️ AI 工具與實戰": 44,
-        "🧭 深度觀點與分析": 33
+        "🏢 科技廠動態": 52,
+        "🏛️ 法說與 IR 材料": 17,
+        "💰 財經與總經": 16,
+        "👁️ 內部人與機構持股": 12,
+        "🔬 半導體與硬體": 10,
+        "📉 融券與資金流": 1
       }
     }
   },
   "categories": [
     {
-      "category": "💰 財經與總經",
-      "count": 4599,
-      "pct": 30.7
+      "category": "🏢 科技廠動態",
+      "count": 1055,
+      "pct": 54.8
     },
     {
-      "category": "🌏 地緣政治與科技政策",
-      "count": 2321,
-      "pct": 15.5
+      "category": "💰 財經與總經",
+      "count": 387,
+      "pct": 20.1
     },
     {
       "category": "🔬 半導體與硬體",
-      "count": 2075,
-      "pct": 13.8
-    },
-    {
-      "category": "🏢 科技廠動態",
-      "count": 1813,
-      "pct": 12.1
-    },
-    {
-      "category": "🧠 AI 研究與突破",
-      "count": 1702,
-      "pct": 11.3
-    },
-    {
-      "category": "🛠️ AI 工具與實戰",
-      "count": 1136,
-      "pct": 7.6
+      "count": 304,
+      "pct": 15.8
     },
     {
       "category": "🧭 深度觀點與分析",
-      "count": 869,
-      "pct": 5.8
+      "count": 52,
+      "pct": 2.7
     },
     {
-      "category": "🔥 X 社群熱議",
-      "count": 278,
-      "pct": 1.9
+      "category": "🧠 AI 研究與突破",
+      "count": 46,
+      "pct": 2.4
     },
     {
       "category": "👁️ 內部人與機構持股",
-      "count": 71,
-      "pct": 0.5
+      "count": 20,
+      "pct": 1.0
     },
     {
       "category": "🏛️ 法說與 IR 材料",
-      "count": 65,
-      "pct": 0.4
+      "count": 18,
+      "pct": 0.9
+    },
+    {
+      "category": "🔥 X 社群熱議",
+      "count": 14,
+      "pct": 0.7
+    },
+    {
+      "category": "🛠️ AI 工具與實戰",
+      "count": 13,
+      "pct": 0.7
+    },
+    {
+      "category": "🌏 地緣政治與科技政策",
+      "count": 11,
+      "pct": 0.6
     },
     {
       "category": "📉 融券與資金流",
-      "count": 37,
+      "count": 4,
       "pct": 0.2
-    },
-    {
-      "category": "📊 券商與分析師研究",
-      "count": 29,
-      "pct": 0.2
-    },
-    {
-      "category": "🌐 宏觀與產業數據",
-      "count": 5,
-      "pct": 0.0
     }
   ],
   "sources": [
     {
       "source": "TSMC News",
-      "count": 407
-    },
-    {
-      "source": "工商時報 財經",
-      "count": 401
-    },
-    {
-      "source": "Bloomberg Markets",
       "count": 399
     },
     {
-      "source": "中央社 政治",
-      "count": 391
+      "source": "鴻海/Foxconn",
+      "count": 208
     },
     {
-      "source": "中央社 財經",
-      "count": 376
-    },
-    {
-      "source": "中央社 國際",
-      "count": 360
-    },
-    {
-      "source": "經濟日報 產經",
-      "count": 335
+      "source": "聯發科/MediaTek",
+      "count": 175
     },
     {
       "source": "自由時報 財經",
-      "count": 330
+      "count": 81
+    },
+    {
+      "source": "Tesla/SpaceX",
+      "count": 81
+    },
+    {
+      "source": "Google Blog",
+      "count": 76
+    },
+    {
+      "source": "DIGITIMES 半導體",
+      "count": 58
     },
     {
       "source": "CNBC Top News",
-      "count": 310
+      "count": 52
     },
     {
-      "source": "南華早報 科技",
-      "count": 308
+      "source": "Tom's Hardware",
+      "count": 51
     },
     {
-      "source": "Investing.com",
-      "count": 286
+      "source": "科技新報",
+      "count": 44
     },
     {
-      "source": "arXiv 機器學習",
-      "count": 270
+      "source": "中央社 財經",
+      "count": 41
+    },
+    {
+      "source": "Broadcom News",
+      "count": 37
     }
   ],
   "themes": [
     {
       "theme": "電動車",
-      "count": 1281,
+      "count": 192,
       "examples": [
         {
-          "title": "Hospitals evacuated, MSF services halted as rival gangs clash in Haiti’s capital",
-          "source": "Investing.com",
-          "published": "2026-05-12T10:00:25+08:00",
+          "title": "Vintage Tesla Pre Madness Edition / Anti Elon Tesla Club Decal / Vinyl Sticker / Anti Elon - portalcantagalo.com.br",
+          "source": "Tesla/SpaceX",
+          "published": "2026-05-12T08:25:30+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "TSLA"
+          ]
         },
         {
-          "title": "4 - Yen Eve (0001790634) (Reporting)",
-          "source": "SEC Form 4 (Atom)",
-          "published": "2026-05-12T09:50:41+08:00",
+          "title": "Is Biogen Inc. (BIIB) one of the Best Biotech Stocks to Invest In According to Billionaire Steve Cohen?",
+          "source": "Insider Monkey",
+          "published": "2026-05-12T08:05:28+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "BIIB"
+          ]
         },
         {
-          "title": "Bathurst Resources Q3 FY26 slides: cash strong despite revenue dip",
-          "source": "Investing.com",
-          "published": "2026-05-12T09:48:55+08:00",
+          "title": "Is Regeneron Pharmaceuticals (REGN) Among the Best Biotech Stocks to Invest In According to Billionaire Steve Cohen?",
+          "source": "Insider Monkey",
+          "published": "2026-05-12T08:04:35+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "REGN"
+          ]
         },
         {
-          "title": "🔥 BIG: OpenAI co-founder Ilya Sutskever reveals his stake in the company is worth roughly $7 billion, making him one of its largest individual shareholders. - x.com",
-          "source": "X @OpenAI",
-          "published": "2026-05-12T09:40:54+08:00",
+          "title": "Evercore ISI Keeps an “In Line” Rating on Guardant Health, Inc. (GH)",
+          "source": "Insider Monkey",
+          "published": "2026-05-12T08:02:06+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "GH"
+          ]
         },
         {
-          "title": "Ceva signals 2026 revenue growth at top end of 8%-12% range as it targets 40%-50% non-GAAP profit growth",
-          "source": "Seeking Alpha",
-          "published": "2026-05-12T09:31:28+08:00",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "theme": "美國政策",
-      "count": 714,
-      "examples": [
-        {
-          "title": "Analysis-Stung by Iran war, Trump heads to China in need of wins",
-          "source": "Investing.com",
-          "published": "2026-05-12T10:12:29+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Trump puts Taiwan arms sales, Hong Kong jailed activist Lai on agenda ahead of meeting with Xi",
+          "title": "OpenAI trial: Nadella says Musk never raised concerns to him about Microsoft investment",
           "source": "CNBC Top News",
-          "published": "2026-05-12T09:37:46+08:00",
+          "published": "2026-05-12T07:30:35+08:00",
           "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Trump says Iran ceasefire is on 'massive life support'",
-          "source": "BBC World",
-          "published": "2026-05-12T08:59:12+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Trump Says US-Iran Ceasefire on ‘Massive Life Support’",
-          "source": "Bloomberg Markets",
-          "published": "2026-05-12T08:49:58+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "參議院首輪投票通過 華許距離Fed主席更靠近一步",
-          "source": "自由時報 財經",
-          "published": "2026-05-12T08:41:15+08:00",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "theme": "中國科技",
-      "count": 656,
-      "examples": [
-        {
-          "title": "Analysis-Stung by Iran war, Trump heads to China in need of wins",
-          "source": "Investing.com",
-          "published": "2026-05-12T10:12:29+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "China's ChiNext Index Surges to 11-Year High on Semiconductor Rally and Policy Support - IndexBox",
-          "source": "中美科技戰",
-          "published": "2026-05-12T09:31:00+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "遭控充當中國代理人　加州阿凱迪亞市長辭職認罪",
-          "source": "經濟日報 產經",
-          "published": "2026-05-12T08:21:18+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "China should stop hoarding food and fertiliser, says former World Bank chief",
-          "source": "BBC World",
-          "published": "2026-05-12T08:02:58+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "時隔9年再訪北京川普這回學到教訓：中國不再仰視美國- 兩岸 - 工商時報",
-          "source": "工商時報 財經",
-          "published": "2026-05-12T07:22:00+08:00",
-          "link": null,
-          "tickers": []
+          "tickers": [
+            "MSFT"
+          ]
         }
       ]
     },
     {
       "theme": "記憶體",
-      "count": 564,
+      "count": 74,
       "examples": [
         {
-          "title": "rohitg00/agentmemory",
-          "source": "GitHub Trending (All)",
-          "published": "2026-05-12T10:17:30.252663+08:00",
+          "title": "沒跟上美光點火！「這檔記憶體」三大法人撤資、國家隊反手投入4億元台積電、緯創也在入手名單 - FTNN 新聞網",
+          "source": "台股三大法人 (Google News)",
+          "published": "2026-05-12T08:40:00+08:00",
           "link": null,
           "tickers": [
-            "3113",
-            "3114",
-            "3111"
+            "2330"
           ]
         },
         {
-          "title": "美光續噴 今年狂漲178%還能追嗎？分析師揭記憶體比 CPU 更好賺的關鍵",
-          "source": "經濟日報 產經",
-          "published": "2026-05-12T09:41:35+08:00",
+          "title": "HBM Holdings (SEHK:2142) Valuation Check After FDA Green Light For HBM7004 Phase I Trial - simplywall.st",
+          "source": "HBM/先進封裝",
+          "published": "2026-05-12T06:40:12+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "2142"
+          ]
         },
         {
-          "title": "Micron vs. Sandisk: Which Memory Stock Is the Better Buy Right Now? - The Motley Fool",
+          "title": "Nasdaq Today: Composite Closes at Record 26,274 as Micron Surges, Intel Secures Apple Deal - BBN Times",
           "source": "記憶體產業",
-          "published": "2026-05-12T09:26:57+08:00",
+          "published": "2026-05-12T06:35:34+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "AAPL"
+          ]
         },
         {
-          "title": "Micron vs. Sandisk: Which Memory Stock Is the Better Buy Right Now? - The Globe and Mail",
-          "source": "記憶體產業",
-          "published": "2026-05-12T09:22:39+08:00",
+          "title": "Nvidia, Lumentum, Intel, Micron, Qualcomm, Tesla, Moderna, Circle Internet, and More Movers - Barron's",
+          "source": "Qualcomm/Arm",
+          "published": "2026-05-12T04:40:00+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "NVDA",
+            "TSLA"
+          ]
         },
         {
-          "title": "《台北股市》不斷更新！最旺4月營收股 記憶體超狂人氣 4檔好吸金 - 富聯網",
-          "source": "台股三大法人 (Google News)",
-          "published": "2026-05-12T09:21:00+08:00",
+          "title": "Hudbay Minerals: Building A North American Copper Giant (NYSE:HBM) - Seeking Alpha",
+          "source": "HBM/先進封裝",
+          "published": "2026-05-11T20:43:27+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "HBM"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "雲端 / SaaS",
+      "count": 54,
+      "examples": [
+        {
+          "title": "AWS Weekly Roundup: Amazon Bedrock AgentCore payments, Agent Toolkit for AWS, and more (May 11, 2026)",
+          "source": "AWS Blog",
+          "published": "2026-05-12T00:08:26+08:00",
+          "link": null,
+          "tickers": [
+            "AMZN"
+          ]
+        },
+        {
+          "title": "Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure",
+          "source": "The Verge AI",
+          "published": "2026-05-08T23:25:02+08:00",
+          "link": null,
+          "tickers": [
+            "MSFT",
+            "AMZN"
+          ]
+        },
+        {
+          "title": "Amazon’s new AI wallet: AWS, Coinbase, and Stripe build payment rails for bots",
+          "source": "CoinDesk",
+          "published": "2026-05-08T00:50:58+08:00",
+          "link": null,
+          "tickers": [
+            "AMZN"
+          ]
+        },
+        {
+          "title": "Nvidia’s ISP piracy defense backfires as judge refuses to dismiss copyright lawsuit over more than 197,000 pirated books — scripts in NeMo Framework allegedly ‘have no other purpose’ than to speed up infringement",
+          "source": "Tom's Hardware",
+          "published": "2026-05-07T19:54:02+08:00",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "title": "Intel targets entry-level advanced packaging, draws interest from Google and Amazon - digitimes",
+          "source": "HBM/先進封裝",
+          "published": "2026-05-07T06:59:52+08:00",
+          "link": null,
+          "tickers": [
+            "GOOGL",
+            "AMZN"
+          ]
         }
       ]
     },
     {
       "theme": "AI 算力",
-      "count": 352,
+      "count": 52,
       "examples": [
         {
           "title": "HBM Holdings (SEHK:2142) Valuation Check After FDA Green Light For HBM7004 Phase I Trial - simplywall.st",
@@ -4598,84 +4561,102 @@
           ]
         },
         {
-          "title": "Kostech System Nears Samsung Approval for HBM Peel-Off Tool Localization - thelec.net",
-          "source": "HBM/先進封裝",
-          "published": "2026-05-12T06:29:47+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "A hackable compiler to generate efficient fused GPU kernels for AI models [P]",
-          "source": "Reddit r/MachineLearning",
-          "published": "2026-05-12T04:48:19+08:00",
+          "title": "AMD is reportedly developing an entry-level RDNA 4 GPU with 8GB of VRAM — RX 9050 rumored to debut with 2048 cores, more than RX 9060",
+          "source": "Tom's Hardware",
+          "published": "2026-05-12T01:50:12+08:00",
           "link": null,
           "tickers": [
-            "5090"
+            "9050",
+            "2048",
+            "9060",
+            "5050"
           ]
         },
         {
-          "title": "Broadcom Inc. stock (US11135F1012): OpenAI chip deal snag pressures shares - AD HOC NEWS",
-          "source": "Broadcom News",
-          "published": "2026-05-12T04:40:26+08:00",
+          "title": "Hudbay Minerals: Building A North American Copper Giant (NYSE:HBM) - Seeking Alpha",
+          "source": "HBM/先進封裝",
+          "published": "2026-05-11T20:43:27+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "HBM"
+          ]
         },
         {
-          "title": "Korea’s DRAM & NAND Export Statistics Show Massive Bump In Prices Versus Last Month: SSD Prices Up 63%, Memory Up 29%, HBM Up 19% - Wccftech",
-          "source": "HBM/先進封裝",
-          "published": "2026-05-12T03:55:00+08:00",
+          "title": "Broadcom shares jump after securing long-term AI chip and networking agreements with Google - MSN",
+          "source": "Broadcom News",
+          "published": "2026-05-09T21:13:35+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "GOOGL"
+          ]
+        },
+        {
+          "title": "Supermicro-tied execs used Thailand government entity to ship Nvidia AI GPUs to China — report alleges Chinese web giant Alibaba received restricted servers",
+          "source": "Tom's Hardware",
+          "published": "2026-05-09T18:40:00+08:00",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
         }
       ]
     },
     {
-      "theme": "雲端 / SaaS",
-      "count": 284,
+      "theme": "先進製程",
+      "count": 34,
       "examples": [
         {
-          "title": "Micron (MU) Draws Bullish Call as AI Memory Demand Reshapes Growth Outlook - Yahoo Finance",
-          "source": "記憶體產業",
-          "published": "2026-05-12T07:57:05+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Building Blocks for Foundation Model Training and Inference on AWS",
-          "source": "Hugging Face Blog",
-          "published": "2026-05-12T07:18:26+08:00",
+          "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
+          "source": "DIGITIMES 半導體",
+          "published": "2026-05-12T05:40:34+08:00",
           "link": null,
           "tickers": [
-            "NVDA",
-            "AMZN"
+            "2330",
+            "2317"
           ]
         },
         {
-          "title": "Cloudera hackathon highlights enterprise AI data challenges - SecurityBrief Australia",
-          "source": "LLM 應用與商用化",
-          "published": "2026-05-12T06:23:00+08:00",
+          "title": "晶圓代工第二名之爭　英特爾接單蘋果恐讓三星腹背受敵",
+          "source": "DIGITIMES 半導體",
+          "published": "2026-05-12T02:26:38+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "AAPL",
+            "2330"
+          ]
         },
         {
-          "title": "\"We can holistically look from the cloud all the way down to the endpoint and leverage those assets across all of it.\" Mike Nordquist, VP of Product M...",
-          "source": "X @AMD",
-          "published": "2026-05-12T04:42:01+08:00",
+          "title": "【即時新聞】AI熱潮帶動！台積電(TSM)首季營收狂飆逾4成，穩居晶圓代工霸主地位 - CMoney投資網誌",
+          "source": "TSMC News",
+          "published": "2026-05-11T03:52:00+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "2330"
+          ]
         },
         {
-          "title": "Anthropic’s Claude Platform comes to AWS - The New Stack",
-          "source": "Anthropic News",
-          "published": "2026-05-12T04:34:11+08:00",
+          "title": "分析｜晶圓代工成熟製程股價跑贏台積電 一文看各業者擁有題材有哪些 - 知新聞",
+          "source": "TSMC News",
+          "published": "2026-05-11T02:49:55+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "2330"
+          ]
+        },
+        {
+          "title": "ASML CEO回應張曉強　High-NA EUV可省下30%成本",
+          "source": "DIGITIMES 半導體",
+          "published": "2026-05-11T02:28:51+08:00",
+          "link": null,
+          "tickers": [
+            "2330"
+          ]
         }
       ]
     },
     {
       "theme": "資料中心",
-      "count": 256,
+      "count": 34,
       "examples": [
         {
           "title": "因應AI端至雲成長需求 聯發科技啟用銅鑼研發資料中心 - 電子工程專輯",
@@ -4687,93 +4668,206 @@
           ]
         },
         {
-          "title": "高通股價創歷史新高，市場開始重估AI資料中心題材 - news.cnyes.com",
-          "source": "鉅亨網 法人說明會 (Google News)",
-          "published": "2026-05-12T08:30:03+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Cleanspark outlines 14–18-month delivery timeline for ai data centers as it markets 1.8 gw contracted capacity",
-          "source": "Seeking Alpha",
-          "published": "2026-05-12T08:21:31+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Political expert slams Bernie Sanders proposed ‘data center moratorium’ bill under guise of AI safety - Fox Business",
-          "source": "AI 安全與治理",
-          "published": "2026-05-12T07:36:37+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Data center guzzled 30 million gallons of water and nobody noticed for months",
-          "source": "Ars Technica AI",
-          "published": "2026-05-12T04:37:00+08:00",
+          "title": "The latest GHG protocol proposal raises the bar for “100% renewable” reporting in data centers",
+          "source": "Data Center Dynamics",
+          "published": "2026-05-10T21:00:28+08:00",
           "link": null,
           "tickers": [
-            "META",
-            "GOOGL",
-            "MSFT"
+            "2035"
+          ]
+        },
+        {
+          "title": "聯發科技銅鑼研發資料中心啟用 AI世代關鍵算力與永續創新 - Zeek玩家誌",
+          "source": "聯發科/MediaTek",
+          "published": "2026-05-10T20:37:21+08:00",
+          "link": null,
+          "tickers": [
+            "2454"
+          ]
+        },
+        {
+          "title": "Qualcomm builds data center CPUs and accelerators to challenge NVIDIA - NewsBytes",
+          "source": "Qualcomm/Arm",
+          "published": "2026-05-09T07:48:42+08:00",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        },
+        {
+          "title": "Developers file application for $1.6bn data center in Cleveland, Ohio",
+          "source": "Data Center Dynamics",
+          "published": "2026-05-09T01:00:33+08:00",
+          "link": null,
+          "tickers": [
+            "3560"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "中國科技",
+      "count": 32,
+      "examples": [
+        {
+          "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
+          "source": "DIGITIMES 半導體",
+          "published": "2026-05-12T05:40:34+08:00",
+          "link": null,
+          "tickers": [
+            "2330",
+            "2317"
+          ]
+        },
+        {
+          "title": "Apple's Tim Cook and Tesla's Elon Musk among top US CEOs to accompany Trump to China - Australian Broadcasting Corporation",
+          "source": "Tesla/SpaceX",
+          "published": "2026-05-12T05:08:05+08:00",
+          "link": null,
+          "tickers": [
+            "AAPL",
+            "TSLA"
+          ]
+        },
+        {
+          "title": "Apple CEO Tim Cook, Elon Musk to join President Trump’s China trip - MacDailyNews",
+          "source": "Tesla/SpaceX",
+          "published": "2026-05-12T05:05:23+08:00",
+          "link": null,
+          "tickers": [
+            "AAPL"
+          ]
+        },
+        {
+          "title": "Tesla's Elon Musk, Apple's Tim Cook among CEOs set to join Trump on China trip - AOL.com",
+          "source": "Tesla/SpaceX",
+          "published": "2026-05-12T04:32:26+08:00",
+          "link": null,
+          "tickers": [
+            "TSLA",
+            "AAPL"
+          ]
+        },
+        {
+          "title": "AI 光纖市場「量價齊揚」！輝達攜康寧布局，中國光通訊供應鏈同步受惠",
+          "source": "科技新報",
+          "published": "2026-05-11T16:57:58+08:00",
+          "link": null,
+          "tickers": [
+            "NVDA"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "美國政策",
+      "count": 19,
+      "examples": [
+        {
+          "title": "Apple's Tim Cook and Tesla's Elon Musk among top US CEOs to accompany Trump to China - Australian Broadcasting Corporation",
+          "source": "Tesla/SpaceX",
+          "published": "2026-05-12T05:08:05+08:00",
+          "link": null,
+          "tickers": [
+            "AAPL",
+            "TSLA"
+          ]
+        },
+        {
+          "title": "Apple CEO Tim Cook, Elon Musk to join President Trump’s China trip - MacDailyNews",
+          "source": "Tesla/SpaceX",
+          "published": "2026-05-12T05:05:23+08:00",
+          "link": null,
+          "tickers": [
+            "AAPL"
+          ]
+        },
+        {
+          "title": "Tesla's Elon Musk, Apple's Tim Cook among CEOs set to join Trump on China trip - AOL.com",
+          "source": "Tesla/SpaceX",
+          "published": "2026-05-12T04:32:26+08:00",
+          "link": null,
+          "tickers": [
+            "TSLA",
+            "AAPL"
+          ]
+        },
+        {
+          "title": "The Stakes of Trump vs. Xi",
+          "source": "Foreign Affairs",
+          "published": "2026-05-11T12:00:00+08:00",
+          "link": null,
+          "tickers": [
+            "1612",
+            "1972"
+          ]
+        },
+        {
+          "title": "川普關稅戰又輸了！美國貿易法院裁定「10％全球關稅無效」",
+          "source": "自由時報 財經",
+          "published": "2026-05-08T08:25:20+08:00",
+          "link": null,
+          "tickers": [
+            "1974"
           ]
         }
       ]
     },
     {
       "theme": "半導體設備",
-      "count": 172,
+      "count": 12,
       "examples": [
         {
-          "title": "ASML Holding N.V. stock (USN070592100): Executes €79.4M share buybacks - AD HOC NEWS",
-          "source": "ASML News",
-          "published": "2026-05-12T04:35:11+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Can KLA's advanced packaging strength support $1B revenue target? - MSN",
-          "source": "HBM/先進封裝",
-          "published": "2026-05-12T04:21:05+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "Applied Materials and TSMC Partner at the EPIC Center to Accelerate AI Scaling",
-          "source": "3D InCites",
-          "published": "2026-05-12T02:41:22+08:00",
+          "title": "ASML CEO回應張曉強　High-NA EUV可省下30%成本",
+          "source": "DIGITIMES 半導體",
+          "published": "2026-05-11T02:28:51+08:00",
           "link": null,
           "tickers": [
-            "TSM"
+            "2330"
           ]
         },
         {
-          "title": "Developer eyes Broken Arrow, Oklahoma, for new data center development",
-          "source": "Data Center Dynamics",
-          "published": "2026-05-12T00:30:41+08:00",
+          "title": "ASML (NASDAQ:ASML) Trading 3.2% Higher - What's Next? - MarketBeat",
+          "source": "ASML News",
+          "published": "2026-05-01T07:55:26+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "ASML"
+          ]
         },
         {
-          "title": "ASML Holding N.V. stock (NL0010273215): Lithography leader eyes AI chip boom - AD HOC NEWS",
-          "source": "ASML News",
-          "published": "2026-05-11T20:31:33+08:00",
+          "title": "How we’re protecting energy affordability in Oklahoma",
+          "source": "Google Blog",
+          "published": "2026-04-30T19:00:00+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "GOOGL"
+          ]
+        },
+        {
+          "title": "Google told staff it is ‘proud’ of Pentagon AI contract after internal backlash - Financial Times",
+          "source": "FT (Google News)",
+          "published": "2026-04-30T04:21:09+08:00",
+          "link": null,
+          "tickers": [
+            "GOOGL"
+          ]
+        },
+        {
+          "title": "ASML Holding N.V. stock (NL0010273215): Why Google Discover changes matter more now for semiconducto - AD HOC NEWS",
+          "source": "ASML News",
+          "published": "2026-04-27T19:17:15+08:00",
+          "link": null,
+          "tickers": [
+            "GOOGL"
+          ]
         }
       ]
     },
     {
       "theme": "重大事件",
-      "count": 162,
+      "count": 6,
       "examples": [
-        {
-          "title": "Cronos targets CanAdelaar close in summer 2026 while renewing $50M buyback",
-          "source": "Seeking Alpha",
-          "published": "2026-05-12T08:51:27+08:00",
-          "link": null,
-          "tickers": []
-        },
         {
           "title": "Riding an AI rally, Robinhood preps second retail venture IPO",
           "source": "TechCrunch Venture",
@@ -4784,76 +4878,39 @@
           ]
         },
         {
-          "title": "Getty Images forecasts $948M-$988M 2026 revenue while awaiting U.K. CMA merger decision in June",
-          "source": "Seeking Alpha",
-          "published": "2026-05-12T07:51:29+08:00",
+          "title": "Shell tops profit estimates as Iran war boosts oil price, cuts share buybacks",
+          "source": "CNBC Earnings",
+          "published": "2026-05-07T19:07:43+08:00",
           "link": null,
-          "tickers": []
+          "tickers": [
+            "3906"
+          ]
         },
         {
-          "title": "Sunshine Silver Files for IPO Seeking Funds to Reopen Idaho Mine",
+          "title": "Netflix’s $25 Billion Buyback Looks Big. Microsoft’s $190 Billion AI Capex Bill Looks Bigger - TechStock²",
+          "source": "AI 產業化與投資信號",
+          "published": "2026-05-05T23:11:00+08:00",
+          "link": null,
+          "tickers": [
+            "MSFT"
+          ]
+        },
+        {
+          "title": "Amazon-Backed Nuclear IPO X-Energy Quickly Jumps 27% in Trading Debut - Barron's",
+          "source": "Barron's (Google News)",
+          "published": "2026-04-25T05:06:00+08:00",
+          "link": null,
+          "tickers": [
+            "AMZN"
+          ]
+        },
+        {
+          "title": "Amazon-Backed Nuclear Firm X-Energy Raises $1.02 Billion in IPO",
           "source": "Bloomberg Markets",
-          "published": "2026-05-12T05:52:08+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "10-Q - Blue Acquisition Corp/Cayman (0002059654) (Filer)",
-          "source": "SEC 10-Q Filings (Atom)",
-          "published": "2026-05-12T05:26:17+08:00",
-          "link": null,
-          "tickers": []
-        }
-      ]
-    },
-    {
-      "theme": "先進製程",
-      "count": 112,
-      "examples": [
-        {
-          "title": "每日椽真：晶圓代工第二名之爭 | 台灣將在美國設立產業園區 | 張汝京：中國執著2奈米並非唯一答案",
-          "source": "DIGITIMES 半導體",
-          "published": "2026-05-12T05:40:34+08:00",
+          "published": "2026-04-24T08:11:55+08:00",
           "link": null,
           "tickers": [
-            "2330",
-            "NVDA",
-            "AAPL",
-            "2317"
-          ]
-        },
-        {
-          "title": "晶圓代工第二名之爭　英特爾接單蘋果恐讓三星腹背受敵",
-          "source": "DIGITIMES 半導體",
-          "published": "2026-05-12T02:26:38+08:00",
-          "link": null,
-          "tickers": [
-            "NVDA",
-            "AAPL",
-            "2330"
-          ]
-        },
-        {
-          "title": "Evolus May 2026 slides: HA innovation, Jeuveau data support dual strategy",
-          "source": "Investing.com",
-          "published": "2026-05-11T08:45:47+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "TrendForce Sees Tightening Advanced Packaging and 3nm Capacity as AI Competition Turns Into a Supply Chain Arms Race - EE Times Asia",
-          "source": "HBM/先進封裝",
-          "published": "2026-05-11T06:07:53+08:00",
-          "link": null,
-          "tickers": []
-        },
-        {
-          "title": "【即時新聞】AI熱潮帶動！台積電(TSM)首季營收狂飆逾4成，穩居晶圓代工霸主地位 - CMoney投資網誌",
-          "source": "TSMC News",
-          "published": "2026-05-11T03:52:00+08:00",
-          "link": null,
-          "tickers": [
-            "2330"
+            "AMZN"
           ]
         }
       ]
@@ -4861,60 +4918,39 @@
   ],
   "momentum": [
     {
-      "ticker": "2605",
-      "mentions_7d": 104,
-      "mentions_prior_7d": 23,
-      "delta": 81,
-      "pct_change": 352.2
-    },
-    {
       "ticker": "2330",
-      "mentions_7d": 180,
-      "mentions_prior_7d": 140,
-      "delta": 40,
-      "pct_change": 28.6
+      "mentions_7d": 175,
+      "mentions_prior_7d": 139,
+      "delta": 36,
+      "pct_change": 25.9
     },
     {
       "ticker": "1231",
-      "mentions_7d": 24,
+      "mentions_7d": 16,
       "mentions_prior_7d": 0,
-      "delta": 24,
+      "delta": 16,
       "pct_change": 100.0
     },
     {
       "ticker": "NVDA",
-      "mentions_7d": 123,
-      "mentions_prior_7d": 106,
-      "delta": 17,
-      "pct_change": 16.0
-    },
-    {
-      "ticker": "AAPL",
-      "mentions_7d": 69,
-      "mentions_prior_7d": 54,
-      "delta": 15,
-      "pct_change": 27.8
-    },
-    {
-      "ticker": "2454",
-      "mentions_7d": 78,
-      "mentions_prior_7d": 70,
-      "delta": 8,
-      "pct_change": 11.4
-    },
-    {
-      "ticker": "TSM",
-      "mentions_7d": 22,
-      "mentions_prior_7d": 17,
-      "delta": 5,
-      "pct_change": 29.4
+      "mentions_7d": 49,
+      "mentions_prior_7d": 39,
+      "delta": 10,
+      "pct_change": 25.6
     },
     {
       "ticker": "2035",
       "mentions_7d": 8,
-      "mentions_prior_7d": 3,
+      "mentions_prior_7d": 2,
+      "delta": 6,
+      "pct_change": 300.0
+    },
+    {
+      "ticker": "2454",
+      "mentions_7d": 75,
+      "mentions_prior_7d": 70,
       "delta": 5,
-      "pct_change": 166.7
+      "pct_change": 7.1
     },
     {
       "ticker": "6488",
@@ -4924,63 +4960,7 @@
       "pct_change": 100.0
     },
     {
-      "ticker": "1000",
-      "mentions_7d": 6,
-      "mentions_prior_7d": 2,
-      "delta": 4,
-      "pct_change": 200.0
-    },
-    {
-      "ticker": "1974",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 1,
-      "delta": 4,
-      "pct_change": 400.0
-    },
-    {
-      "ticker": "7997",
-      "mentions_7d": 4,
-      "mentions_prior_7d": 0,
-      "delta": 4,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "9100",
-      "mentions_7d": 4,
-      "mentions_prior_7d": 0,
-      "delta": 4,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "9070",
-      "mentions_7d": 5,
-      "mentions_prior_7d": 2,
-      "delta": 3,
-      "pct_change": 150.0
-    },
-    {
-      "ticker": "8080",
-      "mentions_7d": 4,
-      "mentions_prior_7d": 1,
-      "delta": 3,
-      "pct_change": 300.0
-    },
-    {
-      "ticker": "3089",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
       "ticker": "7372",
-      "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
-    },
-    {
-      "ticker": "4060",
       "mentions_7d": 3,
       "mentions_prior_7d": 0,
       "delta": 3,
@@ -4994,11 +4974,67 @@
       "pct_change": 100.0
     },
     {
-      "ticker": "1933",
+      "ticker": "2317",
+      "mentions_7d": 71,
+      "mentions_prior_7d": 70,
+      "delta": 1,
+      "pct_change": 1.4
+    },
+    {
+      "ticker": "AAPL",
+      "mentions_7d": 26,
+      "mentions_prior_7d": 27,
+      "delta": -1,
+      "pct_change": -3.7
+    },
+    {
+      "ticker": "2881",
       "mentions_7d": 3,
-      "mentions_prior_7d": 0,
-      "delta": 3,
-      "pct_change": 100.0
+      "mentions_prior_7d": 4,
+      "delta": -1,
+      "pct_change": -25.0
+    },
+    {
+      "ticker": "AMZN",
+      "mentions_7d": 12,
+      "mentions_prior_7d": 18,
+      "delta": -6,
+      "pct_change": -33.3
+    },
+    {
+      "ticker": "TSLA",
+      "mentions_7d": 20,
+      "mentions_prior_7d": 28,
+      "delta": -8,
+      "pct_change": -28.6
+    },
+    {
+      "ticker": "MSFT",
+      "mentions_7d": 13,
+      "mentions_prior_7d": 31,
+      "delta": -18,
+      "pct_change": -58.1
+    },
+    {
+      "ticker": "BRK-B",
+      "mentions_7d": 4,
+      "mentions_prior_7d": 22,
+      "delta": -18,
+      "pct_change": -81.8
+    },
+    {
+      "ticker": "GOOGL",
+      "mentions_7d": 42,
+      "mentions_prior_7d": 70,
+      "delta": -28,
+      "pct_change": -40.0
+    },
+    {
+      "ticker": "META",
+      "mentions_7d": 14,
+      "mentions_prior_7d": 44,
+      "delta": -30,
+      "pct_change": -68.2
     }
   ]
 }

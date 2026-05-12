@@ -98,9 +98,7 @@
       "event_type": "earnings",
       "tickers": [
         "1940",
-        "1971",
-        "AAPL",
-        "GOOGL"
+        "1971"
       ],
       "companies": [
         "Apple",
@@ -168,15 +166,7 @@
     {
       "ticker": "1940",
       "count": 1
-    },
-    {
-      "ticker": "AAPL",
-      "count": 1
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:18Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

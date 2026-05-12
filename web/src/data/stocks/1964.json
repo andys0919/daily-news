@@ -64,8 +64,7 @@
       "body_text": "Join War on the Rocks and gain access to content trusted by policymakers, military leaders, and strategic thinkers worldwide.\nIn the 1964 black comedy Dr. Strangelove , an emergency war plan called “Plan R” allows an unhinged U.S. Air Force commander, Jack Ripper, to launch a nuclear strike without presidential authorization. Once the president, the joint chiefs, and the Soviet ambassador convene ",
       "event_type": "earnings",
       "tickers": [
-        "1964",
-        "META"
+        "1964"
       ],
       "companies": [
         "Meta"
@@ -97,11 +96,7 @@
     {
       "ticker": "1963",
       "count": 1
-    },
-    {
-      "ticker": "META",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:19Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

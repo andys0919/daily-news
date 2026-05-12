@@ -17,8 +17,7 @@
       "body_text": "As chipmakers race to build faster AI processors, attention has shifted beyond transistor scaling and toward advanced packaging, hybrid bonding, and 3D integration. That shift is creating new manufacturing bottlenecks—among them, how to precisely measure wafer shape, topography, and warpage as devices become thinner, denser, and increasingly stacked.\nOne company hoping to capitalize on that transi",
       "event_type": "earnings",
       "tickers": [
-        "1000",
-        "TSM"
+        "1000"
       ],
       "companies": [
         "TSMC"
@@ -50,8 +49,7 @@
       "body_text": "“Shoplifters of the world/ Unite and take over” — The Smiths\n“When she wants something, man, she don’t wanna pay for it” — Jane’s Addiction\nSeven years ago, when I wanted some toothpaste, I would walk down to my local Walgreens, grab a box of Crest off of the shelf, pay for it at the register, and walk home with it. Today, when I want some toothpaste, I open up Amazon.com and buy it in bulk. What ",
       "event_type": "earnings",
       "tickers": [
-        "1000",
-        "AMZN"
+        "1000"
       ],
       "companies": [
         "Amazon"
@@ -130,8 +128,7 @@
       "tickers": [
         "1974",
         "1950",
-        "1000",
-        "GOOGL"
+        "1000"
       ],
       "companies": [
         "Google"
@@ -242,25 +239,13 @@
   "fundamentals": null,
   "co_mentions": [
     {
-      "ticker": "TSM",
-      "count": 1
-    },
-    {
-      "ticker": "AMZN",
-      "count": 1
-    },
-    {
       "ticker": "1974",
       "count": 1
     },
     {
       "ticker": "1950",
       "count": 1
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

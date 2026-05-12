@@ -18,8 +18,7 @@
       "event_type": "earnings",
       "tickers": [
         "2035",
-        "2040",
-        "TSM"
+        "2040"
       ],
       "companies": [
         "TSMC"
@@ -69,8 +68,7 @@
       "tickers": [
         "1930",
         "1931",
-        "2040",
-        "GOOGL"
+        "2040"
       ]
     },
     {
@@ -118,10 +116,6 @@
       "count": 1
     },
     {
-      "ticker": "TSM",
-      "count": 1
-    },
-    {
       "ticker": "1974",
       "count": 1
     },
@@ -134,5 +128,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:18Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

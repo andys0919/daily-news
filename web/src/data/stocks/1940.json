@@ -17,9 +17,7 @@
       "body_text": "Something big happened in the world of AI the other day: Sam Altman, founder and CEO of OpenAI, and probably the person who’s most commonly regarded as the face of the industry, declared that the purpose of AI is not to take people’s jobs :\nAnd he recently called AI CEOs “tone-deaf” for declaring that AI is going to take people’s jobs:\nIn fact, this shift represents more evolution than revolution.",
       "event_type": "earnings",
       "tickers": [
-        "1940",
-        "MSFT",
-        "NVDA"
+        "1940"
       ],
       "companies": [
         "Microsoft",
@@ -37,8 +35,7 @@
       "body_text": "BALTIMORE/NEW YORK — Spirit Airlines was hours away from its final flights Friday afternoon. Jeremiah Burton was hours away from his first.\n\"It's my first time flying,\" Burton, a 45-year-old air conditioning and heating technician, told CNBC at Baltimore/Washington International Thurgood Marshall Airport on Friday, shortly before he was scheduled to depart for New Orleans to visit his daughter and",
       "event_type": "earnings",
       "tickers": [
-        "1940",
-        "GOOGL"
+        "1940"
       ],
       "companies": [
         "Google"
@@ -73,9 +70,7 @@
       "event_type": "earnings",
       "tickers": [
         "1940",
-        "1971",
-        "AAPL",
-        "GOOGL"
+        "1971"
       ],
       "companies": [
         "Apple",
@@ -89,18 +84,6 @@
   "fundamentals": null,
   "co_mentions": [
     {
-      "ticker": "GOOGL",
-      "count": 2
-    },
-    {
-      "ticker": "MSFT",
-      "count": 1
-    },
-    {
-      "ticker": "NVDA",
-      "count": 1
-    },
-    {
       "ticker": "1935",
       "count": 1
     },
@@ -111,11 +94,7 @@
     {
       "ticker": "1971",
       "count": 1
-    },
-    {
-      "ticker": "AAPL",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:19Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

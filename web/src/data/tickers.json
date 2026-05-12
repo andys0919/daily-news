@@ -1,67 +1,75 @@
 {
-  "generated_at": "2026-05-12T02:19:22Z",
+  "generated_at": "2026-05-12T03:24:40Z",
   "tickers": [
-    {
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc.",
-      "market": "us",
-      "articles": 986,
-      "reports": 3,
-      "label": "GOOGL (US)"
-    },
     {
       "ticker": "2330",
       "name": "台灣積體電路製造股份有限公司",
       "market": "tw",
-      "articles": 955,
+      "articles": 943,
       "reports": 22,
       "label": "2330 (TW)"
-    },
-    {
-      "ticker": "NVDA",
-      "name": "NVIDIA CORP",
-      "market": "us",
-      "articles": 638,
-      "reports": 1,
-      "label": "NVDA (US)"
-    },
-    {
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "market": "us",
-      "articles": 589,
-      "reports": 2,
-      "label": "META (US)"
-    },
-    {
-      "ticker": "2604",
-      "name": "",
-      "market": "tw",
-      "articles": 457,
-      "reports": 0,
-      "label": "2604 (TW)"
-    },
-    {
-      "ticker": "MSFT",
-      "name": "MICROSOFT CORP",
-      "market": "us",
-      "articles": 384,
-      "reports": 2,
-      "label": "MSFT (US)"
     },
     {
       "ticker": "2317",
       "name": "鴻海",
       "market": "tw",
-      "articles": 374,
+      "articles": 373,
       "reports": 11,
       "label": "2317 (TW)"
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "us",
+      "articles": 347,
+      "reports": 3,
+      "label": "GOOGL (US)"
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "market": "tw",
+      "articles": 334,
+      "reports": 11,
+      "label": "2454 (TW)"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA CORP",
+      "market": "us",
+      "articles": 233,
+      "reports": 1,
+      "label": "NVDA (US)"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "market": "us",
+      "articles": 178,
+      "reports": 2,
+      "label": "TSLA (US)"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "market": "us",
+      "articles": 154,
+      "reports": 2,
+      "label": "META (US)"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MICROSOFT CORP",
+      "market": "us",
+      "articles": 137,
+      "reports": 2,
+      "label": "MSFT (US)"
     },
     {
       "ticker": "AAPL",
       "name": "Apple Inc.",
       "market": "us",
-      "articles": 370,
+      "articles": 124,
       "reports": 3,
       "label": "AAPL (US)"
     },
@@ -69,73 +77,9 @@
       "ticker": "AMZN",
       "name": "AMAZON COM INC",
       "market": "us",
-      "articles": 351,
+      "articles": 95,
       "reports": 2,
       "label": "AMZN (US)"
-    },
-    {
-      "ticker": "2454",
-      "name": "聯發科",
-      "market": "tw",
-      "articles": 335,
-      "reports": 11,
-      "label": "2454 (TW)"
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla, Inc.",
-      "market": "us",
-      "articles": 262,
-      "reports": 2,
-      "label": "TSLA (US)"
-    },
-    {
-      "ticker": "TSM",
-      "name": "",
-      "market": "us",
-      "articles": 135,
-      "reports": 0,
-      "label": "TSM (US)"
-    },
-    {
-      "ticker": "2605",
-      "name": "",
-      "market": "tw",
-      "articles": 127,
-      "reports": 0,
-      "label": "2605 (TW)"
-    },
-    {
-      "ticker": "BLSH",
-      "name": "",
-      "market": "us",
-      "articles": 93,
-      "reports": 0,
-      "label": "BLSH (US)"
-    },
-    {
-      "ticker": "2603",
-      "name": "",
-      "market": "tw",
-      "articles": 70,
-      "reports": 0,
-      "label": "2603 (TW)"
-    },
-    {
-      "ticker": "JPM",
-      "name": "JPMORGAN CHASE & CO",
-      "market": "us",
-      "articles": 59,
-      "reports": 1,
-      "label": "JPM (US)"
-    },
-    {
-      "ticker": "5070",
-      "name": "",
-      "market": "tw",
-      "articles": 39,
-      "reports": 0,
-      "label": "5070 (TW)"
     },
     {
       "ticker": "BRK-B",
@@ -146,140 +90,44 @@
       "label": "BRK-B (US)"
     },
     {
-      "ticker": "5090",
-      "name": "",
-      "market": "tw",
-      "articles": 35,
-      "reports": 0,
-      "label": "5090 (TW)"
-    },
-    {
-      "ticker": "6000",
-      "name": "",
-      "market": "tw",
-      "articles": 31,
-      "reports": 0,
-      "label": "6000 (TW)"
-    },
-    {
-      "ticker": "1000",
-      "name": "",
-      "market": "tw",
-      "articles": 27,
-      "reports": 0,
-      "label": "1000 (TW)"
-    },
-    {
       "ticker": "2035",
       "name": "",
       "market": "tw",
-      "articles": 27,
+      "articles": 22,
       "reports": 0,
       "label": "2035 (TW)"
-    },
-    {
-      "ticker": "1979",
-      "name": "",
-      "market": "tw",
-      "articles": 25,
-      "reports": 0,
-      "label": "1979 (TW)"
     },
     {
       "ticker": "1231",
       "name": "聯華食",
       "market": "tw",
-      "articles": 24,
+      "articles": 16,
       "reports": 2,
       "label": "1231 (TW)"
     },
     {
-      "ticker": "5060",
-      "name": "",
-      "market": "tw",
-      "articles": 20,
-      "reports": 0,
-      "label": "5060 (TW)"
-    },
-    {
-      "ticker": "1973",
-      "name": "",
-      "market": "tw",
-      "articles": 14,
-      "reports": 0,
-      "label": "1973 (TW)"
-    },
-    {
-      "ticker": "1980",
-      "name": "",
-      "market": "tw",
-      "articles": 14,
-      "reports": 0,
-      "label": "1980 (TW)"
-    },
-    {
-      "ticker": "5080",
-      "name": "",
-      "market": "tw",
-      "articles": 14,
-      "reports": 0,
-      "label": "5080 (TW)"
-    },
-    {
-      "ticker": "9070",
+      "ticker": "1979",
       "name": "",
       "market": "tw",
       "articles": 13,
       "reports": 0,
-      "label": "9070 (TW)"
+      "label": "1979 (TW)"
     },
     {
-      "ticker": "3090",
+      "ticker": "1000",
       "name": "",
       "market": "tw",
       "articles": 13,
       "reports": 0,
-      "label": "3090 (TW)"
+      "label": "1000 (TW)"
     },
     {
-      "ticker": "1989",
-      "name": "",
-      "market": "tw",
-      "articles": 12,
-      "reports": 0,
-      "label": "1989 (TW)"
-    },
-    {
-      "ticker": "1982",
-      "name": "",
-      "market": "tw",
-      "articles": 12,
-      "reports": 0,
-      "label": "1982 (TW)"
-    },
-    {
-      "ticker": "MU",
-      "name": "",
-      "market": "us",
-      "articles": 11,
-      "reports": 0,
-      "label": "MU (US)"
-    },
-    {
-      "ticker": "1974",
+      "ticker": "6000",
       "name": "",
       "market": "tw",
       "articles": 11,
       "reports": 0,
-      "label": "1974 (TW)"
-    },
-    {
-      "ticker": "2048",
-      "name": "",
-      "market": "tw",
-      "articles": 11,
-      "reports": 0,
-      "label": "2048 (TW)"
+      "label": "6000 (TW)"
     },
     {
       "ticker": "2881",
@@ -290,172 +138,20 @@
       "label": "2881 (TW)"
     },
     {
-      "ticker": "4096",
-      "name": "",
-      "market": "tw",
-      "articles": 11,
-      "reports": 0,
-      "label": "4096 (TW)"
-    },
-    {
-      "ticker": "1956",
-      "name": "",
-      "market": "tw",
-      "articles": 10,
-      "reports": 0,
-      "label": "1956 (TW)"
-    },
-    {
-      "ticker": "1969",
-      "name": "",
-      "market": "tw",
-      "articles": 10,
-      "reports": 0,
-      "label": "1969 (TW)"
-    },
-    {
-      "ticker": "2955",
-      "name": "",
-      "market": "tw",
-      "articles": 10,
-      "reports": 0,
-      "label": "2955 (TW)"
-    },
-    {
-      "ticker": "8000",
-      "name": "",
-      "market": "tw",
-      "articles": 9,
-      "reports": 0,
-      "label": "8000 (TW)"
-    },
-    {
-      "ticker": "1024",
-      "name": "",
-      "market": "tw",
-      "articles": 9,
-      "reports": 0,
-      "label": "1024 (TW)"
-    },
-    {
-      "ticker": "1972",
-      "name": "",
-      "market": "tw",
-      "articles": 9,
-      "reports": 0,
-      "label": "1972 (TW)"
-    },
-    {
-      "ticker": "1988",
-      "name": "",
-      "market": "tw",
-      "articles": 9,
-      "reports": 0,
-      "label": "1988 (TW)"
-    },
-    {
-      "ticker": "3060",
+      "ticker": "1989",
       "name": "",
       "market": "tw",
       "articles": 8,
       "reports": 0,
-      "label": "3060 (TW)"
+      "label": "1989 (TW)"
     },
     {
-      "ticker": "6400",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "6400 (TW)"
-    },
-    {
-      "ticker": "2040",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "2040 (TW)"
-    },
-    {
-      "ticker": "1981",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "1981 (TW)"
-    },
-    {
-      "ticker": "1976",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "1976 (TW)"
-    },
-    {
-      "ticker": "1500",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "1500 (TW)"
-    },
-    {
-      "ticker": "5000",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "5000 (TW)"
-    },
-    {
-      "ticker": "8080",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "8080 (TW)"
-    },
-    {
-      "ticker": "1971",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "1971 (TW)"
-    },
-    {
-      "ticker": "1975",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "1975 (TW)"
-    },
-    {
-      "ticker": "3000",
-      "name": "",
-      "market": "tw",
-      "articles": 8,
-      "reports": 0,
-      "label": "3000 (TW)"
-    },
-    {
-      "ticker": "1987",
+      "ticker": "1974",
       "name": "",
       "market": "tw",
       "articles": 7,
       "reports": 0,
-      "label": "1987 (TW)"
-    },
-    {
-      "ticker": "4090",
-      "name": "",
-      "market": "tw",
-      "articles": 7,
-      "reports": 0,
-      "label": "4090 (TW)"
+      "label": "1974 (TW)"
     },
     {
       "ticker": "HBM",
@@ -466,76 +162,20 @@
       "label": "HBM (US)"
     },
     {
-      "ticker": "9600",
+      "ticker": "1973",
       "name": "",
       "market": "tw",
-      "articles": 7,
+      "articles": 6,
       "reports": 0,
-      "label": "9600 (TW)"
+      "label": "1973 (TW)"
     },
     {
-      "ticker": "2050",
+      "ticker": "MU",
       "name": "",
-      "market": "tw",
-      "articles": 7,
-      "reports": 0,
-      "label": "2050 (TW)"
-    },
-    {
-      "ticker": "1985",
-      "name": "",
-      "market": "tw",
-      "articles": 7,
-      "reports": 0,
-      "label": "1985 (TW)"
-    },
-    {
-      "ticker": "1983",
-      "name": "",
-      "market": "tw",
-      "articles": 7,
-      "reports": 0,
-      "label": "1983 (TW)"
-    },
-    {
-      "ticker": "1930",
-      "name": "",
-      "market": "tw",
-      "articles": 7,
-      "reports": 0,
-      "label": "1930 (TW)"
-    },
-    {
-      "ticker": "AMD",
-      "name": "ADVANCED MICRO DEVICES INC",
       "market": "us",
       "articles": 6,
-      "reports": 1,
-      "label": "AMD (US)"
-    },
-    {
-      "ticker": "BTC",
-      "name": "Grayscale Bitcoin Mini Trust ETF",
-      "market": "us",
-      "articles": 6,
-      "reports": 1,
-      "label": "BTC (US)"
-    },
-    {
-      "ticker": "2600",
-      "name": "",
-      "market": "tw",
-      "articles": 6,
       "reports": 0,
-      "label": "2600 (TW)"
-    },
-    {
-      "ticker": "1950",
-      "name": "",
-      "market": "tw",
-      "articles": 6,
-      "reports": 0,
-      "label": "1950 (TW)"
+      "label": "MU (US)"
     },
     {
       "ticker": "0050",
@@ -546,14 +186,6 @@
       "label": "0050 (TW)"
     },
     {
-      "ticker": "1951",
-      "name": "",
-      "market": "tw",
-      "articles": 6,
-      "reports": 0,
-      "label": "1951 (TW)"
-    },
-    {
       "ticker": "1984",
       "name": "",
       "market": "tw",
@@ -562,60 +194,44 @@
       "label": "1984 (TW)"
     },
     {
-      "ticker": "1800",
+      "ticker": "1981",
       "name": "",
       "market": "tw",
       "articles": 6,
       "reports": 0,
-      "label": "1800 (TW)"
+      "label": "1981 (TW)"
     },
     {
-      "ticker": "1945",
+      "ticker": "1988",
       "name": "",
       "market": "tw",
       "articles": 6,
       "reports": 0,
-      "label": "1945 (TW)"
+      "label": "1988 (TW)"
     },
     {
-      "ticker": "1986",
+      "ticker": "1982",
       "name": "",
       "market": "tw",
       "articles": 6,
       "reports": 0,
-      "label": "1986 (TW)"
+      "label": "1982 (TW)"
     },
     {
-      "ticker": "AVGO",
-      "name": "Broadcom Inc.",
-      "market": "us",
-      "articles": 5,
-      "reports": 1,
-      "label": "AVGO (US)"
-    },
-    {
-      "ticker": "9000",
+      "ticker": "1956",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "9000 (TW)"
+      "label": "1956 (TW)"
     },
     {
-      "ticker": "1947",
+      "ticker": "2600",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "1947 (TW)"
-    },
-    {
-      "ticker": "1933",
-      "name": "",
-      "market": "tw",
-      "articles": 5,
-      "reports": 0,
-      "label": "1933 (TW)"
+      "label": "2600 (TW)"
     },
     {
       "ticker": "1964",
@@ -626,44 +242,52 @@
       "label": "1964 (TW)"
     },
     {
-      "ticker": "9100",
+      "ticker": "1980",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "9100 (TW)"
+      "label": "1980 (TW)"
     },
     {
-      "ticker": "1940",
+      "ticker": "9600",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "1940 (TW)"
+      "label": "9600 (TW)"
     },
     {
-      "ticker": "1960",
+      "ticker": "1976",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "1960 (TW)"
+      "label": "1976 (TW)"
     },
     {
-      "ticker": "1970",
+      "ticker": "1971",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "1970 (TW)"
+      "label": "1971 (TW)"
     },
     {
-      "ticker": "8647",
+      "ticker": "1983",
       "name": "",
       "market": "tw",
       "articles": 5,
       "reports": 0,
-      "label": "8647 (TW)"
+      "label": "1983 (TW)"
+    },
+    {
+      "ticker": "1986",
+      "name": "",
+      "market": "tw",
+      "articles": 5,
+      "reports": 0,
+      "label": "1986 (TW)"
     },
     {
       "ticker": "6488",
@@ -674,12 +298,20 @@
       "label": "6488 (TW)"
     },
     {
-      "ticker": "1957",
-      "name": "",
-      "market": "tw",
+      "ticker": "AMD",
+      "name": "ADVANCED MICRO DEVICES INC",
+      "market": "us",
       "articles": 4,
-      "reports": 0,
-      "label": "1957 (TW)"
+      "reports": 1,
+      "label": "AMD (US)"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "market": "us",
+      "articles": 4,
+      "reports": 1,
+      "label": "AVGO (US)"
     },
     {
       "ticker": "2142",
@@ -690,44 +322,20 @@
       "label": "2142 (TW)"
     },
     {
-      "ticker": "1952",
+      "ticker": "1950",
       "name": "",
       "market": "tw",
       "articles": 4,
       "reports": 0,
-      "label": "1952 (TW)"
+      "label": "1950 (TW)"
     },
     {
-      "ticker": "1942",
+      "ticker": "2040",
       "name": "",
       "market": "tw",
       "articles": 4,
       "reports": 0,
-      "label": "1942 (TW)"
-    },
-    {
-      "ticker": "1941",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1941 (TW)"
-    },
-    {
-      "ticker": "1961",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1961 (TW)"
-    },
-    {
-      "ticker": "9005",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "9005 (TW)"
+      "label": "2040 (TW)"
     },
     {
       "ticker": "0500",
@@ -738,44 +346,20 @@
       "label": "0500 (TW)"
     },
     {
-      "ticker": "8004",
+      "ticker": "1972",
       "name": "",
       "market": "tw",
       "articles": 4,
       "reports": 0,
-      "label": "8004 (TW)"
+      "label": "1972 (TW)"
     },
     {
-      "ticker": "1968",
+      "ticker": "1940",
       "name": "",
       "market": "tw",
       "articles": 4,
       "reports": 0,
-      "label": "1968 (TW)"
-    },
-    {
-      "ticker": "1967",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1967 (TW)"
-    },
-    {
-      "ticker": "1931",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1931 (TW)"
-    },
-    {
-      "ticker": "0056",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "0056 (TW)"
+      "label": "1940 (TW)"
     },
     {
       "ticker": "2303",
@@ -786,84 +370,20 @@
       "label": "2303 (TW)"
     },
     {
-      "ticker": "1958",
+      "ticker": "1987",
       "name": "",
       "market": "tw",
       "articles": 4,
       "reports": 0,
-      "label": "1958 (TW)"
+      "label": "1987 (TW)"
     },
     {
-      "ticker": "1954",
+      "ticker": "1930",
       "name": "",
       "market": "tw",
       "articles": 4,
       "reports": 0,
-      "label": "1954 (TW)"
-    },
-    {
-      "ticker": "1965",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1965 (TW)"
-    },
-    {
-      "ticker": "1962",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1962 (TW)"
-    },
-    {
-      "ticker": "4060",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "4060 (TW)"
-    },
-    {
-      "ticker": "1963",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1963 (TW)"
-    },
-    {
-      "ticker": "4000",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "4000 (TW)"
-    },
-    {
-      "ticker": "1934",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1934 (TW)"
-    },
-    {
-      "ticker": "1978",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "1978 (TW)"
-    },
-    {
-      "ticker": "7997",
-      "name": "",
-      "market": "tw",
-      "articles": 4,
-      "reports": 0,
-      "label": "7997 (TW)"
+      "label": "1930 (TW)"
     },
     {
       "ticker": "2308",
@@ -882,52 +402,36 @@
       "label": "6789 (TW)"
     },
     {
-      "ticker": "1944",
+      "ticker": "1952",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1944 (TW)"
+      "label": "1952 (TW)"
     },
     {
-      "ticker": "HOME",
-      "name": "",
-      "market": "us",
-      "articles": 3,
-      "reports": 0,
-      "label": "HOME (US)"
-    },
-    {
-      "ticker": "1899",
+      "ticker": "1942",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1899 (TW)"
+      "label": "1942 (TW)"
     },
     {
-      "ticker": "4070",
+      "ticker": "2048",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "4070 (TW)"
+      "label": "2048 (TW)"
     },
     {
-      "ticker": "3200",
+      "ticker": "1933",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "3200 (TW)"
-    },
-    {
-      "ticker": "9755",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "9755 (TW)"
+      "label": "1933 (TW)"
     },
     {
       "ticker": "3081",
@@ -946,108 +450,52 @@
       "label": "2409 (TW)"
     },
     {
-      "ticker": "1949",
+      "ticker": "2050",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1949 (TW)"
+      "label": "2050 (TW)"
     },
     {
-      "ticker": "8800",
+      "ticker": "1500",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "8800 (TW)"
+      "label": "1500 (TW)"
     },
     {
-      "ticker": "4050",
+      "ticker": "1960",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "4050 (TW)"
+      "label": "1960 (TW)"
     },
     {
-      "ticker": "1948",
+      "ticker": "8004",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1948 (TW)"
+      "label": "8004 (TW)"
     },
     {
-      "ticker": "1939",
+      "ticker": "1945",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1939 (TW)"
+      "label": "1945 (TW)"
     },
     {
-      "ticker": "1900",
+      "ticker": "1958",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1900 (TW)"
-    },
-    {
-      "ticker": "ASML",
-      "name": "",
-      "market": "us",
-      "articles": 3,
-      "reports": 0,
-      "label": "ASML (US)"
-    },
-    {
-      "ticker": "1200",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "1200 (TW)"
-    },
-    {
-      "ticker": "5500",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "5500 (TW)"
-    },
-    {
-      "ticker": "S",
-      "name": "",
-      "market": "us",
-      "articles": 3,
-      "reports": 0,
-      "label": "S (US)"
-    },
-    {
-      "ticker": "2036",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "2036 (TW)"
-    },
-    {
-      "ticker": "1943",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "1943 (TW)"
-    },
-    {
-      "ticker": "1789",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "1789 (TW)"
+      "label": "1958 (TW)"
     },
     {
       "ticker": "1953",
@@ -1058,44 +506,60 @@
       "label": "1953 (TW)"
     },
     {
-      "ticker": "5050",
+      "ticker": "3000",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "5050 (TW)"
+      "label": "3000 (TW)"
     },
     {
-      "ticker": "1895",
+      "ticker": "1963",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1895 (TW)"
+      "label": "1963 (TW)"
     },
     {
-      "ticker": "9060",
+      "ticker": "1961",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "9060 (TW)"
+      "label": "1961 (TW)"
     },
     {
-      "ticker": "1599",
+      "ticker": "1962",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1599 (TW)"
+      "label": "1962 (TW)"
     },
     {
-      "ticker": "1935",
+      "ticker": "1975",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
-      "label": "1935 (TW)"
+      "label": "1975 (TW)"
+    },
+    {
+      "ticker": "1934",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "1934 (TW)"
+    },
+    {
+      "ticker": "1978",
+      "name": "",
+      "market": "tw",
+      "articles": 3,
+      "reports": 0,
+      "label": "1978 (TW)"
     },
     {
       "ticker": "2700",
@@ -1114,28 +578,12 @@
       "label": "2408 (TW)"
     },
     {
-      "ticker": "3089",
-      "name": "",
-      "market": "tw",
-      "articles": 3,
-      "reports": 0,
-      "label": "3089 (TW)"
-    },
-    {
       "ticker": "7372",
       "name": "",
       "market": "tw",
       "articles": 3,
       "reports": 0,
       "label": "7372 (TW)"
-    },
-    {
-      "ticker": "INTC",
-      "name": "INTEL CORP",
-      "market": "us",
-      "articles": 2,
-      "reports": 1,
-      "label": "INTC (US)"
     },
     {
       "ticker": "4949",
@@ -1146,12 +594,68 @@
       "label": "4949 (TW)"
     },
     {
-      "ticker": "APO",
-      "name": "Apollo Global Management, Inc.",
+      "ticker": "ACHC",
+      "name": "Acadia Healthcare Company, Inc.",
       "market": "us",
       "articles": 1,
       "reports": 1,
-      "label": "APO (US)"
+      "label": "ACHC (US)"
+    },
+    {
+      "ticker": "BTC",
+      "name": "Grayscale Bitcoin Mini Trust ETF",
+      "market": "us",
+      "articles": 1,
+      "reports": 1,
+      "label": "BTC (US)"
+    },
+    {
+      "ticker": "CGON",
+      "name": "CG Oncology, Inc.",
+      "market": "us",
+      "articles": 1,
+      "reports": 1,
+      "label": "CGON (US)"
+    },
+    {
+      "ticker": "INTC",
+      "name": "INTEL CORP",
+      "market": "us",
+      "articles": 1,
+      "reports": 1,
+      "label": "INTC (US)"
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN Ltd",
+      "market": "us",
+      "articles": 1,
+      "reports": 1,
+      "label": "IREN (US)"
+    },
+    {
+      "ticker": "RLAY",
+      "name": "Relay Therapeutics, Inc.",
+      "market": "us",
+      "articles": 1,
+      "reports": 1,
+      "label": "RLAY (US)"
+    },
+    {
+      "ticker": "TWST",
+      "name": "Twist Bioscience Corp",
+      "market": "us",
+      "articles": 1,
+      "reports": 1,
+      "label": "TWST (US)"
+    },
+    {
+      "ticker": "TSM",
+      "name": "",
+      "market": "us",
+      "articles": 1,
+      "reports": 0,
+      "label": "TSM (US)"
     },
     {
       "ticker": "2024",
@@ -1322,20 +826,12 @@
       "label": "2031 (TW)"
     },
     {
-      "ticker": "ACHC",
-      "name": "Acadia Healthcare Company, Inc.",
+      "ticker": "APO",
+      "name": "Apollo Global Management, Inc.",
       "market": "us",
       "articles": 0,
       "reports": 1,
-      "label": "ACHC (US)"
-    },
-    {
-      "ticker": "CGON",
-      "name": "CG Oncology, Inc.",
-      "market": "us",
-      "articles": 0,
-      "reports": 1,
-      "label": "CGON (US)"
+      "label": "APO (US)"
     },
     {
       "ticker": "GLW",
@@ -1346,28 +842,12 @@
       "label": "GLW (US)"
     },
     {
-      "ticker": "IREN",
-      "name": "IREN Ltd",
+      "ticker": "JPM",
+      "name": "JPMORGAN CHASE & CO",
       "market": "us",
       "articles": 0,
       "reports": 1,
-      "label": "IREN (US)"
-    },
-    {
-      "ticker": "RLAY",
-      "name": "Relay Therapeutics, Inc.",
-      "market": "us",
-      "articles": 0,
-      "reports": 1,
-      "label": "RLAY (US)"
-    },
-    {
-      "ticker": "TWST",
-      "name": "Twist Bioscience Corp",
-      "market": "us",
-      "articles": 0,
-      "reports": 1,
-      "label": "TWST (US)"
+      "label": "JPM (US)"
     }
   ]
 }

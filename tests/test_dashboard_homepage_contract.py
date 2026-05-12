@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 class DashboardHomepageContractTests(unittest.TestCase):
     def setUp(self):
         self.index = (ROOT / "web" / "src" / "pages" / "index.astro").read_text(encoding="utf-8")
+        self.stock_page = (ROOT / "web" / "src" / "pages" / "stocks" / "[ticker].astro").read_text(encoding="utf-8")
         self.css = (ROOT / "web" / "src" / "styles" / "global.css").read_text(encoding="utf-8")
 
     def test_homepage_is_stock_search_portal_not_research_queue(self):
@@ -50,6 +51,11 @@ class DashboardHomepageContractTests(unittest.TestCase):
         ]
         for selector in required_selectors:
             self.assertIn(selector, self.css)
+
+    def test_stock_routes_are_limited_to_search_index(self):
+        self.assertIn('import tickerIndex from "../../data/tickers.json";', self.stock_page)
+        self.assertIn("allowedTickers", self.stock_page)
+        self.assertIn("allowedTickers.has(ticker)", self.stock_page)
 
 
 if __name__ == "__main__":

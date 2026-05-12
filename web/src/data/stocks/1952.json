@@ -18,8 +18,7 @@
       "event_type": "earnings",
       "tickers": [
         "1952",
-        "1864",
-        "META"
+        "1864"
       ],
       "companies": [
         "Meta"
@@ -75,7 +74,6 @@
       "summary": "",
       "event_type": "news",
       "tickers": [
-        "BLSH",
         "1952"
       ]
     }
@@ -86,11 +84,7 @@
     {
       "ticker": "1864",
       "count": 1
-    },
-    {
-      "ticker": "META",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:20Z"
+  "generated_at": "2026-05-12T03:24:39Z"
 }

@@ -37,8 +37,7 @@
       "body_text": "It’s the nature of business that the eulogy for a chief executive doesn’t happen when they die, but when they retire, or, in the case of Apple CEO Tim Cook, announce that they will step up to the role of Executive Chairman on September 1 . The one morbid exception is when a CEO dies on the job — or quits because they are dying — and the truth of the matter is that that is where any honest recounti",
       "event_type": "earnings",
       "tickers": [
-        "1984",
-        "AAPL"
+        "1984"
       ],
       "companies": [
         "Apple"
@@ -75,9 +74,7 @@
       "tickers": [
         "1977",
         "1984",
-        "AAPL",
-        "MSFT",
-        "NVDA"
+        "AAPL"
       ],
       "companies": [
         "Apple",
@@ -119,7 +116,7 @@
   "co_mentions": [
     {
       "ticker": "AAPL",
-      "count": 4
+      "count": 3
     },
     {
       "ticker": "1142",
@@ -132,15 +129,7 @@
     {
       "ticker": "1977",
       "count": 1
-    },
-    {
-      "ticker": "MSFT",
-      "count": 1
-    },
-    {
-      "ticker": "NVDA",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:19Z"
+  "generated_at": "2026-05-12T03:24:38Z"
 }

@@ -246,8 +246,7 @@
       "event_type": "policy",
       "tickers": [
         "1973",
-        "1979",
-        "TSLA"
+        "1979"
       ],
       "companies": [
         "Tesla"
@@ -318,8 +317,7 @@
       "event_type": "news",
       "tickers": [
         "1979",
-        "1975",
-        "META"
+        "1975"
       ]
     },
     {
@@ -435,5 +433,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

@@ -18,7 +18,6 @@
       "event_type": "earnings",
       "tickers": [
         "RLAY",
-        "GOOGL",
         "BRK-B"
       ],
       "companies": [
@@ -38,7 +37,6 @@
       "event_type": "earnings",
       "tickers": [
         "TWST",
-        "GOOGL",
         "BRK-B"
       ],
       "companies": [
@@ -58,7 +56,6 @@
       "event_type": "earnings",
       "tickers": [
         "ACHC",
-        "GOOGL",
         "BRK-B"
       ],
       "companies": [
@@ -192,8 +189,7 @@
       "summary": "New CEO Greg Abel did most of the talking at his first Berkshire Hathaway shareholders meeting, but Warren Buffett was still a major presence.",
       "event_type": "news",
       "tickers": [
-        "BRK-B",
-        "AAPL"
+        "BRK-B"
       ]
     },
     {
@@ -361,8 +357,7 @@
       "summary": "The listing gives public investors their first direct stake in Ackman's investment platform, which runs a concentrated portfolio of 10 large-cap names.",
       "event_type": "news",
       "tickers": [
-        "BRK-B",
-        "AMZN"
+        "BRK-B"
       ]
     },
     {
@@ -410,8 +405,7 @@
       "summary": "The new CEO has already sold stocks previously overseen by Combs after the longtime investment manager and Geico chief left for JPMorgan at the end of 2025.",
       "event_type": "news",
       "tickers": [
-        "BRK-B",
-        "JPM"
+        "BRK-B"
       ]
     },
     {
@@ -431,10 +425,6 @@
   "fundamentals": null,
   "co_mentions": [
     {
-      "ticker": "GOOGL",
-      "count": 3
-    },
-    {
       "ticker": "RLAY",
       "count": 1
     },
@@ -447,5 +437,5 @@
       "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

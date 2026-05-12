@@ -66,10 +66,16 @@ const stockSearchItems = ((tickerIndex as any).tickers ?? []) as TickerEntry[];
 const momentumByTicker: Record<string, MomentumRow> = {};
 for (const row of momentumRows) momentumByTicker[row.ticker] = row;
 
-const stockNews = articles.filter((item) => (item.tickers ?? []).length > 0);
-const callArticles = articles.filter((item) =>
+function isStockSurfaceArticle(item: Article): boolean {
+  if (!(item.tickers ?? []).length) return false;
+  return !/github trending|arxiv|reddit r\/|hackernews|hugging face|sec form [345]|lobsters|servethehome/i.test(item.source || "");
+}
+
+const stockNews = articles.filter(isStockSurfaceArticle);
+const callArticles = stockNews.filter((item) =>
   /transcript|earnings call|conference call|prepared remarks|法說|電話會議/i.test(`${item.title} ${item.source} ${item.category}`)
 );
+const internalStockFeed = internalFeed.filter(isStockSurfaceArticle);
 const topSearchItems = stockSearchItems.slice(0, 12);
 const hotTickers = topSearchItems
   .map((item) => ({ ...item, momentum: momentumByTicker[item.ticker] ?? null }))
@@ -294,7 +300,7 @@ const sourceTiles = [
     </div>
 
     <div class="latest-feed">
-      {[...stockNews, ...internalFeed].slice(0, 14).map((item) => (
+      {[...stockNews, ...internalStockFeed].slice(0, 14).map((item) => (
         <a href={articleHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
           <time>{ago(item.published)}</time>
           <strong>{item.tickers?.[0] ?? "市場"}</strong>

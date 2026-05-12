@@ -86,6 +86,64 @@ THEME_KEYWORDS = {
 
 DEFAULT_WATCHLIST = ["NVDA", "TSM", "2330", "AAPL", "MSFT", "GOOGL", "META", "AMD", "AVGO", "2454"]
 
+DASHBOARD_NOISY_SOURCE_SUBSTR = (
+    "arxiv",
+    "github trending",
+    "hackernews",
+    "hugging face blog",
+    "lobsters",
+    "reddit r/",
+    "sec form 3",
+    "sec form 4",
+    "sec form 5",
+    "semiconductor engineering",
+    "servethehome",
+    "x @googledeepmind",
+    "x @openai",
+)
+DASHBOARD_NOISY_TITLE_SUBSTR = (
+    "github.com/",
+    "open-source github",
+    "best deal",
+    "best gaming",
+    "best laptop",
+    "amazon.com:",
+    "gaming pc",
+    "hits lowest price",
+    "newegg",
+    "rtx 50",
+    "ryzen",
+)
+DASHBOARD_STOCK_CATEGORY_SUBSTR = (
+    "財經",
+    "科技廠",
+    "半導體",
+    "內部人",
+    "機構持股",
+    "法說",
+    "IR",
+    "券商",
+    "分析師",
+    "融券",
+    "資金流",
+    "產業數據",
+)
+DASHBOARD_STOCK_SOURCE_SUBSTR = (
+    "bloomberg",
+    "cnbc",
+    "digitimes",
+    "investing.com",
+    "marketwatch",
+    "seeking alpha",
+    "tsmc",
+    "工商時報",
+    "中央社 財經",
+    "自由時報 財經",
+    "經濟日報",
+    "聯發科",
+    "鴻海",
+)
+
 
 def _utcnow_iso() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -226,6 +284,44 @@ def _parse_companies(raw: str | None) -> list[str]:
     except Exception:
         pass
     return []
+
+
+def _article_tickers(article: dict) -> list[str]:
+    tickers = article.get("tickers")
+    if isinstance(tickers, list):
+        return [str(t).strip().upper() for t in tickers if str(t).strip()]
+    return _parse_tickers(article.get("tickers_json"))
+
+
+def _is_dashboard_stock_article(article: dict) -> bool:
+    """True when an article is suitable for the stock-search dashboard surface."""
+    if not _sanitize_dashboard_tickers(article):
+        return False
+
+    source = (article.get("source") or "").strip().lower()
+    title = (article.get("title") or "").strip().lower()
+    category = article.get("category") or ""
+    event_type = (article.get("event_type") or "").strip().lower()
+
+    if any(noise in source for noise in DASHBOARD_NOISY_SOURCE_SUBSTR):
+        return False
+    if any(noise in title for noise in DASHBOARD_NOISY_TITLE_SUBSTR):
+        return False
+    if any(allowed in category for allowed in DASHBOARD_STOCK_CATEGORY_SUBSTR):
+        return True
+    if any(allowed in source for allowed in DASHBOARD_STOCK_SOURCE_SUBSTR):
+        return True
+    return event_type in {"earnings", "capex", "filing"}
+
+
+def _dashboard_stock_articles(articles: Iterable[dict]) -> list[dict]:
+    out: list[dict] = []
+    for article in articles:
+        rec = dict(article)
+        rec["tickers"] = _sanitize_dashboard_tickers(rec)
+        if _is_dashboard_stock_article(rec):
+            out.append(rec)
+    return out
 
 
 def _connect(db_path: Path) -> sqlite3.Connection:
@@ -383,8 +479,8 @@ def _theme_extract(articles: Iterable[dict]) -> list[dict]:
 def _momentum_screen(conn: sqlite3.Connection, today: datetime) -> list[dict]:
     last_7 = (today - timedelta(days=7)).isoformat()
     prev_7 = (today - timedelta(days=14)).isoformat()
-    recent = _articles_for_window(conn, last_7, limit=10000)
-    prior = _articles_for_window(conn, prev_7, limit=10000)
+    recent = _dashboard_stock_articles(_articles_for_window(conn, last_7, limit=10000))
+    prior = _dashboard_stock_articles(_articles_for_window(conn, prev_7, limit=10000))
     prior_recent_cutoff = last_7
     prior_only = [a for a in prior if (a.get("published") or "") < prior_recent_cutoff]
     cur: Counter[str] = Counter()
@@ -482,11 +578,7 @@ def _meaningful_news_for_ticker(db_path: Path, ticker: str, limit: int = 40) -> 
         return []
     finally:
         conn.close()
-    NOISY_SOURCE_SUBSTR = (
-        "arxiv", "lobsters", "servethehome", "github trending",
-        "x @googledeepmind", "x @openai", "reddit r/", "hackernews",
-        "semiconductor engineering",
-    )
+    NOISY_SOURCE_SUBSTR = DASHBOARD_NOISY_SOURCE_SUBSTR
     NOISY_TITLE_PATTERNS = (
         "arxiv:",
         "/ (arxiv",
@@ -505,6 +597,8 @@ def _meaningful_news_for_ticker(db_path: Path, ticker: str, limit: int = 40) -> 
     for row in rows:
         rec = dict(row)
         t_list = _parse_tickers(rec.pop("tickers_json", None))
+        rec["tickers"] = t_list
+        t_list = _sanitize_dashboard_tickers(rec)
         if ticker.upper() not in t_list:
             continue
         title = (rec["title"] or "").strip()
@@ -535,11 +629,7 @@ def _meaningful_news_for_ticker(db_path: Path, ticker: str, limit: int = 40) -> 
     return out
 
 
-_NOISY_SRC_SUBSTR = (
-    "arxiv", "lobsters", "servethehome", "github trending",
-    "x @googledeepmind", "x @openai", "reddit r/", "hackernews",
-    "semiconductor engineering",
-)
+_NOISY_SRC_SUBSTR = DASHBOARD_NOISY_SOURCE_SUBSTR
 
 
 def _finance_news_for_ticker(db_path: Path, ticker: str, limit: int = 25) -> list[dict]:
@@ -576,6 +666,9 @@ def _finance_news_for_ticker(db_path: Path, ticker: str, limit: int = 25) -> lis
             continue
         seen.add(norm)
         rec["tickers"] = _parse_tickers(rec.pop("tickers_json", None))
+        rec["tickers"] = _sanitize_dashboard_tickers(rec)
+        if ticker.upper() not in rec["tickers"]:
+            continue
         out.append(rec)
         if len(out) >= limit:
             break
@@ -654,7 +747,12 @@ def _coverage_map(db_path: Path) -> list[dict]:
     try:
         try:
             articles = conn.execute(
-                "SELECT tickers_json FROM articles WHERE tickers_json IS NOT NULL AND tickers_json!='[]' LIMIT 50000"
+                """
+                SELECT title, source, category, tickers_json, event_type
+                FROM articles
+                WHERE tickers_json IS NOT NULL AND tickers_json!='[]'
+                LIMIT 50000
+                """
             ).fetchall()
         except sqlite3.OperationalError:
             articles = []
@@ -668,7 +766,12 @@ def _coverage_map(db_path: Path) -> list[dict]:
         conn.close()
     art_counter: Counter[str] = Counter()
     for row in articles:
-        for t in _parse_tickers(row["tickers_json"]):
+        rec = dict(row)
+        rec["tickers"] = _parse_tickers(rec.pop("tickers_json", None))
+        rec["tickers"] = _sanitize_dashboard_tickers(rec)
+        if not _is_dashboard_stock_article(rec):
+            continue
+        for t in rec["tickers"]:
             art_counter[t] += 1
     coverage: dict[str, dict] = {}
     for row in fin:
@@ -1133,14 +1236,47 @@ TICKER_ALIASES = {
 }
 
 
+def _needle_in_text(needle: str, text: str) -> bool:
+    needle_l = needle.strip().lower()
+    if not needle_l:
+        return False
+    lower = text.lower()
+    if re.fullmatch(r"[a-z0-9][a-z0-9 .-]*", needle_l):
+        return bool(re.search(rf"(?<![a-z0-9]){re.escape(needle_l)}(?![a-z0-9])", lower))
+    return needle_l in lower
+
+
+def _ticker_has_text_support(ticker: str, text: str) -> bool:
+    if _needle_in_text(ticker, text):
+        return True
+    for needle, alias_ticker in TICKER_ALIASES.items():
+        if alias_ticker == ticker and _needle_in_text(needle, text):
+            return True
+    return False
+
+
+def _sanitize_dashboard_tickers(article: dict) -> list[str]:
+    text = " ".join(
+        str(article.get(field) or "")
+        for field in ("title", "summary", "source")
+    )
+    clean: list[str] = []
+    for ticker in _article_tickers(article):
+        ticker = ticker.upper()
+        if US_TICKER_RE.match(ticker) and not _ticker_has_text_support(ticker, text):
+            continue
+        if ticker not in clean:
+            clean.append(ticker)
+    return clean
+
+
 def _augment_tickers_from_title(title: str, tickers: list[str]) -> list[str]:
     """Title-based fallback: if news_enrichment missed the ticker, scan known aliases."""
     existing = set(tickers)
-    lower = title.lower()
     for needle, ticker in TICKER_ALIASES.items():
         if ticker in existing:
             continue
-        if needle in lower:
+        if _needle_in_text(needle, title):
             existing.add(ticker)
     return list(existing)
 
@@ -1402,11 +1538,17 @@ def _internal_data_feed(db_path: Path, since_iso: str, limit: int = 30) -> list[
             continue
         lower = title.lower()
         src = (row["source"] or "").lower()
-        if any(n in src for n in ("arxiv", "lobsters", "servethehome", "reddit r/", "hackernews")):
+        if any(n in src for n in DASHBOARD_NOISY_SOURCE_SUBSTR):
             continue
         if any(kw in lower for kw in POLITICS_KW):
             continue
         tickers = _augment_tickers_from_title(title, _parse_tickers(row["tickers_json"]))
+        tickers = _sanitize_dashboard_tickers({
+            "title": title,
+            "summary": row["summary"],
+            "source": row["source"],
+            "tickers": tickers,
+        })
         # Internal data should map to a ticker (real corporate news)
         if not tickers:
             # Allow event_type=filing/capex without tickers only if title is unambiguously corporate
@@ -1476,7 +1618,8 @@ def export_all(
         since_7 = (now - timedelta(days=7)).isoformat()
         since_24h = (now - timedelta(hours=24)).isoformat()
 
-        window_30 = _articles_for_window(conn, since_30, limit=15000)
+        window_30_all = _articles_for_window(conn, since_30, limit=15000)
+        window_30 = _dashboard_stock_articles(window_30_all)
         window_7 = [a for a in window_30 if (a.get("published") or "") >= since_7]
         window_24h = [a for a in window_30 if (a.get("published") or "") >= since_24h]
 
@@ -1489,7 +1632,7 @@ def export_all(
         themes = _theme_extract(window_30)
         momentum = _momentum_screen(conn, now)
 
-        recent_news_pool = _recent_news(conn, limit=2000)
+        recent_news_pool = _dashboard_stock_articles(_recent_news(conn, limit=2000))
         coverage = _coverage_map(db_path)
         events = _events_calendar(window_30)
 

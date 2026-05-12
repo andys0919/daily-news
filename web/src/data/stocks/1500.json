@@ -17,8 +17,7 @@
       "body_text": "Our agent hacked every major one. Here’s how — and what the field needs to fix.\nEvery week, a new AI model climbs to the top of a benchmark leaderboard. Companies cite these numbers in press releases. Investors use them to justify valuations. Engineers use them to pick which model to deploy. The implicit promise is simple: a higher score means a more capable system.\nThat promise is broken.\nWe buil",
       "event_type": "earnings",
       "tickers": [
-        "1500",
-        "META"
+        "1500"
       ],
       "companies": [
         "Meta"
@@ -48,18 +47,12 @@
       "summary": "天文學家利用 NASA 的哈伯太空望遠鏡，從長年累積的觀測資料庫中發現，一顆小型彗星的自轉先是減慢，之後竟然反 [&#8230;]",
       "event_type": "news",
       "tickers": [
-        "1500",
-        "GOOGL"
+        "1500"
       ]
     }
   ],
   "history": [],
   "fundamentals": null,
-  "co_mentions": [
-    {
-      "ticker": "META",
-      "count": 1
-    }
-  ],
-  "generated_at": "2026-05-12T02:19:18Z"
+  "co_mentions": [],
+  "generated_at": "2026-05-12T03:24:39Z"
 }

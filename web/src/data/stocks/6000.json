@@ -18,10 +18,7 @@
       "event_type": "earnings",
       "tickers": [
         "6000",
-        "5090",
-        "NVDA",
-        "GOOGL",
-        "AAPL"
+        "5090"
       ],
       "companies": [
         "NVIDIA",
@@ -42,9 +39,7 @@
       "event_type": "news",
       "tickers": [
         "6000",
-        "GOOGL",
-        "NVDA",
-        "AAPL"
+        "GOOGL"
       ]
     },
     {
@@ -117,10 +112,7 @@
       "summary": "Aims to use underutilized electrical capacity in homes and commercial spaces",
       "event_type": "news",
       "tickers": [
-        "6000",
-        "NVDA",
-        "GOOGL",
-        "TSLA"
+        "6000"
       ]
     },
     {
@@ -134,8 +126,7 @@
       "tickers": [
         "6000",
         "NVDA",
-        "GOOGL",
-        "META"
+        "GOOGL"
       ]
     },
     {
@@ -187,8 +178,7 @@
       "tickers": [
         "6000",
         "NVDA",
-        "AAPL",
-        "GOOGL"
+        "AAPL"
       ]
     },
     {
@@ -210,19 +200,7 @@
     {
       "ticker": "5090",
       "count": 1
-    },
-    {
-      "ticker": "NVDA",
-      "count": 1
-    },
-    {
-      "ticker": "GOOGL",
-      "count": 1
-    },
-    {
-      "ticker": "AAPL",
-      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

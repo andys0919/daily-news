@@ -47,8 +47,7 @@
       "body_text": "President Donald Trump has threatened \"much higher\" tariffs on the European Union (EU) by 4 July if the bloc fails to drop its levies on the US to zero.\nAfter a phone call with European Commission President Ursula von der Leyen, Trump said he agreed to give her until \"our Country's 250th Birthday or, unfortunately, their Tariffs would immediately jump to much higher levels\".\nHowever, von der Leyen",
       "event_type": "policy",
       "tickers": [
-        "1974",
-        "META"
+        "1974"
       ],
       "companies": [
         "Meta"
@@ -137,8 +136,7 @@
       "tickers": [
         "1974",
         "1950",
-        "1000",
-        "GOOGL"
+        "1000"
       ],
       "companies": [
         "Google"
@@ -202,10 +200,6 @@
   "fundamentals": null,
   "co_mentions": [
     {
-      "ticker": "META",
-      "count": 1
-    },
-    {
       "ticker": "1962",
       "count": 1
     },
@@ -240,7 +234,11 @@
     {
       "ticker": "1913",
       "count": 1
+    },
+    {
+      "ticker": "1908",
+      "count": 1
     }
   ],
-  "generated_at": "2026-05-12T02:19:17Z"
+  "generated_at": "2026-05-12T03:24:37Z"
 }

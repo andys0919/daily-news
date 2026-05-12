@@ -1,9 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
+import tickerIndex from "../../data/tickers.json";
 
 export async function getStaticPaths() {
   const modules = import.meta.glob("../../data/stocks/*.json", { eager: true });
-  return Object.entries(modules).map(([file, mod]) => {
+  const allowedTickers = new Set(((tickerIndex as any).tickers ?? []).map((item: any) => item.ticker));
+  return Object.entries(modules).filter(([file]) => {
+    const ticker = file.split("/").pop()!.replace(".json", "");
+    return allowedTickers.has(ticker);
+  }).map(([file, mod]) => {
     const m = mod as { default: any };
     const ticker = file.split("/").pop()!.replace(".json", "");
     return { params: { ticker }, props: { data: m.default } };
