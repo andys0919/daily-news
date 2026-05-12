@@ -15,30 +15,29 @@
 dashboard_export.py    Python → JSON (讀 SQLite，寫 web/src/data/)
 web/                   Astro + Tailwind 4 靜態網站
   src/pages/
-    index.astro        ← 單頁主視角（5 sections）
-    stocks/[ticker].astro  ← 161 檔個股深度頁
+    index.astro        ← 單頁主視角（idea-generation 研究隊列）
+    stocks/[ticker].astro  ← 171 檔個股深度頁
   src/layouts/Base.astro    ← 共用 layout，含搜尋框 + 搜尋 index
   src/styles/global.css     ← 全套 design tokens
-  src/data/*.json           ← 11 個資料檔（每日 export 刷新）
+  src/data/*.json           ← 10 個頂層資料檔 + stocks/*.json（每日 export 刷新）
 launchd/export-dashboard-data.sh    ← 每日刷新腳本
 docs/dashboard-deployment.md        ← 部署指南
-tests/test_dashboard_export.py      ← 3 個測試（全過）
+tests/test_dashboard_export.py      ← dashboard export 測試
+tests/test_dashboard_homepage_contract.py ← 首頁資訊架構合約測試
 ```
 
 ## 單頁結構（index.astro）
 
-1. **Date stamp**（極簡 hero）
-2. **Sticky section index**：今日重點 / 個股 Scorecard / 訊號流 / 公司原文
-3. **本頁如何使用**（可摺疊 guide）
-4. **今日重點**：3 句 takeaway
-5. **個股 Scorecard**（centerpiece）：一行一檔 × 8 欄（健康度/季營收/EPS/YoY/月營收/分析師/最近事件）
-6. **訊號流**：tabbed（指引 / 法人 / 公司內部）
-7. **公司原文**：SEC 10-Q forward-looking 摘錄
-8. **下一步**：3 張 action cards
+1. **今日研究隊列 hero**：顯示產出日期、上修/下修 breadth、可搜尋標的數、財報樣本數、首要追蹤標的
+2. **Sticky section index**：研究隊列 / Watchlist / 市場訊號 / 原文證據
+3. **研究隊列**：高優先研究 / 需要驗證 / 風險雷達；每張卡回答「為什麼現在 / 下一步查核 / 風險觸發」
+4. **Watchlist 決策表**：用同一套 researchQueue 排序，集中顯示狀態、證據信心、風險與數字快照
+5. **市場訊號**：上修、下修、新聞熱度三欄
+6. **原文證據**：SEC filing excerpt + 公司內部 feed
 
 ## 資料來源
 
-- 55,879 篇新聞 + 316 份財報（TWSE / MOPS / TPEx / SEC）
+- 56,703 篇新聞 + 327 份財報（TWSE / MOPS / TPEx / SEC）
 - 5 份 SEC 10-Q filing_excerpt
 - 60 條法人 / 30 條公司內部（經 alias 補正 ticker mapping）
 
@@ -52,10 +51,14 @@ tests/test_dashboard_export.py      ← 3 個測試（全過）
 | YoY 在 Scorecard 顯示「—」 | TW data 重複 row 已 dedupe 但缺去年同期可比資料 |
 | Watchlist hardcode | 已補 `data/watchlist.yaml`；`dashboard_export.py` 預設讀 yaml，沒有檔案才 fallback |
 | 主 branch 未 merge | 已 fast-forward merge 到 main |
+| 首頁舊 Scorecard/guide 很難讀 | 已改成投資研究隊列：高優先研究 / 需要驗證 / 風險雷達 / Watchlist 決策表 |
 
 ## 最近 commits（main）
 
 ```
+ui(dashboard): research-queue homepage redesign
+data(dashboard): refresh latest snapshot
+fix(dashboard): finalize local tunnel refresh
 ui(dashboard): strip filler + fix currency + populate Scorecard
 ui(dashboard): consolidate guidance + next-steps + sticky table
 chore(dashboard): project cleanup (archive openspec + README)

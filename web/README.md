@@ -23,11 +23,12 @@ npm run preview      # serve dist/ locally
 
 | Route | Source | Data file |
 |---|---|---|
-| `/` | `src/pages/index.astro` | `src/data/overview.json` |
+| `/` | `src/pages/index.astro` | `src/data/overview.json`, `src/data/screens.json`, `src/data/decisions.json` |
 | `/stocks/[ticker]` | `src/pages/stocks/[ticker].astro` | `src/data/stocks/<TICKER>.json` |
-| `/news` | `src/pages/news.astro` | `src/data/news.json` |
-| `/calendar` | `src/pages/calendar.astro` | `src/data/events.json` |
-| `/decisions` | `src/pages/decisions.astro` | `src/data/decisions.json` |
+
+The homepage is an investor research queue: high-priority research, validation
+queue, risk radar, watchlist decision table, market signals, and source
+evidence. It intentionally avoids a raw news dump as the first screen.
 
 ## Data refresh
 

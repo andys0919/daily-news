@@ -80,7 +80,7 @@ const tickers = (tickerIndex.tickers ?? []).map((t: any) => ({
         const results = document.getElementById("search-results");
         if (!input || !results) return;
 
-        function render(matches, query) {
+        function render(matches) {
           if (!matches.length) {
             results.innerHTML = '<div class="search-empty">沒有匹配的 ticker — 試試 <span class="mono">2330</span> 或 <span class="mono">NVDA</span></div>';
             results.hidden = false;

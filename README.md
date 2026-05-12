@@ -30,11 +30,10 @@
 
 | Section | 內容 |
 |---|---|
-| ① 今日重點 | 3 句白話 takeaway，從本日訊號自動產生 |
-| ② 個股 Scorecard | 一行一檔：健康度・季營收・EPS・YoY・月營收・分析師看法・最近事件 |
-| ③ 訊號流 | tabbed feed — 指引 / 法人 / 公司內部 |
-| ④ 公司原文 | SEC 10-Q forward-looking statements 摘錄 |
-| ⑤ 下一步 | 3 張 action cards，連到 Scorecard、搜尋與 pipeline 文件 |
+| ① 今日研究隊列 | 以 idea-generation 思路排序：高優先研究 / 需要驗證 / 風險雷達 |
+| ② Watchlist 決策表 | 一行一檔：為什麼現在、下一步查核、風險觸發、數字快照 |
+| ③ 市場訊號 | 上修 / 下修 / 新聞熱度三欄，避免混成一張雜訊清單 |
+| ④ 原文證據 | SEC filing excerpt 與公司內部 feed，用來驗證新聞與法人敘事 |
 
 ### 本機開發
 
