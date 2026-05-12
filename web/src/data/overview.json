@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-12T01:54:26Z",
+  "generated_at": "2026-05-12T02:14:00Z",
   "stats": {
     "articles_total": 56600,
-    "articles_24h": 976,
-    "articles_7d": 4174,
+    "articles_24h": 971,
+    "articles_7d": 4167,
     "articles_30d": 15000,
     "reports_total": 322,
     "insider_total": 0,
@@ -806,8 +806,8 @@
       "direction": "up",
       "excerpt": "聯發科（2454）飆漲停刷新天價！法人喊上看5000元 網嗨：取代台積電（2330）&nbsp;&nbsp;聯合新聞網",
       "tickers": [
-        "2454",
-        "2330"
+        "2330",
+        "2454"
       ],
       "companies": [
         "聯發科",
@@ -1118,8 +1118,8 @@
       "direction": "up",
       "excerpt": "聯發科（2454）飆漲停刷新天價！法人喊上看5000元 網嗨：取代台積電（2330）&nbsp;&nbsp;聯合新聞網",
       "tickers": [
-        "2454",
-        "2330"
+        "2330",
+        "2454"
       ],
       "companies": [
         "聯發科",
@@ -1731,9 +1731,9 @@
       "source": "鴻海/Foxconn",
       "published": "2026-05-09T14:51:32+08:00",
       "tickers": [
-        "2408",
         "2317",
-        "2330"
+        "2330",
+        "2408"
       ],
       "direction": null,
       "summary": "三大法人買賣超 – 外資買超(2330)台積電、(2317)鴻海，投信買超(2330)台積電、(2408)南亞科，法人合計買超583.31億元&nbsp;&nbsp;sinotrade.com.tw"
@@ -1800,10 +1800,10 @@
       "q_revenue": 3809054272.0,
       "q_eps": 66.26,
       "q_rev_yoy": null,
-      "m_year": null,
+      "m_year": 2026,
       "m_period": "11503",
       "m_revenue": 415191699.0,
-      "q_count": 3,
+      "q_count": 2,
       "m_count": 2
     },
     {
@@ -1905,10 +1905,10 @@
       "q_revenue": 595965682.0,
       "q_eps": 66.16,
       "q_rev_yoy": null,
-      "m_year": null,
+      "m_year": 2026,
       "m_period": "11503",
       "m_revenue": 63219184.0,
-      "q_count": 3,
+      "q_count": 2,
       "m_count": 2
     },
     {
@@ -1920,10 +1920,10 @@
       "q_revenue": 8103104763.0,
       "q_eps": 13.61,
       "q_rev_yoy": null,
-      "m_year": null,
+      "m_year": 2026,
       "m_period": "11503",
       "m_revenue": 803737716.0,
-      "q_count": 3,
+      "q_count": 2,
       "m_count": 2
     },
     {
@@ -3006,7 +3006,708 @@
     ]
   },
   "top_transcripts": [],
-  "market_indices": {},
+  "market_indices": {
+    "timestamp": "2026-05-12T09:03:10.880015+08:00",
+    "fear_greed": "N/A",
+    "indices": [
+      {
+        "name": "S&P 500",
+        "symbol": "^GSPC",
+        "price": 7412.84,
+        "change": 13.91,
+        "change_pct": 0.19,
+        "prev_close": 7398.93,
+        "group": "us",
+        "week_pct": 2.12,
+        "ytd_pct": 8.08,
+        "leaders": []
+      },
+      {
+        "name": "NASDAQ",
+        "symbol": "^IXIC",
+        "price": 26274.12,
+        "change": 27.05,
+        "change_pct": 0.1,
+        "prev_close": 26247.08,
+        "group": "us",
+        "week_pct": 3.74,
+        "ytd_pct": 13.08,
+        "leaders": []
+      },
+      {
+        "name": "道瓊工業",
+        "symbol": "^DJI",
+        "price": 49704.47,
+        "change": 95.31,
+        "change_pct": 0.19,
+        "prev_close": 49609.16,
+        "group": "us",
+        "week_pct": 0.82,
+        "ytd_pct": 2.73,
+        "leaders": []
+      },
+      {
+        "name": "費城半導體",
+        "symbol": "SOXX",
+        "price": 532.76,
+        "change": 10.76,
+        "change_pct": 2.06,
+        "prev_close": 522.0,
+        "group": "us",
+        "week_pct": 10.36,
+        "ytd_pct": 69.94,
+        "leaders": []
+      },
+      {
+        "name": "科技",
+        "symbol": "XLK",
+        "price": 177.88,
+        "change": 2.05,
+        "change_pct": 1.17,
+        "prev_close": 175.83,
+        "group": "sector",
+        "week_pct": 7.4,
+        "ytd_pct": 23.42,
+        "leaders": [
+          {
+            "symbol": "AAPL",
+            "name": "Apple",
+            "price": 292.68,
+            "change_pct": -0.4,
+            "week_pct": 2.99,
+            "ytd_pct": 8.1
+          },
+          {
+            "symbol": "MSFT",
+            "name": "Microsoft",
+            "price": 412.66,
+            "change_pct": -0.59,
+            "week_pct": 0.31,
+            "ytd_pct": -12.55
+          },
+          {
+            "symbol": "NVDA",
+            "name": "NVIDIA",
+            "price": 219.44,
+            "change_pct": 2.04,
+            "week_pct": 11.67,
+            "ytd_pct": 16.2
+          }
+        ]
+      },
+      {
+        "name": "金融",
+        "symbol": "XLF",
+        "price": 51.18,
+        "change": -0.06,
+        "change_pct": -0.12,
+        "prev_close": 51.24,
+        "group": "sector",
+        "week_pct": -0.79,
+        "ytd_pct": -6.35,
+        "leaders": [
+          {
+            "symbol": "BRK-B",
+            "name": "Berkshire",
+            "price": 479.55,
+            "change_pct": 0.64,
+            "week_pct": 3.01,
+            "ytd_pct": -3.48
+          },
+          {
+            "symbol": "JPM",
+            "name": "JPMorgan",
+            "price": 300.0,
+            "change_pct": -0.71,
+            "week_pct": -3.04,
+            "ytd_pct": -6.94
+          },
+          {
+            "symbol": "V",
+            "name": "Visa",
+            "price": 323.86,
+            "change_pct": 1.65,
+            "week_pct": 0.57,
+            "ytd_pct": -6.34
+          }
+        ]
+      },
+      {
+        "name": "醫療",
+        "symbol": "XLV",
+        "price": 143.04,
+        "change": -0.73,
+        "change_pct": -0.51,
+        "prev_close": 143.77,
+        "group": "sector",
+        "week_pct": -1.56,
+        "ytd_pct": -7.64,
+        "leaders": [
+          {
+            "symbol": "LLY",
+            "name": "Eli Lilly",
+            "price": 966.99,
+            "change_pct": 1.79,
+            "week_pct": -2.21,
+            "ytd_pct": -10.34
+          },
+          {
+            "symbol": "JNJ",
+            "name": "J&J",
+            "price": 221.43,
+            "change_pct": 0.08,
+            "week_pct": -1.83,
+            "ytd_pct": 7.36
+          },
+          {
+            "symbol": "ABBV",
+            "name": "AbbVie",
+            "price": 202.78,
+            "change_pct": 0.7,
+            "week_pct": -1.62,
+            "ytd_pct": -10.12
+          }
+        ]
+      },
+      {
+        "name": "能源",
+        "symbol": "XLE",
+        "price": 57.17,
+        "change": 1.54,
+        "change_pct": 2.77,
+        "prev_close": 55.63,
+        "group": "sector",
+        "week_pct": -3.84,
+        "ytd_pct": 26.05,
+        "leaders": [
+          {
+            "symbol": "XOM",
+            "name": "ExxonMobil",
+            "price": 149.68,
+            "change_pct": 3.76,
+            "week_pct": -3.36,
+            "ytd_pct": 22.85
+          },
+          {
+            "symbol": "CVX",
+            "name": "Chevron",
+            "price": 184.74,
+            "change_pct": 1.81,
+            "week_pct": -4.1,
+            "ytd_pct": 19.66
+          },
+          {
+            "symbol": "COP",
+            "name": "ConocoPhilips",
+            "price": 115.55,
+            "change_pct": 1.37,
+            "week_pct": -6.3,
+            "ytd_pct": 20.42
+          }
+        ]
+      },
+      {
+        "name": "工業",
+        "symbol": "XLI",
+        "price": 175.04,
+        "change": 1.64,
+        "change_pct": 0.95,
+        "prev_close": 173.4,
+        "group": "sector",
+        "week_pct": 1.53,
+        "ytd_pct": 11.11,
+        "leaders": [
+          {
+            "symbol": "GE",
+            "name": "GE Aero",
+            "price": 300.77,
+            "change_pct": 1.11,
+            "week_pct": 4.91,
+            "ytd_pct": -6.09
+          },
+          {
+            "symbol": "CAT",
+            "name": "Caterpillar",
+            "price": 926.79,
+            "change_pct": 3.15,
+            "week_pct": 2.45,
+            "ytd_pct": 55.53
+          },
+          {
+            "symbol": "RTX",
+            "name": "RTX",
+            "price": 178.61,
+            "change_pct": 1.48,
+            "week_pct": 3.32,
+            "ytd_pct": -4.3
+          }
+        ]
+      },
+      {
+        "name": "非必需消費",
+        "symbol": "XLY",
+        "price": 119.37,
+        "change": -0.63,
+        "change_pct": -0.52,
+        "prev_close": 120.0,
+        "group": "sector",
+        "week_pct": 1.1,
+        "ytd_pct": 1.06,
+        "leaders": [
+          {
+            "symbol": "AMZN",
+            "name": "Amazon",
+            "price": 268.99,
+            "change_pct": -1.36,
+            "week_pct": -1.67,
+            "ytd_pct": 18.76
+          },
+          {
+            "symbol": "TSLA",
+            "name": "Tesla",
+            "price": 445.0,
+            "change_pct": 3.98,
+            "week_pct": 14.29,
+            "ytd_pct": 1.58
+          },
+          {
+            "symbol": "HD",
+            "name": "Home Depot",
+            "price": 311.4,
+            "change_pct": -2.06,
+            "week_pct": -1.27,
+            "ytd_pct": -9.35
+          }
+        ]
+      },
+      {
+        "name": "通訊",
+        "symbol": "XLC",
+        "price": 115.58,
+        "change": -1.36,
+        "change_pct": -1.16,
+        "prev_close": 116.94,
+        "group": "sector",
+        "week_pct": -0.04,
+        "ytd_pct": -0.81,
+        "leaders": [
+          {
+            "symbol": "META",
+            "name": "Meta",
+            "price": 598.86,
+            "change_pct": -1.75,
+            "week_pct": -1.01,
+            "ytd_pct": -7.85
+          },
+          {
+            "symbol": "GOOGL",
+            "name": "Alphabet",
+            "price": 388.64,
+            "change_pct": -2.73,
+            "week_pct": 0.05,
+            "ytd_pct": 23.41
+          },
+          {
+            "symbol": "NFLX",
+            "name": "Netflix",
+            "price": 85.45,
+            "change_pct": -2.29,
+            "week_pct": -2.78,
+            "ytd_pct": -6.09
+          }
+        ]
+      },
+      {
+        "name": "公用事業",
+        "symbol": "XLU",
+        "price": 45.14,
+        "change": 0.24,
+        "change_pct": 0.53,
+        "prev_close": 44.9,
+        "group": "sector",
+        "week_pct": -2.65,
+        "ytd_pct": 5.27,
+        "leaders": [
+          {
+            "symbol": "NEE",
+            "name": "NextEra",
+            "price": 94.84,
+            "change_pct": 1.98,
+            "week_pct": -1.5,
+            "ytd_pct": 17.99
+          },
+          {
+            "symbol": "SO",
+            "name": "Southern Co",
+            "price": 93.1,
+            "change_pct": 0.72,
+            "week_pct": -2.92,
+            "ytd_pct": 7.63
+          },
+          {
+            "symbol": "DUK",
+            "name": "Duke Energy",
+            "price": 124.9,
+            "change_pct": 0.72,
+            "week_pct": -2.1,
+            "ytd_pct": 7.26
+          }
+        ]
+      },
+      {
+        "name": "房地產",
+        "symbol": "XLRE",
+        "price": 44.57,
+        "change": 0.04,
+        "change_pct": 0.09,
+        "prev_close": 44.53,
+        "group": "sector",
+        "week_pct": 0.91,
+        "ytd_pct": 11.12,
+        "leaders": [
+          {
+            "symbol": "WELL",
+            "name": "Welltower",
+            "price": 214.84,
+            "change_pct": 0.12,
+            "week_pct": 0.25,
+            "ytd_pct": 15.33
+          },
+          {
+            "symbol": "PLD",
+            "name": "Prologis",
+            "price": 144.07,
+            "change_pct": -0.46,
+            "week_pct": 2.71,
+            "ytd_pct": 12.54
+          },
+          {
+            "symbol": "AMT",
+            "name": "AMT",
+            "price": 177.47,
+            "change_pct": 0.45,
+            "week_pct": -0.36,
+            "ytd_pct": 2.54
+          }
+        ]
+      },
+      {
+        "name": "民生消費",
+        "symbol": "XLP",
+        "price": 83.37,
+        "change": -0.83,
+        "change_pct": -0.99,
+        "prev_close": 84.2,
+        "group": "sector",
+        "week_pct": -0.82,
+        "ytd_pct": 7.92,
+        "leaders": [
+          {
+            "symbol": "WMT",
+            "name": "Walmart",
+            "price": 127.59,
+            "change_pct": -2.19,
+            "week_pct": -2.26,
+            "ytd_pct": 13.6
+          },
+          {
+            "symbol": "COST",
+            "name": "Costco",
+            "price": 999.47,
+            "change_pct": -0.87,
+            "week_pct": -1.67,
+            "ytd_pct": 17.3
+          },
+          {
+            "symbol": "PG",
+            "name": "P&G",
+            "price": 143.36,
+            "change_pct": -2.15,
+            "week_pct": -1.06,
+            "ytd_pct": 2.59
+          }
+        ]
+      },
+      {
+        "name": "原物料",
+        "symbol": "XLB",
+        "price": 52.26,
+        "change": 0.61,
+        "change_pct": 1.18,
+        "prev_close": 51.65,
+        "group": "sector",
+        "week_pct": 1.42,
+        "ytd_pct": 13.82,
+        "leaders": [
+          {
+            "symbol": "LIN",
+            "name": "Linde",
+            "price": 504.4,
+            "change_pct": 2.73,
+            "week_pct": 0.82,
+            "ytd_pct": 17.94
+          },
+          {
+            "symbol": "NEM",
+            "name": "Newmont",
+            "price": 120.67,
+            "change_pct": 3.33,
+            "week_pct": 10.7,
+            "ytd_pct": 19.46
+          },
+          {
+            "symbol": "FCX",
+            "name": "Freeport",
+            "price": 64.37,
+            "change_pct": 4.4,
+            "week_pct": 11.6,
+            "ytd_pct": 24.54
+          }
+        ]
+      },
+      {
+        "name": "台股加權",
+        "symbol": "^TWII",
+        "price": 41790.06,
+        "change": 157.37,
+        "change_pct": 0.38,
+        "prev_close": 41632.69,
+        "group": "tw_asia",
+        "week_pct": 1.13,
+        "ytd_pct": 41.75,
+        "leaders": [
+          {
+            "symbol": "2330.TW",
+            "name": "台積電",
+            "price": 2235.0,
+            "change_pct": -2.61,
+            "week_pct": -0.67,
+            "ytd_pct": 41.47
+          },
+          {
+            "symbol": "2317.TW",
+            "name": "鴻海",
+            "price": 252.0,
+            "change_pct": 1.0,
+            "week_pct": 0.0,
+            "ytd_pct": 8.62
+          },
+          {
+            "symbol": "2454.TW",
+            "name": "聯發科",
+            "price": 3880.0,
+            "change_pct": 7.18,
+            "week_pct": 13.12,
+            "ytd_pct": 169.06
+          }
+        ]
+      },
+      {
+        "name": "日經225",
+        "symbol": "^N225",
+        "price": 63106.21,
+        "change": 668.44,
+        "change_pct": 1.07,
+        "prev_close": 62437.77,
+        "group": "tw_asia",
+        "week_pct": 6.04,
+        "ytd_pct": 21.75,
+        "leaders": []
+      },
+      {
+        "name": "恆生指數",
+        "symbol": "^HSI",
+        "price": 26406.84,
+        "change": 13.13,
+        "change_pct": 0.05,
+        "prev_close": 26393.71,
+        "group": "tw_asia",
+        "week_pct": 1.91,
+        "ytd_pct": 0.21,
+        "leaders": []
+      },
+      {
+        "name": "上證指數",
+        "symbol": "000001.SS",
+        "price": 4225.02,
+        "change": 45.04,
+        "change_pct": 1.08,
+        "prev_close": 4179.98,
+        "group": "tw_asia",
+        "week_pct": null,
+        "ytd_pct": null,
+        "leaders": []
+      },
+      {
+        "name": "KOSPI",
+        "symbol": "^KS11",
+        "price": 7947.82,
+        "change": 117.99,
+        "change_pct": 1.51,
+        "prev_close": 7829.83,
+        "group": "tw_asia",
+        "week_pct": 7.63,
+        "ytd_pct": 84.42,
+        "leaders": []
+      },
+      {
+        "name": "Bitcoin",
+        "symbol": "BTC-USD",
+        "price": 81599.71,
+        "change": -125.45,
+        "change_pct": -0.15,
+        "prev_close": 81725.16,
+        "group": "crypto",
+        "week_pct": 1.76,
+        "ytd_pct": -8.04,
+        "leaders": []
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "ETH-USD",
+        "price": 2334.36,
+        "change": -5.66,
+        "change_pct": -0.24,
+        "prev_close": 2340.02,
+        "group": "crypto",
+        "week_pct": 1.19,
+        "ytd_pct": -22.2,
+        "leaders": []
+      },
+      {
+        "name": "Gold",
+        "symbol": "GC=F",
+        "price": 4767.0,
+        "change": 80.0,
+        "change_pct": 1.71,
+        "prev_close": 4687.0,
+        "group": "metals",
+        "week_pct": 1.82,
+        "ytd_pct": 10.49,
+        "leaders": []
+      },
+      {
+        "name": "Silver",
+        "symbol": "SI=F",
+        "price": 87.07,
+        "change": 5.88,
+        "change_pct": 7.24,
+        "prev_close": 81.2,
+        "group": "metals",
+        "week_pct": 13.36,
+        "ytd_pct": 23.41,
+        "leaders": []
+      },
+      {
+        "name": "德國DAX",
+        "symbol": "^GDAXI",
+        "price": 24350.28,
+        "change": 11.65,
+        "change_pct": 0.05,
+        "prev_close": 24338.63,
+        "group": "europe",
+        "week_pct": -0.26,
+        "ytd_pct": -0.82,
+        "leaders": []
+      },
+      {
+        "name": "英國FTSE",
+        "symbol": "^FTSE",
+        "price": 10269.43,
+        "change": 36.36,
+        "change_pct": 0.36,
+        "prev_close": 10233.07,
+        "group": "europe",
+        "week_pct": 0.14,
+        "ytd_pct": 2.83,
+        "leaders": []
+      },
+      {
+        "name": "STOXX 600",
+        "symbol": "^STOXX",
+        "price": 612.79,
+        "change": 1.31,
+        "change_pct": 0.21,
+        "prev_close": 611.48,
+        "group": "europe",
+        "week_pct": 0.4,
+        "ytd_pct": 1.72,
+        "leaders": []
+      },
+      {
+        "name": "VIX 恐慌",
+        "symbol": "^VIX",
+        "price": 18.38,
+        "change": 1.2,
+        "change_pct": 6.98,
+        "prev_close": 17.18,
+        "group": "sentiment",
+        "week_pct": 5.75,
+        "ytd_pct": 26.67,
+        "leaders": []
+      },
+      {
+        "name": "美元指數",
+        "symbol": "DX-Y.NYB",
+        "price": 98.02,
+        "change": -0.08,
+        "change_pct": -0.08,
+        "prev_close": 98.1,
+        "group": "forex",
+        "week_pct": -0.0,
+        "ytd_pct": -0.41,
+        "leaders": []
+      },
+      {
+        "name": "USD/TWD",
+        "symbol": "USDTWD=X",
+        "price": 31.43,
+        "change": 0.08,
+        "change_pct": 0.25,
+        "prev_close": 31.35,
+        "group": "forex",
+        "week_pct": -0.37,
+        "ytd_pct": 0.4,
+        "leaders": []
+      },
+      {
+        "name": "EUR/USD",
+        "symbol": "EURUSD=X",
+        "price": 1.18,
+        "change": -0.0,
+        "change_pct": -0.12,
+        "prev_close": 1.18,
+        "group": "forex",
+        "week_pct": 0.48,
+        "ytd_pct": 0.18,
+        "leaders": []
+      },
+      {
+        "name": "USD/JPY",
+        "symbol": "USDJPY=X",
+        "price": 157.43,
+        "change": 0.31,
+        "change_pct": 0.2,
+        "prev_close": 157.12,
+        "group": "forex",
+        "week_pct": -0.16,
+        "ytd_pct": 0.45,
+        "leaders": []
+      },
+      {
+        "name": "USD/CNY",
+        "symbol": "CNY=X",
+        "price": 6.79,
+        "change": -0.01,
+        "change_pct": -0.08,
+        "prev_close": 6.8,
+        "group": "forex",
+        "week_pct": -0.43,
+        "ytd_pct": -2.8,
+        "leaders": []
+      }
+    ]
+  },
   "top_tickers_7d": [
     {
       "ticker": "2330",
@@ -3020,7 +3721,7 @@
     },
     {
       "ticker": "NVDA",
-      "mentions": 124,
+      "mentions": 123,
       "last_seen": "2026-05-12"
     },
     {
@@ -3179,11 +3880,6 @@
       "last_seen": "2026-05-11"
     },
     {
-      "ticker": "6000",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
       "ticker": "2408",
       "mentions": 3,
       "last_seen": "2026-05-10"
@@ -3207,6 +3903,11 @@
       "ticker": "1933",
       "mentions": 3,
       "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "2604",
+      "mentions": 3,
+      "last_seen": "2026-05-06"
     }
   ],
   "top_tickers_30d": [
@@ -4178,10 +4879,10 @@
     },
     {
       "ticker": "NVDA",
-      "mentions_7d": 124,
+      "mentions_7d": 123,
       "mentions_prior_7d": 106,
-      "delta": 18,
-      "pct_change": 17.0
+      "delta": 17,
+      "pct_change": 16.0
     },
     {
       "ticker": "AAPL",

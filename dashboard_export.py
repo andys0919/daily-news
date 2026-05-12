@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import sqlite3
 from collections import Counter, defaultdict
@@ -83,6 +84,8 @@ THEME_KEYWORDS = {
     "重大事件": ["acquisition", "merger", "M&A", "IPO", "spin-off", "split", "buyback", "回購"],
 }
 
+DEFAULT_WATCHLIST = ["NVDA", "TSM", "2330", "AAPL", "MSFT", "GOOGL", "META", "AMD", "AVGO", "2454"]
+
 
 def _utcnow_iso() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -96,18 +99,34 @@ def _json_default(value: Any) -> Any:
     raise TypeError(f"Not JSON serialisable: {type(value)!r}")
 
 
+def _json_safe(value: Any) -> Any:
+    if isinstance(value, float) and not math.isfinite(value):
+        return None
+    if isinstance(value, dict):
+        return {key: _json_safe(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [_json_safe(item) for item in value]
+    if isinstance(value, tuple):
+        return [_json_safe(item) for item in value]
+    return value
+
+
 def _write(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2, default=_json_default),
+        json.dumps(_json_safe(payload), ensure_ascii=False, indent=2, default=_json_default),
         encoding="utf-8",
     )
+
+
+def _default_watchlist() -> list[str]:
+    return list(DEFAULT_WATCHLIST)
 
 
 def _load_watchlist(repo_root: Path) -> list[str]:
     candidate = repo_root / "data" / "watchlist.yaml"
     if not candidate.exists():
-        return ["NVDA", "TSM", "2330", "AAPL", "MSFT", "GOOGL", "META", "AMD", "AVGO", "2454"]
+        return _default_watchlist()
     try:
         import yaml
 
@@ -118,7 +137,67 @@ def _load_watchlist(repo_root: Path) -> list[str]:
             return [str(t).strip() for t in loaded["tickers"] if t]
     except Exception:
         pass
-    return ["NVDA", "TSM", "2330", "AAPL", "MSFT", "GOOGL", "META", "AMD", "AVGO", "2454"]
+    return _default_watchlist()
+
+
+def _normalize_fiscal_year(value: Any, market: str | None = None) -> int | None:
+    if value in (None, ""):
+        return None
+    try:
+        year = int(str(value).strip())
+    except (TypeError, ValueError):
+        return None
+    if market == "tw" and 0 < year < 1911:
+        return year + 1911
+    return year
+
+
+def _period_rank(period: Any) -> int:
+    text = str(period or "").upper()
+    if text == "FY":
+        return 5
+    if text.startswith("Q"):
+        try:
+            return int(text[1:])
+        except ValueError:
+            return 0
+    return 0
+
+
+def _dedupe_period_rows(rows: list[dict], market: str) -> list[dict]:
+    by_period: dict[tuple[int | None, str], dict] = {}
+    for row in rows:
+        normalized = dict(row)
+        normalized["fiscal_year"] = _normalize_fiscal_year(
+            normalized.get("fiscal_year"),
+            market,
+        )
+        key = (normalized.get("fiscal_year"), str(normalized.get("fiscal_period") or ""))
+        existing = by_period.get(key)
+        if not existing:
+            by_period[key] = normalized
+            continue
+        existing_score = sum(1 for field in ("revenue", "eps", "company_name") if existing.get(field) not in (None, ""))
+        next_score = sum(1 for field in ("revenue", "eps", "company_name") if normalized.get(field) not in (None, ""))
+        if next_score > existing_score:
+            by_period[key] = normalized
+    return sorted(
+        by_period.values(),
+        key=lambda row: (
+            row.get("fiscal_year") or 0,
+            _period_rank(row.get("fiscal_period")),
+        ),
+        reverse=True,
+    )
+
+
+def _tw_month_period_year(period: Any) -> int | None:
+    text = str(period or "").strip()
+    match = re.match(r"^(\d{3})(\d{2})$", text)
+    if not match:
+        return None
+    return _normalize_fiscal_year(match.group(1), "tw")
+
 
 
 def _parse_tickers(raw: str | None) -> list[str]:
@@ -794,9 +873,12 @@ def _fundamentals_summary(db_path: Path, tickers: list[str]) -> list[dict]:
             def find_prev_yoy(idx: int) -> dict | None:
                 """Find same fiscal_period one year earlier."""
                 target_period = periods[idx]["fiscal_period"]
-                target_year = periods[idx]["fiscal_year"]
+                target_year = _normalize_fiscal_year(periods[idx]["fiscal_year"], market)
+                if target_year is None:
+                    return None
                 for p in periods[idx + 1:]:
-                    if p["fiscal_period"] == target_period and int(p["fiscal_year"]) == int(target_year) - 1:
+                    p_year = _normalize_fiscal_year(p["fiscal_year"], market)
+                    if p["fiscal_period"] == target_period and p_year == target_year - 1:
                         return p
                 return None
 
@@ -1210,7 +1292,7 @@ def _revenue_pulse(
                     """,
                     (ticker, market),
                 ).fetchall()
-                qs = [dict(r) for r in q]
+                qs = _dedupe_period_rows([dict(r) for r in q], market)
             except sqlite3.OperationalError:
                 qs = []
 
@@ -1248,6 +1330,12 @@ def _revenue_pulse(
 
             latest_m = ms[0] if ms else None
             company_name = (latest_q or latest_m or {}).get("company_name")
+            monthly_year = (
+                _normalize_fiscal_year(latest_m.get("fiscal_year"), "tw")
+                or _tw_month_period_year(latest_m.get("fiscal_period"))
+                if latest_m
+                else None
+            )
 
             out.append({
                 "ticker": ticker.upper(),
@@ -1258,7 +1346,7 @@ def _revenue_pulse(
                 "q_revenue": latest_q["revenue"] if latest_q else None,
                 "q_eps": latest_q["eps"] if latest_q else None,
                 "q_rev_yoy": round(rev_yoy, 1) if rev_yoy is not None else None,
-                "m_year": latest_m["fiscal_year"] if latest_m else None,
+                "m_year": monthly_year,
                 "m_period": latest_m["fiscal_period"] if latest_m else None,
                 "m_revenue": latest_m["mr"] if latest_m else None,
                 "q_count": len(qs),

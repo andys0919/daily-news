@@ -1,4 +1,5 @@
 import json
+import math
 import sqlite3
 import tempfile
 import unittest
@@ -71,6 +72,51 @@ class DashboardExportTests(unittest.TestCase):
         news = json.loads((self.out / "news.json").read_text())
         self.assertIn("articles", news)
         self.assertIsInstance(news["articles"], list)
+
+    def test_repo_watchlist_yaml_exists_for_dashboard_defaults(self):
+        repo_root = Path(dashboard_export.__file__).resolve().parent
+
+        tickers = dashboard_export._load_watchlist(repo_root)
+
+        self.assertTrue((repo_root / "data" / "watchlist.yaml").exists())
+        self.assertEqual(tickers[:3], ["NVDA", "TSM", "2330"])
+
+    def test_revenue_pulse_normalizes_tw_roc_year_for_yoy(self):
+        for fiscal_year, revenue in ((2025, 200.0), (113, 100.0)):
+            fr.save_financial_report(
+                self.db,
+                fr.FinancialReport(
+                    market="tw",
+                    ticker="2330",
+                    company_name="台積電",
+                    source_type="mops-api",
+                    form_type="MOPS-Q",
+                    fiscal_year=fiscal_year,
+                    fiscal_period="Q4",
+                    period_end=f"{fiscal_year}Q4",
+                    filed_at=f"{fiscal_year}Q4",
+                    source_url="https://example.com",
+                    report_kind="quarterly",
+                    revenue=revenue,
+                ),
+            )
+
+        rows = dashboard_export._revenue_pulse(
+            self.db,
+            limit=5,
+            watchlist=["2330"],
+        )
+
+        self.assertEqual(rows[0]["q_year"], 2025)
+        self.assertEqual(rows[0]["q_period"], "Q4")
+        self.assertEqual(rows[0]["q_rev_yoy"], 100.0)
+
+    def test_write_converts_non_finite_numbers_to_json_null(self):
+        path = self.out / "non_finite.json"
+
+        dashboard_export._write(path, {"value": math.nan})
+
+        self.assertEqual(json.loads(path.read_text()), {"value": None})
 
 
 if __name__ == "__main__":

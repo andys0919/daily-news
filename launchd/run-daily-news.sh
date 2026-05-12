@@ -29,3 +29,4 @@ HOURS="${DAILY_NEWS_HOURS:-24}"
   --report-type daily
 
 "$SCRIPT_DIR/generate-source-atlas.sh"
+"$SCRIPT_DIR/export-dashboard-data.sh"

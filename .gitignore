@@ -12,6 +12,9 @@ Thumbs.db
 
 # Data
 data/
+!data/
+data/*
+!data/watchlist.yaml
 # Exception: dashboard JSON snapshots are tracked
 !web/src/data/
 !web/src/data/**

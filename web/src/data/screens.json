@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T01:54:26Z",
+  "generated_at": "2026-05-12T02:14:00Z",
   "momentum": [
     {
       "ticker": "2605",
@@ -24,10 +24,10 @@
     },
     {
       "ticker": "NVDA",
-      "mentions_7d": 124,
+      "mentions_7d": 123,
       "mentions_prior_7d": 106,
-      "delta": 18,
-      "pct_change": 17.0
+      "delta": 17,
+      "pct_change": 16.0
     },
     {
       "ticker": "AAPL",
@@ -1286,7 +1286,7 @@
     },
     {
       "ticker": "NVDA",
-      "mentions": 124,
+      "mentions": 123,
       "last_seen": "2026-05-12"
     },
     {
@@ -1445,11 +1445,6 @@
       "last_seen": "2026-05-11"
     },
     {
-      "ticker": "6000",
-      "mentions": 3,
-      "last_seen": "2026-05-11"
-    },
-    {
       "ticker": "2408",
       "mentions": 3,
       "last_seen": "2026-05-10"
@@ -1473,6 +1468,11 @@
       "ticker": "1933",
       "mentions": 3,
       "last_seen": "2026-05-08"
+    },
+    {
+      "ticker": "2604",
+      "mentions": 3,
+      "last_seen": "2026-05-06"
     }
   ],
   "top_tickers_30d": [

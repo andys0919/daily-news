@@ -34,7 +34,7 @@
 | ② 個股 Scorecard | 一行一檔：健康度・季營收・EPS・YoY・月營收・分析師看法・最近事件 |
 | ③ 訊號流 | tabbed feed — 指引 / 法人 / 公司內部 |
 | ④ 公司原文 | SEC 10-Q forward-looking statements 摘錄 |
-| ⑤ 資料缺口 | 誠實列出已有 vs 待補資料 |
+| ⑤ 下一步 | 3 張 action cards，連到 Scorecard、搜尋與 pipeline 文件 |
 
 ### 本機開發
 
@@ -51,7 +51,7 @@ npm run build        # 生成 web/dist/
 bash launchd/export-dashboard-data.sh
 ```
 
-會用 `data/news.db` 產出最新 JSON 寫到 `web/src/data/`，之後 cloudflared tunnel 把 `web/dist/` 推到 `invest.aihost.dev`（如果有 `npm run build` 過）。
+會用 `data/news.db` 產出最新 JSON 寫到 `web/src/data/`，並接著執行 `cd web && npm run build` 重建 `web/dist/`。`com.dailynews.dashboard-server` 會從本機 `127.0.0.1:8055` 服務 `web/dist/`，再由 `com.dailynews.cloudflared` tunnel 對外提供 `https://invest.aihost.dev/`。
 
 ## 專案結構
 

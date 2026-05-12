@@ -6,8 +6,8 @@
 - **部署方式**：cloudflared 隧道 + 本機 http.server，**不是** Cloudflare Pages / wrangler
   - Tunnel: `~/.cloudflared/dailynews-aihost.yml` → tunnel UUID `77f7a85b-1715-419e-8720-556130a8d1b2`
   - launchd: `~/Library/LaunchAgents/com.dailynews.cloudflared.plist` + `com.dailynews.dashboard-server.plist`
-  - 靜態檔: `127.0.0.1:8055` 服務 worktree 的 `web/dist/`
-- **worktree path**：`/Users/andy/Code/projects/telegram-bot/daily-news/.claude/worktrees/investment-dashboard`（main 分支尚未 merge）
+  - 靜態檔: `127.0.0.1:8055` 服務 main repo 的 `web/dist/`
+- **repo path**：`/Users/andy/Code/projects/telegram-bot/daily-news`（dashboard 已 merge 回 main）
 
 ## 程式結構
 
@@ -50,10 +50,10 @@ tests/test_dashboard_export.py      ← 3 個測試（全過）
 | Insider / 13F / short interest 表 | 空（Phase 2-4 schema 有，ingest 沒跑） |
 | Consensus estimates | 需付費資料源（Finnhub / Refinitiv） |
 | YoY 在 Scorecard 顯示「—」 | TW data 重複 row 已 dedupe 但缺去年同期可比資料 |
-| Watchlist hardcode | 在 `dashboard_export.py:DEFAULT_WATCHLIST`，沒讀 yaml |
-| 主 branch 未 merge | 整個 dashboard 在 `worktree-investment-dashboard` 分支 |
+| Watchlist hardcode | 已補 `data/watchlist.yaml`；`dashboard_export.py` 預設讀 yaml，沒有檔案才 fallback |
+| 主 branch 未 merge | 已 fast-forward merge 到 main |
 
-## 最近 commits（worktree-investment-dashboard）
+## 最近 commits（main）
 
 ```
 ui(dashboard): strip filler + fix currency + populate Scorecard
