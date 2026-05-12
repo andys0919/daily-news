@@ -9,7 +9,6 @@ interface RevenueRow {
   q_year: number | null; q_period: string | null;
   q_revenue: number | null; q_eps: number | null; q_rev_yoy: number | null;
   m_year: number | null; m_period: string | null; m_revenue: number | null;
-  q_count: number; m_count: number;
 }
 interface InternalItem { title: string; link: string; source: string; published: string; tickers: string[]; event_type: string | null; }
 interface FilingExcerpt { ticker: string; company_name: string; fiscal_year: number; fiscal_period: string; form_type: string; filed_at: string; excerpt: string; }
@@ -35,8 +34,7 @@ const generated = overview.generated_at ?? "";
 
 function fmtMoney(n: number | null | undefined, scale = 1e9, digits = 2, suffix = "B"): string {
   if (n == null || isNaN(Number(n))) return "—";
-  const v = Number(n) / scale;
-  return `${v.toFixed(digits)}${suffix}`;
+  return `${(Number(n) / scale).toFixed(digits)}${suffix}`;
 }
 function fmtPct(n: number | null | undefined): string {
   if (n == null || isNaN(Number(n))) return "—";
@@ -65,7 +63,6 @@ function deltaCls(n: number | null | undefined): string {
 
 const tierOrder: Record<string, number> = { strong: 0, steady: 1, watch: 2, warn: 3, unknown: 4 };
 
-// Build per-ticker maps from each data source for cross-referencing in the scorecard
 const revByTicker: Record<string, RevenueRow> = {};
 for (const r of revenue) revByTicker[r.ticker] = r;
 
@@ -93,7 +90,6 @@ const sortedFundamentals = [...fundamentals].sort((a, b) =>
   (tierOrder[a.health?.tier ?? "unknown"] ?? 5) - (tierOrder[b.health?.tier ?? "unknown"] ?? 5)
 );
 
-// Group analyst views by ticker for the sub-panel
 const analystByTicker: Record<string, Analyst[]> = {};
 for (const a of analyst) {
   for (const t of a.tickers || []) {
@@ -102,41 +98,97 @@ for (const a of analyst) {
   }
 }
 const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTicker[b].length - analystByTicker[a].length).slice(0, 8);
+
+// Tier distribution for hero meta
+const tierDist: Record<string, number> = { strong: 0, steady: 0, watch: 0, warn: 0, unknown: 0 };
+for (const f of sortedFundamentals) {
+  tierDist[f.health?.tier ?? "unknown"]++;
+}
 ---
-<Base title="投資 dashboard — 一頁總覽" active="home">
+<Base title="投資 dashboard · 一頁總覽" active="home">
   <!-- HERO ─────────────────────────────────────────────────── -->
   <header class="page-h">
-    <div class="eyebrow">{generated.slice(0, 10)} · daily refresh · {ago(generated)} ago</div>
+    <div class="eyebrow">{generated.slice(0, 10)} · {ago(generated)} ago · daily refresh</div>
     <h1>投資 <span class="accent">一頁</span> 看完</h1>
     <p>
-      把今天該關注的「指引變動、法人看法、營收動能、公司內部資料、watchlist 健康度」全部濃縮在這一頁。資料來自 30 天內 {(stats.articles_30d ?? 0).toLocaleString()} 篇新聞 + {stats.reports_total ?? 0} 份官方財報。最重要的<strong>個股 Scorecard</strong>把 5 種資料合成一張表，橫掃就看完。
+      把今天該關注的「指引變動、法人看法、營收動能、公司內部資料、watchlist 健康度」濃縮在一頁。
+      <strong>主視角是個股 Scorecard</strong> — 一行一檔，橫掃看完。下面是訊號流、公司原文、資料缺口說明。
     </p>
     <div class="meta">
-      <div>24h news <strong>{stats.articles_24h ?? 0}</strong></div>
+      <div>24h <strong>{stats.articles_24h ?? 0}</strong></div>
       <div>▲ 上修 <strong>{stats.guidance_up_30d ?? 0}</strong></div>
       <div>▼ 下修 <strong>{stats.guidance_down_30d ?? 0}</strong></div>
-      <div>法人 <strong>{analyst.length}</strong></div>
-      <div>內部 <strong>{internal.length}</strong></div>
+      <div>🟢 強 <strong>{tierDist.strong}</strong></div>
+      <div>🔵 穩 <strong>{tierDist.steady}</strong></div>
+      <div>🟡 觀望 <strong>{tierDist.watch}</strong></div>
       <div>個股 <strong>{stats.tickers_tracked ?? 0}</strong></div>
     </div>
   </header>
 
   <!-- STICKY SECTION INDEX -->
-  <nav class="sec-index">
-    <a href="#takeaway">① 今日重點</a>
-    <a href="#scorecard">② 個股 Scorecard</a>
-    <a href="#pulse">③ 訊號流</a>
-    <a href="#filings">④ 公司原文</a>
-    <a href="#gaps">⑤ 資料缺口</a>
+  <nav class="sec-index" id="sec-nav">
+    <a href="#takeaway" data-target="takeaway">今日重點</a>
+    <a href="#scorecard" data-target="scorecard">個股 Scorecard</a>
+    <a href="#pulse" data-target="pulse">訊號流</a>
+    <a href="#filings" data-target="filings">公司原文</a>
+    <a href="#gaps" data-target="gaps">資料缺口</a>
   </nav>
 
-  <!-- ① TODAY ──────────────────────────────────────────────── -->
+  <!-- MASTER GUIDE (single collapsible card) -->
+  <details class="guide">
+    <summary>
+      <span class="icon">i</span>
+      <span class="label">本頁如何使用</span>
+      <span class="meta">展開閱讀</span>
+    </summary>
+    <div class="guide-body">
+      <div>
+        <h4>1. 健康度怎麼判定</h4>
+        <p>從財報數字計算分數：營收 YoY、營益率、FCF margin、成長加速度。對照：</p>
+        <ul>
+          <li><strong>🟢 強勢</strong>：營收年增 ≥20% 且營益率 ≥30%（業界頂尖）</li>
+          <li><strong>🔵 穩健</strong>：營收成長健康 + 營益率 ≥15%</li>
+          <li><strong>🟡 觀望</strong>：成長平平或營益率偏低</li>
+          <li><strong>🔴 警示</strong>：營收衰退或營益率 &lt;5%</li>
+          <li><strong>⚫ 資料不足</strong>：尚未建檔，需執行 stock_memo.py</li>
+        </ul>
+      </div>
+      <div>
+        <h4>2. 上修 / 下修怎麼算</h4>
+        <p>從新聞<strong>標題</strong>抓 high-precision 短語：</p>
+        <ul>
+          <li><strong>▲ 上修</strong>：raises guidance / lifts target / beats estimates / 上修目標價 / 上看 …</li>
+          <li><strong>▼ 下修</strong>：cuts guidance / misses EPS / 下修財測 / slashes …</li>
+        </ul>
+        <p>只看標題、避免被內文政治 / 噪音帶風向。</p>
+      </div>
+      <div>
+        <h4>3. 訊號流三個 tab</h4>
+        <ul>
+          <li><strong>指引</strong>：明確的財測 / 目標價變動。最直接的訊號。</li>
+          <li><strong>法人</strong>：分析師報告、外資、投信動向。Lagging signal，反映共識。</li>
+          <li><strong>公司內部</strong>：法說、IR、SEC filing、capex 公告。公司原文，最權威。</li>
+        </ul>
+      </div>
+      <div>
+        <h4>4. 操作小技巧</h4>
+        <ul>
+          <li>按 <span class="kbd">/</span> 開啟搜尋框，可搜 ticker 或公司名</li>
+          <li>Scorecard 每行可點，進該檔個股深度頁</li>
+          <li>ticker chip（藍色小方塊）哪裡都可點</li>
+          <li>本工具僅彙整公開資訊，<strong>非投資建議</strong></li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <!-- TAKEAWAY ──────────────────────────────────────────────── -->
   <section id="takeaway">
     <div class="section-h2">
-      <h2>① 今日重點</h2>
-      <span class="h-sub">一句話告訴你今天市場的方向</span>
+      <h2>今日重點</h2>
+      <span class="h-sub">一句話總結今天市場的方向</span>
     </div>
-    <div class="take-cards" style="margin-bottom: var(--s-10);">
+    <div class="take-cards" style="margin-bottom: var(--s-12);">
       {takeaways.map((t) => (
         <div class={`take ${t.kind}`}>
           <div class="take-tag">{t.kind === "positive" ? "▲ 偏正面" : t.kind === "negative" ? "▼ 偏負面" : "─ 中性"}</div>
@@ -153,33 +205,26 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
     </div>
   </section>
 
-  <!-- ② SCORECARD — main centerpiece ─────────────────────── -->
+  <!-- SCORECARD — main centerpiece ─────────────────────────── -->
   <section id="scorecard">
     <div class="section-h2">
-      <h2>② 個股 Scorecard</h2>
-      <span class="h-sub">健康度・營收・法人看法・最新事件，一行看完</span>
+      <h2>個股 Scorecard</h2>
+      <span class="h-sub">{sortedFundamentals.length} 檔 · 健康度・營收・法人・最近事件</span>
       <a href="#pulse" class="h-link">完整訊號流 ↓</a>
     </div>
-    <aside class="howto">
-      <div class="howto-icon">i</div>
-      <div>
-        <p class="howto-title">怎麼讀這張表</p>
-        <p class="howto-body">
-          一行=一檔個股。<strong>圖示+ 標籤</strong>=健康度（🟢 強 / 🔵 穩 / 🟡 觀望 / 🔴 警示）。<strong>季營收 / EPS</strong>=最新財報。<strong>YoY</strong>=同比去年同季成長率，缺資料顯示「—」。<strong>分析師 ↑↓</strong>=近 30 天該檔被分析師上修 / 下修目標價或財測的次數。<strong>最新事件</strong>=最近一條指引或法說新聞標題。點任一行進個股深度頁。
-        </p>
-      </div>
-    </aside>
+
+    <!-- Desktop table (sticky header) -->
     <div class="scorecard-wrap">
       <table class="scorecard">
         <thead>
           <tr>
-            <th class="left" style="width: 28%;">個股</th>
+            <th class="left" style="width: 26%;">個股</th>
             <th>健康度</th>
             <th>季營收</th>
             <th>EPS</th>
             <th>Rev YoY</th>
             <th>月營收</th>
-            <th>分析師看法</th>
+            <th>分析師</th>
             <th class="left">最近事件</th>
           </tr>
         </thead>
@@ -234,23 +279,53 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
         </tbody>
       </table>
     </div>
+
+    <!-- Mobile cards (replaces table on small screens) -->
+    <div class="scorecard-mobile" style="margin-bottom: var(--s-12);">
+      {sortedFundamentals.map((f) => {
+        const h = f.health ?? { tier: "unknown", label: "—", summary: "", icon: "⚫" };
+        const r = revByTicker[f.ticker];
+        const a = analystCount[f.ticker];
+        return (
+          <a href={`/stocks/${f.ticker}/`} class="score-card-m">
+            <div class="icon">{h.icon}</div>
+            <div class="body">
+              <div class="head">
+                <span class="t">{f.ticker}</span>
+                <span class={`tier ${h.tier}`}>{h.label}</span>
+                {f.company_name && <span class="name">{f.company_name.slice(0, 16)}</span>}
+              </div>
+              <div class="stats">
+                Q rev {r?.q_revenue ? fmtMoney(r.q_revenue, 1e9, 1) : "—"}
+                {r?.q_rev_yoy != null && (
+                  <> · <span class={deltaCls(r.q_rev_yoy)}>{fmtPct(r.q_rev_yoy)}</span></>
+                )}
+                {a && (
+                  <>
+                    {" · "}
+                    {a.up > 0 && <span class="delta-up">↑{a.up}</span>}
+                    {a.up > 0 && a.down > 0 && " "}
+                    {a.down > 0 && <span class="delta-down">↓{a.down}</span>}
+                  </>
+                )}
+              </div>
+            </div>
+            <div class="right">
+              {r?.q_eps != null ? fmtNum(r.q_eps, 2) : "—"}
+              <div style="color: var(--fg-500); font-size: 9px;">EPS</div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
   </section>
 
-  <!-- ③ UNIFIED PULSE (tabs: 指引 / 法人 / 內部) ──────────── -->
+  <!-- UNIFIED PULSE (tabs) ─────────────────────────────────── -->
   <section id="pulse">
     <div class="section-h2">
-      <h2>③ 訊號流</h2>
-      <span class="h-sub">指引 / 法人 / 公司內部，切換 tab 看不同來源</span>
+      <h2>訊號流</h2>
+      <span class="h-sub">指引 / 法人 / 公司內部 — 切換 tab 看不同來源</span>
     </div>
-    <aside class="howto">
-      <div class="howto-icon">i</div>
-      <div>
-        <p class="howto-title">怎麼讀</p>
-        <p class="howto-body">
-          <strong>指引</strong>=公司或分析師對財測 / 目標價的明確調整（最直接的訊號）。<strong>法人</strong>=分析師研究報告 / 外資投信動向（lagging，反映共識）。<strong>公司內部</strong>=法說、IR、SEC filing、capex 公告（公司原文）。<strong>▲</strong> 偏正面、<strong>▼</strong> 偏負面、<strong>·</strong> 中性或無方向。
-        </p>
-      </div>
-    </aside>
 
     <div class="tabs" id="feed-tabs">
       <button class="tab" data-tab="guidance" data-active="true">指引<span class="count">{guidanceUp.length + guidanceDown.length}</span></button>
@@ -259,7 +334,7 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
     </div>
 
     <!-- Tab: Guidance -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 feed-panel" data-panel="guidance" style="margin-bottom: var(--s-10);">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 feed-panel" data-panel="guidance" style="margin-bottom: var(--s-12);">
       <div class="pulse">
         <div class="pulse-head">
           <span class="ttl"><span class="delta-up">▲</span> 上修 / Beat</span>
@@ -300,7 +375,7 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
     </div>
 
     <!-- Tab: Analyst -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 feed-panel" data-panel="analyst" style="margin-bottom: var(--s-10); display: none;">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 feed-panel" data-panel="analyst" style="margin-bottom: var(--s-12); display: none;">
       <div class="pulse lg:col-span-2">
         <div class="pulse-head">
           <span class="ttl">分析師 / 法人 / 評等變動</span>
@@ -328,7 +403,7 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
           <span class="count">{analystTickers.length}</span>
         </div>
         {analystTickers.map((t, i) => (
-          <a class="pulse-row" href={`/stocks/${t}/`} style="grid-template-columns: 24px 1fr auto;">
+          <a class="pulse-row" href={`/stocks/${t}/`}>
             <span class="arrow flat" style="font-family: 'JetBrains Mono', monospace; font-size: 10px;">#{(i + 1).toString().padStart(2, "0")}</span>
             <div class="body">
               <span class="ticker">{t}</span>
@@ -341,7 +416,7 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
     </div>
 
     <!-- Tab: Internal -->
-    <div class="grid grid-cols-1 gap-4 feed-panel" data-panel="internal" style="margin-bottom: var(--s-10); display: none;">
+    <div class="grid grid-cols-1 gap-4 feed-panel" data-panel="internal" style="margin-bottom: var(--s-12); display: none;">
       <div class="pulse">
         <div class="pulse-head">
           <span class="ttl">法說 / IR / Capex 公告 / SEC Filing</span>
@@ -363,27 +438,18 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
     </div>
   </section>
 
-  <!-- ④ FILING EXCERPTS — full-width, larger reading area ─── -->
+  <!-- FILING EXCERPTS ──────────────────────────────────────── -->
   <section id="filings">
     <div class="section-h2">
-      <h2>④ 公司原文 · SEC 10-Q Forward-Looking</h2>
-      <span class="h-sub">公司自己寫的 forward-looking statements，最權威</span>
+      <h2>公司原文 · SEC 10-Q Forward-Looking</h2>
+      <span class="h-sub">公司自己寫的未來經營展望，最權威</span>
     </div>
-    <aside class="howto">
-      <div class="howto-icon">i</div>
-      <div>
-        <p class="howto-title">怎麼讀</p>
-        <p class="howto-body">
-          每段是公司在 SEC 10-Q 中關於未來經營展望、市場條件、產品計畫的<strong>原文摘錄</strong>。比新聞二手解讀更權威。<strong>注意</strong>：SEC filing 中的 forward-looking statements 通常帶有公司保留聲明，仍要批判性閱讀；數字 / 指引請以正式財報為準。台股暫無對應 ingest（資料缺口）。
-        </p>
-      </div>
-    </aside>
     {filings.length === 0 ? (
       <div class="filing-card">
-        <p class="muted" style="font-size: var(--t-small);">（暫無 SEC filing 摘錄 — 需執行 stock_memo.py 觸發 SEC ingest）</p>
+        <p class="muted" style="font-size: var(--t-small);">（暫無 — 需執行 stock_memo.py 觸發 SEC ingest）</p>
       </div>
     ) : (
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4" style="margin-bottom: var(--s-10);">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4" style="margin-bottom: var(--s-12);">
         {filings.slice(0, 6).map((f) => (
           <article class="filing-card">
             <div class="filing-card-head">
@@ -398,44 +464,68 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
     )}
   </section>
 
-  <!-- ⑤ DATA GAPS ──────────────────────────────────────────── -->
+  <!-- DATA GAPS ────────────────────────────────────────────── -->
   <section id="gaps">
     <div class="section-h2">
-      <h2>⑤ 資料缺口</h2>
+      <h2>資料缺口</h2>
       <span class="h-sub">誠實標示哪些資料還沒進來</span>
     </div>
     <article class="filing-card">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4" style="font-size: var(--t-small); color: var(--fg-300); line-height: 1.7;">
         <div>
-          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">已有資料</p>
+          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">✓ 已有資料</p>
           <ul style="list-style: disc; padding-left: var(--s-5);">
-            <li>{(stats.articles_total ?? 0).toLocaleString()} 篇新聞（含 ticker / event_type 標記）</li>
+            <li>{(stats.articles_total ?? 0).toLocaleString()} 篇新聞（ticker / event_type 標記）</li>
             <li>{stats.reports_total ?? 0} 份官方財報（TWSE / MOPS / TPEx / SEC）</li>
-            <li>{filings.length} 份 SEC 10-Q forward-looking statements 摘錄</li>
+            <li>{filings.length} 份 SEC 10-Q forward-looking 摘錄</li>
             <li>{analyst.length} 條法人 / 分析師看法</li>
-            <li>{internal.length} 條公司內部 / 官方資料</li>
-            <li>{revenue.length} 檔最新季營收 + 月營收快照</li>
+            <li>{internal.length} 條公司內部資料</li>
+            <li>{revenue.length} 檔最新季 + 月營收快照</li>
           </ul>
         </div>
         <div>
-          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">缺的資料</p>
+          <p style="color: var(--fg-100); font-weight: 500; margin-bottom: var(--s-2);">✗ 缺的資料</p>
           <ul style="list-style: disc; padding-left: var(--s-5);">
-            <li><strong>內部人交易</strong>（SEC Form 4）：表空，需執行 ingest</li>
+            <li><strong>內部人交易</strong>（SEC Form 4）：表空，需 ingest</li>
             <li><strong>機構 13F 持倉</strong>：表空</li>
             <li><strong>短信餘額 / short interest</strong>：表空</li>
-            <li><strong>共識估值（consensus estimates）</strong>：需付費資料源 (Finnhub / Refinitiv)</li>
+            <li><strong>共識估值</strong>：需付費資料源 (Finnhub / Refinitiv)</li>
             <li><strong>即時股價</strong>：Yahoo unofficial endpoint IP throttled</li>
           </ul>
         </div>
       </div>
-      <p class="muted-2" style="font-size: var(--t-label); margin-top: var(--s-4); padding-top: var(--s-3); border-top: 1px solid var(--border-base);">
-        本工具僅彙整公開資訊，<strong>非投資建議</strong>。資料每日 09:00 由 daily-news pipeline 自動刷新。
-      </p>
     </article>
   </section>
 
+  <!-- NEXT STEPS ────────────────────────────────────────────── -->
+  <section class="next-steps">
+    <a href="#scorecard" class="next-card">
+      <div class="step">看完了？下一步 → 1</div>
+      <div class="title">點進個股深度頁</div>
+      <div class="desc">Scorecard 任一行可點，跳到該檔個股頁看完整財報歷史、重點新聞、相關文章。</div>
+      <div class="arrow">→ 上滑回 Scorecard</div>
+    </a>
+    <a href="/search/" class="next-card" style="opacity: 0.6;">
+      <div class="step">下一步 → 2</div>
+      <div class="title">搜尋其他個股</div>
+      <div class="desc">本頁只顯示 watchlist + 高活躍個股。完整 526 檔可用上方搜尋框（<span class="kbd" style="font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 1px 5px; background: var(--bg-700); border-radius: 3px;">/</span> 開啟）查詢。</div>
+      <div class="arrow">→ 按 / 開搜尋</div>
+    </a>
+    <a href="https://github.com/andys0919/daily-news" class="next-card" target="_blank" rel="noopener" style="opacity: 0.6;">
+      <div class="step">下一步 → 3</div>
+      <div class="title">看資料管線</div>
+      <div class="desc">這個 dashboard 是 daily-news pipeline 的 web 視角。原始資料來自 SQLite，每日 09:00 自動刷新。</div>
+      <div class="arrow">→ 看 README</div>
+    </a>
+  </section>
+
+  <p class="muted-2" style="font-size: var(--t-label); text-align: center; margin-top: var(--s-8);">
+    本工具僅彙整公開資訊，<strong>非投資建議</strong>。資料每日 09:00 由 daily-news pipeline 自動刷新。
+  </p>
+
   <script is:inline>
     document.addEventListener("DOMContentLoaded", () => {
+      // Tab switcher for the pulse feed
       const tabs = document.querySelectorAll("#feed-tabs .tab");
       const panels = document.querySelectorAll(".feed-panel");
       tabs.forEach((tab) => {
@@ -448,6 +538,24 @@ const analystTickers = Object.keys(analystByTicker).sort((a, b) => analystByTick
           });
         });
       });
+
+      // Section-index active highlight based on scroll position
+      const navLinks = document.querySelectorAll("#sec-nav a");
+      const sections = ["takeaway", "scorecard", "pulse", "filings", "gaps"]
+        .map((id) => document.getElementById(id))
+        .filter(Boolean);
+      function updateActive() {
+        let current = sections[0]?.id;
+        const top = window.scrollY + 200;
+        for (const s of sections) {
+          if (s.offsetTop <= top) current = s.id;
+        }
+        navLinks.forEach((a) => {
+          a.toggleAttribute("data-current", a.getAttribute("data-target") === current);
+        });
+      }
+      window.addEventListener("scroll", updateActive, { passive: true });
+      updateActive();
     });
   </script>
 </Base>

@@ -236,31 +236,61 @@ a:hover { color: var(--fg-100); }
 }
 .page-h .meta strong { color: var(--fg-100); font-weight: 500; font-family: "JetBrains Mono", monospace; }
 
-/* ─── How-to-read card (instructive helper at top of each page) */
-.howto {
+/* ─── Master guide (one collapsible card at top, replaces multiple howto's) */
+details.guide {
   border: 1px solid var(--border-base);
-  background: linear-gradient(180deg, rgba(122, 162, 255, 0.04), transparent 60%), var(--bg-880);
+  background: linear-gradient(180deg, rgba(122, 162, 255, 0.04), transparent 70%), var(--bg-880);
   border-radius: var(--radius-md);
-  padding: var(--s-4) var(--s-5);
-  margin-bottom: var(--s-6);
-  display: grid; grid-template-columns: auto 1fr; gap: var(--s-4);
-  align-items: start;
+  margin-bottom: var(--s-8);
+  overflow: hidden;
 }
-.howto-icon {
-  width: 32px; height: 32px; border-radius: 8px;
-  background: var(--accent-bg);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--accent-strong); font-weight: 600; font-size: 14px;
+details.guide > summary {
+  padding: var(--s-3) var(--s-5);
+  cursor: pointer; list-style: none;
+  display: flex; align-items: center; gap: var(--s-3);
+  font-size: var(--t-small); color: var(--fg-200);
+  user-select: none;
 }
-.howto-title {
+details.guide > summary::-webkit-details-marker { display: none; }
+details.guide > summary::before {
+  content: "▸"; color: var(--fg-400); font-size: 10px;
+  transition: transform var(--duration-fast) var(--ease);
+}
+details.guide[open] > summary::before { transform: rotate(90deg); }
+details.guide > summary .icon {
+  width: 22px; height: 22px; border-radius: 6px;
+  background: var(--accent-bg); color: var(--accent-strong);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 600; font-size: 12px;
+}
+details.guide > summary .label {
+  font-weight: 500; color: var(--fg-100);
+}
+details.guide > summary .meta {
+  margin-left: auto; font-size: var(--t-label); color: var(--fg-400);
+}
+.guide-body {
+  padding: 0 var(--s-5) var(--s-5);
+  display: grid; grid-template-columns: 1fr; gap: var(--s-4);
+  font-size: var(--t-small); color: var(--fg-300); line-height: 1.7;
+}
+@media (min-width: 720px) {
+  .guide-body { grid-template-columns: repeat(2, 1fr); gap: var(--s-5); }
+}
+.guide-body h4 {
   font-size: var(--t-small); font-weight: 500; color: var(--fg-100);
-  margin: 0 0 var(--s-1);
+  margin: 0 0 var(--s-2);
+  padding-bottom: var(--s-1); border-bottom: 1px solid var(--border-base);
 }
-.howto-body {
-  font-size: var(--t-small); color: var(--fg-300); line-height: 1.65;
-  margin: 0;
+.guide-body p { margin: 0 0 var(--s-2); }
+.guide-body ul { margin: 0; padding-left: var(--s-5); }
+.guide-body strong { color: var(--fg-100); font-weight: 500; }
+.guide-body .kbd {
+  font-family: "JetBrains Mono", monospace; font-size: 10px;
+  padding: 1px 5px; border-radius: 3px;
+  background: var(--bg-700); color: var(--fg-200);
+  border: 1px solid var(--border-base);
 }
-.howto-body strong { color: var(--fg-100); font-weight: 500; }
 
 /* ─── Section header (between content blocks) */
 .section-h2 {
@@ -866,13 +896,13 @@ a:hover { color: var(--fg-100); }
    ─────────────────────────────────────────────────────────────── */
 .sec-index {
   position: sticky; top: 60px; z-index: 30;
-  display: flex; gap: var(--s-1); flex-wrap: wrap;
+  display: flex; gap: var(--s-1); flex-wrap: wrap; align-items: center;
   padding: var(--s-2) 0;
-  margin-bottom: var(--s-6);
+  margin: 0 0 var(--s-8);
   border-bottom: 1px solid var(--border-base);
-  background: rgba(10, 12, 16, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(10, 12, 16, 0.92);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
 }
 .sec-index a {
   font-size: var(--t-small); padding: 6px 12px;
@@ -880,7 +910,83 @@ a:hover { color: var(--fg-100); }
   color: var(--fg-300);
   transition: all var(--duration-fast) var(--ease);
 }
-.sec-index a:hover { color: var(--fg-100); background: rgba(255, 255, 255, 0.03); }
+.sec-index a:hover { color: var(--fg-100); background: rgba(255, 255, 255, 0.04); }
+.sec-index a[data-current="true"] {
+  color: var(--accent-strong); background: var(--accent-bg);
+}
+
+/* ─── Next-steps footer (closes the page with clear actions) */
+.next-steps {
+  margin-top: var(--s-12);
+  padding-top: var(--s-8);
+  border-top: 1px solid var(--border-base);
+  display: grid; grid-template-columns: 1fr; gap: var(--s-4);
+}
+@media (min-width: 720px) { .next-steps { grid-template-columns: repeat(3, 1fr); } }
+.next-card {
+  border: 1px solid var(--border-base);
+  background: var(--bg-880);
+  border-radius: var(--radius-md);
+  padding: var(--s-5);
+  transition: all var(--duration-fast) var(--ease);
+}
+.next-card:hover {
+  border-color: rgba(122, 162, 255, 0.3);
+  background: rgba(122, 162, 255, 0.04);
+}
+.next-card .step {
+  font-size: var(--t-caption); letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent-strong); margin-bottom: var(--s-2);
+}
+.next-card .title {
+  font-size: var(--t-h3); font-weight: 500; color: var(--fg-100);
+  margin-bottom: var(--s-2);
+}
+.next-card .desc {
+  font-size: var(--t-small); color: var(--fg-300); line-height: 1.65;
+}
+.next-card .arrow {
+  display: inline-block; margin-top: var(--s-3);
+  font-size: var(--t-small); color: var(--accent-strong);
+}
+
+/* ─── Mobile scorecard cards (fallback when table is too wide) */
+@media (max-width: 720px) {
+  .scorecard-wrap { display: none; }
+  .scorecard-mobile { display: grid; gap: var(--s-2); }
+}
+@media (min-width: 721px) {
+  .scorecard-mobile { display: none; }
+}
+.score-card-m {
+  display: grid; grid-template-columns: 32px 1fr auto;
+  gap: var(--s-3); padding: var(--s-3) var(--s-4);
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-md);
+  background: var(--bg-880);
+  align-items: center;
+}
+.score-card-m .icon { font-size: 22px; text-align: center; }
+.score-card-m .body { min-width: 0; }
+.score-card-m .head {
+  display: flex; align-items: baseline; gap: var(--s-2); flex-wrap: wrap;
+  margin-bottom: var(--s-1);
+}
+.score-card-m .head .t {
+  font-family: "JetBrains Mono", monospace; font-weight: 600;
+  font-size: var(--t-h3); color: var(--fg-100);
+}
+.score-card-m .head .name { font-size: var(--t-label); color: var(--fg-400); }
+.score-card-m .stats {
+  font-family: "JetBrains Mono", monospace; font-size: var(--t-label);
+  color: var(--fg-300); font-feature-settings: "tnum";
+}
+.score-card-m .stats .delta-up { color: var(--ok); }
+.score-card-m .stats .delta-down { color: var(--bad); }
+.score-card-m .right {
+  text-align: right; font-family: "JetBrains Mono", monospace;
+  font-size: var(--t-label);
+}
 
 /* ───────────────────────────────────────────────────────────────
    Scorecard — the main centerpiece (consolidated watchlist view)
@@ -903,6 +1009,7 @@ a:hover { color: var(--fg-100); }
   border-bottom: 1px solid var(--border-base);
   text-align: right; background: var(--bg-880);
   white-space: nowrap;
+  position: sticky; top: 60px; z-index: 5;
 }
 .scorecard thead th:first-child,
 .scorecard thead th.left { text-align: left; }
