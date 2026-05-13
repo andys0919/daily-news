@@ -8,7 +8,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import math
+import os
 import re
 import sqlite3
 from collections import Counter, defaultdict
@@ -18,6 +20,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 import financial_reports as fr
+from external_calendar_feeds import fetch_all_external_calendar_events
 
 
 DEFAULT_DB = Path(__file__).resolve().parent / "data" / "news.db"
@@ -25,9 +28,9 @@ DEFAULT_OUTPUT = Path(__file__).resolve().parent / "web" / "src" / "data"
 
 US_TICKER_RE = re.compile(r"^[A-Z]{1,5}(\.[A-Z])?$")
 TW_TICKER_RE = re.compile(r"^\d{4,6}$")
-# Year-like numbers frequently appear in article titles ("Q1 2026"); drop them
+# Year-like numbers frequently appear in article titles ("Q1 2026", "2035 target"); drop them
 # from ticker aggregations so they don't dominate the leaderboards.
-YEAR_NOISE = {str(y) for y in range(1990, 2035)}
+YEAR_NOISE = {str(y) for y in range(1900, 2101)}
 
 # High-precision guidance phrases: must appear as 2+ word chunks tied to
 # financials so political/macro headlines don't leak into the leaderboard.
@@ -93,6 +96,13 @@ DASHBOARD_NOISY_SOURCE_SUBSTR = (
     "hugging face blog",
     "lobsters",
     "reddit r/",
+    "sec 6-k filings",
+    "sec 8-k filings",
+    "sec 10-k filings",
+    "sec 10-q filings",
+    "sec 13d",
+    "sec 13f",
+    "sec 13g",
     "sec form 3",
     "sec form 4",
     "sec form 5",
@@ -1235,6 +1245,70 @@ TICKER_ALIASES = {
     "2382": "2382", "廣達": "2382",
 }
 
+TICKER_DISPLAY_NAMES_ZH = {
+    "2330": "台積電",
+    "TSM": "台積電 ADR",
+    "2317": "鴻海",
+    "2454": "聯發科",
+    "2308": "台達電",
+    "2059": "川湖",
+    "2376": "技嘉",
+    "2408": "南亞科",
+    "2881": "富邦金",
+    "6183": "關貿",
+    "6190": "萬泰科",
+    "NVDA": "輝達",
+    "AAPL": "蘋果",
+    "MSFT": "微軟",
+    "GOOGL": "Alphabet（Google）",
+    "META": "Meta",
+    "AMZN": "亞馬遜",
+    "TSLA": "特斯拉",
+    "AMD": "超微",
+    "AVGO": "博通",
+    "INTC": "英特爾",
+    "MU": "美光",
+    "JPM": "摩根大通",
+    "GLW": "康寧",
+    "APO": "阿波羅全球管理",
+    "BMY": "百時美施貴寶",
+    "GH": "Guardant Health",
+    "RLAY": "Relay Therapeutics",
+    "TWST": "Twist Bioscience",
+    "ACHC": "Acadia Healthcare",
+    "ANAB": "AnaptysBio",
+    "ORKA": "Oruka Therapeutics",
+    "ELVN": "Enliven Therapeutics",
+    "TNGX": "Tango Therapeutics",
+    "CGON": "CG Oncology",
+    "IREN": "IREN Ltd.",
+}
+
+
+def _company_name_map(db_path: Path) -> dict[str, str]:
+    names: dict[str, str] = {}
+    try:
+        conn = _connect(db_path)
+        try:
+            for row in conn.execute(
+                "SELECT ticker, company_name FROM financial_reports WHERE company_name IS NOT NULL GROUP BY ticker"
+            ).fetchall():
+                if row["ticker"] and row["company_name"]:
+                    names[row["ticker"].upper()] = row["company_name"]
+        finally:
+            conn.close()
+    except Exception:
+        pass
+    return names
+
+
+def _ticker_display_name(ticker: str, ticker_names: dict[str, str] | None = None) -> str:
+    ticker = (ticker or "").upper()
+    if ticker in TICKER_DISPLAY_NAMES_ZH:
+        return TICKER_DISPLAY_NAMES_ZH[ticker]
+    raw = (ticker_names or {}).get(ticker, "").strip()
+    return raw or ticker
+
 
 def _needle_in_text(needle: str, text: str) -> bool:
     needle_l = needle.strip().lower()
@@ -1255,6 +1329,17 @@ def _ticker_has_text_support(ticker: str, text: str) -> bool:
     return False
 
 
+def _looks_like_hardware_product_code(ticker: str, text: str) -> bool:
+    if not TW_TICKER_RE.match(ticker):
+        return False
+    product_patterns = (
+        rf"\b(?:rx|rtx|gtx|arc)\s*{re.escape(ticker)}\b",
+        rf"\b{re.escape(ticker)}\s*(?:xt|ti|super|gb|vram)\b",
+        rf"\bryzen\s+\d+\s*{re.escape(ticker)}\b",
+    )
+    return any(re.search(pattern, text, re.IGNORECASE) for pattern in product_patterns)
+
+
 def _sanitize_dashboard_tickers(article: dict) -> list[str]:
     text = " ".join(
         str(article.get(field) or "")
@@ -1263,7 +1348,9 @@ def _sanitize_dashboard_tickers(article: dict) -> list[str]:
     clean: list[str] = []
     for ticker in _article_tickers(article):
         ticker = ticker.upper()
-        if US_TICKER_RE.match(ticker) and not _ticker_has_text_support(ticker, text):
+        if _looks_like_hardware_product_code(ticker, text):
+            continue
+        if not TW_TICKER_RE.match(ticker) and not _ticker_has_text_support(ticker, text):
             continue
         if ticker not in clean:
             clean.append(ticker)
@@ -1572,6 +1659,582 @@ def _internal_data_feed(db_path: Path, since_iso: str, limit: int = 30) -> list[
     return out
 
 
+CALL_EVENT_RE = re.compile(
+    r"(法說|法說會|電話會議|earnings call|conference call|investor day|transcript|prepared remarks)",
+    re.IGNORECASE,
+)
+CALL_EVENT_NOISE_TITLE_SUBSTR = (
+    "本周大事",
+    "本週大事",
+    "大事回顧",
+    "一週大事",
+    "一周大事",
+    "懶人包",
+)
+ESTIMATE_RE = re.compile(
+    r"(法人|外資|投信|分析師|目標價|預估|財測|上修|下修|上看|price target|analyst|estimate|forecast|guidance|upgrade|downgrade|raises|lowers|cuts)",
+    re.IGNORECASE,
+)
+STOCK_CALENDAR_ESTIMATE_RE = re.compile(
+    r"(分析師|目標價|預估|財測|上修|下修|上看|下看|price target|\banalysts?\b|\bestimates?\b|\bforecasts?\b|\bguidance\b|\bupgrades?\b|\bdowngrades?\b|\braises?\b|\braised\b|\blowers?\b|\blowered\b|\bcuts?\b|\beps\b|本益比|獲利)",
+    re.IGNORECASE,
+)
+STOCK_CALENDAR_CORPORATE_EVENT_RE = re.compile(
+    r"(財報|營收|獲利|\beps\b|\bearnings\b|\bresults\b|\brevenue\b|\bguidance\b|資本支出|\bcapex\b|擴產|擴廠|股東會|重訊|重大訊息|\bmerger\b|\bacquisition\b|\bbuyback\b|\bdividend\b)",
+    re.IGNORECASE,
+)
+STOCK_CALENDAR_NOISE_RE = re.compile(
+    r"(三大法人|買賣超|外資買超|外資賣超|投信買超|投信賣超|自營商|gaming|best deal|lowest price|newegg|amazon\.com|radeon|geforce|hardware pricing|\brx\s*\d+|\brtx\s*\d+)",
+    re.IGNORECASE,
+)
+MACRO_EVENT_RE = re.compile(
+    r"(\b(?:CPI|PPI|PCE|FOMC|Fed|Federal Reserve|Powell|nonfarm|payroll|payrolls|jobs report|unemployment|GDP|PMI|ISM|retail sales|"
+    r"inflation|interest rate|interest rates|rate cut|rate cuts|rate hike|rate hikes|Treasury yield|Treasury yields|bond yield|bond yields|dollar|central bank|ECB|BOJ)\b|"
+    r"通膨|消費者物價|生產者物價|非農|就業|失業率|國內生產毛額|景氣|採購經理|零售銷售|"
+    r"利率|降息|升息|聯準會|鮑爾|央行|美債|殖利率|美元|匯率)",
+    re.IGNORECASE,
+)
+MACRO_IMPORTANT_RE = re.compile(
+    r"(\b(?:report|release|decision|meeting|speech|testimony|auction|CPI|PPI|PCE|FOMC|nonfarm|payroll|payrolls|GDP|PMI|ISM|Fed)\b|"
+    r"公布|發布|決議|會議|記者會|數據|將於|聯準會|非農|利率|通膨)",
+    re.IGNORECASE,
+)
+
+
+def _published_date(published: str | None) -> str | None:
+    if not published:
+        return None
+    text = published.strip()
+    if not text:
+        return None
+    try:
+        return datetime.fromisoformat(text.replace("Z", "+00:00")).date().isoformat()
+    except ValueError:
+        return text[:10] if len(text) >= 10 else None
+
+
+def _published_year(published: str | None) -> int | None:
+    date_text = _published_date(published)
+    if not date_text:
+        return None
+    try:
+        return int(date_text[:4])
+    except (TypeError, ValueError):
+        return None
+
+
+def _parse_event_date_from_title(title: str, published: str | None) -> str | None:
+    year = _published_year(published) or datetime.now(timezone.utc).year
+    patterns = (
+        r"(?<!\d)(\d{1,2})[/-](\d{1,2})(?!\d)",
+        r"(?<!\d)(\d{1,2})月(\d{1,2})日",
+    )
+    for pattern in patterns:
+        match = re.search(pattern, title or "")
+        if not match:
+            continue
+        try:
+            return date(year, int(match.group(1)), int(match.group(2))).isoformat()
+        except ValueError:
+            continue
+    return _published_date(published)
+
+
+def _calendar_event_date(title: str, published: str | None) -> str | None:
+    return _parse_event_date_from_title(title, published) or _published_date(published)
+
+
+def _is_important_macro_event(item: dict) -> bool:
+    title = _action_title(item)
+    source = (item.get("source") or "").lower()
+    if any(needle in source for needle in ("cointelegraph", "coindesk", "decrypt", "the block")):
+        return False
+    title_text = " ".join(str(item.get(field) or "") for field in ("title", "source", "category"))
+    if not title or not MACRO_EVENT_RE.search(title_text):
+        return False
+    event_type = (item.get("event_type") or "").lower()
+    category = item.get("category") or ""
+    official_macro_source = any(
+        needle in source
+        for needle in (
+            "fed speeches",
+            "st. louis fed",
+            "federal reserve",
+            "bis central bank",
+            "central bank speeches",
+        )
+    )
+    major_macro_source = any(
+        needle in source
+        for needle in (
+            "bloomberg",
+            "cnbc",
+            "investing.com",
+            "reuters",
+            "bis",
+            "central bank",
+            "經濟日報",
+            "中央社",
+            "工商時報",
+        )
+    )
+    has_calendar_cue = bool(MACRO_IMPORTANT_RE.search(title))
+    return official_macro_source or (
+        (event_type == "policy" or "財經與總經" in category or major_macro_source)
+        and has_calendar_cue
+    )
+
+
+def _stock_calendar_kind(ticker: str) -> str:
+    return "tw_event" if _infer_market(ticker) == "tw" else "us_event"
+
+
+def _stock_calendar_label(ticker: str) -> str:
+    return "台股事件" if _infer_market(ticker) == "tw" else "美股事件"
+
+
+def _is_actionable_stock_calendar_event(item: dict) -> bool:
+    source = (item.get("source") or "").lower()
+    title = (_action_title(item) or "").lower()
+    if any(noise in source for noise in DASHBOARD_NOISY_SOURCE_SUBSTR):
+        return False
+    if any(needle in source for needle in ("cointelegraph", "coindesk", "decrypt", "the block")):
+        return False
+    if any(noise in title for noise in DASHBOARD_NOISY_TITLE_SUBSTR):
+        return False
+    if STOCK_CALENDAR_NOISE_RE.search(title):
+        return False
+    text = " ".join(str(item.get(field) or "") for field in ("title", "source", "summary", "event_type"))
+    title_source_text = " ".join(str(item.get(field) or "") for field in ("title", "source"))
+    if CALL_EVENT_RE.search(text):
+        return False
+    if STOCK_CALENDAR_ESTIMATE_RE.search(text):
+        return True
+    event_type = (item.get("event_type") or "").lower()
+    if event_type in {"earnings", "capex"}:
+        return bool(STOCK_CALENDAR_CORPORATE_EVENT_RE.search(title_source_text))
+    return event_type == "filing" and bool(STOCK_CALENDAR_CORPORATE_EVENT_RE.search(title_source_text))
+
+
+def _stock_calendar_tickers(item: dict, ticker_names: dict[str, str] | None = None) -> list[str]:
+    text = " ".join(str(item.get(field) or "") for field in ("title", "source", "summary"))
+    out: list[str] = []
+    for ticker in _action_tickers(item):
+        if TW_TICKER_RE.match(ticker):
+            name = _ticker_display_name(ticker, ticker_names)
+            if not _ticker_has_text_support(ticker, text) and not _needle_in_text(name, text):
+                continue
+        out.append(ticker)
+    return out
+
+
+def _market_calendar(
+    *,
+    call_events: list[dict],
+    calendar_articles: list[dict],
+    stock_articles: list[dict],
+    ticker_names: dict[str, str] | None = None,
+    external_events: list[dict] | None = None,
+) -> list[dict]:
+    events: list[dict] = []
+    seen: set[tuple[str, str, str]] = set()
+
+    for item in (external_events or []):
+        kind = item.get("kind") or "macro"
+        event_date = item.get("date")
+        if not event_date:
+            continue
+        title = item.get("title") or ""
+        dedup_token = (item.get("ticker") or "").upper() or _action_title_key(title)
+        key = (kind, event_date, dedup_token)
+        if key in seen:
+            continue
+        seen.add(key)
+        events.append({
+            "kind": kind,
+            "label": item.get("label") or "重要總經",
+            "date": event_date,
+            "time": item.get("time"),
+            "ticker": item.get("ticker"),
+            "display_name": item.get("display_name"),
+            "title": title,
+            "source": item.get("source"),
+            "link": item.get("link"),
+            "importance": int(item.get("importance") or 70),
+        })
+
+    for item in call_events:
+        event_date = item.get("event_date")
+        if not event_date:
+            continue
+        events.append({
+            "kind": "call",
+            "label": "法說",
+            "date": event_date,
+            "time": None,
+            "ticker": item.get("ticker"),
+            "display_name": item.get("display_name"),
+            "title": item.get("title"),
+            "source": item.get("source"),
+            "link": item.get("link"),
+            "importance": 100,
+        })
+
+    for item in calendar_articles:
+        if not _is_important_macro_event(item):
+            continue
+        event_date = _calendar_event_date(_action_title(item), item.get("published"))
+        if not event_date:
+            continue
+        title = _action_title(item)
+        key = ("macro", event_date, _action_title_key(title))
+        if key in seen:
+            continue
+        seen.add(key)
+        events.append({
+            "kind": "macro",
+            "label": "重要總經",
+            "date": event_date,
+            "time": None,
+            "ticker": None,
+            "display_name": None,
+            "title": title,
+            "source": item.get("source"),
+            "link": item.get("link"),
+            "importance": 90,
+        })
+
+    for item in stock_articles:
+        if not _is_actionable_stock_calendar_event(item):
+            continue
+        title = _action_title(item)
+        event_date = _calendar_event_date(title, item.get("published"))
+        if not event_date:
+            continue
+        for ticker in _stock_calendar_tickers(item, ticker_names):
+            kind = _stock_calendar_kind(ticker)
+            key = (kind, event_date, f"{ticker}:{_action_title_key(title)}")
+            if key in seen:
+                continue
+            seen.add(key)
+            events.append({
+                "kind": kind,
+                "label": _stock_calendar_label(ticker),
+                "date": event_date,
+                "time": None,
+                "ticker": ticker,
+                "display_name": _ticker_display_name(ticker, ticker_names),
+                "title": title,
+                "source": item.get("source"),
+                "link": _action_link(item, ticker),
+                "importance": 70,
+            })
+
+    events.sort(key=lambda event: (event["date"], event.get("time") or "00:00", -event.get("importance", 0)))
+    return events
+
+
+def _action_tickers(item: dict) -> list[str]:
+    title = item.get("title") or ""
+    raw = _article_tickers(item)
+    tickers = _augment_tickers_from_title(title, raw)
+    record = dict(item)
+    record["tickers"] = tickers
+    return _sanitize_dashboard_tickers(record)
+
+
+def _estimate_signal(title: str) -> str:
+    lower = (title or "").lower()
+    bits: list[str] = []
+    if "目標價" in title or "price target" in lower or "target" in lower:
+        bits.append("目標價")
+    if any(kw in title for kw in ("上修", "上看", "調高")) or any(kw in lower for kw in ("raises", "raised", "lifts", "boosts", "upgrade")):
+        bits.append("上修")
+    if any(kw in title for kw in ("下修", "下看", "調降")) or any(kw in lower for kw in ("lowers", "lowered", "cuts", "downgrade")):
+        bits.append("下修")
+    if "法人" in title or "analyst" in lower:
+        bits.append("法人")
+    if "預估" in title or "財測" in title or any(kw in lower for kw in ("estimate", "forecast", "guidance")):
+        bits.append("預估")
+    return " / ".join(dict.fromkeys(bits)) or "法人觀點"
+
+
+def _action_title(item: dict) -> str:
+    return (item.get("title") or "").split(" - ")[0].replace("\n", " ").strip()
+
+
+def _action_title_key(title: str) -> str:
+    normalized = re.split(r"\s*[|｜]\s*", title or "", maxsplit=1)[0]
+    return re.sub(r"\s+", " ", normalized).strip().lower()
+
+
+def _action_link(item: dict, ticker: str) -> str:
+    return item.get("link") or f"/stocks/{ticker}/"
+
+
+def _headline_kind(item: dict) -> str:
+    text = " ".join(str(item.get(field) or "") for field in ("title", "source"))
+    if CALL_EVENT_RE.search(text):
+        return "法說"
+    if ESTIMATE_RE.search(text):
+        return "法人"
+    if (item.get("event_type") or "") == "filing":
+        return "公告"
+    return "新聞"
+
+
+def _unique_action_articles(*groups: Iterable[dict]) -> list[dict]:
+    out: list[dict] = []
+    seen: set[tuple[str, str]] = set()
+    for group in groups:
+        for item in group:
+            title = _action_title(item)
+            if not title:
+                continue
+            key = ("", _action_title_key(title))
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(item)
+    return out
+
+
+_EXTERNAL_CALENDAR_LOOKAHEAD_DAYS = 14
+
+
+def _gather_external_calendar_events(*, coverage: list[dict] | None = None) -> list[dict]:
+    """Fetch NASDAQ earnings + Forex Factory macro events.
+
+    Disabled when DAILY_NEWS_DISABLE_EXTERNAL_CALENDAR is truthy (used by
+    tests and offline runs). Returns [] on any failure - callers must remain
+    tolerant of empty lists so the export never aborts on calendar issues.
+    """
+    if os.environ.get("DAILY_NEWS_DISABLE_EXTERNAL_CALENDAR"):
+        return []
+    today = datetime.now(timezone.utc).date()
+    target_dates = [today + timedelta(days=i) for i in range(_EXTERNAL_CALENDAR_LOOKAHEAD_DAYS)]
+    us_tickers: set[str] | None = None
+    if coverage:
+        us_tickers = {
+            (row.get("ticker") or "").upper()
+            for row in coverage
+            if (row.get("market") or "").lower() == "us"
+        }
+        us_tickers.discard("")
+        if not us_tickers:
+            us_tickers = None
+    try:
+        return fetch_all_external_calendar_events(
+            target_dates=target_dates,
+            us_tickers_filter=us_tickers,
+        )
+    except Exception as exc:  # pragma: no cover - network-dependent
+        logging.getLogger(__name__).warning(
+            "external calendar feeds failed: %s", exc
+        )
+        return []
+
+
+def _action_board(
+    *,
+    recent_news_pool: list[dict],
+    analyst_views: list[dict],
+    internal_feed: list[dict],
+    calendar_articles: list[dict],
+    fundamentals: list[dict],
+    momentum: list[dict],
+    ticker_names: dict[str, str] | None = None,
+    external_events: list[dict] | None = None,
+) -> dict:
+    """Build the homepage research cockpit from stock-level evidence."""
+    articles = _unique_action_articles(recent_news_pool, internal_feed)
+    call_events: list[dict] = []
+    for item in articles:
+        text = " ".join(str(item.get(field) or "") for field in ("title", "source"))
+        if not CALL_EVENT_RE.search(text):
+            continue
+        if any(noise in _action_title(item) for noise in CALL_EVENT_NOISE_TITLE_SUBSTR):
+            continue
+        for ticker in _action_tickers(item):
+            call_events.append({
+                "ticker": ticker,
+                "display_name": _ticker_display_name(ticker, ticker_names),
+                "event_date": _parse_event_date_from_title(_action_title(item), item.get("published")),
+                "published": item.get("published"),
+                "title": _action_title(item),
+                "source": item.get("source"),
+                "link": _action_link(item, ticker),
+                "kind": "法說 / 電話會議",
+            })
+    call_events.sort(key=lambda item: (item.get("event_date") or "", item.get("published") or ""), reverse=True)
+    call_events = call_events[:24]
+
+    estimate_candidates = _unique_action_articles(analyst_views, articles)
+    analyst_estimates: list[dict] = []
+    seen_estimates: set[tuple[str, str, str]] = set()
+    for item in estimate_candidates:
+        text = " ".join(str(item.get(field) or "") for field in ("title", "source", "summary"))
+        if not ESTIMATE_RE.search(text):
+            continue
+        for ticker in _action_tickers(item):
+            key = (ticker, _action_title(item).lower(), item.get("source") or "")
+            if key in seen_estimates:
+                continue
+            seen_estimates.add(key)
+            analyst_estimates.append({
+                "ticker": ticker,
+                "display_name": _ticker_display_name(ticker, ticker_names),
+                "published": item.get("published"),
+                "title": _action_title(item),
+                "source": item.get("source"),
+                "link": _action_link(item, ticker),
+                "signal": _estimate_signal(_action_title(item)),
+                "direction": item.get("direction") or _classify_guidance(_action_title(item)),
+            })
+    analyst_estimates.sort(key=lambda item: item.get("published") or "", reverse=True)
+    analyst_estimates = analyst_estimates[:30]
+
+    grouped: dict[str, dict] = defaultdict(lambda: {"ticker": "", "count": 0, "headlines": []})
+    seen_headlines: set[tuple[str, str]] = set()
+    for item in articles:
+        title = _action_title(item)
+        if not title:
+            continue
+        for ticker in _action_tickers(item):
+            key = (ticker, title.lower())
+            if key in seen_headlines:
+                continue
+            seen_headlines.add(key)
+            group = grouped[ticker]
+            group["ticker"] = ticker
+            group["display_name"] = _ticker_display_name(ticker, ticker_names)
+            group["count"] += 1
+            if len(group["headlines"]) < 5:
+                group["headlines"].append({
+                    "title": title,
+                    "source": item.get("source"),
+                    "published": item.get("published"),
+                    "link": _action_link(item, ticker),
+                    "kind": _headline_kind(item),
+                })
+
+    call_count = Counter(item["ticker"] for item in call_events)
+    estimate_count = Counter(item["ticker"] for item in analyst_estimates)
+    momentum_by_ticker = {item["ticker"]: item for item in momentum}
+    fundamentals_by_ticker = {item["ticker"]: item for item in fundamentals}
+
+    def score_ticker(ticker: str) -> float:
+        score = grouped.get(ticker, {}).get("count", 0)
+        score += call_count[ticker] * 5
+        score += estimate_count[ticker] * 4
+        score += max(0, momentum_by_ticker.get(ticker, {}).get("delta", 0)) * 0.5
+        if fundamentals_by_ticker.get(ticker):
+            score += 1
+        return score
+
+    news_index = sorted(
+        grouped.values(),
+        key=lambda item: (score_ticker(item["ticker"]), item["count"]),
+        reverse=True,
+    )[:24]
+
+    tickers = set(grouped.keys()) | set(call_count.keys()) | set(estimate_count.keys())
+    research_queue: list[dict] = []
+    for ticker in tickers:
+        calls = call_count[ticker]
+        estimates = estimate_count[ticker]
+        news = grouped.get(ticker, {}).get("count", 0)
+        fund = fundamentals_by_ticker.get(ticker)
+        momentum_row = momentum_by_ticker.get(ticker, {})
+        score = score_ticker(ticker)
+        if score <= 0:
+            continue
+
+        if calls:
+            thesis = "法說或電話會議正在改變市場敘事"
+            why_now = f"{calls} 筆法說/電話會議線索，需先確認管理層展望。"
+            next_step = "下一步：先讀法說逐字稿或摘要，抓營收展望、毛利率、資本支出與訂單能見度，再回個股頁核對財報。"
+        elif estimates:
+            thesis = "法人預估或目標價出現更新"
+            why_now = f"{estimates} 筆法人/分析師訊號，需拆解假設是否真的變了。"
+            next_step = "下一步：比對法人目標價、EPS 預估與產業假設，確認是基本面更新還是新聞熱度。"
+        elif fund:
+            thesis = "最新財報可提供基本面查核"
+            health = (fund.get("health") or {}).get("label") or "資料已更新"
+            why_now = f"{health}；需要把新聞敘事接回營收、EPS 與現金流。"
+            next_step = "下一步：核對最新財報 YoY、EPS、毛利率與現金流，確認題材是否有數字支撐。"
+        else:
+            thesis = "個股新聞熱度升溫"
+            why_now = f"{news} 則對應新聞可索引，先分辨訂單、價格、政策與競爭事件。"
+            next_step = "下一步：打開對應新聞索引，把每則新聞標成利多、利空或待確認，再決定是否進個股頁深查。"
+
+        checks = []
+        if calls:
+            checks.append("法說時間與管理層展望")
+        if estimates:
+            checks.append("法人預估 / 目標價假設")
+        if news:
+            checks.append("對應新聞是否同一主題重複")
+        if fund:
+            checks.append("財報數字是否支撐敘事")
+        if momentum_row:
+            checks.append("7 日新聞動能是否只是短線雜訊")
+
+        evidence_links = []
+        for source in (call_events, analyst_estimates):
+            for item in source:
+                if item["ticker"] == ticker and len(evidence_links) < 3:
+                    evidence_links.append({
+                        "title": item["title"],
+                        "source": item.get("source"),
+                        "published": item.get("published"),
+                        "link": item.get("link"),
+                    })
+        for item in grouped.get(ticker, {}).get("headlines", []):
+            if len(evidence_links) >= 3:
+                break
+            evidence_links.append({
+                "title": item["title"],
+                "source": item.get("source"),
+                "published": item.get("published"),
+                "link": item.get("link"),
+            })
+
+        research_queue.append({
+            "ticker": ticker,
+            "display_name": _ticker_display_name(ticker, ticker_names),
+            "score": round(score, 2),
+            "thesis": thesis,
+            "why_now": why_now,
+            "next_step": next_step,
+            "checks": checks[:5],
+            "evidence": {
+                "calls": calls,
+                "estimates": estimates,
+                "news": news,
+                "momentum_delta": momentum_row.get("delta"),
+                "health": (fund.get("health") or {}).get("label") if fund else None,
+            },
+            "links": evidence_links,
+        })
+
+    research_queue.sort(key=lambda item: item["score"], reverse=True)
+
+    return {
+        "research_queue": research_queue[:10],
+        "call_events": call_events,
+        "market_calendar": _market_calendar(
+            call_events=call_events,
+            calendar_articles=calendar_articles,
+            stock_articles=_unique_action_articles(analyst_views, internal_feed, recent_news_pool),
+            ticker_names=ticker_names,
+            external_events=external_events,
+        ),
+        "analyst_estimates": analyst_estimates,
+        "news_index": news_index,
+    }
+
+
 def _events_calendar(articles: list[dict]) -> list[dict]:
     """Build event entries from earnings / capex / policy / filing tagged articles."""
     events = []
@@ -1632,7 +2295,8 @@ def export_all(
         themes = _theme_extract(window_30)
         momentum = _momentum_screen(conn, now)
 
-        recent_news_pool = _dashboard_stock_articles(_recent_news(conn, limit=2000))
+        recent_news_all = _recent_news(conn, limit=2000)
+        recent_news_pool = _dashboard_stock_articles(recent_news_all)
         coverage = _coverage_map(db_path)
         events = _events_calendar(window_30)
 
@@ -1665,12 +2329,26 @@ def export_all(
     analyst_views = _analyst_views(db_path, since_30, limit=60)
     revenue_pulse = _revenue_pulse(db_path, limit=24, watchlist=tickers)
     internal_feed = _internal_data_feed(db_path, since_30, limit=30)
+    name_map = _company_name_map(db_path)
 
     # Attach health + guidance count to each fundamentals entry for the UI
     for f in fundamentals:
         f["health"] = health_by_ticker.get(f["ticker"], {"tier": "unknown", "label": "—", "summary": "", "icon": "⚫"})
         pg = per_ticker_guidance.get(f["ticker"], {"up": 0, "down": 0, "net": 0, "items": []})
         f["guidance"] = {"up": pg["up"], "down": pg["down"], "net": pg["net"]}
+
+    external_events = _gather_external_calendar_events(coverage=coverage)
+
+    action_board = _action_board(
+        recent_news_pool=recent_news_pool,
+        analyst_views=analyst_views,
+        internal_feed=internal_feed,
+        calendar_articles=recent_news_all,
+        fundamentals=fundamentals,
+        momentum=momentum,
+        ticker_names=name_map,
+        external_events=external_events,
+    )
 
     artefacts: dict[str, Path] = {}
 
@@ -1700,6 +2378,7 @@ def export_all(
         "analyst_views": analyst_views,
         "revenue_pulse": revenue_pulse,
         "internal_feed": internal_feed,
+        "action_board": action_board,
         "filing_excerpts": filing_excerpts[:10],
         "event_clusters": clusters,
         "top_transcripts": top_transcripts,
@@ -1772,14 +2451,19 @@ def export_all(
     _write(watchlist_path, {"tickers": tickers})
     artefacts["watchlist"] = watchlist_path
 
+    # Use company names before deciding which numeric tickers deserve a searchable page.
+
     # Build a wider universe of tickers with enough data to merit a page.
     universe: dict[str, dict] = {}
+    watchlist_set = {x.upper() for x in tickers}
     for c in coverage:
         t = c["ticker"]
         if not t:
             continue
+        if t.isdigit() and not c.get("reports", 0) and not name_map.get(t) and t not in watchlist_set:
+            continue
         # Filter: keep if has reports OR >= 3 articles OR is in watchlist
-        if c.get("reports", 0) > 0 or c.get("articles", 0) >= 3 or t in {x.upper() for x in tickers}:
+        if c.get("reports", 0) > 0 or c.get("articles", 0) >= 3 or t in watchlist_set:
             universe[t] = c
 
     # Always include watchlist
@@ -1795,27 +2479,12 @@ def export_all(
         _write(path, _per_stock(db_path, market, ticker, recent_news_pool=recent_news_pool))
         artefacts[f"stock:{ticker}"] = path
 
-    # Lookup company names from financial_reports
-    name_map: dict[str, str] = {}
-    try:
-        conn2 = _connect(db_path)
-        try:
-            for row in conn2.execute(
-                "SELECT ticker, company_name FROM financial_reports WHERE company_name IS NOT NULL GROUP BY ticker"
-            ).fetchall():
-                if row["ticker"] and row["company_name"]:
-                    name_map[row["ticker"].upper()] = row["company_name"]
-        finally:
-            conn2.close()
-    except Exception:
-        pass
-
     # Search index — articles-first ranking (newsworthy beats raw-reports count)
     search_index = sorted(
         [
             {
                 "ticker": t,
-                "name": name_map.get(t, ""),
+                "name": _ticker_display_name(t, name_map),
                 "market": meta.get("market") or _infer_market(t),
                 "articles": meta.get("articles", 0),
                 "reports": meta.get("reports", 0),
