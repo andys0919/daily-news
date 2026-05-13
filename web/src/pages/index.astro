@@ -14,14 +14,6 @@ interface Article {
   event_type: string | null;
   category?: string;
 }
-interface Analyst {
-  title: string;
-  link: string;
-  source: string;
-  published: string;
-  tickers: string[];
-  direction: string | null;
-}
 interface FilingExcerpt {
   ticker: string;
   company_name: string;
@@ -29,13 +21,6 @@ interface FilingExcerpt {
   fiscal_period: string;
   form_type: string;
   excerpt: string;
-}
-interface Fundamental {
-  ticker: string;
-  market: string;
-  company_name: string | null;
-  latest: { revenue?: number | null; eps?: number | null; rev_yoy?: number | null } | null;
-  health?: { tier: string; label: string; summary: string };
 }
 interface MomentumRow {
   ticker: string;
@@ -52,16 +37,95 @@ interface TickerEntry {
   reports: number;
   label: string;
 }
+interface ActionLink {
+  title: string;
+  source: string | null;
+  published: string | null;
+  link: string | null;
+}
+interface ResearchQueueItem {
+  ticker: string;
+  display_name: string;
+  score: number;
+  thesis: string;
+  why_now: string;
+  next_step: string;
+  checks: string[];
+  evidence: {
+    calls?: number | null;
+    estimates?: number | null;
+    news?: number | null;
+    momentum_delta?: number | null;
+    health?: string | null;
+  };
+  links: ActionLink[];
+}
+interface CallEvent {
+  ticker: string;
+  display_name: string;
+  event_date: string | null;
+  published: string | null;
+  title: string;
+  source: string | null;
+  link: string | null;
+  kind: string;
+}
+interface MarketCalendarEvent {
+  kind: "macro" | "call" | "tw_event" | "us_event";
+  label: string;
+  date: string | null;
+  time: string | null;
+  ticker: string | null;
+  display_name: string | null;
+  title: string;
+  source: string | null;
+  link: string | null;
+  importance: number;
+}
+interface AnalystEstimate {
+  ticker: string;
+  display_name: string;
+  published: string | null;
+  title: string;
+  source: string | null;
+  link: string | null;
+  signal: string;
+  direction: string | null;
+}
+interface NewsIndexItem {
+  ticker: string;
+  display_name: string;
+  count: number;
+  headlines: Array<{
+    title: string;
+    source: string | null;
+    published: string | null;
+    link: string | null;
+    kind: string;
+  }>;
+}
 
-const stats: any = overview.stats ?? {};
 const generated = overview.generated_at ?? "";
 const articles = ((newsData as any).articles ?? []) as Article[];
-const analystViews = (overview.analyst_views ?? []) as Analyst[];
-const fundamentals = (overview.fundamentals ?? []) as Fundamental[];
 const filings = (overview.filing_excerpts ?? []) as FilingExcerpt[];
 const internalFeed = (overview.internal_feed ?? []) as Article[];
 const momentumRows = ((screens as any).momentum ?? []) as MomentumRow[];
 const stockSearchItems = ((tickerIndex as any).tickers ?? []) as TickerEntry[];
+const actionBoard = ((overview as any).action_board ?? {}) as {
+  research_queue?: ResearchQueueItem[];
+  call_events?: CallEvent[];
+  market_calendar?: MarketCalendarEvent[];
+  analyst_estimates?: AnalystEstimate[];
+  news_index?: NewsIndexItem[];
+};
+
+const researchQueue = actionBoard.research_queue ?? [];
+const callEvents = actionBoard.call_events ?? [];
+const marketCalendar = actionBoard.market_calendar ?? [];
+const analystEstimates = actionBoard.analyst_estimates ?? [];
+const newsIndex = actionBoard.news_index ?? [];
+const callCalendar = buildMarketCalendar(marketCalendar, callEvents);
+const marketCalendarSignalCount = marketCalendar.length;
 
 const momentumByTicker: Record<string, MomentumRow> = {};
 for (const row of momentumRows) momentumByTicker[row.ticker] = row;
@@ -72,17 +136,14 @@ function isStockSurfaceArticle(item: Article): boolean {
 }
 
 const stockNews = articles.filter(isStockSurfaceArticle);
-const callArticles = stockNews.filter((item) =>
-  /transcript|earnings call|conference call|prepared remarks|法說|電話會議/i.test(`${item.title} ${item.source} ${item.category}`)
-);
 const internalStockFeed = internalFeed.filter(isStockSurfaceArticle);
 const topSearchItems = stockSearchItems.slice(0, 12);
 const hotTickers = topSearchItems
   .map((item) => ({ ...item, momentum: momentumByTicker[item.ticker] ?? null }))
   .sort((a, b) => (b.momentum?.delta ?? 0) - (a.momentum?.delta ?? 0) || b.articles - a.articles)
-  .slice(0, 12);
+  .slice(0, 8);
 
-function ago(iso: string | undefined): string {
+function ago(iso: string | null | undefined): string {
   if (!iso) return "無時間";
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso.slice(0, 10);
@@ -100,28 +161,141 @@ function marketLabel(market: string): string {
   return market === "tw" ? "TW" : "US";
 }
 
-function fmtMoney(n: number | null | undefined, market: string): string {
-  if (n == null || !Number.isFinite(Number(n))) return "缺資料";
-  if (market === "tw") {
-    const yi = Number(n) / 1e5;
-    return `NT$${yi >= 10000 ? (yi / 10000).toFixed(1) + "兆" : Math.round(yi).toLocaleString() + "億"}`;
-  }
-  return `$${(Number(n) / 1e9).toFixed(1)}B`;
-}
-
 function tickerHref(ticker: string | undefined): string {
   return ticker ? `/stocks/${ticker}/` : "#";
 }
 
-function articleHref(item: Article | Analyst): string {
-  return item.link || tickerHref(item.tickers?.[0]);
+function itemHref(item: { link?: string | null; ticker?: string | null }): string {
+  return item.link || tickerHref(item.ticker || undefined);
+}
+
+function dateLabel(iso: string | null | undefined): string {
+  if (!iso) return "待確認";
+  return iso.slice(0, 10);
+}
+
+function tickerName(item: { ticker: string; display_name?: string | null }): string {
+  const name = (item.display_name || "").trim();
+  return name && name !== item.ticker ? name : "";
+}
+
+function calendarTickerName(item: { ticker?: string | null; display_name?: string | null }): string {
+  const ticker = item.ticker || "";
+  const name = (item.display_name || "").trim();
+  return name && name !== ticker ? name : "";
+}
+
+function formatMonthLabel(date: Date): string {
+  return `${date.getFullYear()} 年 ${String(date.getMonth() + 1).padStart(2, "0")} 月`;
+}
+
+function isoDate(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+function calendarEventKindClass(item: MarketCalendarEvent): string {
+  return item.kind.replace("_", "-");
+}
+
+function calendarEventTitle(item: MarketCalendarEvent): string {
+  if (item.ticker) return `${item.ticker}${calendarTickerName(item) ? ` ${calendarTickerName(item)}` : ""}`;
+  return plainTitle(item.title);
+}
+
+function calendarEventMeta(item: MarketCalendarEvent): string {
+  const parts: string[] = [];
+  if (item.time) parts.push(item.time);
+  if (item.source) parts.push(item.source);
+  return parts.join(" · ");
+}
+
+const calendarKindPriority: Record<MarketCalendarEvent["kind"], number> = {
+  call: 0,
+  macro: 1,
+  tw_event: 2,
+  us_event: 3,
+};
+
+function calendarSignalsForDay(events: MarketCalendarEvent[]): MarketCalendarEvent[] {
+  const sorted = [...events].sort(
+    (a, b) => b.importance - a.importance || calendarKindPriority[a.kind] - calendarKindPriority[b.kind]
+  );
+  const picked: MarketCalendarEvent[] = [];
+  for (const kind of ["call", "macro", "tw_event", "us_event"] as const) {
+    const match = sorted.find((event) => event.kind === kind);
+    if (match && !picked.includes(match)) picked.push(match);
+  }
+  for (const event of sorted) {
+    if (picked.length >= 4) break;
+    if (!picked.includes(event)) picked.push(event);
+  }
+  return picked;
+}
+
+function callToCalendarEvent(item: CallEvent): MarketCalendarEvent {
+  return {
+    kind: "call",
+    label: "法說",
+    date: item.event_date,
+    time: null,
+    ticker: item.ticker,
+    display_name: item.display_name,
+    title: item.title,
+    source: item.source,
+    link: item.link,
+    importance: 80,
+  };
+}
+
+function buildMarketCalendar(events: MarketCalendarEvent[], fallbackCalls: CallEvent[]) {
+  const source = events.length ? events : fallbackCalls.map(callToCalendarEvent);
+  const dated = source
+    .filter((item) => item.date && !Number.isNaN(new Date(`${item.date}T00:00:00`).getTime()))
+    .sort((a, b) =>
+      String(a.date).localeCompare(String(b.date)) ||
+      String(a.time || "00:00").localeCompare(String(b.time || "00:00")) ||
+      b.importance - a.importance
+    );
+  if (!dated.length) return null;
+
+  const anchor = new Date(`${dated[0].date}T00:00:00`);
+  const first = new Date(anchor.getFullYear(), anchor.getMonth(), 1);
+  const start = new Date(first);
+  start.setDate(first.getDate() - first.getDay());
+
+  const byDate = new Map<string, MarketCalendarEvent[]>();
+  for (const event of dated) {
+    const key = event.date || "";
+    byDate.set(key, [...(byDate.get(key) ?? []), event]);
+  }
+
+  const days = Array.from({ length: 42 }, (_, index) => {
+    const date = new Date(start);
+    date.setDate(start.getDate() + index);
+    const key = isoDate(date);
+    return {
+      date: key,
+      day: date.getDate(),
+      inMonth: date.getMonth() === anchor.getMonth(),
+      events: byDate.get(key) ?? [],
+    };
+  });
+
+  return {
+    label: formatMonthLabel(anchor),
+    weekdays: ["日", "一", "二", "三", "四", "五", "六"],
+    days,
+  };
 }
 
 const sourceTiles = [
-  { label: "即時新聞", value: stats.articles_24h ?? 0, sub: `${stats.articles_7d ?? 0} 篇 / 7 日`, tone: "news" },
-  { label: "法人 / 分析師", value: analystViews.length, sub: "評等、目標價、機構觀點", tone: "analyst" },
-  { label: "財報", value: stats.reports_total ?? 0, sub: "SEC / TWSE / MOPS / TPEx", tone: "financials" },
-  { label: "電話會議", value: callArticles.length, sub: "transcript / earnings call", tone: "calls" },
+  { label: "研究指引", value: researchQueue.length, sub: "下一步 / 查核重點", tone: "news", href: "research-guide" },
+  { label: "市場日曆", value: marketCalendarSignalCount || callEvents.length, sub: "重要總經 / 法說 / 台美股事件", tone: "calls", href: "calls" },
+  { label: "法人預估", value: analystEstimates.length, sub: "目標價 / 上修 / 下修", tone: "analyst", href: "estimates" },
+  { label: "新聞索引", value: newsIndex.length, sub: "ticker 對應新聞", tone: "financials", href: "news-index" },
 ];
 ---
 <Base title="個股快搜 · Daily-News" active="home">
@@ -130,7 +304,7 @@ const sourceTiles = [
       <span class="portal-kicker">即時個股資訊入口 · {generated.slice(0, 10)} · {ago(generated)} ago</span>
       <h1>個股快搜</h1>
       <p>
-        這裡是個股相關資訊的快速搜尋網站：輸入 ticker 或公司名，就能進到個股頁看即時新聞、法人 / 分析師、財報、電話會議、公司原文與相關標的。idea-generation 只用來幫你排序熱門入口，不替你下買賣結論。
+        這裡不再把所有網站丟成一條流水帳。idea-generation 先把個股資料整理成研究指引、法說時間、法人預估與新聞索引，讓你一眼知道哪一檔要查、下一步要看什麼、證據在哪裡。
       </p>
 
       <div class="stock-command">
@@ -148,7 +322,7 @@ const sourceTiles = [
 
       <div class="quick-strip" aria-label="popular ticker shortcuts">
         <span>熱門快搜</span>
-        {topSearchItems.slice(0, 8).map((item) => (
+        {hotTickers.map((item) => (
           <a href={`/stocks/${item.ticker}/`}>{item.ticker}</a>
         ))}
       </div>
@@ -156,7 +330,7 @@ const sourceTiles = [
 
     <div class="coverage-grid">
       {sourceTiles.map((tile) => (
-        <a class={`coverage-card ${tile.tone}`} href={`#${tile.tone}`}>
+        <a class={`coverage-card ${tile.tone}`} href={`#${tile.href}`}>
           <span>{tile.label}</span>
           <strong>{tile.value}</strong>
           <em>{tile.sub}</em>
@@ -166,149 +340,249 @@ const sourceTiles = [
   </section>
 
   <nav class="sec-index" id="sec-nav">
-    <a href="#quick-search" data-target="quick-search">快速搜尋</a>
-    <a href="#hot" data-target="hot">熱門快搜</a>
-    <a href="#sources" data-target="sources">相關資料入口</a>
-    <a href="#latest" data-target="latest">最新資料流</a>
+    <a href="#research-guide" data-target="research-guide">研究指引</a>
+    <a href="#calls" data-target="calls">市場日曆</a>
+    <a href="#estimates" data-target="estimates">法人預估</a>
+    <a href="#news-index" data-target="news-index">新聞索引</a>
   </nav>
 
-  <section id="quick-search">
+  <section class="news-calendar-workbench" aria-label="新聞與市場日曆工作台">
+    <div class="news-column">
+      <section id="research-guide" class="workbench-panel research-panel">
     <div class="section-title compact">
       <span>01</span>
       <div>
-        <h2>快速搜尋</h2>
-        <p>先從 ticker 進個股頁，再看新聞、法人、財報、電話會議與公司原文。</p>
+        <h2>研究指引</h2>
+        <p>先看下一步，再決定要不要打開個股頁深挖；避免只滑過一堆新聞標題。</p>
       </div>
     </div>
 
-    <div class="quick-ticker-grid">
-      {hotTickers.map((item) => (
-        <a href={`/stocks/${item.ticker}/`} class="quick-ticker-card">
-          <div>
-            <strong>{item.ticker}</strong>
-            <span>{marketLabel(item.market)}</span>
-          </div>
-          <p>{item.name || item.label}</p>
-          <footer>
-            <span>{item.articles} 篇新聞</span>
-            <span>{item.reports} 份財報</span>
-            <span>{item.momentum ? `熱度 +${item.momentum.delta}` : "熱度持平"}</span>
-          </footer>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section id="hot">
-    <div class="section-title compact">
-      <span>02</span>
-      <div>
-        <h2>熱門快搜</h2>
-        <p>用 idea-generation 的思路把新聞熱度與資料覆蓋排在前面，方便快速打開個股頁查證。</p>
+    {researchQueue.length > 0 ? (
+      <div class="action-grid">
+        {researchQueue.slice(0, 3).map((item) => (
+          <article class="action-card">
+            <header>
+              <a class="ticker-name" href={tickerHref(item.ticker)}>
+                <strong>{item.ticker}</strong>
+                {tickerName(item) && <span>{tickerName(item)}</span>}
+              </a>
+            </header>
+            <h3>{item.thesis}</h3>
+            <p>{item.why_now}</p>
+            <p class="next-step">{item.next_step}</p>
+            <div class="action-evidence">
+              <span>{item.evidence.calls ?? 0} 法說</span>
+              <span>{item.evidence.estimates ?? 0} 法人</span>
+              <span>{item.evidence.news ?? 0} 新聞</span>
+              {item.evidence.momentum_delta != null && <span>動能 +{item.evidence.momentum_delta}</span>}
+            </div>
+            <div class="check-list">
+              {item.checks.map((check) => <span>{check}</span>)}
+            </div>
+            <div class="evidence-link-list">
+              {item.links.slice(0, 3).map((link) => (
+                <a href={link.link || tickerHref(item.ticker)} target={link.link ? "_blank" : undefined} rel={link.link ? "noopener" : undefined}>
+                  <strong>{plainTitle(link.title)}</strong>
+                  <em>{link.source} · {ago(link.published)}</em>
+                </a>
+              ))}
+            </div>
+          </article>
+        ))}
       </div>
-    </div>
-
-    <div class="ticker-rank-list">
-      {momentumRows.slice(0, 10).map((item, index) => (
-        <a href={`/stocks/${item.ticker}/`}>
-          <b>{String(index + 1).padStart(2, "0")}</b>
-          <strong>{item.ticker}</strong>
-          <span>7 日提及 {item.mentions_7d} 次</span>
-          <em>較前期 +{item.delta} / {item.pct_change >= 100 ? "突然升溫" : `${item.pct_change.toFixed(1)}%`}</em>
-        </a>
-      ))}
-    </div>
+    ) : (
+      <p class="empty-state">目前沒有足夠的個股證據形成研究指引。</p>
+    )}
   </section>
 
-  <section id="sources">
+      <section id="estimates" class="workbench-panel estimates-panel">
     <div class="section-title compact">
       <span>03</span>
       <div>
-        <h2>相關資料入口</h2>
-        <p>把同一檔股票常用的資料來源拆開：新聞、法人、財報、電話會議。</p>
+        <h2>法人預估</h2>
+        <p>只收斂到法人、分析師、目標價、預估或財測變動，避免混進一般新聞雜訊。</p>
       </div>
     </div>
 
-    <div class="source-lane-grid">
-      <section class="source-lane" id="news">
-        <header>
-          <span>即時新聞</span>
-          <b>{stockNews.length}</b>
-        </header>
-        {stockNews.slice(0, 8).map((item) => (
-          <a href={articleHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
-            <strong>{item.tickers[0]}</strong>
-            <span>{plainTitle(item.title)}</span>
+    {analystEstimates.length > 0 ? (
+      <div class="estimate-grid">
+        {analystEstimates.slice(0, 12).map((item) => (
+          <a class={`estimate-card ${item.direction ?? "neutral"}`} href={itemHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
+            <header>
+              <span class="ticker-name">
+                <strong>{item.ticker}</strong>
+                {tickerName(item) && <span>{tickerName(item)}</span>}
+              </span>
+              <span>{item.signal}</span>
+            </header>
+            <p>{plainTitle(item.title)}</p>
             <em>{item.source} · {ago(item.published)}</em>
           </a>
         ))}
-      </section>
-
-      <section class="source-lane" id="analyst">
-        <header>
-          <span>法人 / 分析師</span>
-          <b>{analystViews.length}</b>
-        </header>
-        {analystViews.slice(0, 8).map((item) => (
-          <a href={articleHref(item)} target="_blank" rel="noopener">
-            <strong>{item.tickers[0] ?? "市場"}</strong>
-            <span>{plainTitle(item.title)}</span>
-            <em>{item.source} · {ago(item.published)}</em>
-          </a>
-        ))}
-        {analystViews.length === 0 && <p class="empty-state">目前沒有法人 / 分析師資料。</p>}
-      </section>
-
-      <section class="source-lane" id="financials">
-        <header>
-          <span>財報</span>
-          <b>{stats.reports_total ?? fundamentals.length}</b>
-        </header>
-        {fundamentals.slice(0, 8).map((item) => (
-          <a href={`/stocks/${item.ticker}/`}>
-            <strong>{item.ticker}</strong>
-            <span>{item.company_name || item.ticker}</span>
-            <em>{fmtMoney(item.latest?.revenue, item.market)} · EPS {item.latest?.eps ?? "缺資料"} · {item.health?.label ?? "資料不足"}</em>
-          </a>
-        ))}
-      </section>
-
-      <section class="source-lane" id="calls">
-        <header>
-          <span>電話會議</span>
-          <b>{callArticles.length}</b>
-        </header>
-        {callArticles.slice(0, 8).map((item) => (
-          <a href={articleHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
-            <strong>{item.tickers[0] ?? "CALL"}</strong>
-            <span>{plainTitle(item.title)}</span>
-            <em>{item.source} · {ago(item.published)}</em>
-          </a>
-        ))}
-        {callArticles.length === 0 && <p class="empty-state">目前沒有電話會議 transcript 文章。</p>}
-      </section>
-    </div>
+      </div>
+    ) : (
+      <p class="empty-state">目前沒有法人預估或目標價更新。</p>
+    )}
   </section>
 
-  <section id="latest">
+      <section id="news-index" class="workbench-panel news-index-panel">
     <div class="section-title compact">
       <span>04</span>
       <div>
-        <h2>最新資料流</h2>
-        <p>最近進來的個股資料，點 ticker 或標題就能回到相關來源。</p>
+        <h2>新聞索引</h2>
+        <p>每個 ticker 集中顯示對應新聞，先看同一檔股票的證據密度，再進個股頁查核。</p>
       </div>
     </div>
 
-    <div class="latest-feed">
-      {[...stockNews, ...internalStockFeed].slice(0, 14).map((item) => (
-        <a href={articleHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
-          <time>{ago(item.published)}</time>
-          <strong>{item.tickers?.[0] ?? "市場"}</strong>
-          <span>{plainTitle(item.title)}</span>
-          <em>{item.source}</em>
-        </a>
-      ))}
+    {newsIndex.length > 0 ? (
+      <div class="news-index-grid">
+        {newsIndex.slice(0, 12).map((item) => (
+          <article class="news-index-card">
+            <header>
+              <a class="ticker-name" href={tickerHref(item.ticker)}>
+                <strong>{item.ticker}</strong>
+                {tickerName(item) && <span>{tickerName(item)}</span>}
+              </a>
+              <em>{item.count} 則對應新聞</em>
+            </header>
+            <div class="headline-list">
+              {item.headlines.slice(0, 4).map((headline) => (
+                <a href={headline.link || tickerHref(item.ticker)} target={headline.link ? "_blank" : undefined} rel={headline.link ? "noopener" : undefined}>
+                  <b>{headline.kind}</b>
+                  <span>{plainTitle(headline.title)}</span>
+                  <em>{headline.source} · {ago(headline.published)}</em>
+                </a>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="empty-state">目前沒有足夠的對應新聞索引。</p>
+    )}
+      </section>
     </div>
+
+    <aside id="calls" class="calendar-rail">
+      <div class="calendar-rail-inner">
+        <div class="section-title compact">
+          <span>02</span>
+          <div>
+            <h2>市場日曆</h2>
+            <p>重要總經、法說與台美股事件排在同一張日曆，只留需要查核的公司與市場訊號。</p>
+          </div>
+        </div>
+
+        {callCalendar ? (
+          <>
+            <div class="call-calendar" data-call-calendar aria-label="市場日曆：重要總經、法說、台美股事件">
+              <header>
+                <span>日曆圖</span>
+                <strong>{callCalendar.label}</strong>
+              </header>
+              <div class="calendar-toolbar">
+                <label class="calendar-search-wrap">
+                  <span class="calendar-search-icon" aria-hidden="true">⌕</span>
+                  <input
+                    id="calendar-search-input"
+                    class="calendar-search-input"
+                    type="search"
+                    placeholder="搜尋 ticker、公司名（中文/英文）、事件標題"
+                    autocomplete="off"
+                    spellcheck="false"
+                  />
+                  <button type="button" id="calendar-search-clear" class="calendar-search-clear" aria-label="清除搜尋" hidden>×</button>
+                </label>
+                <div class="calendar-search-mode" role="group" aria-label="搜尋模式">
+                  <button type="button" class="calendar-mode-btn is-active" data-calendar-mode="highlight">高亮</button>
+                  <button type="button" class="calendar-mode-btn" data-calendar-mode="filter">過濾</button>
+                </div>
+                <span id="calendar-search-summary" class="calendar-search-summary" aria-live="polite"></span>
+              </div>
+              <div class="calendar-legend">
+                <span class="macro">重要總經</span>
+                <span class="call">法說</span>
+                <span class="tw-event">台股事件</span>
+                <span class="us-event">美股事件</span>
+              </div>
+              <div class="calendar-weekdays">
+                {callCalendar.weekdays.map((day) => <span>{day}</span>)}
+              </div>
+              <div class="calendar-grid">
+                {callCalendar.days.map((day) => {
+                  const signals = calendarSignalsForDay(day.events);
+                  return (
+                    <div
+                      class={`calendar-day ${day.inMonth ? "" : "outside"} ${signals.length ? "has-event" : ""}`}
+                      data-iso={day.date}
+                    >
+                      <time datetime={day.date}>{day.day}</time>
+                      {signals.slice(0, 4).map((event) => {
+                        const haystack = [
+                          event.ticker || "",
+                          event.display_name || "",
+                          event.label || "",
+                          event.source || "",
+                          event.title || "",
+                        ].join(" ").toLowerCase();
+                        return (
+                          <a
+                            class={`calendar-event ${calendarEventKindClass(event)}`}
+                            href={itemHref(event)}
+                            target={event.link ? "_blank" : undefined}
+                            rel={event.link ? "noopener" : undefined}
+                            data-search={haystack}
+                            data-kind={event.kind}
+                          >
+                            <em>{event.label}</em>
+                            <strong>{calendarEventTitle(event)}</strong>
+                            {calendarEventMeta(event) && <span>{calendarEventMeta(event)}</span>}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            {callEvents.length > 0 && (
+              <div class="event-list">
+                {callEvents.slice(0, 12).map((item) => (
+                  <a class="event-row" href={itemHref(item)} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener" : undefined}>
+                    <time>{dateLabel(item.event_date)}</time>
+                    <span class="ticker-name">
+                      <strong>{item.ticker}</strong>
+                      {tickerName(item) && <span>{tickerName(item)}</span>}
+                    </span>
+                    <span>{plainTitle(item.title)}</span>
+                    <em>{item.source} · {ago(item.published)}</em>
+                  </a>
+                ))}
+              </div>
+            )}
+          </>
+        ) : (
+          <p class="empty-state">目前沒有可索引的市場日曆資料。</p>
+        )}
+      </div>
+    </aside>
+  </section>
+
+  <section class="quick-ticker-grid" aria-label="stock shortcuts">
+    {hotTickers.map((item) => (
+      <a href={`/stocks/${item.ticker}/`} class="quick-ticker-card">
+        <div>
+          <strong>{item.ticker}</strong>
+          <span>{marketLabel(item.market)}</span>
+        </div>
+        <p>{item.name || item.label}</p>
+        <footer>
+          <span>{item.articles} 篇新聞</span>
+          <span>{item.reports} 份財報</span>
+          <span>{item.momentum ? `熱度 +${item.momentum.delta}` : "熱度持平"}</span>
+        </footer>
+      </a>
+    ))}
   </section>
 
   <section class="filing-strip">
@@ -319,6 +593,7 @@ const sourceTiles = [
         <em>{item.form_type} · {item.fiscal_year}{item.fiscal_period}</em>
       </a>
     ))}
+    <span>{stockNews.length + internalStockFeed.length} 筆個股資料已索引</span>
   </section>
 
   <p class="disclaimer">
@@ -374,7 +649,7 @@ const sourceTiles = [
       }
 
       const navLinks = document.querySelectorAll("#sec-nav a");
-      const sections = ["quick-search", "hot", "sources", "latest"]
+      const sections = ["research-guide", "calls", "estimates", "news-index"]
         .map((id) => document.getElementById(id))
         .filter(Boolean);
       const updateActive = () => {
@@ -387,6 +662,90 @@ const sourceTiles = [
       };
       window.addEventListener("scroll", updateActive, { passive: true });
       updateActive();
+
+      // === Market calendar: today/past/future tagging + IME-safe search ===
+      const calendar = document.querySelector("[data-call-calendar]");
+      if (calendar) {
+        const todayIso = new Date().toISOString().slice(0, 10);
+        calendar.querySelectorAll(".calendar-day[data-iso]").forEach((cell) => {
+          const iso = cell.getAttribute("data-iso");
+          if (!iso) return;
+          if (iso === todayIso) cell.classList.add("is-today");
+          else if (iso < todayIso) cell.classList.add("is-past");
+          else cell.classList.add("is-future");
+        });
+
+        const searchInput = document.getElementById("calendar-search-input");
+        const clearBtn = document.getElementById("calendar-search-clear");
+        const summary = document.getElementById("calendar-search-summary");
+        const modeBtns = calendar.querySelectorAll("[data-calendar-mode]");
+        let searchMode = "highlight";
+        let isComposing = false;
+        let suppressNextInput = false;
+
+        const allEvents = Array.from(calendar.querySelectorAll(".calendar-event[data-search]"));
+        const allDays = Array.from(calendar.querySelectorAll(".calendar-day"));
+
+        function applySearch(rawValue) {
+          const q = String(rawValue || "").trim().toLowerCase();
+          if (clearBtn) clearBtn.hidden = !q;
+          let matched = 0;
+          for (const evt of allEvents) {
+            const hay = evt.getAttribute("data-search") || "";
+            const hit = !q || hay.includes(q);
+            evt.classList.toggle("is-match", Boolean(q) && hit);
+            evt.classList.toggle("is-dim", Boolean(q) && !hit);
+            evt.classList.toggle("is-hidden", searchMode === "filter" && Boolean(q) && !hit);
+            if (q && hit) matched += 1;
+          }
+          for (const day of allDays) {
+            const hasVisible = !q || day.querySelector(".calendar-event.is-match, .calendar-event:not(.is-hidden)");
+            day.classList.toggle("is-search-empty", searchMode === "filter" && Boolean(q) && !day.querySelector(".calendar-event:not(.is-hidden)"));
+          }
+          if (summary) {
+            summary.textContent = q ? `${matched} 則符合「${rawValue}」` : "";
+          }
+        }
+
+        if (searchInput) {
+          searchInput.addEventListener("compositionstart", () => {
+            isComposing = true;
+          });
+          searchInput.addEventListener("compositionend", (event) => {
+            isComposing = false;
+            suppressNextInput = true;
+            applySearch(event.target.value);
+          });
+          searchInput.addEventListener("input", (event) => {
+            if (isComposing || event.isComposing) return;
+            if (suppressNextInput) {
+              suppressNextInput = false;
+              return;
+            }
+            applySearch(event.target.value);
+          });
+          searchInput.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+              searchInput.value = "";
+              applySearch("");
+            }
+          });
+        }
+        if (clearBtn && searchInput) {
+          clearBtn.addEventListener("click", () => {
+            searchInput.value = "";
+            applySearch("");
+            searchInput.focus();
+          });
+        }
+        modeBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            modeBtns.forEach((b) => b.classList.toggle("is-active", b === btn));
+            searchMode = btn.getAttribute("data-calendar-mode") || "highlight";
+            applySearch(searchInput ? searchInput.value : "");
+          });
+        });
+      }
     });
   </script>
 </Base>
