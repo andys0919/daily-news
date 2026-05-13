@@ -511,13 +511,32 @@ const sourceTiles = [
               <div class="calendar-grid">
                 {callCalendar.days.map((day) => {
                   const signals = calendarSignalsForDay(day.events);
+                  const VISIBLE_PER_DAY = 3;
+                  const overflowCount = Math.max(0, day.events.length - VISIBLE_PER_DAY);
+                  const dayPayload = day.events.map((event) => ({
+                    kind: event.kind,
+                    label: event.label,
+                    title: calendarEventTitle(event),
+                    fullTitle: event.title,
+                    meta: calendarEventMeta(event),
+                    href: itemHref(event),
+                    external: Boolean(event.link),
+                    haystack: [
+                      event.ticker || "",
+                      event.display_name || "",
+                      event.label || "",
+                      event.source || "",
+                      event.title || "",
+                    ].join(" ").toLowerCase(),
+                  }));
                   return (
                     <div
                       class={`calendar-day ${day.inMonth ? "" : "outside"} ${signals.length ? "has-event" : ""}`}
                       data-iso={day.date}
+                      data-events={dayPayload.length ? JSON.stringify(dayPayload) : undefined}
                     >
                       <time datetime={day.date}>{day.day}</time>
-                      {signals.slice(0, 4).map((event) => {
+                      {signals.slice(0, VISIBLE_PER_DAY).map((event) => {
                         const haystack = [
                           event.ticker || "",
                           event.display_name || "",
@@ -533,17 +552,33 @@ const sourceTiles = [
                             rel={event.link ? "noopener" : undefined}
                             data-search={haystack}
                             data-kind={event.kind}
+                            title={event.title}
                           >
                             <em>{event.label}</em>
                             <strong>{calendarEventTitle(event)}</strong>
-                            {calendarEventMeta(event) && <span>{calendarEventMeta(event)}</span>}
                           </a>
                         );
                       })}
+                      {overflowCount > 0 && (
+                        <button
+                          type="button"
+                          class="calendar-overflow-pill"
+                          data-day-iso={day.date}
+                          aria-label={`查看 ${day.date} 共 ${day.events.length} 則事件`}
+                        >+{overflowCount} 更多</button>
+                      )}
                     </div>
                   );
                 })}
               </div>
+              <dialog id="calendar-day-dialog" class="calendar-day-dialog" aria-labelledby="calendar-dialog-date">
+                <header class="calendar-day-dialog-head">
+                  <strong id="calendar-dialog-date"></strong>
+                  <span id="calendar-dialog-count" class="calendar-dialog-count"></span>
+                  <button type="button" class="calendar-dialog-close" aria-label="關閉" data-calendar-dialog-close>×</button>
+                </header>
+                <div id="calendar-dialog-events" class="calendar-day-dialog-body"></div>
+              </dialog>
             </div>
             {callEvents.length > 0 && (
               <div class="event-list">
@@ -745,6 +780,71 @@ const sourceTiles = [
             applySearch(searchInput ? searchInput.value : "");
           });
         });
+
+        // Day-detail dialog: pill click → populate + show all events for that day
+        const dialog = document.getElementById("calendar-day-dialog");
+        const dialogDate = document.getElementById("calendar-dialog-date");
+        const dialogCount = document.getElementById("calendar-dialog-count");
+        const dialogEvents = document.getElementById("calendar-dialog-events");
+        const KIND_CLASS = {
+          macro: "macro",
+          call: "call",
+          tw_event: "tw-event",
+          us_event: "us-event",
+        };
+        function escapeHtml(value) {
+          return String(value || "")
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+        }
+        function openDayDialog(iso) {
+          if (!dialog || !dialogEvents || !iso) return;
+          const cell = calendar.querySelector(`.calendar-day[data-iso="${iso}"]`);
+          if (!cell) return;
+          let payload = [];
+          try {
+            payload = JSON.parse(cell.getAttribute("data-events") || "[]");
+          } catch (err) {
+            payload = [];
+          }
+          if (dialogDate) dialogDate.textContent = iso;
+          if (dialogCount) dialogCount.textContent = payload.length ? `共 ${payload.length} 則` : "";
+          dialogEvents.innerHTML = payload.map((evt) => {
+            const cls = KIND_CLASS[evt.kind] || "macro";
+            const meta = evt.meta ? `<span class="dialog-event-meta">${escapeHtml(evt.meta)}</span>` : "";
+            const target = evt.external ? ' target="_blank" rel="noopener"' : "";
+            return `<a class="calendar-day-dialog-event ${cls}" href="${escapeHtml(evt.href)}"${target}>
+              <span class="dialog-event-label">${escapeHtml(evt.label)}</span>
+              <strong class="dialog-event-title">${escapeHtml(evt.fullTitle || evt.title)}</strong>
+              ${meta}
+            </a>`;
+          }).join("");
+          if (typeof dialog.showModal === "function") dialog.showModal();
+          else dialog.setAttribute("open", "");
+        }
+        function closeDayDialog() {
+          if (!dialog) return;
+          if (typeof dialog.close === "function") dialog.close();
+          else dialog.removeAttribute("open");
+        }
+        calendar.querySelectorAll(".calendar-overflow-pill").forEach((pill) => {
+          pill.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            openDayDialog(pill.getAttribute("data-day-iso"));
+          });
+        });
+        if (dialog) {
+          dialog.addEventListener("click", (event) => {
+            // Close when clicking the backdrop (the dialog element itself)
+            if (event.target === dialog) closeDayDialog();
+          });
+          const closeBtn = dialog.querySelector("[data-calendar-dialog-close]");
+          if (closeBtn) closeBtn.addEventListener("click", closeDayDialog);
+        }
       }
     });
   </script>
