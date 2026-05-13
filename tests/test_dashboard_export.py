@@ -182,6 +182,14 @@ class DashboardExportTests(unittest.TestCase):
             published="2026-05-12T10:32:00+08:00",
             tickers=["5090"],
         )
+        _insert_article(
+            self.db,
+            title="The latest GHG protocol proposal raises the bar for 100% renewable reporting in data centers by 2035",
+            source="Data Center Dynamics",
+            category="🏭 產業數據",
+            published="2026-05-12T10:33:00+08:00",
+            tickers=["2035"],
+        )
 
         dashboard_export.export_all(
             db_path=self.db, output_dir=self.out, tickers=["NVDA", "2330"]
@@ -199,8 +207,126 @@ class DashboardExportTests(unittest.TestCase):
         search = json.loads((self.out / "tickers.json").read_text())
         search_tickers = {item["ticker"] for item in search["tickers"]}
         self.assertNotIn("1965", search_tickers)
+        self.assertNotIn("2035", search_tickers)
         self.assertNotIn("3842", search_tickers)
         self.assertNotIn("5090", search_tickers)
+
+    def test_export_action_board_surfaces_calls_estimates_and_news_index(self):
+        _create_articles_table(self.db)
+        _insert_article(
+            self.db,
+            title="鴻海(2317)5/12召開法說會，聚焦AI伺服器展望",
+            source="台股法說會 (Google News)",
+            category="🏛️ 法說與 IR 材料",
+            published="2026-05-11T13:57:00+08:00",
+            tickers=["2317"],
+        )
+        _insert_article(
+            self.db,
+            title="珍珠號噴發！鴻海法人目標價上看250元",
+            source="鴻海/Foxconn",
+            category="📊 券商與分析師研究",
+            published="2026-05-11T14:57:00+08:00",
+            tickers=["2317"],
+        )
+        _insert_article(
+            self.db,
+            title="鴻海AI伺服器出貨動能延續",
+            source="鴻海/Foxconn",
+            category="🏢 科技廠動態",
+            published="2026-05-11T15:57:00+08:00",
+            tickers=["2317"],
+        )
+        _insert_article(
+            self.db,
+            title="美國4月CPI將於5/12公布，市場關注Fed降息路徑",
+            source="CNBC Top News",
+            category="💰 財經與總經",
+            published="2026-05-11T20:57:00+08:00",
+            tickers=[],
+            event_type="policy",
+        )
+        _insert_article(
+            self.db,
+            title="Deutsche Bank Raises Nvidia Stock (NVDA) Price Target on AI demand",
+            source="NVIDIA News",
+            category="📊 券商與分析師研究",
+            published="2026-05-10T15:57:00+08:00",
+            tickers=["NVDA"],
+        )
+        _insert_article(
+            self.db,
+            title="AMD Radeon RX 9070 XT price target article is really hardware pricing",
+            source="AMD News",
+            category="📊 券商與分析師研究",
+            published="2026-05-10T16:57:00+08:00",
+            tickers=["9070", "AMD"],
+        )
+        _insert_article(
+            self.db,
+            title="8-K - Volato Group, Inc. (0001853070) (Filer)",
+            source="SEC 8-K Filings (Atom)",
+            category="🏛️ 法說與 IR 材料",
+            published="2026-05-11T16:57:00+08:00",
+            tickers=["1231", "4522"],
+            event_type="filing",
+        )
+
+        dashboard_export.export_all(
+            db_path=self.db, output_dir=self.out, tickers=["NVDA", "2317"]
+        )
+
+        overview = json.loads((self.out / "overview.json").read_text())
+        action_board = overview["action_board"]
+        self.assertIn("research_queue", action_board)
+        self.assertIn("call_events", action_board)
+        self.assertIn("analyst_estimates", action_board)
+        self.assertIn("news_index", action_board)
+        self.assertIn("market_calendar", action_board)
+        self.assertEqual(action_board["call_events"][0]["ticker"], "2317")
+        self.assertEqual(action_board["call_events"][0]["display_name"], "鴻海")
+        self.assertEqual(action_board["call_events"][0]["event_date"], "2026-05-12")
+        self.assertNotIn("1231", {item["ticker"] for item in action_board["call_events"]})
+        self.assertEqual(action_board["analyst_estimates"][0]["ticker"], "2317")
+        self.assertEqual(action_board["analyst_estimates"][0]["display_name"], "鴻海")
+        self.assertIn("目標價", action_board["analyst_estimates"][0]["signal"])
+        nvda_estimate = next(item for item in action_board["analyst_estimates"] if item["ticker"] == "NVDA")
+        self.assertEqual(nvda_estimate["display_name"], "輝達")
+        self.assertNotIn("9070", {item["ticker"] for item in action_board["analyst_estimates"]})
+        self.assertNotIn("9070", {item["ticker"] for item in action_board["news_index"]})
+        self.assertEqual(action_board["news_index"][0]["ticker"], "2317")
+        self.assertEqual(action_board["news_index"][0]["display_name"], "鴻海")
+        self.assertGreaterEqual(len(action_board["news_index"][0]["headlines"]), 2)
+        self.assertIn("下一步", action_board["research_queue"][0]["next_step"])
+        queue_2317 = next(item for item in action_board["research_queue"] if item["ticker"] == "2317")
+        self.assertEqual(queue_2317["display_name"], "鴻海")
+        calendar = action_board["market_calendar"]
+        calendar_kinds = {item["kind"] for item in calendar}
+        self.assertIn("macro", calendar_kinds)
+        self.assertIn("call", calendar_kinds)
+        self.assertIn("tw_event", calendar_kinds)
+        self.assertIn("us_event", calendar_kinds)
+        self.assertNotIn("tw_market", calendar_kinds)
+        self.assertNotIn("us_market", calendar_kinds)
+        macro_item = next(item for item in calendar if item["kind"] == "macro")
+        self.assertEqual(macro_item["date"], "2026-05-12")
+        self.assertEqual(macro_item["label"], "重要總經")
+        self.assertIn("CPI", macro_item["title"])
+        call_item = next(item for item in calendar if item["kind"] == "call")
+        self.assertEqual(call_item["ticker"], "2317")
+        self.assertEqual(call_item["display_name"], "鴻海")
+        self.assertGreater(call_item["importance"], macro_item["importance"])
+        tw_item = next(item for item in calendar if item["kind"] == "tw_event")
+        us_item = next(item for item in calendar if item["kind"] == "us_event")
+        self.assertEqual(tw_item["ticker"], "2317")
+        self.assertEqual(tw_item["label"], "台股事件")
+        self.assertEqual(tw_item["display_name"], "鴻海")
+        self.assertEqual(us_item["ticker"], "NVDA")
+        self.assertEqual(us_item["label"], "美股事件")
+        self.assertEqual(us_item["display_name"], "輝達")
+        self.assertNotIn("AMD", {item.get("ticker") for item in calendar})
+        self.assertFalse(any("hardware pricing" in item.get("title", "") for item in calendar))
+        self.assertFalse(any(item.get("time") in {"09:00", "13:30", "21:30", "22:30"} for item in calendar))
 
     def test_repo_watchlist_yaml_exists_for_dashboard_defaults(self):
         repo_root = Path(dashboard_export.__file__).resolve().parent
